@@ -1,6 +1,6 @@
 "use strict";
 
-const state = { prices: [], policies: [], briefings: [], period: "3M", category: "전체", symbol: "" };
+const state = { prices: [], policies: [], briefings: [], period: "3M", category: "기후부 보도자료", symbol: "" };
 const fallbackPrice = [{ date: "2026-08-19", symbol: "KAU25", close: 29500, change: 1150, changeRate: 4.06, open: 29000, high: 29500, low: 29000, volume: 396644, tradeValue: 11624058550 }];
 const number = new Intl.NumberFormat("ko-KR");
 const byId = (id) => document.getElementById(id);
@@ -68,11 +68,34 @@ function shortDate(value) { return value ? value.slice(2).replaceAll("-", ".") :
 function periodName(value) { return ({ "1M": "1개월", "3M": "3개월", "6M": "6개월", "1Y": "1년", "ALL": "전체" })[value]; }
 function esc(value) { return String(value ?? "").replace(/[&<>"']/g, (char) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[char]); }
 
+function policyGroup(policy) {
+  const source = String(policy.source || "");
+  const url = String(policy.url || "");
+  if (policy.sourceType === "news") return "뉴스";
+  if (source.includes("보도자료") || url.includes("menuId=286") || url.includes("boardMasterId=1")) return "기후부 보도자료";
+  if (source.includes("공지") || source.includes("공고") || policy.sourceType === "official") return "기후부 공지사항";
+  return "뉴스";
+}
+
+function marketInsight(selected, latest) {
+  const history = selected.slice(-21, -1);
+  if (!history.length) return "시세가 누적되면 가격 방향과 최근 거래량 강도를 함께 분석합니다.";
+  const averageVolume = history.reduce((sum, row) => sum + row.volume, 0) / history.length;
+  const volumeRatio = averageVolume ? latest.volume / averageVolume : 1;
+  const volumeText = volumeRatio >= 1.3 ? "최근 평균을 크게 웃도는 거래량" : volumeRatio <= .7 ? "최근 평균보다 낮은 거래량" : "평균 수준의 거래량";
+  if (latest.changeRate >= 2 && volumeRatio >= 1.3) return `가격 상승이 ${volumeText}을 동반해 매수 강도가 확대됐습니다. 후속 거래량과 매수세 지속 여부를 확인하세요.`;
+  if (latest.changeRate >= 2) return `가격은 강하게 상승했지만 거래량은 ${volumeText}입니다. 추가 매수 유입이 확인돼야 상승 추세의 신뢰도가 높아집니다.`;
+  if (latest.changeRate <= -2 && volumeRatio >= 1.3) return `가격 하락이 ${volumeText}을 동반해 매도 압력이 강화됐습니다. 저가 매수 유입과 공급물량 변화를 점검하세요.`;
+  if (latest.changeRate <= -2) return `가격은 하락했지만 거래량은 ${volumeText}입니다. 적극적 매도보다 관망 또는 유동성 부족의 영향인지 확인이 필요합니다.`;
+  if (Math.abs(latest.changeRate) < .5 && volumeRatio <= .7) return "가격과 거래량이 모두 제한돼 관망 국면 가능성이 높습니다. 정책 발표나 경매 결과에 따른 거래량 회복 여부를 확인하세요.";
+  if (latest.changeRate >= 0) return `완만한 상승과 ${volumeText}이 나타났습니다. 거래량 확대가 동반되는지 확인해야 추세 지속 여부를 판단할 수 있습니다.`;
+  return `완만한 약세와 ${volumeText}이 나타났습니다. 추가 하락보다 저가 매수 유입과 거래량 변화를 우선 확인하세요.`;
+}
+
 function renderMarket() {
   const rows = filterPrices(state.period);
   const selected = state.prices.filter((row) => !state.symbol || row.symbol === state.symbol);
   const latest = selected.at(-1) || fallbackPrice[0];
-  const previous = selected.at(-2);
   const endTime = new Date(`${latest.date}T00:00:00`).getTime();
   const yearRows = selected.filter((row) => endTime - new Date(`${row.date}T00:00:00`).getTime() <= 366 * 86400000);
   const yearHigh = Math.max(...(yearRows.length ? yearRows : [latest]).map((row) => row.high || row.close));
@@ -93,7 +116,7 @@ function renderMarket() {
   byId("dayRange").textContent = `${money(latest.low)}–${money(latest.high)}`; byId("openPrice").textContent = `시가 ${money(latest.open)}원`;
   byId("pulseChange").textContent = `${sign}${latest.changeRate.toFixed(2)}%`; byId("pulseChange").className = latest.changeRate >= 0 ? "positive" : "negative";
   byId("changeTrack").style.width = `${Math.min(Math.abs(latest.changeRate) * 12, 100)}%`; byId("pulseVolume").textContent = `${money(latest.volume)}톤`;
-  byId("checkPoint").textContent = previous ? `직전 거래일 대비 종가는 ${money(latest.close - previous.close)}원 변동했습니다.` : "전기간 시세를 등록하면 직전 거래일과 자동 비교합니다.";
+  byId("checkPoint").textContent = marketInsight(selected, latest);
   renderChart(rows);
 }
 
@@ -108,20 +131,43 @@ function renderChart(rows) {
   let html = `<defs><linearGradient id="areaGradient" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#0c7c59" stop-opacity=".2"/><stop offset="100%" stop-color="#0c7c59" stop-opacity="0"/></linearGradient><linearGradient id="lineGradient"><stop offset="0%" stop-color="#13a979"/><stop offset="100%" stop-color="#075f48"/></linearGradient></defs>`;
   for (let i = 0; i < 5; i += 1) { const gy = top + i * (priceBottom - top) / 4; const value = yMax - i * (yMax - yMin) / 4; html += `<line x1="${left}" x2="${width-right}" y1="${gy}" y2="${gy}" class="grid-line"/><text x="${left-12}" y="${gy+4}" text-anchor="end" class="axis-text">${Math.round(value/100)*100}</text>`; }
   if (rows.length > 1) { const line = rows.map((row, index) => `${index ? "L" : "M"}${x(index)},${y(row.close)}`).join(" "); html += `<path d="${line} L${x(rows.length-1)},${priceBottom} L${x(0)},${priceBottom} Z" class="price-area"/><path d="${line}" class="price-line"/>`; }
-  rows.forEach((row, index) => { const barWidth = Math.min(15, (width-left-right)/Math.max(rows.length,12)*.66); const barHeight = row.volume/maxVol*(bottom-volumeTop); html += `<rect x="${x(index)-barWidth/2}" y="${bottom-barHeight}" width="${barWidth}" height="${barHeight}" rx="2" class="volume-bar"><title>${esc(row.date)} ${money(row.volume)}톤</title></rect><circle cx="${x(index)}" cy="${y(row.close)}" r="${rows.length===1?6:3.5}" class="price-dot"><title>${esc(row.date)} ${money(row.close)}원</title></circle>`; });
-  if (rows.length > 1) { const start = rows[0].date, end = rows.at(-1).date, s = new Date(start).getTime(), e = new Date(end).getTime(); state.policies.filter((p) => p.publishedAt >= start && p.publishedAt <= end).forEach((policy) => { const px = left + (new Date(policy.publishedAt).getTime()-s)/Math.max(e-s,1)*(width-left-right); html += `<line x1="${px}" x2="${px}" y1="${top}" y2="${priceBottom}" class="event-line"/><circle cx="${px}" cy="${top+8}" r="5" class="event-dot"><title>${esc(policy.title)}</title></circle>`; }); }
+  rows.forEach((row, index) => { const barWidth = Math.min(15, (width-left-right)/Math.max(rows.length,12)*.66); const barHeight = row.volume/maxVol*(bottom-volumeTop); html += `<rect x="${x(index)-barWidth/2}" y="${bottom-barHeight}" width="${barWidth}" height="${barHeight}" rx="2" class="volume-bar"><title>${esc(row.date)} · 종가 ${money(row.close)}원 · 거래량 ${money(row.volume)}톤</title></rect><circle cx="${x(index)}" cy="${y(row.close)}" r="${rows.length===1?6:3.5}" class="price-dot"><title>${esc(row.date)} · 종가 ${money(row.close)}원 · 거래량 ${money(row.volume)}톤</title></circle>`; });
+  if (rows.length > 1) { const start = rows[0].date, end = rows.at(-1).date, s = new Date(start).getTime(), e = new Date(end).getTime(); state.policies.filter((p) => policyGroup(p) !== "뉴스" && p.publishedAt >= start && p.publishedAt <= end).forEach((policy) => { const px = left + (new Date(policy.publishedAt).getTime()-s)/Math.max(e-s,1)*(width-left-right); html += `<line x1="${px}" x2="${px}" y1="${top}" y2="${priceBottom}" class="event-line"/><circle cx="${px}" cy="${top+8}" r="5" class="event-dot"><title>${esc(policy.title)}</title></circle>`; }); }
   html += `<text x="${left-12}" y="${volumeTop+5}" text-anchor="end" class="axis-unit">거래량</text>`;
   const labels = [...new Set([0, Math.floor((rows.length-1)/2), Math.max(rows.length-1,0)])]; labels.forEach((index) => { const row = rows[index]; if (row) html += `<text x="${x(index)}" y="346" text-anchor="middle" class="axis-text">${Number(row.date.slice(5,7))}.${Number(row.date.slice(8,10))}</text>`; });
   if (rows.length <= 1) html += `<text x="450" y="220" text-anchor="middle" class="empty-chart-text">전기간 시세를 등록하면 가격선이 표시됩니다</text>`;
   svg.innerHTML = html;
+  const tooltip = byId("chartTooltip");
+  svg.onpointermove = (event) => {
+    if (!rows.length) return;
+    const svgRect = svg.getBoundingClientRect();
+    const wrapRect = svg.parentElement.getBoundingClientRect();
+    const pointerX = (event.clientX - svgRect.left) / Math.max(svgRect.width, 1) * width;
+    const ratio = Math.max(0, Math.min(1, (pointerX - left) / (width - left - right)));
+    const index = rows.length === 1 ? 0 : Math.round(ratio * (rows.length - 1));
+    const row = rows[index];
+    tooltip.replaceChildren(
+      create("time", "", row.date),
+      create("strong", "", `${money(row.close)}원`),
+      create("span", "", `거래량 ${money(row.volume)}톤`)
+    );
+    tooltip.hidden = false;
+    const maxLeft = Math.max(8, wrapRect.width - tooltip.offsetWidth - 8);
+    tooltip.style.left = `${Math.min(Math.max(8, event.clientX - wrapRect.left + 12), maxLeft)}px`;
+    tooltip.style.top = `${Math.max(8, event.clientY - wrapRect.top - 84)}px`;
+  };
+  svg.onpointerleave = () => { tooltip.hidden = true; };
 }
 
 function create(tag, className, text) { const node = document.createElement(tag); if (className) node.className = className; if (text !== undefined) node.textContent = text; return node; }
 
 function renderPolicies() {
-  const items = state.category === "전체" ? state.policies : state.policies.filter((item) => item.category === state.category);
+  const items = state.policies.filter((item) => policyGroup(item) === state.category);
   const list = byId("policyList"); list.replaceChildren();
-  if (!items.length) { list.append(create("div", "loading-state", "설정한 키워드에 해당하는 정책자료가 없습니다.")); return; }
+  const latestPress = state.policies.find((item) => policyGroup(item) === "기후부 보도자료");
+  byId("latestPolicy").textContent = latestPress?.title || "최근 보도자료 없음";
+  byId("latestPolicyDate").textContent = latestPress?.publishedAt || "-";
+  if (!items.length) { list.append(create("div", "loading-state", `${state.category}에 해당하는 자료가 없습니다.`)); renderChart(filterPrices(state.period)); return; }
   items.forEach((policy) => {
     const row = create("article", "policy-row");
     row.append(create("time", "", shortDate(policy.publishedAt)), create("span", "category-badge", policy.category || "기타"));
@@ -130,15 +176,14 @@ function renderPolicies() {
     const link = create("a", "", "↗"); link.href = policy.url || "#"; link.target = "_blank"; link.rel = "noreferrer"; link.ariaLabel = `${policy.title} 원문 열기`;
     row.append(body, impact, link); list.append(row);
   });
-  const latest = state.policies[0]; if (latest) { byId("latestPolicy").textContent = latest.title; byId("latestPolicyDate").textContent = latest.publishedAt; }
   renderChart(filterPrices(state.period));
 }
 
-function renderPolicyFilters(keywords) {
-  const categories = ["전체", ...new Set(state.policies.map((item) => item.category || "기타"))];
+function renderPolicyFilters() {
+  const categories = ["기후부 보도자료", "기후부 공지사항", "뉴스"];
   const box = byId("policyFilters"); box.replaceChildren();
-  categories.forEach((category) => { const button = create("button", category === state.category ? "active" : "", category); button.addEventListener("click", () => { state.category = category; renderPolicyFilters(keywords); renderPolicies(); }); box.append(button); });
-  if (keywords?.length) byId("policyDescription").textContent = `${keywords.join(" · ")} 키워드로 기후부 공식자료와 시장 뉴스를 자동 수집합니다.`;
+  categories.forEach((category) => { const button = create("button", category === state.category ? "active" : "", category); button.addEventListener("click", () => { state.category = category; renderPolicyFilters(); renderPolicies(); }); box.append(button); });
+  byId("policyDescription").textContent = "기후부 공식보도/공지사항 자료와 시장 뉴스를 자동 수집합니다.";
 }
 
 function renderSymbolPicker() {
@@ -178,7 +223,7 @@ async function init() {
   state.briefings = (briefingData.items || []).map((item) => ({ ...item, date: item.date || item.briefingDate || "" })).sort((a, b) => b.date.localeCompare(a.date));
   byId("policySync").textContent = policyData.lastSync ? new Date(policyData.lastSync).toLocaleString("ko-KR", { timeZone: "Asia/Seoul", month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit" }) : "수동 실행 필요";
   document.querySelectorAll("[data-period]").forEach((button) => button.addEventListener("click", () => { state.period = button.dataset.period; document.querySelectorAll("[data-period]").forEach((item) => item.classList.toggle("active", item === button)); renderMarket(); }));
-  renderSymbolPicker(); renderPolicyFilters(policyData.keywords || []); renderPolicies(); renderMarket(); renderBriefings();
+  renderSymbolPicker(); renderPolicyFilters(); renderPolicies(); renderMarket(); renderBriefings();
 }
 
 init().catch(() => { state.prices = fallbackPrice; renderMarket(); });
