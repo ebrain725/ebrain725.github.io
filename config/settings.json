@@ -26,7 +26,7 @@
   "policyNewsSearches": [
     {
       "name": "배출권시장 뉴스",
-      "query": "배출권 OR KAU OR 유상경매 OR 탄소시장"
+      "query": "\"배출권\" OR \"배출권거래제\" OR \"유상할당\" OR \"유상경매\" OR \"탄소시장\" OR \"시장안정화\" OR \"상쇄배출권\""
     }
   ],
   "policyLookbackDays": 30,
