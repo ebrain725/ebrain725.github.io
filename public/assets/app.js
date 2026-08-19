@@ -98,6 +98,50 @@ function resolvedPolicyImpact(policy) {
   return { impact: "중립", reason: policy.impactReason || "가격에 작용하는 직접적인 수급 경로가 아직 확인되지 않습니다." };
 }
 
+function normalizedNewsTitle(value) {
+  return String(value || "").toLowerCase().replace(/\[[^\]]+\]|\([^)]*\)/g, " ").replace(/[^0-9a-z가-힣]+/g, "");
+}
+
+function newsTitleDice(first, second) {
+  const a = normalizedNewsTitle(first), b = normalizedNewsTitle(second);
+  if (!a || !b) return 0;
+  if (a === b) return 1;
+  const grams = (value) => { const result = []; for (let index = 0; index < value.length - 1; index += 1) result.push(value.slice(index, index + 2)); return result; };
+  const left = grams(a), right = grams(b), counts = new Map();
+  left.forEach((gram) => counts.set(gram, (counts.get(gram) || 0) + 1));
+  let overlap = 0;
+  right.forEach((gram) => { if ((counts.get(gram) || 0) > 0) { overlap += 1; counts.set(gram, counts.get(gram) - 1); } });
+  return 2 * overlap / Math.max(left.length + right.length, 1);
+}
+
+function similarNews(first, second) {
+  const a = normalizedNewsTitle(first), b = normalizedNewsTitle(second);
+  const [shorter, longer] = [a, b].sort((left, right) => left.length - right.length);
+  return a === b || (shorter.length >= 14 && longer.includes(shorter) && shorter.length / longer.length >= .55) || newsTitleDice(a, b) >= .58;
+}
+
+function dedupeNewsPolicies(policies) {
+  const official = policies.filter((policy) => policyGroup(policy) !== "뉴스");
+  const remaining = policies.filter((policy) => policyGroup(policy) === "뉴스").slice();
+  const representatives = [];
+  while (remaining.length) {
+    const group = [remaining.shift()];
+    let changed = true;
+    while (changed) {
+      changed = false;
+      for (let index = remaining.length - 1; index >= 0; index -= 1) {
+        const candidate = remaining[index];
+        if (candidate.publishedAt === group[0].publishedAt && group.some((member) => similarNews(candidate.title, member.title))) {
+          group.push(candidate); remaining.splice(index, 1); changed = true;
+        }
+      }
+    }
+    const representative = group.reduce((best, item) => (`${item.summary || ""}${item.title || ""}`).length > (`${best.summary || ""}${best.title || ""}`).length ? item : best);
+    representatives.push({ ...representative, duplicateCount: group.length, duplicateSources: [...new Set(group.map((item) => item.source).filter(Boolean))] });
+  }
+  return [...official, ...representatives].sort((a, b) => b.publishedAt.localeCompare(a.publishedAt));
+}
+
 function marketInsight(selected, latest) {
   const history = selected.slice(-21, -1);
   if (!history.length) return "시세가 누적되면 가격 방향과 최근 거래량 강도를 함께 분석합니다.";
@@ -192,7 +236,9 @@ function renderPolicies() {
   items.forEach((policy) => {
     const row = create("article", "policy-row");
     row.append(create("time", "", shortDate(policy.publishedAt)), create("span", "category-badge", policy.category || "기타"));
-    const body = create("div", "policy-body"); body.append(create("h3", "", policy.title), create("p", "", policy.summary || "원문에서 세부 내용을 확인하세요."), create("span", "", policy.source || "기후에너지환경부"));
+    const body = create("div", "policy-body");
+    const sourceLabel = policy.duplicateCount > 1 ? `${policy.source || "대표기사"} · 유사기사 ${policy.duplicateCount}건 묶음` : policy.source || "기후에너지환경부";
+    body.append(create("h3", "", policy.title), create("p", "", policy.summary || "원문에서 세부 내용을 확인하세요."), create("span", "", sourceLabel));
     const impactInfo = resolvedPolicyImpact(policy);
     const impact = create("span", `impact impact-${impactInfo.impact}`, impactInfo.impact);
     impact.title = `${policy.impactSource === "openai" ? "AI" : "자동"} 판단: ${impactInfo.reason}`;
@@ -241,7 +287,7 @@ async function init() {
   const latestRows = state.prices.filter((row) => row.date === latestDate);
   state.symbol = latestRows.reduce((best, row) => !best || row.volume > best.volume ? row : best, null)?.symbol || state.prices.at(-1).symbol;
   const policyData = policyResult.status === "fulfilled" ? policyResult.value : { items: [], keywords: [] };
-  state.policies = (policyData.items || []).map((item) => ({ ...item, publishedAt: item.publishedAt || item.date || "" })).sort((a, b) => b.publishedAt.localeCompare(a.publishedAt));
+  state.policies = dedupeNewsPolicies((policyData.items || []).map((item) => ({ ...item, publishedAt: item.publishedAt || item.date || "" })));
   state.policyInsight = policyData.aiInsight || null;
   const briefingData = briefingResult.status === "fulfilled" ? briefingResult.value : { items: [] };
   state.briefings = (briefingData.items || []).map((item) => ({ ...item, date: item.date || item.briefingDate || "" })).sort((a, b) => b.date.localeCompare(a.date));
