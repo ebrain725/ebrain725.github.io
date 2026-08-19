@@ -25,7 +25,6 @@
     <section class="hero-row">
       <div>
         <p class="eyebrow">K-ETS MARKET INTELLIGENCE</p>
-        <h1>가격 변화와 정책 신호를<br>한 화면에서 읽습니다.</h1>
         <p class="hero-copy">배출권 가격, 기후에너지환경부 정책, 데일리 브리핑을 연결해 시장 변화를 한 흐름으로 보여줍니다.</p>
       </div>
       <div class="asof"><span class="live-dot"></span> 데이터 기준 <b id="asofDate">불러오는 중</b><small>GitHub 자동 갱신</small></div>
@@ -55,21 +54,21 @@
             </div>
           </div>
         </div>
-        <div class="chart-wrap"><svg id="priceChart" viewBox="0 0 900 350" role="img" aria-label="배출권 가격과 거래량 추이"></svg></div>
+        <div class="chart-wrap"><svg id="priceChart" viewBox="0 0 900 350" role="img" aria-label="배출권 가격과 거래량 추이"></svg><div class="chart-tooltip" id="chartTooltip" hidden></div></div>
         <div class="chart-legend"><span><i class="legend-line"></i>종가</span><span><i class="legend-bar"></i>거래량</span><span><i class="legend-event"></i>정책 발표</span><small>정책 발표일이 가격 차트 위에 자동 표시됩니다.</small></div>
       </article>
       <aside class="panel pulse-panel">
         <div class="panel-head"><div><span class="section-tag">MARKET PULSE</span><h2>오늘의 시장 점검</h2></div></div>
         <div class="pulse-item"><span>전일 대비</span><strong id="pulseChange">-</strong><div class="mini-track"><i id="changeTrack"></i></div></div>
         <div class="pulse-item"><span>거래량</span><strong id="pulseVolume">-</strong><p>당일 시장 참여 강도</p></div>
-        <div class="pulse-item"><span>최근 정책 신호</span><strong class="policy-brief" id="latestPolicy">수집 중</strong><p id="latestPolicyDate">-</p></div>
+        <div class="pulse-item"><span>최근 정책 인사이트</span><strong class="policy-brief" id="latestPolicy">수집 중</strong><p id="latestPolicyDate">-</p></div>
         <div class="insight-box"><span>CHECK POINT</span><p id="checkPoint">시세 데이터를 불러오고 있습니다.</p></div>
       </aside>
     </section>
 
     <section class="policy-section" id="policy">
       <div class="section-title">
-        <div><span class="section-tag">POLICY RADAR</span><h2>기후에너지환경부 정책 레이더</h2><p id="policyDescription">기후부 공식자료와 배출권시장 뉴스를 자동 수집합니다.</p></div>
+        <div><span class="section-tag">POLICY RADAR</span><h2>기후에너지환경부 정책 레이더</h2><p id="policyDescription">기후부 공식보도/공지사항 자료와 시장 뉴스를 자동 수집합니다.</p></div>
         <span class="auto-badge"><i></i> 자동수집 <b id="policySync">확인 중</b></span>
       </div>
       <div class="filter-row" id="policyFilters" aria-label="정책 분류 필터"></div>
