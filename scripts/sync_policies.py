@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""기후에너지환경부 RSS에서 설정 키워드가 포함된 자료를 수집한다."""
+"""기후부 공식자료와 시장 뉴스의 제목·원문 본문에서 설정 키워드를 검색한다."""
 
 from __future__ import annotations
 
@@ -12,6 +12,7 @@ import sys
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
+from concurrent.futures import ThreadPoolExecutor
 from difflib import SequenceMatcher
 from datetime import datetime
 from email.utils import parsedate_to_datetime
@@ -150,6 +151,97 @@ def clean_html(value: str, limit: int = 260) -> str:
     return text if len(text) <= limit else f"{text[: limit - 1].rstrip()}…"
 
 
+def html_attribute(tag_text: str, name: str) -> str:
+    match = re.search(rf"\b{name}\s*=\s*(['\"])(.*?)\1", tag_text, re.IGNORECASE | re.DOTALL)
+    return html.unescape(match.group(2)).strip() if match else ""
+
+
+def extract_article_text(page_html: str) -> str:
+    candidates: list[str] = []
+    for match in re.finditer(r'"articleBody"\s*:\s*("(?:\\.|[^"\\])*")', page_html, re.IGNORECASE):
+        try:
+            candidates.append(clean_html(json.loads(match.group(1)), 20_000))
+        except (json.JSONDecodeError, TypeError):
+            pass
+    for meta in re.findall(r"<meta\b[^>]*>", page_html, re.IGNORECASE):
+        key = f"{html_attribute(meta, 'property')} {html_attribute(meta, 'name')}".lower()
+        if re.search(r"og:description|twitter:description|description", key):
+            candidates.append(clean_html(html_attribute(meta, "content"), 20_000))
+    block_pattern = re.compile(
+        r"<(article|main)\b[^>]*>([\s\S]*?)</\1>"
+        r"|<(?:div|section)\b[^>]*(?:class|id)\s*=\s*(['\"])[^'\"]*"
+        r"(?:article[-_ ]?body|article[-_ ]?content|news[-_ ]?body|news[-_ ]?content|story[-_ ]?body|"
+        r"entry[-_ ]?content|post[-_ ]?content|board[-_ ]?view|board[-_ ]?content|bbs[-_ ]?view|"
+        r"view[-_ ]?content|view[-_ ]?cont|view[-_ ]?txt)[^'\"]*\3[^>]*>([\s\S]*?)</(?:div|section)>",
+        re.IGNORECASE,
+    )
+    for match in block_pattern.finditer(page_html):
+        candidates.append(clean_html(match.group(2) or match.group(4) or "", 20_000))
+    useful = [text for text in candidates if len(text) >= 40]
+    return max(useful, key=len)[:20_000] if useful else ""
+
+
+def fetch_article_text(url: str) -> str:
+    if not re.match(r"^https?://", url or "", re.IGNORECASE):
+        return ""
+    request = urllib.request.Request(
+        url,
+        headers={
+            "User-Agent": "Mozilla/5.0 ETS-SIGNAL/1.0",
+            "Accept": "text/html,application/xhtml+xml",
+        },
+    )
+    try:
+        with urllib.request.urlopen(request, timeout=12) as response:
+            content_type = response.headers.get("Content-Type", "")
+            if not re.search(r"text/html|application/xhtml\+xml", content_type, re.IGNORECASE):
+                return ""
+            charset = response.headers.get_content_charset() or "utf-8"
+            page_html = response.read(2_000_000).decode(charset, errors="replace")
+        return extract_article_text(page_html)
+    except Exception:
+        return ""
+
+
+def keyword_excerpt(text: str, matched_keywords: list[str], limit: int = 260) -> str:
+    lower = text.lower()
+    positions = [lower.find(keyword.lower()) for keyword in matched_keywords]
+    positions = [position for position in positions if position >= 0]
+    start = max(0, min(positions) - 80) if positions else 0
+    excerpt = text[start : start + limit].strip()
+    return f"{'…' if start else ''}{excerpt}{'…' if start + limit < len(text) else ''}"
+
+
+def match_title_or_body(item: dict, keywords: list[str]) -> dict | None:
+    feed_summary = clean_html(item.get("summary", ""), 20_000)
+    feed_text = f"{item.get('title', '')} {feed_summary}".lower()
+    matched = [keyword for keyword in keywords if keyword.lower() in feed_text]
+    if matched:
+        item["matchedKeywords"] = matched
+        # 본문에서만 검색된 자료도 이후 병합 단계에서 사라지지 않도록
+        # 키워드가 실제로 포함된 문맥을 요약문으로 보존한다.
+        item["summary"] = keyword_excerpt(feed_summary, matched)
+        return item
+
+    article_text = fetch_article_text(item.get("url", ""))
+    article_lower = article_text.lower()
+    matched = [keyword for keyword in keywords if keyword.lower() in article_lower]
+    if not matched:
+        return None
+    item["matchedKeywords"] = matched
+    item["category"] = category_for(f"{item.get('title', '')} {article_text}".lower())
+    item["summary"] = keyword_excerpt(article_text, matched)
+    return item
+
+
+def filter_title_and_body(items: list[dict], keywords: list[str]) -> list[dict]:
+    if not items:
+        return []
+    with ThreadPoolExecutor(max_workers=min(6, len(items))) as executor:
+        checked = list(executor.map(lambda item: match_title_or_body(item, keywords), items))
+    return [item for item in checked if item]
+
+
 def normalize_date(value: str) -> str:
     value = (value or "").strip()
     try:
@@ -211,20 +303,33 @@ def fetch_rss(url: str) -> ET.Element:
     return parse_rss(payload)
 
 
-def fetch_source(source: dict, keywords: list[str]) -> list[dict]:
-    root = fetch_rss(source["url"])
-    result = []
+def rss_search_url(url: str, keyword: str, max_items: int) -> str:
+    """기후부 RSS에 제목+본문 검색 조건을 붙인다."""
+    parsed = urllib.parse.urlsplit(url)
+    query = dict(urllib.parse.parse_qsl(parsed.query, keep_blank_values=True))
+    query.update(
+        {
+            "searchKey": "titleOrContent",
+            "searchValue": keyword,
+            "maxPageItems": str(max_items),
+            "pagerOffset": "0",
+        }
+    )
+    return urllib.parse.urlunsplit(
+        (parsed.scheme, parsed.netloc, parsed.path, urllib.parse.urlencode(query), parsed.fragment)
+    )
+
+
+def source_candidates(root: ET.Element, source: dict, matched_keyword: str) -> list[dict]:
+    candidates: list[dict] = []
     for item in root.findall(".//item"):
         title = clean_html(child_text(item, "title"), 180)
-        description = clean_html(child_text(item, "description"))
+        description = clean_html(child_text(item, "description"), 2_000)
         link = re.sub(r";jsessionid=[^?]+", "", html.unescape(child_text(item, "link")))
         published = normalize_date(child_text(item, "pubDate") or child_text(item, "date"))
         haystack = f"{title} {description}".lower()
-        matched = [keyword for keyword in keywords if keyword.lower() in haystack]
-        if not matched:
-            continue
         stable_key = link or f"{published}|{title}"
-        result.append(
+        candidates.append(
             {
                 "id": hashlib.sha1(stable_key.encode("utf-8")).hexdigest()[:16],
                 "publishedAt": published,
@@ -234,36 +339,73 @@ def fetch_source(source: dict, keywords: list[str]) -> list[dict]:
                 "source": source["name"],
                 "sourceType": "official",
                 "url": link,
-                "matchedKeywords": matched,
+                "matchedKeywords": [matched_keyword],
             }
         )
-    return result
+    return candidates
+
+
+def fetch_source(source: dict, keywords: list[str]) -> list[dict]:
+    # 검색어 없는 RSS는 최신 게시물 일부만 내려준다. 관리자 키워드마다
+    # 기후부의 제목+본문 검색을 실행해야 과거 공식자료까지 놓치지 않는다.
+    per_keyword = max(10, min(int(source.get("maxItemsPerKeyword", 50)), 100))
+    candidates_by_key: dict[str, dict] = {}
+    keyword_errors: list[str] = []
+
+    for keyword in keywords:
+        try:
+            root = fetch_rss(rss_search_url(source["url"], keyword, per_keyword))
+        except Exception as exc:
+            keyword_errors.append(f"{keyword}: {exc}")
+            continue
+
+        for candidate in source_candidates(root, source, keyword):
+            key = candidate.get("url") or f"{candidate.get('publishedAt')}|{candidate.get('title')}"
+            if key in candidates_by_key:
+                matched = candidates_by_key[key].setdefault("matchedKeywords", [])
+                if keyword not in matched:
+                    matched.append(keyword)
+            else:
+                candidates_by_key[key] = candidate
+
+    if not candidates_by_key and keyword_errors:
+        raise RuntimeError("키워드별 공식검색에 모두 실패했습니다: " + " | ".join(keyword_errors))
+    if keyword_errors:
+        print(
+            f"{source.get('name', '기후부 공식자료')} 일부 키워드 검색 경고: " + " | ".join(keyword_errors),
+            file=sys.stderr,
+        )
+
+    candidates = sorted(
+        candidates_by_key.values(),
+        key=lambda item: (item.get("publishedAt", ""), item.get("title", "")),
+        reverse=True,
+    )
+    return filter_title_and_body(candidates, keywords)
 
 
 def fetch_google_news(search: dict, keywords: list[str], lookback_days: int) -> list[dict]:
+    keyword_query = " OR ".join(f'"{keyword.replace(chr(34), "")}"' for keyword in keywords)
     params = urllib.parse.urlencode(
         {
-            "q": f"{search['query']} when:{lookback_days}d",
+            "q": f"({keyword_query}) when:{lookback_days}d",
             "hl": "ko",
             "gl": "KR",
             "ceid": "KR:ko",
         }
     )
     root = fetch_rss(f"https://news.google.com/rss/search?{params}")
-    result = []
+    candidates = []
     for item in root.findall(".//item"):
         raw_title = clean_html(child_text(item, "title"), 180)
         title = re.sub(r"\s+-\s+[^-]+$", "", raw_title).strip() or raw_title
-        description = clean_html(child_text(item, "description"))
+        description = clean_html(child_text(item, "description"), 2_000)
         haystack = f"{title} {description}".lower()
-        matched = [keyword for keyword in keywords if keyword.lower() in haystack]
-        if not matched:
-            continue
         link = html.unescape(child_text(item, "link"))
         published = normalize_date(child_text(item, "pubDate") or child_text(item, "date"))
         source_name = child_text(item, "source") or search.get("name", "Google News")
         stable_key = link or f"{published}|{title}"
-        result.append(
+        candidates.append(
             {
                 "id": hashlib.sha1(stable_key.encode("utf-8")).hexdigest()[:16],
                 "publishedAt": published,
@@ -273,10 +415,9 @@ def fetch_google_news(search: dict, keywords: list[str], lookback_days: int) -> 
                 "source": source_name,
                 "sourceType": "news",
                 "url": link,
-                "matchedKeywords": matched,
             }
         )
-    return result
+    return filter_title_and_body(candidates[:80], keywords)
 
 
 def main() -> int:
@@ -315,7 +456,8 @@ def main() -> int:
     merged: dict[str, dict] = {}
     for item in existing + collected:
         haystack = f"{item.get('title', '')} {item.get('summary', '')}".lower()
-        if not any(keyword.lower() in haystack for keyword in keywords):
+        matched_keywords = [str(value) for value in item.get("matchedKeywords", [])]
+        if not matched_keywords and not any(keyword.lower() in haystack for keyword in keywords):
             continue
         key = item.get("url") or f"{item.get('publishedAt')}|{item.get('title')}"
         merged[key] = item
