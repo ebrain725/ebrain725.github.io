@@ -1,0 +1,64 @@
+name: Sync Ministry Policies
+
+on:
+  schedule:
+    # 한국시간 08:17, 12:17, 18:17
+    - cron: "17 23 * * *"
+    - cron: "17 3 * * *"
+    - cron: "17 9 * * *"
+
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  update-and-deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: 저장소 불러오기
+        uses: actions/checkout@v4
+
+      - name: Python 준비
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 기후부 정책 및 배출권 뉴스 수집
+        run: python scripts/sync_policies.py
+
+      - name: 변경된 정책자료 저장
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/data/policies.json
+          if git diff --cached --quiet; then
+            echo "변경된 정책자료가 없습니다."
+          else
+            git commit -m "data: update ministry policies"
+            git push
+          fi
+
+      - name: Pages 설정
+        uses: actions/configure-pages@v5
+
+      - name: 공개 파일 묶기
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: ./public
+
+      - name: GitHub Pages 배포
+        id: deployment
+        uses: actions/deploy-pages@v4
