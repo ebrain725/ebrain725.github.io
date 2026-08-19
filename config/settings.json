@@ -1,0 +1,30 @@
+{
+  "policyKeywords": [
+    "배출권",
+    "배출권거래제",
+    "유상할당",
+    "유상경매",
+    "탄소시장",
+    "시장안정화",
+    "상쇄배출권"
+  ],
+  "policySources": [
+    {
+      "name": "기후부 보도자료",
+      "url": "https://www.mcee.go.kr/home/web/board/rss.do?menuId=286&boardMasterId=1"
+    },
+    {
+      "name": "기후부 공지·공고",
+      "url": "https://www.mcee.go.kr/home/web/board/rss.do?menuId=290&boardMasterId=39"
+    }
+  ],
+  "policyNewsSearches": [
+    {
+      "name": "배출권시장 뉴스",
+      "query": "배출권 OR KAU OR 유상경매 OR 탄소시장"
+    }
+  ],
+  "policyLookbackDays": 30,
+  "maxNewsItems": 24,
+  "maxPolicyItems": 60
+}
