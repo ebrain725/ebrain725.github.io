@@ -89,15 +89,6 @@ function derivePolicyInsight(policies) {
   return { summary, basisLatestDate: official[0].publishedAt || "-", basisCount: official.length, source: "fallback" };
 }
 
-function resolvedPolicyImpact(policy) {
-  if (policy.impact && policy.impact !== "중립") return { impact: policy.impact, reason: policy.impactReason || "" };
-  const text = `${policy.title || ""} ${policy.summary || ""}`;
-  if (/공급\s*(축소|감소)|경매\s*(축소|취소)|할당량\s*(축소|감소)|감축\s*강화/.test(text)) return { impact: "상방", reason: "공급 감소 또는 감축의무 강화가 매수 수요를 높일 수 있습니다." };
-  if (/공급\s*(확대|증가)|추가\s*공급|경매\s*(확대|증가)|예비분\s*(방출|공급)|외부사업\s*(확대|등록)/.test(text)) return { impact: "하방", reason: "시장 공급 증가 가능성이 현물가격의 상단을 제한할 수 있습니다." };
-  if (/시장안정|예비분|K-MSR/i.test(text)) return { impact: "혼합", reason: "가격 상황에 따라 공급을 늘리거나 줄일 수 있어 방향성이 혼재합니다." };
-  return { impact: "중립", reason: policy.impactReason || "가격에 작용하는 직접적인 수급 경로가 아직 확인되지 않습니다." };
-}
-
 function normalizedNewsTitle(value) {
   return String(value || "").toLowerCase().replace(/\[[^\]]+\]|\([^)]*\)/g, " ").replace(/[^0-9a-z가-힣]+/g, "");
 }
@@ -239,11 +230,8 @@ function renderPolicies() {
     const body = create("div", "policy-body");
     const sourceLabel = policy.duplicateCount > 1 ? `${policy.source || "대표기사"} · 유사기사 ${policy.duplicateCount}건 묶음` : policy.source || "기후에너지환경부";
     body.append(create("h3", "", policy.title), create("p", "", policy.summary || "원문에서 세부 내용을 확인하세요."), create("span", "", sourceLabel));
-    const impactInfo = resolvedPolicyImpact(policy);
-    const impact = create("span", `impact impact-${impactInfo.impact}`, impactInfo.impact);
-    impact.title = `${policy.impactSource === "openai" ? "AI" : "자동"} 판단: ${impactInfo.reason}`;
     const link = create("a", "source-link", "∞"); link.href = policy.url || "#"; link.target = "_blank"; link.rel = "noreferrer"; link.ariaLabel = `${policy.title} 원문 링크`; link.title = "원문 링크";
-    row.append(body, impact, link); list.append(row);
+    row.append(body, link); list.append(row);
   });
   renderChart(filterPrices(state.period));
 }
@@ -252,7 +240,7 @@ function renderPolicyFilters() {
   const categories = ["기후부 보도자료", "기후부 공지사항", "뉴스"];
   const box = byId("policyFilters"); box.replaceChildren();
   categories.forEach((category) => { const button = create("button", category === state.category ? "active" : "", category); button.addEventListener("click", () => { state.category = category; renderPolicyFilters(); renderPolicies(); }); box.append(button); });
-  byId("policyDescription").textContent = "기후부 공식보도/공지사항 자료와 시장 뉴스를 자동 수집합니다.";
+  byId("policyDescription").textContent = "기후부 공식 보도자료·공지사항과 시장 뉴스의 제목·본문을 기준으로 자동 수집합니다.";
 }
 
 function renderSymbolPicker() {
@@ -264,6 +252,13 @@ function renderSymbolPicker() {
   select.addEventListener("change", () => { state.symbol = select.value; renderMarket(); });
 }
 
+function readableBriefingText(value) {
+  const raw = String(value || "");
+  if (!raw.includes("<")) return raw;
+  const documentValue = new DOMParser().parseFromString(raw.replace(/<br\s*\/?\s*>/gi, "\n").replace(/<\/(p|div|blockquote|li)>/gi, "\n"), "text/html");
+  return (documentValue.body.textContent || "").replace(/\n{3,}/g, "\n\n").trim();
+}
+
 function renderBriefings() {
   const area = byId("briefingArea"); const latest = state.briefings[0];
   if (!latest) return;
@@ -272,10 +267,10 @@ function renderBriefings() {
   meta.append(create("span", `tone tone-${latest.marketTone || "중립"}`, latest.marketTone || "중립"), create("time", "", latest.date), create("span", "", latest.source || "Telegram"));
   feature.append(meta, create("h3", "", latest.title || "배출권 데일리 브리핑"));
   if (latest.summary) feature.append(create("p", "briefing-summary", latest.summary));
-  feature.append(create("div", "briefing-content", latest.content || ""));
+  feature.append(create("div", "briefing-content", readableBriefingText(latest.content)));
   if (latest.outlook) { const outlook = create("div", "outlook-box"); outlook.append(create("span", "", "1주 전망"), create("p", "", latest.outlook)); feature.append(outlook); }
   const archive = create("aside", "briefing-archive"); archive.append(create("h3", "", "이전 브리핑"));
-  state.briefings.slice(1, 7).forEach((item) => { const details = create("details"); const summary = create("summary"); summary.append(create("time", "", item.date.slice(5).replace("-", ".")), create("span", "", item.title), create("i", "", "＋")); details.append(summary, create("p", "", item.summary || String(item.content || "").slice(0, 180))); archive.append(details); });
+  state.briefings.slice(1, 7).forEach((item) => { const details = create("details"); const summary = create("summary"); summary.append(create("time", "", item.date.slice(5).replace("-", ".")), create("span", "", item.title), create("i", "", "＋")); details.append(summary, create("p", "", item.summary || readableBriefingText(item.content).slice(0, 180))); archive.append(details); });
   layout.append(feature, archive); area.replaceChildren(layout);
 }
 
