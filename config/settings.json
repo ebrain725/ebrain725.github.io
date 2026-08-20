@@ -1,4 +1,5 @@
 {
+  "configVersion": "press-tab-fix-v2",
   "policyKeywords": [
     "배출권",
     "배출권거래제",
@@ -12,10 +13,12 @@
   "policySources": [
     {
       "name": "기후부 보도자료",
+      "type": "press",
       "url": "https://www.mcee.go.kr/home/web/board/rss.do?menuId=286&boardMasterId=1"
     },
     {
       "name": "기후부 공지·공고",
+      "type": "notice",
       "url": "https://www.mcee.go.kr/home/web/board/rss.do?menuId=290&boardMasterId=39"
     }
   ],
