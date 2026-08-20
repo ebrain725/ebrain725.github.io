@@ -1,31 +1,16 @@
-{
-  "policyKeywords": [
-    "배출권",
-    "배출권거래제",
-    "유상할당",
-    "유상경매",
-    "탄소시장",
-    "시장안정화",
-    "상쇄배출권"
-  ],
-  "newsKeywordFile": "config/news_keywords.txt",
-  "policySources": [
-    {
-      "name": "기후부 보도자료",
-      "url": "https://www.mcee.go.kr/home/web/board/rss.do?menuId=286&boardMasterId=1"
-    },
-    {
-      "name": "기후부 공지·공고",
-      "url": "https://www.mcee.go.kr/home/web/board/rss.do?menuId=290&boardMasterId=39"
-    }
-  ],
-  "policyNewsSearches": [
-    {
-      "name": "배출권시장 뉴스",
-      "query": "config/news_keywords.txt의 키워드를 사용"
-    }
-  ],
-  "policyLookbackDays": 30,
-  "maxNewsItems": 24,
-  "maxPolicyItems": 60
-}
+# NEWS_KEYWORDS_VERSION = 2026-08-20-v2
+# 뉴스 클리핑 전용 키워드
+# 한 줄에 하나씩 입력합니다. 단독 "경매", "할당", "온실가스"처럼
+# 다른 분야 기사까지 잡히는 넓은 단어는 사용하지 않는 것을 권장합니다.
+
+배출권
+배출권거래제
+탄소배출권
+온실가스 배출권
+유상할당
+유상경매
+KAU25
+KAU26
+K-ETS
+탄소시장
+상쇄배출권
