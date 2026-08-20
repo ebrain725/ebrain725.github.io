@@ -1,12 +1,12 @@
 <!doctype html>
-<!-- AUCTION_MONITOR_VERSION = 2026-08-20-v3.3-table-only -->
+<!-- AUCTION_MONITOR_VERSION = 2026-08-20-v3.4-full-history-default -->
 <html lang="ko">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="국내 배출권 가격, 기후부 정책, 데일리 브리핑을 한 화면에서 확인하는 대시보드">
   <title>ETS SIGNAL | 배출권 시장·정책 대시보드</title>
-  <link rel="stylesheet" href="assets/styles.css?v=20260820-auction-monitor-v3-3">
+  <link rel="stylesheet" href="assets/styles.css?v=20260820-auction-monitor-v3-4">
 </head>
 <body>
   <header class="topbar">
@@ -77,7 +77,7 @@
         <div class="panel-head auction-panel-head">
           <div><span class="section-tag">AUCTION HISTORY</span><h2>경매 수급 추이</h2></div>
           <div class="period-tabs auction-period-tabs" role="group" aria-label="경매 조회 기간">
-            <button data-auction-period="3M">3개월</button><button data-auction-period="6M">6개월</button><button class="active" data-auction-period="1Y">1년</button><button data-auction-period="ALL">전기간</button>
+            <button data-auction-period="3M">3개월</button><button data-auction-period="6M">6개월</button><button data-auction-period="1Y">1년</button><button class="active" data-auction-period="ALL">전기간</button>
           </div>
         </div>
         <div class="auction-kpi-grid">
@@ -94,7 +94,7 @@
           </table>
           <nav class="auction-pagination" id="auctionPagination" aria-label="경매 결과 페이지 이동" hidden></nav>
         </div>
-        <p class="auction-footnote"><span id="auctionPeriodLabel">최근 1년</span> · <span id="auctionRecordCount">0건</span> · KRX 공개 경매정보 기준</p>
+        <p class="auction-footnote"><span id="auctionPeriodLabel">전기간</span> · <span id="auctionRecordCount">0건</span> · KAU18~KAU25 · KRX 공개 경매정보 기준</p>
       </article>
     </section>
 
@@ -121,6 +121,6 @@
     <p>시장 판단을 지원하는 참고용 대시보드입니다. 원문과 공식 통계를 함께 확인하세요.</p>
   </footer>
   <noscript>이 대시보드는 JavaScript를 사용합니다. 브라우저 설정에서 JavaScript를 켜주세요.</noscript>
-  <script src="assets/app.js?v=20260820-auction-monitor-v3-3" defer></script>
+  <script src="assets/app.js?v=20260820-auction-monitor-v3-4" defer></script>
 </body>
 </html>
