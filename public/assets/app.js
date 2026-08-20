@@ -1,7 +1,8 @@
 "use strict";
+// POLICY_PAGINATION_VERSION = "2026-08-20-v1"
 
-// PRESS_TAB_FIX_VERSION = "2026-08-20-v2"
-const state = { prices: [], policies: [], policyInsight: null, briefings: [], period: "3M", category: "기후부 보도자료", symbol: "" };
+const state = { prices: [], policies: [], policyInsight: null, briefings: [], period: "3M", category: "기후부 보도자료", policyPage: 1, symbol: "" };
+const POLICIES_PER_PAGE = 5;
 const fallbackPrice = [{ date: "2026-08-19", symbol: "KAU25", close: 29500, change: 1150, changeRate: 4.06, open: 29000, high: 29500, low: 29000, volume: 396644, tradeValue: 11624058550 }];
 const number = new Intl.NumberFormat("ko-KR");
 const byId = (id) => document.getElementById(id);
@@ -68,6 +69,19 @@ function amount(value) { return value >= 1e8 ? `${(value / 1e8).toFixed(1)}억�
 function shortDate(value) { return value ? value.slice(2).replaceAll("-", ".") : "-"; }
 function periodName(value) { return ({ "1M": "1개월", "3M": "3개월", "6M": "6개월", "1Y": "1년", "ALL": "전체" })[value]; }
 function esc(value) { return String(value ?? "").replace(/[&<>"']/g, (char) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[char]); }
+function chartDateTime(value) { return new Date(`${value}T00:00:00`).getTime(); }
+function semiMonthlyTicks(start, end) {
+  if (!start || !end) return [];
+  const first = new Date(`${start}T00:00:00`), last = new Date(`${end}T00:00:00`);
+  const ticks = [];
+  for (let month = new Date(first.getFullYear(), first.getMonth(), 1); month <= last; month = new Date(month.getFullYear(), month.getMonth() + 1, 1)) {
+    [1, 15].forEach((day) => {
+      const tick = new Date(month.getFullYear(), month.getMonth(), day);
+      if (tick >= first && tick <= last) ticks.push({ date: `${tick.getFullYear()}-${String(tick.getMonth() + 1).padStart(2, "0")}-${String(day).padStart(2, "0")}`, label: `${tick.getMonth() + 1}.${day}` });
+    });
+  }
+  return ticks;
+}
 
 function policyGroup(policy) {
   const source = String(policy.source || "");
@@ -189,25 +203,27 @@ function renderChart(rows) {
   const values = rows.map((row) => row.close);
   const maxPrice = Math.max(...values, 30000), minPrice = Math.min(...values, 20000), pad = Math.max((maxPrice - minPrice) * .16, 800);
   const yMax = maxPrice + pad, yMin = Math.max(0, minPrice - pad), maxVol = Math.max(...rows.map((row) => row.volume), 1);
-  const x = (index) => left + (rows.length <= 1 ? (width - left - right) / 2 : index * (width - left - right) / (rows.length - 1));
+  const start = rows[0]?.date || "", end = rows.at(-1)?.date || "";
+  const startTime = chartDateTime(start), endTime = chartDateTime(end);
+  const dateX = (date) => left + (chartDateTime(date) - startTime) / Math.max(endTime - startTime, 1) * (width - left - right);
+  const x = (index) => rows.length <= 1 ? left + (width - left - right) / 2 : dateX(rows[index].date);
   const y = (value) => top + (yMax - value) * (priceBottom - top) / Math.max(yMax - yMin, 1);
   let policyEvents = [];
   let html = `<defs><linearGradient id="areaGradient" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#0c7c59" stop-opacity=".2"/><stop offset="100%" stop-color="#0c7c59" stop-opacity="0"/></linearGradient><linearGradient id="lineGradient"><stop offset="0%" stop-color="#13a979"/><stop offset="100%" stop-color="#075f48"/></linearGradient></defs>`;
   for (let i = 0; i < 5; i += 1) { const gy = top + i * (priceBottom - top) / 4; const value = yMax - i * (yMax - yMin) / 4; html += `<line x1="${left}" x2="${width-right}" y1="${gy}" y2="${gy}" class="grid-line"/><text x="${left-12}" y="${gy+4}" text-anchor="end" class="axis-text">${Math.round(value/100)*100}</text>`; }
+  if (rows.length > 1) semiMonthlyTicks(start, end).forEach((tick) => { const px = dateX(tick.date); html += `<line x1="${px}" x2="${px}" y1="${top}" y2="${bottom}" class="date-grid-line"/><text x="${px}" y="346" text-anchor="middle" class="axis-text chart-date-text">${tick.label}</text>`; });
   if (rows.length > 1) { const line = rows.map((row, index) => `${index ? "L" : "M"}${x(index)},${y(row.close)}`).join(" "); html += `<path d="${line} L${x(rows.length-1)},${priceBottom} L${x(0)},${priceBottom} Z" class="price-area"/><path d="${line}" class="price-line"/>`; }
   rows.forEach((row, index) => { const barWidth = Math.min(15, (width-left-right)/Math.max(rows.length,12)*.66); const barHeight = row.volume/maxVol*(bottom-volumeTop); html += `<rect x="${x(index)-barWidth/2}" y="${bottom-barHeight}" width="${barWidth}" height="${barHeight}" rx="2" class="volume-bar"><title>${esc(row.date)} · 종가 ${money(row.close)}원 · 거래량 ${money(row.volume)}톤</title></rect><circle cx="${x(index)}" cy="${y(row.close)}" r="${rows.length===1?6:3.5}" class="price-dot"><title>${esc(row.date)} · 종가 ${money(row.close)}원 · 거래량 ${money(row.volume)}톤</title></circle>`; });
   if (rows.length > 1) {
-    const start = rows[0].date, end = rows.at(-1).date, s = new Date(start).getTime(), e = new Date(end).getTime();
     policyEvents = state.policies.filter((policy) => policyGroup(policy) !== "뉴스" && policy.publishedAt >= start && policy.publishedAt <= end);
     policyEvents.forEach((policy, index) => {
-      const px = left + (new Date(policy.publishedAt).getTime()-s)/Math.max(e-s,1)*(width-left-right);
+      const px = dateX(policy.publishedAt);
       const sameDateIndex = policyEvents.slice(0, index).filter((item) => item.publishedAt === policy.publishedAt).length;
       const markerY = top + 8 + sameDateIndex % 3 * 15;
       html += `<g class="policy-event" data-event-index="${index}" tabindex="0" role="button" aria-label="${esc(`${policy.publishedAt} 정책 발표: ${policy.title}`)}"><line x1="${px}" x2="${px}" y1="${top}" y2="${priceBottom}" class="event-line"/><circle cx="${px}" cy="${markerY}" r="12" class="event-hit"/><circle cx="${px}" cy="${markerY}" r="5" class="event-dot"/></g>`;
     });
   }
   html += `<text x="${left-12}" y="${volumeTop+5}" text-anchor="end" class="axis-unit">거래량</text>`;
-  const labels = [...new Set([0, Math.floor((rows.length-1)/2), Math.max(rows.length-1,0)])]; labels.forEach((index) => { const row = rows[index]; if (row) html += `<text x="${x(index)}" y="346" text-anchor="middle" class="axis-text">${Number(row.date.slice(5,7))}.${Number(row.date.slice(8,10))}</text>`; });
   if (rows.length <= 1) html += `<text x="450" y="220" text-anchor="middle" class="empty-chart-text">전기간 시세를 등록하면 가격선이 표시됩니다</text>`;
   svg.innerHTML = html;
   const tooltip = byId("chartTooltip");
@@ -238,7 +254,8 @@ function renderChart(rows) {
     const svgRect = svg.getBoundingClientRect();
     const pointerX = (event.clientX - svgRect.left) / Math.max(svgRect.width, 1) * width;
     const ratio = Math.max(0, Math.min(1, (pointerX - left) / (width - left - right)));
-    const index = rows.length === 1 ? 0 : Math.round(ratio * (rows.length - 1));
+    const pointerTime = startTime + ratio * Math.max(endTime - startTime, 0);
+    const index = rows.length === 1 ? 0 : rows.reduce((best, row, rowIndex) => Math.abs(chartDateTime(row.date) - pointerTime) < Math.abs(chartDateTime(rows[best].date) - pointerTime) ? rowIndex : best, 0);
     const row = rows[index];
     tooltip.classList.remove("policy-tooltip");
     tooltip.replaceChildren(
@@ -263,29 +280,74 @@ function renderChart(rows) {
 
 function create(tag, className, text) { const node = document.createElement(tag); if (className) node.className = className; if (text !== undefined) node.textContent = text; return node; }
 
+function policyPageNumbers(current, total) {
+  if (total <= 7) return Array.from({ length: total }, (_, index) => index + 1);
+  const pages = new Set([1, total, current - 1, current, current + 1]);
+  const sorted = [...pages].filter((page) => page >= 1 && page <= total).sort((a, b) => a - b);
+  const result = [];
+  sorted.forEach((page, index) => {
+    if (index && page - sorted[index - 1] > 1) result.push("…");
+    result.push(page);
+  });
+  return result;
+}
+
+function renderPolicyPagination(list, totalPages) {
+  if (totalPages <= 1) return;
+  const pagination = create("nav", "policy-pagination");
+  pagination.ariaLabel = `${state.category} 페이지 이동`;
+  const move = (page) => {
+    state.policyPage = Math.max(1, Math.min(totalPages, page));
+    renderPolicies();
+  };
+  const previous = create("button", "page-arrow", "‹");
+  previous.type = "button"; previous.disabled = state.policyPage === 1; previous.ariaLabel = "이전 페이지";
+  previous.addEventListener("click", () => move(state.policyPage - 1));
+  pagination.append(previous);
+  policyPageNumbers(state.policyPage, totalPages).forEach((value) => {
+    if (value === "…") { pagination.append(create("span", "page-gap", value)); return; }
+    const button = create("button", value === state.policyPage ? "active" : "", String(value));
+    button.type = "button"; button.ariaLabel = `${value}페이지`;
+    if (value === state.policyPage) button.setAttribute("aria-current", "page");
+    button.addEventListener("click", () => move(value));
+    pagination.append(button);
+  });
+  const next = create("button", "page-arrow", "›");
+  next.type = "button"; next.disabled = state.policyPage === totalPages; next.ariaLabel = "다음 페이지";
+  next.addEventListener("click", () => move(state.policyPage + 1));
+  pagination.append(next);
+  list.append(pagination);
+}
+
 function renderPolicies() {
   const items = state.policies.filter((item) => policyGroup(item) === state.category);
   const list = byId("policyList"); list.replaceChildren();
   const insight = state.policyInsight?.summary ? state.policyInsight : derivePolicyInsight(state.policies);
   byId("latestPolicy").textContent = insight.summary;
   byId("latestPolicyDate").textContent = insight.basisCount ? `AI 공식자료 종합 · ${insight.basisLatestDate} · ${insight.basisCount}건` : "공식자료 수집 대기";
-  if (!items.length) { list.append(create("div", "loading-state", `${state.category}에 해당하는 자료가 없습니다.`)); renderChart(filterPrices(state.period)); return; }
-  items.forEach((policy) => {
+  if (!items.length) { state.policyPage = 1; list.append(create("div", "loading-state", `${state.category}에 해당하는 자료가 없습니다.`)); renderChart(filterPrices(state.period)); return; }
+  const totalPages = Math.ceil(items.length / POLICIES_PER_PAGE);
+  state.policyPage = Math.max(1, Math.min(state.policyPage, totalPages));
+  const start = (state.policyPage - 1) * POLICIES_PER_PAGE;
+  items.slice(start, start + POLICIES_PER_PAGE).forEach((policy) => {
     const row = create("article", "policy-row");
     row.append(create("time", "", shortDate(policy.publishedAt)), create("span", "category-badge", policy.category || "기타"));
     const body = create("div", "policy-body");
-    const sourceLabel = policy.duplicateCount > 1 ? `${policy.source || "대표기사"} · 유사기사 ${policy.duplicateCount}건 묶음` : policy.source || "기후에너지환경부";
-    body.append(create("h3", "", policy.title), create("p", "", policy.summary || "원문에서 세부 내용을 확인하세요."), create("span", "", sourceLabel));
+    const title = create("h3", "", policy.title); title.title = policy.title;
+    const summaryText = policy.summary || "원문에서 세부 내용을 확인하세요.";
+    const summary = create("p", "", summaryText); summary.title = summaryText;
+    body.append(title, summary);
     const link = create("a", "source-link", "∞"); link.href = policy.url || "#"; link.target = "_blank"; link.rel = "noreferrer"; link.ariaLabel = `${policy.title} 원문 링크`; link.title = "원문 링크";
     row.append(body, link); list.append(row);
   });
+  renderPolicyPagination(list, totalPages);
   renderChart(filterPrices(state.period));
 }
 
 function renderPolicyFilters() {
   const categories = ["기후부 보도자료", "기후부 공지사항", "뉴스"];
   const box = byId("policyFilters"); box.replaceChildren();
-  categories.forEach((category) => { const button = create("button", category === state.category ? "active" : "", category); button.addEventListener("click", () => { state.category = category; renderPolicyFilters(); renderPolicies(); }); box.append(button); });
+  categories.forEach((category) => { const button = create("button", category === state.category ? "active" : "", category); button.addEventListener("click", () => { state.category = category; state.policyPage = 1; renderPolicyFilters(); renderPolicies(); }); box.append(button); });
   byId("policyDescription").textContent = "기후부 공식 보도자료·공지사항과 시장 뉴스의 제목·본문을 기준으로 자동 수집합니다.";
 }
 
