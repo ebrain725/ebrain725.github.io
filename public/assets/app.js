@@ -1,9 +1,9 @@
 "use strict";
 // POLICY_PAGINATION_VERSION = "2026-08-20-v1.1-volume"
 // BRIEFING_ARCHIVE_VERSION = "2026-08-20-v2"
-// AUCTION_MONITOR_VERSION = "2026-08-20-v3.3-table-only"
+// AUCTION_MONITOR_VERSION = "2026-08-20-v3.4-full-history-default"
 
-const state = { prices: [], auctions: [], auctionPeriod: "1Y", auctionPage: 1, auctionLastSync: "", policies: [], policyInsight: null, briefings: [], briefingDate: "", period: "3M", category: "기후부 보도자료", policyPage: 1, symbol: "" };
+const state = { prices: [], auctions: [], auctionPeriod: "ALL", auctionPage: 1, auctionLastSync: "", policies: [], policyInsight: null, briefings: [], briefingDate: "", period: "3M", category: "기후부 보도자료", policyPage: 1, symbol: "" };
 const POLICIES_PER_PAGE = 5;
 const AUCTIONS_PER_PAGE = 3;
 const fallbackPrice = [{ date: "2026-08-19", symbol: "KAU25", close: 29500, change: 1150, changeRate: 4.06, open: 29000, high: 29500, low: 29000, volume: 396644, tradeValue: 11624058550 }];
