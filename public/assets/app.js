@@ -1,6 +1,6 @@
 "use strict";
 // POLICY_PAGINATION_VERSION = "2026-08-20-v1.1-volume"
-// BRIEFING_ARCHIVE_VERSION = "2026-08-20-v1"
+// BRIEFING_ARCHIVE_VERSION = "2026-08-20-v2"
 
 const state = { prices: [], policies: [], policyInsight: null, briefings: [], briefingDate: "", period: "3M", category: "기후부 보도자료", policyPage: 1, symbol: "" };
 const POLICIES_PER_PAGE = 5;
@@ -421,7 +421,7 @@ function renderBriefings() {
   if (parts.details) {
     const details = create("details", "briefing-details");
     const summary = create("summary");
-    summary.append(create("span", "", "상세 브리핑"), create("i", "", "＋"));
+    summary.append(create("span", "", "상세 브리핑"), create("span", "detail-click-button", "클릭"));
     details.append(summary, create("div", "briefing-content", parts.details));
     feature.append(details);
   }
