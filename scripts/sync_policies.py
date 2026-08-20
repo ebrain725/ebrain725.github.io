@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# PRESS_TAB_FIX_VERSION = "2026-08-20-v3-current-board"
+# PRESS_TAB_FIX_VERSION = "2026-08-20-v3.1-fast-current-board"
 """기후부 공식자료와 시장 뉴스의 제목·원문 본문에서 설정 키워드를 검색한다."""
 
 from __future__ import annotations
@@ -24,6 +24,9 @@ ROOT = Path(__file__).resolve().parents[1]
 SETTINGS_PATH = ROOT / "config" / "settings.json"
 OUTPUT_PATH = ROOT / "public" / "data" / "policies.json"
 KST = ZoneInfo("Asia/Seoul")
+RSS_TIMEOUT_SECONDS = 12
+ARTICLE_TIMEOUT_SECONDS = 6
+OPENAI_TIMEOUT_SECONDS = 30
 
 
 def load_keyword_file(relative_path: str) -> list[str]:
@@ -199,7 +202,7 @@ def generate_policy_insight(items: list[dict]) -> dict:
         method="POST",
     )
     try:
-        with urllib.request.urlopen(request, timeout=45) as response:
+        with urllib.request.urlopen(request, timeout=OPENAI_TIMEOUT_SECONDS) as response:
             text = extract_response_text(json.loads(response.read().decode("utf-8")))
         text = re.sub(r"\s+", " ", text).strip().strip('"')
         if len(text) >= 40:
@@ -264,7 +267,7 @@ def fetch_article_text(url: str) -> str:
         },
     )
     try:
-        with urllib.request.urlopen(request, timeout=12) as response:
+        with urllib.request.urlopen(request, timeout=ARTICLE_TIMEOUT_SECONDS) as response:
             content_type = response.headers.get("Content-Type", "")
             if not re.search(r"text/html|application/xhtml\+xml", content_type, re.IGNORECASE):
                 return ""
@@ -285,6 +288,11 @@ def keyword_excerpt(text: str, matched_keywords: list[str], limit: int = 260) ->
 
 
 def match_title_or_body(item: dict, keywords: list[str]) -> dict | None:
+    # 검색 RSS가 이미 제목+본문 검색 결과로 돌려준 항목은 상세 페이지를
+    # 다시 열지 않는다. 이중 본문 조회가 Actions 10분 초과의 주원인이었다.
+    if item.get("_trustedSearchMatch"):
+        return item
+
     feed_summary = clean_html(item.get("summary", ""), 20_000)
     feed_text = f"{item.get('title', '')} {feed_summary}".lower()
     matched = [keyword for keyword in keywords if keyword.lower() in feed_text]
@@ -384,7 +392,7 @@ def fetch_rss(url: str) -> ET.Element:
             },
         )
         try:
-            with urllib.request.urlopen(request, timeout=40) as response:
+            with urllib.request.urlopen(request, timeout=RSS_TIMEOUT_SECONDS) as response:
                 return parse_rss(response.read())
         except Exception as exc:
             errors.append(f"{urllib.parse.urlsplit(candidate).netloc}: {exc}")
@@ -429,6 +437,7 @@ def source_candidates(root: ET.Element, source: dict, matched_keyword: str) -> l
                 "section": source_section(source),
                 "url": link,
                 "matchedKeywords": [matched_keyword],
+                "_trustedSearchMatch": bool(matched_keyword),
             }
         )
     return candidates
@@ -437,7 +446,7 @@ def source_candidates(root: ET.Element, source: dict, matched_keyword: str) -> l
 def fetch_source(source: dict, keywords: list[str]) -> list[dict]:
     # 검색어 없는 RSS는 최신 게시물 일부만 내려준다. 관리자 키워드마다
     # 기후부의 제목+본문 검색을 실행해야 과거 공식자료까지 놓치지 않는다.
-    per_keyword = max(10, min(int(source.get("maxItemsPerKeyword", 50)), 100))
+    per_keyword = max(10, min(int(source.get("maxItemsPerKeyword", 30)), 50))
     candidates_by_key: dict[str, dict] = {}
     keyword_errors: list[str] = []
 
@@ -526,6 +535,8 @@ def fetch_google_news(search: dict, keywords: list[str], lookback_days: int) -> 
                 "source": source_name,
                 "sourceType": "news",
                 "url": link,
+                "matchedKeywords": [keyword for keyword in keywords if keyword.lower() in haystack],
+                "_trustedSearchMatch": True,
             }
         )
     return filter_title_and_body(candidates[:80], keywords)
@@ -550,12 +561,18 @@ def main() -> int:
     errors: list[str] = []
     for source in sources:
         try:
-            collected.extend(fetch_source(source, keywords))
+            print(f"수집 시작: {source.get('name', '기후부 공식자료')}", flush=True)
+            source_items = fetch_source(source, keywords)
+            collected.extend(source_items)
+            print(f"수집 완료: {source.get('name', '기후부 공식자료')} {len(source_items)}건", flush=True)
         except Exception as exc:  # 네트워크 또는 제공처 오류를 다음 자료와 분리
             errors.append(f"{source.get('name', 'RSS')}: {exc}")
     for search in news_searches:
         try:
-            collected.extend(fetch_google_news(search, news_keywords, lookback_days))
+            print(f"수집 시작: {search.get('name', '뉴스검색')}", flush=True)
+            news_items = fetch_google_news(search, news_keywords, lookback_days)
+            collected.extend(news_items)
+            print(f"수집 완료: {search.get('name', '뉴스검색')} {len(news_items)}건", flush=True)
         except Exception as exc:
             errors.append(f"{search.get('name', '뉴스검색')}: {exc}")
 
@@ -576,7 +593,7 @@ def main() -> int:
         haystack = f"{item.get('title', '')} {item.get('summary', '')}".lower()
         allowed_keywords = news_keywords if item.get("sourceType") == "news" else keywords
         matched_keywords = {str(value).strip().lower() for value in item.get("matchedKeywords", [])}
-        if not any(
+        if not item.get("_trustedSearchMatch") and not any(
             keyword.lower() in haystack or keyword.lower() in matched_keywords
             for keyword in allowed_keywords
         ):
@@ -609,6 +626,7 @@ def main() -> int:
     selected_official.extend(extras[: max(0, official_capacity - len(selected_official))])
     items = sorted(selected_official + news, key=lambda item: (item.get("publishedAt", ""), item.get("title", "")), reverse=True)[:limit]
     for item in items:
+        item.pop("_trustedSearchMatch", None)
         item.pop("impact", None)
         item.pop("impactReason", None)
         item.pop("impactSource", None)
