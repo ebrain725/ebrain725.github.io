@@ -1,14 +1,23 @@
-name: Sync KRX Market Data
+name: Sync KRX Market Data v2
 
 on:
   schedule:
-    # 매일 한국시간 08:37 실행
+    # KRX 전일 데이터 갱신(08:00 KST) 이후 매일 08:37 KST 실행
     - cron: "37 23 * * *"
-
+    # KRX 배출권시장 종료 후 당일 시세를 12:07 KST에 반영 (평일)
+    - cron: "7 3 * * 1-5"
   workflow_dispatch:
     inputs:
+      mode:
+        description: "수집 방식"
+        required: true
+        default: "site-today"
+        type: choice
+        options:
+          - site-today
+          - openapi
       target_date:
-        description: "선택: 조회 기준일 YYYY-MM-DD (비우면 전일)"
+        description: "Open API 전용: 조회 기준일 YYYY-MM-DD (비우면 전일)"
         required: false
         type: string
 
@@ -26,28 +35,38 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-
     runs-on: ubuntu-latest
     timeout-minutes: 10
-
     env:
       KRX_AUTH_KEY: ${{ secrets.KRX_AUTH_KEY }}
       KAU_SYMBOL: ${{ vars.KAU_SYMBOL }}
       KRX_TARGET_DATE: ${{ inputs.target_date }}
       TZ: Asia/Seoul
-
     steps:
       - name: 저장소 불러오기
         uses: actions/checkout@v4
-
       - name: Python 준비
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-
+      - name: 수집 방식 결정
+        shell: bash
+        run: |
+          MODE="${{ inputs.mode }}"
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            if [ "${{ github.event.schedule }}" = "7 3 * * 1-5" ]; then
+              MODE="site-today"
+            else
+              MODE="openapi"
+            fi
+          fi
+          if [ -z "$MODE" ]; then
+            MODE="site-today"
+          fi
+          echo "KRX_SYNC_MODE=$MODE" >> "$GITHUB_ENV"
+          echo "수집 방식: $MODE"
       - name: KRX 배출권 시세 수집
         run: python scripts/sync_krx.py
-
       - name: 변경된 시세 저장
         run: |
           git config user.name "github-actions[bot]"
@@ -59,15 +78,12 @@ jobs:
             git commit -m "data: update KRX emissions market"
             git push
           fi
-
       - name: Pages 설정
         uses: actions/configure-pages@v5
-
       - name: 공개 파일 묶기
         uses: actions/upload-pages-artifact@v4
         with:
           path: ./public
-
       - name: GitHub Pages 배포
         id: deployment
         uses: actions/deploy-pages@v4
