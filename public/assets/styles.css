@@ -40,6 +40,8 @@ footer{max-width:1320px;margin:0 auto;padding:30px 24px 38px;border-top:1px soli
 @media(max-width:1020px){.auction-kpi-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:700px){.auction-section{margin-top:44px}.auction-title{display:block}.auction-title .auto-badge{margin-top:16px}.auction-panel{padding:18px 11px}.auction-panel-head{display:block}.auction-period-tabs{margin-top:14px}.auction-kpi-grid{grid-template-columns:repeat(2,1fr)}.auction-kpi-grid>div{min-height:104px;padding:16px 13px}.auction-kpi-grid strong{font-size:18px}.auction-chart-wrap{padding-inline:0}.auction-insight{padding:14px}.auction-footnote{text-align:left}}
 
-/* AUCTION_HISTORY_V3_1 */
+/* AUCTION_HISTORY_V3_3_TABLE_ONLY */
 .auction-table{min-width:980px}.auction-pagination{min-height:58px;padding:10px 14px;display:flex;align-items:center;justify-content:center;gap:6px;background:#f8faf8;border-top:1px solid #e6ebe7}.auction-pagination[hidden]{display:none}.auction-pagination button{width:34px;height:34px;padding:0;border:1px solid #dfe5e1;border-radius:9px;background:#fff;color:#59655f;font-size:11px;font-weight:750}.auction-pagination button:hover:not(:disabled){border-color:#c29237;color:#8d6119}.auction-pagination button.active{border-color:#c29237;background:#c29237;color:#fff}.auction-pagination button:disabled{opacity:.32;cursor:default}.auction-pagination .page-arrow{font-size:20px;line-height:1}
+.auction-kpi-grid>div:last-child strong{font-size:17px;white-space:nowrap}
 @media(max-width:700px){.auction-pagination{padding-inline:8px;gap:4px}.auction-pagination button{width:32px;height:32px}}
+@media(max-width:700px){.auction-kpi-grid>div:last-child strong{font-size:14px}}
