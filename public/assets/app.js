@@ -1,7 +1,7 @@
 "use strict";
 // POLICY_PAGINATION_VERSION = "2026-08-20-v1.1-volume"
 // BRIEFING_ARCHIVE_VERSION = "2026-08-20-v2"
-// AUCTION_MONITOR_VERSION = "2026-08-20-v3.1-history-premium-pagination"
+// AUCTION_MONITOR_VERSION = "2026-08-20-v3.3-table-only"
 
 const state = { prices: [], auctions: [], auctionPeriod: "1Y", auctionPage: 1, auctionLastSync: "", policies: [], policyInsight: null, briefings: [], briefingDate: "", period: "3M", category: "기후부 보도자료", policyPage: 1, symbol: "" };
 const POLICIES_PER_PAGE = 5;
@@ -198,42 +198,21 @@ function spotAtAuction(auction) {
   return state.prices.filter((row) => row.symbol === auction.symbol && row.date <= auction.date).at(-1) || null;
 }
 
+function auctionPremiumText(clearingPrice, spotClose) {
+  if (!spotClose) return "-";
+  const difference = clearingPrice - spotClose;
+  const premium = difference / spotClose * 100;
+  const percentSign = premium >= 0 ? "+" : "-";
+  const amountSign = difference >= 0 ? "+" : "-";
+  return `${percentSign}${Math.abs(premium).toFixed(1)}% (${amountSign}${money(Math.abs(difference))}원/톤)`;
+}
+
 function auctionInsight(latest, spot) {
   const demand = latest.bidRatio >= 150 ? "응찰수요가 공급물량을 크게 웃돌았습니다" : latest.bidRatio >= 100 ? "응찰수요가 공급물량을 상회했습니다" : "응찰수요가 공급물량에 미치지 못했습니다";
   if (!spot?.close) return `최근 경매 응찰률은 ${latest.bidRatio.toFixed(0)}%, 낙찰가는 ${money(latest.clearingPrice)}원으로 ${demand}. 경매일 현물 종가가 추가되면 가격 차이를 함께 비교합니다.`;
   const premium = (latest.clearingPrice / spot.close - 1) * 100;
   const relation = premium >= 0 ? `낙찰가가 경매일 현물 종가보다 ${Math.abs(premium).toFixed(1)}% 높았습니다` : `낙찰가가 경매일 현물 종가보다 ${Math.abs(premium).toFixed(1)}% 낮았습니다`;
   return `최근 경매 응찰률은 ${latest.bidRatio.toFixed(0)}%로 ${demand}. 낙찰가는 ${money(latest.clearingPrice)}원이며, 경매일 ${relation}.`;
-}
-
-function renderAuctionChart(rows) {
-  const svg = byId("auctionChart");
-  if (!rows.length) {
-    svg.innerHTML = '<text x="450" y="120" text-anchor="middle" class="empty-chart-text">경매 결과가 수집되면 낙찰가 추이가 표시됩니다</text>';
-    return;
-  }
-  const width = 900, left = 64, right = 24, top = 20, bottom = 188;
-  const values = rows.map((row) => row.clearingPrice);
-  const rawMax = Math.max(...values), rawMin = Math.min(...values), pad = Math.max((rawMax - rawMin) * .16, 500);
-  const yMax = rawMax + pad, yMin = Math.max(0, rawMin - pad);
-  const x = (index) => rows.length <= 1 ? (left + width - right) / 2 : left + index / (rows.length - 1) * (width - left - right);
-  const y = (value) => top + (yMax - value) * (bottom - top) / Math.max(yMax - yMin, 1);
-  let html = '<defs><linearGradient id="auctionArea" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#d09a36" stop-opacity=".22"/><stop offset="100%" stop-color="#d09a36" stop-opacity="0"/></linearGradient></defs>';
-  for (let index = 0; index < 4; index += 1) {
-    const gy = top + index * (bottom - top) / 3;
-    const value = yMax - index * (yMax - yMin) / 3;
-    html += `<line x1="${left}" x2="${width-right}" y1="${gy}" y2="${gy}" class="grid-line"/><text x="${left-12}" y="${gy+4}" text-anchor="end" class="axis-text">${money(Math.round(value/100)*100)}</text>`;
-  }
-  if (rows.length > 1) {
-    const line = rows.map((row, index) => `${index ? "L" : "M"}${x(index)},${y(row.clearingPrice)}`).join(" ");
-    html += `<path d="${line} L${x(rows.length-1)},${bottom} L${x(0)},${bottom} Z" class="auction-area"/><path d="${line}" class="auction-line"/>`;
-  }
-  const labelEvery = Math.max(1, Math.ceil(rows.length / 8));
-  rows.forEach((row, index) => {
-    html += `<circle cx="${x(index)}" cy="${y(row.clearingPrice)}" r="5" class="auction-dot"><title>${esc(row.date)} · 낙찰가 ${money(row.clearingPrice)}원 · 응찰률 ${row.bidRatio.toFixed(0)}%</title></circle>`;
-    if (index % labelEvery === 0 || index === rows.length - 1) html += `<text x="${x(index)}" y="216" text-anchor="middle" class="axis-text">${esc(row.date.slice(2).replaceAll("-", "."))}</text>`;
-  });
-  svg.innerHTML = html;
 }
 
 function renderAuctionPagination(totalPages) {
@@ -278,7 +257,6 @@ function renderAuctions() {
     byId("auctionInsight").textContent = "경매 수집을 처음 실행하면 KRX 전기간 결과가 자동으로 채워집니다.";
     const row = document.createElement("tr"); const cell = document.createElement("td"); cell.colSpan = 8; cell.textContent = "경매 결과가 아직 수집되지 않았습니다."; row.append(cell); tbody.append(row);
     renderAuctionPagination(1);
-    renderAuctionChart([]);
     return;
   }
   const spot = spotAtAuction(latest);
@@ -289,7 +267,7 @@ function renderAuctions() {
   byId("auctionParticipants").textContent = `${latest.bidderCount}개사 응찰 · ${latest.winnerCount}개사 낙찰`;
   byId("auctionSupply").textContent = compactTons(latest.offeredQuantity);
   byId("auctionDemand").textContent = `응찰 ${compactTons(latest.bidQuantity)}`;
-  byId("auctionSpread").textContent = premium === null ? "-" : `${premium >= 0 ? "+" : ""}${premium.toFixed(1)}%`;
+  byId("auctionSpread").textContent = premium === null ? "-" : auctionPremiumText(latest.clearingPrice, spot.close);
   byId("auctionSpread").className = premium === null ? "" : premium >= 0 ? "positive" : "negative";
   byId("auctionInsight").textContent = auctionInsight(latest, spot);
   const start = (state.auctionPage - 1) * AUCTIONS_PER_PAGE;
@@ -297,11 +275,10 @@ function renderAuctions() {
     const itemSpot = spotAtAuction(item);
     const itemPremium = itemSpot?.close ? (item.clearingPrice / itemSpot.close - 1) * 100 : null;
     const tr = document.createElement("tr");
-    [item.date, item.symbol, `${money(item.offeredQuantity)}톤`, `${money(item.bidQuantity)}톤`, `${item.bidRatio.toFixed(0)}%`, `${money(item.clearingPrice)}원`, itemSpot?.close ? `${money(itemSpot.close)}원` : "-", itemPremium === null ? "-" : `${itemPremium >= 0 ? "+" : ""}${itemPremium.toFixed(1)}%`].forEach((value) => { const td = document.createElement("td"); td.textContent = value; tr.append(td); });
+    [item.date, item.symbol, `${money(item.offeredQuantity)}톤`, `${money(item.bidQuantity)}톤`, `${item.bidRatio.toFixed(0)}%`, `${money(item.clearingPrice)}원`, itemSpot?.close ? `${money(itemSpot.close)}원` : "-", itemPremium === null ? "-" : auctionPremiumText(item.clearingPrice, itemSpot.close)].forEach((value) => { const td = document.createElement("td"); td.textContent = value; tr.append(td); });
     tbody.append(tr);
   });
   renderAuctionPagination(totalPages);
-  renderAuctionChart(rows);
 }
 
 function renderMarket() {
