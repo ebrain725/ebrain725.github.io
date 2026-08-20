@@ -1,8 +1,9 @@
 "use strict";
 // POLICY_PAGINATION_VERSION = "2026-08-20-v1.1-volume"
 // BRIEFING_ARCHIVE_VERSION = "2026-08-20-v2"
+// AUCTION_MONITOR_VERSION = "2026-08-20-v3"
 
-const state = { prices: [], policies: [], policyInsight: null, briefings: [], briefingDate: "", period: "3M", category: "기후부 보도자료", policyPage: 1, symbol: "" };
+const state = { prices: [], auctions: [], auctionPeriod: "1Y", auctionLastSync: "", policies: [], policyInsight: null, briefings: [], briefingDate: "", period: "3M", category: "기후부 보도자료", policyPage: 1, symbol: "" };
 const POLICIES_PER_PAGE = 5;
 const fallbackPrice = [{ date: "2026-08-19", symbol: "KAU25", close: 29500, change: 1150, changeRate: 4.06, open: 29000, high: 29500, low: 29000, volume: 396644, tradeValue: 11624058550 }];
 const number = new Intl.NumberFormat("ko-KR");
@@ -65,10 +66,30 @@ function filterPrices(period) {
   return selected.filter((row) => end - new Date(`${row.date}T00:00:00`).getTime() <= days * 86400000);
 }
 
+function normalizeAuctions(items) {
+  const numericFields = ["offeredQuantity", "bidQuantity", "bidRatio", "bidderCount", "winnerCount", "highestBid", "lowestBid", "awardedQuantity", "clearingPrice"];
+  return (Array.isArray(items) ? items : []).map((item) => {
+    const row = { ...item, date: String(item.date || ""), symbol: String(item.symbol || "KAU25").toUpperCase() };
+    numericFields.forEach((field) => { row[field] = Number(String(item[field] ?? 0).replace(/,/g, "")) || 0; });
+    return row;
+  }).filter((row) => /^\d{4}-\d{2}-\d{2}$/.test(row.date) && row.symbol.startsWith("KAU") && row.clearingPrice > 0)
+    .sort((a, b) => b.date.localeCompare(a.date) || a.symbol.localeCompare(b.symbol));
+}
+
+function filterAuctions(period) {
+  const all = [...state.auctions].sort((a, b) => a.date.localeCompare(b.date));
+  if (period === "ALL" || all.length < 2) return all;
+  const days = { "3M": 93, "6M": 186, "1Y": 366 }[period];
+  const end = chartDateTime(all.at(-1).date);
+  return all.filter((row) => end - chartDateTime(row.date) <= days * 86400000);
+}
+
 function money(value) { return number.format(Math.round(value || 0)); }
 function amount(value) { return value >= 1e8 ? `${(value / 1e8).toFixed(1)}억원` : `${money(value)}원`; }
 function shortDate(value) { return value ? value.slice(2).replaceAll("-", ".") : "-"; }
 function periodName(value) { return ({ "1M": "1개월", "3M": "3개월", "6M": "6개월", "1Y": "1년", "ALL": "전체" })[value]; }
+function auctionPeriodName(value) { return ({ "3M": "최근 3개월", "6M": "최근 6개월", "1Y": "최근 1년", "ALL": "전기간" })[value]; }
+function compactTons(value) { return value >= 10000 ? `${(value / 10000).toFixed(value % 10000 ? 1 : 0)}만 톤` : `${money(value)}톤`; }
 function esc(value) { return String(value ?? "").replace(/[&<>"']/g, (char) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[char]); }
 function chartDateTime(value) { return new Date(`${value}T00:00:00`).getTime(); }
 function semiMonthlyTicks(start, end) {
@@ -168,6 +189,81 @@ function marketInsight(selected, latest) {
   if (Math.abs(latest.changeRate) < .5 && volumeRatio <= .7) return "가격과 거래량이 모두 제한돼 관망 국면 가능성이 높습니다. 정책 발표나 경매 결과에 따른 거래량 회복 여부를 확인하세요.";
   if (latest.changeRate >= 0) return `완만한 상승과 ${volumeText}이 나타났습니다. 거래량 확대가 동반되는지 확인해야 추세 지속 여부를 판단할 수 있습니다.`;
   return `완만한 약세와 ${volumeText}이 나타났습니다. 추가 하락보다 저가 매수 유입과 거래량 변화를 우선 확인하세요.`;
+}
+
+function spotAtAuction(auction) {
+  return state.prices.filter((row) => row.symbol === auction.symbol && row.date <= auction.date).at(-1) || null;
+}
+
+function auctionInsight(latest, spot) {
+  const demand = latest.bidRatio >= 150 ? "응찰수요가 공급물량을 크게 웃돌았습니다" : latest.bidRatio >= 100 ? "응찰수요가 공급물량을 상회했습니다" : "응찰수요가 공급물량에 미치지 못했습니다";
+  if (!spot?.close) return `최근 경매 응찰률은 ${latest.bidRatio.toFixed(0)}%, 낙찰가는 ${money(latest.clearingPrice)}원으로 ${demand}. 경매일 현물 종가가 추가되면 가격 차이를 함께 비교합니다.`;
+  const spread = (spot.close / latest.clearingPrice - 1) * 100;
+  const relation = spread >= 0 ? `현물 종가가 낙찰가보다 ${Math.abs(spread).toFixed(1)}% 높았습니다` : `현물 종가가 낙찰가보다 ${Math.abs(spread).toFixed(1)}% 낮았습니다`;
+  return `최근 경매 응찰률은 ${latest.bidRatio.toFixed(0)}%로 ${demand}. 낙찰가는 ${money(latest.clearingPrice)}원이며, 경매일 ${relation}.`;
+}
+
+function renderAuctionChart(rows) {
+  const svg = byId("auctionChart");
+  if (!rows.length) {
+    svg.innerHTML = '<text x="450" y="120" text-anchor="middle" class="empty-chart-text">경매 결과가 수집되면 낙찰가 추이가 표시됩니다</text>';
+    return;
+  }
+  const width = 900, left = 64, right = 24, top = 20, bottom = 188;
+  const values = rows.map((row) => row.clearingPrice);
+  const rawMax = Math.max(...values), rawMin = Math.min(...values), pad = Math.max((rawMax - rawMin) * .16, 500);
+  const yMax = rawMax + pad, yMin = Math.max(0, rawMin - pad);
+  const x = (index) => rows.length <= 1 ? (left + width - right) / 2 : left + index / (rows.length - 1) * (width - left - right);
+  const y = (value) => top + (yMax - value) * (bottom - top) / Math.max(yMax - yMin, 1);
+  let html = '<defs><linearGradient id="auctionArea" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#d09a36" stop-opacity=".22"/><stop offset="100%" stop-color="#d09a36" stop-opacity="0"/></linearGradient></defs>';
+  for (let index = 0; index < 4; index += 1) {
+    const gy = top + index * (bottom - top) / 3;
+    const value = yMax - index * (yMax - yMin) / 3;
+    html += `<line x1="${left}" x2="${width-right}" y1="${gy}" y2="${gy}" class="grid-line"/><text x="${left-12}" y="${gy+4}" text-anchor="end" class="axis-text">${money(Math.round(value/100)*100)}</text>`;
+  }
+  if (rows.length > 1) {
+    const line = rows.map((row, index) => `${index ? "L" : "M"}${x(index)},${y(row.clearingPrice)}`).join(" ");
+    html += `<path d="${line} L${x(rows.length-1)},${bottom} L${x(0)},${bottom} Z" class="auction-area"/><path d="${line}" class="auction-line"/>`;
+  }
+  const labelEvery = Math.max(1, Math.ceil(rows.length / 8));
+  rows.forEach((row, index) => {
+    html += `<circle cx="${x(index)}" cy="${y(row.clearingPrice)}" r="5" class="auction-dot"><title>${esc(row.date)} · 낙찰가 ${money(row.clearingPrice)}원 · 응찰률 ${row.bidRatio.toFixed(0)}%</title></circle>`;
+    if (index % labelEvery === 0 || index === rows.length - 1) html += `<text x="${x(index)}" y="216" text-anchor="middle" class="axis-text">${esc(row.date.slice(2).replaceAll("-", "."))}</text>`;
+  });
+  svg.innerHTML = html;
+}
+
+function renderAuctions() {
+  const rows = filterAuctions(state.auctionPeriod);
+  const latest = rows.at(-1) || state.auctions[0];
+  const tbody = byId("auctionRows");
+  tbody.replaceChildren();
+  byId("auctionPeriodLabel").textContent = auctionPeriodName(state.auctionPeriod);
+  byId("auctionRecordCount").textContent = `${rows.length}건`;
+  byId("auctionSync").textContent = state.auctionLastSync ? new Date(state.auctionLastSync).toLocaleString("ko-KR", { timeZone: "Asia/Seoul", month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit" }) : "수동 실행 필요";
+  if (!latest) {
+    byId("auctionInsight").textContent = "경매 수집을 처음 실행하면 KRX 전기간 결과가 자동으로 채워집니다.";
+    const row = document.createElement("tr"); const cell = document.createElement("td"); cell.colSpan = 6; cell.textContent = "경매 결과가 아직 수집되지 않았습니다."; row.append(cell); tbody.append(row);
+    renderAuctionChart([]);
+    return;
+  }
+  const spot = spotAtAuction(latest);
+  const spread = spot?.close ? (spot.close / latest.clearingPrice - 1) * 100 : null;
+  byId("auctionPrice").textContent = `${money(latest.clearingPrice)}원`;
+  byId("auctionDate").textContent = `${latest.date} · ${latest.symbol}`;
+  byId("auctionRatio").textContent = `${latest.bidRatio.toFixed(0)}%`;
+  byId("auctionParticipants").textContent = `${latest.bidderCount}개사 응찰 · ${latest.winnerCount}개사 낙찰`;
+  byId("auctionSupply").textContent = compactTons(latest.offeredQuantity);
+  byId("auctionDemand").textContent = `응찰 ${compactTons(latest.bidQuantity)}`;
+  byId("auctionSpread").textContent = spread === null ? "-" : `${spread >= 0 ? "+" : ""}${spread.toFixed(1)}%`;
+  byId("auctionSpread").className = spread === null ? "" : spread >= 0 ? "positive" : "negative";
+  byId("auctionInsight").textContent = auctionInsight(latest, spot);
+  [...rows].reverse().slice(0, 24).forEach((item) => {
+    const tr = document.createElement("tr");
+    [item.date, item.symbol, `${money(item.offeredQuantity)}톤`, `${money(item.bidQuantity)}톤`, `${item.bidRatio.toFixed(0)}%`, `${money(item.clearingPrice)}원`].forEach((value) => { const td = document.createElement("td"); td.textContent = value; tr.append(td); });
+    tbody.append(tr);
+  });
+  renderAuctionChart(rows);
 }
 
 function renderMarket() {
@@ -371,7 +467,7 @@ function renderSymbolPicker() {
   select.replaceChildren();
   symbols.forEach((symbol) => { const option = create("option", "", symbol); option.value = symbol; option.selected = symbol === state.symbol; select.append(option); });
   picker.hidden = symbols.length <= 1;
-  select.addEventListener("change", () => { state.symbol = select.value; renderMarket(); });
+  select.addEventListener("change", () => { state.symbol = select.value; renderMarket(); renderAuctions(); });
 }
 
 function readableBriefingText(value) {
@@ -430,12 +526,15 @@ function renderBriefings() {
 }
 
 async function init() {
-  const [priceResult, policyResult, briefingResult] = await Promise.allSettled([loadText("data/prices.csv"), loadJson("data/policies.json"), loadJson("data/briefing.json")]);
+  const [priceResult, auctionResult, policyResult, briefingResult] = await Promise.allSettled([loadText("data/prices.csv"), loadJson("data/auctions.json"), loadJson("data/policies.json"), loadJson("data/briefing.json")]);
   state.prices = priceResult.status === "fulfilled" ? parsePrices(priceResult.value) : fallbackPrice;
   if (!state.prices.length) state.prices = fallbackPrice;
   const latestDate = state.prices.at(-1).date;
   const latestRows = state.prices.filter((row) => row.date === latestDate);
   state.symbol = latestRows.reduce((best, row) => !best || row.volume > best.volume ? row : best, null)?.symbol || state.prices.at(-1).symbol;
+  const auctionData = auctionResult.status === "fulfilled" ? auctionResult.value : { items: [] };
+  state.auctions = normalizeAuctions(auctionData.items || []);
+  state.auctionLastSync = auctionData.lastSync || "";
   const policyData = policyResult.status === "fulfilled" ? policyResult.value : { items: [], keywords: [] };
   state.policies = dedupeNewsPolicies((policyData.items || []).map((item) => ({ ...item, publishedAt: item.publishedAt || item.date || "" })));
   state.policyInsight = policyData.aiInsight || null;
@@ -444,7 +543,8 @@ async function init() {
   state.briefingDate = state.briefings[0]?.date || "";
   byId("policySync").textContent = policyData.lastSync ? new Date(policyData.lastSync).toLocaleString("ko-KR", { timeZone: "Asia/Seoul", month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit" }) : "수동 실행 필요";
   document.querySelectorAll("[data-period]").forEach((button) => button.addEventListener("click", () => { state.period = button.dataset.period; document.querySelectorAll("[data-period]").forEach((item) => item.classList.toggle("active", item === button)); renderMarket(); }));
-  renderSymbolPicker(); renderPolicyFilters(); renderPolicies(); renderMarket(); renderBriefings();
+  document.querySelectorAll("[data-auction-period]").forEach((button) => button.addEventListener("click", () => { state.auctionPeriod = button.dataset.auctionPeriod; document.querySelectorAll("[data-auction-period]").forEach((item) => item.classList.toggle("active", item === button)); renderAuctions(); }));
+  renderSymbolPicker(); renderPolicyFilters(); renderPolicies(); renderMarket(); renderAuctions(); renderBriefings();
 }
 
-init().catch(() => { state.prices = fallbackPrice; renderMarket(); });
+init().catch(() => { state.prices = fallbackPrice; renderMarket(); renderAuctions(); });
