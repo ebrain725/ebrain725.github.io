@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# PRESS_TAB_FIX_VERSION = "2026-08-20-v2"
+# PRESS_TAB_FIX_VERSION = "2026-08-20-v3-current-board"
 """기후부 공식자료와 시장 뉴스의 제목·원문 본문에서 설정 키워드를 검색한다."""
 
 from __future__ import annotations
@@ -366,13 +366,29 @@ def parse_rss(payload: bytes) -> ET.Element:
 
 
 def fetch_rss(url: str) -> ET.Element:
-    request = urllib.request.Request(
-        url,
-        headers={"User-Agent": "Mozilla/5.0 ETS-SIGNAL/1.0", "Accept": "application/rss+xml, application/xml, text/xml"},
-    )
-    with urllib.request.urlopen(request, timeout=25) as response:
-        payload = response.read()
-    return parse_rss(payload)
+    """기후부의 www/bare 호스트 중 응답하는 주소를 사용한다."""
+    candidates = [url]
+    if "https://www.mcee.go.kr/" in url:
+        candidates.append(url.replace("https://www.mcee.go.kr/", "https://mcee.go.kr/", 1))
+    elif "https://mcee.go.kr/" in url:
+        candidates.append(url.replace("https://mcee.go.kr/", "https://www.mcee.go.kr/", 1))
+
+    errors: list[str] = []
+    for candidate in candidates:
+        request = urllib.request.Request(
+            candidate,
+            headers={
+                "User-Agent": "Mozilla/5.0 (compatible; ETS-SIGNAL/2.0; +https://ebrain725.github.io)",
+                "Accept": "application/rss+xml, application/xml, text/xml, */*",
+                "Connection": "close",
+            },
+        )
+        try:
+            with urllib.request.urlopen(request, timeout=40) as response:
+                return parse_rss(response.read())
+        except Exception as exc:
+            errors.append(f"{urllib.parse.urlsplit(candidate).netloc}: {exc}")
+    raise RuntimeError(" / ".join(errors))
 
 
 def rss_search_url(url: str, keyword: str, max_items: int) -> str:
@@ -425,14 +441,22 @@ def fetch_source(source: dict, keywords: list[str]) -> list[dict]:
     candidates_by_key: dict[str, dict] = {}
     keyword_errors: list[str] = []
 
-    for keyword in keywords:
+    def fetch_keyword(keyword: str) -> tuple[str, list[dict] | None, str | None]:
         try:
             root = fetch_rss(rss_search_url(source["url"], keyword, per_keyword))
         except Exception as exc:
-            keyword_errors.append(f"{keyword}: {exc}")
-            continue
+            return keyword, None, str(exc)
+        return keyword, source_candidates(root, source, keyword), None
 
-        for candidate in source_candidates(root, source, keyword):
+    # 키워드 요청을 제한적으로 병렬 실행해 GitHub Actions의 전체 지연을 줄인다.
+    with ThreadPoolExecutor(max_workers=min(3, len(keywords))) as executor:
+        keyword_results = list(executor.map(fetch_keyword, keywords))
+
+    for keyword, candidates, error in keyword_results:
+        if error:
+            keyword_errors.append(f"{keyword}: {error}")
+            continue
+        for candidate in candidates or []:
             key = candidate.get("url") or f"{candidate.get('publishedAt')}|{candidate.get('title')}"
             if key in candidates_by_key:
                 matched = candidates_by_key[key].setdefault("matchedKeywords", [])
@@ -441,8 +465,22 @@ def fetch_source(source: dict, keywords: list[str]) -> list[dict]:
             else:
                 candidates_by_key[key] = candidate
 
+    # 검색형 RSS가 일시적으로 막히면 기본 RSS의 최신 자료를 제목·본문으로 재검사한다.
     if not candidates_by_key and keyword_errors:
-        raise RuntimeError("키워드별 공식검색에 모두 실패했습니다: " + " | ".join(keyword_errors))
+        try:
+            root = fetch_rss(source["url"])
+            fallback_candidates = source_candidates(root, source, "")
+            for candidate in fallback_candidates:
+                candidate["matchedKeywords"] = []
+            recovered = filter_title_and_body(fallback_candidates, keywords)
+            for candidate in recovered:
+                key = candidate.get("url") or f"{candidate.get('publishedAt')}|{candidate.get('title')}"
+                candidates_by_key[key] = candidate
+        except Exception as exc:
+            keyword_errors.append(f"기본 RSS 복구: {exc}")
+
+    if not candidates_by_key and keyword_errors:
+        raise RuntimeError("키워드별 공식검색과 기본 RSS 복구에 모두 실패했습니다: " + " | ".join(keyword_errors))
     if keyword_errors:
         print(
             f"{source.get('name', '기후부 공식자료')} 일부 키워드 검색 경고: " + " | ".join(keyword_errors),
