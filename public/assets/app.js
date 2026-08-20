@@ -1,10 +1,11 @@
 "use strict";
 // POLICY_PAGINATION_VERSION = "2026-08-20-v1.1-volume"
 // BRIEFING_ARCHIVE_VERSION = "2026-08-20-v2"
-// AUCTION_MONITOR_VERSION = "2026-08-20-v3"
+// AUCTION_MONITOR_VERSION = "2026-08-20-v3.1-history-premium-pagination"
 
-const state = { prices: [], auctions: [], auctionPeriod: "1Y", auctionLastSync: "", policies: [], policyInsight: null, briefings: [], briefingDate: "", period: "3M", category: "기후부 보도자료", policyPage: 1, symbol: "" };
+const state = { prices: [], auctions: [], auctionPeriod: "1Y", auctionPage: 1, auctionLastSync: "", policies: [], policyInsight: null, briefings: [], briefingDate: "", period: "3M", category: "기후부 보도자료", policyPage: 1, symbol: "" };
 const POLICIES_PER_PAGE = 5;
+const AUCTIONS_PER_PAGE = 3;
 const fallbackPrice = [{ date: "2026-08-19", symbol: "KAU25", close: 29500, change: 1150, changeRate: 4.06, open: 29000, high: 29500, low: 29000, volume: 396644, tradeValue: 11624058550 }];
 const number = new Intl.NumberFormat("ko-KR");
 const byId = (id) => document.getElementById(id);
@@ -67,10 +68,11 @@ function filterPrices(period) {
 }
 
 function normalizeAuctions(items) {
-  const numericFields = ["offeredQuantity", "bidQuantity", "bidRatio", "bidderCount", "winnerCount", "highestBid", "lowestBid", "awardedQuantity", "clearingPrice"];
+  const numericFields = ["offeredQuantity", "bidQuantity", "bidRatio", "bidderCount", "winnerCount", "highestBid", "lowestBid", "awardedQuantity", "clearingPrice", "spotClose", "premiumPct"];
   return (Array.isArray(items) ? items : []).map((item) => {
     const row = { ...item, date: String(item.date || ""), symbol: String(item.symbol || "KAU25").toUpperCase() };
     numericFields.forEach((field) => { row[field] = Number(String(item[field] ?? 0).replace(/,/g, "")) || 0; });
+    if (row.spotClose > 0) row.premiumPct = (row.clearingPrice / row.spotClose - 1) * 100;
     return row;
   }).filter((row) => /^\d{4}-\d{2}-\d{2}$/.test(row.date) && row.symbol.startsWith("KAU") && row.clearingPrice > 0)
     .sort((a, b) => b.date.localeCompare(a.date) || a.symbol.localeCompare(b.symbol));
@@ -192,14 +194,15 @@ function marketInsight(selected, latest) {
 }
 
 function spotAtAuction(auction) {
+  if (Number(auction.spotClose) > 0) return { close: Number(auction.spotClose) };
   return state.prices.filter((row) => row.symbol === auction.symbol && row.date <= auction.date).at(-1) || null;
 }
 
 function auctionInsight(latest, spot) {
   const demand = latest.bidRatio >= 150 ? "응찰수요가 공급물량을 크게 웃돌았습니다" : latest.bidRatio >= 100 ? "응찰수요가 공급물량을 상회했습니다" : "응찰수요가 공급물량에 미치지 못했습니다";
   if (!spot?.close) return `최근 경매 응찰률은 ${latest.bidRatio.toFixed(0)}%, 낙찰가는 ${money(latest.clearingPrice)}원으로 ${demand}. 경매일 현물 종가가 추가되면 가격 차이를 함께 비교합니다.`;
-  const spread = (spot.close / latest.clearingPrice - 1) * 100;
-  const relation = spread >= 0 ? `현물 종가가 낙찰가보다 ${Math.abs(spread).toFixed(1)}% 높았습니다` : `현물 종가가 낙찰가보다 ${Math.abs(spread).toFixed(1)}% 낮았습니다`;
+  const premium = (latest.clearingPrice / spot.close - 1) * 100;
+  const relation = premium >= 0 ? `낙찰가가 경매일 현물 종가보다 ${Math.abs(premium).toFixed(1)}% 높았습니다` : `낙찰가가 경매일 현물 종가보다 ${Math.abs(premium).toFixed(1)}% 낮았습니다`;
   return `최근 경매 응찰률은 ${latest.bidRatio.toFixed(0)}%로 ${demand}. 낙찰가는 ${money(latest.clearingPrice)}원이며, 경매일 ${relation}.`;
 }
 
@@ -233,36 +236,71 @@ function renderAuctionChart(rows) {
   svg.innerHTML = html;
 }
 
+function renderAuctionPagination(totalPages) {
+  const pagination = byId("auctionPagination");
+  pagination.replaceChildren();
+  pagination.hidden = totalPages <= 1;
+  if (totalPages <= 1) return;
+  const move = (page) => {
+    state.auctionPage = Math.max(1, Math.min(totalPages, page));
+    renderAuctions();
+  };
+  const previous = create("button", "page-arrow", "‹");
+  previous.type = "button"; previous.disabled = state.auctionPage === 1; previous.ariaLabel = "이전 경매 페이지";
+  previous.addEventListener("click", () => move(state.auctionPage - 1));
+  pagination.append(previous);
+  policyPageNumbers(state.auctionPage, totalPages).forEach((value) => {
+    if (value === "…") { pagination.append(create("span", "page-gap", value)); return; }
+    const button = create("button", value === state.auctionPage ? "active" : "", String(value));
+    button.type = "button"; button.ariaLabel = `경매 ${value}페이지`;
+    if (value === state.auctionPage) button.setAttribute("aria-current", "page");
+    button.addEventListener("click", () => move(value));
+    pagination.append(button);
+  });
+  const next = create("button", "page-arrow", "›");
+  next.type = "button"; next.disabled = state.auctionPage === totalPages; next.ariaLabel = "다음 경매 페이지";
+  next.addEventListener("click", () => move(state.auctionPage + 1));
+  pagination.append(next);
+}
+
 function renderAuctions() {
   const rows = filterAuctions(state.auctionPeriod);
-  const latest = rows.at(-1) || state.auctions[0];
+  const totalPages = Math.max(1, Math.ceil(rows.length / AUCTIONS_PER_PAGE));
+  state.auctionPage = Math.max(1, Math.min(state.auctionPage, totalPages));
+  const latest = rows.at(-1) || [...state.auctions].sort((a, b) => a.date.localeCompare(b.date)).at(-1);
   const tbody = byId("auctionRows");
   tbody.replaceChildren();
   byId("auctionPeriodLabel").textContent = auctionPeriodName(state.auctionPeriod);
-  byId("auctionRecordCount").textContent = `${rows.length}건`;
+  byId("auctionRecordCount").textContent = `${rows.length}건 · ${state.auctionPage}/${totalPages}페이지`;
   byId("auctionSync").textContent = state.auctionLastSync ? new Date(state.auctionLastSync).toLocaleString("ko-KR", { timeZone: "Asia/Seoul", month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit" }) : "수동 실행 필요";
   if (!latest) {
+    state.auctionPage = 1;
     byId("auctionInsight").textContent = "경매 수집을 처음 실행하면 KRX 전기간 결과가 자동으로 채워집니다.";
-    const row = document.createElement("tr"); const cell = document.createElement("td"); cell.colSpan = 6; cell.textContent = "경매 결과가 아직 수집되지 않았습니다."; row.append(cell); tbody.append(row);
+    const row = document.createElement("tr"); const cell = document.createElement("td"); cell.colSpan = 8; cell.textContent = "경매 결과가 아직 수집되지 않았습니다."; row.append(cell); tbody.append(row);
+    renderAuctionPagination(1);
     renderAuctionChart([]);
     return;
   }
   const spot = spotAtAuction(latest);
-  const spread = spot?.close ? (spot.close / latest.clearingPrice - 1) * 100 : null;
+  const premium = spot?.close ? (latest.clearingPrice / spot.close - 1) * 100 : null;
   byId("auctionPrice").textContent = `${money(latest.clearingPrice)}원`;
   byId("auctionDate").textContent = `${latest.date} · ${latest.symbol}`;
   byId("auctionRatio").textContent = `${latest.bidRatio.toFixed(0)}%`;
   byId("auctionParticipants").textContent = `${latest.bidderCount}개사 응찰 · ${latest.winnerCount}개사 낙찰`;
   byId("auctionSupply").textContent = compactTons(latest.offeredQuantity);
   byId("auctionDemand").textContent = `응찰 ${compactTons(latest.bidQuantity)}`;
-  byId("auctionSpread").textContent = spread === null ? "-" : `${spread >= 0 ? "+" : ""}${spread.toFixed(1)}%`;
-  byId("auctionSpread").className = spread === null ? "" : spread >= 0 ? "positive" : "negative";
+  byId("auctionSpread").textContent = premium === null ? "-" : `${premium >= 0 ? "+" : ""}${premium.toFixed(1)}%`;
+  byId("auctionSpread").className = premium === null ? "" : premium >= 0 ? "positive" : "negative";
   byId("auctionInsight").textContent = auctionInsight(latest, spot);
-  [...rows].reverse().slice(0, 24).forEach((item) => {
+  const start = (state.auctionPage - 1) * AUCTIONS_PER_PAGE;
+  [...rows].reverse().slice(start, start + AUCTIONS_PER_PAGE).forEach((item) => {
+    const itemSpot = spotAtAuction(item);
+    const itemPremium = itemSpot?.close ? (item.clearingPrice / itemSpot.close - 1) * 100 : null;
     const tr = document.createElement("tr");
-    [item.date, item.symbol, `${money(item.offeredQuantity)}톤`, `${money(item.bidQuantity)}톤`, `${item.bidRatio.toFixed(0)}%`, `${money(item.clearingPrice)}원`].forEach((value) => { const td = document.createElement("td"); td.textContent = value; tr.append(td); });
+    [item.date, item.symbol, `${money(item.offeredQuantity)}톤`, `${money(item.bidQuantity)}톤`, `${item.bidRatio.toFixed(0)}%`, `${money(item.clearingPrice)}원`, itemSpot?.close ? `${money(itemSpot.close)}원` : "-", itemPremium === null ? "-" : `${itemPremium >= 0 ? "+" : ""}${itemPremium.toFixed(1)}%`].forEach((value) => { const td = document.createElement("td"); td.textContent = value; tr.append(td); });
     tbody.append(tr);
   });
+  renderAuctionPagination(totalPages);
   renderAuctionChart(rows);
 }
 
@@ -543,7 +581,7 @@ async function init() {
   state.briefingDate = state.briefings[0]?.date || "";
   byId("policySync").textContent = policyData.lastSync ? new Date(policyData.lastSync).toLocaleString("ko-KR", { timeZone: "Asia/Seoul", month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit" }) : "수동 실행 필요";
   document.querySelectorAll("[data-period]").forEach((button) => button.addEventListener("click", () => { state.period = button.dataset.period; document.querySelectorAll("[data-period]").forEach((item) => item.classList.toggle("active", item === button)); renderMarket(); }));
-  document.querySelectorAll("[data-auction-period]").forEach((button) => button.addEventListener("click", () => { state.auctionPeriod = button.dataset.auctionPeriod; document.querySelectorAll("[data-auction-period]").forEach((item) => item.classList.toggle("active", item === button)); renderAuctions(); }));
+  document.querySelectorAll("[data-auction-period]").forEach((button) => button.addEventListener("click", () => { state.auctionPeriod = button.dataset.auctionPeriod; state.auctionPage = 1; document.querySelectorAll("[data-auction-period]").forEach((item) => item.classList.toggle("active", item === button)); renderAuctions(); }));
   renderSymbolPicker(); renderPolicyFilters(); renderPolicies(); renderMarket(); renderAuctions(); renderBriefings();
 }
 
