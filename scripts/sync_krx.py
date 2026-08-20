@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""KRX Open API와 배출권시장 정보플랫폼의 KAU 시세를 CSV에 누적한다."""
+"""KRX KAU 시세와 유상할당 경매 이력을 대시보드 데이터에 누적한다."""
 
 from __future__ import annotations
 
@@ -19,7 +19,8 @@ from zoneinfo import ZoneInfo
 
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT_PATH = ROOT / "public" / "data" / "prices.csv"
-COLLECTOR_VERSION = "v2.0-krx-site-noon-2026-08-20"
+AUCTION_OUTPUT_PATH = ROOT / "public" / "data" / "auctions.json"
+COLLECTOR_VERSION = "v3.0-krx-site-auction-2026-08-20"
 KRX_URL = os.getenv(
     "KRX_EMISSIONS_URL",
     "https://data-dbg.krx.co.kr/svc/apis/gen/ets_bydd_trd",
@@ -29,6 +30,8 @@ KRX_SITE_PRICE_PAGE = f"{KRX_SITE_ORIGIN}/contents/ETS/03/03010000/ETS03010000.j
 KRX_SITE_OTP_URL = f"{KRX_SITE_ORIGIN}/contents/COM/GenerateOTP.jspx"
 KRX_SITE_DATA_URL = f"{KRX_SITE_ORIGIN}/contents/ETS/99/ETS99000001.jspx"
 KRX_SITE_CURRENT_BLD = "ETS/03/03010000/ets03010000_04"
+KRX_SITE_AUCTION_BLD = "ETS/03/03010000/ets03010000_06"
+KRX_SITE_AUCTION_GRID_NO = "45c48cce2e2d7fbdea1afc51c7c6ad26"
 KRX_SITE_MARKET_DATE_BLD = "/COM/market_date_t"
 FIELDS = [
     "date", "symbol", "close", "change", "change_rate", "open", "high",
@@ -164,6 +167,27 @@ def fetch_site_rows(opener: urllib.request.OpenerDirector, market_day: date) -> 
     return [row for row in rows if isinstance(row, dict)]
 
 
+def fetch_site_auction_rows(
+    opener: urllib.request.OpenerDirector,
+    from_day: date,
+    to_day: date,
+) -> list[dict[str, Any]]:
+    """KRX 공개 시세조회 화면의 유상할당 경매 이력을 조회한다."""
+    code = site_otp(opener, "grid", KRX_SITE_AUCTION_BLD)
+    payload = site_json(opener, {
+        "code": code,
+        "gNo": KRX_SITE_AUCTION_GRID_NO,
+        "isu_cd": "",
+        "fromdate": from_day.strftime("%Y%m%d"),
+        "todate": to_day.strftime("%Y%m%d"),
+        "pagePath": "/contents/ETS/03/03010000/ETS03010000.jsp",
+    })
+    rows = payload.get("output", [])
+    if not isinstance(rows, list):
+        raise RuntimeError("KRX 정보플랫폼 경매 응답 형식이 올바르지 않습니다.")
+    return [row for row in rows if isinstance(row, dict)]
+
+
 def kau_rows(rows: list[dict[str, Any]], symbol: str = "") -> list[dict[str, Any]]:
     result = []
     for row in rows:
@@ -270,6 +294,58 @@ def write_updates(existing: list[dict[str, str]], updates: list[dict[str, Any]])
         writer.writerows({field: row.get(field, "") for field in FIELDS} for row in result)
 
 
+def auction_item(row: dict[str, Any]) -> dict[str, Any] | None:
+    auction_date = str(row.get("trd_dd") or "").strip()
+    symbol = str(row.get("isu_eng_abbrv") or "").strip().upper()
+    if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", auction_date) or not symbol.startswith("KAU"):
+        return None
+    return {
+        "date": auction_date,
+        "symbol": symbol,
+        "offeredQuantity": clean_number(number(row.get("onewayauct_appl_qty"))),
+        "bidQuantity": clean_number(number(row.get("auct_trd_qty"))),
+        "bidRatio": clean_number(number(row.get("auct_trd_rto"))),
+        "bidderCount": clean_number(number(row.get("auct_trd_partc_cnt"))),
+        "winnerCount": clean_number(number(row.get("acc_trdcnt"))),
+        "highestBid": clean_number(number(row.get("hgst_ord_prc"))),
+        "lowestBid": clean_number(number(row.get("lwst_ord_prc"))),
+        "awardedQuantity": clean_number(number(row.get("acc_trdvol"))),
+        "clearingPrice": clean_number(number(row.get("clsprc"))),
+    }
+
+
+def read_existing_auctions() -> list[dict[str, Any]]:
+    if not AUCTION_OUTPUT_PATH.exists():
+        return []
+    try:
+        payload = json.loads(AUCTION_OUTPUT_PATH.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError):
+        return []
+    rows = payload.get("items", []) if isinstance(payload, dict) else []
+    return [row for row in rows if isinstance(row, dict) and row.get("date") and row.get("symbol")]
+
+
+def write_auction_updates(existing: list[dict[str, Any]], updates: list[dict[str, Any]]) -> None:
+    merged = {(str(row["date"]), str(row["symbol"])): row for row in existing}
+    for row in updates:
+        merged[(str(row["date"]), str(row["symbol"]))] = row
+    items = sorted(merged.values(), key=lambda row: (str(row["date"]), str(row["symbol"])), reverse=True)
+    payload = {
+        "lastSync": datetime.now(KST).isoformat(timespec="seconds"),
+        "schedule": {
+            "label": "매월 둘째 주 수요일 17시 이후",
+            "runAt": "17:17",
+            "timezone": "Asia/Seoul",
+        },
+        "items": items,
+    }
+    AUCTION_OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
+    AUCTION_OUTPUT_PATH.write_text(
+        json.dumps(payload, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
+
+
 def sync_site_today(symbol: str) -> int:
     today = datetime.now(KST).date()
     opener = site_opener()
@@ -287,6 +363,39 @@ def sync_site_today(symbol: str) -> int:
     write_updates(existing, updates)
     labels = ", ".join(f"{row['symbol']} {row['close']:,}원" for row in updates)
     print(f"KRX 정보플랫폼 {market_day.isoformat()} 당일 시세 {len(updates)}건 반영: {labels}")
+    return 0
+
+
+def sync_site_auctions(symbol: str) -> int:
+    """최초 실행부터 전기간 경매 이력을 조회하고 날짜·종목 기준으로 갱신한다."""
+    today = datetime.now(KST).date()
+    start_text = os.getenv("KRX_AUCTION_START_DATE", "2015-01-01").strip()
+    try:
+        start_day = datetime.strptime(start_text, "%Y-%m-%d").date()
+    except ValueError as exc:
+        raise RuntimeError("KRX_AUCTION_START_DATE는 YYYY-MM-DD 형식이어야 합니다.") from exc
+    if start_day > today:
+        raise RuntimeError("경매 조회 시작일이 오늘보다 늦습니다.")
+
+    opener = site_opener()
+    site_open_text(opener, KRX_SITE_PRICE_PAGE)
+    rows = fetch_site_auction_rows(opener, start_day, today)
+    updates = []
+    for row in rows:
+        item = auction_item(row)
+        if item and (not symbol or item["symbol"] == symbol.upper()):
+            updates.append(item)
+    if not updates:
+        raise RuntimeError("KRX 정보플랫폼에서 KAU 경매 이력을 찾지 못했습니다.")
+
+    existing = read_existing_auctions()
+    write_auction_updates(existing, updates)
+    latest = max(updates, key=lambda item: str(item["date"]))
+    print(
+        f"KRX 경매 전기간 {len(updates)}건 반영: "
+        f"최근 {latest['date']} {latest['symbol']} 낙찰가 {latest['clearingPrice']:,}원, "
+        f"응찰률 {latest['bidRatio']}%"
+    )
     return 0
 
 
@@ -320,6 +429,8 @@ def main() -> int:
     print(f"KRX_COLLECTOR_VERSION={COLLECTOR_VERSION}")
     symbol = os.getenv("KAU_SYMBOL", "").strip()
     mode = os.getenv("KRX_SYNC_MODE", "openapi").strip().lower()
+    if mode in {"auction", "site-auction", "auctions"}:
+        return sync_site_auctions(symbol)
     if mode in {"site-today", "site", "today"}:
         return sync_site_today(symbol)
     if mode != "openapi":
