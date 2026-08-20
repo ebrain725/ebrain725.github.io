@@ -1,7 +1,8 @@
 "use strict";
 // POLICY_PAGINATION_VERSION = "2026-08-20-v1.1-volume"
+// BRIEFING_ARCHIVE_VERSION = "2026-08-20-v1"
 
-const state = { prices: [], policies: [], policyInsight: null, briefings: [], period: "3M", category: "기후부 보도자료", policyPage: 1, symbol: "" };
+const state = { prices: [], policies: [], policyInsight: null, briefings: [], briefingDate: "", period: "3M", category: "기후부 보도자료", policyPage: 1, symbol: "" };
 const POLICIES_PER_PAGE = 5;
 const fallbackPrice = [{ date: "2026-08-19", symbol: "KAU25", close: 29500, change: 1150, changeRate: 4.06, open: 29000, high: 29500, low: 29000, volume: 396644, tradeValue: 11624058550 }];
 const number = new Intl.NumberFormat("ko-KR");
@@ -380,19 +381,52 @@ function readableBriefingText(value) {
   return (documentValue.body.textContent || "").replace(/\n{3,}/g, "\n\n").trim();
 }
 
+function splitBriefingContent(value, outlook) {
+  let lines = readableBriefingText(value).replace(/\r\n/g, "\n").split("\n");
+  if (/^(?:KAU\s*)?배출권시장 일일 브리핑$/i.test((lines[0] || "").trim())) lines = lines.slice(1);
+  lines = lines.filter((line) => line.trim() !== "상세 브리핑");
+  while (lines.length && !lines[0].trim()) lines.shift();
+  while (lines.length && !lines.at(-1).trim()) lines.pop();
+  const detailHeadings = ["기간별 가격", "수급·가격 심층 분석", "정책 분석", "전력·연료 연계", "상방 요인 심층 분석", "하방 요인 심층 분석", "체크 이슈 포인트"];
+  const detailIndex = lines.findIndex((line) => detailHeadings.some((heading) => line.trim().startsWith(heading)));
+  const overviewLines = detailIndex >= 0 ? lines.slice(0, detailIndex) : lines;
+  const detailLines = detailIndex >= 0 ? lines.slice(detailIndex) : [];
+  let overview = overviewLines.join("\n").trim();
+  if (outlook && !/향후\s*1주\s*판단/.test(overview)) overview = `${overview}${overview ? "\n\n" : ""}향후 1주 판단\n${readableBriefingText(outlook)}`;
+  return { overview, details: detailLines.join("\n").trim() };
+}
+
 function renderBriefings() {
-  const area = byId("briefingArea"); const latest = state.briefings[0];
-  if (!latest) return;
-  byId("briefingDateBadge").hidden = false; byId("briefingDate").textContent = latest.date;
-  const layout = create("div", "briefing-layout"); const feature = create("article", "briefing-feature"); const meta = create("div", "briefing-meta");
-  meta.append(create("span", `tone tone-${latest.marketTone || "중립"}`, latest.marketTone || "중립"), create("time", "", latest.date), create("span", "", latest.source || "Telegram"));
-  feature.append(meta, create("h3", "", latest.title || "배출권 데일리 브리핑"));
-  if (latest.summary) feature.append(create("p", "briefing-summary", latest.summary));
-  feature.append(create("div", "briefing-content", readableBriefingText(latest.content)));
-  if (latest.outlook) { const outlook = create("div", "outlook-box"); outlook.append(create("span", "", "1주 전망"), create("p", "", latest.outlook)); feature.append(outlook); }
-  const archive = create("aside", "briefing-archive"); archive.append(create("h3", "", "이전 브리핑"));
-  state.briefings.slice(1, 7).forEach((item) => { const details = create("details"); const summary = create("summary"); summary.append(create("time", "", item.date.slice(5).replace("-", ".")), create("span", "", item.title), create("i", "", "＋")); details.append(summary, create("p", "", item.summary || readableBriefingText(item.content).slice(0, 180))); archive.append(details); });
-  layout.append(feature, archive); area.replaceChildren(layout);
+  const area = byId("briefingArea");
+  const selected = state.briefings.find((item) => item.date === state.briefingDate) || state.briefings[0];
+  if (!selected) return;
+
+  const picker = byId("briefingDatePicker"), select = byId("briefingDateSelect");
+  picker.hidden = false;
+  select.replaceChildren();
+  state.briefings.forEach((item) => {
+    const option = create("option", "", item.date);
+    option.value = item.date;
+    option.selected = item.date === selected.date;
+    select.append(option);
+  });
+  select.onchange = () => { state.briefingDate = select.value; renderBriefings(); };
+
+  const parts = splitBriefingContent(selected.content, selected.outlook);
+  const layout = create("div", "briefing-layout");
+  const feature = create("article", "briefing-feature");
+  const meta = create("div", "briefing-meta");
+  meta.append(create("span", `tone tone-${selected.marketTone || "중립"}`, selected.marketTone || "중립"), create("time", "", selected.date), create("span", "", selected.source || "Telegram"));
+  feature.append(meta, create("h3", "", selected.title || "배출권 데일리 브리핑"), create("div", "briefing-content briefing-overview", parts.overview));
+  if (parts.details) {
+    const details = create("details", "briefing-details");
+    const summary = create("summary");
+    summary.append(create("span", "", "상세 브리핑"), create("i", "", "＋"));
+    details.append(summary, create("div", "briefing-content", parts.details));
+    feature.append(details);
+  }
+  layout.append(feature);
+  area.replaceChildren(layout);
 }
 
 async function init() {
@@ -407,6 +441,7 @@ async function init() {
   state.policyInsight = policyData.aiInsight || null;
   const briefingData = briefingResult.status === "fulfilled" ? briefingResult.value : { items: [] };
   state.briefings = (briefingData.items || []).map((item) => ({ ...item, date: item.date || item.briefingDate || "" })).sort((a, b) => b.date.localeCompare(a.date));
+  state.briefingDate = state.briefings[0]?.date || "";
   byId("policySync").textContent = policyData.lastSync ? new Date(policyData.lastSync).toLocaleString("ko-KR", { timeZone: "Asia/Seoul", month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit" }) : "수동 실행 필요";
   document.querySelectorAll("[data-period]").forEach((button) => button.addEventListener("click", () => { state.period = button.dataset.period; document.querySelectorAll("[data-period]").forEach((item) => item.classList.toggle("active", item === button)); renderMarket(); }));
   renderSymbolPicker(); renderPolicyFilters(); renderPolicies(); renderMarket(); renderBriefings();
