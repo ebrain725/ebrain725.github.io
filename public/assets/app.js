@@ -2,6 +2,7 @@
 // POLICY_PAGINATION_VERSION = "2026-08-20-v1.1-volume"
 // BRIEFING_ARCHIVE_VERSION = "2026-08-20-v2"
 // AUCTION_MONITOR_VERSION = "2026-08-20-v3.4-full-history-default"
+// MARKET_PULSE_VERSION = "2026-08-20-v2-20d-position-supply-strength"
 
 const state = { prices: [], auctions: [], auctionPeriod: "ALL", auctionPage: 1, auctionLastSync: "", policies: [], policyInsight: null, briefings: [], briefingDate: "", period: "3M", category: "기후부 보도자료", policyPage: 1, symbol: "" };
 const POLICIES_PER_PAGE = 5;
@@ -178,19 +179,46 @@ function dedupeNewsPolicies(policies) {
   return [...official, ...representatives].sort((a, b) => b.publishedAt.localeCompare(a.publishedAt));
 }
 
-function marketInsight(selected, latest) {
-  const history = selected.slice(-21, -1);
-  if (!history.length) return "시세가 누적되면 가격 방향과 최근 거래량 강도를 함께 분석합니다.";
-  const averageVolume = history.reduce((sum, row) => sum + row.volume, 0) / history.length;
+function marketPulseMetrics(selected, latest) {
+  const ordered = selected.filter((row) => row.symbol === latest.symbol).sort((a, b) => a.date.localeCompare(b.date));
+  const windowRows = ordered.slice(-20);
+  const baseline = ordered.slice(-21, -1);
+  const priceAverage = windowRows.reduce((sum, row) => sum + row.close, 0) / Math.max(windowRows.length, 1);
+  const priceHigh = Math.max(...windowRows.map((row) => row.close), latest.close);
+  const priceLow = Math.min(...windowRows.map((row) => row.close), latest.close);
+  const pricePosition = priceHigh === priceLow ? 50 : (latest.close - priceLow) / (priceHigh - priceLow) * 100;
+  const priceBand = pricePosition >= 80 ? "상단" : pricePosition <= 20 ? "하단" : "중단";
+  const priceAverageDiff = priceAverage ? (latest.close / priceAverage - 1) * 100 : 0;
+  const volumeBase = baseline.length ? baseline : windowRows.filter((row) => row.date !== latest.date);
+  const averageVolume = volumeBase.reduce((sum, row) => sum + row.volume, 0) / Math.max(volumeBase.length, 1);
   const volumeRatio = averageVolume ? latest.volume / averageVolume : 1;
-  const volumeText = volumeRatio >= 1.3 ? "최근 평균을 크게 웃도는 거래량" : volumeRatio <= .7 ? "최근 평균보다 낮은 거래량" : "평균 수준의 거래량";
-  if (latest.changeRate >= 2 && volumeRatio >= 1.3) return `가격 상승이 ${volumeText}을 동반해 매수 강도가 확대됐습니다. 후속 거래량과 매수세 지속 여부를 확인하세요.`;
-  if (latest.changeRate >= 2) return `가격은 강하게 상승했지만 거래량은 ${volumeText}입니다. 추가 매수 유입이 확인돼야 상승 추세의 신뢰도가 높아집니다.`;
-  if (latest.changeRate <= -2 && volumeRatio >= 1.3) return `가격 하락이 ${volumeText}을 동반해 매도 압력이 강화됐습니다. 저가 매수 유입과 공급물량 변화를 점검하세요.`;
-  if (latest.changeRate <= -2) return `가격은 하락했지만 거래량은 ${volumeText}입니다. 적극적 매도보다 관망 또는 유동성 부족의 영향인지 확인이 필요합니다.`;
-  if (Math.abs(latest.changeRate) < .5 && volumeRatio <= .7) return "가격과 거래량이 모두 제한돼 관망 국면 가능성이 높습니다. 정책 발표나 경매 결과에 따른 거래량 회복 여부를 확인하세요.";
-  if (latest.changeRate >= 0) return `완만한 상승과 ${volumeText}이 나타났습니다. 거래량 확대가 동반되는지 확인해야 추세 지속 여부를 판단할 수 있습니다.`;
-  return `완만한 약세와 ${volumeText}이 나타났습니다. 추가 하락보다 저가 매수 유입과 거래량 변화를 우선 확인하세요.`;
+  const volumeRank = 1 + windowRows.filter((row) => row.volume > latest.volume).length;
+  const volumeTopPercent = Math.max(5, Math.ceil(volumeRank / Math.max(windowRows.length, 1) * 20) * 5);
+  const isUp = latest.changeRate > .2, isDown = latest.changeRate < -.2;
+  let supplyStatus = volumeRatio >= 1.5 ? "매수·매도 공방 · 강함" : volumeRatio >= 1 ? "시장 참여 · 보통" : "관망 우세";
+  let supplyClass = "";
+  let supplyAnalysis = volumeRatio >= 1 ? "가격은 보합권이지만 거래가 늘어 매수·매도 공방이 확대됐습니다." : "가격과 거래량이 모두 제한돼 관망세가 우세합니다.";
+  if (isUp) {
+    supplyStatus = volumeRatio >= 1.5 ? "매수 우위 · 강함" : volumeRatio >= 1 ? "매수 우위 · 보통" : "상승 지속성 확인";
+    supplyClass = "positive";
+    supplyAnalysis = volumeRatio >= 1 ? "가격과 거래량이 함께 증가해 단기 매수세가 강화됐습니다." : "가격은 상승했지만 거래 참여가 줄어 후속 매수세 확인이 필요합니다.";
+  } else if (isDown) {
+    supplyStatus = volumeRatio >= 1.5 ? "매도 압력 · 강함" : volumeRatio >= 1 ? "매도 압력 · 보통" : "약세 · 거래 부진";
+    supplyClass = "negative";
+    supplyAnalysis = volumeRatio >= 1 ? "가격 하락과 거래량 증가가 동행해 매도 압력이 확대됐습니다." : "가격은 하락했지만 거래가 줄어 관망 속 약세로 해석됩니다.";
+  }
+  return { pricePosition, priceBand, priceAverageDiff, volumeRatio, volumeTopPercent, supplyStatus, supplyClass, supplyAnalysis, sampleSize: windowRows.length };
+}
+
+function marketInsight(selected, latest) {
+  const pulse = marketPulseMetrics(selected, latest);
+  if (pulse.sampleSize < 2) return "시세가 누적되면 최근 가격 구간과 거래 강도를 함께 점검합니다.";
+  if (pulse.pricePosition >= 90 && pulse.volumeRatio >= 1) return "가격이 최근 20거래일 상단까지 상승했습니다. 평균 이상의 거래가 이어지는지와 최근 고점 안착 여부를 확인해야 합니다.";
+  if (pulse.pricePosition >= 90) return "가격은 최근 20거래일 상단이지만 거래 강도는 평균보다 낮습니다. 고점 안착보다 단기 차익매물 출회 여부를 먼저 확인하세요.";
+  if (pulse.pricePosition <= 10 && pulse.volumeRatio >= 1) return "가격이 최근 20거래일 하단에 위치하고 거래도 증가했습니다. 추가 매도 압력과 저가 매수 유입 여부를 함께 확인하세요.";
+  if (latest.changeRate > 0) return "가격은 상승 흐름을 유지하고 있습니다. 20일 평균 위에서 거래 강도가 확대되는지 확인하면 추세의 지속성을 판단할 수 있습니다.";
+  if (latest.changeRate < 0) return "가격은 조정 흐름을 보이고 있습니다. 20일 평균 지지 여부와 거래량을 동반한 추가 하락 가능성을 확인해야 합니다.";
+  return "가격은 최근 범위 안에서 움직이고 있습니다. 거래 강도 확대와 20일 고점·저점 돌파 여부를 확인하세요.";
 }
 
 function spotAtAuction(auction) {
@@ -291,7 +319,7 @@ function renderMarket() {
   const yearLow = Math.min(...(yearRows.length ? yearRows : [latest]).map((row) => row.low || row.close));
   const periodChange = rows.length > 1 ? (latest.close / rows[0].close - 1) * 100 : latest.changeRate;
   const direction = latest.changeRate >= 0 ? "up" : "down";
-  const sign = latest.changeRate >= 0 ? "+" : "";
+  const marketPulse = marketPulseMetrics(selected, latest);
   byId("asofDate").textContent = latest.date.replaceAll("-", "."); byId("symbol").textContent = latest.symbol;
   byId("currentPrice").textContent = money(latest.close);
   byId("dailyChange").className = `change ${direction}`;
@@ -303,8 +331,12 @@ function renderMarket() {
   byId("periodChange").className = `kpi-number ${periodChange >= 0 ? "positive" : "negative"}`;
   byId("periodLabel").textContent = `${periodName(state.period)} 기준`; byId("recordCount").textContent = `${rows.length}개 거래일`;
   byId("dayRange").textContent = `${money(latest.low)}–${money(latest.high)}`; byId("openPrice").textContent = `시가 ${money(latest.open)}원`;
-  byId("pulseChange").textContent = `${sign}${latest.changeRate.toFixed(2)}%`; byId("pulseChange").className = latest.changeRate >= 0 ? "positive" : "negative";
-  byId("changeTrack").style.width = `${Math.min(Math.abs(latest.changeRate) * 12, 100)}%`; byId("pulseVolume").textContent = `${money(latest.volume)}톤`;
+  byId("pulsePosition").textContent = `${marketPulse.priceBand} ${Math.round(marketPulse.pricePosition)}%`;
+  byId("positionTrack").style.width = `${marketPulse.pricePosition}%`;
+  byId("pulsePositionDetail").textContent = `20일 평균 대비 ${marketPulse.priceAverageDiff >= 0 ? "+" : ""}${marketPulse.priceAverageDiff.toFixed(1)}%`;
+  byId("supplyStatus").textContent = marketPulse.supplyStatus; byId("supplyStatus").className = marketPulse.supplyClass;
+  byId("supplyDetail").textContent = `20일 평균의 ${marketPulse.volumeRatio.toFixed(1)}배 · 최근 20일 상위 ${marketPulse.volumeTopPercent}%`;
+  byId("supplyAnalysis").textContent = marketPulse.supplyAnalysis;
   byId("checkPoint").textContent = marketInsight(selected, latest);
   renderChart(rows);
 }
