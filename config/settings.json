@@ -2,17 +2,13 @@
   "policyKeywords": [
     "배출권",
     "배출권거래제",
-    "ETS",
-    "온실가스",
     "유상할당",
-    "무상할당",
-    "할당",
     "유상경매",
-    "경매",
     "탄소시장",
     "시장안정화",
     "상쇄배출권"
   ],
+  "newsKeywordFile": "config/news_keywords.txt",
   "policySources": [
     {
       "name": "기후부 보도자료",
@@ -26,7 +22,7 @@
   "policyNewsSearches": [
     {
       "name": "배출권시장 뉴스",
-      "query": "\"배출권\" OR \"배출권거래제\" OR \"유상할당\" OR \"유상경매\" OR \"탄소시장\" OR \"시장안정화\" OR \"상쇄배출권\""
+      "query": "config/news_keywords.txt의 키워드를 사용"
     }
   ],
   "policyLookbackDays": 30,
