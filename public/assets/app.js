@@ -1,5 +1,5 @@
 "use strict";
-// POLICY_PAGINATION_VERSION = "2026-08-20-v1"
+// POLICY_PAGINATION_VERSION = "2026-08-20-v1.1-volume"
 
 const state = { prices: [], policies: [], policyInsight: null, briefings: [], period: "3M", category: "기후부 보도자료", policyPage: 1, symbol: "" };
 const POLICIES_PER_PAGE = 5;
@@ -205,15 +205,29 @@ function renderChart(rows) {
   const yMax = maxPrice + pad, yMin = Math.max(0, minPrice - pad), maxVol = Math.max(...rows.map((row) => row.volume), 1);
   const start = rows[0]?.date || "", end = rows.at(-1)?.date || "";
   const startTime = chartDateTime(start), endTime = chartDateTime(end);
-  const dateX = (date) => left + (chartDateTime(date) - startTime) / Math.max(endTime - startTime, 1) * (width - left - right);
-  const x = (index) => rows.length <= 1 ? left + (width - left - right) / 2 : dateX(rows[index].date);
+  // 금융 차트처럼 실제 거래일만 같은 간격으로 배치합니다.
+  // 주말·공휴일은 빈 거래량 막대로 오해되지 않도록 축에서 압축합니다.
+  const x = (index) => rows.length <= 1 ? left + (width - left - right) / 2 : left + index / (rows.length - 1) * (width - left - right);
+  const dateX = (date) => {
+    if (rows.length <= 1) return x(0);
+    const target = chartDateTime(date);
+    if (target <= startTime) return x(0);
+    if (target >= endTime) return x(rows.length - 1);
+    const rightIndex = rows.findIndex((row) => chartDateTime(row.date) >= target);
+    if (rightIndex <= 0) return x(0);
+    const leftIndex = rightIndex - 1;
+    const leftTime = chartDateTime(rows[leftIndex].date);
+    const rightTime = chartDateTime(rows[rightIndex].date);
+    const ratio = (target - leftTime) / Math.max(rightTime - leftTime, 1);
+    return x(leftIndex) + (x(rightIndex) - x(leftIndex)) * ratio;
+  };
   const y = (value) => top + (yMax - value) * (priceBottom - top) / Math.max(yMax - yMin, 1);
   let policyEvents = [];
   let html = `<defs><linearGradient id="areaGradient" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#0c7c59" stop-opacity=".2"/><stop offset="100%" stop-color="#0c7c59" stop-opacity="0"/></linearGradient><linearGradient id="lineGradient"><stop offset="0%" stop-color="#13a979"/><stop offset="100%" stop-color="#075f48"/></linearGradient></defs>`;
   for (let i = 0; i < 5; i += 1) { const gy = top + i * (priceBottom - top) / 4; const value = yMax - i * (yMax - yMin) / 4; html += `<line x1="${left}" x2="${width-right}" y1="${gy}" y2="${gy}" class="grid-line"/><text x="${left-12}" y="${gy+4}" text-anchor="end" class="axis-text">${Math.round(value/100)*100}</text>`; }
   if (rows.length > 1) semiMonthlyTicks(start, end).forEach((tick) => { const px = dateX(tick.date); html += `<line x1="${px}" x2="${px}" y1="${top}" y2="${bottom}" class="date-grid-line"/><text x="${px}" y="346" text-anchor="middle" class="axis-text chart-date-text">${tick.label}</text>`; });
   if (rows.length > 1) { const line = rows.map((row, index) => `${index ? "L" : "M"}${x(index)},${y(row.close)}`).join(" "); html += `<path d="${line} L${x(rows.length-1)},${priceBottom} L${x(0)},${priceBottom} Z" class="price-area"/><path d="${line}" class="price-line"/>`; }
-  rows.forEach((row, index) => { const barWidth = Math.min(15, (width-left-right)/Math.max(rows.length,12)*.66); const barHeight = row.volume/maxVol*(bottom-volumeTop); html += `<rect x="${x(index)-barWidth/2}" y="${bottom-barHeight}" width="${barWidth}" height="${barHeight}" rx="2" class="volume-bar"><title>${esc(row.date)} · 종가 ${money(row.close)}원 · 거래량 ${money(row.volume)}톤</title></rect><circle cx="${x(index)}" cy="${y(row.close)}" r="${rows.length===1?6:3.5}" class="price-dot"><title>${esc(row.date)} · 종가 ${money(row.close)}원 · 거래량 ${money(row.volume)}톤</title></circle>`; });
+  rows.forEach((row, index) => { const barWidth = Math.min(15, (width-left-right)/Math.max(rows.length,12)*.66); const barHeight = row.volume/maxVol*(bottom-volumeTop); html += `<rect x="${x(index)-barWidth/2}" y="${bottom-barHeight}" width="${barWidth}" height="${barHeight}" rx="2" class="volume-bar" style="fill:#b7d4ca"><title>${esc(row.date)} · 종가 ${money(row.close)}원 · 거래량 ${money(row.volume)}톤</title></rect><circle cx="${x(index)}" cy="${y(row.close)}" r="${rows.length===1?6:3.5}" class="price-dot"><title>${esc(row.date)} · 종가 ${money(row.close)}원 · 거래량 ${money(row.volume)}톤</title></circle>`; });
   if (rows.length > 1) {
     policyEvents = state.policies.filter((policy) => policyGroup(policy) !== "뉴스" && policy.publishedAt >= start && policy.publishedAt <= end);
     policyEvents.forEach((policy, index) => {
@@ -254,8 +268,7 @@ function renderChart(rows) {
     const svgRect = svg.getBoundingClientRect();
     const pointerX = (event.clientX - svgRect.left) / Math.max(svgRect.width, 1) * width;
     const ratio = Math.max(0, Math.min(1, (pointerX - left) / (width - left - right)));
-    const pointerTime = startTime + ratio * Math.max(endTime - startTime, 0);
-    const index = rows.length === 1 ? 0 : rows.reduce((best, row, rowIndex) => Math.abs(chartDateTime(row.date) - pointerTime) < Math.abs(chartDateTime(rows[best].date) - pointerTime) ? rowIndex : best, 0);
+    const index = rows.length === 1 ? 0 : Math.round(ratio * (rows.length - 1));
     const row = rows[index];
     tooltip.classList.remove("policy-tooltip");
     tooltip.replaceChildren(
