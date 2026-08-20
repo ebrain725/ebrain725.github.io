@@ -1,12 +1,12 @@
 <!doctype html>
-<!-- BRIEFING_ARCHIVE_VERSION = 2026-08-20-v2 -->
+<!-- AUCTION_MONITOR_VERSION = 2026-08-20-v3 -->
 <html lang="ko">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="국내 배출권 가격, 기후부 정책, 데일리 브리핑을 한 화면에서 확인하는 대시보드">
   <title>ETS SIGNAL | 배출권 시장·정책 대시보드</title>
-  <link rel="stylesheet" href="assets/styles.css?v=20260820-briefing-archive-v2">
+  <link rel="stylesheet" href="assets/styles.css?v=20260820-auction-monitor-v3">
 </head>
 <body>
   <header class="topbar">
@@ -16,6 +16,7 @@
     </a>
     <nav aria-label="주요 메뉴">
       <a href="#market">시장 현황</a>
+      <a href="#auction">유상경매</a>
       <a href="#policy">정책 레이더</a>
       <a href="#briefing">데일리 브리핑</a>
     </nav>
@@ -67,6 +68,36 @@
       </aside>
     </section>
 
+    <section class="auction-section" id="auction">
+      <div class="section-title auction-title">
+        <div><span class="section-tag">AUCTION MONITOR</span><h2>유상할당 경매 현황</h2><p>KRX 경매 결과를 누적하고 공급물량·응찰률·낙찰가를 기간별로 비교합니다.</p></div>
+        <span class="auto-badge"><i></i> 둘째 주 수요일 17시 이후 <b id="auctionSync">확인 중</b></span>
+      </div>
+      <article class="panel auction-panel">
+        <div class="panel-head auction-panel-head">
+          <div><span class="section-tag">AUCTION HISTORY</span><h2>경매 수급 추이</h2></div>
+          <div class="period-tabs auction-period-tabs" role="group" aria-label="경매 조회 기간">
+            <button data-auction-period="3M">3개월</button><button data-auction-period="6M">6개월</button><button class="active" data-auction-period="1Y">1년</button><button data-auction-period="ALL">전기간</button>
+          </div>
+        </div>
+        <div class="auction-kpi-grid">
+          <div><span>최근 낙찰가</span><strong id="auctionPrice">-</strong><small id="auctionDate">최근 경매 대기</small></div>
+          <div><span>응찰률</span><strong id="auctionRatio">-</strong><small id="auctionParticipants">응찰자 -</small></div>
+          <div><span>공급·응찰물량</span><strong id="auctionSupply">-</strong><small id="auctionDemand">응찰 -</small></div>
+          <div><span>현물가격 대비</span><strong id="auctionSpread">-</strong><small>경매일 종가 기준</small></div>
+        </div>
+        <div class="auction-chart-wrap"><svg id="auctionChart" viewBox="0 0 900 235" role="img" aria-label="유상할당 경매 낙찰가 추이"></svg></div>
+        <div class="auction-insight"><span>AUCTION SIGNAL</span><p id="auctionInsight">경매 데이터를 불러오고 있습니다.</p></div>
+        <div class="auction-table-wrap">
+          <table class="auction-table">
+            <thead><tr><th>경매일</th><th>종목</th><th>공급물량</th><th>응찰물량</th><th>응찰률</th><th>낙찰가</th></tr></thead>
+            <tbody id="auctionRows"><tr><td colspan="6">경매 결과를 불러오고 있습니다.</td></tr></tbody>
+          </table>
+        </div>
+        <p class="auction-footnote"><span id="auctionPeriodLabel">최근 1년</span> · <span id="auctionRecordCount">0건</span> · KRX 공개 경매정보 기준</p>
+      </article>
+    </section>
+
     <section class="policy-section" id="policy">
       <div class="section-title">
         <div><span class="section-tag">POLICY RADAR</span><h2>기후에너지환경부 정책 레이더</h2><p id="policyDescription">기후부 공식 보도자료·공지사항과 시장 뉴스의 제목·본문을 기준으로 자동 수집합니다.</p></div>
@@ -90,6 +121,6 @@
     <p>시장 판단을 지원하는 참고용 대시보드입니다. 원문과 공식 통계를 함께 확인하세요.</p>
   </footer>
   <noscript>이 대시보드는 JavaScript를 사용합니다. 브라우저 설정에서 JavaScript를 켜주세요.</noscript>
-  <script src="assets/app.js?v=20260820-briefing-archive-v2" defer></script>
+  <script src="assets/app.js?v=20260820-auction-monitor-v3" defer></script>
 </body>
 </html>
