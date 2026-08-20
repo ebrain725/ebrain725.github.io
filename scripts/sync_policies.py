@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# PRESS_TAB_FIX_VERSION = "2026-08-20-v2"
 """기후부 공식자료와 시장 뉴스의 제목·원문 본문에서 설정 키워드를 검색한다."""
 
 from __future__ import annotations
@@ -25,15 +26,74 @@ OUTPUT_PATH = ROOT / "public" / "data" / "policies.json"
 KST = ZoneInfo("Asia/Seoul")
 
 
+def load_keyword_file(relative_path: str) -> list[str]:
+    """뉴스 전용 키워드를 한 줄에 하나씩 적은 UTF-8 파일에서 읽는다."""
+    path = (ROOT / relative_path).resolve()
+    root = ROOT.resolve()
+    if path != root and root not in path.parents:
+        raise RuntimeError("뉴스 키워드 파일은 저장소 내부에 있어야 합니다.")
+    if not path.is_file():
+        raise RuntimeError(f"뉴스 키워드 파일을 찾지 못했습니다: {relative_path}")
+    values: list[str] = []
+    for raw_line in path.read_text(encoding="utf-8-sig").splitlines():
+        line = raw_line.strip()
+        if not line or line.startswith("#"):
+            continue
+        values.extend(value.strip() for value in re.split(r"[,;\t]", line) if value.strip())
+    return list(dict.fromkeys(values))
+
+
+def policy_section(item: dict) -> str:
+    """화면 탭에 사용할 보도자료·공지사항·뉴스 구분을 안정적으로 판정한다."""
+    if item.get("sourceType") == "news" or item.get("section") == "news":
+        return "news"
+    explicit = str(item.get("section", "")).strip().lower()
+    if explicit in {"press", "notice"}:
+        return explicit
+    source = str(item.get("source", ""))
+    url = str(item.get("url", ""))
+    if "보도자료" in source or re.search(r"(?:menuId=(?:286|10598)|boardMasterId=(?:1|939))(?:&|$)", url):
+        return "press"
+    return "notice"
+
+
+def source_section(source: dict) -> str:
+    explicit = str(source.get("type", "")).strip().lower()
+    if explicit in {"press", "notice"}:
+        return explicit
+    return policy_section({"source": source.get("name", ""), "url": source.get("url", ""), "sourceType": "official"})
+
+
+def policy_material_text(item: dict) -> str:
+    return f"{item.get('title', '')} {item.get('summary', '')}"
+
+
+def has_auction_material(items: list[dict]) -> bool:
+    return any(re.search(r"유상할당|유상경매|경매|입찰", policy_material_text(item)) for item in items)
+
+
+def has_active_market_stabilization(items: list[dict]) -> bool:
+    """제도 언급이 아니라 실제 발동·물량조정 발표가 있는 경우만 참으로 본다."""
+    mechanism = r"시장안정(?:화)?|시장안정화예비분|예비분|K-MSR"
+    activation = r"발동|추가\s*공급|공급\s*결정|방출|조정\s*물량|매각\s*공고"
+    for item in items:
+        text = re.sub(r"\s+", " ", policy_material_text(item))
+        if re.search(rf"(?:{mechanism}).{{0,100}}(?:{activation})|(?:{activation}).{{0,100}}(?:{mechanism})", text, re.IGNORECASE):
+            return True
+    return False
+
+
 def fallback_policy_insight(items: list[dict]) -> str:
     official = [item for item in items if item.get("sourceType") != "news"][:10]
     if not official:
         return "최근 기후부 공식자료가 수집되면 정책 변화가 시장 수급에 미칠 영향을 분석합니다."
     haystack = " ".join(f"{item.get('title', '')} {item.get('summary', '')}" for item in official)
-    if re.search(r"시장안정|예비분|K-MSR", haystack, re.IGNORECASE):
-        return "최근 공식자료는 시장안정화 장치와 공급조절 체계 구체화에 무게가 실립니다. 가격 급변 시 공급 대응 가능성이 커지는 만큼 발동 기준과 실제 조정물량을 확인해야 합니다."
-    if re.search(r"유상|경매|입찰", haystack):
-        return "최근 공식자료는 유상경매 일정과 공급 경로 조정에 초점이 맞춰져 있습니다. 단기 가격은 경매 공급물량과 응찰강도가 현물 수급을 얼마나 흡수하는지에 좌우될 가능성이 큽니다."
+    auction_material = has_auction_material(official)
+    active_stabilization = has_active_market_stabilization(official)
+    if active_stabilization:
+        return "최근 공식자료에서 시장안정화 조치의 실제 발동 또는 공급물량 조정이 확인됩니다. 현물 수급에 직접 영향을 줄 수 있으므로 발동 시점, 조정물량과 시장 흡수 여부를 우선 점검해야 합니다."
+    if auction_material:
+        return "최근 공식자료의 직접적인 수급 변수는 유상경매입니다. 최근 경매가 높은 낙찰가로 소화돼 공급보다 이행수요가 강하다는 신호입니다."
     if re.search(r"할당|계획기간|배출허용총량", haystack):
         return "최근 공식자료는 할당체계와 차기 계획기간 운영 구체화에 집중돼 있습니다. 중기 수급 기대가 바뀔 수 있어 할당량, 유상할당 비중과 시행시점을 함께 확인해야 합니다."
     if re.search(r"상쇄|외부사업", haystack):
@@ -126,7 +186,11 @@ def generate_policy_insight(items: list[dict]) -> dict:
     prompt = (
         "당신은 한국 배출권거래제(K-ETS) 정책 분석가입니다. 아래 기후부 공식 보도자료와 공지사항만 근거로 최근 정책 인사이트를 작성하세요. "
         "기사나 외부 사실은 사용하지 마세요. 상방·하방·혼합·중립 같은 방향등급을 만들거나 가격 방향을 단정하지 말고, 제목을 나열하지도 마세요. "
-        "정책 변화의 핵심, 배출권 수급에 작용할 수 있는 경로, 후속 확인 변수를 자연스러운 한국어 2문장, 110~190자로 작성하세요. 문장만 출력하세요.\n\n" + materials
+        "자료의 최근성과 실제 시행 여부를 가장 중요하게 보세요. 유상경매 입찰계획·공고·결과가 있으면 실제 공급물량, 응찰률과 낙찰가를 우선 수급 변수로 다루세요. "
+        "최근 경매 결과가 있으면 공급물량 자체보다 낙찰가·응찰강도가 보여주는 실제 이행수요를 해석하세요. "
+        "'유상할당 및 시장안정화 조치를 위한 배출권 추가할당에 관한 규정'이라는 법령명이나 K-MSR 도입·논의만으로 시장안정화 조치가 작동 중이라고 판단하면 안 됩니다. "
+        "실제 발동 공고가 없으면 시장안정화를 아예 언급하지 마세요. "
+        "첫 문장은 핵심 수급 변수를 짚고, 둘째 문장은 확인된 경매 결과의 의미를 분석하세요. 자연스러운 한국어 2문장, 70~120자로 작성하고 문장만 출력하세요.\n\n" + materials
     )
     request = urllib.request.Request(
         "https://api.openai.com/v1/responses",
@@ -139,7 +203,15 @@ def generate_policy_insight(items: list[dict]) -> dict:
             text = extract_response_text(json.loads(response.read().decode("utf-8")))
         text = re.sub(r"\s+", " ", text).strip().strip('"')
         if len(text) >= 40:
-            result.update({"summary": text[:260], "source": "openai", "model": model})
+            # 실제 발동 근거가 없는데 AI가 시장안정화를 현재 변수로 끌어올리면
+            # 검증된 유상경매 중심 문구를 유지한다.
+            ungrounded_stabilization = (
+                has_auction_material(official)
+                and not has_active_market_stabilization(official)
+                and bool(re.search(r"시장안정|K-MSR|예비분", text, re.IGNORECASE))
+            )
+            if not ungrounded_stabilization:
+                result.update({"summary": text[:260], "source": "openai", "model": model})
     except Exception as exc:
         print(f"AI 정책 인사이트 경고: {exc}", file=sys.stderr)
     return result
@@ -338,6 +410,7 @@ def source_candidates(root: ET.Element, source: dict, matched_keyword: str) -> l
                 "summary": description,
                 "source": source["name"],
                 "sourceType": "official",
+                "section": source_section(source),
                 "url": link,
                 "matchedKeywords": [matched_keyword],
             }
@@ -425,9 +498,15 @@ def main() -> int:
     keywords = [str(value).strip() for value in settings.get("policyKeywords", []) if str(value).strip()]
     sources = settings.get("policySources", [])
     news_searches = settings.get("policyNewsSearches", [])
+    news_keyword_file = str(settings.get("newsKeywordFile", "config/news_keywords.txt")).strip()
+    news_keywords = load_keyword_file(news_keyword_file) if news_searches else []
     lookback_days = max(1, min(int(settings.get("policyLookbackDays", 30)), 90))
-    if not keywords or not (sources or news_searches):
-        raise RuntimeError("config/settings.json에 키워드와 검색 자료를 설정하세요.")
+    if not (sources or news_searches):
+        raise RuntimeError("config/settings.json에 검색 자료를 설정하세요.")
+    if sources and not keywords:
+        raise RuntimeError("config/settings.json에 공식자료 검색 키워드를 설정하세요.")
+    if news_searches and not news_keywords:
+        raise RuntimeError(f"{news_keyword_file}에 뉴스 검색 키워드를 한 개 이상 입력하세요.")
 
     collected: list[dict] = []
     errors: list[str] = []
@@ -438,7 +517,7 @@ def main() -> int:
             errors.append(f"{source.get('name', 'RSS')}: {exc}")
     for search in news_searches:
         try:
-            collected.extend(fetch_google_news(search, keywords, lookback_days))
+            collected.extend(fetch_google_news(search, news_keywords, lookback_days))
         except Exception as exc:
             errors.append(f"{search.get('name', '뉴스검색')}: {exc}")
 
@@ -455,11 +534,20 @@ def main() -> int:
 
     merged: dict[str, dict] = {}
     for item in existing + collected:
+        item["section"] = policy_section(item)
         haystack = f"{item.get('title', '')} {item.get('summary', '')}".lower()
-        matched_keywords = [str(value) for value in item.get("matchedKeywords", [])]
-        if not matched_keywords and not any(keyword.lower() in haystack for keyword in keywords):
+        allowed_keywords = news_keywords if item.get("sourceType") == "news" else keywords
+        matched_keywords = {str(value).strip().lower() for value in item.get("matchedKeywords", [])}
+        if not any(
+            keyword.lower() in haystack or keyword.lower() in matched_keywords
+            for keyword in allowed_keywords
+        ):
             continue
-        key = item.get("url") or f"{item.get('publishedAt')}|{item.get('title')}"
+        if item.get("sourceType") == "news":
+            key = item.get("url") or f"news|{item.get('publishedAt')}|{item.get('title')}"
+        else:
+            normalized_title = re.sub(r"\s+", " ", str(item.get("title", ""))).strip().lower()
+            key = f"{item['section']}|{item.get('publishedAt')}|{normalized_title}"
         merged[key] = item
 
     limit = max(1, min(int(settings.get("maxPolicyItems", 60)), 200))
@@ -467,7 +555,21 @@ def main() -> int:
     ranked = sorted(merged.values(), key=lambda item: (item.get("publishedAt", ""), item.get("title", "")), reverse=True)
     news = dedupe_news([item for item in ranked if item.get("sourceType") == "news"])[:max_news]
     official = [item for item in ranked if item.get("sourceType") != "news"]
-    items = sorted(official + news, key=lambda item: (item.get("publishedAt", ""), item.get("title", "")), reverse=True)[:limit]
+
+    # 최신 공지사항이 많아도 보도자료 탭이 비지 않도록 공식자료 영역을 균형 배분한다.
+    official_capacity = max(0, limit - len(news))
+    press = [item for item in official if policy_section(item) == "press"]
+    notices = [item for item in official if policy_section(item) == "notice"]
+    press_quota = (official_capacity + 1) // 2
+    notice_quota = official_capacity // 2
+    selected_official = press[:press_quota] + notices[:notice_quota]
+    selected_keys = {item.get("id") or f"{item.get('publishedAt')}|{item.get('title')}" for item in selected_official}
+    extras = [
+        item for item in official
+        if (item.get("id") or f"{item.get('publishedAt')}|{item.get('title')}") not in selected_keys
+    ]
+    selected_official.extend(extras[: max(0, official_capacity - len(selected_official))])
+    items = sorted(selected_official + news, key=lambda item: (item.get("publishedAt", ""), item.get("title", "")), reverse=True)[:limit]
     for item in items:
         item.pop("impact", None)
         item.pop("impactReason", None)
@@ -475,6 +577,7 @@ def main() -> int:
     output = {
         "lastSync": datetime.now(KST).isoformat(timespec="seconds"),
         "keywords": keywords,
+        "newsKeywords": news_keywords,
         "sourceCount": source_count,
         "warning": " | ".join(errors) if errors else None,
         "aiInsight": generate_policy_insight(items),
