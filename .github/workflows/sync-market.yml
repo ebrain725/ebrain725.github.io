@@ -1,4 +1,4 @@
-name: Sync KRX Market Data v2
+name: Sync KRX Market & Auction Data v3
 
 on:
   schedule:
@@ -6,6 +6,8 @@ on:
     - cron: "37 23 * * *"
     # KRX 배출권시장 종료 후 당일 시세를 12:07 KST에 반영 (평일)
     - cron: "7 3 * * 1-5"
+    # 매주 수요일 17:17 KST 호출 후 둘째 주(8~14일)에만 경매 수집
+    - cron: "17 8 * * 3"
   workflow_dispatch:
     inputs:
       mode:
@@ -16,10 +18,19 @@ on:
         options:
           - site-today
           - openapi
+          - auction
       target_date:
         description: "Open API 전용: 조회 기준일 YYYY-MM-DD (비우면 전일)"
         required: false
         type: string
+      trigger_type:
+        description: "실행 주체"
+        required: true
+        default: "manual"
+        type: choice
+        options:
+          - manual
+          - scheduler
 
 permissions:
   contents: write
@@ -41,6 +52,7 @@ jobs:
       KRX_AUTH_KEY: ${{ secrets.KRX_AUTH_KEY }}
       KAU_SYMBOL: ${{ vars.KAU_SYMBOL }}
       KRX_TARGET_DATE: ${{ inputs.target_date }}
+      KRX_AUCTION_START_DATE: "2015-01-01"
       TZ: Asia/Seoul
     steps:
       - name: 저장소 불러오기
@@ -50,12 +62,17 @@ jobs:
         with:
           python-version: "3.12"
       - name: 수집 방식 결정
+        id: mode_check
         shell: bash
         run: |
           MODE="${{ inputs.mode }}"
+          TRIGGER_TYPE="${{ inputs.trigger_type }}"
           if [ "${{ github.event_name }}" = "schedule" ]; then
+            TRIGGER_TYPE="scheduler"
             if [ "${{ github.event.schedule }}" = "7 3 * * 1-5" ]; then
               MODE="site-today"
+            elif [ "${{ github.event.schedule }}" = "17 8 * * 3" ]; then
+              MODE="auction"
             else
               MODE="openapi"
             fi
@@ -64,18 +81,32 @@ jobs:
             MODE="site-today"
           fi
           echo "KRX_SYNC_MODE=$MODE" >> "$GITHUB_ENV"
+          echo "SHOULD_RUN=true" >> "$GITHUB_ENV"
+
+          # 외부 cron-job.org는 매주 수요일 호출하고, 여기서 둘째 주만 통과시킵니다.
+          if [ "$MODE" = "auction" ] && [ "$TRIGGER_TYPE" = "scheduler" ]; then
+            DAY_OF_MONTH=$(TZ=Asia/Seoul date +%d)
+            DAY_OF_WEEK=$(TZ=Asia/Seoul date +%u)
+            HOUR=$(TZ=Asia/Seoul date +%H)
+            if [ "$DAY_OF_WEEK" != "3" ] || [ "$((10#$DAY_OF_MONTH))" -lt 8 ] || [ "$((10#$DAY_OF_MONTH))" -gt 14 ] || [ "$((10#$HOUR))" -lt 17 ]; then
+              echo "SHOULD_RUN=false" >> "$GITHUB_ENV"
+              echo "경매 수집 생략: 둘째 주 수요일 17시 이후가 아닙니다."
+            fi
+          fi
           echo "수집 방식: $MODE"
-      - name: KRX 배출권 시세 수집
+      - name: KRX 배출권 시세·경매 수집
+        if: env.SHOULD_RUN == 'true'
         run: python scripts/sync_krx.py
-      - name: 변경된 시세 저장
+      - name: 변경된 시세·경매 저장
+        if: env.SHOULD_RUN == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add public/data/prices.csv
+          git add public/data/prices.csv public/data/auctions.json
           if git diff --cached --quiet; then
-            echo "새로운 KRX 시세가 없습니다."
+            echo "새로운 KRX 시세 또는 경매 결과가 없습니다."
           else
-            git commit -m "data: update KRX emissions market"
+            git commit -m "data: update KRX emissions market and auction"
             git push
           fi
       - name: Pages 설정
