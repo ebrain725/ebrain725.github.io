@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-08-23T18:13:48+09:00",
+  "lastSync": "2026-08-23T19:01:10+09:00",
   "keywords": [
     "배출권",
     "배출권거래제",
@@ -23,16 +23,50 @@
     "상쇄배출권"
   ],
   "sourceCount": 3,
-  "warning": "기후부 보도자료: 키워드별 공식검색과 기본 RSS 복구에 모두 실패했습니다: 배출권: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 배출권거래제: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 유상할당: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 유상경매: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 탄소시장: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 시장안정화: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 상쇄배출권: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 기본 RSS 복구: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 기후부 공지·공고: 키워드별 공식검색과 기본 RSS 복구에 모두 실패했습니다: 배출권: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 배출권거래제: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 유상할당: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 유상경매: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 탄소시장: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 시장안정화: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 상쇄배출권: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 기본 RSS 복구: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out>",
+  "warning": null,
   "aiInsight": {
     "summary": "최근 공식자료의 직접적인 수급 변수는 유상경매입니다. 최근 경매가 높은 낙찰가로 소화돼 공급보다 이행수요가 강하다는 신호입니다.",
-    "generatedAt": "2026-08-23T18:13:48+09:00",
+    "generatedAt": "2026-08-23T19:01:10+09:00",
     "basisLatestDate": "2026-08-05",
     "basisCount": 10,
     "source": "fallback",
     "model": null
   },
   "items": [
+    {
+      "id": "b2dd834c700eea1f",
+      "publishedAt": "2026-08-23",
+      "title": "국내 시장에서 국제 시장으로: 베트남 탄소 시장의 전환점.",
+      "category": "제도",
+      "summary": "국내 시장에서 국제 시장으로: 베트남 탄소 시장의 전환점. Vietnam.vn",
+      "source": "Vietnam.vn",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQQ2xMVktRMFVSa2hrQ1pkcFJSVTB2Zk9XLUt1U0NEajU4S0E1ZXV0OHlwOG9VTmV6SzhQUlpTdVNxdV9VZzQ5VmZyM2pKWnBqZi1lN2ktMDNxbENnczFXXzJic0VIRkl0UWgwcFJmakhQNzJmOXVvNDZ4WE40eWM3TmxhTHNMZ0RiLTNjTGk2RksxblF2?oc=5",
+      "matchedKeywords": [],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "Vietnam.vn"
+      ]
+    },
+    {
+      "id": "4ce0bf4d1675c408",
+      "publishedAt": "2026-08-22",
+      "title": "탄소 배출권 관리에서 지방 당국의 권한 분권화",
+      "category": "제도",
+      "summary": "탄소 배출권 관리에서 지방 당국의 권한 분권화 Vietnam.vn",
+      "source": "Vietnam.vn",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNcWpkS0t4WHhkZWNBdmJFRlgxenNzNDVWWHBtXy01RnN1OE9ySXEwaFBaOVRGV2FSaHg5ZU1sTUNvVEFXUWlBb2d2a0lMeGdCdHpzVXVZR0tVRlNBS2pITWNPRF9RZV9MemNqVFYzQmtCYW93LU5udUxVNmlVRVdFa1hR?oc=5",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "Vietnam.vn"
+      ]
+    },
     {
       "id": "f77d9243c09d19f3",
       "publishedAt": "2026-08-22",
@@ -52,19 +86,21 @@
       ]
     },
     {
-      "id": "570ec36b3003ee49",
-      "publishedAt": "2026-08-21",
-      "title": "베라·골드스탠다드, 파리협정 6.2조 ‘상응조정 산정 툴’ 공동 출시",
+      "id": "a4879c744f8a890e",
+      "publishedAt": "2026-08-22",
+      "title": "녹색 성장을 위해서는 기업들이 배출량을 줄이거나 탄소 배출권을 구매해야 합니다.",
       "category": "제도",
-      "summary": "베라·골드스탠다드, 파리협정 6.2조 ‘상응조정 산정 툴’ 공동 출시 임팩트온",
-      "source": "임팩트온",
+      "summary": "녹색 성장을 위해서는 기업들이 배출량을 줄이거나 탄소 배출권을 구매해야 합니다. Vietnam.vn",
+      "source": "Vietnam.vn",
       "sourceType": "news",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE04LVAtUHFmY2hUVUhDeDQyWEJKT2pCVFVMWklzbloyVWFMYWxySnZ2ZFB6TlkwT1BWWlM4VE03enVNSWRBWmtTVDVXWkRGLUNkdmx3QURLSTc1eGthYjhDVzJmZnNUdVJnanJHZNIBbEFVX3lxTE04LVAtUHFmY2hUVUhDeDQyWEJKT2pCVFVMWklzbloyVWFMYWxySnZ2ZFB6TlkwT1BWWlM4VE03enVNSWRBWmtTVDVXWkRGLUNkdmx3QURLSTc1eGthYjhDVzJmZnNUdVJnanJHZA?oc=5",
-      "matchedKeywords": [],
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPellSSkhsT2RMcmRLVTR4MzhhWlcwZ1VacDc3aVlUc25peDEwNUl5a05IV3IyT2xQRU1uMlJkNFoxTE5XaVZqWllDZVdPQXQ0em5tZGw4T243VWlLdk5fM05qQjVBRzF1M0xCUUdFSmJjS01QcnR2S0MxblpJTm0tUFhrS1FEZzNoazBJVkQ5eU8tVHp1TXpTNG9KdUQ5QWdfN1dxVzZGS0Z1Z28?oc=5",
+      "matchedKeywords": [
+        "배출권"
+      ],
       "section": "news",
       "duplicateCount": 1,
       "duplicateSources": [
-        "임팩트온"
+        "Vietnam.vn"
       ]
     },
     {
@@ -83,6 +119,24 @@
       "duplicateCount": 1,
       "duplicateSources": [
         "데일리안"
+      ]
+    },
+    {
+      "id": "35352702b7bf5acc",
+      "publishedAt": "2026-08-21",
+      "title": "다낭시, 산림 탄소 배출권 판매 계획 수립 중.",
+      "category": "제도",
+      "summary": "다낭시, 산림 탄소 배출권 판매 계획 수립 중. Vietnam.vn",
+      "source": "Vietnam.vn",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5zZnIxTlhSd09UX09fcEdwRjN5Q01XMERhWnI0d0tkWmNxbnZ0czdjcHNXNUFVTHVCYk1lMHEyM2poUHZaZC0zTXU4blk3MzFvYVp0NnhjTlByRTlIZkwzekg0LVpyN3JZTUQ2bmdzdm5xYXJBX3c?oc=5",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "Vietnam.vn"
       ]
     },
     {
@@ -118,12 +172,26 @@
         "배출권"
       ],
       "section": "news",
-      "duplicateCount": 6,
+      "duplicateCount": 2,
       "duplicateSources": [
-        "서울경제TV",
         "머니투데이",
-        "dt.co.kr",
         "v.daum.net"
+      ]
+    },
+    {
+      "id": "70590a7695ec589f",
+      "publishedAt": "2026-08-20",
+      "title": "탄소 시장은 녹색 경제 변혁의 원동력입니다.",
+      "category": "제도",
+      "summary": "탄소 시장은 녹색 경제 변혁의 원동력입니다. Vietnam.vn",
+      "source": "Vietnam.vn",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOV19DSTVBRGROR0lzdXMtczNteVZ3RVNKRjlTMVotZnZvR0JXbURzek1yY1h6RWhPcWpJa2tpM09WdzNZYmYtTU1RYmFJeFZqYXB3S1RPNS1DcnUtWi0wZmxIZlhtTVFfNkhkeUN6c1AyOWNmbW0yTVIxcl95SS1SQ0dR?oc=5",
+      "matchedKeywords": [],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "Vietnam.vn"
       ]
     },
     {
@@ -177,7 +245,7 @@
         "탄소배출권"
       ],
       "section": "news",
-      "duplicateCount": 2,
+      "duplicateCount": 1,
       "duplicateSources": [
         "신화망"
       ]
@@ -216,11 +284,25 @@
         "배출권거래제"
       ],
       "section": "news",
-      "duplicateCount": 3,
+      "duplicateCount": 1,
       "duplicateSources": [
-        "시사일보",
-        "로컬세계",
         "뷰티경제"
+      ]
+    },
+    {
+      "id": "a969d906f8868b22",
+      "publishedAt": "2026-08-19",
+      "title": "베트남의 탄소 시장은 올바른 방향으로 나아가고 있습니다.",
+      "category": "제도",
+      "summary": "베트남의 탄소 시장은 올바른 방향으로 나아가고 있습니다. Vietnam.vn",
+      "source": "Vietnam.vn",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1LMmZGQlVWWnBXdGpOeHpMVjVqS3h3ZWxxWWMxWUV5eWc4ZVRRUkZPLWJDUVZfX3NCOUgzbFdoRzJFZldJX1ZrMnRjemNwWk1EUmIxcVdTTGxzbkxHX2wyX2lraHZXTENzWEZON09WRXJOVG9XMHpNWDhQXzU?oc=5",
+      "matchedKeywords": [],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "Vietnam.vn"
       ]
     },
     {
@@ -260,6 +342,24 @@
       ]
     },
     {
+      "id": "7dd69f97f8815ca7",
+      "publishedAt": "2026-08-18",
+      "title": "정부, 파리 협정 6조에 따른 베트남-싱가포르 탄소 배출권 거래 협정 승인: 국제 탄소 시장 발전을 위한 전략적 발걸음.",
+      "category": "제도",
+      "summary": "정부, 파리 협정 6조에 따른 베트남-싱가포르 탄소 배출권 거래 협정 승인: 국제 탄소 시장 발전을 위한 전략적 발걸음. Vietnam.vn",
+      "source": "Vietnam.vn",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNRXJPYUNVNmptVnFicE0tQi1UUDg5ODY0bEt0RG5vR1NpLUZUd3g1dF83bTI5eFJaWnJPN2NkZzhCWWdrc0V2VHhBNFhTcTJuLXRkNGtVdzBwRDlubERUeWNBaHhfZ3VkRmZvWWItMDhFM2hyazBsazR5Q2FVQUx1dHJtbThBaDE4cm9rVUZUSXczTV93TTR4RGNkNVh2RGdkeTNhNDdvUHVnbUtLNlZtS0VXT05iSmUyd1R6aHF2SlJ0bl8yOEJrTXF6MGNlanZwQkZ1aEttcnhGRWFWRFlSZjY4QkNZRTJ0Sy1oQjhwMHlfQQ?oc=5",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "Vietnam.vn"
+      ]
+    },
+    {
       "id": "2c8f7986b2bfad4a",
       "publishedAt": "2026-08-18",
       "title": "[온실가스 배출권] 8월 18일 KAU25, 700원 급등하며 2만8350원 마감",
@@ -277,6 +377,22 @@
       "duplicateCount": 1,
       "duplicateSources": [
         "데일리e뉴스"
+      ]
+    },
+    {
+      "id": "7268c4262703c814",
+      "publishedAt": "2026-08-18",
+      "title": "EVNGENCO1은 정책을 선제적으로 업데이트하고 탄소 시장 참여 역량을 강화합니다.",
+      "category": "제도",
+      "summary": "EVNGENCO1은 정책을 선제적으로 업데이트하고 탄소 시장 참여 역량을 강화합니다. Vietnam.vn",
+      "source": "Vietnam.vn",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPSEIzUlJfbkc5Y3NaUWtOZXZpektxajNqb3g3UmZzZk1oNFFXZE85RnRaVF9HSUcxdm1hTm1Yd2dOYXdqVV9kdm14bWVlODFvS0FaQS1MVERGeUl2Y1dOZG54X1J6TC1WTzh0Z25zOXdQUDFEWFNfbC1uWDF6SnYtVTJNa2Q0NC1haEZ5VHBKaHRYeGx4cUdIOUFiUzYzZmJpX2RIRmNoc3VDMFdTdTk4?oc=5",
+      "matchedKeywords": [],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "Vietnam.vn"
       ]
     },
     {
@@ -336,145 +452,22 @@
       ]
     },
     {
-      "id": "83b7601976c1372e",
-      "publishedAt": "2026-08-15",
-      "title": "창원특례시, 온실가스 배출권거래제 대응 역량 강화 > 뉴스",
+      "id": "8efb43def8029f9d",
+      "publishedAt": "2026-08-16",
+      "title": "글로벌 탄소시장 구조 재편: 배출권 거래자에게 '검증 역량'이 새 경쟁력이 됐다",
       "category": "제도",
-      "summary": "창원특례시, 온실가스 배출권거래제 대응 역량 강화 > 뉴스 더코리아",
-      "source": "더코리아",
+      "summary": "글로벌 탄소시장 구조 재편: 배출권 거래자에게 '검증 역량'이 새 경쟁력이 됐다 뉴스N연합",
+      "source": "뉴스N연합",
       "sourceType": "news",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5DSjZHVjZwd0hEN1BSMEZjOVdMcXJTeDlES3RFeVVjMi1aSEE5RXlYUmVTY3hQNHFyaExBVjRsdGd6cWxPSEdTb3dWMTZ3S1psZk9MN1NDM0c1VU1ldUJscDg3YllUbWJjYjVLVFkwNW8?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE9BQndEWm44SFQ0b2ZWZVVLck5YOTJGWWxVWUd5clJMdkxxSUxXN2RqSm9sTFMzYmRWQ1lURVFPakFVRnltckw1WEZB?oc=5",
       "matchedKeywords": [
         "배출권",
-        "배출권거래제",
-        "온실가스 배출권"
+        "탄소시장"
       ],
       "section": "news",
       "duplicateCount": 1,
       "duplicateSources": [
-        "더코리아"
-      ]
-    },
-    {
-      "id": "a07d279c103a0abc",
-      "publishedAt": "2026-08-15",
-      "title": "[독자칼럼] 탄소 배출권을 사는 전북에서, '탄소 가치'를 만드는 전북으로",
-      "category": "제도",
-      "summary": "[독자칼럼] 탄소 배출권을 사는 전북에서, '탄소 가치'를 만드는 전북으로 프레시안",
-      "source": "프레시안",
-      "sourceType": "news",
-      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE4tTGJ3ZEdxMWY3TUZ2U0pjNFhaWTdraWF1YWFWS05Vai1GNWZsU3REdGw0T3lTWVZETGJoQ3BidTFpX19KZkx3SWJCZ1lnb04wZXpTZ1N3a1pZS1A3Um0zTm1TRHpTYWxNNXRZ?oc=5",
-      "matchedKeywords": [
-        "배출권"
-      ],
-      "section": "news",
-      "duplicateCount": 1,
-      "duplicateSources": [
-        "프레시안"
-      ]
-    },
-    {
-      "id": "5edc8ab1e44e87a2",
-      "publishedAt": "2026-08-14",
-      "title": "탄소 시장: 정책에서 실행까지, 녹색 경제의 흐름을 활성화하다",
-      "category": "제도",
-      "summary": "탄소 시장: 정책에서 실행까지, 녹색 경제의 흐름을 활성화하다 Vietnam.vn",
-      "source": "Vietnam.vn",
-      "sourceType": "news",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPaHFXZTFlMVJRZFRiX3BzRFVZOU41LWhzMU1ZXzg3NDVTMGRiVVc4a1FlYUY3UlBLYnlVdjg0dmNjV2Q1a2tOZjczMElCVGt6R3lBXzd3NC1Lbnd6WEhhOWd0Sm1nWUxxempIS1h6Snl6RmxZUzdqaGRpaHBMM2lhR1U1c3dDYVBraVpmci0zT21ZY1JCT2NOQXBYaVZVOXd4a1J6bmExS00?oc=5",
-      "matchedKeywords": [],
-      "section": "news",
-      "duplicateCount": 1,
-      "duplicateSources": [
-        "Vietnam.vn"
-      ]
-    },
-    {
-      "id": "9a276d1a5bcb19ae",
-      "publishedAt": "2026-08-14",
-      "title": "탄소 배출권 거래 플랫폼 - 농업 부문에 대한 기회와 과제.",
-      "category": "제도",
-      "summary": "탄소 배출권 거래 플랫폼 - 농업 부문에 대한 기회와 과제. Vietnam.vn",
-      "source": "Vietnam.vn",
-      "sourceType": "news",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQenphOUtGMTN3NzdFQ2ZRcnc2SkU5MXNsX0l5aHRnV0xmcmNEdlBuZ2ZiWjl5WUVCbW0wQjlVcmVuYTNySnY3bHhSNTRsMDA2QTdlNWphT0VFeEo5MDNJeXI4UHJZZHlmemNESW1BLWJNX1lLc1FrQ0JZaDFhVHcwMUp6NmRPU2RoVkJxNnlGbDJDbm8?oc=5",
-      "matchedKeywords": [
-        "배출권"
-      ],
-      "section": "news",
-      "duplicateCount": 1,
-      "duplicateSources": [
-        "Vietnam.vn"
-      ]
-    },
-    {
-      "id": "46f7a08f804701e6",
-      "publishedAt": "2026-08-14",
-      "title": "창원시 환경기초시설 33곳 담당자, 온실가스 배출권거래제 교육 이수",
-      "category": "제도",
-      "summary": "창원시 환경기초시설 33곳 담당자, 온실가스 배출권거래제 교육 이수 NANOOM ENERGY",
-      "source": "NANOOM ENERGY",
-      "sourceType": "news",
-      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE95YzByMGQ4Z1VDVXlpWTQyb1M2OUhic3NoT2FsbmtyazJPazRSYVoxY1lhU3dZdnZLWmxzT1piZHpUdWxkTEZ4UEk1cHBfYms4c1N5N1hCb3Fqc01WRjktLW94Q3pMcmNmWWVV?oc=5",
-      "matchedKeywords": [
-        "배출권",
-        "배출권거래제",
-        "온실가스 배출권"
-      ],
-      "section": "news",
-      "duplicateCount": 1,
-      "duplicateSources": [
-        "NANOOM ENERGY"
-      ]
-    },
-    {
-      "id": "69ccfc3e17bc73f2",
-      "publishedAt": "2026-08-14",
-      "title": "에코아이, 2분기 영업익 62억 원 '흑자전환'",
-      "category": "제도",
-      "summary": "에코아이, 2분기 영업익 62억 원 '흑자전환' 더스탁(The Stock)",
-      "source": "더스탁(The Stock)",
-      "sourceType": "news",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1SZmhlY0RvT2hXM3lWUjdsN1pmWVdKOU5nbzc5MERMaEFhSTM0dlFES0J1a3Jsd1czbW55VE5vZXNLOG1VN0FfU21zVkxzcTBlRENucVRpUm1RSVFaWjRhUFZBX1A5UjZhN3c?oc=5",
-      "matchedKeywords": [],
-      "section": "news",
-      "duplicateCount": 1,
-      "duplicateSources": [
-        "더스탁(The Stock)"
-      ]
-    },
-    {
-      "id": "a7ffe12cd9156777",
-      "publishedAt": "2026-08-14",
-      "title": "에코아이, 2분기 매출 178억원",
-      "category": "제도",
-      "summary": "에코아이, 2분기 매출 178억원 뉴스핌",
-      "source": "뉴스핌",
-      "sourceType": "news",
-      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5MSWRFb1VLSENLTUttckp5SXN2MlJvTjUtbDgtM29jTTJRamtKSnBhb05xdktFN2JKVUpoekJqT19LbHh5cXc0VnQxM0RhQS0wZHhNX285WHQ3dkZ3?oc=5",
-      "matchedKeywords": [],
-      "section": "news",
-      "duplicateCount": 1,
-      "duplicateSources": [
-        "뉴스핌"
-      ]
-    },
-    {
-      "id": "893969b8cf35a3c0",
-      "publishedAt": "2026-08-14",
-      "title": "배출량을 줄인다고 해서 자동으로 탄소 배출권이 생성되는 것은 아닙니다.",
-      "category": "제도",
-      "summary": "배출량을 줄인다고 해서 자동으로 탄소 배출권이 생성되는 것은 아닙니다. Vietnam.vn",
-      "source": "Vietnam.vn",
-      "sourceType": "news",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPeDNrV0toeThCSHVWQzFobVRqbnk2WDlrUm82UmxuMFFscklnaWpZVlpSOTZrVDlQZWE3ZkZCbl9Sc29wZzgwS1BQRG9kelNDbGxnMVZBUUVPOXV0enVYVW93X0RkS19KcHVlRG96QlpTdnJQLWYwMG1obm95b2hNbUtqU0VkTVpZWmh4ckZXZEhuSWprQnc?oc=5",
-      "matchedKeywords": [
-        "배출권"
-      ],
-      "section": "news",
-      "duplicateCount": 1,
-      "duplicateSources": [
-        "Vietnam.vn"
+        "뉴스N연합"
       ]
     },
     {
