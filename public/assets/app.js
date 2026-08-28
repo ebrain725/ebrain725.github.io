@@ -3,10 +3,14 @@
 // BRIEFING_ARCHIVE_VERSION = "2026-08-20-v2"
 // AUCTION_MONITOR_VERSION = "2026-08-20-v3.4-full-history-default"
 // MARKET_PULSE_VERSION = "2026-08-20-v2-20d-position-supply-strength"
+// KAU_ROLLOVER_VERSION = "2026-08-28-v2-dual-series-volume-compare"
 
 const state = { prices: [], auctions: [], auctionPeriod: "ALL", auctionPage: 1, auctionLastSync: "", policies: [], policyInsight: null, briefings: [], briefingDate: "", period: "3M", category: "기후부 보도자료", policyPage: 1, symbol: "" };
 const POLICIES_PER_PAGE = 5;
 const AUCTIONS_PER_PAGE = 3;
+const CONTINUOUS_SYMBOL = "KAU25_KAU26";
+const CONTINUOUS_LABEL = "KAU25 → KAU26";
+const KAU26_SWITCH_NOT_BEFORE = "2026-08-31";
 const fallbackPrice = [{ date: "2026-08-19", symbol: "KAU25", close: 29500, change: 1150, changeRate: 4.06, open: 29000, high: 29500, low: 29000, volume: 396644, tradeValue: 11624058550 }];
 const number = new Intl.NumberFormat("ko-KR");
 const byId = (id) => document.getElementById(id);
@@ -60,12 +64,35 @@ async function loadJson(path) {
   return response.json();
 }
 
-function filterPrices(period) {
-  const selected = state.prices.filter((row) => !state.symbol || row.symbol === state.symbol);
+function continuousPrices() {
+  return state.prices
+    .filter((row) => (row.symbol === "KAU25" && row.date < KAU26_SWITCH_NOT_BEFORE) || (row.symbol === "KAU26" && row.date >= KAU26_SWITCH_NOT_BEFORE))
+    .sort((a, b) => a.date.localeCompare(b.date));
+}
+
+function selectedPrices() {
+  if (state.symbol === CONTINUOUS_SYMBOL) return continuousPrices();
+  return state.prices.filter((row) => !state.symbol || row.symbol === state.symbol).sort((a, b) => a.date.localeCompare(b.date));
+}
+
+function filterRowsByPeriod(selected, period) {
   if (period === "ALL" || selected.length < 2) return selected;
   const days = { "1M": 31, "3M": 93, "6M": 186, "1Y": 366 }[period];
   const end = new Date(`${selected.at(-1).date}T00:00:00`).getTime();
   return selected.filter((row) => end - new Date(`${row.date}T00:00:00`).getTime() <= days * 86400000);
+}
+
+function filterPrices(period) { return filterRowsByPeriod(selectedPrices(), period); }
+
+function rolloverIndex(rows) {
+  return state.symbol === CONTINUOUS_SYMBOL ? rows.findIndex((row, index) => index > 0 && row.symbol !== rows[index - 1].symbol) : -1;
+}
+
+function adjustedContinuousPrices(rows) {
+  const transitionIndex = rolloverIndex(rows);
+  if (transitionIndex <= 0) return rows;
+  const gap = rows[transitionIndex].close - rows[transitionIndex - 1].close;
+  return rows.map((row, index) => index < transitionIndex ? { ...row, close: row.close + gap } : row);
 }
 
 function normalizeAuctions(items) {
@@ -180,7 +207,7 @@ function dedupeNewsPolicies(policies) {
 }
 
 function marketPulseMetrics(selected, latest) {
-  const ordered = selected.filter((row) => row.symbol === latest.symbol).sort((a, b) => a.date.localeCompare(b.date));
+  const ordered = [...selected].sort((a, b) => a.date.localeCompare(b.date));
   const windowRows = ordered.slice(-20);
   const baseline = ordered.slice(-21, -1);
   const priceAverage = windowRows.reduce((sum, row) => sum + row.close, 0) / Math.max(windowRows.length, 1);
@@ -310,16 +337,20 @@ function renderAuctions() {
 }
 
 function renderMarket() {
-  const rows = filterPrices(state.period);
-  const selected = state.prices.filter((row) => !state.symbol || row.symbol === state.symbol);
+  const selected = selectedPrices();
+  const rows = filterRowsByPeriod(selected, state.period);
   const latest = selected.at(-1) || fallbackPrice[0];
+  const metricSelected = state.symbol === CONTINUOUS_SYMBOL ? adjustedContinuousPrices(selected) : selected;
+  const metricRows = filterRowsByPeriod(metricSelected, state.period);
+  const metricLatest = metricSelected.at(-1) || latest;
+  const hasRollover = rolloverIndex(selected) > 0;
   const endTime = new Date(`${latest.date}T00:00:00`).getTime();
   const yearRows = selected.filter((row) => endTime - new Date(`${row.date}T00:00:00`).getTime() <= 366 * 86400000);
   const yearHigh = Math.max(...(yearRows.length ? yearRows : [latest]).map((row) => row.high || row.close));
   const yearLow = Math.min(...(yearRows.length ? yearRows : [latest]).map((row) => row.low || row.close));
-  const periodChange = rows.length > 1 ? (latest.close / rows[0].close - 1) * 100 : latest.changeRate;
+  const periodChange = metricRows.length > 1 ? (metricLatest.close / metricRows[0].close - 1) * 100 : latest.changeRate;
   const direction = latest.changeRate >= 0 ? "up" : "down";
-  const marketPulse = marketPulseMetrics(selected, latest);
+  const marketPulse = marketPulseMetrics(metricSelected, metricLatest);
   byId("asofDate").textContent = latest.date.replaceAll("-", "."); byId("symbol").textContent = latest.symbol;
   byId("currentPrice").textContent = money(latest.close);
   byId("dailyChange").className = `change ${direction}`;
@@ -329,25 +360,30 @@ function renderMarket() {
   byId("volume").textContent = money(latest.volume); byId("tradeValue").textContent = `거래대금 ${amount(latest.tradeValue)}`;
   byId("periodChange").textContent = `${periodChange >= 0 ? "+" : ""}${periodChange.toFixed(2)}%`;
   byId("periodChange").className = `kpi-number ${periodChange >= 0 ? "positive" : "negative"}`;
-  byId("periodLabel").textContent = `${periodName(state.period)} 기준`; byId("recordCount").textContent = `${rows.length}개 거래일`;
+  byId("periodLabel").textContent = `${periodName(state.period)} 기준${hasRollover ? " · 종목전환 보정" : ""}`; byId("recordCount").textContent = `${rows.length}개 거래일`;
   byId("dayRange").textContent = `${money(latest.low)}–${money(latest.high)}`; byId("openPrice").textContent = `시가 ${money(latest.open)}원`;
   byId("pulsePosition").textContent = `${marketPulse.priceBand} ${Math.round(marketPulse.pricePosition)}%`;
   byId("positionTrack").style.width = `${marketPulse.pricePosition}%`;
-  byId("pulsePositionDetail").textContent = `20일 평균 대비 ${marketPulse.priceAverageDiff >= 0 ? "+" : ""}${marketPulse.priceAverageDiff.toFixed(1)}%`;
+  byId("pulsePositionDetail").textContent = `20일 평균 대비 ${marketPulse.priceAverageDiff >= 0 ? "+" : ""}${marketPulse.priceAverageDiff.toFixed(1)}%${hasRollover ? " · 전환 보정" : ""}`;
   byId("supplyStatus").textContent = marketPulse.supplyStatus; byId("supplyStatus").className = marketPulse.supplyClass;
   byId("supplyDetail").textContent = `20일 평균의 ${marketPulse.volumeRatio.toFixed(1)}배 · 최근 20일 상위 ${marketPulse.volumeTopPercent}%`;
   byId("supplyAnalysis").textContent = marketPulse.supplyAnalysis;
-  byId("checkPoint").textContent = marketInsight(selected, latest);
+  byId("checkPoint").textContent = marketInsight(metricSelected, metricLatest);
   renderChart(rows);
 }
 
 function renderChart(rows) {
   const svg = byId("priceChart");
   const width = 900, left = 62, right = 22, top = 24, priceBottom = 245, volumeTop = 275, bottom = 326;
-  const values = rows.map((row) => row.close);
+  const continuousMode = state.symbol === CONTINUOUS_SYMBOL;
+  const start = rows[0]?.date || "", end = rows.at(-1)?.date || "";
+  const previewKau26 = continuousMode && start && end ? state.prices
+    .filter((row) => row.symbol === "KAU26" && row.date < KAU26_SWITCH_NOT_BEFORE && row.date >= start && row.date <= end)
+    .sort((a, b) => a.date.localeCompare(b.date)) : [];
+  const previewByDate = new Map(previewKau26.map((row) => [row.date, row]));
+  const values = [...rows.map((row) => row.close), ...previewKau26.map((row) => row.close)];
   const maxPrice = Math.max(...values, 30000), minPrice = Math.min(...values, 20000), pad = Math.max((maxPrice - minPrice) * .16, 800);
   const yMax = maxPrice + pad, yMin = Math.max(0, minPrice - pad), maxVol = Math.max(...rows.map((row) => row.volume), 1);
-  const start = rows[0]?.date || "", end = rows.at(-1)?.date || "";
   const startTime = chartDateTime(start), endTime = chartDateTime(end);
   // 금융 차트처럼 실제 거래일만 같은 간격으로 배치합니다.
   // 주말·공휴일은 빈 거래량 막대로 오해되지 않도록 축에서 압축합니다.
@@ -367,11 +403,40 @@ function renderChart(rows) {
   };
   const y = (value) => top + (yMax - value) * (priceBottom - top) / Math.max(yMax - yMin, 1);
   let policyEvents = [];
-  let html = `<defs><linearGradient id="areaGradient" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#0c7c59" stop-opacity=".2"/><stop offset="100%" stop-color="#0c7c59" stop-opacity="0"/></linearGradient><linearGradient id="lineGradient"><stop offset="0%" stop-color="#13a979"/><stop offset="100%" stop-color="#075f48"/></linearGradient></defs>`;
+  let html = `<defs><linearGradient id="areaGradient" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#0c7c59" stop-opacity=".2"/><stop offset="100%" stop-color="#0c7c59" stop-opacity="0"/></linearGradient><linearGradient id="continuousAreaGradient" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#87938e" stop-opacity=".14"/><stop offset="100%" stop-color="#87938e" stop-opacity="0"/></linearGradient><linearGradient id="lineGradient"><stop offset="0%" stop-color="#13a979"/><stop offset="100%" stop-color="#075f48"/></linearGradient></defs>`;
   for (let i = 0; i < 5; i += 1) { const gy = top + i * (priceBottom - top) / 4; const value = yMax - i * (yMax - yMin) / 4; html += `<line x1="${left}" x2="${width-right}" y1="${gy}" y2="${gy}" class="grid-line"/><text x="${left-12}" y="${gy+4}" text-anchor="end" class="axis-text">${Math.round(value/100)*100}</text>`; }
   if (rows.length > 1) semiMonthlyTicks(start, end).forEach((tick) => { const px = dateX(tick.date); html += `<line x1="${px}" x2="${px}" y1="${top}" y2="${bottom}" class="date-grid-line"/><text x="${px}" y="346" text-anchor="middle" class="axis-text chart-date-text">${tick.label}</text>`; });
-  if (rows.length > 1) { const line = rows.map((row, index) => `${index ? "L" : "M"}${x(index)},${y(row.close)}`).join(" "); html += `<path d="${line} L${x(rows.length-1)},${priceBottom} L${x(0)},${priceBottom} Z" class="price-area"/><path d="${line}" class="price-line"/>`; }
-  rows.forEach((row, index) => { const barWidth = Math.min(15, (width-left-right)/Math.max(rows.length,12)*.66); const barHeight = row.volume/maxVol*(bottom-volumeTop); html += `<rect x="${x(index)-barWidth/2}" y="${bottom-barHeight}" width="${barWidth}" height="${barHeight}" rx="2" class="volume-bar" style="fill:#b7d4ca"><title>${esc(row.date)} · 종가 ${money(row.close)}원 · 거래량 ${money(row.volume)}톤</title></rect><circle cx="${x(index)}" cy="${y(row.close)}" r="${rows.length===1?6:3.5}" class="price-dot"><title>${esc(row.date)} · 종가 ${money(row.close)}원 · 거래량 ${money(row.volume)}톤</title></circle>`; });
+  const transitionIndex = rolloverIndex(rows);
+  const firstKau26Index = continuousMode ? rows.findIndex((row) => row.symbol === "KAU26") : -1;
+  if (rows.length > 1) {
+    const primaryLine = rows.map((row, index) => `${index ? "L" : "M"}${x(index)},${y(row.close)}`).join(" ");
+    html += `<path d="${primaryLine} L${x(rows.length-1)},${priceBottom} L${x(0)},${priceBottom} Z" class="price-area${continuousMode ? " continuous-price-area" : ""}"/>`;
+    if (continuousMode) {
+      const grayRows = rows[0]?.symbol === "KAU25" ? rows.slice(0, firstKau26Index > 0 ? firstKau26Index + 1 : rows.length) : [];
+      const greenRows = firstKau26Index >= 0 ? rows.slice(firstKau26Index) : [];
+      if (grayRows.length > 1) html += `<path d="${grayRows.map((row, index) => `${index ? "L" : "M"}${x(index)},${y(row.close)}`).join(" ")}" class="price-line-kau25"/>`;
+      if (greenRows.length > 1) html += `<path d="${greenRows.map((row, index) => `${index ? "L" : "M"}${x(firstKau26Index + index)},${y(row.close)}`).join(" ")}" class="price-line-kau26"/>`;
+      const previewSeries = firstKau26Index > 0 ? [...previewKau26, rows[firstKau26Index]] : previewKau26;
+      if (previewSeries.length > 1) html += `<path d="${previewSeries.map((row, index) => `${index ? "L" : "M"}${dateX(row.date)},${y(row.close)}`).join(" ")}" class="price-line-kau26-preview"/>`;
+    } else html += `<path d="${primaryLine}" class="price-line"/>`;
+  }
+  if (transitionIndex > 0) {
+    const transitionX = x(transitionIndex);
+    html += `<line x1="${transitionX}" x2="${transitionX}" y1="${top}" y2="${bottom}" class="rollover-line"/><text x="${transitionX + 7}" y="${top + 13}" class="rollover-label">KAU25 → KAU26</text>`;
+  }
+  const singlePriceLegend = byId("singlePriceLegend");
+  if (singlePriceLegend) singlePriceLegend.hidden = continuousMode;
+  ["kau25Legend", "kau26Legend", "kau26PreviewLegend"].forEach((id) => { const legend = byId(id); if (legend) legend.hidden = !continuousMode; });
+  const rolloverLegend = byId("rolloverLegend");
+  if (rolloverLegend) rolloverLegend.hidden = transitionIndex <= 0;
+  previewKau26.forEach((row) => { html += `<circle cx="${dateX(row.date)}" cy="${y(row.close)}" r="3" class="preview-dot"><title>${esc(row.date)} · KAU26 사전가격 ${money(row.close)}원</title></circle>`; });
+  rows.forEach((row, index) => {
+    const comparison = continuousMode && row.date < KAU26_SWITCH_NOT_BEFORE ? previewByDate.get(row.date) : null;
+    const volumeText = `거래량 ${money(row.volume)}톤${comparison ? ` (KAU26 거래량 ${money(comparison.volume)}톤)` : ""}`;
+    const barWidth = Math.min(15, (width-left-right)/Math.max(rows.length,12)*.66); const barHeight = row.volume/maxVol*(bottom-volumeTop);
+    const dotClass = continuousMode ? `price-dot ${row.symbol === "KAU25" ? "kau25-dot" : "kau26-dot"}` : "price-dot";
+    html += `<rect x="${x(index)-barWidth/2}" y="${bottom-barHeight}" width="${barWidth}" height="${barHeight}" rx="2" class="volume-bar" style="fill:#b7d4ca"><title>${esc(row.date)} · ${esc(row.symbol)} · 종가 ${money(row.close)}원 · ${volumeText}</title></rect><circle cx="${x(index)}" cy="${y(row.close)}" r="${rows.length===1?6:3.5}" class="${dotClass}"><title>${esc(row.date)} · ${esc(row.symbol)} · 종가 ${money(row.close)}원 · ${volumeText}</title></circle>`;
+  });
   if (rows.length > 1) {
     policyEvents = state.policies.filter((policy) => policyGroup(policy) !== "뉴스" && policy.publishedAt >= start && policy.publishedAt <= end);
     policyEvents.forEach((policy, index) => {
@@ -414,12 +479,15 @@ function renderChart(rows) {
     const ratio = Math.max(0, Math.min(1, (pointerX - left) / (width - left - right)));
     const index = rows.length === 1 ? 0 : Math.round(ratio * (rows.length - 1));
     const row = rows[index];
+    const comparison = continuousMode && row.date < KAU26_SWITCH_NOT_BEFORE ? previewByDate.get(row.date) : null;
+    const tooltipNodes = [
+      create("time", "", `${row.date} · ${row.symbol}`),
+      create("strong", "", `${row.symbol} ${money(row.close)}원`)
+    ];
+    if (comparison) tooltipNodes.push(create("span", "", `KAU26 종가 ${money(comparison.close)}원`));
+    tooltipNodes.push(create("span", "", `거래량 ${money(row.volume)}톤${comparison ? ` (KAU26 거래량 ${money(comparison.volume)}톤)` : ""}`));
     tooltip.classList.remove("policy-tooltip");
-    tooltip.replaceChildren(
-      create("time", "", row.date),
-      create("strong", "", `${money(row.close)}원`),
-      create("span", "", `거래량 ${money(row.volume)}톤`)
-    );
+    tooltip.replaceChildren(...tooltipNodes);
     positionTooltip(event);
   };
   svg.onpointermove = handlePointer;
@@ -509,12 +577,16 @@ function renderPolicyFilters() {
 }
 
 function renderSymbolPicker() {
-  const symbols = [...new Set(state.prices.map((row) => row.symbol).filter(Boolean))].sort();
   const picker = byId("symbolPicker"), select = byId("symbolSelect");
+  const symbols = new Set(state.prices.map((row) => row.symbol).filter(Boolean));
+  const choices = [];
+  if (symbols.has("KAU25") && symbols.has("KAU26")) choices.push({ value: CONTINUOUS_SYMBOL, label: CONTINUOUS_LABEL });
+  if (symbols.has("KAU25")) choices.push({ value: "KAU25", label: "KAU25" });
+  if (symbols.has("KAU26")) choices.push({ value: "KAU26", label: "KAU26" });
   select.replaceChildren();
-  symbols.forEach((symbol) => { const option = create("option", "", symbol); option.value = symbol; option.selected = symbol === state.symbol; select.append(option); });
-  picker.hidden = symbols.length <= 1;
-  select.addEventListener("change", () => { state.symbol = select.value; renderMarket(); renderAuctions(); });
+  choices.forEach(({ value, label }) => { const option = create("option", "", label); option.value = value; option.selected = value === state.symbol; select.append(option); });
+  picker.hidden = choices.length <= 1;
+  select.onchange = () => { state.symbol = select.value; renderMarket(); renderAuctions(); };
 }
 
 function readableBriefingText(value) {
@@ -576,9 +648,13 @@ async function init() {
   const [priceResult, auctionResult, policyResult, briefingResult] = await Promise.allSettled([loadText("data/prices.csv"), loadJson("data/auctions.json"), loadJson("data/policies.json"), loadJson("data/briefing.json")]);
   state.prices = priceResult.status === "fulfilled" ? parsePrices(priceResult.value) : fallbackPrice;
   if (!state.prices.length) state.prices = fallbackPrice;
-  const latestDate = state.prices.at(-1).date;
-  const latestRows = state.prices.filter((row) => row.date === latestDate);
-  state.symbol = latestRows.reduce((best, row) => !best || row.volume > best.volume ? row : best, null)?.symbol || state.prices.at(-1).symbol;
+  const symbols = new Set(state.prices.map((row) => row.symbol));
+  if (symbols.has("KAU25") && symbols.has("KAU26")) state.symbol = CONTINUOUS_SYMBOL;
+  else {
+    const latestDate = state.prices.at(-1).date;
+    const latestRows = state.prices.filter((row) => row.date === latestDate);
+    state.symbol = latestRows.reduce((best, row) => !best || row.volume > best.volume ? row : best, null)?.symbol || state.prices.at(-1).symbol;
+  }
   const auctionData = auctionResult.status === "fulfilled" ? auctionResult.value : { items: [] };
   state.auctions = normalizeAuctions(auctionData.items || []);
   state.auctionLastSync = auctionData.lastSync || "";
