@@ -5,6 +5,8 @@
 // MARKET_PULSE_VERSION = "2026-08-20-v2-20d-position-supply-strength"
 // KAU_ROLLOVER_VERSION = "2026-08-28-v2-dual-series-volume-compare"
 // NEWS_DEDUPE_VERSION = "2026-08-28-v2-story-clustering"
+// PRICE_SCALE_VERSION = "2026-08-28-v1-symbol-period-autoscale"
+// POLICY_INSIGHT_META_VERSION = "2026-08-28-v1-hidden"
 
 const state = { prices: [], auctions: [], auctionPeriod: "ALL", auctionPage: 1, auctionLastSync: "", policies: [], policyInsight: null, briefings: [], briefingDate: "", period: "3M", category: "기후부 보도자료", policyPage: 1, symbol: "" };
 const POLICIES_PER_PAGE = 5;
@@ -134,6 +136,32 @@ function semiMonthlyTicks(start, end) {
     });
   }
   return ticks;
+}
+
+function nicePriceStep(value) {
+  if (!Number.isFinite(value) || value <= 0) return 100;
+  const power = 10 ** Math.floor(Math.log10(value));
+  const fraction = value / power;
+  const niceFraction = fraction <= 1 ? 1 : fraction <= 2 ? 2 : fraction <= 2.5 ? 2.5 : fraction <= 5 ? 5 : 10;
+  return niceFraction * power;
+}
+
+function chartPriceScale(values) {
+  const prices = values.filter((value) => Number.isFinite(value) && value > 0);
+  if (!prices.length) return { yMin: 0, yMax: 1000, ticks: [1000, 750, 500, 250, 0] };
+  const dataMin = Math.min(...prices), dataMax = Math.max(...prices);
+  const center = (dataMin + dataMax) / 2;
+  const dataSpan = dataMax - dataMin;
+  // 종목·조회기간별 변동폭을 기준으로 확대하되, 미세 변동의 과도한 확대는 제한합니다.
+  const displaySpan = Math.max(dataSpan * 1.32, center * .08, 1000);
+  const lowerTarget = Math.max(0, center - displaySpan / 2);
+  const upperTarget = center + displaySpan / 2;
+  const step = nicePriceStep(displaySpan / 4);
+  const yMin = Math.max(0, Math.floor(lowerTarget / step) * step);
+  const yMax = Math.max(yMin + step, Math.ceil(upperTarget / step) * step);
+  const ticks = [];
+  for (let value = yMax; value >= yMin - step * .001; value -= step) ticks.push(Math.max(0, Math.round(value)));
+  return { yMin, yMax, ticks };
 }
 
 function policyGroup(policy) {
@@ -426,8 +454,8 @@ function renderChart(rows) {
     .sort((a, b) => a.date.localeCompare(b.date)) : [];
   const previewByDate = new Map(previewKau26.map((row) => [row.date, row]));
   const values = [...rows.map((row) => row.close), ...previewKau26.map((row) => row.close)];
-  const maxPrice = Math.max(...values, 30000), minPrice = Math.min(...values, 20000), pad = Math.max((maxPrice - minPrice) * .16, 800);
-  const yMax = maxPrice + pad, yMin = Math.max(0, minPrice - pad), maxVol = Math.max(...rows.map((row) => row.volume), 1);
+  const { yMax, yMin, ticks: priceTicks } = chartPriceScale(values);
+  const maxVol = Math.max(...rows.map((row) => row.volume), 1);
   const startTime = chartDateTime(start), endTime = chartDateTime(end);
   // 금융 차트처럼 실제 거래일만 같은 간격으로 배치합니다.
   // 주말·공휴일은 빈 거래량 막대로 오해되지 않도록 축에서 압축합니다.
@@ -448,7 +476,7 @@ function renderChart(rows) {
   const y = (value) => top + (yMax - value) * (priceBottom - top) / Math.max(yMax - yMin, 1);
   let policyEvents = [];
   let html = `<defs><linearGradient id="areaGradient" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#0c7c59" stop-opacity=".2"/><stop offset="100%" stop-color="#0c7c59" stop-opacity="0"/></linearGradient><linearGradient id="continuousAreaGradient" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#87938e" stop-opacity=".14"/><stop offset="100%" stop-color="#87938e" stop-opacity="0"/></linearGradient><linearGradient id="lineGradient"><stop offset="0%" stop-color="#13a979"/><stop offset="100%" stop-color="#075f48"/></linearGradient></defs>`;
-  for (let i = 0; i < 5; i += 1) { const gy = top + i * (priceBottom - top) / 4; const value = yMax - i * (yMax - yMin) / 4; html += `<line x1="${left}" x2="${width-right}" y1="${gy}" y2="${gy}" class="grid-line"/><text x="${left-12}" y="${gy+4}" text-anchor="end" class="axis-text">${Math.round(value/100)*100}</text>`; }
+  priceTicks.forEach((value) => { const gy = y(value); html += `<line x1="${left}" x2="${width-right}" y1="${gy}" y2="${gy}" class="grid-line"/><text x="${left-12}" y="${gy+4}" text-anchor="end" class="axis-text">${money(value)}</text>`; });
   if (rows.length > 1) semiMonthlyTicks(start, end).forEach((tick) => { const px = dateX(tick.date); html += `<line x1="${px}" x2="${px}" y1="${top}" y2="${bottom}" class="date-grid-line"/><text x="${px}" y="346" text-anchor="middle" class="axis-text chart-date-text">${tick.label}</text>`; });
   const transitionIndex = rolloverIndex(rows);
   const firstKau26Index = continuousMode ? rows.findIndex((row) => row.symbol === "KAU26") : -1;
@@ -593,7 +621,6 @@ function renderPolicies() {
   const list = byId("policyList"); list.replaceChildren();
   const insight = state.policyInsight?.summary ? state.policyInsight : derivePolicyInsight(state.policies);
   byId("latestPolicy").textContent = insight.summary;
-  byId("latestPolicyDate").textContent = insight.basisCount ? `AI 공식자료 종합 · ${insight.basisLatestDate} · ${insight.basisCount}건` : "공식자료 수집 대기";
   if (!items.length) { state.policyPage = 1; list.append(create("div", "loading-state", `${state.category}에 해당하는 자료가 없습니다.`)); renderChart(filterPrices(state.period)); return; }
   const totalPages = Math.ceil(items.length / POLICIES_PER_PAGE);
   state.policyPage = Math.max(1, Math.min(state.policyPage, totalPages));
