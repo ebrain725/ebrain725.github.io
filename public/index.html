@@ -1,12 +1,13 @@
 <!doctype html>
 <!-- AUCTION_MONITOR_VERSION = 2026-08-20-v3.4-full-history-default -->
+<!-- KAU_ROLLOVER_VERSION = 2026-08-28-v2-dual-series-volume-compare -->
 <html lang="ko">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="국내 배출권 가격, 기후부 정책, 데일리 브리핑을 한 화면에서 확인하는 대시보드">
-  <title>ETS SIGNAL | 배출권 시장·정책 대시보드</title>
-  <link rel="stylesheet" href="assets/styles.css?v=20260820-auction-monitor-v3-4">
+  <title>ETS LIVE DASHBOARD | 배출권 시장·정책 대시보드</title>
+  <link rel="stylesheet" href="assets/styles.css?v=20260828-kau-roll-v2">
 </head>
 <body>
   <header class="topbar">
@@ -57,7 +58,7 @@
           </div>
         </div>
         <div class="chart-wrap"><svg id="priceChart" viewBox="0 0 900 350" role="img" aria-label="배출권 가격과 거래량 추이"></svg><div class="chart-tooltip" id="chartTooltip" hidden></div></div>
-        <div class="chart-legend"><span><i class="legend-line"></i>종가</span><span><i class="legend-bar"></i>거래량</span><span><i class="legend-event"></i>정책 발표</span><small>정책 마커에 마우스를 올리거나 터치하면 발표 내용을 확인할 수 있습니다.</small></div>
+        <div class="chart-legend"><span id="singlePriceLegend"><i class="legend-line"></i>종가</span><span id="kau25Legend" hidden><i class="legend-kau25"></i>KAU25</span><span id="kau26PreviewLegend" hidden><i class="legend-kau26-preview"></i>KAU26 · 8.31 이전</span><span id="kau26Legend" hidden><i class="legend-kau26"></i>KAU26 · 8.31 이후</span><span><i class="legend-bar"></i>거래량</span><span id="rolloverLegend" hidden><i class="legend-rollover"></i>종목 전환</span><span><i class="legend-event"></i>정책 발표</span><small>8월 31일 전환 전 거래량은 KAU25이며, 툴팁 괄호에 KAU26 거래량을 함께 표시합니다.</small></div>
       </article>
       <aside class="panel pulse-panel">
         <div class="panel-head"><div><span class="section-tag">MARKET PULSE</span><h2>오늘의 시장 점검</h2></div></div>
@@ -121,6 +122,6 @@
     <p>시장 판단을 지원하는 참고용 대시보드입니다. 원문과 공식 통계를 함께 확인하세요.</p>
   </footer>
   <noscript>이 대시보드는 JavaScript를 사용합니다. 브라우저 설정에서 JavaScript를 켜주세요.</noscript>
-  <script src="assets/app.js?v=20260820-auction-monitor-v3-4" defer></script>
+  <script src="assets/app.js?v=20260828-kau-roll-v2" defer></script>
 </body>
 </html>
