@@ -4,6 +4,7 @@
 // AUCTION_MONITOR_VERSION = "2026-08-20-v3.4-full-history-default"
 // MARKET_PULSE_VERSION = "2026-08-20-v2-20d-position-supply-strength"
 // KAU_ROLLOVER_VERSION = "2026-08-28-v2-dual-series-volume-compare"
+// NEWS_DEDUPE_VERSION = "2026-08-28-v2-story-clustering"
 
 const state = { prices: [], auctions: [], auctionPeriod: "ALL", auctionPage: 1, auctionLastSync: "", policies: [], policyInsight: null, briefings: [], briefingDate: "", period: "3M", category: "기후부 보도자료", policyPage: 1, symbol: "" };
 const POLICIES_PER_PAGE = 5;
@@ -184,6 +185,37 @@ function similarNews(first, second) {
   return a === b || (shorter.length >= 14 && longer.includes(shorter) && shorter.length / longer.length >= .55) || newsTitleDice(a, b) >= .58;
 }
 
+const NEWS_GENERIC_TOKENS = new Set(["배출권", "탄소배출권", "온실가스", "탄소", "탄소시장", "시장", "배출권거래제", "거래제", "뉴스", "특집", "단독", "속보", "관련", "대응", "추진", "강화", "사업", "한국", "국내", "kau25", "kau26"]);
+const NEWS_PARTICLES = ["으로", "에서", "에게", "까지", "부터", "처럼", "보다", "만큼", "은", "는", "이", "가", "을", "를", "의", "와", "과", "도", "만"];
+
+function newsEventTokens(value) {
+  const cleaned = String(value || "").toLowerCase().replace(/\[[^\]]+\]|\([^)]*\)/g, " ");
+  return new Set((cleaned.match(/[a-z]+|[가-힣]{2,}/g) || []).map((token) => {
+    const particle = NEWS_PARTICLES.find((item) => token.length >= 4 && token.endsWith(item));
+    return particle ? token.slice(0, -particle.length) : token;
+  }).filter((token) => token.length >= 2 && !NEWS_GENERIC_TOKENS.has(token)));
+}
+
+function newsDateDistance(first, second) {
+  const left = chartDateTime(first), right = chartDateTime(second);
+  return Number.isFinite(left) && Number.isFinite(right) ? Math.abs(left - right) / 86400000 : 999;
+}
+
+function sameNewsStory(first, second) {
+  const firstTitle = normalizedNewsTitle(first.title), secondTitle = normalizedNewsTitle(second.title);
+  if (!firstTitle || !secondTitle) return false;
+  if (firstTitle === secondTitle) return true;
+  const distance = newsDateDistance(first.publishedAt, second.publishedAt);
+  const dice = newsTitleDice(first.title, second.title);
+  if (distance === 0) {
+    if (similarNews(first.title, second.title)) return true;
+    const rightTokens = newsEventTokens(second.title);
+    const shared = [...newsEventTokens(first.title)].filter((token) => rightTokens.has(token));
+    return shared.length >= 2 && shared.reduce((sum, token) => sum + token.length, 0) >= 5;
+  }
+  return distance <= 2 && dice >= .78;
+}
+
 function dedupeNewsPolicies(policies) {
   const official = policies.filter((policy) => policyGroup(policy) !== "뉴스");
   const remaining = policies.filter((policy) => policyGroup(policy) === "뉴스").slice();
@@ -195,15 +227,27 @@ function dedupeNewsPolicies(policies) {
       changed = false;
       for (let index = remaining.length - 1; index >= 0; index -= 1) {
         const candidate = remaining[index];
-        if (candidate.publishedAt === group[0].publishedAt && group.some((member) => similarNews(candidate.title, member.title))) {
+        if (group.some((member) => sameNewsStory(candidate, member))) {
           group.push(candidate); remaining.splice(index, 1); changed = true;
         }
       }
     }
     const representative = group.reduce((best, item) => (`${item.summary || ""}${item.title || ""}`).length > (`${best.summary || ""}${best.title || ""}`).length ? item : best);
-    representatives.push({ ...representative, duplicateCount: group.length, duplicateSources: [...new Set(group.map((item) => item.source).filter(Boolean))] });
+    const duplicateCount = group.reduce((sum, item) => sum + Math.max(1, Number(item.duplicateCount) || 1), 0);
+    const duplicateSources = [...new Set(group.flatMap((item) => [...(Array.isArray(item.duplicateSources) ? item.duplicateSources : []), item.source]).filter(Boolean))];
+    representatives.push({ ...representative, duplicateCount, duplicateSources });
   }
   return [...official, ...representatives].sort((a, b) => b.publishedAt.localeCompare(a.publishedAt));
+}
+
+function newsDisplaySummary(policy) {
+  const summary = String(policy.summary || "").trim();
+  if (policyGroup(policy) !== "뉴스" || !summary) return summary || "원문에서 세부 내용을 확인하세요.";
+  const titleKey = normalizedNewsTitle(policy.title), summaryKey = normalizedNewsTitle(summary), sourceKey = normalizedNewsTitle(policy.source);
+  const repeatsTitle = summaryKey === titleKey || summaryKey === `${titleKey}${sourceKey}` || (summaryKey.startsWith(titleKey) && summaryKey.length <= titleKey.length + sourceKey.length + 12);
+  if (!repeatsTitle) return summary;
+  const count = Math.max(1, Number(policy.duplicateCount) || 1);
+  return count > 1 ? `유사 기사 ${count}건을 대표기사 1건으로 통합했습니다.` : `${policy.source || "뉴스"} 기사`;
 }
 
 function marketPulseMetrics(selected, latest) {
@@ -559,7 +603,7 @@ function renderPolicies() {
     row.append(create("time", "", shortDate(policy.publishedAt)), create("span", "category-badge", policy.category || "기타"));
     const body = create("div", "policy-body");
     const title = create("h3", "", policy.title); title.title = policy.title;
-    const summaryText = policy.summary || "원문에서 세부 내용을 확인하세요.";
+    const summaryText = newsDisplaySummary(policy);
     const summary = create("p", "", summaryText); summary.title = summaryText;
     body.append(title, summary);
     const link = create("a", "source-link", "∞"); link.href = policy.url || "#"; link.target = "_blank"; link.rel = "noreferrer"; link.ariaLabel = `${policy.title} 원문 링크`; link.title = "원문 링크";
@@ -581,8 +625,7 @@ function renderSymbolPicker() {
   const symbols = new Set(state.prices.map((row) => row.symbol).filter(Boolean));
   const choices = [];
   if (symbols.has("KAU25") && symbols.has("KAU26")) choices.push({ value: CONTINUOUS_SYMBOL, label: CONTINUOUS_LABEL });
-  if (symbols.has("KAU25")) choices.push({ value: "KAU25", label: "KAU25" });
-  if (symbols.has("KAU26")) choices.push({ value: "KAU26", label: "KAU26" });
+  [...symbols].filter((symbol) => /^KAU\d+$/.test(symbol)).sort((left, right) => Number(left.slice(3)) - Number(right.slice(3))).forEach((symbol) => choices.push({ value: symbol, label: symbol }));
   select.replaceChildren();
   choices.forEach(({ value, label }) => { const option = create("option", "", label); option.value = value; option.selected = value === state.symbol; select.append(option); });
   picker.hidden = choices.length <= 1;
