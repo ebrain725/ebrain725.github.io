@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # PRESS_TAB_FIX_VERSION = "2026-08-20-v3.1-fast-current-board"
+# NEWS_DEDUPE_VERSION = "2026-08-28-v2-story-clustering"
 """기후부 공식자료와 시장 뉴스의 제목·원문 본문에서 설정 키워드를 검색한다."""
 
 from __future__ import annotations
@@ -137,6 +138,51 @@ def similar_news_title(first: str, second: str) -> bool:
     return ratio >= 0.69 or dice >= 0.58
 
 
+NEWS_GENERIC_TOKENS = {
+    "배출권", "탄소배출권", "온실가스", "탄소", "탄소시장", "시장", "배출권거래제", "거래제",
+    "뉴스", "특집", "단독", "속보", "관련", "대응", "추진", "강화", "사업", "한국", "국내",
+    "kau25", "kau26",
+}
+NEWS_PARTICLES = ("으로", "에서", "에게", "까지", "부터", "처럼", "보다", "만큼", "은", "는", "이", "가", "을", "를", "의", "와", "과", "도", "만")
+
+
+def news_event_tokens(value: str) -> set[str]:
+    cleaned = re.sub(r"\[[^\]]+\]|\([^)]*\)", " ", (value or "").lower())
+    result: set[str] = set()
+    for token in re.findall(r"[a-z]+|[가-힣]{2,}", cleaned):
+        particle = next((item for item in NEWS_PARTICLES if len(token) >= 4 and token.endswith(item)), "")
+        if particle:
+            token = token[: -len(particle)]
+        if len(token) >= 2 and token not in NEWS_GENERIC_TOKENS:
+            result.add(token)
+    return result
+
+
+def news_date_distance(first: str, second: str) -> int:
+    try:
+        return abs((datetime.strptime(first, "%Y-%m-%d") - datetime.strptime(second, "%Y-%m-%d")).days)
+    except (TypeError, ValueError):
+        return 999
+
+
+def same_news_story(first: dict, second: dict) -> bool:
+    first_title = normalized_news_title(first.get("title", ""))
+    second_title = normalized_news_title(second.get("title", ""))
+    if not first_title or not second_title:
+        return False
+    if first_title == second_title:
+        return True
+    distance = news_date_distance(first.get("publishedAt", ""), second.get("publishedAt", ""))
+    grams_a, grams_b = title_bigrams(first_title), title_bigrams(second_title)
+    dice = 2 * len(grams_a & grams_b) / max(len(grams_a) + len(grams_b), 1)
+    if distance == 0:
+        if similar_news_title(first.get("title", ""), second.get("title", "")):
+            return True
+        shared = news_event_tokens(first.get("title", "")) & news_event_tokens(second.get("title", ""))
+        return len(shared) >= 2 and sum(len(token) for token in shared) >= 5
+    return distance <= 2 and dice >= 0.78
+
+
 def dedupe_news(items: list[dict]) -> list[dict]:
     remaining = list(items)
     groups: list[list[dict]] = []
@@ -146,9 +192,7 @@ def dedupe_news(items: list[dict]) -> list[dict]:
         while changed:
             changed = False
             for candidate in list(remaining):
-                if candidate.get("publishedAt") != group[0].get("publishedAt"):
-                    continue
-                if any(similar_news_title(candidate.get("title", ""), member.get("title", "")) for member in group):
+                if any(same_news_story(candidate, member) for member in group):
                     group.append(candidate)
                     remaining.remove(candidate)
                     changed = True
@@ -158,8 +202,13 @@ def dedupe_news(items: list[dict]) -> list[dict]:
     for group in groups:
         representative = max(group, key=lambda item: (len(item.get("summary", "")), len(item.get("title", ""))))
         representative = dict(representative)
-        sources = list(dict.fromkeys(item.get("source", "") for item in group if item.get("source")))
-        representative["duplicateCount"] = len(group)
+        sources = list(dict.fromkeys(
+            source
+            for item in group
+            for source in [*(item.get("duplicateSources") or []), item.get("source", "")]
+            if source
+        ))
+        representative["duplicateCount"] = sum(max(1, int(item.get("duplicateCount") or 1)) for item in group)
         representative["duplicateSources"] = sources
         result.append(representative)
     return sorted(result, key=lambda item: (item.get("publishedAt", ""), item.get("title", "")), reverse=True)
@@ -518,7 +567,7 @@ def fetch_google_news(search: dict, keywords: list[str], lookback_days: int) -> 
     candidates = []
     for item in root.findall(".//item"):
         raw_title = clean_html(child_text(item, "title"), 180)
-        title = re.sub(r"\s+-\s+[^-]+$", "", raw_title).strip() or raw_title
+        title = re.sub(r"(?:\s+-\s+[^-]+)+$", "", raw_title).strip() or raw_title
         description = clean_html(child_text(item, "description"), 2_000)
         haystack = f"{title} {description}".lower()
         link = html.unescape(child_text(item, "link"))
