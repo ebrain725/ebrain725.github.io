@@ -12,13 +12,13 @@
   <header class="topbar">
     <a class="brand" href="#top" aria-label="대시보드 홈">
       <span class="brand-mark">E</span>
-      <span><b>ETS SIGNAL</b><small>Korea Emissions Market</small></span>
+      <span><b>ETS LIVE DASHBOARD</b></span>
     </a>
     <nav aria-label="주요 메뉴">
       <a href="#market">시장 현황</a>
-      <a href="#auction">유상경매</a>
-      <a href="#policy">정책 레이더</a>
       <a href="#briefing">데일리 브리핑</a>
+      <a href="#policy">정책 레이더</a>
+      <a href="#auction">유상경매</a>
     </nav>
     <span class="live-label"><i></i> LIVE DASHBOARD</span>
   </header>
@@ -68,6 +68,23 @@
       </aside>
     </section>
 
+    <section class="briefing-section" id="briefing">
+      <div class="section-title">
+        <div><span class="section-tag">DAILY BRIEFING</span><h2>배출권 데일리 브리핑</h2><p>텔레그램으로 발송한 브리핑을 날짜별로 누적해 조회합니다.</p></div>
+        <label class="briefing-date-picker" id="briefingDatePicker" hidden><span>브리핑 날짜</span><select id="briefingDateSelect" aria-label="브리핑 날짜 선택"></select></label>
+      </div>
+      <div id="briefingArea"><div class="briefing-empty"><span>B</span><div><h3>브리핑 연결 대기 중</h3><p>텔레그램 발송 프로그램이 briefing.json을 갱신하면 최신 브리핑이 여기에 표시됩니다.</p></div></div></div>
+    </section>
+
+    <section class="policy-section" id="policy">
+      <div class="section-title">
+        <div><span class="section-tag">POLICY RADAR</span><h2>기후에너지환경부 정책 레이더</h2><p id="policyDescription">기후부 공식 보도자료·공지사항과 시장 뉴스의 제목·본문을 기준으로 자동 수집합니다.</p></div>
+        <span class="auto-badge"><i></i> 자동수집 <b id="policySync">확인 중</b></span>
+      </div>
+      <div class="filter-row" id="policyFilters" aria-label="정책 분류 필터"></div>
+      <div class="policy-list" id="policyList"><div class="loading-state">정책자료를 불러오고 있습니다.</div></div>
+    </section>
+
     <section class="auction-section" id="auction">
       <div class="section-title auction-title">
         <div><span class="section-tag">AUCTION MONITOR</span><h2>유상할당 경매 현황</h2><p>KRX 경매 결과를 누적하고 공급물량·응찰률·낙찰가를 기간별로 비교합니다.</p></div>
@@ -96,23 +113,6 @@
         </div>
         <p class="auction-footnote"><span id="auctionPeriodLabel">전기간</span> · <span id="auctionRecordCount">0건</span> · KAU18~KAU25 · KRX 공개 경매정보 기준</p>
       </article>
-    </section>
-
-    <section class="policy-section" id="policy">
-      <div class="section-title">
-        <div><span class="section-tag">POLICY RADAR</span><h2>기후에너지환경부 정책 레이더</h2><p id="policyDescription">기후부 공식 보도자료·공지사항과 시장 뉴스의 제목·본문을 기준으로 자동 수집합니다.</p></div>
-        <span class="auto-badge"><i></i> 자동수집 <b id="policySync">확인 중</b></span>
-      </div>
-      <div class="filter-row" id="policyFilters" aria-label="정책 분류 필터"></div>
-      <div class="policy-list" id="policyList"><div class="loading-state">정책자료를 불러오고 있습니다.</div></div>
-    </section>
-
-    <section class="briefing-section" id="briefing">
-      <div class="section-title">
-        <div><span class="section-tag">DAILY BRIEFING</span><h2>배출권 데일리 브리핑</h2><p>텔레그램으로 발송한 브리핑을 날짜별로 누적해 조회합니다.</p></div>
-        <label class="briefing-date-picker" id="briefingDatePicker" hidden><span>브리핑 날짜</span><select id="briefingDateSelect" aria-label="브리핑 날짜 선택"></select></label>
-      </div>
-      <div id="briefingArea"><div class="briefing-empty"><span>B</span><div><h3>브리핑 연결 대기 중</h3><p>텔레그램 발송 프로그램이 briefing.json을 갱신하면 최신 브리핑이 여기에 표시됩니다.</p></div></div></div>
     </section>
   </main>
 
