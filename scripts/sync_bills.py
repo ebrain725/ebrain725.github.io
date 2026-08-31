@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""국회 전체 의안에서 국내 배출권거래제 관련 법안을 선별해 저장한다."""
+"""국회 전체 의안에서 국내 배출권거래제 관련 법안을 선별하고 종료 상태를 보존한다."""
 
 from __future__ import annotations
 
@@ -13,7 +13,7 @@ import unicodedata
 import urllib.parse
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from datetime import datetime, timedelta, timezone
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
 
@@ -21,11 +21,23 @@ from typing import Any
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT_PATH = ROOT / "public" / "data" / "bills.json"
 API_ROOT = "https://open.assembly.go.kr/portal/openapi"
-ASSEMBLY_TERM = os.getenv("ASSEMBLY_TERM", "제22대").strip() or "제22대"
 PAGE_SIZE = 100
 REQUEST_TIMEOUT_SECONDS = 25
 MAX_PAGES = 300
 KST = timezone(timedelta(hours=9))
+
+
+def inferred_assembly_term(moment: datetime | None = None) -> str:
+    """Infer the ordinary four-year Assembly term; ASSEMBLY_TERM can still override it."""
+    today = (moment or datetime.now(KST)).date()
+    cycles = max(0, (today.year - 2024) // 4)
+    cycle_start = date(2024 + cycles * 4, 5, 30)
+    if today < cycle_start:
+        cycles = max(0, cycles - 1)
+    return f"제{22 + cycles}대"
+
+
+ASSEMBLY_TERM = os.getenv("ASSEMBLY_TERM", "").strip() or inferred_assembly_term()
 
 TITLE_QUERIES = (
     "배출권",
@@ -92,6 +104,19 @@ def iso_date(value: object) -> str:
         return candidate
     except (TypeError, ValueError):
         return ""
+
+
+def assembly_term_number(value: object) -> int:
+    match = re.search(r"(\d+)", clean_text(value, 30))
+    return int(match.group(1)) if match else 0
+
+
+def assembly_term_end(value: object) -> str:
+    number = assembly_term_number(value)
+    if number < 20:
+        return ""
+    start_year = 2024 + (number - 22) * 4
+    return date(start_year + 4, 5, 29).isoformat()
 
 
 def api_rows(endpoint: str, api_key: str, params: dict[str, object]) -> tuple[list[dict], int]:
@@ -231,6 +256,67 @@ def lifecycle_for(row: dict[str, Any]) -> dict[str, str]:
     return {name: iso_date(field(row, *source_names)) for name, source_names in fields.items()}
 
 
+def termination_reason_for(*values: object) -> str:
+    disposition = " ".join(clean_text(value) for value in values if value)
+    if re.search(r"수정안\s*반영", disposition):
+        return "수정안반영"
+    if re.search(r"대안\s*반영", disposition):
+        return "대안반영"
+    if re.search(r"임기\s*만료", disposition):
+        return "임기만료폐기"
+    if re.search(r"심사\s*미료", disposition):
+        return "심사미료폐기"
+    if re.search(r"철회", disposition):
+        return "철회"
+    if re.search(r"부결", disposition):
+        return "부결"
+    if re.search(r"폐기", disposition):
+        return "폐기"
+    return ""
+
+
+def termination_stage_for(
+    reason: str,
+    lifecycle: dict[str, str],
+    committee_result: str,
+    law_result: str,
+    plenary_result: str,
+) -> str:
+    if termination_reason_for(committee_result):
+        return "committee"
+    if termination_reason_for(law_result):
+        return "law"
+    if termination_reason_for(plenary_result):
+        return "plenary"
+    if reason in {"대안반영", "수정안반영"}:
+        return "committee"
+    if reason == "부결":
+        return "plenary"
+    if lifecycle.get("plenaryPresented"):
+        return "plenary"
+    if lifecycle.get("lawPresented") or lifecycle.get("lawProcessed"):
+        return "law"
+    if any(lifecycle.get(key) for key in ("committeeReceived", "committeePresented", "committeeCommented", "committeeProcessed")):
+        return "committee"
+    return "proposed"
+
+
+def termination_date_for(reason: str, stage: str, lifecycle: dict[str, str], fallback: str = "") -> str:
+    stage_fields = {
+        "proposed": ("proposed",),
+        "committee": ("committeeReceived", "committeePresented", "committeeCommented", "committeeProcessed"),
+        "law": ("lawPresented", "lawProcessed"),
+        "plenary": ("plenaryPresented", "plenaryResolved"),
+        "government": ("governmentTransferred",),
+        "promulgated": ("promulgated",),
+    }
+    dates = [lifecycle.get(key, "") for key in stage_fields.get(stage, ())]
+    valid = [value for value in dates if iso_date(value)]
+    if valid:
+        return max(valid)
+    return iso_date(fallback)
+
+
 def status_for(row: dict[str, Any]) -> tuple[str, str, str, str, str, str]:
     raw_stage = field(row, "PROC_STAGE_CD", "PROC_STAGE", "STAGE")
     committee_result = field(row, "JRCMIT_PROC_RSLT", "JRCMIT_PROC_RESULT")
@@ -239,16 +325,11 @@ def status_for(row: dict[str, Any]) -> tuple[str, str, str, str, str, str]:
     raw_result = " | ".join(value for value in (committee_result, law_result, plenary_result) if value)
     combined = f"{raw_stage} {committee_result} {law_result} {plenary_result}"
     lifecycle = lifecycle_for(row)
-    if re.search(r"공포", combined) or field(row, "PROM_LAW_NM", "PROM_DT", "ANOT_DT"):
+    terminal_reason = termination_reason_for(combined)
+    if terminal_reason:
+        status = terminal_reason
+    elif re.search(r"공포", combined) or field(row, "PROM_LAW_NM", "PROM_DT", "ANOT_DT"):
         status = "공포"
-    elif re.search(r"대안\s*반영", combined):
-        status = "대안반영"
-    elif re.search(r"철회", combined):
-        status = "철회"
-    elif re.search(r"부결", combined):
-        status = "부결"
-    elif re.search(r"폐기|임기만료", combined):
-        status = "폐기"
     elif lifecycle["promulgated"] or re.search(r"공포", raw_stage):
         status = "공포"
     elif lifecycle["governmentTransferred"] or re.search(r"정부\s*이송", raw_stage):
@@ -348,6 +429,17 @@ def build_item(
     previous_last_action = iso_date(previous.get("lastActionDate", ""))
     dates = [*all_dates(row), *lifecycle.values(), previous_last_action, proposed_date]
     last_action_date = max((value for value in dates if value), default="")
+    termination_reason = termination_reason_for(status, raw_stage, raw_result, committee_result, law_result, plenary_result)
+    terminal = bool(termination_reason)
+    termination_stage = termination_stage_for(termination_reason, lifecycle, committee_result, law_result, plenary_result) if terminal else ""
+    termination_date = termination_date_for(
+        termination_reason,
+        termination_stage,
+        lifecycle,
+        iso_date(previous.get("terminationDate", "")) or last_action_date,
+    ) if terminal else ""
+    if termination_date:
+        last_action_date = termination_date
     proposer_kind = field(row, "PPSR_KND", "PROPOSER_KIND") or clean_text(previous.get("proposerKind", ""))
     proposer = field(row, "PPSR_NM", "PROPOSER", "RST_PROPOSER") or clean_text(previous.get("proposer", "")) or "제안자 확인 중"
     committee = field(row, "JRCMIT_NM", "COMMITTEE") or clean_text(previous.get("committee", "")) or "소관위 미정"
@@ -366,6 +458,10 @@ def build_item(
         "committeeResult": committee_result,
         "lawResult": law_result,
         "plenaryResult": plenary_result,
+        "terminal": terminal,
+        "terminationReason": termination_reason,
+        "terminationDate": termination_date,
+        "terminationStage": termination_stage,
         "lastActionDate": last_action_date,
         "lifecycle": lifecycle,
         "summary": summary_value,
@@ -398,6 +494,10 @@ def build_item(
         "committeeResult": committee_result,
         "lawResult": law_result,
         "plenaryResult": plenary_result,
+        "terminal": terminal,
+        "terminationReason": termination_reason,
+        "terminationDate": termination_date,
+        "terminationStage": termination_stage,
         "lifecycle": lifecycle,
         "lastActionDate": last_action_date,
         "summary": summary_value,
@@ -416,13 +516,115 @@ def build_item(
     }
 
 
+def bill_sort_key(item: dict[str, Any]) -> tuple[str, int, str]:
+    return (
+        str(item.get("lastActionDate") or item.get("proposedDate") or ""),
+        int(item.get("relevanceScore") or 0),
+        str(item.get("billNo") or ""),
+    )
+
+
+def ordered_unique_items(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    unique: dict[str, dict[str, Any]] = {}
+    for item in items:
+        term = clean_text(item.get("assemblyTerm", "")) or ASSEMBLY_TERM
+        identity = clean_text(item.get("billId", "")) or clean_text(item.get("billNo", ""))
+        if identity:
+            unique[f"{term}:{identity}"] = item
+    return sorted(unique.values(), key=bill_sort_key, reverse=True)[:120]
+
+
+def close_prior_term_item(item: dict[str, Any], item_term: str) -> dict[str, Any]:
+    closed = dict(item)
+    closed["assemblyTerm"] = item_term
+    closed["category"] = "발의법률안"
+    lifecycle = closed.get("lifecycle", {}) if isinstance(closed.get("lifecycle"), dict) else {}
+    committee_result = clean_text(closed.get("committeeResult", ""))
+    law_result = clean_text(closed.get("lawResult", ""))
+    plenary_result = clean_text(closed.get("plenaryResult", ""))
+    existing_reason = termination_reason_for(
+        closed.get("terminationReason", ""),
+        closed.get("status", ""),
+        closed.get("rawStage", ""),
+        closed.get("rawResult", ""),
+        committee_result,
+        law_result,
+        plenary_result,
+    )
+    if existing_reason:
+        stage = clean_text(closed.get("terminationStage", "")) or termination_stage_for(existing_reason, lifecycle, committee_result, law_result, plenary_result)
+        termination_date = iso_date(closed.get("terminationDate", "")) or termination_date_for(existing_reason, stage, lifecycle, closed.get("lastActionDate", ""))
+        closed.update({
+            "terminal": True,
+            "terminationReason": existing_reason,
+            "terminationStage": stage,
+            "terminationDate": termination_date,
+            "lastActionDate": termination_date or closed.get("lastActionDate", ""),
+        })
+        return closed
+
+    status = clean_text(closed.get("status", ""))
+    disposition = " ".join((status, clean_text(closed.get("rawResult", "")), plenary_result))
+    legislative_passed = (
+        status in {"공포", "본회의 통과", "정부이송"}
+        or bool(re.search(r"원안\s*가결|수정\s*가결|정부\s*이송|공포", disposition))
+        or bool(lifecycle.get("governmentTransferred") or lifecycle.get("promulgated"))
+    )
+    if legislative_passed:
+        closed["terminal"] = False
+        return closed
+
+    termination_date = assembly_term_end(item_term)
+    termination_stage = termination_stage_for("임기만료폐기", lifecycle, committee_result, law_result, plenary_result)
+    timestamp = now_iso()
+    history = list(closed.get("history", [])) if isinstance(closed.get("history"), list) else []
+    history.append({
+        "changedAt": timestamp,
+        "status": status,
+        "committee": closed.get("committee", ""),
+        "lastActionDate": closed.get("lastActionDate", ""),
+    })
+    raw_result = clean_text(closed.get("rawResult", ""))
+    if "임기만료폐기" not in raw_result:
+        raw_result = " | ".join(value for value in (raw_result, "임기만료폐기") if value)
+    closed.update({
+        "status": "임기만료폐기",
+        "rawResult": raw_result,
+        "terminal": True,
+        "terminationReason": "임기만료폐기",
+        "terminationDate": termination_date,
+        "terminationStage": termination_stage,
+        "lastActionDate": termination_date or closed.get("lastActionDate", ""),
+        "lastChangedAt": timestamp,
+        "history": history[-12:],
+    })
+    closed["contentHash"] = hashlib.sha256(json.dumps({
+        "previous": closed.get("contentHash", ""),
+        "status": closed["status"],
+        "terminationReason": closed["terminationReason"],
+        "terminationDate": closed["terminationDate"],
+        "terminationStage": closed["terminationStage"],
+    }, ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode("utf-8")).hexdigest()
+    return closed
+
+
 def main() -> int:
     api_key = os.getenv("ASSEMBLY_API_KEY", "").strip()
     existing_document = load_existing()
-    existing_items = [
-        item for item in existing_document.get("items", [])
-        if isinstance(item, dict) and str(item.get("assemblyTerm") or ASSEMBLY_TERM) == ASSEMBLY_TERM
-    ]
+    document_term = clean_text(existing_document.get("assemblyTerm", "")) or ASSEMBLY_TERM
+    current_term_number = assembly_term_number(ASSEMBLY_TERM)
+    existing_items: list[dict[str, Any]] = []
+    historical_items: list[dict[str, Any]] = []
+    for source_item in existing_document.get("items", []):
+        if not isinstance(source_item, dict):
+            continue
+        item = dict(source_item)
+        item_term = clean_text(item.get("assemblyTerm", "")) or document_term
+        item["assemblyTerm"] = item_term
+        if item_term == ASSEMBLY_TERM:
+            existing_items.append(item)
+        elif assembly_term_number(item_term) and assembly_term_number(item_term) < current_term_number:
+            historical_items.append(close_prior_term_item(item, item_term))
     for item in existing_items:
         item["category"] = "발의법률안"
     existing_by_id: dict[str, dict[str, Any]] = {}
@@ -435,7 +637,7 @@ def main() -> int:
     if not api_key:
         message = "ASSEMBLY_API_KEY가 없어 국회법안 수집을 건너뜁니다."
         print(message, file=sys.stderr)
-        save_document(existing_items, [message])
+        save_document(ordered_unique_items([*existing_items, *historical_items]), [message])
         return 0
 
     warnings: list[str] = []
@@ -463,8 +665,12 @@ def main() -> int:
             warnings.append(f"전체 의안 보완조회 실패: {exc}")
 
     if not candidates:
-        print("국회 API에서 배출권 관련 후보 의안을 찾지 못했습니다. 기존 bills.json은 보존합니다.", file=sys.stderr)
-        return 1
+        message = f"{ASSEMBLY_TERM} 국회 API에서 배출권 관련 후보 의안을 찾지 못했습니다."
+        warnings.append(message)
+        items = ordered_unique_items([*existing_items, *historical_items])
+        save_document(items, warnings[:20])
+        print(f"{message} 기존·종료 법안 {len(items)}건을 보존합니다.", file=sys.stderr)
+        return 0
 
     summaries: dict[str, str] = {}
     summary_success: set[str] = set()
@@ -494,15 +700,7 @@ def main() -> int:
         elif key in summary_success:
             updated.pop(key, None)
 
-    items = sorted(
-        updated.values(),
-        key=lambda item: (
-            str(item.get("lastActionDate") or item.get("proposedDate") or ""),
-            int(item.get("relevanceScore") or 0),
-            str(item.get("billNo") or ""),
-        ),
-        reverse=True,
-    )[:120]
+    items = ordered_unique_items([*updated.values(), *historical_items])
     save_document(items, warnings[:20])
     print(f"국회 배출권 관련 법안 {len(items)}건 저장")
     if warnings:
