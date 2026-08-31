@@ -2,7 +2,7 @@
 """국회도서관 국회의원 정책자료에서 K-ETS 관련 세미나 일정을 수집한다.
 
 국회도서관 AMPOS의 공개 세미나 일정 목록만 사용하며 별도 API 키는
-필요하지 않다. 오늘(KST) 기준 30일 전부터 365일 뒤까지를 검색한다.
+필요하지 않다. 2026년 1월 1일부터 오늘(KST) 기준 365일 뒤까지를 검색한다.
 """
 
 from __future__ import annotations
@@ -30,9 +30,8 @@ OFFICIAL_PAGE = "https://ampos.nanet.go.kr/seminarList.do"
 SOURCE_NAME = "국회도서관 국회의원 정책자료 세미나일정"
 KST = timezone(timedelta(hours=9))
 
-LOOKBACK_DAYS = 30
 LOOKAHEAD_DAYS = 365
-ARCHIVE_START = date(2015, 1, 1)
+SEMINAR_START_DATE = date(2026, 1, 1)
 PAGE_SIZE = 10
 MAX_PAGES_PER_QUERY = 50
 REQUEST_TIMEOUT_SECONDS = 30
@@ -58,22 +57,6 @@ SEARCH_QUERIES = (
     "온실가스",
     "탄소중립",
     "기후위기",
-)
-
-# 최초 실행 때만 과거 일정을 쌓는다. 이후에는 JSON의 완료 표식을 보고
-# 건너뛰고, 이미 저장한 과거 기록은 계속 보존한다.
-ARCHIVE_QUERIES = (
-    "배출권",
-    "K-ETS",
-    "탄소시장",
-    "탄소가격",
-    "KAU",
-    "KCU",
-    "KOC",
-    "유상할당",
-    "무상할당",
-    "할당계획",
-    "배출허용총량",
 )
 
 STRONG_ETS = re.compile(
@@ -268,6 +251,18 @@ def parse_event_datetime(value: object) -> tuple[str, str] | None:
     return day.isoformat(), clock
 
 
+def verified_event_day(value: object, range_end: date) -> date | None:
+    """공식 목록의 행사일이 저장 범위 안의 실제 달력 날짜인지 확인한다."""
+    parsed = parse_event_datetime(value)
+    if not parsed:
+        return None
+    try:
+        event_day = date.fromisoformat(parsed[0])
+    except ValueError:
+        return None
+    return event_day if SEMINAR_START_DATE <= event_day <= range_end else None
+
+
 def request_html(params: dict[str, object]) -> str:
     query = urllib.parse.urlencode(params)
     request = urllib.request.Request(
@@ -379,11 +374,12 @@ def load_existing() -> dict[str, Any]:
         return {}
 
 
-def build_item(row: dict[str, str], previous: dict[str, Any] | None, timestamp: str) -> dict[str, Any] | None:
+def build_item(row: dict[str, str], previous: dict[str, Any] | None, timestamp: str, range_end: date) -> dict[str, Any] | None:
     title = clean_text(row.get("title", ""))
     parsed = parse_event_datetime(row.get("dateText", ""))
     relevance = relevance_for(title)
-    if not title or not parsed or not relevance:
+    verified_day = verified_event_day(row.get("dateText", ""), range_end)
+    if not title or not parsed or not verified_day or not relevance:
         return None
     event_date, start_time = parsed
     today = now_kst().date().isoformat()
@@ -433,6 +429,8 @@ def build_item(row: dict[str, str], previous: dict[str, Any] | None, timestamp: 
         "publishedAtSource": clean_text(previous.get("publishedAtSource", ""), 40) or "최초수집일",
         "startDate": event_date,
         "endDate": event_date,
+        "sourceDateText": clean_text(row.get("dateText", ""), 100),
+        "dateVerifiedBy": "AMPOS 행사일시 셀",
         "startTime": start_time,
         "eventType": event_type_for(title),
         "venue": venue,
@@ -459,7 +457,6 @@ def save_document(
     warnings: list[str],
     start_date: date,
     end_date: date,
-    archive_backfill_completed: bool,
 ) -> None:
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     payload = {
@@ -467,8 +464,8 @@ def save_document(
         "source": SOURCE_NAME,
         "sourceUrl": OFFICIAL_PAGE,
         "range": {"from": start_date.isoformat(), "to": end_date.isoformat()},
-        "archiveFrom": ARCHIVE_START.isoformat(),
-        "archiveBackfillCompleted": archive_backfill_completed,
+        "archiveFrom": SEMINAR_START_DATE.isoformat(),
+        "archiveBackfillCompleted": True,
         "warning": " | ".join(warnings) if warnings else None,
         "items": items,
     }
@@ -479,10 +476,19 @@ def save_document(
 
 def main() -> int:
     today = now_kst().date()
-    start_date = today - timedelta(days=LOOKBACK_DAYS)
+    start_date = SEMINAR_START_DATE
     end_date = today + timedelta(days=LOOKAHEAD_DAYS)
     existing_document = load_existing()
-    existing_items = [item for item in existing_document.get("items", []) if isinstance(item, dict)]
+    existing_items = []
+    for item in existing_document.get("items", []):
+        if not isinstance(item, dict):
+            continue
+        try:
+            event_day = date.fromisoformat(clean_text(item.get("startDate", ""), 20))
+        except ValueError:
+            continue
+        if SEMINAR_START_DATE <= event_day <= end_date:
+            existing_items.append(item)
     existing_by_source = {
         clean_text(item.get("sourceId", ""), 200): item
         for item in existing_items
@@ -516,25 +522,7 @@ def main() -> int:
             except Exception as exc:
                 warnings.append(f"{keyword} 검색 실패: {clean_text(exc, 300)}")
 
-    archive_was_complete = bool(existing_document.get("archiveBackfillCompleted"))
-    archive_successful_queries = 0
-    archive_end = start_date - timedelta(days=1)
-    if not archive_was_complete and archive_end >= ARCHIVE_START:
-        with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
-            pending = {
-                executor.submit(fetch_query, keyword, ARCHIVE_START, archive_end): keyword
-                for keyword in ARCHIVE_QUERIES
-            }
-            for future in as_completed(pending):
-                keyword = pending[future]
-                try:
-                    fetched_rows.extend(future.result())
-                    archive_successful_queries += 1
-                except Exception as exc:
-                    warnings.append(f"과거 {keyword} 검색 실패: {clean_text(exc, 300)}")
-    archive_backfill_completed = archive_was_complete or archive_successful_queries == len(ARCHIVE_QUERIES)
-
-    if successful_queries == 0 and archive_successful_queries == 0:
+    if successful_queries == 0:
         print("국회도서관 세미나 검색이 모두 실패했습니다. 기존 assembly_seminars.json은 보존합니다.", file=sys.stderr)
         return 1
 
@@ -543,7 +531,7 @@ def main() -> int:
     seen_dedupe: set[str] = set()
     for row in fetched_rows:
         parsed = parse_event_datetime(row.get("dateText", ""))
-        if not parsed or not relevance_for(row.get("title", "")):
+        if not parsed or not verified_event_day(row.get("dateText", ""), end_date) or not relevance_for(row.get("title", "")):
             continue
         event_date, _ = parsed
         source_id = source_id_for(row, event_date)
@@ -563,11 +551,11 @@ def main() -> int:
         event_date, _ = parsed
         source_id = source_id_for(row, event_date)
         previous = existing_by_source.get(source_id) or existing_by_dedupe.get(dedupe_key(row, event_date))
-        item = build_item(row, previous, timestamp)
+        item = build_item(row, previous, timestamp, end_date)
         if item:
             items.append(item)
 
-    # 일정은 누적형이다. 조회기간 밖으로 밀려난 과거 항목도 삭제하지 않는다.
+    # 2026년 이후 일정은 누적 보존하되, 검증 범위를 벗어난 기존 항목은 위에서 제외한다.
     # 새로 조회된 항목을 먼저 두어 같은 행사 중복에서는 최신 정보가 선택된다.
     items.extend(existing_items)
 
@@ -581,6 +569,12 @@ def main() -> int:
         ),
         reverse=True,
     ):
+        try:
+            event_day = date.fromisoformat(clean_text(item.get("startDate", ""), 20))
+        except ValueError:
+            continue
+        if not (SEMINAR_START_DATE <= event_day <= end_date):
+            continue
         item_id = clean_text(item.get("id", ""), 200)
         secondary = "|".join(
             (
@@ -595,7 +589,7 @@ def main() -> int:
         final_dedupe.add(secondary)
 
     final_items = list(final_by_id.values())[:MAX_STORED_ITEMS]
-    save_document(final_items, warnings[:20], start_date, end_date, archive_backfill_completed)
+    save_document(final_items, warnings[:20], start_date, end_date)
     print(f"국회 배출권 관련 세미나 일정 {len(final_items)}건 저장")
     if warnings:
         print("일부 국회도서관 검색 경고: " + " | ".join(warnings[:5]), file=sys.stderr)
