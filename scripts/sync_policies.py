@@ -5,7 +5,8 @@
 # INSTITUTION_SCHEDULE_VERSION = "2026-08-31-v2-event-sentence-relevance-and-content-dedupe"
 # NEWS_REGION_VERSION = "2026-08-31-v1-domestic-overseas"
 # INSTITUTION_SCHEDULE_YEAR_FIX_VERSION = "2026-08-31-v2-strict-year-inference"
-"""기후부 공식자료와 시장 뉴스의 제목·원문 본문에서 설정 키워드를 검색한다."""
+# KRX_NOTICE_VERSION = "2026-08-31-v1-official-board"
+"""기후부·한국거래소 공식자료와 시장 뉴스를 수집·정리한다."""
 
 from __future__ import annotations
 
@@ -34,6 +35,7 @@ RSS_TIMEOUT_SECONDS = 12
 ARTICLE_TIMEOUT_SECONDS = 6
 OPENAI_TIMEOUT_SECONDS = 30
 NAVER_TIMEOUT_SECONDS = 12
+KRX_NOTICE_TIMEOUT_SECONDS = 18
 NAVER_API_HUB_URL = "https://naverapihub.apigw.ntruss.com/search/v1/news"
 NAVER_CLIENT_ID_ENV = "NAVER_API_HUB_CLIENT_ID"
 NAVER_CLIENT_SECRET_ENV = "NAVER_API_HUB_CLIENT_SECRET"
@@ -66,11 +68,13 @@ def policy_section(item: dict) -> str:
     """화면 탭에 사용할 보도자료·공지사항·뉴스 구분을 안정적으로 판정한다."""
     if item.get("sourceType") == "news" or item.get("section") == "news":
         return "news"
-    explicit = str(item.get("section", "")).strip().lower()
-    if explicit in {"press", "notice"}:
-        return explicit
     source = str(item.get("source", ""))
     url = str(item.get("url", ""))
+    if "한국거래소" in source or "ets.krx.co.kr" in url:
+        return "krx_notice"
+    explicit = str(item.get("section", "")).strip().lower()
+    if explicit in {"press", "notice", "krx_notice"}:
+        return explicit
     if "보도자료" in source or re.search(r"(?:menuId=(?:286|10598)|boardMasterId=(?:1|939))(?:&|$)", url):
         return "press"
     return "notice"
@@ -78,7 +82,7 @@ def policy_section(item: dict) -> str:
 
 def source_section(source: dict) -> str:
     explicit = str(source.get("type", "")).strip().lower()
-    if explicit in {"press", "notice"}:
+    if explicit in {"press", "notice", "krx_notice"}:
         return explicit
     return policy_section({"source": source.get("name", ""), "url": source.get("url", ""), "sourceType": "official"})
 
@@ -105,7 +109,7 @@ def has_active_market_stabilization(items: list[dict]) -> bool:
 def fallback_policy_insight(items: list[dict]) -> str:
     official = [item for item in items if item.get("sourceType") != "news"][:10]
     if not official:
-        return "최근 기후부 공식자료가 수집되면 정책 변화가 시장 수급에 미칠 영향을 분석합니다."
+        return "최근 기후부·한국거래소 공식자료가 수집되면 정책 변화가 시장 수급에 미칠 영향을 분석합니다."
     haystack = " ".join(f"{item.get('title', '')} {item.get('summary', '')}" for item in official)
     auction_material = has_auction_material(official)
     active_stabilization = has_active_market_stabilization(official)
@@ -491,7 +495,7 @@ def generate_policy_insight(items: list[dict]) -> dict:
         for item in official
     )
     prompt = (
-        "당신은 한국 배출권거래제(K-ETS) 정책 분석가입니다. 아래 기후부 공식 보도자료와 공지사항만 근거로 최근 정책 인사이트를 작성하세요. "
+        "당신은 한국 배출권거래제(K-ETS) 정책 분석가입니다. 아래 기후부 및 한국거래소 배출권시장 공식자료만 근거로 최근 정책 인사이트를 작성하세요. "
         "기사나 외부 사실은 사용하지 마세요. 상방·하방·혼합·중립 같은 방향등급을 만들거나 가격 방향을 단정하지 말고, 제목을 나열하지도 마세요. "
         "자료의 최근성과 실제 시행 여부를 가장 중요하게 보세요. 유상경매 입찰계획·공고·결과가 있으면 실제 공급물량, 응찰률과 낙찰가를 우선 수급 변수로 다루세요. "
         "최근 경매 결과가 있으면 공급물량 자체보다 낙찰가·응찰강도가 보여주는 실제 이행수요를 해석하세요. "
@@ -1650,6 +1654,182 @@ def fetch_source(source: dict, keywords: list[str]) -> list[dict]:
     return filter_title_and_body(candidates, keywords)
 
 
+def fetch_krx_board_html(path: str, values: dict[str, object]) -> str:
+    """한국거래소 배출권시장 게시판의 공개 목록·상세 HTML 조각을 받는다."""
+    request = urllib.request.Request(
+        f"https://ets.krx.co.kr/board/ETS01030000/{path}",
+        data=urllib.parse.urlencode(values).encode("utf-8"),
+        headers={
+            "User-Agent": "Mozilla/5.0 (compatible; ETS-SIGNAL/2.0; +https://ebrain725.github.io)",
+            "Accept": "text/html, */*; q=0.1",
+            "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
+            "Referer": "https://ets.krx.co.kr/board/ETS01030000/bbs",
+            "X-Requested-With": "XMLHttpRequest",
+            "Connection": "close",
+        },
+        method="POST",
+    )
+    with urllib.request.urlopen(request, timeout=KRX_NOTICE_TIMEOUT_SECONDS) as response:
+        charset = response.headers.get_content_charset() or "utf-8"
+        return response.read(2_000_000).decode(charset, errors="replace")
+
+
+def krx_notice_rows(payload: str) -> list[dict]:
+    """상단 고정 공지를 제외하고 KRX 일반 목록(tbody.datalist)만 해석한다."""
+    datalist = ""
+    for attributes, body in re.findall(r"<tbody\b([^>]*)>([\s\S]*?)</tbody>", payload, re.IGNORECASE):
+        class_match = re.search(r"\bclass\s*=\s*(['\"])(.*?)\1", attributes, re.IGNORECASE | re.DOTALL)
+        classes = {value.lower() for value in class_match.group(2).split()} if class_match else set()
+        if "datalist" in classes:
+            datalist = body
+            break
+    if not datalist:
+        return []
+
+    rows: list[dict] = []
+    for row_html in re.findall(r"<tr\b[^>]*>([\s\S]*?)</tr>", datalist, re.IGNORECASE):
+        link_match = re.search(
+            r"<a\b([^>]*\bdata-view\s*=\s*(['\"])(\d+)\2[^>]*)>([\s\S]*?)</a>",
+            row_html,
+            re.IGNORECASE,
+        )
+        date_match = None
+        for cell_html in re.findall(r"<td\b[^>]*>([\s\S]*?)</td>", row_html, re.IGNORECASE):
+            candidate = clean_html(cell_html, 100)
+            exact_date = re.fullmatch(r"(20\d{2})[.\-/](\d{1,2})[.\-/](\d{1,2})", candidate)
+            if exact_date:
+                date_match = exact_date
+        if not link_match or not date_match:
+            continue
+        source_id = link_match.group(3)
+        title = clean_html(link_match.group(4), 300)
+        if not title:
+            continue
+        year, month, day = map(int, date_match.groups())
+        try:
+            published_at = datetime(year, month, day).date().isoformat()
+        except ValueError:
+            continue
+        rows.append(
+            {
+                "sourceId": source_id,
+                "publishedAt": published_at,
+                "title": title,
+            }
+        )
+    return rows
+
+
+def krx_notice_summary(source_id: str) -> str:
+    detail_html = fetch_krx_board_html("view", {"bbsSeq": source_id})
+    for attributes, body in re.findall(
+        r"<textarea\b([^>]*)>([\s\S]*?)</textarea>",
+        detail_html,
+        re.IGNORECASE,
+    ):
+        if re.search(r"\bname\s*=\s*(['\"])contn\1", attributes, re.IGNORECASE):
+            # KRX 응답은 본문 HTML 자체가 이스케이프돼 있어 한 번 먼저 복원한다.
+            summary = clean_html(html.unescape(body), 1_200)
+            if summary:
+                return summary
+            break
+    raise RuntimeError("공지 상세 본문을 해석하지 못했습니다.")
+
+
+def fetch_krx_notices(source: dict, keywords: list[str]) -> list[dict]:
+    """한국거래소 배출권시장 공지 최신글을 상세 본문과 함께 수집한다."""
+    max_items = max(1, min(int(source.get("maxItems", 20)), 50))
+    pages = max(1, (max_items + 9) // 10)
+    rows_by_id: dict[str, dict] = {}
+    page_errors: list[str] = []
+    for page in range(1, pages + 1):
+        try:
+            payload = fetch_krx_board_html(
+                "list",
+                {
+                    "bbsId": "OPN03010000T8",
+                    "bbsUrl": "ETS01030000",
+                    "curPage": page,
+                    "searchType": "",
+                    "bbsSeq": "",
+                    "boardStyle": "normal",
+                    "language": "ko",
+                    "srchTitle": "",
+                    "srchWord": "",
+                    "srchWord1": "",
+                },
+            )
+            page_rows = krx_notice_rows(payload)
+            if not page_rows:
+                if page == 1:
+                    raise RuntimeError("첫 페이지의 일반 공지 목록을 해석하지 못했습니다.")
+                page_errors.append(f"{page}페이지: 일반 공지 목록이 비어 있습니다.")
+                break
+            for row in page_rows:
+                rows_by_id.setdefault(row["sourceId"], row)
+        except Exception as exc:
+            page_errors.append(f"{page}페이지: {exc}")
+            if page == 1:
+                break
+
+    rows = sorted(
+        rows_by_id.values(),
+        key=lambda item: (item.get("publishedAt", ""), int(item.get("sourceId", 0))),
+        reverse=True,
+    )[:max_items]
+    if not rows:
+        message = "한국거래소 공지 목록을 해석하지 못했습니다."
+        if page_errors:
+            message += " " + " | ".join(page_errors)
+        raise RuntimeError(message)
+    if page_errors:
+        print("한국거래소 공지 목록 일부 경고: " + " | ".join(page_errors), file=sys.stderr)
+
+    def enrich(row: dict) -> tuple[dict, str, str | None]:
+        try:
+            return row, krx_notice_summary(str(row["sourceId"])), None
+        except Exception as exc:
+            return row, "", f"{row['sourceId']}: {exc}"
+
+    with ThreadPoolExecutor(max_workers=min(4, len(rows))) as executor:
+        details = list(executor.map(enrich, rows))
+
+    board_url = str(source.get("url") or "https://ets.krx.co.kr/board/ETS01030000/bbs").split("#", 1)[0]
+    items: list[dict] = []
+    detail_errors: list[str] = []
+    for row, detail, detail_error in details:
+        if detail_error:
+            detail_errors.append(detail_error)
+            summary = "한국거래소 배출권시장 공지사항입니다. 원문에서 세부 내용을 확인하세요."
+        else:
+            summary = str(detail or "한국거래소 배출권시장 공지사항입니다. 원문에서 세부 내용을 확인하세요.")
+        material = f"{row['title']} {summary}"
+        matched = [keyword for keyword in keywords if keyword.lower() in material.lower()]
+        items.append(
+            {
+                "id": f"krx-ets-{row['sourceId']}",
+                "sourceId": row["sourceId"],
+                "publishedAt": row["publishedAt"],
+                "title": row["title"],
+                "category": category_for(material),
+                "summary": summary,
+                "source": source.get("name", "한국거래소 배출권 공지사항"),
+                "sourceType": "official",
+                "section": "krx_notice",
+                "url": f"{board_url}#view={row['sourceId']}",
+                "matchedKeywords": matched,
+                "_trustedSearchMatch": True,
+                "_detailFetchFailed": bool(detail_error),
+            }
+        )
+    if detail_errors:
+        shown_errors = detail_errors[:5]
+        remaining = len(detail_errors) - len(shown_errors)
+        suffix = f" | 외 {remaining}건" if remaining else ""
+        print("한국거래소 공지 본문 일부 경고: " + " | ".join(shown_errors) + suffix, file=sys.stderr)
+    return items
+
+
 def fetch_google_news(search: dict, keywords: list[str], lookback_days: int) -> list[dict]:
     keyword_query = " OR ".join(f'"{keyword.replace(chr(34), "")}"' for keyword in keywords)
     params = urllib.parse.urlencode(
@@ -1914,7 +2094,11 @@ def main() -> int:
         attempted_sources += 1
         try:
             print(f"수집 시작: {source.get('name', '기후부 공식자료')}", flush=True)
-            source_items = fetch_source(source, keywords)
+            source_items = (
+                fetch_krx_notices(source, keywords)
+                if source.get("collector") == "krxBoard"
+                else fetch_source(source, keywords)
+            )
             collected.extend(source_items)
             successful_sources += 1
             print(f"수집 완료: {source.get('name', '기후부 공식자료')} {len(source_items)}건", flush=True)
@@ -1995,13 +2179,25 @@ def main() -> int:
             else:
                 merged[key] = item
         else:
-            if not item.get("_trustedSearchMatch") and not any(
+            trusted_official = item["section"] == "krx_notice" or item.get("_trustedSearchMatch")
+            if not trusted_official and not any(
                 keyword.lower() in haystack or keyword.lower() in matched_keywords
                 for keyword in allowed_keywords
             ):
                 continue
-            normalized_title = re.sub(r"\s+", " ", str(item.get("title", ""))).strip().lower()
-            key = f"{item['section']}|{item.get('publishedAt')}|{normalized_title}"
+            if item["section"] == "krx_notice":
+                stable_id = item.get("sourceId") or item.get("id")
+                if not stable_id:
+                    stable_id = f"{item.get('publishedAt')}|{item.get('title')}"
+                key = f"krx_notice|{stable_id}"
+                if key in merged and item.get("_detailFetchFailed"):
+                    previous_summary = str(merged[key].get("summary", "")).strip()
+                    if previous_summary:
+                        item["summary"] = previous_summary
+                        item["category"] = category_for(f"{item.get('title', '')} {previous_summary}")
+            else:
+                normalized_title = re.sub(r"\s+", " ", str(item.get("title", ""))).strip().lower()
+                key = f"{item['section']}|{item.get('publishedAt')}|{normalized_title}"
             merged[key] = item
 
     limit = max(1, min(int(settings.get("maxPolicyItems", 60)), 200))
@@ -2015,21 +2211,29 @@ def main() -> int:
     news = all_news[:max_news]
     official = [item for item in ranked if item.get("sourceType") != "news"]
     institution_schedules = build_institution_schedules(
-        official + all_news,
+        [item for item in official if policy_section(item) != "krx_notice"] + all_news,
         existing_schedules,
     )
 
-    # 최신 공지사항이 많아도 보도자료 탭이 비지 않도록 공식자료 영역을 균형 배분한다.
+    # 어느 한 게시판의 최신글이 많아도 세 공식자료 탭이 비지 않도록 균형 배분한다.
     official_capacity = max(0, limit - len(news))
-    press = [item for item in official if policy_section(item) == "press"]
-    notices = [item for item in official if policy_section(item) == "notice"]
-    press_quota = (official_capacity + 1) // 2
-    notice_quota = official_capacity // 2
-    selected_official = press[:press_quota] + notices[:notice_quota]
-    selected_keys = {item.get("id") or f"{item.get('publishedAt')}|{item.get('title')}" for item in selected_official}
+    official_sections = ("press", "notice", "krx_notice")
+    base_quota, quota_remainder = divmod(official_capacity, len(official_sections))
+    selected_official: list[dict] = []
+    for index, section in enumerate(official_sections):
+        section_quota = base_quota + (1 if index < quota_remainder else 0)
+        section_items = [item for item in official if policy_section(item) == section]
+        selected_official.extend(section_items[:section_quota])
+
+    def official_item_key(item: dict) -> str:
+        fallback = f"{item.get('publishedAt')}|{item.get('title')}"
+        stable_id = item.get("sourceId") or item.get("id") or fallback
+        return f"{policy_section(item)}|{stable_id}"
+
+    selected_keys = {official_item_key(item) for item in selected_official}
     extras = [
         item for item in official
-        if (item.get("id") or f"{item.get('publishedAt')}|{item.get('title')}") not in selected_keys
+        if official_item_key(item) not in selected_keys
     ]
     selected_official.extend(extras[: max(0, official_capacity - len(selected_official))])
     items = sorted(selected_official + news, key=lambda item: (item.get("publishedAt", ""), item.get("title", "")), reverse=True)[:limit]
@@ -2037,6 +2241,7 @@ def main() -> int:
         item.pop("_trustedSearchMatch", None)
         item.pop("_bodyVerificationQueries", None)
         item.pop("_bodyCandidateScore", None)
+        item.pop("_detailFetchFailed", None)
         item.pop("impact", None)
         item.pop("impactReason", None)
         item.pop("impactSource", None)
@@ -2061,7 +2266,7 @@ def main() -> int:
         f"신규 수집 {len(collected)}건"
     )
     if errors:
-        print("일부 RSS 경고: " + " | ".join(errors), file=sys.stderr)
+        print("일부 수집 경고: " + " | ".join(errors), file=sys.stderr)
     return 0
 
 
