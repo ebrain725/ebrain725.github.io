@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # PRESS_TAB_FIX_VERSION = "2026-08-20-v3.1-fast-current-board"
-# NEWS_DEDUPE_VERSION = "2026-08-28-v2-story-clustering"
+# NEWS_DEDUPE_VERSION = "2026-08-31-v3.1-google-naver-cross-source"
 """기후부 공식자료와 시장 뉴스의 제목·원문 본문에서 설정 키워드를 검색한다."""
 
 from __future__ import annotations
@@ -16,7 +16,7 @@ import urllib.request
 import xml.etree.ElementTree as ET
 from concurrent.futures import ThreadPoolExecutor
 from difflib import SequenceMatcher
-from datetime import datetime
+from datetime import datetime, timedelta
 from email.utils import parsedate_to_datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
@@ -28,6 +28,11 @@ KST = ZoneInfo("Asia/Seoul")
 RSS_TIMEOUT_SECONDS = 12
 ARTICLE_TIMEOUT_SECONDS = 6
 OPENAI_TIMEOUT_SECONDS = 30
+NAVER_TIMEOUT_SECONDS = 12
+NAVER_API_HUB_URL = "https://naverapihub.apigw.ntruss.com/search/v1/news"
+NAVER_CLIENT_ID_ENV = "NAVER_API_HUB_CLIENT_ID"
+NAVER_CLIENT_SECRET_ENV = "NAVER_API_HUB_CLIENT_SECRET"
+NAVER_MAX_DISPLAY = 100
 
 
 def load_keyword_file(relative_path: str) -> list[str]:
@@ -115,8 +120,73 @@ def extract_response_text(payload: dict) -> str:
 
 
 def normalized_news_title(value: str) -> str:
-    value = re.sub(r"\[[^\]]+\]|\([^)]*\)", " ", (value or "").lower())
+    value = re.sub(r"\s+(?:-|\||::)\s+[^-|:]{2,30}$", " ", (value or "").lower())
+    value = re.sub(r"\[[^\]]+\]|\([^)]*\)", " ", value)
     return re.sub(r"[^0-9a-z가-힣]+", "", value)
+
+
+def canonical_news_url(value: str) -> str:
+    """기사 URL을 중복 판정 전용 키로 정규화한다.
+
+    실제 출력 URL은 바꾸지 않고, 스킴·www·추적 파라미터 차이만 제거한다.
+    기사 식별에 쓰일 수 있는 일반 쿼리 파라미터는 그대로 보존한다.
+    """
+    value = html.unescape(str(value or "")).strip()
+    if not re.match(r"^https?://", value, re.IGNORECASE):
+        return ""
+    try:
+        parsed = urllib.parse.urlsplit(value)
+    except ValueError:
+        return ""
+    hostname = (parsed.hostname or "").lower()
+    if hostname.startswith("www."):
+        hostname = hostname[4:]
+    if not hostname:
+        return ""
+    try:
+        parsed_port = parsed.port
+    except ValueError:
+        return ""
+    port = f":{parsed_port}" if parsed_port and parsed_port not in {80, 443} else ""
+    path = re.sub(r"/{2,}", "/", parsed.path or "/").rstrip("/") or "/"
+    tracking_names = {
+        "fbclid", "gclid", "igshid", "mc_cid", "mc_eid", "ref", "source",
+        "campaign", "cmpid", "ncid", "n_media", "n_query", "n_rank", "n_ad_group",
+        "n_ad", "n_keyword", "n_keyword_id",
+    }
+    query = [
+        (key, val)
+        for key, val in urllib.parse.parse_qsl(parsed.query, keep_blank_values=True)
+        if not key.lower().startswith("utm_") and key.lower() not in tracking_names
+    ]
+    query_text = urllib.parse.urlencode(sorted(query))
+    return f"{hostname}{port}{path}{'?' + query_text if query_text else ''}"
+
+
+def publisher_name_from_url(value: str, fallback: str = "NAVER 뉴스") -> str:
+    """NAVER 응답의 원문 URL에서 노출 가능한 출처명을 만든다."""
+    try:
+        hostname = (urllib.parse.urlsplit(value).hostname or "").lower()
+    except ValueError:
+        return fallback
+    hostname = re.sub(r"^(?:www|m|news)\.", "", hostname)
+    return hostname or fallback
+
+
+def preferred_news_item_score(item: dict) -> tuple[int, int, int]:
+    """Google 리다이렉트보다 언론사 원문 링크를 대표기사로 우선한다."""
+    try:
+        hostname = (urllib.parse.urlsplit(str(item.get("url", ""))).hostname or "").lower()
+    except ValueError:
+        hostname = ""
+    aggregator = hostname in {
+        "news.google.com", "news.naver.com", "n.news.naver.com", "m.news.naver.com",
+    }
+    return (
+        0 if aggregator else 1,
+        len(str(item.get("summary", ""))),
+        len(str(item.get("title", ""))),
+    )
 
 
 def title_bigrams(value: str) -> set[str]:
@@ -166,6 +236,10 @@ def news_date_distance(first: str, second: str) -> int:
 
 
 def same_news_story(first: dict, second: dict) -> bool:
+    first_url = canonical_news_url(first.get("url", ""))
+    second_url = canonical_news_url(second.get("url", ""))
+    if first_url and first_url == second_url:
+        return True
     first_title = normalized_news_title(first.get("title", ""))
     second_title = normalized_news_title(second.get("title", ""))
     if not first_title or not second_title:
@@ -178,9 +252,21 @@ def same_news_story(first: dict, second: dict) -> bool:
     if distance == 0:
         if similar_news_title(first.get("title", ""), second.get("title", "")):
             return True
-        shared = news_event_tokens(first.get("title", "")) & news_event_tokens(second.get("title", ""))
-        return len(shared) >= 2 and sum(len(token) for token in shared) >= 5
+        tokens_a = news_event_tokens(first.get("title", ""))
+        tokens_b = news_event_tokens(second.get("title", ""))
+        shared = tokens_a & tokens_b
+        coverage = len(shared) / max(min(len(tokens_a), len(tokens_b)), 1)
+        return len(shared) >= 2 and sum(len(token) for token in shared) >= 8 and coverage >= 0.55
     return distance <= 2 and dice >= 0.78
+
+
+def metadata_values(value: object) -> list[str]:
+    """이전 JSON의 문자열/배열 메타데이터를 모두 안전하게 읽는다."""
+    if isinstance(value, list):
+        return [str(item).strip() for item in value if str(item).strip()]
+    if isinstance(value, str) and value.strip():
+        return [value.strip()]
+    return []
 
 
 def dedupe_news(items: list[dict]) -> list[dict]:
@@ -200,16 +286,31 @@ def dedupe_news(items: list[dict]) -> list[dict]:
 
     result: list[dict] = []
     for group in groups:
-        representative = max(group, key=lambda item: (len(item.get("summary", "")), len(item.get("title", ""))))
+        representative = max(group, key=preferred_news_item_score)
         representative = dict(representative)
         sources = list(dict.fromkeys(
             source
             for item in group
-            for source in [*(item.get("duplicateSources") or []), item.get("source", "")]
+            for source in [*metadata_values(item.get("duplicateSources")), item.get("source", "")]
             if source
         ))
-        representative["duplicateCount"] = sum(max(1, int(item.get("duplicateCount") or 1)) for item in group)
+        providers = list(dict.fromkeys(
+            provider
+            for item in group
+            for provider in [*metadata_values(item.get("searchProviders")), item.get("searchProvider", "")]
+            if provider
+        ))
+        observed_evidence = {
+            canonical_news_url(item.get("url", ""))
+            or f"{item.get('source', '')}|{item.get('publishedAt', '')}|{normalized_news_title(item.get('title', ''))}"
+            for item in group
+        }
+        previous_count = max(max(1, int(item.get("duplicateCount") or 1)) for item in group)
+        # 기존 JSON과 신규 Google/NAVER 결과를 다시 합칠 때 duplicateCount가
+        # 실행할 때마다 누적 증가하지 않도록 관측된 고유 근거 수와 기존 최댓값만 비교한다.
+        representative["duplicateCount"] = max(previous_count, len(observed_evidence), len(sources), 1)
         representative["duplicateSources"] = sources
+        representative["searchProviders"] = providers
         result.append(representative)
     return sorted(result, key=lambda item: (item.get("publishedAt", ""), item.get("title", "")), reverse=True)
 
@@ -584,6 +685,7 @@ def fetch_google_news(search: dict, keywords: list[str], lookback_days: int) -> 
                 "source": source_name,
                 "sourceType": "news",
                 "url": link,
+                "searchProvider": "Google News RSS",
                 "matchedKeywords": [keyword for keyword in keywords if keyword.lower() in haystack],
                 "_trustedSearchMatch": True,
             }
@@ -591,42 +693,243 @@ def fetch_google_news(search: dict, keywords: list[str], lookback_days: int) -> 
     return filter_title_and_body(candidates[:80], keywords)
 
 
+def normalize_naver_pub_date(value: str) -> str:
+    """NAVER의 RFC 2822 날짜만 허용해 잘못된 기사가 오늘 기사로 둔갑하지 않게 한다."""
+    try:
+        parsed = parsedate_to_datetime(str(value or "").strip())
+        if parsed.tzinfo is None:
+            parsed = parsed.replace(tzinfo=KST)
+        return parsed.astimezone(KST).date().isoformat()
+    except (TypeError, ValueError, OverflowError):
+        return ""
+
+
+def parse_naver_news_payload(
+    payload: bytes | str | dict,
+    *,
+    query_keyword: str,
+    keywords: list[str],
+    cutoff_date: str,
+) -> list[dict]:
+    """NAVER API HUB JSON을 기존 뉴스 항목 스키마로 변환한다.
+
+    네트워크·환경변수에 의존하지 않는 순수 파서라 고정 fixture로 검증할 수 있다.
+    """
+    if isinstance(payload, bytes):
+        document = json.loads(payload.decode("utf-8"))
+    elif isinstance(payload, str):
+        document = json.loads(payload)
+    else:
+        document = payload
+    if not isinstance(document, dict) or not isinstance(document.get("items"), list):
+        raise ValueError("NAVER 뉴스 응답에 items 배열이 없습니다.")
+
+    candidates: list[dict] = []
+    for raw_item in document["items"]:
+        if not isinstance(raw_item, dict):
+            continue
+        title = clean_html(str(raw_item.get("title", "")), 180)
+        description = clean_html(str(raw_item.get("description", "")), 2_000)
+        original_link = html.unescape(str(raw_item.get("originallink", ""))).strip()
+        naver_link = html.unescape(str(raw_item.get("link", ""))).strip()
+        link = next(
+            (
+                candidate
+                for candidate in (original_link, naver_link)
+                if re.match(r"^https?://", candidate, re.IGNORECASE)
+            ),
+            "",
+        )
+        if not title or not link:
+            continue
+        published = normalize_naver_pub_date(str(raw_item.get("pubDate", "")))
+        if not published:
+            continue
+        if cutoff_date and published < cutoff_date:
+            continue
+        haystack = f"{title} {description}".lower()
+        matched = [keyword for keyword in keywords if keyword.lower() in haystack]
+        if query_keyword and query_keyword not in matched:
+            # NAVER 검색은 기사 본문 일치로도 결과를 반환할 수 있으므로
+            # 요청 키워드는 제목·요약에 보이지 않아도 검색 근거로 보존한다.
+            matched.insert(0, query_keyword)
+        stable_key = canonical_news_url(link) or f"{published}|{title}"
+        candidates.append(
+            {
+                "id": hashlib.sha1(stable_key.encode("utf-8")).hexdigest()[:16],
+                "publishedAt": published,
+                "title": title,
+                "category": category_for(haystack),
+                "summary": description,
+                "source": publisher_name_from_url(original_link or naver_link),
+                "sourceType": "news",
+                "section": "news",
+                "url": link,
+                "searchProvider": "NAVER API HUB",
+                "matchedKeywords": list(dict.fromkeys(matched)),
+                "_trustedSearchMatch": True,
+            }
+        )
+    return candidates
+
+
+def fetch_naver_news(
+    keywords: list[str],
+    lookback_days: int,
+    client_id: str,
+    client_secret: str,
+) -> list[dict]:
+    """NAVER 뉴스 검색을 키워드별로 실행하고 부분 실패는 나머지 결과로 복구한다."""
+    if not client_id or not client_secret:
+        raise RuntimeError("NAVER API HUB Client ID와 Client Secret이 모두 필요합니다.")
+    if not keywords:
+        return []
+    cutoff_date = (datetime.now(KST).date() - timedelta(days=lookback_days)).isoformat()
+
+    def fetch_keyword(keyword: str) -> tuple[str, list[dict] | None, str | None]:
+        params = urllib.parse.urlencode(
+            {
+                "query": keyword,
+                "display": str(NAVER_MAX_DISPLAY),
+                "start": "1",
+                "sort": "date",
+                "format": "json",
+            }
+        )
+        request = urllib.request.Request(
+            f"{NAVER_API_HUB_URL}?{params}",
+            headers={
+                "X-NCP-APIGW-API-KEY-ID": client_id,
+                "X-NCP-APIGW-API-KEY": client_secret,
+                "Accept": "application/json",
+                "User-Agent": "Mozilla/5.0 (compatible; ETS-LIVE-DASHBOARD/3.0)",
+            },
+        )
+        try:
+            with urllib.request.urlopen(request, timeout=NAVER_TIMEOUT_SECONDS) as response:
+                payload = response.read(5_000_000)
+            return keyword, parse_naver_news_payload(
+                payload,
+                query_keyword=keyword,
+                keywords=keywords,
+                cutoff_date=cutoff_date,
+            ), None
+        except Exception as exc:
+            # 예외 문자열에는 URL과 상태코드만 포함되며 인증 헤더 값은 절대 기록하지 않는다.
+            return keyword, None, str(exc)
+
+    with ThreadPoolExecutor(max_workers=min(3, len(keywords))) as executor:
+        results = list(executor.map(fetch_keyword, keywords))
+
+    candidates_by_key: dict[str, dict] = {}
+    keyword_errors: list[str] = []
+    for keyword, items, error in results:
+        if error:
+            keyword_errors.append(f"{keyword}: {error}")
+            continue
+        for item in items or []:
+            key = canonical_news_url(item.get("url", "")) or (
+                f"{item.get('publishedAt', '')}|{normalized_news_title(item.get('title', ''))}"
+            )
+            if key not in candidates_by_key:
+                candidates_by_key[key] = item
+                continue
+            existing = candidates_by_key[key]
+            existing["matchedKeywords"] = list(
+                dict.fromkeys([*(existing.get("matchedKeywords") or []), *(item.get("matchedKeywords") or [])])
+            )
+            if preferred_news_item_score(item) > preferred_news_item_score(existing):
+                item["matchedKeywords"] = existing["matchedKeywords"]
+                candidates_by_key[key] = item
+
+    if not candidates_by_key and keyword_errors:
+        raise RuntimeError("모든 NAVER 뉴스 키워드 검색에 실패했습니다: " + " | ".join(keyword_errors))
+    if keyword_errors:
+        print("NAVER 뉴스 일부 키워드 검색 경고: " + " | ".join(keyword_errors), file=sys.stderr)
+
+    candidates = sorted(
+        candidates_by_key.values(),
+        key=lambda item: (item.get("publishedAt", ""), item.get("title", "")),
+        reverse=True,
+    )
+    return filter_title_and_body(candidates, keywords)
+
+
 def main() -> int:
     settings = json.loads(SETTINGS_PATH.read_text(encoding="utf-8"))
     keywords = [str(value).strip() for value in settings.get("policyKeywords", []) if str(value).strip()]
     sources = settings.get("policySources", [])
     news_searches = settings.get("policyNewsSearches", [])
+    naver_client_id = os.getenv(NAVER_CLIENT_ID_ENV, "").strip()
+    naver_client_secret = os.getenv(NAVER_CLIENT_SECRET_ENV, "").strip()
+    naver_enabled = bool(naver_client_id and naver_client_secret)
+    naver_config_warning = ""
+    if bool(naver_client_id) != bool(naver_client_secret):
+        naver_config_warning = (
+            f"{NAVER_CLIENT_ID_ENV}와 {NAVER_CLIENT_SECRET_ENV} 중 하나만 설정되어 "
+            "NAVER 뉴스 수집을 건너뜁니다."
+        )
+    elif news_searches and not naver_enabled:
+        naver_config_warning = (
+            f"{NAVER_CLIENT_ID_ENV}와 {NAVER_CLIENT_SECRET_ENV}이 설정되지 않아 "
+            "NAVER 뉴스 수집을 건너뜁니다."
+        )
     news_keyword_file = str(settings.get("newsKeywordFile", "config/news_keywords.txt")).strip()
-    news_keywords = load_keyword_file(news_keyword_file) if news_searches else []
+    news_keywords = load_keyword_file(news_keyword_file) if (news_searches or naver_enabled) else []
     lookback_days = max(1, min(int(settings.get("policyLookbackDays", 30)), 90))
-    if not (sources or news_searches):
+    if not (sources or news_searches or naver_enabled):
         raise RuntimeError("config/settings.json에 검색 자료를 설정하세요.")
     if sources and not keywords:
         raise RuntimeError("config/settings.json에 공식자료 검색 키워드를 설정하세요.")
-    if news_searches and not news_keywords:
+    if (news_searches or naver_enabled) and not news_keywords:
         raise RuntimeError(f"{news_keyword_file}에 뉴스 검색 키워드를 한 개 이상 입력하세요.")
 
     collected: list[dict] = []
     errors: list[str] = []
+    if naver_config_warning:
+        errors.append(f"NAVER 뉴스: {naver_config_warning}")
+    attempted_sources = 0
+    successful_sources = 0
     for source in sources:
+        attempted_sources += 1
         try:
             print(f"수집 시작: {source.get('name', '기후부 공식자료')}", flush=True)
             source_items = fetch_source(source, keywords)
             collected.extend(source_items)
+            successful_sources += 1
             print(f"수집 완료: {source.get('name', '기후부 공식자료')} {len(source_items)}건", flush=True)
         except Exception as exc:  # 네트워크 또는 제공처 오류를 다음 자료와 분리
             errors.append(f"{source.get('name', 'RSS')}: {exc}")
     for search in news_searches:
+        attempted_sources += 1
         try:
             print(f"수집 시작: {search.get('name', '뉴스검색')}", flush=True)
             news_items = fetch_google_news(search, news_keywords, lookback_days)
             collected.extend(news_items)
+            successful_sources += 1
             print(f"수집 완료: {search.get('name', '뉴스검색')} {len(news_items)}건", flush=True)
         except Exception as exc:
             errors.append(f"{search.get('name', '뉴스검색')}: {exc}")
 
-    source_count = len(sources) + len(news_searches)
-    if len(errors) == source_count:
+    if naver_enabled:
+        attempted_sources += 1
+        try:
+            print("수집 시작: NAVER 뉴스", flush=True)
+            naver_items = fetch_naver_news(
+                news_keywords,
+                lookback_days,
+                naver_client_id,
+                naver_client_secret,
+            )
+            collected.extend(naver_items)
+            successful_sources += 1
+            print(f"수집 완료: NAVER 뉴스 {len(naver_items)}건", flush=True)
+        except Exception as exc:
+            # NAVER 장애·인증 오류가 있어도 Google 뉴스와 공식자료 결과는 저장한다.
+            errors.append(f"NAVER 뉴스: {exc}")
+
+    source_count = attempted_sources
+    if successful_sources == 0:
         raise RuntimeError("모든 정책·뉴스 수집에 실패했습니다: " + " | ".join(errors))
 
     existing = []
@@ -648,7 +951,12 @@ def main() -> int:
         ):
             continue
         if item.get("sourceType") == "news":
-            key = item.get("url") or f"news|{item.get('publishedAt')}|{item.get('title')}"
+            canonical_url = canonical_news_url(item.get("url", ""))
+            key = (
+                f"news-url|{canonical_url}"
+                if canonical_url
+                else f"news|{item.get('publishedAt')}|{normalized_news_title(item.get('title', ''))}"
+            )
         else:
             normalized_title = re.sub(r"\s+", " ", str(item.get("title", ""))).strip().lower()
             key = f"{item['section']}|{item.get('publishedAt')}|{normalized_title}"
@@ -684,6 +992,10 @@ def main() -> int:
         "keywords": keywords,
         "newsKeywords": news_keywords,
         "sourceCount": source_count,
+        "newsProviders": [
+            *(["Google News RSS"] if news_searches else []),
+            *(["NAVER API HUB"] if naver_enabled else []),
+        ],
         "warning": " | ".join(errors) if errors else None,
         "aiInsight": generate_policy_insight(items),
         "items": items,
