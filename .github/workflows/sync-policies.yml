@@ -91,6 +91,10 @@ jobs:
             echo "::error::scripts/sync_bills.py 파일을 찾지 못했습니다."
             exit 1
           }
+          test -f scripts/sync_assembly_seminars.py || {
+            echo "::error::scripts/sync_assembly_seminars.py 파일을 찾지 못했습니다."
+            exit 1
+          }
           test -f config/settings.json || {
             echo "::error::config/settings.json 파일을 찾지 못했습니다."
             exit 1
@@ -109,7 +113,7 @@ jobs:
             echo "::warning::OPENAI_API_KEY가 없어 정책 인사이트는 수집기의 기본 문구를 사용합니다."
           fi
           if [[ -z "${ASSEMBLY_API_KEY:-}" ]]; then
-            echo "::warning::ASSEMBLY_API_KEY가 없어 입법동향은 기존 데이터를 유지합니다."
+            echo "::warning::ASSEMBLY_API_KEY가 없어 발의법률안은 기존 데이터를 유지합니다."
           fi
           if [[ "$missing" -ne 0 ]]; then
             exit 1
@@ -122,13 +126,13 @@ jobs:
           python - <<'PY'
           from pathlib import Path
 
-          for name in ("sync_policies.py", "sync_bills.py"):
+          for name in ("sync_policies.py", "sync_bills.py", "sync_assembly_seminars.py"):
               path = Path("scripts") / name
               compile(path.read_text(encoding="utf-8"), str(path), "exec")
               print(f"{name} 문법 검증 완료")
           PY
 
-      - name: Collect ministry policies, news and legislation
+      - name: Collect ministry policies, news, legislation and Assembly seminars
         shell: bash
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
@@ -140,8 +144,9 @@ jobs:
           set -euo pipefail
           python scripts/sync_policies.py
           python scripts/sync_bills.py
+          python scripts/sync_assembly_seminars.py
 
-      - name: Validate generated policy and legislation data
+      - name: Validate generated policy, legislation and Assembly seminar data
         shell: bash
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
@@ -153,6 +158,7 @@ jobs:
           python - <<'PY'
           import json
           import os
+          from datetime import date
           from pathlib import Path
 
           output = Path("public/data/policies.json")
@@ -214,7 +220,7 @@ jobs:
               if not str(bills.get("assemblyTerm", "")).strip():
                   raise SystemExit("bills.json에 국회 대수가 없습니다.")
               if not bills["items"]:
-                  raise SystemExit("입법동향 수집 결과가 0건이므로 공개하지 않습니다.")
+                  raise SystemExit("발의법률안 수집 결과가 0건이므로 공개하지 않습니다.")
           seen_bill_ids = set()
           for index, item in enumerate(bills["items"]):
               if not isinstance(item, dict):
@@ -222,6 +228,8 @@ jobs:
               bill_key = str(item.get("billId") or "").strip()
               if not bill_key or not str(item.get("title", "")).strip():
                   raise SystemExit(f"bills.items[{index}] 의안ID·제목이 없습니다.")
+              if str(item.get("category", "")) != "발의법률안":
+                  raise SystemExit(f"bills.items[{index}] 구분/분류가 발의법률안이 아닙니다.")
               if bill_key in seen_bill_ids:
                   raise SystemExit(f"bills.items[{index}] 의안ID가 중복됩니다: {bill_key}")
               seen_bill_ids.add(bill_key)
@@ -232,7 +240,46 @@ jobs:
               secret = os.getenv(env_name, "")
               if secret and (secret in policy_raw or secret in bills_raw):
                   raise SystemExit(f"보안값이 공개 JSON에 포함되었습니다: {env_name}")
-          print(f"입법동향 검증 완료: {len(bills['items'])}건")
+          print(f"발의법률안 검증 완료: {len(bills['items'])}건")
+
+          seminars_output = Path("public/data/assembly_seminars.json")
+          if not seminars_output.is_file():
+              raise SystemExit("public/data/assembly_seminars.json이 생성되지 않았습니다.")
+          if seminars_output.stat().st_size > 5_000_000:
+              raise SystemExit("assembly_seminars.json이 5MB를 초과해 비정상으로 판단했습니다.")
+
+          seminars_raw = seminars_output.read_text(encoding="utf-8")
+          seminars = json.loads(seminars_raw)
+          if not isinstance(seminars, dict) or not isinstance(seminars.get("items"), list):
+              raise SystemExit("assembly_seminars.json의 최상위 값과 items 형식이 올바르지 않습니다.")
+          if not isinstance(seminars.get("lastSync"), str) or not seminars["lastSync"].strip():
+              raise SystemExit("assembly_seminars.json에 정상적인 lastSync가 없습니다.")
+          if not str(seminars.get("source", "")).strip():
+              raise SystemExit("assembly_seminars.json에 공식 출처가 없습니다.")
+          seen_seminar_ids = set()
+          for index, item in enumerate(seminars["items"]):
+              if not isinstance(item, dict):
+                  raise SystemExit(f"assembly_seminars.items[{index}]가 객체가 아닙니다.")
+              seminar_id = str(item.get("id") or item.get("sourceId") or "").strip()
+              if not seminar_id or seminar_id in seen_seminar_ids:
+                  raise SystemExit(f"assembly_seminars.items[{index}] ID가 없거나 중복됩니다: {seminar_id}")
+              seen_seminar_ids.add(seminar_id)
+              if str(item.get("category", "")) != "세미나일정":
+                  raise SystemExit(f"assembly_seminars.items[{index}] 구분/분류가 세미나일정이 아닙니다.")
+              for field_name in ("title", "startDate", "eventType", "host", "url"):
+                  if not str(item.get(field_name, "")).strip():
+                      raise SystemExit(f"assembly_seminars.items[{index}] 필수값 누락: {field_name}")
+              try:
+                  date.fromisoformat(str(item["startDate"])[:10])
+              except ValueError as error:
+                  raise SystemExit(f"assembly_seminars.items[{index}] 행사일이 올바르지 않습니다.") from error
+              if not str(item["url"]).startswith("https://ampos.nanet.go.kr/"):
+                  raise SystemExit(f"assembly_seminars.items[{index}] 공식 국회도서관 URL이 아닙니다.")
+          for env_name in ("OPENAI_API_KEY", "NAVER_API_HUB_CLIENT_ID", "NAVER_API_HUB_CLIENT_SECRET", "ASSEMBLY_API_KEY"):
+              secret = os.getenv(env_name, "")
+              if secret and secret in seminars_raw:
+                  raise SystemExit(f"보안값이 assembly_seminars.json에 포함되었습니다: {env_name}")
+          print(f"국회의원 세미나 일정 검증 완료: {len(seminars['items'])}건")
           PY
 
       - name: Confirm only approved data files changed
@@ -250,7 +297,7 @@ jobs:
           while IFS= read -r path; do
             [[ -z "$path" ]] && continue
             case "$path" in
-              public/data/policies.json|public/data/bills.json) ;;
+              public/data/policies.json|public/data/bills.json|public/data/assembly_seminars.json) ;;
               *)
                 echo "::error::수집기가 허용되지 않은 파일을 변경했습니다: $path"
                 unexpected=1
@@ -261,15 +308,15 @@ jobs:
             exit 1
           fi
 
-          if [[ -n "$(git status --porcelain -- public/data/policies.json public/data/bills.json)" ]]; then
+          if [[ -n "$(git status --porcelain -- public/data/policies.json public/data/bills.json public/data/assembly_seminars.json)" ]]; then
             echo "changed=true" >> "$GITHUB_OUTPUT"
-            echo "정책·입법동향 데이터 변경사항을 확인했습니다."
+            echo "정책·발의법률안·국회 세미나 데이터 변경사항을 확인했습니다."
           else
             echo "changed=false" >> "$GITHUB_OUTPUT"
             echo "저장할 변경사항이 없습니다. 최신 커밋의 사이트를 배포합니다."
           fi
 
-      - name: Commit policy and legislation data
+      - name: Commit policy, legislation and Assembly seminar data
         if: steps.changes.outputs.changed == 'true'
         shell: bash
         run: |
@@ -277,13 +324,13 @@ jobs:
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -- public/data/policies.json public/data/bills.json
+          git add -- public/data/policies.json public/data/bills.json public/data/assembly_seminars.json
 
           staged="$(git diff --cached --name-only)"
           while IFS= read -r path; do
             [[ -z "$path" ]] && continue
             case "$path" in
-              public/data/policies.json|public/data/bills.json) ;;
+              public/data/policies.json|public/data/bills.json|public/data/assembly_seminars.json) ;;
               *)
                 echo "::error::허용되지 않은 커밋 대상입니다: $path"
                 exit 1
@@ -291,7 +338,7 @@ jobs:
             esac
           done <<< "$staged"
 
-          git commit -m "chore(data): sync policies, news and legislation"
+          git commit -m "chore(data): sync policies, legislation and Assembly seminars"
 
       - name: Rebase safely and push to main
         if: steps.changes.outputs.changed == 'true'
@@ -305,7 +352,7 @@ jobs:
             git fetch origin main
             if ! git rebase origin/main; then
               git rebase --abort || true
-              echo "::error::원격 main과 정책·입법동향 데이터 변경이 충돌했습니다. 강제 푸시하지 않습니다."
+              echo "::error::원격 main과 정책·발의법률안·국회 세미나 데이터 변경이 충돌했습니다. 강제 푸시하지 않습니다."
               exit 1
             fi
             if git push origin HEAD:main; then
@@ -319,7 +366,7 @@ jobs:
             exit 1
           fi
 
-          echo "정책·입법동향 데이터를 main에 반영했습니다: $(git rev-parse HEAD)"
+          echo "정책·발의법률안·국회 세미나 데이터를 main에 반영했습니다: $(git rev-parse HEAD)"
 
       - name: Align deployment source with a committed revision
         id: source_revision
@@ -351,7 +398,7 @@ jobs:
             exit 1
           fi
 
-          for data_file in public/data/policies.json public/data/bills.json; do
+          for data_file in public/data/policies.json public/data/bills.json public/data/assembly_seminars.json; do
             committed_hash="$(git show "HEAD:${data_file}" | sha256sum | awk '{print $1}')"
             worktree_hash="$(sha256sum "$data_file" | awk '{print $1}')"
             if [[ "$committed_hash" != "$worktree_hash" ]]; then
@@ -363,12 +410,15 @@ jobs:
           site_sha="$(git rev-parse HEAD)"
           policies_hash="$(sha256sum public/data/policies.json | awk '{print $1}')"
           bills_hash="$(sha256sum public/data/bills.json | awk '{print $1}')"
+          seminars_hash="$(sha256sum public/data/assembly_seminars.json | awk '{print $1}')"
           echo "site_sha=$site_sha" >> "$GITHUB_OUTPUT"
           echo "policies_sha256=$policies_hash" >> "$GITHUB_OUTPUT"
           echo "bills_sha256=$bills_hash" >> "$GITHUB_OUTPUT"
+          echo "seminars_sha256=$seminars_hash" >> "$GITHUB_OUTPUT"
           echo "배포 원본 커밋: $site_sha"
           echo "policies.json SHA-256: $policies_hash"
           echo "bills.json SHA-256: $bills_hash"
+          echo "assembly_seminars.json SHA-256: $seminars_hash"
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v6
@@ -382,12 +432,13 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v5
 
-      - name: Verify the public policy and legislation data
+      - name: Verify the public policy, legislation and Assembly seminar data
         shell: bash
         env:
           PAGE_URL: ${{ steps.deployment.outputs.page_url }}
           EXPECTED_POLICIES_SHA256: ${{ steps.source_revision.outputs.policies_sha256 }}
           EXPECTED_BILLS_SHA256: ${{ steps.source_revision.outputs.bills_sha256 }}
+          EXPECTED_SEMINARS_SHA256: ${{ steps.source_revision.outputs.seminars_sha256 }}
         run: |
           set -euo pipefail
 
@@ -423,3 +474,4 @@ jobs:
 
           verify_public_file "data/policies.json" "$EXPECTED_POLICIES_SHA256"
           verify_public_file "data/bills.json" "$EXPECTED_BILLS_SHA256"
+          verify_public_file "data/assembly_seminars.json" "$EXPECTED_SEMINARS_SHA256"
