@@ -52,3 +52,7 @@ footer{max-width:1320px;margin:0 auto;padding:30px 24px 38px;border-top:1px soli
 /* POLICY_RADAR_SCHEDULE_AND_BILLS_V1 */
 .policy-list .policy-row.schedule-row{grid-template-columns:108px 82px minmax(0,1fr) 36px!important}.schedule-date-stack{display:flex;flex-direction:column;align-items:flex-start;gap:5px;line-height:1.15}.schedule-date-stack small{color:var(--green);font-size:10px;font-weight:800;white-space:nowrap}.policy-list .policy-row.bill-row{grid-template-columns:70px 104px minmax(0,1fr) 36px!important}.bill-row .category-badge{white-space:normal;text-align:center;line-height:1.25;padding-block:6px}
 @media(max-width:700px){.policy-list .policy-row.schedule-row{grid-template-columns:91px 64px minmax(0,1fr) 30px!important}.schedule-date-stack small{font-size:9px}.policy-list .policy-row.bill-row{grid-template-columns:52px 78px minmax(0,1fr) 30px!important}}
+
+/* ASSEMBLY_SEMINAR_RADAR_VERSION = 2026-08-31-v1 */
+.filter-row{display:flex;overflow-x:auto;scrollbar-width:thin}.filter-row button{flex:0 0 auto}.policy-list .policy-row.assembly-seminar-row{grid-template-columns:108px 82px minmax(0,1fr) 36px!important}.assembly-seminar-row .category-badge{white-space:normal;text-align:center;line-height:1.25;padding-block:6px}.assembly-seminar-row .schedule-date-stack small{color:#8d6119}
+@media(max-width:700px){.policy-list .policy-row.assembly-seminar-row{grid-template-columns:91px 64px minmax(0,1fr) 30px!important}}
