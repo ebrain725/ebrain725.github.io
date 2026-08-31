@@ -385,6 +385,7 @@ def build_item(
     return {
         "billId": bill_id,
         "billNo": bill_no,
+        "category": "발의법률안",
         "assemblyTerm": ASSEMBLY_TERM,
         "title": title,
         "proposedDate": proposed_date,
@@ -422,6 +423,8 @@ def main() -> int:
         item for item in existing_document.get("items", [])
         if isinstance(item, dict) and str(item.get("assemblyTerm") or ASSEMBLY_TERM) == ASSEMBLY_TERM
     ]
+    for item in existing_items:
+        item["category"] = "발의법률안"
     existing_by_id: dict[str, dict[str, Any]] = {}
     for item in existing_items:
         key = clean_text(item.get("billId", ""))
@@ -432,8 +435,7 @@ def main() -> int:
     if not api_key:
         message = "ASSEMBLY_API_KEY가 없어 국회법안 수집을 건너뜁니다."
         print(message, file=sys.stderr)
-        if not OUTPUT_PATH.exists():
-            save_document(existing_items, [message])
+        save_document(existing_items, [message])
         return 0
 
     warnings: list[str] = []
