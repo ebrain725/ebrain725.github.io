@@ -2,6 +2,7 @@
 # PRESS_TAB_FIX_VERSION = "2026-08-20-v3.1-fast-current-board"
 # NEWS_DEDUPE_VERSION = "2026-08-31-v3.1-google-naver-cross-source"
 # NEWS_RELEVANCE_VERSION = "2026-08-31-v3.1-exact-ets-limited-body-check"
+# INSTITUTION_SCHEDULE_VERSION = "2026-08-31-v1-body-aware-dedupe"
 """기후부 공식자료와 시장 뉴스의 제목·원문 본문에서 설정 키워드를 검색한다."""
 
 from __future__ import annotations
@@ -36,6 +37,10 @@ NAVER_CLIENT_ID_ENV = "NAVER_API_HUB_CLIENT_ID"
 NAVER_CLIENT_SECRET_ENV = "NAVER_API_HUB_CLIENT_SECRET"
 NAVER_MAX_DISPLAY = 100
 NAVER_BODY_VERIFY_LIMIT = 12
+SCHEDULE_BODY_VERIFY_LIMIT = 18
+SCHEDULE_RETENTION_DAYS = 30
+SCHEDULE_HORIZON_DAYS = 400
+MAX_SCHEDULE_ITEMS = 80
 
 
 def load_keyword_file(relative_path: str) -> list[str]:
@@ -601,27 +606,58 @@ def html_attribute(tag_text: str, name: str) -> str:
 
 
 def extract_article_text(page_html: str) -> str:
-    candidates: list[str] = []
+    cleaned_html = re.sub(
+        r"<(?:script|style|nav|aside|footer)\b[^>]*>[\s\S]*?</(?:script|style|nav|aside|footer)>",
+        " ",
+        page_html,
+        flags=re.IGNORECASE,
+    )
+    structured: list[str] = []
     for match in re.finditer(r'"articleBody"\s*:\s*("(?:\\.|[^"\\])*")', page_html, re.IGNORECASE):
         try:
-            candidates.append(clean_html(json.loads(match.group(1)), 20_000))
+            structured.append(clean_html(json.loads(match.group(1)), 20_000))
         except (json.JSONDecodeError, TypeError):
             pass
+    useful = [text for text in structured if len(text) >= 80]
+    if useful:
+        return max(useful, key=len)[:20_000]
+
+    dedicated: list[str] = []
+    dedicated_pattern = re.compile(
+        r"<(?:div|section)\b[^>]*(?:class|id)\s*=\s*(['\"])[^'\"]*"
+        r"(?:article[-_ ]?body|article[-_ ]?content|news[-_ ]?body|news[-_ ]?content|story[-_ ]?body|"
+        r"entry[-_ ]?content|post[-_ ]?content|board[-_ ]?view|board[-_ ]?content|bbs[-_ ]?view|"
+        r"view[-_ ]?content|view[-_ ]?cont|view[-_ ]?txt)[^'\"]*\1[^>]*>([\s\S]*?)</(?:div|section)>",
+        re.IGNORECASE,
+    )
+    for match in dedicated_pattern.finditer(cleaned_html):
+        dedicated.append(clean_html(match.group(2) or "", 20_000))
+    useful = [text for text in dedicated if len(text) >= 80]
+    if useful:
+        return max(useful, key=len)[:20_000]
+
+    article_blocks = [
+        clean_html(match.group(1), 20_000)
+        for match in re.finditer(r"<article\b[^>]*>([\s\S]*?)</article>", cleaned_html, re.IGNORECASE)
+    ]
+    useful = [text for text in article_blocks if len(text) >= 80]
+    if useful:
+        return max(useful, key=len)[:20_000]
+
+    meta_candidates: list[str] = []
     for meta in re.findall(r"<meta\b[^>]*>", page_html, re.IGNORECASE):
         key = f"{html_attribute(meta, 'property')} {html_attribute(meta, 'name')}".lower()
         if re.search(r"og:description|twitter:description|description", key):
-            candidates.append(clean_html(html_attribute(meta, "content"), 20_000))
-    block_pattern = re.compile(
-        r"<(article|main)\b[^>]*>([\s\S]*?)</\1>"
-        r"|<(?:div|section)\b[^>]*(?:class|id)\s*=\s*(['\"])[^'\"]*"
-        r"(?:article[-_ ]?body|article[-_ ]?content|news[-_ ]?body|news[-_ ]?content|story[-_ ]?body|"
-        r"entry[-_ ]?content|post[-_ ]?content|board[-_ ]?view|board[-_ ]?content|bbs[-_ ]?view|"
-        r"view[-_ ]?content|view[-_ ]?cont|view[-_ ]?txt)[^'\"]*\3[^>]*>([\s\S]*?)</(?:div|section)>",
-        re.IGNORECASE,
-    )
-    for match in block_pattern.finditer(page_html):
-        candidates.append(clean_html(match.group(2) or match.group(4) or "", 20_000))
-    useful = [text for text in candidates if len(text) >= 40]
+            meta_candidates.append(clean_html(html_attribute(meta, "content"), 20_000))
+    useful = [text for text in meta_candidates if len(text) >= 80]
+    if useful:
+        return max(useful, key=len)[:20_000]
+
+    main_blocks = [
+        clean_html(match.group(1), 20_000)
+        for match in re.finditer(r"<main\b[^>]*>([\s\S]*?)</main>", cleaned_html, re.IGNORECASE)
+    ]
+    useful = [text for text in main_blocks if len(text) >= 80]
     return max(useful, key=len)[:20_000] if useful else ""
 
 
@@ -659,6 +695,550 @@ def keyword_excerpt(text: str, matched_keywords: list[str], limit: int = 260) ->
     start = max(0, min(positions) - 80) if positions else 0
     excerpt = text[start : start + limit].strip()
     return f"{'…' if start else ''}{excerpt}{'…' if start + limit < len(text) else ''}"
+
+
+SCHEDULE_EVENT_PATTERNS = (
+    ("유상경매", r"유상\s*(?:할당\s*)?경매|배출권.{0,18}입찰|입찰.{0,18}배출권"),
+    ("공청회", r"공청회"),
+    ("설명회", r"설명회"),
+    ("간담회", r"간담회"),
+    ("세미나", r"세미나|포럼|토론회|심포지엄|컨퍼런스"),
+    ("협의회", r"협의회|위원회|관계기관\s*회의|회의를?\s*(?:개최|연다|진행)"),
+    ("접수마감", r"접수|신청|모집|공모|의견\s*제출|제출\s*마감|마감"),
+    ("시행", r"시행|적용|발효|개시|거래\s*(?:시작|종료)"),
+    ("발표", r"발표|공개|공고"),
+)
+SCHEDULE_EVENT_CUE = re.compile(
+    "|".join(f"(?:{pattern})" for _, pattern in SCHEDULE_EVENT_PATTERNS),
+    re.IGNORECASE,
+)
+SCHEDULE_FUTURE_CUE = re.compile(
+    r"예정|개최(?:한다|할|될|된다)|열(?:린다|릴|기로)|실시(?:한다|할)|진행(?:한다|할)|"
+    r"접수(?:한다|할|받)|신청|모집|마감(?:한다|할)|시행(?:한다|할|된다)|적용(?:한다|할|된다)|"
+    r"발효(?:한다|할|된다)|발표(?:한다|할|된다)|공개(?:한다|할)|공고(?:한다|할)|입찰|경매|"
+    r"부터|까지|개시|시작",
+    re.IGNORECASE,
+)
+SCHEDULE_PAST_CUE = re.compile(
+    r"지난|앞서|당시|개최했다|열렸다|마쳤다|진행됐다|진행되었다|참석했다|발표했다|"
+    r"시행됐다|시행되었다|종료됐다|종료되었다",
+    re.IGNORECASE,
+)
+SCHEDULE_INSTITUTIONS = (
+    ("기후에너지환경부", r"기후에너지환경부|기후부"),
+    ("한국거래소", r"한국거래소|(?<![A-Za-z0-9])KRX(?![A-Za-z0-9])"),
+    ("온실가스종합정보센터", r"온실가스종합정보센터"),
+    ("한국환경공단", r"한국환경공단"),
+    ("대한상공회의소", r"대한상공회의소|대한상의"),
+    ("산업통상부", r"산업통상자원부|산업통상부|산업부"),
+    ("기획재정부", r"기획재정부|기재부"),
+)
+SCHEDULE_GENERIC_TOKENS = {
+    "배출권", "탄소", "탄소시장", "배출권거래제", "국내", "관련", "기관", "정책", "시장",
+    "개최", "예정", "진행", "실시", "발표", "공개", "공고", "접수", "신청", "모집",
+    "설명회", "공청회", "간담회", "세미나", "포럼", "회의", "협의회", "유상경매", "입찰",
+}
+SCHEDULE_PARTICLES = (
+    "으로부터", "에게서", "에서는", "으로", "에서", "에게", "부터", "까지", "처럼", "보다",
+    "만큼", "이라", "라고", "이며", "에는", "으로는", "은", "는", "이", "가", "을", "를",
+    "의", "와", "과", "도", "만", "에", "로",
+)
+SCHEDULE_BOILERPLATE_STEMS = (
+    "개최", "예정", "진행", "실시", "발표", "공개", "공고", "접수", "신청", "모집",
+    "설명회", "공청회", "간담회", "세미나", "포럼", "토론회", "회의", "협의회",
+    "유상경매", "경매", "입찰",
+)
+SCHEDULE_ORGANIZER_TOKENS = {
+    "기후에너지환경부", "기후부", "한국거래소", "krx", "온실가스종합정보센터", "한국환경공단",
+    "대한상공회의소", "대한상의", "산업통상부", "산업통상자원부", "산업부", "기획재정부", "기재부",
+    "오전", "오후", "오는", "일정", "대상",
+}
+
+
+def schedule_iso_date(value: object) -> datetime | None:
+    try:
+        return datetime.strptime(str(value or "")[:10], "%Y-%m-%d").replace(tzinfo=KST)
+    except (TypeError, ValueError):
+        return None
+
+
+def schedule_date_value(year: int, month: int, day: int) -> datetime | None:
+    try:
+        return datetime(year, month, day, tzinfo=KST)
+    except ValueError:
+        return None
+
+
+def schedule_month_shift(base: datetime, months: int) -> tuple[int, int]:
+    total = base.year * 12 + base.month - 1 + months
+    return total // 12, total % 12 + 1
+
+
+def resolve_schedule_month_day(
+    published: datetime,
+    month: int,
+    day: int,
+    year: int | None = None,
+) -> datetime | None:
+    if year is not None:
+        return schedule_date_value(year, month, day)
+    candidate = schedule_date_value(published.year, month, day)
+    if candidate and candidate.date() < published.date():
+        candidate = schedule_date_value(published.year + 1, month, day)
+    return candidate
+
+
+def schedule_time_value(text: str) -> str:
+    match = re.search(r"(?:(오전|오후|낮|밤)\s*)?(\d{1,2})\s*시(?:\s*(\d{1,2})\s*분)?", text)
+    if match:
+        period, hour_text, minute_text = match.groups()
+        hour, minute = int(hour_text), int(minute_text or 0)
+        if period in {"오후", "밤"} and hour < 12:
+            hour += 12
+        elif period in {"오전", "낮"} and hour == 12:
+            hour = 0 if period == "오전" else 12
+        if 0 <= hour <= 23 and 0 <= minute <= 59:
+            return f"{hour:02d}:{minute:02d}"
+    match = re.search(r"(?<!\d)([01]?\d|2[0-3]):([0-5]\d)(?!\d)", text)
+    return f"{int(match.group(1)):02d}:{match.group(2)}" if match else ""
+
+
+def schedule_date_mentions(text: str, published_at: str) -> list[dict]:
+    published = schedule_iso_date(published_at)
+    if not published:
+        return []
+    mentions: list[dict] = []
+    occupied: list[tuple[int, int]] = []
+
+    def available(start: int, end: int) -> bool:
+        return not any(start < right and end > left for left, right in occupied)
+
+    def add(start: int, end: int, value: datetime | None, raw: str) -> None:
+        if value and available(start, end):
+            mentions.append({"start": start, "end": end, "date": value, "raw": raw})
+            occupied.append((start, end))
+
+    full_pattern = re.compile(r"(?:(20\d{2})\s*년\s*)?(\d{1,2})\s*월\s*(\d{1,2})\s*일")
+    for match in full_pattern.finditer(text):
+        year_text, month_text, day_text = match.groups()
+        value = resolve_schedule_month_day(
+            published,
+            int(month_text),
+            int(day_text),
+            int(year_text) if year_text else None,
+        )
+        add(match.start(), match.end(), value, match.group(0))
+
+    numeric_pattern = re.compile(r"(?<!\d)(20\d{2})[./-](\d{1,2})[./-](\d{1,2})(?!\d)")
+    for match in numeric_pattern.finditer(text):
+        add(
+            match.start(),
+            match.end(),
+            schedule_date_value(*(int(value) for value in match.groups())),
+            match.group(0),
+        )
+
+    for match in re.finditer(r"(내달|다음\s*달)\s*(\d{1,2})\s*일", text):
+        year, month = schedule_month_shift(published, 1)
+        add(match.start(), match.end(), schedule_date_value(year, month, int(match.group(2))), match.group(0))
+
+    for match in re.finditer(r"오는\s*(\d{1,2})\s*일", text):
+        day = int(match.group(1))
+        year, month = published.year, published.month
+        candidate = schedule_date_value(year, month, day)
+        if candidate and candidate.date() < published.date():
+            year, month = schedule_month_shift(published, 1)
+            candidate = schedule_date_value(year, month, day)
+        add(match.start(), match.end(), candidate, match.group(0))
+
+    relative_days = {"오늘": 0, "내일": 1, "모레": 2}
+    for word, offset in relative_days.items():
+        for match in re.finditer(word, text):
+            add(match.start(), match.end(), published + timedelta(days=offset), match.group(0))
+
+    weekday_names = {"월": 0, "화": 1, "수": 2, "목": 3, "금": 4, "토": 5, "일": 6}
+    for match in re.finditer(r"다음\s*주\s*([월화수목금토일])요일", text):
+        next_monday = published + timedelta(days=(7 - published.weekday()))
+        value = next_monday + timedelta(days=weekday_names[match.group(1)])
+        add(match.start(), match.end(), value, match.group(0))
+
+    mentions.sort(key=lambda item: item["start"])
+    for index, mention in enumerate(mentions):
+        tail = text[mention["end"] : mention["end"] + 42]
+        end_match = re.search(r"부터\s*(?:(?:(20\d{2})\s*년\s*)?(?:(\d{1,2})\s*월\s*)?(\d{1,2})\s*일)?\s*까지", tail)
+        if not end_match:
+            continue
+        year_text, month_text, day_text = end_match.groups()
+        if not day_text:
+            continue
+        start_date = mention["date"]
+        end_year = int(year_text) if year_text else start_date.year
+        end_month = int(month_text) if month_text else start_date.month
+        end_value = schedule_date_value(end_year, end_month, int(day_text))
+        if end_value and end_value.date() < start_date.date() and not year_text:
+            end_year, end_month = schedule_month_shift(start_date, 1)
+            end_value = schedule_date_value(end_year, end_month, int(day_text))
+        # 게시일보다 앞서 시작했지만 아직 접수·행사가 끝나지 않은 기간은
+        # 다음 해 일정으로 오인하지 않고 현재 진행 중인 기간으로 되돌린다.
+        if (
+            start_date.year > published.year
+            and not re.search(r"20\d{2}\s*년", str(mention.get("raw", "")))
+            and not year_text
+        ):
+            current_start = schedule_date_value(published.year, start_date.month, start_date.day)
+            current_end_year = current_start.year if current_start else published.year
+            current_end_month = int(month_text) if month_text else (current_start.month if current_start else start_date.month)
+            current_end = schedule_date_value(current_end_year, current_end_month, int(day_text))
+            if current_start and current_end and current_end.date() < current_start.date():
+                current_end_year, current_end_month = schedule_month_shift(current_start, 1)
+                current_end = schedule_date_value(current_end_year, current_end_month, int(day_text))
+            if current_start and current_end and current_end.date() >= published.date():
+                mention["date"] = current_start
+                start_date = current_start
+                end_value = current_end
+        mention["endDate"] = end_value
+        mention["rangeEnd"] = mention["end"] + end_match.end()
+        # 이미 별도 날짜로 잡힌 범위 끝은 두 번째 일정으로 만들지 않는다.
+        for later in mentions[index + 1 :]:
+            if later["start"] < mention["rangeEnd"]:
+                later["consumedByRange"] = True
+    return [item for item in mentions if not item.get("consumedByRange")]
+
+
+def schedule_sentences(value: str) -> list[str]:
+    text = clean_html(value, 20_000)
+    parts = re.split(r"(?<=[.!?。])\s+|[\r\n]+", text)
+    return [part.strip() for part in parts if 18 <= len(part.strip()) <= 900]
+
+
+def schedule_event_type(text: str) -> str:
+    for label, pattern in SCHEDULE_EVENT_PATTERNS:
+        if re.search(pattern, text, re.IGNORECASE):
+            return label
+    return "기관일정"
+
+
+def schedule_organizer(text: str, item: dict) -> str:
+    for name, pattern in SCHEDULE_INSTITUTIONS:
+        if re.search(pattern, text, re.IGNORECASE):
+            return name
+    match = re.search(
+        r"([가-힣A-Za-z0-9· ]{2,24}(?:부|청|위원회|거래소|공단|공사|협회|센터|연구원|연구소|진흥원))"
+        r"(?:은|는|이|가|에서|와|과)",
+        text,
+    )
+    if match:
+        return re.sub(r"\s+", " ", match.group(1)).strip()
+    source = str(item.get("source", "")).strip()
+    if item.get("sourceType") != "news" and source:
+        if "기후부" in source or "기후에너지환경부" in source:
+            return "기후에너지환경부"
+        return re.sub(r"\s*(?:보도자료|공지사항|공지·공고)$", "", source).strip()
+    return ""
+
+
+def schedule_location(text: str) -> str:
+    known = re.search(
+        r"((?:정부)?세종청사|대한상공회의소|대한상의|한국거래소|온라인|"
+        r"[가-힣A-Za-z0-9· ]{2,24}(?:회의실|컨벤션센터|센터|호텔|청사))에서",
+        text,
+    )
+    return re.sub(r"\s+", " ", known.group(1)).strip() if known else ""
+
+
+def schedule_status(text: str) -> str:
+    if re.search(r"취소|철회", text):
+        return "cancelled"
+    if re.search(r"연기|변경", text):
+        return "postponed"
+    if re.search(r"필요시|조건부|잠정", text):
+        return "conditional"
+    return "confirmed"
+
+
+def normalized_schedule_content(value: str) -> str:
+    text = normalized_news_visible_text(value)
+    text = re.sub(r"(?:무단\s*전재|재배포\s*금지|기자\s*[가-힣]{2,5})", " ", text)
+    return re.sub(r"[^0-9a-z가-힣]+", "", text)[:1_200]
+
+
+def schedule_event_tokens(value: str) -> set[str]:
+    cleaned = re.sub(r"20\d{2}|\d{1,2}\s*(?:월|일|시|분)|[^0-9a-z가-힣]+", " ", str(value or "").lower())
+    tokens: set[str] = set()
+    for raw_token in cleaned.split():
+        token = raw_token
+        for particle in SCHEDULE_PARTICLES:
+            if len(token) >= len(particle) + 2 and token.endswith(particle):
+                token = token[: -len(particle)]
+                break
+        if (
+            len(token) < 2
+            or token in SCHEDULE_GENERIC_TOKENS
+            or token in SCHEDULE_ORGANIZER_TOKENS
+            or any(token.startswith(stem) for stem in SCHEDULE_BOILERPLATE_STEMS)
+        ):
+            continue
+        tokens.add(token)
+    return tokens
+
+
+def schedule_product_codes(value: str) -> set[str]:
+    return {
+        code.upper()
+        for code in re.findall(
+            r"(?<![A-Za-z0-9])(?:KAU|KCU|KOC)\d{2}(?![A-Za-z0-9])",
+            str(value or ""),
+            re.IGNORECASE,
+        )
+    }
+
+
+def schedule_story_score(item: dict) -> tuple[int, str, int, int]:
+    return (
+        1 if item.get("sourceType") != "news" else 0,
+        str(item.get("publishedAt", "")),
+        1 if item.get("startTime") else 0,
+        len(str(item.get("evidence", ""))),
+    )
+
+
+def schedule_time_minutes(value: str) -> int | None:
+    match = re.fullmatch(r"(\d{2}):(\d{2})", str(value or ""))
+    return int(match.group(1)) * 60 + int(match.group(2)) if match else None
+
+
+def same_institution_schedule(first: dict, second: dict) -> bool:
+    if first.get("startDate") != second.get("startDate"):
+        return False
+    if first.get("eventType") != second.get("eventType"):
+        return False
+    if normalized_news_title(first.get("organizer", "")) != normalized_news_title(second.get("organizer", "")):
+        return False
+    first_time, second_time = schedule_time_minutes(first.get("startTime", "")), schedule_time_minutes(second.get("startTime", ""))
+    if first_time is not None and second_time is not None and abs(first_time - second_time) > 60:
+        return False
+    first_location = normalized_news_title(first.get("location", ""))
+    second_location = normalized_news_title(second.get("location", ""))
+    if first_location and second_location and first_location != second_location:
+        cities = {"서울", "부산", "대전", "대구", "광주", "인천", "세종", "제주"}
+        first_cities = {city for city in cities if city in first_location}
+        second_cities = {city for city in cities if city in second_location}
+        if first_cities and second_cities and first_cities.isdisjoint(second_cities):
+            return False
+    first_text = f"{first.get('title', '')} {first.get('evidence', '')}"
+    second_text = f"{second.get('title', '')} {second.get('evidence', '')}"
+    first_codes = schedule_product_codes(first_text)
+    second_codes = schedule_product_codes(second_text)
+    if first_codes and second_codes:
+        return bool(first_codes & second_codes)
+    first_evidence = normalized_news_visible_text(first.get("evidence", ""))
+    second_evidence = normalized_news_visible_text(second.get("evidence", ""))
+    if min(len(first_evidence), len(second_evidence)) >= 28 and first_evidence == second_evidence:
+        return True
+    first_tokens = schedule_event_tokens(first_text)
+    second_tokens = schedule_event_tokens(second_text)
+    if not first_tokens or not second_tokens:
+        return False
+    shared = first_tokens & second_tokens
+    coverage = len(shared) / max(min(len(first_tokens), len(second_tokens)), 1)
+    return len(shared) >= 2 and coverage >= 0.45
+
+
+def merge_institution_schedule_group(group: list[dict]) -> dict:
+    representative = dict(max(group, key=schedule_story_score))
+    sources = list(dict.fromkeys(
+        value
+        for item in [representative, *group]
+        for value in [*metadata_values(item.get("sources")), str(item.get("source", "")).strip()]
+        if value
+    ))
+    urls = list(dict.fromkeys(
+        value
+        for item in [representative, *group]
+        for value in [*metadata_values(item.get("sourceUrls")), str(item.get("url", "")).strip()]
+        if value
+    ))
+    source_ids = list(dict.fromkeys(
+        value
+        for item in group
+        for value in [*metadata_values(item.get("sourceItemIds")), str(item.get("sourceItemId", "")).strip()]
+        if value
+    ))
+    evidence_keys: set[str] = set()
+    for item in group:
+        item_urls = [*metadata_values(item.get("sourceUrls")), str(item.get("url", "")).strip()]
+        canonical_urls = {canonical_news_url(url) or url for url in item_urls if url}
+        if canonical_urls:
+            evidence_keys.update(canonical_urls)
+        else:
+            evidence_keys.add(
+                f"{item.get('source', '')}|{item.get('publishedAt', '')}|"
+                f"{normalized_news_title(item.get('title', ''))}"
+            )
+    previous_count = max(max(1, int(item.get("duplicateCount") or 1)) for item in group)
+    representative["sources"] = sources
+    representative["sourceUrls"] = urls[:8]
+    representative["sourceItemIds"] = source_ids[:12]
+    representative["duplicateCount"] = max(previous_count, len(evidence_keys), 1)
+    representative["source"] = sources[0] if sources else str(representative.get("source", ""))
+    representative["url"] = urls[0] if urls else str(representative.get("url", ""))
+    stable_material = "|".join([
+        str(representative.get("organizer", "")),
+        str(representative.get("eventType", "")),
+        str(representative.get("startDate", "")),
+        normalized_news_title(representative.get("title", ""))[:80],
+    ])
+    representative["id"] = hashlib.sha1(stable_material.encode("utf-8")).hexdigest()[:16]
+    representative.pop("sourceItemId", None)
+    return representative
+
+
+def dedupe_institution_schedules(items: list[dict]) -> list[dict]:
+    remaining = list(items)
+    groups: list[list[dict]] = []
+    while remaining:
+        group = [remaining.pop(0)]
+        changed = True
+        while changed:
+            changed = False
+            for candidate in list(remaining):
+                if any(same_institution_schedule(candidate, member) for member in group):
+                    group.append(candidate)
+                    remaining.remove(candidate)
+                    changed = True
+        groups.append(group)
+    return [merge_institution_schedule_group(group) for group in groups]
+
+
+def schedule_article_score(item: dict) -> tuple[int, str]:
+    visible = f"{item.get('title', '')} {item.get('summary', '')}"
+    score = 4 if item.get("sourceType") == "news" else 0
+    score += 3 if SCHEDULE_EVENT_CUE.search(visible) else 0
+    score += 3 if schedule_date_mentions(visible, str(item.get("publishedAt", ""))) else 0
+    return score, str(item.get("publishedAt", ""))
+
+
+def extract_institution_schedules(item: dict, article_text: str = "") -> list[dict]:
+    published_at = str(item.get("publishedAt", ""))
+    published = schedule_iso_date(published_at)
+    if not published:
+        return []
+    visible = f"{item.get('title', '')}. {item.get('summary', '')}"
+    full_text = article_text or visible
+    content_signature = normalized_schedule_content(full_text)
+    content_fingerprint = hashlib.sha1(content_signature.encode("utf-8")).hexdigest() if content_signature else ""
+    source_url = str(item.get("url", ""))
+    source_item_id = str(item.get("id", ""))
+    schedules: list[dict] = []
+    seen: set[str] = set()
+    for sentence in schedule_sentences(full_text):
+        if not SCHEDULE_EVENT_CUE.search(sentence):
+            continue
+        mentions = schedule_date_mentions(sentence, published_at)
+        if not mentions:
+            continue
+        organizer = schedule_organizer(f"{sentence} {item.get('title', '')} {item.get('summary', '')}", item)
+        if not organizer:
+            continue
+        event_type = schedule_event_type(sentence)
+        for mention in mentions:
+            event_date = mention["date"]
+            end_value = mention.get("endDate")
+            effective_end = end_value if isinstance(end_value, datetime) else event_date
+            before = sentence[max(0, int(mention["start"]) - 18) : int(mention["start"])]
+            if SCHEDULE_PAST_CUE.search(before):
+                continue
+            if effective_end.date() < published.date():
+                continue
+            if SCHEDULE_PAST_CUE.search(sentence) and not SCHEDULE_FUTURE_CUE.search(sentence):
+                continue
+            if event_date.date() > (published + timedelta(days=SCHEDULE_HORIZON_DAYS)).date():
+                continue
+            start_date = event_date.date().isoformat()
+            end_date = end_value.date().isoformat() if isinstance(end_value, datetime) else start_date
+            start_time = schedule_time_value(sentence)
+            location = schedule_location(sentence)
+            title = clean_html(str(item.get("title", "")), 150) or clean_html(sentence, 150)
+            evidence = clean_html(sentence, 360)
+            event_key = "|".join([
+                organizer,
+                event_type,
+                start_date,
+                end_date,
+                start_time,
+                normalized_news_title(evidence)[:120],
+            ])
+            if event_key in seen:
+                continue
+            seen.add(event_key)
+            schedules.append({
+                "id": hashlib.sha1(event_key.encode("utf-8")).hexdigest()[:16],
+                "title": title,
+                "eventType": event_type,
+                "startDate": start_date,
+                "endDate": end_date,
+                "startTime": start_time,
+                "timezone": "Asia/Seoul",
+                "organizer": organizer,
+                "location": location,
+                "status": schedule_status(sentence),
+                "evidence": evidence,
+                "publishedAt": published_at,
+                "source": str(item.get("source", "")),
+                "sourceType": str(item.get("sourceType", "official")),
+                "url": source_url,
+                "sourceItemId": source_item_id,
+                "sourceItemIds": [source_item_id] if source_item_id else [],
+                "sourceUrls": [source_url] if source_url else [],
+                "sources": [str(item.get("source", ""))] if item.get("source") else [],
+                "duplicateCount": max(1, int(item.get("duplicateCount") or 1)),
+                "contentFingerprint": content_fingerprint,
+                "contentSignature": content_signature,
+            })
+    return schedules
+
+
+def build_institution_schedules(source_items: list[dict], existing: list[dict]) -> list[dict]:
+    ordered = sorted(source_items, key=schedule_article_score, reverse=True)
+    recent_cutoff = (datetime.now(KST).date() - timedelta(days=90)).isoformat()
+    body_candidates = [
+        item
+        for item in ordered
+        if str(item.get("publishedAt", "")) >= recent_cutoff
+        and re.match(r"^https?://", str(item.get("url", "")), re.IGNORECASE)
+    ][:SCHEDULE_BODY_VERIFY_LIMIT]
+    body_urls = {str(item.get("url", "")) for item in body_candidates}
+
+    def fetch_for_item(item: dict) -> tuple[str, str]:
+        url = str(item.get("url", ""))
+        return url, fetch_article_text(url)
+
+    with ThreadPoolExecutor(max_workers=min(6, len(body_candidates) or 1)) as executor:
+        body_map = dict(executor.map(fetch_for_item, body_candidates)) if body_candidates else {}
+
+    extracted: list[dict] = []
+    for item in source_items:
+        url = str(item.get("url", ""))
+        extracted.extend(extract_institution_schedules(item, body_map.get(url, "") if url in body_urls else ""))
+
+    combined = [item for item in existing if isinstance(item, dict)] + extracted
+    deduped = dedupe_institution_schedules(combined)
+    today = datetime.now(KST).date()
+    minimum = today - timedelta(days=SCHEDULE_RETENTION_DAYS)
+    maximum = today + timedelta(days=SCHEDULE_HORIZON_DAYS)
+    retained = []
+    for item in deduped:
+        start = schedule_iso_date(item.get("startDate"))
+        if not start or not (minimum <= start.date() <= maximum):
+            continue
+        retained.append(item)
+
+    def order_key(item: dict) -> tuple[int, int, str]:
+        value = schedule_iso_date(item.get("startDate"))
+        ordinal = value.date().toordinal() if value else 0
+        return (0, ordinal, str(item.get("startTime", ""))) if value and value.date() >= today else (1, -ordinal, str(item.get("startTime", "")))
+
+    return sorted(retained, key=order_key)[:MAX_SCHEDULE_ITEMS]
 
 
 def match_title_or_body(item: dict, keywords: list[str]) -> dict | None:
@@ -1180,12 +1760,20 @@ def main() -> int:
     if successful_sources == 0:
         raise RuntimeError("모든 정책·뉴스 수집에 실패했습니다: " + " | ".join(errors))
 
+    existing_document: dict = {}
     existing = []
+    existing_schedules: list[dict] = []
     if OUTPUT_PATH.exists():
         try:
-            existing = json.loads(OUTPUT_PATH.read_text(encoding="utf-8")).get("items", [])
+            existing_document = json.loads(OUTPUT_PATH.read_text(encoding="utf-8"))
+            existing = existing_document.get("items", [])
+            existing_schedules = existing_document.get("institutionSchedules", [])
+            if not isinstance(existing_schedules, list):
+                existing_schedules = []
         except (OSError, json.JSONDecodeError):
+            existing_document = {}
             existing = []
+            existing_schedules = []
 
     merged: dict[str, dict] = {}
     for item in existing + collected:
@@ -1227,8 +1815,13 @@ def main() -> int:
     limit = max(1, min(int(settings.get("maxPolicyItems", 60)), 200))
     max_news = max(0, min(int(settings.get("maxNewsItems", 24)), limit))
     ranked = sorted(merged.values(), key=lambda item: (item.get("publishedAt", ""), item.get("title", "")), reverse=True)
-    news = dedupe_news([item for item in ranked if item.get("sourceType") == "news"])[:max_news]
+    all_news = dedupe_news([item for item in ranked if item.get("sourceType") == "news"])
+    news = all_news[:max_news]
     official = [item for item in ranked if item.get("sourceType") != "news"]
+    institution_schedules = build_institution_schedules(
+        official + all_news,
+        existing_schedules,
+    )
 
     # 최신 공지사항이 많아도 보도자료 탭이 비지 않도록 공식자료 영역을 균형 배분한다.
     official_capacity = max(0, limit - len(news))
@@ -1262,11 +1855,15 @@ def main() -> int:
         ],
         "warning": " | ".join(errors) if errors else None,
         "aiInsight": generate_policy_insight(items),
+        "institutionSchedules": institution_schedules,
         "items": items,
     }
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT_PATH.write_text(json.dumps(output, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(f"정책자료 {len(items)}건 저장, 신규 수집 {len(collected)}건")
+    print(
+        f"정책자료 {len(items)}건, 기관일정 {len(institution_schedules)}건 저장, "
+        f"신규 수집 {len(collected)}건"
+    )
     if errors:
         print("일부 RSS 경고: " + " | ".join(errors), file=sys.stderr)
     return 0
