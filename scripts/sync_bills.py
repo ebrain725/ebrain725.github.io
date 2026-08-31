@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""국회 전체 의안에서 국내 배출권거래제 관련 법안을 선별하고 종료 상태를 보존한다."""
+"""국회 배출권 법안을 선별하고 종료 상태와 시간순 표시 메타데이터를 보존한다."""
 
 from __future__ import annotations
 
@@ -228,17 +228,6 @@ def category_for(text: str) -> tuple[str, list[str]]:
     return (topics[0] if topics else "제도·거버넌스"), topics
 
 
-def all_dates(row: dict[str, Any]) -> list[str]:
-    values: list[str] = []
-    for key, value in row.items():
-        upper = str(key).upper()
-        if upper.endswith("_DT") or "DATE" in upper:
-            parsed = iso_date(value)
-            if parsed:
-                values.append(parsed)
-    return values
-
-
 def lifecycle_for(row: dict[str, Any]) -> dict[str, str]:
     fields = {
         "proposed": ("PPSL_DT", "PROPOSE_DT"),
@@ -254,6 +243,69 @@ def lifecycle_for(row: dict[str, Any]) -> dict[str, str]:
         "promulgated": ("PROM_DT", "ANOT_DT"),
     }
     return {name: iso_date(field(row, *source_names)) for name, source_names in fields.items()}
+
+
+def latest_lifecycle_date(lifecycle: dict[str, str], *names: str) -> str:
+    dates = [iso_date(lifecycle.get(name, "")) for name in names]
+    return max((value for value in dates if value), default="")
+
+
+def alternative_decision_date(lifecycle: dict[str, str], proposed_date: str) -> str:
+    def earlier_than_proposal(value: object) -> str:
+        parsed = iso_date(value)
+        return parsed if parsed and (not proposed_date or parsed < proposed_date) else ""
+
+    processed = earlier_than_proposal(lifecycle.get("committeeProcessed", ""))
+    if processed:
+        return processed
+    candidates = [
+        earlier_than_proposal(lifecycle.get(name, ""))
+        for name in ("committeeReceived", "committeePresented", "committeeCommented")
+    ]
+    return max((value for value in candidates if value), default="")
+
+
+def timeline_metadata_for(
+    title: str,
+    proposer_kind: str,
+    proposer: str,
+    committee_result: str,
+    lifecycle: dict[str, str],
+    proposed_date: str,
+) -> tuple[str, str, bool]:
+    committee_date = latest_lifecycle_date(
+        lifecycle,
+        "committeeReceived",
+        "committeePresented",
+        "committeeCommented",
+        "committeeProcessed",
+    )
+    alternative_date = alternative_decision_date(lifecycle, proposed_date)
+    title_marks_alternative = bool(re.search(r"[（(]\s*대안\s*[)）]\s*$", title))
+    committee_approved_alternative = bool(re.search(r"대안\s*가결", committee_result))
+    committee_sponsor = bool(re.search(r"위원장", f"{proposer_kind} {proposer}"))
+    verified_alternative = title_marks_alternative and (committee_approved_alternative or committee_sponsor)
+    if verified_alternative and proposed_date and alternative_date:
+        return "committeeAlternative", alternative_date, False
+
+    stage_dates = (
+        proposed_date,
+        committee_date,
+        latest_lifecycle_date(lifecycle, "lawPresented", "lawProcessed"),
+        latest_lifecycle_date(lifecycle, "plenaryPresented", "plenaryResolved"),
+        latest_lifecycle_date(lifecycle, "governmentTransferred"),
+        latest_lifecycle_date(lifecycle, "promulgated"),
+    )
+    previous_date = ""
+    chronology_adjusted = False
+    for stage_date in stage_dates:
+        if not stage_date:
+            continue
+        if previous_date and stage_date < previous_date:
+            chronology_adjusted = True
+            continue
+        previous_date = stage_date
+    return "standard", "", chronology_adjusted
 
 
 def termination_reason_for(*values: object) -> str:
@@ -427,8 +479,18 @@ def build_item(
     plenary_result = new_plenary_result or clean_text(previous.get("plenaryResult", ""))
     proposed_date = lifecycle["proposed"] or iso_date(previous.get("proposedDate", ""))
     previous_last_action = iso_date(previous.get("lastActionDate", ""))
-    dates = [*all_dates(row), *lifecycle.values(), previous_last_action, proposed_date]
+    dates = [*lifecycle.values(), previous_last_action, proposed_date]
     last_action_date = max((value for value in dates if value), default="")
+    proposer_kind = field(row, "PPSR_KND", "PROPOSER_KIND") or clean_text(previous.get("proposerKind", ""))
+    proposer = field(row, "PPSR_NM", "PROPOSER", "RST_PROPOSER") or clean_text(previous.get("proposer", "")) or "제안자 확인 중"
+    timeline_type, alternative_adopted_date, chronology_adjusted = timeline_metadata_for(
+        title,
+        proposer_kind,
+        proposer,
+        committee_result,
+        lifecycle,
+        proposed_date,
+    )
     termination_reason = termination_reason_for(status, raw_stage, raw_result, committee_result, law_result, plenary_result)
     terminal = bool(termination_reason)
     termination_stage = termination_stage_for(termination_reason, lifecycle, committee_result, law_result, plenary_result) if terminal else ""
@@ -440,8 +502,6 @@ def build_item(
     ) if terminal else ""
     if termination_date:
         last_action_date = termination_date
-    proposer_kind = field(row, "PPSR_KND", "PROPOSER_KIND") or clean_text(previous.get("proposerKind", ""))
-    proposer = field(row, "PPSR_NM", "PROPOSER", "RST_PROPOSER") or clean_text(previous.get("proposer", "")) or "제안자 확인 중"
     committee = field(row, "JRCMIT_NM", "COMMITTEE") or clean_text(previous.get("committee", "")) or "소관위 미정"
     url = official_url(row, bill_id, clean_text(previous.get("url", "")))
     primary_category, topics = category_for(f"{title} {summary_value}")
@@ -462,6 +522,9 @@ def build_item(
         "terminationReason": termination_reason,
         "terminationDate": termination_date,
         "terminationStage": termination_stage,
+        "timelineType": timeline_type,
+        "alternativeAdoptedDate": alternative_adopted_date,
+        "chronologyAdjusted": chronology_adjusted,
         "lastActionDate": last_action_date,
         "lifecycle": lifecycle,
         "summary": summary_value,
@@ -498,6 +561,9 @@ def build_item(
         "terminationReason": termination_reason,
         "terminationDate": termination_date,
         "terminationStage": termination_stage,
+        "timelineType": timeline_type,
+        "alternativeAdoptedDate": alternative_adopted_date,
+        "chronologyAdjusted": chronology_adjusted,
         "lifecycle": lifecycle,
         "lastActionDate": last_action_date,
         "summary": summary_value,
