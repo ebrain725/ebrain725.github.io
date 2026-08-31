@@ -56,3 +56,53 @@ footer{max-width:1320px;margin:0 auto;padding:30px 24px 38px;border-top:1px soli
 /* ASSEMBLY_SEMINAR_RADAR_VERSION = 2026-08-31-v1 */
 .filter-row{display:flex;overflow-x:auto;scrollbar-width:thin}.filter-row button{flex:0 0 auto}.policy-list .policy-row.assembly-seminar-row{grid-template-columns:108px 82px minmax(0,1fr) 36px!important}.assembly-seminar-row .category-badge{white-space:normal;text-align:center;line-height:1.25;padding-block:6px}.assembly-seminar-row .schedule-date-stack small{color:#8d6119}
 @media(max-width:700px){.policy-list .policy-row.assembly-seminar-row{grid-template-columns:91px 64px minmax(0,1fr) 30px!important}}
+
+/* BILL_STAGE_TRACKER_VERSION = 2026-08-31-v1 */
+.bill-overview{padding:18px 20px 16px;border-bottom:1px solid #e4e9e6;background:linear-gradient(180deg,#fbfcfa 0%,#f6f9f7 100%)}
+.bill-summary-filters{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:7px}
+.bill-summary-filters button{min-height:56px;padding:9px 11px;display:flex;align-items:center;justify-content:space-between;gap:8px;border:1px solid #dfe6e2;border-radius:10px;background:#fff;color:#68736e;text-align:left}
+.bill-summary-filters button:hover{border-color:#9db9ae;background:#f7fbf9}
+.bill-summary-filters button.active{border-color:var(--green);background:#e9f4ef;color:var(--green);box-shadow:0 0 0 1px rgba(8,115,84,.06)}
+.bill-summary-filters button span{font-size:10px;font-weight:750;white-space:nowrap}
+.bill-summary-filters button strong{color:var(--ink);font-size:14px;white-space:nowrap}
+.bill-summary-filters button.active strong{color:var(--green-dark)}
+.bill-stage-distribution{margin-top:11px;padding:11px 13px;display:grid;grid-template-columns:82px repeat(6,minmax(62px,1fr));align-items:center;gap:6px;border:1px solid #e3e9e5;border-radius:10px;background:#fff;overflow-x:auto}
+.distribution-label{color:#6d7973;font-size:10px;font-weight:800;white-space:nowrap}
+.distribution-item{padding-left:10px;border-left:1px solid #e6ebe8;display:flex;align-items:center;justify-content:space-between;gap:8px;white-space:nowrap}
+.distribution-item b{color:#718079;font-size:9px}
+.distribution-item strong{color:#25352f;font-size:11px}
+.policy-list .policy-row.bill-row{min-height:166px!important;padding-top:17px!important;padding-bottom:17px!important;align-items:start}
+.bill-row .category-badge.in-progress{background:#fff3d9;color:#8b5c0d}
+.bill-row .category-badge.complete{background:#e5f3ec;color:#086247}
+.bill-row .category-badge.terminal{background:#fde9e7;color:#b53f3a}
+.bill-row .policy-body h3{line-height:1.38}
+.bill-progress-wrap{width:100%;margin-top:12px;overflow-x:auto;scrollbar-width:thin}
+.bill-progress{min-width:430px;display:grid;grid-template-columns:repeat(6,minmax(58px,1fr));padding:0 2px 3px}
+.bill-stage{position:relative;display:grid;justify-items:center;gap:5px;color:#9aa49f}
+.bill-stage:not(:last-child)::after{content:"";position:absolute;z-index:0;top:6px;left:calc(50% + 8px);right:calc(-50% + 8px);height:2px;background:#dce3df}
+.bill-stage.done:not(:last-child)::after{background:#62a98f}
+.bill-stage i{position:relative;z-index:1;width:14px;height:14px;border:3px solid #d5ddd9;border-radius:50%;background:#fff}
+.bill-stage b{font-size:9px;line-height:1.2;white-space:nowrap}
+.bill-stage.done{color:#43826c}.bill-stage.done i{border-color:#62a98f;background:#62a98f}
+.bill-stage.current{color:#8b5c0d}.bill-stage.current i{border-color:#d29a35;background:#fff4d7;box-shadow:0 0 0 4px rgba(210,154,53,.12)}
+.bill-stage.complete{color:#086247}.bill-stage.complete i{border-color:var(--green);background:var(--green);box-shadow:0 0 0 4px rgba(8,115,84,.12)}
+.bill-stage.terminal{color:#b53f3a}.bill-stage.terminal i{border-color:#cf514b;background:#cf514b;box-shadow:0 0 0 4px rgba(207,81,75,.11)}
+.bill-latest-action{display:flex!important;align-items:center;gap:7px;margin-top:10px!important;color:#4b5953!important;font-size:11px!important;font-weight:700;white-space:normal!important}
+.bill-latest-action span{flex:0 0 auto;padding:3px 6px;border-radius:5px;background:#edf3f0;color:var(--green);font-size:8px;font-weight:850;letter-spacing:.04em}
+.bill-metadata{margin-top:5px!important;color:#818c87!important;font-size:10px!important;white-space:normal!important}
+
+@media(max-width:700px){
+  .bill-overview{padding:13px 11px}
+  .bill-summary-filters{display:flex;overflow-x:auto;gap:6px;padding-bottom:3px;scrollbar-width:thin}
+  .bill-summary-filters button{flex:0 0 112px;min-height:50px;padding:8px 9px}
+  .bill-stage-distribution{grid-template-columns:72px repeat(6,68px);padding:10px 9px}
+  .policy-list .policy-row.bill-row{grid-template-columns:52px minmax(0,1fr) 30px!important;grid-template-areas:"date badge link" "body body body";min-height:190px!important;padding:13px 11px 15px!important;gap:10px 8px!important}
+  .bill-row>time{grid-area:date;align-self:center}
+  .bill-row>.category-badge{grid-area:badge;justify-self:start;align-self:center;max-width:110px}
+  .bill-row>.policy-body{grid-area:body;width:100%}
+  .bill-row>.source-link{grid-area:link;align-self:center}
+  .bill-row .policy-body h3{font-size:13px;white-space:normal!important;display:-webkit-box!important;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+  .bill-progress{min-width:390px}
+  .bill-latest-action{display:flex!important;font-size:10px!important;line-height:1.4!important}
+  .bill-metadata{display:block!important;font-size:9px!important;line-height:1.4!important}
+}
