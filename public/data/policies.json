@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-08-31T23:17:24+09:00",
+  "lastSync": "2026-09-01T00:05:50+09:00",
   "keywords": [
     "배출권",
     "배출권거래제",
@@ -22,7 +22,7 @@
     "탄소시장",
     "상쇄배출권"
   ],
-  "sourceCount": 4,
+  "sourceCount": 5,
   "newsProviders": [
     "Google News RSS",
     "NAVER API HUB"
@@ -30,8 +30,8 @@
   "warning": null,
   "aiInsight": {
     "summary": "최근 공식자료의 직접적인 수급 변수는 유상경매입니다. 최근 경매가 높은 낙찰가로 소화돼 공급보다 이행수요가 강하다는 신호입니다.",
-    "generatedAt": "2026-08-31T23:17:24+09:00",
-    "basisLatestDate": "2026-08-05",
+    "generatedAt": "2026-09-01T00:05:50+09:00",
+    "basisLatestDate": "2026-08-12",
     "basisCount": 10,
     "source": "fallback",
     "model": null
@@ -693,7 +693,40 @@
       "region": "국내"
     },
     {
-      "id": "56f944fbce63852f",
+      "id": "krx-ets-587",
+      "sourceId": "587",
+      "publishedAt": "2026-08-12",
+      "title": "2026년 8월 배출권 유상할당 경매 결과",
+      "category": "유상경매",
+      "summary": "2026년 8월 배출권 유상할당 경매 결과를 붙임과 같이 알려드립니다. * 응찰수량 및 낙찰가격 등 과거 경매 정보는 메뉴: 시세정보→시세조회 화면내 '경매 정보'를 참조하시기 바랍니다. (기간 설정 후 조회 가능) 감사합니다. 배출권시장팀(051-662-2822~9)",
+      "source": "한국거래소 배출권 공지사항",
+      "sourceType": "official",
+      "section": "krx_notice",
+      "url": "https://ets.krx.co.kr/board/ETS01030000/bbs#view=587",
+      "matchedKeywords": [
+        "배출권",
+        "유상할당"
+      ]
+    },
+    {
+      "id": "krx-ets-586",
+      "sourceId": "586",
+      "publishedAt": "2026-08-05",
+      "title": "[공지]2026년 8월 배출권 유상할당 입찰공고(기후에너지환경부 공고 제2026-770호)",
+      "category": "유상경매",
+      "summary": "「온실가스 배출권의 할당 및 거래에 관한 법률」 제12조 및 같은 법 시행령 제18조,「배출권 유상할당 및 시장안정화 조치를 위한 배출권 추가할당에 관한 규정」 에 따라 2026년도 8월의 온실가스 배출권 유상할당 경매에 대한 입찰을 다음(붙임 참조)과 같이 공고합니다.",
+      "source": "한국거래소 배출권 공지사항",
+      "sourceType": "official",
+      "section": "krx_notice",
+      "url": "https://ets.krx.co.kr/board/ETS01030000/bbs#view=586",
+      "matchedKeywords": [
+        "배출권",
+        "유상할당",
+        "시장안정화"
+      ]
+    },
+    {
+      "id": "410e01bbe6f15039",
       "publishedAt": "2026-08-05",
       "title": "2026년 8월 배출권 유상할당 입찰계획 공고",
       "category": "유상경매",
@@ -701,9 +734,9 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1882160",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10524&orgCd=&boardMasterId=39&boardId=1882160",
       "matchedKeywords": [
-        "시장안정화"
+        "유상할당"
       ]
     },
     {
@@ -718,6 +751,22 @@
       "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C%EA%B1%B0%EB%9E%98%EC%A0%9C&menuId=10524&orgCd=&boardMasterId=39&boardId=1879830",
       "matchedKeywords": [
         "배출권거래제"
+      ]
+    },
+    {
+      "id": "krx-ets-585",
+      "sourceId": "585",
+      "publishedAt": "2026-07-08",
+      "title": "2026년 7월 배출권 유상할당 경매 결과",
+      "category": "유상경매",
+      "summary": "2026년 7월 배출권 유상할당 경매 결과를 붙임과 같이 알려드립니다. * 응찰수량 및 낙찰가격 등 과거 경매 정보는 메뉴: 시세정보→시세조회 화면내 '경매 정보'를 참조하시기 바랍니다. (기간 설정 후 조회 가능) 감사합니다. 배출권시장팀(051-662-2822~9)",
+      "source": "한국거래소 배출권 공지사항",
+      "sourceType": "official",
+      "section": "krx_notice",
+      "url": "https://ets.krx.co.kr/board/ETS01030000/bbs#view=585",
+      "matchedKeywords": [
+        "배출권",
+        "유상할당"
       ]
     },
     {
@@ -749,7 +798,24 @@
       ]
     },
     {
-      "id": "f9193727736429e6",
+      "id": "krx-ets-584",
+      "sourceId": "584",
+      "publishedAt": "2026-07-01",
+      "title": "2026년 7월 배출권 유상할당 입찰공고(기후에너지환경부 공고 제2026-649호)",
+      "category": "유상경매",
+      "summary": "「온실가스 배출권의 할당 및 거래에 관한 법률」 제12조 및 같은 법 시행령 제18조,「배출권 유상할당 및 시장안정화 조치를 위한 배출권 추가할당에 관한 규정」 에 따라 2026년도 7월의 온실가스 배출권 유상할당 경매에 대한 입찰을 다음(붙임 참조)과 같이 공고합니다.",
+      "source": "한국거래소 배출권 공지사항",
+      "sourceType": "official",
+      "section": "krx_notice",
+      "url": "https://ets.krx.co.kr/board/ETS01030000/bbs#view=584",
+      "matchedKeywords": [
+        "배출권",
+        "유상할당",
+        "시장안정화"
+      ]
+    },
+    {
+      "id": "e95f8c69fdca2832",
       "publishedAt": "2026-07-01",
       "title": "2026년 7월 배출권 유상할당 입찰계획 공고",
       "category": "유상경매",
@@ -757,9 +823,9 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1874990",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10524&orgCd=&boardMasterId=39&boardId=1874990",
       "matchedKeywords": [
-        "시장안정화"
+        "유상할당"
       ]
     },
     {
@@ -777,7 +843,24 @@
       ]
     },
     {
-      "id": "08f4f3a19f4809da",
+      "id": "krx-ets-583",
+      "sourceId": "583",
+      "publishedAt": "2026-06-12",
+      "title": "2026년도 온실가스 배출권 유상할당 경매계획(변경)(기후에너지환경부 공고 제2026-591호)",
+      "category": "유상경매",
+      "summary": "「온실가스 배출권의 할당 및 거래에 관한 법률」 제12조 및 같은 법 시행령 제18조,「배출권 유상할당 및 시장안정화 조치를 위한 배출권 추가할당에 관한 규정」 에 따라 2026년도 온실가스 배출권 유상할당 경매계획을 다음(붙임 참조)과 같이 변경하여 공고합니다.",
+      "source": "한국거래소 배출권 공지사항",
+      "sourceType": "official",
+      "section": "krx_notice",
+      "url": "https://ets.krx.co.kr/board/ETS01030000/bbs#view=583",
+      "matchedKeywords": [
+        "배출권",
+        "유상할당",
+        "시장안정화"
+      ]
+    },
+    {
+      "id": "84f3fcddb085f812",
       "publishedAt": "2026-06-12",
       "title": "2026년도 온실가스 배출권 유상할당 경매계획 변경공고",
       "category": "유상경매",
@@ -785,9 +868,9 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1870290",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10524&orgCd=&boardMasterId=39&boardId=1870290",
       "matchedKeywords": [
-        "시장안정화"
+        "유상할당"
       ]
     },
     {
@@ -804,6 +887,22 @@
         "유상할당"
       ],
       "section": "notice"
+    },
+    {
+      "id": "krx-ets-582",
+      "sourceId": "582",
+      "publishedAt": "2026-06-10",
+      "title": "2026년 6월 배출권 유상할당 경매 결과",
+      "category": "유상경매",
+      "summary": "2026년 6월 배출권 유상할당 경매 결과를 붙임과 같이 알려드립니다. * 응찰수량 및 낙찰가격 등 과거 경매 정보는 메뉴: 시세정보→시세조회 화면내 '경매 정보'를 참조하시기 바랍니다. (기간 설정 후 조회 가능) 감사합니다. 배출권시장팀(051-662-2822~9)",
+      "source": "한국거래소 배출권 공지사항",
+      "sourceType": "official",
+      "section": "krx_notice",
+      "url": "https://ets.krx.co.kr/board/ETS01030000/bbs#view=582",
+      "matchedKeywords": [
+        "배출권",
+        "유상할당"
+      ]
     },
     {
       "id": "cf742067022934cf",
@@ -834,7 +933,24 @@
       ]
     },
     {
-      "id": "fc612405c097cbd5",
+      "id": "krx-ets-581",
+      "sourceId": "581",
+      "publishedAt": "2026-06-02",
+      "title": "2026년 6월 배출권 유상할당 입찰공고(기후에너지환경부 공고 제2026-563호)",
+      "category": "유상경매",
+      "summary": "「온실가스 배출권의 할당 및 거래에 관한 법률」 제12조 및 같은 법 시행령 제18조,「배출권 유상할당 및 시장안정화 조치를 위한 배출권 추가할당에 관한 규정」 에 따라 2026년도 6월의 온실가스 배출권 유상할당 경매에 대한 입찰을 다음(붙임 참조)과 같이 공고합니다.",
+      "source": "한국거래소 배출권 공지사항",
+      "sourceType": "official",
+      "section": "krx_notice",
+      "url": "https://ets.krx.co.kr/board/ETS01030000/bbs#view=581",
+      "matchedKeywords": [
+        "배출권",
+        "유상할당",
+        "시장안정화"
+      ]
+    },
+    {
+      "id": "ac0a11e4627cd653",
       "publishedAt": "2026-06-02",
       "title": "2026년 6월 배출권 유상할당 입찰계획 공고",
       "category": "유상경매",
@@ -842,9 +958,9 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1867940",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10524&orgCd=&boardMasterId=39&boardId=1867940",
       "matchedKeywords": [
-        "시장안정화"
+        "유상할당"
       ]
     },
     {
@@ -862,7 +978,55 @@
       ]
     },
     {
-      "id": "5e0cc26c991e6663",
+      "id": "krx-ets-580",
+      "sourceId": "580",
+      "publishedAt": "2026-05-20",
+      "title": "[공지] 지방선거일(6월 3일) 및 제헌절(7월 17일)에 따른 KRX배출권시장 휴장 안내",
+      "category": "제도",
+      "summary": "지방선거일 지정 및 제헌절에 따라 아래와 같이 배출권시장이 휴장함을 알려드립니다. - 아 래 - 1. 휴장일자: 2026년 6월 3일(수)/ 2026년 7월 17일(금) 2. 휴장사유: 임시공휴일 지정(지방선거일)/ 공휴일(제헌절) 3. 근거규정: KRX배출권시장 운영규정 제7조 -한국거래소 배출권시장팀-",
+      "source": "한국거래소 배출권 공지사항",
+      "sourceType": "official",
+      "section": "krx_notice",
+      "url": "https://ets.krx.co.kr/board/ETS01030000/bbs#view=580",
+      "matchedKeywords": [
+        "배출권"
+      ]
+    },
+    {
+      "id": "krx-ets-579",
+      "sourceId": "579",
+      "publishedAt": "2026-05-13",
+      "title": "2026년 5월 배출권 유상할당 경매 결과",
+      "category": "유상경매",
+      "summary": "2026년 5월 배출권 유상할당 경매 결과를 붙임과 같이 알려드립니다. * 응찰수량 및 낙찰가격 등 과거 경매 정보는 메뉴: 시세정보→시세조회 화면내 '경매 정보'를 참조하시기 바랍니다. (기간 설정 후 조회 가능) 감사합니다. 배출권시장팀(051-662-2822~9)",
+      "source": "한국거래소 배출권 공지사항",
+      "sourceType": "official",
+      "section": "krx_notice",
+      "url": "https://ets.krx.co.kr/board/ETS01030000/bbs#view=579",
+      "matchedKeywords": [
+        "배출권",
+        "유상할당"
+      ]
+    },
+    {
+      "id": "krx-ets-578",
+      "sourceId": "578",
+      "publishedAt": "2026-05-06",
+      "title": "2026년 5월 배출권 유상할당 입찰공고(기후에너지환경부 공고 제2026-474호)",
+      "category": "유상경매",
+      "summary": "「온실가스 배출권의 할당 및 거래에 관한 법률」 제12조 및 같은 법 시행령 제18조,「배출권 유상할당 및 시장안정화 조치를 위한 배출권 추가할당에 관한 규정」 에 따라 2026년도 5월의 온실가스 배출권 유상할당 경매에 대한 입찰을 다음(붙임 참조)과 같이 공고합니다.",
+      "source": "한국거래소 배출권 공지사항",
+      "sourceType": "official",
+      "section": "krx_notice",
+      "url": "https://ets.krx.co.kr/board/ETS01030000/bbs#view=578",
+      "matchedKeywords": [
+        "배출권",
+        "유상할당",
+        "시장안정화"
+      ]
+    },
+    {
+      "id": "f7d1e7a29bd79d51",
       "publishedAt": "2026-05-06",
       "title": "2026년 5월 배출권 유상할당 입찰계획 공고",
       "category": "유상경매",
@@ -870,9 +1034,9 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1862050",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10524&orgCd=&boardMasterId=39&boardId=1862050",
       "matchedKeywords": [
-        "시장안정화"
+        "유상할당"
       ]
     },
     {
@@ -946,6 +1110,22 @@
       ]
     },
     {
+      "id": "krx-ets-577",
+      "sourceId": "577",
+      "publishedAt": "2026-04-08",
+      "title": "2026년 4월 배출권 유상할당 경매 결과",
+      "category": "유상경매",
+      "summary": "2026년 4월 배출권 유상할당 경매 결과를 붙임과 같이 알려드립니다. * 응찰수량 및 낙찰가격 등 과거 경매 정보는 메뉴: 시세정보→시세조회 화면내 '경매 정보'를 참조하시기 바랍니다. (기간 설정 후 조회 가능) 감사합니다. 배출권시장팀(051-662-2822~9)",
+      "source": "한국거래소 배출권 공지사항",
+      "sourceType": "official",
+      "section": "krx_notice",
+      "url": "https://ets.krx.co.kr/board/ETS01030000/bbs#view=577",
+      "matchedKeywords": [
+        "배출권",
+        "유상할당"
+      ]
+    },
+    {
       "id": "a64c3512ff11a030",
       "publishedAt": "2026-04-06",
       "title": "재생에너지 중심 에너지 대전환으로 화석연료 의존적 경제구조 탈피",
@@ -960,7 +1140,24 @@
       ]
     },
     {
-      "id": "aecde435bc94c71a",
+      "id": "krx-ets-576",
+      "sourceId": "576",
+      "publishedAt": "2026-04-01",
+      "title": "2026년 4월 배출권 유상할당 입찰공고(기후에너지환경부 공고 제2026-366호)",
+      "category": "유상경매",
+      "summary": "「온실가스 배출권의 할당 및 거래에 관한 법률」 제12조 및 같은 법 시행령 제18조,「배출권 유상할당 및 시장안정화 조치를 위한 배출권 추가할당에 관한 규정」 에 따라 2026년도 4월의 온실가스 배출권 유상할당 경매에 대한 입찰을 다음(붙임 참조)과 같이 공고합니다.",
+      "source": "한국거래소 배출권 공지사항",
+      "sourceType": "official",
+      "section": "krx_notice",
+      "url": "https://ets.krx.co.kr/board/ETS01030000/bbs#view=576",
+      "matchedKeywords": [
+        "배출권",
+        "유상할당",
+        "시장안정화"
+      ]
+    },
+    {
+      "id": "bd24d1a46fa3650e",
       "publishedAt": "2026-04-01",
       "title": "2026년 4월 배출권 유상할당 경매 입찰 공고",
       "category": "유상경매",
@@ -968,9 +1165,9 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1854410",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10524&orgCd=&boardMasterId=39&boardId=1854410",
       "matchedKeywords": [
-        "시장안정화"
+        "유상할당"
       ]
     },
     {
@@ -1044,7 +1241,40 @@
       ]
     },
     {
-      "id": "848d65df4311e692",
+      "id": "krx-ets-575",
+      "sourceId": "575",
+      "publishedAt": "2026-03-11",
+      "title": "2026년 3월 배출권 유상할당 경매 결과",
+      "category": "유상경매",
+      "summary": "2026년 3월 배출권 유상할당 경매 결과를 붙임과 같이 알려드립니다. * 응찰수량 및 낙찰가격 등 과거 경매 정보는 메뉴: 시세정보→시세조회 화면내 '경매 정보'를 참조하시기 바랍니다. (기간 설정 후 조회 가능) 감사합니다. 배출권시장팀(051-662-2822~9)",
+      "source": "한국거래소 배출권 공지사항",
+      "sourceType": "official",
+      "section": "krx_notice",
+      "url": "https://ets.krx.co.kr/board/ETS01030000/bbs#view=575",
+      "matchedKeywords": [
+        "배출권",
+        "유상할당"
+      ]
+    },
+    {
+      "id": "krx-ets-574",
+      "sourceId": "574",
+      "publishedAt": "2026-03-04",
+      "title": "2026년 3월 배출권 유상할당 입찰공고(기후에너지환경부 공고 제2026-221호)",
+      "category": "유상경매",
+      "summary": "「온실가스 배출권의 할당 및 거래에 관한 법률」 제12조 및 같은 법 시행령 제18조,「배출권 유상할당 및 시장안정화 조치를 위한 배출권 추가할당에 관한 규정」 에 따라 2026년도 3월의 온실가스 배출권 유상할당 경매에 대한 입찰을 다음(붙임 참조)과 같이 공고합니다.",
+      "source": "한국거래소 배출권 공지사항",
+      "sourceType": "official",
+      "section": "krx_notice",
+      "url": "https://ets.krx.co.kr/board/ETS01030000/bbs#view=574",
+      "matchedKeywords": [
+        "배출권",
+        "유상할당",
+        "시장안정화"
+      ]
+    },
+    {
+      "id": "63b8e074b70cd01b",
       "publishedAt": "2026-03-04",
       "title": "2026년 3월 배출권 유상할당 경매 입찰 공고",
       "category": "유상경매",
@@ -1052,9 +1282,9 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1847110",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10524&orgCd=&boardMasterId=39&boardId=1847110",
       "matchedKeywords": [
-        "시장안정화"
+        "유상할당"
       ]
     },
     {
@@ -1100,7 +1330,40 @@
       ]
     },
     {
-      "id": "1804a45bc8c7c11e",
+      "id": "krx-ets-573",
+      "sourceId": "573",
+      "publishedAt": "2026-02-11",
+      "title": "2026년 2월 배출권 유상할당 경매 결과",
+      "category": "유상경매",
+      "summary": "2026년 2월 배출권 유상할당 경매 결과를 붙임과 같이 알려드립니다. * 응찰수량 및 낙찰가격 등 과거 경매 정보는 메뉴: 시세정보→시세조회 화면내 '경매 정보'를 참조하시기 바랍니다. (기간 설정 후 조회 가능) 감사합니다. 배출권시장팀(051-662-2822~9)",
+      "source": "한국거래소 배출권 공지사항",
+      "sourceType": "official",
+      "section": "krx_notice",
+      "url": "https://ets.krx.co.kr/board/ETS01030000/bbs#view=573",
+      "matchedKeywords": [
+        "배출권",
+        "유상할당"
+      ]
+    },
+    {
+      "id": "krx-ets-572",
+      "sourceId": "572",
+      "publishedAt": "2026-02-04",
+      "title": "2026년 2월 배출권 유상할당 입찰공고(기후에너지환경부 공고 제2026-93호)",
+      "category": "유상경매",
+      "summary": "「온실가스 배출권의 할당 및 거래에 관한 법률」 제12조 및 같은 법 시행령 제18조,「배출권 유상할당 및 시장안정화 조치를 위한 배출권 추가할당에 관한 규정」 에 따라 2026년도 2월의 온실가스 배출권 유상할당 경매에 대한 입찰을 다음(붙임 참조)과 같이 공고합니다.",
+      "source": "한국거래소 배출권 공지사항",
+      "sourceType": "official",
+      "section": "krx_notice",
+      "url": "https://ets.krx.co.kr/board/ETS01030000/bbs#view=572",
+      "matchedKeywords": [
+        "배출권",
+        "유상할당",
+        "시장안정화"
+      ]
+    },
+    {
+      "id": "082175f1b839fefe",
       "publishedAt": "2026-02-04",
       "title": "2026년 2월 배출권 유상할당 경매 입찰 공고",
       "category": "유상경매",
@@ -1108,13 +1371,46 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1839990",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10524&orgCd=&boardMasterId=39&boardId=1839990",
       "matchedKeywords": [
+        "유상할당"
+      ]
+    },
+    {
+      "id": "krx-ets-571",
+      "sourceId": "571",
+      "publishedAt": "2026-01-14",
+      "title": "2026년 1월 배출권 유상할당 경매 결과",
+      "category": "유상경매",
+      "summary": "2026년 1월 배출권 유상할당 경매 결과를 붙임과 같이 알려드립니다. * 응찰수량 및 낙찰가격 등 과거 경매 정보는 메뉴: 시세정보→시세조회 화면내 '경매 정보'를 참조하시기 바랍니다. (기간 설정 후 조회 가능) 감사합니다. 배출권시장팀(051-662-2822~9)",
+      "source": "한국거래소 배출권 공지사항",
+      "sourceType": "official",
+      "section": "krx_notice",
+      "url": "https://ets.krx.co.kr/board/ETS01030000/bbs#view=571",
+      "matchedKeywords": [
+        "배출권",
+        "유상할당"
+      ]
+    },
+    {
+      "id": "krx-ets-570",
+      "sourceId": "570",
+      "publishedAt": "2026-01-07",
+      "title": "2026년 1월 배출권 유상할당 입찰공고(기후에너지환경부 공고 제2026-17호)",
+      "category": "유상경매",
+      "summary": "「온실가스 배출권의 할당 및 거래에 관한 법률」 제12조 및 같은 법 시행령 제18조,「배출권 유상할당 및 시장안정화 조치를 위한 배출권 추가할당에 관한 규정」 에 따라 2026년도 1월의 온실가스 배출권 유상할당 경매에 대한 입찰을 다음(붙임 참조)과 같이 공고합니다.",
+      "source": "한국거래소 배출권 공지사항",
+      "sourceType": "official",
+      "section": "krx_notice",
+      "url": "https://ets.krx.co.kr/board/ETS01030000/bbs#view=570",
+      "matchedKeywords": [
+        "배출권",
+        "유상할당",
         "시장안정화"
       ]
     },
     {
-      "id": "5b742a320674feef",
+      "id": "d391cd18916008c7",
       "publishedAt": "2026-01-07",
       "title": "2026년 1월 배출권 유상할당 경매 입찰 공고",
       "category": "유상경매",
@@ -1122,13 +1418,13 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1833770",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10524&orgCd=&boardMasterId=39&boardId=1833770",
       "matchedKeywords": [
-        "시장안정화"
+        "유상할당"
       ]
     },
     {
-      "id": "8cca28f701e28efa",
+      "id": "59ec6d329b2c716f",
       "publishedAt": "2025-12-30",
       "title": "2026년도 온실가스 배출권 유상할당 경매계획",
       "category": "유상경매",
@@ -1136,13 +1432,13 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1832000",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10524&orgCd=&boardMasterId=39&boardId=1832000",
       "matchedKeywords": [
-        "시장안정화"
+        "유상할당"
       ]
     },
     {
-      "id": "59f1e38c9eac7a4b",
+      "id": "8c21ea7006a56784",
       "publishedAt": "2025-12-11",
       "title": "2025년 12월 배출권 유상할당 경매 추가 입찰 공고",
       "category": "유상경매",
@@ -1150,13 +1446,13 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1827900",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10524&orgCd=&boardMasterId=39&boardId=1827900",
       "matchedKeywords": [
-        "시장안정화"
+        "유상할당"
       ]
     },
     {
-      "id": "864e8185ce45b0b9",
+      "id": "6def55481adbc2c8",
       "publishedAt": "2025-12-03",
       "title": "2025년 12월 배출권 유상할당 경매 입찰 공고",
       "category": "유상경매",
@@ -1164,9 +1460,9 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1825540",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10524&orgCd=&boardMasterId=39&boardId=1825540",
       "matchedKeywords": [
-        "시장안정화"
+        "유상할당"
       ]
     },
     {
