@@ -79,11 +79,16 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           NAVER_API_HUB_CLIENT_ID: ${{ secrets.NAVER_API_HUB_CLIENT_ID }}
           NAVER_API_HUB_CLIENT_SECRET: ${{ secrets.NAVER_API_HUB_CLIENT_SECRET }}
+          ASSEMBLY_API_KEY: ${{ secrets.ASSEMBLY_API_KEY }}
         run: |
           set -euo pipefail
 
           test -f scripts/sync_policies.py || {
             echo "::error::scripts/sync_policies.py 파일을 찾지 못했습니다."
+            exit 1
+          }
+          test -f scripts/sync_bills.py || {
+            echo "::error::scripts/sync_bills.py 파일을 찾지 못했습니다."
             exit 1
           }
           test -f config/settings.json || {
@@ -103,6 +108,9 @@ jobs:
           if [[ -z "${OPENAI_API_KEY:-}" ]]; then
             echo "::warning::OPENAI_API_KEY가 없어 정책 인사이트는 수집기의 기본 문구를 사용합니다."
           fi
+          if [[ -z "${ASSEMBLY_API_KEY:-}" ]]; then
+            echo "::warning::ASSEMBLY_API_KEY가 없어 입법동향은 기존 데이터를 유지합니다."
+          fi
           if [[ "$missing" -ne 0 ]]; then
             exit 1
           fi
@@ -114,28 +122,32 @@ jobs:
           python - <<'PY'
           from pathlib import Path
 
-          path = Path("scripts/sync_policies.py")
-          compile(path.read_text(encoding="utf-8"), str(path), "exec")
-          print("sync_policies.py 문법 검증 완료")
+          for name in ("sync_policies.py", "sync_bills.py"):
+              path = Path("scripts") / name
+              compile(path.read_text(encoding="utf-8"), str(path), "exec")
+              print(f"{name} 문법 검증 완료")
           PY
 
-      - name: Collect ministry policies and news
+      - name: Collect ministry policies, news and legislation
         shell: bash
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-5-mini' }}
           NAVER_API_HUB_CLIENT_ID: ${{ secrets.NAVER_API_HUB_CLIENT_ID }}
           NAVER_API_HUB_CLIENT_SECRET: ${{ secrets.NAVER_API_HUB_CLIENT_SECRET }}
+          ASSEMBLY_API_KEY: ${{ secrets.ASSEMBLY_API_KEY }}
         run: |
           set -euo pipefail
           python scripts/sync_policies.py
+          python scripts/sync_bills.py
 
-      - name: Validate generated policies.json
+      - name: Validate generated policy and legislation data
         shell: bash
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           NAVER_API_HUB_CLIENT_ID: ${{ secrets.NAVER_API_HUB_CLIENT_ID }}
           NAVER_API_HUB_CLIENT_SECRET: ${{ secrets.NAVER_API_HUB_CLIENT_SECRET }}
+          ASSEMBLY_API_KEY: ${{ secrets.ASSEMBLY_API_KEY }}
         run: |
           set -euo pipefail
           python - <<'PY'
@@ -149,8 +161,8 @@ jobs:
           if output.stat().st_size > 5_000_000:
               raise SystemExit("policies.json이 5MB를 초과해 비정상으로 판단했습니다.")
 
-          raw = output.read_text(encoding="utf-8")
-          payload = json.loads(raw)
+          policy_raw = output.read_text(encoding="utf-8")
+          payload = json.loads(policy_raw)
           if not isinstance(payload, dict):
               raise SystemExit("policies.json 최상위 값은 객체여야 합니다.")
           if not isinstance(payload.get("lastSync"), str) or not payload["lastSync"].strip():
@@ -174,22 +186,61 @@ jobs:
               "OPENAI_API_KEY",
               "NAVER_API_HUB_CLIENT_ID",
               "NAVER_API_HUB_CLIENT_SECRET",
+              "ASSEMBLY_API_KEY",
           ):
               secret = os.getenv(env_name, "")
-              if secret and secret in raw:
+              if secret and secret in policy_raw:
                   raise SystemExit(f"보안값이 policies.json에 포함되었습니다: {env_name}")
 
           news_count = sum(item.get("sourceType") == "news" for item in payload["items"])
-          print(f"검증 완료: 전체 {len(payload['items'])}건, 뉴스 {news_count}건")
+          print(f"정책 검증 완료: 전체 {len(payload['items'])}건, 뉴스 {news_count}건")
+
+          bills_output = Path("public/data/bills.json")
+          if not bills_output.is_file():
+              raise SystemExit("public/data/bills.json이 생성되지 않았습니다.")
+          if bills_output.stat().st_size > 5_000_000:
+              raise SystemExit("bills.json이 5MB를 초과해 비정상으로 판단했습니다.")
+
+          bills_raw = bills_output.read_text(encoding="utf-8")
+          bills = json.loads(bills_raw)
+          if not isinstance(bills, dict) or not isinstance(bills.get("items"), list):
+              raise SystemExit("bills.json의 최상위 값과 items 형식이 올바르지 않습니다.")
+          assembly_enabled = bool(os.getenv("ASSEMBLY_API_KEY", "").strip())
+          if assembly_enabled:
+              if not isinstance(bills.get("lastSync"), str) or not bills["lastSync"].strip():
+                  raise SystemExit("bills.json에 정상적인 lastSync가 없습니다.")
+              if not str(bills.get("source", "")).strip():
+                  raise SystemExit("bills.json에 공식 출처가 없습니다.")
+              if not str(bills.get("assemblyTerm", "")).strip():
+                  raise SystemExit("bills.json에 국회 대수가 없습니다.")
+              if not bills["items"]:
+                  raise SystemExit("입법동향 수집 결과가 0건이므로 공개하지 않습니다.")
+          seen_bill_ids = set()
+          for index, item in enumerate(bills["items"]):
+              if not isinstance(item, dict):
+                  raise SystemExit(f"bills.items[{index}]가 객체가 아닙니다.")
+              bill_key = str(item.get("billId") or "").strip()
+              if not bill_key or not str(item.get("title", "")).strip():
+                  raise SystemExit(f"bills.items[{index}] 의안ID·제목이 없습니다.")
+              if bill_key in seen_bill_ids:
+                  raise SystemExit(f"bills.items[{index}] 의안ID가 중복됩니다: {bill_key}")
+              seen_bill_ids.add(bill_key)
+              if not str(item.get("status", "")).strip() or not str(item.get("url", "")).strip():
+                  raise SystemExit(f"bills.items[{index}] 상태 또는 공식 URL이 없습니다.")
+
+          for env_name in ("OPENAI_API_KEY", "NAVER_API_HUB_CLIENT_ID", "NAVER_API_HUB_CLIENT_SECRET", "ASSEMBLY_API_KEY"):
+              secret = os.getenv(env_name, "")
+              if secret and (secret in policy_raw or secret in bills_raw):
+                  raise SystemExit(f"보안값이 공개 JSON에 포함되었습니다: {env_name}")
+          print(f"입법동향 검증 완료: {len(bills['items'])}건")
           PY
 
-      - name: Confirm only policies.json changed
+      - name: Confirm only approved data files changed
         id: changes
         shell: bash
         run: |
           set -euo pipefail
 
-          target="public/data/policies.json"
           changed_paths="$({
             git diff --name-only
             git ls-files --others --exclude-standard
@@ -198,42 +249,49 @@ jobs:
           unexpected=0
           while IFS= read -r path; do
             [[ -z "$path" ]] && continue
-            if [[ "$path" != "$target" ]]; then
-              echo "::error::수집기가 허용되지 않은 파일을 변경했습니다: $path"
-              unexpected=1
-            fi
+            case "$path" in
+              public/data/policies.json|public/data/bills.json) ;;
+              *)
+                echo "::error::수집기가 허용되지 않은 파일을 변경했습니다: $path"
+                unexpected=1
+                ;;
+            esac
           done <<< "$changed_paths"
           if [[ "$unexpected" -ne 0 ]]; then
             exit 1
           fi
 
-          if [[ -n "$(git status --porcelain -- "$target")" ]]; then
+          if [[ -n "$(git status --porcelain -- public/data/policies.json public/data/bills.json)" ]]; then
             echo "changed=true" >> "$GITHUB_OUTPUT"
-            echo "policies.json 변경사항을 확인했습니다."
+            echo "정책·입법동향 데이터 변경사항을 확인했습니다."
           else
             echo "changed=false" >> "$GITHUB_OUTPUT"
             echo "저장할 변경사항이 없습니다. 최신 커밋의 사이트를 배포합니다."
           fi
 
-      - name: Commit policies.json
+      - name: Commit policy and legislation data
         if: steps.changes.outputs.changed == 'true'
         shell: bash
         run: |
           set -euo pipefail
 
-          target="public/data/policies.json"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -- "$target"
+          git add -- public/data/policies.json public/data/bills.json
 
           staged="$(git diff --cached --name-only)"
-          if [[ "$staged" != "$target" ]]; then
-            echo "::error::커밋 대상이 policies.json 한 파일이 아닙니다."
-            printf '%s\n' "$staged"
-            exit 1
-          fi
+          while IFS= read -r path; do
+            [[ -z "$path" ]] && continue
+            case "$path" in
+              public/data/policies.json|public/data/bills.json) ;;
+              *)
+                echo "::error::허용되지 않은 커밋 대상입니다: $path"
+                exit 1
+                ;;
+            esac
+          done <<< "$staged"
 
-          git commit -m "chore(data): sync ministry policies and news"
+          git commit -m "chore(data): sync policies, news and legislation"
 
       - name: Rebase safely and push to main
         if: steps.changes.outputs.changed == 'true'
@@ -247,7 +305,7 @@ jobs:
             git fetch origin main
             if ! git rebase origin/main; then
               git rebase --abort || true
-              echo "::error::원격 main과 policies.json 변경이 충돌했습니다. 강제 푸시하지 않습니다."
+              echo "::error::원격 main과 정책·입법동향 데이터 변경이 충돌했습니다. 강제 푸시하지 않습니다."
               exit 1
             fi
             if git push origin HEAD:main; then
@@ -261,7 +319,7 @@ jobs:
             exit 1
           fi
 
-          echo "policies.json을 main에 반영했습니다: $(git rev-parse HEAD)"
+          echo "정책·입법동향 데이터를 main에 반영했습니다: $(git rev-parse HEAD)"
 
       - name: Align deployment source with a committed revision
         id: source_revision
@@ -293,18 +351,24 @@ jobs:
             exit 1
           fi
 
-          committed_hash="$(git show HEAD:public/data/policies.json | sha256sum | awk '{print $1}')"
-          worktree_hash="$(sha256sum public/data/policies.json | awk '{print $1}')"
-          if [[ "$committed_hash" != "$worktree_hash" ]]; then
-            echo "::error::배포할 policies.json이 현재 HEAD 커밋과 다릅니다."
-            exit 1
-          fi
+          for data_file in public/data/policies.json public/data/bills.json; do
+            committed_hash="$(git show "HEAD:${data_file}" | sha256sum | awk '{print $1}')"
+            worktree_hash="$(sha256sum "$data_file" | awk '{print $1}')"
+            if [[ "$committed_hash" != "$worktree_hash" ]]; then
+              echo "::error::배포할 ${data_file}이 현재 HEAD 커밋과 다릅니다."
+              exit 1
+            fi
+          done
 
           site_sha="$(git rev-parse HEAD)"
+          policies_hash="$(sha256sum public/data/policies.json | awk '{print $1}')"
+          bills_hash="$(sha256sum public/data/bills.json | awk '{print $1}')"
           echo "site_sha=$site_sha" >> "$GITHUB_OUTPUT"
-          echo "data_sha256=$worktree_hash" >> "$GITHUB_OUTPUT"
+          echo "policies_sha256=$policies_hash" >> "$GITHUB_OUTPUT"
+          echo "bills_sha256=$bills_hash" >> "$GITHUB_OUTPUT"
           echo "배포 원본 커밋: $site_sha"
-          echo "배포 데이터 SHA-256: $worktree_hash"
+          echo "policies.json SHA-256: $policies_hash"
+          echo "bills.json SHA-256: $bills_hash"
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v6
@@ -318,35 +382,44 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v5
 
-      - name: Verify the public policy data
+      - name: Verify the public policy and legislation data
         shell: bash
         env:
           PAGE_URL: ${{ steps.deployment.outputs.page_url }}
-          EXPECTED_DATA_SHA256: ${{ steps.source_revision.outputs.data_sha256 }}
+          EXPECTED_POLICIES_SHA256: ${{ steps.source_revision.outputs.policies_sha256 }}
+          EXPECTED_BILLS_SHA256: ${{ steps.source_revision.outputs.bills_sha256 }}
         run: |
           set -euo pipefail
 
           page_root="${PAGE_URL%/}"
-          verify_url="${page_root}/data/policies.json?verify=${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
-          downloaded="$(mktemp)"
-          trap 'rm -f "$downloaded"' EXIT
+          verify_public_file() {
+            local relative_path="$1"
+            local expected_sha256="$2"
+            local downloaded
+            downloaded="$(mktemp)"
 
-          for attempt in 1 2 3 4 5 6 7 8; do
-            echo "공개 데이터 확인 ${attempt}/8"
-            if curl --fail --silent --show-error --location \
-              --max-time 20 \
-              --header "Cache-Control: no-cache" \
-              "$verify_url" \
-              --output "$downloaded"; then
-              actual_sha256="$(sha256sum "$downloaded" | awk '{print $1}')"
-              if [[ "$actual_sha256" == "$EXPECTED_DATA_SHA256" ]]; then
-                echo "공개 policies.json 반영 확인: $actual_sha256"
-                exit 0
+            for attempt in 1 2 3 4 5 6 7 8; do
+              echo "${relative_path} 공개 반영 확인 ${attempt}/8"
+              if curl --fail --silent --show-error --location \
+                --max-time 20 \
+                --header "Cache-Control: no-cache" \
+                "${page_root}/${relative_path}?verify=${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}-${attempt}" \
+                --output "$downloaded"; then
+                actual_sha256="$(sha256sum "$downloaded" | awk '{print $1}')"
+                if [[ "$actual_sha256" == "$expected_sha256" ]]; then
+                  echo "공개 ${relative_path} 반영 확인: $actual_sha256"
+                  rm -f "$downloaded"
+                  return 0
+                fi
+                echo "아직 이전 ${relative_path}입니다: $actual_sha256"
               fi
-              echo "아직 이전 데이터입니다: $actual_sha256"
-            fi
-            sleep 8
-          done
+              sleep 8
+            done
 
-          echo "::error::Pages 배포 후 공개 policies.json이 배포 원본과 일치하지 않습니다."
-          exit 1
+            rm -f "$downloaded"
+            echo "::error::Pages 배포 후 공개 ${relative_path}이 배포 원본과 일치하지 않습니다."
+            return 1
+          }
+
+          verify_public_file "data/policies.json" "$EXPECTED_POLICIES_SHA256"
+          verify_public_file "data/bills.json" "$EXPECTED_BILLS_SHA256"
