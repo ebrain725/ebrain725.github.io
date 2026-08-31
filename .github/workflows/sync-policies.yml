@@ -1,54 +1,84 @@
 name: Sync Ministry Policies
 
-# cron-job.org calls this workflow through GitHub's workflow_dispatch API.
-# A GitHub Actions schedule is intentionally not configured here.
 on:
+  schedule:
+    # GitHub cron is UTC. The five runs below are 08:17, 10:17,
+    # 13:17, 15:17 and 18:17 every day in Korea (KST, UTC+9).
+    - cron: "17 23 * * *"
+    - cron: "17 1 * * *"
+    - cron: "17 4 * * *"
+    - cron: "17 6 * * *"
+    - cron: "17 9 * * *"
+  # Keep this trigger for manual runs and existing cron-job.org API calls.
   workflow_dispatch:
     inputs:
       trigger_type:
-        description: "실행 주체(manual 또는 cron-job.org)"
+        description: "실행 주체(manual, scheduler 또는 cron-job.org)"
         required: false
         default: "manual"
         type: string
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
+# This group is shared with the other Pages workflows in this repository so
+# two deployments cannot publish over each other at the same time.
 concurrency:
-  group: sync-ministry-policies-${{ github.repository }}
+  group: github-pages
   cancel-in-progress: false
 
 env:
   TZ: Asia/Seoul
   PYTHONUNBUFFERED: "1"
   PYTHONDONTWRITEBYTECODE: "1"
-  OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-  OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-5-mini' }}
-  NAVER_API_HUB_CLIENT_ID: ${{ secrets.NAVER_API_HUB_CLIENT_ID }}
-  NAVER_API_HUB_CLIENT_SECRET: ${{ secrets.NAVER_API_HUB_CLIENT_SECRET }}
+  # All official actions below are Node 24 releases. This also keeps any
+  # transitive JavaScript action on the supported Node 24 runtime.
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
 
 jobs:
-  sync:
-    name: Collect, validate and publish policy data
+  update-and-deploy:
+    name: Collect, validate, commit and deploy policy data
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 25
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
       - name: Check out main branch
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           ref: main
           fetch-depth: 0
           persist-credentials: true
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v7
         with:
           python-version: "3.12"
 
+      - name: Show run source
+        shell: bash
+        env:
+          DISPATCH_TRIGGER_TYPE: ${{ inputs.trigger_type }}
+          REGISTERED_SCHEDULE: ${{ github.event.schedule }}
+        run: |
+          set -euo pipefail
+          if [[ "${GITHUB_EVENT_NAME}" == "schedule" ]]; then
+            echo "실행 주체: GitHub schedule (${REGISTERED_SCHEDULE:-registered-cron})"
+          else
+            echo "실행 주체: ${DISPATCH_TRIGGER_TYPE:-manual-or-external-dispatch}"
+          fi
+
       - name: Check files and secret configuration
         shell: bash
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          NAVER_API_HUB_CLIENT_ID: ${{ secrets.NAVER_API_HUB_CLIENT_ID }}
+          NAVER_API_HUB_CLIENT_SECRET: ${{ secrets.NAVER_API_HUB_CLIENT_SECRET }}
         run: |
           set -euo pipefail
 
@@ -91,12 +121,21 @@ jobs:
 
       - name: Collect ministry policies and news
         shell: bash
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-5-mini' }}
+          NAVER_API_HUB_CLIENT_ID: ${{ secrets.NAVER_API_HUB_CLIENT_ID }}
+          NAVER_API_HUB_CLIENT_SECRET: ${{ secrets.NAVER_API_HUB_CLIENT_SECRET }}
         run: |
           set -euo pipefail
           python scripts/sync_policies.py
 
       - name: Validate generated policies.json
         shell: bash
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          NAVER_API_HUB_CLIENT_ID: ${{ secrets.NAVER_API_HUB_CLIENT_ID }}
+          NAVER_API_HUB_CLIENT_SECRET: ${{ secrets.NAVER_API_HUB_CLIENT_SECRET }}
         run: |
           set -euo pipefail
           python - <<'PY'
@@ -173,7 +212,7 @@ jobs:
             echo "policies.json 변경사항을 확인했습니다."
           else
             echo "changed=false" >> "$GITHUB_OUTPUT"
-            echo "저장할 변경사항이 없습니다."
+            echo "저장할 변경사항이 없습니다. 최신 커밋의 사이트를 배포합니다."
           fi
 
       - name: Commit policies.json
@@ -202,6 +241,7 @@ jobs:
         run: |
           set -euo pipefail
 
+          pushed=0
           for attempt in 1 2 3; do
             echo "main 반영 시도 ${attempt}/3"
             git fetch origin main
@@ -211,10 +251,102 @@ jobs:
               exit 1
             fi
             if git push origin HEAD:main; then
-              echo "policies.json을 main에 반영했습니다."
-              exit 0
+              pushed=1
+              break
             fi
           done
 
-          echo "::error::원격 main이 계속 변경되어 3회 시도 후 중단했습니다. 다음 실행에서 재시도합니다."
+          if [[ "$pushed" -ne 1 ]]; then
+            echo "::error::원격 main이 계속 변경되어 3회 시도 후 중단했습니다. 다음 실행에서 재시도합니다."
+            exit 1
+          fi
+
+          echo "policies.json을 main에 반영했습니다: $(git rev-parse HEAD)"
+
+      - name: Align deployment source with a committed revision
+        id: source_revision
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          # The collector may overlap another data workflow. Always deploy the
+          # newest committed main revision, never an uncommitted worktree.
+          git fetch origin main
+          local_sha="$(git rev-parse HEAD)"
+          remote_sha="$(git rev-parse origin/main)"
+          if [[ "$local_sha" != "$remote_sha" ]]; then
+            if ! git merge-base --is-ancestor HEAD origin/main; then
+              echo "::error::배포 직전 로컬 HEAD와 origin/main이 갈라졌습니다."
+              exit 1
+            fi
+            git merge --ff-only origin/main
+          fi
+
+          if [[ "$(git rev-parse HEAD)" != "$(git rev-parse origin/main)" ]]; then
+            echo "::error::배포 원본이 최신 origin/main과 일치하지 않습니다."
+            exit 1
+          fi
+
+          if [[ -n "$(git status --porcelain)" ]]; then
+            echo "::error::배포 직전 작업트리가 커밋 상태와 다릅니다."
+            git status --short
+            exit 1
+          fi
+
+          committed_hash="$(git show HEAD:public/data/policies.json | sha256sum | awk '{print $1}')"
+          worktree_hash="$(sha256sum public/data/policies.json | awk '{print $1}')"
+          if [[ "$committed_hash" != "$worktree_hash" ]]; then
+            echo "::error::배포할 policies.json이 현재 HEAD 커밋과 다릅니다."
+            exit 1
+          fi
+
+          site_sha="$(git rev-parse HEAD)"
+          echo "site_sha=$site_sha" >> "$GITHUB_OUTPUT"
+          echo "data_sha256=$worktree_hash" >> "$GITHUB_OUTPUT"
+          echo "배포 원본 커밋: $site_sha"
+          echo "배포 데이터 SHA-256: $worktree_hash"
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v6
+
+      - name: Upload the committed public directory
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: ./public
+
+      - name: Deploy GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5
+
+      - name: Verify the public policy data
+        shell: bash
+        env:
+          PAGE_URL: ${{ steps.deployment.outputs.page_url }}
+          EXPECTED_DATA_SHA256: ${{ steps.source_revision.outputs.data_sha256 }}
+        run: |
+          set -euo pipefail
+
+          page_root="${PAGE_URL%/}"
+          verify_url="${page_root}/data/policies.json?verify=${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
+          downloaded="$(mktemp)"
+          trap 'rm -f "$downloaded"' EXIT
+
+          for attempt in 1 2 3 4 5 6 7 8; do
+            echo "공개 데이터 확인 ${attempt}/8"
+            if curl --fail --silent --show-error --location \
+              --max-time 20 \
+              --header "Cache-Control: no-cache" \
+              "$verify_url" \
+              --output "$downloaded"; then
+              actual_sha256="$(sha256sum "$downloaded" | awk '{print $1}')"
+              if [[ "$actual_sha256" == "$EXPECTED_DATA_SHA256" ]]; then
+                echo "공개 policies.json 반영 확인: $actual_sha256"
+                exit 0
+              fi
+              echo "아직 이전 데이터입니다: $actual_sha256"
+            fi
+            sleep 8
+          done
+
+          echo "::error::Pages 배포 후 공개 policies.json이 배포 원본과 일치하지 않습니다."
           exit 1
