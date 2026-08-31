@@ -158,7 +158,8 @@ jobs:
           python - <<'PY'
           import json
           import os
-          from datetime import date
+          import re
+          from datetime import date, timedelta
           from pathlib import Path
 
           output = Path("public/data/policies.json")
@@ -200,6 +201,19 @@ jobs:
 
           news_count = sum(item.get("sourceType") == "news" for item in payload["items"])
           print(f"정책 검증 완료: 전체 {len(payload['items'])}건, 뉴스 {news_count}건")
+
+          schedules = payload.get("institutionSchedules", [])
+          if schedules is not None and not isinstance(schedules, list):
+              raise SystemExit("institutionSchedules가 배열이 아닙니다.")
+          schedule_evidence = set()
+          for index, item in enumerate(schedules or []):
+              if not isinstance(item, dict):
+                  raise SystemExit(f"institutionSchedules[{index}]가 객체가 아닙니다.")
+              evidence_key = re.sub(r"[^0-9a-z가-힣]+", "", str(item.get("evidence", "")).lower())[:1200]
+              if len(evidence_key) >= 40 and evidence_key in schedule_evidence:
+                  raise SystemExit(f"institutionSchedules[{index}]에 동일 본문 일정이 중복되었습니다.")
+              if evidence_key:
+                  schedule_evidence.add(evidence_key)
 
           bills_output = Path("public/data/bills.json")
           if not bills_output.is_file():
@@ -257,6 +271,8 @@ jobs:
           if not str(seminars.get("source", "")).strip():
               raise SystemExit("assembly_seminars.json에 공식 출처가 없습니다.")
           seen_seminar_ids = set()
+          seminar_minimum = date(2026, 1, 1)
+          seminar_maximum = date.today() + timedelta(days=365)
           for index, item in enumerate(seminars["items"]):
               if not isinstance(item, dict):
                   raise SystemExit(f"assembly_seminars.items[{index}]가 객체가 아닙니다.")
@@ -270,9 +286,11 @@ jobs:
                   if not str(item.get(field_name, "")).strip():
                       raise SystemExit(f"assembly_seminars.items[{index}] 필수값 누락: {field_name}")
               try:
-                  date.fromisoformat(str(item["startDate"])[:10])
+                  seminar_day = date.fromisoformat(str(item["startDate"])[:10])
               except ValueError as error:
                   raise SystemExit(f"assembly_seminars.items[{index}] 행사일이 올바르지 않습니다.") from error
+              if not seminar_minimum <= seminar_day <= seminar_maximum:
+                  raise SystemExit(f"assembly_seminars.items[{index}] 행사일이 2026년 이후 공식 수집범위를 벗어났습니다.")
               if not str(item["url"]).startswith("https://ampos.nanet.go.kr/"):
                   raise SystemExit(f"assembly_seminars.items[{index}] 공식 국회도서관 URL이 아닙니다.")
           for env_name in ("OPENAI_API_KEY", "NAVER_API_HUB_CLIENT_ID", "NAVER_API_HUB_CLIENT_SECRET", "ASSEMBLY_API_KEY"):
