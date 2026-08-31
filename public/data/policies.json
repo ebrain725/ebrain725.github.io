@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-08-31T16:22:27+09:00",
+  "lastSync": "2026-08-31T17:00:03+09:00",
   "keywords": [
     "배출권",
     "배출권거래제",
@@ -30,7 +30,7 @@
   "warning": null,
   "aiInsight": {
     "summary": "최근 공식자료의 직접적인 수급 변수는 유상경매입니다. 최근 경매가 높은 낙찰가로 소화돼 공급보다 이행수요가 강하다는 신호입니다.",
-    "generatedAt": "2026-08-31T16:22:27+09:00",
+    "generatedAt": "2026-08-31T17:00:03+09:00",
     "basisLatestDate": "2026-08-05",
     "basisCount": 10,
     "source": "fallback",
@@ -487,6 +487,33 @@
       "searchProviders": [
         "NAVER API HUB"
       ],
+      "region": "국내"
+    },
+    {
+      "id": "eeae223528250cb1",
+      "publishedAt": "2026-08-31",
+      "title": "정부, 연말 자발적 탄소시장 거래소 개설…내년 크레딧 최대 20만톤 구매",
+      "category": "상쇄·외부사업",
+      "summary": "자발적 탄소시장은 배출권 거래제와 달리 법적 감축 의무가 없는 기업이나 기관 등이 자발적으로 감축실적을... 4조 감축실적, 국제항공 탄소 상쇄 ·감축제도(CORSIA) 적격 크레딧 등의 요건을 구분해야 한다. 발행 이후...",
+      "source": "esgeconomy.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.esgeconomy.com/news/articleView.html?idxno=16550",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장",
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "ESG경제",
+        "esgeconomy.com"
+      ],
+      "searchProviders": [
+        "Google News RSS",
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 2,
       "region": "국내"
     },
     {
@@ -968,30 +995,6 @@
       ],
       "duplicateCount": 1,
       "region": "해외"
-    },
-    {
-      "id": "131a6190e7c978b6",
-      "publishedAt": "2026-08-30",
-      "title": "추경호 대구광역시장, 온실가스 배출권 4만3천톤 매도...12억3천만원 세...",
-      "category": "제도",
-      "summary": "추경호 대구광역시장 환경기초시설의 온실가스 감축과 배출권 관리로 대구광역시는 2025년 온실가스 잉여 배출권 7만 4천 톤 중 4만 3천 톤을 매도해 12억 3천만 원의 세입을 마련했다. 남은 3만 1천 톤은 향후 배출권 부족에...",
-      "source": "gukjenews.com",
-      "sourceType": "news",
-      "section": "news",
-      "url": "https://www.gukjenews.com/news/articleView.html?idxno=3678888",
-      "searchProvider": "NAVER API HUB",
-      "matchedKeywords": [
-        "배출권",
-        "온실가스 배출권"
-      ],
-      "duplicateSources": [
-        "gukjenews.com"
-      ],
-      "searchProviders": [
-        "NAVER API HUB"
-      ],
-      "duplicateCount": 1,
-      "region": "국내"
     },
     {
       "id": "56f944fbce63852f",
