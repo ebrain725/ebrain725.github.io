@@ -8,6 +8,7 @@
 // PRICE_SCALE_VERSION = "2026-08-28-v1-symbol-period-autoscale"
 // POLICY_INSIGHT_META_VERSION = "2026-08-28-v1-hidden"
 // INSTITUTION_SCHEDULE_UI_VERSION = "2026-08-31-v1-deduped-body-events"
+// NEWS_REGION_UI_VERSION = "2026-08-31-v1-overseas-topic-badge"
 
 const state = { prices: [], auctions: [], auctionPeriod: "ALL", auctionPage: 1, auctionLastSync: "", policies: [], institutionSchedules: [], policyInsight: null, briefings: [], briefingDate: "", period: "3M", category: "기후부 보도자료", policyPage: 1, symbol: "" };
 const POLICIES_PER_PAGE = 5;
@@ -277,6 +278,11 @@ function newsDisplaySummary(policy) {
   if (!repeatsTitle) return summary;
   const count = Math.max(1, Number(policy.duplicateCount) || 1);
   return count > 1 ? `유사 기사 ${count}건을 대표기사 1건으로 통합했습니다.` : `${policy.source || "뉴스"} 기사`;
+}
+
+function policyBadge(policy) {
+  const topic = String(policy.category || "기타");
+  return policyGroup(policy) === "뉴스" && policy.region === "해외" ? `해외 · ${topic}` : topic;
 }
 
 function normalizeInstitutionSchedules(items) {
@@ -671,7 +677,7 @@ function renderPolicies() {
   const start = (state.policyPage - 1) * POLICIES_PER_PAGE;
   items.slice(start, start + POLICIES_PER_PAGE).forEach((policy) => {
     const row = create("article", "policy-row");
-    row.append(create("time", "", shortDate(scheduleMode ? policy.startDate : policy.publishedAt)), create("span", "category-badge", scheduleMode ? policy.eventType : (policy.category || "기타")));
+    row.append(create("time", "", shortDate(scheduleMode ? policy.startDate : policy.publishedAt)), create("span", "category-badge", scheduleMode ? policy.eventType : policyBadge(policy)));
     const body = create("div", "policy-body");
     const title = create("h3", "", policy.title); title.title = policy.title;
     const summaryText = scheduleMode ? scheduleDisplaySummary(policy) : newsDisplaySummary(policy);
