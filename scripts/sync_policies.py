@@ -2,7 +2,7 @@
 # PRESS_TAB_FIX_VERSION = "2026-08-20-v3.1-fast-current-board"
 # NEWS_DEDUPE_VERSION = "2026-08-31-v3.1-google-naver-cross-source"
 # NEWS_RELEVANCE_VERSION = "2026-08-31-v3.1-exact-ets-limited-body-check"
-# INSTITUTION_SCHEDULE_VERSION = "2026-08-31-v1-body-aware-dedupe"
+# INSTITUTION_SCHEDULE_VERSION = "2026-08-31-v2-event-sentence-relevance-and-content-dedupe"
 # NEWS_REGION_VERSION = "2026-08-31-v1-domestic-overseas"
 # INSTITUTION_SCHEDULE_YEAR_FIX_VERSION = "2026-08-31-v2-strict-year-inference"
 """기후부 공식자료와 시장 뉴스의 제목·원문 본문에서 설정 키워드를 검색한다."""
@@ -733,6 +733,19 @@ SCHEDULE_PAST_CUE = re.compile(
     r"시행됐다|시행되었다|종료됐다|종료되었다",
     re.IGNORECASE,
 )
+SCHEDULE_MARKET_CONTEXT = re.compile(
+    r"배출권|배출허용총량|유상\s*할당|무상\s*할당|유상\s*경매|"
+    r"탄소\s*(?:시장|가격|배출권|국경)|상쇄|외부사업|시장\s*안정|할당\s*계획|"
+    r"(?<![A-Za-z0-9])K\s*[-_]?\s*ETS(?![A-Za-z0-9])|"
+    r"(?<![A-Za-z0-9])K(?:AU|CU|OC)\s*\d{0,2}(?![A-Za-z0-9])|"
+    r"온실가스|탄소중립|기후(?:위기|대응|정책|외교)?|국제\s*감축|"
+    r"탄소국경(?:조정)?|(?<![A-Za-z0-9])CBAM(?![A-Za-z0-9])|에너지|전력망",
+    re.IGNORECASE,
+)
+SCHEDULE_NON_EVENT_CONTEXT = re.compile(
+    r"청원|동의\s*(?:진행|필요|마감)|5\s*만\s*명|국민동의|서명\s*운동",
+    re.IGNORECASE,
+)
 SCHEDULE_INSTITUTIONS = (
     ("기후에너지환경부", r"기후에너지환경부|기후부"),
     ("한국거래소", r"한국거래소|(?<![A-Za-z0-9])KRX(?![A-Za-z0-9])"),
@@ -897,7 +910,11 @@ def schedule_date_mentions(text: str, published_at: str) -> list[dict]:
     mentions.sort(key=lambda item: item["start"])
     for index, mention in enumerate(mentions):
         tail = text[mention["end"] : mention["end"] + 42]
-        end_match = re.search(r"부터\s*(?:(?:(20\d{2})\s*년\s*)?(?:(\d{1,2})\s*월\s*)?(\d{1,2})\s*일)?\s*까지", tail)
+        end_match = re.search(
+            r"(?:부터\s*|[~∼〜\-–—]\s*)"
+            r"(?:(?:(20\d{2})\s*년\s*)?(?:(\d{1,2})\s*월\s*)?(\d{1,2})\s*일)?\s*(?:까지)?",
+            tail,
+        )
         if not end_match:
             continue
         year_text, month_text, day_text = end_match.groups()
@@ -953,10 +970,21 @@ def schedule_event_type(text: str) -> str:
     return "기관일정"
 
 
+def schedule_event_title(sentence: str, fallback: str) -> str:
+    quoted = re.findall(r"[‘“](.{4,180}?)[’”]", sentence)
+    if not quoted:
+        quoted = re.findall(r"['\"]([^'\"]{4,180})['\"]", sentence)
+    return clean_html(quoted[-1] if quoted else fallback, 180)
+
+
 def schedule_organizer(text: str, item: dict) -> str:
     for name, pattern in SCHEDULE_INSTITUTIONS:
         if re.search(pattern, text, re.IGNORECASE):
             return name
+    host_match = re.search(r"([가-힣A-Za-z0-9·, ]{2,120}(?:의원실|의원모임))\s*(?:공동\s*)?주최", text)
+    if host_match:
+        host = re.split(r"에서는|에서|에는", host_match.group(1))[-1]
+        return re.sub(r"\s+", " ", host).strip(" ,·")
     match = re.search(
         r"([가-힣A-Za-z0-9· ]{2,24}(?:부|청|위원회|거래소|공단|공사|협회|센터|연구원|연구소|진흥원))"
         r"(?:은|는|이|가|에서|와|과)",
@@ -1028,9 +1056,10 @@ def schedule_product_codes(value: str) -> set[str]:
     }
 
 
-def schedule_story_score(item: dict) -> tuple[int, str, int, int]:
+def schedule_story_score(item: dict) -> tuple[int, int, str, int, int]:
     return (
         1 if item.get("sourceType") != "news" else 0,
+        1 if item.get("sourceTitle") else 0,
         str(item.get("publishedAt", "")),
         1 if item.get("startTime") else 0,
         len(str(item.get("evidence", ""))),
@@ -1043,6 +1072,10 @@ def schedule_time_minutes(value: str) -> int | None:
 
 
 def same_institution_schedule(first: dict, second: dict) -> bool:
+    first_evidence_key = normalized_schedule_content(first.get("evidence", ""))
+    second_evidence_key = normalized_schedule_content(second.get("evidence", ""))
+    if min(len(first_evidence_key), len(second_evidence_key)) >= 40 and first_evidence_key == second_evidence_key:
+        return True
     if first.get("startDate") != second.get("startDate"):
         return False
     if first.get("eventType") != second.get("eventType"):
@@ -1121,7 +1154,10 @@ def merge_institution_schedule_group(group: list[dict]) -> dict:
         str(representative.get("organizer", "")),
         str(representative.get("eventType", "")),
         str(representative.get("startDate", "")),
-        normalized_news_title(representative.get("title", ""))[:80],
+        str(representative.get("startTime", "")),
+        normalized_news_title(representative.get("location", ""))[:60],
+        normalized_news_title(representative.get("title", ""))[:100],
+        normalized_schedule_content(representative.get("evidence", ""))[:160],
     ])
     representative["id"] = hashlib.sha1(stable_material.encode("utf-8")).hexdigest()[:16]
     representative.pop("sourceItemId", None)
@@ -1169,6 +1205,10 @@ def extract_institution_schedules(item: dict, article_text: str = "") -> list[di
     for sentence in schedule_sentences(full_text):
         if not SCHEDULE_EVENT_CUE.search(sentence):
             continue
+        if not SCHEDULE_MARKET_CONTEXT.search(sentence):
+            continue
+        if SCHEDULE_NON_EVENT_CONTEXT.search(sentence):
+            continue
         mentions = schedule_date_mentions(sentence, published_at)
         if not mentions:
             continue
@@ -1193,7 +1233,8 @@ def extract_institution_schedules(item: dict, article_text: str = "") -> list[di
             end_date = end_value.date().isoformat() if isinstance(end_value, datetime) else start_date
             start_time = schedule_time_value(sentence)
             location = schedule_location(sentence)
-            title = clean_html(str(item.get("title", "")), 150) or clean_html(sentence, 150)
+            source_title = clean_html(str(item.get("title", "")), 180)
+            title = schedule_event_title(sentence, source_title or sentence)
             evidence = clean_html(sentence, 360)
             event_key = "|".join([
                 organizer,
@@ -1209,6 +1250,7 @@ def extract_institution_schedules(item: dict, article_text: str = "") -> list[di
             schedules.append({
                 "id": hashlib.sha1(event_key.encode("utf-8")).hexdigest()[:16],
                 "title": title,
+                "sourceTitle": source_title,
                 "eventType": event_type,
                 "startDate": start_date,
                 "endDate": end_date,
@@ -1282,7 +1324,10 @@ def build_institution_schedules(source_items: list[dict], existing: list[dict]) 
     valid_existing = [
         item
         for item in existing
-        if isinstance(item, dict) and valid_existing_schedule_year(item)
+        if isinstance(item, dict)
+        and valid_existing_schedule_year(item)
+        and SCHEDULE_MARKET_CONTEXT.search(str(item.get("evidence") or item.get("title") or ""))
+        and not SCHEDULE_NON_EVENT_CONTEXT.search(str(item.get("evidence") or item.get("title") or ""))
     ]
     combined = valid_existing + extracted
     deduped = dedupe_institution_schedules(combined)
