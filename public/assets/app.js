@@ -12,7 +12,7 @@
 // LEGISLATION_RADAR_VERSION = "2026-08-31-v1-allbillv2"
 // INSTITUTION_SCHEDULE_DATE_UI_VERSION = "2026-08-31-v2-published-and-planned-date"
 // ASSEMBLY_SEMINAR_RADAR_VERSION = "2026-08-31-v1-official-schedule"
-// BILL_STAGE_TRACKER_VERSION = "2026-08-31-v3-stage-dates-and-terminal-states"
+// BILL_STAGE_TRACKER_VERSION = "2026-08-31-v3.1-chronological-committee-alternatives"
 // ASSEMBLY_SEMINAR_DATE_VERSION = "2026-08-31-v2-from-2026-verified-event-date"
 
 const state = { prices: [], auctions: [], auctionPeriod: "ALL", auctionPage: 1, auctionLastSync: "", policies: [], policyLastSync: "", institutionSchedules: [], bills: [], billLastSync: "", billWarning: "", billView: "ALL", assemblySeminars: [], seminarLastSync: "", seminarWarning: "", policyInsight: null, briefings: [], briefingDate: "", period: "3M", category: "기후부 보도자료", policyPage: 1, symbol: "" };
@@ -28,6 +28,14 @@ const BILL_STAGES = [
   { key: "plenary", label: "본회의" },
   { key: "government", label: "정부이송" },
   { key: "promulgated", label: "공포" }
+];
+const COMMITTEE_ALTERNATIVE_STAGES = [
+  { key: "alternativeDecision", sourceKey: "committee", label: "대안의결" },
+  { key: "alternativeProposal", sourceKey: "proposed", label: "대안제안" },
+  { key: "law", sourceKey: "law", label: "법사위" },
+  { key: "plenary", sourceKey: "plenary", label: "본회의" },
+  { key: "government", sourceKey: "government", label: "정부이송" },
+  { key: "promulgated", sourceKey: "promulgated", label: "공포" }
 ];
 const fallbackPrice = [{ date: "2026-08-19", symbol: "KAU25", close: 29500, change: 1150, changeRate: 4.06, open: 29000, high: 29500, low: 29000, volume: 396644, tradeValue: 11624058550 }];
 const number = new Intl.NumberFormat("ko-KR");
@@ -392,6 +400,7 @@ function normalizeBills(items) {
       title: String(item.title || "국회 의안"),
       proposedDate: String(item.proposedDate || "").slice(0, 10),
       lastActionDate: String(item.lastActionDate || item.proposedDate || "").slice(0, 10),
+      proposerKind: String(item.proposerKind || ""),
       proposer: String(item.proposer || "제안자 확인 중"),
       committee: String(item.committee || "소관위 미정"),
       status: String(item.status || "접수"),
@@ -400,6 +409,9 @@ function normalizeBills(items) {
       terminationReason: String(item.terminationReason || ""),
       terminationDate: String(item.terminationDate || "").slice(0, 10),
       terminationStage: String(item.terminationStage || ""),
+      timelineType: String(item.timelineType || ""),
+      alternativeAdoptedDate: String(item.alternativeAdoptedDate || "").slice(0, 10),
+      chronologyAdjusted: item.chronologyAdjusted === true,
       rawStage: String(item.rawStage || ""),
       rawResult: String(item.rawResult || ""),
       committeeResult: String(item.committeeResult || ""),
@@ -439,6 +451,7 @@ function billStageIndex(bill) {
     const explicitStage = { proposed: 0, committee: 1, law: 2, plenary: 3, government: 4, promulgated: 5 }[String(bill.terminationStage || "")];
     if (Number.isInteger(explicitStage)) return explicitStage;
     const terminalPattern = /수정안\s*반영|대안\s*반영|철회|부결|임기\s*만료|심사\s*미료|폐기/;
+    if (billIsReflectedClosure(bill) && terminalPattern.test(bill.committeeResult || "")) return 1;
     if (terminalPattern.test(bill.plenaryResult || "")) return 3;
     if (terminalPattern.test(bill.lawResult || "")) return 2;
     if (terminalPattern.test(bill.committeeResult || "")) return 1;
@@ -465,6 +478,76 @@ function billStageDate(bill, stageKey) {
     .filter((value) => /^\d{4}-\d{2}-\d{2}$/.test(String(value || "")))
     .sort()
     .at(-1) || "";
+}
+
+function billAlternativeDecisionDate(bill) {
+  const proposedDate = billStageDate(bill, "proposed");
+  const isEarlierCommitteeDate = (value) => /^\d{4}-\d{2}-\d{2}$/.test(String(value || "")) && (!proposedDate || value < proposedDate);
+  if (isEarlierCommitteeDate(bill.alternativeAdoptedDate)) return bill.alternativeAdoptedDate;
+  const lifecycle = bill.lifecycle || {};
+  if (isEarlierCommitteeDate(lifecycle.committeeProcessed)) return lifecycle.committeeProcessed;
+  return [lifecycle.committeeReceived, lifecycle.committeePresented, lifecycle.committeeCommented]
+    .filter(isEarlierCommitteeDate)
+    .sort()
+    .at(-1) || "";
+}
+
+function billUsesCommitteeAlternativeTimeline(bill) {
+  const titleMarksAlternative = /[（(]\s*대안\s*[)）]\s*$/.test(String(bill.title || ""));
+  const committeeApprovedAlternative = /대안\s*가결/.test(String(bill.committeeResult || ""));
+  const committeeSponsor = /위원장/.test(`${bill.proposerKind || ""} ${bill.proposer || ""}`);
+  const proposedDate = billStageDate(bill, "proposed");
+  const alternativeDecisionDate = billAlternativeDecisionDate(bill);
+  const explicitAlternative = bill.timelineType === "committeeAlternative";
+  const verifiedAlternative = explicitAlternative || titleMarksAlternative && (committeeApprovedAlternative || committeeSponsor);
+  return verifiedAlternative && Boolean(alternativeDecisionDate && (proposedDate ? alternativeDecisionDate < proposedDate : explicitAlternative));
+}
+
+function nonDecreasingBillDates(values) {
+  const validIndices = values
+    .map((value, index) => /^\d{4}-\d{2}-\d{2}$/.test(value) ? index : -1)
+    .filter((index) => index >= 0);
+  if (!validIndices.length) return values.map(() => "");
+  const lengths = validIndices.map(() => 1);
+  const previous = validIndices.map(() => -1);
+  validIndices.forEach((currentIndex, currentPosition) => {
+    for (let earlierPosition = 0; earlierPosition < currentPosition; earlierPosition += 1) {
+      const earlierIndex = validIndices[earlierPosition];
+      if (values[earlierIndex] <= values[currentIndex] && lengths[earlierPosition] + 1 > lengths[currentPosition]) {
+        lengths[currentPosition] = lengths[earlierPosition] + 1;
+        previous[currentPosition] = earlierPosition;
+      }
+    }
+  });
+  let bestPosition = 0;
+  lengths.forEach((length, position) => {
+    if (length > lengths[bestPosition]) bestPosition = position;
+  });
+  const retained = new Set();
+  for (let position = bestPosition; position >= 0; position = previous[position]) {
+    retained.add(validIndices[position]);
+    if (previous[position] < 0) break;
+  }
+  return values.map((value, index) => retained.has(index) ? value : "");
+}
+
+function billTimeline(bill) {
+  const committeeAlternative = billUsesCommitteeAlternativeTimeline(bill);
+  const stages = committeeAlternative
+    ? COMMITTEE_ALTERNATIVE_STAGES
+    : BILL_STAGES.map((stage) => ({ key: stage.key, sourceKey: stage.key, label: stage.label }));
+  const rawDates = stages.map((stage) => {
+    const sourceDate = stage.key === "alternativeDecision"
+      ? billAlternativeDecisionDate(bill)
+      : billStageDate(bill, stage.sourceKey);
+    return sourceDate;
+  });
+  const dates = nonDecreasingBillDates(rawDates);
+  const standardIndex = billStageIndex(bill);
+  const currentIndex = committeeAlternative && standardIndex < 2
+    ? billStageDate(bill, "proposed") ? 1 : 0
+    : standardIndex;
+  return { committeeAlternative, stages, dates, currentIndex };
 }
 
 function billTerminationReason(bill) {
@@ -572,17 +655,18 @@ function billMetadataLabel(bill) {
 }
 
 function createBillProgress(bill) {
-  const currentIndex = billStageIndex(bill);
+  const timeline = billTimeline(bill);
+  const currentIndex = timeline.currentIndex;
   const terminalReason = billTerminationReason(bill);
   const terminal = billIsTerminal(bill);
   const reflectedClosure = billIsReflectedClosure(bill);
   const wrapper = create("div", "bill-progress-wrap");
   const progress = create("div", "bill-progress");
   progress.setAttribute("role", "list");
-  progress.setAttribute("aria-label", `입법 진행단계: ${billStatusLabel(bill)}`);
-  BILL_STAGES.forEach((stage, index) => {
+  progress.setAttribute("aria-label", `${timeline.committeeAlternative ? "위원회 대안 처리단계" : "입법 진행단계"}: ${billStatusLabel(bill)}`);
+  timeline.stages.forEach((stage, index) => {
     let stageState = index < currentIndex ? "done" : index === currentIndex ? terminal ? reflectedClosure ? "terminal-reflected" : "terminal" : bill.status === "공포" ? "complete" : "current" : "upcoming";
-    const stageDate = index <= currentIndex ? billStageDate(bill, stage.key) : "";
+    const stageDate = index <= currentIndex ? timeline.dates[index] : "";
     const step = create("span", `bill-stage ${stageState}`);
     step.setAttribute("role", "listitem");
     step.setAttribute("aria-label", `${stage.label}: ${stageDate ? fullBillDate(stageDate) : "날짜 없음"}`);
@@ -601,7 +685,8 @@ function createBillProgress(bill) {
   });
   wrapper.append(progress);
   if (terminal) {
-    const terminationDate = /^\d{4}-\d{2}-\d{2}$/.test(bill.terminationDate || "") ? bill.terminationDate : billStageDate(bill, BILL_STAGES[currentIndex].key) || billLatestEventDate(bill);
+    const standardCurrentIndex = billStageIndex(bill);
+    const terminationDate = /^\d{4}-\d{2}-\d{2}$/.test(bill.terminationDate || "") ? bill.terminationDate : billStageDate(bill, BILL_STAGES[standardCurrentIndex].key) || billLatestEventDate(bill);
     const notice = create("div", `bill-terminal-state${reflectedClosure ? " reflected" : ""}`);
     notice.setAttribute("role", "status");
     notice.append(create("span", "", reflectedClosure ? "원안 종료" : "법안 종료"));
