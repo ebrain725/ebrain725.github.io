@@ -11,8 +11,9 @@
 // NEWS_REGION_UI_VERSION = "2026-08-31-v1-overseas-topic-badge"
 // LEGISLATION_RADAR_VERSION = "2026-08-31-v1-allbillv2"
 // INSTITUTION_SCHEDULE_DATE_UI_VERSION = "2026-08-31-v2-published-and-planned-date"
+// ASSEMBLY_SEMINAR_RADAR_VERSION = "2026-08-31-v1-official-schedule"
 
-const state = { prices: [], auctions: [], auctionPeriod: "ALL", auctionPage: 1, auctionLastSync: "", policies: [], policyLastSync: "", institutionSchedules: [], bills: [], billLastSync: "", billWarning: "", policyInsight: null, briefings: [], briefingDate: "", period: "3M", category: "기후부 보도자료", policyPage: 1, symbol: "" };
+const state = { prices: [], auctions: [], auctionPeriod: "ALL", auctionPage: 1, auctionLastSync: "", policies: [], policyLastSync: "", institutionSchedules: [], bills: [], billLastSync: "", billWarning: "", assemblySeminars: [], seminarLastSync: "", seminarWarning: "", policyInsight: null, briefings: [], briefingDate: "", period: "3M", category: "기후부 보도자료", policyPage: 1, symbol: "" };
 const POLICIES_PER_PAGE = 5;
 const AUCTIONS_PER_PAGE = 3;
 const CONTINUOUS_SYMBOL = "KAU25_KAU26";
@@ -386,6 +387,55 @@ function billDisplaySummary(bill) {
   return `${metadata}${summary ? ` — ${summary}` : ""}` || "국회 의안 원문에서 세부 내용을 확인하세요.";
 }
 
+function normalizeAssemblySeminars(items) {
+  const today = new Intl.DateTimeFormat("en-CA", { timeZone: "Asia/Seoul", year: "numeric", month: "2-digit", day: "2-digit" }).format(new Date());
+  const seen = new Set();
+  return (Array.isArray(items) ? items : []).map((item) => {
+    const hostValue = Array.isArray(item.organizers) ? item.organizers.join(", ") : (item.host || item.organizer || item.organizers || "");
+    return {
+      ...item,
+      id: String(item.sourceEventId || item.eventId || item.id || item.sourceId || ""),
+      category: "세미나일정",
+      title: String(item.title || "국회의원 정책세미나"),
+      publishedAt: String(item.publishedAt || item.firstSeenAt || item.firstSeen || item.collectedAt || "").slice(0, 10),
+      startDate: String(item.startDate || item.eventDate || item.date || "").slice(0, 10),
+      endDate: String(item.endDate || item.startDate || item.eventDate || item.date || "").slice(0, 10),
+      eventType: String(item.eventType || item.type || "세미나"),
+      host: String(hostValue),
+      venue: String(item.venue || item.location || ""),
+      status: String(item.status || "예정"),
+      relevance: String(item.relevance || item.relevanceLevel || ""),
+      summary: String(item.summary || item.description || ""),
+      url: String(item.url || item.officialUrl || item.sourceUrl || "https://ampos.nanet.go.kr/seminarList.do")
+    };
+  }).filter((item) => {
+    if (!item.title || !/^\d{4}-\d{2}-\d{2}$/.test(item.startDate)) return false;
+    const key = item.id || `${normalizedNewsTitle(item.title)}|${normalizedNewsTitle(item.host)}|${item.startDate}`;
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  }).sort((left, right) => {
+    const leftPast = (left.endDate || left.startDate) < today ? 1 : 0;
+    const rightPast = (right.endDate || right.startDate) < today ? 1 : 0;
+    if (leftPast !== rightPast) return leftPast - rightPast;
+    return leftPast ? right.startDate.localeCompare(left.startDate) : left.startDate.localeCompare(right.startDate);
+  });
+}
+
+function seminarPlanLabel(seminar) {
+  const match = String(seminar.startDate || "").match(/^(\d{4})-(\d{2})-(\d{2})$/);
+  return match ? `(${match[1]}.${match[2]}.${match[3]} 예정)` : "(일정 확인 예정)";
+}
+
+function seminarDisplaySummary(seminar) {
+  const details = [seminar.host, seminar.venue, seminar.relevance ? `관련성 ${seminar.relevance}` : ""];
+  if (/취소|cancel/i.test(seminar.status)) details.push("취소");
+  else if (/변경|연기|postpon/i.test(seminar.status)) details.push("일정 변경");
+  const summary = stripScheduleTime(seminar.summary);
+  const repeatsTitle = summary && normalizedNewsTitle(summary) === normalizedNewsTitle(seminar.title);
+  return `${details.filter(Boolean).join(" · ")}${summary && !repeatsTitle ? ` — ${summary}` : ""}` || "국회도서관 공식 일정에서 세부 내용을 확인하세요.";
+}
+
 function marketPulseMetrics(selected, latest) {
   const ordered = [...selected].sort((a, b) => a.date.localeCompare(b.date));
   const windowRows = ordered.slice(-20);
@@ -726,28 +776,30 @@ function renderPolicyPagination(list, totalPages) {
 
 function renderPolicies() {
   const scheduleMode = state.category === "기관일정";
-  const billMode = state.category === "입법동향";
-  const items = scheduleMode ? state.institutionSchedules : billMode ? state.bills : state.policies.filter((item) => policyGroup(item) === state.category);
+  const billMode = state.category === "발의법률안";
+  const seminarMode = state.category === "국회의원 세미나 일정";
+  const items = scheduleMode ? state.institutionSchedules : billMode ? state.bills : seminarMode ? state.assemblySeminars : state.policies.filter((item) => policyGroup(item) === state.category);
   const list = byId("policyList"); list.replaceChildren();
   const insight = state.policyInsight?.summary ? state.policyInsight : derivePolicyInsight(state.policies);
   byId("latestPolicy").textContent = insight.summary;
-  if (!items.length) { state.policyPage = 1; list.append(create("div", "loading-state", scheduleMode ? "현재 확인된 기관 일정이 없습니다." : billMode ? (state.billWarning || "현재 확인된 배출권 관련 국회법안이 없습니다.") : `${state.category}에 해당하는 자료가 없습니다.`)); renderChart(filterPrices(state.period)); return; }
+  if (!items.length) { state.policyPage = 1; list.append(create("div", "loading-state", scheduleMode ? "현재 확인된 기관 일정이 없습니다." : billMode ? (state.billWarning || "현재 확인된 배출권 관련 국회법안이 없습니다.") : seminarMode ? (state.seminarWarning || "현재 확인된 배출권 관련 국회의원 세미나 일정이 없습니다.") : `${state.category}에 해당하는 자료가 없습니다.`)); renderChart(filterPrices(state.period)); return; }
   const totalPages = Math.ceil(items.length / POLICIES_PER_PAGE);
   state.policyPage = Math.max(1, Math.min(state.policyPage, totalPages));
   const start = (state.policyPage - 1) * POLICIES_PER_PAGE;
   items.slice(start, start + POLICIES_PER_PAGE).forEach((policy) => {
-    const row = create("article", `policy-row${scheduleMode ? " schedule-row" : ""}${billMode ? " bill-row" : ""}`);
-    const primaryDate = scheduleMode ? (policy.publishedAt || policy.startDate) : billMode ? (policy.lastActionDate || policy.proposedDate) : policy.publishedAt;
-    const date = create("time", scheduleMode ? "schedule-date-stack" : "", shortDate(primaryDate));
+    const row = create("article", `policy-row${scheduleMode ? " schedule-row" : ""}${billMode ? " bill-row" : ""}${seminarMode ? " assembly-seminar-row" : ""}`);
+    const primaryDate = scheduleMode ? (policy.publishedAt || policy.startDate) : billMode ? (policy.lastActionDate || policy.proposedDate) : seminarMode ? (policy.publishedAt || policy.startDate) : policy.publishedAt;
+    const date = create("time", scheduleMode || seminarMode ? "schedule-date-stack" : "", shortDate(primaryDate));
     if (scheduleMode) date.append(create("small", "", schedulePlanLabel(policy)));
-    row.append(date, create("span", "category-badge", scheduleMode ? policy.eventType : billMode ? policy.status : policyBadge(policy)));
+    if (seminarMode) date.append(create("small", "", seminarPlanLabel(policy)));
+    row.append(date, create("span", "category-badge", scheduleMode || seminarMode ? policy.eventType : billMode ? policy.status : policyBadge(policy)));
     const body = create("div", "policy-body");
-    const displayTitle = scheduleMode ? (stripScheduleTime(policy.title) || policy.title) : policy.title;
+    const displayTitle = scheduleMode || seminarMode ? (stripScheduleTime(policy.title) || policy.title) : policy.title;
     const title = create("h3", "", displayTitle); title.title = displayTitle;
-    const summaryText = scheduleMode ? scheduleDisplaySummary(policy) : billMode ? billDisplaySummary(policy) : newsDisplaySummary(policy);
+    const summaryText = scheduleMode ? scheduleDisplaySummary(policy) : billMode ? billDisplaySummary(policy) : seminarMode ? seminarDisplaySummary(policy) : newsDisplaySummary(policy);
     const summary = create("p", "", summaryText); summary.title = summaryText;
     body.append(title, summary);
-    const link = create("a", "source-link", "∞"); link.href = policy.url || "#"; link.target = "_blank"; link.rel = "noreferrer"; link.ariaLabel = `${displayTitle} ${billMode ? "국회 의안" : ""} 원문 링크`; link.title = billMode ? "국회 의안 원문" : "원문 링크";
+    const link = create("a", "source-link", "∞"); link.href = policy.url || "#"; link.target = "_blank"; link.rel = "noreferrer"; link.ariaLabel = `${displayTitle} ${billMode ? "국회 의안" : seminarMode ? "국회 세미나" : ""} 원문 링크`; link.title = billMode ? "국회 의안 원문" : seminarMode ? "국회 세미나 공식 일정" : "원문 링크";
     row.append(body, link); list.append(row);
   });
   renderPolicyPagination(list, totalPages);
@@ -755,15 +807,18 @@ function renderPolicies() {
 }
 
 function renderPolicyFilters() {
-  const categories = ["기후부 보도자료", "기후부 공지사항", "뉴스", "기관일정", "입법동향"];
+  const categories = ["기후부 보도자료", "기후부 공지사항", "뉴스", "기관일정", "발의법률안", "국회의원 세미나 일정"];
   const box = byId("policyFilters"); box.replaceChildren();
   categories.forEach((category) => { const button = create("button", category === state.category ? "active" : "", category); button.addEventListener("click", () => { state.category = category; state.policyPage = 1; renderPolicyFilters(); renderPolicies(); }); box.append(button); });
-  const billMode = state.category === "입법동향";
+  const billMode = state.category === "발의법률안";
+  const seminarMode = state.category === "국회의원 세미나 일정";
   byId("policyDescription").textContent = billMode
-    ? "국회 전체 의안에서 배출권거래제 관련 법안과 처리단계 변화를 추적합니다."
-    : "기후부 공식자료와 시장 뉴스를 자동 수집하고, 본문에서 확인된 기관 일정을 중복 없이 정리합니다.";
-  const sync = billMode ? state.billLastSync : state.policyLastSync;
-  byId("policySync").textContent = sync ? new Date(sync).toLocaleString("ko-KR", { timeZone: "Asia/Seoul", month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit" }) : billMode ? "국회 API 연결 필요" : "수동 실행 필요";
+    ? "국회의원이 발의한 배출권 관련 법률안과 처리단계 변화를 추적합니다."
+    : seminarMode
+      ? "국회의원·의원실이 주최한 배출권 관련 세미나·토론회 일정을 국회도서관 공식자료에서 수집합니다."
+      : "기후부 공식자료와 시장 뉴스를 자동 수집하고, 본문에서 확인된 기관 일정을 중복 없이 정리합니다.";
+  const sync = billMode ? state.billLastSync : seminarMode ? state.seminarLastSync : state.policyLastSync;
+  byId("policySync").textContent = sync ? new Date(sync).toLocaleString("ko-KR", { timeZone: "Asia/Seoul", month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit" }) : billMode ? "국회 API 연결 필요" : seminarMode ? "국회 공식일정 연결 대기" : "수동 실행 필요";
 }
 
 function renderSymbolPicker() {
@@ -834,7 +889,7 @@ function renderBriefings() {
 }
 
 async function init() {
-  const [priceResult, auctionResult, policyResult, briefingResult, billResult] = await Promise.allSettled([loadText("data/prices.csv"), loadJson("data/auctions.json"), loadJson("data/policies.json"), loadJson("data/briefing.json"), loadJson("data/bills.json")]);
+  const [priceResult, auctionResult, policyResult, briefingResult, billResult, seminarResult] = await Promise.allSettled([loadText("data/prices.csv"), loadJson("data/auctions.json"), loadJson("data/policies.json"), loadJson("data/briefing.json"), loadJson("data/bills.json"), loadJson("data/assembly_seminars.json")]);
   state.prices = priceResult.status === "fulfilled" ? parsePrices(priceResult.value) : fallbackPrice;
   if (!state.prices.length) state.prices = fallbackPrice;
   const symbols = new Set(state.prices.map((row) => row.symbol));
@@ -852,10 +907,14 @@ async function init() {
   state.policyLastSync = policyData.lastSync || "";
   state.institutionSchedules = normalizeInstitutionSchedules(policyData.institutionSchedules || []);
   state.policyInsight = policyData.aiInsight || null;
-  const billData = billResult.status === "fulfilled" ? billResult.value : { items: [], warning: "입법동향 데이터를 불러오지 못했습니다." };
+  const billData = billResult.status === "fulfilled" ? billResult.value : { items: [], warning: "발의법률안 데이터를 불러오지 못했습니다." };
   state.bills = normalizeBills(billData.items || []);
   state.billLastSync = billData.lastSync || "";
   state.billWarning = billData.warning || "";
+  const seminarData = seminarResult.status === "fulfilled" ? seminarResult.value : { items: [], warning: "국회의원 세미나 일정 데이터를 불러오지 못했습니다." };
+  state.assemblySeminars = normalizeAssemblySeminars(seminarData.items || []);
+  state.seminarLastSync = seminarData.lastSync || "";
+  state.seminarWarning = seminarData.warning || "";
   const briefingData = briefingResult.status === "fulfilled" ? briefingResult.value : { items: [] };
   state.briefings = (briefingData.items || []).map((item) => ({ ...item, date: item.date || item.briefingDate || "" })).sort((a, b) => b.date.localeCompare(a.date));
   state.briefingDate = state.briefings[0]?.date || "";
