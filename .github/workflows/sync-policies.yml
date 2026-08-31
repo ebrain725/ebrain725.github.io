@@ -1,58 +1,220 @@
 name: Sync Ministry Policies
 
+# cron-job.org calls this workflow through GitHub's workflow_dispatch API.
+# A GitHub Actions schedule is intentionally not configured here.
 on:
-  schedule:
-    # 한국시간 08:17, 12:17, 18:17 (GitHub cron은 UTC 기준)
-    - cron: "17 23 * * *"
-    - cron: "17 3 * * *"
-    - cron: "17 9 * * *"
   workflow_dispatch:
+    inputs:
+      trigger_type:
+        description: "실행 주체(manual 또는 cron-job.org)"
+        required: false
+        default: "manual"
+        type: string
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
 
 concurrency:
-  group: github-pages
+  group: sync-ministry-policies-${{ github.repository }}
   cancel-in-progress: false
 
+env:
+  TZ: Asia/Seoul
+  PYTHONUNBUFFERED: "1"
+  PYTHONDONTWRITEBYTECODE: "1"
+  OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+  OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-5-mini' }}
+  NAVER_API_HUB_CLIENT_ID: ${{ secrets.NAVER_API_HUB_CLIENT_ID }}
+  NAVER_API_HUB_CLIENT_SECRET: ${{ secrets.NAVER_API_HUB_CLIENT_SECRET }}
+
 jobs:
-  update-and-deploy:
-    env:
-      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-      OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-5-mini' }}
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  sync:
+    name: Collect, validate and publish policy data
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 20
+
     steps:
-      - name: 저장소 불러오기
+      - name: Check out main branch
         uses: actions/checkout@v4
-      - name: Python 준비
+        with:
+          ref: main
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: 기후부 RSS 수집 및 AI 정책 인사이트 생성
-        run: python scripts/sync_policies.py
-      - name: 변경된 정책자료 저장
+
+      - name: Check files and secret configuration
+        shell: bash
         run: |
+          set -euo pipefail
+
+          test -f scripts/sync_policies.py || {
+            echo "::error::scripts/sync_policies.py 파일을 찾지 못했습니다."
+            exit 1
+          }
+          test -f config/settings.json || {
+            echo "::error::config/settings.json 파일을 찾지 못했습니다."
+            exit 1
+          }
+
+          missing=0
+          if [[ -z "${NAVER_API_HUB_CLIENT_ID:-}" ]]; then
+            echo "::error::NAVER_API_HUB_CLIENT_ID Repository Secret이 없습니다."
+            missing=1
+          fi
+          if [[ -z "${NAVER_API_HUB_CLIENT_SECRET:-}" ]]; then
+            echo "::error::NAVER_API_HUB_CLIENT_SECRET Repository Secret이 없습니다."
+            missing=1
+          fi
+          if [[ -z "${OPENAI_API_KEY:-}" ]]; then
+            echo "::warning::OPENAI_API_KEY가 없어 정책 인사이트는 수집기의 기본 문구를 사용합니다."
+          fi
+          if [[ "$missing" -ne 0 ]]; then
+            exit 1
+          fi
+
+      - name: Check collector syntax
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from pathlib import Path
+
+          path = Path("scripts/sync_policies.py")
+          compile(path.read_text(encoding="utf-8"), str(path), "exec")
+          print("sync_policies.py 문법 검증 완료")
+          PY
+
+      - name: Collect ministry policies and news
+        shell: bash
+        run: |
+          set -euo pipefail
+          python scripts/sync_policies.py
+
+      - name: Validate generated policies.json
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+
+          output = Path("public/data/policies.json")
+          if not output.is_file():
+              raise SystemExit("public/data/policies.json이 생성되지 않았습니다.")
+          if output.stat().st_size > 5_000_000:
+              raise SystemExit("policies.json이 5MB를 초과해 비정상으로 판단했습니다.")
+
+          raw = output.read_text(encoding="utf-8")
+          payload = json.loads(raw)
+          if not isinstance(payload, dict):
+              raise SystemExit("policies.json 최상위 값은 객체여야 합니다.")
+          if not isinstance(payload.get("lastSync"), str) or not payload["lastSync"].strip():
+              raise SystemExit("policies.json에 lastSync가 없습니다.")
+          if not isinstance(payload.get("items"), list):
+              raise SystemExit("policies.json의 items가 배열이 아닙니다.")
+          if not payload["items"]:
+              raise SystemExit("수집 결과가 0건이므로 기존 데이터를 덮어쓰지 않습니다.")
+
+          required = {"title", "publishedAt", "source", "sourceType"}
+          for index, item in enumerate(payload["items"]):
+              if not isinstance(item, dict):
+                  raise SystemExit(f"items[{index}]가 객체가 아닙니다.")
+              missing = sorted(key for key in required if not str(item.get(key, "")).strip())
+              if missing:
+                  raise SystemExit(f"items[{index}] 필수값 누락: {', '.join(missing)}")
+              if item.get("sourceType") == "news" and not str(item.get("url", "")).strip():
+                  raise SystemExit(f"items[{index}] 뉴스 URL이 없습니다.")
+
+          for env_name in (
+              "OPENAI_API_KEY",
+              "NAVER_API_HUB_CLIENT_ID",
+              "NAVER_API_HUB_CLIENT_SECRET",
+          ):
+              secret = os.getenv(env_name, "")
+              if secret and secret in raw:
+                  raise SystemExit(f"보안값이 policies.json에 포함되었습니다: {env_name}")
+
+          news_count = sum(item.get("sourceType") == "news" for item in payload["items"])
+          print(f"검증 완료: 전체 {len(payload['items'])}건, 뉴스 {news_count}건")
+          PY
+
+      - name: Confirm only policies.json changed
+        id: changes
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          target="public/data/policies.json"
+          changed_paths="$({
+            git diff --name-only
+            git ls-files --others --exclude-standard
+          } | sort -u)"
+
+          unexpected=0
+          while IFS= read -r path; do
+            [[ -z "$path" ]] && continue
+            if [[ "$path" != "$target" ]]; then
+              echo "::error::수집기가 허용되지 않은 파일을 변경했습니다: $path"
+              unexpected=1
+            fi
+          done <<< "$changed_paths"
+          if [[ "$unexpected" -ne 0 ]]; then
+            exit 1
+          fi
+
+          if [[ -n "$(git status --porcelain -- "$target")" ]]; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "policies.json 변경사항을 확인했습니다."
+          else
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "저장할 변경사항이 없습니다."
+          fi
+
+      - name: Commit policies.json
+        if: steps.changes.outputs.changed == 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          target="public/data/policies.json"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add public/data/policies.json
-          if git diff --cached --quiet; then
-            echo "변경된 정책자료가 없습니다."
-          else
-            git commit -m "data: update ministry policies"
-            git push
+          git add -- "$target"
+
+          staged="$(git diff --cached --name-only)"
+          if [[ "$staged" != "$target" ]]; then
+            echo "::error::커밋 대상이 policies.json 한 파일이 아닙니다."
+            printf '%s\n' "$staged"
+            exit 1
           fi
-      - name: Pages 설정
-        uses: actions/configure-pages@v5
-      - name: 공개 파일 묶기
-        uses: actions/upload-pages-artifact@v4
-        with:
-          path: ./public
-      - name: GitHub Pages 배포
-        id: deployment
-        uses: actions/deploy-pages@v4
+
+          git commit -m "chore(data): sync ministry policies and news"
+
+      - name: Rebase safely and push to main
+        if: steps.changes.outputs.changed == 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          for attempt in 1 2 3; do
+            echo "main 반영 시도 ${attempt}/3"
+            git fetch origin main
+            if ! git rebase origin/main; then
+              git rebase --abort || true
+              echo "::error::원격 main과 policies.json 변경이 충돌했습니다. 강제 푸시하지 않습니다."
+              exit 1
+            fi
+            if git push origin HEAD:main; then
+              echo "policies.json을 main에 반영했습니다."
+              exit 0
+            fi
+          done
+
+          echo "::error::원격 main이 계속 변경되어 3회 시도 후 중단했습니다. 다음 실행에서 재시도합니다."
+          exit 1
