@@ -7,18 +7,29 @@
 // NEWS_DEDUPE_VERSION = "2026-08-28-v2-story-clustering"
 // PRICE_SCALE_VERSION = "2026-08-28-v1-symbol-period-autoscale"
 // POLICY_INSIGHT_META_VERSION = "2026-08-28-v1-hidden"
-// INSTITUTION_SCHEDULE_UI_VERSION = "2026-08-31-v1-deduped-body-events"
+// INSTITUTION_SCHEDULE_UI_VERSION = "2026-08-31-v2-event-relevance-and-content-dedupe"
 // NEWS_REGION_UI_VERSION = "2026-08-31-v1-overseas-topic-badge"
 // LEGISLATION_RADAR_VERSION = "2026-08-31-v1-allbillv2"
 // INSTITUTION_SCHEDULE_DATE_UI_VERSION = "2026-08-31-v2-published-and-planned-date"
 // ASSEMBLY_SEMINAR_RADAR_VERSION = "2026-08-31-v1-official-schedule"
+// BILL_STAGE_TRACKER_VERSION = "2026-08-31-v1-progress-and-status-filters"
+// ASSEMBLY_SEMINAR_DATE_VERSION = "2026-08-31-v2-from-2026-verified-event-date"
 
-const state = { prices: [], auctions: [], auctionPeriod: "ALL", auctionPage: 1, auctionLastSync: "", policies: [], policyLastSync: "", institutionSchedules: [], bills: [], billLastSync: "", billWarning: "", assemblySeminars: [], seminarLastSync: "", seminarWarning: "", policyInsight: null, briefings: [], briefingDate: "", period: "3M", category: "기후부 보도자료", policyPage: 1, symbol: "" };
+const state = { prices: [], auctions: [], auctionPeriod: "ALL", auctionPage: 1, auctionLastSync: "", policies: [], policyLastSync: "", institutionSchedules: [], bills: [], billLastSync: "", billWarning: "", billView: "ALL", assemblySeminars: [], seminarLastSync: "", seminarWarning: "", policyInsight: null, briefings: [], briefingDate: "", period: "3M", category: "기후부 보도자료", policyPage: 1, symbol: "" };
 const POLICIES_PER_PAGE = 5;
 const AUCTIONS_PER_PAGE = 3;
 const CONTINUOUS_SYMBOL = "KAU25_KAU26";
 const CONTINUOUS_LABEL = "KAU25 → KAU26";
 const KAU26_SWITCH_NOT_BEFORE = "2026-08-31";
+const BILL_STAGES = [
+  { key: "proposed", label: "발의" },
+  { key: "committee", label: "소관위" },
+  { key: "law", label: "법사위" },
+  { key: "plenary", label: "본회의" },
+  { key: "government", label: "정부이송" },
+  { key: "promulgated", label: "공포" }
+];
+const BILL_TERMINAL_STATUSES = new Set(["대안반영", "철회", "부결", "폐기"]);
 const fallbackPrice = [{ date: "2026-08-19", symbol: "KAU25", close: 29500, change: 1150, changeRate: 4.06, open: 29000, high: 29500, low: 29000, volume: 396644, tradeValue: 11624058550 }];
 const number = new Intl.NumberFormat("ko-KR");
 const byId = (id) => document.getElementById(id);
@@ -288,13 +299,22 @@ function policyBadge(policy) {
   return policyGroup(policy) === "뉴스" && policy.region === "해외" ? `해외 · ${topic}` : topic;
 }
 
+function institutionEventTitle(item) {
+  const evidence = String(item.evidence || "");
+  const quoted = [...evidence.matchAll(/[‘“](.{4,180}?)[’”]/g)].map((match) => match[1]);
+  const plainQuoted = quoted.length ? quoted : [...evidence.matchAll(/['"]([^'"]{4,180})['"]/g)].map((match) => match[1]);
+  return String(plainQuoted.at(-1) || item.title || "기관 일정").trim();
+}
+
 function normalizeInstitutionSchedules(items) {
   const today = new Intl.DateTimeFormat("en-CA", { timeZone: "Asia/Seoul", year: "numeric", month: "2-digit", day: "2-digit" }).format(new Date());
-  const seen = new Set();
-  return (Array.isArray(items) ? items : []).map((item) => ({
+  const marketContext = /배출권|배출허용총량|유상\s*할당|무상\s*할당|유상\s*경매|탄소\s*(?:시장|가격|배출권|국경)|상쇄|외부사업|시장\s*안정|할당\s*계획|K\s*[-_]?\s*ETS|K(?:AU|CU|OC)\s*\d{0,2}|온실가스|탄소중립|기후(?:위기|대응|정책|외교)?|국제\s*감축|탄소국경(?:조정)?|CBAM|에너지|전력망/i;
+  const nonEventContext = /청원|동의\s*(?:진행|필요|마감)|5\s*만\s*명|국민동의|서명\s*운동/i;
+  const normalized = (Array.isArray(items) ? items : []).map((item) => ({
     ...item,
     id: String(item.id || ""),
-    title: String(item.title || "기관 일정"),
+    sourceTitle: String(item.sourceTitle || item.title || ""),
+    title: institutionEventTitle(item),
     eventType: String(item.eventType || "기관일정"),
     publishedAt: String(item.publishedAt || ""),
     startDate: String(item.startDate || ""),
@@ -305,12 +325,24 @@ function normalizeInstitutionSchedules(items) {
     evidence: String(item.evidence || ""),
     duplicateCount: Math.max(1, Number(item.duplicateCount) || 1)
   })).filter((item) => {
-    if (!/^\d{4}-\d{2}-\d{2}$/.test(item.startDate)) return false;
-    const key = item.id || `${item.organizer}|${item.eventType}|${item.startDate}|${item.startTime}|${normalizedNewsTitle(item.title)}`;
-    if (seen.has(key)) return false;
-    seen.add(key);
-    return true;
-  }).sort((left, right) => {
+    const context = item.evidence || item.title;
+    return Boolean(verifiedIsoDate(item.startDate) && marketContext.test(context) && !nonEventContext.test(context));
+  });
+  const representatives = [];
+  const evidenceKeys = new Map();
+  normalized.forEach((item) => {
+    const normalizedEvidence = normalizedNewsTitle(item.evidence).slice(0, 1200);
+    const key = normalizedEvidence.length >= 40 ? `evidence:${normalizedEvidence}` : item.id ? `id:${item.id}` : `event:${item.organizer}|${item.eventType}|${item.startDate}|${item.startTime}|${normalizedNewsTitle(item.title)}`;
+    const existingIndex = evidenceKeys.get(key);
+    if (existingIndex === undefined) {
+      evidenceKeys.set(key, representatives.length);
+      representatives.push(item);
+      return;
+    }
+    const existing = representatives[existingIndex];
+    existing.duplicateCount = Math.max(existing.duplicateCount, item.duplicateCount, 2);
+  });
+  return representatives.sort((left, right) => {
     const leftPast = (left.endDate || left.startDate) < today ? 1 : 0;
     const rightPast = (right.endDate || right.startDate) < today ? 1 : 0;
     if (leftPast !== rightPast) return leftPast - rightPast;
@@ -351,22 +383,44 @@ function scheduleDisplaySummary(schedule) {
 
 function normalizeBills(items) {
   const seen = new Set();
-  return (Array.isArray(items) ? items : []).map((item) => ({
-    ...item,
-    billId: String(item.billId || ""),
-    billNo: String(item.billNo || ""),
-    title: String(item.title || "국회 의안"),
-    proposedDate: String(item.proposedDate || ""),
-    lastActionDate: String(item.lastActionDate || item.proposedDate || ""),
-    proposer: String(item.proposer || "제안자 확인 중"),
-    committee: String(item.committee || "소관위 미정"),
-    status: String(item.status || "접수"),
-    summary: String(item.summary || ""),
-    primaryCategory: String(item.primaryCategory || "제도·거버넌스"),
-    relevanceLevel: String(item.relevanceLevel || "직접"),
-    relevanceScore: Number(item.relevanceScore || 0),
-    url: String(item.url || "")
-  })).filter((item) => {
+  return (Array.isArray(items) ? items : []).map((item) => {
+    const sourceLifecycle = item.lifecycle && typeof item.lifecycle === "object" ? item.lifecycle : {};
+    const lifecycleDate = (key, fallback = "") => String(sourceLifecycle[key] || fallback || "").slice(0, 10);
+    return {
+      ...item,
+      billId: String(item.billId || ""),
+      billNo: String(item.billNo || ""),
+      title: String(item.title || "국회 의안"),
+      proposedDate: String(item.proposedDate || "").slice(0, 10),
+      lastActionDate: String(item.lastActionDate || item.proposedDate || "").slice(0, 10),
+      proposer: String(item.proposer || "제안자 확인 중"),
+      committee: String(item.committee || "소관위 미정"),
+      status: String(item.status || "접수"),
+      rawStage: String(item.rawStage || ""),
+      rawResult: String(item.rawResult || ""),
+      committeeResult: String(item.committeeResult || ""),
+      lawResult: String(item.lawResult || ""),
+      plenaryResult: String(item.plenaryResult || ""),
+      summary: String(item.summary || ""),
+      primaryCategory: String(item.primaryCategory || "제도·거버넌스"),
+      relevanceLevel: String(item.relevanceLevel || "직접"),
+      relevanceScore: Number(item.relevanceScore || 0),
+      lifecycle: {
+        proposed: lifecycleDate("proposed", item.proposedDate),
+        committeeReceived: lifecycleDate("committeeReceived"),
+        committeePresented: lifecycleDate("committeePresented"),
+        committeeCommented: lifecycleDate("committeeCommented"),
+        committeeProcessed: lifecycleDate("committeeProcessed"),
+        lawPresented: lifecycleDate("lawPresented"),
+        lawProcessed: lifecycleDate("lawProcessed"),
+        plenaryPresented: lifecycleDate("plenaryPresented"),
+        plenaryResolved: lifecycleDate("plenaryResolved"),
+        governmentTransferred: lifecycleDate("governmentTransferred"),
+        promulgated: lifecycleDate("promulgated")
+      },
+      url: String(item.url || "")
+    };
+  }).filter((item) => {
     const key = item.billId || item.billNo;
     if (!key || !item.title || seen.has(key)) return false;
     seen.add(key);
@@ -374,21 +428,137 @@ function normalizeBills(items) {
   }).sort((left, right) => (right.lastActionDate || right.proposedDate).localeCompare(left.lastActionDate || left.proposedDate) || right.relevanceScore - left.relevanceScore || right.billNo.localeCompare(left.billNo));
 }
 
-function billDisplaySummary(bill) {
-  const metadata = [
-    bill.billNo ? `의안 ${bill.billNo}` : "",
-    bill.proposedDate ? `발의 ${bill.proposedDate}` : "",
-    bill.relevanceLevel,
-    bill.primaryCategory,
-    bill.proposer,
-    bill.committee
-  ].filter(Boolean).join(" · ");
-  const summary = String(bill.summary || "").trim();
-  return `${metadata}${summary ? ` — ${summary}` : ""}` || "국회 의안 원문에서 세부 내용을 확인하세요.";
+function billStageIndex(bill) {
+  const lifecycle = bill.lifecycle || {};
+  const rawStage = `${bill.rawStage || ""} ${bill.rawResult || ""}`;
+  if (lifecycle.promulgated || bill.status === "공포" || /공포/.test(rawStage)) return 5;
+  if (lifecycle.governmentTransferred || bill.status === "정부이송" || /정부\s*이송/.test(rawStage)) return 4;
+  if (lifecycle.plenaryPresented || lifecycle.plenaryResolved || bill.plenaryResult || /본회의/.test(`${bill.status} ${rawStage}`) || bill.status === "부결") return 3;
+  if (lifecycle.lawPresented || lifecycle.lawProcessed || bill.lawResult || /법사위|법제사법/.test(`${bill.status} ${rawStage}`)) return 2;
+  if (lifecycle.committeeReceived || lifecycle.committeePresented || lifecycle.committeeCommented || lifecycle.committeeProcessed || bill.committeeResult || /소관위|위원회/.test(`${bill.status} ${rawStage}`) || bill.status === "대안반영") return 1;
+  return 0;
+}
+
+function billStatusGroup(bill) {
+  if (bill.status === "공포") return "COMPLETED";
+  if (BILL_TERMINAL_STATUSES.has(bill.status)) return "CLOSED";
+  return "ACTIVE";
+}
+
+function billIsRecent(bill) {
+  const lifecycleDates = Object.values(bill.lifecycle || {}).filter((value) => /^\d{4}-\d{2}-\d{2}$/.test(value));
+  const candidates = [bill.proposedDate, bill.lastActionDate, ...lifecycleDates].filter((value) => /^\d{4}-\d{2}-\d{2}$/.test(value));
+  if (!candidates.length) return false;
+  const latest = candidates.sort().at(-1);
+  const action = new Date(`${latest}T00:00:00+09:00`).getTime();
+  const now = Date.now();
+  const distance = (now - action) / 86400000;
+  return distance >= 0 && distance <= 30;
+}
+
+function filterBills(items, view) {
+  if (view === "ACTIVE") return items.filter((bill) => billStatusGroup(bill) === "ACTIVE");
+  if (view === "RECENT") return items.filter(billIsRecent);
+  if (view === "COMPLETED") return items.filter((bill) => billStatusGroup(bill) === "COMPLETED");
+  if (view === "CLOSED") return items.filter((bill) => billStatusGroup(bill) === "CLOSED");
+  return items;
+}
+
+function fullBillDate(value) {
+  return /^\d{4}-\d{2}-\d{2}$/.test(String(value || "")) ? String(value).replaceAll("-", ".") : "날짜 확인 중";
+}
+
+function billStatusLabel(bill) {
+  const labels = {
+    "접수": "발의·접수",
+    "소관위": "소관위 심사",
+    "법사위": "법사위 심사",
+    "본회의": "본회의 심의",
+    "본회의 통과": "본회의 통과",
+    "정부이송": "정부 이송",
+    "공포": "공포·완료"
+  };
+  return labels[bill.status] || bill.status || "발의·접수";
+}
+
+function billLatestActionLabel(bill) {
+  const status = billStatusLabel(bill);
+  const detail = bill.status === "소관위" && bill.committee && bill.committee !== "소관위 미정" ? `${bill.committee} 심사` : status;
+  return `${fullBillDate(bill.lastActionDate || bill.proposedDate)} · ${detail}`;
+}
+
+function billMetadataLabel(bill) {
+  return [bill.proposer ? `대표발의 ${bill.proposer}` : "", bill.billNo ? `의안 ${bill.billNo}` : "", bill.committee].filter(Boolean).join(" · ");
+}
+
+function createBillProgress(bill) {
+  const currentIndex = billStageIndex(bill);
+  const terminal = BILL_TERMINAL_STATUSES.has(bill.status);
+  const wrapper = create("div", "bill-progress-wrap");
+  const progress = create("div", "bill-progress");
+  progress.setAttribute("role", "list");
+  progress.setAttribute("aria-label", `입법 진행단계: ${billStatusLabel(bill)}`);
+  BILL_STAGES.forEach((stage, index) => {
+    let stageState = index < currentIndex ? "done" : index === currentIndex ? terminal ? "terminal" : bill.status === "공포" ? "complete" : "current" : "upcoming";
+    const step = create("span", `bill-stage ${stageState}`);
+    step.setAttribute("role", "listitem");
+    step.append(create("i", "", ""), create("b", "", stage.label));
+    progress.append(step);
+  });
+  wrapper.append(progress);
+  return wrapper;
+}
+
+function renderBillOverview(list, bills) {
+  const overview = create("section", "bill-overview");
+  overview.setAttribute("aria-label", "발의법률안 처리 현황");
+  const filters = create("div", "bill-summary-filters");
+  const counts = {
+    ALL: bills.length,
+    ACTIVE: bills.filter((bill) => billStatusGroup(bill) === "ACTIVE").length,
+    RECENT: bills.filter(billIsRecent).length,
+    COMPLETED: bills.filter((bill) => billStatusGroup(bill) === "COMPLETED").length,
+    CLOSED: bills.filter((bill) => billStatusGroup(bill) === "CLOSED").length
+  };
+  [
+    ["ALL", "전체"], ["ACTIVE", "진행 중"], ["RECENT", "최근 변경"], ["COMPLETED", "공포·완료"], ["CLOSED", "종료"]
+  ].forEach(([value, label]) => {
+    const button = create("button", state.billView === value ? "active" : "");
+    button.type = "button";
+    button.setAttribute("aria-pressed", state.billView === value ? "true" : "false");
+    button.append(create("span", "", label), create("strong", "", `${counts[value]}건`));
+    button.addEventListener("click", () => { state.billView = value; state.policyPage = 1; renderPolicies(); });
+    filters.append(button);
+  });
+  const stageBills = bills.filter((bill) => billStatusGroup(bill) !== "CLOSED");
+  const stageCounts = BILL_STAGES.map((_, index) => stageBills.filter((bill) => billStageIndex(bill) === index).length);
+  const distribution = create("div", "bill-stage-distribution");
+  distribution.append(create("span", "distribution-label", "현재 단계"));
+  BILL_STAGES.forEach((stage, index) => {
+    const item = create("span", "distribution-item");
+    item.append(create("b", "", stage.label), create("strong", "", `${stageCounts[index]}건`));
+    distribution.append(item);
+  });
+  overview.append(filters, distribution);
+  list.append(overview);
+}
+
+function verifiedIsoDate(value) {
+  const match = String(value || "").match(/^(\d{4})-(\d{2})-(\d{2})$/);
+  if (!match) return "";
+  const year = Number(match[1]), month = Number(match[2]), day = Number(match[3]);
+  const parsed = new Date(Date.UTC(year, month - 1, day));
+  return parsed.getUTCFullYear() === year && parsed.getUTCMonth() === month - 1 && parsed.getUTCDate() === day ? match[0] : "";
+}
+
+function seminarDateRange() {
+  const today = new Intl.DateTimeFormat("en-CA", { timeZone: "Asia/Seoul", year: "numeric", month: "2-digit", day: "2-digit" }).format(new Date());
+  const maximum = new Date(`${today}T00:00:00Z`); maximum.setUTCDate(maximum.getUTCDate() + 365);
+  return { today, maximum: maximum.toISOString().slice(0, 10) };
 }
 
 function normalizeAssemblySeminars(items) {
-  const today = new Intl.DateTimeFormat("en-CA", { timeZone: "Asia/Seoul", year: "numeric", month: "2-digit", day: "2-digit" }).format(new Date());
+  const { today, maximum } = seminarDateRange();
   const seen = new Set();
   return (Array.isArray(items) ? items : []).map((item) => {
     const hostValue = Array.isArray(item.organizers) ? item.organizers.join(", ") : (item.host || item.organizer || item.organizers || "");
@@ -409,7 +579,8 @@ function normalizeAssemblySeminars(items) {
       url: String(item.url || item.officialUrl || item.sourceUrl || "https://ampos.nanet.go.kr/seminarList.do")
     };
   }).filter((item) => {
-    if (!item.title || !/^\d{4}-\d{2}-\d{2}$/.test(item.startDate)) return false;
+    const eventDate = verifiedIsoDate(item.startDate);
+    if (!item.title || !eventDate || eventDate < "2026-01-01" || eventDate > maximum) return false;
     const key = item.id || `${normalizedNewsTitle(item.title)}|${normalizedNewsTitle(item.host)}|${item.startDate}`;
     if (seen.has(key)) return false;
     seen.add(key);
@@ -423,8 +594,15 @@ function normalizeAssemblySeminars(items) {
 }
 
 function seminarPlanLabel(seminar) {
-  const match = String(seminar.startDate || "").match(/^(\d{4})-(\d{2})-(\d{2})$/);
-  return match ? `(${match[1]}.${match[2]}.${match[3]} 예정)` : "(일정 확인 예정)";
+  const eventDate = verifiedIsoDate(seminar.startDate);
+  if (!eventDate) return "(행사일 확인 필요)";
+  const display = eventDate.replaceAll("-", ".");
+  const { today } = seminarDateRange();
+  if (/취소|cancel/i.test(seminar.status)) return `(${display} 취소)`;
+  if (/변경|연기|postpon/i.test(seminar.status)) return `(${display} 연기)`;
+  if (eventDate > today) return `(${display} 예정)`;
+  if (eventDate === today) return `(${display} 오늘)`;
+  return `(${display} 개최)`;
 }
 
 function seminarDisplaySummary(seminar) {
@@ -778,27 +956,46 @@ function renderPolicies() {
   const scheduleMode = state.category === "기관일정";
   const billMode = state.category === "발의법률안";
   const seminarMode = state.category === "국회의원 세미나 일정";
-  const items = scheduleMode ? state.institutionSchedules : billMode ? state.bills : seminarMode ? state.assemblySeminars : state.policies.filter((item) => policyGroup(item) === state.category);
+  const items = scheduleMode ? state.institutionSchedules : billMode ? filterBills(state.bills, state.billView) : seminarMode ? state.assemblySeminars : state.policies.filter((item) => policyGroup(item) === state.category);
   const list = byId("policyList"); list.replaceChildren();
   const insight = state.policyInsight?.summary ? state.policyInsight : derivePolicyInsight(state.policies);
   byId("latestPolicy").textContent = insight.summary;
-  if (!items.length) { state.policyPage = 1; list.append(create("div", "loading-state", scheduleMode ? "현재 확인된 기관 일정이 없습니다." : billMode ? (state.billWarning || "현재 확인된 배출권 관련 국회법안이 없습니다.") : seminarMode ? (state.seminarWarning || "현재 확인된 배출권 관련 국회의원 세미나 일정이 없습니다.") : `${state.category}에 해당하는 자료가 없습니다.`)); renderChart(filterPrices(state.period)); return; }
+  if (billMode && state.bills.length) renderBillOverview(list, state.bills);
+  if (!items.length) {
+    state.policyPage = 1;
+    const emptyMessage = billMode && state.bills.length ? "선택한 조건에 해당하는 발의법률안이 없습니다." : scheduleMode ? "현재 확인된 기관 일정이 없습니다." : billMode ? (state.billWarning || "현재 확인된 배출권 관련 국회법안이 없습니다.") : seminarMode ? (state.seminarWarning || "현재 확인된 배출권 관련 국회의원 세미나 일정이 없습니다.") : `${state.category}에 해당하는 자료가 없습니다.`;
+    list.append(create("div", "loading-state", emptyMessage)); renderChart(filterPrices(state.period)); return;
+  }
   const totalPages = Math.ceil(items.length / POLICIES_PER_PAGE);
   state.policyPage = Math.max(1, Math.min(state.policyPage, totalPages));
   const start = (state.policyPage - 1) * POLICIES_PER_PAGE;
   items.slice(start, start + POLICIES_PER_PAGE).forEach((policy) => {
     const row = create("article", `policy-row${scheduleMode ? " schedule-row" : ""}${billMode ? " bill-row" : ""}${seminarMode ? " assembly-seminar-row" : ""}`);
-    const primaryDate = scheduleMode ? (policy.publishedAt || policy.startDate) : billMode ? (policy.lastActionDate || policy.proposedDate) : seminarMode ? (policy.publishedAt || policy.startDate) : policy.publishedAt;
+    const primaryDate = scheduleMode ? (policy.publishedAt || policy.startDate) : billMode ? (policy.lastActionDate || policy.proposedDate) : seminarMode ? policy.startDate : policy.publishedAt;
     const date = create("time", scheduleMode || seminarMode ? "schedule-date-stack" : "", shortDate(primaryDate));
     if (scheduleMode) date.append(create("small", "", schedulePlanLabel(policy)));
     if (seminarMode) date.append(create("small", "", seminarPlanLabel(policy)));
-    row.append(date, create("span", "category-badge", scheduleMode || seminarMode ? policy.eventType : billMode ? policy.status : policyBadge(policy)));
+    const badge = create("span", "category-badge", scheduleMode || seminarMode ? policy.eventType : billMode ? billStatusLabel(policy) : policyBadge(policy));
+    if (billMode) {
+      if (BILL_TERMINAL_STATUSES.has(policy.status)) badge.classList.add("terminal");
+      else if (policy.status === "공포") badge.classList.add("complete");
+      else badge.classList.add("in-progress");
+    }
+    row.append(date, badge);
     const body = create("div", "policy-body");
     const displayTitle = scheduleMode || seminarMode ? (stripScheduleTime(policy.title) || policy.title) : policy.title;
     const title = create("h3", "", displayTitle); title.title = displayTitle;
-    const summaryText = scheduleMode ? scheduleDisplaySummary(policy) : billMode ? billDisplaySummary(policy) : seminarMode ? seminarDisplaySummary(policy) : newsDisplaySummary(policy);
-    const summary = create("p", "", summaryText); summary.title = summaryText;
-    body.append(title, summary);
+    if (billMode) {
+      const latestAction = create("p", "bill-latest-action");
+      latestAction.append(create("span", "", "최근 처리"), document.createTextNode(billLatestActionLabel(policy)));
+      const metadataText = billMetadataLabel(policy);
+      const metadata = create("p", "bill-metadata", metadataText); metadata.title = policy.summary || metadataText;
+      body.append(title, createBillProgress(policy), latestAction, metadata);
+    } else {
+      const summaryText = scheduleMode ? scheduleDisplaySummary(policy) : seminarMode ? seminarDisplaySummary(policy) : newsDisplaySummary(policy);
+      const summary = create("p", "", summaryText); summary.title = summaryText;
+      body.append(title, summary);
+    }
     const link = create("a", "source-link", "∞"); link.href = policy.url || "#"; link.target = "_blank"; link.rel = "noreferrer"; link.ariaLabel = `${displayTitle} ${billMode ? "국회 의안" : seminarMode ? "국회 세미나" : ""} 원문 링크`; link.title = billMode ? "국회 의안 원문" : seminarMode ? "국회 세미나 공식 일정" : "원문 링크";
     row.append(body, link); list.append(row);
   });
