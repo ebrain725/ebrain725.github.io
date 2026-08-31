@@ -7,8 +7,9 @@
 // NEWS_DEDUPE_VERSION = "2026-08-28-v2-story-clustering"
 // PRICE_SCALE_VERSION = "2026-08-28-v1-symbol-period-autoscale"
 // POLICY_INSIGHT_META_VERSION = "2026-08-28-v1-hidden"
+// INSTITUTION_SCHEDULE_UI_VERSION = "2026-08-31-v1-deduped-body-events"
 
-const state = { prices: [], auctions: [], auctionPeriod: "ALL", auctionPage: 1, auctionLastSync: "", policies: [], policyInsight: null, briefings: [], briefingDate: "", period: "3M", category: "기후부 보도자료", policyPage: 1, symbol: "" };
+const state = { prices: [], auctions: [], auctionPeriod: "ALL", auctionPage: 1, auctionLastSync: "", policies: [], institutionSchedules: [], policyInsight: null, briefings: [], briefingDate: "", period: "3M", category: "기후부 보도자료", policyPage: 1, symbol: "" };
 const POLICIES_PER_PAGE = 5;
 const AUCTIONS_PER_PAGE = 3;
 const CONTINUOUS_SYMBOL = "KAU25_KAU26";
@@ -276,6 +277,48 @@ function newsDisplaySummary(policy) {
   if (!repeatsTitle) return summary;
   const count = Math.max(1, Number(policy.duplicateCount) || 1);
   return count > 1 ? `유사 기사 ${count}건을 대표기사 1건으로 통합했습니다.` : `${policy.source || "뉴스"} 기사`;
+}
+
+function normalizeInstitutionSchedules(items) {
+  const today = new Intl.DateTimeFormat("en-CA", { timeZone: "Asia/Seoul", year: "numeric", month: "2-digit", day: "2-digit" }).format(new Date());
+  const seen = new Set();
+  return (Array.isArray(items) ? items : []).map((item) => ({
+    ...item,
+    id: String(item.id || ""),
+    title: String(item.title || "기관 일정"),
+    eventType: String(item.eventType || "기관일정"),
+    startDate: String(item.startDate || ""),
+    endDate: String(item.endDate || item.startDate || ""),
+    startTime: String(item.startTime || ""),
+    organizer: String(item.organizer || ""),
+    location: String(item.location || ""),
+    evidence: String(item.evidence || ""),
+    duplicateCount: Math.max(1, Number(item.duplicateCount) || 1)
+  })).filter((item) => {
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(item.startDate)) return false;
+    const key = item.id || `${item.organizer}|${item.eventType}|${item.startDate}|${item.startTime}|${normalizedNewsTitle(item.title)}`;
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  }).sort((left, right) => {
+    const leftPast = (left.endDate || left.startDate) < today ? 1 : 0;
+    const rightPast = (right.endDate || right.startDate) < today ? 1 : 0;
+    if (leftPast !== rightPast) return leftPast - rightPast;
+    return leftPast ? right.startDate.localeCompare(left.startDate) : left.startDate.localeCompare(right.startDate) || left.startTime.localeCompare(right.startTime);
+  });
+}
+
+function scheduleDisplaySummary(schedule) {
+  const details = [schedule.organizer];
+  if (schedule.endDate && schedule.endDate !== schedule.startDate) details.push(`${schedule.startDate}~${schedule.endDate}`);
+  if (schedule.startTime) details.push(schedule.startTime);
+  if (schedule.location) details.push(schedule.location);
+  if (schedule.status === "postponed") details.push("변경 일정");
+  else if (schedule.status === "conditional") details.push("조건부 일정");
+  if (schedule.duplicateCount > 1) details.push(`중복 보도 ${schedule.duplicateCount}건`);
+  const evidence = schedule.evidence.trim();
+  const repeatsTitle = evidence && normalizedNewsTitle(evidence) === normalizedNewsTitle(schedule.title);
+  return `${details.filter(Boolean).join(" · ")}${evidence && !repeatsTitle ? ` — ${evidence}` : ""}` || "원문에서 일정 세부 내용을 확인하세요.";
 }
 
 function marketPulseMetrics(selected, latest) {
@@ -617,20 +660,21 @@ function renderPolicyPagination(list, totalPages) {
 }
 
 function renderPolicies() {
-  const items = state.policies.filter((item) => policyGroup(item) === state.category);
+  const scheduleMode = state.category === "기관일정";
+  const items = scheduleMode ? state.institutionSchedules : state.policies.filter((item) => policyGroup(item) === state.category);
   const list = byId("policyList"); list.replaceChildren();
   const insight = state.policyInsight?.summary ? state.policyInsight : derivePolicyInsight(state.policies);
   byId("latestPolicy").textContent = insight.summary;
-  if (!items.length) { state.policyPage = 1; list.append(create("div", "loading-state", `${state.category}에 해당하는 자료가 없습니다.`)); renderChart(filterPrices(state.period)); return; }
+  if (!items.length) { state.policyPage = 1; list.append(create("div", "loading-state", scheduleMode ? "현재 확인된 기관 일정이 없습니다." : `${state.category}에 해당하는 자료가 없습니다.`)); renderChart(filterPrices(state.period)); return; }
   const totalPages = Math.ceil(items.length / POLICIES_PER_PAGE);
   state.policyPage = Math.max(1, Math.min(state.policyPage, totalPages));
   const start = (state.policyPage - 1) * POLICIES_PER_PAGE;
   items.slice(start, start + POLICIES_PER_PAGE).forEach((policy) => {
     const row = create("article", "policy-row");
-    row.append(create("time", "", shortDate(policy.publishedAt)), create("span", "category-badge", policy.category || "기타"));
+    row.append(create("time", "", shortDate(scheduleMode ? policy.startDate : policy.publishedAt)), create("span", "category-badge", scheduleMode ? policy.eventType : (policy.category || "기타")));
     const body = create("div", "policy-body");
     const title = create("h3", "", policy.title); title.title = policy.title;
-    const summaryText = newsDisplaySummary(policy);
+    const summaryText = scheduleMode ? scheduleDisplaySummary(policy) : newsDisplaySummary(policy);
     const summary = create("p", "", summaryText); summary.title = summaryText;
     body.append(title, summary);
     const link = create("a", "source-link", "∞"); link.href = policy.url || "#"; link.target = "_blank"; link.rel = "noreferrer"; link.ariaLabel = `${policy.title} 원문 링크`; link.title = "원문 링크";
@@ -641,10 +685,10 @@ function renderPolicies() {
 }
 
 function renderPolicyFilters() {
-  const categories = ["기후부 보도자료", "기후부 공지사항", "뉴스"];
+  const categories = ["기후부 보도자료", "기후부 공지사항", "뉴스", "기관일정"];
   const box = byId("policyFilters"); box.replaceChildren();
   categories.forEach((category) => { const button = create("button", category === state.category ? "active" : "", category); button.addEventListener("click", () => { state.category = category; state.policyPage = 1; renderPolicyFilters(); renderPolicies(); }); box.append(button); });
-  byId("policyDescription").textContent = "기후부 공식 보도자료·공지사항과 시장 뉴스의 제목·본문을 기준으로 자동 수집합니다.";
+  byId("policyDescription").textContent = "기후부 공식자료와 시장 뉴스를 자동 수집하고, 본문에서 확인된 기관 일정을 중복 없이 정리합니다.";
 }
 
 function renderSymbolPicker() {
@@ -730,6 +774,7 @@ async function init() {
   state.auctionLastSync = auctionData.lastSync || "";
   const policyData = policyResult.status === "fulfilled" ? policyResult.value : { items: [], keywords: [] };
   state.policies = dedupeNewsPolicies((policyData.items || []).map((item) => ({ ...item, publishedAt: item.publishedAt || item.date || "" })));
+  state.institutionSchedules = normalizeInstitutionSchedules(policyData.institutionSchedules || []);
   state.policyInsight = policyData.aiInsight || null;
   const briefingData = briefingResult.status === "fulfilled" ? briefingResult.value : { items: [] };
   state.briefings = (briefingData.items || []).map((item) => ({ ...item, date: item.date || item.briefingDate || "" })).sort((a, b) => b.date.localeCompare(a.date));
