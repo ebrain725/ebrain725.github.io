@@ -14,6 +14,7 @@
 // ASSEMBLY_SEMINAR_RADAR_VERSION = "2026-08-31-v1-official-schedule"
 // BILL_STAGE_TRACKER_VERSION = "2026-08-31-v3.1-chronological-committee-alternatives"
 // ASSEMBLY_SEMINAR_DATE_VERSION = "2026-08-31-v2-from-2026-verified-event-date"
+// KRX_NOTICE_VERSION = "2026-08-31-v1-official-board"
 
 const state = { prices: [], auctions: [], auctionPeriod: "ALL", auctionPage: 1, auctionLastSync: "", policies: [], policyLastSync: "", institutionSchedules: [], bills: [], billLastSync: "", billWarning: "", billView: "ALL", assemblySeminars: [], seminarLastSync: "", seminarWarning: "", policyInsight: null, briefings: [], briefingDate: "", period: "3M", category: "기후부 보도자료", policyPage: 1, symbol: "" };
 const POLICIES_PER_PAGE = 5;
@@ -191,6 +192,7 @@ function policyGroup(policy) {
   const source = String(policy.source || "");
   const url = String(policy.url || "");
   if (policy.section === "news" || policy.sourceType === "news") return "뉴스";
+  if (policy.section === "krx_notice" || /한국거래소|\bKRX\b/i.test(source) || /ets\.krx\.co\.kr\/board\/ETS01030000/i.test(url)) return "한국거래소 공지사항";
   if (policy.section === "press") return "기후부 보도자료";
   if (policy.section === "notice") return "기후부 공지사항";
   if (source.includes("보도자료") || /(?:menuId=(?:286|10598)|boardMasterId=(?:1|939))(?:&|$)/.test(url)) return "기후부 보도자료";
@@ -200,7 +202,7 @@ function policyGroup(policy) {
 
 function derivePolicyInsight(policies) {
   const official = policies.filter((policy) => policyGroup(policy) !== "뉴스").slice(0, 10);
-  if (!official.length) return { summary: "최근 기후부 공식자료가 수집되면 정책 변화가 시장 수급에 미칠 영향을 분석합니다.", basisLatestDate: "-", basisCount: 0, source: "fallback" };
+  if (!official.length) return { summary: "최근 기후부·한국거래소 공식자료가 수집되면 정책 변화가 시장 수급에 미칠 영향을 분석합니다.", basisLatestDate: "-", basisCount: 0, source: "fallback" };
   const haystack = official.map((policy) => `${policy.title} ${policy.summary || ""}`).join(" ");
   const activeStabilization = official.some((policy) => {
     const text = `${policy.title} ${policy.summary || ""}`.replace(/\s+/g, " ");
@@ -1197,7 +1199,7 @@ function renderPolicies() {
 }
 
 function renderPolicyFilters() {
-  const categories = ["기후부 보도자료", "기후부 공지사항", "뉴스", "기관일정", "발의법률안", "국회의원 세미나 일정"];
+  const categories = ["기후부 보도자료", "기후부 공지사항", "한국거래소 공지사항", "뉴스", "기관일정", "발의법률안", "국회의원 세미나 일정"];
   const box = byId("policyFilters"); box.replaceChildren();
   categories.forEach((category) => { const button = create("button", category === state.category ? "active" : "", category); button.addEventListener("click", () => { state.category = category; state.policyPage = 1; renderPolicyFilters(); renderPolicies(); }); box.append(button); });
   const billMode = state.category === "발의법률안";
@@ -1206,7 +1208,7 @@ function renderPolicyFilters() {
     ? "국회의원이 발의한 배출권 관련 법률안과 처리단계 변화를 추적합니다."
     : seminarMode
       ? "국회의원·의원실이 주최한 배출권 관련 세미나·토론회 일정을 국회도서관 공식자료에서 수집합니다."
-      : "기후부 공식자료와 시장 뉴스를 자동 수집하고, 본문에서 확인된 기관 일정을 중복 없이 정리합니다.";
+      : "기후부·한국거래소 공식자료와 시장 뉴스를 자동 수집하고, 본문에서 확인된 기관 일정을 중복 없이 정리합니다.";
   const sync = billMode ? state.billLastSync : seminarMode ? state.seminarLastSync : state.policyLastSync;
   byId("policySync").textContent = sync ? new Date(sync).toLocaleString("ko-KR", { timeZone: "Asia/Seoul", month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit" }) : billMode ? "국회 API 연결 필요" : seminarMode ? "국회 공식일정 연결 대기" : "수동 실행 필요";
 }
