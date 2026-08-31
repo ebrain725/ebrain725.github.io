@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # PRESS_TAB_FIX_VERSION = "2026-08-20-v3.1-fast-current-board"
 # NEWS_DEDUPE_VERSION = "2026-08-31-v3.1-google-naver-cross-source"
+# NEWS_RELEVANCE_VERSION = "2026-08-31-v3.1-exact-ets-limited-body-check"
 """기후부 공식자료와 시장 뉴스의 제목·원문 본문에서 설정 키워드를 검색한다."""
 
 from __future__ import annotations
@@ -11,6 +12,7 @@ import json
 import os
 import re
 import sys
+import unicodedata
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
@@ -33,6 +35,7 @@ NAVER_API_HUB_URL = "https://naverapihub.apigw.ntruss.com/search/v1/news"
 NAVER_CLIENT_ID_ENV = "NAVER_API_HUB_CLIENT_ID"
 NAVER_CLIENT_SECRET_ENV = "NAVER_API_HUB_CLIENT_SECRET"
 NAVER_MAX_DISPLAY = 100
+NAVER_BODY_VERIFY_LIMIT = 12
 
 
 def load_keyword_file(relative_path: str) -> list[str]:
@@ -193,6 +196,30 @@ def title_bigrams(value: str) -> set[str]:
     return {value[index : index + 2] for index in range(max(0, len(value) - 1))}
 
 
+def normalized_news_summary(value: str) -> str:
+    """검색 공급자마다 다른 HTML·문장부호를 제거한 중복판정용 요약문."""
+    value = re.sub(r"<[^>]+>", " ", html.unescape(value or "")).lower()
+    return re.sub(r"[^0-9a-z가-힣]+", "", value)
+
+
+def text_ngram_dice(first: str, second: str, size: int = 3) -> float:
+    if len(first) < size or len(second) < size:
+        return 0.0
+    grams_a = {first[index : index + size] for index in range(len(first) - size + 1)}
+    grams_b = {second[index : index + size] for index in range(len(second) - size + 1)}
+    return 2 * len(grams_a & grams_b) / max(len(grams_a) + len(grams_b), 1)
+
+
+def similar_news_summary(first: str, second: str) -> bool:
+    """같은 보도자료를 옮긴 기사처럼 요약문이 사실상 같은 경우를 찾는다."""
+    a, b = normalized_news_summary(first), normalized_news_summary(second)
+    if min(len(a), len(b)) < 55:
+        return False
+    ratio = SequenceMatcher(None, a, b).ratio()
+    dice = text_ngram_dice(a, b)
+    return ratio >= 0.78 or dice >= 0.72
+
+
 def similar_news_title(first: str, second: str) -> bool:
     a, b = normalized_news_title(first), normalized_news_title(second)
     if not a or not b:
@@ -205,7 +232,7 @@ def similar_news_title(first: str, second: str) -> bool:
     ratio = SequenceMatcher(None, a, b).ratio()
     grams_a, grams_b = title_bigrams(a), title_bigrams(b)
     dice = 2 * len(grams_a & grams_b) / max(len(grams_a) + len(grams_b), 1)
-    return ratio >= 0.69 or dice >= 0.58
+    return ratio >= 0.78 and dice >= 0.65
 
 
 NEWS_GENERIC_TOKENS = {
@@ -235,18 +262,67 @@ def news_date_distance(first: str, second: str) -> int:
         return 999
 
 
+NEWS_DIRECTION_CONFLICTS = (
+    ({"상승", "급등", "반등", "강세", "확대", "증가", "상향"}, {"하락", "급락", "약세", "축소", "감소", "하향"}),
+    ({"매수", "순매수"}, {"매도", "순매도"}),
+    ({"인상"}, {"인하"}),
+    ({"도입"}, {"폐지"}),
+    ({"개시", "시작", "재개"}, {"종료", "중단", "연기"}),
+    ({"통과", "가결", "확정"}, {"부결", "철회", "무산"}),
+)
+
+
+def conflicting_news_claim(first: str, second: str) -> bool:
+    """문구가 비슷해도 방향·핵심 수치가 반대인 기사는 합치지 않는다."""
+    a = clean_html(first, 2_000).lower()
+    b = clean_html(second, 2_000).lower()
+    for positive, negative in NEWS_DIRECTION_CONFLICTS:
+        a_positive, a_negative = any(word in a for word in positive), any(word in a for word in negative)
+        b_positive, b_negative = any(word in b for word in positive), any(word in b for word in negative)
+        if (a_positive and not a_negative and b_negative and not b_positive) or (
+            b_positive and not b_negative and a_negative and not a_positive
+        ):
+            return True
+
+    kau_a = set(re.findall(r"\bkau\s*[-_]?\s*\d{2}\b", a, re.IGNORECASE))
+    kau_b = set(re.findall(r"\bkau\s*[-_]?\s*\d{2}\b", b, re.IGNORECASE))
+    if kau_a and kau_b and kau_a.isdisjoint(kau_b):
+        return True
+
+    def claims(value: str) -> dict[str, set[str]]:
+        result: dict[str, set[str]] = {}
+        pattern = r"(\d[\d,.]*(?:만\d[\d,]*)?(?:천)?)\s*(만톤|억원|조원|%|원|톤)"
+        for number, unit in re.findall(pattern, value):
+            result.setdefault(unit, set()).add(number.replace(",", ""))
+        return result
+
+    claims_a, claims_b = claims(a), claims(b)
+    return any(
+        claims_a[unit] and claims_b[unit] and claims_a[unit].isdisjoint(claims_b[unit])
+        for unit in claims_a.keys() & claims_b.keys()
+    )
+
+
+def news_claim_text(item: dict) -> str:
+    return f"{item.get('title', '')} {item.get('summary', '')}"
+
+
 def same_news_story(first: dict, second: dict) -> bool:
     first_url = canonical_news_url(first.get("url", ""))
     second_url = canonical_news_url(second.get("url", ""))
     if first_url and first_url == second_url:
         return True
+    distance = news_date_distance(first.get("publishedAt", ""), second.get("publishedAt", ""))
+    if distance != 0 or conflicting_news_claim(news_claim_text(first), news_claim_text(second)):
+        return False
     first_title = normalized_news_title(first.get("title", ""))
     second_title = normalized_news_title(second.get("title", ""))
     if not first_title or not second_title:
         return False
     if first_title == second_title:
         return True
-    distance = news_date_distance(first.get("publishedAt", ""), second.get("publishedAt", ""))
+    if distance <= 1 and similar_news_summary(first.get("summary", ""), second.get("summary", "")):
+        return True
     grams_a, grams_b = title_bigrams(first_title), title_bigrams(second_title)
     dice = 2 * len(grams_a & grams_b) / max(len(grams_a) + len(grams_b), 1)
     if distance == 0:
@@ -256,8 +332,19 @@ def same_news_story(first: dict, second: dict) -> bool:
         tokens_b = news_event_tokens(second.get("title", ""))
         shared = tokens_a & tokens_b
         coverage = len(shared) / max(min(len(tokens_a), len(tokens_b)), 1)
-        return len(shared) >= 2 and sum(len(token) for token in shared) >= 8 and coverage >= 0.55
-    return distance <= 2 and dice >= 0.78
+        has_specific_token = any(len(token) >= 4 for token in shared)
+        return (
+            len(shared) >= 2
+            and sum(len(token) for token in shared) >= 7
+            and coverage >= 0.55
+            and has_specific_token
+        ) or (
+            len(shared) >= 3
+            and sum(len(token) for token in shared) >= 10
+            and coverage >= 0.40
+            and has_specific_token
+        )
+    return False
 
 
 def metadata_values(value: object) -> list[str]:
@@ -269,6 +356,63 @@ def metadata_values(value: object) -> list[str]:
     return []
 
 
+def merge_news_metadata(first: dict, second: dict) -> dict:
+    """같은 URL이 재수집돼도 기존 중복 메타데이터와 검증 상태를 잃지 않는다."""
+    representative = dict(max((first, second), key=preferred_news_item_score))
+    representative["matchedKeywords"] = list(dict.fromkeys([
+        *metadata_values(first.get("matchedKeywords")),
+        *metadata_values(second.get("matchedKeywords")),
+    ]))
+    representative["duplicateSources"] = list(dict.fromkeys([
+        *metadata_values(first.get("duplicateSources")),
+        str(first.get("source", "")).strip(),
+        *metadata_values(second.get("duplicateSources")),
+        str(second.get("source", "")).strip(),
+    ]))
+    representative["searchProviders"] = list(dict.fromkeys([
+        *metadata_values(first.get("searchProviders")),
+        str(first.get("searchProvider", "")).strip(),
+        *metadata_values(second.get("searchProviders")),
+        str(second.get("searchProvider", "")).strip(),
+    ]))
+    representative["duplicateSources"] = [value for value in representative["duplicateSources"] if value]
+    representative["searchProviders"] = [value for value in representative["searchProviders"] if value]
+    representative["duplicateCount"] = max(
+        1,
+        int(first.get("duplicateCount") or 1),
+        int(second.get("duplicateCount") or 1),
+    )
+    if first.get("_trustedSearchMatch") or second.get("_trustedSearchMatch"):
+        representative["_trustedSearchMatch"] = True
+    pending_queries = list(dict.fromkeys([
+        *metadata_values(first.get("_bodyVerificationQueries")),
+        *metadata_values(second.get("_bodyVerificationQueries")),
+    ]))
+    if pending_queries:
+        representative["_bodyVerificationQueries"] = pending_queries
+    body_score = max(
+        int(first.get("_bodyCandidateScore") or 0),
+        int(second.get("_bodyCandidateScore") or 0),
+    )
+    if body_score:
+        representative["_bodyCandidateScore"] = body_score
+    return representative
+
+
+def compatible_news_group(candidate: dict, group: list[dict]) -> bool:
+    """단일 연결식 군집에서 반대 내용이 다른 기사를 타고 합쳐지는 것을 막는다."""
+    candidate_url = canonical_news_url(candidate.get("url", ""))
+    for member in group:
+        member_url = canonical_news_url(member.get("url", ""))
+        if candidate_url and candidate_url == member_url:
+            continue
+        if news_date_distance(candidate.get("publishedAt", ""), member.get("publishedAt", "")) != 0:
+            return False
+        if conflicting_news_claim(news_claim_text(candidate), news_claim_text(member)):
+            return False
+    return True
+
+
 def dedupe_news(items: list[dict]) -> list[dict]:
     remaining = list(items)
     groups: list[list[dict]] = []
@@ -278,7 +422,10 @@ def dedupe_news(items: list[dict]) -> list[dict]:
         while changed:
             changed = False
             for candidate in list(remaining):
-                if any(same_news_story(candidate, member) for member in group):
+                if (
+                    any(same_news_story(candidate, member) for member in group)
+                    and compatible_news_group(candidate, group)
+                ):
                     group.append(candidate)
                     remaining.remove(candidate)
                     changed = True
@@ -376,6 +523,78 @@ def clean_html(value: str, limit: int = 260) -> str:
     return text if len(text) <= limit else f"{text[: limit - 1].rstrip()}…"
 
 
+NEWS_PHRASE_PARTS = {
+    "배출권거래제": ("배출권", "거래제"),
+    "탄소배출권": ("탄소", "배출권"),
+    "온실가스배출권": ("온실가스", "배출권"),
+    "유상할당": ("유상", "할당"),
+    "유상경매": ("유상", "경매"),
+    "탄소시장": ("탄소", "시장"),
+    "상쇄배출권": ("상쇄", "배출권"),
+}
+
+
+def normalized_news_visible_text(value: str) -> str:
+    """기사의 보이는 문자를 보존해 정확 문구 검사에 사용할 형태로 만든다."""
+    text = unicodedata.normalize("NFKC", html.unescape(str(value or "")))
+    text = re.sub(r"<[^>]+>", " ", text)
+    text = re.sub(r"[\u200b-\u200d\u2060\ufeff]", "", text)
+    return re.sub(r"\s+", " ", text).strip().lower()
+
+
+def news_phrase_pattern(keyword: str) -> re.Pattern[str] | None:
+    """NAVER가 문구를 낱말로 분리해 검색해도 우리는 인접한 ETS 문구만 허용한다."""
+    compact = re.sub(r"[\s_]+", "", normalized_news_visible_text(keyword))
+    if not compact:
+        return None
+    if re.fullmatch(r"kau\d{2}", compact):
+        year = compact[3:]
+        return re.compile(
+            rf"(?<![a-z0-9])kau\s*[-‐‑‒–—−_]?\s*{re.escape(year)}(?![a-z0-9])",
+            re.IGNORECASE,
+        )
+    hyphenless = re.sub(r"[-‐‑‒–—−]", "", compact)
+    if hyphenless == "kets":
+        return re.compile(r"(?<![a-z0-9])k\s*[-‐‑‒–—−_]?\s*ets(?![a-z0-9])", re.IGNORECASE)
+    compact = hyphenless
+    parts = NEWS_PHRASE_PARTS.get(compact)
+    if parts:
+        return re.compile(r"\s*".join(re.escape(part) for part in parts), re.IGNORECASE)
+    return re.compile(re.escape(compact), re.IGNORECASE)
+
+
+def news_phrase_matches(value: str, keywords: list[str]) -> list[str]:
+    """제목·요약 또는 검증한 본문에 실제로 나타난 설정 문구만 반환한다."""
+    visible = normalized_news_visible_text(value)[:20_000]
+    matched: list[str] = []
+    for keyword in keywords:
+        pattern = news_phrase_pattern(keyword)
+        if pattern and pattern.search(visible):
+            matched.append(keyword)
+    return list(dict.fromkeys(matched))
+
+
+def news_field_phrase_matches(title: str, summary: str, keywords: list[str]) -> list[str]:
+    """제목 끝과 요약 시작의 낱말이 합쳐져 오탐이 되지 않도록 따로 검사한다."""
+    return list(dict.fromkeys([
+        *news_phrase_matches(title, keywords),
+        *news_phrase_matches(summary, keywords),
+    ]))
+
+
+def naver_body_candidate_score(value: str) -> int:
+    """본문을 열어볼 가치가 있는 ETS 문맥만 제한적으로 선별한다."""
+    text = clean_html(value, 4_000).lower()
+    score = 0
+    if re.search(r"배출권|k\s*[-–—_]?\s*ets|kau\s*[-_]?\s*\d{2}", text, re.IGNORECASE):
+        score += 3
+    if re.search(r"탄소|온실가스|배출", text):
+        score += 1
+    if re.search(r"거래|시장|할당|경매|상쇄|감축|규제|이행", text):
+        score += 1
+    return score
+
+
 def html_attribute(tag_text: str, name: str) -> str:
     match = re.search(rf"\b{name}\s*=\s*(['\"])(.*?)\1", tag_text, re.IGNORECASE | re.DOTALL)
     return html.unescape(match.group(2)).strip() if match else ""
@@ -430,8 +649,13 @@ def fetch_article_text(url: str) -> str:
 
 def keyword_excerpt(text: str, matched_keywords: list[str], limit: int = 260) -> str:
     lower = text.lower()
-    positions = [lower.find(keyword.lower()) for keyword in matched_keywords]
-    positions = [position for position in positions if position >= 0]
+    positions: list[int] = []
+    for keyword in matched_keywords:
+        pattern = news_phrase_pattern(keyword)
+        phrase_match = pattern.search(text) if pattern else None
+        position = phrase_match.start() if phrase_match else lower.find(keyword.lower())
+        if position >= 0:
+            positions.append(position)
     start = max(0, min(positions) - 80) if positions else 0
     excerpt = text[start : start + limit].strip()
     return f"{'…' if start else ''}{excerpt}{'…' if start + limit < len(text) else ''}"
@@ -748,29 +972,58 @@ def parse_naver_news_payload(
         if cutoff_date and published < cutoff_date:
             continue
         haystack = f"{title} {description}".lower()
-        matched = [keyword for keyword in keywords if keyword.lower() in haystack]
-        if query_keyword and query_keyword not in matched:
-            # NAVER 검색은 기사 본문 일치로도 결과를 반환할 수 있으므로
-            # 요청 키워드는 제목·요약에 보이지 않아도 검색 근거로 보존한다.
-            matched.insert(0, query_keyword)
+        matched = news_field_phrase_matches(title, description, keywords)
+        body_score = naver_body_candidate_score(haystack)
+        if not matched and body_score < 2:
+            # NAVER는 "탄소시장"을 "탄소"와 "시장"으로 분리해 전혀 다른
+            # 기사를 반환할 수 있다. 검색됐다는 사실만으로는 저장하지 않는다.
+            continue
         stable_key = canonical_news_url(link) or f"{published}|{title}"
-        candidates.append(
-            {
-                "id": hashlib.sha1(stable_key.encode("utf-8")).hexdigest()[:16],
-                "publishedAt": published,
-                "title": title,
-                "category": category_for(haystack),
-                "summary": description,
-                "source": publisher_name_from_url(original_link or naver_link),
-                "sourceType": "news",
-                "section": "news",
-                "url": link,
-                "searchProvider": "NAVER API HUB",
-                "matchedKeywords": list(dict.fromkeys(matched)),
-                "_trustedSearchMatch": True,
-            }
-        )
+        candidate = {
+            "id": hashlib.sha1(stable_key.encode("utf-8")).hexdigest()[:16],
+            "publishedAt": published,
+            "title": title,
+            "category": category_for(haystack),
+            "summary": description,
+            "source": publisher_name_from_url(original_link or naver_link),
+            "sourceType": "news",
+            "section": "news",
+            "url": link,
+            "searchProvider": "NAVER API HUB",
+            "matchedKeywords": matched,
+        }
+        if matched:
+            candidate["_trustedSearchMatch"] = True
+        elif query_keyword:
+            candidate["_bodyVerificationQueries"] = [query_keyword]
+            candidate["_bodyCandidateScore"] = body_score
+        candidates.append(candidate)
     return candidates
+
+
+def verify_naver_news_candidates(items: list[dict], keywords: list[str]) -> list[dict]:
+    """제목·요약 불일치 후보 중 관련성이 높은 소수만 본문에서 재검증한다."""
+    verified = [dict(item) for item in items if item.get("_trustedSearchMatch")]
+    pending = [dict(item) for item in items if not item.get("_trustedSearchMatch")]
+    pending.sort(
+        key=lambda item: (
+            int(item.get("_bodyCandidateScore") or 0),
+            item.get("publishedAt", ""),
+            item.get("title", ""),
+        ),
+        reverse=True,
+    )
+    for item in pending[:NAVER_BODY_VERIFY_LIMIT]:
+        article_text = fetch_article_text(item.get("url", ""))
+        matched = news_phrase_matches(article_text, keywords)
+        if not matched:
+            continue
+        item["matchedKeywords"] = matched
+        item["category"] = category_for(f"{item.get('title', '')} {article_text}".lower())
+        item["summary"] = keyword_excerpt(article_text, matched)
+        item["_trustedSearchMatch"] = True
+        verified.append(item)
+    return verified
 
 
 def fetch_naver_news(
@@ -834,25 +1087,20 @@ def fetch_naver_news(
             if key not in candidates_by_key:
                 candidates_by_key[key] = item
                 continue
-            existing = candidates_by_key[key]
-            existing["matchedKeywords"] = list(
-                dict.fromkeys([*(existing.get("matchedKeywords") or []), *(item.get("matchedKeywords") or [])])
-            )
-            if preferred_news_item_score(item) > preferred_news_item_score(existing):
-                item["matchedKeywords"] = existing["matchedKeywords"]
-                candidates_by_key[key] = item
+            candidates_by_key[key] = merge_news_metadata(candidates_by_key[key], item)
 
     if not candidates_by_key and keyword_errors:
         raise RuntimeError("모든 NAVER 뉴스 키워드 검색에 실패했습니다: " + " | ".join(keyword_errors))
     if keyword_errors:
         print("NAVER 뉴스 일부 키워드 검색 경고: " + " | ".join(keyword_errors), file=sys.stderr)
 
+    candidates = verify_naver_news_candidates(list(candidates_by_key.values()), keywords)
     candidates = sorted(
-        candidates_by_key.values(),
+        candidates,
         key=lambda item: (item.get("publishedAt", ""), item.get("title", "")),
         reverse=True,
     )
-    return filter_title_and_body(candidates, keywords)
+    return candidates
 
 
 def main() -> int:
@@ -945,22 +1193,36 @@ def main() -> int:
         haystack = f"{item.get('title', '')} {item.get('summary', '')}".lower()
         allowed_keywords = news_keywords if item.get("sourceType") == "news" else keywords
         matched_keywords = {str(value).strip().lower() for value in item.get("matchedKeywords", [])}
-        if not item.get("_trustedSearchMatch") and not any(
-            keyword.lower() in haystack or keyword.lower() in matched_keywords
-            for keyword in allowed_keywords
-        ):
-            continue
         if item.get("sourceType") == "news":
+            visible_matches = news_field_phrase_matches(
+                str(item.get("title", "")),
+                str(item.get("summary", "")),
+                news_keywords,
+            )
+            if not visible_matches:
+                # Google/NAVER 모두 실제 제목·요약 문구를 최종 기준으로 삼는다.
+                # NAVER 본문 검증 통과 건은 키워드 문맥을 요약에 보존하므로 통과한다.
+                continue
+            item["matchedKeywords"] = visible_matches
             canonical_url = canonical_news_url(item.get("url", ""))
             key = (
                 f"news-url|{canonical_url}"
                 if canonical_url
                 else f"news|{item.get('publishedAt')}|{normalized_news_title(item.get('title', ''))}"
             )
+            if key in merged:
+                merged[key] = merge_news_metadata(merged[key], item)
+            else:
+                merged[key] = item
         else:
+            if not item.get("_trustedSearchMatch") and not any(
+                keyword.lower() in haystack or keyword.lower() in matched_keywords
+                for keyword in allowed_keywords
+            ):
+                continue
             normalized_title = re.sub(r"\s+", " ", str(item.get("title", ""))).strip().lower()
             key = f"{item['section']}|{item.get('publishedAt')}|{normalized_title}"
-        merged[key] = item
+            merged[key] = item
 
     limit = max(1, min(int(settings.get("maxPolicyItems", 60)), 200))
     max_news = max(0, min(int(settings.get("maxNewsItems", 24)), limit))
@@ -984,6 +1246,8 @@ def main() -> int:
     items = sorted(selected_official + news, key=lambda item: (item.get("publishedAt", ""), item.get("title", "")), reverse=True)[:limit]
     for item in items:
         item.pop("_trustedSearchMatch", None)
+        item.pop("_bodyVerificationQueries", None)
+        item.pop("_bodyCandidateScore", None)
         item.pop("impact", None)
         item.pop("impactReason", None)
         item.pop("impactSource", None)
