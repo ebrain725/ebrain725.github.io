@@ -720,8 +720,11 @@ def main() -> int:
             warnings.append(f"{keyword} 검색 실패: {exc}")
 
     if successful_queries == 0:
-        print("국회 API 검색이 모두 실패했습니다. 기존 bills.json은 보존합니다.", file=sys.stderr)
-        return 1
+        message = "국회 API 검색이 모두 실패했습니다. 기존 bills.json은 보존하고 다음 수집 단계로 진행합니다."
+        print(f"::warning::{message}", file=sys.stderr)
+        if warnings:
+            print("일부 국회 API 경고: " + " | ".join(warnings[:5]), file=sys.stderr)
+        return 0
     if successful_queries < len(TITLE_QUERIES):
         try:
             for row in fetch_all_rows("ALLBILLV2", api_key, {"ERACO": ASSEMBLY_TERM}):
