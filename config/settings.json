@@ -1,5 +1,4 @@
 {
-  "configVersion": "press-tab-fix-v3-current-board",
   "policyKeywords": [
     "배출권",
     "배출권거래제",
@@ -20,6 +19,13 @@
       "name": "기후부 공지·공고",
       "type": "notice",
       "url": "https://www.mcee.go.kr/home/web/board/rss.do?menuId=10524&boardMasterId=39"
+    },
+    {
+      "name": "한국거래소 배출권 공지사항",
+      "type": "krx_notice",
+      "collector": "krxBoard",
+      "url": "https://ets.krx.co.kr/board/ETS01030000/bbs",
+      "maxItems": 20
     }
   ],
   "policyNewsSearches": [
@@ -30,5 +36,5 @@
   ],
   "policyLookbackDays": 30,
   "maxNewsItems": 24,
-  "maxPolicyItems": 60
+  "maxPolicyItems": 78
 }
