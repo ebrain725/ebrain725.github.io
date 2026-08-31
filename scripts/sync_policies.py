@@ -3,6 +3,8 @@
 # NEWS_DEDUPE_VERSION = "2026-08-31-v3.1-google-naver-cross-source"
 # NEWS_RELEVANCE_VERSION = "2026-08-31-v3.1-exact-ets-limited-body-check"
 # INSTITUTION_SCHEDULE_VERSION = "2026-08-31-v1-body-aware-dedupe"
+# NEWS_REGION_VERSION = "2026-08-31-v1-domestic-overseas"
+# INSTITUTION_SCHEDULE_YEAR_FIX_VERSION = "2026-08-31-v2-strict-year-inference"
 """기후부 공식자료와 시장 뉴스의 제목·원문 본문에서 설정 키워드를 검색한다."""
 
 from __future__ import annotations
@@ -713,10 +715,17 @@ SCHEDULE_EVENT_CUE = re.compile(
     re.IGNORECASE,
 )
 SCHEDULE_FUTURE_CUE = re.compile(
-    r"예정|개최(?:한다|할|될|된다)|열(?:린다|릴|기로)|실시(?:한다|할)|진행(?:한다|할)|"
+    r"오는|다가오는|예정|개최(?:한다|할|될|된다)|열(?:린다|릴|기로)|실시(?:한다|할)|진행(?:한다|할)|"
     r"접수(?:한다|할|받)|신청|모집|마감(?:한다|할)|시행(?:한다|할|된다)|적용(?:한다|할|된다)|"
     r"발효(?:한다|할|된다)|발표(?:한다|할|된다)|공개(?:한다|할)|공고(?:한다|할)|입찰|경매|"
     r"부터|까지|개시|시작",
+    re.IGNORECASE,
+)
+SCHEDULE_CROSS_YEAR_CUE = re.compile(
+    r"오는|다가오는|예정|개최(?:한다|할|될|된다)|열(?:린다|릴|기로)|실시(?:한다|할)|진행(?:한다|할)|"
+    r"접수(?:한다|할|받)|신청(?:한다|할|받)|모집(?:한다|할)|마감(?:한다|할)|시행(?:한다|할|된다)|"
+    r"적용(?:한다|할|된다)|발효(?:한다|할|된다)|발표(?:한다|할|된다)|공개(?:한다|할)|"
+    r"공고(?:한다|할)|개시|시작",
     re.IGNORECASE,
 )
 SCHEDULE_PAST_CUE = re.compile(
@@ -779,11 +788,23 @@ def resolve_schedule_month_day(
     month: int,
     day: int,
     year: int | None = None,
+    *,
+    force_next_year: bool = False,
+    allow_cross_year: bool = False,
 ) -> datetime | None:
     if year is not None:
         return schedule_date_value(year, month, day)
-    candidate = schedule_date_value(published.year, month, day)
-    if candidate and candidate.date() < published.date():
+
+    target_year = published.year + 1 if force_next_year else published.year
+    candidate = schedule_date_value(target_year, month, day)
+    if (
+        candidate
+        and allow_cross_year
+        and not force_next_year
+        and published.month >= 11
+        and month <= 2
+        and candidate.date() < published.date()
+    ):
         candidate = schedule_date_value(published.year + 1, month, day)
     return candidate
 
@@ -813,21 +834,31 @@ def schedule_date_mentions(text: str, published_at: str) -> list[dict]:
     def available(start: int, end: int) -> bool:
         return not any(start < right and end > left for left, right in occupied)
 
-    def add(start: int, end: int, value: datetime | None, raw: str) -> None:
+    def add(start: int, end: int, value: datetime | None, raw: str, inference: str = "explicit") -> None:
         if value and available(start, end):
-            mentions.append({"start": start, "end": end, "date": value, "raw": raw})
+            mentions.append({"start": start, "end": end, "date": value, "raw": raw, "inference": inference})
             occupied.append((start, end))
 
-    full_pattern = re.compile(r"(?:(20\d{2})\s*년\s*)?(\d{1,2})\s*월\s*(\d{1,2})\s*일")
+    full_pattern = re.compile(
+        r"(?:(?:(20\d{2})\s*년|(내년))\s*)?(\d{1,2})\s*월\s*(\d{1,2})\s*일"
+    )
     for match in full_pattern.finditer(text):
-        year_text, month_text, day_text = match.groups()
+        year_text, next_year_text, month_text, day_text = match.groups()
+        local_context = text[max(0, match.start() - 24) : min(len(text), match.end() + 80)]
+        allow_cross_year = bool(
+            SCHEDULE_CROSS_YEAR_CUE.search(local_context)
+            and not SCHEDULE_PAST_CUE.search(local_context)
+        )
         value = resolve_schedule_month_day(
             published,
             int(month_text),
             int(day_text),
             int(year_text) if year_text else None,
+            force_next_year=bool(next_year_text),
+            allow_cross_year=allow_cross_year,
         )
-        add(match.start(), match.end(), value, match.group(0))
+        inference = "explicit" if year_text else "next_year" if next_year_text else "cross_year" if value and value.year > published.year else "yearless"
+        add(match.start(), match.end(), value, match.group(0), inference)
 
     numeric_pattern = re.compile(r"(?<!\d)(20\d{2})[./-](\d{1,2})[./-](\d{1,2})(?!\d)")
     for match in numeric_pattern.finditer(text):
@@ -836,11 +867,12 @@ def schedule_date_mentions(text: str, published_at: str) -> list[dict]:
             match.end(),
             schedule_date_value(*(int(value) for value in match.groups())),
             match.group(0),
+            "explicit",
         )
 
     for match in re.finditer(r"(내달|다음\s*달)\s*(\d{1,2})\s*일", text):
         year, month = schedule_month_shift(published, 1)
-        add(match.start(), match.end(), schedule_date_value(year, month, int(match.group(2))), match.group(0))
+        add(match.start(), match.end(), schedule_date_value(year, month, int(match.group(2))), match.group(0), "next_month")
 
     for match in re.finditer(r"오는\s*(\d{1,2})\s*일", text):
         day = int(match.group(1))
@@ -849,18 +881,18 @@ def schedule_date_mentions(text: str, published_at: str) -> list[dict]:
         if candidate and candidate.date() < published.date():
             year, month = schedule_month_shift(published, 1)
             candidate = schedule_date_value(year, month, day)
-        add(match.start(), match.end(), candidate, match.group(0))
+        add(match.start(), match.end(), candidate, match.group(0), "relative")
 
     relative_days = {"오늘": 0, "내일": 1, "모레": 2}
     for word, offset in relative_days.items():
         for match in re.finditer(word, text):
-            add(match.start(), match.end(), published + timedelta(days=offset), match.group(0))
+            add(match.start(), match.end(), published + timedelta(days=offset), match.group(0), "relative")
 
     weekday_names = {"월": 0, "화": 1, "수": 2, "목": 3, "금": 4, "토": 5, "일": 6}
     for match in re.finditer(r"다음\s*주\s*([월화수목금토일])요일", text):
         next_monday = published + timedelta(days=(7 - published.weekday()))
         value = next_monday + timedelta(days=weekday_names[match.group(1)])
-        add(match.start(), match.end(), value, match.group(0))
+        add(match.start(), match.end(), value, match.group(0), "relative")
 
     mentions.sort(key=lambda item: item["start"])
     for index, mention in enumerate(mentions):
@@ -876,13 +908,16 @@ def schedule_date_mentions(text: str, published_at: str) -> list[dict]:
         end_month = int(month_text) if month_text else start_date.month
         end_value = schedule_date_value(end_year, end_month, int(day_text))
         if end_value and end_value.date() < start_date.date() and not year_text:
-            end_year, end_month = schedule_month_shift(start_date, 1)
+            if month_text:
+                end_year += 1
+            else:
+                end_year, end_month = schedule_month_shift(start_date, 1)
             end_value = schedule_date_value(end_year, end_month, int(day_text))
         # 게시일보다 앞서 시작했지만 아직 접수·행사가 끝나지 않은 기간은
         # 다음 해 일정으로 오인하지 않고 현재 진행 중인 기간으로 되돌린다.
         if (
             start_date.year > published.year
-            and not re.search(r"20\d{2}\s*년", str(mention.get("raw", "")))
+            and not re.search(r"20\d{2}\s*년|내년", str(mention.get("raw", "")))
             and not year_text
         ):
             current_start = schedule_date_value(published.year, start_date.month, start_date.day)
@@ -1177,6 +1212,7 @@ def extract_institution_schedules(item: dict, article_text: str = "") -> list[di
                 "eventType": event_type,
                 "startDate": start_date,
                 "endDate": end_date,
+                "dateInference": str(mention.get("inference", "explicit")),
                 "startTime": start_time,
                 "timezone": "Asia/Seoul",
                 "organizer": organizer,
@@ -1196,6 +1232,28 @@ def extract_institution_schedules(item: dict, article_text: str = "") -> list[di
                 "contentSignature": content_signature,
             })
     return schedules
+
+
+def valid_existing_schedule_year(item: dict) -> bool:
+    """과거 수집기가 연도 없는 날짜를 다음 해로 넘긴 잘못된 일정을 제거한다."""
+    published = schedule_iso_date(item.get("publishedAt"))
+    start = schedule_iso_date(item.get("startDate"))
+    if not published or not start:
+        return False
+    if start.year <= published.year:
+        return True
+
+    evidence = f"{item.get('evidence', '')} {item.get('title', '')}"
+    if re.search(rf"(?:{start.year}\s*년|{start.year}[./-]\d)|내년|다음\s*해", evidence):
+        return True
+    if str(item.get("dateInference", "")) in {"next_year", "explicit"}:
+        return True
+    return bool(
+        published.month >= 11
+        and start.month <= 2
+        and SCHEDULE_CROSS_YEAR_CUE.search(evidence)
+        and not SCHEDULE_PAST_CUE.search(evidence)
+    )
 
 
 def build_institution_schedules(source_items: list[dict], existing: list[dict]) -> list[dict]:
@@ -1221,7 +1279,12 @@ def build_institution_schedules(source_items: list[dict], existing: list[dict]) 
         url = str(item.get("url", ""))
         extracted.extend(extract_institution_schedules(item, body_map.get(url, "") if url in body_urls else ""))
 
-    combined = [item for item in existing if isinstance(item, dict)] + extracted
+    valid_existing = [
+        item
+        for item in existing
+        if isinstance(item, dict) and valid_existing_schedule_year(item)
+    ]
+    combined = valid_existing + extracted
     deduped = dedupe_institution_schedules(combined)
     today = datetime.now(KST).date()
     minimum = today - timedelta(days=SCHEDULE_RETENTION_DAYS)
@@ -1302,15 +1365,99 @@ def child_text(item: ET.Element, name: str) -> str:
     return ""
 
 
+NEWS_DOMESTIC_MARKET_HARD = re.compile(
+    r"(?<![A-Za-z0-9])K[- ]?ETS(?![A-Za-z0-9])|"
+    r"(?<![A-Za-z0-9])(?:KAU|KCU)\d{2}(?![A-Za-z0-9])|(?<![A-Za-z0-9])KOC(?![A-Za-z0-9])|"
+    r"(?:한국|국내).{0,18}(?:배출권거래제|배출권시장|탄소시장)|"
+    r"(?:한국거래소|(?<![A-Za-z0-9])KRX(?![A-Za-z0-9])).{0,24}배출권|"
+    r"배출권.{0,24}(?:한국거래소|(?<![A-Za-z0-9])KRX(?![A-Za-z0-9]))",
+    re.IGNORECASE,
+)
+NEWS_OVERSEAS_MARKET_HARD = re.compile(
+    r"(?<![A-Za-z0-9])(?:EU|UK|NZ)[ -]?ETS(?![A-Za-z0-9])|"
+    r"(?<![A-Za-z0-9])(?:EUA|UKA|NZU|RGGI|WCI|CCER|CEA)(?![A-Za-z0-9])|"
+    r"(?:유럽연합|유럽|(?<![A-Za-z0-9])EU(?![A-Za-z0-9])|중국|영국|일본|베트남|뉴질랜드|호주|캘리포니아|미국|캐나다|대만).{0,36}"
+    r"(?:배출권거래제|탄소\s*시장|탄소\s*거래소|탄소\s*배출권|배출권(?:\s*(?:가격|거래|경매|할당))?)|"
+    r"(?:배출권거래제|탄소\s*시장|탄소\s*거래소|탄소\s*배출권|배출권(?:\s*(?:가격|거래|경매|할당))?).{0,36}"
+    r"(?:유럽연합|유럽|(?<![A-Za-z0-9])EU(?![A-Za-z0-9])|중국|영국|일본|베트남|뉴질랜드|호주|캘리포니아|미국|캐나다|대만)",
+    re.IGNORECASE,
+)
+NEWS_DOMESTIC_RESPONSE = re.compile(
+    r"(?:CBAM|탄소국경조정|EU\s*규제|EU[ -]?ETS).{0,45}"
+    r"(?:대응|대비|수출|통상|설명회|지원|준비|가이드|인증|애로|경쟁력|국내\s*기업|우리\s*기업)|"
+    r"(?:대응|대비|수출|통상|설명회|지원|준비|가이드|인증|애로|경쟁력|국내\s*기업|우리\s*기업).{0,45}"
+    r"(?:CBAM|탄소국경조정|EU\s*규제|EU[ -]?ETS)",
+    re.IGNORECASE,
+)
+NEWS_FOREIGN_SUBJECT_ACTION = re.compile(
+    r"^[^가-힣A-Za-z0-9]{0,12}(?:(?<![A-Za-z0-9])EU(?![A-Za-z0-9])|유럽연합|유럽|중국|영국|일본|베트남|뉴질랜드|호주|캘리포니아|미국|캐나다|대만|독일|프랑스|日|中|美)"
+    r"(?:[,·:\s]|은|는|이|가).{0,90}(?:시행|발효|도입|개편|강화|경매|할당|거래|가격|확대|폐지)",
+    re.IGNORECASE,
+)
+NEWS_FOREIGN_SOURCE = re.compile(
+    r"Reuters|Bloomberg|Carbon\s*Pulse|S&P\s*Global|Argus|Euractiv|Financial\s*Times|"
+    r"The\s*Guardian|CNBC|BBC|Xinhua|신화망|Vietnam\.vn|VnExpress|Nikkei|Japan\s*Times|"
+    r"China\s*Daily|European\s*Commission|EU\s*Commission|ICAP|World\s*Bank",
+    re.IGNORECASE,
+)
+NEWS_GENERIC_FOREIGN = re.compile(
+    r"유럽연합|유럽|(?<![A-Za-z0-9])EU(?![A-Za-z0-9])|중국|영국|일본|베트남|뉴질랜드|호주|캘리포니아|미국|캐나다|대만|독일|프랑스|日|中|美",
+    re.IGNORECASE,
+)
+
+
+def normalized_region_text(value: object) -> str:
+    return re.sub(
+        r"\s+",
+        " ",
+        unicodedata.normalize("NFKC", html.unescape(clean_html(str(value or ""), 4_000))),
+    ).strip()
+
+
+def news_region_for(item: dict) -> str:
+    """기사의 발행국이 아니라 주된 배출권 시장이 국내인지 해외인지 판정한다."""
+    title = normalized_region_text(item.get("title", ""))
+    summary = normalized_region_text(item.get("summary", ""))
+    source = normalized_region_text(item.get("source", ""))
+
+    if NEWS_DOMESTIC_MARKET_HARD.search(title) or NEWS_DOMESTIC_RESPONSE.search(title):
+        return "국내"
+    if NEWS_OVERSEAS_MARKET_HARD.search(title):
+        return "해외"
+
+    domestic_score = 0
+    foreign_score = 0
+    domestic_score += 12 if NEWS_DOMESTIC_MARKET_HARD.search(title) else 0
+    domestic_score += 7 if NEWS_DOMESTIC_MARKET_HARD.search(summary) else 0
+    domestic_score += 10 if NEWS_DOMESTIC_RESPONSE.search(title) else 0
+    domestic_score += 5 if NEWS_DOMESTIC_RESPONSE.search(summary) else 0
+    foreign_score += 12 if NEWS_OVERSEAS_MARKET_HARD.search(title) else 0
+    foreign_score += 7 if NEWS_OVERSEAS_MARKET_HARD.search(summary) else 0
+    foreign_score += 8 if NEWS_FOREIGN_SUBJECT_ACTION.search(title) else 0
+    foreign_score += 3 if NEWS_GENERIC_FOREIGN.search(title) else 0
+    foreign_score += 1 if NEWS_GENERIC_FOREIGN.search(summary) else 0
+    foreign_source = bool(NEWS_FOREIGN_SOURCE.search(source))
+    foreign_score += 2 if foreign_source else 0
+    if foreign_source and re.search(r"탄소\s*배출권|배출권거래제|탄소\s*시장|탄소\s*거래소", title, re.IGNORECASE):
+        foreign_score += 6
+    domestic_score += 1 if re.search(r"(?:\.kr|\.co\.kr|뉴스|신문|일보|경제|미디어)$", source, re.IGNORECASE) else 0
+    return "해외" if foreign_score >= 8 and foreign_score >= domestic_score + 3 else "국내"
+
+
 def category_for(text: str) -> str:
-    if "유상경매" in text or "경매" in text or "유상할당" in text:
+    if re.search(
+        r"유상\s*(?:할당\s*)?경매|배출권.{0,20}(?:입찰|경매)|(?:입찰|경매).{0,20}배출권|"
+        r"(?:EU|UK|NZ)[ -]?ETS.{0,20}경매|경매.{0,20}(?:EU|UK|NZ)[ -]?ETS|응찰|낙찰|유찰",
+        text,
+        re.IGNORECASE,
+    ):
         return "유상경매"
-    if "상쇄" in text or "외부사업" in text:
-        return "상쇄"
-    if "시장안정" in text or "예비분" in text:
+    if re.search(r"시장안정|예비분|K-MSR|공급\s*조정|추가\s*공급", text, re.IGNORECASE):
         return "시장안정"
-    if "할당계획" in text or "계획기간" in text or "할당대상" in text:
-        return "할당계획"
+    if re.search(r"상쇄|외부사업|KOC|KCU|감축실적|방법론", text, re.IGNORECASE):
+        return "상쇄·외부사업"
+    if re.search(r"(?:KAU|EUA|UKA|NZU)\d*|종가|거래량|가격|시황|강세|약세|급등|급락", text, re.IGNORECASE):
+        return "시장·가격"
     return "제도"
 
 
@@ -1816,6 +1963,10 @@ def main() -> int:
     max_news = max(0, min(int(settings.get("maxNewsItems", 24)), limit))
     ranked = sorted(merged.values(), key=lambda item: (item.get("publishedAt", ""), item.get("title", "")), reverse=True)
     all_news = dedupe_news([item for item in ranked if item.get("sourceType") == "news"])
+    for item in all_news:
+        visible_text = f"{item.get('title', '')} {item.get('summary', '')}"
+        item["category"] = category_for(visible_text)
+        item["region"] = news_region_for(item)
     news = all_news[:max_news]
     official = [item for item in ranked if item.get("sourceType") != "news"]
     institution_schedules = build_institution_schedules(
