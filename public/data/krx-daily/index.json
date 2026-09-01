@@ -2,10 +2,10 @@
   "schemaVersion": "1.0",
   "source": "한국거래소 배출권시장 정보플랫폼 시장동향",
   "sourceUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S1.jsp?bbstype=5",
-  "lastSync": "2026-09-02T00:39:52+09:00",
+  "lastSync": "2026-09-02T00:58:58+09:00",
   "firstTradeDate": "2024-04-01",
   "lastTradeDate": "2026-09-01",
-  "itemCount": 587,
+  "itemCount": 588,
   "availableMonths": [
     "2024-04",
     "2024-05",
@@ -64,11 +64,11 @@
     }
   ],
   "backfill": {
-    "status": "complete_with_errors",
+    "status": "complete",
     "boardCount": 587,
     "nextRn": 588,
-    "failureCount": 1,
+    "failureCount": 0,
     "progressPercent": 100
   },
-  "previousLastSync": "2026-09-02T00:34:10+09:00"
+  "previousLastSync": "2026-09-02T00:39:52+09:00"
 }

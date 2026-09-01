@@ -1244,6 +1244,84 @@
       }
     },
     {
+      "tradeDate": "2024-06-27",
+      "publishedDate": "2024-06-27",
+      "boardRn": 58,
+      "bbsSeq": "125",
+      "attachFileSeq": "2",
+      "title": "배출권 거래시장 일일동향(장내) 24.06.27",
+      "sourceKey": "krx:125:2",
+      "sourceRevisionId": "krx:125:2:d6815f42b392",
+      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=125",
+      "filename": "배출권 거래시장 일일동향_240627.pdf",
+      "sha256": "d6815f42b392adb69f19b3c74ea31c5f15f767c36600f7028b39ea06b26c5df0",
+      "fileSize": 170227,
+      "pages": 1,
+      "parserVersion": "1.2.0",
+      "participantScope": "all_instruments",
+      "taxonomyVersion": "legacy_brokerage_members",
+      "market": {
+        "totalVolume": 635849,
+        "representativeInstrument": {
+          "symbol": "KAU23",
+          "close": null,
+          "change": null,
+          "volume": 330849
+        }
+      },
+      "participantFlows": [
+        {
+          "categoryKey": "liable_entities",
+          "label": "할당대상업체",
+          "netByMethod": {
+            "competitive": -32795,
+            "negotiated": 0,
+            "auction": 0,
+            "total": -32795
+          }
+        },
+        {
+          "categoryKey": "market_makers",
+          "label": "시장조성자",
+          "netByMethod": {
+            "competitive": 32795,
+            "negotiated": 0,
+            "auction": 0,
+            "total": 32795
+          }
+        },
+        {
+          "categoryKey": "brokerage_members",
+          "label": "거래중개회원",
+          "netByMethod": {
+            "competitive": 0,
+            "negotiated": 0,
+            "auction": 0,
+            "total": 0
+          }
+        },
+        {
+          "categoryKey": "koc_specialists",
+          "label": "KOC전문회원",
+          "netByMethod": {
+            "competitive": 0,
+            "negotiated": 0,
+            "auction": 0,
+            "total": 0
+          }
+        }
+      ],
+      "validation": {
+        "netTotal": 0,
+        "balanced": true
+      },
+      "provenance": {
+        "method": "manual_transcription_override",
+        "overrideId": "krx:125:2@d6815f42b392adb69f19b3c74ea31c5f15f767c36600f7028b39ea06b26c5df0",
+        "auditNote": "텍스트 레이어가 없는 KRX 원본 PDF의 전체 종목 매수·매도 표를 렌더링해 수기로 전사하고, 거래방식별 매수·매도 균형·전체 거래량·순거래량 합계를 재검증함"
+      }
+    },
+    {
       "tradeDate": "2024-06-28",
       "publishedDate": "2024-06-28",
       "boardRn": 59,
@@ -1257,7 +1335,7 @@
       "sha256": "9cc213c0b2ae2da695f6e73a1e5c34a14c4da0c38cd9dfc4dd24954e06a7f681",
       "fileSize": 116202,
       "pages": 1,
-      "parserVersion": "1.1.0",
+      "parserVersion": "1.2.0",
       "participantScope": "all_instruments",
       "taxonomyVersion": "legacy_brokerage_members",
       "market": {
@@ -1317,5 +1395,5 @@
       }
     }
   ],
-  "generatedAt": "2026-09-02T00:25:59+09:00"
+  "generatedAt": "2026-09-02T00:58:46+09:00"
 }
