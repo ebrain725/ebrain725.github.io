@@ -6,6 +6,7 @@
 # NEWS_REGION_VERSION = "2026-08-31-v1-domestic-overseas"
 # INSTITUTION_SCHEDULE_YEAR_FIX_VERSION = "2026-08-31-v2-strict-year-inference"
 # KRX_NOTICE_VERSION = "2026-08-31-v1-official-board"
+# ASSEMBLY_AGENDA_ROUTING_VERSION = "2026-09-01-v1-move-and-dedupe"
 """기후부·한국거래소 공식자료와 시장 뉴스를 수집·정리한다."""
 
 from __future__ import annotations
@@ -759,6 +760,11 @@ SCHEDULE_INSTITUTIONS = (
     ("산업통상부", r"산업통상자원부|산업통상부|산업부"),
     ("기획재정부", r"기획재정부|기재부"),
 )
+ASSEMBLY_AGENDA_TITLE = re.compile(
+    r"^\s*[\[【〖〈<「『(]*\s*(?:오늘(?:의)?\s*)?국회\s*(?:주요\s*)?(?:의사\s*)?일정"
+    r"(?=\s|$|[\]】〗〉>」』):：(\[])",
+    re.IGNORECASE,
+)
 SCHEDULE_GENERIC_TOKENS = {
     "배출권", "탄소", "탄소시장", "배출권거래제", "국내", "관련", "기관", "정책", "시장",
     "개최", "예정", "진행", "실시", "발표", "공개", "공고", "접수", "신청", "모집",
@@ -786,6 +792,14 @@ def schedule_iso_date(value: object) -> datetime | None:
         return datetime.strptime(str(value or "")[:10], "%Y-%m-%d").replace(tzinfo=KST)
     except (TypeError, ValueError):
         return None
+
+
+def is_assembly_agenda_article(item: dict) -> bool:
+    """`오늘의 국회일정` 종합기사를 일반 뉴스가 아닌 기관일정으로 보낸다."""
+    if item.get("sourceType") != "news" and item.get("section") != "news":
+        return False
+    title = normalized_news_visible_text(str(item.get("title", "")))
+    return bool(ASSEMBLY_AGENDA_TITLE.search(title))
 
 
 def schedule_date_value(year: int, month: int, day: int) -> datetime | None:
@@ -1060,9 +1074,11 @@ def schedule_product_codes(value: str) -> set[str]:
     }
 
 
-def schedule_story_score(item: dict) -> tuple[int, int, str, int, int]:
+def schedule_story_score(item: dict) -> tuple[int, int, int, str, int, int]:
+    direct_source = preferred_news_item_score(item)[0] if item.get("sourceType") == "news" else 1
     return (
         1 if item.get("sourceType") != "news" else 0,
+        direct_source,
         1 if item.get("sourceTitle") else 0,
         str(item.get("publishedAt", "")),
         1 if item.get("startTime") else 0,
@@ -1076,6 +1092,15 @@ def schedule_time_minutes(value: str) -> int | None:
 
 
 def same_institution_schedule(first: dict, second: dict) -> bool:
+    first_type = str(first.get("eventType", ""))
+    second_type = str(second.get("eventType", ""))
+    if "국회일정" in {first_type, second_type}:
+        return (
+            first_type == second_type == "국회일정"
+            and first.get("startDate") == second.get("startDate")
+            and normalized_news_title(first.get("organizer", ""))
+            == normalized_news_title(second.get("organizer", ""))
+        )
     first_evidence_key = normalized_schedule_content(first.get("evidence", ""))
     second_evidence_key = normalized_schedule_content(second.get("evidence", ""))
     if min(len(first_evidence_key), len(second_evidence_key)) >= 40 and first_evidence_key == second_evidence_key:
@@ -1154,15 +1179,22 @@ def merge_institution_schedule_group(group: list[dict]) -> dict:
     representative["duplicateCount"] = max(previous_count, len(evidence_keys), 1)
     representative["source"] = sources[0] if sources else str(representative.get("source", ""))
     representative["url"] = urls[0] if urls else str(representative.get("url", ""))
-    stable_material = "|".join([
-        str(representative.get("organizer", "")),
-        str(representative.get("eventType", "")),
-        str(representative.get("startDate", "")),
-        str(representative.get("startTime", "")),
-        normalized_news_title(representative.get("location", ""))[:60],
-        normalized_news_title(representative.get("title", ""))[:100],
-        normalized_schedule_content(representative.get("evidence", ""))[:160],
-    ])
+    if representative.get("eventType") == "국회일정":
+        stable_material = "|".join([
+            str(representative.get("organizer", "")),
+            "국회일정",
+            str(representative.get("startDate", "")),
+        ])
+    else:
+        stable_material = "|".join([
+            str(representative.get("organizer", "")),
+            str(representative.get("eventType", "")),
+            str(representative.get("startDate", "")),
+            str(representative.get("startTime", "")),
+            normalized_news_title(representative.get("location", ""))[:60],
+            normalized_news_title(representative.get("title", ""))[:100],
+            normalized_schedule_content(representative.get("evidence", ""))[:160],
+        ])
     representative["id"] = hashlib.sha1(stable_material.encode("utf-8")).hexdigest()[:16]
     representative.pop("sourceItemId", None)
     return representative
@@ -1193,11 +1225,131 @@ def schedule_article_score(item: dict) -> tuple[int, str]:
     return score, str(item.get("publishedAt", ""))
 
 
+def assembly_agenda_event_title(value: str, fallback: str) -> str:
+    """국회 종합일정 중 배출권 관련 실제 행사명을 제목으로 사용한다."""
+    text = clean_html(value, 4_000)
+    fragments = re.split(r"[\r\n•●○◇◆|;/]+|\s+-\s+", text)
+    candidates = [
+        fragment.strip(" -–—·,:：")
+        for fragment in fragments
+        if SCHEDULE_MARKET_CONTEXT.search(fragment)
+        and SCHEDULE_EVENT_CUE.search(fragment)
+        and not SCHEDULE_NON_EVENT_CONTEXT.search(fragment)
+    ]
+    if not candidates:
+        event_noun = r"설명회|공청회|간담회|세미나|포럼|토론회|심포지엄|컨퍼런스|협의회|회의"
+        pattern = re.compile(
+            rf"([가-힣A-Za-z0-9·()「」『』'\"\s,:：\-]{{4,180}}?(?:{event_noun}))",
+            re.IGNORECASE,
+        )
+        candidates = [
+            match.group(1).strip(" -–—·,:：")
+            for match in pattern.finditer(text)
+            if SCHEDULE_MARKET_CONTEXT.search(match.group(1))
+            and not SCHEDULE_NON_EVENT_CONTEXT.search(match.group(1))
+        ]
+    if not candidates:
+        return fallback
+
+    title = min(candidates, key=lambda item: (len(item), item))
+    comma_parts = [part.strip() for part in re.split(r"[,，]", title) if part.strip()]
+    focused = [
+        part for part in comma_parts
+        if SCHEDULE_MARKET_CONTEXT.search(part) and SCHEDULE_EVENT_CUE.search(part)
+    ]
+    if focused:
+        title = min(focused, key=len)
+    title = re.sub(r"^\s*\d{1,2}(?::\d{2})?\s*", "", title)
+    title = re.sub(
+        r"^[가-힣A-Za-z0-9· ]{2,100}(?:의원실|위원회|국회의원)\s*(?:등|주최|공동주최)?\s*",
+        "",
+        title,
+    )
+    return clean_html(title, 180) or fallback
+
+
+def is_routable_assembly_agenda_article(item: dict) -> bool:
+    return bool(
+        is_assembly_agenda_article(item)
+        and assembly_agenda_event_title(str(item.get("summary", "")), "")
+    )
+
+
+def extract_assembly_agenda_schedule(item: dict, article_text: str = "") -> list[dict]:
+    """같은 날짜의 국회 종합일정 보도를 대표기사 한 건으로 만든다."""
+    published_at = str(item.get("publishedAt", ""))
+    published = schedule_iso_date(published_at)
+    if not published:
+        return []
+
+    source_title = clean_html(str(item.get("title", "")), 180) or "오늘의 국회일정"
+    mentions = schedule_date_mentions(source_title, published_at)
+    inference_order = {
+        "explicit": 0,
+        "yearless": 1,
+        "next_year": 2,
+        "next_month": 3,
+        "cross_year": 4,
+        "relative": 5,
+    }
+    mention = min(
+        mentions,
+        key=lambda value: (inference_order.get(str(value.get("inference", "")), 9), int(value.get("start", 0))),
+    ) if mentions else None
+    agenda_date = mention.get("date") if mention else published
+    if not isinstance(agenda_date, datetime):
+        agenda_date = published
+    start_date = agenda_date.date().isoformat()
+
+    source_url = str(item.get("url", ""))
+    source_item_id = str(item.get("id", ""))
+    evidence = clean_html(str(item.get("summary", "")), 360) or source_title
+    event_title = assembly_agenda_event_title(f"{item.get('summary', '')} {article_text}", "")
+    if not event_title:
+        return []
+    content_signature = normalized_schedule_content(article_text or f"{source_title} {evidence}")
+    content_fingerprint = hashlib.sha1(content_signature.encode("utf-8")).hexdigest() if content_signature else ""
+    sources = list(dict.fromkeys([
+        str(item.get("source", "")).strip(),
+        *metadata_values(item.get("duplicateSources")),
+    ]))
+    sources = [value for value in sources if value]
+    event_key = f"대한민국 국회|국회일정|{start_date}"
+    return [{
+        "id": hashlib.sha1(event_key.encode("utf-8")).hexdigest()[:16],
+        "title": event_title,
+        "sourceTitle": source_title,
+        "eventType": "국회일정",
+        "startDate": start_date,
+        "endDate": start_date,
+        "dateInference": str(mention.get("inference", "published")) if mention else "published",
+        "startTime": "",
+        "timezone": "Asia/Seoul",
+        "organizer": "대한민국 국회",
+        "location": "",
+        "status": "confirmed",
+        "evidence": evidence,
+        "publishedAt": published_at,
+        "source": str(item.get("source", "")),
+        "sourceType": "news",
+        "url": source_url,
+        "sourceItemId": source_item_id,
+        "sourceItemIds": [source_item_id] if source_item_id else [],
+        "sourceUrls": [source_url] if source_url else [],
+        "sources": sources,
+        "duplicateCount": max(1, int(item.get("duplicateCount") or 1)),
+        "contentFingerprint": content_fingerprint,
+        "contentSignature": content_signature,
+    }]
+
+
 def extract_institution_schedules(item: dict, article_text: str = "") -> list[dict]:
     published_at = str(item.get("publishedAt", ""))
     published = schedule_iso_date(published_at)
     if not published:
         return []
+    if is_assembly_agenda_article(item):
+        return extract_assembly_agenda_schedule(item, article_text)
     visible = f"{item.get('title', '')}. {item.get('summary', '')}"
     full_text = article_text or visible
     content_signature = normalized_schedule_content(full_text)
@@ -1309,6 +1461,7 @@ def build_institution_schedules(source_items: list[dict], existing: list[dict]) 
         item
         for item in ordered
         if str(item.get("publishedAt", "")) >= recent_cutoff
+        and not is_assembly_agenda_article(item)
         and re.match(r"^https?://", str(item.get("url", "")), re.IGNORECASE)
     ][:SCHEDULE_BODY_VERIFY_LIMIT]
     body_urls = {str(item.get("url", "")) for item in body_candidates}
@@ -1330,8 +1483,13 @@ def build_institution_schedules(source_items: list[dict], existing: list[dict]) 
         for item in existing
         if isinstance(item, dict)
         and valid_existing_schedule_year(item)
-        and SCHEDULE_MARKET_CONTEXT.search(str(item.get("evidence") or item.get("title") or ""))
-        and not SCHEDULE_NON_EVENT_CONTEXT.search(str(item.get("evidence") or item.get("title") or ""))
+        and (
+            item.get("eventType") == "국회일정"
+            or (
+                SCHEDULE_MARKET_CONTEXT.search(str(item.get("evidence") or item.get("title") or ""))
+                and not SCHEDULE_NON_EVENT_CONTEXT.search(str(item.get("evidence") or item.get("title") or ""))
+            )
+        )
     ]
     combined = valid_existing + extracted
     deduped = dedupe_institution_schedules(combined)
@@ -2208,7 +2366,8 @@ def main() -> int:
         visible_text = f"{item.get('title', '')} {item.get('summary', '')}"
         item["category"] = category_for(visible_text)
         item["region"] = news_region_for(item)
-    news = all_news[:max_news]
+    # 국회 종합일정 기사는 기관일정에만 두고, 제외 후 뉴스 정원을 다시 채운다.
+    news = [item for item in all_news if not is_routable_assembly_agenda_article(item)][:max_news]
     official = [item for item in ranked if item.get("sourceType") != "news"]
     institution_schedules = build_institution_schedules(
         [item for item in official if policy_section(item) != "krx_notice"] + all_news,
