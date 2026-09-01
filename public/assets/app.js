@@ -200,6 +200,85 @@ function policyGroup(policy) {
   return "뉴스";
 }
 
+const ASSEMBLY_AGENDA_TITLE = /^\s*[\[【〖〈<「『(]*\s*(?:오늘(?:의)?\s*)?국회\s*(?:주요\s*)?(?:의사\s*)?일정(?=\s|$|[\]】〗〉>」』):：(\[])/i;
+const ASSEMBLY_MARKET_CONTEXT = /배출권|탄소\s*(?:시장|가격|배출권|국경)|온실가스|탄소중립|기후(?:위기|대응|정책|외교)?|CBAM|에너지|전력망/i;
+const ASSEMBLY_EVENT_CUE = /설명회|공청회|간담회|세미나|포럼|토론회|심포지엄|컨퍼런스|협의회|회의/i;
+
+function isAssemblyAgendaPolicy(policy) {
+  return policyGroup(policy) === "뉴스" && ASSEMBLY_AGENDA_TITLE.test(String(policy.title || "").replace(/<[^>]+>/g, " ").trim());
+}
+
+function assemblyAgendaEventTitle(value, fallback = "") {
+  const text = String(value || "").replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
+  const candidates = text.split(/[\r\n•●○◇◆|;/]+|\s+-\s+/).map((part) => part.trim().replace(/^[-–—·,:：\s]+|[-–—·,:：\s]+$/g, ""))
+    .filter((part) => ASSEMBLY_MARKET_CONTEXT.test(part) && ASSEMBLY_EVENT_CUE.test(part));
+  let title = [...candidates].sort((left, right) => left.length - right.length || left.localeCompare(right))[0] || "";
+  if (title.includes(",")) {
+    const focused = title.split(/[,，]/).map((part) => part.trim()).filter((part) => ASSEMBLY_MARKET_CONTEXT.test(part) && ASSEMBLY_EVENT_CUE.test(part));
+    if (focused.length) title = focused.sort((left, right) => left.length - right.length)[0];
+  }
+  title = title
+    .replace(/^\s*\d{1,2}(?::\d{2})?\s*/, "")
+    .replace(/^[가-힣A-Za-z0-9· ]{2,100}(?:의원실|위원회|국회의원)\s*(?:등|주최|공동주최)?\s*/, "")
+    .trim();
+  return title || fallback;
+}
+
+function assemblyAgendaSchedules(policies) {
+  const groups = new Map();
+  policies.filter(isAssemblyAgendaPolicy).forEach((policy) => {
+    const eventTitle = assemblyAgendaEventTitle(policy.summary);
+    if (!eventTitle) return;
+    const group = groups.get(policy.publishedAt) || [];
+    group.push({ ...policy, eventTitle });
+    groups.set(policy.publishedAt, group);
+  });
+  return [...groups.entries()].map(([date, group]) => {
+    const score = (policy) => {
+      let direct = 0;
+      try { direct = /(?:news\.google\.com|news\.naver\.com|n\.news\.naver\.com)$/i.test(new URL(policy.url).hostname) ? 0 : 100000; } catch { direct = 0; }
+      return direct + (/연합뉴스/.test(String(policy.source || "")) ? 10000 : 0) + String(policy.summary || "").length;
+    };
+    const representative = [...group].sort((left, right) => score(right) - score(left) || String(left.url || "").localeCompare(String(right.url || "")))[0];
+    const duplicateCount = group.reduce((sum, item) => sum + Math.max(1, Number(item.duplicateCount) || 1), 0);
+    return {
+      id: `assembly-agenda-${date}`,
+      title: representative.eventTitle,
+      sourceTitle: representative.title,
+      eventType: "국회일정",
+      startDate: date,
+      endDate: date,
+      dateInference: "published",
+      startTime: "",
+      timezone: "Asia/Seoul",
+      organizer: "대한민국 국회",
+      location: "",
+      status: "confirmed",
+      evidence: representative.summary || representative.title,
+      publishedAt: date,
+      source: representative.source,
+      sourceType: "news",
+      url: representative.url,
+      sourceUrls: group.map((item) => item.url).filter(Boolean),
+      sources: [...new Set(group.map((item) => item.source).filter(Boolean))],
+      duplicateCount,
+    };
+  });
+}
+
+function mergeAssemblyAgendaSchedules(existing, derived) {
+  const ordinary = (Array.isArray(existing) ? existing : []).filter((item) => item?.eventType !== "국회일정");
+  const agendas = new Map();
+  [...(Array.isArray(existing) ? existing : []).filter((item) => item?.eventType === "국회일정"), ...derived].forEach((item) => {
+    const key = `${item.organizer || "대한민국 국회"}|${item.startDate}`;
+    const previous = agendas.get(key);
+    if (!previous) { agendas.set(key, item); return; }
+    const representative = String(item.evidence || "").length > String(previous.evidence || "").length ? item : previous;
+    agendas.set(key, { ...representative, duplicateCount: Math.max(Number(previous.duplicateCount || 1), Number(item.duplicateCount || 1)) });
+  });
+  return [...ordinary, ...agendas.values()];
+}
+
 function derivePolicyInsight(policies) {
   const official = policies.filter((policy) => policyGroup(policy) !== "뉴스").slice(0, 10);
   if (!official.length) return { summary: "최근 기후부·한국거래소 공식자료가 수집되면 정책 변화가 시장 수급에 미칠 영향을 분석합니다.", basisLatestDate: "-", basisCount: 0, source: "fallback" };
@@ -1295,9 +1374,11 @@ async function init() {
   state.auctions = normalizeAuctions(auctionData.items || []);
   state.auctionLastSync = auctionData.lastSync || "";
   const policyData = policyResult.status === "fulfilled" ? policyResult.value : { items: [], keywords: [] };
-  state.policies = dedupeNewsPolicies((policyData.items || []).map((item) => ({ ...item, publishedAt: item.publishedAt || item.date || "" })));
+  const rawPolicies = (policyData.items || []).map((item) => ({ ...item, publishedAt: item.publishedAt || item.date || "" }));
+  const agendaSchedules = assemblyAgendaSchedules(rawPolicies);
+  state.policies = dedupeNewsPolicies(rawPolicies.filter((item) => !(isAssemblyAgendaPolicy(item) && assemblyAgendaEventTitle(item.summary))));
   state.policyLastSync = policyData.lastSync || "";
-  state.institutionSchedules = normalizeInstitutionSchedules(policyData.institutionSchedules || []);
+  state.institutionSchedules = normalizeInstitutionSchedules(mergeAssemblyAgendaSchedules(policyData.institutionSchedules || [], agendaSchedules));
   state.policyInsight = policyData.aiInsight || null;
   const billData = billResult.status === "fulfilled" ? billResult.value : { items: [], warning: "발의법률안 데이터를 불러오지 못했습니다." };
   state.bills = normalizeBills(billData.items || []);
