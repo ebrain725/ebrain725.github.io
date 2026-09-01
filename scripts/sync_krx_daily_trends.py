@@ -35,9 +35,10 @@ SOURCE_ROOT = DATA_ROOT / "sources"
 INDEX_PATH = DATA_ROOT / "index.json"
 LATEST_PATH = DATA_ROOT / "latest.json"
 QUALITY_PATH = DATA_ROOT / "quality.json"
+MANUAL_OVERRIDE_PATH = ROOT / "scripts" / "krx_daily_manual_overrides.json"
 
 KST = ZoneInfo("Asia/Seoul")
-COLLECTOR_VERSION = "1.1.0"
+COLLECTOR_VERSION = "1.2.0"
 SCHEMA_VERSION = "1.0"
 KRX_ORIGIN = "https://ets.krx.co.kr"
 KRX_LIST_PAGE = (
@@ -70,6 +71,8 @@ METHOD_KEYS = {
     "합계": "total",
 }
 REQUIRED_STABLE_CATEGORIES = {"할당대상업체", "시장조성자", "KOC전문회원"}
+MANUAL_OVERRIDE_SCHEMA_VERSION = "1.0"
+MANUAL_METHODS = ("competitive", "negotiated", "auction")
 
 
 def now_kst() -> str:
@@ -111,6 +114,201 @@ def numeric(value: str, dash_as_zero: bool = True) -> int:
 
 def clean_label(value: str) -> str:
     return re.sub(r"\s+", "", str(value or ""))
+
+
+def expected_category_keys(trade_date: str) -> tuple[str, ...]:
+    if trade_date < "2026-03-17":
+        return (
+            "liable_entities",
+            "market_makers",
+            "brokerage_members",
+            "koc_specialists",
+        )
+    return (
+        "liable_entities",
+        "market_makers",
+        "financial_institutions",
+        "others",
+        "koc_specialists",
+    )
+
+
+def validate_manual_override(
+    source_key: str,
+    sha256: str,
+    override: dict[str, Any],
+) -> None:
+    if not re.fullmatch(r"krx:\d+:\d+", source_key):
+        raise RuntimeError(f"수기 전사 sourceKey 형식 오류: {source_key}")
+    if not re.fullmatch(r"[0-9a-f]{64}", sha256):
+        raise RuntimeError(f"수기 전사 SHA-256 형식 오류: {source_key}")
+    if not isinstance(override, dict) or set(override) != {
+        "source",
+        "market",
+        "grossByMethod",
+        "audit",
+    }:
+        raise RuntimeError(f"수기 전사 최상위 필드 오류: {source_key}")
+
+    source = override.get("source")
+    expected_source_fields = {
+        "bbsSeq",
+        "attachFileSeq",
+        "boardRn",
+        "filename",
+        "publishedDate",
+        "tradeDate",
+        "fileSize",
+        "pages",
+    }
+    if not isinstance(source, dict) or set(source) != expected_source_fields:
+        raise RuntimeError(f"수기 전사 출처 필드 오류: {source_key}")
+    source_parts = source_key.split(":")
+    if (
+        source.get("bbsSeq") != source_parts[1]
+        or source.get("attachFileSeq") != source_parts[2]
+    ):
+        raise RuntimeError(f"수기 전사 출처 식별자 불일치: {source_key}")
+    if type(source.get("boardRn")) is not int or source["boardRn"] < 1:
+        raise RuntimeError(f"수기 전사 boardRn 오류: {source_key}")
+    if type(source.get("fileSize")) is not int or not 10_000 <= source["fileSize"] <= 10_000_000:
+        raise RuntimeError(f"수기 전사 PDF 크기 오류: {source_key}")
+    if type(source.get("pages")) is not int or not 1 <= source["pages"] <= 5:
+        raise RuntimeError(f"수기 전사 PDF 페이지 수 오류: {source_key}")
+    trade_date = str(source.get("tradeDate") or "")
+    published_date = str(source.get("publishedDate") or "")
+    try:
+        if datetime.strptime(trade_date, "%Y-%m-%d").date().isoformat() != trade_date:
+            raise ValueError
+        if datetime.strptime(published_date, "%Y-%m-%d").date().isoformat() != published_date:
+            raise ValueError
+    except ValueError as exc:
+        raise RuntimeError(f"수기 전사 날짜 오류: {source_key}") from exc
+    filename = str(source.get("filename") or "")
+    filename_date = re.search(r"_(\d{6})\.pdf$", filename, re.I)
+    if not filename_date:
+        raise RuntimeError(f"수기 전사 PDF 파일명 날짜 누락: {source_key}")
+    expected_trade_date = datetime.strptime(
+        filename_date.group(1), "%y%m%d"
+    ).date().isoformat()
+    if expected_trade_date != trade_date:
+        raise RuntimeError(f"수기 전사 PDF 파일명·거래일 불일치: {source_key}")
+
+    market = override.get("market")
+    if not isinstance(market, dict) or set(market) != {
+        "totalVolume",
+        "representativeInstrument",
+    }:
+        raise RuntimeError(f"수기 전사 시장 필드 오류: {source_key}")
+    total_volume = market.get("totalVolume")
+    if type(total_volume) is not int or total_volume < 0:
+        raise RuntimeError(f"수기 전사 전체 거래량 오류: {source_key}")
+    representative = market.get("representativeInstrument")
+    if not isinstance(representative, dict) or set(representative) != {
+        "symbol",
+        "close",
+        "change",
+        "volume",
+    }:
+        raise RuntimeError(f"수기 전사 대표 종목 필드 오류: {source_key}")
+    if not re.fullmatch(r"(?:KAU|KCU)\d+", str(representative.get("symbol") or "")):
+        raise RuntimeError(f"수기 전사 대표 종목 코드 오류: {source_key}")
+    if representative.get("close") is not None and type(representative["close"]) is not int:
+        raise RuntimeError(f"수기 전사 대표 종목 종가 오류: {source_key}")
+    if representative.get("change") is not None and type(representative["change"]) is not int:
+        raise RuntimeError(f"수기 전사 대표 종목 등락 오류: {source_key}")
+    representative_volume = representative.get("volume")
+    if type(representative_volume) is not int or not 0 <= representative_volume <= total_volume:
+        raise RuntimeError(f"수기 전사 대표 종목 거래량 오류: {source_key}")
+
+    gross = override.get("grossByMethod")
+    if not isinstance(gross, dict) or set(gross) != {"buy", "sell"}:
+        raise RuntimeError(f"수기 전사 매수·매도 표 오류: {source_key}")
+    category_keys = expected_category_keys(trade_date)
+    for side in ("buy", "sell"):
+        side_rows = gross.get(side)
+        if not isinstance(side_rows, dict) or set(side_rows) != set(MANUAL_METHODS):
+            raise RuntimeError(f"수기 전사 {side} 거래방식 오류: {source_key}")
+        for method in MANUAL_METHODS:
+            values = side_rows.get(method)
+            if not isinstance(values, dict) or tuple(values) != category_keys:
+                raise RuntimeError(
+                    f"수기 전사 {side} {method} 참가자 분류 오류: {source_key}"
+                )
+            if any(type(value) is not int or value < 0 for value in values.values()):
+                raise RuntimeError(
+                    f"수기 전사 {side} {method} 수치 오류: {source_key}"
+                )
+    for method in MANUAL_METHODS:
+        buy_total = sum(gross["buy"][method].values())
+        sell_total = sum(gross["sell"][method].values())
+        if buy_total != sell_total:
+            raise RuntimeError(
+                f"수기 전사 {method} 매수·매도 불균형: "
+                f"{source_key}, {buy_total} != {sell_total}"
+            )
+    for side in ("buy", "sell"):
+        side_total = sum(
+            sum(gross[side][method].values()) for method in MANUAL_METHODS
+        )
+        if side_total != total_volume:
+            raise RuntimeError(
+                f"수기 전사 {side} 합계·전체 거래량 불일치: "
+                f"{source_key}, {side_total} != {total_volume}"
+            )
+
+    audit = override.get("audit")
+    if not isinstance(audit, dict) or set(audit) != {"method", "note"}:
+        raise RuntimeError(f"수기 전사 감사 필드 오류: {source_key}")
+    if audit.get("method") != "manual_transcription_from_rendered_image_only_pdf":
+        raise RuntimeError(f"수기 전사 감사 방식 오류: {source_key}")
+    if len(str(audit.get("note") or "").strip()) < 20:
+        raise RuntimeError(f"수기 전사 감사 메모 누락: {source_key}")
+
+
+def load_manual_overrides() -> dict[str, dict[str, dict[str, Any]]]:
+    payload = read_json(MANUAL_OVERRIDE_PATH, {}, strict=True)
+    if not isinstance(payload, dict) or set(payload) != {"schemaVersion", "overrides"}:
+        raise RuntimeError("KRX 수기 전사 파일 최상위 형식이 올바르지 않습니다.")
+    if payload.get("schemaVersion") != MANUAL_OVERRIDE_SCHEMA_VERSION:
+        raise RuntimeError("KRX 수기 전사 파일 schemaVersion이 올바르지 않습니다.")
+    overrides = payload.get("overrides")
+    if not isinstance(overrides, dict):
+        raise RuntimeError("KRX 수기 전사 overrides 형식이 올바르지 않습니다.")
+    seen_hashes: set[str] = set()
+    for source_key, revisions in overrides.items():
+        if not isinstance(revisions, dict) or not revisions:
+            raise RuntimeError(f"수기 전사 개정본 누락: {source_key}")
+        for sha256, override in revisions.items():
+            if sha256 in seen_hashes:
+                raise RuntimeError(f"수기 전사 SHA-256 중복: {sha256}")
+            validate_manual_override(source_key, sha256, override)
+            seen_hashes.add(sha256)
+    return overrides
+
+
+def select_manual_override(
+    overrides: dict[str, dict[str, dict[str, Any]]],
+    source_key: str,
+    sha256: str,
+) -> dict[str, Any] | None:
+    revisions = overrides.get(source_key)
+    if revisions is not None:
+        override = revisions.get(sha256)
+        if override is None:
+            registered_hashes = ", ".join(sorted(revisions))
+            raise RuntimeError(
+                f"수기 전사 대상 PDF 해시 불일치: {source_key}, "
+                f"actual={sha256}, registered={registered_hashes}"
+            )
+        return override
+    for registered_source_key, registered_revisions in overrides.items():
+        if sha256 in registered_revisions:
+            raise RuntimeError(
+                f"수기 전사 PDF 출처 식별자 불일치: "
+                f"actual={source_key}, registered={registered_source_key}"
+            )
+    return None
 
 
 class KrxSession:
@@ -276,23 +474,37 @@ class KrxSession:
         raise RuntimeError(f"KRX PDF 다운로드 실패: {last_error}")
 
 
+def pdf_page_count_from_path(pdf_path: Path) -> int:
+    if not shutil.which("pdfinfo"):
+        raise RuntimeError("Poppler(pdfinfo)가 설치되지 않았습니다.")
+    info = subprocess.run(
+        ["pdfinfo", str(pdf_path)],
+        check=True,
+        capture_output=True,
+        text=True,
+        timeout=30,
+    ).stdout
+    page_match = re.search(r"(?m)^Pages:\s+(\d+)\s*$", info)
+    pages = int(page_match.group(1)) if page_match else 0
+    if pages < 1 or pages > 5:
+        raise RuntimeError(f"PDF 페이지 수가 비정상입니다: {pages}")
+    return pages
+
+
+def pdf_page_count(pdf_bytes: bytes) -> int:
+    with tempfile.TemporaryDirectory(prefix="krx-daily-info-") as directory:
+        pdf_path = Path(directory) / "report.pdf"
+        pdf_path.write_bytes(pdf_bytes)
+        return pdf_page_count_from_path(pdf_path)
+
+
 def pdf_to_text(pdf_bytes: bytes) -> tuple[str, int]:
-    if not shutil.which("pdftotext") or not shutil.which("pdfinfo"):
-        raise RuntimeError("Poppler(pdftotext, pdfinfo)가 설치되지 않았습니다.")
+    if not shutil.which("pdftotext"):
+        raise RuntimeError("Poppler(pdftotext)가 설치되지 않았습니다.")
     with tempfile.TemporaryDirectory(prefix="krx-daily-") as directory:
         pdf_path = Path(directory) / "report.pdf"
         pdf_path.write_bytes(pdf_bytes)
-        info = subprocess.run(
-            ["pdfinfo", str(pdf_path)],
-            check=True,
-            capture_output=True,
-            text=True,
-            timeout=30,
-        ).stdout
-        page_match = re.search(r"(?m)^Pages:\s+(\d+)\s*$", info)
-        pages = int(page_match.group(1)) if page_match else 0
-        if pages < 1 or pages > 5:
-            raise RuntimeError(f"PDF 페이지 수가 비정상입니다: {pages}")
+        pages = pdf_page_count_from_path(pdf_path)
         text = subprocess.run(
             ["pdftotext", "-layout", "-nopgbrk", str(pdf_path), "-"],
             check=True,
@@ -305,6 +517,113 @@ def pdf_to_text(pdf_bytes: bytes) -> tuple[str, int]:
     if "전체 종목" not in text or "Disclaimer" not in text:
         raise RuntimeError("KRX 전체 종목 표 또는 고지문을 찾지 못했습니다.")
     return text.replace("\xa0", " "), pages
+
+
+def build_manual_override_report(
+    post: dict[str, str],
+    attachment: dict[str, str],
+    sha256: str,
+    file_size: int,
+    pages: int,
+    override: dict[str, Any],
+) -> dict[str, Any]:
+    source_key = f"krx:{post['bbsSeq']}:{attachment['attachFileSeq']}"
+    validate_manual_override(source_key, sha256, override)
+    expected_source = override["source"]
+    actual_source = {
+        "bbsSeq": post["bbsSeq"],
+        "attachFileSeq": attachment["attachFileSeq"],
+        "boardRn": int(post["rn"]),
+        "filename": attachment["filename"],
+        "publishedDate": post["publishedDate"],
+        "fileSize": file_size,
+        "pages": pages,
+    }
+    for key, actual in actual_source.items():
+        if expected_source.get(key) != actual:
+            raise RuntimeError(
+                f"수기 전사 출처 메타데이터 불일치: "
+                f"{source_key} {key}={actual!r}, expected={expected_source.get(key)!r}"
+            )
+    if "일일동향" not in post["title"]:
+        raise RuntimeError(f"수기 전사 게시물 제목 오류: {source_key}")
+
+    trade_date = expected_source["tradeDate"]
+    filename_date = re.search(r"_(\d{6})\.pdf$", attachment["filename"], re.I)
+    if not filename_date:
+        raise RuntimeError(f"PDF 파일명에서 거래일을 찾지 못했습니다: {attachment['filename']}")
+    filename_trade_date = datetime.strptime(
+        filename_date.group(1), "%y%m%d"
+    ).date().isoformat()
+    if filename_trade_date != trade_date:
+        raise RuntimeError(
+            f"수기 전사 PDF 파일명·거래일 불일치: "
+            f"{filename_trade_date} != {trade_date}"
+        )
+
+    gross = override["grossByMethod"]
+    category_keys = expected_category_keys(trade_date)
+    labels_by_key = {value: key for key, value in CATEGORY_KEYS.items()}
+    participant_flows = []
+    for category_key in category_keys:
+        net_by_method = {
+            method: (
+                gross["buy"][method][category_key]
+                - gross["sell"][method][category_key]
+            )
+            for method in MANUAL_METHODS
+        }
+        net_by_method["total"] = sum(net_by_method.values())
+        participant_flows.append(
+            {
+                "categoryKey": category_key,
+                "label": labels_by_key[category_key],
+                "netByMethod": net_by_method,
+            }
+        )
+    net_total = sum(row["netByMethod"]["total"] for row in participant_flows)
+    if net_total != 0:
+        raise RuntimeError(f"수기 전사 순거래량 합계 불일치: {source_key}, {net_total}")
+
+    taxonomy = (
+        "legacy_brokerage_members"
+        if trade_date < "2026-03-17"
+        else "financial_institutions_and_others"
+    )
+    source_page = (
+        f"{KRX_ORIGIN}/contents/ETS/97/97010000/"
+        f"ETS97010000S2.jsp?bbstype=5&bbs_seq={post['bbsSeq']}"
+    )
+    override_id = f"{source_key}@{sha256}"
+    return {
+        "tradeDate": trade_date,
+        "publishedDate": post["publishedDate"],
+        "boardRn": int(post["rn"]),
+        "bbsSeq": post["bbsSeq"],
+        "attachFileSeq": attachment["attachFileSeq"],
+        "title": post["title"],
+        "sourceKey": source_key,
+        "sourceRevisionId": f"{source_key}:{sha256[:12]}",
+        "sourcePageUrl": source_page,
+        "filename": attachment["filename"],
+        "sha256": sha256,
+        "fileSize": file_size,
+        "pages": pages,
+        "parserVersion": COLLECTOR_VERSION,
+        "participantScope": "all_instruments",
+        "taxonomyVersion": taxonomy,
+        "market": override["market"],
+        "participantFlows": participant_flows,
+        "validation": {
+            "netTotal": net_total,
+            "balanced": True,
+        },
+        "provenance": {
+            "method": "manual_transcription_override",
+            "overrideId": override_id,
+            "auditNote": override["audit"]["note"],
+        },
+    }
 
 
 def split_cells(line: str) -> list[str]:
@@ -597,6 +916,21 @@ def validate_report(report: dict[str, Any]) -> None:
     net = sum(row["netByMethod"]["total"] for row in flows)
     if net != 0:
         raise RuntimeError(f"참가자 순거래량 합계 검증 실패: {trade_date}, {net}")
+    provenance = report.get("provenance")
+    if provenance is not None:
+        if not isinstance(provenance, dict) or set(provenance) != {
+            "method",
+            "overrideId",
+            "auditNote",
+        }:
+            raise RuntimeError(f"수기 전사 출처 이력 형식 오류: {trade_date}")
+        if provenance.get("method") != "manual_transcription_override":
+            raise RuntimeError(f"수기 전사 출처 이력 방식 오류: {trade_date}")
+        expected_override_id = f"{report.get('sourceKey')}@{report.get('sha256')}"
+        if provenance.get("overrideId") != expected_override_id:
+            raise RuntimeError(f"수기 전사 출처 이력 식별자 오류: {trade_date}")
+        if len(str(provenance.get("auditNote") or "").strip()) < 20:
+            raise RuntimeError(f"수기 전사 출처 이력 감사 메모 누락: {trade_date}")
 
 
 def load_months() -> dict[str, dict[str, Any]]:
@@ -686,6 +1020,8 @@ def validate_dataset(
                 "revisionId": report.get("sourceRevisionId"),
                 "parserVersion": report.get("parserVersion"),
             }
+            if report.get("provenance") is not None:
+                comparisons["provenance"] = report.get("provenance")
             for key, expected in comparisons.items():
                 if source.get(key) != expected:
                     raise RuntimeError(
@@ -911,17 +1247,23 @@ def build_index(
 
 
 def validate_storage() -> int:
+    manual_overrides = load_manual_overrides()
     index = read_json(INDEX_PATH, {}, strict=True)
     latest_payload = read_json(LATEST_PATH, {}, strict=True)
     quality = read_json(QUALITY_PATH, {}, strict=True)
     months = load_months()
     sources = load_sources()
     items = validate_dataset(months, sources, index, latest_payload, quality)
-    print(f"KRX 일일동향 검증 완료: {len(items)}거래일, {len(months)}개월")
+    override_revisions = sum(len(revisions) for revisions in manual_overrides.values())
+    print(
+        f"KRX 일일동향 검증 완료: {len(items)}거래일, {len(months)}개월, "
+        f"수기 전사 {override_revisions}개정본"
+    )
     return 0
 
 
 def collect(mode: str, backfill_pages: int, revision_checks: int) -> int:
+    manual_overrides = load_manual_overrides()
     old_index = read_json(INDEX_PATH, {}, strict=True)
     old_latest = read_json(LATEST_PATH, {}, strict=True)
     old_quality = read_json(QUALITY_PATH, {}, strict=True)
@@ -1064,15 +1406,33 @@ def collect(mode: str, backfill_pages: int, revision_checks: int) -> int:
             )
             sha256 = hashlib.sha256(pdf_bytes).hexdigest()
             previous = sources.get(source_key)
-            text, pages_count = pdf_to_text(pdf_bytes)
-            report = parse_report(
-                text,
-                post,
-                attachment,
+            manual_override = select_manual_override(
+                manual_overrides,
+                source_key,
                 sha256,
-                len(pdf_bytes),
-                pages_count,
             )
+            if manual_override is None:
+                text, pages_count = pdf_to_text(pdf_bytes)
+                report = parse_report(
+                    text,
+                    post,
+                    attachment,
+                    sha256,
+                    len(pdf_bytes),
+                    pages_count,
+                )
+            else:
+                # 수기 전사는 등록된 원본 해시가 정확히 일치할 때만 사용한다.
+                # 텍스트 레이어가 없어도 pdfinfo로 페이지 수를 독립 검증한다.
+                pages_count = pdf_page_count(pdf_bytes)
+                report = build_manual_override_report(
+                    post,
+                    attachment,
+                    sha256,
+                    len(pdf_bytes),
+                    pages_count,
+                    manual_override,
+                )
             validate_report(report)
             report_month_changes = upsert_report(months, report)
             if report_month_changes:
@@ -1101,6 +1461,8 @@ def collect(mode: str, backfill_pages: int, revision_checks: int) -> int:
                     else None
                 ),
             }
+            if report.get("provenance") is not None:
+                source_core["provenance"] = report["provenance"]
             source_changed = not previous or any(
                 previous.get(key) != value for key, value in source_core.items()
             )

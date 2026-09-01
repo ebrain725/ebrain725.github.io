@@ -9,6 +9,7 @@ on:
       - main
     paths:
       - scripts/sync_krx_daily_trends.py
+      - scripts/krx_daily_manual_overrides.json
       - .github/workflows/sync-krx-daily-trends.yml
   workflow_run:
     workflows:
@@ -156,6 +157,7 @@ jobs:
         run: |
           set -euo pipefail
           test -f scripts/sync_krx_daily_trends.py
+          test -f scripts/krx_daily_manual_overrides.json
           test -f public/data/krx-daily/index.json
           test -f public/data/krx-daily/latest.json
           test -f public/data/krx-daily/quality.json

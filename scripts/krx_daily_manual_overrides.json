@@ -1,0 +1,74 @@
+{
+  "schemaVersion": "1.0",
+  "overrides": {
+    "krx:125:2": {
+      "d6815f42b392adb69f19b3c74ea31c5f15f767c36600f7028b39ea06b26c5df0": {
+        "source": {
+          "bbsSeq": "125",
+          "attachFileSeq": "2",
+          "boardRn": 58,
+          "filename": "배출권 거래시장 일일동향_240627.pdf",
+          "publishedDate": "2024-06-27",
+          "tradeDate": "2024-06-27",
+          "fileSize": 170227,
+          "pages": 1
+        },
+        "market": {
+          "totalVolume": 635849,
+          "representativeInstrument": {
+            "symbol": "KAU23",
+            "close": null,
+            "change": null,
+            "volume": 330849
+          }
+        },
+        "grossByMethod": {
+          "buy": {
+            "competitive": {
+              "liable_entities": 251654,
+              "market_makers": 79195,
+              "brokerage_members": 5000,
+              "koc_specialists": 0
+            },
+            "negotiated": {
+              "liable_entities": 300000,
+              "market_makers": 0,
+              "brokerage_members": 0,
+              "koc_specialists": 0
+            },
+            "auction": {
+              "liable_entities": 0,
+              "market_makers": 0,
+              "brokerage_members": 0,
+              "koc_specialists": 0
+            }
+          },
+          "sell": {
+            "competitive": {
+              "liable_entities": 284449,
+              "market_makers": 46400,
+              "brokerage_members": 5000,
+              "koc_specialists": 0
+            },
+            "negotiated": {
+              "liable_entities": 300000,
+              "market_makers": 0,
+              "brokerage_members": 0,
+              "koc_specialists": 0
+            },
+            "auction": {
+              "liable_entities": 0,
+              "market_makers": 0,
+              "brokerage_members": 0,
+              "koc_specialists": 0
+            }
+          }
+        },
+        "audit": {
+          "method": "manual_transcription_from_rendered_image_only_pdf",
+          "note": "텍스트 레이어가 없는 KRX 원본 PDF의 전체 종목 매수·매도 표를 렌더링해 수기로 전사하고, 거래방식별 매수·매도 균형·전체 거래량·순거래량 합계를 재검증함"
+        }
+      }
+    }
+  }
+}
