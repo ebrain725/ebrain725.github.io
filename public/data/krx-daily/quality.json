@@ -1,11 +1,23 @@
 {
   "schemaVersion": "1.0",
   "collectorVersion": "1.1.0",
-  "lastAttemptAt": "2026-09-01T23:12:10+09:00",
-  "lastCompletedAt": "2026-09-01T23:12:10+09:00",
+  "lastAttemptAt": "2026-09-02T00:28:17+09:00",
+  "lastCompletedAt": "2026-09-02T00:28:17+09:00",
   "lastSuccessAt": "2026-09-01T23:12:10+09:00",
-  "status": "valid",
-  "newOrRevisedReports": 20,
-  "newOrRevisedSources": 20,
-  "failures": []
+  "status": "partial",
+  "newOrRevisedReports": 199,
+  "newOrRevisedSources": 199,
+  "failures": [
+    {
+      "sourceKey": "krx:125:2",
+      "bbsSeq": "125",
+      "rn": "58",
+      "attachFileSeq": "2",
+      "filename": "배출권 거래시장 일일동향_240627.pdf",
+      "publishedDate": "2024-06-27",
+      "title": "배출권 거래시장 일일동향(장내) 24.06.27",
+      "error": "RuntimeError: KRX 일일동향 제목을 찾지 못했습니다.",
+      "lastAttemptAt": "2026-09-02T00:25:58+09:00"
+    }
+  ]
 }
