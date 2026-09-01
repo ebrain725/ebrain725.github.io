@@ -5,17 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="한국거래소 배출권 거래시장 일일동향의 기간별 참가자 누적 순거래량">
   <title>KRX 거래동향 | ETS LIVE DASHBOARD</title>
-  <link rel="stylesheet" href="assets/krx-trends.css?v=20260902-full-history-v2">
+  <link rel="stylesheet" href="assets/krx-trends.css?v=20260902-compact-status-v3">
 </head>
 <body>
   <header class="topbar">
-    <a class="brand" href="index.html?v=20260902-full-history-v2" aria-label="ETS 대시보드 홈">
+    <a class="brand" href="index.html?v=20260902-header-unified-v3" aria-label="ETS 대시보드 홈">
       <span class="brand-mark">E</span>
       <span><b>ETS LIVE DASHBOARD</b><small>Korea Emissions Market</small></span>
     </a>
     <nav class="primary-nav" aria-label="서비스 메뉴">
-      <a href="index.html?v=20260902-full-history-v2">통합대시보드</a>
-      <a class="active" href="krx-trends.html?v=20260902-full-history-v2" aria-current="page">KRX 거래동향</a>
+      <a href="index.html?v=20260902-header-unified-v3">통합대시보드</a>
+      <a class="active" href="krx-trends.html?v=20260902-compact-status-v3" aria-current="page">KRX 거래동향</a>
     </nav>
   </header>
 
@@ -27,33 +27,27 @@
         <p>한국거래소 일일동향 PDF의 전체 종목 표를 기준으로 참가자별 순거래량을 기간별로 누적합니다.</p>
       </div>
       <div class="sync-box" role="status" aria-live="polite" aria-atomic="true">
-        <span><i></i> 자동수집</span>
-        <strong id="trendSync">수집 대기</strong>
-        <small id="backfillStatus">전체 수집자료 확인 중</small>
+        <div class="sync-heading">
+          <span class="sync-label"><i></i> 자동수집</span>
+          <strong id="trendSync">수집 대기</strong>
+        </div>
+        <div class="sync-metrics">
+          <div class="sync-metric">
+            <span>전체 수집자료</span>
+            <b id="backfillStatus">확인 중</b>
+          </div>
+          <div class="sync-metric">
+            <span>데이터 품질</span>
+            <b id="collectionQuality">검증 중</b>
+            <small id="collectionQualityDetail">오류·중복 확인 중</small>
+          </div>
+        </div>
       </div>
     </section>
 
     <section class="status-alert" id="trendStatusAlert" role="status" aria-live="polite" aria-atomic="true" hidden>
       <strong id="trendStatusTitle"></strong>
       <p id="trendStatusDetail"></p>
-    </section>
-
-    <section class="collection-summary" aria-label="KRX 전체 수집 및 현재 조회 현황" aria-live="polite" aria-atomic="true">
-      <article class="collection-total">
-        <span>전체 수집자료</span>
-        <strong id="totalCollectedDays">확인 중</strong>
-        <small id="totalCollectedRange">전체 기간을 검증하고 있습니다.</small>
-      </article>
-      <article>
-        <span>현재 조회</span>
-        <strong id="selectedCollectedDays">확인 중</strong>
-        <small id="selectedCollectedRange">조회 기간을 계산하고 있습니다.</small>
-      </article>
-      <article>
-        <span>데이터 품질</span>
-        <strong id="collectionQuality">검증 중</strong>
-        <small id="collectionQualityDetail">수집 오류와 중복을 확인하고 있습니다.</small>
-      </article>
     </section>
 
     <section class="control-panel" aria-label="KRX 거래동향 조회 조건">
@@ -149,6 +143,6 @@
     <p>시장 판단을 지원하는 참고용 자료입니다. 공식 원문과 통계를 함께 확인하세요.</p>
   </footer>
   <noscript>이 페이지는 JavaScript를 사용합니다. 브라우저 설정에서 JavaScript를 켜주세요.</noscript>
-  <script src="assets/krx-trends.js?v=20260902-full-history-v2" defer></script>
+  <script src="assets/krx-trends.js?v=20260902-compact-status-v3" defer></script>
 </body>
 </html>
