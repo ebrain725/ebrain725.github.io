@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "1.0",
+  "source": "한국거래소 배출권시장 정보플랫폼 시장동향",
+  "sourceUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S1.jsp?bbstype=5",
+  "lastSync": "2026-09-01T22:57:48+09:00",
+  "firstTradeDate": "2024-04-01",
+  "lastTradeDate": "2024-04-11",
+  "itemCount": 8,
+  "availableMonths": [
+    "2024-04"
+  ],
+  "taxonomy": [
+    {
+      "id": "legacy_brokerage_members",
+      "from": "2024-04-01",
+      "to": "2026-03-16",
+      "labels": [
+        "할당대상업체",
+        "시장조성자",
+        "거래중개회원",
+        "KOC전문회원"
+      ]
+    },
+    {
+      "id": "financial_institutions_and_others",
+      "from": "2026-03-17",
+      "to": null,
+      "labels": [
+        "할당대상업체",
+        "시장조성자",
+        "금융기관",
+        "기타",
+        "KOC전문회원"
+      ]
+    }
+  ],
+  "backfill": {
+    "status": "in_progress",
+    "boardCount": 587,
+    "nextRn": 8,
+    "progressPercent": 1.2
+  },
+  "previousLastSync": null
+}

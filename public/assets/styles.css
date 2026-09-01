@@ -117,3 +117,17 @@ footer{max-width:1320px;margin:0 auto;padding:30px 24px 38px;border-top:1px soli
   .bill-latest-action{display:flex!important;font-size:10px!important;line-height:1.4!important}
   .bill-metadata{display:block!important;font-size:9px!important;line-height:1.4!important}
 }
+
+/* KRX_DAILY_TRENDS_VERSION = 2026-09-01-v1-mobile-entry */
+@media(min-width:701px) and (max-width:1120px){
+  .topbar{gap:18px;padding-inline:20px}
+  .topbar nav{gap:14px}
+  .topbar nav a{font-size:12px}
+  .live-label{display:none}
+}
+@media(max-width:700px){
+  .topbar nav{display:flex;margin-left:auto;gap:0}
+  .topbar nav a{display:none}
+  .topbar nav a.krx-trends-nav{display:inline-flex;align-items:center;padding:8px 10px;border:1px solid #d7e2dc;border-radius:9px;background:#f2f7f4;color:var(--green);font-size:11px;font-weight:800;white-space:nowrap}
+  .live-label{display:none}
+}

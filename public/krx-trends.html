@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="한국거래소 배출권 거래시장 일일동향의 기간별 참가자 누적 순거래량">
+  <title>KRX 거래동향 | ETS LIVE DASHBOARD</title>
+  <link rel="stylesheet" href="assets/krx-trends.css?v=20260901-v1">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="ETS 대시보드 홈">
+      <span class="brand-mark">E</span>
+      <span><b>ETS LIVE DASHBOARD</b><small>Korea Emissions Market</small></span>
+    </a>
+    <nav aria-label="주요 메뉴">
+      <a href="index.html">통합 대시보드</a>
+      <a class="active" href="krx-trends.html" aria-current="page">KRX 거래동향</a>
+    </nav>
+    <a class="back-link" href="index.html">대시보드로 돌아가기</a>
+  </header>
+
+  <main class="trend-dashboard" id="trendDashboard" aria-busy="true">
+    <section class="page-intro">
+      <div>
+        <p class="eyebrow">KRX DAILY TRADING FLOW</p>
+        <h1>KRX 거래동향</h1>
+        <p>한국거래소 일일동향 PDF의 전체 종목 표를 기준으로 참가자별 순거래량을 기간별로 누적합니다.</p>
+      </div>
+      <div class="sync-box" role="status" aria-live="polite" aria-atomic="true">
+        <span><i></i> 자동수집</span>
+        <strong id="trendSync">수집 대기</strong>
+        <small id="backfillStatus">과거자료 확인 중</small>
+      </div>
+    </section>
+
+    <section class="status-alert" id="trendStatusAlert" role="status" aria-live="polite" aria-atomic="true" hidden>
+      <strong id="trendStatusTitle"></strong>
+      <p id="trendStatusDetail"></p>
+    </section>
+
+    <section class="control-panel" aria-label="KRX 거래동향 조회 조건">
+      <div class="period-buttons" role="group" aria-label="빠른 조회 기간">
+        <button type="button" data-trend-period="1M" aria-pressed="false">1개월</button>
+        <button type="button" class="active" data-trend-period="3M" aria-pressed="true">3개월</button>
+        <button type="button" data-trend-period="6M" aria-pressed="false">6개월</button>
+        <button type="button" data-trend-period="1Y" aria-pressed="false">1년</button>
+        <button type="button" data-trend-period="ALL" aria-pressed="false">전체기간</button>
+      </div>
+      <div class="custom-range">
+        <label><span>시작일</span><input type="date" id="trendStartDate"></label>
+        <span class="range-separator">–</span>
+        <label><span>종료일</span><input type="date" id="trendEndDate"></label>
+        <button type="button" id="applyTrendRange">기간 조회</button>
+      </div>
+      <label class="method-filter">
+        <span>거래구분</span>
+        <select id="trendMethod">
+          <option value="total">전체</option>
+          <option value="competitive">경쟁매매</option>
+          <option value="negotiated">협의매매</option>
+          <option value="auction">경매</option>
+        </select>
+      </label>
+    </section>
+
+    <section class="trend-kpis" aria-label="선택 기간 요약" aria-live="polite" aria-atomic="true">
+      <article><span>선택 기간 거래량</span><strong id="periodTotalVolume">-</strong><small>전체 종목 합계</small></article>
+      <article><span>일평균 거래량</span><strong id="periodAverageVolume">-</strong><small id="periodTradingDays">거래일 -일</small></article>
+      <article class="positive-card"><span>최대 순매수</span><strong id="topNetBuyer">-</strong><small id="topNetBuyerValue">-</small><small class="kpi-taxonomy-period" id="topNetBuyerPeriod">집계기간 -</small></article>
+      <article class="negative-card"><span>최대 순매도</span><strong id="topNetSeller">-</strong><small id="topNetSellerValue">-</small><small class="kpi-taxonomy-period" id="topNetSellerPeriod">집계기간 -</small></article>
+    </section>
+
+    <section class="trend-grid">
+      <article class="panel flow-panel">
+        <div class="panel-head">
+          <div><span class="section-tag">CUMULATIVE NET FLOW</span><h2>참가자별 누적 순거래량</h2></div>
+          <strong id="selectedPeriodLabel">-</strong>
+        </div>
+        <div class="flow-chart-wrap">
+          <svg id="flowChart" viewBox="0 0 960 390" role="img" aria-labelledby="flowChartTitle flowChartDesc">
+            <title id="flowChartTitle">참가자별 누적 순거래량 추이</title>
+            <desc id="flowChartDesc">KRX 거래동향 자료를 불러오고 있습니다.</desc>
+          </svg>
+        </div>
+        <div class="flow-legend" id="flowLegend"></div>
+        <p class="chart-note" id="taxonomyNote" aria-live="polite">참가자 분류 변경 여부를 확인하고 있습니다.</p>
+      </article>
+
+      <aside class="panel summary-panel">
+        <div class="panel-head"><div><span class="section-tag">PERIOD SUMMARY</span><h2>기간 순거래량</h2></div></div>
+        <div class="participant-table-wrap">
+          <table class="participant-table">
+            <caption>선택 기간 참가자별 누적 순거래량과 집계기간</caption>
+            <thead><tr><th scope="col">참가자</th><th scope="col">누적 순거래량</th><th scope="col">일평균</th><th scope="col">자료기간</th></tr></thead>
+            <tbody id="participantRows"><tr><td colspan="4">자료를 불러오고 있습니다.</td></tr></tbody>
+          </table>
+        </div>
+        <p class="definition">순거래량은 참가자별 매수량에서 매도량을 차감한 파생지표입니다. 전체 참가자의 순거래량 합계는 0입니다.</p>
+      </aside>
+    </section>
+
+    <section class="panel daily-panel">
+      <div class="panel-head">
+        <div><span class="section-tag">DAILY SOURCE RECORDS</span><h2>일별 거래동향</h2></div>
+        <span id="dailyRecordCount" aria-live="polite">0건</span>
+      </div>
+      <div class="daily-table-wrap">
+        <table class="daily-table">
+          <caption>선택 기간 일별 대표 종목과 참가자 순거래량</caption>
+          <thead><tr><th scope="col">거래일</th><th scope="col">대표 종목</th><th scope="col">종가</th><th scope="col">전체 거래량</th><th scope="col">최대 순매수</th><th scope="col">최대 순매도</th><th scope="col">원문</th></tr></thead>
+          <tbody id="dailyRows"><tr><td colspan="7">자료를 불러오고 있습니다.</td></tr></tbody>
+        </table>
+      </div>
+      <nav class="daily-pagination" id="dailyPagination" aria-label="일별 거래동향 페이지 이동" hidden></nav>
+    </section>
+
+    <section class="source-notice">
+      <h2>자료 기준</h2>
+      <p>참가자별 수급은 PDF 하단의 <b>전체 종목</b> 합계 행을 사용합니다. 상단 대표 종목 거래량과 전체 종목 거래량은 다를 수 있습니다.</p>
+      <p>2026년 3월 17일부터 참가자 분류가 변경됐으며, 거래중개회원과 이후의 금융기관·기타를 임의로 연결하지 않습니다.</p>
+      <p>원본 PDF와 표 전문은 저장하지 않으며, 기간 분석에 필요한 순거래량 파생지표와 공식 원문 링크만 제공합니다. 공개 활용 범위는 한국거래소 이용조건을 함께 확인해야 합니다.</p>
+      <a href="https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S1.jsp?bbstype=5" target="_blank" rel="noopener noreferrer" aria-label="한국거래소 시장동향 원문, 새 창">한국거래소 시장동향 원문</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>시장 판단을 지원하는 참고용 자료입니다. 공식 원문과 통계를 함께 확인하세요.</p>
+  </footer>
+  <noscript>이 페이지는 JavaScript를 사용합니다. 브라우저 설정에서 JavaScript를 켜주세요.</noscript>
+  <script src="assets/krx-trends.js?v=20260901-v1" defer></script>
+</body>
+</html>
