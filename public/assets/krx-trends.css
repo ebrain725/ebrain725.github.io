@@ -272,8 +272,8 @@ th:first-child, td:first-child { text-align: left; }
 .daily-source-link svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
 .daily-source-link .source-arrow { stroke-width: 1.9; }
 .daily-definition { padding: 12px 22px 0; }
-.daily-definition b:first-of-type { color: var(--green); }
-.daily-definition b:last-of-type { color: var(--red); }
+.daily-definition .definition-merged, .daily-definition .definition-positive { color: var(--green); }
+.daily-definition .definition-negative { color: var(--red); }
 .daily-pagination { display: flex; justify-content: center; align-items: center; gap: 5px; padding: 16px 14px 0; }
 .daily-pagination button { min-width: 34px; padding: 7px 8px; }
 .daily-pagination button:disabled { opacity: .35; cursor: default; }
@@ -334,6 +334,10 @@ footer { padding: 24px 5vw 38px; color: #7a8681; text-align: center; font-size: 
   .sync-metric span, .sync-metric small { font-size: 7px; }
   .sync-metric b { font-size: 9px; }
   .trend-kpis { grid-template-columns: 1fr; }
+  .period-buttons { display: grid; grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (min-width: 461px) and (max-width: 560px) {
   .period-buttons { display: grid; grid-template-columns: repeat(3, 1fr); }
 }
 

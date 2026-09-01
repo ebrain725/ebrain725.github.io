@@ -20,7 +20,6 @@ const CATEGORY_ORDER = [
   "brokerage_members",
   "financial_institutions",
   "others",
-  "koc_specialists",
 ];
 const CATEGORY_LABELS = {
   liable_entities: "할당대상업체",
@@ -111,12 +110,41 @@ function trendShiftCalendarMonths(value, offset) {
   ].join("-");
 }
 
+function trendShiftCalendarDays(value, offset) {
+  const shifted = new Date(`${value}T00:00:00Z`);
+  shifted.setUTCDate(shifted.getUTCDate() + offset);
+  return shifted.toISOString().slice(0, 10);
+}
+
 function trendAssert(condition, message) {
   if (!condition) throw new Error(message);
 }
 
 function sameValues(left, right) {
   return left.length === right.length && left.every((value, index) => value === right[index]);
+}
+
+function mergeDisplayParticipantFlows(flows, date) {
+  const merged = new Map();
+  flows.forEach((flow) => {
+    const categoryKey = flow.categoryKey === "koc_specialists" ? "others" : flow.categoryKey;
+    const entry = merged.get(categoryKey) || {
+      categoryKey,
+      label: categoryKey === "others" ? "기타" : flow.label,
+      netByMethod: Object.fromEntries(REQUIRED_METHODS.map((method) => [method, 0])),
+    };
+    REQUIRED_METHODS.forEach((method) => {
+      entry.netByMethod[method] += Number(flow.netByMethod[method] || 0);
+    });
+    merged.set(categoryKey, entry);
+  });
+  const result = CATEGORY_ORDER.filter((key) => merged.has(key)).map((key) => merged.get(key));
+  trendAssert(result.length === 4, `${date}: 화면용 플레이어 수가 4개가 아닙니다.`);
+  REQUIRED_METHODS.forEach((method) => {
+    const netSum = result.reduce((sum, flow) => sum + flow.netByMethod[method], 0);
+    trendAssert(netSum === 0, `${date}: 화면용 ${METHOD_LABELS[method]} 순거래량 합계가 0이 아닙니다.`);
+  });
+  return result;
 }
 
 function normalizeTaxonomies(index) {
@@ -223,7 +251,8 @@ function normalizeTrendReports(monthPayloads, index, taxonomies) {
         const netSum = normalizedFlows.reduce((sum, flow) => sum + flow.netByMethod[method], 0);
         trendAssert(netSum === 0, `${date}: ${METHOD_LABELS[method]} 참가자 순거래량 합계가 0이 아닙니다.`);
       });
-      seen.set(date, { ...item, tradeDate: date, participantFlows: normalizedFlows });
+      const displayFlows = mergeDisplayParticipantFlows(normalizedFlows, date);
+      seen.set(date, { ...item, tradeDate: date, participantFlows: displayFlows });
     });
   });
   return [...seen.values()].sort((left, right) => left.tradeDate.localeCompare(right.tradeDate));
@@ -242,6 +271,10 @@ function selectedTrendBounds() {
     };
   }
   if (trendState.period === "ALL") return { start: first, end: last };
+  if (trendState.period === "1W") {
+    const shifted = trendShiftCalendarDays(last, -7);
+    return { start: shifted < first ? first : shifted, end: last };
+  }
   const months = { "1M": 1, "3M": 3, "6M": 6, "1Y": 12 }[trendState.period] || 3;
   const shifted = trendShiftCalendarMonths(last, -months);
   return { start: shifted < first ? first : shifted, end: last };
@@ -473,7 +506,7 @@ function renderFlowChart(reports) {
   const gapCount = reports.slice(1).reduce((count, report, index) => (
     trendDateMs(report.tradeDate) - trendDateMs(reports[index].tradeDate) > 7 * 86400000 ? count + 1 : count
   ), 0);
-  const chartDescription = `${reports[0].tradeDate}부터 ${reports.at(-1).tradeDate}까지 ${METHOD_LABELS[trendState.method]} 기준 ${ordered.length}개 참가자 누적 순거래량입니다.${gapCount ? ` 7일 초과 자료 공백 ${gapCount}곳은 선을 끊었습니다.` : ""} 상세 수치는 이어지는 기간 순거래량 표에서 확인할 수 있습니다.`;
+  const chartDescription = `${reports[0].tradeDate}부터 ${reports.at(-1).tradeDate}까지 ${METHOD_LABELS[trendState.method]} 기준 ${ordered.length}개 분류별 누적 순거래량입니다.${gapCount ? ` 7일 초과 자료 공백 ${gapCount}곳은 선을 끊었습니다.` : ""} 상세 수치는 이어지는 기간 순거래량 표에서 확인할 수 있습니다.`;
   let html = `<title id="flowChartTitle">참가자별 누적 순거래량 추이</title><desc id="flowChartDesc">${trendEsc(chartDescription)}</desc>`;
   for (let value = yMin; value <= yMax + step * 0.01; value += step) {
     const py = y(value);
