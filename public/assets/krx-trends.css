@@ -54,7 +54,7 @@ button:focus-visible, input:focus-visible, select:focus-visible, a:focus-visible
 }
 .brand b { display: block; font-size: 14px; letter-spacing: .03em; }
 .brand small { display: block; color: #9db4aa; font-size: 10px; }
-.topbar nav { display: flex; align-items: stretch; align-self: stretch; gap: 6px; }
+.topbar nav { display: flex; align-items: stretch; align-self: stretch; gap: 6px; margin-left: auto; }
 .topbar nav a {
   display: grid;
   place-items: center;
@@ -66,17 +66,6 @@ button:focus-visible, input:focus-visible, select:focus-visible, a:focus-visible
   font-weight: 700;
 }
 .topbar nav a:hover, .topbar nav a.active { color: #fff; border-color: #55b28e; }
-.back-link {
-  margin-left: auto;
-  padding: 8px 13px;
-  border: 1px solid rgba(255, 255, 255, .25);
-  border-radius: 9px;
-  color: #dce7e2;
-  text-decoration: none;
-  font-size: 12px;
-  font-weight: 700;
-}
-
 .trend-dashboard { width: min(1500px, 94vw); margin: 0 auto; padding: 36px 0 60px; }
 .page-intro { display: flex; align-items: flex-end; justify-content: space-between; gap: 30px; margin-bottom: 24px; }
 .eyebrow, .section-tag { margin: 0; color: var(--green); font-size: 11px; font-weight: 900; letter-spacing: .13em; }
@@ -266,7 +255,6 @@ footer { padding: 24px 5vw 38px; color: #7a8681; text-align: center; font-size: 
   .topbar { flex-wrap: wrap; gap: 8px 16px; padding: 11px 4vw; }
   .topbar nav { order: 3; width: 100%; min-height: 39px; }
   .topbar nav a { flex: 1; padding: 0 8px; }
-  .back-link { margin-left: auto; }
   .trend-dashboard { width: min(94vw, 680px); padding-top: 24px; }
   .page-intro { align-items: stretch; flex-direction: column; }
   .sync-box { min-width: 0; }
@@ -286,7 +274,6 @@ footer { padding: 24px 5vw 38px; color: #7a8681; text-align: center; font-size: 
 
 @media (max-width: 460px) {
   .brand small { display: none; }
-  .back-link { display: none; }
   .trend-kpis { grid-template-columns: 1fr; }
   .period-buttons { display: grid; grid-template-columns: repeat(3, 1fr); }
 }
