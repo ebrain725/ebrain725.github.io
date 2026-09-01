@@ -546,17 +546,6 @@ function renderParticipantTable(aggregates) {
   });
 }
 
-function dailyNetLeaders(report) {
-  const rows = report.participantFlows.map((flow) => ({
-    label: flow.label,
-    net: Number(flow.netByMethod[trendState.method] || 0),
-  }));
-  return {
-    buyer: [...rows].sort((left, right) => right.net - left.net)[0],
-    seller: [...rows].sort((left, right) => left.net - right.net)[0],
-  };
-}
-
 function renderDailyPagination(totalPages) {
   const nav = trendById("dailyPagination");
   nav.replaceChildren();
@@ -592,7 +581,7 @@ function renderDailyTable(reports) {
   trendById("dailyRecordCount").textContent = `선택기간 ${reports.length}건 / 전체 ${trendState.reports.length}건 · ${METHOD_LABELS[trendState.method]}`;
   if (!reports.length) {
     const row = document.createElement("tr");
-    const cell = document.createElement("td"); cell.colSpan = 7;
+    const cell = document.createElement("td"); cell.colSpan = 6;
     cell.textContent = "선택 기간에 수집된 일별 자료가 없습니다.";
     row.append(cell); tbody.append(row); renderDailyPagination(1); return;
   }
@@ -602,30 +591,46 @@ function renderDailyTable(reports) {
   const start = (trendState.dailyPage - 1) * DAILY_PAGE_SIZE;
   descending.slice(start, start + DAILY_PAGE_SIZE).forEach((report) => {
     const instrument = report.market?.representativeInstrument || {};
-    const leaders = dailyNetLeaders(report);
     const row = document.createElement("tr");
     const cells = [
       report.tradeDate,
       instrument.symbol || "-",
       Number.isFinite(Number(instrument.close)) && instrument.close !== null ? `${trendNumber.format(instrument.close)}원` : "-",
       tons(report.market.totalVolume),
-      leaders.buyer?.net > 0 ? `${leaders.buyer.label} ${tons(leaders.buyer.net, true)}` : "-",
-      leaders.seller?.net < 0 ? `${leaders.seller.label} ${tons(leaders.seller.net, true)}` : "-",
     ];
-    cells.forEach((value, index) => {
+    cells.forEach((value) => {
       const cell = document.createElement("td"); cell.textContent = value;
-      if (index === 4) cell.className = "positive";
-      if (index === 5) cell.className = "negative";
       row.append(cell);
     });
+
+    const playerCell = document.createElement("td");
+    playerCell.className = "daily-player-cell";
+    const playerFlows = document.createElement("div");
+    playerFlows.className = "daily-player-flows";
+    report.participantFlows.forEach((flow) => {
+      const net = Number(flow.netByMethod[trendState.method] || 0);
+      const item = document.createElement("span");
+      item.className = `daily-player-flow ${net > 0 ? "positive-flow" : net < 0 ? "negative-flow" : "neutral-flow"}`;
+      item.setAttribute("aria-label", `${flow.label} 순매매 ${tons(net, true)}`);
+      const label = document.createElement("span");
+      label.textContent = flow.label;
+      const value = document.createElement("strong");
+      value.textContent = tons(net, true);
+      item.append(label, value);
+      playerFlows.append(item);
+    });
+    playerCell.append(playerFlows);
+    row.append(playerCell);
+
     const sourceCell = document.createElement("td");
     const source = document.createElement("a");
+    source.className = "daily-source-link";
     source.href = report.sourcePageUrl;
     source.target = "_blank";
     source.rel = "noopener noreferrer";
-    source.textContent = "원문";
-    source.title = report.filename || report.title || "KRX 원문";
-    source.setAttribute("aria-label", `${report.tradeDate} 한국거래소 원문, 새 창`);
+    source.title = `${report.filename || report.title || "KRX 원문"} · 공식 게시글 열기`;
+    source.setAttribute("aria-label", `${report.tradeDate} 한국거래소 공식 원문 게시글 열기, 새 창`);
+    source.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.75 3.75h7l3.5 3.5v13H6.75z"/><path d="M13.75 3.75v3.5h3.5M9.5 11.25h5M9.5 14.25h5M9.5 17.25h3"/><path class="source-arrow" d="M15.5 10.5h4v4M19.5 10.5l-5 5"/></svg>';
     sourceCell.append(source); row.append(sourceCell); tbody.append(row);
   });
   renderDailyPagination(totalPages);
@@ -756,7 +761,7 @@ function renderFatalError(error) {
   trendById("periodCoverage").textContent = "전체자료를 표시할 수 없습니다.";
   trendById("dailyRecordCount").textContent = "자료 오류";
   trendById("participantRows").innerHTML = '<tr><td colspan="4">데이터 검증 오류로 기간 수급을 표시할 수 없습니다.</td></tr>';
-  trendById("dailyRows").innerHTML = '<tr><td colspan="7">데이터 검증 오류로 일별 자료를 표시할 수 없습니다.</td></tr>';
+  trendById("dailyRows").innerHTML = '<tr><td colspan="6">데이터 검증 오류로 일별 자료를 표시할 수 없습니다.</td></tr>';
   trendById("flowChart").innerHTML = [
     '<title id="flowChartTitle">KRX 거래동향 자료 오류</title>',
     '<desc id="flowChartDesc">데이터 연결 또는 검증 오류로 차트를 표시할 수 없습니다.</desc>',

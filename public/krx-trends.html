@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="한국거래소 배출권 거래시장 일일동향의 기간별 참가자 누적 순거래량">
   <title>KRX 거래동향 | ETS LIVE DASHBOARD</title>
-  <link rel="stylesheet" href="assets/krx-trends.css?v=20260902-compact-status-v3">
+  <link rel="stylesheet" href="assets/krx-trends.css?v=20260902-daily-player-flow-v4">
 </head>
 <body>
   <header class="topbar">
@@ -15,7 +15,7 @@
     </a>
     <nav class="primary-nav" aria-label="서비스 메뉴">
       <a href="index.html?v=20260902-header-unified-v3">통합대시보드</a>
-      <a class="active" href="krx-trends.html?v=20260902-compact-status-v3" aria-current="page">KRX 거래동향</a>
+      <a class="active" href="krx-trends.html?v=20260902-daily-player-flow-v4" aria-current="page">KRX 거래동향</a>
     </nav>
   </header>
 
@@ -74,7 +74,6 @@
           <option value="total">전체</option>
           <option value="competitive">경쟁매매</option>
           <option value="negotiated">협의매매</option>
-          <option value="auction">경매</option>
         </select>
       </label>
     </section>
@@ -120,13 +119,14 @@
         <div><span class="section-tag">DAILY SOURCE RECORDS</span><h2>일별 거래동향</h2></div>
         <span id="dailyRecordCount" aria-live="polite">선택기간 0건 / 전체 0건</span>
       </div>
-      <div class="daily-table-wrap">
+      <div class="daily-table-wrap" role="region" tabindex="0" aria-label="일별 거래동향 표, 좌우로 스크롤할 수 있습니다">
         <table class="daily-table">
-          <caption>선택 기간 일별 대표 종목과 참가자 순거래량</caption>
-          <thead><tr><th scope="col">거래일</th><th scope="col">대표 종목</th><th scope="col">종가</th><th scope="col">전체 거래량</th><th scope="col">최대 순매수</th><th scope="col">최대 순매도</th><th scope="col">원문</th></tr></thead>
-          <tbody id="dailyRows"><tr><td colspan="7">자료를 불러오고 있습니다.</td></tr></tbody>
+          <caption>선택 기간 일별 대표 종목과 플레이어별 순매매</caption>
+          <thead><tr><th scope="col">거래일</th><th scope="col">대표 종목</th><th scope="col">종가</th><th scope="col">전체 거래량</th><th scope="col">플레이어별 매매현황</th><th scope="col">원문</th></tr></thead>
+          <tbody id="dailyRows"><tr><td colspan="6">자료를 불러오고 있습니다.</td></tr></tbody>
         </table>
       </div>
+      <p class="definition daily-definition">플레이어별 매매현황은 순매매 기준입니다. <b>＋</b>는 순매수, <b>−</b>는 순매도를 뜻합니다.</p>
       <nav class="daily-pagination" id="dailyPagination" aria-label="일별 거래동향 페이지 이동" hidden></nav>
     </section>
 
@@ -134,7 +134,7 @@
       <h2>자료 기준</h2>
       <p>참가자별 수급은 PDF 하단의 <b>전체 종목</b> 합계 행을 사용합니다. 상단 대표 종목 거래량과 전체 종목 거래량은 다를 수 있습니다.</p>
       <p>2026년 3월 17일부터 참가자 분류가 변경됐으며, 거래중개회원과 이후의 금융기관·기타를 임의로 연결하지 않습니다.</p>
-      <p>원본 PDF와 표 전문은 저장하지 않으며, 기간 분석에 필요한 순거래량 파생지표와 공식 원문 링크만 제공합니다. 공개 활용 범위는 한국거래소 이용조건을 함께 확인해야 합니다.</p>
+      <p>원본 PDF와 표 전문은 저장하지 않으며, 원문 아이콘은 한국거래소 공식 게시글로 연결됩니다. 공개 활용 범위는 한국거래소 이용조건을 함께 확인해야 합니다.</p>
       <a href="https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S1.jsp?bbstype=5" target="_blank" rel="noopener noreferrer" aria-label="한국거래소 시장동향 원문, 새 창">한국거래소 시장동향 원문</a>
     </section>
   </main>
@@ -143,6 +143,6 @@
     <p>시장 판단을 지원하는 참고용 자료입니다. 공식 원문과 통계를 함께 확인하세요.</p>
   </footer>
   <noscript>이 페이지는 JavaScript를 사용합니다. 브라우저 설정에서 JavaScript를 켜주세요.</noscript>
-  <script src="assets/krx-trends.js?v=20260902-compact-status-v3" defer></script>
+  <script src="assets/krx-trends.js?v=20260902-daily-player-flow-v4" defer></script>
 </body>
 </html>
