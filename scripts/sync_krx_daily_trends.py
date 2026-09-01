@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
-"""KRX 배출권 거래시장 일일동향 PDF를 검증해 기간별 수급 JSON으로 누적한다.
+"""KRX 배출권 거래시장 일일동향 PDF를 검증해 기간별 수급으로 누적한다.
 
-원본 PDF는 GitHub 저장소에 보관하지 않는다. KRX 실행 세션의 임시 디렉터리에서
-PDF를 검증·텍스트화한 뒤, 거래일별 최소 수치와 공식 원문 식별정보만 공개 JSON에
-저장한다.
+PDF를 검증·텍스트화해 거래일별 수치와 출처 정보를 JSON에 저장하고,
+활성 보고서의 검증된 원본 PDF를 거래일 기준 공개 경로에 보관한다.
 """
 
 from __future__ import annotations
@@ -32,13 +31,14 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA_ROOT = ROOT / "public" / "data" / "krx-daily"
 MONTH_ROOT = DATA_ROOT / "by-month"
 SOURCE_ROOT = DATA_ROOT / "sources"
+PDF_ROOT = DATA_ROOT / "pdfs"
 INDEX_PATH = DATA_ROOT / "index.json"
 LATEST_PATH = DATA_ROOT / "latest.json"
 QUALITY_PATH = DATA_ROOT / "quality.json"
 MANUAL_OVERRIDE_PATH = ROOT / "scripts" / "krx_daily_manual_overrides.json"
 
 KST = ZoneInfo("Asia/Seoul")
-COLLECTOR_VERSION = "1.2.0"
+COLLECTOR_VERSION = "1.3.0"
 SCHEMA_VERSION = "1.0"
 KRX_ORIGIN = "https://ets.krx.co.kr"
 KRX_LIST_PAGE = (
@@ -54,7 +54,7 @@ KRX_OTP_URL = f"{KRX_ORIGIN}/contents/COM/GenerateOTP.jspx"
 KRX_FILE_DOWNLOAD_URL = "https://file.krx.co.kr/download.jspx"
 KRX_LIST_BLD = "ETS/97/97010000/ets97010000s1_01"
 KRX_BBS_ID = "ETS970100005"
-USER_AGENT = "Mozilla/5.0 (compatible; ETS-SIGNAL/1.2; +https://ebrain725.github.io/)"
+USER_AGENT = "Mozilla/5.0 (compatible; ETS-SIGNAL/1.3; +https://ebrain725.github.io/)"
 
 CATEGORY_KEYS = {
     "할당대상업체": "liable_entities",
@@ -98,6 +98,84 @@ def write_json(path: Path, payload: Any) -> None:
         encoding="utf-8",
     )
     temporary.replace(path)
+
+
+def pdf_url_for_trade_date(trade_date: str) -> str:
+    if not re.fullmatch(r"20\d{2}-(?:0[1-9]|1[0-2])-(?:0[1-9]|[12]\d|3[01])", trade_date):
+        raise RuntimeError(f"PDF 거래일 형식 오류: {trade_date}")
+    return f"data/krx-daily/pdfs/{trade_date[:7]}/{trade_date}.pdf"
+
+
+def pdf_path_for_trade_date(trade_date: str) -> Path:
+    return ROOT / "public" / pdf_url_for_trade_date(trade_date)
+
+
+def file_sha256(path: Path) -> str:
+    digest = hashlib.sha256()
+    with path.open("rb") as stream:
+        for chunk in iter(lambda: stream.read(1024 * 1024), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
+
+
+def validate_archived_pdf(report: dict[str, Any]) -> None:
+    pdf_url = report.get("pdfUrl")
+    if pdf_url is None:
+        # 기존 JSON만 있는 백필 이전 스냅샷과 호환한다.
+        return
+    trade_date = str(report.get("tradeDate") or "")
+    expected_url = pdf_url_for_trade_date(trade_date)
+    if pdf_url != expected_url:
+        raise RuntimeError(f"PDF 공개 경로 오류: {trade_date}, {pdf_url}")
+    path = pdf_path_for_trade_date(trade_date)
+    if not path.is_file():
+        raise RuntimeError(f"PDF 공개 파일 누락: {trade_date}")
+    file_size = path.stat().st_size
+    if file_size != report.get("fileSize"):
+        raise RuntimeError(
+            f"PDF 공개 파일 크기 불일치: {trade_date}, "
+            f"{file_size} != {report.get('fileSize')}"
+        )
+    with path.open("rb") as stream:
+        if stream.read(5) != b"%PDF-":
+            raise RuntimeError(f"PDF 공개 파일 헤더 오류: {trade_date}")
+    actual_sha256 = file_sha256(path)
+    if actual_sha256 != report.get("sha256"):
+        raise RuntimeError(
+            f"PDF 공개 파일 SHA-256 불일치: {trade_date}, "
+            f"{actual_sha256} != {report.get('sha256')}"
+        )
+
+
+def archive_pdf(report: dict[str, Any], pdf_bytes: bytes) -> bool:
+    trade_date = str(report.get("tradeDate") or "")
+    expected_url = pdf_url_for_trade_date(trade_date)
+    if report.get("pdfUrl") != expected_url:
+        raise RuntimeError(f"PDF 저장 경로 메타데이터 오류: {trade_date}")
+    if not pdf_bytes.startswith(b"%PDF-"):
+        raise RuntimeError(f"PDF 저장 헤더 오류: {trade_date}")
+    if len(pdf_bytes) != report.get("fileSize"):
+        raise RuntimeError(f"PDF 저장 크기 불일치: {trade_date}")
+    if hashlib.sha256(pdf_bytes).hexdigest() != report.get("sha256"):
+        raise RuntimeError(f"PDF 저장 SHA-256 불일치: {trade_date}")
+
+    path = pdf_path_for_trade_date(trade_date)
+    if path.is_file() and path.stat().st_size == len(pdf_bytes):
+        if file_sha256(path) == report["sha256"]:
+            return False
+    path.parent.mkdir(parents=True, exist_ok=True)
+    temporary = path.with_suffix(path.suffix + ".tmp")
+    try:
+        temporary.write_bytes(pdf_bytes)
+        if temporary.stat().st_size != len(pdf_bytes):
+            raise RuntimeError(f"PDF 임시파일 크기 불일치: {trade_date}")
+        if file_sha256(temporary) != report["sha256"]:
+            raise RuntimeError(f"PDF 임시파일 SHA-256 불일치: {trade_date}")
+        temporary.replace(path)
+    finally:
+        temporary.unlink(missing_ok=True)
+    validate_archived_pdf(report)
+    return True
 
 
 def numeric(value: str, dash_as_zero: bool = True) -> int:
@@ -871,6 +949,9 @@ def validate_report(report: dict[str, Any]) -> None:
         raise RuntimeError(f"대표 종목 거래량 오류: {trade_date}")
     if report.get("participantScope") != "all_instruments":
         raise RuntimeError(f"참가자 범위 오류: {trade_date}")
+    pdf_url = report.get("pdfUrl")
+    if pdf_url is not None and pdf_url != pdf_url_for_trade_date(trade_date):
+        raise RuntimeError(f"PDF 공개 경로 메타데이터 오류: {trade_date}")
     flows = report.get("participantFlows") or []
     if not isinstance(flows, list) or len(flows) < 3:
         raise RuntimeError(f"참가자 수급 누락: {trade_date}")
@@ -971,6 +1052,49 @@ def report_items(months: dict[str, dict[str, Any]]) -> list[dict[str, Any]]:
     return sorted(items, key=lambda item: str(item.get("tradeDate") or ""))
 
 
+def active_report_for_date(
+    months: dict[str, dict[str, Any]], trade_date: str
+) -> dict[str, Any] | None:
+    payload = months.get(trade_date[:7]) or {}
+    return next(
+        (
+            item
+            for item in payload.get("items", [])
+            if isinstance(item, dict) and item.get("tradeDate") == trade_date
+        ),
+        None,
+    )
+
+
+def report_has_valid_archive(report: dict[str, Any]) -> bool:
+    if report.get("pdfUrl") is None:
+        return False
+    try:
+        validate_archived_pdf(report)
+    except RuntimeError:
+        return False
+    return True
+
+
+def remove_orphan_pdf_archives(months: dict[str, dict[str, Any]]) -> int:
+    expected = {
+        pdf_path_for_trade_date(str(report.get("tradeDate") or "")).resolve()
+        for report in report_items(months)
+        if report.get("pdfUrl") is not None
+    }
+    removed = 0
+    if not PDF_ROOT.is_dir():
+        return removed
+    for path in PDF_ROOT.glob("20??-??/20??-??-??.pdf"):
+        if path.resolve() not in expected:
+            path.unlink()
+            removed += 1
+    for directory in sorted(PDF_ROOT.glob("20??-??"), reverse=True):
+        if directory.is_dir() and not any(directory.iterdir()):
+            directory.rmdir()
+    return removed
+
+
 def validate_dataset(
     months: dict[str, dict[str, Any]],
     sources: dict[str, dict[str, Any]],
@@ -1022,11 +1146,16 @@ def validate_dataset(
             }
             if report.get("provenance") is not None:
                 comparisons["provenance"] = report.get("provenance")
+            if report.get("pdfUrl") != source.get("pdfUrl"):
+                raise RuntimeError(
+                    f"출처 {source_key}의 pdfUrl이 월별 데이터와 다릅니다."
+                )
             for key, expected in comparisons.items():
                 if source.get(key) != expected:
                     raise RuntimeError(
                         f"출처 {source_key}의 {key}가 월별 데이터와 다릅니다."
                     )
+            validate_archived_pdf(report)
             items.append(report)
     items.sort(key=lambda item: item["tradeDate"])
 
@@ -1269,7 +1398,14 @@ def collect(mode: str, backfill_pages: int, revision_checks: int) -> int:
     old_quality = read_json(QUALITY_PATH, {}, strict=True)
     months = load_months()
     sources = load_sources()
-    validate_dataset(months, sources, old_index, old_latest, old_quality)
+    existing_items = validate_dataset(
+        months, sources, old_index, old_latest, old_quality
+    )
+    missing_archive_source_keys = {
+        str(report.get("sourceKey") or "")
+        for report in existing_items
+        if not report_has_valid_archive(report)
+    }
     existing_failures = {
         str(item.get("sourceKey") or ""): item
         for item in old_quality.get("failures", [])
@@ -1299,6 +1435,25 @@ def collect(mode: str, backfill_pages: int, revision_checks: int) -> int:
             target_rn = max(target_rn + 1, estimated_high_rn + 1)
             if target_rn > board_count:
                 break
+    # JSON 백필이 이미 완료됐어도 PDF가 없는 활성 보고서의
+    # rn을 목록 페이지로 역산해 지정한 페이지 수 범위에서 재탐색한다.
+    if mode == "backfill" and missing_archive_source_keys:
+        missing_rns = sorted(
+            {
+                int(str(source.get("rn") or 0))
+                for source_key, source in sources.items()
+                if source_key in missing_archive_source_keys
+                and str(source.get("rn") or "").isdigit()
+                and 1 <= int(str(source.get("rn") or 0)) <= board_count
+            }
+        )
+        for missing_rn in missing_rns:
+            page = max(1, math.ceil((board_count - missing_rn + 1) / 10))
+            if page in pages:
+                continue
+            if len(pages) >= backfill_pages:
+                break
+            pages.add(page)
     # 과거에 실패한 게시물이 최신 페이지 밖으로 밀려도 rn으로 해당
     # 페이지를 다시 찾아 영구 누락되지 않게 한다.
     for failure in existing_failures.values():
@@ -1372,6 +1527,7 @@ def collect(mode: str, backfill_pages: int, revision_checks: int) -> int:
             if (
                 source_key not in sources
                 or force
+                or source_key in missing_archive_source_keys
                 or source_key in existing_failures
                 or previous_source.get("parserVersion") != COLLECTOR_VERSION
             ):
@@ -1398,6 +1554,7 @@ def collect(mode: str, backfill_pages: int, revision_checks: int) -> int:
         print(f"::warning::{discovery_key} 처리 실패: {exc}")
     report_changes = 0
     source_changes = 0
+    pdf_changes = 0
     for post, attachment in candidates:
         source_key = f"krx:{post['bbsSeq']}:{attachment['attachFileSeq']}"
         try:
@@ -1433,11 +1590,25 @@ def collect(mode: str, backfill_pages: int, revision_checks: int) -> int:
                     pages_count,
                     manual_override,
                 )
+            report["pdfUrl"] = pdf_url_for_trade_date(report["tradeDate"])
             validate_report(report)
             report_month_changes = upsert_report(months, report)
             if report_month_changes:
                 changed_months.update(report_month_changes)
                 report_changes += 1
+            active_report = active_report_for_date(months, report["tradeDate"])
+            is_active_report = bool(
+                active_report
+                and active_report.get("sourceKey") == source_key
+                and active_report.get("sourceRevisionId")
+                == report.get("sourceRevisionId")
+                and active_report.get("sha256") == sha256
+            )
+            # 같은 거래일의 더 오래된 정정본은 출처 이력만
+            # 갱신하고, 활성 보고서 PDF를 절대 덮어쓰지 않는다.
+            if is_active_report:
+                if archive_pdf(active_report, pdf_bytes):
+                    pdf_changes += 1
             published_year = post["publishedDate"][:4]
             revision_id = report["sourceRevisionId"]
             source_core = {
@@ -1461,10 +1632,16 @@ def collect(mode: str, backfill_pages: int, revision_checks: int) -> int:
                     else None
                 ),
             }
+            if is_active_report:
+                source_core["pdfUrl"] = report["pdfUrl"]
             if report.get("provenance") is not None:
                 source_core["provenance"] = report["provenance"]
             source_changed = not previous or any(
                 previous.get(key) != value for key, value in source_core.items()
+            )
+            source_changed = source_changed or (
+                previous is not None
+                and ("pdfUrl" in previous) != ("pdfUrl" in source_core)
             )
             if source_changed:
                 sources[source_key] = {**source_core, "retrievedAt": now_kst()}
@@ -1493,6 +1670,34 @@ def collect(mode: str, backfill_pages: int, revision_checks: int) -> int:
             }
             print(f"::warning::{source_key} 처리 실패: {exc}")
 
+    # 신규 정정본이 활성화되면 이전 출처의 pdfUrl을 제거해
+    # 이전 SHA와 현재 거래일 PDF가 같은 링크를 가리키지 않게 한다.
+    active_by_source = {
+        str(report.get("sourceKey") or ""): report for report in report_items(months)
+    }
+    for source_key, source in list(sources.items()):
+        active_report = active_by_source.get(source_key)
+        expected_pdf_url = (
+            active_report.get("pdfUrl") if active_report is not None else None
+        )
+        if source.get("pdfUrl") == expected_pdf_url and (
+            expected_pdf_url is not None or "pdfUrl" not in source
+        ):
+            continue
+        updated_source = dict(source)
+        if expected_pdf_url is None:
+            updated_source.pop("pdfUrl", None)
+        else:
+            updated_source["pdfUrl"] = expected_pdf_url
+        updated_source["retrievedAt"] = now_kst()
+        sources[source_key] = updated_source
+        source_year = str(source.get("publishedDate") or "")[:4]
+        if re.fullmatch(r"20\d{2}", source_year):
+            changed_source_years.add(source_year)
+        source_changes += 1
+
+    orphan_pdf_changes = remove_orphan_pdf_archives(months)
+
     # 실패 건은 quality.json의 durable retry queue와 rn 기반 재탐색으로
     # 계속 재시도하고, 전체 백필 스캔 커서는 독립적으로 전진시킨다.
     next_rn_after = max(next_rn, scanned_backfill_rn + 1)
@@ -1516,6 +1721,8 @@ def collect(mode: str, backfill_pages: int, revision_checks: int) -> int:
     must_write = bool(
         changed_months
         or changed_source_years
+        or pdf_changes
+        or orphan_pdf_changes
         or backfill_changed
         or failures_changed
     )
@@ -1564,6 +1771,7 @@ def collect(mode: str, backfill_pages: int, revision_checks: int) -> int:
     validate_storage()
     print(
         f"KRX 일일동향 저장 완료: 신규·정정 {report_changes}건, "
+        f"PDF 저장 {pdf_changes}건·정리 {orphan_pdf_changes}건, "
         f"누적 {len(items)}거래일, 백필 {index['backfill']['progressPercent']}%"
     )
     return 0
