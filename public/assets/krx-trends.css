@@ -8,6 +8,8 @@
   --green-dark: #075f48;
   --gold: #c59225;
   --red: #ba4b46;
+  --trade-positive: #c74444;
+  --trade-negative: #2f64b5;
   --shadow: 0 14px 38px rgba(28, 53, 44, .08);
 }
 
@@ -256,24 +258,37 @@ th:first-child, td:first-child { text-align: left; }
 .daily-table { min-width: 860px; margin-top: 14px; }
 .daily-table th:first-child, .daily-table td:first-child { padding-left: 22px; }
 .daily-table th:last-child, .daily-table td:last-child { padding-right: 22px; text-align: center; }
-.daily-table th:nth-child(5), .daily-table td:nth-child(5) { width: 44%; text-align: left; white-space: normal; }
-.daily-player-cell { min-width: 370px; }
-.daily-player-flows { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 5px 7px; }
-.daily-player-flow { min-width: 0; display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 5px 7px; border: 1px solid #e3e9e6; border-radius: 7px; background: #f7f9f8; color: #5e6a65; font-size: 9px; line-height: 1.35; white-space: nowrap; }
-.daily-player-flow > span { overflow: hidden; text-overflow: ellipsis; }
-.daily-player-flow strong { flex: 0 0 auto; font-size: 9px; font-variant-numeric: tabular-nums; }
-.daily-player-flow.positive-flow { border-color: #cfe5dc; background: #edf7f3; }
-.daily-player-flow.positive-flow strong { color: var(--green); }
-.daily-player-flow.negative-flow { border-color: #efd4d1; background: #fff3f2; }
-.daily-player-flow.negative-flow strong { color: var(--red); }
+.daily-table th:nth-child(5), .daily-table td:nth-child(5) { width: 47%; text-align: left; white-space: normal; }
+.daily-player-cell { min-width: 480px; }
+.daily-player-flows { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.daily-player-flow {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  padding: 0;
+  color: #5e6a65;
+  font-size: 9px;
+  line-height: 1.35;
+  text-align: center;
+  white-space: nowrap;
+}
+.daily-player-flow + .daily-player-flow { border-left: 1px solid #e3e8e6; }
+.daily-player-flow > span { width: 100%; overflow: hidden; padding: 5px 10px 4px; color: #66716c; text-overflow: ellipsis; }
+.daily-player-flow strong { width: 100%; flex: 0 0 auto; padding: 4px 10px 5px; border-top: 1px solid #edf1ef; font-size: 10px; font-variant-numeric: tabular-nums; }
+.daily-player-flow.positive-flow strong { color: var(--trade-positive); }
+.daily-player-flow.negative-flow strong { color: var(--trade-negative); }
 .daily-player-flow.neutral-flow strong { color: #4e5d56; }
 .daily-source-link { width: 34px; height: 34px; display: inline-grid; place-items: center; border: 1px solid #d7e3dd; border-radius: 9px; color: var(--green); background: #f3f8f5; text-decoration: none; transition: color .15s ease, background .15s ease, border-color .15s ease; }
 .daily-source-link:hover { border-color: var(--green); color: #fff; background: var(--green); }
 .daily-source-link svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
 .daily-source-link .source-arrow { stroke-width: 1.9; }
 .daily-definition { padding: 12px 22px 0; }
-.daily-definition .definition-merged, .daily-definition .definition-positive { color: var(--green); }
-.daily-definition .definition-negative { color: var(--red); }
+.daily-definition .definition-merged { color: var(--green); }
+.daily-definition .definition-positive { color: var(--trade-positive); }
+.daily-definition .definition-negative { color: var(--trade-negative); }
 .daily-pagination { display: flex; justify-content: center; align-items: center; gap: 5px; padding: 16px 14px 0; }
 .daily-pagination button { min-width: 34px; padding: 7px 8px; }
 .daily-pagination button:disabled { opacity: .35; cursor: default; }
@@ -318,8 +333,8 @@ footer { padding: 24px 5vw 38px; color: #7a8681; text-align: center; font-size: 
   .trend-kpis strong { font-size: 20px; }
   .panel-head { padding: 17px 16px 0; flex-direction: column; gap: 5px; }
   .daily-table th:first-child, .daily-table td:first-child { padding-left: 14px; }
-  .daily-player-cell { min-width: 330px; }
-  .daily-player-flows { gap: 4px 6px; }
+  .daily-player-cell { min-width: 440px; }
+  .daily-player-flow > span, .daily-player-flow strong { padding-inline: 7px; }
   .daily-source-link { width: 40px; height: 40px; }
   .daily-definition { padding-inline: 14px; }
 }
