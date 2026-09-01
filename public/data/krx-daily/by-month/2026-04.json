@@ -1,31 +1,695 @@
 {
   "schemaVersion": "1.0",
-  "month": "2026-08",
+  "month": "2026-04",
   "items": [
     {
-      "tradeDate": "2026-08-03",
-      "publishedDate": "2026-08-03",
-      "boardRn": 567,
-      "bbsSeq": "636",
+      "tradeDate": "2026-04-01",
+      "publishedDate": "2026-04-01",
+      "boardRn": 484,
+      "bbsSeq": "551",
       "attachFileSeq": "1",
-      "title": "배출권 거래시장 일일동향(장내) 26.08.03",
-      "sourceKey": "krx:636:1",
-      "sourceRevisionId": "krx:636:1:157f5c445602",
-      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=636",
-      "filename": "배출권 거래시장 일일동향_260803.pdf",
-      "sha256": "157f5c445602bf5076bbca04de84b110fabcb1f2b39dfc2399612d12e500f99f",
+      "title": "배출권 거래시장 일일동향(장내) 26.04.01",
+      "sourceKey": "krx:551:1",
+      "sourceRevisionId": "krx:551:1:6ce515be405e",
+      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=551",
+      "filename": "배출권 거래시장 일일동향_260401.pdf",
+      "sha256": "6ce515be405e648be175f66b21bef77415d6a0472402e13e543d963a35fd2b71",
+      "fileSize": 119903,
+      "pages": 1,
+      "parserVersion": "1.1.0",
+      "participantScope": "all_instruments",
+      "taxonomyVersion": "financial_institutions_and_others",
+      "market": {
+        "totalVolume": 148564,
+        "representativeInstrument": {
+          "symbol": "KAU25",
+          "close": 15900,
+          "change": 300,
+          "volume": 148564
+        }
+      },
+      "participantFlows": [
+        {
+          "categoryKey": "liable_entities",
+          "label": "할당대상업체",
+          "netByMethod": {
+            "competitive": 43604,
+            "negotiated": 0,
+            "auction": 0,
+            "total": 43604
+          }
+        },
+        {
+          "categoryKey": "market_makers",
+          "label": "시장조성자",
+          "netByMethod": {
+            "competitive": -43604,
+            "negotiated": 0,
+            "auction": 0,
+            "total": -43604
+          }
+        },
+        {
+          "categoryKey": "financial_institutions",
+          "label": "금융기관",
+          "netByMethod": {
+            "competitive": 0,
+            "negotiated": 0,
+            "auction": 0,
+            "total": 0
+          }
+        },
+        {
+          "categoryKey": "others",
+          "label": "기타",
+          "netByMethod": {
+            "competitive": 0,
+            "negotiated": 0,
+            "auction": 0,
+            "total": 0
+          }
+        },
+        {
+          "categoryKey": "koc_specialists",
+          "label": "KOC전문회원",
+          "netByMethod": {
+            "competitive": 0,
+            "negotiated": 0,
+            "auction": 0,
+            "total": 0
+          }
+        }
+      ],
+      "validation": {
+        "netTotal": 0,
+        "balanced": true
+      }
+    },
+    {
+      "tradeDate": "2026-04-02",
+      "publishedDate": "2026-04-02",
+      "boardRn": 485,
+      "bbsSeq": "552",
+      "attachFileSeq": "1",
+      "title": "배출권 거래시장 일일동향(장내) 26.04.02",
+      "sourceKey": "krx:552:1",
+      "sourceRevisionId": "krx:552:1:e09752d42484",
+      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=552",
+      "filename": "배출권 거래시장 일일동향_260402.pdf",
+      "sha256": "e09752d424844bea593fa4c5981284be5e8442ce6bdb14e7e1947f47f0884938",
+      "fileSize": 120045,
+      "pages": 1,
+      "parserVersion": "1.1.0",
+      "participantScope": "all_instruments",
+      "taxonomyVersion": "financial_institutions_and_others",
+      "market": {
+        "totalVolume": 144875,
+        "representativeInstrument": {
+          "symbol": "KAU25",
+          "close": 16100,
+          "change": 200,
+          "volume": 144875
+        }
+      },
+      "participantFlows": [
+        {
+          "categoryKey": "liable_entities",
+          "label": "할당대상업체",
+          "netByMethod": {
+            "competitive": 14978,
+            "negotiated": 0,
+            "auction": 0,
+            "total": 14978
+          }
+        },
+        {
+          "categoryKey": "market_makers",
+          "label": "시장조성자",
+          "netByMethod": {
+            "competitive": -6131,
+            "negotiated": 0,
+            "auction": 0,
+            "total": -6131
+          }
+        },
+        {
+          "categoryKey": "financial_institutions",
+          "label": "금융기관",
+          "netByMethod": {
+            "competitive": -8847,
+            "negotiated": 0,
+            "auction": 0,
+            "total": -8847
+          }
+        },
+        {
+          "categoryKey": "others",
+          "label": "기타",
+          "netByMethod": {
+            "competitive": 0,
+            "negotiated": 0,
+            "auction": 0,
+            "total": 0
+          }
+        },
+        {
+          "categoryKey": "koc_specialists",
+          "label": "KOC전문회원",
+          "netByMethod": {
+            "competitive": 0,
+            "negotiated": 0,
+            "auction": 0,
+            "total": 0
+          }
+        }
+      ],
+      "validation": {
+        "netTotal": 0,
+        "balanced": true
+      }
+    },
+    {
+      "tradeDate": "2026-04-03",
+      "publishedDate": "2026-04-03",
+      "boardRn": 486,
+      "bbsSeq": "553",
+      "attachFileSeq": "1",
+      "title": "배출권 거래시장 일일동향(장내) 26.04.03",
+      "sourceKey": "krx:553:1",
+      "sourceRevisionId": "krx:553:1:c872d8164ea1",
+      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=553",
+      "filename": "배출권 거래시장 일일동향_260403.pdf",
+      "sha256": "c872d8164ea197dd0371faa78432c783e25c65d3e3fa7fcd3702743ae9a0cb59",
+      "fileSize": 119998,
+      "pages": 1,
+      "parserVersion": "1.1.0",
+      "participantScope": "all_instruments",
+      "taxonomyVersion": "financial_institutions_and_others",
+      "market": {
+        "totalVolume": 198651,
+        "representativeInstrument": {
+          "symbol": "KAU25",
+          "close": 16450,
+          "change": 350,
+          "volume": 196651
+        }
+      },
+      "participantFlows": [
+        {
+          "categoryKey": "liable_entities",
+          "label": "할당대상업체",
+          "netByMethod": {
+            "competitive": 58705,
+            "negotiated": 0,
+            "auction": 0,
+            "total": 58705
+          }
+        },
+        {
+          "categoryKey": "market_makers",
+          "label": "시장조성자",
+          "netByMethod": {
+            "competitive": -58705,
+            "negotiated": 0,
+            "auction": 0,
+            "total": -58705
+          }
+        },
+        {
+          "categoryKey": "financial_institutions",
+          "label": "금융기관",
+          "netByMethod": {
+            "competitive": 0,
+            "negotiated": 0,
+            "auction": 0,
+            "total": 0
+          }
+        },
+        {
+          "categoryKey": "others",
+          "label": "기타",
+          "netByMethod": {
+            "competitive": 0,
+            "negotiated": 0,
+            "auction": 0,
+            "total": 0
+          }
+        },
+        {
+          "categoryKey": "koc_specialists",
+          "label": "KOC전문회원",
+          "netByMethod": {
+            "competitive": 0,
+            "negotiated": 0,
+            "auction": 0,
+            "total": 0
+          }
+        }
+      ],
+      "validation": {
+        "netTotal": 0,
+        "balanced": true
+      }
+    },
+    {
+      "tradeDate": "2026-04-06",
+      "publishedDate": "2026-04-06",
+      "boardRn": 487,
+      "bbsSeq": "554",
+      "attachFileSeq": "1",
+      "title": "배출권 거래시장 일일동향(장내) 26.04.06",
+      "sourceKey": "krx:554:1",
+      "sourceRevisionId": "krx:554:1:3872a73d64bc",
+      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=554",
+      "filename": "배출권 거래시장 일일동향_260406.pdf",
+      "sha256": "3872a73d64bcf36c63e70a41340267618d2e38cdcfcdd0844939e8a45b5c557f",
+      "fileSize": 119913,
+      "pages": 1,
+      "parserVersion": "1.1.0",
+      "participantScope": "all_instruments",
+      "taxonomyVersion": "financial_institutions_and_others",
+      "market": {
+        "totalVolume": 440941,
+        "representativeInstrument": {
+          "symbol": "KAU25",
+          "close": 16300,
+          "change": -150,
+          "volume": 440941
+        }
+      },
+      "participantFlows": [
+        {
+          "categoryKey": "liable_entities",
+          "label": "할당대상업체",
+          "netByMethod": {
+            "competitive": 193721,
+            "negotiated": 0,
+            "auction": 0,
+            "total": 193721
+          }
+        },
+        {
+          "categoryKey": "market_makers",
+          "label": "시장조성자",
+          "netByMethod": {
+            "competitive": -193721,
+            "negotiated": 0,
+            "auction": 0,
+            "total": -193721
+          }
+        },
+        {
+          "categoryKey": "financial_institutions",
+          "label": "금융기관",
+          "netByMethod": {
+            "competitive": 0,
+            "negotiated": 0,
+            "auction": 0,
+            "total": 0
+          }
+        },
+        {
+          "categoryKey": "others",
+          "label": "기타",
+          "netByMethod": {
+            "competitive": 0,
+            "negotiated": 0,
+            "auction": 0,
+            "total": 0
+          }
+        },
+        {
+          "categoryKey": "koc_specialists",
+          "label": "KOC전문회원",
+          "netByMethod": {
+            "competitive": 0,
+            "negotiated": 0,
+            "auction": 0,
+            "total": 0
+          }
+        }
+      ],
+      "validation": {
+        "netTotal": 0,
+        "balanced": true
+      }
+    },
+    {
+      "tradeDate": "2026-04-07",
+      "publishedDate": "2026-04-07",
+      "boardRn": 488,
+      "bbsSeq": "555",
+      "attachFileSeq": "1",
+      "title": "배출권 거래시장 일일동향(장내) 26.04.07",
+      "sourceKey": "krx:555:1",
+      "sourceRevisionId": "krx:555:1:b164d29423b8",
+      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=555",
+      "filename": "배출권 거래시장 일일동향_260407.pdf",
+      "sha256": "b164d29423b8e2c09924a4e59b266e3ab6bd258b69bb4fe8a72a4a5fac3c3fbd",
+      "fileSize": 119959,
+      "pages": 1,
+      "parserVersion": "1.1.0",
+      "participantScope": "all_instruments",
+      "taxonomyVersion": "financial_institutions_and_others",
+      "market": {
+        "totalVolume": 330265,
+        "representativeInstrument": {
+          "symbol": "KAU25",
+          "close": 16450,
+          "change": 150,
+          "volume": 328265
+        }
+      },
+      "participantFlows": [
+        {
+          "categoryKey": "liable_entities",
+          "label": "할당대상업체",
+          "netByMethod": {
+            "competitive": -35301,
+            "negotiated": 0,
+            "auction": 0,
+            "total": -35301
+          }
+        },
+        {
+          "categoryKey": "market_makers",
+          "label": "시장조성자",
+          "netByMethod": {
+            "competitive": 47039,
+            "negotiated": 0,
+            "auction": 0,
+            "total": 47039
+          }
+        },
+        {
+          "categoryKey": "financial_institutions",
+          "label": "금융기관",
+          "netByMethod": {
+            "competitive": -11738,
+            "negotiated": 0,
+            "auction": 0,
+            "total": -11738
+          }
+        },
+        {
+          "categoryKey": "others",
+          "label": "기타",
+          "netByMethod": {
+            "competitive": 0,
+            "negotiated": 0,
+            "auction": 0,
+            "total": 0
+          }
+        },
+        {
+          "categoryKey": "koc_specialists",
+          "label": "KOC전문회원",
+          "netByMethod": {
+            "competitive": 0,
+            "negotiated": 0,
+            "auction": 0,
+            "total": 0
+          }
+        }
+      ],
+      "validation": {
+        "netTotal": 0,
+        "balanced": true
+      }
+    },
+    {
+      "tradeDate": "2026-04-08",
+      "publishedDate": "2026-04-08",
+      "boardRn": 489,
+      "bbsSeq": "556",
+      "attachFileSeq": "1",
+      "title": "배출권 거래시장 일일동향(장내) 26.04.08",
+      "sourceKey": "krx:556:1",
+      "sourceRevisionId": "krx:556:1:09cd75892aa8",
+      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=556",
+      "filename": "배출권 거래시장 일일동향_260408.pdf",
+      "sha256": "09cd75892aa843def47cc7cd0b5f7db42ed2cdca362c0dc49ba81179e9e0a94d",
+      "fileSize": 120033,
+      "pages": 1,
+      "parserVersion": "1.1.0",
+      "participantScope": "all_instruments",
+      "taxonomyVersion": "financial_institutions_and_others",
+      "market": {
+        "totalVolume": 171267,
+        "representativeInstrument": {
+          "symbol": "KAU25",
+          "close": 16800,
+          "change": 350,
+          "volume": 171267
+        }
+      },
+      "participantFlows": [
+        {
+          "categoryKey": "liable_entities",
+          "label": "할당대상업체",
+          "netByMethod": {
+            "competitive": -23419,
+            "negotiated": 0,
+            "auction": 0,
+            "total": -23419
+          }
+        },
+        {
+          "categoryKey": "market_makers",
+          "label": "시장조성자",
+          "netByMethod": {
+            "competitive": 42523,
+            "negotiated": 0,
+            "auction": 0,
+            "total": 42523
+          }
+        },
+        {
+          "categoryKey": "financial_institutions",
+          "label": "금융기관",
+          "netByMethod": {
+            "competitive": -19104,
+            "negotiated": 0,
+            "auction": 0,
+            "total": -19104
+          }
+        },
+        {
+          "categoryKey": "others",
+          "label": "기타",
+          "netByMethod": {
+            "competitive": 0,
+            "negotiated": 0,
+            "auction": 0,
+            "total": 0
+          }
+        },
+        {
+          "categoryKey": "koc_specialists",
+          "label": "KOC전문회원",
+          "netByMethod": {
+            "competitive": 0,
+            "negotiated": 0,
+            "auction": 0,
+            "total": 0
+          }
+        }
+      ],
+      "validation": {
+        "netTotal": 0,
+        "balanced": true
+      }
+    },
+    {
+      "tradeDate": "2026-04-09",
+      "publishedDate": "2026-04-09",
+      "boardRn": 490,
+      "bbsSeq": "557",
+      "attachFileSeq": "1",
+      "title": "배출권 거래시장 일일동향(장내) 26.04.09",
+      "sourceKey": "krx:557:1",
+      "sourceRevisionId": "krx:557:1:4493a108466e",
+      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=557",
+      "filename": "배출권 거래시장 일일동향_260409.pdf",
+      "sha256": "4493a108466e6cc17cbfeb892bf537f23310debe68b7a3853bcd99a9596e5fcc",
+      "fileSize": 120044,
+      "pages": 1,
+      "parserVersion": "1.1.0",
+      "participantScope": "all_instruments",
+      "taxonomyVersion": "financial_institutions_and_others",
+      "market": {
+        "totalVolume": 434977,
+        "representativeInstrument": {
+          "symbol": "KAU25",
+          "close": 17400,
+          "change": 600,
+          "volume": 434977
+        }
+      },
+      "participantFlows": [
+        {
+          "categoryKey": "liable_entities",
+          "label": "할당대상업체",
+          "netByMethod": {
+            "competitive": 94801,
+            "negotiated": 0,
+            "auction": 0,
+            "total": 94801
+          }
+        },
+        {
+          "categoryKey": "market_makers",
+          "label": "시장조성자",
+          "netByMethod": {
+            "competitive": -72001,
+            "negotiated": 0,
+            "auction": 0,
+            "total": -72001
+          }
+        },
+        {
+          "categoryKey": "financial_institutions",
+          "label": "금융기관",
+          "netByMethod": {
+            "competitive": -22800,
+            "negotiated": 0,
+            "auction": 0,
+            "total": -22800
+          }
+        },
+        {
+          "categoryKey": "others",
+          "label": "기타",
+          "netByMethod": {
+            "competitive": 0,
+            "negotiated": 0,
+            "auction": 0,
+            "total": 0
+          }
+        },
+        {
+          "categoryKey": "koc_specialists",
+          "label": "KOC전문회원",
+          "netByMethod": {
+            "competitive": 0,
+            "negotiated": 0,
+            "auction": 0,
+            "total": 0
+          }
+        }
+      ],
+      "validation": {
+        "netTotal": 0,
+        "balanced": true
+      }
+    },
+    {
+      "tradeDate": "2026-04-10",
+      "publishedDate": "2026-04-10",
+      "boardRn": 491,
+      "bbsSeq": "558",
+      "attachFileSeq": "1",
+      "title": "배출권 거래시장 일일동향(장내) 26.04.10",
+      "sourceKey": "krx:558:1",
+      "sourceRevisionId": "krx:558:1:03b091c60ffe",
+      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=558",
+      "filename": "배출권 거래시장 일일동향_260410.pdf",
+      "sha256": "03b091c60ffeab4b212afb5c7c9fe89a83670e724be87f00c07042869cc46833",
+      "fileSize": 119904,
+      "pages": 1,
+      "parserVersion": "1.1.0",
+      "participantScope": "all_instruments",
+      "taxonomyVersion": "financial_institutions_and_others",
+      "market": {
+        "totalVolume": 169774,
+        "representativeInstrument": {
+          "symbol": "KAU25",
+          "close": 17400,
+          "change": 0,
+          "volume": 169774
+        }
+      },
+      "participantFlows": [
+        {
+          "categoryKey": "liable_entities",
+          "label": "할당대상업체",
+          "netByMethod": {
+            "competitive": 38354,
+            "negotiated": 0,
+            "auction": 0,
+            "total": 38354
+          }
+        },
+        {
+          "categoryKey": "market_makers",
+          "label": "시장조성자",
+          "netByMethod": {
+            "competitive": -38354,
+            "negotiated": 0,
+            "auction": 0,
+            "total": -38354
+          }
+        },
+        {
+          "categoryKey": "financial_institutions",
+          "label": "금융기관",
+          "netByMethod": {
+            "competitive": 0,
+            "negotiated": 0,
+            "auction": 0,
+            "total": 0
+          }
+        },
+        {
+          "categoryKey": "others",
+          "label": "기타",
+          "netByMethod": {
+            "competitive": 0,
+            "negotiated": 0,
+            "auction": 0,
+            "total": 0
+          }
+        },
+        {
+          "categoryKey": "koc_specialists",
+          "label": "KOC전문회원",
+          "netByMethod": {
+            "competitive": 0,
+            "negotiated": 0,
+            "auction": 0,
+            "total": 0
+          }
+        }
+      ],
+      "validation": {
+        "netTotal": 0,
+        "balanced": true
+      }
+    },
+    {
+      "tradeDate": "2026-04-13",
+      "publishedDate": "2026-04-13",
+      "boardRn": 492,
+      "bbsSeq": "559",
+      "attachFileSeq": "1",
+      "title": "배출권 거래시장 일일동향(장내) 26.04.13",
+      "sourceKey": "krx:559:1",
+      "sourceRevisionId": "krx:559:1:f0e64225f7b0",
+      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=559",
+      "filename": "배출권 거래시장 일일동향_260413.pdf",
+      "sha256": "f0e64225f7b0754204270f1ca9a1854843dd777eda25162f5436d3032ad03748",
       "fileSize": 119798,
       "pages": 1,
       "parserVersion": "1.1.0",
       "participantScope": "all_instruments",
       "taxonomyVersion": "financial_institutions_and_others",
       "market": {
-        "totalVolume": 175569,
+        "totalVolume": 512092,
         "representativeInstrument": {
           "symbol": "KAU25",
-          "close": 25650,
-          "change": -300,
-          "volume": 175569
+          "close": 16750,
+          "change": -650,
+          "volume": 512092
         }
       },
       "participantFlows": [
@@ -33,20 +697,186 @@
           "categoryKey": "liable_entities",
           "label": "할당대상업체",
           "netByMethod": {
-            "competitive": -13668,
+            "competitive": 35793,
             "negotiated": 0,
             "auction": 0,
-            "total": -13668
+            "total": 35793
           }
         },
         {
           "categoryKey": "market_makers",
           "label": "시장조성자",
           "netByMethod": {
-            "competitive": 13668,
+            "competitive": -14393,
             "negotiated": 0,
             "auction": 0,
-            "total": 13668
+            "total": -14393
+          }
+        },
+        {
+          "categoryKey": "financial_institutions",
+          "label": "금융기관",
+          "netByMethod": {
+            "competitive": -21400,
+            "negotiated": 0,
+            "auction": 0,
+            "total": -21400
+          }
+        },
+        {
+          "categoryKey": "others",
+          "label": "기타",
+          "netByMethod": {
+            "competitive": 0,
+            "negotiated": 0,
+            "auction": 0,
+            "total": 0
+          }
+        },
+        {
+          "categoryKey": "koc_specialists",
+          "label": "KOC전문회원",
+          "netByMethod": {
+            "competitive": 0,
+            "negotiated": 0,
+            "auction": 0,
+            "total": 0
+          }
+        }
+      ],
+      "validation": {
+        "netTotal": 0,
+        "balanced": true
+      }
+    },
+    {
+      "tradeDate": "2026-04-14",
+      "publishedDate": "2026-04-14",
+      "boardRn": 493,
+      "bbsSeq": "560",
+      "attachFileSeq": "1",
+      "title": "배출권 거래시장 일일동향(장내) 26.04.14",
+      "sourceKey": "krx:560:1",
+      "sourceRevisionId": "krx:560:1:2d31ff859aab",
+      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=560",
+      "filename": "배출권 거래시장 일일동향_260414.pdf",
+      "sha256": "2d31ff859aab34a8368c843ca9ad45309cc0a20f77cc14000876fb5e5aed1c93",
+      "fileSize": 120006,
+      "pages": 1,
+      "parserVersion": "1.1.0",
+      "participantScope": "all_instruments",
+      "taxonomyVersion": "financial_institutions_and_others",
+      "market": {
+        "totalVolume": 628484,
+        "representativeInstrument": {
+          "symbol": "KAU25",
+          "close": 16500,
+          "change": -250,
+          "volume": 628484
+        }
+      },
+      "participantFlows": [
+        {
+          "categoryKey": "liable_entities",
+          "label": "할당대상업체",
+          "netByMethod": {
+            "competitive": 39029,
+            "negotiated": 0,
+            "auction": 0,
+            "total": 39029
+          }
+        },
+        {
+          "categoryKey": "market_makers",
+          "label": "시장조성자",
+          "netByMethod": {
+            "competitive": -50229,
+            "negotiated": 0,
+            "auction": 0,
+            "total": -50229
+          }
+        },
+        {
+          "categoryKey": "financial_institutions",
+          "label": "금융기관",
+          "netByMethod": {
+            "competitive": 11200,
+            "negotiated": 0,
+            "auction": 0,
+            "total": 11200
+          }
+        },
+        {
+          "categoryKey": "others",
+          "label": "기타",
+          "netByMethod": {
+            "competitive": 0,
+            "negotiated": 0,
+            "auction": 0,
+            "total": 0
+          }
+        },
+        {
+          "categoryKey": "koc_specialists",
+          "label": "KOC전문회원",
+          "netByMethod": {
+            "competitive": 0,
+            "negotiated": 0,
+            "auction": 0,
+            "total": 0
+          }
+        }
+      ],
+      "validation": {
+        "netTotal": 0,
+        "balanced": true
+      }
+    },
+    {
+      "tradeDate": "2026-04-15",
+      "publishedDate": "2026-04-15",
+      "boardRn": 494,
+      "bbsSeq": "561",
+      "attachFileSeq": "1",
+      "title": "배출권 거래시장 일일동향(장내) 26.04.15",
+      "sourceKey": "krx:561:1",
+      "sourceRevisionId": "krx:561:1:34b4570d4616",
+      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=561",
+      "filename": "배출권 거래시장 일일동향_260415.pdf",
+      "sha256": "34b4570d46165a0bd2cc58ee30af18b7125bee992a3c7131c210d15d4debdf82",
+      "fileSize": 120000,
+      "pages": 1,
+      "parserVersion": "1.1.0",
+      "participantScope": "all_instruments",
+      "taxonomyVersion": "financial_institutions_and_others",
+      "market": {
+        "totalVolume": 349110,
+        "representativeInstrument": {
+          "symbol": "KAU25",
+          "close": 16650,
+          "change": 150,
+          "volume": 349110
+        }
+      },
+      "participantFlows": [
+        {
+          "categoryKey": "liable_entities",
+          "label": "할당대상업체",
+          "netByMethod": {
+            "competitive": -6437,
+            "negotiated": 0,
+            "auction": 0,
+            "total": -6437
+          }
+        },
+        {
+          "categoryKey": "market_makers",
+          "label": "시장조성자",
+          "netByMethod": {
+            "competitive": 6437,
+            "negotiated": 0,
+            "auction": 0,
+            "total": 6437
           }
         },
         {
@@ -86,361 +916,29 @@
       }
     },
     {
-      "tradeDate": "2026-08-04",
-      "publishedDate": "2026-08-04",
-      "boardRn": 568,
-      "bbsSeq": "637",
+      "tradeDate": "2026-04-16",
+      "publishedDate": "2026-04-16",
+      "boardRn": 495,
+      "bbsSeq": "562",
       "attachFileSeq": "1",
-      "title": "배출권 거래시장 일일동향(장내) 26.08.04",
-      "sourceKey": "krx:637:1",
-      "sourceRevisionId": "krx:637:1:f8bfa1c352a0",
-      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=637",
-      "filename": "배출권 거래시장 일일동향_260804.pdf",
-      "sha256": "f8bfa1c352a00626f93cb5a7c92719ccc0f104498e9e7bcdb87507dd908a3eec",
-      "fileSize": 119994,
+      "title": "배출권 거래시장 일일동향(장내) 26.04.16",
+      "sourceKey": "krx:562:1",
+      "sourceRevisionId": "krx:562:1:dffa820b8725",
+      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=562",
+      "filename": "배출권 거래시장 일일동향_260416.pdf",
+      "sha256": "dffa820b87252bddf6c7f855245556ea153788b020b4556b7c95d10403731edb",
+      "fileSize": 120068,
       "pages": 1,
       "parserVersion": "1.1.0",
       "participantScope": "all_instruments",
       "taxonomyVersion": "financial_institutions_and_others",
       "market": {
-        "totalVolume": 209671,
+        "totalVolume": 292106,
         "representativeInstrument": {
           "symbol": "KAU25",
-          "close": 25650,
-          "change": 0,
-          "volume": 209671
-        }
-      },
-      "participantFlows": [
-        {
-          "categoryKey": "liable_entities",
-          "label": "할당대상업체",
-          "netByMethod": {
-            "competitive": 5533,
-            "negotiated": 0,
-            "auction": 0,
-            "total": 5533
-          }
-        },
-        {
-          "categoryKey": "market_makers",
-          "label": "시장조성자",
-          "netByMethod": {
-            "competitive": -5533,
-            "negotiated": 0,
-            "auction": 0,
-            "total": -5533
-          }
-        },
-        {
-          "categoryKey": "financial_institutions",
-          "label": "금융기관",
-          "netByMethod": {
-            "competitive": 0,
-            "negotiated": 0,
-            "auction": 0,
-            "total": 0
-          }
-        },
-        {
-          "categoryKey": "others",
-          "label": "기타",
-          "netByMethod": {
-            "competitive": 0,
-            "negotiated": 0,
-            "auction": 0,
-            "total": 0
-          }
-        },
-        {
-          "categoryKey": "koc_specialists",
-          "label": "KOC전문회원",
-          "netByMethod": {
-            "competitive": 0,
-            "negotiated": 0,
-            "auction": 0,
-            "total": 0
-          }
-        }
-      ],
-      "validation": {
-        "netTotal": 0,
-        "balanced": true
-      }
-    },
-    {
-      "tradeDate": "2026-08-05",
-      "publishedDate": "2026-08-05",
-      "boardRn": 569,
-      "bbsSeq": "638",
-      "attachFileSeq": "1",
-      "title": "배출권 거래시장 일일동향(장내) 26.08.05",
-      "sourceKey": "krx:638:1",
-      "sourceRevisionId": "krx:638:1:e3e831dc8b53",
-      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=638",
-      "filename": "배출권 거래시장 일일동향_260805.pdf",
-      "sha256": "e3e831dc8b53e110cd4415fa683f7eff6fb6f3a438a7e4860a609202dfc5cb6c",
-      "fileSize": 120029,
-      "pages": 1,
-      "parserVersion": "1.1.0",
-      "participantScope": "all_instruments",
-      "taxonomyVersion": "financial_institutions_and_others",
-      "market": {
-        "totalVolume": 237994,
-        "representativeInstrument": {
-          "symbol": "KAU25",
-          "close": 25650,
-          "change": 0,
-          "volume": 237994
-        }
-      },
-      "participantFlows": [
-        {
-          "categoryKey": "liable_entities",
-          "label": "할당대상업체",
-          "netByMethod": {
-            "competitive": 14901,
-            "negotiated": 0,
-            "auction": 0,
-            "total": 14901
-          }
-        },
-        {
-          "categoryKey": "market_makers",
-          "label": "시장조성자",
-          "netByMethod": {
-            "competitive": -14901,
-            "negotiated": 0,
-            "auction": 0,
-            "total": -14901
-          }
-        },
-        {
-          "categoryKey": "financial_institutions",
-          "label": "금융기관",
-          "netByMethod": {
-            "competitive": 0,
-            "negotiated": 0,
-            "auction": 0,
-            "total": 0
-          }
-        },
-        {
-          "categoryKey": "others",
-          "label": "기타",
-          "netByMethod": {
-            "competitive": 0,
-            "negotiated": 0,
-            "auction": 0,
-            "total": 0
-          }
-        },
-        {
-          "categoryKey": "koc_specialists",
-          "label": "KOC전문회원",
-          "netByMethod": {
-            "competitive": 0,
-            "negotiated": 0,
-            "auction": 0,
-            "total": 0
-          }
-        }
-      ],
-      "validation": {
-        "netTotal": 0,
-        "balanced": true
-      }
-    },
-    {
-      "tradeDate": "2026-08-06",
-      "publishedDate": "2026-08-06",
-      "boardRn": 570,
-      "bbsSeq": "639",
-      "attachFileSeq": "1",
-      "title": "배출권 거래시장 일일동향(장내) 26.08.06",
-      "sourceKey": "krx:639:1",
-      "sourceRevisionId": "krx:639:1:1c2cb944d723",
-      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=639",
-      "filename": "배출권 거래시장 일일동향_260806.pdf",
-      "sha256": "1c2cb944d72348d6cb6dff595d126cb5d57bbfb136453b843c7c3a91bdcad869",
-      "fileSize": 121428,
-      "pages": 1,
-      "parserVersion": "1.1.0",
-      "participantScope": "all_instruments",
-      "taxonomyVersion": "financial_institutions_and_others",
-      "market": {
-        "totalVolume": 226113,
-        "representativeInstrument": {
-          "symbol": "KAU25",
-          "close": 25650,
-          "change": 0,
-          "volume": 223613
-        }
-      },
-      "participantFlows": [
-        {
-          "categoryKey": "liable_entities",
-          "label": "할당대상업체",
-          "netByMethod": {
-            "competitive": 30987,
-            "negotiated": 0,
-            "auction": 0,
-            "total": 30987
-          }
-        },
-        {
-          "categoryKey": "market_makers",
-          "label": "시장조성자",
-          "netByMethod": {
-            "competitive": -27987,
-            "negotiated": 0,
-            "auction": 0,
-            "total": -27987
-          }
-        },
-        {
-          "categoryKey": "financial_institutions",
-          "label": "금융기관",
-          "netByMethod": {
-            "competitive": -3000,
-            "negotiated": 0,
-            "auction": 0,
-            "total": -3000
-          }
-        },
-        {
-          "categoryKey": "others",
-          "label": "기타",
-          "netByMethod": {
-            "competitive": 0,
-            "negotiated": 0,
-            "auction": 0,
-            "total": 0
-          }
-        },
-        {
-          "categoryKey": "koc_specialists",
-          "label": "KOC전문회원",
-          "netByMethod": {
-            "competitive": 0,
-            "negotiated": 0,
-            "auction": 0,
-            "total": 0
-          }
-        }
-      ],
-      "validation": {
-        "netTotal": 0,
-        "balanced": true
-      }
-    },
-    {
-      "tradeDate": "2026-08-07",
-      "publishedDate": "2026-08-07",
-      "boardRn": 571,
-      "bbsSeq": "640",
-      "attachFileSeq": "1",
-      "title": "배출권 거래시장 일일동향(장내) 26.08.07",
-      "sourceKey": "krx:640:1",
-      "sourceRevisionId": "krx:640:1:08afdaf13f79",
-      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=640",
-      "filename": "배출권 거래시장 일일동향_260807.pdf",
-      "sha256": "08afdaf13f7942647a3254690273d96b3ee4362ccc789b2913fd97f6731551f4",
-      "fileSize": 120064,
-      "pages": 1,
-      "parserVersion": "1.1.0",
-      "participantScope": "all_instruments",
-      "taxonomyVersion": "financial_institutions_and_others",
-      "market": {
-        "totalVolume": 220156,
-        "representativeInstrument": {
-          "symbol": "KAU25",
-          "close": 25700,
-          "change": 50,
-          "volume": 220056
-        }
-      },
-      "participantFlows": [
-        {
-          "categoryKey": "liable_entities",
-          "label": "할당대상업체",
-          "netByMethod": {
-            "competitive": 9401,
-            "negotiated": 0,
-            "auction": 0,
-            "total": 9401
-          }
-        },
-        {
-          "categoryKey": "market_makers",
-          "label": "시장조성자",
-          "netByMethod": {
-            "competitive": -4401,
-            "negotiated": 0,
-            "auction": 0,
-            "total": -4401
-          }
-        },
-        {
-          "categoryKey": "financial_institutions",
-          "label": "금융기관",
-          "netByMethod": {
-            "competitive": -5000,
-            "negotiated": 0,
-            "auction": 0,
-            "total": -5000
-          }
-        },
-        {
-          "categoryKey": "others",
-          "label": "기타",
-          "netByMethod": {
-            "competitive": 0,
-            "negotiated": 0,
-            "auction": 0,
-            "total": 0
-          }
-        },
-        {
-          "categoryKey": "koc_specialists",
-          "label": "KOC전문회원",
-          "netByMethod": {
-            "competitive": 0,
-            "negotiated": 0,
-            "auction": 0,
-            "total": 0
-          }
-        }
-      ],
-      "validation": {
-        "netTotal": 0,
-        "balanced": true
-      }
-    },
-    {
-      "tradeDate": "2026-08-10",
-      "publishedDate": "2026-08-10",
-      "boardRn": 572,
-      "bbsSeq": "641",
-      "attachFileSeq": "1",
-      "title": "배출권 거래시장 일일동향(장내) 26.08.10",
-      "sourceKey": "krx:641:1",
-      "sourceRevisionId": "krx:641:1:412b5765bc34",
-      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=641",
-      "filename": "배출권 거래시장 일일동향_260810.pdf",
-      "sha256": "412b5765bc345b0e46bb0a7e0b9a9a3ccaa76bdaf4d35397f2dd2acb3fc22535",
-      "fileSize": 120022,
-      "pages": 1,
-      "parserVersion": "1.1.0",
-      "participantScope": "all_instruments",
-      "taxonomyVersion": "financial_institutions_and_others",
-      "market": {
-        "totalVolume": 230466,
-        "representativeInstrument": {
-          "symbol": "KAU25",
-          "close": 25800,
+          "close": 16750,
           "change": 100,
-          "volume": 230466
+          "volume": 292106
         }
       },
       "participantFlows": [
@@ -448,30 +946,30 @@
           "categoryKey": "liable_entities",
           "label": "할당대상업체",
           "netByMethod": {
-            "competitive": 43598,
+            "competitive": 1018,
             "negotiated": 0,
             "auction": 0,
-            "total": 43598
+            "total": 1018
           }
         },
         {
           "categoryKey": "market_makers",
           "label": "시장조성자",
           "netByMethod": {
-            "competitive": -40598,
+            "competitive": 53627,
             "negotiated": 0,
             "auction": 0,
-            "total": -40598
+            "total": 53627
           }
         },
         {
           "categoryKey": "financial_institutions",
           "label": "금융기관",
           "netByMethod": {
-            "competitive": -3000,
+            "competitive": -54645,
             "negotiated": 0,
             "auction": 0,
-            "total": -3000
+            "total": -54645
           }
         },
         {
@@ -501,29 +999,29 @@
       }
     },
     {
-      "tradeDate": "2026-08-11",
-      "publishedDate": "2026-08-11",
-      "boardRn": 573,
-      "bbsSeq": "642",
+      "tradeDate": "2026-04-17",
+      "publishedDate": "2026-04-17",
+      "boardRn": 496,
+      "bbsSeq": "563",
       "attachFileSeq": "1",
-      "title": "배출권 거래시장 일일동향(장내) 26.08.11",
-      "sourceKey": "krx:642:1",
-      "sourceRevisionId": "krx:642:1:9c34cc14d925",
-      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=642",
-      "filename": "배출권 거래시장 일일동향_260811.pdf",
-      "sha256": "9c34cc14d9252cc771e0e249692a1d8517eeb6760652262abaa7d673ae0fd7a7",
-      "fileSize": 121364,
+      "title": "배출권 거래시장 일일동향(장내) 26.04.17",
+      "sourceKey": "krx:563:1",
+      "sourceRevisionId": "krx:563:1:4ba93931e476",
+      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=563",
+      "filename": "배출권 거래시장 일일동향_260417.pdf",
+      "sha256": "4ba93931e4764af3dc68c53058c7256133f14636c281466b64ae1012195f7b4e",
+      "fileSize": 119905,
       "pages": 1,
       "parserVersion": "1.1.0",
       "participantScope": "all_instruments",
       "taxonomyVersion": "financial_institutions_and_others",
       "market": {
-        "totalVolume": 398757,
+        "totalVolume": 146978,
         "representativeInstrument": {
           "symbol": "KAU25",
-          "close": 25800,
+          "close": 16750,
           "change": 0,
-          "volume": 398757
+          "volume": 146978
         }
       },
       "participantFlows": [
@@ -531,30 +1029,30 @@
           "categoryKey": "liable_entities",
           "label": "할당대상업체",
           "netByMethod": {
-            "competitive": 56801,
+            "competitive": 14874,
             "negotiated": 0,
             "auction": 0,
-            "total": 56801
+            "total": 14874
           }
         },
         {
           "categoryKey": "market_makers",
           "label": "시장조성자",
           "netByMethod": {
-            "competitive": -51801,
+            "competitive": -5174,
             "negotiated": 0,
             "auction": 0,
-            "total": -51801
+            "total": -5174
           }
         },
         {
           "categoryKey": "financial_institutions",
           "label": "금융기관",
           "netByMethod": {
-            "competitive": -5000,
+            "competitive": -9700,
             "negotiated": 0,
             "auction": 0,
-            "total": -5000
+            "total": -9700
           }
         },
         {
@@ -584,29 +1082,29 @@
       }
     },
     {
-      "tradeDate": "2026-08-12",
-      "publishedDate": "2026-08-12",
-      "boardRn": 574,
-      "bbsSeq": "643",
-      "attachFileSeq": "1",
-      "title": "배출권 거래시장 일일동향(장내) 26.08.12",
-      "sourceKey": "krx:643:1",
-      "sourceRevisionId": "krx:643:1:50bd82a4d34e",
-      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=643",
-      "filename": "배출권 거래시장 일일동향_260812.pdf",
-      "sha256": "50bd82a4d34ec7ab7f1364a03b1e35a5c2356107dbbece5053a56675d8c9fe35",
-      "fileSize": 119995,
+      "tradeDate": "2026-04-20",
+      "publishedDate": "2026-04-20",
+      "boardRn": 497,
+      "bbsSeq": "564",
+      "attachFileSeq": "2",
+      "title": "배출권 거래시장 일일동향(장내) 26.04.20",
+      "sourceKey": "krx:564:2",
+      "sourceRevisionId": "krx:564:2:4e2e0d30b28a",
+      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=564",
+      "filename": "배출권 거래시장 일일동향_260420.pdf",
+      "sha256": "4e2e0d30b28a1b16cd32ed78dc62dd5074b8f47939301783805f26ec919a1283",
+      "fileSize": 120004,
       "pages": 1,
       "parserVersion": "1.1.0",
       "participantScope": "all_instruments",
       "taxonomyVersion": "financial_institutions_and_others",
       "market": {
-        "totalVolume": 408525,
+        "totalVolume": 248654,
         "representativeInstrument": {
           "symbol": "KAU25",
-          "close": 25850,
-          "change": 50,
-          "volume": 408525
+          "close": 16500,
+          "change": -250,
+          "volume": 238654
         }
       },
       "participantFlows": [
@@ -614,30 +1112,30 @@
           "categoryKey": "liable_entities",
           "label": "할당대상업체",
           "netByMethod": {
-            "competitive": -24602,
+            "competitive": 51000,
             "negotiated": 0,
             "auction": 0,
-            "total": -24602
+            "total": 51000
           }
         },
         {
           "categoryKey": "market_makers",
           "label": "시장조성자",
           "netByMethod": {
-            "competitive": 29602,
+            "competitive": -13000,
             "negotiated": 0,
             "auction": 0,
-            "total": 29602
+            "total": -13000
           }
         },
         {
           "categoryKey": "financial_institutions",
           "label": "금융기관",
           "netByMethod": {
-            "competitive": -5000,
+            "competitive": -28000,
             "negotiated": 0,
             "auction": 0,
-            "total": -5000
+            "total": -28000
           }
         },
         {
@@ -654,10 +1152,10 @@
           "categoryKey": "koc_specialists",
           "label": "KOC전문회원",
           "netByMethod": {
-            "competitive": 0,
+            "competitive": -10000,
             "negotiated": 0,
             "auction": 0,
-            "total": 0
+            "total": -10000
           }
         }
       ],
@@ -667,29 +1165,29 @@
       }
     },
     {
-      "tradeDate": "2026-08-13",
-      "publishedDate": "2026-08-13",
-      "boardRn": 575,
-      "bbsSeq": "644",
+      "tradeDate": "2026-04-21",
+      "publishedDate": "2026-04-21",
+      "boardRn": 498,
+      "bbsSeq": "565",
       "attachFileSeq": "1",
-      "title": "배출권 거래시장 일일동향(장내) 26.08.13",
-      "sourceKey": "krx:644:1",
-      "sourceRevisionId": "krx:644:1:ce86215f7aa3",
-      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=644",
-      "filename": "배출권 거래시장 일일동향_260813.pdf",
-      "sha256": "ce86215f7aa357f737e1e411c8a2480c864b6225167c3ca0e3b55f6342cfac44",
-      "fileSize": 120105,
+      "title": "배출권 거래시장 일일동향(장내) 26.04.21",
+      "sourceKey": "krx:565:1",
+      "sourceRevisionId": "krx:565:1:77d08978966f",
+      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=565",
+      "filename": "배출권 거래시장 일일동향_260421.pdf",
+      "sha256": "77d08978966fdf77d96b305c5c3d18d9b3e0482a493ce0d99a006713f69b9805",
+      "fileSize": 119907,
       "pages": 1,
       "parserVersion": "1.1.0",
       "participantScope": "all_instruments",
       "taxonomyVersion": "financial_institutions_and_others",
       "market": {
-        "totalVolume": 692904,
+        "totalVolume": 300599,
         "representativeInstrument": {
           "symbol": "KAU25",
-          "close": 27450,
-          "change": 1600,
-          "volume": 692904
+          "close": 16500,
+          "change": 0,
+          "volume": 290599
         }
       },
       "participantFlows": [
@@ -697,30 +1195,113 @@
           "categoryKey": "liable_entities",
           "label": "할당대상업체",
           "netByMethod": {
-            "competitive": -20535,
+            "competitive": 52111,
             "negotiated": 0,
             "auction": 0,
-            "total": -20535
+            "total": 52111
           }
         },
         {
           "categoryKey": "market_makers",
           "label": "시장조성자",
           "netByMethod": {
-            "competitive": 14663,
+            "competitive": 17889,
             "negotiated": 0,
             "auction": 0,
-            "total": 14663
+            "total": 17889
           }
         },
         {
           "categoryKey": "financial_institutions",
           "label": "금융기관",
           "netByMethod": {
-            "competitive": 5872,
+            "competitive": -60000,
             "negotiated": 0,
             "auction": 0,
-            "total": 5872
+            "total": -60000
+          }
+        },
+        {
+          "categoryKey": "others",
+          "label": "기타",
+          "netByMethod": {
+            "competitive": 0,
+            "negotiated": 0,
+            "auction": 0,
+            "total": 0
+          }
+        },
+        {
+          "categoryKey": "koc_specialists",
+          "label": "KOC전문회원",
+          "netByMethod": {
+            "competitive": -10000,
+            "negotiated": 0,
+            "auction": 0,
+            "total": -10000
+          }
+        }
+      ],
+      "validation": {
+        "netTotal": 0,
+        "balanced": true
+      }
+    },
+    {
+      "tradeDate": "2026-04-22",
+      "publishedDate": "2026-04-22",
+      "boardRn": 499,
+      "bbsSeq": "566",
+      "attachFileSeq": "1",
+      "title": "배출권 거래시장 일일동향(장내) 26.04.22",
+      "sourceKey": "krx:566:1",
+      "sourceRevisionId": "krx:566:1:4f7b88e5256c",
+      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=566",
+      "filename": "배출권 거래시장 일일동향_260422.pdf",
+      "sha256": "4f7b88e5256c59c7b788a6859e97dafe9b0db705fbc83c4ebdb03a8d31b7772a",
+      "fileSize": 119940,
+      "pages": 1,
+      "parserVersion": "1.1.0",
+      "participantScope": "all_instruments",
+      "taxonomyVersion": "financial_institutions_and_others",
+      "market": {
+        "totalVolume": 790239,
+        "representativeInstrument": {
+          "symbol": "KAU25",
+          "close": 16450,
+          "change": -50,
+          "volume": 790239
+        }
+      },
+      "participantFlows": [
+        {
+          "categoryKey": "liable_entities",
+          "label": "할당대상업체",
+          "netByMethod": {
+            "competitive": 88422,
+            "negotiated": 0,
+            "auction": 0,
+            "total": 88422
+          }
+        },
+        {
+          "categoryKey": "market_makers",
+          "label": "시장조성자",
+          "netByMethod": {
+            "competitive": -88422,
+            "negotiated": 0,
+            "auction": 0,
+            "total": -88422
+          }
+        },
+        {
+          "categoryKey": "financial_institutions",
+          "label": "금융기관",
+          "netByMethod": {
+            "competitive": 0,
+            "negotiated": 0,
+            "auction": 0,
+            "total": 0
           }
         },
         {
@@ -750,29 +1331,195 @@
       }
     },
     {
-      "tradeDate": "2026-08-14",
-      "publishedDate": "2026-08-14",
-      "boardRn": 576,
-      "bbsSeq": "645",
+      "tradeDate": "2026-04-23",
+      "publishedDate": "2026-04-23",
+      "boardRn": 500,
+      "bbsSeq": "567",
       "attachFileSeq": "1",
-      "title": "배출권 거래시장 일일동향(장내) 26.08.14",
-      "sourceKey": "krx:645:1",
-      "sourceRevisionId": "krx:645:1:c811b93cfb8f",
-      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=645",
-      "filename": "배출권 거래시장 일일동향_260814.pdf",
-      "sha256": "c811b93cfb8fb08104989c1ac4a8f9e4e2fad8206fb2295575bc211f263de11f",
+      "title": "배출권 거래시장 일일동향(장내) 26.04.23",
+      "sourceKey": "krx:567:1",
+      "sourceRevisionId": "krx:567:1:9675c1978829",
+      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=567",
+      "filename": "배출권 거래시장 일일동향_260423.pdf",
+      "sha256": "9675c1978829d210cf95594553af0772a1dcf963b9843deb39ae0968eaf76f35",
+      "fileSize": 120004,
+      "pages": 1,
+      "parserVersion": "1.1.0",
+      "participantScope": "all_instruments",
+      "taxonomyVersion": "financial_institutions_and_others",
+      "market": {
+        "totalVolume": 209179,
+        "representativeInstrument": {
+          "symbol": "KAU25",
+          "close": 16600,
+          "change": 150,
+          "volume": 209179
+        }
+      },
+      "participantFlows": [
+        {
+          "categoryKey": "liable_entities",
+          "label": "할당대상업체",
+          "netByMethod": {
+            "competitive": -55183,
+            "negotiated": 0,
+            "auction": 0,
+            "total": -55183
+          }
+        },
+        {
+          "categoryKey": "market_makers",
+          "label": "시장조성자",
+          "netByMethod": {
+            "competitive": 55183,
+            "negotiated": 0,
+            "auction": 0,
+            "total": 55183
+          }
+        },
+        {
+          "categoryKey": "financial_institutions",
+          "label": "금융기관",
+          "netByMethod": {
+            "competitive": 0,
+            "negotiated": 0,
+            "auction": 0,
+            "total": 0
+          }
+        },
+        {
+          "categoryKey": "others",
+          "label": "기타",
+          "netByMethod": {
+            "competitive": 0,
+            "negotiated": 0,
+            "auction": 0,
+            "total": 0
+          }
+        },
+        {
+          "categoryKey": "koc_specialists",
+          "label": "KOC전문회원",
+          "netByMethod": {
+            "competitive": 0,
+            "negotiated": 0,
+            "auction": 0,
+            "total": 0
+          }
+        }
+      ],
+      "validation": {
+        "netTotal": 0,
+        "balanced": true
+      }
+    },
+    {
+      "tradeDate": "2026-04-24",
+      "publishedDate": "2026-04-24",
+      "boardRn": 501,
+      "bbsSeq": "568",
+      "attachFileSeq": "1",
+      "title": "배출권 거래시장 일일동향(장내) 26.04.24",
+      "sourceKey": "krx:568:1",
+      "sourceRevisionId": "krx:568:1:b27e729c56f9",
+      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=568",
+      "filename": "배출권 거래시장 일일동향_260424.pdf",
+      "sha256": "b27e729c56f9d964502d73424102445a67286f5b27949f394e425c66aa562ec6",
+      "fileSize": 119593,
+      "pages": 1,
+      "parserVersion": "1.1.0",
+      "participantScope": "all_instruments",
+      "taxonomyVersion": "financial_institutions_and_others",
+      "market": {
+        "totalVolume": 108874,
+        "representativeInstrument": {
+          "symbol": "KAU25",
+          "close": 16800,
+          "change": 200,
+          "volume": 108874
+        }
+      },
+      "participantFlows": [
+        {
+          "categoryKey": "liable_entities",
+          "label": "할당대상업체",
+          "netByMethod": {
+            "competitive": -21885,
+            "negotiated": 0,
+            "auction": 0,
+            "total": -21885
+          }
+        },
+        {
+          "categoryKey": "market_makers",
+          "label": "시장조성자",
+          "netByMethod": {
+            "competitive": 21885,
+            "negotiated": 0,
+            "auction": 0,
+            "total": 21885
+          }
+        },
+        {
+          "categoryKey": "financial_institutions",
+          "label": "금융기관",
+          "netByMethod": {
+            "competitive": 0,
+            "negotiated": 0,
+            "auction": 0,
+            "total": 0
+          }
+        },
+        {
+          "categoryKey": "others",
+          "label": "기타",
+          "netByMethod": {
+            "competitive": 0,
+            "negotiated": 0,
+            "auction": 0,
+            "total": 0
+          }
+        },
+        {
+          "categoryKey": "koc_specialists",
+          "label": "KOC전문회원",
+          "netByMethod": {
+            "competitive": 0,
+            "negotiated": 0,
+            "auction": 0,
+            "total": 0
+          }
+        }
+      ],
+      "validation": {
+        "netTotal": 0,
+        "balanced": true
+      }
+    },
+    {
+      "tradeDate": "2026-04-27",
+      "publishedDate": "2026-04-27",
+      "boardRn": 502,
+      "bbsSeq": "569",
+      "attachFileSeq": "1",
+      "title": "배출권 거래시장 일일동향(장내) 26.04.27",
+      "sourceKey": "krx:569:1",
+      "sourceRevisionId": "krx:569:1:9af7f289c6c9",
+      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=569",
+      "filename": "배출권 거래시장 일일동향_260427.pdf",
+      "sha256": "9af7f289c6c90e6627a652a0d2efadf9123cf5a7001c9f67ecbba9f408b9a9b2",
       "fileSize": 120047,
       "pages": 1,
       "parserVersion": "1.1.0",
       "participantScope": "all_instruments",
       "taxonomyVersion": "financial_institutions_and_others",
       "market": {
-        "totalVolume": 338086,
+        "totalVolume": 227642,
         "representativeInstrument": {
           "symbol": "KAU25",
-          "close": 27650,
-          "change": 200,
-          "volume": 338086
+          "close": 16800,
+          "change": 0,
+          "volume": 217642
         }
       },
       "participantFlows": [
@@ -780,435 +1527,20 @@
           "categoryKey": "liable_entities",
           "label": "할당대상업체",
           "netByMethod": {
-            "competitive": -21339,
+            "competitive": -29908,
             "negotiated": 0,
             "auction": 0,
-            "total": -21339
+            "total": -29908
           }
         },
         {
           "categoryKey": "market_makers",
           "label": "시장조성자",
           "netByMethod": {
-            "competitive": 27339,
+            "competitive": 39908,
             "negotiated": 0,
             "auction": 0,
-            "total": 27339
-          }
-        },
-        {
-          "categoryKey": "financial_institutions",
-          "label": "금융기관",
-          "netByMethod": {
-            "competitive": -6000,
-            "negotiated": 0,
-            "auction": 0,
-            "total": -6000
-          }
-        },
-        {
-          "categoryKey": "others",
-          "label": "기타",
-          "netByMethod": {
-            "competitive": 0,
-            "negotiated": 0,
-            "auction": 0,
-            "total": 0
-          }
-        },
-        {
-          "categoryKey": "koc_specialists",
-          "label": "KOC전문회원",
-          "netByMethod": {
-            "competitive": 0,
-            "negotiated": 0,
-            "auction": 0,
-            "total": 0
-          }
-        }
-      ],
-      "validation": {
-        "netTotal": 0,
-        "balanced": true
-      }
-    },
-    {
-      "tradeDate": "2026-08-18",
-      "publishedDate": "2026-08-18",
-      "boardRn": 577,
-      "bbsSeq": "646",
-      "attachFileSeq": "1",
-      "title": "배출권 거래시장 일일동향(장내) 26.08.18",
-      "sourceKey": "krx:646:1",
-      "sourceRevisionId": "krx:646:1:e5912369cf0f",
-      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=646",
-      "filename": "배출권 거래시장 일일동향_260818.pdf",
-      "sha256": "e5912369cf0f4a8978579ac3b71147db4d3bedc84a4d1a0f987bf328665206dc",
-      "fileSize": 121468,
-      "pages": 1,
-      "parserVersion": "1.1.0",
-      "participantScope": "all_instruments",
-      "taxonomyVersion": "financial_institutions_and_others",
-      "market": {
-        "totalVolume": 430703,
-        "representativeInstrument": {
-          "symbol": "KAU25",
-          "close": 28350,
-          "change": 700,
-          "volume": 430503
-        }
-      },
-      "participantFlows": [
-        {
-          "categoryKey": "liable_entities",
-          "label": "할당대상업체",
-          "netByMethod": {
-            "competitive": 101608,
-            "negotiated": 0,
-            "auction": 0,
-            "total": 101608
-          }
-        },
-        {
-          "categoryKey": "market_makers",
-          "label": "시장조성자",
-          "netByMethod": {
-            "competitive": -96618,
-            "negotiated": 0,
-            "auction": 0,
-            "total": -96618
-          }
-        },
-        {
-          "categoryKey": "financial_institutions",
-          "label": "금융기관",
-          "netByMethod": {
-            "competitive": -4990,
-            "negotiated": 0,
-            "auction": 0,
-            "total": -4990
-          }
-        },
-        {
-          "categoryKey": "others",
-          "label": "기타",
-          "netByMethod": {
-            "competitive": 0,
-            "negotiated": 0,
-            "auction": 0,
-            "total": 0
-          }
-        },
-        {
-          "categoryKey": "koc_specialists",
-          "label": "KOC전문회원",
-          "netByMethod": {
-            "competitive": 0,
-            "negotiated": 0,
-            "auction": 0,
-            "total": 0
-          }
-        }
-      ],
-      "validation": {
-        "netTotal": 0,
-        "balanced": true
-      }
-    },
-    {
-      "tradeDate": "2026-08-19",
-      "publishedDate": "2026-08-19",
-      "boardRn": 578,
-      "bbsSeq": "647",
-      "attachFileSeq": "1",
-      "title": "배출권 거래시장 일일동향(장내) 26.08.19",
-      "sourceKey": "krx:647:1",
-      "sourceRevisionId": "krx:647:1:5245e84edf2a",
-      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=647",
-      "filename": "배출권 거래시장 일일동향_260819.pdf",
-      "sha256": "5245e84edf2a37751b0d7b1c920b29bc1d79f5f4d86547e77a6aed4e42cf0744",
-      "fileSize": 121439,
-      "pages": 1,
-      "parserVersion": "1.1.0",
-      "participantScope": "all_instruments",
-      "taxonomyVersion": "financial_institutions_and_others",
-      "market": {
-        "totalVolume": 396644,
-        "representativeInstrument": {
-          "symbol": "KAU25",
-          "close": 29500,
-          "change": 1150,
-          "volume": 396644
-        }
-      },
-      "participantFlows": [
-        {
-          "categoryKey": "liable_entities",
-          "label": "할당대상업체",
-          "netByMethod": {
-            "competitive": 52713,
-            "negotiated": 0,
-            "auction": 0,
-            "total": 52713
-          }
-        },
-        {
-          "categoryKey": "market_makers",
-          "label": "시장조성자",
-          "netByMethod": {
-            "competitive": -67713,
-            "negotiated": 0,
-            "auction": 0,
-            "total": -67713
-          }
-        },
-        {
-          "categoryKey": "financial_institutions",
-          "label": "금융기관",
-          "netByMethod": {
-            "competitive": 15000,
-            "negotiated": 0,
-            "auction": 0,
-            "total": 15000
-          }
-        },
-        {
-          "categoryKey": "others",
-          "label": "기타",
-          "netByMethod": {
-            "competitive": 0,
-            "negotiated": 0,
-            "auction": 0,
-            "total": 0
-          }
-        },
-        {
-          "categoryKey": "koc_specialists",
-          "label": "KOC전문회원",
-          "netByMethod": {
-            "competitive": 0,
-            "negotiated": 0,
-            "auction": 0,
-            "total": 0
-          }
-        }
-      ],
-      "validation": {
-        "netTotal": 0,
-        "balanced": true
-      }
-    },
-    {
-      "tradeDate": "2026-08-20",
-      "publishedDate": "2026-08-20",
-      "boardRn": 579,
-      "bbsSeq": "648",
-      "attachFileSeq": "1",
-      "title": "배출권 거래시장 일일동향(장내) 26.08.20",
-      "sourceKey": "krx:648:1",
-      "sourceRevisionId": "krx:648:1:011b8c0bd243",
-      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=648",
-      "filename": "배출권 거래시장 일일동향_260820.pdf",
-      "sha256": "011b8c0bd243a8d0a7ffff857bc78f0a48717eaeae1ac60c285b044262942bbc",
-      "fileSize": 121479,
-      "pages": 1,
-      "parserVersion": "1.1.0",
-      "participantScope": "all_instruments",
-      "taxonomyVersion": "financial_institutions_and_others",
-      "market": {
-        "totalVolume": 630843,
-        "representativeInstrument": {
-          "symbol": "KAU25",
-          "close": 30100,
-          "change": 600,
-          "volume": 590073
-        }
-      },
-      "participantFlows": [
-        {
-          "categoryKey": "liable_entities",
-          "label": "할당대상업체",
-          "netByMethod": {
-            "competitive": 75498,
-            "negotiated": 0,
-            "auction": 0,
-            "total": 75498
-          }
-        },
-        {
-          "categoryKey": "market_makers",
-          "label": "시장조성자",
-          "netByMethod": {
-            "competitive": -91498,
-            "negotiated": 0,
-            "auction": 0,
-            "total": -91498
-          }
-        },
-        {
-          "categoryKey": "financial_institutions",
-          "label": "금융기관",
-          "netByMethod": {
-            "competitive": 16000,
-            "negotiated": 0,
-            "auction": 0,
-            "total": 16000
-          }
-        },
-        {
-          "categoryKey": "others",
-          "label": "기타",
-          "netByMethod": {
-            "competitive": 0,
-            "negotiated": 0,
-            "auction": 0,
-            "total": 0
-          }
-        },
-        {
-          "categoryKey": "koc_specialists",
-          "label": "KOC전문회원",
-          "netByMethod": {
-            "competitive": 0,
-            "negotiated": 0,
-            "auction": 0,
-            "total": 0
-          }
-        }
-      ],
-      "validation": {
-        "netTotal": 0,
-        "balanced": true
-      }
-    },
-    {
-      "tradeDate": "2026-08-21",
-      "publishedDate": "2026-08-21",
-      "boardRn": 580,
-      "bbsSeq": "649",
-      "attachFileSeq": "1",
-      "title": "배출권 거래시장 일일동향(장내) 26.08.21",
-      "sourceKey": "krx:649:1",
-      "sourceRevisionId": "krx:649:1:fddeca8f1486",
-      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=649",
-      "filename": "배출권 거래시장 일일동향_260821.pdf",
-      "sha256": "fddeca8f1486fa1a33b39391ed3c8275f5e847f79b6643f614e7db0fc8dab459",
-      "fileSize": 119994,
-      "pages": 1,
-      "parserVersion": "1.1.0",
-      "participantScope": "all_instruments",
-      "taxonomyVersion": "financial_institutions_and_others",
-      "market": {
-        "totalVolume": 908680,
-        "representativeInstrument": {
-          "symbol": "KAU25",
-          "close": 28900,
-          "change": -1200,
-          "volume": 893529
-        }
-      },
-      "participantFlows": [
-        {
-          "categoryKey": "liable_entities",
-          "label": "할당대상업체",
-          "netByMethod": {
-            "competitive": 108558,
-            "negotiated": 0,
-            "auction": 0,
-            "total": 108558
-          }
-        },
-        {
-          "categoryKey": "market_makers",
-          "label": "시장조성자",
-          "netByMethod": {
-            "competitive": -119058,
-            "negotiated": 0,
-            "auction": 0,
-            "total": -119058
-          }
-        },
-        {
-          "categoryKey": "financial_institutions",
-          "label": "금융기관",
-          "netByMethod": {
-            "competitive": 10500,
-            "negotiated": 0,
-            "auction": 0,
-            "total": 10500
-          }
-        },
-        {
-          "categoryKey": "others",
-          "label": "기타",
-          "netByMethod": {
-            "competitive": 0,
-            "negotiated": 0,
-            "auction": 0,
-            "total": 0
-          }
-        },
-        {
-          "categoryKey": "koc_specialists",
-          "label": "KOC전문회원",
-          "netByMethod": {
-            "competitive": 0,
-            "negotiated": 0,
-            "auction": 0,
-            "total": 0
-          }
-        }
-      ],
-      "validation": {
-        "netTotal": 0,
-        "balanced": true
-      }
-    },
-    {
-      "tradeDate": "2026-08-24",
-      "publishedDate": "2026-08-24",
-      "boardRn": 581,
-      "bbsSeq": "650",
-      "attachFileSeq": "1",
-      "title": "배출권 거래시장 일일동향(장내) 26.08.24",
-      "sourceKey": "krx:650:1",
-      "sourceRevisionId": "krx:650:1:6f8356b5401b",
-      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=650",
-      "filename": "배출권 거래시장 일일동향_260824.pdf",
-      "sha256": "6f8356b5401bb34f296442a936201412b4bcc419c779395028704ce299064b93",
-      "fileSize": 120026,
-      "pages": 1,
-      "parserVersion": "1.1.0",
-      "participantScope": "all_instruments",
-      "taxonomyVersion": "financial_institutions_and_others",
-      "market": {
-        "totalVolume": 548352,
-        "representativeInstrument": {
-          "symbol": "KAU25",
-          "close": 29150,
-          "change": 250,
-          "volume": 538342
-        }
-      },
-      "participantFlows": [
-        {
-          "categoryKey": "liable_entities",
-          "label": "할당대상업체",
-          "netByMethod": {
-            "competitive": 28405,
-            "negotiated": 0,
-            "auction": 0,
-            "total": 28405
-          }
-        },
-        {
-          "categoryKey": "market_makers",
-          "label": "시장조성자",
-          "netByMethod": {
-            "competitive": -18405,
-            "negotiated": 0,
-            "auction": 0,
-            "total": -18405
+            "total": 39908
           }
         },
         {
@@ -1248,278 +1580,29 @@
       }
     },
     {
-      "tradeDate": "2026-08-25",
-      "publishedDate": "2026-08-25",
-      "boardRn": 582,
-      "bbsSeq": "651",
+      "tradeDate": "2026-04-28",
+      "publishedDate": "2026-04-28",
+      "boardRn": 503,
+      "bbsSeq": "570",
       "attachFileSeq": "1",
-      "title": "배출권 거래시장 일일동향(장내) 26.08.25",
-      "sourceKey": "krx:651:1",
-      "sourceRevisionId": "krx:651:1:f8214e2f9965",
-      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=651",
-      "filename": "배출권 거래시장 일일동향_260825.pdf",
-      "sha256": "f8214e2f996594a794cc8d61b76118d00e2994ff367d804b34ba14970b0a3483",
-      "fileSize": 120054,
+      "title": "배출권 거래시장 일일동향(장내) 26.04.28",
+      "sourceKey": "krx:570:1",
+      "sourceRevisionId": "krx:570:1:629195776d6c",
+      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=570",
+      "filename": "배출권 거래시장 일일동향_260428.pdf",
+      "sha256": "629195776d6c7166664b3194a3f7332754470508a6c235f5ff8ffafb5b8b67b3",
+      "fileSize": 119888,
       "pages": 1,
       "parserVersion": "1.1.0",
       "participantScope": "all_instruments",
       "taxonomyVersion": "financial_institutions_and_others",
       "market": {
-        "totalVolume": 590381,
+        "totalVolume": 270117,
         "representativeInstrument": {
           "symbol": "KAU25",
-          "close": 29250,
-          "change": 100,
-          "volume": 590371
-        }
-      },
-      "participantFlows": [
-        {
-          "categoryKey": "liable_entities",
-          "label": "할당대상업체",
-          "netByMethod": {
-            "competitive": 91807,
-            "negotiated": 0,
-            "auction": 0,
-            "total": 91807
-          }
-        },
-        {
-          "categoryKey": "market_makers",
-          "label": "시장조성자",
-          "netByMethod": {
-            "competitive": -91807,
-            "negotiated": 0,
-            "auction": 0,
-            "total": -91807
-          }
-        },
-        {
-          "categoryKey": "financial_institutions",
-          "label": "금융기관",
-          "netByMethod": {
-            "competitive": 0,
-            "negotiated": 0,
-            "auction": 0,
-            "total": 0
-          }
-        },
-        {
-          "categoryKey": "others",
-          "label": "기타",
-          "netByMethod": {
-            "competitive": 0,
-            "negotiated": 0,
-            "auction": 0,
-            "total": 0
-          }
-        },
-        {
-          "categoryKey": "koc_specialists",
-          "label": "KOC전문회원",
-          "netByMethod": {
-            "competitive": 0,
-            "negotiated": 0,
-            "auction": 0,
-            "total": 0
-          }
-        }
-      ],
-      "validation": {
-        "netTotal": 0,
-        "balanced": true
-      }
-    },
-    {
-      "tradeDate": "2026-08-26",
-      "publishedDate": "2026-08-26",
-      "boardRn": 583,
-      "bbsSeq": "652",
-      "attachFileSeq": "1",
-      "title": "배출권 거래시장 일일동향(장내) 26.08.26",
-      "sourceKey": "krx:652:1",
-      "sourceRevisionId": "krx:652:1:c66bae9487b0",
-      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=652",
-      "filename": "배출권 거래시장 일일동향_260826.pdf",
-      "sha256": "c66bae9487b01804793b82687a6e573b33ce3f64756679bbed6bc915deea4381",
-      "fileSize": 120090,
-      "pages": 1,
-      "parserVersion": "1.1.0",
-      "participantScope": "all_instruments",
-      "taxonomyVersion": "financial_institutions_and_others",
-      "market": {
-        "totalVolume": 562790,
-        "representativeInstrument": {
-          "symbol": "KAU25",
-          "close": 29500,
-          "change": 250,
-          "volume": 560217
-        }
-      },
-      "participantFlows": [
-        {
-          "categoryKey": "liable_entities",
-          "label": "할당대상업체",
-          "netByMethod": {
-            "competitive": 188925,
-            "negotiated": 0,
-            "auction": 0,
-            "total": 188925
-          }
-        },
-        {
-          "categoryKey": "market_makers",
-          "label": "시장조성자",
-          "netByMethod": {
-            "competitive": -188925,
-            "negotiated": 0,
-            "auction": 0,
-            "total": -188925
-          }
-        },
-        {
-          "categoryKey": "financial_institutions",
-          "label": "금융기관",
-          "netByMethod": {
-            "competitive": 0,
-            "negotiated": 0,
-            "auction": 0,
-            "total": 0
-          }
-        },
-        {
-          "categoryKey": "others",
-          "label": "기타",
-          "netByMethod": {
-            "competitive": 0,
-            "negotiated": 0,
-            "auction": 0,
-            "total": 0
-          }
-        },
-        {
-          "categoryKey": "koc_specialists",
-          "label": "KOC전문회원",
-          "netByMethod": {
-            "competitive": 0,
-            "negotiated": 0,
-            "auction": 0,
-            "total": 0
-          }
-        }
-      ],
-      "validation": {
-        "netTotal": 0,
-        "balanced": true
-      }
-    },
-    {
-      "tradeDate": "2026-08-27",
-      "publishedDate": "2026-08-27",
-      "boardRn": 584,
-      "bbsSeq": "653",
-      "attachFileSeq": "1",
-      "title": "배출권 거래시장 일일동향(장내) 26.08.27",
-      "sourceKey": "krx:653:1",
-      "sourceRevisionId": "krx:653:1:0f69e507b033",
-      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=653",
-      "filename": "배출권 거래시장 일일동향_260827.pdf",
-      "sha256": "0f69e507b03370313f5b309d9e972bd1d3eff443808228c7ce57d4d672e307f4",
-      "fileSize": 119929,
-      "pages": 1,
-      "parserVersion": "1.1.0",
-      "participantScope": "all_instruments",
-      "taxonomyVersion": "financial_institutions_and_others",
-      "market": {
-        "totalVolume": 474659,
-        "representativeInstrument": {
-          "symbol": "KAU25",
-          "close": 29450,
-          "change": -50,
-          "volume": 474659
-        }
-      },
-      "participantFlows": [
-        {
-          "categoryKey": "liable_entities",
-          "label": "할당대상업체",
-          "netByMethod": {
-            "competitive": 182275,
-            "negotiated": 0,
-            "auction": 0,
-            "total": 182275
-          }
-        },
-        {
-          "categoryKey": "market_makers",
-          "label": "시장조성자",
-          "netByMethod": {
-            "competitive": -182275,
-            "negotiated": 0,
-            "auction": 0,
-            "total": -182275
-          }
-        },
-        {
-          "categoryKey": "financial_institutions",
-          "label": "금융기관",
-          "netByMethod": {
-            "competitive": 0,
-            "negotiated": 0,
-            "auction": 0,
-            "total": 0
-          }
-        },
-        {
-          "categoryKey": "others",
-          "label": "기타",
-          "netByMethod": {
-            "competitive": 0,
-            "negotiated": 0,
-            "auction": 0,
-            "total": 0
-          }
-        },
-        {
-          "categoryKey": "koc_specialists",
-          "label": "KOC전문회원",
-          "netByMethod": {
-            "competitive": 0,
-            "negotiated": 0,
-            "auction": 0,
-            "total": 0
-          }
-        }
-      ],
-      "validation": {
-        "netTotal": 0,
-        "balanced": true
-      }
-    },
-    {
-      "tradeDate": "2026-08-28",
-      "publishedDate": "2026-08-28",
-      "boardRn": 585,
-      "bbsSeq": "654",
-      "attachFileSeq": "1",
-      "title": "배출권 거래시장 일일동향(장내) 26.08.28",
-      "sourceKey": "krx:654:1",
-      "sourceRevisionId": "krx:654:1:080e1f14be29",
-      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=654",
-      "filename": "배출권 거래시장 일일동향_260828.pdf",
-      "sha256": "080e1f14be29236adc411fb37c81caa9e8b283353daa959c0b341f2135eaf49f",
-      "fileSize": 120076,
-      "pages": 1,
-      "parserVersion": "1.1.0",
-      "participantScope": "all_instruments",
-      "taxonomyVersion": "financial_institutions_and_others",
-      "market": {
-        "totalVolume": 808577,
-        "representativeInstrument": {
-          "symbol": "KAU25",
-          "close": 29450,
+          "close": 16800,
           "change": 0,
-          "volume": 774368
+          "volume": 270117
         }
       },
       "participantFlows": [
@@ -1527,30 +1610,30 @@
           "categoryKey": "liable_entities",
           "label": "할당대상업체",
           "netByMethod": {
-            "competitive": 145815,
+            "competitive": -66830,
             "negotiated": 0,
             "auction": 0,
-            "total": 145815
+            "total": -66830
           }
         },
         {
           "categoryKey": "market_makers",
           "label": "시장조성자",
           "netByMethod": {
-            "competitive": -145814,
+            "competitive": 66830,
             "negotiated": 0,
             "auction": 0,
-            "total": -145814
+            "total": 66830
           }
         },
         {
           "categoryKey": "financial_institutions",
           "label": "금융기관",
           "netByMethod": {
-            "competitive": -1,
+            "competitive": 0,
             "negotiated": 0,
             "auction": 0,
-            "total": -1
+            "total": 0
           }
         },
         {
@@ -1580,29 +1663,29 @@
       }
     },
     {
-      "tradeDate": "2026-08-31",
-      "publishedDate": "2026-08-31",
-      "boardRn": 586,
-      "bbsSeq": "655",
+      "tradeDate": "2026-04-29",
+      "publishedDate": "2026-04-29",
+      "boardRn": 504,
+      "bbsSeq": "571",
       "attachFileSeq": "1",
-      "title": "배출권 거래시장 일일동향(장내) 26.08.31",
-      "sourceKey": "krx:655:1",
-      "sourceRevisionId": "krx:655:1:8500e233360b",
-      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=655",
-      "filename": "배출권 거래시장 일일동향_260831.pdf",
-      "sha256": "8500e233360bda79b84ce165b7c3fe6d4f20a8760e89fdbb4a0c6130374cdc81",
-      "fileSize": 120023,
+      "title": "배출권 거래시장 일일동향(장내) 26.04.29",
+      "sourceKey": "krx:571:1",
+      "sourceRevisionId": "krx:571:1:abe2db9bf5d8",
+      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=571",
+      "filename": "배출권 거래시장 일일동향_260429.pdf",
+      "sha256": "abe2db9bf5d81a28ca533cd6c3f7423d62ad43b369d11ad9bc529b9294353ea5",
+      "fileSize": 120019,
       "pages": 1,
       "parserVersion": "1.1.0",
       "participantScope": "all_instruments",
       "taxonomyVersion": "financial_institutions_and_others",
       "market": {
-        "totalVolume": 627532,
+        "totalVolume": 357082,
         "representativeInstrument": {
           "symbol": "KAU25",
-          "close": 29450,
-          "change": 0,
-          "volume": 623432
+          "close": 17000,
+          "change": 200,
+          "volume": 357082
         }
       },
       "participantFlows": [
@@ -1610,20 +1693,103 @@
           "categoryKey": "liable_entities",
           "label": "할당대상업체",
           "netByMethod": {
-            "competitive": 108548,
+            "competitive": -52346,
             "negotiated": 0,
             "auction": 0,
-            "total": 108548
+            "total": -52346
           }
         },
         {
           "categoryKey": "market_makers",
           "label": "시장조성자",
           "netByMethod": {
-            "competitive": -108548,
+            "competitive": 52346,
             "negotiated": 0,
             "auction": 0,
-            "total": -108548
+            "total": 52346
+          }
+        },
+        {
+          "categoryKey": "financial_institutions",
+          "label": "금융기관",
+          "netByMethod": {
+            "competitive": 0,
+            "negotiated": 0,
+            "auction": 0,
+            "total": 0
+          }
+        },
+        {
+          "categoryKey": "others",
+          "label": "기타",
+          "netByMethod": {
+            "competitive": 0,
+            "negotiated": 0,
+            "auction": 0,
+            "total": 0
+          }
+        },
+        {
+          "categoryKey": "koc_specialists",
+          "label": "KOC전문회원",
+          "netByMethod": {
+            "competitive": 0,
+            "negotiated": 0,
+            "auction": 0,
+            "total": 0
+          }
+        }
+      ],
+      "validation": {
+        "netTotal": 0,
+        "balanced": true
+      }
+    },
+    {
+      "tradeDate": "2026-04-30",
+      "publishedDate": "2026-04-30",
+      "boardRn": 505,
+      "bbsSeq": "572",
+      "attachFileSeq": "1",
+      "title": "배출권 거래시장 일일동향(장내) 26.04.30",
+      "sourceKey": "krx:572:1",
+      "sourceRevisionId": "krx:572:1:7bb4d5b640ac",
+      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=572",
+      "filename": "배출권 거래시장 일일동향_260430.pdf",
+      "sha256": "7bb4d5b640acbb1eb35be02b000ec230ae6b46c073fa78bec2fbc62076040dcd",
+      "fileSize": 119876,
+      "pages": 1,
+      "parserVersion": "1.1.0",
+      "participantScope": "all_instruments",
+      "taxonomyVersion": "financial_institutions_and_others",
+      "market": {
+        "totalVolume": 164134,
+        "representativeInstrument": {
+          "symbol": "KAU25",
+          "close": 17050,
+          "change": 50,
+          "volume": 164134
+        }
+      },
+      "participantFlows": [
+        {
+          "categoryKey": "liable_entities",
+          "label": "할당대상업체",
+          "netByMethod": {
+            "competitive": 31678,
+            "negotiated": 0,
+            "auction": 0,
+            "total": 31678
+          }
+        },
+        {
+          "categoryKey": "market_makers",
+          "label": "시장조성자",
+          "netByMethod": {
+            "competitive": -31678,
+            "negotiated": 0,
+            "auction": 0,
+            "total": -31678
           }
         },
         {
@@ -1663,5 +1829,5 @@
       }
     }
   ],
-  "generatedAt": "2026-09-02T00:39:52+09:00"
+  "generatedAt": "2026-09-02T00:38:41+09:00"
 }

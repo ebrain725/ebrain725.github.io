@@ -1,31 +1,31 @@
 {
   "schemaVersion": "1.0",
-  "month": "2025-12",
+  "month": "2026-01",
   "items": [
     {
-      "tradeDate": "2025-12-01",
-      "publishedDate": "2025-12-01",
-      "boardRn": 404,
-      "bbsSeq": "471",
+      "tradeDate": "2026-01-02",
+      "publishedDate": "2026-01-02",
+      "boardRn": 425,
+      "bbsSeq": "492",
       "attachFileSeq": "1",
-      "title": "배출권 거래시장 일일동향(장내) 25.12.01",
-      "sourceKey": "krx:471:1",
-      "sourceRevisionId": "krx:471:1:f1d00ce2d98d",
-      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=471",
-      "filename": "배출권 거래시장 일일동향_251201.pdf",
-      "sha256": "f1d00ce2d98d97bc8acaffc2b3f89118f661eb0c7e96e4cfe8ff355410e2ebce",
-      "fileSize": 115746,
+      "title": "배출권 거래시장 일일동향(장내) 26.01.02",
+      "sourceKey": "krx:492:1",
+      "sourceRevisionId": "krx:492:1:18a5e9286121",
+      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=492",
+      "filename": "배출권 거래시장 일일동향_260102.pdf",
+      "sha256": "18a5e928612160966c7031997062c44b92a25dfbedf7d42806191a266f58c305",
+      "fileSize": 114754,
       "pages": 1,
       "parserVersion": "1.1.0",
       "participantScope": "all_instruments",
       "taxonomyVersion": "legacy_brokerage_members",
       "market": {
-        "totalVolume": 57500,
+        "totalVolume": 9000,
         "representativeInstrument": {
           "symbol": "KAU25",
           "close": null,
           "change": null,
-          "volume": 57500
+          "volume": 9000
         }
       },
       "participantFlows": [
@@ -33,20 +33,20 @@
           "categoryKey": "liable_entities",
           "label": "할당대상업체",
           "netByMethod": {
-            "competitive": -26000,
+            "competitive": 0,
             "negotiated": 0,
             "auction": 0,
-            "total": -26000
+            "total": 0
           }
         },
         {
           "categoryKey": "market_makers",
           "label": "시장조성자",
           "netByMethod": {
-            "competitive": 26000,
+            "competitive": 0,
             "negotiated": 0,
             "auction": 0,
-            "total": 26000
+            "total": 0
           }
         },
         {
@@ -76,29 +76,29 @@
       }
     },
     {
-      "tradeDate": "2025-12-02",
-      "publishedDate": "2025-12-02",
-      "boardRn": 405,
-      "bbsSeq": "472",
+      "tradeDate": "2026-01-05",
+      "publishedDate": "2026-01-05",
+      "boardRn": 426,
+      "bbsSeq": "493",
       "attachFileSeq": "1",
-      "title": "배출권 거래시장 일일동향(장내) 25.12.02",
-      "sourceKey": "krx:472:1",
-      "sourceRevisionId": "krx:472:1:da23a8104ba3",
-      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=472",
-      "filename": "배출권 거래시장 일일동향_251202.pdf",
-      "sha256": "da23a8104ba3b9af9ad61478f278ed0326dd3ba7b8d18b5ea3ae8dfe98a0f30e",
-      "fileSize": 115739,
+      "title": "배출권 거래시장 일일동향(장내) 26.01.05",
+      "sourceKey": "krx:493:1",
+      "sourceRevisionId": "krx:493:1:5549b35ddd7f",
+      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=493",
+      "filename": "배출권 거래시장 일일동향_260105.pdf",
+      "sha256": "5549b35ddd7f3163e535d82369d4f95530a33c3b75783a552db7f4101696da12",
+      "fileSize": 116862,
       "pages": 1,
       "parserVersion": "1.1.0",
       "participantScope": "all_instruments",
       "taxonomyVersion": "legacy_brokerage_members",
       "market": {
-        "totalVolume": 55000,
+        "totalVolume": 22111,
         "representativeInstrument": {
           "symbol": "KAU25",
           "close": null,
           "change": null,
-          "volume": 55000
+          "volume": 22111
         }
       },
       "participantFlows": [
@@ -106,166 +106,20 @@
           "categoryKey": "liable_entities",
           "label": "할당대상업체",
           "netByMethod": {
-            "competitive": -23000,
+            "competitive": -5111,
             "negotiated": 0,
             "auction": 0,
-            "total": -23000
+            "total": -5111
           }
         },
         {
           "categoryKey": "market_makers",
           "label": "시장조성자",
           "netByMethod": {
-            "competitive": 22000,
+            "competitive": 5111,
             "negotiated": 0,
             "auction": 0,
-            "total": 22000
-          }
-        },
-        {
-          "categoryKey": "brokerage_members",
-          "label": "거래중개회원",
-          "netByMethod": {
-            "competitive": 1000,
-            "negotiated": 0,
-            "auction": 0,
-            "total": 1000
-          }
-        },
-        {
-          "categoryKey": "koc_specialists",
-          "label": "KOC전문회원",
-          "netByMethod": {
-            "competitive": 0,
-            "negotiated": 0,
-            "auction": 0,
-            "total": 0
-          }
-        }
-      ],
-      "validation": {
-        "netTotal": 0,
-        "balanced": true
-      }
-    },
-    {
-      "tradeDate": "2025-12-03",
-      "publishedDate": "2025-12-03",
-      "boardRn": 406,
-      "bbsSeq": "473",
-      "attachFileSeq": "1",
-      "title": "배출권 거래시장 일일동향(장내) 25.12.03",
-      "sourceKey": "krx:473:1",
-      "sourceRevisionId": "krx:473:1:8f4779d70efd",
-      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=473",
-      "filename": "배출권 거래시장 일일동향_251203.pdf",
-      "sha256": "8f4779d70efd1d006e71e767090e7c5aca580dc687f278b2ad978c434fff1089",
-      "fileSize": 116040,
-      "pages": 1,
-      "parserVersion": "1.1.0",
-      "participantScope": "all_instruments",
-      "taxonomyVersion": "legacy_brokerage_members",
-      "market": {
-        "totalVolume": 82150,
-        "representativeInstrument": {
-          "symbol": "KAU25",
-          "close": null,
-          "change": null,
-          "volume": 82150
-        }
-      },
-      "participantFlows": [
-        {
-          "categoryKey": "liable_entities",
-          "label": "할당대상업체",
-          "netByMethod": {
-            "competitive": 14150,
-            "negotiated": 0,
-            "auction": 0,
-            "total": 14150
-          }
-        },
-        {
-          "categoryKey": "market_makers",
-          "label": "시장조성자",
-          "netByMethod": {
-            "competitive": -15150,
-            "negotiated": 0,
-            "auction": 0,
-            "total": -15150
-          }
-        },
-        {
-          "categoryKey": "brokerage_members",
-          "label": "거래중개회원",
-          "netByMethod": {
-            "competitive": 1000,
-            "negotiated": 0,
-            "auction": 0,
-            "total": 1000
-          }
-        },
-        {
-          "categoryKey": "koc_specialists",
-          "label": "KOC전문회원",
-          "netByMethod": {
-            "competitive": 0,
-            "negotiated": 0,
-            "auction": 0,
-            "total": 0
-          }
-        }
-      ],
-      "validation": {
-        "netTotal": 0,
-        "balanced": true
-      }
-    },
-    {
-      "tradeDate": "2025-12-04",
-      "publishedDate": "2025-12-04",
-      "boardRn": 407,
-      "bbsSeq": "474",
-      "attachFileSeq": "1",
-      "title": "배출권 거래시장 일일동향(장내) 25.12.04",
-      "sourceKey": "krx:474:1",
-      "sourceRevisionId": "krx:474:1:731c329080cf",
-      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=474",
-      "filename": "배출권 거래시장 일일동향_251204.pdf",
-      "sha256": "731c329080cf97a453c6442268686654f74a88ddcf4c058a4929d05ef6a56993",
-      "fileSize": 115939,
-      "pages": 1,
-      "parserVersion": "1.1.0",
-      "participantScope": "all_instruments",
-      "taxonomyVersion": "legacy_brokerage_members",
-      "market": {
-        "totalVolume": 83650,
-        "representativeInstrument": {
-          "symbol": "KAU25",
-          "close": null,
-          "change": null,
-          "volume": 83650
-        }
-      },
-      "participantFlows": [
-        {
-          "categoryKey": "liable_entities",
-          "label": "할당대상업체",
-          "netByMethod": {
-            "competitive": 7650,
-            "negotiated": 0,
-            "auction": 0,
-            "total": 7650
-          }
-        },
-        {
-          "categoryKey": "market_makers",
-          "label": "시장조성자",
-          "netByMethod": {
-            "competitive": -7650,
-            "negotiated": 0,
-            "auction": 0,
-            "total": -7650
+            "total": 5111
           }
         },
         {
@@ -295,29 +149,29 @@
       }
     },
     {
-      "tradeDate": "2025-12-05",
-      "publishedDate": "2025-12-05",
-      "boardRn": 408,
-      "bbsSeq": "475",
+      "tradeDate": "2026-01-06",
+      "publishedDate": "2026-01-06",
+      "boardRn": 427,
+      "bbsSeq": "494",
       "attachFileSeq": "1",
-      "title": "배출권 거래시장 일일동향(장내) 25.12.05",
-      "sourceKey": "krx:475:1",
-      "sourceRevisionId": "krx:475:1:c7185be8a0e9",
-      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=475",
-      "filename": "배출권 거래시장 일일동향_251205.pdf",
-      "sha256": "c7185be8a0e96556618f582b2fc4a37237c1af98c34b4895c049d84b334cc89b",
-      "fileSize": 117677,
+      "title": "배출권 거래시장 일일동향(장내) 26.01.06",
+      "sourceKey": "krx:494:1",
+      "sourceRevisionId": "krx:494:1:e7f5adceb9ee",
+      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=494",
+      "filename": "배출권 거래시장 일일동향_260106.pdf",
+      "sha256": "e7f5adceb9eebccf5ce24d0663dd22b090c35f34e79a3d4a83403b9e5b581004",
+      "fileSize": 115941,
       "pages": 1,
       "parserVersion": "1.1.0",
       "participantScope": "all_instruments",
       "taxonomyVersion": "legacy_brokerage_members",
       "market": {
-        "totalVolume": 80690,
+        "totalVolume": 21527,
         "representativeInstrument": {
           "symbol": "KAU25",
           "close": null,
           "change": null,
-          "volume": 80690
+          "volume": 21527
         }
       },
       "participantFlows": [
@@ -325,20 +179,604 @@
           "categoryKey": "liable_entities",
           "label": "할당대상업체",
           "netByMethod": {
-            "competitive": 6540,
+            "competitive": -3527,
             "negotiated": 0,
             "auction": 0,
-            "total": 6540
+            "total": -3527
           }
         },
         {
           "categoryKey": "market_makers",
           "label": "시장조성자",
           "netByMethod": {
-            "competitive": -6540,
+            "competitive": 3520,
             "negotiated": 0,
             "auction": 0,
-            "total": -6540
+            "total": 3520
+          }
+        },
+        {
+          "categoryKey": "brokerage_members",
+          "label": "거래중개회원",
+          "netByMethod": {
+            "competitive": 7,
+            "negotiated": 0,
+            "auction": 0,
+            "total": 7
+          }
+        },
+        {
+          "categoryKey": "koc_specialists",
+          "label": "KOC전문회원",
+          "netByMethod": {
+            "competitive": 0,
+            "negotiated": 0,
+            "auction": 0,
+            "total": 0
+          }
+        }
+      ],
+      "validation": {
+        "netTotal": 0,
+        "balanced": true
+      }
+    },
+    {
+      "tradeDate": "2026-01-07",
+      "publishedDate": "2026-01-07",
+      "boardRn": 428,
+      "bbsSeq": "495",
+      "attachFileSeq": "1",
+      "title": "배출권 거래시장 일일동향(장내) 26.01.07",
+      "sourceKey": "krx:495:1",
+      "sourceRevisionId": "krx:495:1:41a250566cc3",
+      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=495",
+      "filename": "배출권 거래시장 일일동향_260107.pdf",
+      "sha256": "41a250566cc3d3bb54c8d6233f31b5624e1c15d1df0206e3de35417439eb0096",
+      "fileSize": 117567,
+      "pages": 1,
+      "parserVersion": "1.1.0",
+      "participantScope": "all_instruments",
+      "taxonomyVersion": "legacy_brokerage_members",
+      "market": {
+        "totalVolume": 13887,
+        "representativeInstrument": {
+          "symbol": "KAU25",
+          "close": null,
+          "change": null,
+          "volume": 13887
+        }
+      },
+      "participantFlows": [
+        {
+          "categoryKey": "liable_entities",
+          "label": "할당대상업체",
+          "netByMethod": {
+            "competitive": -940,
+            "negotiated": 0,
+            "auction": 0,
+            "total": -940
+          }
+        },
+        {
+          "categoryKey": "market_makers",
+          "label": "시장조성자",
+          "netByMethod": {
+            "competitive": 938,
+            "negotiated": 0,
+            "auction": 0,
+            "total": 938
+          }
+        },
+        {
+          "categoryKey": "brokerage_members",
+          "label": "거래중개회원",
+          "netByMethod": {
+            "competitive": 2,
+            "negotiated": 0,
+            "auction": 0,
+            "total": 2
+          }
+        },
+        {
+          "categoryKey": "koc_specialists",
+          "label": "KOC전문회원",
+          "netByMethod": {
+            "competitive": 0,
+            "negotiated": 0,
+            "auction": 0,
+            "total": 0
+          }
+        }
+      ],
+      "validation": {
+        "netTotal": 0,
+        "balanced": true
+      }
+    },
+    {
+      "tradeDate": "2026-01-08",
+      "publishedDate": "2026-01-08",
+      "boardRn": 429,
+      "bbsSeq": "496",
+      "attachFileSeq": "1",
+      "title": "배출권 거래시장 일일동향(장내) 26.01.08",
+      "sourceKey": "krx:496:1",
+      "sourceRevisionId": "krx:496:1:ddc817ff560c",
+      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=496",
+      "filename": "배출권 거래시장 일일동향_260108.pdf",
+      "sha256": "ddc817ff560c9a665a19f4e7e99961652e7134828506ad4d7a46385ec557be6f",
+      "fileSize": 117787,
+      "pages": 1,
+      "parserVersion": "1.1.0",
+      "participantScope": "all_instruments",
+      "taxonomyVersion": "legacy_brokerage_members",
+      "market": {
+        "totalVolume": 78474,
+        "representativeInstrument": {
+          "symbol": "KAU25",
+          "close": null,
+          "change": null,
+          "volume": 78474
+        }
+      },
+      "participantFlows": [
+        {
+          "categoryKey": "liable_entities",
+          "label": "할당대상업체",
+          "netByMethod": {
+            "competitive": -14637,
+            "negotiated": 0,
+            "auction": 0,
+            "total": -14637
+          }
+        },
+        {
+          "categoryKey": "market_makers",
+          "label": "시장조성자",
+          "netByMethod": {
+            "competitive": 1103,
+            "negotiated": 0,
+            "auction": 0,
+            "total": 1103
+          }
+        },
+        {
+          "categoryKey": "brokerage_members",
+          "label": "거래중개회원",
+          "netByMethod": {
+            "competitive": 13534,
+            "negotiated": 0,
+            "auction": 0,
+            "total": 13534
+          }
+        },
+        {
+          "categoryKey": "koc_specialists",
+          "label": "KOC전문회원",
+          "netByMethod": {
+            "competitive": 0,
+            "negotiated": 0,
+            "auction": 0,
+            "total": 0
+          }
+        }
+      ],
+      "validation": {
+        "netTotal": 0,
+        "balanced": true
+      }
+    },
+    {
+      "tradeDate": "2026-01-09",
+      "publishedDate": "2026-01-09",
+      "boardRn": 430,
+      "bbsSeq": "497",
+      "attachFileSeq": "1",
+      "title": "배출권 거래시장 일일동향(장내) 26.01.09",
+      "sourceKey": "krx:497:1",
+      "sourceRevisionId": "krx:497:1:dcead76d8fb4",
+      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=497",
+      "filename": "배출권 거래시장 일일동향_260109.pdf",
+      "sha256": "dcead76d8fb4ba33d38ceb29ccb4707468e68ab330573c521404f53c21ebebe4",
+      "fileSize": 117628,
+      "pages": 1,
+      "parserVersion": "1.1.0",
+      "participantScope": "all_instruments",
+      "taxonomyVersion": "legacy_brokerage_members",
+      "market": {
+        "totalVolume": 91244,
+        "representativeInstrument": {
+          "symbol": "KAU25",
+          "close": null,
+          "change": null,
+          "volume": 91244
+        }
+      },
+      "participantFlows": [
+        {
+          "categoryKey": "liable_entities",
+          "label": "할당대상업체",
+          "netByMethod": {
+            "competitive": 26783,
+            "negotiated": 0,
+            "auction": 0,
+            "total": 26783
+          }
+        },
+        {
+          "categoryKey": "market_makers",
+          "label": "시장조성자",
+          "netByMethod": {
+            "competitive": -19783,
+            "negotiated": 0,
+            "auction": 0,
+            "total": -19783
+          }
+        },
+        {
+          "categoryKey": "brokerage_members",
+          "label": "거래중개회원",
+          "netByMethod": {
+            "competitive": -7000,
+            "negotiated": 0,
+            "auction": 0,
+            "total": -7000
+          }
+        },
+        {
+          "categoryKey": "koc_specialists",
+          "label": "KOC전문회원",
+          "netByMethod": {
+            "competitive": 0,
+            "negotiated": 0,
+            "auction": 0,
+            "total": 0
+          }
+        }
+      ],
+      "validation": {
+        "netTotal": 0,
+        "balanced": true
+      }
+    },
+    {
+      "tradeDate": "2026-01-12",
+      "publishedDate": "2026-01-12",
+      "boardRn": 431,
+      "bbsSeq": "498",
+      "attachFileSeq": "1",
+      "title": "배출권 거래시장 일일동향(장내) 26.01.12",
+      "sourceKey": "krx:498:1",
+      "sourceRevisionId": "krx:498:1:48f7b9309e4a",
+      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=498",
+      "filename": "배출권 거래시장 일일동향_260112.pdf",
+      "sha256": "48f7b9309e4a908438bf743ce77f295a55bea72938fb65639ba1f5e13c574943",
+      "fileSize": 117450,
+      "pages": 1,
+      "parserVersion": "1.1.0",
+      "participantScope": "all_instruments",
+      "taxonomyVersion": "legacy_brokerage_members",
+      "market": {
+        "totalVolume": 61411,
+        "representativeInstrument": {
+          "symbol": "KAU25",
+          "close": null,
+          "change": null,
+          "volume": 61411
+        }
+      },
+      "participantFlows": [
+        {
+          "categoryKey": "liable_entities",
+          "label": "할당대상업체",
+          "netByMethod": {
+            "competitive": 7563,
+            "negotiated": 0,
+            "auction": 0,
+            "total": 7563
+          }
+        },
+        {
+          "categoryKey": "market_makers",
+          "label": "시장조성자",
+          "netByMethod": {
+            "competitive": 2937,
+            "negotiated": 0,
+            "auction": 0,
+            "total": 2937
+          }
+        },
+        {
+          "categoryKey": "brokerage_members",
+          "label": "거래중개회원",
+          "netByMethod": {
+            "competitive": -10500,
+            "negotiated": 0,
+            "auction": 0,
+            "total": -10500
+          }
+        },
+        {
+          "categoryKey": "koc_specialists",
+          "label": "KOC전문회원",
+          "netByMethod": {
+            "competitive": 0,
+            "negotiated": 0,
+            "auction": 0,
+            "total": 0
+          }
+        }
+      ],
+      "validation": {
+        "netTotal": 0,
+        "balanced": true
+      }
+    },
+    {
+      "tradeDate": "2026-01-13",
+      "publishedDate": "2026-01-13",
+      "boardRn": 432,
+      "bbsSeq": "499",
+      "attachFileSeq": "1",
+      "title": "배출권 거래시장 일일동향(장내) 26.01.13",
+      "sourceKey": "krx:499:1",
+      "sourceRevisionId": "krx:499:1:ef1cb07a2a8a",
+      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=499",
+      "filename": "배출권 거래시장 일일동향_260113.pdf",
+      "sha256": "ef1cb07a2a8a4a6fe3073b0ce1c62656f60078a6e50e72daf5093304a56fc789",
+      "fileSize": 116296,
+      "pages": 1,
+      "parserVersion": "1.1.0",
+      "participantScope": "all_instruments",
+      "taxonomyVersion": "legacy_brokerage_members",
+      "market": {
+        "totalVolume": 196975,
+        "representativeInstrument": {
+          "symbol": "KAU25",
+          "close": null,
+          "change": null,
+          "volume": 191975
+        }
+      },
+      "participantFlows": [
+        {
+          "categoryKey": "liable_entities",
+          "label": "할당대상업체",
+          "netByMethod": {
+            "competitive": 79184,
+            "negotiated": 0,
+            "auction": 0,
+            "total": 79184
+          }
+        },
+        {
+          "categoryKey": "market_makers",
+          "label": "시장조성자",
+          "netByMethod": {
+            "competitive": -71802,
+            "negotiated": 0,
+            "auction": 0,
+            "total": -71802
+          }
+        },
+        {
+          "categoryKey": "brokerage_members",
+          "label": "거래중개회원",
+          "netByMethod": {
+            "competitive": -7382,
+            "negotiated": 0,
+            "auction": 0,
+            "total": -7382
+          }
+        },
+        {
+          "categoryKey": "koc_specialists",
+          "label": "KOC전문회원",
+          "netByMethod": {
+            "competitive": 0,
+            "negotiated": 0,
+            "auction": 0,
+            "total": 0
+          }
+        }
+      ],
+      "validation": {
+        "netTotal": 0,
+        "balanced": true
+      }
+    },
+    {
+      "tradeDate": "2026-01-14",
+      "publishedDate": "2026-01-14",
+      "boardRn": 433,
+      "bbsSeq": "500",
+      "attachFileSeq": "1",
+      "title": "배출권 거래시장 일일동향(장내) 26.01.14",
+      "sourceKey": "krx:500:1",
+      "sourceRevisionId": "krx:500:1:656158dc9f1b",
+      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=500",
+      "filename": "배출권 거래시장 일일동향_260114.pdf",
+      "sha256": "656158dc9f1b0bacd0387f1124faf46cfeb6482ada4532af756462b0aeca69d4",
+      "fileSize": 116347,
+      "pages": 1,
+      "parserVersion": "1.1.0",
+      "participantScope": "all_instruments",
+      "taxonomyVersion": "legacy_brokerage_members",
+      "market": {
+        "totalVolume": 120255,
+        "representativeInstrument": {
+          "symbol": "KAU25",
+          "close": null,
+          "change": null,
+          "volume": 120255
+        }
+      },
+      "participantFlows": [
+        {
+          "categoryKey": "liable_entities",
+          "label": "할당대상업체",
+          "netByMethod": {
+            "competitive": 43430,
+            "negotiated": 0,
+            "auction": 0,
+            "total": 43430
+          }
+        },
+        {
+          "categoryKey": "market_makers",
+          "label": "시장조성자",
+          "netByMethod": {
+            "competitive": -34022,
+            "negotiated": 0,
+            "auction": 0,
+            "total": -34022
+          }
+        },
+        {
+          "categoryKey": "brokerage_members",
+          "label": "거래중개회원",
+          "netByMethod": {
+            "competitive": -9408,
+            "negotiated": 0,
+            "auction": 0,
+            "total": -9408
+          }
+        },
+        {
+          "categoryKey": "koc_specialists",
+          "label": "KOC전문회원",
+          "netByMethod": {
+            "competitive": 0,
+            "negotiated": 0,
+            "auction": 0,
+            "total": 0
+          }
+        }
+      ],
+      "validation": {
+        "netTotal": 0,
+        "balanced": true
+      }
+    },
+    {
+      "tradeDate": "2026-01-15",
+      "publishedDate": "2026-01-15",
+      "boardRn": 434,
+      "bbsSeq": "501",
+      "attachFileSeq": "1",
+      "title": "배출권 거래시장 일일동향(장내) 26.01.15",
+      "sourceKey": "krx:501:1",
+      "sourceRevisionId": "krx:501:1:cf6de176ec40",
+      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=501",
+      "filename": "배출권 거래시장 일일동향_260115.pdf",
+      "sha256": "cf6de176ec40a901f4d695ff6510badf83725fba0355c295468d84df0854eae1",
+      "fileSize": 116411,
+      "pages": 1,
+      "parserVersion": "1.1.0",
+      "participantScope": "all_instruments",
+      "taxonomyVersion": "legacy_brokerage_members",
+      "market": {
+        "totalVolume": 203447,
+        "representativeInstrument": {
+          "symbol": "KAU25",
+          "close": null,
+          "change": null,
+          "volume": 198947
+        }
+      },
+      "participantFlows": [
+        {
+          "categoryKey": "liable_entities",
+          "label": "할당대상업체",
+          "netByMethod": {
+            "competitive": 2090,
+            "negotiated": 0,
+            "auction": 0,
+            "total": 2090
+          }
+        },
+        {
+          "categoryKey": "market_makers",
+          "label": "시장조성자",
+          "netByMethod": {
+            "competitive": -37531,
+            "negotiated": 0,
+            "auction": 0,
+            "total": -37531
+          }
+        },
+        {
+          "categoryKey": "brokerage_members",
+          "label": "거래중개회원",
+          "netByMethod": {
+            "competitive": 35441,
+            "negotiated": 0,
+            "auction": 0,
+            "total": 35441
+          }
+        },
+        {
+          "categoryKey": "koc_specialists",
+          "label": "KOC전문회원",
+          "netByMethod": {
+            "competitive": 0,
+            "negotiated": 0,
+            "auction": 0,
+            "total": 0
+          }
+        }
+      ],
+      "validation": {
+        "netTotal": 0,
+        "balanced": true
+      }
+    },
+    {
+      "tradeDate": "2026-01-16",
+      "publishedDate": "2026-01-16",
+      "boardRn": 435,
+      "bbsSeq": "502",
+      "attachFileSeq": "1",
+      "title": "배출권 거래시장 일일동향(장내) 26.01.16",
+      "sourceKey": "krx:502:1",
+      "sourceRevisionId": "krx:502:1:53f0a9e11fb9",
+      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=502",
+      "filename": "배출권 거래시장 일일동향_260116.pdf",
+      "sha256": "53f0a9e11fb90a32d46b004d6e11c2668d4bd605a44eea909be0774f8c97044a",
+      "fileSize": 117432,
+      "pages": 1,
+      "parserVersion": "1.1.0",
+      "participantScope": "all_instruments",
+      "taxonomyVersion": "legacy_brokerage_members",
+      "market": {
+        "totalVolume": 71567,
+        "representativeInstrument": {
+          "symbol": "KAU25",
+          "close": null,
+          "change": null,
+          "volume": 71567
+        }
+      },
+      "participantFlows": [
+        {
+          "categoryKey": "liable_entities",
+          "label": "할당대상업체",
+          "netByMethod": {
+            "competitive": 2165,
+            "negotiated": 0,
+            "auction": 0,
+            "total": 2165
+          }
+        },
+        {
+          "categoryKey": "market_makers",
+          "label": "시장조성자",
+          "netByMethod": {
+            "competitive": -2165,
+            "negotiated": 0,
+            "auction": 0,
+            "total": -2165
           }
         },
         {
@@ -368,29 +806,29 @@
       }
     },
     {
-      "tradeDate": "2025-12-08",
-      "publishedDate": "2025-12-08",
-      "boardRn": 409,
-      "bbsSeq": "476",
+      "tradeDate": "2026-01-19",
+      "publishedDate": "2026-01-19",
+      "boardRn": 436,
+      "bbsSeq": "503",
       "attachFileSeq": "1",
-      "title": "배출권 거래시장 일일동향(장내) 25.12.08",
-      "sourceKey": "krx:476:1",
-      "sourceRevisionId": "krx:476:1:bf3077738816",
-      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=476",
-      "filename": "배출권 거래시장 일일동향_251208.pdf",
-      "sha256": "bf30777388165ead281a9749ff968324fecf7568b95e3e068b6324ff7ff67536",
-      "fileSize": 117411,
+      "title": "배출권 거래시장 일일동향(장내) 26.01.19",
+      "sourceKey": "krx:503:1",
+      "sourceRevisionId": "krx:503:1:ad21e9909208",
+      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=503",
+      "filename": "배출권 거래시장 일일동향_260119.pdf",
+      "sha256": "ad21e9909208d9cdb0bb25cfed9b935d1b45cfd46589a9ec2b82c280d73b259f",
+      "fileSize": 117616,
       "pages": 1,
       "parserVersion": "1.1.0",
       "participantScope": "all_instruments",
       "taxonomyVersion": "legacy_brokerage_members",
       "market": {
-        "totalVolume": 83150,
+        "totalVolume": 84104,
         "representativeInstrument": {
           "symbol": "KAU25",
           "close": null,
           "change": null,
-          "volume": 83150
+          "volume": 84104
         }
       },
       "participantFlows": [
@@ -398,20 +836,20 @@
           "categoryKey": "liable_entities",
           "label": "할당대상업체",
           "netByMethod": {
-            "competitive": -850,
+            "competitive": 20146,
             "negotiated": 0,
             "auction": 0,
-            "total": -850
+            "total": 20146
           }
         },
         {
           "categoryKey": "market_makers",
           "label": "시장조성자",
           "netByMethod": {
-            "competitive": 850,
+            "competitive": -20146,
             "negotiated": 0,
             "auction": 0,
-            "total": 850
+            "total": -20146
           }
         },
         {
@@ -441,29 +879,29 @@
       }
     },
     {
-      "tradeDate": "2025-12-09",
-      "publishedDate": "2025-12-09",
-      "boardRn": 410,
-      "bbsSeq": "477",
+      "tradeDate": "2026-01-20",
+      "publishedDate": "2026-01-20",
+      "boardRn": 437,
+      "bbsSeq": "504",
       "attachFileSeq": "1",
-      "title": "배출권 거래시장 일일동향(장내) 25.12.09",
-      "sourceKey": "krx:477:1",
-      "sourceRevisionId": "krx:477:1:478dbf835a48",
-      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=477",
-      "filename": "배출권 거래시장 일일동향_251209.pdf",
-      "sha256": "478dbf835a484c41fb1c8ccf441d283f61c73f21f2659887f9f022fa3ab4c430",
-      "fileSize": 117130,
+      "title": "배출권 거래시장 일일동향(장내) 26.01.20",
+      "sourceKey": "krx:504:1",
+      "sourceRevisionId": "krx:504:1:328bc41e6814",
+      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=504",
+      "filename": "배출권 거래시장 일일동향_260120.pdf",
+      "sha256": "328bc41e6814a0f37175a822d908db9b894119fc0222309b0c15af2a1a98631a",
+      "fileSize": 117715,
       "pages": 1,
       "parserVersion": "1.1.0",
       "participantScope": "all_instruments",
       "taxonomyVersion": "legacy_brokerage_members",
       "market": {
-        "totalVolume": 5650,
+        "totalVolume": 119127,
         "representativeInstrument": {
           "symbol": "KAU25",
           "close": null,
           "change": null,
-          "volume": 5650
+          "volume": 119127
         }
       },
       "participantFlows": [
@@ -471,30 +909,30 @@
           "categoryKey": "liable_entities",
           "label": "할당대상업체",
           "netByMethod": {
-            "competitive": 1650,
+            "competitive": 31385,
             "negotiated": 0,
             "auction": 0,
-            "total": 1650
+            "total": 31385
           }
         },
         {
           "categoryKey": "market_makers",
           "label": "시장조성자",
           "netByMethod": {
-            "competitive": -1650,
+            "competitive": -5194,
             "negotiated": 0,
             "auction": 0,
-            "total": -1650
+            "total": -5194
           }
         },
         {
           "categoryKey": "brokerage_members",
           "label": "거래중개회원",
           "netByMethod": {
-            "competitive": 0,
+            "competitive": -26191,
             "negotiated": 0,
             "auction": 0,
-            "total": 0
+            "total": -26191
           }
         },
         {
@@ -514,29 +952,29 @@
       }
     },
     {
-      "tradeDate": "2025-12-10",
-      "publishedDate": "2025-12-10",
-      "boardRn": 411,
-      "bbsSeq": "478",
+      "tradeDate": "2026-01-21",
+      "publishedDate": "2026-01-21",
+      "boardRn": 438,
+      "bbsSeq": "505",
       "attachFileSeq": "1",
-      "title": "배출권 거래시장 일일동향(장내) 25.12.10",
-      "sourceKey": "krx:478:1",
-      "sourceRevisionId": "krx:478:1:2144a6486573",
-      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=478",
-      "filename": "배출권 거래시장 일일동향_251210.pdf",
-      "sha256": "2144a6486573df8d578977ab66391c3ac7d77db48411e82f111e937746ac561e",
-      "fileSize": 117761,
+      "title": "배출권 거래시장 일일동향(장내) 26.01.21",
+      "sourceKey": "krx:505:1",
+      "sourceRevisionId": "krx:505:1:336cb43b77a9",
+      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=505",
+      "filename": "배출권 거래시장 일일동향_260121.pdf",
+      "sha256": "336cb43b77a99868e293b0e64b017266af2f1ed34af06957131abbf9297cf2c8",
+      "fileSize": 115935,
       "pages": 1,
       "parserVersion": "1.1.0",
       "participantScope": "all_instruments",
       "taxonomyVersion": "legacy_brokerage_members",
       "market": {
-        "totalVolume": 99735,
+        "totalVolume": 273772,
         "representativeInstrument": {
           "symbol": "KAU25",
           "close": null,
           "change": null,
-          "volume": 99735
+          "volume": 273772
         }
       },
       "participantFlows": [
@@ -544,30 +982,30 @@
           "categoryKey": "liable_entities",
           "label": "할당대상업체",
           "netByMethod": {
-            "competitive": 11235,
+            "competitive": 28478,
             "negotiated": 0,
             "auction": 0,
-            "total": 11235
+            "total": 28478
           }
         },
         {
           "categoryKey": "market_makers",
           "label": "시장조성자",
           "netByMethod": {
-            "competitive": -11235,
+            "competitive": -25478,
             "negotiated": 0,
             "auction": 0,
-            "total": -11235
+            "total": -25478
           }
         },
         {
           "categoryKey": "brokerage_members",
           "label": "거래중개회원",
           "netByMethod": {
-            "competitive": 0,
+            "competitive": -3000,
             "negotiated": 0,
             "auction": 0,
-            "total": 0
+            "total": -3000
           }
         },
         {
@@ -587,29 +1025,29 @@
       }
     },
     {
-      "tradeDate": "2025-12-11",
-      "publishedDate": "2025-12-11",
-      "boardRn": 412,
-      "bbsSeq": "479",
+      "tradeDate": "2026-01-22",
+      "publishedDate": "2026-01-22",
+      "boardRn": 439,
+      "bbsSeq": "506",
       "attachFileSeq": "1",
-      "title": "배출권 거래시장 일일동향(장내) 25.12.11",
-      "sourceKey": "krx:479:1",
-      "sourceRevisionId": "krx:479:1:2817506bd8f0",
-      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=479",
-      "filename": "배출권 거래시장 일일동향_251211.pdf",
-      "sha256": "2817506bd8f0a70d662cdf8fb1b7f453c2d5a5f9c9f95a7f519da21b1297d2e1",
-      "fileSize": 116321,
+      "title": "배출권 거래시장 일일동향(장내) 26.01.22",
+      "sourceKey": "krx:506:1",
+      "sourceRevisionId": "krx:506:1:791d781fff6b",
+      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=506",
+      "filename": "배출권 거래시장 일일동향_260122.pdf",
+      "sha256": "791d781fff6ba6ae95545e9a78425e1075aa9389042c4449f0f2bd9a8ba7c9fa",
+      "fileSize": 116130,
       "pages": 1,
       "parserVersion": "1.1.0",
       "participantScope": "all_instruments",
       "taxonomyVersion": "legacy_brokerage_members",
       "market": {
-        "totalVolume": 76223,
+        "totalVolume": 172232,
         "representativeInstrument": {
           "symbol": "KAU25",
           "close": null,
           "change": null,
-          "volume": 76223
+          "volume": 172232
         }
       },
       "participantFlows": [
@@ -617,30 +1055,30 @@
           "categoryKey": "liable_entities",
           "label": "할당대상업체",
           "netByMethod": {
-            "competitive": 4245,
+            "competitive": 51623,
             "negotiated": 0,
             "auction": 0,
-            "total": 4245
+            "total": 51623
           }
         },
         {
           "categoryKey": "market_makers",
           "label": "시장조성자",
           "netByMethod": {
-            "competitive": -4245,
+            "competitive": -49623,
             "negotiated": 0,
             "auction": 0,
-            "total": -4245
+            "total": -49623
           }
         },
         {
           "categoryKey": "brokerage_members",
           "label": "거래중개회원",
           "netByMethod": {
-            "competitive": 0,
+            "competitive": -2000,
             "negotiated": 0,
             "auction": 0,
-            "total": 0
+            "total": -2000
           }
         },
         {
@@ -660,29 +1098,29 @@
       }
     },
     {
-      "tradeDate": "2025-12-12",
-      "publishedDate": "2025-12-12",
-      "boardRn": 413,
-      "bbsSeq": "480",
-      "attachFileSeq": "1",
-      "title": "배출권 거래시장 일일동향(장내) 25.12.12",
-      "sourceKey": "krx:480:1",
-      "sourceRevisionId": "krx:480:1:3e04e5a305ee",
-      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=480",
-      "filename": "배출권 거래시장 일일동향_251212.pdf",
-      "sha256": "3e04e5a305eeb643a6d751db8538a1e55ac851921b5287fd406a62db65956267",
-      "fileSize": 117588,
+      "tradeDate": "2026-01-23",
+      "publishedDate": "2026-01-23",
+      "boardRn": 440,
+      "bbsSeq": "507",
+      "attachFileSeq": "2",
+      "title": "배출권 거래시장 일일동향(장내) 26.01.23",
+      "sourceKey": "krx:507:2",
+      "sourceRevisionId": "krx:507:2:fa4bd7c9159a",
+      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=507",
+      "filename": "배출권 거래시장 일일동향_260123.pdf",
+      "sha256": "fa4bd7c9159a19ed1ec9e0e2ae8b170b7dbd91de1431d6ea558cdbd820fb430c",
+      "fileSize": 116407,
       "pages": 1,
       "parserVersion": "1.1.0",
       "participantScope": "all_instruments",
       "taxonomyVersion": "legacy_brokerage_members",
       "market": {
-        "totalVolume": 293300,
+        "totalVolume": 208672,
         "representativeInstrument": {
           "symbol": "KAU25",
           "close": null,
           "change": null,
-          "volume": 293300
+          "volume": 204381
         }
       },
       "participantFlows": [
@@ -690,30 +1128,30 @@
           "categoryKey": "liable_entities",
           "label": "할당대상업체",
           "netByMethod": {
-            "competitive": -29650,
+            "competitive": 66661,
             "negotiated": 0,
             "auction": 0,
-            "total": -29650
+            "total": 66661
           }
         },
         {
           "categoryKey": "market_makers",
           "label": "시장조성자",
           "netByMethod": {
-            "competitive": 28650,
+            "competitive": -62123,
             "negotiated": 0,
             "auction": 0,
-            "total": 28650
+            "total": -62123
           }
         },
         {
           "categoryKey": "brokerage_members",
           "label": "거래중개회원",
           "netByMethod": {
-            "competitive": 1000,
+            "competitive": -4538,
             "negotiated": 0,
             "auction": 0,
-            "total": 1000
+            "total": -4538
           }
         },
         {
@@ -733,467 +1171,29 @@
       }
     },
     {
-      "tradeDate": "2025-12-15",
-      "publishedDate": "2025-12-15",
-      "boardRn": 414,
-      "bbsSeq": "481",
+      "tradeDate": "2026-01-26",
+      "publishedDate": "2026-01-26",
+      "boardRn": 441,
+      "bbsSeq": "508",
       "attachFileSeq": "1",
-      "title": "배출권 거래시장 일일동향(장내) 25.12.15",
-      "sourceKey": "krx:481:1",
-      "sourceRevisionId": "krx:481:1:5b0aa7b3e61c",
-      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=481",
-      "filename": "배출권 거래시장 일일동향_251215.pdf",
-      "sha256": "5b0aa7b3e61c4d35d9a07f4a28d514d69c29f8315baed9ffcd69fc0022d6ff06",
-      "fileSize": 116008,
-      "pages": 1,
-      "parserVersion": "1.1.0",
-      "participantScope": "all_instruments",
-      "taxonomyVersion": "legacy_brokerage_members",
-      "market": {
-        "totalVolume": 126250,
-        "representativeInstrument": {
-          "symbol": "KAU25",
-          "close": null,
-          "change": null,
-          "volume": 126250
-        }
-      },
-      "participantFlows": [
-        {
-          "categoryKey": "liable_entities",
-          "label": "할당대상업체",
-          "netByMethod": {
-            "competitive": -19750,
-            "negotiated": 0,
-            "auction": 0,
-            "total": -19750
-          }
-        },
-        {
-          "categoryKey": "market_makers",
-          "label": "시장조성자",
-          "netByMethod": {
-            "competitive": 19750,
-            "negotiated": 0,
-            "auction": 0,
-            "total": 19750
-          }
-        },
-        {
-          "categoryKey": "brokerage_members",
-          "label": "거래중개회원",
-          "netByMethod": {
-            "competitive": 0,
-            "negotiated": 0,
-            "auction": 0,
-            "total": 0
-          }
-        },
-        {
-          "categoryKey": "koc_specialists",
-          "label": "KOC전문회원",
-          "netByMethod": {
-            "competitive": 0,
-            "negotiated": 0,
-            "auction": 0,
-            "total": 0
-          }
-        }
-      ],
-      "validation": {
-        "netTotal": 0,
-        "balanced": true
-      }
-    },
-    {
-      "tradeDate": "2025-12-16",
-      "publishedDate": "2025-12-16",
-      "boardRn": 415,
-      "bbsSeq": "482",
-      "attachFileSeq": "1",
-      "title": "배출권 거래시장 일일동향(장내) 25.12.16",
-      "sourceKey": "krx:482:1",
-      "sourceRevisionId": "krx:482:1:daf06b9477d0",
-      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=482",
-      "filename": "배출권 거래시장 일일동향_251216.pdf",
-      "sha256": "daf06b9477d0b5273aa96ee68fb7eb36f2361db659d5d2b946da521fe6e772d3",
-      "fileSize": 115929,
-      "pages": 1,
-      "parserVersion": "1.1.0",
-      "participantScope": "all_instruments",
-      "taxonomyVersion": "legacy_brokerage_members",
-      "market": {
-        "totalVolume": 169666,
-        "representativeInstrument": {
-          "symbol": "KAU25",
-          "close": null,
-          "change": null,
-          "volume": 169666
-        }
-      },
-      "participantFlows": [
-        {
-          "categoryKey": "liable_entities",
-          "label": "할당대상업체",
-          "netByMethod": {
-            "competitive": 30666,
-            "negotiated": 0,
-            "auction": 0,
-            "total": 30666
-          }
-        },
-        {
-          "categoryKey": "market_makers",
-          "label": "시장조성자",
-          "netByMethod": {
-            "competitive": -32666,
-            "negotiated": 0,
-            "auction": 0,
-            "total": -32666
-          }
-        },
-        {
-          "categoryKey": "brokerage_members",
-          "label": "거래중개회원",
-          "netByMethod": {
-            "competitive": 2000,
-            "negotiated": 0,
-            "auction": 0,
-            "total": 2000
-          }
-        },
-        {
-          "categoryKey": "koc_specialists",
-          "label": "KOC전문회원",
-          "netByMethod": {
-            "competitive": 0,
-            "negotiated": 0,
-            "auction": 0,
-            "total": 0
-          }
-        }
-      ],
-      "validation": {
-        "netTotal": 0,
-        "balanced": true
-      }
-    },
-    {
-      "tradeDate": "2025-12-17",
-      "publishedDate": "2025-12-17",
-      "boardRn": 416,
-      "bbsSeq": "483",
-      "attachFileSeq": "1",
-      "title": "배출권 거래시장 일일동향(장내) 25.12.17",
-      "sourceKey": "krx:483:1",
-      "sourceRevisionId": "krx:483:1:3c019d2e4c52",
-      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=483",
-      "filename": "배출권 거래시장 일일동향_251217.pdf",
-      "sha256": "3c019d2e4c5218f0656f75a0d6c2fd5e4c4552316210444ea91c39478a042e68",
-      "fileSize": 117475,
-      "pages": 1,
-      "parserVersion": "1.1.0",
-      "participantScope": "all_instruments",
-      "taxonomyVersion": "legacy_brokerage_members",
-      "market": {
-        "totalVolume": 66440,
-        "representativeInstrument": {
-          "symbol": "KAU25",
-          "close": null,
-          "change": null,
-          "volume": 66440
-        }
-      },
-      "participantFlows": [
-        {
-          "categoryKey": "liable_entities",
-          "label": "할당대상업체",
-          "netByMethod": {
-            "competitive": -2360,
-            "negotiated": 0,
-            "auction": 0,
-            "total": -2360
-          }
-        },
-        {
-          "categoryKey": "market_makers",
-          "label": "시장조성자",
-          "netByMethod": {
-            "competitive": 2360,
-            "negotiated": 0,
-            "auction": 0,
-            "total": 2360
-          }
-        },
-        {
-          "categoryKey": "brokerage_members",
-          "label": "거래중개회원",
-          "netByMethod": {
-            "competitive": 0,
-            "negotiated": 0,
-            "auction": 0,
-            "total": 0
-          }
-        },
-        {
-          "categoryKey": "koc_specialists",
-          "label": "KOC전문회원",
-          "netByMethod": {
-            "competitive": 0,
-            "negotiated": 0,
-            "auction": 0,
-            "total": 0
-          }
-        }
-      ],
-      "validation": {
-        "netTotal": 0,
-        "balanced": true
-      }
-    },
-    {
-      "tradeDate": "2025-12-18",
-      "publishedDate": "2025-12-18",
-      "boardRn": 417,
-      "bbsSeq": "484",
-      "attachFileSeq": "1",
-      "title": "배출권 거래시장 일일동향(장내) 25.12.18",
-      "sourceKey": "krx:484:1",
-      "sourceRevisionId": "krx:484:1:37a41a06f08e",
-      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=484",
-      "filename": "배출권 거래시장 일일동향_251218.pdf",
-      "sha256": "37a41a06f08e8b1ce6981fe005a5ddc3848a08ecbba2bc547f70ef6bbe4759ed",
-      "fileSize": 116345,
-      "pages": 1,
-      "parserVersion": "1.1.0",
-      "participantScope": "all_instruments",
-      "taxonomyVersion": "legacy_brokerage_members",
-      "market": {
-        "totalVolume": 167345,
-        "representativeInstrument": {
-          "symbol": "KAU25",
-          "close": null,
-          "change": null,
-          "volume": 167345
-        }
-      },
-      "participantFlows": [
-        {
-          "categoryKey": "liable_entities",
-          "label": "할당대상업체",
-          "netByMethod": {
-            "competitive": -34467,
-            "negotiated": 0,
-            "auction": 0,
-            "total": -34467
-          }
-        },
-        {
-          "categoryKey": "market_makers",
-          "label": "시장조성자",
-          "netByMethod": {
-            "competitive": 34467,
-            "negotiated": 0,
-            "auction": 0,
-            "total": 34467
-          }
-        },
-        {
-          "categoryKey": "brokerage_members",
-          "label": "거래중개회원",
-          "netByMethod": {
-            "competitive": 0,
-            "negotiated": 0,
-            "auction": 0,
-            "total": 0
-          }
-        },
-        {
-          "categoryKey": "koc_specialists",
-          "label": "KOC전문회원",
-          "netByMethod": {
-            "competitive": 0,
-            "negotiated": 0,
-            "auction": 0,
-            "total": 0
-          }
-        }
-      ],
-      "validation": {
-        "netTotal": 0,
-        "balanced": true
-      }
-    },
-    {
-      "tradeDate": "2025-12-19",
-      "publishedDate": "2025-12-19",
-      "boardRn": 418,
-      "bbsSeq": "485",
-      "attachFileSeq": "1",
-      "title": "배출권 거래시장 일일동향(장내) 25.12.19",
-      "sourceKey": "krx:485:1",
-      "sourceRevisionId": "krx:485:1:715c0215dc66",
-      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=485",
-      "filename": "배출권 거래시장 일일동향_251219.pdf",
-      "sha256": "715c0215dc66bb270c2a56b7552acd63c80d939bdaea73558f2bc1abcc1ddd7d",
-      "fileSize": 116335,
-      "pages": 1,
-      "parserVersion": "1.1.0",
-      "participantScope": "all_instruments",
-      "taxonomyVersion": "legacy_brokerage_members",
-      "market": {
-        "totalVolume": 127815,
-        "representativeInstrument": {
-          "symbol": "KAU25",
-          "close": null,
-          "change": null,
-          "volume": 127815
-        }
-      },
-      "participantFlows": [
-        {
-          "categoryKey": "liable_entities",
-          "label": "할당대상업체",
-          "netByMethod": {
-            "competitive": -35635,
-            "negotiated": 0,
-            "auction": 0,
-            "total": -35635
-          }
-        },
-        {
-          "categoryKey": "market_makers",
-          "label": "시장조성자",
-          "netByMethod": {
-            "competitive": 35635,
-            "negotiated": 0,
-            "auction": 0,
-            "total": 35635
-          }
-        },
-        {
-          "categoryKey": "brokerage_members",
-          "label": "거래중개회원",
-          "netByMethod": {
-            "competitive": 0,
-            "negotiated": 0,
-            "auction": 0,
-            "total": 0
-          }
-        },
-        {
-          "categoryKey": "koc_specialists",
-          "label": "KOC전문회원",
-          "netByMethod": {
-            "competitive": 0,
-            "negotiated": 0,
-            "auction": 0,
-            "total": 0
-          }
-        }
-      ],
-      "validation": {
-        "netTotal": 0,
-        "balanced": true
-      }
-    },
-    {
-      "tradeDate": "2025-12-22",
-      "publishedDate": "2025-12-22",
-      "boardRn": 419,
-      "bbsSeq": "486",
-      "attachFileSeq": "1",
-      "title": "배출권 거래시장 일일동향(장내) 25.12.22",
-      "sourceKey": "krx:486:1",
-      "sourceRevisionId": "krx:486:1:06f20a37da6d",
-      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=486",
-      "filename": "배출권 거래시장 일일동향_251222.pdf",
-      "sha256": "06f20a37da6dc3acf694338c0800079b4d12250c434d103e5dcfde3d7d896b19",
-      "fileSize": 117385,
-      "pages": 1,
-      "parserVersion": "1.1.0",
-      "participantScope": "all_instruments",
-      "taxonomyVersion": "legacy_brokerage_members",
-      "market": {
-        "totalVolume": 41000,
-        "representativeInstrument": {
-          "symbol": "KAU25",
-          "close": null,
-          "change": null,
-          "volume": 41000
-        }
-      },
-      "participantFlows": [
-        {
-          "categoryKey": "liable_entities",
-          "label": "할당대상업체",
-          "netByMethod": {
-            "competitive": -10000,
-            "negotiated": 0,
-            "auction": 0,
-            "total": -10000
-          }
-        },
-        {
-          "categoryKey": "market_makers",
-          "label": "시장조성자",
-          "netByMethod": {
-            "competitive": 10000,
-            "negotiated": 0,
-            "auction": 0,
-            "total": 10000
-          }
-        },
-        {
-          "categoryKey": "brokerage_members",
-          "label": "거래중개회원",
-          "netByMethod": {
-            "competitive": 0,
-            "negotiated": 0,
-            "auction": 0,
-            "total": 0
-          }
-        },
-        {
-          "categoryKey": "koc_specialists",
-          "label": "KOC전문회원",
-          "netByMethod": {
-            "competitive": 0,
-            "negotiated": 0,
-            "auction": 0,
-            "total": 0
-          }
-        }
-      ],
-      "validation": {
-        "netTotal": 0,
-        "balanced": true
-      }
-    },
-    {
-      "tradeDate": "2025-12-23",
-      "publishedDate": "2025-12-23",
-      "boardRn": 420,
-      "bbsSeq": "487",
-      "attachFileSeq": "1",
-      "title": "배출권 거래시장 일일동향(장내) 25.12.23",
-      "sourceKey": "krx:487:1",
-      "sourceRevisionId": "krx:487:1:d07aaf638325",
-      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=487",
-      "filename": "배출권 거래시장 일일동향_251223.pdf",
-      "sha256": "d07aaf638325f93bb315f0813c51f2da0f5c633c1fc6c3d7abe81112d91dc087",
+      "title": "배출권 거래시장 일일동향(장내) 26.01.26",
+      "sourceKey": "krx:508:1",
+      "sourceRevisionId": "krx:508:1:4076b27a411e",
+      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=508",
+      "filename": "배출권 거래시장 일일동향_260126.pdf",
+      "sha256": "4076b27a411e82e3237b6056676078bbe8f18b23ab6d7276606fc222d0c382ae",
       "fileSize": 116389,
       "pages": 1,
       "parserVersion": "1.1.0",
       "participantScope": "all_instruments",
       "taxonomyVersion": "legacy_brokerage_members",
       "market": {
-        "totalVolume": 155961,
+        "totalVolume": 354467,
         "representativeInstrument": {
           "symbol": "KAU25",
           "close": null,
           "change": null,
-          "volume": 136166
+          "volume": 344467
         }
       },
       "participantFlows": [
@@ -1201,103 +1201,30 @@
           "categoryKey": "liable_entities",
           "label": "할당대상업체",
           "netByMethod": {
-            "competitive": -1634,
-            "negotiated": 19795,
+            "competitive": 94357,
+            "negotiated": 0,
             "auction": 0,
-            "total": 18161
+            "total": 94357
           }
         },
         {
           "categoryKey": "market_makers",
           "label": "시장조성자",
           "netByMethod": {
-            "competitive": -3366,
+            "competitive": -80604,
             "negotiated": 0,
             "auction": 0,
-            "total": -3366
+            "total": -80604
           }
         },
         {
           "categoryKey": "brokerage_members",
           "label": "거래중개회원",
           "netByMethod": {
-            "competitive": 5000,
+            "competitive": -13753,
             "negotiated": 0,
             "auction": 0,
-            "total": 5000
-          }
-        },
-        {
-          "categoryKey": "koc_specialists",
-          "label": "KOC전문회원",
-          "netByMethod": {
-            "competitive": 0,
-            "negotiated": -19795,
-            "auction": 0,
-            "total": -19795
-          }
-        }
-      ],
-      "validation": {
-        "netTotal": 0,
-        "balanced": true
-      }
-    },
-    {
-      "tradeDate": "2025-12-24",
-      "publishedDate": "2025-12-24",
-      "boardRn": 421,
-      "bbsSeq": "488",
-      "attachFileSeq": "1",
-      "title": "배출권 거래시장 일일동향(장내) 25.12.24",
-      "sourceKey": "krx:488:1",
-      "sourceRevisionId": "krx:488:1:0f3ff339f27b",
-      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=488",
-      "filename": "배출권 거래시장 일일동향_251224.pdf",
-      "sha256": "0f3ff339f27bf090c0cbf84b0d42eb24c92742a0eaf49e1240b2e141bd3d1230",
-      "fileSize": 116355,
-      "pages": 1,
-      "parserVersion": "1.1.0",
-      "participantScope": "all_instruments",
-      "taxonomyVersion": "legacy_brokerage_members",
-      "market": {
-        "totalVolume": 153149,
-        "representativeInstrument": {
-          "symbol": "KAU25",
-          "close": null,
-          "change": null,
-          "volume": 153149
-        }
-      },
-      "participantFlows": [
-        {
-          "categoryKey": "liable_entities",
-          "label": "할당대상업체",
-          "netByMethod": {
-            "competitive": -367,
-            "negotiated": 0,
-            "auction": 0,
-            "total": -367
-          }
-        },
-        {
-          "categoryKey": "market_makers",
-          "label": "시장조성자",
-          "netByMethod": {
-            "competitive": -633,
-            "negotiated": 0,
-            "auction": 0,
-            "total": -633
-          }
-        },
-        {
-          "categoryKey": "brokerage_members",
-          "label": "거래중개회원",
-          "netByMethod": {
-            "competitive": 1000,
-            "negotiated": 0,
-            "auction": 0,
-            "total": 1000
+            "total": -13753
           }
         },
         {
@@ -1317,29 +1244,29 @@
       }
     },
     {
-      "tradeDate": "2025-12-26",
-      "publishedDate": "2025-12-26",
-      "boardRn": 422,
-      "bbsSeq": "489",
+      "tradeDate": "2026-01-27",
+      "publishedDate": "2026-01-27",
+      "boardRn": 442,
+      "bbsSeq": "509",
       "attachFileSeq": "1",
-      "title": "배출권 거래시장 일일동향(장내) 25.12.26",
-      "sourceKey": "krx:489:1",
-      "sourceRevisionId": "krx:489:1:893c2e2fe0fb",
-      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=489",
-      "filename": "배출권 거래시장 일일동향_251226.pdf",
-      "sha256": "893c2e2fe0fbe70872fb64c1ef4013efe623412e7ae9ca20b1ce49a2606222b5",
-      "fileSize": 117746,
+      "title": "배출권 거래시장 일일동향(장내) 26.01.27",
+      "sourceKey": "krx:509:1",
+      "sourceRevisionId": "krx:509:1:39f9dc660dcc",
+      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=509",
+      "filename": "배출권 거래시장 일일동향_260127.pdf",
+      "sha256": "39f9dc660dccb7d2fd29977cfad0a18fb622910c24352a55b5040dd501e1798e",
+      "fileSize": 116069,
       "pages": 1,
       "parserVersion": "1.1.0",
       "participantScope": "all_instruments",
       "taxonomyVersion": "legacy_brokerage_members",
       "market": {
-        "totalVolume": 132040,
+        "totalVolume": 145390,
         "representativeInstrument": {
           "symbol": "KAU25",
           "close": null,
           "change": null,
-          "volume": 132040
+          "volume": 145350
         }
       },
       "participantFlows": [
@@ -1347,30 +1274,30 @@
           "categoryKey": "liable_entities",
           "label": "할당대상업체",
           "netByMethod": {
-            "competitive": 13040,
+            "competitive": -11100,
             "negotiated": 0,
             "auction": 0,
-            "total": 13040
+            "total": -11100
           }
         },
         {
           "categoryKey": "market_makers",
           "label": "시장조성자",
           "netByMethod": {
-            "competitive": -15040,
+            "competitive": 14100,
             "negotiated": 0,
             "auction": 0,
-            "total": -15040
+            "total": 14100
           }
         },
         {
           "categoryKey": "brokerage_members",
           "label": "거래중개회원",
           "netByMethod": {
-            "competitive": 2000,
+            "competitive": -3000,
             "negotiated": 0,
             "auction": 0,
-            "total": 2000
+            "total": -3000
           }
         },
         {
@@ -1390,29 +1317,29 @@
       }
     },
     {
-      "tradeDate": "2025-12-29",
-      "publishedDate": "2025-12-29",
-      "boardRn": 423,
-      "bbsSeq": "490",
+      "tradeDate": "2026-01-28",
+      "publishedDate": "2026-01-28",
+      "boardRn": 443,
+      "bbsSeq": "510",
       "attachFileSeq": "1",
-      "title": "배출권 거래시장 일일동향(장내) 25.12.29",
-      "sourceKey": "krx:490:1",
-      "sourceRevisionId": "krx:490:1:246e3de8a4aa",
-      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=490",
-      "filename": "배출권 거래시장 일일동향_251229.pdf",
-      "sha256": "246e3de8a4aad59d10ebbd202283dbb8eda75b34e9aebe40ee65edb3463286ce",
-      "fileSize": 117624,
+      "title": "배출권 거래시장 일일동향(장내) 26.01.28",
+      "sourceKey": "krx:510:1",
+      "sourceRevisionId": "krx:510:1:71f7197d44cb",
+      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=510",
+      "filename": "배출권 거래시장 일일동향_260128.pdf",
+      "sha256": "71f7197d44cbc7e431d0df6cd1b9f2a658625ee4f1a81d9aaa838bcc0942c5c1",
+      "fileSize": 116365,
       "pages": 1,
       "parserVersion": "1.1.0",
       "participantScope": "all_instruments",
       "taxonomyVersion": "legacy_brokerage_members",
       "market": {
-        "totalVolume": 376000,
+        "totalVolume": 176356,
         "representativeInstrument": {
           "symbol": "KAU25",
           "close": null,
           "change": null,
-          "volume": 376000
+          "volume": 126356
         }
       },
       "participantFlows": [
@@ -1420,20 +1347,93 @@
           "categoryKey": "liable_entities",
           "label": "할당대상업체",
           "netByMethod": {
-            "competitive": -30000,
-            "negotiated": 0,
+            "competitive": 26936,
+            "negotiated": 50000,
             "auction": 0,
-            "total": -30000
+            "total": 76936
           }
         },
         {
           "categoryKey": "market_makers",
           "label": "시장조성자",
           "netByMethod": {
-            "competitive": 30000,
+            "competitive": -26936,
             "negotiated": 0,
             "auction": 0,
-            "total": 30000
+            "total": -26936
+          }
+        },
+        {
+          "categoryKey": "brokerage_members",
+          "label": "거래중개회원",
+          "netByMethod": {
+            "competitive": 0,
+            "negotiated": 0,
+            "auction": 0,
+            "total": 0
+          }
+        },
+        {
+          "categoryKey": "koc_specialists",
+          "label": "KOC전문회원",
+          "netByMethod": {
+            "competitive": 0,
+            "negotiated": -50000,
+            "auction": 0,
+            "total": -50000
+          }
+        }
+      ],
+      "validation": {
+        "netTotal": 0,
+        "balanced": true
+      }
+    },
+    {
+      "tradeDate": "2026-01-29",
+      "publishedDate": "2026-01-29",
+      "boardRn": 444,
+      "bbsSeq": "511",
+      "attachFileSeq": "1",
+      "title": "배출권 거래시장 일일동향(장내) 26.01.29",
+      "sourceKey": "krx:511:1",
+      "sourceRevisionId": "krx:511:1:662dbfea4ccb",
+      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=511",
+      "filename": "배출권 거래시장 일일동향_260129.pdf",
+      "sha256": "662dbfea4ccbb6320950b57c2e7d0d07f2526d2acc34e5455961cc44315ccac8",
+      "fileSize": 117699,
+      "pages": 1,
+      "parserVersion": "1.1.0",
+      "participantScope": "all_instruments",
+      "taxonomyVersion": "legacy_brokerage_members",
+      "market": {
+        "totalVolume": 219100,
+        "representativeInstrument": {
+          "symbol": "KAU25",
+          "close": null,
+          "change": null,
+          "volume": 219100
+        }
+      },
+      "participantFlows": [
+        {
+          "categoryKey": "liable_entities",
+          "label": "할당대상업체",
+          "netByMethod": {
+            "competitive": 9414,
+            "negotiated": 0,
+            "auction": 0,
+            "total": 9414
+          }
+        },
+        {
+          "categoryKey": "market_makers",
+          "label": "시장조성자",
+          "netByMethod": {
+            "competitive": -9414,
+            "negotiated": 0,
+            "auction": 0,
+            "total": -9414
           }
         },
         {
@@ -1463,29 +1463,29 @@
       }
     },
     {
-      "tradeDate": "2025-12-30",
-      "publishedDate": "2025-12-30",
-      "boardRn": 424,
-      "bbsSeq": "491",
+      "tradeDate": "2026-01-30",
+      "publishedDate": "2026-01-30",
+      "boardRn": 445,
+      "bbsSeq": "512",
       "attachFileSeq": "1",
-      "title": "배출권 거래시장 일일동향(장내) 25.12.30",
-      "sourceKey": "krx:491:1",
-      "sourceRevisionId": "krx:491:1:9e348c336594",
-      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=491",
-      "filename": "배출권 거래시장 일일동향_251230.pdf",
-      "sha256": "9e348c3365949987ee3e5b0b4157459e34062a19158aefd693cde8717fe44009",
-      "fileSize": 116393,
+      "title": "배출권 거래시장 일일동향(장내) 26.01.30",
+      "sourceKey": "krx:512:1",
+      "sourceRevisionId": "krx:512:1:33efaea49d8f",
+      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=512",
+      "filename": "배출권 거래시장 일일동향_260130.pdf",
+      "sha256": "33efaea49d8f1dea802fca243f92b81f1a011cb18dd06a890f69ee60489dd871",
+      "fileSize": 116363,
       "pages": 1,
       "parserVersion": "1.1.0",
       "participantScope": "all_instruments",
       "taxonomyVersion": "legacy_brokerage_members",
       "market": {
-        "totalVolume": 426308,
+        "totalVolume": 243650,
         "representativeInstrument": {
           "symbol": "KAU25",
           "close": null,
           "change": null,
-          "volume": 426308
+          "volume": 243650
         }
       },
       "participantFlows": [
@@ -1493,30 +1493,30 @@
           "categoryKey": "liable_entities",
           "label": "할당대상업체",
           "netByMethod": {
-            "competitive": -149908,
+            "competitive": -6245,
             "negotiated": 0,
             "auction": 0,
-            "total": -149908
+            "total": -6245
           }
         },
         {
           "categoryKey": "market_makers",
           "label": "시장조성자",
           "netByMethod": {
-            "competitive": 172816,
+            "competitive": 40402,
             "negotiated": 0,
             "auction": 0,
-            "total": 172816
+            "total": 40402
           }
         },
         {
           "categoryKey": "brokerage_members",
           "label": "거래중개회원",
           "netByMethod": {
-            "competitive": -22908,
+            "competitive": -34157,
             "negotiated": 0,
             "auction": 0,
-            "total": -22908
+            "total": -34157
           }
         },
         {
@@ -1536,5 +1536,5 @@
       }
     }
   ],
-  "generatedAt": "2026-09-02T00:37:31+09:00"
+  "generatedAt": "2026-09-02T00:37:51+09:00"
 }
