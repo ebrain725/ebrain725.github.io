@@ -1041,7 +1041,7 @@ function renderMarket() {
   byId("volume").textContent = money(latest.volume); byId("tradeValue").textContent = `거래대금 ${amount(latest.tradeValue)}`;
   byId("periodChange").textContent = `${periodChange >= 0 ? "+" : ""}${periodChange.toFixed(2)}%`;
   byId("periodChange").className = `kpi-number ${periodChange >= 0 ? "positive" : "negative"}`;
-  byId("periodLabel").textContent = `${periodName(state.period)} 기준${hasRollover ? " · 종목전환 보정" : ""}`; byId("recordCount").textContent = `${rows.length}개 거래일`;
+  byId("periodLabel").textContent = `${periodName(state.period)} 기준${hasRollover ? " · 종목전환 보정" : ""}`; byId("recordCount").textContent = `가격 조회 ${rows.length}거래일 · KRX PDF 수집과 별도`;
   byId("dayRange").textContent = `${money(latest.low)}–${money(latest.high)}`; byId("openPrice").textContent = `시가 ${money(latest.open)}원`;
   byId("pulsePosition").textContent = `${marketPulse.priceBand} ${Math.round(marketPulse.pricePosition)}%`;
   byId("positionTrack").style.width = `${marketPulse.pricePosition}%`;

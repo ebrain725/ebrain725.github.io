@@ -39,6 +39,7 @@ jobs:
           set -euo pipefail
           echo "index_html=$(sha256sum public/index.html | awk '{print $1}')" >> "$GITHUB_OUTPUT"
           echo "styles_css=$(sha256sum public/assets/styles.css | awk '{print $1}')" >> "$GITHUB_OUTPUT"
+          echo "app_js=$(sha256sum public/assets/app.js | awk '{print $1}')" >> "$GITHUB_OUTPUT"
           echo "krx_html=$(sha256sum public/krx-trends.html | awk '{print $1}')" >> "$GITHUB_OUTPUT"
           echo "krx_css=$(sha256sum public/assets/krx-trends.css | awk '{print $1}')" >> "$GITHUB_OUTPUT"
           echo "krx_js=$(sha256sum public/assets/krx-trends.js | awk '{print $1}')" >> "$GITHUB_OUTPUT"
@@ -59,6 +60,7 @@ jobs:
           PAGE_URL: ${{ steps.deployment.outputs.page_url }}
           INDEX_HTML_SHA256: ${{ steps.source_hashes.outputs.index_html }}
           STYLES_CSS_SHA256: ${{ steps.source_hashes.outputs.styles_css }}
+          APP_JS_SHA256: ${{ steps.source_hashes.outputs.app_js }}
           KRX_HTML_SHA256: ${{ steps.source_hashes.outputs.krx_html }}
           KRX_CSS_SHA256: ${{ steps.source_hashes.outputs.krx_css }}
           KRX_JS_SHA256: ${{ steps.source_hashes.outputs.krx_js }}
@@ -94,6 +96,7 @@ jobs:
 
           verify_public_file "index.html" "$INDEX_HTML_SHA256"
           verify_public_file "assets/styles.css" "$STYLES_CSS_SHA256"
+          verify_public_file "assets/app.js" "$APP_JS_SHA256"
           verify_public_file "krx-trends.html" "$KRX_HTML_SHA256"
           verify_public_file "assets/krx-trends.css" "$KRX_CSS_SHA256"
           verify_public_file "assets/krx-trends.js" "$KRX_JS_SHA256"
