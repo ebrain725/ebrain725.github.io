@@ -17,7 +17,7 @@ const REQUIRED_METHODS = ["competitive", "negotiated", "auction", "total"];
 const CATEGORY_ORDER = [
   "liable_entities",
   "market_makers",
-  "financial_institutions",
+  "brokerage_members",
   "others",
 ];
 const CATEGORY_LABELS = {
@@ -128,15 +128,15 @@ function mergeDisplayParticipantFlows(flows, date) {
   flows.forEach((flow) => {
     const categoryKey = flow.categoryKey === "koc_specialists"
       ? "others"
-      : flow.categoryKey === "brokerage_members"
-        ? "financial_institutions"
+      : flow.categoryKey === "financial_institutions"
+        ? "brokerage_members"
         : flow.categoryKey;
     const entry = merged.get(categoryKey) || {
       categoryKey,
       label: categoryKey === "others"
         ? "기타"
-        : categoryKey === "financial_institutions"
-          ? "거래중개회원·금융기관"
+        : categoryKey === "brokerage_members"
+          ? "거래중개회원"
           : flow.label,
       netByMethod: Object.fromEntries(REQUIRED_METHODS.map((method) => [method, 0])),
     };
@@ -233,6 +233,12 @@ function normalizeTrendReports(monthPayloads, index, taxonomies) {
       trendAssert(item?.validation?.balanced === true && item?.validation?.netTotal === 0, `${date}: 원천 검증 상태 오류.`);
       trendAssert(typeof item.sourcePageUrl === "string" && item.sourcePageUrl.startsWith("https://ets.krx.co.kr/"), `${date}: 원문 링크 오류.`);
       trendAssert(typeof item.filename === "string" && /\.pdf$/i.test(item.filename), `${date}: 원문 파일명 오류.`);
+      if (item.pdfUrl !== undefined) {
+        trendAssert(
+          item.pdfUrl === `data/krx-daily/pdfs/${date.slice(0, 7)}/${date}.pdf`,
+          `${date}: 저장 PDF 링크 오류.`,
+        );
+      }
       const flows = Array.isArray(item.participantFlows) ? item.participantFlows : [];
       trendAssert(flows.length === taxonomy.categoryKeys.length, `${date}: 참가자 수가 분류체계와 다릅니다.`);
       const flowKeys = flows.map((flow) => String(flow?.categoryKey || ""));
@@ -665,11 +671,15 @@ function renderDailyTable(reports) {
     const sourceCell = document.createElement("td");
     const source = document.createElement("a");
     source.className = "daily-source-link";
-    source.href = report.sourcePageUrl;
+    const opensStoredPdf = typeof report.pdfUrl === "string" && report.pdfUrl;
+    source.href = opensStoredPdf ? report.pdfUrl : report.sourcePageUrl;
     source.target = "_blank";
     source.rel = "noopener noreferrer";
-    source.title = `${report.filename || report.title || "KRX 원문"} · 공식 게시글 열기`;
-    source.setAttribute("aria-label", `${report.tradeDate} 한국거래소 공식 원문 게시글 열기, 새 창`);
+    source.title = `${report.filename || report.title || "KRX 원문"} · ${opensStoredPdf ? "PDF 바로 열기" : "공식 게시글 열기"}`;
+    source.setAttribute(
+      "aria-label",
+      `${report.tradeDate} 한국거래소 공식 원문 ${opensStoredPdf ? "PDF 바로 열기" : "게시글 열기"}, 새 창`,
+    );
     source.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.75 3.75h7l3.5 3.5v13H6.75z"/><path d="M13.75 3.75v3.5h3.5M9.5 11.25h5M9.5 14.25h5M9.5 17.25h3"/><path class="source-arrow" d="M15.5 10.5h4v4M19.5 10.5l-5 5"/></svg>';
     sourceCell.append(source); row.append(sourceCell); tbody.append(row);
   });
@@ -687,10 +697,10 @@ function renderTaxonomyNote(reports) {
     const transitions = trendState.taxonomies
       .filter((taxonomy) => taxonomy.from > reports[0].tradeDate && taxonomy.from <= reports.at(-1).tradeDate)
       .map((taxonomy) => taxonomy.from.replaceAll("-", "."));
-    note.textContent = `${transitions.join(", ")} 공식 참가자 분류 변경: 화면 통계에서는 변경 전 거래중개회원과 변경 후 금융기관을 '거래중개회원·금융기관'으로 합산합니다.`;
+    note.textContent = `${transitions.join(", ")} 공식 참가자 분류 변경: 화면 통계에서는 변경 전 거래중개회원과 변경 후 금융기관을 모두 '거래중개회원'으로 통일해 합산합니다.`;
     return;
   }
-  note.textContent = "화면 통계의 '거래중개회원·금융기관'은 변경 전 거래중개회원과 변경 후 금융기관을 통합한 항목입니다.";
+  note.textContent = "화면 통계의 '거래중개회원'은 변경 전 거래중개회원과 변경 후 금융기관을 하나로 통합한 항목입니다.";
 }
 
 function renderTrendPage() {
