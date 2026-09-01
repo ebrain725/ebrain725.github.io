@@ -37,6 +37,7 @@ MAX_PAGES_PER_QUERY = 50
 REQUEST_TIMEOUT_SECONDS = 30
 MAX_WORKERS = 4
 MAX_STORED_ITEMS = 240
+UNKNOWN_HOST = "주최 미확인"
 
 # AMPOS는 제목 검색을 제공한다. 서로 겹치는 검색어는 sourceId와 행사정보로
 # 다시 합치므로 결과가 중복 저장되지 않는다.
@@ -366,6 +367,92 @@ def dedupe_key(row: dict[str, str], event_date: str) -> str:
     )
 
 
+def event_status_for(
+    title: object,
+    event_date: str,
+    today_iso: str,
+    previous_status: object = "",
+) -> str:
+    """행사일과 공식 상태 표현을 기준으로 표시 상태를 일관되게 계산한다."""
+    clean_title = clean_text(title)
+    old_status = clean_text(previous_status, 20)
+    if re.search(r"취소", clean_title) or old_status == "취소":
+        return "취소"
+    if re.search(r"연기", clean_title) or old_status == "연기":
+        return "연기"
+    if event_date > today_iso:
+        return "예정"
+    if event_date == today_iso:
+        return "오늘"
+    return "종료"
+
+
+def seminar_content_hash(
+    *,
+    title: object,
+    event_date: object,
+    start_time: object,
+    venue: object,
+    host: object,
+    status: object,
+    detail_path: object,
+) -> str:
+    material = json.dumps(
+        {
+            "title": clean_text(title),
+            "startDate": clean_text(event_date, 20),
+            "startTime": clean_text(start_time, 20),
+            "venue": clean_text(venue, 500),
+            "host": clean_text(host, 800) or UNKNOWN_HOST,
+            "status": clean_text(status, 20),
+            "detailPath": clean_text(detail_path, 500),
+        },
+        ensure_ascii=False,
+        sort_keys=True,
+    )
+    return hashlib.sha256(material.encode("utf-8")).hexdigest()
+
+
+def refresh_existing_item_status(
+    item: dict[str, Any],
+    today_iso: str,
+    timestamp: str,
+) -> dict[str, Any]:
+    """부분 수집 때 재조회되지 않은 기존 일정의 일자 상태도 현재화한다."""
+    refreshed = dict(item)
+    event_date = clean_text(refreshed.get("startDate", ""), 20)[:10]
+    try:
+        date.fromisoformat(event_date)
+    except ValueError:
+        return refreshed
+
+    old_host = clean_text(refreshed.get("host", ""), 800)
+    host = old_host or UNKNOWN_HOST
+    old_status = clean_text(refreshed.get("status", ""), 20)
+    status = event_status_for(
+        refreshed.get("title", ""),
+        event_date,
+        today_iso,
+        previous_status=old_status,
+    )
+    if old_host == host and old_status == status:
+        return refreshed
+
+    refreshed["host"] = host
+    refreshed["status"] = status
+    refreshed["contentHash"] = seminar_content_hash(
+        title=refreshed.get("title", ""),
+        event_date=event_date,
+        start_time=refreshed.get("startTime", ""),
+        venue=refreshed.get("venue", ""),
+        host=host,
+        status=status,
+        detail_path=refreshed.get("detailPath", ""),
+    )
+    refreshed["updatedAt"] = timestamp
+    return refreshed
+
+
 def load_existing() -> dict[str, Any]:
     try:
         payload = json.loads(OUTPUT_PATH.read_text(encoding="utf-8"))
@@ -374,52 +461,53 @@ def load_existing() -> dict[str, Any]:
         return {}
 
 
-def build_item(row: dict[str, str], previous: dict[str, Any] | None, timestamp: str, range_end: date) -> dict[str, Any] | None:
+def build_item(
+    row: dict[str, str],
+    previous: dict[str, Any] | None,
+    timestamp: str,
+    range_end: date,
+    current_day: date | None = None,
+) -> dict[str, Any] | None:
     title = clean_text(row.get("title", ""))
     parsed = parse_event_datetime(row.get("dateText", ""))
     relevance = relevance_for(title)
     verified_day = verified_event_day(row.get("dateText", ""), range_end)
     if not title or not parsed or not verified_day or not relevance:
         return None
+    previous = previous if isinstance(previous, dict) else {}
     event_date, start_time = parsed
-    today = now_kst().date().isoformat()
-    if re.search(r"취소", title):
-        status = "취소"
-    elif re.search(r"연기", title):
-        status = "연기"
-    elif event_date > today:
-        status = "예정"
-    elif event_date == today:
-        status = "오늘"
-    else:
-        status = "종료"
+    today = (current_day or now_kst().date()).isoformat()
+    status = event_status_for(
+        title,
+        event_date,
+        today,
+        previous_status=previous.get("status", ""),
+    )
 
     source_id = source_id_for(row, event_date)
-    previous = previous or {}
     first_seen_at = clean_text(previous.get("firstSeenAt", ""), 80) or timestamp
     first_seen_date = first_seen_at[:10] if re.match(r"^20\d{2}-\d{2}-\d{2}", first_seen_at) else timestamp[:10]
     published_at = clean_text(previous.get("publishedAt", ""), 20) or first_seen_date
     relevance_level, relevance_reason = relevance
     venue = clean_text(row.get("venue", ""), 500)
-    host = clean_text(row.get("host", ""), 800)
+    host = (
+        clean_text(row.get("host", ""), 800)
+        or clean_text(previous.get("host", ""), 800)
+        or UNKNOWN_HOST
+    )
     summary_parts = [f"주최 {host}" if host else "", f"장소 {venue}" if venue else ""]
     summary = " · ".join(part for part in summary_parts if part) or "국회도서관에 등록된 국회의원 정책세미나 일정입니다."
     detail_path = clean_text(row.get("detailPath", ""), 500)
     official_url = urllib.parse.urljoin(OFFICIAL_PAGE, detail_path) if detail_path else OFFICIAL_PAGE
-    content_material = json.dumps(
-        {
-            "title": title,
-            "startDate": event_date,
-            "startTime": start_time,
-            "venue": venue,
-            "host": host,
-            "status": status,
-            "detailPath": detail_path,
-        },
-        ensure_ascii=False,
-        sort_keys=True,
+    content_hash = seminar_content_hash(
+        title=title,
+        event_date=event_date,
+        start_time=start_time,
+        venue=venue,
+        host=host,
+        status=status,
+        detail_path=detail_path,
     )
-    content_hash = hashlib.sha256(content_material.encode("utf-8")).hexdigest()
     previous_hash = clean_text(previous.get("contentHash", ""), 100)
     return {
         "id": f"assembly-seminar-{hashlib.sha256(source_id.encode('utf-8')).hexdigest()[:20]}",
@@ -476,6 +564,7 @@ def save_document(
 
 def main() -> int:
     today = now_kst().date()
+    timestamp = now_iso()
     start_date = SEMINAR_START_DATE
     end_date = today + timedelta(days=LOOKAHEAD_DAYS)
     existing_document = load_existing()
@@ -488,7 +577,9 @@ def main() -> int:
         except ValueError:
             continue
         if SEMINAR_START_DATE <= event_day <= end_date:
-            existing_items.append(item)
+            existing_items.append(
+                refresh_existing_item_status(item, today.isoformat(), timestamp)
+            )
     existing_by_source = {
         clean_text(item.get("sourceId", ""), 200): item
         for item in existing_items
@@ -523,8 +614,27 @@ def main() -> int:
                 warnings.append(f"{keyword} 검색 실패: {clean_text(exc, 300)}")
 
     if successful_queries == 0:
-        print("국회도서관 세미나 검색이 모두 실패했습니다. 기존 assembly_seminars.json은 보존합니다.", file=sys.stderr)
-        return 1
+        has_valid_existing = (
+            OUTPUT_PATH.is_file()
+            and isinstance(existing_document.get("items"), list)
+            and bool(clean_text(existing_document.get("lastSync", ""), 80))
+            and bool(clean_text(existing_document.get("source", ""), 300))
+        )
+        if not has_valid_existing:
+            print(
+                "::error::국회도서관 세미나 검색이 모두 실패했고 보존할 정상 "
+                "assembly_seminars.json도 없습니다.",
+                file=sys.stderr,
+            )
+            return 1
+        print(
+            "::warning::국회도서관 세미나 검색이 모두 실패했습니다. "
+            "기존 assembly_seminars.json을 보존하고 정책·뉴스 배포를 계속합니다.",
+            file=sys.stderr,
+        )
+        if warnings:
+            print("일부 국회도서관 검색 경고: " + " | ".join(warnings[:5]), file=sys.stderr)
+        return 0
 
     # 먼저 공식 cover ID, 이어서 제목·주최·행사일 조합으로 중복을 제거한다.
     unique_rows: dict[str, dict[str, str]] = {}
@@ -542,8 +652,7 @@ def main() -> int:
         unique_rows[key] = row
         seen_dedupe.add(secondary)
 
-    timestamp = now_iso()
-    items: list[dict[str, Any]] = []
+    fresh_items: list[dict[str, Any]] = []
     for row in unique_rows.values():
         parsed = parse_event_datetime(row.get("dateText", ""))
         if not parsed:
@@ -551,24 +660,18 @@ def main() -> int:
         event_date, _ = parsed
         source_id = source_id_for(row, event_date)
         previous = existing_by_source.get(source_id) or existing_by_dedupe.get(dedupe_key(row, event_date))
-        item = build_item(row, previous, timestamp, end_date)
+        item = build_item(row, previous, timestamp, end_date, today)
         if item:
-            items.append(item)
+            fresh_items.append(item)
 
     # 2026년 이후 일정은 누적 보존하되, 검증 범위를 벗어난 기존 항목은 위에서 제외한다.
-    # 새로 조회된 항목을 먼저 두어 같은 행사 중복에서는 최신 정보가 선택된다.
-    items.extend(existing_items)
+    # 날짜가 앞당겨지거나 늦춰진 경우 모두 새 공식 sourceId 항목을 기존 항목보다
+    # 먼저 처리해야 정정 방향과 무관하게 공식 최신값이 선택된다.
+    items = [*fresh_items, *existing_items]
 
     final_by_id: dict[str, dict[str, Any]] = {}
     final_dedupe: set[str] = set()
-    for item in sorted(
-        items,
-        key=lambda value: (
-            clean_text(value.get("startDate", ""), 20),
-            clean_text(value.get("title", "")),
-        ),
-        reverse=True,
-    ):
+    for item in items:
         try:
             event_day = date.fromisoformat(clean_text(item.get("startDate", ""), 20))
         except ValueError:
@@ -588,7 +691,14 @@ def main() -> int:
         final_by_id[item_id] = item
         final_dedupe.add(secondary)
 
-    final_items = list(final_by_id.values())[:MAX_STORED_ITEMS]
+    final_items = sorted(
+        final_by_id.values(),
+        key=lambda value: (
+            clean_text(value.get("startDate", ""), 20),
+            clean_text(value.get("title", "")),
+        ),
+        reverse=True,
+    )[:MAX_STORED_ITEMS]
     save_document(final_items, warnings[:20], start_date, end_date)
     print(f"국회 배출권 관련 세미나 일정 {len(final_items)}건 저장")
     if warnings:

@@ -1,19 +1,12 @@
 name: Sync Ministry Policies
 
 on:
-  schedule:
-    # GitHub cron is UTC. The five runs below are 08:17, 10:17,
-    # 13:17, 15:17 and 18:17 every day in Korea (KST, UTC+9).
-    - cron: "17 23 * * *"
-    - cron: "17 1 * * *"
-    - cron: "17 4 * * *"
-    - cron: "17 6 * * *"
-    - cron: "17 9 * * *"
-  # Keep this trigger for manual runs and existing cron-job.org API calls.
+  # The existing cron-job.org job calls this trigger at its externally
+  # configured times. GitHub's internal schedule is intentionally not used.
   workflow_dispatch:
     inputs:
       trigger_type:
-        description: "실행 주체(manual, scheduler 또는 cron-job.org)"
+        description: "실행 주체(manual 또는 cron-job.org)"
         required: false
         default: "manual"
         type: string
@@ -64,14 +57,9 @@ jobs:
         shell: bash
         env:
           DISPATCH_TRIGGER_TYPE: ${{ inputs.trigger_type }}
-          REGISTERED_SCHEDULE: ${{ github.event.schedule }}
         run: |
           set -euo pipefail
-          if [[ "${GITHUB_EVENT_NAME}" == "schedule" ]]; then
-            echo "실행 주체: GitHub schedule (${REGISTERED_SCHEDULE:-registered-cron})"
-          else
-            echo "실행 주체: ${DISPATCH_TRIGGER_TYPE:-manual-or-external-dispatch}"
-          fi
+          echo "실행 주체: ${DISPATCH_TRIGGER_TYPE:-manual-or-external-dispatch}"
 
       - name: Check files and secret configuration
         shell: bash
@@ -132,7 +120,7 @@ jobs:
               print(f"{name} 문법 검증 완료")
           PY
 
-      - name: Collect ministry policies, news, legislation and Assembly seminars
+      - name: Collect ministry policies and news
         shell: bash
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
@@ -143,8 +131,80 @@ jobs:
         run: |
           set -euo pipefail
           python scripts/sync_policies.py
-          python scripts/sync_bills.py
-          python scripts/sync_assembly_seminars.py
+
+      - name: Collect legislation without blocking policy publication
+        id: legislation_collection
+        shell: bash
+        env:
+          ASSEMBLY_API_KEY: ${{ secrets.ASSEMBLY_API_KEY }}
+        run: |
+          set -euo pipefail
+
+          output="public/data/bills.json"
+          before_hash=""
+          if [[ -f "$output" ]]; then
+            before_hash="$(sha256sum "$output" | awk '{print $1}')"
+          fi
+
+          fresh=false
+          if python scripts/sync_bills.py; then
+            after_hash=""
+            if [[ -f "$output" ]]; then
+              after_hash="$(sha256sum "$output" | awk '{print $1}')"
+            fi
+            if [[ -n "$after_hash" && "$after_hash" != "$before_hash" ]]; then
+              fresh=true
+              echo "국회 법안 신규 수집 결과를 검증합니다."
+            else
+              echo "::warning::국회 법안 파일이 갱신되지 않아 기존 데이터용 최소 검증을 적용합니다."
+            fi
+          else
+            echo "::warning::국회 법안 수집에 실패했습니다. 기존 bills.json을 복원하고 정책·뉴스 배포를 계속합니다."
+            if git cat-file -e "HEAD:${output}" 2>/dev/null; then
+              git restore --source=HEAD --worktree -- "$output"
+            else
+              echo "::error::복원할 기존 ${output}이 없습니다. 안전한 공개 JSON을 보장할 수 없습니다."
+              exit 1
+            fi
+            rm -f -- "${output}.tmp"
+          fi
+          echo "fresh=${fresh}" >> "$GITHUB_OUTPUT"
+
+      - name: Collect Assembly seminars without blocking policy publication
+        id: seminar_collection
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          output="public/data/assembly_seminars.json"
+          before_hash=""
+          if [[ -f "$output" ]]; then
+            before_hash="$(sha256sum "$output" | awk '{print $1}')"
+          fi
+
+          fresh=false
+          if python scripts/sync_assembly_seminars.py; then
+            after_hash=""
+            if [[ -f "$output" ]]; then
+              after_hash="$(sha256sum "$output" | awk '{print $1}')"
+            fi
+            if [[ -n "$after_hash" && "$after_hash" != "$before_hash" ]]; then
+              fresh=true
+              echo "국회 세미나 신규 수집 결과를 검증합니다."
+            else
+              echo "::warning::국회 세미나 파일이 갱신되지 않아 기존 데이터용 최소 검증을 적용합니다."
+            fi
+          else
+            echo "::warning::국회 세미나 수집에 실패했습니다. 기존 assembly_seminars.json을 복원하고 정책·뉴스 배포를 계속합니다."
+            if git cat-file -e "HEAD:${output}" 2>/dev/null; then
+              git restore --source=HEAD --worktree -- "$output"
+            else
+              echo "::error::복원할 기존 ${output}이 없습니다. 안전한 공개 JSON을 보장할 수 없습니다."
+              exit 1
+            fi
+            rm -f -- "${output}.tmp"
+          fi
+          echo "fresh=${fresh}" >> "$GITHUB_OUTPUT"
 
       - name: Validate generated policy, legislation and Assembly seminar data
         shell: bash
@@ -153,6 +213,8 @@ jobs:
           NAVER_API_HUB_CLIENT_ID: ${{ secrets.NAVER_API_HUB_CLIENT_ID }}
           NAVER_API_HUB_CLIENT_SECRET: ${{ secrets.NAVER_API_HUB_CLIENT_SECRET }}
           ASSEMBLY_API_KEY: ${{ secrets.ASSEMBLY_API_KEY }}
+          BILLS_COLLECTION_FRESH: ${{ steps.legislation_collection.outputs.fresh }}
+          SEMINARS_COLLECTION_FRESH: ${{ steps.seminar_collection.outputs.fresh }}
         run: |
           set -euo pipefail
           python - <<'PY'
@@ -225,8 +287,8 @@ jobs:
           bills = json.loads(bills_raw)
           if not isinstance(bills, dict) or not isinstance(bills.get("items"), list):
               raise SystemExit("bills.json의 최상위 값과 items 형식이 올바르지 않습니다.")
-          assembly_enabled = bool(os.getenv("ASSEMBLY_API_KEY", "").strip())
-          if assembly_enabled:
+          bills_fresh = os.getenv("BILLS_COLLECTION_FRESH", "").strip().lower() == "true"
+          if bills_fresh:
               if not isinstance(bills.get("lastSync"), str) or not bills["lastSync"].strip():
                   raise SystemExit("bills.json에 정상적인 lastSync가 없습니다.")
               if not str(bills.get("source", "")).strip():
@@ -235,20 +297,23 @@ jobs:
                   raise SystemExit("bills.json에 국회 대수가 없습니다.")
               if not bills["items"]:
                   raise SystemExit("발의법률안 수집 결과가 0건이므로 공개하지 않습니다.")
+          else:
+              print("::warning::기존 bills.json에는 JSON 구조·크기·항목 객체·보안값 최소 검증만 적용합니다.")
           seen_bill_ids = set()
           for index, item in enumerate(bills["items"]):
               if not isinstance(item, dict):
                   raise SystemExit(f"bills.items[{index}]가 객체가 아닙니다.")
-              bill_key = str(item.get("billId") or "").strip()
-              if not bill_key or not str(item.get("title", "")).strip():
-                  raise SystemExit(f"bills.items[{index}] 의안ID·제목이 없습니다.")
-              if str(item.get("category", "")) != "발의법률안":
-                  raise SystemExit(f"bills.items[{index}] 구분/분류가 발의법률안이 아닙니다.")
-              if bill_key in seen_bill_ids:
-                  raise SystemExit(f"bills.items[{index}] 의안ID가 중복됩니다: {bill_key}")
-              seen_bill_ids.add(bill_key)
-              if not str(item.get("status", "")).strip() or not str(item.get("url", "")).strip():
-                  raise SystemExit(f"bills.items[{index}] 상태 또는 공식 URL이 없습니다.")
+              if bills_fresh:
+                  bill_key = str(item.get("billId") or "").strip()
+                  if not bill_key or not str(item.get("title", "")).strip():
+                      raise SystemExit(f"bills.items[{index}] 의안ID·제목이 없습니다.")
+                  if str(item.get("category", "")) != "발의법률안":
+                      raise SystemExit(f"bills.items[{index}] 구분/분류가 발의법률안이 아닙니다.")
+                  if bill_key in seen_bill_ids:
+                      raise SystemExit(f"bills.items[{index}] 의안ID가 중복됩니다: {bill_key}")
+                  seen_bill_ids.add(bill_key)
+                  if not str(item.get("status", "")).strip() or not str(item.get("url", "")).strip():
+                      raise SystemExit(f"bills.items[{index}] 상태 또는 공식 URL이 없습니다.")
 
           for env_name in ("OPENAI_API_KEY", "NAVER_API_HUB_CLIENT_ID", "NAVER_API_HUB_CLIENT_SECRET", "ASSEMBLY_API_KEY"):
               secret = os.getenv(env_name, "")
@@ -266,33 +331,38 @@ jobs:
           seminars = json.loads(seminars_raw)
           if not isinstance(seminars, dict) or not isinstance(seminars.get("items"), list):
               raise SystemExit("assembly_seminars.json의 최상위 값과 items 형식이 올바르지 않습니다.")
-          if not isinstance(seminars.get("lastSync"), str) or not seminars["lastSync"].strip():
-              raise SystemExit("assembly_seminars.json에 정상적인 lastSync가 없습니다.")
-          if not str(seminars.get("source", "")).strip():
-              raise SystemExit("assembly_seminars.json에 공식 출처가 없습니다.")
+          seminars_fresh = os.getenv("SEMINARS_COLLECTION_FRESH", "").strip().lower() == "true"
+          if seminars_fresh:
+              if not isinstance(seminars.get("lastSync"), str) or not seminars["lastSync"].strip():
+                  raise SystemExit("assembly_seminars.json에 정상적인 lastSync가 없습니다.")
+              if not str(seminars.get("source", "")).strip():
+                  raise SystemExit("assembly_seminars.json에 공식 출처가 없습니다.")
+          else:
+              print("::warning::기존 assembly_seminars.json에는 JSON 구조·크기·항목 객체·보안값 최소 검증만 적용합니다.")
           seen_seminar_ids = set()
           seminar_minimum = date(2026, 1, 1)
           seminar_maximum = date.today() + timedelta(days=365)
           for index, item in enumerate(seminars["items"]):
               if not isinstance(item, dict):
                   raise SystemExit(f"assembly_seminars.items[{index}]가 객체가 아닙니다.")
-              seminar_id = str(item.get("id") or item.get("sourceId") or "").strip()
-              if not seminar_id or seminar_id in seen_seminar_ids:
-                  raise SystemExit(f"assembly_seminars.items[{index}] ID가 없거나 중복됩니다: {seminar_id}")
-              seen_seminar_ids.add(seminar_id)
-              if str(item.get("category", "")) != "세미나일정":
-                  raise SystemExit(f"assembly_seminars.items[{index}] 구분/분류가 세미나일정이 아닙니다.")
-              for field_name in ("title", "startDate", "eventType", "host", "url"):
-                  if not str(item.get(field_name, "")).strip():
-                      raise SystemExit(f"assembly_seminars.items[{index}] 필수값 누락: {field_name}")
-              try:
-                  seminar_day = date.fromisoformat(str(item["startDate"])[:10])
-              except ValueError as error:
-                  raise SystemExit(f"assembly_seminars.items[{index}] 행사일이 올바르지 않습니다.") from error
-              if not seminar_minimum <= seminar_day <= seminar_maximum:
-                  raise SystemExit(f"assembly_seminars.items[{index}] 행사일이 2026년 이후 공식 수집범위를 벗어났습니다.")
-              if not str(item["url"]).startswith("https://ampos.nanet.go.kr/"):
-                  raise SystemExit(f"assembly_seminars.items[{index}] 공식 국회도서관 URL이 아닙니다.")
+              if seminars_fresh:
+                  seminar_id = str(item.get("id") or item.get("sourceId") or "").strip()
+                  if not seminar_id or seminar_id in seen_seminar_ids:
+                      raise SystemExit(f"assembly_seminars.items[{index}] ID가 없거나 중복됩니다: {seminar_id}")
+                  seen_seminar_ids.add(seminar_id)
+                  if str(item.get("category", "")) != "세미나일정":
+                      raise SystemExit(f"assembly_seminars.items[{index}] 구분/분류가 세미나일정이 아닙니다.")
+                  for field_name in ("title", "startDate", "eventType", "host", "url"):
+                      if not str(item.get(field_name, "")).strip():
+                          raise SystemExit(f"assembly_seminars.items[{index}] 필수값 누락: {field_name}")
+                  try:
+                      seminar_day = date.fromisoformat(str(item["startDate"])[:10])
+                  except ValueError as error:
+                      raise SystemExit(f"assembly_seminars.items[{index}] 행사일이 올바르지 않습니다.") from error
+                  if not seminar_minimum <= seminar_day <= seminar_maximum:
+                      raise SystemExit(f"assembly_seminars.items[{index}] 행사일이 2026년 이후 공식 수집범위를 벗어났습니다.")
+                  if not str(item["url"]).startswith("https://ampos.nanet.go.kr/"):
+                      raise SystemExit(f"assembly_seminars.items[{index}] 공식 국회도서관 URL이 아닙니다.")
           for env_name in ("OPENAI_API_KEY", "NAVER_API_HUB_CLIENT_ID", "NAVER_API_HUB_CLIENT_SECRET", "ASSEMBLY_API_KEY"):
               secret = os.getenv(env_name, "")
               if secret and secret in seminars_raw:
