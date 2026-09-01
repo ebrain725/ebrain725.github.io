@@ -3,6 +3,13 @@ name: Sync KRX Daily Trading Trends
 on:
   # 기존 cron-job.org가 실행하는 정책 워크플로 완료 신호만 이용합니다.
   # 기존 정책·시장 워크플로 파일과 스케줄은 변경하지 않습니다.
+  # 수집기·워크플로 코드가 바뀐 경우에는 배포 직후 1회 검증 수집합니다.
+  push:
+    branches:
+      - main
+    paths:
+      - scripts/sync_krx_daily_trends.py
+      - .github/workflows/sync-krx-daily-trends.yml
   workflow_run:
     workflows:
       - Sync Ministry Policies
@@ -51,6 +58,7 @@ jobs:
     name: Collect and validate KRX daily trend PDFs
     if: >-
       (github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main') ||
+      (github.event_name == 'push' && github.ref == 'refs/heads/main') ||
       (github.event_name == 'workflow_run' &&
        github.event.workflow_run.head_branch == 'main' &&
        github.event.workflow_run.event == 'workflow_dispatch')
@@ -101,6 +109,9 @@ jobs:
             echo "상위 정책 워크플로 결론: ${PARENT_RUN_CONCLUSION:-unknown}"
             mode="incremental"
             pages="3"
+          elif [[ "${GITHUB_EVENT_NAME}" == "push" ]]; then
+            mode="incremental"
+            pages="1"
           fi
 
           case "$mode" in
