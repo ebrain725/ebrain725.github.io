@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-09-01T10:11:37+09:00",
+  "lastSync": "2026-09-01T10:48:17+09:00",
   "keywords": [
     "배출권",
     "배출권거래제",
@@ -30,13 +30,50 @@
   "warning": null,
   "aiInsight": {
     "summary": "최근 공식자료의 직접적인 수급 변수는 유상경매입니다. 최근 경매가 높은 낙찰가로 소화돼 공급보다 이행수요가 강하다는 신호입니다.",
-    "generatedAt": "2026-09-01T10:11:37+09:00",
+    "generatedAt": "2026-09-01T10:48:17+09:00",
     "basisLatestDate": "2026-08-12",
     "basisCount": 10,
     "source": "fallback",
     "model": null
   },
   "institutionSchedules": [
+    {
+      "id": "1bd5aac0bc831577",
+      "title": "자발적 탄소시장 법 제정 방향 토론회(15:00 의원회관...",
+      "sourceTitle": "[오늘의 국회일정](1·화)",
+      "eventType": "국회일정",
+      "startDate": "2026-09-01",
+      "endDate": "2026-09-01",
+      "dateInference": "relative",
+      "startTime": "",
+      "timezone": "Asia/Seoul",
+      "organizer": "대한민국 국회",
+      "location": "",
+      "status": "confirmed",
+      "evidence": "(14:00 의원회관 제3간담회의실) 정태호 의원실 등, 청정수소 구현을 위한 원전수소 역할과 위상 정책 세미나(14:00 의원회관 제3세미나실) 오기형 의원실 등, 자발적 탄소시장 법 제정 방향 토론회(15:00 의원회관...",
+      "publishedAt": "2026-09-01",
+      "source": "yna.co.kr",
+      "sourceType": "news",
+      "url": "https://www.yna.co.kr/view/AKR20260831171000001?input=1195m",
+      "sourceItemIds": [
+        "a00b5e553bace22b",
+        "5d9b269fc468dbaa",
+        "cdf10e85c9c5a5e1"
+      ],
+      "sourceUrls": [
+        "https://www.yna.co.kr/view/AKR20260831171000001?input=1195m",
+        "http://www.queen.co.kr/news/articleView.html?idxno=462577",
+        "https://www.news1.kr/politics/assembly/6275321"
+      ],
+      "sources": [
+        "yna.co.kr",
+        "queen.co.kr",
+        "news1.kr"
+      ],
+      "duplicateCount": 3,
+      "contentFingerprint": "827516b643bce99baa979da5e22cbdd575b152d0",
+      "contentSignature": "오늘의국회일정1화1400의원회관제3간담회의실정태호의원실등청정수소구현을위한원전수소역할과위상정책세미나1400의원회관제3세미나실오기형의원실등자발적탄소시장법제정방향토론회1500의원회관"
+    },
     {
       "id": "d98e1ad7157082c0",
       "title": "국가전력망 민간참여 본격화, 공공성 훼손 우려와 대응과제",
@@ -101,6 +138,29 @@
     }
   ],
   "items": [
+    {
+      "id": "1cb6a157bed44974",
+      "publishedAt": "2026-09-01",
+      "title": "트럼프, 美 신차 연비기준 대폭 완화…ℓ당 21.4㎞→14.7㎞",
+      "category": "제도",
+      "summary": "자동차업체는 연비 기준을 초과 달성하면 향후 사용할 수 있는 배출권 을 확보한다. 기준을 2022년형까지 소급해 낮추면 업체들이 추가 배출권 을 얻거나 향후 연비 기준을 더 쉽게 충족할 수 있다. 미국 의회도...",
+      "source": "kbmaeil.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.kbmaeil.com/article/20260901500182",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "kbmaeil.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
     {
       "id": "83b1a3170b7199ef",
       "publishedAt": "2026-09-01",
@@ -168,75 +228,6 @@
       "duplicateSources": [
         "jeonmae.co.kr",
         "newspim.com"
-      ],
-      "searchProviders": [
-        "NAVER API HUB"
-      ],
-      "region": "국내"
-    },
-    {
-      "id": "a00b5e553bace22b",
-      "publishedAt": "2026-09-01",
-      "title": "[오늘의 국회일정](1·화)",
-      "category": "제도",
-      "summary": "(14:00 의원회관 제3간담회의실) 정태호 의원실 등, 청정수소 구현을 위한 원전수소 역할과 위상 정책 세미나(14:00 의원회관 제3세미나실) 오기형 의원실 등, 자발적 탄소시장 법 제정 방향 토론회(15:00 의원회관...",
-      "source": "yna.co.kr",
-      "sourceType": "news",
-      "section": "news",
-      "url": "https://www.yna.co.kr/view/AKR20260831171000001?input=1195m",
-      "searchProvider": "NAVER API HUB",
-      "matchedKeywords": [
-        "탄소시장"
-      ],
-      "duplicateCount": 1,
-      "duplicateSources": [
-        "yna.co.kr"
-      ],
-      "searchProviders": [
-        "NAVER API HUB"
-      ],
-      "region": "국내"
-    },
-    {
-      "id": "5d9b269fc468dbaa",
-      "publishedAt": "2026-09-01",
-      "title": "[오늘의 국회일정] (1일, 화)",
-      "category": "제도",
-      "summary": "(의원회관 제3간담회의실) 14:00 정태호 의원실 등, 청정수소 구현을 위한 원전수소 역할과 위상 정책 세미나 (의원회관 제3세미나실) 15:00 오기형 의원실 등, 자발적 탄소시장 법 제정 방향 토론회 (의원회관...",
-      "source": "queen.co.kr",
-      "sourceType": "news",
-      "section": "news",
-      "url": "http://www.queen.co.kr/news/articleView.html?idxno=462577",
-      "searchProvider": "NAVER API HUB",
-      "matchedKeywords": [
-        "탄소시장"
-      ],
-      "duplicateCount": 1,
-      "duplicateSources": [
-        "queen.co.kr"
-      ],
-      "searchProviders": [
-        "NAVER API HUB"
-      ],
-      "region": "국내"
-    },
-    {
-      "id": "cdf10e85c9c5a5e1",
-      "publishedAt": "2026-09-01",
-      "title": "[오늘의 국회일정] (1일, 화)",
-      "category": "제도",
-      "summary": "(의원회관 제3간담회의실) 14:00 정태호 의원실 등, 청정수소 구현을 위한 원전수소 역할과 위상 정책 세미나 (의원회관 제3세미나실) 15:00 오기형 의원실 등, 자발적 탄소시장 법 제정 방향 토론회 (의원회관...",
-      "source": "news1.kr",
-      "sourceType": "news",
-      "section": "news",
-      "url": "https://www.news1.kr/politics/assembly/6275321",
-      "searchProvider": "NAVER API HUB",
-      "matchedKeywords": [
-        "탄소시장"
-      ],
-      "duplicateCount": 1,
-      "duplicateSources": [
-        "news1.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -700,6 +691,57 @@
       "region": "국내"
     },
     {
+      "id": "3b9b435e33effbf2",
+      "publishedAt": "2026-08-31",
+      "title": "[박규빈의 재무 아나토미] ‘115조 수주·자산 58조’…한화에어로 ‘초...",
+      "category": "제도",
+      "summary": "회사가 발간한 2026 ESG 보고서에 따르면 공장 가동률 급증으로 총 온실 가스 배출량이 2023년 10만2000톤에서 2025년 12만1000톤으로 지속 상승 중이다. 배출권 거래제 등으로 향후 최대 404억 원의 재무 타격이 예상되자...",
+      "source": "ekn.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.ekn.kr/web/view.php?key=20260831023428287",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "ekn.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "9b7dc0a270712d5b",
+      "publishedAt": "2026-08-31",
+      "title": "[기고] 한국형 탄소시장안정화(K-MSR) 조치 운영 방안",
+      "category": "시장안정",
+      "summary": "우선 배출허용총량이 제3차 계획기간(25억3730만톤) 대비 16.8% 축소됐고, 유상할당 비율 단계적 확대와 한국형 시장안정화제도(K-MSR) 도입 등이 가장 큰 변화다. 이번 제도 개편은 수급 개선과 배출권 가격 정상화라는 두...",
+      "source": "etnews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.etnews.com/20260831000109",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장",
+        "배출권",
+        "유상할당"
+      ],
+      "duplicateSources": [
+        "전자신문",
+        "etnews.com"
+      ],
+      "searchProviders": [
+        "Google News RSS",
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 2,
+      "region": "국내"
+    },
+    {
       "id": "krx-ets-587",
       "sourceId": "587",
       "publishedAt": "2026-08-12",
@@ -747,7 +789,7 @@
       ]
     },
     {
-      "id": "c315dd89d2d3d43a",
+      "id": "e7cc74cedb1a7350",
       "publishedAt": "2026-07-24",
       "title": "「배출권거래제 고도화 및 간접배출 관리체계 개선 방안 연구」 입찰 재공고",
       "category": "제도",
@@ -755,7 +797,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C%EA%B1%B0%EB%9E%98%EC%A0%9C&menuId=10524&orgCd=&boardMasterId=39&boardId=1879830",
+      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C%EA%B1%B0%EB%9E%98%EC%A0%9C&menuId=10524&orgCd=&boardMasterId=39&boardId=1879830",
       "matchedKeywords": [
         "배출권거래제"
       ]
@@ -777,7 +819,7 @@
       ]
     },
     {
-      "id": "78ae7cb43ef1e7aa",
+      "id": "58d9ce645cb06946",
       "publishedAt": "2026-07-03",
       "title": "「배출권거래제 고도화 및 간접배출 관리체계 개선 방안 연구」 입찰 공고",
       "category": "제도",
@@ -785,7 +827,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C%EA%B1%B0%EB%9E%98%EC%A0%9C&menuId=10524&orgCd=&boardMasterId=39&boardId=1875540",
+      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C%EA%B1%B0%EB%9E%98%EC%A0%9C&menuId=10524&orgCd=&boardMasterId=39&boardId=1875540",
       "matchedKeywords": [
         "배출권거래제"
       ]
@@ -1309,7 +1351,7 @@
       ]
     },
     {
-      "id": "eafd57a5985c46be",
+      "id": "45ae9c9285f11d33",
       "publishedAt": "2026-02-25",
       "title": "「배출권거래제 외부사업 활성화 방안 마련 연구」 입찰 공고",
       "category": "상쇄·외부사업",
@@ -1317,7 +1359,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C%EA%B1%B0%EB%9E%98%EC%A0%9C&menuId=10524&orgCd=&boardMasterId=39&boardId=1845320",
+      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C%EA%B1%B0%EB%9E%98%EC%A0%9C&menuId=10524&orgCd=&boardMasterId=39&boardId=1845320",
       "matchedKeywords": [
         "배출권거래제"
       ]
@@ -1487,7 +1529,7 @@
       ]
     },
     {
-      "id": "73f36c800861b330",
+      "id": "f1d99a975cb32c41",
       "publishedAt": "2025-11-14",
       "title": "온실가스 배출권거래제 제4차 계획기간 국가 배출권 할당계획 공고",
       "category": "제도",
@@ -1495,7 +1537,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C%EA%B1%B0%EB%9E%98%EC%A0%9C&menuId=10524&orgCd=&boardMasterId=39&boardId=1819470",
+      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C%EA%B1%B0%EB%9E%98%EC%A0%9C&menuId=10524&orgCd=&boardMasterId=39&boardId=1819470",
       "matchedKeywords": [
         "배출권거래제"
       ]
