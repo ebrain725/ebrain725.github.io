@@ -17,7 +17,6 @@ const REQUIRED_METHODS = ["competitive", "negotiated", "auction", "total"];
 const CATEGORY_ORDER = [
   "liable_entities",
   "market_makers",
-  "brokerage_members",
   "financial_institutions",
   "others",
 ];
@@ -127,10 +126,18 @@ function sameValues(left, right) {
 function mergeDisplayParticipantFlows(flows, date) {
   const merged = new Map();
   flows.forEach((flow) => {
-    const categoryKey = flow.categoryKey === "koc_specialists" ? "others" : flow.categoryKey;
+    const categoryKey = flow.categoryKey === "koc_specialists"
+      ? "others"
+      : flow.categoryKey === "brokerage_members"
+        ? "financial_institutions"
+        : flow.categoryKey;
     const entry = merged.get(categoryKey) || {
       categoryKey,
-      label: categoryKey === "others" ? "기타" : flow.label,
+      label: categoryKey === "others"
+        ? "기타"
+        : categoryKey === "financial_institutions"
+          ? "거래중개회원·금융기관"
+          : flow.label,
       netByMethod: Object.fromEntries(REQUIRED_METHODS.map((method) => [method, 0])),
     };
     REQUIRED_METHODS.forEach((method) => {
@@ -680,10 +687,10 @@ function renderTaxonomyNote(reports) {
     const transitions = trendState.taxonomies
       .filter((taxonomy) => taxonomy.from > reports[0].tradeDate && taxonomy.from <= reports.at(-1).tradeDate)
       .map((taxonomy) => taxonomy.from.replaceAll("-", "."));
-    note.textContent = `${transitions.join(", ")} 참가자 분류 변경: 서로 다른 분류의 항목은 합산하지 않고 별도 선과 집계기간으로 표시합니다.`;
+    note.textContent = `${transitions.join(", ")} 공식 참가자 분류 변경: 화면 통계에서는 변경 전 거래중개회원과 변경 후 금융기관을 '거래중개회원·금융기관'으로 합산합니다.`;
     return;
   }
-  note.textContent = `해당 기간은 ${TAXONOMY_LABELS[usedIds[0]] || usedIds[0]}를 사용합니다.`;
+  note.textContent = "화면 통계의 '거래중개회원·금융기관'은 변경 전 거래중개회원과 변경 후 금융기관을 통합한 항목입니다.";
 }
 
 function renderTrendPage() {
