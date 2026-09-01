@@ -5,7 +5,7 @@ const trendState = {
   quality: null,
   taxonomies: [],
   reports: [],
-  period: "3M",
+  period: "ALL",
   customStart: "",
   customEnd: "",
   method: "total",
@@ -352,7 +352,8 @@ function renderSyncState() {
     : "첫 수집 대기";
   const backfill = index.backfill || {};
   if (backfill.status === "complete") {
-    trendById("backfillStatus").textContent = `전기간 ${index.itemCount || 0}거래일 수집 완료`;
+    const monthCount = Array.isArray(index.availableMonths) ? index.availableMonths.length : 0;
+    trendById("backfillStatus").textContent = `전체 ${index.itemCount || 0}거래일 · ${monthCount}개월 수집 완료`;
   } else if (backfill.status === "complete_with_errors") {
     trendById("backfillStatus").textContent = `전기간 확인 완료 · 실패 ${Number(backfill.failureCount || 0)}건 재시도 중`;
   } else if (backfill.status === "in_progress") {
@@ -360,6 +361,28 @@ function renderSyncState() {
   } else {
     trendById("backfillStatus").textContent = "과거자료 첫 수집 대기";
   }
+}
+
+function renderCollectionSummary(reports) {
+  const allReports = trendState.reports;
+  const index = trendState.index || {};
+  const quality = trendState.quality || {};
+  const first = allReports[0]?.tradeDate || "-";
+  const last = allReports.at(-1)?.tradeDate || "-";
+  const selectedFirst = reports[0]?.tradeDate || "-";
+  const selectedLast = reports.at(-1)?.tradeDate || "-";
+  const monthCount = Array.isArray(index.availableMonths) ? index.availableMonths.length : 0;
+  const failureCount = Array.isArray(quality.failures) ? quality.failures.length : 0;
+  const duplicateCount = allReports.length - new Set(allReports.map((report) => report.tradeDate)).size;
+  const complete = index.backfill?.status === "complete" && quality.status === "valid";
+
+  trendById("totalCollectedDays").textContent = `${allReports.length}거래일`;
+  trendById("totalCollectedRange").textContent = `${first} – ${last} · ${monthCount}개월`;
+  trendById("selectedCollectedDays").textContent = `${reports.length}거래일`;
+  trendById("selectedCollectedRange").textContent = `${selectedFirst} – ${selectedLast}`;
+  trendById("collectionQuality").textContent = complete ? "검증 완료" : "확인 필요";
+  trendById("collectionQualityDetail").textContent = `수집 오류 ${failureCount}건 · 중복 ${duplicateCount}건`;
+  trendById("periodCoverage").textContent = `전체 ${allReports.length}거래일 중 ${reports.length}거래일 조회`;
 }
 
 function renderTrendControls(reports) {
@@ -389,7 +412,7 @@ function renderTrendKpis(reports, aggregates) {
   const seller = [...aggregates].sort((left, right) => left.net - right.net)[0];
   trendById("periodTotalVolume").textContent = reports.length ? compactTons(totalVolume) : "-";
   trendById("periodAverageVolume").textContent = reports.length ? compactTons(averageVolume) : "-";
-  trendById("periodTradingDays").textContent = `거래일 ${reports.length}일`;
+  trendById("periodTradingDays").textContent = `선택 ${reports.length}일 · 전체 ${trendState.reports.length}일`;
   trendById("topNetBuyer").textContent = buyer?.net > 0 ? buyer.label : "순매수 없음";
   trendById("topNetBuyerValue").textContent = buyer?.net > 0 ? tons(buyer.net, true) : "-";
   trendById("topNetBuyerPeriod").textContent = buyer?.net > 0 ? formatAggregatePeriod(buyer) : "집계기간 -";
@@ -576,7 +599,7 @@ function renderDailyPagination(totalPages) {
 function renderDailyTable(reports) {
   const tbody = trendById("dailyRows");
   tbody.replaceChildren();
-  trendById("dailyRecordCount").textContent = `${reports.length}건 · ${METHOD_LABELS[trendState.method]}`;
+  trendById("dailyRecordCount").textContent = `선택기간 ${reports.length}건 / 전체 ${trendState.reports.length}건 · ${METHOD_LABELS[trendState.method]}`;
   if (!reports.length) {
     const row = document.createElement("tr");
     const cell = document.createElement("td"); cell.colSpan = 7;
@@ -639,6 +662,7 @@ function renderTrendPage() {
   const reports = selectedTrendReports();
   const aggregates = aggregateParticipantFlows(reports);
   renderTrendControls(reports);
+  renderCollectionSummary(reports);
   renderTrendKpis(reports, aggregates);
   renderFlowChart(reports);
   renderParticipantTable(aggregates);
@@ -731,12 +755,19 @@ async function initKrxTrends() {
 
 function renderFatalError(error) {
   trendState.reports = [];
-  trendState.period = "3M";
+  trendState.period = "ALL";
   renderTrendPage();
   setTrendControlsDisabled(true);
   document.querySelector(".sync-box").className = "sync-box error";
   trendById("trendSync").textContent = "자료 연결 오류";
   trendById("backfillStatus").textContent = "검증된 전체 자료를 표시할 수 없습니다.";
+  trendById("totalCollectedDays").textContent = "자료 오류";
+  trendById("totalCollectedRange").textContent = "전체 수집자료를 확인하지 못했습니다.";
+  trendById("selectedCollectedDays").textContent = "자료 오류";
+  trendById("selectedCollectedRange").textContent = "조회 기간을 계산하지 못했습니다.";
+  trendById("collectionQuality").textContent = "검증 실패";
+  trendById("collectionQualityDetail").textContent = "공개 데이터 연결 상태를 확인해 주세요.";
+  trendById("periodCoverage").textContent = "전체자료를 표시할 수 없습니다.";
   trendById("dailyRecordCount").textContent = "자료 오류";
   trendById("participantRows").innerHTML = '<tr><td colspan="4">데이터 검증 오류로 기간 수급을 표시할 수 없습니다.</td></tr>';
   trendById("dailyRows").innerHTML = '<tr><td colspan="7">데이터 검증 오류로 일별 자료를 표시할 수 없습니다.</td></tr>';

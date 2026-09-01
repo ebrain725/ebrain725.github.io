@@ -32,6 +32,18 @@ jobs:
       - name: Pages 설정
         uses: actions/configure-pages@v5
 
+      - name: 배포 원본 해시 계산
+        id: source_hashes
+        shell: bash
+        run: |
+          set -euo pipefail
+          echo "index_html=$(sha256sum public/index.html | awk '{print $1}')" >> "$GITHUB_OUTPUT"
+          echo "styles_css=$(sha256sum public/assets/styles.css | awk '{print $1}')" >> "$GITHUB_OUTPUT"
+          echo "krx_html=$(sha256sum public/krx-trends.html | awk '{print $1}')" >> "$GITHUB_OUTPUT"
+          echo "krx_css=$(sha256sum public/assets/krx-trends.css | awk '{print $1}')" >> "$GITHUB_OUTPUT"
+          echo "krx_js=$(sha256sum public/assets/krx-trends.js | awk '{print $1}')" >> "$GITHUB_OUTPUT"
+          echo "krx_index=$(sha256sum public/data/krx-daily/index.json | awk '{print $1}')" >> "$GITHUB_OUTPUT"
+
       - name: 공개 파일 묶기
         uses: actions/upload-pages-artifact@v4
         with:
@@ -40,3 +52,49 @@ jobs:
       - name: GitHub Pages 배포
         id: deployment
         uses: actions/deploy-pages@v4
+
+      - name: 공개 화면·전체수집 데이터 검증
+        shell: bash
+        env:
+          PAGE_URL: ${{ steps.deployment.outputs.page_url }}
+          INDEX_HTML_SHA256: ${{ steps.source_hashes.outputs.index_html }}
+          STYLES_CSS_SHA256: ${{ steps.source_hashes.outputs.styles_css }}
+          KRX_HTML_SHA256: ${{ steps.source_hashes.outputs.krx_html }}
+          KRX_CSS_SHA256: ${{ steps.source_hashes.outputs.krx_css }}
+          KRX_JS_SHA256: ${{ steps.source_hashes.outputs.krx_js }}
+          KRX_INDEX_SHA256: ${{ steps.source_hashes.outputs.krx_index }}
+        run: |
+          set -euo pipefail
+          page_root="${PAGE_URL%/}"
+
+          verify_public_file() {
+            local relative_path="$1"
+            local expected_sha256="$2"
+            local downloaded
+            downloaded="$(mktemp)"
+            for attempt in 1 2 3 4 5 6 7 8; do
+              if curl --fail --silent --show-error --location \
+                --max-time 20 \
+                --header "Cache-Control: no-cache" \
+                "${page_root}/${relative_path}?verify=${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}-${attempt}" \
+                --output "$downloaded"; then
+                actual_sha256="$(sha256sum "$downloaded" | awk '{print $1}')"
+                if [[ "$actual_sha256" == "$expected_sha256" ]]; then
+                  echo "공개 ${relative_path} 반영 확인: ${actual_sha256}"
+                  rm -f "$downloaded"
+                  return 0
+                fi
+              fi
+              sleep 8
+            done
+            rm -f "$downloaded"
+            echo "::error::공개 ${relative_path}이 배포 원본과 일치하지 않습니다."
+            return 1
+          }
+
+          verify_public_file "index.html" "$INDEX_HTML_SHA256"
+          verify_public_file "assets/styles.css" "$STYLES_CSS_SHA256"
+          verify_public_file "krx-trends.html" "$KRX_HTML_SHA256"
+          verify_public_file "assets/krx-trends.css" "$KRX_CSS_SHA256"
+          verify_public_file "assets/krx-trends.js" "$KRX_JS_SHA256"
+          verify_public_file "data/krx-daily/index.json" "$KRX_INDEX_SHA256"

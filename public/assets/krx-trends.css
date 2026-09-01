@@ -54,18 +54,31 @@ button:focus-visible, input:focus-visible, select:focus-visible, a:focus-visible
 }
 .brand b { display: block; font-size: 14px; letter-spacing: .03em; }
 .brand small { display: block; color: #9db4aa; font-size: 10px; }
-.topbar nav { display: flex; align-items: stretch; align-self: stretch; gap: 6px; margin-left: auto; }
+.topbar .primary-nav {
+  display: flex;
+  align-items: center;
+  align-self: center;
+  gap: 4px;
+  margin-left: auto;
+  padding: 4px;
+  border: 1px solid rgba(255, 255, 255, .12);
+  border-radius: 11px;
+  background: rgba(255, 255, 255, .08);
+}
 .topbar nav a {
-  display: grid;
-  place-items: center;
-  padding: 0 17px;
+  min-height: 38px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 16px;
   color: #b9c9c2;
-  border-bottom: 3px solid transparent;
+  border-radius: 8px;
   text-decoration: none;
   font-size: 13px;
   font-weight: 700;
+  white-space: nowrap;
 }
-.topbar nav a:hover, .topbar nav a.active { color: #fff; border-color: #55b28e; }
+.topbar nav a:hover { color: #fff; background: rgba(255, 255, 255, .08); }
+.topbar nav a.active { color: var(--green-dark); background: #fff; box-shadow: 0 3px 12px rgba(0, 0, 0, .16); }
 .trend-dashboard { width: min(1500px, 94vw); margin: 0 auto; padding: 36px 0 60px; }
 .page-intro { display: flex; align-items: flex-end; justify-content: space-between; gap: 30px; margin-bottom: 24px; }
 .eyebrow, .section-tag { margin: 0; color: var(--green); font-size: 11px; font-weight: 900; letter-spacing: .13em; }
@@ -102,6 +115,26 @@ button:focus-visible, input:focus-visible, select:focus-visible, a:focus-visible
 .status-alert p { margin: 0; font-size: 11px; line-height: 1.6; }
 .status-alert.error { border-color: #e2b6b3; color: #7f302c; background: #fff1f0; }
 
+.collection-summary {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 16px;
+}
+.collection-summary article {
+  min-height: 105px;
+  padding: 17px 19px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: var(--shadow);
+}
+.collection-summary span { display: block; color: var(--muted); font-size: 10px; font-weight: 900; letter-spacing: .04em; }
+.collection-summary strong { display: block; margin-top: 7px; font-size: 24px; line-height: 1.2; letter-spacing: -.035em; }
+.collection-summary small { display: block; margin-top: 4px; color: var(--muted); font-size: 10px; }
+.collection-summary .collection-total { color: #fff; border-color: #123f32; background: linear-gradient(135deg, #123f32, #0c6f52); }
+.collection-summary .collection-total span, .collection-summary .collection-total small { color: #c7ddd5; }
+
 .control-panel {
   display: flex;
   align-items: flex-end;
@@ -113,6 +146,9 @@ button:focus-visible, input:focus-visible, select:focus-visible, a:focus-visible
   background: #fff;
   box-shadow: var(--shadow);
 }
+.period-control { display: grid; gap: 5px; }
+.control-label { color: var(--muted); font-size: 10px; font-weight: 800; }
+.period-control > small { color: var(--green-dark); font-size: 10px; font-weight: 800; }
 .period-buttons { display: flex; flex-wrap: wrap; gap: 6px; }
 .period-buttons button, .daily-pagination button {
   min-width: 64px;
@@ -246,6 +282,8 @@ th:first-child, td:first-child { text-align: left; }
 footer { padding: 24px 5vw 38px; color: #7a8681; text-align: center; font-size: 11px; }
 
 @media (max-width: 1100px) {
+  .collection-summary { grid-template-columns: 1fr 1fr; }
+  .collection-summary article:last-child { grid-column: 1 / -1; }
   .trend-kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .trend-grid { grid-template-columns: 1fr; }
   .method-filter { margin-left: 0; }
@@ -253,12 +291,14 @@ footer { padding: 24px 5vw 38px; color: #7a8681; text-align: center; font-size: 
 
 @media (max-width: 720px) {
   .topbar { flex-wrap: wrap; gap: 8px 16px; padding: 11px 4vw; }
-  .topbar nav { order: 3; width: 100%; min-height: 39px; }
+  .topbar .primary-nav { order: 3; width: 100%; min-height: 47px; margin-left: 0; }
   .topbar nav a { flex: 1; padding: 0 8px; }
   .trend-dashboard { width: min(94vw, 680px); padding-top: 24px; }
   .page-intro { align-items: stretch; flex-direction: column; }
   .sync-box { min-width: 0; }
   .status-alert { grid-template-columns: 1fr; margin-top: -10px; }
+  .collection-summary { grid-template-columns: 1fr; }
+  .collection-summary article:last-child { grid-column: auto; }
   .control-panel { align-items: stretch; flex-direction: column; }
   .period-buttons button { flex: 1; min-width: 72px; }
   .custom-range { align-items: stretch; flex-wrap: wrap; }
