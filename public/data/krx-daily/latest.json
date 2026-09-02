@@ -1,30 +1,30 @@
 {
   "schemaVersion": "1.0",
-  "lastSync": "2026-09-02T08:36:33+09:00",
+  "lastSync": "2026-09-02T18:20:51+09:00",
   "item": {
-    "tradeDate": "2026-09-01",
-    "publishedDate": "2026-09-01",
-    "boardRn": 587,
-    "bbsSeq": "656",
+    "tradeDate": "2026-09-02",
+    "publishedDate": "2026-09-02",
+    "boardRn": 588,
+    "bbsSeq": "657",
     "attachFileSeq": "1",
-    "title": "배출권 거래시장 일일동향(장내) 26.09.01",
-    "sourceKey": "krx:656:1",
-    "sourceRevisionId": "krx:656:1:ba14b10b53ae",
-    "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=656",
-    "filename": "배출권 거래시장 일일동향_260901.pdf",
-    "sha256": "ba14b10b53ae41ddb7791bba0610578e152774f6f1cbee5270edb228a82c6e48",
-    "fileSize": 119091,
+    "title": "배출권 거래시장 일일동향(장내) 26.09.02",
+    "sourceKey": "krx:657:1",
+    "sourceRevisionId": "krx:657:1:72255256accc",
+    "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=657",
+    "filename": "배출권 거래시장 일일동향_260902.pdf",
+    "sha256": "72255256acccb2a92323a0a026a337d3d111391e0abc0ded03833cbea6c31cde",
+    "fileSize": 120009,
     "pages": 1,
     "parserVersion": "1.3.0",
     "participantScope": "all_instruments",
     "taxonomyVersion": "financial_institutions_and_others",
     "market": {
-      "totalVolume": 160551,
+      "totalVolume": 61700,
       "representativeInstrument": {
         "symbol": "KAU26",
-        "close": 29400,
-        "change": 500,
-        "volume": 160551
+        "close": 30000,
+        "change": 600,
+        "volume": 61700
       }
     },
     "participantFlows": [
@@ -32,20 +32,20 @@
         "categoryKey": "liable_entities",
         "label": "할당대상업체",
         "netByMethod": {
-          "competitive": 100,
+          "competitive": 18150,
           "negotiated": 0,
           "auction": 0,
-          "total": 100
+          "total": 18150
         }
       },
       {
         "categoryKey": "market_makers",
         "label": "시장조성자",
         "netByMethod": {
-          "competitive": -100,
+          "competitive": -18150,
           "negotiated": 0,
           "auction": 0,
-          "total": -100
+          "total": -18150
         }
       },
       {
@@ -83,6 +83,6 @@
       "netTotal": 0,
       "balanced": true
     },
-    "pdfUrl": "data/krx-daily/pdfs/2026-09/2026-09-01.pdf"
+    "pdfUrl": "data/krx-daily/pdfs/2026-09/2026-09-02.pdf"
   }
 }
