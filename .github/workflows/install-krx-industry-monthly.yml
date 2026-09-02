@@ -23,12 +23,17 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          shopt -s nullglob
-          parts=(scripts/krx-industry-monthly-bundle.b64.part*)
-          if [[ "${#parts[@]}" -ne 5 ]]; then
-            echo "::error::Expected 5 staged bundle parts, found ${#parts[@]}."
-            exit 1
-          fi
+          parts=(
+            scripts/krx-industry-monthly-bundle.b64.part00
+            scripts/krx-industry-monthly-bundle.b64.part01
+            scripts/krx-industry-monthly-bundle.b64.part02a
+            scripts/krx-industry-monthly-bundle.b64.part02b
+            scripts/krx-industry-monthly-bundle.b64.part03
+            scripts/krx-industry-monthly-bundle.b64.part04
+          )
+          for part in "${parts[@]}"; do
+            [[ -f "$part" ]] || { echo "::error::Missing staged bundle part: $part"; exit 1; }
+          done
           cat "${parts[@]}" | base64 --decode > /tmp/krx-industry-monthly-bundle.tar.gz
           echo "98039a24f320e66c8edcd2452e99cb16ef306ce8fbc5685b7267c1be468033ec  /tmp/krx-industry-monthly-bundle.tar.gz" | sha256sum --check
           tar -xzf /tmp/krx-industry-monthly-bundle.tar.gz -C .
