@@ -1,0 +1,22 @@
+{
+  "version": "20260902-industry-monthly-v1",
+  "source": {
+    "filename": "배출권 월별 업종 매매현황.xlsx",
+    "worksheet": "5. 업종별 거래현황",
+    "range": "B3:CV81",
+    "sha256": "a73a708ffb893c7e2651b84282705677ed8a36de9b1158440b8bbd3dce3d0e74"
+  },
+  "coverage": {
+    "startMonth": "2022-08",
+    "endMonth": "2026-07",
+    "monthCount": 48,
+    "industryCount": 73,
+    "sectorCount": 6
+  },
+  "files": [
+    "krx-industry-monthly.html",
+    "assets/krx-industry-monthly.css",
+    "assets/krx-industry-monthly.js",
+    "data/krx-industry-monthly.json"
+  ]
+}
