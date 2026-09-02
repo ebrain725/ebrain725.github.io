@@ -344,12 +344,13 @@
 
   function settledBalanceForRow(row) {
     const adjustedAllocation = metricValue(row, "adjustedAllocation");
-    const borrow = metricValue(row, "borrow");
     const verifiedEmissions = metricValue(row, "verifiedEmissions");
-    const carryover = metricValue(row, "carryover");
-    const inputs = [adjustedAllocation, borrow, verifiedEmissions, carryover];
+    const inputs = [adjustedAllocation, verifiedEmissions];
     if (!inputs.every((value) => typeof value === "number")) return null;
-    return adjustedAllocation + borrow - verifiedEmissions - carryover;
+
+    // 해당 연도의 이월량과 차입량은 과부족을 처리한 결과이므로
+    // 원자료 기준 정산 과부족량 산식에서 제외한다.
+    return adjustedAllocation - verifiedEmissions;
   }
 
   function previousBasisForRow(row, rowsByExactKey, rowsByCompanyYear) {
@@ -499,13 +500,13 @@
     if (payload?.metrics?.fields) {
       payload.metrics.fields.settledBalance = {
         label: "정산 과부족량",
-        formula: "adjustedAllocation + borrow - verifiedEmissions - carryover",
-        formulaKo: "해당 연도 조정할당량 + 해당 연도 차입량 - 해당 연도 인증배출량 - 해당 연도 이월량",
+        formula: "adjustedAllocation - verifiedEmissions",
+        formulaKo: "해당 연도 조정할당량 - 해당 연도 인증배출량",
         nullRule: "null if any dependency is null",
       };
     }
     payload.balanceCalculation = {
-      version: "4.1.0",
+      version: "4.2.0",
       label: "연초 과부족량",
       appliedPreAllocationFormula: "currentPreAllocation + previousAdditionalAllocation - previousCancellation",
       appliedPreAllocationFormulaKo: "당해년도 사전할당량 + 전년도 추가할당량 - 전년도 할당취소량",

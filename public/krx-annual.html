@@ -7,7 +7,7 @@
   <title>업체현황(연간) | KRX 거래동향</title>
   <link rel="stylesheet" href="assets/krx-trends.css?v=20260902-annual-tabs-v10">
   <link rel="stylesheet" href="assets/krx-annual.css?v=20260902-annual-v2">
-  <link rel="stylesheet" href="assets/krx-annual-balance-v2.css?v=20260902-settled-balance-v1">
+  <link rel="stylesheet" href="assets/krx-annual-balance-v2.css?v=20260902-settled-balance-v2">
   <style>
     .annual-applied-preallocation { display: none !important; }
     .annual-table td.annual-preallocation-with-applied {
@@ -25,7 +25,7 @@
     </a>
     <nav class="primary-nav" aria-label="서비스 메뉴">
       <a href="index.html?v=20260902-header-unified-v3">통합대시보드</a>
-      <a class="active" href="krx-annual.html?v=20260902-settled-balance-v1" aria-current="page">KRX 거래동향</a>
+      <a class="active" href="krx-annual.html?v=20260902-settled-balance-v2" aria-current="page">KRX 거래동향</a>
     </nav>
   </header>
 
@@ -52,7 +52,7 @@
 
     <nav class="krx-subnav" aria-label="KRX 거래동향 세부 메뉴">
       <a href="krx-trends.html?v=20260902-annual-tabs-v10">일일 매매현황</a>
-      <a class="active" href="krx-annual.html?v=20260902-settled-balance-v1" aria-current="page">업체현황(연간)</a>
+      <a class="active" href="krx-annual.html?v=20260902-settled-balance-v2" aria-current="page">업체현황(연간)</a>
     </nav>
 
     <section class="status-alert" id="annualStatusAlert" role="status" aria-live="polite" aria-atomic="true" hidden>
@@ -122,7 +122,7 @@
               <th scope="col">이월량</th>
               <th scope="col">차입량</th>
               <th scope="col">상쇄발행</th>
-              <th scope="col" class="annual-settled-balance-column" title="해당 연도의 조정할당량 + 차입량 − 인증배출량 − 이월량으로 계산한 원자료 기준 정산값입니다.">정산 과부족량</th>
+              <th scope="col" class="annual-settled-balance-column" title="해당 연도의 조정할당량 − 인증배출량으로 계산한 원자료 기준 과부족입니다. 해당 연도 이월량과 차입량은 정산 처리 결과이므로 제외합니다.">정산 과부족량</th>
             </tr>
           </thead>
           <tbody id="annualRows">
@@ -187,7 +187,7 @@
   <footer>
     <p>시장 판단을 지원하는 참고용 자료입니다. 공식 원문과 통계를 함께 확인하세요.</p>
   </footer>
-  <script src="assets/krx-annual-balance-v2.js?v=20260902-settled-balance-v1" defer></script>
-  <script src="assets/krx-annual.js?v=20260902-settled-balance-v1" defer></script>
+  <script src="assets/krx-annual-balance-v2.js?v=20260902-settled-balance-v2" defer></script>
+  <script src="assets/krx-annual.js?v=20260902-settled-balance-v2" defer></script>
 </body>
 </html>
