@@ -43,6 +43,7 @@
     previousBorrow: ["previousBorrow"],
     previousVerifiedEmissions: ["previousVerifiedEmissions"],
     finalBalance: ["finalBalance", "complianceBalance"],
+    settledBalance: ["settledBalance"],
   };
 
   const GROUP_SUM_METRICS = [
@@ -73,6 +74,7 @@
     "previousBorrow",
     "previousVerifiedEmissions",
     "finalBalance",
+    "settledBalance",
   ];
 
   let displayRows = [];
@@ -340,6 +342,16 @@
     return values.reduce((sum, value) => sum + value, 0);
   }
 
+  function settledBalanceForRow(row) {
+    const adjustedAllocation = metricValue(row, "adjustedAllocation");
+    const borrow = metricValue(row, "borrow");
+    const verifiedEmissions = metricValue(row, "verifiedEmissions");
+    const carryover = metricValue(row, "carryover");
+    const inputs = [adjustedAllocation, borrow, verifiedEmissions, carryover];
+    if (!inputs.every((value) => typeof value === "number")) return null;
+    return adjustedAllocation + borrow - verifiedEmissions - carryover;
+  }
+
   function previousBasisForRow(row, rowsByExactKey, rowsByCompanyYear) {
     const year = rowYear(row);
     const companyId = rowCompanyId(row);
@@ -392,6 +404,8 @@
     rows.forEach((row) => {
       const year = rowYear(row);
       const currentPreAllocation = metricValue(row, "preAllocation");
+      row.metrics = row.metrics && typeof row.metrics === "object" ? { ...row.metrics } : {};
+      row.metrics.settledBalance = settledBalanceForRow(row);
       const emptyComponents = {
         currentPreAllocation,
         previousAdditionalAllocation: null,
@@ -482,8 +496,16 @@
         formulaKo: "(당해년도 사전할당량 + 전년도 추가할당량 - 전년도 할당취소량) + 전년도 이월량 - 전년도 차입량 - 전년도 인증배출량",
       };
     }
+    if (payload?.metrics?.fields) {
+      payload.metrics.fields.settledBalance = {
+        label: "정산 과부족량",
+        formula: "adjustedAllocation + borrow - verifiedEmissions - carryover",
+        formulaKo: "해당 연도 조정할당량 + 해당 연도 차입량 - 해당 연도 인증배출량 - 해당 연도 이월량",
+        nullRule: "null if any dependency is null",
+      };
+    }
     payload.balanceCalculation = {
-      version: "4.0.0",
+      version: "4.1.0",
       label: "연초 과부족량",
       appliedPreAllocationFormula: "currentPreAllocation + previousAdditionalAllocation - previousCancellation",
       appliedPreAllocationFormulaKo: "당해년도 사전할당량 + 전년도 추가할당량 - 전년도 할당취소량",
@@ -695,6 +717,35 @@
     ].join("");
   }
 
+  function settledBalanceMarkup(summary) {
+    if (typeof summary.value !== "number") {
+      return '<span class="annual-value-missing" aria-label="정산 과부족량 계산 불가">—</span>';
+    }
+    const rounded = Math.round(summary.value);
+    const status = summary.partial ? "부분합" : rounded > 0 ? "과다" : rounded < 0 ? "부족" : "균형";
+    const className = summary.partial
+      ? "annual-balance-partial"
+      : rounded > 0 ? "annual-balance-positive" : rounded < 0 ? "annual-balance-negative" : "annual-balance-neutral";
+    const formatted = rounded > 0
+      ? `+${numberFormat.format(rounded)}`
+      : rounded < 0 ? `−${numberFormat.format(Math.abs(rounded))}` : "0";
+    const badge = summary.partial
+      ? '<span class="annual-partial-badge" title="일부 업체의 정산 과부족량만 합산했습니다.">부분</span>'
+      : "";
+    return [
+      `<span class="annual-balance-value ${className}" aria-label="정산 ${status} ${escapeHtml(formatted)}톤">`,
+      `<small aria-hidden="true">${status}</small><b aria-hidden="true">${escapeHtml(formatted)}</b>`,
+      badge,
+      "</span>",
+    ].join("");
+  }
+
+  function normalizeAnnualTableColspans() {
+    document.querySelectorAll("#annualRows td[colspan]").forEach((cell) => {
+      cell.colSpan = 12;
+    });
+  }
+
   function moveBalanceCellsNextToAllocationType() {
     document.querySelectorAll("#annualRows tr").forEach((row) => {
       const allocationCell = row.querySelector("td.annual-allocation-type-cell");
@@ -715,6 +766,13 @@
       const balanceCell = tableRow.querySelector("td.annual-balance-column");
       const preAllocationCell = balanceCell?.nextElementSibling;
       if (!balanceCell || !preAllocationCell) return;
+
+      let settledCell = tableRow.querySelector("td.annual-settled-balance-column");
+      if (!settledCell) {
+        settledCell = document.createElement("td");
+        settledCell.className = "annual-settled-balance-column";
+        tableRow.append(settledCell);
+      }
 
       const label = cleanText(tableRow.querySelector(".annual-tree-label")?.textContent);
       let sourceRows = [];
@@ -754,10 +812,12 @@
       preAllocationCell.classList.add("annual-preallocation-with-applied");
       preAllocationCell.append(appliedMarkup(metricSummary(sourceRows, "appliedPreAllocation")));
       balanceCell.innerHTML = balanceMarkup(metricSummary(sourceRows, "finalBalance"));
+      settledCell.innerHTML = settledBalanceMarkup(metricSummary(sourceRows, "settledBalance"));
     });
   }
 
   function refreshTableEnhancements() {
+    normalizeAnnualTableColspans();
     moveBalanceCellsNextToAllocationType();
     decorateAnnualTable();
   }

@@ -249,3 +249,19 @@
   .annual-history-table th:nth-child(2),
   .annual-history-table td:nth-child(2) { width: 270px; }
 }
+
+
+.annual-table th.annual-settled-balance-column,
+.annual-table td.annual-settled-balance-column {
+  background: #f2f6f7;
+  font-weight: 850;
+}
+
+.annual-table th.annual-settled-balance-column {
+  background: #eaf0f2;
+}
+
+.annual-row-total > td.annual-settled-balance-column { background: #e5eff0; }
+.annual-row-sector > td.annual-settled-balance-column { background: #f0f5f5; }
+.annual-row-industry > td.annual-settled-balance-column { background: #f6f9f9; }
+.annual-row-company:hover > td.annual-settled-balance-column { background: #edf4f4; }
