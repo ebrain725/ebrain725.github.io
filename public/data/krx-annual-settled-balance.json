@@ -1,5 +1,6 @@
 {
   "schemaVersion": "1.1.0",
+  "revision": "exclude-current-year-carryover-and-borrowing",
   "label": "정산 과부족량",
   "displayPosition": "업체현황(연간) 마지막 열",
   "formula": "adjustedAllocation - verifiedEmissions",
