@@ -1,0 +1,23 @@
+.annual-table td.annual-preallocation-with-applied {
+  height: 51px;
+  white-space: normal;
+  line-height: 1.15;
+}
+
+.annual-applied-preallocation {
+  display: block;
+  margin-top: 3px;
+  color: #66766e;
+  font-size: 9px;
+  font-weight: 750;
+  line-height: 1.1;
+  white-space: nowrap;
+}
+
+.annual-applied-preallocation.partial { color: #806723; }
+.annual-applied-preallocation.missing { color: var(--muted); }
+
+@media (max-width: 720px) {
+  .annual-table td.annual-preallocation-with-applied { height: 49px; }
+  .annual-applied-preallocation { font-size: 8px; }
+}
