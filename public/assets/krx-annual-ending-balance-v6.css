@@ -1,0 +1,55 @@
+/* Final year-end balance estimate shown as the last annual table column. */
+
+.annual-table {
+  min-width: 1720px;
+}
+
+.annual-table th.annual-ending-balance-column,
+.annual-table td.annual-ending-balance-column {
+  width: 142px;
+  min-width: 142px;
+  background: #eef4f5;
+  font-weight: 900;
+}
+
+.annual-table th.annual-ending-balance-column {
+  color: #415e66;
+  background: #e5eef0;
+}
+
+.annual-row-total > td.annual-ending-balance-column {
+  background: #dfeaec;
+}
+
+.annual-row-sector > td.annual-ending-balance-column {
+  background: #ebf2f3;
+}
+
+.annual-row-industry > td.annual-ending-balance-column {
+  background: #f2f6f7;
+}
+
+.annual-row-company:hover > td.annual-ending-balance-column {
+  background: #e8f0f1;
+}
+
+.annual-ending-balance-column .annual-balance-value {
+  min-width: 103px;
+}
+
+.annual-formulas .annual-ending-formula {
+  color: #415e66;
+  font-weight: 750;
+}
+
+@media (max-width: 720px) {
+  .annual-table {
+    min-width: 1660px;
+  }
+
+  .annual-table th.annual-ending-balance-column,
+  .annual-table td.annual-ending-balance-column {
+    width: 132px;
+    min-width: 132px;
+  }
+}
