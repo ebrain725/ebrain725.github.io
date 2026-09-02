@@ -1,0 +1,46 @@
+name: Correct annual settled balance formula
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "scripts/fix_annual_settled_balance_once.py"
+
+permissions:
+  contents: write
+
+jobs:
+  correct-formula:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Apply formula correction
+        run: python scripts/fix_annual_settled_balance_once.py
+
+      - name: Validate JavaScript syntax
+        run: node --check public/assets/krx-annual-balance-v2.js
+
+      - name: Validate JSON metadata
+        run: python -m json.tool public/data/krx-annual-settled-balance.json > /dev/null
+
+      - name: Commit corrected dashboard files
+        shell: bash
+        run: |
+          set -euo pipefail
+          if git diff --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add \
+            public/assets/krx-annual-balance-v2.js \
+            public/krx-annual.html \
+            public/data/krx-annual-settled-balance.json
+          git commit -m "Fix annual settled balance formula"
+          git push origin HEAD:main
