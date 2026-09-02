@@ -3,11 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="2015년부터 2025년까지 배출권 할당대상업체의 연간 할당·배출·연초 과부족 현황">
+  <meta name="description" content="2015년부터 2025년까지 배출권 할당대상업체의 유상할당 차감 연초 조달포지션">
   <title>업체현황(연간) | KRX 거래동향</title>
   <link rel="stylesheet" href="assets/krx-trends.css?v=20260902-annual-tabs-v10">
   <link rel="stylesheet" href="assets/krx-annual.css?v=20260902-annual-v2">
   <link rel="stylesheet" href="assets/krx-annual-balance-v2.css?v=20260902-settled-balance-v2">
+  <link rel="stylesheet" href="assets/krx-annual-procurement-v5.css?v=20260902-annual-procurement-v5">
   <style>
     .annual-applied-preallocation { display: none !important; }
     .annual-table td.annual-preallocation-with-applied {
@@ -25,7 +26,7 @@
     </a>
     <nav class="primary-nav" aria-label="서비스 메뉴">
       <a href="index.html?v=20260902-header-unified-v3">통합대시보드</a>
-      <a class="active" href="krx-annual.html?v=20260902-settled-balance-v2" aria-current="page">KRX 거래동향</a>
+      <a class="active" href="krx-annual.html?v=20260902-annual-procurement-v5" aria-current="page">KRX 거래동향</a>
     </nav>
   </header>
 
@@ -41,7 +42,7 @@
       <div>
         <p class="eyebrow">ANNUAL ENTITY COMPLIANCE</p>
         <h1>KRX 거래동향</h1>
-        <p>연도별 총수량과 할당대상업체의 할당·배출·연초 과부족 자료를 부문, 업종, 업체 순으로 집계합니다. <a href="data/krx-annual/source-files/">원자료 개별파일</a> · <a href="https://raw.githubusercontent.com/ebrain725/ebrain725.github.io/main/source-data/krx-annual/Policy.zip">원본 ZIP</a></p>
+        <p>연도별 총수량과 업체별 할당·배출자료를 바탕으로 유상할당분을 차감한 연초 조달포지션을 추정합니다. <a href="data/krx-annual/source-files/">원자료 개별파일</a> · <a href="https://raw.githubusercontent.com/ebrain725/ebrain725.github.io/main/source-data/krx-annual/Policy.zip">원본 ZIP</a></p>
       </div>
       <article class="annual-total-card" aria-live="polite" aria-atomic="true">
         <span>연간 공식 총수량</span>
@@ -52,7 +53,7 @@
 
     <nav class="krx-subnav" aria-label="KRX 거래동향 세부 메뉴">
       <a href="krx-trends.html?v=20260902-annual-tabs-v10">일일 매매현황</a>
-      <a class="active" href="krx-annual.html?v=20260902-settled-balance-v2" aria-current="page">업체현황(연간)</a>
+      <a class="active" href="krx-annual.html?v=20260902-annual-procurement-v5" aria-current="page">업체현황(연간)</a>
       <a href="krx-industry-monthly.html?v=20260902-industry-monthly-v1">업종 매매현황(월간)</a>
     </nav>
 
@@ -83,11 +84,11 @@
         <input id="annualCompanySearch" type="search" inputmode="search" autocomplete="off" placeholder="업체명을 입력하세요">
       </label>
       <label>
-        <span>연초 과부족 상태</span>
-        <select id="annualBalanceStatus" aria-label="연초 과부족 상태 필터">
+        <span>연초 추정 상태</span>
+        <select id="annualBalanceStatus" aria-label="연초 추정 과부족 상태 필터">
           <option value="">전체</option>
-          <option value="surplus">과다 (+)</option>
-          <option value="shortage">부족 (−)</option>
+          <option value="surplus">잉여 (+)</option>
+          <option value="shortage">조달필요 (−)</option>
           <option value="balanced">균형 (0)</option>
           <option value="unavailable">확인 불가 (—)</option>
         </select>
@@ -109,32 +110,33 @@
 
       <div class="annual-table-wrap" id="annualTableRegion" role="region" tabindex="0" aria-label="연간 업체현황 계층표, 좌우와 상하로 스크롤할 수 있습니다">
         <table class="annual-table">
-          <caption>선택 연도의 업체합계, 부문, 업종, 업체별 할당·배출·연초 및 정산 과부족 현황. 단위는 톤입니다.</caption>
+          <caption>선택 연도의 업체합계, 부문, 업종, 업체별 총 사전할당·유상분 추정·무상 사전할당 추정·연초 조달포지션. 단위는 톤입니다.</caption>
           <thead>
             <tr>
               <th scope="col" class="annual-tree-column">구분</th>
-              <th scope="col" class="annual-allocation-type-column">유상여부</th>
-              <th scope="col" class="annual-balance-column" title="당해년도 사전할당을 전년도 추가할당·할당취소로 수정한 뒤 전년도 이월·차입·인증배출량을 반영합니다.">연초 과부족량</th>
-              <th scope="col" title="원자료 사전할당량입니다.">사전할당</th>
+              <th scope="col" class="annual-allocation-type-column">할당방식</th>
+              <th scope="col" class="annual-balance-column" title="총 사전할당량에서 계획기간 유상분을 차감하고 전년도 이월·차입·인증배출량을 반영한 조달판단용 추정치입니다.">연초 추정 과부족량</th>
+              <th scope="col" title="공개 원자료의 업체별 사전할당량입니다.">총 사전할당</th>
               <th scope="col">추가할당</th>
               <th scope="col">할당취소</th>
-              <th scope="col">조정할당</th>
+              <th scope="col" title="총 사전할당량에서 계획기간 유상할당분을 차감한 추정치입니다.">무상 사전할당 추정</th>
               <th scope="col">인증배출량</th>
               <th scope="col">이월량</th>
               <th scope="col">차입량</th>
               <th scope="col">상쇄발행</th>
-              <th scope="col" class="annual-settled-balance-column" title="해당 연도의 조정할당량 − 인증배출량으로 계산한 원자료 기준 과부족입니다. 해당 연도 이월량과 차입량은 정산 처리 결과이므로 제외합니다.">정산 과부족량</th>
             </tr>
           </thead>
           <tbody id="annualRows">
-            <tr class="annual-loading-row"><td colspan="12">연간 자료를 불러오고 있습니다.</td></tr>
+            <tr class="annual-loading-row"><td colspan="11">연간 자료를 불러오고 있습니다.</td></tr>
           </tbody>
         </table>
       </div>
 
-      <div class="annual-formulas" aria-label="계산식">
-        <p>* 반영 사전할당량 = <b>당해년도 사전할당량 + 전년도 추가할당량 − 전년도 할당취소량</b>입니다.</p>
-        <p>* 연초 과부족량 = <b>(당해년도 사전할당량 + 전년도 추가할당량 − 전년도 할당취소량) + 전년도 이월량 − 전년도 차입량 − 전년도 인증배출량</b>입니다.</p>
+      <div class="annual-formulas" aria-label="연초 추정 산식">
+        <p>* 유상할당률은 원자료의 할당방식에 따라 <b>2015~2017년 0%, 2018~2020년 유상대상 3%, 2021~2025년 유상대상 10%</b>를 적용합니다.</p>
+        <p>* 유상분 추정량 = <b>총 사전할당량 × 유상할당률</b>, 무상 사전할당 추정량 = <b>총 사전할당량 − 유상분 추정량</b>입니다.</p>
+        <p>* 연초 추정 과부족량 = <b>무상 사전할당 추정량 + 전년도 이월량 − 전년도 차입량 − 전년도 인증배출량</b>입니다.</p>
+        <p class="annual-estimate-warning">* 업체별 경매 낙찰량, 장내외 매수·매도량과 기타 보유잔액은 공개 원자료가 없어 제외한 보수적 조달 추정치이며 공식 보유잔액 또는 최종 이행부족량이 아닙니다. <a href="data/krx-annual-procurement-method.json">산식 정의</a></p>
       </div>
     </section>
 
@@ -144,7 +146,7 @@
           <span class="section-tag">ENTITY YEARLY HISTORY</span>
           <h2 id="annualHistoryHeading">업체 연도별 히스토리</h2>
         </div>
-        <p>업체명을 입력하면 해당 업체의 연도별 소속과 연초 과부족 계산 근거를 표시합니다.</p>
+        <p>업체명을 입력하면 총 사전할당, 유상분, 무상분과 연초 조달포지션 계산 근거를 연도별로 표시합니다.</p>
       </div>
 
       <div class="annual-history-search" role="search" aria-label="업체 연도별 히스토리 검색">
@@ -158,23 +160,23 @@
       </div>
       <p class="annual-history-status" id="annualHistoryStatus" role="status" aria-live="polite">업체 자료를 불러오고 있습니다.</p>
 
-      <div class="annual-history-table-wrap" role="region" tabindex="0" aria-label="선택 업체의 연도별 소속과 연초 과부족 히스토리 표">
+      <div class="annual-history-table-wrap" role="region" tabindex="0" aria-label="선택 업체의 연도별 유상할당 차감 조달포지션 히스토리 표">
         <table class="annual-history-table">
-          <caption>선택 업체의 연도별 소속과 연초 과부족량 계산 항목. 단위는 톤입니다.</caption>
+          <caption>선택 업체의 연도별 총 사전할당, 유상분, 무상분과 연초 추정 과부족량 계산 항목. 단위는 톤입니다.</caption>
           <thead>
             <tr>
               <th scope="col">연도</th>
               <th scope="col">업체</th>
               <th scope="col">부문</th>
               <th scope="col">업종</th>
-              <th scope="col">사전할당<br>원자료</th>
-              <th scope="col">반영<br>사전할당</th>
-              <th scope="col">전년도<br>추가할당</th>
-              <th scope="col">전년도<br>할당취소</th>
+              <th scope="col">총<br>사전할당</th>
+              <th scope="col">할당<br>방식</th>
+              <th scope="col">유상분<br>추정</th>
+              <th scope="col">무상 사전<br>할당 추정</th>
               <th scope="col">전년도<br>이월량</th>
               <th scope="col">전년도<br>차입량</th>
               <th scope="col">전년도<br>인증배출량</th>
-              <th scope="col" class="annual-history-balance-heading">연초<br>과부족량</th>
+              <th scope="col" class="annual-history-balance-heading">연초 추정<br>과부족량</th>
             </tr>
           </thead>
           <tbody id="annualHistoryRows">
@@ -189,6 +191,7 @@
     <p>시장 판단을 지원하는 참고용 자료입니다. 공식 원문과 통계를 함께 확인하세요.</p>
   </footer>
   <script src="assets/krx-annual-balance-v2.js?v=20260902-settled-balance-v2" defer></script>
-  <script src="assets/krx-annual.js?v=20260902-settled-balance-v2" defer></script>
+  <script src="assets/krx-annual-procurement-v5.js?v=20260902-annual-procurement-v5" defer></script>
+  <script src="assets/krx-annual.js?v=20260902-annual-procurement-v5" defer></script>
 </body>
 </html>
