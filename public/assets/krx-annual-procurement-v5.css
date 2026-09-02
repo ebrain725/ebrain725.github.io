@@ -1,0 +1,151 @@
+/* Annual procurement-position estimate (paid-allocation adjusted). */
+
+.annual-table th.annual-allocation-type-column,
+.annual-table td.annual-allocation-type-cell {
+  width: 150px;
+  min-width: 150px;
+}
+
+.annual-allocation-method {
+  display: grid;
+  justify-items: center;
+  gap: 3px;
+  min-width: 0;
+}
+
+.annual-allocation-method .annual-allocation-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 66px;
+  min-height: 23px;
+  padding: 3px 8px;
+  border: 1px solid #cfdad5;
+  border-radius: 999px;
+  color: #52615a;
+  background: #f7faf8;
+  font-size: 9px;
+  font-weight: 900;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.annual-allocation-method .annual-allocation-badge.paid {
+  color: #795817;
+  border-color: #ddc983;
+  background: #fff8df;
+}
+
+.annual-allocation-method .annual-allocation-badge.free {
+  color: #176047;
+  border-color: #b9d6ca;
+  background: #eef8f4;
+}
+
+.annual-allocation-method .annual-allocation-badge.mixed {
+  color: #5b4a77;
+  border-color: #cfc2df;
+  background: #f6f1fb;
+}
+
+.annual-allocation-method .annual-allocation-badge.unknown {
+  color: #6d7671;
+  border-color: #d7dedb;
+  background: #f6f7f6;
+}
+
+.annual-allocation-method small {
+  display: block;
+  max-width: 138px;
+  overflow: hidden;
+  color: #6f7d76;
+  font-size: 8px;
+  font-weight: 750;
+  line-height: 1.25;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.annual-table .annual-balance-column {
+  min-width: 128px;
+  background: #fbf8ee;
+}
+
+.annual-table th.annual-balance-column {
+  background: #f5f0e1;
+}
+
+.annual-table th.annual-settled-balance-column,
+.annual-table td.annual-settled-balance-column {
+  display: none !important;
+}
+
+.annual-table .annual-adjusted-column {
+  color: #1f4e3d;
+  font-weight: 900;
+  background: #f5faf7;
+}
+
+.annual-formulas .annual-estimate-warning {
+  color: #725b18;
+  font-weight: 750;
+}
+
+.annual-formulas a {
+  color: var(--green-dark);
+  font-weight: 800;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.annual-history-table {
+  min-width: 1670px;
+}
+
+.annual-history-table th:nth-child(2),
+.annual-history-table td:nth-child(2) {
+  width: 300px;
+}
+
+.annual-history-table th:nth-child(4),
+.annual-history-table td:nth-child(4) {
+  width: 220px;
+}
+
+.annual-history-table th:nth-child(6),
+.annual-history-table td:nth-child(6) {
+  width: 105px;
+  text-align: center;
+}
+
+.annual-history-paid {
+  color: #7c5c18 !important;
+  font-weight: 850;
+  background: #fffaf0 !important;
+}
+
+.annual-history-applied {
+  color: #1f4e3d !important;
+  font-weight: 900;
+  background: #f4faf7 !important;
+}
+
+.annual-history-balance-heading,
+.annual-history-balance {
+  background: #f5f0e1 !important;
+  font-weight: 900;
+}
+
+@media (max-width: 720px) {
+  .annual-table th.annual-allocation-type-column,
+  .annual-table td.annual-allocation-type-cell {
+    width: 134px;
+    min-width: 134px;
+  }
+
+  .annual-allocation-method small {
+    max-width: 122px;
+    font-size: 7px;
+  }
+}
