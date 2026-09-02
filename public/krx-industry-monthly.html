@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="배출권 시장의 월별 부문·업종별 매도량, 매수량, 순매수량 현황">
+  <title>업종 매매현황(월간) | KRX 거래동향</title>
+  <link rel="stylesheet" href="assets/krx-trends.css?v=20260902-annual-tabs-v10">
+  <link rel="stylesheet" href="assets/krx-industry-monthly.css?v=20260902-industry-monthly-v1">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html?v=20260902-header-unified-v3" aria-label="ETS 대시보드 홈">
+      <span class="brand-mark">E</span>
+      <span><b>ETS LIVE DASHBOARD</b><small>Korea Emissions Market</small></span>
+    </a>
+    <nav class="primary-nav" aria-label="서비스 메뉴">
+      <a href="index.html?v=20260902-header-unified-v3">통합대시보드</a>
+      <a class="active" href="krx-industry-monthly.html?v=20260902-industry-monthly-v1" aria-current="page">KRX 거래동향</a>
+    </nav>
+  </header>
+
+  <noscript>
+    <style>.industry-dashboard{display:none!important}</style>
+    <section class="industry-noscript-alert" role="alert">
+      <p>업종 매매현황 표를 보려면 JavaScript를 켜 주세요.</p>
+    </section>
+  </noscript>
+
+  <main class="trend-dashboard industry-dashboard" id="industryDashboard" aria-busy="true">
+    <section class="page-intro industry-intro">
+      <div>
+        <p class="eyebrow">MONTHLY INDUSTRY TRADING FLOW</p>
+        <h1>KRX 거래동향</h1>
+        <p>월별 장내 매매자료를 기준으로 할당대상업체의 매도·매수 흐름을 부문과 업종 순으로 집계합니다.</p>
+      </div>
+      <article class="industry-coverage-card" aria-live="polite" aria-atomic="true">
+        <span>자료 범위</span>
+        <strong id="industryCoverage">—</strong>
+        <small id="industryCoverageDetail">자료 확인 중</small>
+      </article>
+    </section>
+
+    <nav class="krx-subnav" aria-label="KRX 거래동향 세부 메뉴">
+      <a href="krx-trends.html?v=20260902-industry-monthly-nav-v1">일일 매매현황</a>
+      <a href="krx-annual.html?v=20260902-industry-monthly-nav-v1">업체현황(연간)</a>
+      <a class="active" href="krx-industry-monthly.html?v=20260902-industry-monthly-v1" aria-current="page">업종 매매현황(월간)</a>
+    </nav>
+
+    <section class="status-alert" id="industryStatusAlert" role="status" aria-live="polite" aria-atomic="true" hidden>
+      <strong id="industryStatusTitle"></strong>
+      <p id="industryStatusDetail"></p>
+    </section>
+
+    <section class="industry-filter-panel" aria-label="업종 매매현황 조회 조건">
+      <label>
+        <span>연도</span>
+        <select id="industryYear" aria-label="조회 연도"></select>
+      </label>
+      <label>
+        <span>월</span>
+        <select id="industryMonth" aria-label="조회 월"></select>
+      </label>
+      <label>
+        <span>부문</span>
+        <select id="industrySector" aria-label="부문 필터">
+          <option value="">전체 부문</option>
+        </select>
+      </label>
+      <label class="industry-search-field">
+        <span>업종 검색</span>
+        <input id="industrySearch" type="search" inputmode="search" autocomplete="off" placeholder="업종명을 입력하세요">
+      </label>
+      <label>
+        <span>순매매 상태</span>
+        <select id="industryNetStatus" aria-label="순매매 상태 필터">
+          <option value="">전체</option>
+          <option value="buy">순매수 (+)</option>
+          <option value="sell">순매도 (−)</option>
+          <option value="balanced">균형 (0)</option>
+        </select>
+      </label>
+      <button type="button" class="industry-reset-button" id="industryResetFilters">필터 초기화</button>
+    </section>
+
+    <section class="trend-kpis industry-kpis" aria-label="선택 월 요약" aria-live="polite" aria-atomic="true">
+      <article>
+        <span>전체 거래량</span>
+        <strong id="industryTotalVolume">—</strong>
+        <small id="industryTotalVolumeMonth">선택 월 확인 중</small>
+      </article>
+      <article id="allocatedNetCard">
+        <span>할당대상업체 순매수</span>
+        <strong id="allocatedNetVolume">—</strong>
+        <small>매수량 − 매도량</small>
+      </article>
+      <article class="positive-card">
+        <span>최대 순매수 업종</span>
+        <strong id="topIndustryBuyer">—</strong>
+        <small id="topIndustryBuyerValue">—</small>
+      </article>
+      <article class="negative-card">
+        <span>최대 순매도 업종</span>
+        <strong id="topIndustrySeller">—</strong>
+        <small id="topIndustrySellerValue">—</small>
+      </article>
+    </section>
+
+    <section class="panel industry-table-panel" aria-labelledby="industryTableHeading">
+      <div class="panel-head industry-panel-head">
+        <div>
+          <span class="section-tag">MONTHLY INDUSTRY STATUS</span>
+          <h2 id="industryTableHeading">업종별 월간 매매현황</h2>
+        </div>
+        <div class="industry-table-actions">
+          <span id="industryResultCount" role="status" aria-live="polite">자료를 불러오고 있습니다.</span>
+          <button type="button" id="industryExpandAll" aria-pressed="false" disabled>계층 전체 펼치기</button>
+        </div>
+      </div>
+
+      <div class="industry-table-wrap" id="industryTableRegion" role="region" tabindex="0" aria-label="월별 업종 매매현황 계층표, 좌우와 상하로 스크롤할 수 있습니다">
+        <table class="industry-table">
+          <caption>선택 월의 전체, 할당대상업체, 부문, 업종, 할당업체외 매도량·매수량·순매수량. 단위는 톤입니다.</caption>
+          <thead>
+            <tr>
+              <th scope="col" class="industry-tree-column">구분</th>
+              <th scope="col">매도량</th>
+              <th scope="col">매수량</th>
+              <th scope="col" class="industry-net-column" title="매수량에서 매도량을 차감한 값입니다.">순매수량</th>
+            </tr>
+          </thead>
+          <tbody id="industryRows">
+            <tr class="industry-loading-row"><td colspan="4">월별 업종 매매자료를 불러오고 있습니다.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="industry-formulas" aria-label="계산식과 분류 기준">
+        <p>* 순매수량 = <b>매수량 − 매도량</b>입니다.</p>
+        <p>* 할당업체외는 <b>시장조성자 및 기타 시장참여자</b>이며, 부문·업종 구분은 제공되지 않습니다.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>시장 판단을 지원하는 참고용 자료입니다. 공식 원문과 통계를 함께 확인하세요.</p>
+  </footer>
+  <script src="assets/krx-industry-monthly.js?v=20260902-industry-monthly-v1" defer></script>
+</body>
+</html>
