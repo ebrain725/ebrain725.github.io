@@ -1,0 +1,291 @@
+.industry-cumulative-panel {
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+
+.industry-cumulative-head {
+  align-items: center;
+  gap: 18px;
+}
+
+.industry-cumulative-head > strong {
+  color: var(--green-dark);
+  font-size: 11px;
+  font-weight: 850;
+  text-align: right;
+}
+
+.industry-cumulative-controls {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px 20px;
+  padding: 14px 17px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background: #f8faf9;
+}
+
+.industry-cumulative-period {
+  display: grid;
+  gap: 5px;
+}
+
+.industry-cumulative-control-label,
+.industry-cumulative-range label > span {
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.industry-cumulative-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.industry-cumulative-buttons button,
+.industry-cumulative-range button {
+  min-height: 36px;
+  padding: 0 13px;
+  border: 1px solid #cbd8d2;
+  border-radius: 8px;
+  color: #506058;
+  background: #fff;
+  cursor: pointer;
+  font-size: 10px;
+  font-weight: 850;
+  white-space: nowrap;
+}
+
+.industry-cumulative-buttons button:hover,
+.industry-cumulative-range button:hover {
+  color: var(--green-dark);
+  border-color: #9dbbb0;
+}
+
+.industry-cumulative-buttons button.active {
+  color: #fff;
+  border-color: var(--green);
+  background: var(--green);
+  box-shadow: 0 3px 9px rgba(12, 124, 89, .15);
+}
+
+.industry-cumulative-range {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.industry-cumulative-range label {
+  display: grid;
+  gap: 5px;
+}
+
+.industry-cumulative-range input {
+  width: 142px;
+  height: 36px;
+  padding: 0 10px;
+  border: 1px solid #cfd9d4;
+  border-radius: 8px;
+  color: var(--ink);
+  background: #fff;
+  font-size: 10px;
+}
+
+.industry-cumulative-range input:focus {
+  border-color: var(--green);
+  outline: 3px solid rgba(12, 124, 89, .12);
+}
+
+.industry-cumulative-separator {
+  align-self: center;
+  margin-top: 16px;
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.industry-cumulative-chart-wrap {
+  width: 100%;
+  overflow-x: auto;
+  padding: 10px 10px 0;
+  background: #fff;
+}
+
+.industry-cumulative-chart-wrap:focus-within {
+  outline: 3px solid rgba(12, 124, 89, .22);
+  outline-offset: -3px;
+}
+
+#industryCumulativeChart {
+  display: block;
+  width: 100%;
+  min-width: 760px;
+  height: auto;
+  touch-action: pan-y;
+}
+
+.industry-cumulative-grid {
+  stroke: #e6ece9;
+  stroke-width: 1;
+}
+
+.industry-cumulative-zero {
+  stroke: #aab8b1;
+  stroke-width: 1.4;
+}
+
+.industry-cumulative-axis,
+.industry-cumulative-unit {
+  fill: #748079;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.industry-cumulative-unit {
+  font-size: 9px;
+  font-weight: 850;
+}
+
+.industry-cumulative-line {
+  fill: none;
+  stroke-width: 2.2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
+}
+
+.industry-cumulative-total-line {
+  stroke-width: 3.2;
+}
+
+.industry-cumulative-end {
+  stroke: #fff;
+  stroke-width: 1.5;
+  vector-effect: non-scaling-stroke;
+}
+
+.industry-cumulative-empty {
+  fill: var(--muted);
+  font-size: 12px;
+  font-weight: 750;
+}
+
+.industry-cumulative-legend {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+  padding: 8px 17px 10px;
+  border-top: 1px solid #edf1ef;
+  background: #fff;
+}
+
+.industry-cumulative-legend-item {
+  display: inline-grid;
+  grid-template-columns: 22px auto auto;
+  align-items: center;
+  gap: 6px;
+  color: #53625b;
+  font-size: 9px;
+}
+
+.industry-cumulative-legend-item i {
+  width: 21px;
+  height: 0;
+  border-top: 3px solid var(--series-color);
+}
+
+.industry-cumulative-legend-item b {
+  font-weight: 800;
+}
+
+.industry-cumulative-legend-item em {
+  font-style: normal;
+  font-weight: 900;
+}
+
+.industry-cumulative-legend-item em.positive { color: var(--trade-positive); }
+.industry-cumulative-legend-item em.negative { color: var(--trade-negative); }
+.industry-cumulative-legend-item em.neutral { color: #58655f; }
+
+.industry-cumulative-note {
+  margin: 0;
+  padding: 0 17px 14px;
+  color: var(--muted);
+  background: #fff;
+  font-size: 9px;
+  line-height: 1.55;
+}
+
+.industry-cumulative-hover-line {
+  stroke: #75877e;
+  stroke-width: 1;
+  stroke-dasharray: 3 3;
+}
+
+.industry-cumulative-hover-point {
+  stroke: #fff;
+  stroke-width: 2;
+}
+
+.industry-cumulative-tooltip rect {
+  fill: rgba(23, 34, 29, .96);
+  stroke: rgba(255, 255, 255, .12);
+  stroke-width: 1;
+  filter: drop-shadow(0 8px 18px rgba(22, 35, 29, .18));
+}
+
+.industry-cumulative-tooltip-date {
+  fill: #fff;
+  font-size: 11px;
+  font-weight: 900;
+}
+
+.industry-cumulative-tooltip-rule {
+  stroke: rgba(255, 255, 255, .16);
+  stroke-width: 1;
+}
+
+.industry-cumulative-tooltip-heading {
+  fill: #aebbb5;
+  font-size: 8px;
+  font-weight: 800;
+}
+
+.industry-cumulative-tooltip-label {
+  fill: #e9efec;
+  font-size: 9px;
+  font-weight: 750;
+}
+
+.industry-cumulative-tooltip-value {
+  fill: #e9efec;
+  font-size: 9px;
+  font-weight: 900;
+}
+
+.industry-cumulative-tooltip-value.positive { fill: #70d1ad; }
+.industry-cumulative-tooltip-value.negative { fill: #f09891; }
+.industry-cumulative-tooltip-value.neutral { fill: #c7d0cc; }
+
+@media (max-width: 820px) {
+  .industry-cumulative-head { align-items: flex-start; }
+  .industry-cumulative-head > strong { text-align: left; }
+  .industry-cumulative-controls { align-items: stretch; }
+  .industry-cumulative-range { width: 100%; }
+  .industry-cumulative-range label { flex: 1 1 130px; }
+  .industry-cumulative-range input { width: 100%; }
+}
+
+@media (max-width: 560px) {
+  .industry-cumulative-controls { padding: 12px 13px; }
+  .industry-cumulative-buttons { display: grid; grid-template-columns: repeat(3, 1fr); }
+  .industry-cumulative-buttons button { padding: 0 8px; }
+  .industry-cumulative-range button { width: 100%; }
+  .industry-cumulative-separator { display: none; }
+  .industry-cumulative-legend { padding: 8px 13px 10px; }
+  .industry-cumulative-note { padding: 0 13px 13px; }
+}
