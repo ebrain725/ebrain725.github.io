@@ -7,11 +7,7 @@
   <title>업종 매매현황(월간) | KRX 거래동향</title>
   <link rel="stylesheet" href="assets/krx-trends.css?v=20260902-annual-tabs-v10">
   <link rel="stylesheet" href="assets/krx-industry-monthly.css?v=20260902-industry-monthly-v1">
-  <link rel="stylesheet" href="assets/krx-industry-monthly-cumulative.css?v=20260902-industry-cumulative-v1">
-  <style>
-    .industry-cumulative-legend-item { grid-template-columns: 22px auto !important; }
-    .industry-cumulative-legend-item em { display: none !important; }
-  </style>
+  <link rel="stylesheet" href="assets/krx-industry-monthly-cumulative.css?v=20260902-industry-cumulative-v4">
 </head>
 <body>
   <header class="topbar">
@@ -21,7 +17,7 @@
     </a>
     <nav class="primary-nav" aria-label="서비스 메뉴">
       <a href="index.html?v=20260902-header-unified-v3">통합대시보드</a>
-      <a class="active" href="krx-industry-monthly.html?v=20260902-industry-cumulative-legend-v3" aria-current="page">KRX 거래동향</a>
+      <a class="active" href="krx-industry-monthly.html?v=20260902-industry-cumulative-v4" aria-current="page">KRX 거래동향</a>
     </nav>
   </header>
 
@@ -49,7 +45,7 @@
     <nav class="krx-subnav" aria-label="KRX 거래동향 세부 메뉴">
       <a href="krx-trends.html?v=20260902-industry-monthly-nav-v1">일일 매매현황</a>
       <a href="krx-annual.html?v=20260902-industry-monthly-nav-v1">업체현황(연간)</a>
-      <a class="active" href="krx-industry-monthly.html?v=20260902-industry-cumulative-legend-v3" aria-current="page">업종 매매현황(월간)</a>
+      <a class="active" href="krx-industry-monthly.html?v=20260902-industry-cumulative-v4" aria-current="page">업종 매매현황(월간)</a>
     </nav>
 
     <section class="status-alert" id="industryStatusAlert" role="status" aria-live="polite" aria-atomic="true" hidden>
@@ -145,6 +141,24 @@
         </div>
       </div>
 
+      <section class="industry-cumulative-kpis" aria-label="선택기간 누적 요약" aria-live="polite" aria-atomic="true">
+        <article id="industryCumulativeTotalCard">
+          <span>할당대상업체 누적 순매수</span>
+          <strong id="industryCumulativeTotal">—</strong>
+          <small>선택기간 합계</small>
+        </article>
+        <article class="positive-card">
+          <span>최대 누적 순매수 부문</span>
+          <strong id="industryCumulativeBuyer">—</strong>
+          <small id="industryCumulativeBuyerValue">—</small>
+        </article>
+        <article class="negative-card">
+          <span>최대 누적 순매도 부문</span>
+          <strong id="industryCumulativeSeller">—</strong>
+          <small id="industryCumulativeSellerValue">—</small>
+        </article>
+      </section>
+
       <div class="industry-cumulative-chart-wrap">
         <svg id="industryCumulativeChart" viewBox="0 0 960 390" role="img" tabindex="0" aria-labelledby="industryCumulativeChartTitle" aria-describedby="industryCumulativeChartDesc industryCumulativeHoverStatus">
           <title id="industryCumulativeChartTitle">부문별 누적 순매수량 추이</title>
@@ -152,8 +166,19 @@
         </svg>
       </div>
       <p class="sr-only" id="industryCumulativeHoverStatus" aria-live="polite"></p>
-      <div class="industry-cumulative-legend" id="industryCumulativeLegend" aria-label="부문별 선 범례"></div>
-      <p class="industry-cumulative-note" id="industryCumulativeNote">각 월의 업종별 순매수량을 부문으로 합산하여 선택기간 시작점을 0으로 누적합니다.</p>
+
+      <div class="industry-cumulative-legend-bar">
+        <div class="industry-cumulative-legend" id="industryCumulativeLegend" aria-label="부문별 선 표시 선택"></div>
+        <div class="industry-cumulative-legend-actions" role="group" aria-label="누적 그래프 선 일괄 선택">
+          <button type="button" id="industryCumulativeShowAll">모두 보기</button>
+          <button type="button" id="industryCumulativeShowTotal">전체만</button>
+        </div>
+      </div>
+      <p class="industry-cumulative-note" id="industryCumulativeNote">각 월의 순매수량을 부문별로 합산하여 선택기간 시작점을 0으로 누적합니다.</p>
+      <p class="industry-cumulative-interaction-hint">
+        범례를 눌러 부문별 선을 표시하거나 숨길 수 있습니다. 그래프 선을 클릭하면 해당 월·부문이 아래 표에 적용됩니다.
+        <span id="industryCumulativeActionStatus" role="status" aria-live="polite"></span>
+      </p>
     </section>
 
     <section class="panel industry-table-panel" aria-labelledby="industryTableHeading">
@@ -196,7 +221,6 @@
     <p>시장 판단을 지원하는 참고용 자료입니다. 공식 원문과 통계를 함께 확인하세요.</p>
   </footer>
   <script src="assets/krx-industry-monthly.js?v=20260902-industry-monthly-v1" defer></script>
-  <script src="assets/krx-industry-monthly-cumulative.js?v=20260902-industry-cumulative-v2" defer></script>
-  <script src="assets/krx-industry-monthly-legend-labels-only.js?v=20260902-industry-cumulative-legend-v3" defer></script>
+  <script src="assets/krx-industry-monthly-cumulative.js?v=20260902-industry-cumulative-v4" defer></script>
 </body>
 </html>
