@@ -1,0 +1,62 @@
+{
+  "schemaVersion": "1.0.0",
+  "revision": "paid-allocation-adjusted-annual-start-estimate",
+  "label": "연초 추정 과부족량",
+  "purpose": "업체별 총 사전할당량에서 계획기간 유상할당분을 차감하여 연초 기준 조달 필요량을 보수적으로 추정",
+  "yearRange": {
+    "from": 2015,
+    "to": 2025
+  },
+  "paidAllocationRates": [
+    {
+      "period": "2015-2017",
+      "paidSubjectRate": 0,
+      "freeSubjectRate": 0
+    },
+    {
+      "period": "2018-2020",
+      "paidSubjectRate": 0.03,
+      "freeSubjectRate": 0
+    },
+    {
+      "period": "2021-2025",
+      "paidSubjectRate": 0.1,
+      "freeSubjectRate": 0
+    }
+  ],
+  "fields": {
+    "estimatedPaidAllocation": {
+      "label": "유상분 추정량",
+      "formula": "preAllocation * paidAllocationRate",
+      "formulaKo": "총 사전할당량 × 계획기간 유상할당률",
+      "rounding": "nearest integer tonne"
+    },
+    "estimatedFreeAllocation": {
+      "label": "무상 사전할당 추정량",
+      "formula": "preAllocation - estimatedPaidAllocation",
+      "formulaKo": "총 사전할당량 - 유상분 추정량"
+    },
+    "annualStartEstimatedBalance": {
+      "label": "연초 추정 과부족량",
+      "formula": "estimatedFreeAllocation + previousCarryover - previousBorrow - previousVerifiedEmissions",
+      "formulaKo": "무상 사전할당 추정량 + 전년도 이월량 - 전년도 차입량 - 전년도 인증배출량"
+    }
+  },
+  "interpretation": {
+    "positive": "잉여 추정",
+    "negative": "조달 필요 추정",
+    "zero": "균형 추정",
+    "null": "필수 공개 원자료 부족으로 계산 불가"
+  },
+  "excluded": [
+    "업체별 유상경매 낙찰량",
+    "장내 매수·매도량",
+    "장외 매수·매도량",
+    "기타 보유잔액",
+    "당해년도 추가할당량",
+    "당해년도 할당취소량"
+  ],
+  "disclaimer": "공개 원자료만 사용한 조달판단용 보수적 추정치이며 공식 보유잔액 또는 최종 이행부족량이 아닙니다.",
+  "sourceData": "data/krx-annual.json",
+  "unit": "tCO2eq"
+}
