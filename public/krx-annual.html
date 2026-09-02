@@ -7,7 +7,15 @@
   <title>업체현황(연간) | KRX 거래동향</title>
   <link rel="stylesheet" href="assets/krx-trends.css?v=20260902-annual-tabs-v10">
   <link rel="stylesheet" href="assets/krx-annual.css?v=20260902-annual-v2">
-  <link rel="stylesheet" href="assets/krx-annual-balance-v2.css?v=20260902-company-history-v7">
+  <link rel="stylesheet" href="assets/krx-annual-balance-v2.css?v=20260902-company-history-v8">
+  <style>
+    .annual-applied-preallocation { display: none !important; }
+    .annual-table td.annual-preallocation-with-applied {
+      height: auto;
+      white-space: nowrap;
+      line-height: normal;
+    }
+  </style>
 </head>
 <body>
   <header class="topbar">
@@ -17,7 +25,7 @@
     </a>
     <nav class="primary-nav" aria-label="서비스 메뉴">
       <a href="index.html?v=20260902-header-unified-v3">통합대시보드</a>
-      <a class="active" href="krx-annual.html?v=20260902-company-history-v7" aria-current="page">KRX 거래동향</a>
+      <a class="active" href="krx-annual.html?v=20260902-company-history-v8" aria-current="page">KRX 거래동향</a>
     </nav>
   </header>
 
@@ -44,7 +52,7 @@
 
     <nav class="krx-subnav" aria-label="KRX 거래동향 세부 메뉴">
       <a href="krx-trends.html?v=20260902-annual-tabs-v10">일일 매매현황</a>
-      <a class="active" href="krx-annual.html?v=20260902-company-history-v7" aria-current="page">업체현황(연간)</a>
+      <a class="active" href="krx-annual.html?v=20260902-company-history-v8" aria-current="page">업체현황(연간)</a>
     </nav>
 
     <section class="status-alert" id="annualStatusAlert" role="status" aria-live="polite" aria-atomic="true" hidden>
@@ -106,7 +114,7 @@
               <th scope="col" class="annual-tree-column">구분</th>
               <th scope="col" class="annual-allocation-type-column">유상여부</th>
               <th scope="col" class="annual-balance-column" title="당해년도 사전할당을 전년도 추가할당·할당취소로 수정한 뒤 전년도 이월·차입·인증배출량을 반영합니다.">연초 과부족량</th>
-              <th scope="col" title="첫 줄은 원자료 사전할당량, 괄호는 전년도 추가할당·할당취소 반영값입니다.">사전할당</th>
+              <th scope="col" title="원자료 사전할당량입니다.">사전할당</th>
               <th scope="col">추가할당</th>
               <th scope="col">할당취소</th>
               <th scope="col">조정할당</th>
@@ -123,7 +131,7 @@
       </div>
 
       <div class="annual-formulas" aria-label="계산식">
-        <p>* 사전할당 첫 줄은 원자료이며, 하단 괄호값은 <b>당해년도 사전할당량 + 전년도 추가할당량 − 전년도 할당취소량</b>입니다.</p>
+        <p>* 반영 사전할당량 = <b>당해년도 사전할당량 + 전년도 추가할당량 − 전년도 할당취소량</b>입니다.</p>
         <p>* 연초 과부족량 = <b>(당해년도 사전할당량 + 전년도 추가할당량 − 전년도 할당취소량) + 전년도 이월량 − 전년도 차입량 − 전년도 인증배출량</b>입니다.</p>
       </div>
     </section>
@@ -178,7 +186,7 @@
   <footer>
     <p>시장 판단을 지원하는 참고용 자료입니다. 공식 원문과 통계를 함께 확인하세요.</p>
   </footer>
-  <script src="assets/krx-annual-balance-v2.js?v=20260902-company-history-v7" defer></script>
-  <script src="assets/krx-annual.js?v=20260902-company-history-v7" defer></script>
+  <script src="assets/krx-annual-balance-v2.js?v=20260902-company-history-v8" defer></script>
+  <script src="assets/krx-annual.js?v=20260902-company-history-v8" defer></script>
 </body>
 </html>
