@@ -1,0 +1,16 @@
+#industryCumulativeBuyerValue,
+#industryCumulativeSellerValue {
+  min-height: 2.7em;
+  overflow: visible;
+  line-height: 1.45;
+  text-overflow: clip;
+  white-space: normal;
+  word-break: keep-all;
+}
+
+@media (max-width: 820px) {
+  #industryCumulativeBuyerValue,
+  #industryCumulativeSellerValue {
+    min-height: 0;
+  }
+}
