@@ -108,6 +108,41 @@ button:focus-visible, input:focus-visible, select:focus-visible, a:focus-visible
 .sync-metric b { display: block; margin-top: 2px; color: #27352f; font-size: 11px; line-height: 1.35; }
 .sync-metric small { display: block; margin-top: 2px; color: var(--muted); font-size: 8px; line-height: 1.35; }
 
+.krx-subnav {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  width: fit-content;
+  max-width: 100%;
+  margin: -5px 0 22px;
+  padding: 5px;
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #edf3f0;
+}
+.krx-subnav a {
+  min-height: 39px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 17px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  color: #63706a;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+.krx-subnav a:hover { color: var(--green-dark); background: rgba(255, 255, 255, .62); }
+.krx-subnav a.active {
+  color: var(--green-dark);
+  border-color: #d8e5df;
+  background: #fff;
+  box-shadow: 0 3px 10px rgba(29, 59, 48, .08);
+}
+
 .status-alert {
   display: grid;
   grid-template-columns: max-content minmax(0, 1fr);
@@ -348,6 +383,8 @@ footer { padding: 24px 5vw 38px; color: #7a8681; text-align: center; font-size: 
   .sync-label, .sync-heading strong { font-size: 9px; }
   .sync-metrics { gap: 7px; margin-top: 7px; padding-top: 7px; }
   .sync-metric b { font-size: 10px; }
+  .krx-subnav { width: 100%; margin-top: -4px; }
+  .krx-subnav a { flex: 1 0 auto; min-height: 37px; padding-inline: 13px; font-size: 11px; }
   .status-alert { grid-template-columns: 1fr; margin-top: -10px; }
   .control-panel { align-items: stretch; flex-direction: column; }
   .period-buttons button { flex: 1; min-width: 72px; }

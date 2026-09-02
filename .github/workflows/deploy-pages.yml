@@ -44,6 +44,10 @@ jobs:
           echo "krx_css=$(sha256sum public/assets/krx-trends.css | awk '{print $1}')" >> "$GITHUB_OUTPUT"
           echo "krx_js=$(sha256sum public/assets/krx-trends.js | awk '{print $1}')" >> "$GITHUB_OUTPUT"
           echo "krx_index=$(sha256sum public/data/krx-daily/index.json | awk '{print $1}')" >> "$GITHUB_OUTPUT"
+          echo "krx_annual_html=$(sha256sum public/krx-annual.html | awk '{print $1}')" >> "$GITHUB_OUTPUT"
+          echo "krx_annual_css=$(sha256sum public/assets/krx-annual.css | awk '{print $1}')" >> "$GITHUB_OUTPUT"
+          echo "krx_annual_js=$(sha256sum public/assets/krx-annual.js | awk '{print $1}')" >> "$GITHUB_OUTPUT"
+          echo "krx_annual_data=$(sha256sum public/data/krx-annual.json | awk '{print $1}')" >> "$GITHUB_OUTPUT"
 
       - name: 공개 파일 묶기
         uses: actions/upload-pages-artifact@v4
@@ -65,6 +69,10 @@ jobs:
           KRX_CSS_SHA256: ${{ steps.source_hashes.outputs.krx_css }}
           KRX_JS_SHA256: ${{ steps.source_hashes.outputs.krx_js }}
           KRX_INDEX_SHA256: ${{ steps.source_hashes.outputs.krx_index }}
+          KRX_ANNUAL_HTML_SHA256: ${{ steps.source_hashes.outputs.krx_annual_html }}
+          KRX_ANNUAL_CSS_SHA256: ${{ steps.source_hashes.outputs.krx_annual_css }}
+          KRX_ANNUAL_JS_SHA256: ${{ steps.source_hashes.outputs.krx_annual_js }}
+          KRX_ANNUAL_DATA_SHA256: ${{ steps.source_hashes.outputs.krx_annual_data }}
         run: |
           set -euo pipefail
           page_root="${PAGE_URL%/}"
@@ -101,3 +109,7 @@ jobs:
           verify_public_file "assets/krx-trends.css" "$KRX_CSS_SHA256"
           verify_public_file "assets/krx-trends.js" "$KRX_JS_SHA256"
           verify_public_file "data/krx-daily/index.json" "$KRX_INDEX_SHA256"
+          verify_public_file "krx-annual.html" "$KRX_ANNUAL_HTML_SHA256"
+          verify_public_file "assets/krx-annual.css" "$KRX_ANNUAL_CSS_SHA256"
+          verify_public_file "assets/krx-annual.js" "$KRX_ANNUAL_JS_SHA256"
+          verify_public_file "data/krx-annual.json" "$KRX_ANNUAL_DATA_SHA256"

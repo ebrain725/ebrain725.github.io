@@ -8,6 +8,7 @@
 - `tools/admin.html`: PC에서만 여는 관리자 도구
 - `config/settings.json`: 정책 검색 키워드와 RSS 주소
 - `scripts/sync_krx.py`: KRX 배출권 시세 일별 자동 누적
+- `scripts/build_krx_annual.py`: 2015~2025 KRX 업체현황 연간자료 정규화
 - `scripts/sync_policies.py`: 기후부 공식자료와 배출권시장 뉴스 자동수집
 - `.github/workflows/`: 자동수집 및 Pages 배포 설정
 - `integrations/publish_to_dashboard.py`: 텔레그램 브리핑 게시 연동기
@@ -16,6 +17,9 @@
 
 - 대시보드: `https://ebrain725.github.io`
 - 배출권 시세: `https://ebrain725.github.io/data/prices.csv`
+- KRX 일일 매매현황: `https://ebrain725.github.io/krx-trends.html`
+- KRX 업체현황(연간): `https://ebrain725.github.io/krx-annual.html`
+- KRX 업체현황 공개 데이터: `https://ebrain725.github.io/data/krx-annual.json`
 - 정책자료: `https://ebrain725.github.io/data/policies.json`
 - 데일리 브리핑: `https://ebrain725.github.io/data/briefing.json`
 

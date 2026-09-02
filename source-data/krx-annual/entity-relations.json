@@ -1,0 +1,75 @@
+{
+  "schemaVersion": "1.0.0",
+  "relations": [
+    {
+      "id": "posco-energy-posco-international-2023",
+      "relationType": "흡수합병",
+      "effectiveDate": "2023-01-01",
+      "fromName": "포스코에너지(주)",
+      "toName": "주식회사 포스코인터내셔널",
+      "sourceTitle": "포스코인터내셔널 연혁",
+      "sourceUrl": "https://www.poscointl.com/history",
+      "status": "official-confirmed"
+    },
+    {
+      "id": "posco-ast-posco-pns-2016",
+      "relationType": "흡수합병",
+      "effectiveDate": "2016-07-01",
+      "fromName": "(주)포스코에이에스티",
+      "toName": "포스코피앤에스",
+      "sourceTitle": "포스코P&S·포스코AST 합병",
+      "sourceUrl": "https://newsroom.posco.com/kr/%ED%8F%AC%EC%8A%A4%EC%BD%94ps-%ED%8F%AC%EC%8A%A4%EC%BD%94ast-%ED%95%A9%EB%B3%91/",
+      "status": "official-confirmed"
+    },
+    {
+      "id": "db-metal-db-world-2025",
+      "relationType": "흡수합병",
+      "effectiveDate": "2025-07-01",
+      "fromName": "주식회사 디비메탈",
+      "toName": "주식회사 디비월드",
+      "sourceTitle": "디비월드 합병종료 공고",
+      "sourceUrl": "https://dbworld.co.kr/cs/mboard.html?class=bbs01&no=9&page=1&type=view",
+      "status": "official-confirmed"
+    },
+    {
+      "id": "simpac-metal-simpac-2018",
+      "relationType": "흡수합병",
+      "effectiveDate": "2018-07-01",
+      "fromName": "(주)SIMPAC METAL",
+      "toName": "(주)SIMPAC",
+      "sourceTitle": "SIMPAC 제48기 사업보고서",
+      "sourceUrl": "https://corp.simpac.com/data/board/notice/file1_1616403106.pdf",
+      "status": "official-confirmed"
+    },
+    {
+      "id": "simpac-metal-predecessor-2016",
+      "relationType": "흡수합병·상호변경",
+      "effectiveDate": "2016-12-29",
+      "fromName": "주식회사 심팩메탈",
+      "toName": "(주)SIMPAC METAL",
+      "sourceTitle": "SIMPAC METAL 합병 및 상호변경 이력",
+      "sourceUrl": "https://kind.krx.co.kr/external/2016/10/20/000307/20161020000844/11344.htm",
+      "status": "official-confirmed"
+    },
+    {
+      "id": "seah-steel-holdings-split-2018",
+      "relationType": "인적분할",
+      "effectiveDate": "2018-09-01",
+      "fromName": "주식회사 세아제강지주",
+      "toName": "(주)세아제강",
+      "sourceTitle": "세아제강지주 분할 경과 보고 공고",
+      "sourceUrl": "https://www.seah.co.kr/upload/%EB%B6%84%ED%95%A0%EA%B2%BD%EA%B3%BC%EB%B3%B4%EA%B3%A0%20%EA%B3%B5%EA%B3%A0_%EC%84%B8%EC%95%84%EC%A0%9C%EA%B0%95%EC%A7%80%EC%A3%BC.pdf",
+      "status": "official-confirmed"
+    },
+    {
+      "id": "hanil-hyundai-cement-hanil-cement-2025",
+      "relationType": "흡수합병",
+      "effectiveDate": "2025-11-01",
+      "fromName": "한일현대시멘트 주식회사",
+      "toName": "한일시멘트 주식회사",
+      "sourceTitle": "한일시멘트 채권자 이의제출 공고",
+      "sourceUrl": "https://www.hanilcement.com/html/about/ct_03.html?idx=89",
+      "status": "official-confirmed"
+    }
+  ]
+}

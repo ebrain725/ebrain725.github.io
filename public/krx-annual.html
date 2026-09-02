@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="2015년부터 2025년까지 배출권 할당대상업체의 연간 할당·배출·이행 현황">
+  <title>업체현황(연간) | KRX 거래동향</title>
+  <link rel="stylesheet" href="assets/krx-trends.css?v=20260902-annual-tabs-v10">
+  <link rel="stylesheet" href="assets/krx-annual.css?v=20260902-annual-v1">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html?v=20260902-header-unified-v3" aria-label="ETS 대시보드 홈">
+      <span class="brand-mark">E</span>
+      <span><b>ETS LIVE DASHBOARD</b><small>Korea Emissions Market</small></span>
+    </a>
+    <nav class="primary-nav" aria-label="서비스 메뉴">
+      <a href="index.html?v=20260902-header-unified-v3">통합대시보드</a>
+      <a class="active" href="krx-annual.html?v=20260902-annual-v1" aria-current="page">KRX 거래동향</a>
+    </nav>
+  </header>
+
+  <noscript>
+    <style>.annual-dashboard{display:none!important}</style>
+    <section class="annual-noscript-alert" role="alert">
+      <p>업체현황 표를 보려면 JavaScript를 켜 주세요. 원자료는 <a href="https://github.com/ebrain725/ebrain725.github.io/blob/main/source-data/krx-annual/Policy.zip">GitHub의 KRX 연간자료 ZIP</a>에서 확인할 수 있습니다.</p>
+    </section>
+  </noscript>
+
+  <main class="trend-dashboard annual-dashboard" id="annualDashboard" aria-busy="true">
+    <section class="page-intro annual-intro">
+      <div>
+        <p class="eyebrow">ANNUAL ENTITY COMPLIANCE</p>
+        <h1>KRX 거래동향</h1>
+        <p>연도별 총수량과 할당대상업체의 할당·배출·이행 자료를 부문, 업종, 업체 순으로 집계합니다.</p>
+      </div>
+      <article class="annual-total-card" aria-live="polite" aria-atomic="true">
+        <span>연간 공식 총수량</span>
+        <strong id="annualOfficialTotal">—</strong>
+        <small id="annualOfficialTotalYear">2025년 · 확인 중</small>
+      </article>
+    </section>
+
+    <nav class="krx-subnav" aria-label="KRX 거래동향 세부 메뉴">
+      <a href="krx-trends.html?v=20260902-annual-tabs-v10">일일 매매현황</a>
+      <a class="active" href="krx-annual.html?v=20260902-annual-v1" aria-current="page">업체현황(연간)</a>
+    </nav>
+
+    <section class="status-alert" id="annualStatusAlert" role="status" aria-live="polite" aria-atomic="true" hidden>
+      <strong id="annualStatusTitle"></strong>
+      <p id="annualStatusDetail"></p>
+    </section>
+
+    <section class="annual-filter-panel" aria-label="업체현황 조회 조건">
+      <label>
+        <span>연도</span>
+        <select id="annualYear" aria-label="조회 연도"></select>
+      </label>
+      <label>
+        <span>부문</span>
+        <select id="annualSector" aria-label="부문 필터">
+          <option value="">전체 부문</option>
+        </select>
+      </label>
+      <label>
+        <span>업종</span>
+        <select id="annualIndustry" aria-label="업종 필터">
+          <option value="">전체 업종</option>
+        </select>
+      </label>
+      <label class="annual-company-search">
+        <span>업체 검색</span>
+        <input id="annualCompanySearch" type="search" inputmode="search" autocomplete="off" placeholder="업체명을 입력하세요">
+      </label>
+      <label>
+        <span>과부족 상태</span>
+        <select id="annualBalanceStatus" aria-label="과부족 상태 필터">
+          <option value="">전체</option>
+          <option value="surplus">과다 (+)</option>
+          <option value="shortage">부족 (−)</option>
+          <option value="balanced">균형 (0)</option>
+          <option value="unavailable">확인 불가 (—)</option>
+        </select>
+      </label>
+      <button type="button" class="annual-reset-button" id="annualResetFilters">필터 초기화</button>
+    </section>
+
+    <section class="panel annual-table-panel" aria-labelledby="annualTableHeading">
+      <div class="panel-head annual-panel-head">
+        <div>
+          <span class="section-tag">ANNUAL ENTITY STATUS</span>
+          <h2 id="annualTableHeading">업체별 이행 현황</h2>
+        </div>
+        <div class="annual-table-actions">
+          <span id="annualResultCount" role="status" aria-live="polite">자료를 불러오고 있습니다.</span>
+          <button type="button" id="annualExpandAll" aria-pressed="false" disabled>계층 전체 펼치기</button>
+        </div>
+      </div>
+
+      <div class="annual-table-wrap" id="annualTableRegion" role="region" tabindex="0" aria-label="연간 업체현황 계층표, 좌우와 상하로 스크롤할 수 있습니다">
+        <table class="annual-table">
+          <caption>선택 연도의 업체합계, 부문, 업종, 업체별 할당·배출·이행 현황. 단위는 톤입니다.</caption>
+          <thead>
+            <tr>
+              <th scope="col" class="annual-tree-column">구분</th>
+              <th scope="col" class="annual-allocation-type-column">유상여부</th>
+              <th scope="col">사전할당</th>
+              <th scope="col">추가할당</th>
+              <th scope="col">할당취소</th>
+              <th scope="col">조정할당</th>
+              <th scope="col">인증배출량</th>
+              <th scope="col">이월량</th>
+              <th scope="col">차입량</th>
+              <th scope="col">상쇄발행</th>
+              <th scope="col" class="annual-balance-column">과부족량</th>
+            </tr>
+          </thead>
+          <tbody id="annualRows">
+            <tr class="annual-loading-row"><td colspan="11">연간 자료를 불러오고 있습니다.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="annual-formulas" aria-label="계산식과 결측값 기준">
+        <p>* 조정할당량 = 사전할당량 + 추가할당량 − 할당취소량</p>
+        <p>* 이월량 = 할당배출권 이월 + 상쇄배출권 이월</p>
+        <p>* 과부족량 = 조정할당량 + 차입량 − 인증배출량 − 이월량입니다. 상쇄발행량과 실거래·보유잔액은 계산에서 제외합니다.</p>
+        <p>* <b>—</b>는 원자료가 없거나 계산에 필요한 값이 없는 경우이며, 실제 <b>0</b>과 구분됩니다.</p>
+        <p>* 집계행의 <b>부분</b> 표시는 일부 업체의 원자료가 비어 있어 계산 가능한 값만 합산했음을 뜻합니다.</p>
+      </div>
+    </section>
+
+    <section class="source-notice annual-source-notice">
+      <h2>자료 기준</h2>
+      <p>공식 연간 총수량은 업체 계층 합계와 정의가 다른 별도 정책 지표이므로 상단에 분리해 표시합니다.</p>
+      <p>업체 계층은 선택 연도의 원문 분류를 표준화한 부문·업종을 적용하며, 법인표기 차이는 원자료 정규화 과정에서 부여한 업체 식별자를 기준으로 집계합니다.</p>
+      <p>법인표기 차이는 자동 통합하고, 공식 근거가 확인된 합병·분할은 수치를 합치지 않은 채 승계 관계로 연결합니다. 이전 업체명으로 검색해도 연관 업체가 함께 조회됩니다.</p>
+      <p>표의 합계는 현재 적용한 연도·부문·업종·업체명·과부족 상태 필터 범위를 기준으로 계산됩니다.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>시장 판단을 지원하는 참고용 자료입니다. 공식 원문과 통계를 함께 확인하세요.</p>
+  </footer>
+  <script src="assets/krx-annual.js?v=20260902-annual-v1" defer></script>
+</body>
+</html>
