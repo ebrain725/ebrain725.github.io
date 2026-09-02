@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="assets/krx-trends.css?v=20260902-annual-tabs-v10">
   <link rel="stylesheet" href="assets/krx-annual.css?v=20260902-annual-v2">
   <link rel="stylesheet" href="assets/krx-annual-balance-v2.css?v=20260902-annual-start-history-v2">
+  <link rel="stylesheet" href="assets/krx-annual-history-v1.css?v=20260902-posco-history-v3">
 </head>
 <body>
   <header class="topbar">
@@ -126,7 +127,7 @@
         <p>* 사전할당 첫 줄은 원자료이며, 하단 괄호값은 <b>당해년도 사전할당량 + 전년도 추가할당량 − 전년도 할당취소량</b>입니다.</p>
         <p>* 연초 과부족량 = <b>(당해년도 사전할당량 + 전년도 추가할당량 − 전년도 할당취소량) + 전년도 이월량 − 전년도 차입량 − 전년도 인증배출량</b>입니다.</p>
         <p>* 연초 시점에 이용 가능한 당해년도 할당 기반과 전년도 이행실적을 연결한 값이며, 당해년도 인증배출량은 계산에 넣지 않습니다.</p>
-        <p>* 포스코홀딩스 주식회사와 주식회사 포스코는 연도별 수량을 하나의 통합 업체로 합산해 계산합니다.</p>
+        <p>* 포스코홀딩스 주식회사와 주식회사 포스코는 연도별 기초지표를 하나의 통합 업체로 합산한 뒤 반영 사전할당량과 연초 과부족량을 계산합니다.</p>
         <p>* 조정할당량 = 해당 원자료 연도의 사전할당량 + 추가할당량 − 할당취소량입니다.</p>
         <p>* 이월량 = 할당배출권 이월 + 상쇄배출권 이월입니다.</p>
         <p>* 2015년은 2014년 자료가 조회기간에 포함되지 않으므로 반영 사전할당량과 연초 과부족량을 <b>—</b>로 표시합니다.</p>
@@ -138,46 +139,25 @@
     <section class="panel annual-history-panel" aria-labelledby="annualHistoryHeading">
       <div class="panel-head annual-history-head">
         <div>
-          <span class="section-tag">ENTITY YEARLY HISTORY</span>
+          <span class="section-tag">ENTITY / INDUSTRY / SECTOR HISTORY</span>
           <h2 id="annualHistoryHeading">업체·업종·부문 연도별 히스토리</h2>
+          <p>업체를 검색하면 해당 업체, 각 연도 소속 업종 전체, 소속 부문 전체의 2015~2025년 할당·배출·연초 과부족 현황을 각각 표시합니다.</p>
         </div>
-        <p>업체명을 입력하면 해당 업체의 연도별 소속과 연초 과부족 계산 근거를 한 표로 표시합니다.</p>
+        <div class="annual-history-search" role="search" aria-label="연도별 업체 히스토리 검색">
+          <label>
+            <span>히스토리 업체 검색</span>
+            <input id="annualHistoryCompanySearch" type="search" list="annualHistoryCompanyOptions" inputmode="search" autocomplete="off" placeholder="업체명을 입력하거나 선택하세요">
+            <datalist id="annualHistoryCompanyOptions"></datalist>
+          </label>
+          <button type="button" id="annualHistorySearchButton" disabled>연도별 조회</button>
+        </div>
       </div>
 
-      <div class="annual-history-search" role="search" aria-label="업체 연도별 히스토리 검색">
-        <label>
-          <span>히스토리 업체 검색</span>
-          <input id="annualHistoryCompanySearch" type="search" list="annualHistoryCompanyOptions" autocomplete="off" placeholder="업체명을 입력하거나 목록에서 선택하세요" disabled>
-          <datalist id="annualHistoryCompanyOptions"></datalist>
-        </label>
-        <button type="button" id="annualHistorySearchButton" disabled>연도별 조회</button>
-        <button type="button" class="annual-history-clear" id="annualHistoryClearButton" disabled>초기화</button>
-      </div>
       <p class="annual-history-status" id="annualHistoryStatus" role="status" aria-live="polite">업체 자료를 불러오고 있습니다.</p>
-
-      <div class="annual-history-table-wrap" role="region" tabindex="0" aria-label="업체의 연도별 부문, 업종, 사전할당과 연초 과부족 히스토리 표">
-        <table class="annual-history-table">
-          <caption>선택 업체의 연도별 소속과 연초 과부족량 계산 항목. 단위는 톤입니다.</caption>
-          <thead>
-            <tr>
-              <th scope="col">연도</th>
-              <th scope="col">업체</th>
-              <th scope="col">부문</th>
-              <th scope="col">업종</th>
-              <th scope="col">사전할당<br>원자료</th>
-              <th scope="col">반영<br>사전할당</th>
-              <th scope="col">전년도<br>추가할당</th>
-              <th scope="col">전년도<br>할당취소</th>
-              <th scope="col">전년도<br>이월량</th>
-              <th scope="col">전년도<br>차입량</th>
-              <th scope="col">전년도<br>인증배출량</th>
-              <th scope="col" class="annual-history-balance-heading">연초<br>과부족량</th>
-            </tr>
-          </thead>
-          <tbody id="annualHistoryRows">
-            <tr><td colspan="12">업체를 선택하면 연도별 히스토리가 표시됩니다.</td></tr>
-          </tbody>
-        </table>
+      <p class="annual-history-empty" id="annualHistoryEmpty">업체를 검색하면 업체, 업종, 부문의 연도별 히스토리가 이 영역에 표시됩니다.</p>
+      <div class="annual-history-results" id="annualHistoryResults" hidden>
+        <div class="annual-history-summary" id="annualHistorySummary"></div>
+        <div id="annualHistoryTables"></div>
       </div>
     </section>
 
@@ -185,8 +165,9 @@
       <h2>자료 기준</h2>
       <p>공식 연간 총수량은 업체 계층 합계와 정의가 다른 별도 정책 지표이므로 상단에 분리해 표시합니다.</p>
       <p>업체 계층은 선택 연도의 원문 분류를 표준화한 부문·업종을 적용하며, 법인표기 차이는 원자료 정규화 과정에서 부여한 업체 식별자를 기준으로 집계합니다.</p>
-      <p>일반 업체는 서로 다른 법인의 수량을 자동 합산하지 않습니다. 포스코홀딩스 주식회사와 주식회사 포스코만 사용자가 지정한 계산그룹으로 연도별 합산합니다.</p>
-      <p>표의 합계는 현재 적용한 연도·부문·업종·업체명·연초 과부족 상태 필터 범위를 기준으로 계산됩니다.</p>
+      <p>포스코홀딩스 주식회사와 주식회사 포스코는 별도 계산 그룹으로 묶어 연도별 기초지표를 합산합니다. 원자료는 유지하고 표·검색·업종합계·부문합계에서 두 업체의 중복 없는 통합값을 사용합니다.</p>
+      <p>법인표기 차이는 자동 통합하고, 공식 근거가 확인된 합병·분할은 수치를 합치지 않은 채 승계 관계로 연결합니다. 이전 업체명으로 검색해도 연관 업체가 함께 조회됩니다.</p>
+      <p>표의 합계는 현재 적용한 연도·부문·업종·업체명·연초 과부족 상태 필터 범위를 기준으로 계산됩니다. 연도별 히스토리 검색은 상단 필터와 독립적으로 작동하며 업체·업종·부문 표를 각각 산출합니다.</p>
       <p><a href="https://raw.githubusercontent.com/ebrain725/ebrain725.github.io/main/source-data/krx-annual/Policy.zip">KRX 업체현황 원자료 ZIP 다운로드</a> · <a href="https://github.com/ebrain725/ebrain725.github.io/blob/main/source-data/krx-annual/Policy.zip" target="_blank" rel="noopener noreferrer">GitHub 저장 파일 확인</a></p>
     </section>
   </main>
@@ -194,7 +175,8 @@
   <footer>
     <p>시장 판단을 지원하는 참고용 자료입니다. 공식 원문과 통계를 함께 확인하세요.</p>
   </footer>
-  <script src="assets/krx-annual-balance-v2.js?v=20260902-annual-start-history-v4" defer></script>
-  <script src="assets/krx-annual.js?v=20260902-annual-v3" defer></script>
+  <script src="assets/krx-annual-balance-v2.js?v=20260902-posco-history-v3" defer></script>
+  <script src="assets/krx-annual.js?v=20260902-annual-v4" defer></script>
+  <script src="assets/krx-annual-history-v1.js?v=20260902-posco-history-v3" defer></script>
 </body>
 </html>
