@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-09-02T10:11:56+09:00",
+  "lastSync": "2026-09-02T13:14:32+09:00",
   "keywords": [
     "배출권",
     "배출권거래제",
@@ -27,10 +27,10 @@
     "Google News RSS",
     "NAVER API HUB"
   ],
-  "warning": null,
+  "warning": "기후부 보도자료: 키워드별 공식검색과 기본 RSS 복구에 모두 실패했습니다: 배출권: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 배출권거래제: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 유상할당: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 유상경매: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 탄소시장: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 시장안정화: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 상쇄배출권: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 기본 RSS 복구: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 기후부 공지·공고: 키워드별 공식검색과 기본 RSS 복구에 모두 실패했습니다: 배출권: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 배출권거래제: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 유상할당: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 유상경매: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 탄소시장: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 시장안정화: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 상쇄배출권: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 기본 RSS 복구: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out>",
   "aiInsight": {
     "summary": "최근 공식자료의 직접적인 수급 변수는 유상경매입니다. 최근 경매가 높은 낙찰가로 소화돼 공급보다 이행수요가 강하다는 신호입니다.",
-    "generatedAt": "2026-09-02T10:11:56+09:00",
+    "generatedAt": "2026-09-02T13:14:32+09:00",
     "basisLatestDate": "2026-09-02",
     "basisCount": 10,
     "source": "fallback",
@@ -139,6 +139,29 @@
   ],
   "items": [
     {
+      "id": "9d8dd4ae36129bcd",
+      "publishedAt": "2026-09-02",
+      "title": "한국형 자발적 탄소 감축·거래, 아시아 이어 중동과도 협력 확대",
+      "category": "제도",
+      "summary": "특히 아시아 유관 기관에 더해 이번에 중동 관련기관과 협약을 맺어 자발적 탄소시장 협력 네트워크 확장이 기대된다. 대한상공회의소는 2일 기획예산처, Global Carbon Council(이하 GCC)와 '한국형 자발적 탄소시장 ...",
+      "source": "e-platform.net",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.e-platform.net/news/articleView.html?idxno=104985",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateSources": [
+        "e-platform.net"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "8d08d631418077b0",
       "publishedAt": "2026-09-02",
       "title": "한국미래카본텍, 지하철·전광판 활용 ‘도심형 탄소 포집’ 사업 추진",
@@ -186,6 +209,57 @@
       "region": "국내"
     },
     {
+      "id": "8b382fb0b7e48000",
+      "publishedAt": "2026-09-02",
+      "title": "정부, 탄소크레딧 최대 20만t 직접 산다…내년 '한국탄소센터' 신설",
+      "category": "상쇄·외부사업",
+      "summary": "GCC는 2016년 카타르 도하에 설립된 국제 비영리기구로 글로벌 사우스 최초이자 유일한 국제 탄소 배출권 인증기관이다. 국제민간항공기구(ICAO)의 국제항공 탄소 상쇄 ·감축제도(CORSIA) 1단계 적격 기관이면서 자발적...",
+      "source": "newspim.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newspim.com/news/view/20260902000536",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "newspim.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "dda2c47c82a9f096",
+      "publishedAt": "2026-09-02",
+      "title": "정부, GCC와 손잡고 자발적 탄소시장 키운다…최대 20만톤 크레딧 구매",
+      "category": "상쇄·외부사업",
+      "summary": "박 장관은 이날 국가 온실가스감축목표(NDC), 재생에너지 중심의 에너지 전환, 배출권 거래제(ETS)... 박 장관은 국제민간항공기구(ICAO)의 국제항공 탄소 상쇄 ·감축제도(CORSIA)와 자발적 탄소시장 무결성위원회(ICVCM)의...",
+      "source": "ajunews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.ajunews.com/view/20260902105118151",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장",
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "아주경제",
+        "ajunews.com"
+      ],
+      "searchProviders": [
+        "Google News RSS",
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 2,
+      "region": "국내"
+    },
+    {
       "id": "be8d16203fb1feda",
       "publishedAt": "2026-09-02",
       "title": "전기료 깍아줘도 원가 부담 여전…탄소 규제에 짓눌린 철강 '삼중고'",
@@ -210,15 +284,15 @@
       "region": "국내"
     },
     {
-      "id": "d187aa7eab3071e9",
+      "id": "fa686e626114c4f3",
       "publishedAt": "2026-09-02",
-      "title": "서울시의회 위성찬 의원, 서울에너지공사 업무보고에서 마곡 열병합발전...",
+      "title": "서울시의회 이의안 의원, 동북권 재개발 추진지역을 대상으로 한 '집단...",
       "category": "제도",
       "summary": "사업범위는 집단에너지사업, 신·재생에너지 확대 보급, 에너지 진단 등 건물 에너지 효율화 사업, 온실가스 배출권 , 지능형전력망 사업 및 수소산업 관련 사업, 에너지 분야 연구·교육·홍보, 산·학·연 협력 등 국내외...",
       "source": "cnbizm.com",
       "sourceType": "news",
       "section": "news",
-      "url": "https://www.cnbizm.com/news/articleView.html?idxno=313552",
+      "url": "https://www.cnbizm.com/news/articleView.html?idxno=313590",
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
         "배출권",
@@ -230,30 +304,212 @@
       "searchProviders": [
         "NAVER API HUB"
       ],
+      "duplicateCount": 2,
+      "region": "국내"
+    },
+    {
+      "id": "c898afade3dd330c",
+      "publishedAt": "2026-09-02",
+      "title": "박홍근 \"고품질 탄소 크레딧 최대 20만톤 정부가 직접 구매\"",
+      "category": "제도",
+      "summary": "GCC는 카타르 도하에 본부를 둔 국제 탄소배출권 인증기관이다. 지난 5월 기준 45개국에서 1591개 프로젝트를 등록했으며 2032년까지 25억개의 탄소크레딧 발행을 추진하고 있다. CORSIA와 ICVCM CCP를 모두 충족한 글로벌...",
+      "source": "newsis.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newsis.com/view/NISX20260902_0003772857",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "newsis.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
       "duplicateCount": 1,
       "region": "국내"
     },
     {
-      "id": "2adf656ef965fda1",
+      "id": "0e3272fa9e92e909",
       "publishedAt": "2026-09-02",
-      "title": "대한상의·기획예산처·GCC, 한국형 자발적 탄소시장 글로벌 경쟁력 높인다 한국형 자발적 탄소시장(K-VCM) 생태계 조성 MOU 체결",
-      "category": "제도",
-      "summary": "대한상의·기획예산처·GCC, 한국형 자발적 탄소시장 글로벌 경쟁력 높인다 한국형 자발적 탄소시장(K-VCM) 생태계 조성 MOU 체결 오토투데이",
-      "source": "오토투데이",
+      "title": "대한상의·기획처·GCC, 자발적 탄소시장 협력…연내 거래시장 개설",
+      "category": "상쇄·외부사업",
+      "summary": "정부가 기업에 배출권 을 할당하고 의무적으로 관리하는 온실가스 배출권 거래제와 구분된다. 세 기관은... 국제민간항공기구(ICAO)가 운영하는 국제항공 탄소 상쇄 ·감축제도인 코르시아(CORSIA) 등 글로벌 기준에...",
+      "source": "sisafocus.co.kr",
       "sourceType": "news",
-      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1aS1dNSGlFa0FXcjJtVWtGVE44dDRmREt3TlJhX0VmejBuUFgtOEFuNy1KcTRfWWVOY05TckNNYVBwYURhUzBJWmM1Um01Z0t2U0taZlI1c1lZekp1UVN2WFk5NXlxUXg5QzZpMV93VQ?oc=5",
-      "searchProvider": "Google News RSS",
+      "section": "news",
+      "url": "http://www.sisafocus.co.kr/news/articleView.html?idxno=364485",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장",
+        "배출권",
+        "배출권거래제",
+        "온실가스 배출권"
+      ],
+      "duplicateSources": [
+        "sisafocus.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "2610cd8f58351fdd",
+      "publishedAt": "2026-09-02",
+      "title": "대한상의·기획예산처·GCC, 한국형 자발적 탄소시장 글로벌 경쟁력 높...",
+      "category": "제도",
+      "summary": "대한상공회의소는 2일 서울 중구 상의회관에서 기획예산처, Global Carbon Council(GCC)과 함께 '한국형 자발적 탄소시장 생태계 조성'을 위한 업무협약(MOU)을 체결했다. 이번 협약은 국내 자발적 탄소시장 (Voluntary Carbon...",
+      "source": "news1.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.news1.kr/industry/general-industry/6277054",
+      "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
         "탄소시장"
       ],
-      "section": "news",
-      "duplicateCount": 1,
       "duplicateSources": [
-        "오토투데이"
+        "yna.co.kr",
+        "asiatoday.co.kr",
+        "etoday.co.kr",
+        "econonews.co.kr",
+        "오토투데이",
+        "뉴스1",
+        "news1.kr",
+        "아시아경제",
+        "view.asiae.co.kr",
+        "shinailbo.co.kr",
+        "worktoday.co.kr",
+        "서울파이낸스",
+        "seoulfn.com",
+        "edaily.co.kr",
+        "nocutnews.co.kr"
       ],
       "searchProviders": [
+        "NAVER API HUB",
         "Google News RSS"
       ],
+      "duplicateCount": 15,
+      "region": "국내"
+    },
+    {
+      "id": "ba1eb9b5acbd7c96",
+      "publishedAt": "2026-09-02",
+      "title": "대한상의, 자발적 탄소시장 활성화 나서…글로벌 시장 연계 기반 마련",
+      "category": "제도",
+      "summary": "대한상공회의소(상의)가 국내 자발적 탄소시장 활성화를 위해 정부 및 국제기구와의 협력을 강화한다. 상의는 2일 기획예산처, 글로벌 탄소 위원회(GCC)와 함께 '한국형 자발적 탄소시장 생태계 조성'을 위한 업무협약(MOU)...",
+      "source": "newsis.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newsis.com/view/NISX20260902_0003772524",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateSources": [
+        "newsis.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "22bd9a176dd6b95a",
+      "publishedAt": "2026-09-02",
+      "title": "대한상의, GCC·예산처와 '한국형 자발적 탄소시장 생태계 조성' 협약",
+      "category": "제도",
+      "summary": "대한상공회의소는 2일 서울 중구 상의회관에서 기획예산처, Global Carbon Council(GCC)와 '한국형 자발적 탄소시장 생태계 조성'을 위한 업무협약을 맺었다. 체결식에는 조영준 대한상의 지속가능경영원장, 조용범...",
+      "source": "newscape.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.newscape.co.kr/news/articleView.html?idxno=124281",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateSources": [
+        "newscape.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "27edfd6fde70f2c5",
+      "publishedAt": "2026-09-02",
+      "title": "대구시, 남은 온실가스 배출권 팔아 12억 3천만 원 확보",
+      "category": "제도",
+      "summary": "대구시가 온실가스 배출권 거래제 를 통해 지난해 남은 배출권 4만 3천 톤을 팔아 12억 3천만 원을 확보했습니다. 시는 환경기초시설 31곳을 대상으로 감축 사업을 추진해 지난해 할당량 가운데 배출권 7만 4천 톤을...",
+      "source": "kbs.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8652430&ref=A",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "온실가스 배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "kbs.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "ed9ae521080feb0c",
+      "publishedAt": "2026-09-02",
+      "title": "김상협 GGGI 총장 “뜨거워진 바다는 오지 않은 최악의 상황을 예고 …...",
+      "category": "제도",
+      "summary": "“한국정부, UNFCCC와 더불어 글로벌 자발적 탄소시장 (GVCM)을 설계하고 있습니다. 탄소시장 의 기본기본 원칙과 운영규정을 포함해 감축량을 어떻게 측정하고 검증할 것인지, 발행된 크레딧을 어떻게 기록하고 추적할...",
+      "source": "munhwa.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.munhwa.com/article/11613899?ref=naver",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "munhwa.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "255ff0604a064181",
+      "publishedAt": "2026-09-02",
+      "title": "기획처·대한상의·GCC, ‘자발적 탄소시장 ’ 활성화 MOU 체결",
+      "category": "제도",
+      "summary": "대한상공회의소가 기획예산처, GCC(Global Carbon Council)와 국내 탄소시장 활성화에 협력하기로 했다. 대한상의는 2일 오전 상의회관에서 이같은 내용의 ‘한국형 자발적 탄소시장 생태계 조성’을 위한 업무협약(MOU)​을...",
+      "source": "biz.heraldcorp.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://biz.heraldcorp.com/article/10859654?ref=naver",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateSources": [
+        "biz.heraldcorp.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
       "region": "국내"
     },
     {
@@ -272,12 +528,13 @@
         "배출권거래제"
       ],
       "duplicateSources": [
+        "chosun.com",
         "metroseoul.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "region": "해외"
     },
     {
@@ -294,13 +551,38 @@
       "matchedKeywords": [
         "탄소시장"
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 3,
       "duplicateSources": [
-        "newsfreezone.co.kr"
+        "newsfreezone.co.kr",
+        "munhwa.com",
+        "magazine.hankyung.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
       ],
+      "region": "국내"
+    },
+    {
+      "id": "e87c84fdc4e601e9",
+      "publishedAt": "2026-09-02",
+      "title": "韓 탄소시장 , 중동과 손잡았다",
+      "category": "제도",
+      "summary": "한국과 중동이 탄소시장 생태계 조성을 위해 손을 잡았다. 대한상공회의소는 기획예산처, Global Carbon Council(GCC)와 '한국형 자발적 탄소시장 (K-VCM) 생태계 조성' 업무협약(MOU)을 체결했다고 2일 밝혔다. 국내 자발적...",
+      "source": "etnews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.etnews.com/20260902000250",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateSources": [
+        "etnews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
       "region": "국내"
     },
     {
@@ -320,6 +602,53 @@
       ],
       "duplicateSources": [
         "futurechosun.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "3faffb576df29f8c",
+      "publishedAt": "2026-09-02",
+      "title": "“빙하 위험지대 수백여곳… 방치땐 전지구적 재난”",
+      "category": "제도",
+      "summary": "“한국 정부, 유엔기후변화협약(UNFCCC)과 함께 글로벌 자발적 탄소시장 (GVCM)을 설계하고 있습니다. 여러 나라가 쓰는 GVCM의 설계를 한국이 주도하고 있다는 점에 의의가 큽니다.” 김 총장은 기후변화로 인한 최악의...",
+      "source": "munhwa.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.munhwa.com/article/11613993?ref=naver",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "munhwa.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "b0e506a494d1a1a0",
+      "publishedAt": "2026-09-02",
+      "title": "[지구촌 환경 핫이슈 TOP 5] 하늘에서 탄소 를 빨아들이는 공장 … ‘50만...",
+      "category": "제도",
+      "summary": "- 실제 연간 포집량 - 설계용량 대비 가동률 - 이산화탄소 1톤당 전력·열 사용량 - 시설 전체 생애주기 배출량 - 지하에 주입한 양과 누출 여부 - 제거 1톤당 총비용 - 정부 보조금과 세제혜택 비중 - 판매된 탄소배출권 과...",
+      "source": "dailyt.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.dailyt.co.kr/newsView/dlt202609020002",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "dailyt.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -398,50 +727,21 @@
       "region": "국내"
     },
     {
-      "id": "b846d4ab31fde8d3",
+      "id": "krx-ets-588",
+      "sourceId": "588",
       "publishedAt": "2026-09-02",
-      "title": "[오늘의 주요일정]경제(9월2일화요일)",
-      "category": "제도",
-      "summary": "자발적 탄소시장 협력 MOU 체결식(비공개) ▲14:00 김성환 기후에너지환경부 장관, 제1회 해상풍력발전위원회(서울) ▲14:00 이호현 기후에너지환경부 2차관, 기노위 법안소위(서울) ▲15:00 송미령 농림축산식품부...",
-      "source": "newsis.com",
-      "sourceType": "news",
-      "section": "news",
-      "url": "https://www.newsis.com/view/NISX20260901_0003770518",
-      "searchProvider": "NAVER API HUB",
+      "title": "2026년 9월 배출권 유상할당 입찰공고(기후에너지환경부 공고 제2026-848호)",
+      "category": "유상경매",
+      "summary": "「온실가스 배출권의 할당 및 거래에 관한 법률」 제12조 및 같은 법 시행령 제18조, 「배출권 유상할당 및 시장안정화 조치를 위한 배출권 추가할당에 관한 규정」에 따라 2026년도 9월의 온실가스 배출권 유상할당 경매에 대한 입찰을 다음(붙임 참조)과 같이 공고합니다.",
+      "source": "한국거래소 배출권 공지사항",
+      "sourceType": "official",
+      "section": "krx_notice",
+      "url": "https://ets.krx.co.kr/board/ETS01030000/bbs#view=588",
       "matchedKeywords": [
-        "탄소시장"
-      ],
-      "duplicateCount": 1,
-      "duplicateSources": [
-        "newsis.com"
-      ],
-      "searchProviders": [
-        "NAVER API HUB"
-      ],
-      "region": "국내"
-    },
-    {
-      "id": "b1acbc520c5840fd",
-      "publishedAt": "2026-09-02",
-      "title": "[오늘 재경부 등 경제부처 일정]",
-      "category": "제도",
-      "summary": "자발적 탄소시장 협력 MOU 체결식(비공개) ※조용범 차관, 2026 APLA 서울 복권총회 축사(08:00) ※자발적 탄소시장 생태계 구축을 위해 카타르 GCC와 협력 강화(11:00) ※협동조합 현장 활동가 간담회 개최...",
-      "source": "einfomax.co.kr",
-      "sourceType": "news",
-      "section": "news",
-      "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4432977",
-      "searchProvider": "NAVER API HUB",
-      "matchedKeywords": [
-        "탄소시장"
-      ],
-      "duplicateCount": 1,
-      "duplicateSources": [
-        "einfomax.co.kr"
-      ],
-      "searchProviders": [
-        "NAVER API HUB"
-      ],
-      "region": "국내"
+        "배출권",
+        "유상할당",
+        "시장안정화"
+      ]
     },
     {
       "id": "d33fc96396cb6c87",
@@ -456,273 +756,6 @@
       "matchedKeywords": [
         "시장안정화"
       ]
-    },
-    {
-      "id": "a9609a79a703871f",
-      "publishedAt": "2026-09-01",
-      "title": "한화토탈에너지스, 배출량 85% 차지한 생산공정 전환이 관건",
-      "category": "상쇄·외부사업",
-      "summary": "한화토탈에너지스가 2050년 넷제로 달성을 위한 중간 목표로 2035년 온실가스 배출량을 381만톤까지... 회사는 공정 효율화와 저탄소 연료·원료 전환, 재생에너지 조달, 탄소포집·활용, 상쇄 배출권 활용 등을 주요...",
-      "source": "newsroad.co.kr",
-      "sourceType": "news",
-      "section": "news",
-      "url": "http://www.newsroad.co.kr/news/articleView.html?idxno=63673",
-      "searchProvider": "NAVER API HUB",
-      "matchedKeywords": [
-        "배출권",
-        "상쇄배출권"
-      ],
-      "duplicateSources": [
-        "newsroad.co.kr"
-      ],
-      "searchProviders": [
-        "NAVER API HUB"
-      ],
-      "duplicateCount": 1,
-      "region": "국내"
-    },
-    {
-      "id": "7fcd363425e7778e",
-      "publishedAt": "2026-09-01",
-      "title": "한국형 '자발적 탄소시장' 연내 법제화 속도, 민간 수요와 '국제 통용 크...",
-      "category": "상쇄·외부사업",
-      "summary": "탄소 상쇄 ·감축제도(CORSIA, 코르시아) 등 국제시장에서 실제 활용될 정도의 신뢰성을 확보할 수 있을지가... 자발적 탄소시장은 정부가 기업에 온실가스 배출권 을 할당하고 거래하도록 하는 배출권 거래제(ETS)와 달리...",
-      "source": "businesspost.co.kr",
-      "sourceType": "news",
-      "section": "news",
-      "url": "https://www.businesspost.co.kr/BP?command=article_view&num=446130",
-      "searchProvider": "NAVER API HUB",
-      "matchedKeywords": [
-        "탄소시장",
-        "배출권",
-        "배출권거래제",
-        "온실가스 배출권"
-      ],
-      "duplicateSources": [
-        "비즈니스포스트",
-        "businesspost.co.kr"
-      ],
-      "searchProviders": [
-        "Google News RSS",
-        "NAVER API HUB"
-      ],
-      "duplicateCount": 2,
-      "region": "국내"
-    },
-    {
-      "id": "b3755d4f2761974e",
-      "publishedAt": "2026-09-01",
-      "title": "한국거래소에 자발적 탄소시장 연다…정부, 내년 크레딧 20만톤 직접 구...",
-      "category": "제도",
-      "summary": "정부가 내년 최대 20만톤의 고품질 탄소크레딧을 직접 구매하며 국내 자발적 탄소시장 (VCM)의 초기 수요 창출에 나설 예정이다. 천재호 기획예산처 성장기획정책관은 지난달 31일 국회에서 열린 '자발적 탄소시장 법 제정...",
-      "source": "impacton.net",
-      "sourceType": "news",
-      "section": "news",
-      "url": "http://www.impacton.net/news/articleView.html?idxno=20163",
-      "searchProvider": "NAVER API HUB",
-      "matchedKeywords": [
-        "탄소시장"
-      ],
-      "duplicateCount": 2,
-      "duplicateSources": [
-        "임팩트온",
-        "impacton.net"
-      ],
-      "searchProviders": [
-        "Google News RSS",
-        "NAVER API HUB"
-      ],
-      "region": "국내"
-    },
-    {
-      "id": "1cb6a157bed44974",
-      "publishedAt": "2026-09-01",
-      "title": "트럼프, 美 신차 연비기준 대폭 완화…ℓ당 21.4㎞→14.7㎞",
-      "category": "제도",
-      "summary": "자동차업체는 연비 기준을 초과 달성하면 향후 사용할 수 있는 배출권 을 확보한다. 기준을 2022년형까지 소급해 낮추면 업체들이 추가 배출권 을 얻거나 향후 연비 기준을 더 쉽게 충족할 수 있다. 미국 의회도...",
-      "source": "kbmaeil.com",
-      "sourceType": "news",
-      "section": "news",
-      "url": "https://www.kbmaeil.com/article/20260901500182",
-      "searchProvider": "NAVER API HUB",
-      "matchedKeywords": [
-        "배출권"
-      ],
-      "duplicateSources": [
-        "kbmaeil.com"
-      ],
-      "searchProviders": [
-        "NAVER API HUB"
-      ],
-      "duplicateCount": 1,
-      "region": "해외"
-    },
-    {
-      "id": "9c875960668041fa",
-      "publishedAt": "2026-09-01",
-      "title": "튀르키예, EU에 낼 탄소비용 줄인다…CBAM 대응 ETS 출범",
-      "category": "제도",
-      "summary": "지난달 31일(현지시각) 할릴 하사르 튀르키예 기후변화청장은 27일 발효된 국가 배출권 거래제(ETS)... 2026~2027년 시범운영…2028년 첫 이행기간 시작 튀르키예 정부는 지난달 27일 관보에 '튀르키예 배출권 거래제...",
-      "source": "impacton.net",
-      "sourceType": "news",
-      "section": "news",
-      "url": "http://www.impacton.net/news/articleView.html?idxno=20170",
-      "searchProvider": "NAVER API HUB",
-      "matchedKeywords": [
-        "배출권",
-        "배출권거래제"
-      ],
-      "duplicateSources": [
-        "impacton.net",
-        "임팩트온",
-        "climatepol.com"
-      ],
-      "searchProviders": [
-        "NAVER API HUB",
-        "Google News RSS"
-      ],
-      "duplicateCount": 3,
-      "region": "국내"
-    },
-    {
-      "id": "958a089ca3b65744",
-      "publishedAt": "2026-09-01",
-      "title": "조현준 회장, 진두지휘한 '효성 탈 탄소 전초기지' 결실…베트남서 2년 ...",
-      "category": "제도",
-      "summary": "사탕수수 기반 바이오 BDO부터 완제품까지 세계 최초 '완전 수직통합'으로 글로벌 탈 탄소 시장 정조준 조현준 효성그룹 회장이 베트남에 약 1조 4000억원(10억 달러)의 과감한 대규모 투자를 단행하며 친환경 미래...",
-      "source": "theguru.co.kr",
-      "sourceType": "news",
-      "section": "news",
-      "url": "https://www.theguru.co.kr/news/article.html?no=106527",
-      "searchProvider": "NAVER API HUB",
-      "matchedKeywords": [
-        "탄소시장"
-      ],
-      "duplicateCount": 1,
-      "duplicateSources": [
-        "theguru.co.kr"
-      ],
-      "searchProviders": [
-        "NAVER API HUB"
-      ],
-      "region": "해외"
-    },
-    {
-      "id": "9dfc7749791b572c",
-      "publishedAt": "2026-09-01",
-      "title": "자발적 탄소시장법, 기후금융·성장 새 지평 연다",
-      "category": "제도",
-      "summary": "자발적 탄소시장법, 기후금융·성장 새 지평 연다 에코타임스",
-      "source": "에코타임스",
-      "sourceType": "news",
-      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE01WW5IVzdGd3p5UlBpNVdjeG92VWJ3MF9zbU1WZ3hnX05XOWtFek9BaFItdUhXRC1wd1k5MDMwMmlsWEJIOVAtcXJLSXVveExlWEp3STF3WXN0Q3ZuSnA0eTVwRmg1UE5pSC1F0gFvQVVfeXFMTjNLTEd5QW96SkdMV3ZuYkhWcnFCRFMzdUJCa3kyTGZjV2tnQjdMekV4a0JUc1VEMkZEQWcxWnZvb0xTd1J2azI5MHdEc0lscG5pMUxNZ25Cc2Q2MjhPdmZ4Zm9wOE9yd01nNWxLWTlB?oc=5",
-      "searchProvider": "Google News RSS",
-      "matchedKeywords": [
-        "탄소시장"
-      ],
-      "section": "news",
-      "duplicateCount": 1,
-      "duplicateSources": [
-        "에코타임스"
-      ],
-      "searchProviders": [
-        "Google News RSS"
-      ],
-      "region": "국내"
-    },
-    {
-      "id": "e847347d2962185d",
-      "publishedAt": "2026-09-01",
-      "title": "자발적 탄소시장(VCM)",
-      "category": "제도",
-      "summary": "자발적 탄소시장(VCM) 에코타임스",
-      "source": "에코타임스",
-      "sourceType": "news",
-      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5zVVNwU044UTI2Z3N3RUtXSGoyRHk3MmZnWnRlTk5TLUJCQ2llajU1Sk12aE9Td0dGclYxUXd6OEJtQ01QM054ZmJHYzUtQU1FQVhwMWtfRnQtTUVCeU9nZi14TlJNbUpCZG9J0gFvQVVfeXFMTWJlSTQ2R2tuUWQ2NjhNcEVueGNpc2o2aGVOaUl6TTVJeVR0cnJHVkR5Sm9pdzk3OEZweWplN2NqZ1dnSzZuanhIYnUxNmZtYXVUUkhveUhmbVVKT1lHTzk4UmVabTdIankzRjQzMVNJ?oc=5",
-      "searchProvider": "Google News RSS",
-      "matchedKeywords": [
-        "탄소시장"
-      ],
-      "section": "news",
-      "duplicateCount": 1,
-      "duplicateSources": [
-        "에코타임스"
-      ],
-      "searchProviders": [
-        "Google News RSS"
-      ],
-      "region": "국내"
-    },
-    {
-      "id": "83b1a3170b7199ef",
-      "publishedAt": "2026-09-01",
-      "title": "스타스테크, 탄소 중립 콘서트에 탄소 크레딧 공급",
-      "category": "상쇄·외부사업",
-      "summary": "양승찬 스타스테크 대표는 “앞으로도 다양한 폐자원의 순환 구조를 구축하는 한편 감축실적을 지속 확보해 국내외 탄소시장 으로 사업을 확대해 나가겠다”고 말했다.",
-      "source": "sedaily.com",
-      "sourceType": "news",
-      "section": "news",
-      "url": "https://www.sedaily.com/article/20085453?ref=naver",
-      "searchProvider": "NAVER API HUB",
-      "matchedKeywords": [
-        "탄소시장"
-      ],
-      "duplicateCount": 1,
-      "duplicateSources": [
-        "sedaily.com"
-      ],
-      "searchProviders": [
-        "NAVER API HUB"
-      ],
-      "region": "국내"
-    },
-    {
-      "id": "8d5ea8ce3e1f464d",
-      "publishedAt": "2026-09-01",
-      "title": "서울시의회 허광행 의원, 서울에너지공사의 수소경제 활성화 전략과 수...",
-      "category": "제도",
-      "summary": "사업범위는 집단에너지사업, 신·재생에너지 확대 보급, 에너지 진단 등 건물 에너지 효율화 사업, 온실가스 배출권 , 지능형전력망 사업 및 수소산업 관련 사업, 에너지 분야 연구·교육·홍보, 산·학·연 협력 등 국내외...",
-      "source": "cnbizm.com",
-      "sourceType": "news",
-      "section": "news",
-      "url": "https://www.cnbizm.com/news/articleView.html?idxno=313490",
-      "searchProvider": "NAVER API HUB",
-      "matchedKeywords": [
-        "배출권",
-        "온실가스 배출권"
-      ],
-      "duplicateSources": [
-        "cnbizm.com"
-      ],
-      "searchProviders": [
-        "NAVER API HUB"
-      ],
-      "duplicateCount": 2,
-      "region": "국내"
-    },
-    {
-      "id": "c2a4ce2468690c9d",
-      "publishedAt": "2026-09-01",
-      "title": "리드포인트시스템 ' 탄소 거래 지원 플랫폼' 활용도 커져",
-      "category": "제도",
-      "summary": "사진/리드포인트시스템 리드포인트시스템의 탄소 데이터 관리 및 탄소배출권 거래지원 플랫폼 '카본플릿(CarbonFleet)' 누적 다운로드가 2000건을 넘어섰다. 1일 리드포인트시스템에 따르면 기업, 기관 중심의 B2B/B2G 실증에서...",
-      "source": "smedaily.co.kr",
-      "sourceType": "news",
-      "section": "news",
-      "url": "http://www.smedaily.co.kr/news/articleView.html?idxno=362478",
-      "searchProvider": "NAVER API HUB",
-      "matchedKeywords": [
-        "배출권",
-        "탄소배출권"
-      ],
-      "duplicateSources": [
-        "smedaily.co.kr"
-      ],
-      "searchProviders": [
-        "NAVER API HUB"
-      ],
-      "duplicateCount": 1,
-      "region": "국내"
     },
     {
       "id": "krx-ets-587",
@@ -1422,23 +1455,6 @@
       "matchedKeywords": [
         "배출권",
         "유상할당"
-      ]
-    },
-    {
-      "id": "krx-ets-570",
-      "sourceId": "570",
-      "publishedAt": "2026-01-07",
-      "title": "2026년 1월 배출권 유상할당 입찰공고(기후에너지환경부 공고 제2026-17호)",
-      "category": "유상경매",
-      "summary": "「온실가스 배출권의 할당 및 거래에 관한 법률」 제12조 및 같은 법 시행령 제18조,「배출권 유상할당 및 시장안정화 조치를 위한 배출권 추가할당에 관한 규정」 에 따라 2026년도 1월의 온실가스 배출권 유상할당 경매에 대한 입찰을 다음(붙임 참조)과 같이 공고합니다.",
-      "source": "한국거래소 배출권 공지사항",
-      "sourceType": "official",
-      "section": "krx_notice",
-      "url": "https://ets.krx.co.kr/board/ETS01030000/bbs#view=570",
-      "matchedKeywords": [
-        "배출권",
-        "유상할당",
-        "시장안정화"
       ]
     },
     {
