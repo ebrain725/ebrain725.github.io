@@ -5,6 +5,8 @@ on:
     branches: [main]
     paths:
       - "public/**"
+      - "source-data/krx-annual/Policy.zip"
+      - "scripts/extract_krx_annual_sources.py"
       - ".github/workflows/deploy-pages.yml"
   workflow_dispatch:
 
@@ -29,6 +31,14 @@ jobs:
       - name: 저장소 불러오기
         uses: actions/checkout@v4
 
+      - name: Python 설정
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: KRX 연간 원자료 개별파일 생성
+        run: python scripts/extract_krx_annual_sources.py
+
       - name: Pages 설정
         uses: actions/configure-pages@v5
 
@@ -48,6 +58,8 @@ jobs:
           echo "krx_annual_css=$(sha256sum public/assets/krx-annual.css | awk '{print $1}')" >> "$GITHUB_OUTPUT"
           echo "krx_annual_js=$(sha256sum public/assets/krx-annual.js | awk '{print $1}')" >> "$GITHUB_OUTPUT"
           echo "krx_annual_data=$(sha256sum public/data/krx-annual.json | awk '{print $1}')" >> "$GITHUB_OUTPUT"
+          echo "krx_annual_source_index=$(sha256sum public/data/krx-annual/source-files/index.html | awk '{print $1}')" >> "$GITHUB_OUTPUT"
+          echo "krx_annual_source_manifest=$(sha256sum public/data/krx-annual/source-files/manifest.json | awk '{print $1}')" >> "$GITHUB_OUTPUT"
 
       - name: 공개 파일 묶기
         uses: actions/upload-pages-artifact@v4
@@ -73,6 +85,8 @@ jobs:
           KRX_ANNUAL_CSS_SHA256: ${{ steps.source_hashes.outputs.krx_annual_css }}
           KRX_ANNUAL_JS_SHA256: ${{ steps.source_hashes.outputs.krx_annual_js }}
           KRX_ANNUAL_DATA_SHA256: ${{ steps.source_hashes.outputs.krx_annual_data }}
+          KRX_ANNUAL_SOURCE_INDEX_SHA256: ${{ steps.source_hashes.outputs.krx_annual_source_index }}
+          KRX_ANNUAL_SOURCE_MANIFEST_SHA256: ${{ steps.source_hashes.outputs.krx_annual_source_manifest }}
         run: |
           set -euo pipefail
           page_root="${PAGE_URL%/}"
@@ -113,3 +127,5 @@ jobs:
           verify_public_file "assets/krx-annual.css" "$KRX_ANNUAL_CSS_SHA256"
           verify_public_file "assets/krx-annual.js" "$KRX_ANNUAL_JS_SHA256"
           verify_public_file "data/krx-annual.json" "$KRX_ANNUAL_DATA_SHA256"
+          verify_public_file "data/krx-annual/source-files/index.html" "$KRX_ANNUAL_SOURCE_INDEX_SHA256"
+          verify_public_file "data/krx-annual/source-files/manifest.json" "$KRX_ANNUAL_SOURCE_MANIFEST_SHA256"
