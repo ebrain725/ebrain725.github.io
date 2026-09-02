@@ -1,0 +1,52 @@
+name: Build KRX annual source artifact
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - source-data/krx-annual/Policy.zip
+      - scripts/extract_krx_annual_sources.py
+      - .github/workflows/build-krx-annual-source-artifact.yml
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: 저장소 불러오기
+        uses: actions/checkout@v4
+
+      - name: Python 설정
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 원자료 ZIP 개별파일 추출
+        run: python scripts/extract_krx_annual_sources.py
+
+      - name: 추출 결과 검증
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          root = Path("public/data/krx-annual/source-files")
+          manifest = json.loads((root / "manifest.json").read_text(encoding="utf-8"))
+          files = manifest.get("files", [])
+          if not files:
+              raise SystemExit("추출된 파일이 없습니다.")
+          missing = [item["path"] for item in files if not (root / item["path"]).is_file()]
+          if missing:
+              raise SystemExit(f"추출 파일 누락: {missing[:5]}")
+          print(f"검증 완료: {len(files)}개")
+          PY
+
+      - name: 추출 파일 아티팩트 저장
+        uses: actions/upload-artifact@v4
+        with:
+          name: krx-annual-source-files
+          path: public/data/krx-annual/source-files
+          if-no-files-found: error
+          retention-days: 7
