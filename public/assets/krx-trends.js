@@ -472,6 +472,14 @@ function niceFlowStep(value) {
 function renderFlowChart(reports) {
   const svg = trendById("flowChart");
   const legend = trendById("flowLegend");
+  const hoverStatus = trendById("flowHoverStatus");
+  svg.onpointermove = null;
+  svg.onpointerdown = null;
+  svg.onpointerleave = null;
+  svg.onpointercancel = null;
+  svg.onkeydown = null;
+  svg.onblur = null;
+  if (hoverStatus) hoverStatus.textContent = "";
   legend.replaceChildren();
   if (!reports.length) {
     svg.innerHTML = [
@@ -487,10 +495,11 @@ function renderFlowChart(reports) {
   reports.forEach((report) => {
     report.participantFlows.forEach((flow) => {
       const previous = running.get(flow.categoryKey) || 0;
-      const next = previous + Number(flow.netByMethod[trendState.method] || 0);
+      const daily = Number(flow.netByMethod[trendState.method] || 0);
+      const next = previous + daily;
       running.set(flow.categoryKey, next);
       const values = series.get(flow.categoryKey) || { label: flow.label, points: [] };
-      values.points.push({ date: report.tradeDate, value: next });
+      values.points.push({ date: report.tradeDate, daily, value: next });
       series.set(flow.categoryKey, values);
     });
   });
@@ -506,7 +515,7 @@ function renderFlowChart(reports) {
   const step = niceFlowStep(span / 3);
   const yMin = Math.floor(Math.min(rawMin, 0) / step) * step;
   const yMax = Math.ceil(Math.max(rawMax, 0) / step) * step || step;
-  const width = 960, left = 82, right = 28, top = 28, bottom = 338;
+  const width = 960, height = 390, left = 82, right = 28, top = 28, bottom = 338;
   const firstTime = trendDateMs(reports[0].tradeDate);
   const lastTime = trendDateMs(reports.at(-1).tradeDate);
   const x = (date) => {
@@ -519,7 +528,7 @@ function renderFlowChart(reports) {
   const gapCount = reports.slice(1).reduce((count, report, index) => (
     trendDateMs(report.tradeDate) - trendDateMs(reports[index].tradeDate) > 7 * 86400000 ? count + 1 : count
   ), 0);
-  const chartDescription = `${reports[0].tradeDate}부터 ${reports.at(-1).tradeDate}까지 ${METHOD_LABELS[trendState.method]} 기준 ${ordered.length}개 분류별 누적 순거래량입니다.${gapCount ? ` 7일 초과 자료 공백 ${gapCount}곳은 선을 끊었습니다.` : ""} 상세 수치는 이어지는 기간 순거래량 표에서 확인할 수 있습니다.`;
+  const chartDescription = `${reports[0].tradeDate}부터 ${reports.at(-1).tradeDate}까지 ${METHOD_LABELS[trendState.method]} 기준 ${ordered.length}개 분류별 누적 순거래량입니다.${gapCount ? ` 7일 초과 자료 공백 ${gapCount}곳은 선을 끊었습니다.` : ""} 그래프에 마우스를 올리거나 터치하면 실제 거래일의 당일 순매매와 누적 순거래량을 확인할 수 있습니다.`;
   let html = `<title id="flowChartTitle">참가자별 누적 순거래량 추이</title><desc id="flowChartDesc">${trendEsc(chartDescription)}</desc>`;
   for (let value = yMin; value <= yMax + step * 0.01; value += step) {
     const py = y(value);
@@ -560,7 +569,121 @@ function renderFlowChart(reports) {
     legend.append(item);
   });
   html += `<text x="16" y="${top}" class="axis-unit">톤</text>`;
+  html += '<g id="flowHoverLayer" class="flow-hover-layer" aria-hidden="true" hidden></g>';
   svg.innerHTML = html;
+
+  const hoverLayer = svg.querySelector("#flowHoverLayer");
+  const xPositions = reports.map((report) => x(report.tradeDate));
+  let activeIndex = -1;
+  const nearestReportIndex = (targetX) => {
+    let low = 0;
+    let high = xPositions.length;
+    while (low < high) {
+      const middle = Math.floor((low + high) / 2);
+      if (xPositions[middle] < targetX) low = middle + 1;
+      else high = middle;
+    }
+    if (low <= 0) return 0;
+    if (low >= xPositions.length) return xPositions.length - 1;
+    return targetX - xPositions[low - 1] <= xPositions[low] - targetX ? low - 1 : low;
+  };
+  const tooltipValueClass = (value) => (
+    value > 0 ? "flow-tooltip-positive" : value < 0 ? "flow-tooltip-negative" : "flow-tooltip-neutral"
+  );
+  const showHoverAt = (index) => {
+    const boundedIndex = Math.max(0, Math.min(reports.length - 1, index));
+    if (boundedIndex === activeIndex && !hoverLayer.hasAttribute("hidden")) return;
+    activeIndex = boundedIndex;
+    const report = reports[boundedIndex];
+    const px = xPositions[boundedIndex];
+    const tooltipWidth = 410;
+    const tooltipHeight = 68 + ordered.length * 27;
+    const plotMiddle = (left + width - right) / 2;
+    const tooltipX = px > plotMiddle
+      ? Math.max(left + 7, px - tooltipWidth - 15)
+      : Math.min(width - right - tooltipWidth - 7, px + 15);
+    const tooltipY = top + 8;
+    const rowStartY = 78;
+    let chartMarkers = "";
+    let tooltipRows = "";
+    ordered.forEach(([key, values], rowIndex) => {
+      const point = values.points[boundedIndex];
+      const color = CATEGORY_COLORS[key] || "#46515a";
+      chartMarkers += `<circle cx="${px}" cy="${y(point.value)}" r="5" class="flow-hover-point" style="fill:${color}"/>`;
+      const rowY = rowStartY + rowIndex * 27;
+      tooltipRows += `<circle cx="17" cy="${rowY - 4}" r="4" style="fill:${color}"/>`;
+      tooltipRows += `<text x="29" y="${rowY}" class="flow-tooltip-label">${trendEsc(values.label)}</text>`;
+      tooltipRows += `<text x="278" y="${rowY}" text-anchor="end" class="flow-tooltip-value ${tooltipValueClass(point.daily)}">${trendEsc(tons(point.daily, true))}</text>`;
+      tooltipRows += `<text x="394" y="${rowY}" text-anchor="end" class="flow-tooltip-value ${tooltipValueClass(point.value)}">${trendEsc(tons(point.value, true))}</text>`;
+    });
+    hoverLayer.innerHTML = [
+      `<line x1="${px}" x2="${px}" y1="${top}" y2="${bottom}" class="flow-hover-line"/>`,
+      chartMarkers,
+      `<g class="flow-tooltip" transform="translate(${tooltipX} ${tooltipY})">`,
+      `<rect width="${tooltipWidth}" height="${tooltipHeight}" rx="11"/>`,
+      `<text x="16" y="24" class="flow-tooltip-date">${trendEsc(report.tradeDate.replaceAll("-", "."))}</text>`,
+      `<text x="${tooltipWidth - 16}" y="24" text-anchor="end" class="flow-tooltip-method">${trendEsc(METHOD_LABELS[trendState.method])}</text>`,
+      `<line x1="14" x2="${tooltipWidth - 14}" y1="34" y2="34" class="flow-tooltip-rule"/>`,
+      '<text x="16" y="53" class="flow-tooltip-heading">참가자</text>',
+      '<text x="278" y="53" text-anchor="end" class="flow-tooltip-heading">당일 순매매</text>',
+      '<text x="394" y="53" text-anchor="end" class="flow-tooltip-heading">누적 순거래량</text>',
+      tooltipRows,
+      '</g>',
+    ].join("");
+    hoverLayer.removeAttribute("hidden");
+    if (hoverStatus) {
+      const details = ordered.map(([, values]) => {
+        const point = values.points[boundedIndex];
+        return `${values.label} 당일 ${tons(point.daily, true)}, 누적 ${tons(point.value, true)}`;
+      });
+      hoverStatus.textContent = `${report.tradeDate}, ${METHOD_LABELS[trendState.method]}. ${details.join(". ")}`;
+    }
+  };
+  const hideHover = () => {
+    hoverLayer.setAttribute("hidden", "");
+    activeIndex = -1;
+    if (hoverStatus) hoverStatus.textContent = "";
+  };
+  const localPoint = (event) => {
+    const bounds = svg.getBoundingClientRect();
+    if (!bounds.width || !bounds.height) return null;
+    return {
+      x: (event.clientX - bounds.left) / bounds.width * width,
+      y: (event.clientY - bounds.top) / bounds.height * height,
+    };
+  };
+  const showFromPointer = (event) => {
+    const point = localPoint(event);
+    if (!point || point.x < left || point.x > width - right || point.y < top || point.y > bottom) {
+      if (event.pointerType !== "touch") hideHover();
+      return;
+    }
+    showHoverAt(nearestReportIndex(point.x));
+  };
+  svg.onpointermove = (event) => {
+    if (event.pointerType !== "touch") showFromPointer(event);
+  };
+  svg.onpointerdown = showFromPointer;
+  svg.onpointerleave = (event) => {
+    if (event.pointerType !== "touch") hideHover();
+  };
+  svg.onpointercancel = (event) => {
+    if (event.pointerType !== "touch") hideHover();
+  };
+  svg.onkeydown = (event) => {
+    if (!["ArrowLeft", "ArrowRight", "Home", "End", "Enter", " ", "Escape"].includes(event.key)) return;
+    event.preventDefault();
+    if (event.key === "Escape") {
+      hideHover();
+      return;
+    }
+    if (event.key === "Home") showHoverAt(0);
+    else if (event.key === "End") showHoverAt(reports.length - 1);
+    else if (event.key === "ArrowLeft") showHoverAt(activeIndex < 0 ? reports.length - 1 : activeIndex - 1);
+    else if (event.key === "ArrowRight") showHoverAt(activeIndex < 0 ? 0 : activeIndex + 1);
+    else showHoverAt(activeIndex < 0 ? reports.length - 1 : activeIndex);
+  };
+  svg.onblur = hideHover;
 }
 
 function renderParticipantTable(aggregates) {

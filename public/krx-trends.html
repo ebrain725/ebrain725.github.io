@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="한국거래소 배출권 거래시장 일일동향의 기간별 참가자 누적 순거래량">
   <title>KRX 거래동향 | ETS LIVE DASHBOARD</title>
-  <link rel="stylesheet" href="assets/krx-trends.css?v=20260902-pdf-archive-brokerage-v8">
+  <link rel="stylesheet" href="assets/krx-trends.css?v=20260902-chart-hover-v9">
 </head>
 <body>
   <header class="topbar">
@@ -15,7 +15,7 @@
     </a>
     <nav class="primary-nav" aria-label="서비스 메뉴">
       <a href="index.html?v=20260902-header-unified-v3">통합대시보드</a>
-      <a class="active" href="krx-trends.html?v=20260902-pdf-archive-brokerage-v8" aria-current="page">KRX 거래동향</a>
+      <a class="active" href="krx-trends.html?v=20260902-chart-hover-v9" aria-current="page">KRX 거래동향</a>
     </nav>
   </header>
 
@@ -93,11 +93,12 @@
           <strong id="selectedPeriodLabel">-</strong>
         </div>
         <div class="flow-chart-wrap">
-          <svg id="flowChart" viewBox="0 0 960 390" role="img" aria-labelledby="flowChartTitle flowChartDesc">
+          <svg id="flowChart" viewBox="0 0 960 390" role="img" tabindex="0" aria-labelledby="flowChartTitle" aria-describedby="flowChartDesc flowHoverStatus">
             <title id="flowChartTitle">참가자별 누적 순거래량 추이</title>
             <desc id="flowChartDesc">KRX 거래동향 자료를 불러오고 있습니다.</desc>
           </svg>
         </div>
+        <p class="sr-only" id="flowHoverStatus" aria-live="polite"></p>
         <div class="flow-legend" id="flowLegend"></div>
         <p class="chart-note" id="taxonomyNote" aria-live="polite">참가자 분류 변경 여부를 확인하고 있습니다.</p>
       </article>
@@ -144,6 +145,6 @@
     <p>시장 판단을 지원하는 참고용 자료입니다. 공식 원문과 통계를 함께 확인하세요.</p>
   </footer>
   <noscript>이 페이지는 JavaScript를 사용합니다. 브라우저 설정에서 JavaScript를 켜주세요.</noscript>
-  <script src="assets/krx-trends.js?v=20260902-pdf-archive-brokerage-v8" defer></script>
+  <script src="assets/krx-trends.js?v=20260902-chart-hover-v9" defer></script>
 </body>
 </html>
