@@ -1,10 +1,11 @@
 # KRX 업체현황(연간) 데이터 빌드
 
-원본은 공개 페이지 밖의 `source-data/krx-annual/Policy.zip`에 보존합니다. 다음
-명령으로 2015~2025년 정적 데이터를 다시 생성합니다.
+원본은 공개 페이지 밖의 `source-data/krx-annual/Policy.zip`에 보존합니다.
 
-공식 합병·분할 근거는 같은 폴더의 `entity-relations.json`에 별도로 보존하며,
-빌드 시 업체 ID와 정확히 연결되는지 검증합니다.
+- [GitHub 저장 파일 확인](https://github.com/ebrain725/ebrain725.github.io/blob/main/source-data/krx-annual/Policy.zip)
+- [원자료 ZIP 직접 다운로드](https://raw.githubusercontent.com/ebrain725/ebrain725.github.io/main/source-data/krx-annual/Policy.zip)
+
+다음 명령으로 2015~2025년 정적 데이터를 다시 생성합니다.
 
 ```bash
 python scripts/build_krx_annual.py --compact
@@ -19,6 +20,9 @@ python scripts/build_krx_annual.py \
   --output public/data/krx-annual.json \
   --compact
 ```
+
+공식 합병·분할 근거는 같은 폴더의 `entity-relations.json`에 별도로 보존하며,
+빌드 시 업체 ID와 정확히 연결되는지 검증합니다.
 
 ## 공개 JSON 계약
 
@@ -73,12 +77,22 @@ python scripts/build_krx_annual.py \
 `allocationType`은 사전할당 원문의 `Y`(유상), `N`(무상), `null`(미제공
 또는 복수 원문 충돌)입니다.
 
-## 지표 산식
+## 원자료 정규화 산식
 
 - 조정할당 = 사전할당 + 추가할당 - 할당취소
 - 이월량 = 할당배출권 이월 + 상쇄배출권 이월
-- 과부족량 = 조정할당 + 차입 - 인증배출량 - 이월량
 - 상쇄발행은 참고지표이며 과부족량 산식에는 넣지 않습니다.
+
+## 대시보드 표시 산식
+
+업체현황 화면은 `public/assets/krx-annual-balance-v2.js`에서 연도별 원자료를
+연결하여 다음 값을 다시 계산합니다.
+
+- 반영 사전할당량 = 당해년도 사전할당량 + 전년도 추가할당량 - 전년도 할당취소량
+- 과부족량 = 반영 사전할당량 + 전년도 이월량 - 전년도 차입량 - 전년도 인증배출량
+- 표의 사전할당 첫 줄에는 원자료 값을 유지하고, 바로 아래 괄호에 반영 사전할당량을 표시합니다.
+- 과부족량은 유상여부 오른쪽의 강조 열에 표시합니다.
+- 2015년은 2014년 자료가 조회범위에 없으므로 반영 사전할당량과 과부족량을 `null`로 처리합니다.
 
 추가할당·취소·이월·차입·상쇄발행 공개 목록에 업체가 없으면 0입니다.
 사전할당도 해당 계획기간 목록에 행이 없으면 0입니다. 원문 행은 있으나 수량
