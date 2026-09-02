@@ -7,6 +7,7 @@ on:
       - "public/**"
       - "source-data/krx-annual/Policy.zip"
       - "scripts/extract_krx_annual_sources.py"
+      - "scripts/apply_krx_annual_procurement_estimate.py"
       - ".github/workflows/deploy-pages.yml"
   workflow_dispatch:
 
@@ -39,6 +40,9 @@ jobs:
       - name: KRX 연간 원자료 개별파일 생성
         run: python scripts/extract_krx_annual_sources.py
 
+      - name: KRX 연간 유상할당 차감 추정치 생성
+        run: python scripts/apply_krx_annual_procurement_estimate.py
+
       - name: Pages 설정
         uses: actions/configure-pages@v5
 
@@ -57,7 +61,10 @@ jobs:
           echo "krx_annual_html=$(sha256sum public/krx-annual.html | awk '{print $1}')" >> "$GITHUB_OUTPUT"
           echo "krx_annual_css=$(sha256sum public/assets/krx-annual.css | awk '{print $1}')" >> "$GITHUB_OUTPUT"
           echo "krx_annual_js=$(sha256sum public/assets/krx-annual.js | awk '{print $1}')" >> "$GITHUB_OUTPUT"
+          echo "krx_annual_procurement_css=$(sha256sum public/assets/krx-annual-procurement-v5.css | awk '{print $1}')" >> "$GITHUB_OUTPUT"
+          echo "krx_annual_procurement_js=$(sha256sum public/assets/krx-annual-procurement-v5.js | awk '{print $1}')" >> "$GITHUB_OUTPUT"
           echo "krx_annual_data=$(sha256sum public/data/krx-annual.json | awk '{print $1}')" >> "$GITHUB_OUTPUT"
+          echo "krx_annual_procurement_method=$(sha256sum public/data/krx-annual-procurement-method.json | awk '{print $1}')" >> "$GITHUB_OUTPUT"
           echo "krx_annual_source_index=$(sha256sum public/data/krx-annual/source-files/index.html | awk '{print $1}')" >> "$GITHUB_OUTPUT"
           echo "krx_annual_source_manifest=$(sha256sum public/data/krx-annual/source-files/manifest.json | awk '{print $1}')" >> "$GITHUB_OUTPUT"
 
@@ -84,7 +91,10 @@ jobs:
           KRX_ANNUAL_HTML_SHA256: ${{ steps.source_hashes.outputs.krx_annual_html }}
           KRX_ANNUAL_CSS_SHA256: ${{ steps.source_hashes.outputs.krx_annual_css }}
           KRX_ANNUAL_JS_SHA256: ${{ steps.source_hashes.outputs.krx_annual_js }}
+          KRX_ANNUAL_PROCUREMENT_CSS_SHA256: ${{ steps.source_hashes.outputs.krx_annual_procurement_css }}
+          KRX_ANNUAL_PROCUREMENT_JS_SHA256: ${{ steps.source_hashes.outputs.krx_annual_procurement_js }}
           KRX_ANNUAL_DATA_SHA256: ${{ steps.source_hashes.outputs.krx_annual_data }}
+          KRX_ANNUAL_PROCUREMENT_METHOD_SHA256: ${{ steps.source_hashes.outputs.krx_annual_procurement_method }}
           KRX_ANNUAL_SOURCE_INDEX_SHA256: ${{ steps.source_hashes.outputs.krx_annual_source_index }}
           KRX_ANNUAL_SOURCE_MANIFEST_SHA256: ${{ steps.source_hashes.outputs.krx_annual_source_manifest }}
         run: |
@@ -126,6 +136,9 @@ jobs:
           verify_public_file "krx-annual.html" "$KRX_ANNUAL_HTML_SHA256"
           verify_public_file "assets/krx-annual.css" "$KRX_ANNUAL_CSS_SHA256"
           verify_public_file "assets/krx-annual.js" "$KRX_ANNUAL_JS_SHA256"
+          verify_public_file "assets/krx-annual-procurement-v5.css" "$KRX_ANNUAL_PROCUREMENT_CSS_SHA256"
+          verify_public_file "assets/krx-annual-procurement-v5.js" "$KRX_ANNUAL_PROCUREMENT_JS_SHA256"
           verify_public_file "data/krx-annual.json" "$KRX_ANNUAL_DATA_SHA256"
+          verify_public_file "data/krx-annual-procurement-method.json" "$KRX_ANNUAL_PROCUREMENT_METHOD_SHA256"
           verify_public_file "data/krx-annual/source-files/index.html" "$KRX_ANNUAL_SOURCE_INDEX_SHA256"
           verify_public_file "data/krx-annual/source-files/manifest.json" "$KRX_ANNUAL_SOURCE_MANIFEST_SHA256"
