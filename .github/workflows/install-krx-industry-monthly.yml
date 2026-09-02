@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - "scripts/krx-industry-monthly-bundle.tar.gz"
+      - "scripts/krx-industry-monthly-bundle.ready"
 
 permissions:
   contents: write
@@ -19,11 +19,19 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Extract prepared dashboard files
+      - name: Assemble and extract prepared dashboard files
         shell: bash
         run: |
           set -euo pipefail
-          tar -xzf scripts/krx-industry-monthly-bundle.tar.gz -C .
+          shopt -s nullglob
+          parts=(scripts/krx-industry-monthly-bundle.b64.part*)
+          if [[ "${#parts[@]}" -ne 5 ]]; then
+            echo "::error::Expected 5 staged bundle parts, found ${#parts[@]}."
+            exit 1
+          fi
+          cat "${parts[@]}" | base64 --decode > /tmp/krx-industry-monthly-bundle.tar.gz
+          echo "98039a24f320e66c8edcd2452e99cb16ef306ce8fbc5685b7267c1be468033ec  /tmp/krx-industry-monthly-bundle.tar.gz" | sha256sum --check
+          tar -xzf /tmp/krx-industry-monthly-bundle.tar.gz -C .
 
       - name: Add the monthly-industry tab to existing KRX pages
         shell: bash
