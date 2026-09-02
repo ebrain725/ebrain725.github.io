@@ -7,6 +7,7 @@
   <title>업체현황(연간) | KRX 거래동향</title>
   <link rel="stylesheet" href="assets/krx-trends.css?v=20260902-annual-tabs-v10">
   <link rel="stylesheet" href="assets/krx-annual.css?v=20260902-annual-v2">
+  <link rel="stylesheet" href="assets/krx-annual-balance-v2.css?v=20260902-applied-preallocation-v1">
 </head>
 <body>
   <header class="topbar">
@@ -16,7 +17,7 @@
     </a>
     <nav class="primary-nav" aria-label="서비스 메뉴">
       <a href="index.html?v=20260902-header-unified-v3">통합대시보드</a>
-      <a class="active" href="krx-annual.html?v=20260902-annual-v2" aria-current="page">KRX 거래동향</a>
+      <a class="active" href="krx-annual.html?v=20260902-annual-v3" aria-current="page">KRX 거래동향</a>
     </nav>
   </header>
 
@@ -43,7 +44,7 @@
 
     <nav class="krx-subnav" aria-label="KRX 거래동향 세부 메뉴">
       <a href="krx-trends.html?v=20260902-annual-tabs-v10">일일 매매현황</a>
-      <a class="active" href="krx-annual.html?v=20260902-annual-v2" aria-current="page">업체현황(연간)</a>
+      <a class="active" href="krx-annual.html?v=20260902-annual-v3" aria-current="page">업체현황(연간)</a>
     </nav>
 
     <section class="status-alert" id="annualStatusAlert" role="status" aria-live="polite" aria-atomic="true" hidden>
@@ -105,7 +106,7 @@
               <th scope="col" class="annual-tree-column">구분</th>
               <th scope="col" class="annual-allocation-type-column">유상여부</th>
               <th scope="col" class="annual-balance-column">과부족량</th>
-              <th scope="col">사전할당</th>
+              <th scope="col" title="첫 줄은 원자료 사전할당량, 괄호는 전년도 추가할당·할당취소 반영값입니다.">사전할당</th>
               <th scope="col">추가할당</th>
               <th scope="col">할당취소</th>
               <th scope="col">조정할당</th>
@@ -122,10 +123,11 @@
       </div>
 
       <div class="annual-formulas" aria-label="계산식과 결측값 기준">
+        <p>* 사전할당 첫 줄은 원자료이며, 하단 괄호값은 당해년도 사전할당량 + 전년도 추가할당량 − 전년도 할당취소량입니다.</p>
         <p>* 조정할당량 = 사전할당량 + 추가할당량 − 할당취소량</p>
         <p>* 이월량 = 할당배출권 이월 + 상쇄배출권 이월</p>
-        <p>* 과부족량 = 당해년도 사전할당량 + 전년도 이월량 − 전년도 차입량 − 전년도 인증배출량입니다.</p>
-        <p>* 2015년은 전년도 자료가 조회기간에 포함되지 않으므로 과부족량을 <b>—</b>로 표시합니다.</p>
+        <p>* 과부족량 = 괄호로 표시한 반영 사전할당량 + 전년도 이월량 − 전년도 차입량 − 전년도 인증배출량입니다.</p>
+        <p>* 2015년은 전년도 자료가 조회기간에 포함되지 않으므로 반영 사전할당량과 과부족량을 <b>—</b>로 표시합니다.</p>
         <p>* <b>—</b>는 원자료가 없거나 계산에 필요한 값이 없는 경우이며, 실제 <b>0</b>과 구분됩니다.</p>
         <p>* 집계행의 <b>부분</b> 표시는 일부 업체의 원자료가 비어 있어 계산 가능한 값만 합산했음을 뜻합니다.</p>
       </div>
@@ -144,7 +146,7 @@
   <footer>
     <p>시장 판단을 지원하는 참고용 자료입니다. 공식 원문과 통계를 함께 확인하세요.</p>
   </footer>
-  <script src="assets/krx-annual-balance-v2.js?v=20260902-prior-year-balance-v2" defer></script>
-  <script src="assets/krx-annual.js?v=20260902-annual-v2" defer></script>
+  <script src="assets/krx-annual-balance-v2.js?v=20260902-prior-year-balance-v3" defer></script>
+  <script src="assets/krx-annual.js?v=20260902-annual-v3" defer></script>
 </body>
 </html>
