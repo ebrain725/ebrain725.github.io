@@ -1,0 +1,131 @@
+name: Sync ETS Power & Energy Raw Data
+
+on:
+  pull_request:
+    paths:
+      - "config/ets_energy_sources.json"
+      - "scripts/ets_fundamentals/**"
+      - "scripts/sync_ets_energy.py"
+      - "tests/test_ets_energy_collector.py"
+      - "tests/fixtures/kpx_supply_today_5m.*"
+      - ".github/workflows/sync-ets-energy.yml"
+  schedule:
+    # 한국시간 08:27, 12:27, 16:27, 20:27, 23:47.
+    # 당일 5분 자료를 누적 갱신하고 마지막 실행으로 일 자료를 거의 완성합니다.
+    - cron: "27 23 * * *"
+    - cron: "27 3 * * *"
+    - cron: "27 7 * * *"
+    - cron: "27 11 * * *"
+    - cron: "47 14 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-ets-energy-raw-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    env:
+      TZ: Asia/Seoul
+      KPX_OPENAPI_SERVICE_KEY: ${{ secrets.KPX_OPENAPI_SERVICE_KEY }}
+
+    steps:
+      - name: 저장소 불러오기
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Python 설정
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 수집기 단위시험
+        run: python -m unittest discover -s tests -p "test_ets_energy_*.py" -v
+
+      - name: 실수집 실행 여부 확인
+        id: prepare
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          if [[ "${GITHUB_EVENT_NAME}" == "pull_request" ]]; then
+            echo "should_run=false" >> "$GITHUB_OUTPUT"
+            echo "reason=pull_request_validation" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          if [[ -z "${KPX_OPENAPI_SERVICE_KEY:-}" ]]; then
+            echo "should_run=false" >> "$GITHUB_OUTPUT"
+            echo "reason=missing_secret" >> "$GITHUB_OUTPUT"
+            echo "::warning::KPX_OPENAPI_SERVICE_KEY 저장소 Secret이 없어 실수집을 생략합니다."
+            exit 0
+          fi
+
+          echo "should_run=true" >> "$GITHUB_OUTPUT"
+          echo "reason=live_collection" >> "$GITHUB_OUTPUT"
+
+      - name: KPX 전력수급 원천데이터 수집
+        if: steps.prepare.outputs.should_run == 'true'
+        run: |
+          set -euo pipefail
+          python scripts/sync_ets_energy.py | tee /tmp/ets-energy-result.json
+
+      - name: 공개 데이터 무결성 검증
+        if: steps.prepare.outputs.should_run == 'true'
+        run: python scripts/sync_ets_energy.py --validate-only
+
+      - name: 수집 결과 저장
+        if: steps.prepare.outputs.should_run == 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add \
+            public/data/fundamentals/power-energy/raw \
+            source-data/ets-energy/raw
+
+          if git diff --cached --quiet; then
+            echo "새로운 전력·에너지 원천데이터 변경이 없습니다."
+            exit 0
+          fi
+
+          git commit -m "data: update ETS power and energy raw data"
+          branch_name="${GITHUB_REF_NAME}"
+
+          for attempt in 1 2 3; do
+            git pull --rebase origin "$branch_name"
+            if git push origin "HEAD:$branch_name"; then
+              exit 0
+            fi
+            echo "푸시 재시도 ${attempt}/3"
+            sleep 3
+          done
+
+          echo "::error::수집 결과를 3회 재시도 후에도 저장하지 못했습니다."
+          exit 1
+
+      - name: 실행 요약
+        if: always()
+        shell: bash
+        run: |
+          {
+            echo "## ETS 전력·에너지 원천데이터"
+            echo
+            echo "- 단위시험: 실행"
+            if [[ "${{ steps.prepare.outputs.should_run }}" == "true" ]]; then
+              echo "- 실수집: 실행"
+              echo "- 공개 데이터 검증: 실행"
+            elif [[ "${{ steps.prepare.outputs.reason }}" == "pull_request_validation" ]]; then
+              echo "- 실수집: PR 검증이므로 생략"
+            else
+              echo "- 실수집: KPX_OPENAPI_SERVICE_KEY 미설정으로 생략"
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"

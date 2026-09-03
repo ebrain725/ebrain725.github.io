@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <header>
+    <resultCode>00</resultCode>
+    <resultMsg>NORMAL SERVICE.</resultMsg>
+  </header>
+  <body>
+    <items>
+      <item>
+        <baseDatetime>202609022355</baseDatetime>
+        <suppAbility>105301.0</suppAbility>
+        <currPwrTot>72001.0</currPwrTot>
+        <forecastLoad>71851.0</forecastLoad>
+        <suppReservePwr>33300.0</suppReservePwr>
+        <suppReserveRate>46.25</suppReserveRate>
+        <operReservePwr>12050.0</operReservePwr>
+        <operReserveRate>16.74</operReserveRate>
+      </item>
+    </items>
+  </body>
+</response>
