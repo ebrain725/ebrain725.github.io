@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "category": "power_energy",
+  "description": "배출권 기초데이터 중 전력·에너지 원천데이터 수집원",
+  "sources": [
+    {
+      "id": "kpx_supply_today_5m",
+      "name_ko": "한국전력거래소 오늘 전력수급현황",
+      "organization": "한국전력거래소",
+      "adapter": "kpx_supply_today_5m",
+      "enabled": true,
+      "secret_env": "KPX_OPENAPI_SERVICE_KEY",
+      "dataset_page": "https://www.data.go.kr/data/15158703/openapi.do",
+      "endpoint_candidates": [
+        "https://apis.data.go.kr/B552115/Sukub5mToday/getSukub5mToday"
+      ],
+      "query_variants": [
+        {
+          "dataType": "xml"
+        },
+        {}
+      ],
+      "native_frequency": "5min",
+      "timeout_seconds": 30,
+      "retries": 1
+    }
+  ],
+  "planned_sources": [
+    {
+      "id": "kpx_power_forecast_1d",
+      "name_ko": "한국전력거래소 전력수급예보",
+      "status": "활용승인 및 신규 GW 응답 검증 후 연결"
+    },
+    {
+      "id": "kpx_smp_hourly",
+      "name_ko": "육지·제주 시간별 계통한계가격",
+      "status": "공식 GW API 엔드포인트와 공표시차 확정 후 연결"
+    },
+    {
+      "id": "kpx_generation_mix",
+      "name_ko": "연료원별 발전·거래량",
+      "status": "전국 단위 공식 API 우선 선정 후 연결"
+    },
+    {
+      "id": "energy_fuel_prices",
+      "name_ko": "LNG·원유·석탄 가격",
+      "status": "국내 도입가격과 국제 벤치마크를 분리하여 연결"
+    }
+  ]
+}

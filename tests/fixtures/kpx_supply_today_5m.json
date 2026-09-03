@@ -1,0 +1,35 @@
+{
+  "response": {
+    "header": {
+      "resultCode": "00",
+      "resultMsg": "NORMAL SERVICE."
+    },
+    "body": {
+      "items": {
+        "item": [
+          {
+            "baseDatetime": "202609022350",
+            "suppAbility": "105,320.4",
+            "currPwrTot": "72,110.1",
+            "forecastLoad": "71,900.0",
+            "suppReservePwr": "33,210.3",
+            "suppReserveRate": "46.06",
+            "operReservePwr": "12,000.5",
+            "operReserveRate": "16.64"
+          },
+          {
+            "baseDatetime": "202609022355",
+            "suppAbility": "105,300.0",
+            "currPwrTot": "72,000.0",
+            "forecastLoad": "71,850.0",
+            "suppReservePwr": "33,300.0",
+            "suppReserveRate": "46.25",
+            "operReservePwr": "12,050.0",
+            "operReserveRate": "16.74"
+          }
+        ]
+      },
+      "totalCount": 2
+    }
+  }
+}
