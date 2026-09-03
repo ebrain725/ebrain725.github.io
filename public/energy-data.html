@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="배출권 분석용 전력·에너지 공식 원천데이터를 일별로 누적 조회하는 대시보드">
+  <title>전력·에너지 원천데이터 | ETS LIVE DASHBOARD</title>
+  <link rel="stylesheet" href="assets/styles.css?v=20260902-header-unified-v3">
+  <link rel="stylesheet" href="assets/energy-data.css?v=20260903-power-energy-v1">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html?v=20260903-power-energy-v1" aria-label="ETS 대시보드 홈">
+      <span class="brand-mark">E</span>
+      <span><b>ETS LIVE DASHBOARD</b><small>Korea Emissions Market</small></span>
+    </a>
+    <nav class="primary-nav" aria-label="서비스 메뉴">
+      <a href="index.html?v=20260903-power-energy-v1">통합대시보드</a>
+      <a class="active" href="energy-data.html?v=20260903-power-energy-v1" aria-current="page">원천데이터</a>
+      <a href="krx-trends.html?v=20260902-annual-tabs-v10">KRX 거래동향</a>
+    </nav>
+  </header>
+
+  <nav class="energy-subnav" aria-label="원천데이터 카테고리">
+    <div class="energy-subnav-inner">
+      <a class="active" href="energy-data.html?v=20260903-power-energy-v1" aria-current="page"><b>①</b> 전력·에너지</a>
+      <span aria-disabled="true"><b>②</b> 산업·경기·날씨 <small>준비중</small></span>
+      <span aria-disabled="true"><b>③</b> 수급(거래) <small>준비중</small></span>
+      <span class="derived-tab" aria-disabled="true">파생데이터 <small>다음 단계</small></span>
+    </div>
+  </nav>
+
+  <main class="energy-dashboard" id="energyDashboard" aria-busy="true">
+    <section class="energy-intro">
+      <div>
+        <p class="eyebrow">ETS SOURCE DATA HUB · CATEGORY 01</p>
+        <h1>전력·에너지 원천데이터</h1>
+        <p class="intro-copy">한국전력거래소와 미국 EIA의 공식 API 값을 가공 전 상태로 누적하고, 같은 원천값에서 계산한 일별 요약을 함께 보여줍니다.</p>
+      </div>
+      <div class="energy-sync" role="status" aria-live="polite" aria-atomic="true">
+        <span class="sync-state"><i></i> 자동수집</span>
+        <strong id="energySyncStatus">확인 중</strong>
+        <small id="energySyncTime">최근 실행시각을 불러오고 있습니다.</small>
+      </div>
+    </section>
+
+    <section class="energy-alert" id="energyAlert" role="status" aria-live="polite" hidden>
+      <strong id="energyAlertTitle"></strong>
+      <p id="energyAlertDetail"></p>
+    </section>
+
+    <section class="energy-kpi-grid" aria-label="전력·에너지 최신 지표">
+      <article class="energy-kpi featured">
+        <span>KPX 육지 SMP</span>
+        <strong><b id="latestSmp">-</b><small>원/kWh</small></strong>
+        <p id="latestSmpMeta">최근 관측 대기</p>
+      </article>
+      <article class="energy-kpi">
+        <span>현재 전력수요</span>
+        <strong><b id="latestDemand">-</b><small>GW</small></strong>
+        <p id="latestDemandMeta">최근 관측 대기</p>
+      </article>
+      <article class="energy-kpi">
+        <span>공급예비율</span>
+        <strong><b id="latestReserve">-</b><small>%</small></strong>
+        <p id="latestReserveMeta">최근 관측 대기</p>
+      </article>
+      <article class="energy-kpi">
+        <span>WTI 현물</span>
+        <strong><b id="latestWti">-</b><small>USD/bbl</small></strong>
+        <p id="latestWtiMeta">최근 관측 대기</p>
+      </article>
+      <article class="energy-kpi">
+        <span>Brent 현물</span>
+        <strong><b id="latestBrent">-</b><small>USD/bbl</small></strong>
+        <p id="latestBrentMeta">최근 관측 대기</p>
+      </article>
+      <article class="energy-kpi">
+        <span>Henry Hub 현물</span>
+        <strong><b id="latestHenry">-</b><small>USD/MMBtu</small></strong>
+        <p id="latestHenryMeta">최근 관측 대기</p>
+      </article>
+    </section>
+
+    <section class="source-section" aria-labelledby="sourceStatusHeading">
+      <div class="section-heading">
+        <div>
+          <p class="section-tag">SOURCE STATUS</p>
+          <h2 id="sourceStatusHeading">API 수집 현황</h2>
+        </div>
+        <p>오류가 발생해도 기존 정상 데이터는 유지하고, 실패한 원천만 상태를 표시합니다.</p>
+      </div>
+      <div class="source-grid" id="sourceGrid">
+        <div class="source-loading">원천별 수집 상태를 확인하고 있습니다.</div>
+      </div>
+    </section>
+
+    <section class="data-section" aria-labelledby="dataExplorerHeading">
+      <div class="section-heading data-heading">
+        <div>
+          <p class="section-tag">DAILY &amp; RAW RECORDS</p>
+          <h2 id="dataExplorerHeading">전체 데이터 조회</h2>
+          <p>일별 요약 또는 연도별 원천 레코드를 선택해 전기간을 페이지 단위로 확인합니다.</p>
+        </div>
+        <span class="record-total" id="recordTotal">0건</span>
+      </div>
+
+      <div class="data-controls">
+        <div class="view-switch" role="group" aria-label="데이터 보기 방식">
+          <button class="active" type="button" data-view="daily" aria-pressed="true">일별 요약</button>
+          <button type="button" data-view="raw" aria-pressed="false">원천 레코드</button>
+        </div>
+        <label id="datasetField" hidden>
+          <span>원천</span>
+          <select id="datasetSelect" aria-label="원천 데이터셋">
+            <option value="kpx_smp">KPX 육지 SMP·수요예측</option>
+            <option value="kpx_power">KPX 전력수급·예비력</option>
+            <option value="eia_energy">EIA 국제 에너지 가격</option>
+          </select>
+        </label>
+        <label>
+          <span>연도</span>
+          <select id="yearSelect" aria-label="조회 연도"><option value="ALL">전체</option></select>
+        </label>
+        <label>
+          <span>시작일</span>
+          <input type="date" id="startDate">
+        </label>
+        <label>
+          <span>종료일</span>
+          <input type="date" id="endDate">
+        </label>
+        <button class="apply-filter" type="button" id="applyFilter">조회</button>
+        <button class="reset-filter" type="button" id="resetFilter">초기화</button>
+      </div>
+
+      <div class="table-status" id="tableStatus" role="status" aria-live="polite">데이터를 불러오고 있습니다.</div>
+      <div class="data-table-wrap">
+        <table class="data-table">
+          <thead id="dataHead"></thead>
+          <tbody id="dataBody"><tr><td>데이터를 불러오고 있습니다.</td></tr></tbody>
+        </table>
+      </div>
+      <div class="table-footer">
+        <p id="coverageText">수집 범위를 확인하고 있습니다.</p>
+        <nav class="pagination" id="pagination" aria-label="데이터 페이지 이동"></nav>
+      </div>
+    </section>
+
+    <section class="method-section" aria-labelledby="methodHeading">
+      <div>
+        <p class="section-tag">DATA POLICY</p>
+        <h2 id="methodHeading">원천데이터 운영 원칙</h2>
+      </div>
+      <div class="method-grid">
+        <article><b>공식 API 우선</b><p>뉴스 기사나 비공식 웹시세에서 숫자를 추출하지 않고 KPX·EIA 공식 응답만 저장합니다.</p></article>
+        <article><b>원천·요약 분리</b><p>시간별·관측별 원천 레코드를 연도 파일에 보존하고 일별 요약은 원천파일에서 매번 재계산합니다.</p></article>
+        <article><b>수정값 덮어쓰기</b><p>같은 날짜·시간·지표가 재공개되면 최신 공식값으로 교체하며 중복 레코드는 만들지 않습니다.</p></article>
+        <article><b>시차 명시</b><p>EIA 값은 한국 기준일과 공개 시차가 있으므로 각 수치 옆에 실제 관측일을 별도로 표시합니다.</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="brand"><span class="brand-mark">E</span><span><b>ETS SIGNAL</b><small>Korea Emissions Market</small></span></div>
+    <p>시장 판단을 지원하는 참고용 데이터입니다. 원천기관의 정정 공표에 따라 과거 값이 갱신될 수 있습니다.</p>
+  </footer>
+  <noscript>이 페이지는 JavaScript를 사용합니다. 브라우저 설정에서 JavaScript를 켜주세요.</noscript>
+  <script src="assets/energy-data.js?v=20260903-power-energy-v1" defer></script>
+</body>
+</html>
