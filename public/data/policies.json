@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-09-04T10:11:44+09:00",
+  "lastSync": "2026-09-04T13:11:55+09:00",
   "keywords": [
     "배출권",
     "배출권거래제",
@@ -30,13 +30,44 @@
   "warning": null,
   "aiInsight": {
     "summary": "최근 공식자료의 직접적인 수급 변수는 유상경매입니다. 최근 경매가 높은 낙찰가로 소화돼 공급보다 이행수요가 강하다는 신호입니다.",
-    "generatedAt": "2026-09-04T10:11:44+09:00",
-    "basisLatestDate": "2026-09-02",
+    "generatedAt": "2026-09-04T13:11:55+09:00",
+    "basisLatestDate": "2026-09-04",
     "basisCount": 10,
     "source": "fallback",
     "model": null
   },
   "institutionSchedules": [
+    {
+      "id": "988edeec979ed63d",
+      "title": "기후부-산업계, 탈탄소 녹색전환 위해 머리 맞대",
+      "sourceTitle": "기후부-산업계, 탈탄소 녹색전환 위해 머리 맞대",
+      "eventType": "간담회",
+      "startDate": "2026-09-04",
+      "endDate": "2026-09-04",
+      "dateInference": "yearless",
+      "startTime": "",
+      "timezone": "Asia/Seoul",
+      "organizer": "기후에너지환경부",
+      "location": "",
+      "status": "confirmed",
+      "evidence": "▷ 기후부·한국지속가능발전기업협의회(KBCSD) 기후에너지환경정책협의회 개회 기후에너지환경부(장관 김성환)는 9월 4일 오전 웨스틴서울파르나스(서울 강남구 소재)에서 한국지속가능발전기업협의회(회장 박재완) 회원사 임원과 정책 간담회를 갖는다.",
+      "publishedAt": "2026-09-04",
+      "source": "기후부 보도자료",
+      "sourceType": "official",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C%EA%B1%B0%EB%9E%98%EC%A0%9C&menuId=10598&orgCd=&boardMasterId=939&boardId=1888610",
+      "sourceItemIds": [
+        "aeba8657c90db233"
+      ],
+      "sourceUrls": [
+        "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C%EA%B1%B0%EB%9E%98%EC%A0%9C&menuId=10598&orgCd=&boardMasterId=939&boardId=1888610"
+      ],
+      "sources": [
+        "기후부 보도자료"
+      ],
+      "duplicateCount": 1,
+      "contentFingerprint": "fbb3542718979c3316d5f0a7c0f924ca8c427a86",
+      "contentSignature": "기후부산업계탈탄소녹색전환위해머리맞대기후부한국지속가능발전기업협의회kbcsd기후에너지환경정책협의회개회기후에너지환경부장관김성환는9월4일오전웨스틴서울파르나스서울강남구소재에서한국지속가능발전기업협의회회장박재완회원사임원과정책간담회를갖는다기후에너지환경부와한국지속가능발전협의회kbcsd는2014년부터매년반기마다정책협의회를개최하여정부와산업계간원활한소통과협력을도모하고기후에너지환경분야규제및애로사항을찾아내개선하고있다이날협의회는오일영기후에너지환경부기후에너지정책실장홍현종한국지속가능발전기업협의회사무총장및회원사임원등30여명이참석하여산업계의어려움을듣고제도개선방안등을중점논의한다특히배출권거래제제도합리화전력구매계약ppa제도개선저탄소철강제품구매활성화등제도개선과정부지원강화방안을집중논의하고기후에너지환경부는제시된제안에대해합리적인개선및지원방안을검토하여의견을전달한다오일영기후에너지환경부기후에너지정책실장은기업의탈탄소녹색전환은새로운경쟁력의기준이되고있다라면서기업이예측가능한환경에서과감히투자할수있도록제도를보완하고세계적인기업으로도약할수있도록전방위적으로지원정책을추진하겠다라고밝혔다붙임기후에너지환경정책협의회계획끝"
+    },
     {
       "id": "f71a90a7e88b91a7",
       "title": "물·에너지·시민, 함께 누리는 지속가능한 도시",
@@ -335,7 +366,31 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "edaily.co.kr"
+        "edaily.co.kr",
+        "econonews.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 2,
+      "region": "국내"
+    },
+    {
+      "id": "9ceae79c34d4bcff",
+      "publishedAt": "2026-09-04",
+      "title": "페로타임즈 손바닥뉴스 9월4일(금)",
+      "category": "시장·가격",
+      "summary": "CBAM 탄소 가격 감면 대상 16개 제도 인정…韓 K-ETS 포함 [지금 일본은] 경량강관 채용 소화설비 등 확대... 잠재 시장 '수백만 톤' [이슈리포트] AI 전력난, 해법은 바다?…부유식 데이터센터 '주목' 中, 철강價 단기...",
+      "source": "ferrotimes.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.ferrotimes.com/news/articleView.html?idxno=50185",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "K-ETS"
+      ],
+      "duplicateSources": [
+        "ferrotimes.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -368,6 +423,56 @@
       "region": "국내"
     },
     {
+      "id": "ca63127797fe01cb",
+      "publishedAt": "2026-09-04",
+      "title": "정부, 탄소감축 어려운 산업에 '전환금융' 확대",
+      "category": "제도",
+      "summary": "배출권 거래제 등 규제는 목표 범위의 하한을 적용해 설계하도록 했다. 산업계의 감축목표 이행을 위해 정부가 온실가스 감축 기술 개발에 필요한 연구개발(R&D), 설비투자, 상용화 등을 지원하는 내용도 반영됐다....",
+      "source": "safetimes.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.safetimes.co.kr/news/articleView.html?idxno=245446",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "safetimes.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "50fd7f1566177aaf",
+      "publishedAt": "2026-09-04",
+      "title": "산업계, 기후부에 배출권 ·PPA 손질 요청…저탄소 철강 지원도",
+      "category": "제도",
+      "summary": "황덕현 기후환경전문기자 = 기후에너지환경부와 주요 기업들이 배출권 거래제와 전력구매계약(PPA), 저탄소... 논의 대상은 배출권 거래제 제도 합리화와 PPA 제도 개선, 저탄소 철강제품 구매 활성화 등이다. 산업계가 제도...",
+      "source": "news1.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.news1.kr/society/environment/6279927",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "뉴스1",
+        "news1.kr"
+      ],
+      "searchProviders": [
+        "Google News RSS",
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 2,
+      "region": "국내"
+    },
+    {
       "id": "72843ab81464423c",
       "publishedAt": "2026-09-04",
       "title": "사회적가치연구원·서울대, 기후테크 '선금융' 해법 찾는다",
@@ -388,6 +493,32 @@
       "searchProviders": [
         "NAVER API HUB"
       ],
+      "region": "국내"
+    },
+    {
+      "id": "9cb184a2f17666dc",
+      "publishedAt": "2026-09-04",
+      "title": "배출권 거래제·PPA 손질 논의…기후부, 산업계 애로 청취",
+      "category": "제도",
+      "summary": "아주경제=최예지 기자 ruizhi@ajunews.com 정부와 산업계가 배출권 거래제와 전력구매계약(PPA) 등 기업의... 특히 배출권 거래제 제도 합리화와 전력구매계약(PPA) 제도 개선, 저탄소 철강제품 구매 활성화 및 정부 지원 강화...",
+      "source": "ajunews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.ajunews.com/view/20260904091619659",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "아주경제",
+        "ajunews.com"
+      ],
+      "searchProviders": [
+        "Google News RSS",
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 2,
       "region": "국내"
     },
     {
@@ -413,6 +544,71 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "89e922fab232bf51",
+      "publishedAt": "2026-09-04",
+      "title": "기후부·산업계, 배출권 거래제·PPA 개선 논의",
+      "category": "제도",
+      "summary": "정부와 산업계가 배출권 거래제와 전력구매계약(PPA) 개선 등 기업의 탈탄소 전환을 지원할 방안을... 주요 안건은 배출권 거래제 합리화와 PPA 제도 개선, 저탄소 철강제품 구매 활성화였다. 기후부는 산업계의...",
+      "source": "dailian.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.dailian.co.kr/news/view/1686201/?sc=Naver",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "dailian.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "aeba8657c90db233",
+      "publishedAt": "2026-09-04",
+      "title": "기후부-산업계, 탈탄소 녹색전환 위해 머리 맞대",
+      "category": "제도",
+      "summary": "▷ 기후부·한국지속가능발전기업협의회(KBCSD) 기후에너지환경정책협의회 개회 기후에너지환경부(장관 김성환)는 9월 4일 오전 웨스틴서울파르나스(서울 강남구 소재)에서 한국지속가능발전기업협의회(회장 박재완) 회원사 임원과 정책 간담회를 갖는다. 기후에너지환경부와 한국지속가능발전협의회(KBCSD)는 2014년부터 매년 반기마다 정책협의회를 개최하여, 정부와 산업계 간 원활한 소통과 협력을 도모하고 기후·에너지·환경 분야 규제 및 애로사항을 찾아내 개선하고 있다. 이날 협의회는 오일영 기후에너지환경부 기후에너지정책실장, 홍현종 한국지속가능발전기업협의회 사무총장 및 회원사 임원 등 30여 명이 참석하여 산업계의 어려움을 듣고 제도개선 방안 등을 중점 논의한다. 특히, △배출권거래제 제도 합리화, △전력구매계약(PPA) 제도 개선, △저탄소 철강제품 구매 활성화 등 제도 개선과 정부 지원 강화 방안을 집중 논의하고, 기후에너지환경부는 제시된 제안에 대해 합리적인 개선 및 지원방안을 검토하여 의견을 전달한다. 오일영 기후에너지환경부 기후에너지정책실장은 “기업의 탈탄소 녹색전환은 새로운 경쟁력의 기준이 되고 있다”라면서, “기업이 예측 가능한 환경에서 과감히 투자할 수 있도록 제도를 보완하고, 세계적인 기업으로 도약할 수 있도록 전방위적으로 지원 정책을 추진하겠다”라고 밝혔다. 붙임 기후·에너지·환경 정책 협의회 계획. 끝.",
+      "source": "기후부 보도자료",
+      "sourceType": "official",
+      "section": "press",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C%EA%B1%B0%EB%9E%98%EC%A0%9C&menuId=10598&orgCd=&boardMasterId=939&boardId=1888610",
+      "matchedKeywords": [
+        "배출권거래제"
+      ]
+    },
+    {
+      "id": "580c448e83dd1b5b",
+      "publishedAt": "2026-09-04",
+      "title": "기후부-산업계, 탈탄소 녹색전환 위해 맞손...\"규제 혁신과 전방위 지원...",
+      "category": "제도",
+      "summary": "구체적으로는 △ 온실가스 배출권 거래제 제도의 합리화, △전력구매계약(PPA) 제도의 실효성 있는 개선, △저탄소 철강제품의 구매 활성화 방안 등이 심도 있게 논의 테이블에 올랐다. 산업계 임원들은 기업이 탄소 중립을...",
+      "source": "marketnews.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.marketnews.co.kr/news/articleView.html?idxno=74240",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "온실가스 배출권"
+      ],
+      "duplicateSources": [
+        "marketnews.co.kr",
+        "todayenergy.kr",
+        "newsis.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 3,
       "region": "국내"
     },
     {
@@ -479,6 +675,54 @@
       ],
       "duplicateSources": [
         "kado.net"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "726da111f15adb32",
+      "publishedAt": "2026-09-04",
+      "title": "[환경재단] 이브자리 탄소배출권 통해 서울국제환경영화제 ‘탄소중립’ 이어간다",
+      "category": "제도",
+      "summary": "[환경재단] 이브자리 탄소배출권 통해 서울국제환경영화제 ‘탄소중립’ 이어간다 워터저널",
+      "source": "워터저널",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1Pekl6Mjk2aGVxOG5vNUhHYlJOdVFnNkVwM1V3aklkc3dfQ3BQSTJGYmM3YjdOcVJOM3NtUHlDbzdJdGpUeklFOWYxRGlkU1JacUEzTGlnOTRyVEJ6YmtFSmtEdnJCQ3JwbWdQalhma09QQkpwTVHSAXZBVV95cUxNT3pJejI5NmhlcThubzVIR2JSTnVRZzZFcDNVd2pJZHN3X0NwUEkyRmJjN2I3TnFSTjNzbVB5Q283SXRqVHpJRTlmMURpZFNSWnFBM0xpZzk0clRCemJrRUprRHZyQkNycG1nUGpYZmtPUEJKcE1R?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "워터저널"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "8b2187d4cb96f34c",
+      "publishedAt": "2026-09-04",
+      "title": "[줌인] 농협은행, 수해복구부터 탄소금융까지…농업·지역상생 지원 확...",
+      "category": "제도",
+      "summary": "탄소 배출권 구매대금 전달식'을 열고 감귤 수확기 농촌 일손돕기를 실시했다. 사진=NH농협은행 및... 이번 사업은 저탄소 농업기술을 도입해 온실가스를 감축한 농가의 실적을 탄소 배출권 과 연계해 농외소득 창출을...",
+      "source": "dailypop.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.dailypop.kr/news/articleView.html?idxno=102244",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "dailypop.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -727,208 +971,6 @@
       ],
       "duplicateCount": 1,
       "region": "해외"
-    },
-    {
-      "id": "2b18d12ded264343",
-      "publishedAt": "2026-09-03",
-      "title": "페로타임즈 손바닥뉴스 9월3일(목)",
-      "category": "시장·가격",
-      "summary": "CBAM 탄소 가격 감면 대상 16개 제도 인정…韓 K-ETS 포함 [지금 일본은] 경량강관 채용 소화설비 등 확대... 잠재 시장 '수백만 톤' [이슈리포트] AI 전력난, 해법은 바다?…부유식 데이터센터 '주목' 中, 철강價 단기...",
-      "source": "ferrotimes.com",
-      "sourceType": "news",
-      "section": "news",
-      "url": "http://www.ferrotimes.com/news/articleView.html?idxno=50158",
-      "searchProvider": "NAVER API HUB",
-      "matchedKeywords": [
-        "K-ETS"
-      ],
-      "duplicateSources": [
-        "ferrotimes.com"
-      ],
-      "searchProviders": [
-        "NAVER API HUB"
-      ],
-      "duplicateCount": 1,
-      "region": "국내"
-    },
-    {
-      "id": "5ef289aea3d0b6af",
-      "publishedAt": "2026-09-03",
-      "title": "작년 논란의 기업들…무엇을 고쳤나 [2026 국감]",
-      "category": "제도",
-      "summary": "크게 △플랫폼의 시장 지배력 남용과 불공정거래 △사모펀드가 인수한 유통 대기업의 부실 △개인정보... 포스코와 현대제철 등 다배출 기업에 대한 탄소 배출권 과다 할당 문제도 시정 요구에 포함됐다. 현대자동차그룹은...",
-      "source": "sisaon.co.kr",
-      "sourceType": "news",
-      "section": "news",
-      "url": "https://www.sisaon.co.kr/news/articleView.html?idxno=204104",
-      "searchProvider": "NAVER API HUB",
-      "matchedKeywords": [
-        "배출권",
-        "탄소배출권"
-      ],
-      "duplicateSources": [
-        "sisaon.co.kr"
-      ],
-      "searchProviders": [
-        "NAVER API HUB"
-      ],
-      "duplicateCount": 1,
-      "region": "국내"
-    },
-    {
-      "id": "6d347c1605aa5eef",
-      "publishedAt": "2026-09-03",
-      "title": "일론 머스크의 시대적 의미를 이해하기 위한 다양한 시선들 [세상을 움...",
-      "category": "제도",
-      "summary": "일론 머스크가 시장 경제의 역동성과 혁신 능력을 보여주는 상징이라고 생각한다면 큰 착각이다.... 테슬라 역시 초기에 몇 번의 위기를 맞았지만 미국 에너지부의 정부 대출과 각국 정부의 전기차 보조금, 탄소 배출권...",
-      "source": "hankookilbo.com",
-      "sourceType": "news",
-      "section": "news",
-      "url": "https://www.hankookilbo.com/news/article/A2026090210420004185?did=NA",
-      "searchProvider": "NAVER API HUB",
-      "matchedKeywords": [
-        "배출권",
-        "탄소배출권"
-      ],
-      "duplicateSources": [
-        "hankookilbo.com"
-      ],
-      "searchProviders": [
-        "NAVER API HUB"
-      ],
-      "duplicateCount": 1,
-      "region": "해외"
-    },
-    {
-      "id": "3599dd45992fabbd",
-      "publishedAt": "2026-09-03",
-      "title": "이브자리·환경재단, 탄소 배출권 기부전달식 진행",
-      "category": "상쇄·외부사업",
-      "summary": "발생한 탄소를 모두 상쇄 하는 데 활용된다. 고진수 이브자리 이브랜드 대표는 \"환경재단과의 협업은 직접 조성한 숲에서 확보한 탄소 배출권 을 사회와 나누며 탄소중립을 실천할 수 있는 뜻깊은 기회가 됐다\"고 말했다.",
-      "source": "enewstoday.co.kr",
-      "sourceType": "news",
-      "section": "news",
-      "url": "http://www.enewstoday.co.kr/news/articleView.html?idxno=2466427",
-      "searchProvider": "NAVER API HUB",
-      "matchedKeywords": [
-        "배출권",
-        "탄소배출권"
-      ],
-      "duplicateSources": [
-        "enewstoday.co.kr"
-      ],
-      "searchProviders": [
-        "NAVER API HUB"
-      ],
-      "duplicateCount": 1,
-      "region": "국내"
-    },
-    {
-      "id": "0d71f334820d9ed2",
-      "publishedAt": "2026-09-03",
-      "title": "이브자리, 서울국제환경영화제 탄소 배출권 88톤 기부",
-      "category": "상쇄·외부사업",
-      "summary": "2025 서울국제환경영화제에서 배출된 탄소 209톤도 보유한 탄소 배출권 으로 전량 상쇄 했다. 이브자리는 2013년부터 산림청 산림탄소 상쇄 제도에 참여하고 있다. 지금까지 누적 1,924톤의 자발적 탄소 배출권 을 발급받았다....",
-      "source": "hansbiz.co.kr",
-      "sourceType": "news",
-      "section": "news",
-      "url": "http://www.hansbiz.co.kr/news/articleView.html?idxno=861844",
-      "searchProvider": "NAVER API HUB",
-      "matchedKeywords": [
-        "배출권",
-        "탄소배출권"
-      ],
-      "duplicateSources": [
-        "라이프인",
-        "lifein.news",
-        "todayenergy.kr",
-        "hansbiz.co.kr",
-        "매일타임즈",
-        "m-i.kr",
-        "woodkorea.co.kr",
-        "lawissue.co.kr",
-        "매일일보",
-        "뉴스와이어",
-        "국민기자뉴스"
-      ],
-      "searchProviders": [
-        "Google News RSS",
-        "NAVER API HUB"
-      ],
-      "duplicateCount": 11,
-      "region": "국내"
-    },
-    {
-      "id": "632c983d26fa115c",
-      "publishedAt": "2026-09-03",
-      "title": "은행권, 경영진 대상 '생성형 AI 실습 교육' 실시·'하나 부동산 밸류업...",
-      "category": "제도",
-      "summary": "하나은행은 '하나 부동산 밸류업 플랫폼'을 출범했으며, NH농협은행은 저탄소 농가의 탄소배출권 구매대금 전달 및 수확기 농촌 일손돕기를 전개했다. 광주은행은 광주신용보증재단과 '민생회복 통합대환보증...",
-      "source": "wsobi.com",
-      "sourceType": "news",
-      "section": "news",
-      "url": "http://www.wsobi.com/news/articleView.html?idxno=317473",
-      "searchProvider": "NAVER API HUB",
-      "matchedKeywords": [
-        "배출권",
-        "탄소배출권"
-      ],
-      "duplicateCount": 1,
-      "duplicateSources": [
-        "wsobi.com"
-      ],
-      "searchProviders": [
-        "NAVER API HUB"
-      ],
-      "region": "국내"
-    },
-    {
-      "id": "3f793d15c860ceb9",
-      "publishedAt": "2026-09-03",
-      "title": "우리집 태양광도 온실가스 감축 실적으로…생활속 탄소감축 '배출권' 인정",
-      "category": "제도",
-      "summary": "우리집 태양광도 온실가스 감축 실적으로…생활속 탄소감축 '배출권' 인정 energyprosumer.info",
-      "source": "energyprosumer.info",
-      "sourceType": "news",
-      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5hUjNVZWE0OGpnVmxjZkU0d3pnQ2VyYmJYeDFIa2c3NHdqU0VUN2ZIMzVfTk5NUjM3V1REcENUa1dINzd2Ml9JTVd3LW0?oc=5",
-      "searchProvider": "Google News RSS",
-      "matchedKeywords": [
-        "배출권"
-      ],
-      "section": "news",
-      "duplicateSources": [
-        "에너지프로슈머",
-        "energyprosumer.info"
-      ],
-      "searchProviders": [
-        "Google News RSS"
-      ],
-      "duplicateCount": 2,
-      "region": "국내"
-    },
-    {
-      "id": "c035d43a673cf8b4",
-      "publishedAt": "2026-09-03",
-      "title": "에코민·탄소배출권산업협회·후시파트너스, 친환경 플라스틱 감축량 ‘탄소 크레딧’ 사업화 추진",
-      "category": "제도",
-      "summary": "에코민·탄소배출권산업협회·후시파트너스, 친환경 플라스틱 감축량 ‘탄소 크레딧’ 사업화 추진 스타트업엔(StartupN)",
-      "source": "스타트업엔(StartupN)",
-      "sourceType": "news",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5LV0pCWGx1a2dJU0RJZDVtd0daQ1ZEeVNZZUlYMm1Gc2R3QlJnUDA2UU9EYU1UNkhHYk1RQTNuT2RhMG5fOFFFZS1uc3k4bzFqT0NmRmZyMVp0TG5JOUhORXZjcllQOVQ1?oc=5",
-      "searchProvider": "Google News RSS",
-      "matchedKeywords": [
-        "배출권",
-        "탄소배출권"
-      ],
-      "section": "news",
-      "duplicateCount": 1,
-      "duplicateSources": [
-        "스타트업엔(StartupN)"
-      ],
-      "searchProviders": [
-        "Google News RSS"
-      ],
-      "region": "국내"
     },
     {
       "id": "33c68d93de978225",
@@ -1568,20 +1610,6 @@
       "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1847110",
       "matchedKeywords": [
         "시장안정화"
-      ]
-    },
-    {
-      "id": "ec0a9bbb36d9589e",
-      "publishedAt": "2026-02-25",
-      "title": "금융시장이 기업의 녹색 전환(GX)을 뒷받침하겠습니다.",
-      "category": "제도",
-      "summary": "▷ 이억원 금융위원장, 제4차 생산적금융 대전환 회의 개최 1. ESG 공시기준 최종안 확정 및 ESG 공시제도 로드맵 초안 제시 ☞ 그간 관계부처 회의 및 간담회 등을 거쳐 마련한 로드맵 초안에 대하여 ‘26.3월까지 추가 공개 의견수렴을 거쳐 4월 중 확정 ※ 다만, 일부 종속회사 및 소기업 등과 관련해서는 공시초기 예외 인정 검토 2. 대한민국의 녹색 대전환(K-GX)을 견인하는 기후금융 활성화 방안 ① 2035 NDC 달성을 위한 790조원 규모(’26~‘35년간)의 기후금융 공급계획*, ② 고탄소 기업의 탄소감축 노력을 지원하기 위한 한국형 전환금융 도입, ③ 금융권의 자율적인 기후대응 노력을 뒷받침하는 정보 인프라 고도화 * (현재) 7년간 420조원(‘24~’30년) → (확대) 10년간 790조원(‘26~’35년) ※【관련 국정과제】 46. 진짜 성장을 뒷받침하는 생산적 금융 이억원 금융위원장은 ’26.2.25일(수) 대한상공회의소 20층 챔버 라운지에서 생산적금융 대전환 네 번째 회의*를 개최하였다. 오늘 회의에는 관계부처와 유관기관, 경제단체 및 이해관계자, 전문가들이 모여 우리 경제와 기업의 녹색 전환(Green Transformation, GX)을 위한 다양한 과제들을 논의하였다. * 1차 회의(9.19일), 2차 회의(10.22일), 3차 회의(12.22일) 이억원 금융위원장은 모두발언을 통해 “최근 정부는 탄소중립 달성을 위해 2035 NDC(국가 온실가스 감축목표)를 제시하고 한국형 녹색전환(K-GX)을 추진하고 있다”라면서, “기업의 지속가능한 성장을 위해서는 기후 등 ESG 요소에 대한 적극적인 대응이 반드시 필요”하다는 점에서 “ESG가 생산적 금융의 핵심과제”임을 강조하였다. 특히, “ESG 분야는 단기에 가시적인 투자성과를 내기 어려운 만큼, 공공 주도로 모험자본을 공급하고 관련 인프라를 구축하는 것이 중요”하다고 하였다. 이어서 금융위원회는 금융시장의 녹색 전환 지원을 위한 역점 과제로 (1)ESG 공시 제도화 및 (2)기후금융 활성화를 제시하였다. 1. ESG 공시 제도화 방안 금융위원회는 그간 관계부처 회의, 간담회 등을 거쳐 마련한 ESG 공시의 ‘청사진’이라 할 수 있는 로드맵(案)을 공개하였으며, 구체적 공시 시작 시점, 적용대상 기업 및 공시정보의 범위(스코프3 등) 관련 계획에 대해 설명하였다. [1] 공시로드맵(의견수렴案) ① 공시시기 및 공시대상 먼저 공시시기 및 공시대상과 관련하여 ’28년FY27 연결자산총액 30조원 이상 코스피 상장기업부터 공시를 단계적*으로 시작하고, 공시 첫 해에 한하여 일정 기준을 충족한 국내외 종속회사(예: 자산·매출액이 연결기준 10% 미만 종속회사)는 공시대상에서 제외하는 것을 허용하는 방안을 제시하였다. * [예] ’29년FY28부터 연결자산총액 10조원 이상의 코스피 상장기업으로 확대하고 추후 국제동향, 준비상황 등을 보아가며 추가 확대 논의 한국과 경제·산업구조가 유사한 일본이 ’27.6월FY26부터 시가총액 3조엔 이상 프라임시장 상장기업에 대해 공시하도록 하였고, 일부 국내 대기업은 ’29년부터 EU 역외 공시의무가 적용된다는 점 등이 종합적으로 고려되었다. ② 스코프3* 유예기간 * (스코프1) 직접 배출, (스코프2) 에너지 소비 등 간접배출, (스코프3) 가치사슬 전반의 배출 기업 가치사슬 전반의 배출량과 관련된 스코프3 온실가스 배출량은 온실가스 배출량 산정·추정 인프라 등을 구축하여 원칙적으로 ’31년FY30부터 공시를 시작하도록 하는 방안이 검토되었다. 다만, 중소기업기본법상 소기업이면서 고탄소 배출 업종*이 아닌 가치사슬은 공시를 면제하되, 제도가 안착되어 자본시장법상 공시로 전환된 이후 면제범위를 재검토하기로 하였다. * EU 탄소국경조정제도(Carbon Border Adjustment Mechanism) 등 해외사례를 참고하여 관련 규정에 반영할 예정 ③ 공시채널 및 면책허용 등 공시채널과 관련해서는 우선 거래소 공시로 운영하고, 제도가 안착된 이후 법정 공시*로 전환(의견수렴을 통해 전환시기 확정)하는…",
-      "source": "기후부 보도자료",
-      "sourceType": "official",
-      "section": "press",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C&menuId=10598&orgCd=&boardMasterId=939&boardId=1845200",
-      "matchedKeywords": [
-        "배출권"
       ]
     },
     {
