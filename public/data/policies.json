@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-09-05T08:11:38+09:00",
+  "lastSync": "2026-09-05T10:14:30+09:00",
   "keywords": [
     "배출권",
     "배출권거래제",
@@ -27,10 +27,10 @@
     "Google News RSS",
     "NAVER API HUB"
   ],
-  "warning": null,
+  "warning": "기후부 보도자료: 키워드별 공식검색과 기본 RSS 복구에 모두 실패했습니다: 배출권: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 배출권거래제: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 유상할당: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 유상경매: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 탄소시장: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 시장안정화: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 상쇄배출권: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 기본 RSS 복구: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 기후부 공지·공고: 키워드별 공식검색과 기본 RSS 복구에 모두 실패했습니다: 배출권: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 배출권거래제: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 유상할당: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 유상경매: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 탄소시장: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 시장안정화: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 상쇄배출권: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 기본 RSS 복구: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out>",
   "aiInsight": {
     "summary": "최근 공식자료의 직접적인 수급 변수는 유상경매입니다. 최근 경매가 높은 낙찰가로 소화돼 공급보다 이행수요가 강하다는 신호입니다.",
-    "generatedAt": "2026-09-05T08:11:38+09:00",
+    "generatedAt": "2026-09-05T10:14:30+09:00",
     "basisLatestDate": "2026-09-04",
     "basisCount": 10,
     "source": "fallback",
@@ -325,6 +325,31 @@
   ],
   "items": [
     {
+      "id": "f8e6adb48b1ca7d5",
+      "publishedAt": "2026-09-05",
+      "title": "그리스, 도서지역 탈탄소에 23억유로 투자…태양광·ESS 등에 9.8억유로",
+      "category": "시장·가격",
+      "summary": "기금 재원은 EU 탄소 배출권 거래제(ETS)의 배출권 매각을 통해 마련된다. 현재 배출권 가격을 기준으로 재원은 20억유로(약 3조1600억원)로 예상되지만, 실제 규모는 향후 배출권 가격에 따라 달라질 수 있다. 2024년 기금...",
+      "source": "aitimes.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=214829",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "aitimes.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
       "id": "fd82359faa81bdb5",
       "publishedAt": "2026-09-04",
       "title": "환경재단-(주)이브자리, 서울국제환경영화제에 탄소 배출권 기부",
@@ -340,8 +365,8 @@
         "탄소배출권"
       ],
       "duplicateSources": [
-        "국토일보",
-        "ikld.kr"
+        "ikld.kr",
+        "국토일보"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -592,7 +617,7 @@
         "Google News RSS",
         "NAVER API HUB"
       ],
-      "duplicateCount": 3,
+      "duplicateCount": 4,
       "region": "국내"
     },
     {
@@ -903,31 +928,6 @@
       "searchProviders": [
         "Google News RSS"
       ],
-      "region": "국내"
-    },
-    {
-      "id": "47855fbd9988351a",
-      "publishedAt": "2026-09-04",
-      "title": "[시사금융용어] CBAM",
-      "category": "시장·가격",
-      "summary": "인증서 가격은 EU 배출권 거래제(EU ETS)의 탄소 배출권 가격과 연동된다. 수출국에서 이미 부담한 탄소 가격이 있다면 일정 부분 차감할 수 있다. 한국에서는 EU 수출 비중이 높은 철강업계가 주요 영향권으로 꼽힌다....",
-      "source": "einfomax.co.kr",
-      "sourceType": "news",
-      "section": "news",
-      "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4433395",
-      "searchProvider": "NAVER API HUB",
-      "matchedKeywords": [
-        "배출권",
-        "배출권거래제",
-        "탄소배출권"
-      ],
-      "duplicateSources": [
-        "einfomax.co.kr"
-      ],
-      "searchProviders": [
-        "NAVER API HUB"
-      ],
-      "duplicateCount": 1,
       "region": "국내"
     },
     {
