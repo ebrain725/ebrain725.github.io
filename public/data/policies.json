@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-09-05T15:14:59+09:00",
+  "lastSync": "2026-09-05T18:12:17+09:00",
   "keywords": [
     "배출권",
     "배출권거래제",
@@ -27,10 +27,10 @@
     "Google News RSS",
     "NAVER API HUB"
   ],
-  "warning": "기후부 보도자료: 키워드별 공식검색과 기본 RSS 복구에 모두 실패했습니다: 배출권: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 배출권거래제: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 유상할당: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 유상경매: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 탄소시장: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 시장안정화: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 상쇄배출권: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 기본 RSS 복구: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 기후부 공지·공고: 키워드별 공식검색과 기본 RSS 복구에 모두 실패했습니다: 배출권: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 배출권거래제: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 유상할당: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 유상경매: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 탄소시장: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 시장안정화: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 상쇄배출권: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 기본 RSS 복구: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out>",
+  "warning": null,
   "aiInsight": {
     "summary": "최근 공식자료의 직접적인 수급 변수는 유상경매입니다. 최근 경매가 높은 낙찰가로 소화돼 공급보다 이행수요가 강하다는 신호입니다.",
-    "generatedAt": "2026-09-05T15:14:59+09:00",
+    "generatedAt": "2026-09-05T18:12:17+09:00",
     "basisLatestDate": "2026-09-04",
     "basisCount": 10,
     "source": "fallback",
@@ -347,6 +347,29 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
+      "id": "a54d313272ca000c",
+      "publishedAt": "2026-09-05",
+      "title": "‘머스크 보고 있나’⋯ 정의선 회장 “스페이스X 로켓에도 우리 철강 ...",
+      "category": "제도",
+      "summary": "강화되는 미국의 통상 장벽과 철강 관세 리스크를 무력화하는 동시에 북미 저 탄소 시장 을 선점할 전략 거점이다. 지난해 3월 미 백악관에서 200억달러대 대미 투자 계획을 공식 발표했던 정 회장은 사업 순항에 강한...",
+      "source": "viva100.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.viva100.com/article/20260905500286",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "viva100.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
       "region": "해외"
     },
     {
@@ -903,31 +926,6 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 1,
-      "region": "국내"
-    },
-    {
-      "id": "4b8fb571d0319bd5",
-      "publishedAt": "2026-09-04",
-      "title": "[온실가스 배출권] 9월 4일 KAU26, 150원 오르며 다시 3만원대 턱밑으로",
-      "category": "시장·가격",
-      "summary": "[온실가스 배출권] 9월 4일 KAU26, 150원 오르며 다시 3만원대 턱밑으로 데일리e뉴스",
-      "source": "데일리e뉴스",
-      "sourceType": "news",
-      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5rd0F2Ukd0STd6amNpd2cxeEJUb1d4RWhMR3RpNEJfaTh4OXFnRm8tMnpKanZjaXFNWXNWOU0tNExKUjRsdGdVdWUzMkxLR1lmZ2VES2tfTVB2UzB0VGxJZkVtbWVqVHJ1dGtZTmxhRQ?oc=5",
-      "searchProvider": "Google News RSS",
-      "matchedKeywords": [
-        "배출권",
-        "온실가스 배출권",
-        "KAU26"
-      ],
-      "section": "news",
-      "duplicateCount": 1,
-      "duplicateSources": [
-        "데일리e뉴스"
-      ],
-      "searchProviders": [
-        "Google News RSS"
-      ],
       "region": "국내"
     },
     {
@@ -1704,7 +1702,7 @@
       ]
     },
     {
-      "id": "59c187c1846bd4fd",
+      "id": "1754468216cbfcf5",
       "publishedAt": "2025-11-26",
       "title": "배출권 거래 시장 참여자별 배출권 보유 한도 공고",
       "category": "제도",
@@ -1712,7 +1710,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C&menuId=10524&orgCd=&boardMasterId=39&boardId=1823160",
+      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C&menuId=10524&orgCd=&boardMasterId=39&boardId=1823160",
       "matchedKeywords": [
         "배출권"
       ]
