@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-09-08T08:11:55+09:00",
+  "lastSync": "2026-09-08T10:14:40+09:00",
   "keywords": [
     "배출권",
     "배출권거래제",
@@ -27,10 +27,10 @@
     "Google News RSS",
     "NAVER API HUB"
   ],
-  "warning": null,
+  "warning": "기후부 보도자료: 키워드별 공식검색과 기본 RSS 복구에 모두 실패했습니다: 배출권: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 배출권거래제: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 유상할당: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 유상경매: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 탄소시장: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 시장안정화: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 상쇄배출권: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 기본 RSS 복구: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 기후부 공지·공고: 키워드별 공식검색과 기본 RSS 복구에 모두 실패했습니다: 배출권: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 배출권거래제: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 유상할당: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 유상경매: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 탄소시장: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 시장안정화: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 상쇄배출권: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 기본 RSS 복구: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out>",
   "aiInsight": {
     "summary": "최근 공식자료의 직접적인 수급 변수는 유상경매입니다. 최근 경매가 높은 낙찰가로 소화돼 공급보다 이행수요가 강하다는 신호입니다.",
-    "generatedAt": "2026-09-08T08:11:55+09:00",
+    "generatedAt": "2026-09-08T10:14:40+09:00",
     "basisLatestDate": "2026-09-04",
     "basisCount": 10,
     "source": "fallback",
@@ -325,6 +325,79 @@
   ],
   "items": [
     {
+      "id": "6ae18672897f3b2b",
+      "publishedAt": "2026-09-08",
+      "title": "한화오션 친환경 VLGC 3척 수주로 가스 선 기술력 입증",
+      "category": "제도",
+      "summary": "유럽연합(EU) 역시 해운 분야를 탄소 배출권 거래제(EU ETS)에 편입한 데 이어 선박에 사용되는 해양 연료의 온실가스 집약도를 제한하는 규정(FuelEU Maritime)을 본격 시행 중이다. 글로벌 선사들은 기준을 충족하지 못할 경우...",
+      "source": "gokorea.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.gokorea.kr/news/articleView.html?idxno=877519",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "gokorea.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
+      "id": "ea5c4b87b09e7c4f",
+      "publishedAt": "2026-09-08",
+      "title": "페로타임즈 손바닥뉴스 9월8일(화)",
+      "category": "시장·가격",
+      "summary": "인천 시장 표창 수상 씨에스윈드, 美 베스타스에 풍력타워 1510억 원 공급 HS화성, 반려동물 특화 '핏 위드... CBAM 탄소 가격 감면 대상 16개 제도 인정…韓 K-ETS 포함 [지금 일본은] 경량강관 채용 소화설비 등 확대...",
+      "source": "ferrotimes.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.ferrotimes.com/news/articleView.html?idxno=50234",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "K-ETS"
+      ],
+      "duplicateSources": [
+        "ferrotimes.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "c421af54c87fde8d",
+      "publishedAt": "2026-09-08",
+      "title": "조선 3사 가스 텍 참가, 무탄소 운반선 신기술 대거 공개",
+      "category": "제도",
+      "summary": "여기에 유럽연합(EU)이 해운 분야를 탄소 배출권 거래제(EU ETS)에 편입하고 선박 연료의 온실가스 집약도를 규제하는 '퓨얼EU 해양(FuelEU Maritime)' 규정을 단계적으로 시행하면서 고효율 무탄소 선박의 시장 가치는 더욱 치솟고...",
+      "source": "gokorea.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.gokorea.kr/news/articleView.html?idxno=877521",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "gokorea.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
       "id": "fe27b80438b06c4b",
       "publishedAt": "2026-09-08",
       "title": "온실가스ㆍ생산량 동시에 '뚝'… 전형적 '불황형 감축' [탄소감축의 민...",
@@ -495,6 +568,29 @@
       "region": "국내"
     },
     {
+      "id": "37b7e6a5a8a06724",
+      "publishedAt": "2026-09-08",
+      "title": "[해외브리핑] 영국, 지속가능성 공시제도 개편…비재무 의무 완화 검토",
+      "category": "상쇄·외부사업",
+      "summary": "협정에 따라 사업자는 파리협정 제6조의 국제 탄소시장 규정에 부합하는 탄소감축 사업을 추진할 수 있으며, 사업 승인 절차와 인정되는 탄소크레딧 산정 방법론은 추후 공개될 예정이다. 또...",
+      "source": "esgeconomy.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.esgeconomy.com/news/articleView.html?idxno=16638",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "esgeconomy.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "9fd164f05ad4971d",
       "publishedAt": "2026-09-08",
       "title": "[비바100] “경력단절, 역량 단절 아냐… 경력보유여성 주저말고 문 두...",
@@ -511,6 +607,29 @@
       ],
       "duplicateSources": [
         "viva100.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "2c014111464d0247",
+      "publishedAt": "2026-09-08",
+      "title": "[데스크칼럼] 두산에너빌리티는 직원을 잃었다..기업의 생존 열쇠 '기후...",
+      "category": "제도",
+      "summary": "반도체 제조 공정 내 온실가스 저감 장치 도입 및 가전제품의 에너지 효율 극대화에 전사적 역량을... 단순한 배출권 구매나 차열·절감 수준을 넘어, 수소 기반 생산, 친환경 원료 대체 등 산업 인프라 자체를 바꾸는 기술...",
+      "source": "kpenews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://kpenews.com/View.aspx?No=4216981",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "kpenews.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -779,127 +898,6 @@
       ],
       "duplicateSources": [
         "ilyosisa.co.kr"
-      ],
-      "searchProviders": [
-        "NAVER API HUB"
-      ],
-      "duplicateCount": 1,
-      "region": "국내"
-    },
-    {
-      "id": "7139ad4840c0978b",
-      "publishedAt": "2026-09-07",
-      "title": "기후 위기 시대의 농업과 산업의 성장동력, 고바이오매스 단수수",
-      "category": "제도",
-      "summary": "(REC) 가중치 부여와 발전연료 인정, 환경부의 탄소 배출권 인증 등 3개 부처 간 융복합 정책 협의체 구성이 시급하다. 그리고 지속가능한 에너지·농업 생태계를 만들기 위해 필요한 법과 제도를 정비해야 할 때이다.",
-      "source": "aflnews.co.kr",
-      "sourceType": "news",
-      "section": "news",
-      "url": "https://www.aflnews.co.kr/news/articleView.html?idxno=327567",
-      "searchProvider": "NAVER API HUB",
-      "matchedKeywords": [
-        "배출권",
-        "탄소배출권"
-      ],
-      "duplicateSources": [
-        "aflnews.co.kr"
-      ],
-      "searchProviders": [
-        "NAVER API HUB"
-      ],
-      "duplicateCount": 1,
-      "region": "국내"
-    },
-    {
-      "id": "db402708524a4815",
-      "publishedAt": "2026-09-07",
-      "title": "[위클리국회세미나] '디폴트옵션 3년, 기금형 퇴직연금의 성공 조건' 등",
-      "category": "시장안정",
-      "summary": "10일(오후 2시) 국회의원회관 제4간담회실에서는 국회 기후위기 탈탄소경제포럼 주최로 ' 배출권 거래제 제4차 계획기간의 과제와 K-MSR 운영 방향'이 개최된다. 세미나에서는 우리나라의 탈탄소 산업전환을 위한 K-MSR...",
-      "source": "weekly.hankooki.com",
-      "sourceType": "news",
-      "section": "news",
-      "url": "https://weekly.hankooki.com/news/articleView.html?idxno=7182879",
-      "searchProvider": "NAVER API HUB",
-      "matchedKeywords": [
-        "배출권",
-        "배출권거래제"
-      ],
-      "duplicateSources": [
-        "weekly.hankooki.com"
-      ],
-      "searchProviders": [
-        "NAVER API HUB"
-      ],
-      "duplicateCount": 1,
-      "region": "국내"
-    },
-    {
-      "id": "cf489a5e4e0dac61",
-      "publishedAt": "2026-09-07",
-      "title": "[온실가스 배출권] 9월 7일 KAU26, 100원 오르며 3만원대 재진입",
-      "category": "시장·가격",
-      "summary": "[온실가스 배출권] 9월 7일 KAU26, 100원 오르며 3만원대 재진입 데일리e뉴스",
-      "source": "데일리e뉴스",
-      "sourceType": "news",
-      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE94SmJoV0JSU19GLWtaV090WE9NRDRBYWxFQThpMGtJdkNXaTltSFBFLXJsbWJYQ1FBYUdieXVVbno0WE9fSkV0RU1QZ0pnbVh3RkllUjRHRUJETzRjMHBQQkJpbTMzRUpyNlJGNXpnQQ?oc=5",
-      "searchProvider": "Google News RSS",
-      "matchedKeywords": [
-        "배출권",
-        "온실가스 배출권",
-        "KAU26"
-      ],
-      "section": "news",
-      "duplicateCount": 1,
-      "duplicateSources": [
-        "데일리e뉴스"
-      ],
-      "searchProviders": [
-        "Google News RSS"
-      ],
-      "region": "국내"
-    },
-    {
-      "id": "e37c01492ba81f24",
-      "publishedAt": "2026-09-07",
-      "title": "[신동근의 증시한컷] 탄소 1톤 3만원…기후위기의 값은 얼마인가",
-      "category": "시장·가격",
-      "summary": "7일 한국거래소 배출권시장에 따르면 2026년 배출권인 KAU26 은 이날 전 거래일과 같은 톤당 2만9950원에 거래를 마쳤습니다. 지난달 7일 2만6000원이었던 것과 비교하면 한 달 만에 15.2% 올랐습니다. 특히 지난달 20일에는 하루...",
-      "source": "ajunews.com",
-      "sourceType": "news",
-      "section": "news",
-      "url": "https://www.ajunews.com/view/20260907140923750",
-      "searchProvider": "NAVER API HUB",
-      "matchedKeywords": [
-        "배출권",
-        "KAU26"
-      ],
-      "duplicateSources": [
-        "ajunews.com"
-      ],
-      "searchProviders": [
-        "NAVER API HUB"
-      ],
-      "duplicateCount": 1,
-      "region": "국내"
-    },
-    {
-      "id": "98f45c7e63e876c7",
-      "publishedAt": "2026-09-07",
-      "title": "[사설] 현대제철 美 전기로, 한미 ‘윈윈’하고 국내 일자리도 지켜야",
-      "category": "제도",
-      "summary": "전기요금 부담 완화와 배출권 거래제 개선, 수소환원제철 등 친환경 전환 지원도 서두를 필요가 있다. 해외 투자가 국내 일자리와 생산 역량의 위축으로 이어지지 않도록 치밀한 산업 전략을 마련해야 한다.",
-      "source": "sedaily.com",
-      "sourceType": "news",
-      "section": "news",
-      "url": "https://www.sedaily.com/article/20087725?ref=naver",
-      "searchProvider": "NAVER API HUB",
-      "matchedKeywords": [
-        "배출권",
-        "배출권거래제"
-      ],
-      "duplicateSources": [
-        "sedaily.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
