@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-09-08T13:11:57+09:00",
+  "lastSync": "2026-09-08T15:14:43+09:00",
   "keywords": [
     "배출권",
     "배출권거래제",
@@ -27,10 +27,10 @@
     "Google News RSS",
     "NAVER API HUB"
   ],
-  "warning": null,
+  "warning": "기후부 보도자료: 키워드별 공식검색과 기본 RSS 복구에 모두 실패했습니다: 배출권: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 배출권거래제: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 유상할당: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 유상경매: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 탄소시장: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 시장안정화: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 상쇄배출권: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 기본 RSS 복구: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 기후부 공지·공고: 키워드별 공식검색과 기본 RSS 복구에 모두 실패했습니다: 배출권: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 배출권거래제: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 유상할당: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 유상경매: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 탄소시장: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 시장안정화: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 상쇄배출권: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 기본 RSS 복구: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out>",
   "aiInsight": {
     "summary": "최근 공식자료의 직접적인 수급 변수는 유상경매입니다. 최근 경매가 높은 낙찰가로 소화돼 공급보다 이행수요가 강하다는 신호입니다.",
-    "generatedAt": "2026-09-08T13:11:57+09:00",
+    "generatedAt": "2026-09-08T15:14:43+09:00",
     "basisLatestDate": "2026-09-04",
     "basisCount": 10,
     "source": "fallback",
@@ -381,6 +381,31 @@
       "region": "해외"
     },
     {
+      "id": "bde68dd8a68b918c",
+      "publishedAt": "2026-09-08",
+      "title": "한전 132조·한수원 67조…2030년 부채 전망",
+      "category": "제도",
+      "summary": "신재생에너지 공급의무화(RPS) 비율은 올해 15%에서 2030년 25%로, 탄소 배출권 유상할당 비율은 15%에서 50%로 올라갈 예정이다. 한전은 매출의 98%를 전기 판매에 의존하고 영업비용의 88%를 구입전력비로 지출하는...",
+      "source": "tokenpost.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.tokenpost.kr/news/economy/404119",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권",
+        "유상할당"
+      ],
+      "duplicateSources": [
+        "tokenpost.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "ea5c4b87b09e7c4f",
       "publishedAt": "2026-09-08",
       "title": "페로타임즈 손바닥뉴스 9월8일(화)",
@@ -645,6 +670,31 @@
       "region": "국내"
     },
     {
+      "id": "8dd4f958f8f166b6",
+      "publishedAt": "2026-09-08",
+      "title": "[온실가스 배출권] 9월 8일 KAU26, 100원 오르며 3거래일 연속 상승",
+      "category": "시장·가격",
+      "summary": "[온실가스 배출권] 9월 8일 KAU26, 100원 오르며 3거래일 연속 상승 데일리e뉴스",
+      "source": "데일리e뉴스",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBndzFNbEtLdE4xS3FUVDBKX2Rzb1QybzVSOUdNazQ1T3cyRjdZSXZPU3dKVGJxVTRYRTZWekR3QTFkNlpObGViNW1JbTFsbWozLW5zZWU3RFpibllzWldUS2RLZGZ4RFpMQ2dsMV9LYw?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "온실가스 배출권",
+        "KAU26"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "데일리e뉴스"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "9fd164f05ad4971d",
       "publishedAt": "2026-09-08",
       "title": "[비바100] “경력단절, 역량 단절 아냐… 경력보유여성 주저말고 문 두...",
@@ -764,6 +814,30 @@
       "region": "국내"
     },
     {
+      "id": "4b306ae84c1053b5",
+      "publishedAt": "2026-09-08",
+      "title": "[ESGX 이슈 5] 기후·대기오염 함께 잡으면…1달러 투자로 15달러 편익",
+      "category": "제도",
+      "summary": "배출권 거래제 5년간 배출량 9%↓…감축분 64%는 발전5사 국내 배출권 거래제 대상 기업의 온실가스 배출량이 5년간 9% 감소했지만 감축 실적의 상당 부분이 발전 공기업에 집중된 것으로 나타났다. 8일 이투데이가...",
+      "source": "etoday.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.etoday.co.kr/news/view/2623006",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "etoday.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "e46096e2f74920d8",
       "publishedAt": "2026-09-08",
       "title": "[EE칼럼] 목소리를 내는 유럽 기업, 침묵하는 한국 기업",
@@ -856,82 +930,6 @@
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "region": "국내"
-    },
-    {
-      "id": "2f35901d66376656",
-      "publishedAt": "2026-09-07",
-      "title": "탄소배출권, 1년새 234.7% 급등…\"추가 상승 여지 충분\"",
-      "category": "유상경매",
-      "summary": "유상할당 비율도 확대돼 발전부문은 2026년 15%에서 2030년까지 50%로, 발전외 부문은 10%에서 15%로 단계적으로 상승한다. 이는 유상할당 경매에서 사상 최대 규모의 응찰로 이어졌다. 2025년 10번 실시된 유상할당 ...",
-      "source": "edaily.co.kr",
-      "sourceType": "news",
-      "section": "news",
-      "url": "https://www.edaily.co.kr/News/Read?newsId=02581366645577824&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
-      "searchProvider": "NAVER API HUB",
-      "matchedKeywords": [
-        "배출권",
-        "탄소배출권",
-        "유상할당"
-      ],
-      "duplicateSources": [
-        "edaily.co.kr"
-      ],
-      "searchProviders": [
-        "NAVER API HUB",
-        "Google News RSS"
-      ],
-      "duplicateCount": 2,
-      "region": "국내"
-    },
-    {
-      "id": "5bc239285638f70c",
-      "publishedAt": "2026-09-07",
-      "title": "철강·석화가 산업 온실가스 52.6%…\"배출감소는 생산감소 영향\"",
-      "category": "제도",
-      "summary": "기후솔루션 등 14개 단체가 최근 공개된 기업별 온실가스 명세서를 분석한 결과 온실가스 배출권 거래제 할당 대상 업체 중 1차 철강 제조업 배출량은 1억487만t(이산화탄소 환산량)으로 산업 부문 배출량(3억162만t)의...",
-      "source": "yna.co.kr",
-      "sourceType": "news",
-      "section": "news",
-      "url": "https://www.yna.co.kr/view/AKR20260907070300530?input=1195m",
-      "searchProvider": "NAVER API HUB",
-      "matchedKeywords": [
-        "배출권",
-        "배출권거래제",
-        "온실가스 배출권"
-      ],
-      "duplicateSources": [
-        "yna.co.kr"
-      ],
-      "searchProviders": [
-        "NAVER API HUB"
-      ],
-      "duplicateCount": 1,
-      "region": "국내"
-    },
-    {
-      "id": "2da813cb8f6510d7",
-      "publishedAt": "2026-09-07",
-      "title": "엔비랩스, K-ICT WEEK 2026서 탄소배출 관리 플랫폼 공개... \"AI로 환경 설...",
-      "category": "제도",
-      "summary": "EU 탄소국경조정제도(CBAM)와 국내 배출권거래제( K-ETS ), 전과정평가(LCA)에 대응하는 기능을 갖춰 규제 대응이 필요한 기업과 기관이 배출 데이터를 산정하고 관리하도록 설계됐다. 특히 회사는 위성(Sentinel-2)과...",
-      "source": "kr.aving.net",
-      "sourceType": "news",
-      "section": "news",
-      "url": "https://kr.aving.net/news/articleView.html?idxno=1814138",
-      "searchProvider": "NAVER API HUB",
-      "matchedKeywords": [
-        "배출권",
-        "배출권거래제",
-        "K-ETS"
-      ],
-      "duplicateSources": [
-        "kr.aving.net"
-      ],
-      "searchProviders": [
-        "NAVER API HUB"
-      ],
-      "duplicateCount": 1,
       "region": "국내"
     },
     {
