@@ -1,777 +1,119 @@
 {
-  "lastSync": "2026-09-09T18:12:14+09:00",
-  "keywords": [
-    "배출권",
-    "배출권거래제",
-    "유상할당",
-    "유상경매",
-    "탄소시장",
-    "시장안정화",
-    "상쇄배출권"
-  ],
-  "newsKeywords": [
-    "배출권",
-    "배출권거래제",
-    "탄소배출권",
-    "온실가스 배출권",
-    "유상할당",
-    "유상경매",
-    "KAU25",
-    "KAU26",
-    "K-ETS",
-    "탄소시장",
-    "상쇄배출권"
-  ],
-  "sourceCount": 5,
-  "newsProviders": [
-    "Google News RSS",
-    "NAVER API HUB"
-  ],
-  "warning": null,
-  "aiInsight": {
-    "summary": "최근 공식자료의 직접적인 수급 변수는 유상경매입니다. 최근 경매가 높은 낙찰가로 소화돼 공급보다 이행수요가 강하다는 신호입니다.",
-    "generatedAt": "2026-09-09T18:12:14+09:00",
-    "basisLatestDate": "2026-09-09",
-    "basisCount": 10,
-    "source": "fallback",
-    "model": null
+  "schemaVersion": "1.0",
+  "requestedStartDate": "2015-01-01",
+  "startedAt": "2026-09-09T19:46:11+09:00",
+  "generatedAt": "2026-09-09T19:58:25+09:00",
+  "scope": {
+    "ministry": "기후부 보도자료·공지사항 중 배출권 관련 설정 키워드가 제목 또는 본문에 포함된 공식자료",
+    "krx": "한국거래소 배출권시장 공지사항 일반 게시물 전체",
+    "keywords": [
+      "배출권",
+      "배출권거래제",
+      "유상할당",
+      "유상경매",
+      "탄소시장",
+      "시장안정화",
+      "상쇄배출권"
+    ]
   },
-  "institutionSchedules": [
+  "sourceAudit": [
     {
-      "id": "6569ef3821e3916d",
-      "title": "【위클리 ESG 행사】 9월 2주차",
-      "sourceTitle": "【위클리 ESG 행사】 9월 2주차",
-      "eventType": "세미나",
-      "startDate": "2026-09-09",
-      "endDate": "2026-09-09",
-      "dateInference": "yearless",
-      "startTime": "",
-      "timezone": "Asia/Seoul",
-      "organizer": "대한상공회의소",
-      "location": "함께하는 사랑밭이 서울시청 대회의실",
-      "status": "confirmed",
-      "evidence": "☞ 행사 링크 9월 9일(수) 기후에너지 커넥트 포럼 서울특별시와 (사)함께하는 사랑밭이 서울시청 대회의실에서 기후위기 대응과 에너지복지 활성화를 위한 기후에너지 커넥트 포럼을 연다.",
-      "publishedAt": "2026-09-02",
-      "source": "impacton.net",
-      "sourceType": "news",
-      "url": "http://www.impacton.net/news/articleView.html?idxno=20187",
-      "sourceItemIds": [
-        "313405c57c85fd73"
-      ],
-      "sourceUrls": [
-        "http://www.impacton.net/news/articleView.html?idxno=20187"
-      ],
-      "sources": [
-        "impacton.net"
-      ],
-      "duplicateCount": 1,
-      "contentFingerprint": "62c9c3e8b317880485e8a663bb1504812a373f9c",
-      "contentSignature": "차주esg행사9월2주차9월8일화제6회2026워터서울국제컨퍼런스서울특별시가서울역사박물관야주개홀에서물에너지시민함께누리는지속가능한도시를주제로워터서울국제컨퍼런스를연다이번행사에서는물재생시스템의대전환물에너지시민의선순환지속가능한도시와회복력등을다룬다멜버른대학교사라벨도시회복력교수와싱가포르공공사업기관mwrd쿨딥쿠마르수석환경과학자밀워키하수처리구역브리앤플라이어통합유역관리국장등이참여한다행사링크녹색산업국가로의전환을위한제도적기반국회입법조사처와서울대학교기후테크센터환경에너지법정책센터한국법제연구원이국회의원회관제7간담회의실에서kgx전략의법제화와녹색산업국가전환을위한제도적기반을주제로토론회를연다이번행사에서는글로벌녹색산업정책부상과법제전환kgx전략법제화방향과새로운녹색산업정책법제현황기후테크혁신과산업경쟁력강화를위한kgx전략및기후테크법의역할등을다룬다한국법제연구원장은혜지속가능기후변화법제팀장과서울대학교환경에너지법정책센터지현영변호사서울대학교정수종교수등이참여한다행사링크9월9일수기후에너지커넥트포럼서울특별시와사함께하는사랑밭이서울시청대회의실에서기후위기대응과에너지복지활성화를위한기후에너지커넥트포럼을연다이번행사에서는기업과시민의탄소중립실천민관협력기반기업참여플랫폼사회적가치측정과임팩트관리등을다룬다대한상공회의소조영준지속가능경영원장과sk증권이승주지속가능경영부차장등이참여한다행사링크국제탄소시장협력컨퍼런스외교부가대한상공회의소국제회의장에서국가온실가스감축목표ndc달성을위한글로벌탄소시장동향과과제를주제로국제탄소시장협력컨퍼런스를연다이번행사에서는주요국탄소시장활용법제기반과관련현황파리협정제6조기반국제협력자발적탄소시장과글로벌탄소시장연계탄소감축사업활성화를위한투자보증과리스크완화방안등을다룬다주한독일대사관sukhboldsukhee수석참사관과국제배출권거래협회ietaamymerrill대표베라verrawinsimtan부대표등이참여한다행사링크9월10일목ai시대의에너지법정책과esg에너지경제신문과법무법인유한태평양이대한상공회의소국제회의장에서ai시대의에너지법정책과esg경영을주제로세미나를연다이번행사에서는ai기반전력산업비즈니스모델과전환전략메가프로젝트와원전lngppa인공지능기본법제정과에너지기업규제대응재생에너지확대와프로젝트금융esg공시의무화와에너지기업리스크관리등을다룬다kei김범조선임연구원과법무법인유한태평양박진표변호사에너지경제신문강찬수기후환경전문참여한다행사링크"
-    },
-    {
-      "id": "e969e1e7bb4b9dcd",
-      "title": "2026 국제기후포럼",
-      "sourceTitle": "넷제로2050재단, 국제기후포럼 개최",
-      "eventType": "세미나",
-      "startDate": "2026-09-09",
-      "endDate": "2026-09-09",
-      "dateInference": "yearless",
-      "startTime": "14:00",
-      "timezone": "Asia/Seoul",
-      "organizer": "국제기후포럼 개최 외교부",
-      "location": "9월 9일 오후 2시 서울 중구 더 플라자 호텔",
-      "status": "confirmed",
-      "evidence": "9월 9일 서울서 기후외교·탄소시장·친환경산업 논의 넷제로2050기후재단은 고려대학교 글로벌 에너지 기술정책 전문가양성사업단과 함께 9월 9일 오후 2시 서울 중구 더 플라자 호텔에서 제5회 ‘2026 국제기후포럼’을 연다고 31일 밝혔다.",
-      "publishedAt": "2026-08-31",
-      "source": "naeil.com",
-      "sourceType": "news",
-      "url": "https://www.naeil.com/news/read/600599?ref=naver",
-      "sourceItemIds": [
-        "bef754bf0b5b0cb1"
-      ],
-      "sourceUrls": [
-        "https://www.naeil.com/news/read/600599?ref=naver"
-      ],
-      "sources": [
-        "naeil.com"
-      ],
-      "duplicateCount": 1,
-      "contentFingerprint": "e3b001fe2b2744fe926d14a9796f5a136b39996f",
-      "contentSignature": "9월9일서울서기후외교탄소시장친환경산업논의넷제로2050기후재단은고려대학교글로벌에너지기술정책전문가양성사업단과함께9월9일오후2시서울중구더플라자호텔에서제5회2026국제기후포럼을연다고31일밝혔다국제기후포럼은2022년부터매년열려기후위기대응의주요현안과탄소중립달성을위한해법을논의해왔다올해주제는탄소중립시대의기후외교전략과친환경혁신산업의미래다각국대사와정부산업계학계전문가들은기후외교와산업전환탄소시장정책을중심으로탄소중립실현방안을모색한다이번포럼에서는장대식넷제로2050기후재단이사장의개회사에이어한병도더불어민주당원내대표와한성숙국무총리조정식국회의장박덕흠국회부의장김성환기후에너지환경부장관다이빙주한중국대사등이축사할예정이다포럼은모두3개세션으로진행된다첫번째세션은기후외교와글로벌기후거버넌스를주제로강성진고려대글로벌에너"
-    },
-    {
-      "id": "ce707e0c12da1c27",
-      "title": "【위클리 ESG 행사】 9월 2주차",
-      "sourceTitle": "【위클리 ESG 행사】 9월 2주차",
-      "eventType": "세미나",
-      "startDate": "2026-09-10",
-      "endDate": "2026-09-10",
-      "dateInference": "yearless",
-      "startTime": "",
-      "timezone": "Asia/Seoul",
-      "organizer": "대한상공회의소",
-      "location": "",
-      "status": "confirmed",
-      "evidence": "☞ 행사 링크 9월 10일(목) AI 시대의 에너지법·정책과 ESG 에너지경제신문과 법무법인(유한) 태평양이 대한상공회의소 국제회의장에서 AI 시대의 에너지법·정책과 ESG 경영을 주제로 세미나를 연다.",
-      "publishedAt": "2026-09-02",
-      "source": "impacton.net",
-      "sourceType": "news",
-      "url": "http://www.impacton.net/news/articleView.html?idxno=20187",
-      "sourceItemIds": [
-        "313405c57c85fd73"
-      ],
-      "sourceUrls": [
-        "http://www.impacton.net/news/articleView.html?idxno=20187"
-      ],
-      "sources": [
-        "impacton.net"
-      ],
-      "duplicateCount": 1,
-      "contentFingerprint": "62c9c3e8b317880485e8a663bb1504812a373f9c",
-      "contentSignature": "차주esg행사9월2주차9월8일화제6회2026워터서울국제컨퍼런스서울특별시가서울역사박물관야주개홀에서물에너지시민함께누리는지속가능한도시를주제로워터서울국제컨퍼런스를연다이번행사에서는물재생시스템의대전환물에너지시민의선순환지속가능한도시와회복력등을다룬다멜버른대학교사라벨도시회복력교수와싱가포르공공사업기관mwrd쿨딥쿠마르수석환경과학자밀워키하수처리구역브리앤플라이어통합유역관리국장등이참여한다행사링크녹색산업국가로의전환을위한제도적기반국회입법조사처와서울대학교기후테크센터환경에너지법정책센터한국법제연구원이국회의원회관제7간담회의실에서kgx전략의법제화와녹색산업국가전환을위한제도적기반을주제로토론회를연다이번행사에서는글로벌녹색산업정책부상과법제전환kgx전략법제화방향과새로운녹색산업정책법제현황기후테크혁신과산업경쟁력강화를위한kgx전략및기후테크법의역할등을다룬다한국법제연구원장은혜지속가능기후변화법제팀장과서울대학교환경에너지법정책센터지현영변호사서울대학교정수종교수등이참여한다행사링크9월9일수기후에너지커넥트포럼서울특별시와사함께하는사랑밭이서울시청대회의실에서기후위기대응과에너지복지활성화를위한기후에너지커넥트포럼을연다이번행사에서는기업과시민의탄소중립실천민관협력기반기업참여플랫폼사회적가치측정과임팩트관리등을다룬다대한상공회의소조영준지속가능경영원장과sk증권이승주지속가능경영부차장등이참여한다행사링크국제탄소시장협력컨퍼런스외교부가대한상공회의소국제회의장에서국가온실가스감축목표ndc달성을위한글로벌탄소시장동향과과제를주제로국제탄소시장협력컨퍼런스를연다이번행사에서는주요국탄소시장활용법제기반과관련현황파리협정제6조기반국제협력자발적탄소시장과글로벌탄소시장연계탄소감축사업활성화를위한투자보증과리스크완화방안등을다룬다주한독일대사관sukhboldsukhee수석참사관과국제배출권거래협회ietaamymerrill대표베라verrawinsimtan부대표등이참여한다행사링크9월10일목ai시대의에너지법정책과esg에너지경제신문과법무법인유한태평양이대한상공회의소국제회의장에서ai시대의에너지법정책과esg경영을주제로세미나를연다이번행사에서는ai기반전력산업비즈니스모델과전환전략메가프로젝트와원전lngppa인공지능기본법제정과에너지기업규제대응재생에너지확대와프로젝트금융esg공시의무화와에너지기업리스크관리등을다룬다kei김범조선임연구원과법무법인유한태평양박진표변호사에너지경제신문강찬수기후환경전문참여한다행사링크"
-    },
-    {
-      "id": "92f19e74b01e4e38",
-      "title": "2027 테크 퀘스트",
-      "sourceTitle": "생산 줄여 맞춘 탄소감축 한계…4차 계획기간 ‘구조전환’ 시험대 [탄...",
-      "eventType": "세미나",
-      "startDate": "2026-10-22",
-      "endDate": "2026-10-22",
-      "dateInference": "yearless",
-      "startTime": "",
-      "timezone": "Asia/Seoul",
-      "organizer": "한국거래소",
-      "location": "",
-      "status": "confirmed",
-      "evidence": "관련 뉴스 한국거래소, 배출권거래제 정책포럼 개최…선물 개발·CBAM 대응 모색 “지속가능 일자리 6억 빼서 3개월 알바?”…부산시 복지예산 도마에 [ESGX 이슈 5] 발전 5사 ‘한국발전’으로 통합…EU는 폐기물 수출 제한 추진 [블록체인 IPO 시대 ③] 거래소 넘어 커스터디까지…후발 기업의 증시 전략은 #esg #4차계획기간 #공정전환 #KGX #전환금융 박민석 기자의 주요 뉴스 자세히보기 금융주 랠리서 뒤처진 BNK금융…'밸류업 2.0' 통할까 배출권거래제 5년간 온실가스 9% 줄었지만… 감축분 64%는 발전5사 [탄소감축의 민낯] 수협은행, 9일 차기 행장 후보 압축…신학기 첫 연임 도전 좋아요 0 화나요 0 슬퍼요 0 추가…",
-      "publishedAt": "2026-09-08",
-      "source": "etoday.co.kr",
-      "sourceType": "news",
-      "url": "https://www.etoday.co.kr/news/view/2622087",
-      "sourceItemIds": [
-        "710de07474dca949"
-      ],
-      "sourceUrls": [
-        "https://www.etoday.co.kr/news/view/2622087"
-      ],
-      "sources": [
-        "etoday.co.kr"
-      ],
-      "duplicateCount": 1,
-      "contentFingerprint": "13e8c0c9e59cfdea17503998c864b0898e8fb361",
-      "contentSignature": "이투데이금융일반생산줄여맞춘탄소감축한계4차계획기간구조전환시험대탄소감축의민낯입력202609080500박민석이름을클릭하면더자세한정보를확인할수있어요북마크되었습니다마이페이지에서확인하세요기사듣기0000구글선호매체추가카카오톡페이스북엑스url공유가장작게작게기본크게가장크게본기사는202609071700에channel5를통해소개되었습니다4차배출허용총량3차보다168줄어기업감축부담확대수소환원제철등공정전환엔시간단기감축수단확대필요전문가들공정전환뒷받침할정부역할중요kgx전환금융주목챗gptai기반편집이미지배출권거래제제4차계획기간20262030년에접어들며기업의구조적탄소감축역량이본격시험대에오른다제3차계획기간에는철강석유화학등주력제조업의업황부진과생산량감소가배출량축소를이끌었다그러나앞으로는설비투자와공정혁신을통한구조적감축체질을갖추지못하면생존자체가위협받을수있다는지적이다7일기후에너지환경부에따르면제4차계획기간5년간배출허용총량은25억3729만5393tco2eq이산화탄소환산톤로확정됐다3차계획기간30억4825만t대비168축소된규모다연간총량도2026년5억5848만t에서2030년4억5644만t으로단계적긴축에들어간다문제는수소환원제철등대규모공정전환에천문학적비용과장기간의시간이소요된다는점이다에너지경제연구원에따르면2024년국내전로강생산량을전량수소환원제철로전환할경우연간약412만t의수소가투입돼야한다청정수소가격을kg당5000원으로가정하면수소구입비로만매년20조원이상이들어간다설비개조비용을빼고도감당하기어려운재무부담이다윤제용서울대화학생물공학부교수는기술개발과탄소저감이기업의실질적이익으로연결되도록정부지원을설계해야한다며아무리훌륭한감축목표라도이를뒷받침할제도적시장환경이조성되지않으면공염불에그칠것이라고경고했다정부가오는10월발표할한국형녹색전환kgx전략의완성도가핵심분수령으로꼽힌다철강화학등난감축업종별감축경로를명확히하고저탄소설비투자지원책을구체화해투자불확실성을걷어내야한다는주문이다산업정책과금융의정책적연계도필수과제다현석연세대경제학부교수는국가감축목표에발맞춰gx전략이수립되고산업별감축경로에맞춰금융지원이결합하는삼박자가맞아야한다고강조했다탄소가격의급등세와예측불가능성도기업의목을죄고있다온실가스배출권kau25가격은올해첫거래일인1월2일t당1만300원에서8월31일2만9450원으로치솟았다불과8개월만에29배폭등한셈이다이재윤산업연구원성장동력산업연구본부실장은정부가장기적인탄소가격상승경로를투명하게제시해야한다며감축수단이마땅치않은상황에서탄소비용만급등하면기업은국내생산을줄이거나생산기지를해외로이전하는부작용을부를수있다고짚었다관련뉴스한국거래소배출권거래제정책포"
-    },
-    {
-      "id": "f71a90a7e88b91a7",
-      "title": "물·에너지·시민, 함께 누리는 지속가능한 도시",
-      "sourceTitle": "【위클리 ESG 행사】 9월 2주차",
-      "eventType": "세미나",
-      "startDate": "2026-09-08",
-      "endDate": "2026-09-08",
-      "dateInference": "yearless",
-      "startTime": "",
-      "timezone": "Asia/Seoul",
-      "organizer": "대한상공회의소",
-      "location": "",
-      "status": "confirmed",
-      "evidence": "◆ 차주 ESG 행사_9월 2주차 9월 8일(화) 제6회 2026 워터서울 국제 컨퍼런스 서울특별시가 서울역사박물관 야주개홀에서 ‘물·에너지·시민, 함께 누리는 지속가능한 도시’를 주제로 워터서울 국제 컨퍼런스를 연다.",
-      "publishedAt": "2026-09-02",
-      "source": "impacton.net",
-      "sourceType": "news",
-      "url": "http://www.impacton.net/news/articleView.html?idxno=20187",
-      "sourceItemIds": [
-        "313405c57c85fd73"
-      ],
-      "sourceUrls": [
-        "http://www.impacton.net/news/articleView.html?idxno=20187"
-      ],
-      "sources": [
-        "impacton.net"
-      ],
-      "duplicateCount": 1,
-      "contentFingerprint": "62c9c3e8b317880485e8a663bb1504812a373f9c",
-      "contentSignature": "차주esg행사9월2주차9월8일화제6회2026워터서울국제컨퍼런스서울특별시가서울역사박물관야주개홀에서물에너지시민함께누리는지속가능한도시를주제로워터서울국제컨퍼런스를연다이번행사에서는물재생시스템의대전환물에너지시민의선순환지속가능한도시와회복력등을다룬다멜버른대학교사라벨도시회복력교수와싱가포르공공사업기관mwrd쿨딥쿠마르수석환경과학자밀워키하수처리구역브리앤플라이어통합유역관리국장등이참여한다행사링크녹색산업국가로의전환을위한제도적기반국회입법조사처와서울대학교기후테크센터환경에너지법정책센터한국법제연구원이국회의원회관제7간담회의실에서kgx전략의법제화와녹색산업국가전환을위한제도적기반을주제로토론회를연다이번행사에서는글로벌녹색산업정책부상과법제전환kgx전략법제화방향과새로운녹색산업정책법제현황기후테크혁신과산업경쟁력강화를위한kgx전략및기후테크법의역할등을다룬다한국법제연구원장은혜지속가능기후변화법제팀장과서울대학교환경에너지법정책센터지현영변호사서울대학교정수종교수등이참여한다행사링크9월9일수기후에너지커넥트포럼서울특별시와사함께하는사랑밭이서울시청대회의실에서기후위기대응과에너지복지활성화를위한기후에너지커넥트포럼을연다이번행사에서는기업과시민의탄소중립실천민관협력기반기업참여플랫폼사회적가치측정과임팩트관리등을다룬다대한상공회의소조영준지속가능경영원장과sk증권이승주지속가능경영부차장등이참여한다행사링크국제탄소시장협력컨퍼런스외교부가대한상공회의소국제회의장에서국가온실가스감축목표ndc달성을위한글로벌탄소시장동향과과제를주제로국제탄소시장협력컨퍼런스를연다이번행사에서는주요국탄소시장활용법제기반과관련현황파리협정제6조기반국제협력자발적탄소시장과글로벌탄소시장연계탄소감축사업활성화를위한투자보증과리스크완화방안등을다룬다주한독일대사관sukhboldsukhee수석참사관과국제배출권거래협회ietaamymerrill대표베라verrawinsimtan부대표등이참여한다행사링크9월10일목ai시대의에너지법정책과esg에너지경제신문과법무법인유한태평양이대한상공회의소국제회의장에서ai시대의에너지법정책과esg경영을주제로세미나를연다이번행사에서는ai기반전력산업비즈니스모델과전환전략메가프로젝트와원전lngppa인공지능기본법제정과에너지기업규제대응재생에너지확대와프로젝트금융esg공시의무화와에너지기업리스크관리등을다룬다kei김범조선임연구원과법무법인유한태평양박진표변호사에너지경제신문강찬수기후환경전문참여한다행사링크"
-    },
-    {
-      "id": "988edeec979ed63d",
-      "title": "기후부-산업계, 탈탄소 녹색전환 위해 머리 맞대",
-      "sourceTitle": "기후부-산업계, 탈탄소 녹색전환 위해 머리 맞대",
-      "eventType": "간담회",
-      "startDate": "2026-09-04",
-      "endDate": "2026-09-04",
-      "dateInference": "yearless",
-      "startTime": "",
-      "timezone": "Asia/Seoul",
-      "organizer": "기후에너지환경부",
-      "location": "",
-      "status": "confirmed",
-      "evidence": "▷ 기후부·한국지속가능발전기업협의회(KBCSD) 기후에너지환경정책협의회 개회 기후에너지환경부(장관 김성환)는 9월 4일 오전 웨스틴서울파르나스(서울 강남구 소재)에서 한국지속가능발전기업협의회(회장 박재완) 회원사 임원과 정책 간담회를 갖는다.",
-      "publishedAt": "2026-09-04",
       "source": "기후부 보도자료",
-      "sourceType": "official",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C%EA%B1%B0%EB%9E%98%EC%A0%9C&menuId=10598&orgCd=&boardMasterId=939&boardId=1888610",
-      "sourceItemIds": [
-        "aeba8657c90db233"
-      ],
-      "sourceUrls": [
-        "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C%EA%B1%B0%EB%9E%98%EC%A0%9C&menuId=10598&orgCd=&boardMasterId=939&boardId=1888610"
-      ],
-      "sources": [
-        "기후부 보도자료"
-      ],
-      "duplicateCount": 1,
-      "contentFingerprint": "fbb3542718979c3316d5f0a7c0f924ca8c427a86",
-      "contentSignature": "기후부산업계탈탄소녹색전환위해머리맞대기후부한국지속가능발전기업협의회kbcsd기후에너지환경정책협의회개회기후에너지환경부장관김성환는9월4일오전웨스틴서울파르나스서울강남구소재에서한국지속가능발전기업협의회회장박재완회원사임원과정책간담회를갖는다기후에너지환경부와한국지속가능발전협의회kbcsd는2014년부터매년반기마다정책협의회를개최하여정부와산업계간원활한소통과협력을도모하고기후에너지환경분야규제및애로사항을찾아내개선하고있다이날협의회는오일영기후에너지환경부기후에너지정책실장홍현종한국지속가능발전기업협의회사무총장및회원사임원등30여명이참석하여산업계의어려움을듣고제도개선방안등을중점논의한다특히배출권거래제제도합리화전력구매계약ppa제도개선저탄소철강제품구매활성화등제도개선과정부지원강화방안을집중논의하고기후에너지환경부는제시된제안에대해합리적인개선및지원방안을검토하여의견을전달한다오일영기후에너지환경부기후에너지정책실장은기업의탈탄소녹색전환은새로운경쟁력의기준이되고있다라면서기업이예측가능한환경에서과감히투자할수있도록제도를보완하고세계적인기업으로도약할수있도록전방위적으로지원정책을추진하겠다라고밝혔다붙임기후에너지환경정책협의회계획끝"
+      "section": "press",
+      "requestedStartDate": "2015-01-01",
+      "transport": "unfiltered-rss-local-keyword-filter",
+      "pageSize": 1000,
+      "pagesFetched": 11,
+      "rawRows": 11000,
+      "inRangeMatchedRows": 271,
+      "itemCount": 271,
+      "earliest": "2015-01-08",
+      "latest": "2026-09-04",
+      "oldestSeen": "2013-09-25",
+      "newestSeen": "2026-09-09",
+      "crossedRequestedStart": true,
+      "stopReason": "date-boundary",
+      "complete": true,
+      "keywordHits": {
+        "배출권": 230,
+        "배출권거래제": 164,
+        "유상할당": 35,
+        "유상경매": 0,
+        "탄소시장": 54,
+        "시장안정화": 20,
+        "상쇄배출권": 15
+      }
     },
     {
-      "id": "d98e1ad7157082c0",
-      "title": "국가전력망 민간참여 본격화, 공공성 훼손 우려와 대응과제",
-      "sourceTitle": "[위클리국회세미나] '국가전력망 민간참여 본격화, 공공성 훼손 우려와...",
-      "eventType": "간담회",
-      "startDate": "2026-09-03",
-      "endDate": "2026-09-03",
-      "dateInference": "next_month",
-      "startTime": "14:00",
-      "timezone": "Asia/Seoul",
-      "organizer": "내일의 공공과 에너지·노동을 생각하는 의원모임과 김정호·김주영 의원실",
-      "location": "",
-      "status": "confirmed",
-      "evidence": "다음 달 3일(오후 2시) 국회의원회관 제7간담회실에서는 내일의 공공과 에너지·노동을 생각하는 의원모임과 김정호·김주영 의원실 주최로 ‘국가전력망 민간참여 본격화, 공공성 훼손 우려와 대응과제’가 개최된다.",
-      "publishedAt": "2026-08-31",
-      "source": "weekly.hankooki.com",
-      "sourceType": "news",
-      "url": "https://weekly.hankooki.com/news/articleView.html?idxno=7181526",
-      "sourceItemIds": [
-        "d469a39919059943"
-      ],
-      "sourceUrls": [
-        "https://weekly.hankooki.com/news/articleView.html?idxno=7181526"
-      ],
-      "sources": [
-        "weekly.hankooki.com"
-      ],
-      "duplicateCount": 1,
-      "contentFingerprint": "a411e31ce6e89fc9c299e07c9c3cebb7f98c091c",
-      "contentSignature": "이진숙의원제명촉구결의안및국회법일부개정법률안철회에관한청원등국회의사당전경사진주간한국db8월31일9월4일세미나일정31일오후2시국회도서관소강당에서는김주영정태호박해철박홍배김형동신장식정춘생용혜인한창민의원실주최로국가공공기관노동이사제4년무엇을얻었고무엇이필요한가가개최된다세미나에서는공공기관노동이사제운영실태와이사회작동변화를분석하고제도정착을위한과제를알아본다31일오후3시국회의원회관제10간담회실에서는오기형배준영의원실주최로자발적탄소시장법제정방향토론회가개최된다토론회에서는정부가한국형자발적탄소시장조성방향을발표하고자발적탄소시장법제정필요성을알아보는한편제도정착을위한주요과제를모색한다다음달1일오전10시국회의원회관제8간담회실에서는김태년권칠승김영진김선민차지호의원실주최로ai를이용한행정정보의대중화신뢰의데이터모두의행정국정운영의새판을짜다가개최된다세미나에서는인공지능ai시대국가데이터의연결활용과ai민주정부추진방향및중점과제를논의한다다음달1일오후1시30분국회의원회관제2간담회실에서는조인철한준호최형두의원실주최로디지털환경에서아동청소년권리보장을위한정책토론회플랫폼안전설계를위한위험평가제도를중심으로가개최된다토론회에서는플랫폼위험평가제도의해외사례와국내적용과제를알아본다다음달2일오전10시국회의원회관제3간담회실에서는이정헌의원실주최로ai시대네트워크고도화방안이개최된다세미나에서는ai3대강국추진을위한네트워크고도화정책과제와ai3대메가프로젝트성공을위한ai데이터센터구축운영정책방향을논의한다다음달2일오후2시국회의원회관제4간담회실에서는남인순서영석이수진백선희이용선김남근윤종오의원실주최로지역사회계속거주를위한주택개조정책의추진방향국회토론회가개최된다토론회에서는재가환경지원시범사업추진경과및향후과제를알아보고지방정부의주택개조사업체계화를위한방안을제언한다다음달3일오후2시국회의원회관제7간담회실에서는내일의공공과에너지노동을생각하는의원모임과김정호김주영의원실주최로국가전력망민간참여본격화공공성훼손우려와대응과제가개최된다세미나에서는국가기간전력망민간참여의경제적쟁점및국민부담영향과사회적갈등공공성문제해결방안을논의한다다음달3일오후2시국회의원회관제6간담회실에서는김윤덕노종면이정문정준호조계원조은희진선미의원실주최로지역영화영상생태계활성화를위한국회토론회가개최된다토론회에서는지역영화영상생태계의현재와미래를진단하고영상물촬영지로서지역로케이션인센티브사업의필요성을알아본다다음달4일오전9시국회의원회관제3간담회실에서는서미화의원실주최로지속가능한보건의료를위한혁신신약가치평가의새로운방향이개최된다세미나에서는혁신신약이환자와사회에제공하는임상적사회경제적가치를분석하고국내혁신신약접근성제도의현황및개선과"
+      "source": "기후부 공지·공고",
+      "section": "notice",
+      "requestedStartDate": "2015-01-01",
+      "transport": "unfiltered-rss-local-keyword-filter",
+      "pageSize": 200,
+      "pagesFetched": 37,
+      "rawRows": 7400,
+      "inRangeMatchedRows": 209,
+      "itemCount": 209,
+      "earliest": "2015-01-07",
+      "latest": "2026-09-02",
+      "oldestSeen": "2014-10-14",
+      "newestSeen": "2026-09-09",
+      "crossedRequestedStart": true,
+      "stopReason": "date-boundary",
+      "complete": true,
+      "keywordHits": {
+        "배출권": 202,
+        "배출권거래제": 56,
+        "유상할당": 118,
+        "유상경매": 0,
+        "탄소시장": 5,
+        "시장안정화": 113,
+        "상쇄배출권": 0
+      }
     },
     {
-      "id": "532e171767399506",
-      "title": "기후부, 태양광.전기차 교체 등 온실가스 감축 사례... 배출권거래제 활...",
-      "sourceTitle": "기후부, 태양광.전기차 교체 등 온실가스 감축 사례... 배출권거래제 활...",
-      "eventType": "협의회",
-      "startDate": "2026-09-02",
-      "endDate": "2026-09-02",
-      "dateInference": "relative",
-      "startTime": "",
-      "timezone": "Asia/Seoul",
-      "organizer": "기후에너지환경부",
-      "location": "",
-      "status": "confirmed",
-      "evidence": "기후에너지환경부는 어제(1일)와 오늘(2일) 제71차 배출량 인증위원회를 서면 방식으로 개최해 태양광 설비와 히트펌프, 전기차 교체 등 외부사업의 승인과 감축량 인증 등 안건을 심의·의결했다고 밝혔습니다.",
-      "publishedAt": "2026-09-02",
-      "source": "bbsi.co.kr",
-      "sourceType": "news",
-      "url": "https://news.bbsi.co.kr/news/articleView.html?idxno=4104383",
-      "sourceItemIds": [
-        "563e0b9040d2ec00"
-      ],
-      "sourceUrls": [
-        "https://news.bbsi.co.kr/news/articleView.html?idxno=4104383"
-      ],
-      "sources": [
-        "bbsi.co.kr"
-      ],
-      "duplicateCount": 2,
-      "contentFingerprint": "07c15bf473dbc78753ab105abf604eea8feeab43",
-      "contentSignature": "이기사를공유합니다페이스북으로기사보내기트위터으로기사보내기네이버밴드으로기사보내기url복사으로기사보내기닫기태양광설비와전기차교체등실생활온실가스감축사례가배출권거래제에활용됩니다기후에너지환경부는어제1일와오늘2일제71차배출량인증위원회를서면방식으로개최해태양광설비와히트펌프전기차교체등외부사업의승인과감축량인증등안건을심의의결했다고밝혔습니다외부사업은배출권거래제에참여하는기업즉할당대상업체외부의배출시설활동등에서온실가스를감축흡수또는제거하는사업으로인증된감축실적은배출권시장에서활용이가능합니다이번회의에서는최초로승인된수소버스교체사업을포함해태양광발전설비히트펌프설치등총28건의감축사업이승인됐습니다기후부는이들사업에서향후연간약2만2천102톤의온실가스감축효과가기대된다고설명했습니다기존에승인돼시행중인사업에대한감축량인증의경우전기차교체히트펌프설치폐냉매육불화황회수분해아산화질소촉매분해등10건의사업에서총76만톤의온실가스감축량이인증됐습니다인증된감축량은향후할당대상업체가구입한후상쇄배출권으로전환해온실가스배출권거래제에서활용될예정입니다정부는렌트카공유차량외에도개인용전기차소유주들이차량제조사와보험사등을통해외부사업에참여할수있도록추진하고있다고밝혔습니다아울러이번인증위원회에서는전기설비육불화황열분해방법론과분산형열병합발전설비를이용한전기열생산방법론을포함한2건이신규승인됐습니다기후부는산업과생활현장의수요를반영한방법론을지속적으로등록해외부사업의적용범위를넓힐계획입니다안세진기후부기후에너지정책관은이번에승인된수소버스전기차교체사업과개인주택태양광설비사업은수송생활분야에서국민이직접체감할수있는대표적인온실가스감축사례라며앞으로도다양한분야에서실질적인감축성과가배출권거래제와연계될수있도록외부사업을지속적으로발굴확대하겠다고말했습니다"
-    },
-    {
-      "id": "1bd5aac0bc831577",
-      "title": "자발적 탄소시장 법 제정 방향 토론회(15:00 의원회관...",
-      "sourceTitle": "[오늘의 국회일정](1·화)",
-      "eventType": "국회일정",
-      "startDate": "2026-09-01",
-      "endDate": "2026-09-01",
-      "dateInference": "relative",
-      "startTime": "",
-      "timezone": "Asia/Seoul",
-      "organizer": "대한민국 국회",
-      "location": "",
-      "status": "confirmed",
-      "evidence": "(14:00 의원회관 제3간담회의실) 정태호 의원실 등, 청정수소 구현을 위한 원전수소 역할과 위상 정책 세미나(14:00 의원회관 제3세미나실) 오기형 의원실 등, 자발적 탄소시장 법 제정 방향 토론회(15:00 의원회관...",
-      "publishedAt": "2026-09-01",
-      "source": "yna.co.kr",
-      "sourceType": "news",
-      "url": "https://www.yna.co.kr/view/AKR20260831171000001?input=1195m",
-      "sourceItemIds": [
-        "a00b5e553bace22b",
-        "5d9b269fc468dbaa",
-        "cdf10e85c9c5a5e1"
-      ],
-      "sourceUrls": [
-        "https://www.yna.co.kr/view/AKR20260831171000001?input=1195m",
-        "http://www.queen.co.kr/news/articleView.html?idxno=462577",
-        "https://www.news1.kr/politics/assembly/6275321"
-      ],
-      "sources": [
-        "yna.co.kr",
-        "queen.co.kr",
-        "news1.kr"
-      ],
-      "duplicateCount": 3,
-      "contentFingerprint": "827516b643bce99baa979da5e22cbdd575b152d0",
-      "contentSignature": "오늘의국회일정1화1400의원회관제3간담회의실정태호의원실등청정수소구현을위한원전수소역할과위상정책세미나1400의원회관제3세미나실오기형의원실등자발적탄소시장법제정방향토론회1500의원회관"
-    },
-    {
-      "id": "8dc16c38911bcb0d",
-      "title": "태양광, 전기차 등 실생활 온실가스 감축, 배출권거래제에 활용",
-      "sourceTitle": "태양광, 전기차 등 실생활 온실가스 감축, 배출권거래제에 활용",
-      "eventType": "협의회",
-      "startDate": "2026-09-01",
-      "endDate": "2026-09-02",
-      "dateInference": "yearless",
-      "startTime": "",
-      "timezone": "Asia/Seoul",
-      "organizer": "기후에너지환경부",
-      "location": "",
-      "status": "confirmed",
-      "evidence": "▷ 제71차 배출량 인증위원회, 외부사업 승인·감축량 인증 등 심의·의결 ▷ 충북 음성 개인주택 태양광 확산, 수소버스 교체 외부사업 최초 승인 ▷ 공유차량 서비스 업체의 전기차 교체 등 10건 사업에서 총 76만톤 감축량 인증 기후에너지환경부(장관 김성환)는 9월 1일부터 2일까지 제71차 배출량 인증위원회를 서면 방식으로 개최하여 태양광 설비, 히트펌프, 전기차 교체 등 외부사업*의 승인 및 감축량 인증 등 안건을 심의·의결했다고 밝혔다.",
-      "publishedAt": "2026-09-02",
-      "source": "기후부 보도자료",
-      "sourceType": "official",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%83%81%EC%87%84%EB%B0%B0%EC%B6%9C%EA%B6%8C&menuId=10598&orgCd=&boardMasterId=939&boardId=1888010",
-      "sourceItemIds": [
-        "33c68d93de978225"
-      ],
-      "sourceUrls": [
-        "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%83%81%EC%87%84%EB%B0%B0%EC%B6%9C%EA%B6%8C&menuId=10598&orgCd=&boardMasterId=939&boardId=1888010"
-      ],
-      "sources": [
-        "기후부 보도자료"
-      ],
-      "duplicateCount": 1,
-      "contentFingerprint": "8fba3d3a51a257c1a3379c8a05b3fa8420b708a2",
-      "contentSignature": "태양광전기차등실생활온실가스감축배출권거래제에활용제71차배출량인증위원회외부사업승인감축량인증등심의의결충북음성개인주택태양광확산수소버스교체외부사업최초승인공유차량서비스업체의전기차교체등10건사업에서총76만톤감축량인증기후에너지환경부장관김성환는9월1일부터2일까지제71차배출량인증위원회를서면방식으로개최하여태양광설비히트펌프전기차교체등외부사업의승인및감축량인증등안건을심의의결했다고밝혔다외부사업배출권거래제에참여하는기업할당대상업체외부의배출시설활동등에서온실가스를감축흡수또는제거하는사업인증된감축실적은배출권시장에서활용가능먼저사업승인에서는최초로승인된수소버스교체사업을포함하여태양광발전설비히트펌프설치등총28건의감축사업이승인됐으며이사업들에서향후연간약2만2102톤의온실가스감축효과가기대된다특히한국동서발전의평곡초등학교외10개소건물태양광발전설비설치감축사업에서는충북음성군내초등학교및6개개인주택등에설치된태양광발전설비가포함됐다이는공공시설이나아파트중심이었던재생에너지설비사업이개인주택단위까지확대되어주민생활밀착형감축성과를만들어냈다는점에서의미가크다기존에승인되어시행중인사업에대한감축량인증의경우전기차교체히트펌프설치폐냉매및육불화황회수분해아산화질소촉매분해등10건의사업에서총76만톤의온실가스감축량이인증됐다인증된감축량은향후할당대상업체가구입한후상쇄배출권으로전환하여온실가스배출권거래제에서활용될예정이다이가운데공유차량서비스기업인쏘카의전기차량도입을통한온실가스배출감축사업의감축량인증은모빌리티플랫폼을활용한일상속친환경이동수단전환성과가처음으로온실가스감축실적으로정식인정받은사례다정부는렌트카공유차량외에도개인용전기차소유주들이차량제조사및보험사등을통해외부사업에참여할수있도록추진중이다아울러이번인증위원회에서는전기설비육불화황열분해방법론과분산형열병합발전설비를이용한전기열생산방법론포함2건이신규승인됐다기후에너지환경부는산업및생활현장의수요를반영한방법론을지속적으로등록하여외부사업의적용범위를넓힐계획이다안세진기후에너지환경부기후에너지정책관은이번에승인된수소버스전기차교체사업과개인주택태양광설비사업은수송생활분야에서국민이직접체감할수있는대표적인온실가스감축사례라며앞으로도다양한분야에서실질적인감축성과가배출권거래제와연계될수있도록외부사업을지속적으로발굴확대하겠다라고밝혔다붙임제71차인증위원회심의의결안건끝"
+      "source": "한국거래소 배출권 공지사항",
+      "section": "krx_notice",
+      "requestedStartDate": "2015-01-01",
+      "pagesFetched": 33,
+      "rawRows": 316,
+      "itemCount": 312,
+      "earliest": "2015-01-07",
+      "latest": "2026-09-09",
+      "oldestSeen": "2014-12-18",
+      "newestSeen": "2026-09-09",
+      "crossedRequestedStart": true,
+      "stopReason": "exhausted",
+      "complete": true,
+      "detailSuccessCount": 312,
+      "detailFallbackCount": 0
     }
   ],
+  "warnings": [],
+  "coverage": {
+    "itemCount": 794,
+    "counts": {
+      "press": 272,
+      "notice": 210,
+      "krx_notice": 312
+    },
+    "earliest": {
+      "press": "2015-01-08",
+      "notice": "2015-01-07",
+      "krx_notice": "2015-01-07"
+    },
+    "latest": {
+      "press": "2026-09-04",
+      "notice": "2026-09-02",
+      "krx_notice": "2026-09-09"
+    },
+    "labels": {
+      "press": "기후부 보도자료",
+      "notice": "기후부 공지사항",
+      "krx_notice": "한국거래소 공지사항"
+    }
+  },
   "items": [
-    {
-      "id": "8485f154ed37d094",
-      "publishedAt": "2026-09-09",
-      "title": "페로타임즈 손바닥뉴스 9월9일(수)",
-      "category": "제도",
-      "summary": "인정…韓 K-ETS 포함 [지금 일본은] 경량강관 채용 소화설비 등 확대…한와, 美 철구업체 ASG 인수 [페로TV] 돈오야537 - 미래의 나를 상상하고 실천하기 JFE스틸, 日 최초 대형 스탬프 차지식 코크스로 가동…연산 42만...",
-      "source": "ferrotimes.com",
-      "sourceType": "news",
-      "section": "news",
-      "url": "http://www.ferrotimes.com/news/articleView.html?idxno=50256",
-      "searchProvider": "NAVER API HUB",
-      "matchedKeywords": [
-        "K-ETS"
-      ],
-      "duplicateCount": 1,
-      "duplicateSources": [
-        "ferrotimes.com"
-      ],
-      "searchProviders": [
-        "NAVER API HUB"
-      ],
-      "region": "국내"
-    },
-    {
-      "id": "a55679d432c4a17d",
-      "publishedAt": "2026-09-09",
-      "title": "탄소세에 해협 통항료까지 덮쳤다… 벼랑 끝 몰린 해상 운송로",
-      "category": "제도",
-      "summary": "다토 캡틴 K . 수브라마니암 포트클랑항만청 총괄 책임자는 연간 4000만 달러(약 536억7200만 원) 수준이... 한국 국적 원양 컨테이너선사인 HMM은 유럽연합 탄소배출권거래제(EU ETS )에 이어 글로벌 탄소세가 도입되면 연간...",
-      "source": "g-enews.com",
-      "sourceType": "news",
-      "section": "news",
-      "url": "https://www.g-enews.com/view.php?ud=20260909054248386fbbec65dfb_1",
-      "searchProvider": "NAVER API HUB",
-      "matchedKeywords": [
-        "배출권",
-        "배출권거래제",
-        "탄소배출권"
-      ],
-      "duplicateSources": [
-        "g-enews.com"
-      ],
-      "searchProviders": [
-        "NAVER API HUB"
-      ],
-      "duplicateCount": 1,
-      "region": "해외"
-    },
-    {
-      "id": "8535ff4abdf25366",
-      "publishedAt": "2026-09-09",
-      "title": "탄소배출권 가격 3만원 재돌파…아태지역 최고 상승률",
-      "category": "시장·가격",
-      "summary": "탄소배출권 가격 3만원 재돌파…아태지역 최고 상승률 dhilbo.co.kr",
-      "source": "dhilbo.co.kr",
-      "sourceType": "news",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1ydDFoWVRLVFBnVGRiV2RnYnVQd1pwc0ZPNVlHeDdUTU5DU210TkhXNEROX3d2ZDdJeW9uS2l3Vmh2WVBzUlRVbVVpLW1kZ3FTVkoyVWVySU8wRko3c2lRcHBQY05LQ0lf?oc=5",
-      "searchProvider": "Google News RSS",
-      "matchedKeywords": [
-        "배출권",
-        "탄소배출권"
-      ],
-      "section": "news",
-      "duplicateSources": [
-        "동행일보",
-        "dhilbo.co.kr"
-      ],
-      "searchProviders": [
-        "Google News RSS"
-      ],
-      "duplicateCount": 2,
-      "region": "국내"
-    },
-    {
-      "id": "7011c7bbd4c7a96c",
-      "publishedAt": "2026-09-09",
-      "title": "외교부, 탄소시장 콘퍼런스 개최…\"신뢰·건전성 확보 중요\"",
-      "category": "제도",
-      "summary": "외교부는 9일 대한상공회의소에서 국제 탄소시장 협력 콘퍼런스를 개최했다고 밝혔다. 견종호 외교부 기후변화대사는 이날 개회사에서 자발적 탄소시장 이 빠르게 발전하는 가운데 시장의 신뢰성과 건전성을 확보하는...",
-      "source": "yna.co.kr",
-      "sourceType": "news",
-      "section": "news",
-      "url": "https://www.yna.co.kr/view/AKR20260909119500504?input=1195m",
-      "searchProvider": "NAVER API HUB",
-      "matchedKeywords": [
-        "탄소시장"
-      ],
-      "duplicateCount": 1,
-      "duplicateSources": [
-        "yna.co.kr"
-      ],
-      "searchProviders": [
-        "NAVER API HUB"
-      ],
-      "region": "국내"
-    },
-    {
-      "id": "c2f50991aebcba31",
-      "publishedAt": "2026-09-09",
-      "title": "외교부, 국제 탄소시장 협력 콘퍼런스…라오스·몽골 등 협력국 참여",
-      "category": "제도",
-      "summary": "외교부, 국제 탄소시장 협력 콘퍼런스…라오스·몽골 등 협력국 참여 SPN 서울평양뉴스",
-      "source": "SPN 서울평양뉴스",
-      "sourceType": "news",
-      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFA4N0NqNzUwb0JXNHFoUTdUTi1LRENPYThuTS05M3NjQXFUejZjRmVSeE5HZlVvZ2tlbWJILUprNHFtTklKX1g1MVliRjd3ZEhYNnFTNFNxT0hOYUZtNVJQQnRoTTBLTGhLaXFV?oc=5",
-      "searchProvider": "Google News RSS",
-      "matchedKeywords": [
-        "탄소시장"
-      ],
-      "section": "news",
-      "duplicateCount": 1,
-      "duplicateSources": [
-        "SPN 서울평양뉴스"
-      ],
-      "searchProviders": [
-        "Google News RSS"
-      ],
-      "region": "국내"
-    },
-    {
-      "id": "0a7ea3653fa5d89f",
-      "publishedAt": "2026-09-09",
-      "title": "외교부, '국제 탄소시장 협력 컨퍼런스' 개최…NDC 달성 협력 모색",
-      "category": "제도",
-      "summary": "외교부는 9일 대한상공회의소에서 '국제 탄소시장 협력 콘퍼런스(International Conference on Carbon Market Cooperation)'를 개최했다고 밝혔다. '국가온실가스감축목표(NDC) 달성을 위한 국제 탄소시장 동향과 과제'를 주제로 열린...",
-      "source": "news1.kr",
-      "sourceType": "news",
-      "section": "news",
-      "url": "https://www.news1.kr/diplomacy/defense-diplomacy/6284977",
-      "searchProvider": "NAVER API HUB",
-      "matchedKeywords": [
-        "탄소시장"
-      ],
-      "duplicateCount": 1,
-      "duplicateSources": [
-        "news1.kr"
-      ],
-      "searchProviders": [
-        "NAVER API HUB"
-      ],
-      "region": "국내"
-    },
-    {
-      "id": "e383683207424178",
-      "publishedAt": "2026-09-09",
-      "title": "넷제로2050기후재단 국제기후포럼 개최…기후외교·녹색산업 해법 모색",
-      "category": "제도",
-      "summary": "마지막 세션은 송원근 현대경제연구원 원장이 좌장을 맡아 기후외교와 탄소중립 달성을 주제로 국내 배출권거래제( K-ETS )와 기후금융, 탄소시장 정책 등을 다뤘다. 참석자들은 탄소중립을 선언에 머물게 하지 않고...",
-      "source": "jjan.kr",
-      "sourceType": "news",
-      "section": "news",
-      "url": "https://www.jjan.kr/article/20260909500515",
-      "searchProvider": "NAVER API HUB",
-      "matchedKeywords": [
-        "배출권",
-        "배출권거래제",
-        "K-ETS",
-        "탄소시장"
-      ],
-      "duplicateSources": [
-        "jjan.kr"
-      ],
-      "searchProviders": [
-        "NAVER API HUB"
-      ],
-      "duplicateCount": 1,
-      "region": "국내"
-    },
-    {
-      "id": "32778b30c8d97feb",
-      "publishedAt": "2026-09-09",
-      "title": "굿네이버스글로벌임팩트, '온실가스 국제감축사업 예비타당성조사 지원...",
-      "category": "제도",
-      "summary": "또한, 사업 대상국의 제도와 사업 특성에 따라 파리협정 제6조 기반 국제감축사업 등 규제시장과 자발적 탄소시장 (VCM)을 아우르는 사업 포트폴리오를 구축하고 있다. 민간기업과 투자사, 기술기업 등 다양한 파트너와...",
-      "source": "magazine.hankyung.com",
-      "sourceType": "news",
-      "section": "news",
-      "url": "https://magazine.hankyung.com/business/article/202609094243b",
-      "searchProvider": "NAVER API HUB",
-      "matchedKeywords": [
-        "탄소시장"
-      ],
-      "duplicateCount": 6,
-      "duplicateSources": [
-        "koreastocknews.com",
-        "etnews.com",
-        "mk.co.kr",
-        "e2news.com",
-        "hankyung.com",
-        "magazine.hankyung.com"
-      ],
-      "searchProviders": [
-        "NAVER API HUB"
-      ],
-      "region": "국내"
-    },
-    {
-      "id": "47c6be591e00d24c",
-      "publishedAt": "2026-09-09",
-      "title": "韓 참여 기후클럽, 국가별 탄소 회계 '호환' 가이드 만든다…기업 중복보...",
-      "category": "제도",
-      "summary": "국내 철강·시멘트 기업의 경우, 한국 배출권거래제(K-ETS)에 사용하는 사업장 배출정보와 해외 시장 에서 요구하는 제품별 탄소 정보를 각각 관리하고 있다. 향후 국가별 MRV 간 호환 기준이 마련되면 국내에서 산정...",
-      "source": "impacton.net",
-      "sourceType": "news",
-      "section": "news",
-      "url": "http://www.impacton.net/news/articleView.html?idxno=20267",
-      "searchProvider": "NAVER API HUB",
-      "matchedKeywords": [
-        "배출권",
-        "배출권거래제",
-        "K-ETS"
-      ],
-      "duplicateSources": [
-        "impacton.net"
-      ],
-      "searchProviders": [
-        "NAVER API HUB"
-      ],
-      "duplicateCount": 1,
-      "region": "국내"
-    },
-    {
-      "id": "bd5f72232747c20d",
-      "publishedAt": "2026-09-09",
-      "title": "“블루카본도 국제 표준 필요”…KMI, 동아시아 탄소시장 기준 논의",
-      "category": "제도",
-      "summary": "산림 등 육상 생태계와 함께 주요 탄소흡수원으로 꼽히면서 최근에는 온실가스 감축뿐 아니라 탄소시장... KMI는 이번 논의를 토대로 국내 배출권 거래제(K-ETS)와 자발적 탄소시장에 블루카본을 편입하기 위한 정책 방향을...",
-      "source": "view.asiae.co.kr",
-      "sourceType": "news",
-      "section": "news",
-      "url": "https://view.asiae.co.kr/article/2026090911242247166",
-      "searchProvider": "NAVER API HUB",
-      "matchedKeywords": [
-        "탄소시장",
-        "배출권",
-        "배출권거래제",
-        "K-ETS"
-      ],
-      "duplicateSources": [
-        "view.asiae.co.kr",
-        "yna.co.kr"
-      ],
-      "searchProviders": [
-        "NAVER API HUB"
-      ],
-      "duplicateCount": 2,
-      "region": "국내"
-    },
-    {
-      "id": "3be017cb1ccc03cd",
-      "publishedAt": "2026-09-09",
-      "title": "[지령 1600호 기획] 날씨가 미쳤다 ⑨전문가에게 물었다 최형식 탄소 중...",
-      "category": "제도",
-      "summary": "최 실장은 “탄소중립에너지연구실에서는 국내 배출권 거래제 기반의 탄소 시장 활성화, 탄소국경제도(CBAM) 등 국제 탄소규제 대응 업무를 비롯해 저탄소 산업 분야 활성화를 위한 지원 정책 연구, 국가 온실가스 감축...",
-      "source": "ilyosisa.co.kr",
-      "sourceType": "news",
-      "section": "news",
-      "url": "https://www.ilyosisa.co.kr/news/article.html?no=257746",
-      "searchProvider": "NAVER API HUB",
-      "matchedKeywords": [
-        "배출권",
-        "배출권거래제",
-        "탄소시장"
-      ],
-      "duplicateSources": [
-        "ilyosisa.co.kr"
-      ],
-      "searchProviders": [
-        "NAVER API HUB"
-      ],
-      "duplicateCount": 1,
-      "region": "국내"
-    },
-    {
-      "id": "3eb343d3620036c4",
-      "publishedAt": "2026-09-09",
-      "title": "[온실가스 배출권] 9월 9일 KAU26, 300원 오른 3만450원",
-      "category": "시장·가격",
-      "summary": "[온실가스 배출권] 9월 9일 KAU26, 300원 오른 3만450원 데일리e뉴스",
-      "source": "데일리e뉴스",
-      "sourceType": "news",
-      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9yMUlfZzMydlBwYmY5dzhFaHRHbFJudkJlY21VRWJOaXBKSE5hdzBVdDkzcm9XLThONXJpWGNjeTZXMjl5Skgxc3prSjB4Z2pHV1FjSXdlY1BFWnMtbjFRbXVzYjJkbzQteTN1aUxvYw?oc=5",
-      "searchProvider": "Google News RSS",
-      "matchedKeywords": [
-        "배출권",
-        "온실가스 배출권",
-        "KAU26"
-      ],
-      "section": "news",
-      "duplicateCount": 1,
-      "duplicateSources": [
-        "데일리e뉴스"
-      ],
-      "searchProviders": [
-        "Google News RSS"
-      ],
-      "region": "국내"
-    },
-    {
-      "id": "f3fc5fc9d44269ba",
-      "publishedAt": "2026-09-09",
-      "title": "[부산소식]BPA, '지속 가능한 부산항' ESG 경영 공동 실천 선언 등",
-      "category": "제도",
-      "summary": "블루카본 회계 프로토콜'의 발전 방향을 논의했다. KMI는 국내 배출권 거래제와 자발적 탄소시장에 블루카본을 편입하기 위한 정책 방향을 모색하고, 이를 동아시아의 블루카본 표준화 논의와 연계할 계획이다.",
-      "source": "newsis.com",
-      "sourceType": "news",
-      "section": "news",
-      "url": "https://www.newsis.com/view/NISX20260909_0003782574",
-      "searchProvider": "NAVER API HUB",
-      "matchedKeywords": [
-        "배출권",
-        "배출권거래제",
-        "탄소시장"
-      ],
-      "duplicateSources": [
-        "newsis.com"
-      ],
-      "searchProviders": [
-        "NAVER API HUB"
-      ],
-      "duplicateCount": 1,
-      "region": "국내"
-    },
-    {
-      "id": "9d3ddd78f1387e8c",
-      "publishedAt": "2026-09-09",
-      "title": "[ESG 인사이드 (95)] ESG 기준, 자본시장이 정리한다",
-      "category": "제도",
-      "summary": "국제지속가능성기준위원회(ISSB)가 제정한 글로벌 ESG 공시 기준이 TCFD 권고를 완전히 통합했고, 특히 국제회계기준(IFRS) 기후공시(S2)는 이를 기반으로 산업별 지표, 스코프 3 배출량, 탄소 배출권 등 보다 구체적인 공시...",
-      "source": "news2day.co.kr",
-      "sourceType": "news",
-      "section": "news",
-      "url": "https://www.news2day.co.kr/article/20260908500111",
-      "searchProvider": "NAVER API HUB",
-      "matchedKeywords": [
-        "배출권",
-        "탄소배출권"
-      ],
-      "duplicateSources": [
-        "news2day.co.kr"
-      ],
-      "searchProviders": [
-        "NAVER API HUB"
-      ],
-      "duplicateCount": 1,
-      "region": "국내"
-    },
-    {
-      "id": "4cc2acd6c7a1f364",
-      "publishedAt": "2026-09-09",
-      "title": "[COP31 튀르키에 안탈리아로 가는 길] ① 다자주의 기후협상의 새 이정표...",
-      "category": "제도",
-      "summary": "재원 조달 수단으로서 민간 자본 유입 유인책과 탄소 시장 (파리협정 6조) 활성화 구상이 논의의 중심이 된다. 리더십 분담 모델의 기회와 리스크 향후 전망 COP31은 단순히 한 국가가 주도하는 연례 행사를 넘어...",
-      "source": "esgeconomy.com",
-      "sourceType": "news",
-      "section": "news",
-      "url": "https://www.esgeconomy.com/news/articleView.html?idxno=16633",
-      "searchProvider": "NAVER API HUB",
-      "matchedKeywords": [
-        "탄소시장"
-      ],
-      "duplicateCount": 1,
-      "duplicateSources": [
-        "esgeconomy.com"
-      ],
-      "searchProviders": [
-        "NAVER API HUB"
-      ],
-      "region": "국내"
-    },
-    {
-      "id": "c32560f914b9fc9e",
-      "publishedAt": "2026-09-09",
-      "title": "[2026 국감] 친환경선박 전환율 2030년 15%…글로벌 탄소규제 넘을 수 있...",
-      "category": "제도",
-      "summary": "EU 역시 2024년부터 해운을 배출권 거래제에 포함했고, 2025년부터는 FuelEU Maritime을 시행해 선박 연료의 온실가스 집약도까지 규제하고 있다. 단순한 선박 효율이 아니라 연료 생산부터 사용까지 전주기 탄소배출량이...",
-      "source": "energydaily.co.kr",
-      "sourceType": "news",
-      "section": "news",
-      "url": "https://www.energydaily.co.kr/news/articleView.html?idxno=202920",
-      "searchProvider": "NAVER API HUB",
-      "matchedKeywords": [
-        "배출권",
-        "배출권거래제"
-      ],
-      "duplicateSources": [
-        "energydaily.co.kr"
-      ],
-      "searchProviders": [
-        "NAVER API HUB"
-      ],
-      "duplicateCount": 1,
-      "region": "해외"
-    },
-    {
-      "id": "73f9d5722753a52d",
-      "publishedAt": "2026-09-09",
-      "title": "6.4조 크레딧 탄소 역전 대비책 강화 방안 논의",
-      "category": "제도",
-      "summary": "사진=기후변화재단 파리협정 6.4조 메커니즘를 기반으로 하는 파리협정 배출권 메커니즘(PACM) 체제는 탄소 감축사업을 통해 저장한 탄소가 산불이나 벌채 등을 통해 대기로 다시 유출되는 탄소 역전에 대한 대비책을...",
-      "source": "esgeconomy.com",
-      "sourceType": "news",
-      "section": "news",
-      "url": "https://www.esgeconomy.com/news/articleView.html?idxno=16659",
-      "searchProvider": "NAVER API HUB",
-      "matchedKeywords": [
-        "배출권"
-      ],
-      "duplicateSources": [
-        "esgeconomy.com"
-      ],
-      "searchProviders": [
-        "NAVER API HUB"
-      ],
-      "duplicateCount": 1,
-      "region": "국내"
-    },
     {
       "id": "krx-ets-589",
       "sourceId": "589",
@@ -788,176 +130,6 @@
         "유상할당"
       ],
       "detailStatus": "ok"
-    },
-    {
-      "id": "45161e07a971bdf5",
-      "publishedAt": "2026-09-09",
-      "title": "'바다에서 찾는 일자리'…'해양수산 일자리 아이디어 제안 대회' 내일 부...",
-      "category": "제도",
-      "summary": "AI로 갯벌의 탄소 흡수량을 정밀 측정해 탄소 배출권 거래제와 연결하는 시스템으로, 데이터 분석가와 환경... 전통 해양수산을 MZ세대가 선호하는 고감도 K-뷰티 및 웰니스 시장 으로 확장하는 혁신성을 보여준다. 최종...",
-      "source": "news1.kr",
-      "sourceType": "news",
-      "section": "news",
-      "url": "https://www.news1.kr/economy/idustry-trade/6284579",
-      "searchProvider": "NAVER API HUB",
-      "matchedKeywords": [
-        "배출권",
-        "배출권거래제",
-        "탄소배출권"
-      ],
-      "duplicateSources": [
-        "news1.kr"
-      ],
-      "searchProviders": [
-        "NAVER API HUB"
-      ],
-      "duplicateCount": 1,
-      "region": "국내"
-    },
-    {
-      "id": "4e0078dca3a4c807",
-      "publishedAt": "2026-09-09",
-      "title": "\"감축 성적표 봅시다\"...국제사회, 각국 탄소 저감 '진짜 실적' 조사",
-      "category": "제도",
-      "summary": "파리협정은 모든 당사국이 2년마다 자국의 온실가스 감축 실적을 정리해 유엔에 보고하도록 규정한다. 이... 이 밖에 국가 간 탄소 배출권 을 사고파는 규칙을 정하는 파리협정 제6조 4항 관련 워크숍도 함께 열린다. 이는...",
-      "source": "newspenguin.com",
-      "sourceType": "news",
-      "section": "news",
-      "url": "https://www.newspenguin.com/news/articleView.html?idxno=22164",
-      "searchProvider": "NAVER API HUB",
-      "matchedKeywords": [
-        "배출권",
-        "탄소배출권"
-      ],
-      "duplicateSources": [
-        "newspenguin.com"
-      ],
-      "searchProviders": [
-        "NAVER API HUB"
-      ],
-      "duplicateCount": 1,
-      "region": "국내"
-    },
-    {
-      "id": "f9d9aa92a3915e36",
-      "publishedAt": "2026-09-09",
-      "title": "\"GS칼텍스, DHL 익스프레스에 SAF 공급한다\"",
-      "category": "상쇄·외부사업",
-      "summary": "CORSIA는 국제항공 온실가스 배출량을 2019년의 85%(2024년부터의 기준) 수준으로 제한하고 초과량은 배출권 을 구매･ 상쇄 하는 제도다. 각국은 2026년까지 자발적 참여, 2027년부터 의무적으로 참여해야 한다....",
-      "source": "energydaily.co.kr",
-      "sourceType": "news",
-      "section": "news",
-      "url": "https://www.energydaily.co.kr/news/articleView.html?idxno=203051",
-      "searchProvider": "NAVER API HUB",
-      "matchedKeywords": [
-        "배출권"
-      ],
-      "duplicateSources": [
-        "energydaily.co.kr"
-      ],
-      "searchProviders": [
-        "NAVER API HUB"
-      ],
-      "duplicateCount": 1,
-      "region": "국내"
-    },
-    {
-      "id": "6ae18672897f3b2b",
-      "publishedAt": "2026-09-08",
-      "title": "한화오션 친환경 VLGC 3척 수주로 가스 선 기술력 입증",
-      "category": "제도",
-      "summary": "유럽연합(EU) 역시 해운 분야를 탄소 배출권 거래제(EU ETS)에 편입한 데 이어 선박에 사용되는 해양 연료의 온실가스 집약도를 제한하는 규정(FuelEU Maritime)을 본격 시행 중이다. 글로벌 선사들은 기준을 충족하지 못할 경우...",
-      "source": "gokorea.kr",
-      "sourceType": "news",
-      "section": "news",
-      "url": "https://www.gokorea.kr/news/articleView.html?idxno=877519",
-      "searchProvider": "NAVER API HUB",
-      "matchedKeywords": [
-        "배출권",
-        "배출권거래제",
-        "탄소배출권"
-      ],
-      "duplicateSources": [
-        "gokorea.kr"
-      ],
-      "searchProviders": [
-        "NAVER API HUB"
-      ],
-      "duplicateCount": 1,
-      "region": "해외"
-    },
-    {
-      "id": "bde68dd8a68b918c",
-      "publishedAt": "2026-09-08",
-      "title": "한전 132조·한수원 67조…2030년 부채 전망",
-      "category": "제도",
-      "summary": "신재생에너지 공급의무화(RPS) 비율은 올해 15%에서 2030년 25%로, 탄소 배출권 유상할당 비율은 15%에서 50%로 올라갈 예정이다. 한전은 매출의 98%를 전기 판매에 의존하고 영업비용의 88%를 구입전력비로 지출하는...",
-      "source": "tokenpost.kr",
-      "sourceType": "news",
-      "section": "news",
-      "url": "https://www.tokenpost.kr/news/economy/404119",
-      "searchProvider": "NAVER API HUB",
-      "matchedKeywords": [
-        "배출권",
-        "탄소배출권",
-        "유상할당"
-      ],
-      "duplicateSources": [
-        "tokenpost.kr"
-      ],
-      "searchProviders": [
-        "NAVER API HUB"
-      ],
-      "duplicateCount": 1,
-      "region": "국내"
-    },
-    {
-      "id": "ea5c4b87b09e7c4f",
-      "publishedAt": "2026-09-08",
-      "title": "페로타임즈 손바닥뉴스 9월8일(화)",
-      "category": "시장·가격",
-      "summary": "인천 시장 표창 수상 씨에스윈드, 美 베스타스에 풍력타워 1510억 원 공급 HS화성, 반려동물 특화 '핏 위드... CBAM 탄소 가격 감면 대상 16개 제도 인정…韓 K-ETS 포함 [지금 일본은] 경량강관 채용 소화설비 등 확대...",
-      "source": "ferrotimes.com",
-      "sourceType": "news",
-      "section": "news",
-      "url": "http://www.ferrotimes.com/news/articleView.html?idxno=50234",
-      "searchProvider": "NAVER API HUB",
-      "matchedKeywords": [
-        "K-ETS"
-      ],
-      "duplicateSources": [
-        "ferrotimes.com"
-      ],
-      "searchProviders": [
-        "NAVER API HUB"
-      ],
-      "duplicateCount": 1,
-      "region": "국내"
-    },
-    {
-      "id": "f1b1f0001c629841",
-      "publishedAt": "2026-09-08",
-      "title": "탄소 크레딧·맹그로브도 AI가 검증한다…구글이 고른 '환경 AI' 16곳",
-      "category": "제도",
-      "summary": "소농 위한 맞춤형 비료 설계부터 위성 기반 탄소 배출권 검증까지 농업 및 탄소 시장 의 신뢰성을 높이기 위한 기술도 대거 포함됐다. 인도네시아의 에듀파머스(Edufarmers)는 메신저 앱을 통해 소농들에게 병충해와...",
-      "source": "impacton.net",
-      "sourceType": "news",
-      "section": "news",
-      "url": "http://www.impacton.net/news/articleView.html?idxno=20260",
-      "searchProvider": "NAVER API HUB",
-      "matchedKeywords": [
-        "배출권",
-        "탄소배출권",
-        "탄소시장"
-      ],
-      "duplicateSources": [
-        "impacton.net"
-      ],
-      "searchProviders": [
-        "NAVER API HUB"
-      ],
-      "duplicateCount": 1,
-      "region": "국내"
     },
     {
       "id": "aeba8657c90db233",
@@ -13531,31 +12703,5 @@
         "배출권"
       ]
     }
-  ],
-  "officialHistory": {
-    "file": "data/policy-official-history.json",
-    "requestedStartDate": "2015-01-01",
-    "generatedAt": "2026-09-09T19:58:25+09:00",
-    "itemCount": 794,
-    "counts": {
-      "press": 272,
-      "notice": 210,
-      "krx_notice": 312
-    },
-    "earliest": {
-      "press": "2015-01-08",
-      "notice": "2015-01-07",
-      "krx_notice": "2015-01-07"
-    },
-    "latest": {
-      "press": "2026-09-04",
-      "notice": "2026-09-02",
-      "krx_notice": "2026-09-09"
-    },
-    "labels": {
-      "press": "기후부 보도자료",
-      "notice": "기후부 공지사항",
-      "krx_notice": "한국거래소 공지사항"
-    }
-  }
+  ]
 }
