@@ -404,9 +404,9 @@
       ]
     }
   ],
-  "generatedAt": "2026-09-09T21:26:03+09:00",
-  "collectionMode": "full",
-  "queryStartDate": "2015-01-01",
+  "generatedAt": "2026-09-09T21:30:09+09:00",
+  "collectionMode": "incremental",
+  "queryStartDate": "2026-07-26",
   "queryEndDate": "2026-09-09",
   "policyKeywords": [
     "배출권",
@@ -436,43 +436,43 @@
       "source": "산업부 보도자료",
       "section": "motie_press",
       "boardUrl": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c",
-      "requestedStartDate": "2015-01-01",
+      "requestedStartDate": "2026-07-26",
       "requestedEndDate": "2026-09-09",
       "searchMode": "official-title-and-content-query",
       "pagesFetched": 14,
-      "parsedRows": 45,
-      "itemCount": 20,
-      "earliest": "2016-10-28",
-      "latest": "2026-05-11",
+      "parsedRows": 0,
+      "itemCount": 0,
+      "earliest": null,
+      "latest": null,
       "complete": true,
       "queries": [
         {
           "keyword": "배출권",
           "field": "title",
-          "reportedTotal": 8,
+          "reportedTotal": 0,
           "pagesFetched": 1,
-          "parsedRows": 8
+          "parsedRows": 0
         },
         {
           "keyword": "배출권",
           "field": "content",
-          "reportedTotal": 8,
+          "reportedTotal": 0,
           "pagesFetched": 1,
-          "parsedRows": 8
+          "parsedRows": 0
         },
         {
           "keyword": "배출권거래제",
           "field": "title",
-          "reportedTotal": 4,
+          "reportedTotal": 0,
           "pagesFetched": 1,
-          "parsedRows": 4
+          "parsedRows": 0
         },
         {
           "keyword": "배출권거래제",
           "field": "content",
-          "reportedTotal": 6,
+          "reportedTotal": 0,
           "pagesFetched": 1,
-          "parsedRows": 6
+          "parsedRows": 0
         },
         {
           "keyword": "유상할당",
@@ -505,16 +505,16 @@
         {
           "keyword": "탄소시장",
           "field": "title",
-          "reportedTotal": 12,
+          "reportedTotal": 0,
           "pagesFetched": 1,
-          "parsedRows": 12
+          "parsedRows": 0
         },
         {
           "keyword": "탄소시장",
           "field": "content",
-          "reportedTotal": 7,
+          "reportedTotal": 0,
           "pagesFetched": 1,
-          "parsedRows": 7
+          "parsedRows": 0
         },
         {
           "keyword": "시장안정화",
@@ -550,7 +550,7 @@
       "source": "산업부 공지사항",
       "section": "motie_notice",
       "boardUrl": "https://www.motir.go.kr/kor/article/ATCL6e90bb9de",
-      "requestedStartDate": "2015-01-01",
+      "requestedStartDate": "2026-07-26",
       "requestedEndDate": "2026-09-09",
       "searchMode": "official-title-and-content-query",
       "pagesFetched": 14,
