@@ -1,0 +1,204 @@
+name: Merge Industrial Ministry Policy History
+
+on:
+  workflow_run:
+    workflows: ["Merge Complete Official Policy History"]
+    types: [completed]
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/merge-motie-policy-history.yml"
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+env:
+  TZ: Asia/Seoul
+  PYTHONUNBUFFERED: "1"
+  PYTHONDONTWRITEBYTECODE: "1"
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
+
+jobs:
+  merge-history:
+    name: Refresh and preserve industrial ministry official history
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Check out latest main branch
+        uses: actions/checkout@v7
+        with:
+          ref: main
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: Refresh industrial ministry history
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m py_compile scripts/sync_motie_official_history.py
+          python scripts/sync_motie_official_history.py --self-test
+          if [[ -f public/data/motie-policy-history.json ]]; then
+            python scripts/sync_motie_official_history.py \
+              --start-date 2015-01-01 \
+              --lookback-days 45
+          else
+            echo "기존 산업부 이력이 없어 최초 전체 백필을 수행합니다."
+            python scripts/sync_motie_official_history.py \
+              --start-date 2015-01-01 \
+              --full
+          fi
+
+      - name: Validate retained history
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json
+          import re
+          import urllib.parse
+          from pathlib import Path
+
+          history_path = Path("public/data/motie-policy-history.json")
+          policy_path = Path("public/data/policies.json")
+          if not history_path.is_file() or not policy_path.is_file():
+              raise SystemExit("산업부 이력 또는 대시보드 데이터가 없습니다.")
+          history = json.loads(history_path.read_text(encoding="utf-8"))
+          policies = json.loads(policy_path.read_text(encoding="utf-8"))
+          if history.get("requestedStartDate") != "2015-01-01":
+              raise SystemExit("산업부 이력 기준일이 2015-01-01이 아닙니다.")
+
+          items = history.get("items", [])
+          sections = {"motie_press", "motie_notice"}
+          counts = {section: 0 for section in sections}
+          seen = set()
+          for index, item in enumerate(items):
+              section = str(item.get("section", ""))
+              source_id = str(item.get("sourceId", ""))
+              published = str(item.get("publishedAt", ""))[:10]
+              if section not in sections or not source_id:
+                  raise SystemExit(f"산업부 이력 items[{index}] 구분 또는 ID 오류")
+              if not re.fullmatch(r"20\d{2}-\d{2}-\d{2}", published) or published < "2015-01-01":
+                  raise SystemExit(f"산업부 이력 items[{index}] 게시일 오류: {published}")
+              host = (urllib.parse.urlsplit(str(item.get("url", ""))).hostname or "").lower()
+              if host not in {"motir.go.kr", "www.motir.go.kr"}:
+                  raise SystemExit(f"산업부 공식 도메인 오류: {host}")
+              key = f"{section}|{source_id}"
+              if key in seen:
+                  raise SystemExit(f"산업부 이력 중복: {key}")
+              seen.add(key)
+              counts[section] += 1
+          if any(value <= 0 for value in counts.values()):
+              raise SystemExit(f"산업부 이력 구분별 건수 오류: {counts}")
+
+          dashboard_items = [
+              item for item in policies.get("items", [])
+              if item.get("section") in sections
+          ]
+          if len(dashboard_items) != len(items):
+              raise SystemExit(
+                  f"대시보드 산업부 {len(dashboard_items)}건과 이력 {len(items)}건이 다릅니다."
+              )
+          climate_count = int((policies.get("officialHistory") or {}).get("itemCount", 0))
+          if climate_count < 794:
+              raise SystemExit(f"기존 기후부·KRX 이력이 감소했습니다: {climate_count}")
+          metadata = policies.get("motieOfficialHistory") or {}
+          if int(metadata.get("itemCount", -1)) != len(items):
+              raise SystemExit("산업부 이력 메타데이터가 일치하지 않습니다.")
+          print(f"산업부 공식자료 이력 유지 확인: {len(items)}건 / {counts}")
+          PY
+
+      - name: Commit refreshed history
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/data/motie-policy-history.json public/data/policies.json
+
+          if git diff --cached --quiet; then
+            echo "산업부 공식자료 이력에 변경이 없습니다."
+          else
+            git commit -m "data: refresh industrial ministry policy history"
+            for attempt in 1 2 3; do
+              if git pull --rebase origin main && git push origin HEAD:main; then
+                echo "산업부 공식자료 이력 저장 완료"
+                break
+              fi
+              echo "동시 업데이트 감지: ${attempt}/3 재시도"
+              git rebase --abort 2>/dev/null || true
+              if [[ "$attempt" -eq 3 ]]; then
+                echo "::error::산업부 공식자료 이력 저장에 실패했습니다."
+                exit 1
+              fi
+              sleep $((attempt * 3))
+            done
+          fi
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload public site
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: ./public
+
+      - name: Deploy public site
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+      - name: Verify public industrial ministry history
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json
+          import time
+          import urllib.request
+
+          base = "https://ebrain725.github.io"
+          last_error = ""
+          for attempt in range(1, 7):
+              try:
+                  nonce = f"{int(time.time())}-{attempt}"
+                  def load_json(path):
+                      request = urllib.request.Request(
+                          f"{base}/{path}?verify={nonce}",
+                          headers={"User-Agent": "ETS-LIVE-DASHBOARD/5.0"},
+                      )
+                      with urllib.request.urlopen(request, timeout=40) as response:
+                          return json.loads(response.read().decode("utf-8"))
+
+                  history = load_json("data/motie-policy-history.json")
+                  policies = load_json("data/policies.json")
+                  count = len(history.get("items", []))
+                  dashboard = [
+                      item for item in policies.get("items", [])
+                      if item.get("section") in {"motie_press", "motie_notice"}
+                  ]
+                  if count <= 0 or len(dashboard) != count:
+                      raise RuntimeError(f"공개 산업부 이력 불일치: {count}/{len(dashboard)}")
+                  print(f"공개 산업부 공식자료 이력 확인 완료: {count}건")
+                  break
+              except Exception as exc:
+                  last_error = str(exc)
+              if attempt == 6:
+                  raise SystemExit(f"공개 산업부 이력 검증 실패: {last_error}")
+              time.sleep(8)
+          PY
