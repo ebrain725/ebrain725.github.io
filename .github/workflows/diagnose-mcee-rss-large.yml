@@ -1,0 +1,59 @@
+name: Diagnose MCEE Large RSS Pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/diagnose-mcee-rss-large.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - label: press-500
+            url: "https://www.mcee.go.kr/home/web/board/rss.do?boardMasterId=939&menuId=10598&maxPageItems=500&pagerOffset=0"
+          - label: press-1000
+            url: "https://www.mcee.go.kr/home/web/board/rss.do?boardMasterId=939&menuId=10598&maxPageItems=1000&pagerOffset=0"
+          - label: notice-500
+            url: "https://www.mcee.go.kr/home/web/board/rss.do?boardMasterId=39&menuId=10524&maxPageItems=500&pagerOffset=0"
+          - label: notice-1000
+            url: "https://www.mcee.go.kr/home/web/board/rss.do?boardMasterId=39&menuId=10524&maxPageItems=1000&pagerOffset=0"
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Probe ${{ matrix.label }}
+        shell: bash
+        env:
+          TARGET_URL: ${{ matrix.url }}
+          LABEL: ${{ matrix.label }}
+        run: |
+          set -u
+          output="/tmp/${LABEL}.xml"
+          set +e
+          code="$(curl -4 --http1.1 --location --compressed \
+            --connect-timeout 20 --max-time 240 --retry 1 --retry-all-errors \
+            --user-agent 'Mozilla/5.0 (compatible; ETS-LIVE-DASHBOARD/4.0)' \
+            --header 'Accept: application/rss+xml,application/xml;q=0.9,*/*;q=0.8' \
+            --silent --show-error --output "$output" --write-out '%{http_code} %{time_total}' "$TARGET_URL")"
+          status=$?
+          set -e
+          bytes=0
+          [[ -f "$output" ]] && bytes="$(wc -c < "$output")"
+          echo "label=${LABEL} curl_status=${status} response=${code} bytes=${bytes}"
+          if [[ -f "$output" && "$bytes" -gt 0 ]]; then
+            python - "$output" <<'PY'
+          import re, sys
+          from pathlib import Path
+          text=Path(sys.argv[1]).read_text(encoding='utf-8',errors='replace')
+          dates=[re.sub(r'\s+',' ',x).strip() for x in re.findall(r'<pubDate>(.*?)</pubDate>',text,re.I|re.S)]
+          print('item_count=',len(re.findall(r'<item\b',text,re.I)))
+          print('first_date=',dates[0] if dates else None)
+          print('last_date=',dates[-1] if dates else None)
+          PY
+          fi
+          exit 0
