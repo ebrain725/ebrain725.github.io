@@ -1,0 +1,67 @@
+{
+  "schemaVersion": "1.0",
+  "requestedStartDate": "2015-01-01",
+  "verifiedAt": "2026-09-09T19:58:25+09:00",
+  "scope": {
+    "press": "기후부 보도자료 전체 이력을 2015년 경계 이전까지 순회한 뒤 배출권 관련 키워드를 제목·본문에서 로컬 판정",
+    "notice": "기후부 공지·공고 전체 이력을 2015년 경계 이전까지 순회한 뒤 배출권 관련 키워드를 제목·본문에서 로컬 판정",
+    "krx_notice": "한국거래소 배출권시장 공지사항의 2015-01-01 이후 일반 공지 전체"
+  },
+  "officialItemCount": 794,
+  "counts": {
+    "press": 272,
+    "notice": 210,
+    "krx_notice": 312
+  },
+  "earliest": {
+    "press": "2015-01-08",
+    "notice": "2015-01-07",
+    "krx_notice": "2015-01-07"
+  },
+  "latest": {
+    "press": "2026-09-04",
+    "notice": "2026-09-02",
+    "krx_notice": "2026-09-09"
+  },
+  "sourceAudit": [
+    {
+      "source": "기후부 보도자료",
+      "pagesFetched": 11,
+      "rawRowsScanned": 11000,
+      "backfillMatchedItems": 271,
+      "finalMergedItems": 272,
+      "oldestSourceDateSeen": "2013-09-25",
+      "crossedRequestedStart": true,
+      "complete": true
+    },
+    {
+      "source": "기후부 공지·공고",
+      "pagesFetched": 37,
+      "rawRowsScanned": 7400,
+      "backfillMatchedItems": 209,
+      "finalMergedItems": 210,
+      "oldestSourceDateSeen": "2014-10-14",
+      "crossedRequestedStart": true,
+      "complete": true
+    },
+    {
+      "source": "한국거래소 배출권 공지사항",
+      "pagesFetched": 33,
+      "rawRowsScanned": 316,
+      "finalMergedItems": 312,
+      "detailSuccessCount": 312,
+      "detailFallbackCount": 0,
+      "oldestSourceDateSeen": "2014-12-18",
+      "crossedRequestedStart": true,
+      "complete": true
+    }
+  ],
+  "validation": {
+    "duplicateKeys": 0,
+    "invalidDates": 0,
+    "missingRequiredFields": 0,
+    "warnings": [],
+    "historyBlobSha": "807040793556390d5d9be676033b693ca113ef39",
+    "dashboardPayloadBlobSha": "7c3ddfecab783721ec16d0c3a9e7dcf789149e1c"
+  }
+}
