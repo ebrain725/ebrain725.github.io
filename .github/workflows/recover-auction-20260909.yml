@@ -8,13 +8,18 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 concurrency:
-  group: recover-krx-auction-20260909
+  group: github-pages
   cancel-in-progress: false
 
 jobs:
   recover-auction:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     timeout-minutes: 10
     env:
@@ -34,7 +39,24 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: 기존 경매 결과 확인
+        id: existing
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+
+          doc = json.loads(Path("public/data/auctions.json").read_text(encoding="utf-8"))
+          latest = max((str(item.get("date", "")) for item in doc.get("items", [])), default="")
+          with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as output:
+              output.write(f"current={'true' if latest == '2026-09-09' else 'false'}\n")
+          print(f"현재 최신 경매일: {latest or '없음'}")
+          PY
+
       - name: 2026-09-09 유상경매 결과 수집
+        if: steps.existing.outputs.current != 'true'
         run: python scripts/sync_krx.py
 
       - name: 수집 결과 확인
@@ -52,9 +74,7 @@ jobs:
           print(f"AUCTION_LATEST_DATE={latest}")
           print(f"AUCTION_RECORDS={len(items)}")
           if latest != "2026-09-09":
-              raise SystemExit(
-                  "2026-09-09 경매 결과가 공식 원천에서 아직 수집되지 않았습니다."
-              )
+              raise SystemExit("2026-09-09 경매 결과가 저장되지 않았습니다.")
           PY
 
       - name: 경매 결과 저장
@@ -66,8 +86,20 @@ jobs:
           git add public/data/auctions.json public/data/prices.csv
           if git diff --cached --quiet; then
             echo "2026-09-09 경매 결과가 이미 저장되어 있습니다."
-            exit 0
+          else
+            git commit -m "data: add KRX auction result 2026-09-09"
+            git pull --rebase origin main
+            git push origin HEAD:main
           fi
-          git commit -m "data: add KRX auction result 2026-09-09"
-          git pull --rebase origin main
-          git push origin HEAD:main
+
+      - name: Pages 설정
+        uses: actions/configure-pages@v5
+
+      - name: 공개 파일 묶기
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: ./public
+
+      - name: GitHub Pages 배포
+        id: deployment
+        uses: actions/deploy-pages@v4
