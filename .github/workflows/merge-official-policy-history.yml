@@ -43,14 +43,19 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: 공식자료 전체 이력 병합
+      - name: 기후부·거래소 공식자료 전체 이력 병합
         run: |
           set -euo pipefail
           test -f public/data/policy-official-history.json || {
             echo "공식자료 전체 이력 파일이 아직 없어 병합을 생략합니다."
             exit 0
           }
-          python -m py_compile scripts/merge_official_policy_history.py
+          python -m py_compile \
+            scripts/merge_official_policy_history.py \
+            scripts/sync_motie_official_history.py
+          # 수동 실행 시 policies.json에 남아 있는 산업부 항목이 기후부 항목으로
+          # 오분류되지 않도록 먼저 분리한다. 다음 산업부 이력 워크플로가 복원한다.
+          python scripts/sync_motie_official_history.py --remove-from-policy
           python scripts/merge_official_policy_history.py --start-date 2015-01-01
 
       - name: 병합 결과 검증
@@ -73,9 +78,11 @@ jobs:
           ]
           if not official:
               raise SystemExit("공식자료 전체 이력이 비어 있습니다.")
+          if any(item.get("section") in {"motie_press", "motie_notice"} for item in current_official):
+              raise SystemExit("기후부 병합 단계에 산업부 항목이 남아 있습니다.")
           if len(current_official) != len(official):
               raise SystemExit(
-                  f"policies.json 공식자료 {len(current_official)}건과 "
+                  f"policies.json 기후부·거래소 공식자료 {len(current_official)}건과 "
                   f"전체 이력 {len(official)}건이 다릅니다."
               )
           coverage = history.get("coverage", {})
@@ -87,7 +94,7 @@ jobs:
               raise SystemExit(f"공식자료 구분별 건수가 올바르지 않습니다: {counts}")
           if history.get("requestedStartDate") != "2015-01-01":
               raise SystemExit("공식자료 백필 기준일이 2015-01-01이 아닙니다.")
-          print(f"공식자료 전체 이력 유지 확인: {len(official)}건 / {counts}")
+          print(f"기후부·거래소 공식자료 전체 이력 유지 확인: {len(official)}건 / {counts}")
           PY
 
       - name: 병합 파일 저장
