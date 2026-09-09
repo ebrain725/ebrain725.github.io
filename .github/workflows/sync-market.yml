@@ -1,4 +1,4 @@
-name: Sync KRX Market & Auction Data v3
+name: Sync KRX Market & Auction Data v4
 
 on:
   schedule:
@@ -6,8 +6,17 @@ on:
     - cron: "37 23 * * *"
     # KRX 배출권시장 종료 후 당일 시세를 12:07 KST에 반영 (평일)
     - cron: "7 3 * * 1-5"
-    # 매주 수요일 17:17 KST 호출 후 둘째 주(8~14일)에만 경매 수집
+    # 유상경매일 17:17 KST부터 재시도. 실제 수집 후 중복 실행은 자동 생략합니다.
     - cron: "17 8 * * 3"
+    - cron: "17 9 * * 3"
+    - cron: "17 10 * * 3"
+    - cron: "17 11 * * 3"
+    # GitHub 예약 지연에 대비한 다음 날 08:47 KST 최종 보완
+    - cron: "47 23 * * 3"
+  push:
+    branches: [main]
+    paths:
+      - ".github/triggers/krx-auction-refresh.txt"
   workflow_dispatch:
     inputs:
       mode:
@@ -57,64 +66,165 @@ jobs:
     steps:
       - name: 저장소 불러오기
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
       - name: Python 준비
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+
       - name: 수집 방식 결정
         id: mode_check
         shell: bash
         run: |
+          set -euo pipefail
           MODE="${{ inputs.mode }}"
           TRIGGER_TYPE="${{ inputs.trigger_type }}"
-          if [ "${{ github.event_name }}" = "schedule" ]; then
+
+          if [[ "${{ github.event_name }}" == "push" ]]; then
+            MODE="auction"
+            TRIGGER_TYPE="manual"
+          elif [[ "${{ github.event_name }}" == "schedule" ]]; then
             TRIGGER_TYPE="scheduler"
-            if [ "${{ github.event.schedule }}" = "7 3 * * 1-5" ]; then
-              MODE="site-today"
-            elif [ "${{ github.event.schedule }}" = "17 8 * * 3" ]; then
-              MODE="auction"
-            else
-              MODE="openapi"
-            fi
+            case "${{ github.event.schedule }}" in
+              "7 3 * * 1-5")
+                MODE="site-today"
+                ;;
+              "17 8 * * 3"|"17 9 * * 3"|"17 10 * * 3"|"17 11 * * 3"|"47 23 * * 3")
+                MODE="auction"
+                ;;
+              *)
+                MODE="openapi"
+                ;;
+            esac
           fi
-          if [ -z "$MODE" ]; then
+
+          if [[ -z "$MODE" ]]; then
             MODE="site-today"
           fi
-          echo "KRX_SYNC_MODE=$MODE" >> "$GITHUB_ENV"
-          echo "SHOULD_RUN=true" >> "$GITHUB_ENV"
-
-          # 외부 cron-job.org는 매주 수요일 호출하고, 여기서 둘째 주만 통과시킵니다.
-          if [ "$MODE" = "auction" ] && [ "$TRIGGER_TYPE" = "scheduler" ]; then
-            DAY_OF_MONTH=$(TZ=Asia/Seoul date +%d)
-            DAY_OF_WEEK=$(TZ=Asia/Seoul date +%u)
-            HOUR=$(TZ=Asia/Seoul date +%H)
-            if [ "$DAY_OF_WEEK" != "3" ] || [ "$((10#$DAY_OF_MONTH))" -lt 8 ] || [ "$((10#$DAY_OF_MONTH))" -gt 14 ] || [ "$((10#$HOUR))" -lt 17 ]; then
-              echo "SHOULD_RUN=false" >> "$GITHUB_ENV"
-              echo "경매 수집 생략: 둘째 주 수요일 17시 이후가 아닙니다."
-            fi
+          if [[ -z "$TRIGGER_TYPE" ]]; then
+            TRIGGER_TYPE="manual"
           fi
-          echo "수집 방식: $MODE"
+
+          echo "KRX_SYNC_MODE=$MODE" >> "$GITHUB_ENV"
+          echo "KRX_TRIGGER_TYPE=$TRIGGER_TYPE" >> "$GITHUB_ENV"
+          echo "SHOULD_RUN=true" >> "$GITHUB_ENV"
+          echo "수집 방식: $MODE / 실행 주체: $TRIGGER_TYPE"
+
+      - name: 경매일·중복 실행 점검
+        if: env.KRX_SYNC_MODE == 'auction' && env.KRX_TRIGGER_TYPE == 'scheduler'
+        shell: bash
+        run: |
+          python - <<'PY'
+          from datetime import date, datetime, time, timedelta
+          import json
+          import os
+          from pathlib import Path
+          from zoneinfo import ZoneInfo
+
+          now = datetime.now(ZoneInfo("Asia/Seoul"))
+          first = date(now.year, now.month, 1)
+          first_wednesday = first + timedelta(days=(2 - first.weekday()) % 7)
+          expected = first_wednesday + timedelta(days=7)
+
+          in_window = expected <= now.date() <= expected + timedelta(days=2)
+          after_open = now.date() > expected or now.time() >= time(17, 0)
+          due = in_window and after_open
+
+          path = Path("public/data/auctions.json")
+          existing_dates = set()
+          if path.exists():
+              document = json.loads(path.read_text(encoding="utf-8"))
+              existing_dates = {
+                  str(item.get("date", ""))
+                  for item in document.get("items", [])
+                  if isinstance(item, dict)
+              }
+
+          already_collected = expected.isoformat() in existing_dates
+          should_run = due and not already_collected
+
+          with open(os.environ["GITHUB_ENV"], "a", encoding="utf-8") as output:
+              output.write(f"EXPECTED_AUCTION_DATE={expected.isoformat()}\n")
+              output.write(f"SHOULD_RUN={'true' if should_run else 'false'}\n")
+
+          print(f"현재시각(KST): {now.isoformat(timespec='seconds')}")
+          print(f"이번 달 둘째 수요일: {expected.isoformat()}")
+          print(f"경매 수집기간 여부: {due}")
+          print(f"이미 수집 여부: {already_collected}")
+          print(f"실행 여부: {should_run}")
+          PY
+
       - name: KRX 배출권 시세·경매 수집
         if: env.SHOULD_RUN == 'true'
         run: python scripts/sync_krx.py
+
+      - name: 경매 결과 강제 검증
+        if: env.SHOULD_RUN == 'true' && env.KRX_SYNC_MODE == 'auction' && env.EXPECTED_AUCTION_DATE != ''
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+
+          expected = os.environ["EXPECTED_AUCTION_DATE"]
+          document = json.loads(Path("public/data/auctions.json").read_text(encoding="utf-8"))
+          dates = {
+              str(item.get("date", ""))
+              for item in document.get("items", [])
+              if isinstance(item, dict)
+          }
+          if expected not in dates:
+              raise SystemExit(
+                  f"공식 원천에서 {expected} 유상경매 결과를 확인하지 못했습니다. 다음 예약에서 재시도합니다."
+              )
+          print(f"유상경매 결과 검증 완료: {expected}")
+          PY
+
       - name: 변경된 시세·경매 저장
         if: env.SHOULD_RUN == 'true'
+        shell: bash
         run: |
+          set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add public/data/prices.csv public/data/auctions.json
+
           if git diff --cached --quiet; then
             echo "새로운 KRX 시세 또는 경매 결과가 없습니다."
-          else
-            git commit -m "data: update KRX emissions market and auction"
-            git push
+            exit 0
           fi
+
+          git commit -m "data: update KRX emissions market and auction"
+          for attempt in 1 2 3; do
+            if git pull --rebase origin main && git push origin HEAD:main; then
+              echo "KRX 데이터 저장 완료"
+              exit 0
+            fi
+            echo "동시 업데이트 감지: ${attempt}/3 재시도"
+            git rebase --abort 2>/dev/null || true
+            sleep $((attempt * 3))
+          done
+          echo "::error::KRX 데이터 저장소 push에 실패했습니다."
+          exit 1
+
+      - name: 실행 생략 사유
+        if: env.SHOULD_RUN != 'true'
+        run: echo "경매일이 아니거나 해당 경매 결과가 이미 수집되어 실행을 생략했습니다."
+
       - name: Pages 설정
+        if: env.SHOULD_RUN == 'true'
         uses: actions/configure-pages@v5
+
       - name: 공개 파일 묶기
+        if: env.SHOULD_RUN == 'true'
         uses: actions/upload-pages-artifact@v4
         with:
           path: ./public
+
       - name: GitHub Pages 배포
+        if: env.SHOULD_RUN == 'true'
         id: deployment
         uses: actions/deploy-pages@v4
