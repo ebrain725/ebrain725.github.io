@@ -35,6 +35,8 @@
     }
   ],
   "policyLookbackDays": 30,
-  "maxNewsItems": 24,
-  "maxPolicyItems": 78
+  "maxNewsItems": 0,
+  "maxPolicyItems": 120,
+  "newsRetentionPolicy": "append-only",
+  "newsHistoryFile": "public/data/news-history.json"
 }

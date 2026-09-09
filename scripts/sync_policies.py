@@ -2358,8 +2358,11 @@ def main() -> int:
                 key = f"{item['section']}|{item.get('publishedAt')}|{normalized_title}"
             merged[key] = item
 
-    limit = max(1, min(int(settings.get("maxPolicyItems", 60)), 200))
-    max_news = max(0, min(int(settings.get("maxNewsItems", 24)), limit))
+    # 공식자료 최신분과 뉴스 누적이 서로 정원을 잠식하지 않도록 분리한다.
+    # maxNewsItems가 0이면 뉴스는 삭제하지 않고 전기간 누적한다.
+    official_limit = max(1, min(int(settings.get("maxPolicyItems", 60)), 500))
+    max_news_setting = max(0, int(settings.get("maxNewsItems", 0) or 0))
+    max_news = min(max_news_setting, 10000) if max_news_setting else 0
     ranked = sorted(merged.values(), key=lambda item: (item.get("publishedAt", ""), item.get("title", "")), reverse=True)
     all_news = dedupe_news([item for item in ranked if item.get("sourceType") == "news"])
     for item in all_news:
@@ -2367,7 +2370,8 @@ def main() -> int:
         item["category"] = category_for(visible_text)
         item["region"] = news_region_for(item)
     # 국회 종합일정 기사는 기관일정에만 두고, 제외 후 뉴스 정원을 다시 채운다.
-    news = [item for item in all_news if not is_routable_assembly_agenda_article(item)][:max_news]
+    news_candidates = [item for item in all_news if not is_routable_assembly_agenda_article(item)]
+    news = news_candidates[:max_news] if max_news else news_candidates
     official = [item for item in ranked if item.get("sourceType") != "news"]
     institution_schedules = build_institution_schedules(
         [item for item in official if policy_section(item) != "krx_notice"] + all_news,
@@ -2375,7 +2379,7 @@ def main() -> int:
     )
 
     # 어느 한 게시판의 최신글이 많아도 세 공식자료 탭이 비지 않도록 균형 배분한다.
-    official_capacity = max(0, limit - len(news))
+    official_capacity = official_limit
     official_sections = ("press", "notice", "krx_notice")
     base_quota, quota_remainder = divmod(official_capacity, len(official_sections))
     selected_official: list[dict] = []
@@ -2395,7 +2399,11 @@ def main() -> int:
         if official_item_key(item) not in selected_keys
     ]
     selected_official.extend(extras[: max(0, official_capacity - len(selected_official))])
-    items = sorted(selected_official + news, key=lambda item: (item.get("publishedAt", ""), item.get("title", "")), reverse=True)[:limit]
+    items = sorted(
+        selected_official + news,
+        key=lambda item: (item.get("publishedAt", ""), item.get("title", "")),
+        reverse=True,
+    )
     for item in items:
         item.pop("_trustedSearchMatch", None)
         item.pop("_bodyVerificationQueries", None)
