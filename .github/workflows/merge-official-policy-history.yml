@@ -1,0 +1,101 @@
+name: Merge Complete Official Policy History
+
+on:
+  workflow_run:
+    workflows: ["Sync Ministry Policies"]
+    types: [completed]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: official-policy-history-merge
+  cancel-in-progress: false
+
+jobs:
+  merge-history:
+    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      TZ: Asia/Seoul
+      PYTHONUNBUFFERED: "1"
+
+    steps:
+      - name: 저장소 최신본 불러오기
+        uses: actions/checkout@v5
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Python 준비
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: 공식자료 전체 이력 병합
+        run: |
+          set -euo pipefail
+          test -f public/data/policy-official-history.json || {
+            echo "공식자료 전체 이력 파일이 아직 없어 병합을 생략합니다."
+            exit 0
+          }
+          python -m py_compile scripts/merge_official_policy_history.py
+          python scripts/merge_official_policy_history.py --start-date 2015-01-01
+
+      - name: 병합 결과 검증
+        run: |
+          set -euo pipefail
+          if [[ ! -f public/data/policy-official-history.json ]]; then
+            echo "백필 전 상태이므로 검증을 생략합니다."
+            exit 0
+          fi
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          history = json.loads(Path("public/data/policy-official-history.json").read_text(encoding="utf-8"))
+          policies = json.loads(Path("public/data/policies.json").read_text(encoding="utf-8"))
+          official = history.get("items", [])
+          current_official = [item for item in policies.get("items", []) if item.get("sourceType") != "news"]
+          if not official:
+              raise SystemExit("공식자료 전체 이력이 비어 있습니다.")
+          if len(current_official) != len(official):
+              raise SystemExit(
+                  f"policies.json 공식자료 {len(current_official)}건과 전체 이력 {len(official)}건이 다릅니다."
+              )
+          coverage = history.get("coverage", {})
+          counts = coverage.get("counts", {})
+          required = {"press", "notice", "krx_notice"}
+          if set(counts) != required or any(int(counts.get(key, 0)) <= 0 for key in required):
+              raise SystemExit(f"공식자료 구분별 건수가 올바르지 않습니다: {counts}")
+          if history.get("requestedStartDate") != "2015-01-01":
+              raise SystemExit("공식자료 백필 기준일이 2015-01-01이 아닙니다.")
+          print(f"공식자료 전체 이력 유지 확인: {len(official)}건 / {counts}")
+          PY
+
+      - name: 병합 파일 저장
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/data/policies.json public/data/policy-official-history.json
+
+          if git diff --cached --quiet; then
+            echo "공식자료 전체 이력에 변경이 없습니다."
+            exit 0
+          fi
+
+          git commit -m "data: merge complete official policy history"
+          for attempt in 1 2 3; do
+            if git pull --rebase origin main && git push origin HEAD:main; then
+              echo "공식자료 전체 이력 저장 완료"
+              exit 0
+            fi
+            echo "동시 업데이트 감지: ${attempt}/3 재시도"
+            git rebase --abort 2>/dev/null || true
+            sleep $((attempt * 3))
+          done
+          echo "::error::공식자료 전체 이력 저장에 실패했습니다."
+          exit 1
