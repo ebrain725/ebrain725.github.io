@@ -1,67 +1,125 @@
 {
-  "schemaVersion": "1.0",
+  "schemaVersion": "2.0",
   "requestedStartDate": "2015-01-01",
-  "verifiedAt": "2026-09-09T19:58:25+09:00",
+  "verifiedAt": "2026-09-09T23:04:56+09:00",
+  "keywordExpansionVersion": "2026-09-09-v1-shared-30-keywords",
+  "keywordRule": {
+    "titleAndContent": [
+      "배출권",
+      "배출권거래제",
+      "유상할당",
+      "유상경매",
+      "탄소시장",
+      "시장안정화",
+      "상쇄배출권"
+    ],
+    "titleOnly": [
+      "온실가스",
+      "탄소중립",
+      "국제감축",
+      "외부감축",
+      "외부사업",
+      "감축실적",
+      "국가 온실가스 감축목표",
+      "NDC",
+      "탄소국경조정",
+      "CBAM",
+      "RE100",
+      "전력수급기본계획",
+      "전력시장",
+      "SMP",
+      "석탄발전",
+      "LNG발전",
+      "원자력발전",
+      "재생에너지 발전",
+      "신재생에너지 공급의무화",
+      "수소발전",
+      "청정수소발전",
+      "발전제약",
+      "전원구성"
+    ]
+  },
   "scope": {
-    "press": "기후부 보도자료 전체 이력을 2015년 경계 이전까지 순회한 뒤 배출권 관련 키워드를 제목·본문에서 로컬 판정",
-    "notice": "기후부 공지·공고 전체 이력을 2015년 경계 이전까지 순회한 뒤 배출권 관련 키워드를 제목·본문에서 로컬 판정",
+    "press": "기후부 보도자료 전체 이력에서 핵심 7개는 제목·본문, 확대 23개는 제목으로 판정",
+    "notice": "기후부 공지·공고 전체 이력에서 핵심 7개는 제목·본문, 확대 23개는 제목으로 판정",
     "krx_notice": "한국거래소 배출권시장 공지사항의 2015-01-01 이후 일반 공지 전체"
   },
-  "officialItemCount": 794,
+  "officialItemCount": 1323,
   "counts": {
-    "press": 272,
-    "notice": 210,
-    "krx_notice": 312
+    "krx_notice": 312,
+    "notice": 343,
+    "press": 668
+  },
+  "directCounts": {
+    "press": 313,
+    "notice": 209
+  },
+  "relatedCounts": {
+    "press": 355,
+    "notice": 134
   },
   "earliest": {
-    "press": "2015-01-08",
+    "krx_notice": "2015-01-07",
     "notice": "2015-01-07",
-    "krx_notice": "2015-01-07"
+    "press": "2015-01-08"
   },
   "latest": {
-    "press": "2026-09-04",
-    "notice": "2026-09-02",
-    "krx_notice": "2026-09-09"
+    "krx_notice": "2026-09-09",
+    "notice": "2026-09-09",
+    "press": "2026-09-09"
   },
   "sourceAudit": [
     {
       "source": "기후부 보도자료",
+      "section": "press",
       "pagesFetched": 11,
       "rawRowsScanned": 11000,
-      "backfillMatchedItems": 271,
-      "finalMergedItems": 272,
+      "finalMergedItems": 668,
+      "directCount": 313,
+      "relatedCount": 355,
       "oldestSourceDateSeen": "2013-09-25",
       "crossedRequestedStart": true,
       "complete": true
     },
     {
       "source": "기후부 공지·공고",
+      "section": "notice",
       "pagesFetched": 37,
       "rawRowsScanned": 7400,
-      "backfillMatchedItems": 209,
-      "finalMergedItems": 210,
+      "finalMergedItems": 343,
+      "directCount": 209,
+      "relatedCount": 134,
       "oldestSourceDateSeen": "2014-10-14",
       "crossedRequestedStart": true,
       "complete": true
     },
     {
       "source": "한국거래소 배출권 공지사항",
+      "section": "krx_notice",
       "pagesFetched": 33,
       "rawRowsScanned": 316,
       "finalMergedItems": 312,
-      "detailSuccessCount": 312,
-      "detailFallbackCount": 0,
+      "directCount": null,
+      "relatedCount": null,
       "oldestSourceDateSeen": "2014-12-18",
       "crossedRequestedStart": true,
       "complete": true
     }
   ],
   "validation": {
+    "itemCount": 1323,
+    "counts": {
+      "notice": 343,
+      "krx_notice": 312,
+      "press": 668
+    },
+    "relatedCounts": {
+      "press": 355,
+      "notice": 134
+    },
     "duplicateKeys": 0,
     "invalidDates": 0,
-    "missingRequiredFields": 0,
-    "warnings": [],
-    "historyBlobSha": "807040793556390d5d9be676033b693ca113ef39",
-    "dashboardPayloadBlobSha": "7c3ddfecab783721ec16d0c3a9e7dcf789149e1c"
+    "invalidDomains": 0,
+    "missingKeywords": 0
   }
 }
