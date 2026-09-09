@@ -282,7 +282,7 @@ def collect_ministry_source(
 
 
 def self_test() -> None:
-    sample = b"""<?xml version='1.0' encoding='UTF-8'?>
+    sample = """<?xml version='1.0' encoding='UTF-8'?>
     <rss><channel>
       <item><title><![CDATA[배출권거래제 시험 자료]]></title>
       <description><![CDATA[유상할당 경매 안내]]></description>
@@ -293,7 +293,7 @@ def self_test() -> None:
       <link>https://example.test/read?boardId=2</link>
       <pubDate>Wed Jan 01 00:00:00 KST 2025</pubDate></item>
     </channel></rss>"""
-    root = ET.fromstring(sample)
+    root = ET.fromstring(sample.encode("utf-8"))
     all_rows, matched = parse_page(
         root,
         {"name": "기후부 보도자료", "type": "press"},
