@@ -1,0 +1,145 @@
+name: Backfill MOTIE Policy History Since 2015 v2
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/backfill-motie-policy-history-2015-v2.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: motie-policy-history-backfill
+  cancel-in-progress: false
+
+env:
+  TZ: Asia/Seoul
+  PYTHONUNBUFFERED: "1"
+  PYTHONDONTWRITEBYTECODE: "1"
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - name: Check out main
+        uses: actions/checkout@v7
+        with:
+          ref: main
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: Validate collector
+        run: |
+          set -euo pipefail
+          python -m py_compile \
+            scripts/sync_motie_official_history.py \
+            scripts/run_motie_policy_sync.py
+          python scripts/sync_motie_official_history.py --self-test
+          node --check public/assets/policy-motie-extension.js
+
+      - name: Backfill official industrial ministry materials
+        run: |
+          set -euo pipefail
+          python scripts/run_motie_policy_sync.py \
+            --start-date 2015-01-01 \
+            --full \
+            2>&1 | tee /tmp/motie-policy-backfill-v2.log
+
+      - name: Validate complete result
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json
+          import re
+          import urllib.parse
+          from pathlib import Path
+
+          history_path = Path("public/data/motie-policy-history.json")
+          policy_path = Path("public/data/policies.json")
+          history = json.loads(history_path.read_text(encoding="utf-8"))
+          policies = json.loads(policy_path.read_text(encoding="utf-8"))
+          items = history.get("items", [])
+          required = {"motie_press", "motie_notice"}
+          counts = {key: 0 for key in required}
+          dates = {key: [] for key in required}
+          seen = set()
+          if history.get("requestedStartDate") != "2015-01-01":
+              raise SystemExit("산업부 백필 기준일 오류")
+          if history.get("collectionMode") != "full":
+              raise SystemExit("산업부 전체 백필 모드 오류")
+          for index, item in enumerate(items):
+              section = str(item.get("section", ""))
+              source_id = str(item.get("sourceId", ""))
+              published = str(item.get("publishedAt", ""))[:10]
+              if section not in required or not source_id or not str(item.get("title", "")).strip():
+                  raise SystemExit(f"items[{index}] 필수값 오류")
+              if not re.fullmatch(r"20\d{2}-\d{2}-\d{2}", published) or published < "2015-01-01":
+                  raise SystemExit(f"items[{index}] 게시일 오류: {published}")
+              host = (urllib.parse.urlsplit(str(item.get("url", ""))).hostname or "").lower()
+              if host not in {"motir.go.kr", "www.motir.go.kr"}:
+                  raise SystemExit(f"items[{index}] 공식 도메인 오류: {host}")
+              key = f"{section}|{source_id}"
+              if key in seen:
+                  raise SystemExit(f"중복 산업부 자료: {key}")
+              seen.add(key)
+              counts[section] += 1
+              dates[section].append(published)
+          if any(value <= 0 for value in counts.values()):
+              raise SystemExit(f"산업부 구분별 자료가 비었습니다: {counts}")
+          audits = history.get("sourceAudit", [])
+          if len(audits) != 2 or any(audit.get("complete") is not True for audit in audits):
+              raise SystemExit(f"산업부 수집 감사정보 오류: {audits}")
+          if any(len(audit.get("queries", [])) != 14 for audit in audits):
+              raise SystemExit("산업부 제목·내용 14개 검색조합 검증 실패")
+          dashboard = [item for item in policies.get("items", []) if item.get("section") in required]
+          if len(dashboard) != len(items):
+              raise SystemExit(f"대시보드 병합건수 불일치: {len(dashboard)}/{len(items)}")
+          if int((policies.get("officialHistory") or {}).get("itemCount", 0)) < 794:
+              raise SystemExit("기존 기후부·KRX 2015년 이력이 감소했습니다.")
+          if int((policies.get("motieOfficialHistory") or {}).get("itemCount", -1)) != len(items):
+              raise SystemExit("산업부 이력 메타데이터 불일치")
+          print(f"MOTIE_BACKFILL_TOTAL={len(items)}")
+          print("MOTIE_BACKFILL_COUNTS=" + json.dumps(counts, ensure_ascii=False))
+          print("MOTIE_BACKFILL_EARLIEST=" + json.dumps({k: min(v) for k, v in dates.items()}, ensure_ascii=False))
+          print("MOTIE_BACKFILL_LATEST=" + json.dumps({k: max(v) for k, v in dates.items()}, ensure_ascii=False))
+          print("MOTIE_SOURCE_AUDIT=" + json.dumps(audits, ensure_ascii=False))
+          PY
+
+      - name: Commit complete history
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/data/motie-policy-history.json public/data/policies.json
+          if git diff --cached --quiet; then
+            echo "산업부 공식자료 전체 이력에 변경이 없습니다."
+            exit 0
+          fi
+          git commit -m "data: backfill industrial ministry policy history since 2015"
+          for attempt in 1 2 3; do
+            if git pull --rebase origin main && git push origin HEAD:main; then
+              echo "산업부 공식자료 전체 이력 저장 완료"
+              exit 0
+            fi
+            git rebase --abort 2>/dev/null || true
+            if [[ "$attempt" -eq 3 ]]; then exit 1; fi
+            sleep $((attempt * 3))
+          done
+
+      - name: Preserve log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: motie-policy-backfill-v2-${{ github.run_id }}
+          path: /tmp/motie-policy-backfill-v2.log
+          if-no-files-found: ignore
+          retention-days: 14
