@@ -1,0 +1,73 @@
+name: Recover KRX Auction 2026-09-09
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/recover-auction-20260909.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: recover-krx-auction-20260909
+  cancel-in-progress: false
+
+jobs:
+  recover-auction:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      KRX_AUTH_KEY: ${{ secrets.KRX_AUTH_KEY }}
+      KAU_SYMBOL: ${{ vars.KAU_SYMBOL }}
+      KRX_SYNC_MODE: auction
+      KRX_AUCTION_START_DATE: "2015-01-01"
+      TZ: Asia/Seoul
+    steps:
+      - name: 저장소 불러오기
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Python 준비
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 2026-09-09 유상경매 결과 수집
+        run: python scripts/sync_krx.py
+
+      - name: 수집 결과 확인
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          path = Path("public/data/auctions.json")
+          doc = json.loads(path.read_text(encoding="utf-8"))
+          items = doc.get("items", [])
+          latest = max((str(item.get("date", "")) for item in items), default="")
+          print(f"AUCTION_LAST_SYNC={doc.get('lastSync')}")
+          print(f"AUCTION_LATEST_DATE={latest}")
+          print(f"AUCTION_RECORDS={len(items)}")
+          if latest != "2026-09-09":
+              raise SystemExit(
+                  "2026-09-09 경매 결과가 공식 원천에서 아직 수집되지 않았습니다."
+              )
+          PY
+
+      - name: 경매 결과 저장
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/data/auctions.json public/data/prices.csv
+          if git diff --cached --quiet; then
+            echo "2026-09-09 경매 결과가 이미 저장되어 있습니다."
+            exit 0
+          fi
+          git commit -m "data: add KRX auction result 2026-09-09"
+          git pull --rebase origin main
+          git push origin HEAD:main
