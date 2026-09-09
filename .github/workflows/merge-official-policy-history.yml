@@ -5,19 +5,28 @@ on:
     workflows: ["Sync Ministry Policies"]
     types: [completed]
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/triggers/official-policy-history-merge.txt"
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 concurrency:
-  group: official-policy-history-merge
+  group: github-pages
   cancel-in-progress: false
 
 jobs:
   merge-history:
-    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
     env:
       TZ: Asia/Seoul
       PYTHONUNBUFFERED: "1"
@@ -58,17 +67,23 @@ jobs:
           history = json.loads(Path("public/data/policy-official-history.json").read_text(encoding="utf-8"))
           policies = json.loads(Path("public/data/policies.json").read_text(encoding="utf-8"))
           official = history.get("items", [])
-          current_official = [item for item in policies.get("items", []) if item.get("sourceType") != "news"]
+          current_official = [
+              item for item in policies.get("items", [])
+              if item.get("sourceType") != "news"
+          ]
           if not official:
               raise SystemExit("공식자료 전체 이력이 비어 있습니다.")
           if len(current_official) != len(official):
               raise SystemExit(
-                  f"policies.json 공식자료 {len(current_official)}건과 전체 이력 {len(official)}건이 다릅니다."
+                  f"policies.json 공식자료 {len(current_official)}건과 "
+                  f"전체 이력 {len(official)}건이 다릅니다."
               )
           coverage = history.get("coverage", {})
           counts = coverage.get("counts", {})
           required = {"press", "notice", "krx_notice"}
-          if set(counts) != required or any(int(counts.get(key, 0)) <= 0 for key in required):
+          if set(counts) != required or any(
+              int(counts.get(key, 0)) <= 0 for key in required
+          ):
               raise SystemExit(f"공식자료 구분별 건수가 올바르지 않습니다: {counts}")
           if history.get("requestedStartDate") != "2015-01-01":
               raise SystemExit("공식자료 백필 기준일이 2015-01-01이 아닙니다.")
@@ -99,3 +114,47 @@ jobs:
           done
           echo "::error::공식자료 전체 이력 저장에 실패했습니다."
           exit 1
+
+      - name: Pages 설정
+        uses: actions/configure-pages@v5
+
+      - name: 전체 공개 파일 묶기
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: ./public
+
+      - name: 전체 이력 포함 GitHub Pages 배포
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+      - name: 배포본 전체 이력 확인
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json
+          import time
+          import urllib.request
+
+          url = "https://ebrain725.github.io/data/policy-official-history-summary.json"
+          expected = 794
+          last_error = ""
+          for attempt in range(1, 7):
+              try:
+                  request = urllib.request.Request(
+                      f"{url}?verify={int(time.time())}-{attempt}",
+                      headers={"User-Agent": "ETS-LIVE-DASHBOARD/4.0"},
+                  )
+                  with urllib.request.urlopen(request, timeout=30) as response:
+                      document = json.loads(response.read().decode("utf-8"))
+                  count = int(document.get("officialItemCount", -1))
+                  if count >= expected:
+                      print(f"공개 전체 이력 확인 완료: {count}건")
+                      break
+                  last_error = f"공개 건수 {count} < 기준 {expected}"
+              except Exception as exc:
+                  last_error = str(exc)
+              if attempt == 6:
+                  raise SystemExit(f"공개 전체 이력 검증 실패: {last_error}")
+              time.sleep(8)
+          PY
