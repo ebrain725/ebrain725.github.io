@@ -52,15 +52,17 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          python -m py_compile scripts/sync_motie_official_history.py
+          python -m py_compile \
+            scripts/sync_motie_official_history.py \
+            scripts/run_motie_policy_sync.py
           python scripts/sync_motie_official_history.py --self-test
           if [[ -f public/data/motie-policy-history.json ]]; then
-            python scripts/sync_motie_official_history.py \
+            python scripts/run_motie_policy_sync.py \
               --start-date 2015-01-01 \
               --lookback-days 45
           else
             echo "기존 산업부 이력이 없어 최초 전체 백필을 수행합니다."
-            python scripts/sync_motie_official_history.py \
+            python scripts/run_motie_policy_sync.py \
               --start-date 2015-01-01 \
               --full
           fi
