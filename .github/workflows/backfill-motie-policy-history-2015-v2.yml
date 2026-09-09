@@ -93,13 +93,21 @@ jobs:
               seen.add(key)
               counts[section] += 1
               dates[section].append(published)
-          if any(value <= 0 for value in counts.values()):
-              raise SystemExit(f"산업부 구분별 자료가 비었습니다: {counts}")
+          if counts["motie_press"] <= 0:
+              raise SystemExit(f"산업부 보도자료가 비었습니다: {counts}")
           audits = history.get("sourceAudit", [])
           if len(audits) != 2 or any(audit.get("complete") is not True for audit in audits):
               raise SystemExit(f"산업부 수집 감사정보 오류: {audits}")
           if any(len(audit.get("queries", [])) != 14 for audit in audits):
               raise SystemExit("산업부 제목·내용 14개 검색조합 검증 실패")
+          notice_audit = next((audit for audit in audits if audit.get("section") == "motie_notice"), None)
+          if notice_audit is None:
+              raise SystemExit("산업부 공지사항 수집 감사정보가 없습니다.")
+          if counts["motie_notice"] == 0 and any(
+              int(query.get("reportedTotal", 0)) != 0 or int(query.get("parsedRows", 0)) != 0
+              for query in notice_audit.get("queries", [])
+          ):
+              raise SystemExit("산업부 공지사항 0건 결과와 공식 검색 감사정보가 일치하지 않습니다.")
           dashboard = [item for item in policies.get("items", []) if item.get("section") in required]
           if len(dashboard) != len(items):
               raise SystemExit(f"대시보드 병합건수 불일치: {len(dashboard)}/{len(items)}")
@@ -109,8 +117,8 @@ jobs:
               raise SystemExit("산업부 이력 메타데이터 불일치")
           print(f"MOTIE_BACKFILL_TOTAL={len(items)}")
           print("MOTIE_BACKFILL_COUNTS=" + json.dumps(counts, ensure_ascii=False))
-          print("MOTIE_BACKFILL_EARLIEST=" + json.dumps({k: min(v) for k, v in dates.items()}, ensure_ascii=False))
-          print("MOTIE_BACKFILL_LATEST=" + json.dumps({k: max(v) for k, v in dates.items()}, ensure_ascii=False))
+          print("MOTIE_BACKFILL_EARLIEST=" + json.dumps({k: (min(v) if v else None) for k, v in dates.items()}, ensure_ascii=False))
+          print("MOTIE_BACKFILL_LATEST=" + json.dumps({k: (max(v) if v else None) for k, v in dates.items()}, ensure_ascii=False))
           print("MOTIE_SOURCE_AUDIT=" + json.dumps(audits, ensure_ascii=False))
           PY
 
