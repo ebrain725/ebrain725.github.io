@@ -1,0 +1,52 @@
+name: Diagnose MCEE Reader Transport
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/diagnose-mcee-jina.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - label: press-list-reader
+            target: "https://r.jina.ai/https://www.mcee.go.kr/home/web/board/list.do?boardCategoryId=&boardMasterId=1&maxIndexPages=10&maxPageItems=10&menuId=286&orgCd=&pagerOffset=0&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C"
+          - label: notice-list-reader
+            target: "https://r.jina.ai/https://www.mcee.go.kr/home/web/board/list.do?boardCategoryId=&boardMasterId=39&maxIndexPages=10&maxPageItems=10&menuId=290&orgCd=&pagerOffset=0&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C"
+          - label: press-rss-reader
+            target: "https://r.jina.ai/https://www.mcee.go.kr/home/web/board/rss.do?menuId=10598&boardMasterId=939&maxPageItems=10&pagerOffset=0&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C"
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Probe ${{ matrix.label }}
+        shell: bash
+        env:
+          TARGET_URL: ${{ matrix.target }}
+          LABEL: ${{ matrix.label }}
+        run: |
+          set -u
+          output="/tmp/${LABEL}.txt"
+          set +e
+          code="$(curl --location --compressed \
+            --connect-timeout 10 --max-time 90 --retry 1 --retry-all-errors \
+            --user-agent 'ETS-LIVE-DASHBOARD/4.0' \
+            --header 'Accept: text/plain' \
+            --silent --show-error --output "$output" --write-out '%{http_code}' "$TARGET_URL")"
+          status=$?
+          set -e
+          bytes=0
+          [[ -f "$output" ]] && bytes="$(wc -c < "$output")"
+          echo "label=${LABEL} curl_status=${status} http_code=${code} bytes=${bytes}"
+          if [[ -f "$output" && "$bytes" -gt 0 ]]; then
+            echo '--- first 120 lines ---'
+            sed -n '1,120p' "$output"
+            echo '--- markers ---'
+            grep -Eo 'boardId=[0-9]+|20[0-9]{2}-[0-9]{2}-[0-9]{2}|총 [0-9,]+ 건' "$output" | head -40 || true
+          fi
+          exit 0
