@@ -1,0 +1,64 @@
+name: Diagnose MCEE Archive Endpoints
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/diagnose-mcee-archive.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Probe official ministry archive endpoints
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/mcee
+
+          probe() {
+            local label="$1"
+            local url="$2"
+            local output="/tmp/mcee/${label}.html"
+            echo "===== ${label} ====="
+            set +e
+            http_code="$(curl -4 --http1.1 --location --compressed \
+              --retry 2 --retry-delay 2 --retry-all-errors \
+              --connect-timeout 15 --max-time 90 \
+              --user-agent 'Mozilla/5.0 (compatible; ETS-LIVE-DASHBOARD/4.0)' \
+              --header 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8' \
+              --silent --show-error --output "$output" --write-out '%{http_code}' "$url")"
+            status=$?
+            set -e
+            echo "curl_status=${status} http_code=${http_code} bytes=$(wc -c < "$output" 2>/dev/null || echo 0)"
+            if [[ "$status" -ne 0 ]]; then
+              return 0
+            fi
+            python - "$output" <<'PY'
+          import html
+          import re
+          import sys
+          from pathlib import Path
+
+          path = Path(sys.argv[1])
+          text = path.read_text(encoding="utf-8", errors="replace")
+          print("title=", re.sub(r"\s+", " ", html.unescape((re.search(r"<title[^>]*>(.*?)</title>", text, re.I | re.S) or [None, ""])[1])).strip()[:240])
+          print("boardId_count=", len(re.findall(r"boardId(?:=|%3D|&amp;boardId=)", text, re.I)))
+          print("read_do_count=", len(re.findall(r"board/read\.do", text, re.I)))
+          print("date_count=", len(re.findall(r"20\d{2}[./-]\d{1,2}[./-]\d{1,2}", text)))
+          for match in list(re.finditer(r"board/read\.do|boardId", text, re.I))[:5]:
+              start = max(0, match.start() - 220)
+              end = min(len(text), match.start() + 500)
+              snippet = re.sub(r"\s+", " ", text[start:end])
+              print("SNIPPET:", snippet[:720])
+          PY
+          }
+
+          probe "press-list" "https://www.mcee.go.kr/home/web/board/list.do?boardMasterId=1&menuId=286&maxIndexPages=10&maxPageItems=50&pagerOffset=0&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C"
+          probe "press-rss" "https://www.mcee.go.kr/home/web/board/rss.do?menuId=10598&boardMasterId=939&maxPageItems=50&pagerOffset=0&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C"
+          probe "notice-list" "https://www.mcee.go.kr/home/web/board/list.do?boardMasterId=39&menuId=290&maxIndexPages=10&maxPageItems=50&pagerOffset=0&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C"
+          probe "notice-rss" "https://www.mcee.go.kr/home/web/board/rss.do?menuId=10524&boardMasterId=39&maxPageItems=50&pagerOffset=0&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C"
