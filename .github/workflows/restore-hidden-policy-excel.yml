@@ -1,0 +1,199 @@
+name: Restore Hidden Policy Radar Excel Backend
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/restore-hidden-policy-excel.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+env:
+  TZ: Asia/Seoul
+  PYTHONUNBUFFERED: "1"
+  PYTHONDONTWRITEBYTECODE: "1"
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
+
+jobs:
+  restore-generate-deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: 최신 운영본과 Git 이력 불러오기
+        uses: actions/checkout@v7
+        with:
+          ref: main
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Python 준비
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: 엑셀 생성기와 상시 자동화 복원
+        shell: bash
+        run: |
+          set -euo pipefail
+          source_commit="02f9157262dffa18c637a4cc1481a611d5fd8071"
+          git cat-file -e "${source_commit}^{commit}"
+          git checkout "$source_commit" -- \
+            scripts/export_policy_radar_excel.py \
+            .github/workflows/export-policy-radar-excel.yml
+
+          python -m py_compile scripts/export_policy_radar_excel.py
+          python scripts/export_policy_radar_excel.py --self-test
+
+      - name: 최신 정책 레이더 엑셀 생성
+        shell: bash
+        run: |
+          set -euo pipefail
+          python scripts/export_policy_radar_excel.py \
+            --policy-path public/data/policies.json \
+            --bill-path public/data/bills.json \
+            --seminar-path public/data/assembly_seminars.json \
+            --output public/data/ets-policy-radar-events.xlsx \
+            --manifest public/data/policy-radar-excel.json
+
+      - name: 파일 생성과 화면 비노출 검증
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json
+          import zipfile
+          from pathlib import Path
+
+          xlsx = Path("public/data/ets-policy-radar-events.xlsx")
+          manifest_path = Path("public/data/policy-radar-excel.json")
+          if not xlsx.is_file() or xlsx.stat().st_size < 100_000:
+              raise SystemExit("정책 레이더 엑셀 파일이 없거나 비정상적으로 작습니다.")
+          manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+          if int(manifest.get("sheetCount", 0)) != 11:
+              raise SystemExit(f"엑셀 시트 수 오류: {manifest.get('sheetCount')}")
+          if int(manifest.get("totalEventCount", 0)) <= 0:
+              raise SystemExit("엑셀 전체 이벤트 건수가 0입니다.")
+          with zipfile.ZipFile(xlsx) as archive:
+              if archive.testzip() is not None:
+                  raise SystemExit("XLSX 무결성 검사에 실패했습니다.")
+
+          public_files = [Path("public/index.html"), *Path("public/assets").glob("*.js")]
+          forbidden = ("ets-policy-radar-events.xlsx", "전체 리스트 엑셀", "policy-radar-excel.json")
+          exposed = []
+          for path in public_files:
+              if not path.is_file():
+                  continue
+              text = path.read_text(encoding="utf-8", errors="ignore")
+              if any(value in text for value in forbidden):
+                  exposed.append(str(path))
+          if exposed:
+              raise SystemExit(f"사이트 화면에 엑셀 링크가 남아 있습니다: {exposed}")
+          print(
+              f"숨김 엑셀 검증 완료: {manifest['totalEventCount']:,}건 / "
+              f"{manifest['sheetCount']}개 시트 / {xlsx.stat().st_size:,}바이트"
+          )
+          PY
+
+      - name: 복원 파일을 운영 main에 저장
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git rm -- .github/workflows/restore-hidden-policy-excel.yml
+          git add -- \
+            scripts/export_policy_radar_excel.py \
+            .github/workflows/export-policy-radar-excel.yml \
+            public/data/ets-policy-radar-events.xlsx \
+            public/data/policy-radar-excel.json
+
+          git commit -m "feat: restore hidden policy radar Excel export"
+          for attempt in 1 2 3; do
+            if git pull --rebase origin main && git push origin HEAD:main; then
+              exit 0
+            fi
+            git rebase --abort 2>/dev/null || true
+            if [[ "$attempt" -eq 3 ]]; then
+              exit 1
+            fi
+            sleep $((attempt * 3))
+          done
+
+      - name: 배포 원본 해시 계산
+        id: source_hash
+        shell: bash
+        run: |
+          set -euo pipefail
+          echo "xlsx=$(sha256sum public/data/ets-policy-radar-events.xlsx | awk '{print $1}')" >> "$GITHUB_OUTPUT"
+          echo "manifest=$(sha256sum public/data/policy-radar-excel.json | awk '{print $1}')" >> "$GITHUB_OUTPUT"
+          echo "index=$(sha256sum public/index.html | awk '{print $1}')" >> "$GITHUB_OUTPUT"
+          echo "extension=$(sha256sum public/assets/policy-motie-extension.js | awk '{print $1}')" >> "$GITHUB_OUTPUT"
+
+      - name: Pages 설정
+        uses: actions/configure-pages@v6
+
+      - name: 공개 파일 묶기
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: ./public
+
+      - name: GitHub Pages 배포
+        id: deployment
+        uses: actions/deploy-pages@v5
+
+      - name: 공개 파일과 화면 비노출 확인
+        shell: bash
+        env:
+          PAGE_URL: ${{ steps.deployment.outputs.page_url }}
+          XLSX_SHA256: ${{ steps.source_hash.outputs.xlsx }}
+          MANIFEST_SHA256: ${{ steps.source_hash.outputs.manifest }}
+          INDEX_SHA256: ${{ steps.source_hash.outputs.index }}
+          EXTENSION_SHA256: ${{ steps.source_hash.outputs.extension }}
+        run: |
+          set -euo pipefail
+          root="${PAGE_URL%/}"
+          verify() {
+            local path="$1" expected="$2" output
+            output="$(mktemp)"
+            for attempt in 1 2 3 4 5 6 7 8; do
+              if curl -fsSL --max-time 45 -H "Cache-Control: no-cache" \
+                "${root}/${path}?verify=${GITHUB_RUN_ID}-${attempt}" -o "$output"; then
+                actual="$(sha256sum "$output" | awk '{print $1}')"
+                if [[ "$actual" == "$expected" ]]; then
+                  rm -f "$output"
+                  return 0
+                fi
+              fi
+              sleep 8
+            done
+            rm -f "$output"
+            echo "::error::공개 ${path} 검증 실패"
+            return 1
+          }
+
+          verify "data/ets-policy-radar-events.xlsx" "$XLSX_SHA256"
+          verify "data/policy-radar-excel.json" "$MANIFEST_SHA256"
+          verify "index.html" "$INDEX_SHA256"
+          verify "assets/policy-motie-extension.js" "$EXTENSION_SHA256"
+
+          html="$(curl -fsSL --max-time 30 "${root}/index.html?verify-ui=${GITHUB_RUN_ID}")"
+          extension="$(curl -fsSL --max-time 30 "${root}/assets/policy-motie-extension.js?verify-ui=${GITHUB_RUN_ID}")"
+          if printf '%s\n%s' "$html" "$extension" | grep -Eq \
+            'ets-policy-radar-events\.xlsx|전체 리스트 엑셀|policy-radar-excel\.json'; then
+            echo "::error::공개 화면 코드에 엑셀 다운로드 링크가 노출돼 있습니다."
+            exit 1
+          fi
+          echo "엑셀 백엔드는 공개됐고 대시보드 화면에는 링크가 없습니다."
