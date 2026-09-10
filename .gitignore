@@ -1,0 +1,8 @@
+# Python runtime cache
+__pycache__/
+*.py[cod]
+
+# Local environments and temporary files
+.venv/
+venv/
+*.tmp
