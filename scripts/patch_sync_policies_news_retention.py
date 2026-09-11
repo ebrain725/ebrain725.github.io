@@ -9,6 +9,14 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_PATH = ROOT / ".github" / "workflows" / "sync-policies.yml"
 
+POLICY_FILES = (
+    "public/data/policies.json",
+    "public/data/news-history.json",
+    "public/data/news-retention-audit.json",
+    "public/data/bills.json",
+    "public/data/assembly_seminars.json",
+)
+
 
 def patch(path: Path) -> bool:
     original = path.read_text(encoding="utf-8")
@@ -79,15 +87,27 @@ def patch(path: Path) -> bool:
             raise RuntimeError("뉴스 검증 삽입 위치를 찾지 못했습니다.")
         text = text.replace(anchor, anchor + addition, 1)
 
-    if "public/data/news-history.json" not in text.split("git add --", 1)[-1]:
-        anchor = "            public/data/policies.json \\\n"
-        addition = (
-            "            public/data/news-history.json \\\n"
-            "            public/data/news-retention-audit.json \\\n"
-        )
-        if anchor not in text:
-            raise RuntimeError("git add 목록 삽입 위치를 찾지 못했습니다.")
-        text = text.replace(anchor, anchor + addition, 1)
+    old_case = "public/data/policies.json|public/data/bills.json|public/data/assembly_seminars.json) ;;"
+    new_case = "|".join(POLICY_FILES) + ") ;;"
+    if new_case not in text:
+        occurrences = text.count(old_case)
+        if occurrences < 2:
+            raise RuntimeError(f"허용파일 case 목록을 충분히 찾지 못했습니다: {occurrences}")
+        text = text.replace(old_case, new_case)
+
+    old_status = "git status --porcelain -- public/data/policies.json public/data/bills.json public/data/assembly_seminars.json"
+    new_status = "git status --porcelain -- " + " ".join(POLICY_FILES)
+    if new_status not in text:
+        if old_status not in text:
+            raise RuntimeError("변경파일 상태 확인문을 찾지 못했습니다.")
+        text = text.replace(old_status, new_status, 1)
+
+    old_add = "git add -- public/data/policies.json public/data/bills.json public/data/assembly_seminars.json"
+    new_add = "git add -- " + " ".join(POLICY_FILES)
+    if new_add not in text:
+        if old_add not in text:
+            raise RuntimeError("git add 실행문을 찾지 못했습니다.")
+        text = text.replace(old_add, new_add, 1)
 
     required_markers = (
         "python scripts/sync_policies_retained.py",
@@ -95,8 +115,9 @@ def patch(path: Path) -> bool:
         "news_retention.py\", \"sync_policies_retained.py",
         "if output.stat().st_size > 35_000_000:",
         "뉴스 보관파일 건수 확인",
-        "public/data/news-history.json",
-        "public/data/news-retention-audit.json",
+        new_case,
+        new_status,
+        new_add,
     )
     missing = [marker for marker in required_markers if marker not in text]
     if missing:
