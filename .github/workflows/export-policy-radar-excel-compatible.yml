@@ -1,0 +1,209 @@
+name: Export Excel-Compatible Policy Radar Workbook
+
+on:
+  workflow_run:
+    workflows:
+      - "Apply Policy Event Taxonomy"
+      - "Merge Industrial Ministry Policy History"
+      - "Merge Expanded Policy Event Taxonomy"
+    types: [completed]
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/export_policy_radar_excel_compatible.py"
+      - "scripts/policy_excel_template.b64"
+      - ".github/workflows/export-policy-radar-excel-compatible.yml"
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+env:
+  TZ: Asia/Seoul
+  PYTHONUNBUFFERED: "1"
+  PYTHONDONTWRITEBYTECODE: "1"
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
+
+jobs:
+  build-verify-deploy:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: 최신 운영본 불러오기
+        uses: actions/checkout@v7
+        with:
+          ref: main
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Python 준비
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: 호환 생성기 자체검증
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m py_compile \
+            scripts/export_policy_radar_excel.py \
+            scripts/export_policy_radar_excel_compatible.py
+          python scripts/export_policy_radar_excel_compatible.py --self-test
+
+      - name: 전체 정책 레이더 엑셀 재생성
+        shell: bash
+        run: |
+          set -euo pipefail
+          python scripts/export_policy_radar_excel_compatible.py \
+            --policy-path public/data/policies.json \
+            --bill-path public/data/bills.json \
+            --seminar-path public/data/assembly_seminars.json \
+            --output public/data/ets-policy-radar-events.xlsx \
+            --fixed-output public/data/ets-policy-radar-events-fixed.xlsx \
+            --manifest public/data/policy-radar-excel.json
+
+      - name: XLSX 구조·건수·화면 비노출 검증
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json
+          import zipfile
+          from pathlib import Path
+          from xml.etree import ElementTree as ET
+
+          manifest = json.loads(Path("public/data/policy-radar-excel.json").read_text(encoding="utf-8"))
+          if manifest.get("schemaVersion") != "2.0" or manifest.get("generator") != "artifact_tool-template-v2":
+              raise SystemExit(f"새 호환 생성기가 적용되지 않았습니다: {manifest}")
+          if int(manifest.get("sheetCount", 0)) != 11 or int(manifest.get("totalEventCount", 0)) <= 0:
+              raise SystemExit("엑셀 시트 수 또는 전체 건수가 잘못됐습니다.")
+
+          expected = int(manifest["totalEventCount"])
+          for file_name in ("ets-policy-radar-events.xlsx", "ets-policy-radar-events-fixed.xlsx"):
+              path = Path("public/data") / file_name
+              if not path.is_file() or path.stat().st_size < 1_000_000:
+                  raise SystemExit(f"파일이 없거나 비정상적으로 작습니다: {path}")
+              with zipfile.ZipFile(path) as archive:
+                  if archive.testzip() is not None:
+                      raise SystemExit(f"ZIP 무결성 오류: {path}")
+                  for name in archive.namelist():
+                      if name.endswith((".xml", ".rels")):
+                          ET.fromstring(archive.read(name))
+                  sheet2 = ET.fromstring(archive.read("xl/worksheets/sheet2.xml"))
+                  ns = {"x": "http://schemas.openxmlformats.org/spreadsheetml/2006/main"}
+                  rows = len(sheet2.findall(".//x:row", ns)) - 1
+                  if rows != expected:
+                      raise SystemExit(f"전체 이벤트 행 수 불일치: {file_name} {rows}/{expected}")
+
+          forbidden = ("ets-policy-radar-events.xlsx", "ets-policy-radar-events-fixed.xlsx", "전체 리스트 엑셀")
+          exposed = []
+          for path in [Path("public/index.html"), *Path("public/assets").glob("*.js")]:
+              if path.is_file() and any(value in path.read_text(encoding="utf-8", errors="ignore") for value in forbidden):
+                  exposed.append(str(path))
+          if exposed:
+              raise SystemExit(f"사이트 화면에 엑셀 링크가 노출돼 있습니다: {exposed}")
+          print(f"호환 엑셀 검증 완료: {expected:,}건 / 11개 시트")
+          PY
+
+      - name: 정상 엑셀 파일을 main에 저장
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- \
+            public/data/ets-policy-radar-events.xlsx \
+            public/data/ets-policy-radar-events-fixed.xlsx \
+            public/data/policy-radar-excel.json
+
+          if git diff --cached --quiet; then
+            echo "엑셀 변경이 없습니다."
+          else
+            git commit -m "data: repair policy radar Excel compatibility"
+            for attempt in 1 2 3; do
+              git fetch origin main
+              if ! git rebase origin/main; then
+                git rebase --abort || true
+                exit 1
+              fi
+              if git push origin HEAD:main; then
+                break
+              fi
+              if [[ "$attempt" -eq 3 ]]; then exit 1; fi
+              sleep $((attempt * 3))
+            done
+          fi
+
+      - name: 최신 main 배포원본 정렬
+        shell: bash
+        run: |
+          set -euo pipefail
+          git fetch origin main
+          if [[ "$(git rev-parse HEAD)" != "$(git rev-parse origin/main)" ]]; then
+            git merge --ff-only origin/main
+          fi
+          test -z "$(git status --porcelain)"
+
+      - name: 배포 원본 해시 계산
+        id: hashes
+        shell: bash
+        run: |
+          set -euo pipefail
+          echo "stable=$(sha256sum public/data/ets-policy-radar-events.xlsx | awk '{print $1}')" >> "$GITHUB_OUTPUT"
+          echo "fixed=$(sha256sum public/data/ets-policy-radar-events-fixed.xlsx | awk '{print $1}')" >> "$GITHUB_OUTPUT"
+          echo "manifest=$(sha256sum public/data/policy-radar-excel.json | awk '{print $1}')" >> "$GITHUB_OUTPUT"
+
+      - name: Pages 설정
+        uses: actions/configure-pages@v6
+
+      - name: 전체 공개 파일 묶기
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: ./public
+
+      - name: GitHub Pages 배포
+        id: deployment
+        uses: actions/deploy-pages@v5
+
+      - name: 공개 다운로드 파일 검증
+        shell: bash
+        env:
+          PAGE_URL: ${{ steps.deployment.outputs.page_url }}
+          STABLE_SHA: ${{ steps.hashes.outputs.stable }}
+          FIXED_SHA: ${{ steps.hashes.outputs.fixed }}
+          MANIFEST_SHA: ${{ steps.hashes.outputs.manifest }}
+        run: |
+          set -euo pipefail
+          root="${PAGE_URL%/}"
+          verify() {
+            local file="$1" expected="$2" output
+            output="$(mktemp)"
+            for attempt in 1 2 3 4 5 6 7 8; do
+              if curl -fsSL --max-time 60 -H "Cache-Control: no-cache" \
+                "${root}/data/${file}?verify=${GITHUB_RUN_ID}-${attempt}" -o "$output"; then
+                actual="$(sha256sum "$output" | awk '{print $1}')"
+                if [[ "$actual" == "$expected" ]]; then
+                  rm -f "$output"
+                  echo "공개 ${file} 확인 완료"
+                  return 0
+                fi
+              fi
+              sleep 8
+            done
+            rm -f "$output"
+            return 1
+          }
+          verify "ets-policy-radar-events.xlsx" "$STABLE_SHA"
+          verify "ets-policy-radar-events-fixed.xlsx" "$FIXED_SHA"
+          verify "policy-radar-excel.json" "$MANIFEST_SHA"
