@@ -1,9 +1,10 @@
 {
-  "schemaVersion": "1.0",
-  "generatedAt": "2026-09-11T13:24:01+09:00",
+  "schemaVersion": "2.0",
+  "generatedAt": "2026-09-11T13:56:49+09:00",
   "file": "data/ets-policy-radar-events.xlsx",
+  "fixedFile": "data/ets-policy-radar-events-fixed.xlsx",
   "fileName": "ets-policy-radar-events.xlsx",
-  "fileBytes": 4141742,
+  "fileBytes": 3977642,
   "sheetCount": 11,
   "totalEventCount": 4927,
   "counts": {
@@ -18,6 +19,7 @@
     "국회의원 세미나 일정": 3,
     "전체 이벤트": 4927
   },
+  "generator": "artifact_tool-template-v2",
   "sourceLastSync": {
     "정책자료": "2026-09-11T10:12:25+09:00",
     "발의법률안": "2026-09-11T10:19:58+09:00",
