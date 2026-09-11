@@ -1,0 +1,315 @@
+name: Repair Append-Only News History
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/repair-news-retention.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+env:
+  TZ: Asia/Seoul
+  PYTHONUNBUFFERED: "1"
+  PYTHONDONTWRITEBYTECODE: "1"
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
+
+jobs:
+  recover-patch-deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: 전체 Git 이력과 최신 main 불러오기
+        uses: actions/checkout@v7
+        with:
+          ref: main
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Python 준비
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: 뉴스 보존 모듈 자체검증
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m py_compile scripts/news_retention.py scripts/sync_policies_retained.py
+          python scripts/news_retention.py --self-test
+
+      - name: Git 이력에서 전체 뉴스 복구·병합
+        shell: bash
+        run: |
+          set -euo pipefail
+          python scripts/news_retention.py \
+            --recover-git-history \
+            --maximum-commits 300 \
+            2>&1 | tee /tmp/news-retention.log
+
+      - name: 일일 정책수집을 append-only 방식으로 교체
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from pathlib import Path
+
+          path = Path(".github/workflows/sync-policies.yml")
+          text = path.read_text(encoding="utf-8")
+
+          if "python scripts/sync_policies_retained.py" not in text:
+              old = "          python scripts/sync_policies.py\n"
+              if text.count(old) != 1:
+                  raise SystemExit(f"정책 수집 실행문을 고유하게 찾지 못했습니다: {text.count(old)}")
+              text = text.replace(old, "          python scripts/sync_policies_retained.py\n", 1)
+
+          if "test -f scripts/news_retention.py" not in text:
+              anchor = "          test -f scripts/sync_policies.py || {\n"
+              addition = (
+                  "          test -f scripts/news_retention.py || {\n"
+                  "            echo \"::error::scripts/news_retention.py 파일을 찾지 못했습니다.\"\n"
+                  "            exit 1\n"
+                  "          }\n"
+                  "          test -f scripts/sync_policies_retained.py || {\n"
+                  "            echo \"::error::scripts/sync_policies_retained.py 파일을 찾지 못했습니다.\"\n"
+                  "            exit 1\n"
+                  "          }\n"
+              )
+              if anchor not in text:
+                  raise SystemExit("수집기 파일검사 삽입 위치를 찾지 못했습니다.")
+              text = text.replace(anchor, addition + anchor, 1)
+
+          old_tuple = '("sync_policies.py", "sync_bills.py", "sync_assembly_seminars.py")'
+          new_tuple = '("sync_policies.py", "news_retention.py", "sync_policies_retained.py", "sync_bills.py", "sync_assembly_seminars.py")'
+          if new_tuple not in text:
+              if old_tuple not in text:
+                  raise SystemExit("수집기 문법검사 목록을 찾지 못했습니다.")
+              text = text.replace(old_tuple, new_tuple, 1)
+
+          text = text.replace(
+              "if output.stat().st_size > 5_000_000:",
+              "if output.stat().st_size > 35_000_000:",
+              1,
+          )
+          text = text.replace(
+              "policies.json이 5MB를 초과해 비정상으로 판단했습니다.",
+              "policies.json이 35MB를 초과해 비정상으로 판단했습니다.",
+              1,
+          )
+
+          if "뉴스 보관파일 건수" not in text:
+              anchor = '          print(f"정책 검증 완료: 전체 {len(payload[\'items\'])}건, 뉴스 {news_count}건")\n'
+              addition = '''          history_path = Path("public/data/news-history.json")
+          audit_path = Path("public/data/news-retention-audit.json")
+          if not history_path.is_file() or not audit_path.is_file():
+              raise SystemExit("append-only 뉴스 보관파일 또는 감사파일이 없습니다.")
+          news_history = json.loads(history_path.read_text(encoding="utf-8"))
+          news_audit = json.loads(audit_path.read_text(encoding="utf-8"))
+          archive_count = int(news_history.get("itemCount", -1))
+          audited_count = int((news_audit.get("counts") or {}).get("finalNewsCount", -1))
+          if news_count != archive_count or news_count != audited_count:
+              raise SystemExit(
+                  f"뉴스 보관 건수 불일치: policies={news_count}, archive={archive_count}, audit={audited_count}"
+              )
+          print(f"뉴스 보관파일 건수 확인: {archive_count}건")
+'''
+              if anchor not in text:
+                  raise SystemExit("뉴스 검증 삽입 위치를 찾지 못했습니다.")
+              text = text.replace(anchor, anchor + addition, 1)
+
+          if "public/data/news-history.json" not in text:
+              anchor = "            public/data/policies.json \\\n"
+              addition = (
+                  "            public/data/news-history.json \\\n"
+                  "            public/data/news-retention-audit.json \\\n"
+              )
+              if anchor not in text:
+                  raise SystemExit("git add 목록 삽입 위치를 찾지 못했습니다.")
+              text = text.replace(anchor, anchor + addition, 1)
+
+          path.write_text(text, encoding="utf-8")
+          print("sync-policies.yml append-only 뉴스 보존 패치 완료")
+          PY
+
+      - name: 복구 결과 검증
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          policy = json.loads(Path("public/data/policies.json").read_text(encoding="utf-8"))
+          history = json.loads(Path("public/data/news-history.json").read_text(encoding="utf-8"))
+          audit = json.loads(Path("public/data/news-retention-audit.json").read_text(encoding="utf-8"))
+          news = [
+              item for item in policy.get("items", [])
+              if item.get("sourceType") == "news" or item.get("section") == "news"
+          ]
+          final_count = int((audit.get("counts") or {}).get("finalNewsCount", -1))
+          safety_floor = int(audit.get("safetyFloor", -1))
+          historical_max = int(audit.get("historicalMaxSnapshotCount", 0))
+          archive_count = int(history.get("itemCount", -1))
+          if audit.get("status") != "verified":
+              raise SystemExit("뉴스 보존 감사상태가 verified가 아닙니다.")
+          if len(news) != final_count or archive_count != final_count:
+              raise SystemExit(
+                  f"뉴스 건수 불일치: policies={len(news)}, archive={archive_count}, audit={final_count}"
+              )
+          if final_count < safety_floor or final_count < historical_max:
+              raise SystemExit(
+                  f"뉴스 감소가 복구되지 않았습니다: final={final_count}, floor={safety_floor}, historical={historical_max}"
+              )
+          if final_count < 373:
+              raise SystemExit(f"기존 확정 보관량 373건보다 적습니다: {final_count}")
+          if "sync_policies_retained.py" not in Path(".github/workflows/sync-policies.yml").read_text(encoding="utf-8"):
+              raise SystemExit("일일 수집 워크플로에 보존 래퍼가 적용되지 않았습니다.")
+          print(
+              f"뉴스 복구 검증 완료: 현재 {audit['counts']['currentPoliciesNewsBefore']}건, "
+              f"기존 보관 {audit['counts']['archiveRowsBefore']}건, "
+              f"역대 스냅샷 최대 {historical_max}건, 최종 {final_count}건"
+          )
+          PY
+
+      - name: 숨김 엑셀도 최신 뉴스로 갱신
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [[ -f scripts/export_policy_radar_excel_compatible.py ]] \
+            && [[ -d scripts/policy_excel_template_lines ]]; then
+            cat scripts/policy_excel_template_lines/part*.b64 > /tmp/policy_excel_template.b64
+            python scripts/export_policy_radar_excel_compatible.py \
+              --policy-path public/data/policies.json \
+              --bill-path public/data/bills.json \
+              --seminar-path public/data/assembly_seminars.json \
+              --template-b64 /tmp/policy_excel_template.b64 \
+              --output public/data/ets-policy-radar-events.xlsx \
+              --fixed-output public/data/ets-policy-radar-events-fixed.xlsx \
+              --manifest public/data/policy-radar-excel.json
+          else
+            echo "::warning::호환 엑셀 생성기가 없어 뉴스 JSON 복구만 진행합니다."
+          fi
+
+      - name: 복구 데이터와 영구 패치를 main에 저장
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git rm -- .github/workflows/repair-news-retention.yml
+          git add -- \
+            .github/workflows/sync-policies.yml \
+            public/data/policies.json \
+            public/data/news-history.json \
+            public/data/news-retention-audit.json
+          for path in \
+            public/data/ets-policy-radar-events.xlsx \
+            public/data/ets-policy-radar-events-fixed.xlsx \
+            public/data/policy-radar-excel.json; do
+            [[ -f "$path" ]] && git add -- "$path"
+          done
+
+          git commit -m "fix: restore and permanently retain all collected news"
+          pushed=0
+          for attempt in 1 2 3; do
+            git fetch origin main
+            if ! git rebase origin/main; then
+              git rebase --abort || true
+              exit 1
+            fi
+            if git push origin HEAD:main; then
+              pushed=1
+              break
+            fi
+            sleep $((attempt * 4))
+          done
+          if [[ "$pushed" -ne 1 ]]; then
+            exit 1
+          fi
+
+      - name: 최신 main 배포원본 정렬
+        shell: bash
+        run: |
+          set -euo pipefail
+          git fetch origin main
+          if [[ "$(git rev-parse HEAD)" != "$(git rev-parse origin/main)" ]]; then
+            git merge --ff-only origin/main
+          fi
+          test -z "$(git status --porcelain)"
+
+      - name: 공개 검증용 해시 계산
+        id: hashes
+        shell: bash
+        run: |
+          set -euo pipefail
+          echo "policies=$(sha256sum public/data/policies.json | awk '{print $1}')" >> "$GITHUB_OUTPUT"
+          echo "history=$(sha256sum public/data/news-history.json | awk '{print $1}')" >> "$GITHUB_OUTPUT"
+          echo "audit=$(sha256sum public/data/news-retention-audit.json | awk '{print $1}')" >> "$GITHUB_OUTPUT"
+
+      - name: Pages 설정
+        uses: actions/configure-pages@v6
+
+      - name: 전체 공개파일 묶기
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: ./public
+
+      - name: GitHub Pages 배포
+        id: deployment
+        uses: actions/deploy-pages@v5
+
+      - name: 공개 뉴스 건수와 파일 해시 검증
+        shell: bash
+        env:
+          PAGE_URL: ${{ steps.deployment.outputs.page_url }}
+          POLICIES_SHA: ${{ steps.hashes.outputs.policies }}
+          HISTORY_SHA: ${{ steps.hashes.outputs.history }}
+          AUDIT_SHA: ${{ steps.hashes.outputs.audit }}
+        run: |
+          set -euo pipefail
+          root="${PAGE_URL%/}"
+          verify() {
+            local file="$1" expected="$2" output
+            output="$(mktemp)"
+            for attempt in 1 2 3 4 5 6 7 8; do
+              if curl -fsSL --max-time 60 -H "Cache-Control: no-cache" \
+                "${root}/data/${file}?verify=${GITHUB_RUN_ID}-${attempt}" -o "$output"; then
+                actual="$(sha256sum "$output" | awk '{print $1}')"
+                if [[ "$actual" == "$expected" ]]; then
+                  rm -f "$output"
+                  return 0
+                fi
+              fi
+              sleep 8
+            done
+            rm -f "$output"
+            echo "::error::공개 ${file} 해시 검증 실패"
+            return 1
+          }
+          verify "policies.json" "$POLICIES_SHA"
+          verify "news-history.json" "$HISTORY_SHA"
+          verify "news-retention-audit.json" "$AUDIT_SHA"
+
+          curl -fsSL --max-time 60 \
+            "${root}/data/news-retention-audit.json?count=${GITHUB_RUN_ID}" \
+            -o /tmp/public-news-audit.json
+          python - <<'PY'
+          import json
+          audit = json.load(open("/tmp/public-news-audit.json", encoding="utf-8"))
+          final_count = int(audit["counts"]["finalNewsCount"])
+          if audit.get("status") != "verified" or final_count < 373:
+              raise SystemExit(f"공개 뉴스 복구 검증 실패: {audit}")
+          print(f"공개 뉴스 복구 확인 완료: {final_count}건")
+          PY
