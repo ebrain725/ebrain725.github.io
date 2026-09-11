@@ -1,0 +1,394 @@
+name: Merge Expanded Policy Event Taxonomy
+
+on:
+  workflow_run:
+    workflows: ["Export Hidden Policy Radar Excel"]
+    types: [completed]
+  workflow_dispatch:
+    inputs:
+      full_backfill:
+        description: "2015-01-01부터 전수 재수집"
+        required: false
+        default: false
+        type: boolean
+  push:
+    branches: [main]
+    paths:
+      - "config/policy_event_taxonomy.json"
+      - "scripts/sync_policy_event_expansion.py"
+      - ".github/workflows/merge-policy-event-expansion.yml"
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+env:
+  TZ: Asia/Seoul
+  PYTHONUNBUFFERED: "1"
+  PYTHONDONTWRITEBYTECODE: "1"
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
+
+jobs:
+  collect-merge-deploy:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: 최신 운영본 불러오기
+        uses: actions/checkout@v7
+        with:
+          ref: main
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Python 준비
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: 분류체계와 수집기 검증
+        shell: bash
+        run: |
+          set -euo pipefail
+          for path in \
+            config/policy_event_taxonomy.json \
+            scripts/sync_policy_event_expansion.py \
+            scripts/sync_motie_official_history.py \
+            scripts/export_policy_radar_excel.py \
+            public/data/policy-official-history.json \
+            public/data/motie-policy-history.json \
+            public/data/policies.json \
+            public/data/bills.json \
+            public/data/assembly_seminars.json; do
+            test -f "$path" || { echo "::error::필수 파일이 없습니다: $path"; exit 1; }
+          done
+          python -m py_compile scripts/sync_policy_event_expansion.py scripts/export_policy_radar_excel.py
+          python scripts/sync_policy_event_expansion.py --self-test
+          python scripts/export_policy_radar_excel.py --self-test
+
+      - name: 전수 또는 증분 수집 모드 결정
+        id: mode
+        shell: bash
+        env:
+          REQUESTED_FULL: ${{ inputs.full_backfill }}
+        run: |
+          set -euo pipefail
+          full=false
+          if [[ "${REQUESTED_FULL:-false}" == "true" ]]; then
+            full=true
+          elif ! python - <<'PY'
+          import json
+          from pathlib import Path
+
+          config = json.loads(Path("config/policy_event_taxonomy.json").read_text(encoding="utf-8"))
+          path = Path("public/data/policy-event-expansion.json")
+          if not path.is_file():
+              raise SystemExit(1)
+          payload = json.loads(path.read_text(encoding="utf-8"))
+          raise SystemExit(0 if payload.get("taxonomyVersion") == config.get("taxonomyVersion") else 1)
+          PY
+          then
+            full=true
+          fi
+          echo "full=$full" >> "$GITHUB_OUTPUT"
+          echo "정책 이벤트 수집 모드: $([[ "$full" == "true" ]] && echo '2015년 이후 전수' || echo '최근 90일 증분')"
+
+      - name: 기후부·산업부·한국거래소 확대 이벤트 수집
+        shell: bash
+        env:
+          FULL_BACKFILL: ${{ steps.mode.outputs.full }}
+        run: |
+          set -euo pipefail
+          if [[ "$FULL_BACKFILL" == "true" ]]; then
+            python scripts/sync_policy_event_expansion.py --full
+          else
+            python scripts/sync_policy_event_expansion.py --lookback-days 90
+          fi
+
+      - name: 확대 이벤트를 기존 정책 레이더에 병합
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json
+          import re
+          import urllib.parse
+          from pathlib import Path
+
+          policy_path = Path("public/data/policies.json")
+          expansion_path = Path("public/data/policy-event-expansion.json")
+          policy = json.loads(policy_path.read_text(encoding="utf-8"))
+          expansion = json.loads(expansion_path.read_text(encoding="utf-8"))
+
+          def clean(value):
+              return re.sub(r"\s+", " ", str(value or "")).strip()
+
+          def canonical_url(value):
+              value = clean(value)
+              if not re.match(r"^https?://", value, re.I):
+                  return ""
+              try:
+                  parsed = urllib.parse.urlsplit(value)
+              except ValueError:
+                  return ""
+              host = (parsed.hostname or "").lower()
+              path = re.sub(r"/{2,}", "/", parsed.path or "/").rstrip("/") or "/"
+              query = urllib.parse.urlencode(sorted(urllib.parse.parse_qsl(parsed.query, keep_blank_values=True)))
+              return f"{host}{path}{'?' + query if query else ''}"
+
+          def key(item):
+              section = clean(item.get("section") or item.get("sourceType")).lower()
+              source_id = clean(item.get("sourceId"))
+              if source_id:
+                  return f"{section}|id|{source_id}"
+              url = canonical_url(item.get("url"))
+              if url:
+                  return f"{section}|url|{url}"
+              title = re.sub(r"[^0-9a-z가-힣]+", "", clean(item.get("title")).lower())
+              return f"{section}|date-title|{str(item.get('publishedAt', ''))[:10]}|{title}"
+
+          def values(value):
+              if isinstance(value, list):
+                  return [clean(item) for item in value if clean(item)]
+              return [clean(value)] if clean(value) else []
+
+          def merge(previous, candidate):
+              previous_summary = clean(previous.get("summary"))
+              candidate_summary = clean(candidate.get("summary"))
+              merged = dict(candidate if len(candidate_summary) >= len(previous_summary) else previous)
+              for field in ("eventCategoryIds", "eventCategories", "matchedKeywords", "matchedFields"):
+                  merged[field] = list(dict.fromkeys([*values(previous.get(field)), *values(candidate.get(field))]))
+              if "direct" in {clean(previous.get("keywordScope")), clean(candidate.get("keywordScope"))}:
+                  merged["keywordScope"] = "direct"
+              elif candidate.get("keywordScope") or previous.get("keywordScope"):
+                  merged["keywordScope"] = "related"
+              if candidate.get("taxonomyVersion"):
+                  merged["taxonomyVersion"] = candidate["taxonomyVersion"]
+              return merged
+
+          merged = {}
+          for item in [*policy.get("items", []), *expansion.get("items", [])]:
+              if not isinstance(item, dict) or not clean(item.get("title")):
+                  continue
+              item_key = key(item)
+              merged[item_key] = merge(merged[item_key], item) if item_key in merged else dict(item)
+
+          policy["items"] = sorted(
+              merged.values(),
+              key=lambda item: (str(item.get("publishedAt", "")), str(item.get("title", ""))),
+              reverse=True,
+          )
+          policy["policyEventExpansion"] = {
+              "file": "data/policy-event-expansion.json",
+              "taxonomyVersion": expansion.get("taxonomyVersion"),
+              "generatedAt": expansion.get("generatedAt"),
+              "itemCount": expansion.get("itemCount"),
+              "retentionPolicy": expansion.get("retentionPolicy"),
+          }
+          policy_path.write_text(json.dumps(policy, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+          print(f"정책 레이더 병합 완료: 화면 데이터 {len(policy['items']):,}건")
+          PY
+
+      - name: 확대 이벤트를 포함한 숨김 엑셀 재생성
+        shell: bash
+        run: |
+          set -euo pipefail
+          python scripts/export_policy_radar_excel.py \
+            --policy-path public/data/policies.json \
+            --bill-path public/data/bills.json \
+            --seminar-path public/data/assembly_seminars.json \
+            --output public/data/ets-policy-radar-events.xlsx \
+            --manifest public/data/policy-radar-excel.json
+
+      - name: 데이터·화면·엑셀 통합 검증
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json
+          import re
+          import zipfile
+          from pathlib import Path
+
+          config = json.loads(Path("config/policy_event_taxonomy.json").read_text(encoding="utf-8"))
+          expansion = json.loads(Path("public/data/policy-event-expansion.json").read_text(encoding="utf-8"))
+          summary = json.loads(Path("public/data/policy-event-expansion-summary.json").read_text(encoding="utf-8"))
+          policy = json.loads(Path("public/data/policies.json").read_text(encoding="utf-8"))
+          excel = json.loads(Path("public/data/policy-radar-excel.json").read_text(encoding="utf-8"))
+
+          if len(config.get("categories") or []) != 38:
+              raise SystemExit("정책 이벤트 분류가 38개가 아닙니다.")
+          if expansion.get("taxonomyVersion") != config.get("taxonomyVersion"):
+              raise SystemExit("확대 이벤트 분류 버전이 설정과 다릅니다.")
+          validation = summary.get("validation") or {}
+          if any(int(validation.get(name, 0)) for name in ("duplicateKeys", "missingCategory", "invalidDates")):
+              raise SystemExit(f"확대 이벤트 검증 실패: {validation}")
+
+          required_sections = {"press", "notice", "motie_press", "motie_notice", "krx_notice"}
+          section_counts = summary.get("sectionCounts") or {}
+          missing_sections = sorted(section for section in required_sections if int(section_counts.get(section, 0)) <= 0)
+          if missing_sections:
+              raise SystemExit(f"확대 이벤트 수집원이 비어 있습니다: {missing_sections} / {section_counts}")
+          if int(expansion.get("itemCount", 0)) < 1000:
+              raise SystemExit(f"확대 이벤트 건수가 비정상적으로 작습니다: {expansion.get('itemCount')}")
+
+          def stable(item):
+              section = str(item.get("section") or item.get("sourceType") or "")
+              source_id = str(item.get("sourceId") or "").strip()
+              if source_id:
+                  return f"{section}|{source_id}"
+              url = str(item.get("url") or "").strip()
+              if url:
+                  return f"{section}|{url}"
+              title = re.sub(r"[^0-9a-z가-힣]+", "", str(item.get("title") or "").lower())
+              return f"{section}|{item.get('publishedAt', '')}|{title}"
+
+          policy_keys = {stable(item) for item in policy.get("items", []) if isinstance(item, dict)}
+          missing = [item for item in expansion.get("items", []) if stable(item) not in policy_keys]
+          if missing:
+              raise SystemExit(f"정책 레이더 병합 누락: {len(missing)}건")
+
+          xlsx = Path("public/data/ets-policy-radar-events.xlsx")
+          if not xlsx.is_file() or xlsx.stat().st_size < 500_000:
+              raise SystemExit("숨김 엑셀 파일이 없거나 비정상적으로 작습니다.")
+          with zipfile.ZipFile(xlsx) as archive:
+              if archive.testzip() is not None:
+                  raise SystemExit("XLSX 무결성 검사 실패")
+          if int(excel.get("sheetCount", 0)) != 11 or int(excel.get("totalEventCount", 0)) <= 0:
+              raise SystemExit(f"엑셀 매니페스트 오류: {excel}")
+
+          forbidden = ("ets-policy-radar-events.xlsx", "전체 리스트 엑셀", "policy-radar-excel.json")
+          exposed = []
+          for path in [Path("public/index.html"), *Path("public/assets").glob("*.js")]:
+              if path.is_file() and any(value in path.read_text(encoding="utf-8", errors="ignore") for value in forbidden):
+                  exposed.append(str(path))
+          if exposed:
+              raise SystemExit(f"사이트 화면에 엑셀 링크가 노출돼 있습니다: {exposed}")
+
+          print(
+              f"통합 검증 완료: 확대 이벤트 {expansion['itemCount']:,}건 / "
+              f"정책 레이더 {len(policy['items']):,}건 / 엑셀 {excel['totalEventCount']:,}건"
+          )
+          PY
+
+      - name: 허용된 데이터 변경만 확인
+        id: changes
+        shell: bash
+        run: |
+          set -euo pipefail
+          changed="$({ git diff --name-only; git ls-files --others --exclude-standard; } | sort -u)"
+          unexpected=0
+          while IFS= read -r path; do
+            [[ -z "$path" ]] && continue
+            case "$path" in
+              public/data/policy-event-expansion.json|public/data/policy-event-expansion-summary.json|public/data/policies.json|public/data/ets-policy-radar-events.xlsx|public/data/policy-radar-excel.json) ;;
+              *) echo "::error::허용되지 않은 변경: $path"; unexpected=1 ;;
+            esac
+          done <<< "$changed"
+          [[ "$unexpected" -eq 0 ]] || exit 1
+          if [[ -n "$changed" ]]; then echo "changed=true" >> "$GITHUB_OUTPUT"; else echo "changed=false" >> "$GITHUB_OUTPUT"; fi
+
+      - name: 확대 이벤트·정책 레이더·엑셀 저장
+        if: steps.changes.outputs.changed == 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- \
+            public/data/policy-event-expansion.json \
+            public/data/policy-event-expansion-summary.json \
+            public/data/policies.json \
+            public/data/ets-policy-radar-events.xlsx \
+            public/data/policy-radar-excel.json
+          git commit -m "data: expand official policy event taxonomy"
+
+          pushed=0
+          for attempt in 1 2 3; do
+            git fetch origin main
+            if ! git rebase origin/main; then
+              git rebase --abort || true
+              echo "::error::원격 main과 확대 이벤트 데이터가 충돌했습니다."
+              exit 1
+            fi
+            if git push origin HEAD:main; then pushed=1; break; fi
+            sleep $((attempt * 4))
+          done
+          [[ "$pushed" -eq 1 ]] || { echo "::error::확대 이벤트 저장 실패"; exit 1; }
+
+      - name: 최신 main 배포원본 정렬
+        shell: bash
+        run: |
+          set -euo pipefail
+          git fetch origin main
+          if [[ "$(git rev-parse HEAD)" != "$(git rev-parse origin/main)" ]]; then
+            git merge --ff-only origin/main
+          fi
+          test -z "$(git status --porcelain)" || {
+            echo "::error::배포 직전 작업트리가 깨끗하지 않습니다."
+            git status --short
+            exit 1
+          }
+
+      - name: 배포 원본 해시 계산
+        id: source_hash
+        shell: bash
+        run: |
+          set -euo pipefail
+          echo "expansion=$(sha256sum public/data/policy-event-expansion.json | awk '{print $1}')" >> "$GITHUB_OUTPUT"
+          echo "summary=$(sha256sum public/data/policy-event-expansion-summary.json | awk '{print $1}')" >> "$GITHUB_OUTPUT"
+          echo "policies=$(sha256sum public/data/policies.json | awk '{print $1}')" >> "$GITHUB_OUTPUT"
+          echo "xlsx=$(sha256sum public/data/ets-policy-radar-events.xlsx | awk '{print $1}')" >> "$GITHUB_OUTPUT"
+
+      - name: Pages 설정
+        uses: actions/configure-pages@v6
+
+      - name: 전체 공개 파일 묶기
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: ./public
+
+      - name: GitHub Pages 배포
+        id: deployment
+        uses: actions/deploy-pages@v5
+
+      - name: 공개본 검증
+        shell: bash
+        env:
+          PAGE_URL: ${{ steps.deployment.outputs.page_url }}
+          EXPANSION_SHA256: ${{ steps.source_hash.outputs.expansion }}
+          SUMMARY_SHA256: ${{ steps.source_hash.outputs.summary }}
+          POLICIES_SHA256: ${{ steps.source_hash.outputs.policies }}
+          XLSX_SHA256: ${{ steps.source_hash.outputs.xlsx }}
+        run: |
+          set -euo pipefail
+          root="${PAGE_URL%/}"
+          verify() {
+            local path="$1" expected="$2" output
+            output="$(mktemp)"
+            for attempt in 1 2 3 4 5 6 7 8; do
+              if curl -fsSL --max-time 60 -H "Cache-Control: no-cache" \
+                "${root}/${path}?verify=${GITHUB_RUN_ID}-${attempt}" -o "$output"; then
+                actual="$(sha256sum "$output" | awk '{print $1}')"
+                if [[ "$actual" == "$expected" ]]; then rm -f "$output"; return 0; fi
+              fi
+              sleep 8
+            done
+            rm -f "$output"
+            echo "::error::공개 ${path} 검증 실패"
+            return 1
+          }
+          verify "data/policy-event-expansion.json" "$EXPANSION_SHA256"
+          verify "data/policy-event-expansion-summary.json" "$SUMMARY_SHA256"
+          verify "data/policies.json" "$POLICIES_SHA256"
+          verify "data/ets-policy-radar-events.xlsx" "$XLSX_SHA256"
+          echo "38개 이벤트 분류와 확대 이력의 공개 반영을 확인했습니다."
