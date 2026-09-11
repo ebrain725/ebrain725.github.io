@@ -1,0 +1,87 @@
+name: Test Append-Only News Wrapper
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/test-news-retention-wrapper.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+env:
+  TZ: Asia/Seoul
+  PYTHONUNBUFFERED: "1"
+  PYTHONDONTWRITEBYTECODE: "1"
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: main
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+      - name: Compile and simulate a shrinking collector result
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m py_compile \
+            scripts/sync_policies.py \
+            scripts/sync_policies_core.py \
+            scripts/news_retention.py
+          python - <<'PY'
+          import json
+          import sys
+          import tempfile
+          from pathlib import Path
+
+          sys.path.insert(0, "scripts")
+          import news_retention
+          import sync_policies
+
+          snapshot = sync_policies._retention_snapshot()
+          if len(snapshot) != 524:
+              raise SystemExit(f"사전 고유뉴스가 524건이 아닙니다: {len(snapshot)}")
+
+          source_policy = json.loads(Path("public/data/policies.json").read_text(encoding="utf-8"))
+          non_news = [
+              item for item in source_policy.get("items", [])
+              if not news_retention.is_news(item)
+          ]
+          with tempfile.TemporaryDirectory() as directory:
+              root = Path(directory)
+              policy_path = root / "policies.json"
+              history_path = root / "history.json"
+              audit_path = root / "audit.json"
+              settings_path = root / "settings.json"
+              policy_path.write_text(
+                  json.dumps({"items": [*non_news, *snapshot[:25]]}, ensure_ascii=False),
+                  encoding="utf-8",
+              )
+              history_path.write_text(
+                  json.dumps({"items": snapshot}, ensure_ascii=False),
+                  encoding="utf-8",
+              )
+              settings_path.write_text(
+                  json.dumps({"allowNewsDecrease": False}),
+                  encoding="utf-8",
+              )
+              audit = news_retention.run(
+                  policy_path,
+                  history_path,
+                  audit_path,
+                  settings_path,
+                  recover=False,
+                  maximum_commits=1,
+              )
+              final_count = int(audit["counts"]["finalNewsCount"])
+              if final_count != 524:
+                  raise SystemExit(f"축소 결과 복원 실패: {final_count}")
+          print("APPEND_ONLY_NEWS_WRAPPER_TEST=PASS snapshot=524 restored=524")
+          PY
