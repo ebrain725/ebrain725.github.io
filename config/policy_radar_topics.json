@@ -1,0 +1,389 @@
+{
+  "schemaVersion": "2026-09-11-v1-38-topics",
+  "startDate": "2015-01-01",
+  "description": "배출권 직접 제도와 전력·에너지·산업·거래·해외정책 연관 이벤트를 38개 주제로 분류한다.",
+  "scopeRule": {
+    "direct": "배출권 제도·할당·경매·이행·거래 또는 국내외 ETS를 직접 다루는 자료",
+    "related": "배출권 수급에 영향을 줄 수 있는 전력·발전·산업활동·통상·기후정책 자료",
+    "directOverridesRelated": true,
+    "krxNoticeDefault": "direct"
+  },
+  "topics": [
+    {
+      "id": "ets-system",
+      "label": "배출권·배출권거래제·ETS",
+      "group": "배출권거래제도",
+      "scope": "direct",
+      "searchTerms": ["배출권", "배출권거래제", "K-ETS", "ETS"],
+      "rules": [
+        {"fields": "title_content", "any": ["배출권", "배출권거래제", "kets"]},
+        {"fields": "title_content", "any": ["ets"], "contextAny": ["온실가스", "탄소", "배출", "할당", "거래제", "kau", "eua"]}
+      ]
+    },
+    {
+      "id": "allocation-plan-volume",
+      "label": "할당계획·할당량",
+      "group": "배출권거래제도",
+      "scope": "direct",
+      "searchTerms": ["할당계획", "할당량", "배출허용총량", "할당대상업체"],
+      "rules": [
+        {"fields": "title_content", "any": ["배출권할당계획", "배출허용총량", "할당대상업체"]},
+        {"fields": "title_content", "any": ["할당계획", "할당량"], "contextAny": ["배출권", "온실가스", "배출허용", "kets", "ets"]}
+      ]
+    },
+    {
+      "id": "additional-allocation-cancellation",
+      "label": "추가할당·할당취소",
+      "group": "배출권거래제도",
+      "scope": "direct",
+      "searchTerms": ["추가할당", "할당취소"],
+      "rules": [
+        {"fields": "title_content", "any": ["추가할당", "할당취소"], "contextAny": ["배출권", "온실가스", "할당대상업체", "배출허용"]}
+      ]
+    },
+    {
+      "id": "paid-allocation-ratio",
+      "label": "유상할당 비율",
+      "group": "배출권거래제도",
+      "scope": "direct",
+      "searchTerms": ["유상할당", "유상할당 비율", "무상할당"],
+      "rules": [
+        {"fields": "title_content", "any": ["유상할당", "유상비율", "무상할당비율"]}
+      ]
+    },
+    {
+      "id": "auction-volume-schedule",
+      "label": "유상경매 물량·일정",
+      "group": "배출권거래제도",
+      "scope": "direct",
+      "searchTerms": ["유상경매", "배출권 경매", "경매계획", "경매일정"],
+      "rules": [
+        {"fields": "title_content", "any": ["유상경매", "배출권경매"]},
+        {"fields": "title_content", "any": ["경매계획", "경매일정", "경매물량", "입찰공고"], "contextAny": ["배출권", "유상할당", "kau", "eua", "ets"]}
+      ]
+    },
+    {
+      "id": "auction-price-bid-ratio",
+      "label": "낙찰가·응찰배수",
+      "group": "배출권거래제도",
+      "scope": "direct",
+      "searchTerms": ["낙찰가", "응찰률", "응찰배수", "응찰수량", "낙찰수량"],
+      "rules": [
+        {"fields": "title_content", "any": ["낙찰가", "응찰률", "응찰배수", "응찰수량", "낙찰수량"], "contextAny": ["배출권", "유상경매", "경매", "kau", "eua", "ets"]}
+      ]
+    },
+    {
+      "id": "banking-borrowing-limit",
+      "label": "이월·차입 한도",
+      "group": "배출권거래제도",
+      "scope": "direct",
+      "searchTerms": ["이월", "차입", "이월한도", "차입한도"],
+      "rules": [
+        {"fields": "title_content", "any": ["이월한도", "차입한도", "이월제한", "차입제한"]},
+        {"fields": "title_content", "any": ["이월", "차입"], "contextAny": ["배출권", "할당", "상쇄", "kau", "kets", "ets"]}
+      ]
+    },
+    {
+      "id": "offset-conversion-limit",
+      "label": "상쇄배출권·전환한도",
+      "group": "배출권거래제도",
+      "scope": "direct",
+      "searchTerms": ["상쇄배출권", "상쇄", "전환한도", "KOC", "KCU"],
+      "rules": [
+        {"fields": "title_content", "any": ["상쇄배출권", "전환한도", "koc", "kcu"]},
+        {"fields": "title_content", "any": ["상쇄"], "contextAny": ["배출권", "외부사업", "감축실적", "kets", "ets"]}
+      ]
+    },
+    {
+      "id": "market-stabilization-msr",
+      "label": "시장안정화·MSR",
+      "group": "배출권거래제도",
+      "scope": "direct",
+      "searchTerms": ["시장안정화", "시장안정화예비분", "K-MSR", "MSR"],
+      "rules": [
+        {"fields": "title_content", "any": ["시장안정화", "시장안정화예비분", "kmsr"]},
+        {"fields": "title_content", "any": ["msr"], "contextAny": ["배출권", "탄소시장", "ets", "eua"]}
+      ]
+    },
+    {
+      "id": "international-reduction-external-project",
+      "label": "국제감축·외부사업·감축실적",
+      "group": "배출권거래제도",
+      "scope": "direct",
+      "searchTerms": ["국제감축", "외부사업", "감축실적", "ITMO"],
+      "rules": [
+        {"fields": "title_content", "any": ["국제감축", "외부사업", "감축실적", "itmo"], "contextAny": ["온실가스", "탄소", "배출", "파리협정", "상쇄", "감축"]}
+      ]
+    },
+    {
+      "id": "ndc-national-target",
+      "label": "NDC·국가 감축목표",
+      "group": "기후정책",
+      "scope": "related",
+      "searchTerms": ["NDC", "국가 온실가스 감축목표", "국가 감축목표"],
+      "rules": [
+        {"fields": "title", "any": ["ndc", "국가온실가스감축목표", "국가감축목표", "중장기감축목표"]}
+      ]
+    },
+    {
+      "id": "power-market-dispatch",
+      "label": "전력시장·급전(포괄)",
+      "group": "전력·에너지",
+      "scope": "related",
+      "searchTerms": ["전력시장", "급전", "경제급전", "계통운영", "전력거래"],
+      "rules": [
+        {"fields": "title", "any": ["전력시장", "경제급전", "급전지시", "급전운영", "계통운영", "전력거래"]},
+        {"fields": "title", "any": ["급전"], "contextAny": ["전력", "발전", "계통", "smp"]}
+      ]
+    },
+    {
+      "id": "coal-generation",
+      "label": "석탄발전",
+      "group": "전력·에너지",
+      "scope": "related",
+      "searchTerms": ["석탄발전", "석탄화력", "석탄 발전량"],
+      "rules": [{"fields": "title", "any": ["석탄발전", "석탄화력", "석탄발전량"]}]
+    },
+    {
+      "id": "lng-generation",
+      "label": "LNG발전",
+      "group": "전력·에너지",
+      "scope": "related",
+      "searchTerms": ["LNG발전", "가스발전", "LNG 발전량"],
+      "rules": [
+        {"fields": "title", "any": ["lng발전", "lng발전량", "가스발전"]},
+        {"fields": "title", "any": ["lng"], "contextAny": ["발전", "전력", "복합화력"]}
+      ]
+    },
+    {
+      "id": "smp",
+      "label": "SMP",
+      "group": "전력·에너지",
+      "scope": "related",
+      "searchTerms": ["SMP", "계통한계가격"],
+      "rules": [
+        {"fields": "title", "any": ["계통한계가격"]},
+        {"fields": "title", "any": ["smp"], "contextAny": ["전력", "발전", "가격", "정산"]}
+      ]
+    },
+    {
+      "id": "nuclear-generation",
+      "label": "원자력발전·원전",
+      "group": "전력·에너지",
+      "scope": "related",
+      "searchTerms": ["원자력발전", "원전", "원자력 발전량"],
+      "rules": [{"fields": "title", "any": ["원자력발전", "원전", "원자력발전량", "원자로"]}]
+    },
+    {
+      "id": "renewable-rps",
+      "label": "재생에너지·RPS",
+      "group": "전력·에너지",
+      "scope": "related",
+      "searchTerms": ["재생에너지", "신재생에너지", "RPS", "신재생에너지 공급의무화"],
+      "rules": [
+        {"fields": "title", "any": ["재생에너지", "신재생에너지", "신재생에너지공급의무화"]},
+        {"fields": "title", "any": ["rps"], "contextAny": ["재생", "신재생", "공급의무", "발전"]}
+      ]
+    },
+    {
+      "id": "hydrogen-clean-hydrogen-generation",
+      "label": "수소발전·청정수소",
+      "group": "전력·에너지",
+      "scope": "related",
+      "searchTerms": ["수소발전", "청정수소", "청정수소발전", "수소발전 입찰시장"],
+      "rules": [{"fields": "title", "any": ["수소발전", "청정수소", "청정수소발전", "수소발전입찰시장"]}]
+    },
+    {
+      "id": "re100",
+      "label": "RE100",
+      "group": "전력·에너지",
+      "scope": "related",
+      "searchTerms": ["RE100", "재생에너지 100"],
+      "rules": [{"fields": "title", "any": ["re100", "재생에너지100"]}]
+    },
+    {
+      "id": "power-supply-plan-mix",
+      "label": "전력수급기본계획·전원구성",
+      "group": "전력·에너지",
+      "scope": "related",
+      "searchTerms": ["전력수급기본계획", "전원구성", "발전믹스", "전원믹스"],
+      "rules": [{"fields": "title", "any": ["전력수급기본계획", "전원구성", "발전믹스", "전원믹스"]}]
+    },
+    {
+      "id": "generation-constraint",
+      "label": "발전제약",
+      "group": "전력·에너지",
+      "scope": "related",
+      "searchTerms": ["발전제약", "출력제어", "출력제한", "송전제약"],
+      "rules": [{"fields": "title", "any": ["발전제약", "출력제어", "출력제한", "송전제약", "계통제약"]}]
+    },
+    {
+      "id": "heat-cold-power-demand",
+      "label": "폭염·한파·전력수요",
+      "group": "전력·에너지",
+      "scope": "related",
+      "searchTerms": ["폭염", "한파", "전력수요", "최대전력", "전력피크"],
+      "rules": [
+        {"fields": "title", "any": ["전력수요", "최대전력", "전력피크"]},
+        {"fields": "title", "any": ["폭염", "한파"], "contextAny": ["전력", "수요", "예비력", "발전", "냉방", "난방"]}
+      ]
+    },
+    {
+      "id": "nuclear-unplanned-outage-maintenance-extension",
+      "label": "원전 불시정지·정비연장",
+      "group": "전력·에너지",
+      "scope": "related",
+      "searchTerms": ["원전 불시정지", "불시정지", "정비연장", "계획예방정비"],
+      "rules": [
+        {"fields": "title", "any": ["불시정지", "정비연장", "정비기간연장", "계획예방정비"], "contextAny": ["원전", "원자력", "원자로", "호기"]}
+      ]
+    },
+    {
+      "id": "incident-operational-shutdown",
+      "label": "화재·폭발·침수·가동중단",
+      "group": "산업활동",
+      "scope": "related",
+      "searchTerms": ["화재", "폭발", "침수", "가동중단"],
+      "rules": [
+        {"fields": "title", "any": ["화재", "폭발", "침수", "가동중단", "조업중단"], "contextAny": ["발전소", "공장", "설비", "산업단지", "생산시설", "제철", "철강", "석유화학", "정유", "시멘트", "반도체", "원전", "lng", "석탄"]}
+      ]
+    },
+    {
+      "id": "maintenance-shutdown",
+      "label": "정기보수·셧다운",
+      "group": "산업활동",
+      "scope": "related",
+      "searchTerms": ["정기보수", "대정비", "셧다운", "Shutdown"],
+      "rules": [
+        {"fields": "title", "any": ["정기보수", "대정비", "셧다운", "shutdown"], "contextAny": ["발전소", "공장", "설비", "산업단지", "생산시설", "제철", "철강", "석유화학", "정유", "시멘트", "반도체", "원전", "lng", "석탄"]}
+      ]
+    },
+    {
+      "id": "production-cut-utilization-adjustment",
+      "label": "감산·가동률 조정",
+      "group": "산업활동",
+      "scope": "related",
+      "searchTerms": ["감산", "가동률 조정", "생산조정", "조업단축"],
+      "rules": [
+        {"fields": "title", "any": ["감산", "가동률조정", "생산조정", "조업단축"], "contextAny": ["산업", "업종", "공장", "생산", "철강", "석유화학", "정유", "시멘트", "반도체", "자동차", "디스플레이", "제지", "비철"]}
+      ]
+    },
+    {
+      "id": "capacity-expansion-commercial-operation",
+      "label": "증설·상업가동",
+      "group": "산업활동",
+      "scope": "related",
+      "searchTerms": ["증설", "상업가동", "신규가동", "준공"],
+      "rules": [
+        {"fields": "title", "any": ["증설", "상업가동", "신규가동", "본격가동", "준공"], "contextAny": ["발전소", "공장", "설비", "생산시설", "제철", "철강", "석유화학", "정유", "시멘트", "반도체", "원전", "lng", "석탄", "수소"]}
+      ]
+    },
+    {
+      "id": "china-capacity-antidumping-tariff",
+      "label": "중국 증설·반덤핑·관세",
+      "group": "산업활동",
+      "scope": "related",
+      "searchTerms": ["중국 증설", "중국 반덤핑", "반덤핑", "중국 관세"],
+      "rules": [
+        {"fields": "title", "any": ["증설", "반덤핑", "관세"], "contextGroups": [["중국", "중국산", "china"], ["철강", "석유화학", "화학", "시멘트", "알루미늄", "비철", "제품", "수입", "수출"]]}
+      ]
+    },
+    {
+      "id": "industry-production-utilization-statistics",
+      "label": "업종 생산·가동률 통계",
+      "group": "산업활동",
+      "scope": "related",
+      "searchTerms": ["산업생산", "생산동향", "가동률", "업종별 생산"],
+      "rules": [
+        {"fields": "title", "any": ["산업생산", "생산동향", "업종별생산", "가동률", "출하량"], "contextGroups": [["통계", "동향", "지수", "전년", "전월", "증가", "감소", "생산"], ["산업", "업종", "제조업", "철강", "석유화학", "정유", "시멘트", "반도체", "자동차", "비철", "제지"]]}
+      ]
+    },
+    {
+      "id": "ghg-emissions-statement",
+      "label": "온실가스·배출량·명세서",
+      "group": "산업활동",
+      "scope": "related",
+      "searchTerms": ["온실가스", "온실가스 배출량", "배출량 명세서", "명세서"],
+      "rules": [
+        {"fields": "title", "any": ["온실가스", "온실가스배출량", "배출량명세서"]},
+        {"fields": "title", "any": ["배출량", "명세서", "검증보고서"], "contextAny": ["온실가스", "배출권", "할당대상업체", "배출량명세서"]}
+      ]
+    },
+    {
+      "id": "compliance-settlement-deadline",
+      "label": "이행·정산·제출기한",
+      "group": "거래·시장",
+      "scope": "direct",
+      "searchTerms": ["배출권 제출", "제출기한", "의무이행", "이행연도", "정산"],
+      "rules": [
+        {"fields": "title_content", "any": ["배출권제출", "제출기한", "의무이행", "이행연도", "정산일정", "정산기한"], "contextAny": ["배출권", "배출권거래제", "할당대상업체", "온실가스", "kau", "kets", "ets"]}
+      ]
+    },
+    {
+      "id": "trading-volume-value",
+      "label": "거래량·거래대금",
+      "group": "거래·시장",
+      "scope": "direct",
+      "searchTerms": ["거래량", "거래대금", "배출권 거래량"],
+      "rules": [
+        {"fields": "title_content", "any": ["거래량", "거래대금"], "contextAny": ["배출권", "탄소시장", "한국거래소", "kau", "eua", "kets", "ets"]}
+      ]
+    },
+    {
+      "id": "large-sale-holdings-release",
+      "label": "대량 매도·보유물량 출회",
+      "group": "거래·시장",
+      "scope": "direct",
+      "searchTerms": ["대량 매도", "매도물량", "보유물량 출회", "보유배출권 매도"],
+      "rules": [
+        {"fields": "title_content", "any": ["대량매도", "매도물량", "보유물량출회", "보유배출권매도", "배출권출회"], "contextAny": ["배출권", "탄소시장", "kau", "eua", "kets", "ets"]}
+      ]
+    },
+    {
+      "id": "participant-expansion-market-making",
+      "label": "시장참여자 확대·시장조성",
+      "group": "거래·시장",
+      "scope": "direct",
+      "searchTerms": ["시장참여자", "시장조성", "시장조성자", "금융기관 참여", "증권사 참여"],
+      "rules": [
+        {"fields": "title_content", "any": ["시장참여자", "참여자확대", "시장조성", "시장조성자", "유동성공급자", "금융기관참여", "증권사참여"], "contextAny": ["배출권", "탄소시장", "한국거래소", "kau", "eua", "kets", "ets"]}
+      ]
+    },
+    {
+      "id": "eu-ets-eua",
+      "label": "EU ETS·EUA",
+      "group": "해외제도·통상",
+      "scope": "direct",
+      "searchTerms": ["EU ETS", "EUA", "유럽 배출권거래제"],
+      "rules": [
+        {"fields": "title_content", "any": ["euets", "eua", "유럽배출권거래제", "유럽연합배출권거래제"]}
+      ]
+    },
+    {
+      "id": "cbam",
+      "label": "탄소국경조정·CBAM",
+      "group": "해외제도·통상",
+      "scope": "related",
+      "searchTerms": ["탄소국경조정", "탄소국경조정제도", "CBAM"],
+      "rules": [{"fields": "title", "any": ["탄소국경조정", "탄소국경조정제도", "cbam"]}]
+    },
+    {
+      "id": "carbon-neutrality-plan",
+      "label": "탄소중립 선언·기본계획",
+      "group": "기후정책",
+      "scope": "related",
+      "searchTerms": ["탄소중립", "탄소중립 선언", "탄소중립 기본계획", "넷제로"],
+      "rules": [{"fields": "title", "any": ["탄소중립", "탄소중립선언", "탄소중립기본계획", "넷제로", "netzero"]}]
+    },
+    {
+      "id": "policy-delay-litigation",
+      "label": "제도 확정 지연·소송",
+      "group": "기후정책",
+      "scope": "related",
+      "searchTerms": ["확정 지연", "도입 지연", "시행 지연", "소송", "헌법소원", "행정소송"],
+      "rules": [
+        {"fields": "title", "any": ["확정지연", "도입지연", "시행지연", "발표지연", "소송", "헌법소원", "행정소송", "법적분쟁"], "contextAny": ["배출권", "배출권거래제", "탄소시장", "탄소중립", "ndc", "cbam", "전력시장", "전력수급기본계획", "에너지정책", "기후"]}
+      ]
+    }
+  ]
+}
