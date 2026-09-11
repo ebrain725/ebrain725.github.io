@@ -2,7 +2,7 @@
   "schemaVersion": "1.0",
   "requestedStartDate": "2015-01-01",
   "startedAt": "2026-09-09T19:46:11+09:00",
-  "generatedAt": "2026-09-10T18:22:31+09:00",
+  "generatedAt": "2026-09-11T10:21:12+09:00",
   "scope": {
     "ministry": "기후부 보도자료·공지사항 중 핵심 7개는 제목·본문, 확대 23개는 제목에 포함된 공식자료",
     "krx": "한국거래소 배출권시장 공지사항 일반 게시물 전체",
@@ -47,7 +47,7 @@
     {
       "source": "기후부 보도자료",
       "section": "press",
-      "requestedStartDate": "2026-07-12",
+      "requestedStartDate": "2026-07-13",
       "transport": "unfiltered-rss-local-split-keyword-filter",
       "keywordRule": {
         "titleAndContent": [
@@ -88,14 +88,14 @@
       "pageSize": 1000,
       "pagesFetched": 1,
       "rawRows": 1000,
-      "inRangeMatchedRows": 10,
-      "itemCount": 10,
+      "inRangeMatchedRows": 9,
+      "itemCount": 9,
       "directCount": 3,
-      "relatedCount": 7,
-      "earliest": "2026-07-12",
+      "relatedCount": 6,
+      "earliest": "2026-07-14",
       "latest": "2026-09-09",
-      "oldestSeen": "2025-10-29",
-      "newestSeen": "2026-09-10",
+      "oldestSeen": "2025-10-30",
+      "newestSeen": "2026-09-11",
       "crossedRequestedStart": true,
       "stopReason": "date-boundary",
       "complete": true,
@@ -107,7 +107,7 @@
         "탄소시장": 0,
         "시장안정화": 1,
         "상쇄배출권": 1,
-        "온실가스": 4,
+        "온실가스": 3,
         "탄소중립": 2,
         "국제감축": 0,
         "외부감축": 0,
@@ -135,7 +135,7 @@
     {
       "source": "기후부 공지·공고",
       "section": "notice",
-      "requestedStartDate": "2026-07-12",
+      "requestedStartDate": "2026-07-13",
       "transport": "unfiltered-rss-local-split-keyword-filter",
       "keywordRule": {
         "titleAndContent": [
@@ -24930,8 +24930,8 @@
     }
   ],
   "collectionMode": "incremental",
-  "queryStartDate": "2026-07-12",
-  "queryEndDate": "2026-09-10",
+  "queryStartDate": "2026-07-13",
+  "queryEndDate": "2026-09-11",
   "climateKeywordExpansion": {
     "version": "2026-09-09-v1-shared-30-keywords",
     "sharedWith": "산업부 보도자료·공지사항",
@@ -24973,7 +24973,7 @@
       ]
     },
     "collectionMode": "incremental",
-    "queryStartDate": "2026-07-12",
-    "queryEndDate": "2026-09-10"
+    "queryStartDate": "2026-07-13",
+    "queryEndDate": "2026-09-11"
   }
 }
