@@ -40,11 +40,12 @@ def _news_rows(document: dict[str, Any]) -> list[dict[str, Any]]:
 
 
 def _retention_snapshot() -> list[dict[str, Any]]:
-    """Return the union candidates available before the core collector runs."""
-    rows: list[dict[str, Any]] = []
-    rows.extend(_news_rows(_load_document(_retention.HISTORY_PATH)))
-    rows.extend(_news_rows(_load_document(_retention.POLICY_PATH)))
-    return rows
+    """Return the unique news available before the core collector runs."""
+    index = _retention.NewsIndex()
+    for source_path in (_retention.HISTORY_PATH, _retention.POLICY_PATH):
+        for item in _news_rows(_load_document(source_path)):
+            index.add(item)
+    return _retention.sort_news(index.values())
 
 
 def main() -> int:
@@ -55,7 +56,7 @@ def main() -> int:
 
     # Use temporary archive/audit files during routine collection. Only
     # policies.json is changed, so the pre-existing Actions allow-list remains
-    # valid. The committed 524-item recovery archive remains a safety baseline.
+    # valid. The committed recovery archive remains a safety baseline.
     with tempfile.TemporaryDirectory(prefix="ets-news-retention-") as directory:
         temporary_root = Path(directory)
         temporary_history = temporary_root / "news-history.json"
@@ -65,7 +66,7 @@ def main() -> int:
                 {
                     "schemaVersion": "1.1",
                     "retentionPolicy": "append-only",
-                    "source": "pre-collection policies + committed recovery archive",
+                    "source": "unique pre-collection policies + committed recovery archive",
                     "itemCount": len(before_rows),
                     "items": before_rows,
                 },
@@ -87,11 +88,11 @@ def main() -> int:
     final_count = int(audit["counts"]["finalNewsCount"])
     if final_count < len(before_rows):
         raise RuntimeError(
-            f"append-only 뉴스 감소 감지: 최종 {final_count}건 < 사전 후보 {len(before_rows)}건"
+            f"append-only 뉴스 감소 감지: 최종 {final_count}건 < 사전 고유뉴스 {len(before_rows)}건"
         )
     print(
         "APPEND_ONLY_NEWS_RETAINED="
-        f"{final_count} before_candidates={len(before_rows)} "
+        f"{final_count} before_unique={len(before_rows)} "
         f"new_or_enriched={max(0, final_count - len(before_rows))}"
     )
     return 0
