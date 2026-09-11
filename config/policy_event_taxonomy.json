@@ -1,0 +1,635 @@
+{
+  "schemaVersion": "1.0",
+  "version": "2026-09-11-v1-user-38-events",
+  "requestedStartDate": "2015-01-01",
+  "description": "배출권 정책·시장·전력·산업 이벤트 38개 분류체계. 직접 이벤트는 제목·본문, 연관 이벤트는 원칙적으로 제목과 필수 문맥으로 판정한다.",
+  "collection": {
+    "climateMode": "unfiltered-board-local-classification",
+    "industryMode": "existing-30-keyword-history-plus-delta-official-search",
+    "industryDeltaTitleQueries": [
+      "할당계획",
+      "할당량",
+      "추가할당",
+      "할당취소",
+      "배출허용총량",
+      "낙찰가",
+      "응찰률",
+      "배출권 이월",
+      "배출권 차입",
+      "전환한도",
+      "K-MSR",
+      "급전",
+      "원전",
+      "재생에너지",
+      "RPS",
+      "청정수소",
+      "출력제어",
+      "폭염",
+      "한파",
+      "전력수요",
+      "최대전력",
+      "원전 불시정지",
+      "정비연장",
+      "가동중단",
+      "발전소 화재",
+      "공장 화재",
+      "폭발",
+      "침수",
+      "정기보수",
+      "셧다운",
+      "감산",
+      "가동률 조정",
+      "증설",
+      "상업가동",
+      "중국 증설",
+      "반덤핑",
+      "덤핑방지관세",
+      "중국 관세",
+      "산업생산",
+      "광공업생산",
+      "가동률",
+      "명세서",
+      "제출기한",
+      "배출권 거래량",
+      "배출권 거래대금",
+      "대량 매도",
+      "보유물량 출회",
+      "시장참여자",
+      "시장조성자",
+      "EU ETS",
+      "EUA",
+      "배출권 소송",
+      "헌법불합치"
+    ],
+    "industryDeltaContentQueries": [
+      "할당계획",
+      "추가할당",
+      "할당취소",
+      "배출허용총량",
+      "K-MSR",
+      "배출량 명세서",
+      "인증배출량",
+      "배출권 제출",
+      "배출권 거래량",
+      "배출권 거래대금",
+      "시장조성자",
+      "EU ETS",
+      "EUA",
+      "배출권 소송"
+    ],
+    "krxMode": "dedicated-board-all-items",
+    "incrementalLookbackDays": 60
+  },
+  "events": [
+    {
+      "id": "ets_system",
+      "label": "배출권·배출권거래제·ETS",
+      "priority": 100,
+      "clauses": [
+        {
+          "scope": "direct",
+          "fields": ["title", "content", "evidence"],
+          "terms": ["배출권", "배출권거래제", "온실가스 배출권", "K-ETS", "탄소시장"]
+        },
+        {
+          "scope": "direct",
+          "fields": ["title"],
+          "terms": ["ETS"],
+          "contextAny": ["배출권", "온실가스", "탄소", "K-ETS", "EU ETS", "배출거래"]
+        }
+      ]
+    },
+    {
+      "id": "allocation_plan",
+      "label": "할당계획·할당량",
+      "priority": 20,
+      "clauses": [
+        {
+          "scope": "direct",
+          "fields": ["title", "content", "evidence"],
+          "terms": ["할당계획", "배출허용총량", "할당대상업체"]
+        },
+        {
+          "scope": "direct",
+          "fields": ["title"],
+          "terms": ["할당량", "할당 기준", "할당기준"],
+          "contextAny": ["배출권", "온실가스", "계획기간", "할당대상업체"]
+        }
+      ]
+    },
+    {
+      "id": "allocation_adjustment",
+      "label": "추가할당·할당취소",
+      "priority": 10,
+      "clauses": [
+        {
+          "scope": "direct",
+          "fields": ["title", "content", "evidence"],
+          "terms": ["추가할당", "할당취소", "추가 할당", "할당 취소"]
+        },
+        {
+          "scope": "direct",
+          "fields": ["title"],
+          "terms": ["할당량 조정", "조정계수"],
+          "contextAny": ["배출권", "할당", "온실가스"]
+        }
+      ]
+    },
+    {
+      "id": "paid_allocation_ratio",
+      "label": "유상할당 비율",
+      "priority": 11,
+      "clauses": [
+        {
+          "scope": "direct",
+          "fields": ["title", "content", "evidence"],
+          "terms": ["유상할당", "유상 할당", "유상할당 비율", "유상할당비율", "유상비율"]
+        }
+      ]
+    },
+    {
+      "id": "auction_schedule_volume",
+      "label": "유상경매 물량·일정",
+      "priority": 12,
+      "clauses": [
+        {
+          "scope": "direct",
+          "fields": ["title", "content", "evidence"],
+          "terms": ["유상경매", "유상 경매"]
+        },
+        {
+          "scope": "direct",
+          "fields": ["title"],
+          "terms": ["경매계획", "경매 일정", "경매일정", "경매물량", "경매 물량", "공급물량"],
+          "contextAny": ["배출권", "할당", "KAU", "탄소시장"]
+        }
+      ]
+    },
+    {
+      "id": "auction_result",
+      "label": "낙찰가·응찰배수",
+      "priority": 13,
+      "clauses": [
+        {
+          "scope": "direct",
+          "fields": ["title", "content", "evidence"],
+          "terms": ["낙찰가", "응찰률", "응찰배수", "응찰 물량", "응찰물량", "최고응찰가", "최저응찰가", "낙찰수량"],
+          "contextAny": ["배출권", "유상경매", "유상할당", "KAU", "탄소시장", "경매"]
+        }
+      ]
+    },
+    {
+      "id": "banking_borrowing",
+      "label": "이월·차입 한도",
+      "priority": 14,
+      "clauses": [
+        {
+          "scope": "direct",
+          "fields": ["title", "content", "evidence"],
+          "terms": ["배출권 이월", "배출권 차입", "이월한도", "이월 한도", "차입한도", "차입 한도", "이월 제한", "차입 제한"]
+        },
+        {
+          "scope": "direct",
+          "fields": ["title"],
+          "terms": ["이월", "차입"],
+          "contextAny": ["배출권", "할당", "계획기간", "이행연도", "KAU"]
+        }
+      ]
+    },
+    {
+      "id": "offset_conversion_limit",
+      "label": "상쇄배출권·전환한도",
+      "priority": 15,
+      "clauses": [
+        {
+          "scope": "direct",
+          "fields": ["title", "content", "evidence"],
+          "terms": ["상쇄배출권", "상쇄 배출권", "전환한도", "전환 한도", "상쇄한도", "상쇄 한도"]
+        },
+        {
+          "scope": "direct",
+          "fields": ["title"],
+          "terms": ["KCU", "KOC"],
+          "contextAny": ["배출권", "상쇄", "감축실적", "외부사업", "탄소"]
+        }
+      ]
+    },
+    {
+      "id": "market_stability_msr",
+      "label": "시장안정화·MSR",
+      "priority": 16,
+      "clauses": [
+        {
+          "scope": "direct",
+          "fields": ["title", "content", "evidence"],
+          "terms": ["시장안정화", "시장 안정화", "K-MSR", "시장안정화예비분"]
+        },
+        {
+          "scope": "direct",
+          "fields": ["title"],
+          "terms": ["MSR", "예비분"],
+          "contextAny": ["배출권", "탄소시장", "할당", "공급"]
+        }
+      ]
+    },
+    {
+      "id": "international_mitigation",
+      "label": "국제감축·외부사업·감축실적",
+      "priority": 17,
+      "clauses": [
+        {
+          "scope": "direct",
+          "fields": ["title", "content", "evidence"],
+          "terms": ["외부사업", "외부 사업", "국제감축실적", "외부감축사업", "감축실적"]
+        },
+        {
+          "scope": "direct",
+          "fields": ["title", "content", "evidence"],
+          "terms": ["감축사업 등록", "방법론 승인"],
+          "contextAny": ["배출권", "상쇄", "온실가스", "탄소", "국제감축", "감축사업"]
+        },
+        {
+          "scope": "related",
+          "fields": ["title"],
+          "terms": ["국제감축", "국외감축", "파리협정 제6조", "Article 6", "외부감축"]
+        }
+      ]
+    },
+    {
+      "id": "ndc_target",
+      "label": "NDC·국가 감축목표",
+      "priority": 30,
+      "clauses": [
+        {
+          "scope": "related",
+          "fields": ["title"],
+          "terms": ["NDC", "국가 온실가스 감축목표", "국가감축목표", "중장기감축목표", "2030 감축목표", "2035 감축목표", "2040 감축목표"]
+        }
+      ]
+    },
+    {
+      "id": "power_market_dispatch",
+      "label": "전력시장·급전(포괄)",
+      "priority": 31,
+      "clauses": [
+        {
+          "scope": "related",
+          "fields": ["title"],
+          "terms": ["전력시장", "경제급전", "중앙급전", "급전순위", "급전"],
+          "contextAny": ["전력", "발전", "계통", "SMP", "전력거래소", "전력시장"]
+        }
+      ]
+    },
+    {
+      "id": "coal_generation",
+      "label": "석탄발전",
+      "priority": 32,
+      "clauses": [
+        {
+          "scope": "related",
+          "fields": ["title"],
+          "terms": ["석탄발전", "석탄 발전", "석탄화력", "석탄 화력", "유연탄 발전", "석탄발전소"]
+        }
+      ]
+    },
+    {
+      "id": "lng_generation",
+      "label": "LNG발전",
+      "priority": 33,
+      "clauses": [
+        {
+          "scope": "related",
+          "fields": ["title"],
+          "terms": ["LNG발전", "LNG 발전", "가스발전", "가스 발전", "천연가스 발전", "복합화력", "복합 화력"],
+          "contextAny": ["발전", "전력", "발전소", "화력"]
+        }
+      ]
+    },
+    {
+      "id": "smp",
+      "label": "SMP",
+      "priority": 34,
+      "clauses": [
+        {
+          "scope": "related",
+          "fields": ["title"],
+          "terms": ["SMP", "계통한계가격", "전력도매가격", "전력 도매가격"],
+          "contextAny": ["전력", "발전", "시장", "가격", "SMP"]
+        }
+      ]
+    },
+    {
+      "id": "nuclear_generation",
+      "label": "원자력발전·원전",
+      "priority": 35,
+      "clauses": [
+        {
+          "scope": "related",
+          "fields": ["title"],
+          "terms": ["원자력발전", "원자력 발전", "원전", "원자력발전소"]
+        }
+      ]
+    },
+    {
+      "id": "renewables_rps",
+      "label": "재생에너지·RPS",
+      "priority": 36,
+      "clauses": [
+        {
+          "scope": "related",
+          "fields": ["title"],
+          "terms": ["재생에너지", "신재생에너지", "RPS", "공급의무화", "신재생에너지 공급의무화"]
+        }
+      ]
+    },
+    {
+      "id": "hydrogen_generation",
+      "label": "수소발전·청정수소",
+      "priority": 37,
+      "clauses": [
+        {
+          "scope": "related",
+          "fields": ["title"],
+          "terms": ["수소발전", "수소 발전", "청정수소", "수소혼소", "수소 혼소", "암모니아 혼소", "CHPS", "청정수소발전"]
+        }
+      ]
+    },
+    {
+      "id": "re100",
+      "label": "RE100",
+      "priority": 38,
+      "clauses": [
+        {
+          "scope": "related",
+          "fields": ["title"],
+          "terms": ["RE100", "K-RE100", "재생에너지 100", "재생에너지100"]
+        }
+      ]
+    },
+    {
+      "id": "power_plan_mix",
+      "label": "전력수급기본계획·전원구성",
+      "priority": 39,
+      "clauses": [
+        {
+          "scope": "related",
+          "fields": ["title"],
+          "terms": ["전력수급기본계획", "전력수급 기본계획", "전원구성", "전원 구성", "전원믹스", "전원 믹스", "발전믹스", "전력믹스"]
+        }
+      ]
+    },
+    {
+      "id": "generation_constraint",
+      "label": "발전제약",
+      "priority": 40,
+      "clauses": [
+        {
+          "scope": "related",
+          "fields": ["title"],
+          "terms": ["발전제약", "발전 제약", "출력제어", "출력 제어", "출력제한", "출력 제한", "급전제약", "송전제약", "계통제약", "운전한도"],
+          "contextAny": ["발전", "전력", "계통", "송전", "재생에너지", "원전", "화력"]
+        }
+      ]
+    },
+    {
+      "id": "weather_power_demand",
+      "label": "폭염·한파·전력수요",
+      "priority": 41,
+      "clauses": [
+        {
+          "scope": "related",
+          "fields": ["title"],
+          "terms": ["폭염", "한파", "전력수요", "최대전력", "피크수요", "전력피크"],
+          "contextAny": ["전력", "냉방", "난방", "예비력", "수급", "최대전력", "전력수요"]
+        }
+      ]
+    },
+    {
+      "id": "nuclear_outage_maintenance",
+      "label": "원전 불시정지·정비연장",
+      "priority": 42,
+      "clauses": [
+        {
+          "scope": "related",
+          "fields": ["title"],
+          "terms": ["원전 불시정지", "원전 정지", "원전 고장", "정비연장", "정비 연장", "계획예방정비 연장", "예방정비 연장"],
+          "contextAny": ["원전", "원자력", "원자로", "원자력발전"]
+        }
+      ]
+    },
+    {
+      "id": "incident_shutdown",
+      "label": "화재·폭발·침수·가동중단",
+      "priority": 43,
+      "clauses": [
+        {
+          "scope": "related",
+          "fields": ["title"],
+          "terms": ["가동중단", "가동 중단", "조업중단", "조업 중단", "생산중단", "생산 중단", "운전중단", "운전 중단", "운전정지", "운전 정지", "화재", "폭발", "침수"],
+          "contextAny": ["발전소", "원전", "공장", "사업장", "산업단지", "제철소", "정유", "석유화학", "시멘트", "설비", "생산시설", "공정", "가동", "조업", "생산", "플랜트"]
+        }
+      ]
+    },
+    {
+      "id": "maintenance_shutdown",
+      "label": "정기보수·셧다운",
+      "priority": 44,
+      "clauses": [
+        {
+          "scope": "related",
+          "fields": ["title"],
+          "terms": ["정기보수", "정기 보수", "계획예방정비", "예방정비", "셧다운", "shutdown", "대정비", "보수기간"],
+          "contextAny": ["발전소", "원전", "공장", "사업장", "제철소", "정유", "석유화학", "시멘트", "설비", "생산", "조업", "플랜트"]
+        }
+      ]
+    },
+    {
+      "id": "production_cut_utilization",
+      "label": "감산·가동률 조정",
+      "priority": 45,
+      "clauses": [
+        {
+          "scope": "related",
+          "fields": ["title"],
+          "terms": ["감산", "생산조정", "생산 조정", "가동률 조정", "조업률 조정", "가동률 하향", "생산량 감축"],
+          "contextAny": ["산업", "업종", "철강", "시멘트", "석유화학", "정유", "반도체", "디스플레이", "비철", "알루미늄", "제지", "자동차", "공장", "생산", "조업"]
+        }
+      ]
+    },
+    {
+      "id": "capacity_expansion_startup",
+      "label": "증설·상업가동",
+      "priority": 46,
+      "clauses": [
+        {
+          "scope": "related",
+          "fields": ["title"],
+          "terms": ["증설", "상업가동", "상업 가동", "상업운전", "상업 운전", "신규 가동", "생산능력 확대", "생산능력 확충", "준공"],
+          "contextAny": ["발전소", "원전", "공장", "산업", "철강", "시멘트", "석유화학", "정유", "반도체", "디스플레이", "비철", "알루미늄", "생산시설", "설비", "플랜트", "발전"]
+        }
+      ]
+    },
+    {
+      "id": "china_capacity_trade",
+      "label": "중국 증설·반덤핑·관세",
+      "priority": 47,
+      "clauses": [
+        {
+          "scope": "related",
+          "fields": ["title"],
+          "terms": ["중국 증설", "중국발 공급", "중국 생산능력"]
+        },
+        {
+          "scope": "related",
+          "fields": ["title"],
+          "terms": ["반덤핑", "덤핑방지관세", "상계관세", "수입규제"],
+          "contextAny": ["철강", "시멘트", "석유화학", "정유", "알루미늄", "비철", "산업", "중국", "제품", "수입"]
+        },
+        {
+          "scope": "related",
+          "fields": ["title"],
+          "terms": ["관세"],
+          "contextAny": ["중국", "철강", "시멘트", "석유화학", "정유", "알루미늄", "비철금속", "산업제품"]
+        }
+      ]
+    },
+    {
+      "id": "industry_output_utilization_stats",
+      "label": "업종 생산·가동률 통계",
+      "priority": 48,
+      "clauses": [
+        {
+          "scope": "related",
+          "fields": ["title"],
+          "terms": ["산업생산", "광공업생산", "생산지수", "업종별 생산", "업종별 가동률", "가동률", "조업률", "출하량", "생산량"],
+          "contextAny": ["업종", "산업", "제조업", "광공업", "철강", "시멘트", "석유화학", "정유", "반도체", "디스플레이", "비철", "알루미늄", "제지", "자동차", "통계", "지수"]
+        }
+      ]
+    },
+    {
+      "id": "emissions_inventory",
+      "label": "온실가스·배출량·명세서",
+      "priority": 18,
+      "clauses": [
+        {
+          "scope": "direct",
+          "fields": ["title", "content", "evidence"],
+          "terms": ["배출량 명세서", "온실가스 명세서", "명세서 제출", "인증배출량", "배출량 인증"],
+          "contextAny": ["온실가스", "배출권", "할당대상업체", "사업장", "배출량", "명세서"]
+        },
+        {
+          "scope": "related",
+          "fields": ["title"],
+          "terms": ["온실가스 배출량", "온실가스", "배출량"]
+        }
+      ]
+    },
+    {
+      "id": "compliance_settlement_deadline",
+      "label": "이행·정산·제출기한",
+      "priority": 19,
+      "clauses": [
+        {
+          "scope": "direct",
+          "fields": ["title", "content", "evidence"],
+          "terms": ["배출권 제출", "제출기한", "이행연도", "이행기간", "정산", "이행실적", "의무이행"],
+          "contextAny": ["배출권", "배출량", "할당대상업체", "상쇄", "K-ETS", "KAU", "명세서", "인증"]
+        }
+      ]
+    },
+    {
+      "id": "trading_volume_value",
+      "label": "거래량·거래대금",
+      "priority": 21,
+      "clauses": [
+        {
+          "scope": "direct",
+          "fields": ["title", "content", "evidence"],
+          "terms": ["배출권 거래량", "배출권 거래대금", "거래량", "거래대금", "거래실적"],
+          "contextAny": ["배출권", "KAU", "KCU", "KOC", "탄소시장", "한국거래소", "KRX", "ETS"]
+        }
+      ]
+    },
+    {
+      "id": "large_sale_supply",
+      "label": "대량 매도·보유물량 출회",
+      "priority": 22,
+      "clauses": [
+        {
+          "scope": "direct",
+          "fields": ["title", "content", "evidence"],
+          "terms": ["대량 매도", "매도물량", "매도 물량", "보유물량 출회", "보유 물량 출회", "매물 출회", "물량 출회"],
+          "contextAny": ["배출권", "KAU", "KCU", "KOC", "탄소시장", "한국거래소", "KRX", "ETS"]
+        }
+      ]
+    },
+    {
+      "id": "market_participant_maker",
+      "label": "시장참여자 확대·시장조성",
+      "priority": 23,
+      "clauses": [
+        {
+          "scope": "direct",
+          "fields": ["title", "content", "evidence"],
+          "terms": ["시장참여자", "시장 참여자", "시장조성자", "시장 조성자", "시장조성", "증권사 참여", "금융기관 참여", "위탁거래", "중개회사"],
+          "contextAny": ["배출권", "탄소시장", "KAU", "한국거래소", "KRX", "ETS", "거래시장"]
+        }
+      ]
+    },
+    {
+      "id": "eu_ets_eua",
+      "label": "EU ETS·EUA",
+      "priority": 24,
+      "clauses": [
+        {
+          "scope": "direct",
+          "fields": ["title", "content", "evidence"],
+          "terms": ["EU ETS", "EU-ETS", "EUA", "유럽 배출권", "유럽연합 배출권거래제"]
+        }
+      ]
+    },
+    {
+      "id": "cbam",
+      "label": "탄소국경조정·CBAM",
+      "priority": 49,
+      "clauses": [
+        {
+          "scope": "related",
+          "fields": ["title"],
+          "terms": ["탄소국경조정", "탄소국경조정제도", "CBAM", "탄소국경세"]
+        }
+      ]
+    },
+    {
+      "id": "carbon_neutral_plan",
+      "label": "탄소중립 선언·기본계획",
+      "priority": 50,
+      "clauses": [
+        {
+          "scope": "related",
+          "fields": ["title"],
+          "terms": ["탄소중립 선언", "탄소중립 기본계획", "탄소중립·녹색성장 기본계획", "탄소중립 계획", "넷제로 선언", "Net Zero", "탄소중립"]
+        }
+      ]
+    },
+    {
+      "id": "policy_delay_litigation",
+      "label": "제도 확정 지연·소송",
+      "priority": 25,
+      "clauses": [
+        {
+          "scope": "direct",
+          "fields": ["title", "content", "evidence"],
+          "terms": ["배출권 소송", "배출권 행정소송", "배출권 헌법소원", "배출권거래제 소송", "제도 확정 지연", "계획 확정 지연", "시행 지연", "도입 지연"],
+          "contextAny": ["배출권", "배출권거래제", "할당", "NDC", "감축목표", "탄소시장", "ETS", "제도", "계획"]
+        },
+        {
+          "scope": "related",
+          "fields": ["title"],
+          "terms": ["기후소송", "헌법불합치", "헌법소원"],
+          "contextAny": ["기후", "온실가스", "감축목표", "NDC", "탄소중립", "배출권"]
+        }
+      ]
+    }
+  ]
+}
