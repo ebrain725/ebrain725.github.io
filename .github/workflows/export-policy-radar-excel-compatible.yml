@@ -12,7 +12,7 @@ on:
     branches: [main]
     paths:
       - "scripts/export_policy_radar_excel_compatible.py"
-      - "scripts/policy_excel_template.b64"
+      - "scripts/policy_excel_template_lines/**"
       - ".github/workflows/export-policy-radar-excel-compatible.yml"
 
 permissions:
@@ -52,6 +52,36 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: artifact_tool 템플릿 조립·원본 해시 검증
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$(find scripts/policy_excel_template_lines -maxdepth 1 -name 'part*.b64' | wc -l | tr -d ' ')" -eq 5
+          cat scripts/policy_excel_template_lines/part*.b64 > /tmp/policy_excel_template.b64
+          python - <<'PY'
+          import base64
+          import hashlib
+          import zipfile
+          from pathlib import Path
+          from xml.etree import ElementTree as ET
+
+          encoded = "".join(Path("/tmp/policy_excel_template.b64").read_text(encoding="ascii").split())
+          raw = base64.b64decode(encoded, validate=True)
+          expected = "7329534347bca76988861a728b5999cbee1a10b1c7417900845e8139bdbbae23"
+          actual = hashlib.sha256(raw).hexdigest()
+          if actual != expected:
+              raise SystemExit(f"artifact_tool 템플릿 해시 불일치: {actual} != {expected}")
+          output = Path("/tmp/policy_excel_template.xlsx")
+          output.write_bytes(raw)
+          with zipfile.ZipFile(output) as archive:
+              if archive.testzip() is not None:
+                  raise SystemExit("artifact_tool 템플릿 ZIP 무결성 오류")
+              for name in archive.namelist():
+                  if name.endswith((".xml", ".rels")):
+                      ET.fromstring(archive.read(name))
+          print(f"artifact_tool 템플릿 검증 완료: {len(raw):,}바이트 / SHA-256 {actual}")
+          PY
+
       - name: 호환 생성기 자체검증
         shell: bash
         run: |
@@ -59,7 +89,9 @@ jobs:
           python -m py_compile \
             scripts/export_policy_radar_excel.py \
             scripts/export_policy_radar_excel_compatible.py
-          python scripts/export_policy_radar_excel_compatible.py --self-test
+          python scripts/export_policy_radar_excel_compatible.py \
+            --template-b64 /tmp/policy_excel_template.b64 \
+            --self-test
 
       - name: 전체 정책 레이더 엑셀 재생성
         shell: bash
@@ -69,6 +101,7 @@ jobs:
             --policy-path public/data/policies.json \
             --bill-path public/data/bills.json \
             --seminar-path public/data/assembly_seminars.json \
+            --template-b64 /tmp/policy_excel_template.b64 \
             --output public/data/ets-policy-radar-events.xlsx \
             --fixed-output public/data/ets-policy-radar-events-fixed.xlsx \
             --manifest public/data/policy-radar-excel.json
@@ -78,6 +111,7 @@ jobs:
         run: |
           set -euo pipefail
           python - <<'PY'
+          import hashlib
           import json
           import zipfile
           from pathlib import Path
@@ -90,6 +124,7 @@ jobs:
               raise SystemExit("엑셀 시트 수 또는 전체 건수가 잘못됐습니다.")
 
           expected = int(manifest["totalEventCount"])
+          file_hashes = []
           for file_name in ("ets-policy-radar-events.xlsx", "ets-policy-radar-events-fixed.xlsx"):
               path = Path("public/data") / file_name
               if not path.is_file() or path.stat().st_size < 1_000_000:
@@ -105,6 +140,9 @@ jobs:
                   rows = len(sheet2.findall(".//x:row", ns)) - 1
                   if rows != expected:
                       raise SystemExit(f"전체 이벤트 행 수 불일치: {file_name} {rows}/{expected}")
+              file_hashes.append(hashlib.sha256(path.read_bytes()).hexdigest())
+          if file_hashes[0] != file_hashes[1]:
+              raise SystemExit("기본 파일과 fixed 파일의 바이트가 다릅니다.")
 
           forbidden = ("ets-policy-radar-events.xlsx", "ets-policy-radar-events-fixed.xlsx", "전체 리스트 엑셀")
           exposed = []
@@ -113,7 +151,7 @@ jobs:
                   exposed.append(str(path))
           if exposed:
               raise SystemExit(f"사이트 화면에 엑셀 링크가 노출돼 있습니다: {exposed}")
-          print(f"호환 엑셀 검증 완료: {expected:,}건 / 11개 시트")
+          print(f"호환 엑셀 검증 완료: {expected:,}건 / 11개 시트 / SHA-256 {file_hashes[0]}")
           PY
 
       - name: 정상 엑셀 파일을 main에 저장
@@ -131,6 +169,7 @@ jobs:
             echo "엑셀 변경이 없습니다."
           else
             git commit -m "data: repair policy radar Excel compatibility"
+            pushed=0
             for attempt in 1 2 3; do
               git fetch origin main
               if ! git rebase origin/main; then
@@ -138,11 +177,14 @@ jobs:
                 exit 1
               fi
               if git push origin HEAD:main; then
+                pushed=1
                 break
               fi
-              if [[ "$attempt" -eq 3 ]]; then exit 1; fi
               sleep $((attempt * 3))
             done
+            if [[ "$pushed" -ne 1 ]]; then
+              exit 1
+            fi
           fi
 
       - name: 최신 main 배포원본 정렬
@@ -202,6 +244,7 @@ jobs:
               sleep 8
             done
             rm -f "$output"
+            echo "::error::공개 ${file} 검증 실패"
             return 1
           }
           verify "ets-policy-radar-events.xlsx" "$STABLE_SHA"
