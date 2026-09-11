@@ -2,7 +2,10 @@ name: Export Hidden Policy Radar Excel
 
 on:
   workflow_run:
-    workflows: ["Merge Industrial Ministry Policy History", "Apply Policy Event Taxonomy"]
+    workflows:
+      - "Merge Industrial Ministry Policy History"
+      - "Apply Policy Event Taxonomy"
+      - "Merge Expanded Policy Event Taxonomy"
     types: [completed]
   workflow_dispatch:
   push:
@@ -30,7 +33,7 @@ jobs:
   export-and-deploy:
     if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -77,20 +80,31 @@ jobs:
           climate = json.loads(Path("public/data/policy-official-history.json").read_text(encoding="utf-8"))
           motie = json.loads(Path("public/data/motie-policy-history.json").read_text(encoding="utf-8"))
 
-          rows = []
-          rows.extend(item for item in climate.get("items", []) if isinstance(item, dict))
-          rows.extend(item for item in motie.get("items", []) if isinstance(item, dict))
-          rows.extend(
+          official_rows = [
+              item for item in [
+                  *climate.get("items", []),
+                  *motie.get("items", []),
+              ]
+              if isinstance(item, dict)
+          ]
+          news_rows = [
               item for item in policy.get("items", [])
               if isinstance(item, dict)
               and (item.get("sourceType") == "news" or item.get("section") == "news")
-          )
+          ]
 
           def stable_key(item):
               section = str(item.get("section") or item.get("sourceType") or "").strip().lower()
+              source_board = str(
+                  item.get("sourceBoard")
+                  or item.get("sourceBoardKey")
+                  or ""
+              ).strip().lower()
               source_id = str(item.get("sourceId") or item.get("id") or "").strip()
               if source_id:
-                  return f"{section}|id|{source_id}"
+                  # 산업부는 여러 게시판에서 같은 숫자 ID가 재사용될 수 있으므로
+                  # section + board + sourceId를 결합해야 전체 자료가 보존된다.
+                  return f"{section}|board|{source_board}|id|{source_id}"
               url = str(item.get("url") or "").strip()
               if url:
                   return f"{section}|url|{url}"
@@ -98,8 +112,17 @@ jobs:
               return f"{section}|date-title|{item.get('publishedAt', '')}|{title}"
 
           merged = {}
-          for item in rows:
-              merged[stable_key(item)] = item
+          for item in [*official_rows, *news_rows]:
+              key = stable_key(item)
+              previous = merged.get(key)
+              if previous is None:
+                  merged[key] = item
+                  continue
+              # 동일 원문이면 분류정보와 요약이 더 풍부한 레코드를 유지한다.
+              previous_score = len(str(previous.get("summary") or "")) + len(str(previous.get("eventTypes") or ""))
+              item_score = len(str(item.get("summary") or "")) + len(str(item.get("eventTypes") or ""))
+              if item_score >= previous_score:
+                  merged[key] = item
 
           export_input = dict(policy)
           export_input["items"] = sorted(
@@ -107,9 +130,31 @@ jobs:
               key=lambda item: (str(item.get("publishedAt", "")), str(item.get("title", ""))),
               reverse=True,
           )
-          target = Path("/tmp/policy-radar-export-input.json")
-          target.write_text(json.dumps(export_input, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+          Path("/tmp/policy-radar-export-input.json").write_text(
+              json.dumps(export_input, ensure_ascii=False, indent=2) + "\n",
+              encoding="utf-8",
+          )
+
+          official_sections = {
+              "press": "기후부 보도자료",
+              "notice": "기후부 공지사항",
+              "motie_press": "산업부 보도자료",
+              "motie_notice": "산업부 공지사항",
+              "krx_notice": "한국거래소 공지사항",
+          }
+          expected = {
+              label: sum(
+                  1 for item in official_rows
+                  if str(item.get("section") or "").strip().lower() == section
+              )
+              for section, label in official_sections.items()
+          }
+          Path("/tmp/policy-radar-expected-official-counts.json").write_text(
+              json.dumps(expected, ensure_ascii=False, indent=2) + "\n",
+              encoding="utf-8",
+          )
           print(f"전체 이력 엑셀 입력: {len(export_input['items']):,}건")
+          print("공식자료 기대건수=" + json.dumps(expected, ensure_ascii=False))
           PY
 
       - name: 정책 레이더 엑셀 생성
@@ -123,7 +168,7 @@ jobs:
             --output public/data/ets-policy-radar-events.xlsx \
             --manifest public/data/policy-radar-excel.json
 
-      - name: 엑셀 구성과 화면 비노출 검증
+      - name: 엑셀 구성·전체건수·화면 비노출 검증
         shell: bash
         run: |
           set -euo pipefail
@@ -136,20 +181,44 @@ jobs:
           xlsx = Path("public/data/ets-policy-radar-events.xlsx")
           manifest_path = Path("public/data/policy-radar-excel.json")
           if not xlsx.is_file() or xlsx.stat().st_size < 500_000:
-              raise SystemExit(f"엑셀 파일이 없거나 비정상적으로 작습니다: {xlsx.stat().st_size if xlsx.exists() else 0}")
+              raise SystemExit(
+                  f"엑셀 파일이 없거나 비정상적으로 작습니다: "
+                  f"{xlsx.stat().st_size if xlsx.exists() else 0}"
+              )
 
           manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
           counts = manifest.get("counts") or {}
           required = [
-              "기후부 보도자료", "기후부 공지사항", "산업부 보도자료", "산업부 공지사항",
-              "한국거래소 공지사항", "뉴스", "기관일정", "발의법률안", "국회의원 세미나 일정",
+              "기후부 보도자료",
+              "기후부 공지사항",
+              "산업부 보도자료",
+              "산업부 공지사항",
+              "한국거래소 공지사항",
+              "뉴스",
+              "기관일정",
+              "발의법률안",
+              "국회의원 세미나 일정",
           ]
           missing = [name for name in required if int(counts.get(name, 0)) <= 0]
           if missing:
               raise SystemExit(f"0건 또는 누락된 탭이 있습니다: {missing} / {counts}")
+
+          expected_official = json.loads(
+              Path("/tmp/policy-radar-expected-official-counts.json").read_text(encoding="utf-8")
+          )
+          official_mismatch = {
+              name: {"excel": int(counts.get(name, -1)), "source": int(expected)}
+              for name, expected in expected_official.items()
+              if int(counts.get(name, -1)) != int(expected)
+          }
+          if official_mismatch:
+              raise SystemExit(f"공식자료 전체건수 불일치: {official_mismatch}")
+
           expected_total = sum(int(counts[name]) for name in required)
           if int(manifest.get("totalEventCount", -1)) != expected_total:
-              raise SystemExit(f"전체 건수 불일치: {manifest.get('totalEventCount')} / {expected_total}")
+              raise SystemExit(
+                  f"전체 건수 불일치: {manifest.get('totalEventCount')} / {expected_total}"
+              )
           if int(manifest.get("sheetCount", 0)) != 11:
               raise SystemExit(f"엑셀 시트 수 오류: {manifest.get('sheetCount')}")
 
@@ -162,18 +231,27 @@ jobs:
               if len(names) != 11 or "전체 이벤트" not in names:
                   raise SystemExit(f"XLSX 시트 목록 오류: {names}")
 
-          forbidden = ("ets-policy-radar-events.xlsx", "전체 리스트 엑셀", "policy-radar-excel.json")
+          forbidden = (
+              "ets-policy-radar-events.xlsx",
+              "전체 리스트 엑셀",
+              "policy-radar-excel.json",
+          )
           exposed = []
           for path in [Path("public/index.html"), *Path("public/assets").glob("*.js")]:
-              if path.is_file() and any(value in path.read_text(encoding="utf-8", errors="ignore") for value in forbidden):
+              if path.is_file() and any(
+                  value in path.read_text(encoding="utf-8", errors="ignore")
+                  for value in forbidden
+              ):
                   exposed.append(str(path))
           if exposed:
               raise SystemExit(f"사이트 화면 코드에 엑셀 링크가 있습니다: {exposed}")
-          print(f"숨김 엑셀 검증 완료: {expected_total:,}건 / 11개 시트 / {xlsx.stat().st_size:,}바이트")
+          print(
+              f"전체 엑셀 검증 완료: {expected_total:,}건 / "
+              f"11개 시트 / {xlsx.stat().st_size:,}바이트"
+          )
           PY
 
       - name: 엑셀 파일을 운영 저장소에 보존
-        id: changes
         shell: bash
         run: |
           set -euo pipefail
@@ -182,10 +260,9 @@ jobs:
           git add -- public/data/ets-policy-radar-events.xlsx public/data/policy-radar-excel.json
 
           if git diff --cached --quiet; then
-            echo "changed=false" >> "$GITHUB_OUTPUT"
             echo "엑셀 내용에 변경이 없습니다."
           else
-            git commit -m "data: refresh hidden policy radar Excel"
+            git commit -m "data: refresh complete policy radar Excel"
             pushed=0
             for attempt in 1 2 3; do
               git fetch origin main
@@ -204,7 +281,6 @@ jobs:
               echo "::error::엑셀 파일 저장에 실패했습니다."
               exit 1
             fi
-            echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
 
       - name: 최신 main 배포원본 정렬
@@ -261,7 +337,11 @@ jobs:
               if curl -fsSL --max-time 45 -H "Cache-Control: no-cache" \
                 "${root}/${path}?verify=${GITHUB_RUN_ID}-${attempt}" -o "$output"; then
                 actual="$(sha256sum "$output" | awk '{print $1}')"
-                if [[ "$actual" == "$expected" ]]; then rm -f "$output"; return 0; fi
+                if [[ "$actual" == "$expected" ]]; then
+                  rm -f "$output"
+                  echo "공개 ${path} 확인 완료"
+                  return 0
+                fi
               fi
               sleep 8
             done
@@ -282,4 +362,4 @@ jobs:
             echo "::error::공개 화면 코드에 엑셀 다운로드 링크가 노출돼 있습니다."
             exit 1
           fi
-          echo "엑셀 파일은 배포됐고 대시보드 화면에는 링크가 없습니다."
+          echo "전체 엑셀 파일은 저장·배포됐고 대시보드 화면에는 링크가 없습니다."
