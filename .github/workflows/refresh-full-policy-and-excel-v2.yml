@@ -1,0 +1,273 @@
+name: Refresh Full Policy History and Excel v2
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/refresh-full-policy-and-excel-v2.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+env:
+  TZ: Asia/Seoul
+  PYTHONUNBUFFERED: "1"
+  PYTHONDONTWRITEBYTECODE: "1"
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
+
+jobs:
+  rebuild-and-deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: main
+          fetch-depth: 0
+          persist-credentials: true
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: 전체 공식이력과 뉴스 보관이력 병합
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json
+          import re
+          import sys
+          import tempfile
+          from pathlib import Path
+
+          sys.path.insert(0, "scripts")
+          import news_retention
+
+          policy_path = Path("public/data/policies.json")
+          climate_path = Path("public/data/policy-official-history.json")
+          motie_path = Path("public/data/motie-policy-history.json")
+          history_path = Path("public/data/news-history.json")
+          policy = json.loads(policy_path.read_text(encoding="utf-8"))
+          climate = json.loads(climate_path.read_text(encoding="utf-8"))
+          motie = json.loads(motie_path.read_text(encoding="utf-8"))
+          news_history = json.loads(history_path.read_text(encoding="utf-8"))
+          sections = {"press", "notice", "motie_press", "motie_notice", "krx_notice"}
+
+          def key(item):
+              section = str(item.get("section") or "").strip().lower()
+              identity = str(item.get("sourceId") or item.get("id") or "").strip()
+              if identity:
+                  return f"{section}|id|{identity}"
+              url = str(item.get("url") or "").strip()
+              if url:
+                  return f"{section}|url|{url}"
+              title = re.sub(r"[^0-9a-z가-힣]+", "", str(item.get("title") or "").lower())
+              return f"{section}|{item.get('publishedAt','')}|{title}"
+
+          official_index = {}
+          for document in (climate, motie):
+              for item in document.get("items", []):
+                  if isinstance(item, dict) and item.get("section") in sections:
+                      official_index[key(item)] = item
+          official = list(official_index.values())
+
+          news_index = news_retention.NewsIndex()
+          for document in (news_history, policy):
+              for item in document.get("items", []):
+                  if news_retention.is_valid_news(item):
+                      news_index.add(item)
+          news = news_retention.sort_news(news_index.values())
+          if len(news) != 524 or int(news_history.get("itemCount", -1)) != 524:
+              raise SystemExit(f"뉴스 보관이력 오류: unique={len(news)}, archive={news_history.get('itemCount')}")
+
+          policy["items"] = sorted(
+              [*official, *news],
+              key=lambda item: (
+                  str(item.get("publishedAt") or item.get("date") or "")[:10],
+                  str(item.get("title") or ""),
+              ),
+              reverse=True,
+          )
+          section_counts = {
+              section: sum(1 for item in official if item.get("section") == section)
+              for section in sorted(sections)
+          }
+          expected = {
+              "press": 916,
+              "notice": 421,
+              "motie_press": 1882,
+              "motie_notice": 737,
+              "krx_notice": 312,
+          }
+          if section_counts != expected:
+              raise SystemExit(f"공식 원천이력 건수 불일치: {section_counts} != {expected}")
+          policy["newsRetention"] = {
+              "policy": "append-only",
+              "itemCount": 524,
+              "status": "verified",
+          }
+          policy["officialHistoryMerge"] = {
+              "status": "verified",
+              "itemCount": len(official),
+              "sectionCounts": section_counts,
+          }
+          content = json.dumps(policy, ensure_ascii=False, indent=2) + "\n"
+          with tempfile.NamedTemporaryFile(
+              mode="w", encoding="utf-8", dir=policy_path.parent, delete=False, suffix=".tmp"
+          ) as handle:
+              handle.write(content)
+              temporary = Path(handle.name)
+          temporary.replace(policy_path)
+          print(f"FULL_POLICY_VERIFIED official={len(official)} news={len(news)} total={len(policy['items'])}")
+          PY
+
+      - name: 호환 엑셀 재생성
+        shell: bash
+        run: |
+          set -euo pipefail
+          cat scripts/policy_excel_template_lines/part*.b64 > /tmp/policy_excel_template.b64
+          python -m py_compile scripts/export_policy_radar_excel.py scripts/export_policy_radar_excel_compatible.py
+          python scripts/export_policy_radar_excel_compatible.py \
+            --policy-path public/data/policies.json \
+            --bill-path public/data/bills.json \
+            --seminar-path public/data/assembly_seminars.json \
+            --template-b64 /tmp/policy_excel_template.b64 \
+            --output public/data/ets-policy-radar-events.xlsx \
+            --fixed-output public/data/ets-policy-radar-events-fixed.xlsx \
+            --manifest public/data/policy-radar-excel.json
+
+      - name: 건수와 파일구조 검증
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json
+          import zipfile
+          from pathlib import Path
+          from xml.etree import ElementTree as ET
+
+          manifest = json.loads(Path("public/data/policy-radar-excel.json").read_text(encoding="utf-8"))
+          expected = {
+              "기후부 보도자료": 916,
+              "기후부 공지사항": 421,
+              "산업부 보도자료": 1882,
+              "산업부 공지사항": 737,
+              "한국거래소 공지사항": 312,
+              "뉴스": 524,
+              "기관일정": 13,
+              "발의법률안": 18,
+              "국회의원 세미나 일정": 3,
+              "전체 이벤트": 4826,
+          }
+          counts = manifest.get("counts") or {}
+          errors = {key: (counts.get(key), value) for key, value in expected.items() if int(counts.get(key, -1)) != value}
+          if errors:
+              raise SystemExit(f"최종 탭별 건수 오류: {errors}")
+          if manifest.get("generator") != "artifact_tool-template-v2" or int(manifest.get("sheetCount", 0)) != 11:
+              raise SystemExit("호환 엑셀 생성정보가 잘못됐습니다.")
+          for name in ("ets-policy-radar-events.xlsx", "ets-policy-radar-events-fixed.xlsx"):
+              path = Path("public/data") / name
+              with zipfile.ZipFile(path) as archive:
+                  if archive.testzip() is not None:
+                      raise SystemExit(f"XLSX ZIP 오류: {name}")
+                  for member in archive.namelist():
+                      if member.endswith((".xml", ".rels")):
+                          ET.fromstring(archive.read(member))
+          print("FULL_EXCEL_VERIFIED total=4826 news=524")
+          PY
+
+      - name: 운영 main에 저장
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- \
+            public/data/policies.json \
+            public/data/ets-policy-radar-events.xlsx \
+            public/data/ets-policy-radar-events-fixed.xlsx \
+            public/data/policy-radar-excel.json
+          git commit -m "data: restore full policy history and 524 news items"
+          pushed=0
+          for attempt in 1 2 3; do
+            git fetch origin main
+            if ! git rebase origin/main; then
+              git rebase --abort || true
+              exit 1
+            fi
+            if git push origin HEAD:main; then
+              pushed=1
+              break
+            fi
+            sleep $((attempt * 4))
+          done
+          [[ "$pushed" -eq 1 ]]
+
+      - name: 최신 main 정렬 및 해시
+        id: hashes
+        shell: bash
+        run: |
+          set -euo pipefail
+          git fetch origin main
+          if [[ "$(git rev-parse HEAD)" != "$(git rev-parse origin/main)" ]]; then
+            git merge --ff-only origin/main
+          fi
+          test -z "$(git status --porcelain)"
+          echo "policies=$(sha256sum public/data/policies.json | awk '{print $1}')" >> "$GITHUB_OUTPUT"
+          echo "excel=$(sha256sum public/data/ets-policy-radar-events-fixed.xlsx | awk '{print $1}')" >> "$GITHUB_OUTPUT"
+          echo "manifest=$(sha256sum public/data/policy-radar-excel.json | awk '{print $1}')" >> "$GITHUB_OUTPUT"
+
+      - uses: actions/configure-pages@v6
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: ./public
+      - name: GitHub Pages 배포
+        id: deployment
+        uses: actions/deploy-pages@v5
+
+      - name: 공개본 검증
+        shell: bash
+        env:
+          PAGE_URL: ${{ steps.deployment.outputs.page_url }}
+          POLICIES_SHA: ${{ steps.hashes.outputs.policies }}
+          EXCEL_SHA: ${{ steps.hashes.outputs.excel }}
+          MANIFEST_SHA: ${{ steps.hashes.outputs.manifest }}
+        run: |
+          set -euo pipefail
+          root="${PAGE_URL%/}"
+          verify() {
+            local file="$1" expected="$2" output
+            output="$(mktemp)"
+            for attempt in 1 2 3 4 5 6 7 8; do
+              if curl -fsSL --max-time 60 -H "Cache-Control: no-cache" \
+                "${root}/data/${file}?verify=${GITHUB_RUN_ID}-${attempt}" -o "$output"; then
+                actual="$(sha256sum "$output" | awk '{print $1}')"
+                if [[ "$actual" == "$expected" ]]; then rm -f "$output"; return 0; fi
+              fi
+              sleep 8
+            done
+            rm -f "$output"
+            return 1
+          }
+          verify "policies.json" "$POLICIES_SHA"
+          verify "ets-policy-radar-events-fixed.xlsx" "$EXCEL_SHA"
+          verify "policy-radar-excel.json" "$MANIFEST_SHA"
+          curl -fsSL --max-time 60 "${root}/data/policy-radar-excel.json?count=${GITHUB_RUN_ID}" -o /tmp/manifest.json
+          python - <<'PY'
+          import json
+          manifest = json.load(open("/tmp/manifest.json", encoding="utf-8"))
+          if int(manifest["counts"]["뉴스"]) != 524 or int(manifest["totalEventCount"]) != 4826:
+              raise SystemExit(f"공개본 건수 오류: {manifest}")
+          print("PUBLIC_FULL_POLICY_EXCEL_VERIFIED total=4826 news=524")
+          PY
