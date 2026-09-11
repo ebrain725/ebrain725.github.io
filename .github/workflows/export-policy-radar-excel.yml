@@ -2,7 +2,7 @@ name: Export Hidden Policy Radar Excel
 
 on:
   workflow_run:
-    workflows: ["Merge Industrial Ministry Policy History"]
+    workflows: ["Merge Industrial Ministry Policy History", "Apply Policy Event Taxonomy"]
     types: [completed]
   workflow_dispatch:
   push:
