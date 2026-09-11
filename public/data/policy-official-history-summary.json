@@ -1,7 +1,7 @@
 {
   "schemaVersion": "2.0",
   "requestedStartDate": "2015-01-01",
-  "verifiedAt": "2026-09-11T10:21:12+09:00",
+  "verifiedAt": "2026-09-11T12:07:23+09:00",
   "keywordExpansionVersion": "2026-09-09-v1-shared-30-keywords",
   "keywordRule": {
     "titleAndContent": [
@@ -44,29 +44,29 @@
     "notice": "기후부 공지·공고 전체 이력에서 핵심 7개는 제목·본문, 확대 23개는 제목으로 판정",
     "krx_notice": "한국거래소 배출권시장 공지사항의 2015-01-01 이후 일반 공지 전체"
   },
-  "officialItemCount": 1323,
+  "officialItemCount": 1649,
   "counts": {
-    "krx_notice": 312,
-    "notice": 343,
-    "press": 668
+    "press": 916,
+    "notice": 421,
+    "krx_notice": 312
   },
   "directCounts": {
-    "press": 313,
-    "notice": 209
+    "press": 429,
+    "notice": 218
   },
   "relatedCounts": {
-    "press": 355,
-    "notice": 134
+    "press": 487,
+    "notice": 203
   },
   "earliest": {
-    "krx_notice": "2015-01-07",
+    "press": "2015-01-08",
     "notice": "2015-01-07",
-    "press": "2015-01-08"
+    "krx_notice": "2015-01-07"
   },
   "latest": {
-    "krx_notice": "2026-09-09",
+    "press": "2026-09-09",
     "notice": "2026-09-09",
-    "press": "2026-09-09"
+    "krx_notice": "2026-09-09"
   },
   "sourceAudit": [
     {
@@ -121,5 +121,47 @@
     "invalidDates": 0,
     "invalidDomains": 0,
     "missingKeywords": 0
+  },
+  "policyEventTaxonomy": {
+    "version": "2026-09-11-v1-user-38-events",
+    "eventCount": 38,
+    "summaryFile": "data/policy-event-taxonomy-summary.json",
+    "eventCounts": {
+      "배출권·배출권거래제·ETS": 805,
+      "온실가스·배출량·명세서": 387,
+      "유상할당 비율": 353,
+      "탄소중립 선언·기본계획": 297,
+      "시장안정화·MSR": 264,
+      "추가할당·할당취소": 216,
+      "할당계획·할당량": 191,
+      "국제감축·외부사업·감축실적": 129,
+      "이행·정산·제출기한": 101,
+      "낙찰가·응찰배수": 95,
+      "재생에너지·RPS": 79,
+      "원자력발전·원전": 47,
+      "시장참여자 확대·시장조성": 46,
+      "상쇄배출권·전환한도": 35,
+      "유상경매 물량·일정": 32,
+      "탄소국경조정·CBAM": 29,
+      "증설·상업가동": 26,
+      "화재·폭발·침수·가동중단": 23,
+      "폭염·한파·전력수요": 20,
+      "거래량·거래대금": 18,
+      "NDC·국가 감축목표": 17,
+      "이월·차입 한도": 16,
+      "수소발전·청정수소": 13,
+      "EU ETS·EUA": 12,
+      "석탄발전": 11,
+      "RE100": 6,
+      "전력수급기본계획·전원구성": 4,
+      "전력시장·급전(포괄)": 3,
+      "제도 확정 지연·소송": 3,
+      "중국 증설·반덤핑·관세": 3,
+      "LNG발전": 2,
+      "발전제약": 2,
+      "업종 생산·가동률 통계": 2,
+      "대량 매도·보유물량 출회": 1,
+      "정기보수·셧다운": 1
+    }
   }
 }

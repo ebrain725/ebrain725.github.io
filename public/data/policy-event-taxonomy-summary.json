@@ -1,0 +1,529 @@
+{
+  "schemaVersion": "1.0",
+  "taxonomyVersion": "2026-09-11-v1-user-38-events",
+  "generatedAt": "2026-09-11T12:07:23+09:00",
+  "requestedStartDate": "2015-01-01",
+  "collectionMode": "full",
+  "eventCount": 38,
+  "events": [
+    {
+      "id": "allocation_adjustment",
+      "label": "추가할당·할당취소",
+      "priority": 10
+    },
+    {
+      "id": "paid_allocation_ratio",
+      "label": "유상할당 비율",
+      "priority": 11
+    },
+    {
+      "id": "auction_schedule_volume",
+      "label": "유상경매 물량·일정",
+      "priority": 12
+    },
+    {
+      "id": "auction_result",
+      "label": "낙찰가·응찰배수",
+      "priority": 13
+    },
+    {
+      "id": "banking_borrowing",
+      "label": "이월·차입 한도",
+      "priority": 14
+    },
+    {
+      "id": "offset_conversion_limit",
+      "label": "상쇄배출권·전환한도",
+      "priority": 15
+    },
+    {
+      "id": "market_stability_msr",
+      "label": "시장안정화·MSR",
+      "priority": 16
+    },
+    {
+      "id": "international_mitigation",
+      "label": "국제감축·외부사업·감축실적",
+      "priority": 17
+    },
+    {
+      "id": "emissions_inventory",
+      "label": "온실가스·배출량·명세서",
+      "priority": 18
+    },
+    {
+      "id": "compliance_settlement_deadline",
+      "label": "이행·정산·제출기한",
+      "priority": 19
+    },
+    {
+      "id": "allocation_plan",
+      "label": "할당계획·할당량",
+      "priority": 20
+    },
+    {
+      "id": "trading_volume_value",
+      "label": "거래량·거래대금",
+      "priority": 21
+    },
+    {
+      "id": "large_sale_supply",
+      "label": "대량 매도·보유물량 출회",
+      "priority": 22
+    },
+    {
+      "id": "market_participant_maker",
+      "label": "시장참여자 확대·시장조성",
+      "priority": 23
+    },
+    {
+      "id": "eu_ets_eua",
+      "label": "EU ETS·EUA",
+      "priority": 24
+    },
+    {
+      "id": "policy_delay_litigation",
+      "label": "제도 확정 지연·소송",
+      "priority": 25
+    },
+    {
+      "id": "ndc_target",
+      "label": "NDC·국가 감축목표",
+      "priority": 30
+    },
+    {
+      "id": "power_market_dispatch",
+      "label": "전력시장·급전(포괄)",
+      "priority": 31
+    },
+    {
+      "id": "coal_generation",
+      "label": "석탄발전",
+      "priority": 32
+    },
+    {
+      "id": "lng_generation",
+      "label": "LNG발전",
+      "priority": 33
+    },
+    {
+      "id": "smp",
+      "label": "SMP",
+      "priority": 34
+    },
+    {
+      "id": "nuclear_generation",
+      "label": "원자력발전·원전",
+      "priority": 35
+    },
+    {
+      "id": "renewables_rps",
+      "label": "재생에너지·RPS",
+      "priority": 36
+    },
+    {
+      "id": "hydrogen_generation",
+      "label": "수소발전·청정수소",
+      "priority": 37
+    },
+    {
+      "id": "re100",
+      "label": "RE100",
+      "priority": 38
+    },
+    {
+      "id": "power_plan_mix",
+      "label": "전력수급기본계획·전원구성",
+      "priority": 39
+    },
+    {
+      "id": "generation_constraint",
+      "label": "발전제약",
+      "priority": 40
+    },
+    {
+      "id": "weather_power_demand",
+      "label": "폭염·한파·전력수요",
+      "priority": 41
+    },
+    {
+      "id": "nuclear_outage_maintenance",
+      "label": "원전 불시정지·정비연장",
+      "priority": 42
+    },
+    {
+      "id": "incident_shutdown",
+      "label": "화재·폭발·침수·가동중단",
+      "priority": 43
+    },
+    {
+      "id": "maintenance_shutdown",
+      "label": "정기보수·셧다운",
+      "priority": 44
+    },
+    {
+      "id": "production_cut_utilization",
+      "label": "감산·가동률 조정",
+      "priority": 45
+    },
+    {
+      "id": "capacity_expansion_startup",
+      "label": "증설·상업가동",
+      "priority": 46
+    },
+    {
+      "id": "china_capacity_trade",
+      "label": "중국 증설·반덤핑·관세",
+      "priority": 47
+    },
+    {
+      "id": "industry_output_utilization_stats",
+      "label": "업종 생산·가동률 통계",
+      "priority": 48
+    },
+    {
+      "id": "cbam",
+      "label": "탄소국경조정·CBAM",
+      "priority": 49
+    },
+    {
+      "id": "carbon_neutral_plan",
+      "label": "탄소중립 선언·기본계획",
+      "priority": 50
+    },
+    {
+      "id": "ets_system",
+      "label": "배출권·배출권거래제·ETS",
+      "priority": 100
+    }
+  ],
+  "sectionCounts": {
+    "krx_notice": 312,
+    "motie_notice": 950,
+    "motie_press": 1882,
+    "notice": 421,
+    "press": 916
+  },
+  "previousSectionCounts": {
+    "krx_notice": 312,
+    "motie_notice": 436,
+    "motie_press": 567,
+    "notice": 343,
+    "press": 668
+  },
+  "addedCounts": {
+    "krx_notice": 0,
+    "motie_notice": 514,
+    "motie_press": 1315,
+    "notice": 78,
+    "press": 248
+  },
+  "scopeCounts": {
+    "krx_notice": {
+      "direct": 312,
+      "related": 0
+    },
+    "motie_notice": {
+      "direct": 65,
+      "related": 885
+    },
+    "motie_press": {
+      "direct": 28,
+      "related": 1854
+    },
+    "notice": {
+      "direct": 218,
+      "related": 203
+    },
+    "press": {
+      "direct": 429,
+      "related": 487
+    }
+  },
+  "eventCounts": {
+    "재생에너지·RPS": 907,
+    "배출권·배출권거래제·ETS": 878,
+    "원자력발전·원전": 804,
+    "온실가스·배출량·명세서": 717,
+    "탄소중립 선언·기본계획": 579,
+    "유상할당 비율": 353,
+    "시장안정화·MSR": 265,
+    "중국 증설·반덤핑·관세": 238,
+    "추가할당·할당취소": 216,
+    "할당계획·할당량": 195,
+    "국제감축·외부사업·감축실적": 189,
+    "폭염·한파·전력수요": 113,
+    "이행·정산·제출기한": 101,
+    "낙찰가·응찰배수": 95,
+    "수소발전·청정수소": 83,
+    "탄소국경조정·CBAM": 72,
+    "전력수급기본계획·전원구성": 62,
+    "석탄발전": 61,
+    "증설·상업가동": 58,
+    "전력시장·급전(포괄)": 55,
+    "시장참여자 확대·시장조성": 46,
+    "RE100": 41,
+    "상쇄배출권·전환한도": 35,
+    "화재·폭발·침수·가동중단": 33,
+    "유상경매 물량·일정": 32,
+    "NDC·국가 감축목표": 27,
+    "거래량·거래대금": 18,
+    "이월·차입 한도": 16,
+    "EU ETS·EUA": 12,
+    "LNG발전": 12,
+    "업종 생산·가동률 통계": 11,
+    "발전제약": 9,
+    "원전 불시정지·정비연장": 4,
+    "정기보수·셧다운": 4,
+    "감산·가동률 조정": 3,
+    "제도 확정 지연·소송": 3,
+    "SMP": 2,
+    "대량 매도·보유물량 출회": 1
+  },
+  "sourceCoverage": {
+    "krx_notice": {
+      "records": 312,
+      "earliest": "2015-01-07",
+      "latest": "2026-09-09",
+      "scopeCounts": {
+        "direct": 312,
+        "related": 0
+      },
+      "eventCounts": {
+        "배출권·배출권거래제·ETS": 310,
+        "유상할당 비율": 194,
+        "시장안정화·MSR": 103,
+        "추가할당·할당취소": 93,
+        "낙찰가·응찰배수": 91,
+        "할당계획·할당량": 26,
+        "온실가스·배출량·명세서": 23,
+        "상쇄배출권·전환한도": 18,
+        "유상경매 물량·일정": 15,
+        "국제감축·외부사업·감축실적": 10,
+        "시장참여자 확대·시장조성": 6,
+        "이행·정산·제출기한": 6,
+        "이월·차입 한도": 3,
+        "거래량·거래대금": 2
+      }
+    },
+    "notice": {
+      "records": 421,
+      "earliest": "2015-01-07",
+      "latest": "2026-09-09",
+      "scopeCounts": {
+        "direct": 218,
+        "related": 203
+      },
+      "eventCounts": {
+        "배출권·배출권거래제·ETS": 206,
+        "온실가스·배출량·명세서": 124,
+        "유상할당 비율": 118,
+        "시장안정화·MSR": 113,
+        "추가할당·할당취소": 108,
+        "탄소중립 선언·기본계획": 64,
+        "할당계획·할당량": 49,
+        "재생에너지·RPS": 29,
+        "국제감축·외부사업·감축실적": 22,
+        "유상경매 물량·일정": 17,
+        "원자력발전·원전": 12,
+        "수소발전·청정수소": 6,
+        "시장참여자 확대·시장조성": 6,
+        "이행·정산·제출기한": 6,
+        "NDC·국가 감축목표": 4,
+        "낙찰가·응찰배수": 3,
+        "증설·상업가동": 3,
+        "전력수급기본계획·전원구성": 2,
+        "탄소국경조정·CBAM": 2,
+        "EU ETS·EUA": 1,
+        "RE100": 1,
+        "업종 생산·가동률 통계": 1,
+        "이월·차입 한도": 1,
+        "폭염·한파·전력수요": 1
+      }
+    },
+    "press": {
+      "records": 916,
+      "earliest": "2015-01-08",
+      "latest": "2026-09-09",
+      "scopeCounts": {
+        "direct": 429,
+        "related": 487
+      },
+      "eventCounts": {
+        "배출권·배출권거래제·ETS": 289,
+        "온실가스·배출량·명세서": 240,
+        "탄소중립 선언·기본계획": 233,
+        "할당계획·할당량": 116,
+        "국제감축·외부사업·감축실적": 97,
+        "이행·정산·제출기한": 89,
+        "재생에너지·RPS": 50,
+        "시장안정화·MSR": 48,
+        "유상할당 비율": 41,
+        "원자력발전·원전": 35,
+        "시장참여자 확대·시장조성": 34,
+        "탄소국경조정·CBAM": 27,
+        "증설·상업가동": 23,
+        "화재·폭발·침수·가동중단": 23,
+        "폭염·한파·전력수요": 19,
+        "상쇄배출권·전환한도": 17,
+        "거래량·거래대금": 16,
+        "추가할당·할당취소": 15,
+        "NDC·국가 감축목표": 13,
+        "이월·차입 한도": 12,
+        "EU ETS·EUA": 11,
+        "석탄발전": 11,
+        "수소발전·청정수소": 7,
+        "RE100": 5,
+        "전력시장·급전(포괄)": 3,
+        "제도 확정 지연·소송": 3,
+        "중국 증설·반덤핑·관세": 3,
+        "LNG발전": 2,
+        "발전제약": 2,
+        "전력수급기본계획·전원구성": 2,
+        "낙찰가·응찰배수": 1,
+        "대량 매도·보유물량 출회": 1,
+        "업종 생산·가동률 통계": 1,
+        "정기보수·셧다운": 1
+      }
+    },
+    "motie_notice": {
+      "records": 950,
+      "earliest": "2015-01-06",
+      "latest": "2026-08-10",
+      "scopeCounts": {
+        "direct": 65,
+        "related": 885
+      },
+      "eventCounts": {
+        "재생에너지·RPS": 484,
+        "온실가스·배출량·명세서": 217,
+        "탄소중립 선언·기본계획": 92,
+        "원자력발전·원전": 86,
+        "배출권·배출권거래제·ETS": 48,
+        "국제감축·외부사업·감축실적": 41,
+        "수소발전·청정수소": 24,
+        "전력수급기본계획·전원구성": 22,
+        "중국 증설·반덤핑·관세": 6,
+        "증설·상업가동": 5,
+        "RE100": 3,
+        "할당계획·할당량": 1
+      }
+    },
+    "motie_press": {
+      "records": 1882,
+      "earliest": "2016-01-19",
+      "latest": "2026-09-09",
+      "scopeCounts": {
+        "direct": 28,
+        "related": 1854
+      },
+      "eventCounts": {
+        "원자력발전·원전": 671,
+        "재생에너지·RPS": 344,
+        "중국 증설·반덤핑·관세": 229,
+        "탄소중립 선언·기본계획": 190,
+        "온실가스·배출량·명세서": 113,
+        "폭염·한파·전력수요": 93,
+        "전력시장·급전(포괄)": 52,
+        "석탄발전": 50,
+        "수소발전·청정수소": 46,
+        "탄소국경조정·CBAM": 43,
+        "전력수급기본계획·전원구성": 36,
+        "RE100": 32,
+        "증설·상업가동": 27,
+        "배출권·배출권거래제·ETS": 25,
+        "국제감축·외부사업·감축실적": 19,
+        "LNG발전": 10,
+        "NDC·국가 감축목표": 10,
+        "화재·폭발·침수·가동중단": 10,
+        "업종 생산·가동률 통계": 9,
+        "발전제약": 7,
+        "원전 불시정지·정비연장": 4,
+        "감산·가동률 조정": 3,
+        "정기보수·셧다운": 3,
+        "할당계획·할당량": 3,
+        "SMP": 2,
+        "시장안정화·MSR": 1
+      }
+    }
+  },
+  "validation": {
+    "officialItemCount": 4481,
+    "sectionCounts": {
+      "krx_notice": 312,
+      "motie_notice": 950,
+      "motie_press": 1882,
+      "notice": 421,
+      "press": 916
+    },
+    "scopeCounts": {
+      "krx_notice": {
+        "direct": 312,
+        "related": 0
+      },
+      "motie_notice": {
+        "direct": 65,
+        "related": 885
+      },
+      "motie_press": {
+        "direct": 28,
+        "related": 1854
+      },
+      "notice": {
+        "direct": 218,
+        "related": 203
+      },
+      "press": {
+        "direct": 429,
+        "related": 487
+      }
+    },
+    "eventCounts": {
+      "재생에너지·RPS": 907,
+      "배출권·배출권거래제·ETS": 878,
+      "원자력발전·원전": 804,
+      "온실가스·배출량·명세서": 717,
+      "탄소중립 선언·기본계획": 579,
+      "유상할당 비율": 353,
+      "시장안정화·MSR": 265,
+      "중국 증설·반덤핑·관세": 238,
+      "추가할당·할당취소": 216,
+      "할당계획·할당량": 195,
+      "국제감축·외부사업·감축실적": 189,
+      "폭염·한파·전력수요": 113,
+      "이행·정산·제출기한": 101,
+      "낙찰가·응찰배수": 95,
+      "수소발전·청정수소": 83,
+      "탄소국경조정·CBAM": 72,
+      "전력수급기본계획·전원구성": 62,
+      "석탄발전": 61,
+      "증설·상업가동": 58,
+      "전력시장·급전(포괄)": 55,
+      "시장참여자 확대·시장조성": 46,
+      "RE100": 41,
+      "상쇄배출권·전환한도": 35,
+      "화재·폭발·침수·가동중단": 33,
+      "유상경매 물량·일정": 32,
+      "NDC·국가 감축목표": 27,
+      "거래량·거래대금": 18,
+      "이월·차입 한도": 16,
+      "EU ETS·EUA": 12,
+      "LNG발전": 12,
+      "업종 생산·가동률 통계": 11,
+      "발전제약": 9,
+      "원전 불시정지·정비연장": 4,
+      "정기보수·셧다운": 4,
+      "감산·가동률 조정": 3,
+      "제도 확정 지연·소송": 3,
+      "SMP": 2,
+      "대량 매도·보유물량 출회": 1
+    },
+    "duplicateKeys": 0,
+    "invalidDates": 0,
+    "invalidDomains": 0,
+    "unclassified": 0,
+    "dashboardOfficialCount": 4481
+  },
+  "lastRunDateKst": "2026-09-11",
+  "lastRunSlot": "2026-09-11-AM"
+}
