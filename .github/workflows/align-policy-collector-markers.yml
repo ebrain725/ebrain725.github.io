@@ -1,0 +1,136 @@
+name: Align Policy Collector Markers
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/align-policy-collector-markers.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: policy-marker-alignment
+  cancel-in-progress: false
+
+env:
+  PYTHONUNBUFFERED: "1"
+  PYTHONDONTWRITEBYTECODE: "1"
+
+jobs:
+  align:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: 최신 운영본 불러오기
+        uses: actions/checkout@v7
+        with:
+          ref: main
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: 수집 완료 표식과 주제 분류 버전 분리
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json
+          import re
+          from pathlib import Path
+
+          taxonomy_version = "2026-09-11-v1-38-topics"
+
+          def expected_version(workflow_path: str) -> str:
+              text = Path(workflow_path).read_text(encoding="utf-8")
+              matches = list(dict.fromkeys(re.findall(r"2026-[0-9A-Za-z._-]*30-keywords", text)))
+              if not matches:
+                  raise SystemExit(f"기존 30개 키워드 완료 표식을 찾지 못했습니다: {workflow_path}")
+              return matches[0]
+
+          climate_expected = expected_version(".github/workflows/merge-official-policy-history.yml")
+          motie_expected = expected_version(".github/workflows/merge-motie-policy-history.yml")
+          print(f"기후부 수집 완료 표식: {climate_expected}")
+          print(f"산업부 수집 완료 표식: {motie_expected}")
+
+          collector_versions = {
+              Path("scripts/sync_climate_policy_expanded.py"): climate_expected,
+              Path("scripts/sync_motie_official_history.py"): motie_expected,
+          }
+          for path, expected in collector_versions.items():
+              text = path.read_text(encoding="utf-8")
+              replaced = text.replace(taxonomy_version, expected)
+              if replaced == text and expected not in text:
+                  raise SystemExit(f"수집기 버전을 정렬하지 못했습니다: {path}")
+              path.write_text(replaced, encoding="utf-8")
+              compile(replaced, str(path), "exec")
+
+          def align_document(path: str, expected: str, marker_names: set[str]) -> None:
+              target = Path(path)
+              document = json.loads(target.read_text(encoding="utf-8"))
+
+              def visit(value, parent_key=""):
+                  if isinstance(value, dict):
+                      for key, child in list(value.items()):
+                          # 38개 주제 분류 자체의 버전은 그대로 둔다.
+                          if key in {"taxonomyVersion", "schemaVersion"} or parent_key == "topicTaxonomy":
+                              continue
+                          if key in marker_names and child == taxonomy_version:
+                              value[key] = expected
+                          else:
+                              visit(child, key)
+                  elif isinstance(value, list):
+                      for child in value:
+                          visit(child, parent_key)
+
+              visit(document)
+              target.write_text(json.dumps(document, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+          align_document(
+              "public/data/policy-official-history.json",
+              climate_expected,
+              {"version", "keywordExpansionVersion", "collectionVersion"},
+          )
+          align_document(
+              "public/data/policy-official-history-summary.json",
+              climate_expected,
+              {"keywordExpansionVersion", "collectionVersion"},
+          )
+          align_document(
+              "public/data/motie-policy-history.json",
+              motie_expected,
+              {"version", "keywordExpansionVersion", "collectionVersion"},
+          )
+
+          # 별도 분류 감사파일은 반드시 38개 주제 버전을 유지한다.
+          summary = json.loads(Path("public/data/policy-radar-topic-summary.json").read_text(encoding="utf-8"))
+          if summary.get("schemaVersion") != taxonomy_version or int(summary.get("topicCount", 0)) != 38:
+              raise SystemExit("38개 주제 분류 감사파일이 훼손됐습니다.")
+          print("수집 완료 표식과 38개 주제 분류 버전 분리 완료")
+          PY
+
+      - name: 정렬 결과 저장
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- \
+            scripts/sync_climate_policy_expanded.py \
+            scripts/sync_motie_official_history.py \
+            public/data/policy-official-history.json \
+            public/data/policy-official-history-summary.json \
+            public/data/motie-policy-history.json
+          if git diff --cached --quiet; then
+            echo "완료 표식이 이미 정렬돼 있습니다."
+          else
+            git commit -m "fix: separate collector completion markers from topic taxonomy"
+            for attempt in 1 2 3; do
+              if git pull --rebase origin main && git push origin HEAD:main; then
+                exit 0
+              fi
+              git rebase --abort 2>/dev/null || true
+              if [[ "$attempt" -eq 3 ]]; then exit 1; fi
+              sleep $((attempt * 3))
+            done
+          fi
