@@ -1,0 +1,309 @@
+name: Apply Policy Event Taxonomy
+
+on:
+  workflow_run:
+    workflows: ["Merge Industrial Ministry Policy History"]
+    types: [completed]
+  workflow_dispatch:
+    inputs:
+      force_full:
+        description: "2015-01-01 이후 전체 재검색"
+        required: false
+        default: false
+        type: boolean
+  push:
+    branches: [main]
+    paths:
+      - "config/policy_event_taxonomy.json"
+      - "scripts/policy_event_taxonomy.py"
+      - "scripts/sync_policy_event_taxonomy.py"
+      - ".github/workflows/apply-policy-event-taxonomy.yml"
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+env:
+  TZ: Asia/Seoul
+  PYTHONUNBUFFERED: "1"
+  PYTHONDONTWRITEBYTECODE: "1"
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
+
+jobs:
+  collect-classify-deploy:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    runs-on: macos-latest
+    timeout-minutes: 120
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: 최신 운영본 불러오기
+        uses: actions/checkout@v7
+        with:
+          ref: main
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Python 준비
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: 38개 이벤트 분류체계 검증
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m py_compile \
+            scripts/policy_event_taxonomy.py \
+            scripts/sync_policy_event_taxonomy.py \
+            scripts/sync_climate_policy_expanded.py \
+            scripts/sync_motie_policy_expanded.py
+          python scripts/policy_event_taxonomy.py --self-test
+          python scripts/sync_policy_event_taxonomy.py --self-test
+
+      - name: 전체 또는 증분 수집 결정
+        id: mode
+        shell: bash
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          FORCE_FULL: ${{ inputs.force_full || 'false' }}
+        run: |
+          set -euo pipefail
+          python - <<'PY' >> "$GITHUB_OUTPUT"
+          import json
+          import os
+          from datetime import datetime
+          from pathlib import Path
+          from zoneinfo import ZoneInfo
+
+          config = json.loads(Path("config/policy_event_taxonomy.json").read_text(encoding="utf-8"))
+          version = str(config["version"])
+          summary_path = Path("public/data/policy-event-taxonomy-summary.json")
+          summary = {}
+          if summary_path.exists():
+              try:
+                  summary = json.loads(summary_path.read_text(encoding="utf-8"))
+              except json.JSONDecodeError:
+                  summary = {}
+
+          now = datetime.now(ZoneInfo("Asia/Seoul"))
+          slot = f"{now.date().isoformat()}-{'AM' if now.hour < 15 else 'PM'}"
+          force_full = os.getenv("FORCE_FULL", "false").lower() == "true"
+          version_changed = summary.get("taxonomyVersion") != version
+          full = force_full or version_changed
+          run = True
+
+          if (
+              os.getenv("EVENT_NAME") == "workflow_run"
+              and not full
+              and summary.get("lastRunSlot") == slot
+          ):
+              run = False
+
+          print(f"run={'true' if run else 'false'}")
+          print(f"full={'true' if full else 'false'}")
+          print(f"slot={slot}")
+          print(f"version={version}")
+          PY
+
+      - name: 2015년 이후 공식자료 확대 수집·분류
+        if: steps.mode.outputs.run == 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          args=(--start-date 2015-01-01 --lookback-days 60)
+          if [[ "${{ steps.mode.outputs.full }}" == "true" ]]; then
+            args+=(--full)
+          fi
+          python scripts/sync_policy_event_taxonomy.py "${args[@]}" \
+            2>&1 | tee /tmp/policy-event-taxonomy.log
+
+      - name: 확대 결과 검증
+        if: steps.mode.outputs.run == 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          required = {
+              "press": "기후부 보도자료",
+              "notice": "기후부 공지사항",
+              "motie_press": "산업부 보도자료",
+              "motie_notice": "산업부 공지사항",
+              "krx_notice": "한국거래소 공지사항",
+          }
+          summary = json.loads(
+              Path("public/data/policy-event-taxonomy-summary.json").read_text(encoding="utf-8")
+          )
+          config = json.loads(
+              Path("config/policy_event_taxonomy.json").read_text(encoding="utf-8")
+          )
+          policies = json.loads(
+              Path("public/data/policies.json").read_text(encoding="utf-8")
+          )
+
+          if summary.get("taxonomyVersion") != config.get("version"):
+              raise SystemExit("정책 이벤트 분류 버전이 일치하지 않습니다.")
+          if int(summary.get("eventCount", 0)) != 38 or len(config.get("events", [])) != 38:
+              raise SystemExit("정책 이벤트가 38개가 아닙니다.")
+
+          counts = summary.get("sectionCounts") or {}
+          previous = summary.get("previousSectionCounts") or {}
+          for section, label in required.items():
+              if int(counts.get(section, 0)) <= 0:
+                  raise SystemExit(f"{label} 수집 결과가 비었습니다.")
+              if int(counts.get(section, 0)) < int(previous.get(section, 0)):
+                  raise SystemExit(
+                      f"{label} 건수가 감소했습니다: {counts.get(section)} < {previous.get(section)}"
+                  )
+
+          official = [
+              item for item in policies.get("items", [])
+              if item.get("section") in required
+          ]
+          if len(official) != sum(int(counts[name]) for name in required):
+              raise SystemExit("대시보드 공식자료 건수와 분류 요약이 다릅니다.")
+          for index, item in enumerate(official):
+              if not item.get("eventTypes") or not item.get("eventPrimary"):
+                  raise SystemExit(f"공식자료 {index}의 이벤트 분류가 없습니다.")
+              if item.get("keywordScope") not in {"direct", "related"}:
+                  raise SystemExit(f"공식자료 {index}의 직접성 구분이 잘못됐습니다.")
+
+          for path, maximum in (
+              ("public/data/policy-official-history.json", 30_000_000),
+              ("public/data/motie-policy-history.json", 30_000_000),
+              ("public/data/policies.json", 35_000_000),
+              ("public/data/policy-event-taxonomy-summary.json", 2_000_000),
+          ):
+              size = Path(path).stat().st_size
+              if not 100 < size <= maximum:
+                  raise SystemExit(f"파일 크기 오류: {path}={size}")
+          print(
+              "38개 이벤트 확대 검증 완료: "
+              + ", ".join(f"{required[key]} {int(counts[key]):,}건" for key in required)
+          )
+          PY
+
+      - name: 확대 이력 운영 main에 저장
+        if: steps.mode.outputs.run == 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- \
+            public/data/policy-official-history.json \
+            public/data/policy-official-history-summary.json \
+            public/data/motie-policy-history.json \
+            public/data/policies.json \
+            public/data/policy-event-taxonomy-summary.json
+
+          if git diff --cached --quiet; then
+            echo "정책 이벤트 확대 데이터에 변경이 없습니다."
+          else
+            git commit -m "data: expand official policy radar to 38 event groups"
+            pushed=0
+            for attempt in 1 2 3; do
+              git fetch origin main
+              if ! git rebase origin/main; then
+                git rebase --abort || true
+                echo "::error::원격 main과 정책 이벤트 데이터가 충돌했습니다."
+                exit 1
+              fi
+              if git push origin HEAD:main; then
+                pushed=1
+                break
+              fi
+              sleep $((attempt * 4))
+            done
+            if [[ "$pushed" -ne 1 ]]; then
+              echo "::error::정책 이벤트 확대 데이터를 main에 저장하지 못했습니다."
+              exit 1
+            fi
+          fi
+
+      - name: 최신 main 배포원본 정렬
+        if: steps.mode.outputs.run == 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          git fetch origin main
+          if [[ "$(git rev-parse HEAD)" != "$(git rev-parse origin/main)" ]]; then
+            git merge --ff-only origin/main
+          fi
+          test -z "$(git status --porcelain)" || {
+            echo "::error::배포 직전 작업트리가 깨끗하지 않습니다."
+            git status --short
+            exit 1
+          }
+
+      - name: 배포 원본 해시 계산
+        if: steps.mode.outputs.run == 'true'
+        id: source_hash
+        shell: bash
+        run: |
+          set -euo pipefail
+          echo "summary=$(shasum -a 256 public/data/policy-event-taxonomy-summary.json | awk '{print $1}')" >> "$GITHUB_OUTPUT"
+          echo "policies=$(shasum -a 256 public/data/policies.json | awk '{print $1}')" >> "$GITHUB_OUTPUT"
+          echo "official=$(shasum -a 256 public/data/policy-official-history.json | awk '{print $1}')" >> "$GITHUB_OUTPUT"
+          echo "motie=$(shasum -a 256 public/data/motie-policy-history.json | awk '{print $1}')" >> "$GITHUB_OUTPUT"
+
+      - name: Pages 설정
+        if: steps.mode.outputs.run == 'true'
+        uses: actions/configure-pages@v6
+
+      - name: 전체 공개 파일 묶기
+        if: steps.mode.outputs.run == 'true'
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: ./public
+
+      - name: GitHub Pages 배포
+        if: steps.mode.outputs.run == 'true'
+        id: deployment
+        uses: actions/deploy-pages@v5
+
+      - name: 공개 정책 이벤트 데이터 검증
+        if: steps.mode.outputs.run == 'true'
+        shell: bash
+        env:
+          PAGE_URL: ${{ steps.deployment.outputs.page_url }}
+          SUMMARY_SHA256: ${{ steps.source_hash.outputs.summary }}
+          POLICIES_SHA256: ${{ steps.source_hash.outputs.policies }}
+          OFFICIAL_SHA256: ${{ steps.source_hash.outputs.official }}
+          MOTIE_SHA256: ${{ steps.source_hash.outputs.motie }}
+        run: |
+          set -euo pipefail
+          root="${PAGE_URL%/}"
+          verify() {
+            local path="$1" expected="$2" output
+            output="$(mktemp)"
+            for attempt in 1 2 3 4 5 6 7 8; do
+              if curl -fsSL --max-time 60 -H "Cache-Control: no-cache" \
+                "${root}/${path}?verify=${GITHUB_RUN_ID}-${attempt}" -o "$output"; then
+                actual="$(shasum -a 256 "$output" | awk '{print $1}')"
+                if [[ "$actual" == "$expected" ]]; then
+                  rm -f "$output"
+                  echo "공개 ${path} 확인 완료"
+                  return 0
+                fi
+              fi
+              sleep 8
+            done
+            rm -f "$output"
+            echo "::error::공개 ${path} 검증 실패"
+            return 1
+          }
+          verify "data/policy-event-taxonomy-summary.json" "$SUMMARY_SHA256"
+          verify "data/policies.json" "$POLICIES_SHA256"
+          verify "data/policy-official-history.json" "$OFFICIAL_SHA256"
+          verify "data/motie-policy-history.json" "$MOTIE_SHA256"
