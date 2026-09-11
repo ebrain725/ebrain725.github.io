@@ -140,9 +140,6 @@ def item_keys(item: dict[str, Any]) -> list[str]:
         keys.append(f"url|{url}")
     if published and title:
         keys.append(f"date-title|{published}|{title}")
-    if title:
-        source = clean_text(item.get("source")).lower()
-        keys.append(f"source-title|{source}|{title}")
     return list(dict.fromkeys(keys))
 
 
