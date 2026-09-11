@@ -1,0 +1,360 @@
+name: Apply Policy Radar 38 Topics
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/apply-policy-radar-38-topics.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+env:
+  TZ: Asia/Seoul
+  PYTHONUNBUFFERED: "1"
+  PYTHONDONTWRITEBYTECODE: "1"
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
+
+jobs:
+  backfill-classify-deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: 최신 운영본 불러오기
+        uses: actions/checkout@v7
+        with:
+          ref: main
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Python 준비
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: 기존 수집기의 가변 키워드 지원과 상시 분류 훅 적용
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import re
+          from pathlib import Path
+
+          version = "2026-09-11-v1-38-topics"
+          collector_paths = [
+              Path("scripts/sync_climate_policy_expanded.py"),
+              Path("scripts/sync_motie_official_history.py"),
+          ]
+          for path in collector_paths:
+              text = path.read_text(encoding="utf-8")
+              original = text
+
+              # 기존 7개/23개 고정 검사를 빈 배열 방지 검사로 바꾼다.
+              patterns = [
+                  (
+                      r"if\s+len\((\w+)\)\s*!=\s*7\s+or\s+len\((\w+)\)\s*!=\s*23\s*:",
+                      lambda match: f"if not {match.group(1)} or not {match.group(2)}:",
+                  ),
+                  (
+                      r"if\s+len\((\w+)\)\s*!=\s*23\s+or\s+len\((\w+)\)\s*!=\s*7\s*:",
+                      lambda match: f"if not {match.group(1)} or not {match.group(2)}:",
+                  ),
+              ]
+              for pattern, replacement in patterns:
+                  text = re.sub(pattern, replacement, text)
+
+              # 이력 메타데이터가 새 검색체계를 식별하도록 버전을 갱신한다.
+              text = re.sub(
+                  r"2026-09-09-v[0-9A-Za-z._-]*30-keywords",
+                  version,
+                  text,
+              )
+              text = re.sub(
+                  r"2026-09-09-v[0-9A-Za-z._-]*shared-30-keywords",
+                  version,
+                  text,
+              )
+
+              if path.name == "sync_motie_official_history.py" and "POLICY_RADAR_38_TOPIC_HOOK" not in text:
+                  marker = '\nif __name__ == "__main__":\n'
+                  if marker not in text:
+                      marker = "\nif __name__ == '__main__':\n"
+                  if marker not in text:
+                      raise SystemExit("산업부 수집기 main 실행부를 찾지 못했습니다.")
+                  hook = r'''
+
+# POLICY_RADAR_38_TOPIC_HOOK
+_original_main_without_policy_radar_taxonomy = main
+
+
+def main() -> int:
+    """Run the existing collector, then apply the shared contextual taxonomy."""
+    import sys
+
+    result = _original_main_without_policy_radar_taxonomy()
+    args = set(sys.argv[1:])
+    if result == 0 and "--self-test" not in args and "--remove-from-policy" not in args:
+        from apply_policy_radar_topic_taxonomy import apply_taxonomy
+
+        apply_taxonomy()
+    return result
+'''
+                  text = text.replace(marker, hook + marker, 1)
+
+              if text == original:
+                  print(f"{path}: 이미 가변 키워드와 분류 훅이 적용됐거나 수정 불필요")
+              else:
+                  path.write_text(text, encoding="utf-8")
+                  print(f"{path}: 38개 주제 수집체계 반영")
+
+          # 산업부 수집기가 38개 분류기를 import할 수 있는지 확인한다.
+          for path in [
+              Path("scripts/sync_climate_policy_expanded.py"),
+              Path("scripts/sync_motie_official_history.py"),
+              Path("scripts/apply_policy_radar_topic_taxonomy.py"),
+          ]:
+              compile(path.read_text(encoding="utf-8"), str(path), "exec")
+              print(f"문법 검증 완료: {path}")
+          PY
+
+      - name: 분류기 자체검증
+        shell: bash
+        run: |
+          set -euo pipefail
+          python scripts/apply_policy_radar_topic_taxonomy.py --self-test
+
+      - name: 산업부 자료를 임시 분리
+        shell: bash
+        run: |
+          set -euo pipefail
+          python scripts/sync_motie_official_history.py --remove-from-policy
+
+      - name: 기후부 보도자료와 공지사항 2015년 이후 전수 재수집
+        shell: bash
+        run: |
+          set -euo pipefail
+          python scripts/sync_climate_policy_expanded.py \
+            --start-date 2015-01-01 \
+            --full
+
+      - name: 산업부 보도자료와 공지·공고 2015년 이후 전수 재수집
+        shell: bash
+        run: |
+          set -euo pipefail
+          python scripts/sync_motie_official_history.py \
+            --start-date 2015-01-01 \
+            --full
+
+      - name: 한국거래소 포함 38개 주제 최종 재분류
+        shell: bash
+        run: |
+          set -euo pipefail
+          python scripts/apply_policy_radar_topic_taxonomy.py
+
+      - name: 숨김 엑셀 파일도 최신 데이터로 갱신
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [[ -f scripts/export_policy_radar_excel.py ]]; then
+            python scripts/export_policy_radar_excel.py \
+              --policy-path public/data/policies.json \
+              --bill-path public/data/bills.json \
+              --seminar-path public/data/assembly_seminars.json \
+              --output public/data/ets-policy-radar-events.xlsx \
+              --manifest public/data/policy-radar-excel.json
+          fi
+
+      - name: 전체 결과 검증
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json
+          import re
+          from pathlib import Path
+
+          taxonomy = json.loads(Path("config/policy_radar_topics.json").read_text(encoding="utf-8"))
+          summary = json.loads(Path("public/data/policy-radar-topic-summary.json").read_text(encoding="utf-8"))
+          policies = json.loads(Path("public/data/policies.json").read_text(encoding="utf-8"))
+          climate = json.loads(Path("public/data/policy-official-history.json").read_text(encoding="utf-8"))
+          motie = json.loads(Path("public/data/motie-policy-history.json").read_text(encoding="utf-8"))
+
+          if len(taxonomy.get("topics") or []) != 38:
+              raise SystemExit("정책 레이더 주제가 38개가 아닙니다.")
+          if summary.get("schemaVersion") != taxonomy.get("schemaVersion"):
+              raise SystemExit("분류 요약과 설정 버전이 다릅니다.")
+
+          counts = summary.get("counts") or {}
+          required_sections = ["press", "notice", "motie_press", "motie_notice", "krx_notice"]
+          missing = [section for section in required_sections if int(counts.get(section, 0)) <= 0]
+          if missing:
+              raise SystemExit(f"0건 또는 누락된 공식자료 구분이 있습니다: {missing} / {counts}")
+
+          official = [
+              item for item in policies.get("items", [])
+              if isinstance(item, dict) and item.get("section") in required_sections
+          ]
+          if len(official) != int(summary.get("officialItemCount", -1)):
+              raise SystemExit(
+                  f"대시보드 공식자료 건수 불일치: {len(official)} / {summary.get('officialItemCount')}"
+              )
+
+          for name, document in (("기후부·KRX", climate), ("산업부", motie)):
+              for index, item in enumerate(document.get("items", [])):
+                  section = str(item.get("section") or "")
+                  if section != "krx_notice" and not item.get("matchedTopics"):
+                      raise SystemExit(f"{name} items[{index}]에 일치 주제가 없습니다.")
+                  if item.get("keywordScope") not in {"direct", "related"}:
+                      raise SystemExit(f"{name} items[{index}] 직접성 값이 잘못됐습니다.")
+                  if item.get("taxonomyVersion") != taxonomy.get("schemaVersion"):
+                      raise SystemExit(f"{name} items[{index}] 분류 버전이 다릅니다.")
+
+          # 광의 단어만 있는 대표 오탐이 남아 있지 않은지 확인한다.
+          suspicious = [
+              item for item in official
+              if item.get("primaryTopic") == "화재·폭발·침수·가동중단"
+              and not re.search(
+                  r"발전소|공장|설비|산업단지|생산시설|제철|철강|석유화학|정유|시멘트|반도체|원전|LNG|석탄",
+                  f"{item.get('title', '')} {item.get('summary', '')}",
+                  re.IGNORECASE,
+              )
+          ]
+          if suspicious:
+              raise SystemExit(f"시설 문맥 없는 사고자료가 남았습니다: {len(suspicious)}건")
+
+          print(
+              f"38개 주제 검증 완료: 공식자료 {len(official):,}건 / "
+              f"직접 {summary.get('scopeCounts', {}).get('direct', 0):,}건 / "
+              f"연관 {summary.get('scopeCounts', {}).get('related', 0):,}건"
+          )
+          print("구분별 건수:", counts)
+          PY
+
+      - name: 허용된 파일만 변경됐는지 확인
+        shell: bash
+        run: |
+          set -euo pipefail
+          changed="$({ git diff --name-only; git ls-files --others --exclude-standard; } | sort -u)"
+          unexpected=0
+          while IFS= read -r path; do
+            [[ -z "$path" ]] && continue
+            case "$path" in
+              scripts/sync_climate_policy_expanded.py|scripts/sync_motie_official_history.py) ;;
+              public/data/policies.json|public/data/policy-official-history.json|public/data/policy-official-history-summary.json) ;;
+              public/data/motie-policy-history.json|public/data/policy-radar-topic-summary.json) ;;
+              public/data/ets-policy-radar-events.xlsx|public/data/policy-radar-excel.json) ;;
+              *) echo "::error::허용되지 않은 변경 파일: $path"; unexpected=1 ;;
+            esac
+          done <<< "$changed"
+          if [[ "$unexpected" -ne 0 ]]; then exit 1; fi
+
+      - name: 코드와 전체 이력을 운영 main에 저장
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- \
+            scripts/sync_climate_policy_expanded.py \
+            scripts/sync_motie_official_history.py \
+            public/data/policies.json \
+            public/data/policy-official-history.json \
+            public/data/policy-official-history-summary.json \
+            public/data/motie-policy-history.json \
+            public/data/policy-radar-topic-summary.json
+          if [[ -f public/data/ets-policy-radar-events.xlsx ]]; then
+            git add -- public/data/ets-policy-radar-events.xlsx public/data/policy-radar-excel.json
+          fi
+
+          if git diff --cached --quiet; then
+            echo "저장할 변경사항이 없습니다."
+          else
+            git commit -m "data: backfill policy radar with 38-topic taxonomy"
+            pushed=0
+            for attempt in 1 2 3; do
+              git fetch origin main
+              if ! git rebase origin/main; then
+                git rebase --abort || true
+                echo "::error::원격 main과 충돌했습니다."
+                exit 1
+              fi
+              if git push origin HEAD:main; then
+                pushed=1
+                break
+              fi
+              sleep $((attempt * 5))
+            done
+            if [[ "$pushed" -ne 1 ]]; then exit 1; fi
+          fi
+
+      - name: 최신 main 배포원본 정렬
+        shell: bash
+        run: |
+          set -euo pipefail
+          git fetch origin main
+          if [[ "$(git rev-parse HEAD)" != "$(git rev-parse origin/main)" ]]; then
+            git merge --ff-only origin/main
+          fi
+          test -z "$(git status --porcelain)" || {
+            echo "::error::배포 직전 작업트리가 깨끗하지 않습니다."
+            git status --short
+            exit 1
+          }
+
+      - name: 핵심 공개파일 해시 계산
+        id: hashes
+        shell: bash
+        run: |
+          set -euo pipefail
+          echo "policies=$(sha256sum public/data/policies.json | awk '{print $1}')" >> "$GITHUB_OUTPUT"
+          echo "summary=$(sha256sum public/data/policy-radar-topic-summary.json | awk '{print $1}')" >> "$GITHUB_OUTPUT"
+
+      - name: Pages 설정
+        uses: actions/configure-pages@v6
+
+      - name: 공개 파일 묶기
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: ./public
+
+      - name: GitHub Pages 배포
+        id: deployment
+        uses: actions/deploy-pages@v5
+
+      - name: 공개 데이터 반영 검증
+        shell: bash
+        env:
+          PAGE_URL: ${{ steps.deployment.outputs.page_url }}
+          POLICIES_SHA256: ${{ steps.hashes.outputs.policies }}
+          SUMMARY_SHA256: ${{ steps.hashes.outputs.summary }}
+        run: |
+          set -euo pipefail
+          root="${PAGE_URL%/}"
+          verify() {
+            local path="$1" expected="$2" output
+            output="$(mktemp)"
+            for attempt in 1 2 3 4 5 6 7 8; do
+              if curl -fsSL --max-time 45 -H "Cache-Control: no-cache" \
+                "${root}/${path}?verify=${GITHUB_RUN_ID}-${attempt}" -o "$output"; then
+                actual="$(sha256sum "$output" | awk '{print $1}')"
+                if [[ "$actual" == "$expected" ]]; then rm -f "$output"; return 0; fi
+              fi
+              sleep 8
+            done
+            rm -f "$output"
+            echo "::error::공개 ${path} 검증 실패"
+            return 1
+          }
+          verify "data/policies.json" "$POLICIES_SHA256"
+          verify "data/policy-radar-topic-summary.json" "$SUMMARY_SHA256"
