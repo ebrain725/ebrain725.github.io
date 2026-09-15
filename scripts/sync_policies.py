@@ -1,15 +1,5 @@
 #!/usr/bin/env python3
-"""Policy collector compatibility module with append-only radar retention.
-
-The core collector intentionally focuses on the current collection window. This
-wrapper keeps the published radar append-only across routine runs:
-
-* previously accepted news are retained through ``news-history.json``;
-* accumulated official policy/notice records are retained from the current
-  publication and the dedicated history files;
-* institution schedules are merged conservatively and exact evidence duplicates
-  are removed regardless of event-type routing.
-"""
+"""Collect current policy-radar data while retaining all previously accepted history."""
 from __future__ import annotations
 
 import json
@@ -18,81 +8,60 @@ from pathlib import Path
 from typing import Any, Iterable
 
 from sync_policies_core import *  # noqa: F401,F403
-import news_retention as _retention
+import merge_official_policy_history as _climate_history
+import news_retention as _news_retention
 import sync_policies_core as _core
 
-POLICY_PATH = _retention.POLICY_PATH
+POLICY_PATH = _news_retention.POLICY_PATH
 POLICY_HISTORY_PATHS = (
-    _retention.ROOT / "public" / "data" / "policy-official-history.json",
-    _retention.ROOT / "public" / "data" / "motie-policy-history.json",
+    _news_retention.ROOT / "public" / "data" / "policy-official-history.json",
+    _news_retention.ROOT / "public" / "data" / "motie-policy-history.json",
 )
 LIST_FIELDS = {
-    "matchedKeywords",
-    "matchedFields",
-    "eventTypes",
-    "eventTypeIds",
-    "eventCategories",
-    "eventCategoryIds",
-    "topicIds",
-    "matchedTopics",
-    "topicGroups",
-    "keywords",
-    "topics",
-    "sources",
-    "sourceUrls",
+    "matchedKeywords", "matchedFields", "eventTypes", "eventTypeIds",
+    "eventCategories", "eventCategoryIds", "topicIds", "matchedTopics",
+    "topicGroups", "keywords", "topics", "sources", "sourceUrls",
     "sourceItemIds",
 }
-LONG_TEXT_FIELDS = {"summary", "description", "evidence", "content", "insight"}
-REQUIRED_POLICY_FIELDS = ("title", "publishedAt", "source", "sourceType")
+LONG_FIELDS = {"summary", "description", "evidence", "content", "insight"}
+REQUIRED_FIELDS = ("title", "publishedAt", "source", "sourceType")
 
 
-def _load_document(path: Path) -> dict[str, Any]:
+def _load(path: Path) -> dict[str, Any]:
     if not path.is_file():
         return {}
     try:
-        document = json.loads(path.read_text(encoding="utf-8"))
+        value = json.loads(path.read_text(encoding="utf-8"))
     except (OSError, json.JSONDecodeError):
         return {}
-    return document if isinstance(document, dict) else {}
+    return value if isinstance(value, dict) else {}
 
 
-def _list_values(value: Any) -> list[str]:
-    if isinstance(value, list):
-        raw_values = value
-    elif value in (None, ""):
-        raw_values = []
-    else:
-        raw_values = [value]
-    result: list[str] = []
-    for raw in raw_values:
-        text = _retention.clean_text(raw)
-        if text and text not in result:
-            result.append(text)
-    return result
+def _values(value: Any) -> list[str]:
+    raw = value if isinstance(value, list) else ([] if value in (None, "") else [value])
+    return list(dict.fromkeys(
+        _news_retention.clean_text(item)
+        for item in raw
+        if _news_retention.clean_text(item)
+    ))
 
 
-def _merge_records(previous: dict[str, Any], candidate: dict[str, Any]) -> dict[str, Any]:
-    """Merge two representations while preferring richer/newer candidate fields."""
+def _merge(previous: dict[str, Any], candidate: dict[str, Any]) -> dict[str, Any]:
     merged = dict(previous)
     for key, value in candidate.items():
         if key in LIST_FIELDS:
-            merged[key] = list(
-                dict.fromkeys([*_list_values(merged.get(key)), *_list_values(value)])
-            )
-            continue
-        if key in LONG_TEXT_FIELDS:
-            if len(_retention.clean_text(value)) > len(
-                _retention.clean_text(merged.get(key))
+            merged[key] = list(dict.fromkeys([*_values(merged.get(key)), *_values(value)]))
+        elif key in LONG_FIELDS:
+            if len(_news_retention.clean_text(value)) > len(
+                _news_retention.clean_text(merged.get(key))
             ):
                 merged[key] = value
-            continue
-        if key == "duplicateCount":
+        elif key == "duplicateCount":
             try:
                 merged[key] = max(int(merged.get(key) or 1), int(value or 1))
             except (TypeError, ValueError):
                 pass
-            continue
-        if value not in (None, "", [], {}):
+        elif value not in (None, "", [], {}):
             merged[key] = value
     return merged
 
@@ -100,184 +69,144 @@ def _merge_records(previous: dict[str, Any], candidate: dict[str, Any]) -> dict[
 def _valid_non_news(item: Any) -> bool:
     return (
         isinstance(item, dict)
-        and not _retention.is_news(item)
-        and all(_retention.clean_text(item.get(field)) for field in REQUIRED_POLICY_FIELDS)
+        and not _news_retention.is_news(item)
+        and all(_news_retention.clean_text(item.get(field)) for field in REQUIRED_FIELDS)
     )
 
 
-def _non_news_rows(document: dict[str, Any]) -> list[dict[str, Any]]:
-    return [dict(item) for item in document.get("items", []) if _valid_non_news(item)]
+def _section(item: dict[str, Any]) -> str:
+    explicit = _news_retention.clean_text(item.get("section")).lower()
+    if explicit:
+        return explicit
+    source = _news_retention.clean_text(item.get("source")).lower()
+    url = _news_retention.clean_text(item.get("url")).lower()
+    if "한국거래소" in source or "ets.krx.co.kr" in url:
+        return "krx_notice"
+    if "산업부" in source or "motir.go.kr" in url:
+        return "motie_press" if "보도" in source else "motie_notice"
+    return "press" if "보도" in source else "notice"
 
 
-def _policy_item_keys(item: dict[str, Any]) -> list[str]:
-    section = _retention.clean_text(
-        item.get("section") or item.get("sourceType") or "other"
-    ).lower()
-    source = _retention.clean_text(item.get("source")).lower()
-    published = _retention.clean_text(
+def _item_key(item: dict[str, Any]) -> str:
+    """Return one strong key only, avoiding cross-board and KRX URL collisions."""
+    section = _section(item)
+    published = _news_retention.clean_text(
         item.get("publishedAt") or item.get("date")
     )[:10]
-    title = _retention.normalized_title(item.get("title"))
-    url = _retention.canonical_url(item.get("url"))
-    source_id = _retention.clean_text(
-        item.get("sourceItemId") or item.get("sourceId") or item.get("id")
-    )
-    keys: list[str] = []
-    if source_id:
-        keys.append(f"{section}|id|{source_id}")
+    title = _news_retention.normalized_title(item.get("title"))
+    source_id = _news_retention.clean_text(item.get("sourceId"))
+    source_board = _news_retention.clean_text(item.get("sourceBoard"))
+
+    if section == "krx_notice":
+        # KRX detail URLs use fragments. The generic URL canonicalizer removes
+        # fragments, so the dedicated stable-key implementation must be used.
+        return _climate_history._stable_key(item)
+    if section in {"motie_press", "motie_notice"} and source_board and source_id:
+        return f"{section}|board-id|{source_board}|{source_id}"
+
+    url = _news_retention.canonical_url(item.get("url"))
     if url:
-        keys.append(f"{section}|url|{url}")
-    if published and title:
-        keys.append(f"{section}|{source}|date-title|{published}|{title}")
-    return list(dict.fromkeys(keys))
-
-
-class _PolicyIndex:
-    def __init__(self) -> None:
-        self.items: list[dict[str, Any] | None] = []
-        self.index: dict[str, int] = {}
-
-    def add(self, raw: Any) -> bool:
-        if not _valid_non_news(raw):
-            return False
-        item = dict(raw)
-        keys = _policy_item_keys(item)
-        matches = sorted({self.index[key] for key in keys if key in self.index})
-        if not matches:
-            position = len(self.items)
-            self.items.append(item)
-        else:
-            position = matches[0]
-            self.items[position] = _merge_records(self.items[position] or {}, item)
-            for duplicate_position in matches[1:]:
-                duplicate = self.items[duplicate_position]
-                if duplicate is not None:
-                    self.items[position] = _merge_records(
-                        self.items[position] or {}, duplicate
-                    )
-                    self.items[duplicate_position] = None
-            item = self.items[position] or item
-        for key in _policy_item_keys(item):
-            self.index[key] = position
-        return True
-
-    def values(self) -> list[dict[str, Any]]:
-        return [item for item in self.items if item is not None]
+        return f"{section}|url|{url}"
+    return f"{section}|date-title|{published}|{title}"
 
 
 def _unique_non_news(documents: Iterable[dict[str, Any]]) -> list[dict[str, Any]]:
-    index = _PolicyIndex()
+    merged: dict[str, dict[str, Any]] = {}
     for document in documents:
-        for item in _non_news_rows(document):
-            index.add(item)
+        for raw in document.get("items", []):
+            if not _valid_non_news(raw):
+                continue
+            item = dict(raw)
+            item["section"] = _section(item)
+            key = _item_key(item)
+            merged[key] = _merge(merged[key], item) if key in merged else item
     return sorted(
-        index.values(),
+        merged.values(),
         key=lambda item: (
-            _retention.clean_text(
-                item.get("publishedAt") or item.get("date")
-            )[:10],
-            _retention.clean_text(item.get("title")),
+            _news_retention.clean_text(item.get("publishedAt"))[:10],
+            _news_retention.clean_text(item.get("title")),
         ),
         reverse=True,
     )
 
 
-def _news_snapshot(documents: Iterable[dict[str, Any]]) -> list[dict[str, Any]]:
-    index = _retention.NewsIndex()
+def _unique_news(documents: Iterable[dict[str, Any]]) -> list[dict[str, Any]]:
+    index = _news_retention.NewsIndex()
     for document in documents:
         for item in document.get("items", []):
-            if _retention.is_valid_news(item):
+            if _news_retention.is_valid_news(item):
                 index.add(item)
-    return _retention.sort_news(index.values())
+    return _news_retention.sort_news(index.values())
 
 
-def _normalized_schedule_evidence(value: Any) -> str:
-    text = _retention.clean_text(value).lower()
+def _normalized_evidence(value: Any) -> str:
+    text = _news_retention.clean_text(value).lower()
     text = re.sub(r"(?:무단\s*전재|재배포\s*금지|기자\s*[가-힣]{2,5})", " ", text)
     return re.sub(r"[^0-9a-z가-힣]+", "", text)[:1200]
 
 
-def _schedule_keys(item: dict[str, Any]) -> list[str]:
-    keys: list[str] = []
-    source_id = _retention.clean_text(
-        item.get("sourceItemId") or item.get("sourceId") or item.get("id")
-    )
-    url = _retention.canonical_url(item.get("url"))
-    evidence = _normalized_schedule_evidence(item.get("evidence"))
-    if source_id:
-        keys.append(f"id|{source_id}")
-    if url:
-        keys.append(f"url|{url}")
+def _schedule_key(item: dict[str, Any]) -> str:
+    evidence = _normalized_evidence(item.get("evidence"))
     if len(evidence) >= 40:
-        keys.append(f"evidence|{evidence}")
-    date = _retention.clean_text(item.get("startDate"))[:10]
-    time = _retention.clean_text(item.get("startTime"))
-    organizer = _retention.normalized_title(item.get("organizer"))
-    title = _retention.normalized_title(item.get("title"))
-    if date and title:
-        keys.append(f"event|{date}|{time}|{organizer}|{title}")
-    return list(dict.fromkeys(keys))
+        return f"evidence|{evidence}"
+    url = _news_retention.canonical_url(item.get("url"))
+    if url:
+        return f"url|{url}"
+    date = _news_retention.clean_text(item.get("startDate"))[:10]
+    clock = _news_retention.clean_text(item.get("startTime"))
+    organizer = _news_retention.normalized_title(item.get("organizer"))
+    title = _news_retention.normalized_title(item.get("title"))
+    return f"event|{date}|{clock}|{organizer}|{title}"
 
 
-def _dedupe_schedules(rows: Iterable[Any]) -> list[dict[str, Any]]:
-    items: list[dict[str, Any] | None] = []
-    index: dict[str, int] = {}
+def _unique_schedules(rows: Iterable[Any]) -> list[dict[str, Any]]:
+    merged: dict[str, dict[str, Any]] = {}
     for raw in rows:
         if not isinstance(raw, dict):
             continue
         item = dict(raw)
-        keys = _schedule_keys(item)
-        matches = sorted({index[key] for key in keys if key in index})
-        if not matches:
-            position = len(items)
-            items.append(item)
-        else:
-            position = matches[0]
-            items[position] = _merge_records(items[position] or {}, item)
-            for duplicate_position in matches[1:]:
-                duplicate = items[duplicate_position]
-                if duplicate is not None:
-                    items[position] = _merge_records(items[position] or {}, duplicate)
-                    items[duplicate_position] = None
-            item = items[position] or item
-        for key in _schedule_keys(item):
-            index[key] = position
-
-    result = [item for item in items if item is not None]
-    result.sort(
+        key = _schedule_key(item)
+        merged[key] = _merge(merged[key], item) if key in merged else item
+    result = sorted(
+        merged.values(),
         key=lambda item: (
-            _retention.clean_text(item.get("startDate"))[:10],
-            _retention.clean_text(item.get("startTime")),
-            _retention.clean_text(item.get("title")),
+            _news_retention.clean_text(item.get("startDate"))[:10],
+            _news_retention.clean_text(item.get("startTime")),
+            _news_retention.clean_text(item.get("title")),
         ),
         reverse=True,
     )
-    seen_evidence: set[str] = set()
+    seen: set[str] = set()
     for item in result:
-        evidence = _normalized_schedule_evidence(item.get("evidence"))
-        if len(evidence) >= 40 and evidence in seen_evidence:
-            raise RuntimeError("기관일정 동일 본문 중복 제거에 실패했습니다.")
+        evidence = _normalized_evidence(item.get("evidence"))
+        if len(evidence) >= 40 and evidence in seen:
+            raise RuntimeError("기관일정 동일 본문 중복 제거 실패")
         if evidence:
-            seen_evidence.add(evidence)
+            seen.add(evidence)
     return result
 
 
-def _write_policy(document: dict[str, Any]) -> None:
-    _retention.atomic_write(POLICY_PATH, document)
+def _write(document: dict[str, Any]) -> None:
+    _news_retention.atomic_write(POLICY_PATH, document)
+
+
+def _retention_snapshot() -> list[dict[str, Any]]:
+    return _unique_news([
+        _load(_news_retention.HISTORY_PATH),
+        _load(POLICY_PATH),
+    ])
 
 
 def main() -> int:
-    current_before = _load_document(POLICY_PATH)
-    history_documents = [_load_document(path) for path in POLICY_HISTORY_PATHS]
-    news_history_before = _load_document(_retention.HISTORY_PATH)
+    before = _load(POLICY_PATH)
+    histories = [_load(path) for path in POLICY_HISTORY_PATHS]
+    archived_news = _load(_news_retention.HISTORY_PATH)
 
-    previous_non_news = _unique_non_news(
-        [*history_documents, current_before]
-    )
-    previous_news = _news_snapshot([news_history_before, current_before])
+    previous_official = _unique_non_news([*histories, before])
+    previous_news = _unique_news([archived_news, before])
     previous_schedules = [
         dict(item)
-        for item in current_before.get("institutionSchedules", [])
+        for item in before.get("institutionSchedules", [])
         if isinstance(item, dict)
     ]
 
@@ -285,85 +214,71 @@ def main() -> int:
     if result not in (None, 0):
         return int(result)
 
-    generated = _load_document(POLICY_PATH)
-    generated_non_news = _unique_non_news([generated])
-    non_news_index = _PolicyIndex()
-    for item in previous_non_news:
-        non_news_index.add(item)
-    for item in generated_non_news:
-        non_news_index.add(item)
-    final_non_news = sorted(
-        non_news_index.values(),
-        key=lambda item: (
-            _retention.clean_text(
-                item.get("publishedAt") or item.get("date")
-            )[:10],
-            _retention.clean_text(item.get("title")),
-        ),
-        reverse=True,
-    )
-    if len(final_non_news) < len(previous_non_news):
-        raise RuntimeError(
-            "append-only 정책자료 감소 감지: "
-            f"최종 {len(final_non_news)}건 < 기존 {len(previous_non_news)}건"
-        )
-
+    generated = _load(POLICY_PATH)
+    final_official = _unique_non_news([*histories, before, generated])
     generated_news = [
         dict(item)
         for item in generated.get("items", [])
-        if _retention.is_valid_news(item)
+        if _news_retention.is_valid_news(item)
     ]
-    generated["items"] = [*final_non_news, *generated_news]
-    generated["institutionSchedules"] = _dedupe_schedules(
-        [*previous_schedules, *generated.get("institutionSchedules", [])]
-    )
+    final_schedules = _unique_schedules([
+        *previous_schedules,
+        *generated.get("institutionSchedules", []),
+    ])
+
+    if len(final_official) < len(previous_official):
+        raise RuntimeError(
+            f"누적 정책자료 감소: {len(final_official)} < {len(previous_official)}"
+        )
+
+    generated["items"] = [*final_official, *generated_news]
+    generated["institutionSchedules"] = final_schedules
     generated["policyRetention"] = {
         "policy": "append-only",
         "status": "verified",
-        "previousNonNewsCount": len(previous_non_news),
-        "generatedNonNewsCount": len(generated_non_news),
-        "finalNonNewsCount": len(final_non_news),
+        "previousNonNewsCount": len(previous_official),
+        "generatedNonNewsCount": len(_unique_non_news([generated])),
+        "finalNonNewsCount": len(final_official),
         "previousScheduleCount": len(previous_schedules),
-        "finalScheduleCount": len(generated["institutionSchedules"]),
+        "finalScheduleCount": len(final_schedules),
     }
-    _write_policy(generated)
+    _write(generated)
 
-    audit = _retention.run(
+    audit = _news_retention.run(
         POLICY_PATH,
-        _retention.HISTORY_PATH,
-        _retention.AUDIT_PATH,
-        _retention.SETTINGS_PATH,
+        _news_retention.HISTORY_PATH,
+        _news_retention.AUDIT_PATH,
+        _news_retention.SETTINGS_PATH,
         recover=False,
         maximum_commits=1,
     )
-    final_document = _load_document(POLICY_PATH)
-    final_news_count = int(audit["counts"]["finalNewsCount"])
+    final = _load(POLICY_PATH)
+    final_news_count = int((audit.get("counts") or {}).get("finalNewsCount", -1))
+    final_official_count = sum(1 for item in final.get("items", []) if _valid_non_news(item))
     if final_news_count < len(previous_news):
+        raise RuntimeError(f"누적 뉴스 감소: {final_news_count} < {len(previous_news)}")
+    if final_official_count < len(previous_official):
         raise RuntimeError(
-            "append-only 뉴스 감소 감지: "
-            f"최종 {final_news_count}건 < 기존 {len(previous_news)}건"
+            f"최종 정책자료 감소: {final_official_count} < {len(previous_official)}"
         )
-    final_non_news_count = sum(
-        1 for item in final_document.get("items", []) if _valid_non_news(item)
-    )
-    if final_non_news_count < len(previous_non_news):
-        raise RuntimeError(
-            "최종 정책자료 검증 실패: "
-            f"최종 {final_non_news_count}건 < 기존 {len(previous_non_news)}건"
-        )
-    final_schedules = _dedupe_schedules(
-        final_document.get("institutionSchedules", [])
-    )
-    if len(final_schedules) != len(final_document.get("institutionSchedules", [])):
-        final_document["institutionSchedules"] = final_schedules
-        _write_policy(final_document)
 
+    section_counts: dict[str, int] = {}
+    for item in final.get("items", []):
+        if _valid_non_news(item):
+            section = _section(item)
+            section_counts[section] = section_counts.get(section, 0) + 1
     print(
         "APPEND_ONLY_POLICY_RADAR_RETAINED="
-        f"news:{final_news_count} "
-        f"non_news:{final_non_news_count} "
-        f"schedules:{len(final_schedules)} "
-        f"new_news:{max(0, final_news_count - len(previous_news))}"
+        + json.dumps(
+            {
+                "news": final_news_count,
+                "official": final_official_count,
+                "schedules": len(final_schedules),
+                "newNews": max(0, final_news_count - len(previous_news)),
+                "sections": section_counts,
+            },
+            ensure_ascii=False,
+        )
     )
     return 0
 
