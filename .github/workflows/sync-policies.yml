@@ -1,8 +1,12 @@
-name: Sync Ministry Policies
+name: Sync Policy Radar
 
 on:
-  # The existing cron-job.org job calls this trigger at its externally
-  # configured times. GitHub's internal schedule is intentionally not used.
+  # One push run is useful whenever this workflow itself is repaired.
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/sync-policies.yml"
+  # cron-job.org continues to call this entry point.
   workflow_dispatch:
     inputs:
       trigger_type:
@@ -10,14 +14,16 @@ on:
         required: false
         default: "manual"
         type: string
+  # Native backup: 09:35, 12:35, 15:35, 18:35, 21:35 KST.
+  # A successful external run within the preceding 90 minutes makes this a no-op.
+  schedule:
+    - cron: "35 0,3,6,9,12 * * *"
 
 permissions:
   contents: write
   pages: write
   id-token: write
 
-# This group is shared with the other Pages workflows in this repository so
-# two deployments cannot publish over each other at the same time.
 concurrency:
   group: github-pages
   cancel-in-progress: false
@@ -26,16 +32,59 @@ env:
   TZ: Asia/Seoul
   PYTHONUNBUFFERED: "1"
   PYTHONDONTWRITEBYTECODE: "1"
-  # All official actions below are Node 24 releases. This also keeps any
-  # transitive JavaScript action on the supported Node 24 runtime.
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
 
 jobs:
-  update-and-deploy:
-    name: Collect, validate, commit and deploy policy data
-    if: github.ref == 'refs/heads/main'
+  preflight:
+    name: Check whether backup run is needed
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    outputs:
+      skip: ${{ steps.freshness.outputs.skip }}
+    steps:
+      - name: Check out main branch
+        uses: actions/checkout@v7
+        with:
+          ref: main
+          fetch-depth: 1
+
+      - name: Check latest published timestamp
+        id: freshness
+        shell: bash
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json
+          import os
+          from datetime import datetime, timezone
+          from pathlib import Path
+
+          skip = False
+          age_minutes = None
+          path = Path("public/data/policies.json")
+          if os.getenv("EVENT_NAME") == "schedule" and path.is_file():
+              try:
+                  payload = json.loads(path.read_text(encoding="utf-8"))
+                  stamp = str(payload.get("lastSync", "")).strip()
+                  parsed = datetime.fromisoformat(stamp.replace("Z", "+00:00"))
+                  if parsed.tzinfo is None:
+                      parsed = parsed.replace(tzinfo=timezone.utc)
+                  age_minutes = (datetime.now(timezone.utc) - parsed.astimezone(timezone.utc)).total_seconds() / 60
+                  skip = 0 <= age_minutes <= 90
+              except Exception as error:
+                  print(f"기존 갱신시각 판독 실패, 백업수집을 실행합니다: {error}")
+          with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as output:
+              output.write(f"skip={'true' if skip else 'false'}\n")
+          print(f"BACKUP_FRESHNESS skip={skip} age_minutes={age_minutes}")
+          PY
+
+  update-and-deploy:
+    name: Collect, retain, validate and deploy policy radar
+    needs: preflight
+    if: needs.preflight.outputs.skip != 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -56,12 +105,13 @@ jobs:
       - name: Show run source
         shell: bash
         env:
+          EVENT_NAME: ${{ github.event_name }}
           DISPATCH_TRIGGER_TYPE: ${{ inputs.trigger_type }}
         run: |
           set -euo pipefail
-          echo "실행 주체: ${DISPATCH_TRIGGER_TYPE:-manual-or-external-dispatch}"
+          echo "event=${EVENT_NAME} trigger=${DISPATCH_TRIGGER_TYPE:-not-dispatch}"
 
-      - name: Check files and secret configuration
+      - name: Check collector files and secrets
         shell: bash
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
@@ -70,57 +120,51 @@ jobs:
           ASSEMBLY_API_KEY: ${{ secrets.ASSEMBLY_API_KEY }}
         run: |
           set -euo pipefail
-
-          test -f scripts/sync_policies.py || {
-            echo "::error::scripts/sync_policies.py 파일을 찾지 못했습니다."
+          for path in \
+            scripts/sync_policies.py \
+            scripts/sync_policies_core.py \
+            scripts/news_retention.py \
+            scripts/sync_bills.py \
+            scripts/sync_assembly_seminars.py \
+            scripts/export_policy_radar_excel.py \
+            scripts/export_policy_radar_excel_compatible.py \
+            config/settings.json; do
+            test -f "$path" || { echo "::error::필수 파일이 없습니다: $path"; exit 1; }
+          done
+          test -d scripts/policy_excel_template_lines || {
+            echo "::error::엑셀 템플릿 조각 폴더가 없습니다."
             exit 1
           }
-          test -f scripts/sync_bills.py || {
-            echo "::error::scripts/sync_bills.py 파일을 찾지 못했습니다."
-            exit 1
-          }
-          test -f scripts/sync_assembly_seminars.py || {
-            echo "::error::scripts/sync_assembly_seminars.py 파일을 찾지 못했습니다."
-            exit 1
-          }
-          test -f config/settings.json || {
-            echo "::error::config/settings.json 파일을 찾지 못했습니다."
-            exit 1
-          }
-
-          missing=0
-          if [[ -z "${NAVER_API_HUB_CLIENT_ID:-}" ]]; then
+          test -n "${NAVER_API_HUB_CLIENT_ID:-}" || {
             echo "::error::NAVER_API_HUB_CLIENT_ID Repository Secret이 없습니다."
-            missing=1
-          fi
-          if [[ -z "${NAVER_API_HUB_CLIENT_SECRET:-}" ]]; then
+            exit 1
+          }
+          test -n "${NAVER_API_HUB_CLIENT_SECRET:-}" || {
             echo "::error::NAVER_API_HUB_CLIENT_SECRET Repository Secret이 없습니다."
-            missing=1
-          fi
+            exit 1
+          }
           if [[ -z "${OPENAI_API_KEY:-}" ]]; then
-            echo "::warning::OPENAI_API_KEY가 없어 정책 인사이트는 수집기의 기본 문구를 사용합니다."
+            echo "::warning::OPENAI_API_KEY가 없어 정책 인사이트는 기본 문구를 사용합니다."
           fi
           if [[ -z "${ASSEMBLY_API_KEY:-}" ]]; then
             echo "::warning::ASSEMBLY_API_KEY가 없어 발의법률안은 기존 데이터를 유지합니다."
           fi
-          if [[ "$missing" -ne 0 ]]; then
-            exit 1
-          fi
 
-      - name: Check collector syntax
+      - name: Compile collectors
         shell: bash
         run: |
           set -euo pipefail
-          python - <<'PY'
-          from pathlib import Path
+          python -m py_compile \
+            scripts/sync_policies.py \
+            scripts/sync_policies_core.py \
+            scripts/news_retention.py \
+            scripts/sync_bills.py \
+            scripts/sync_assembly_seminars.py \
+            scripts/export_policy_radar_excel.py \
+            scripts/export_policy_radar_excel_compatible.py
+          python scripts/news_retention.py --self-test
 
-          for name in ("sync_policies.py", "sync_bills.py", "sync_assembly_seminars.py"):
-              path = Path("scripts") / name
-              compile(path.read_text(encoding="utf-8"), str(path), "exec")
-              print(f"{name} 문법 검증 완료")
-          PY
-
-      - name: Collect ministry policies and news
+      - name: Collect policy materials and news
         shell: bash
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
@@ -132,124 +176,163 @@ jobs:
           set -euo pipefail
           python scripts/sync_policies.py
 
-      - name: Collect legislation without blocking policy publication
-        id: legislation_collection
+      - name: Collect legislation without blocking radar publication
         shell: bash
         env:
           ASSEMBLY_API_KEY: ${{ secrets.ASSEMBLY_API_KEY }}
         run: |
           set -euo pipefail
-
           output="public/data/bills.json"
-          before_hash=""
-          if [[ -f "$output" ]]; then
-            before_hash="$(sha256sum "$output" | awk '{print $1}')"
-          fi
-
-          fresh=false
-          if python scripts/sync_bills.py; then
-            after_hash=""
-            if [[ -f "$output" ]]; then
-              after_hash="$(sha256sum "$output" | awk '{print $1}')"
-            fi
-            if [[ -n "$after_hash" && "$after_hash" != "$before_hash" ]]; then
-              fresh=true
-              echo "국회 법안 신규 수집 결과를 검증합니다."
-            else
-              echo "::warning::국회 법안 파일이 갱신되지 않아 기존 데이터용 최소 검증을 적용합니다."
-            fi
-          else
-            echo "::warning::국회 법안 수집에 실패했습니다. 기존 bills.json을 복원하고 정책·뉴스 배포를 계속합니다."
+          if ! python scripts/sync_bills.py; then
+            echo "::warning::국회 법안 수집 실패. 기존 데이터로 계속합니다."
             if git cat-file -e "HEAD:${output}" 2>/dev/null; then
               git restore --source=HEAD --worktree -- "$output"
             else
-              echo "::error::복원할 기존 ${output}이 없습니다. 안전한 공개 JSON을 보장할 수 없습니다."
+              echo "::error::복원할 기존 ${output}이 없습니다."
               exit 1
             fi
             rm -f -- "${output}.tmp"
           fi
-          echo "fresh=${fresh}" >> "$GITHUB_OUTPUT"
 
-      - name: Collect Assembly seminars without blocking policy publication
-        id: seminar_collection
+      - name: Collect Assembly seminars without blocking radar publication
         shell: bash
         run: |
           set -euo pipefail
-
           output="public/data/assembly_seminars.json"
-          before_hash=""
-          if [[ -f "$output" ]]; then
-            before_hash="$(sha256sum "$output" | awk '{print $1}')"
-          fi
-
-          fresh=false
-          if python scripts/sync_assembly_seminars.py; then
-            after_hash=""
-            if [[ -f "$output" ]]; then
-              after_hash="$(sha256sum "$output" | awk '{print $1}')"
-            fi
-            if [[ -n "$after_hash" && "$after_hash" != "$before_hash" ]]; then
-              fresh=true
-              echo "국회 세미나 신규 수집 결과를 검증합니다."
-            else
-              echo "::warning::국회 세미나 파일이 갱신되지 않아 기존 데이터용 최소 검증을 적용합니다."
-            fi
-          else
-            echo "::warning::국회 세미나 수집에 실패했습니다. 기존 assembly_seminars.json을 복원하고 정책·뉴스 배포를 계속합니다."
+          if ! python scripts/sync_assembly_seminars.py; then
+            echo "::warning::국회 세미나 수집 실패. 기존 데이터로 계속합니다."
             if git cat-file -e "HEAD:${output}" 2>/dev/null; then
               git restore --source=HEAD --worktree -- "$output"
             else
-              echo "::error::복원할 기존 ${output}이 없습니다. 안전한 공개 JSON을 보장할 수 없습니다."
+              echo "::error::복원할 기존 ${output}이 없습니다."
               exit 1
             fi
             rm -f -- "${output}.tmp"
           fi
-          echo "fresh=${fresh}" >> "$GITHUB_OUTPUT"
 
-      - name: Validate generated policy, legislation and Assembly seminar data
+      - name: Rebuild policy radar Excel
+        shell: bash
+        run: |
+          set -euo pipefail
+          cat scripts/policy_excel_template_lines/part*.b64 > /tmp/policy_excel_template.b64
+          python scripts/export_policy_radar_excel_compatible.py \
+            --policy-path public/data/policies.json \
+            --bill-path public/data/bills.json \
+            --seminar-path public/data/assembly_seminars.json \
+            --template-b64 /tmp/policy_excel_template.b64 \
+            --output public/data/ets-policy-radar-events.xlsx \
+            --fixed-output public/data/ets-policy-radar-events-fixed.xlsx \
+            --manifest public/data/policy-radar-excel.json
+
+      - name: Validate retained policy radar data
         shell: bash
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           NAVER_API_HUB_CLIENT_ID: ${{ secrets.NAVER_API_HUB_CLIENT_ID }}
           NAVER_API_HUB_CLIENT_SECRET: ${{ secrets.NAVER_API_HUB_CLIENT_SECRET }}
           ASSEMBLY_API_KEY: ${{ secrets.ASSEMBLY_API_KEY }}
-          BILLS_COLLECTION_FRESH: ${{ steps.legislation_collection.outputs.fresh }}
-          SEMINARS_COLLECTION_FRESH: ${{ steps.seminar_collection.outputs.fresh }}
         run: |
           set -euo pipefail
           python - <<'PY'
           import json
           import os
           import re
-          from datetime import date, timedelta
+          import zipfile
           from pathlib import Path
+          from xml.etree import ElementTree as ET
 
-          output = Path("public/data/policies.json")
-          if not output.is_file():
-              raise SystemExit("public/data/policies.json이 생성되지 않았습니다.")
-          if output.stat().st_size > 5_000_000:
-              raise SystemExit("policies.json이 5MB를 초과해 비정상으로 판단했습니다.")
+          data_dir = Path("public/data")
+          policy_path = data_dir / "policies.json"
+          history_path = data_dir / "news-history.json"
+          audit_path = data_dir / "news-retention-audit.json"
+          bills_path = data_dir / "bills.json"
+          seminars_path = data_dir / "assembly_seminars.json"
+          manifest_path = data_dir / "policy-radar-excel.json"
 
-          policy_raw = output.read_text(encoding="utf-8")
-          payload = json.loads(policy_raw)
-          if not isinstance(payload, dict):
-              raise SystemExit("policies.json 최상위 값은 객체여야 합니다.")
-          if not isinstance(payload.get("lastSync"), str) or not payload["lastSync"].strip():
-              raise SystemExit("policies.json에 lastSync가 없습니다.")
-          if not isinstance(payload.get("items"), list):
-              raise SystemExit("policies.json의 items가 배열이 아닙니다.")
-          if not payload["items"]:
-              raise SystemExit("수집 결과가 0건이므로 기존 데이터를 덮어쓰지 않습니다.")
+          for path in (policy_path, history_path, audit_path, bills_path, seminars_path, manifest_path):
+              if not path.is_file():
+                  raise SystemExit(f"필수 공개 데이터가 없습니다: {path}")
+          if policy_path.stat().st_size > 35_000_000:
+              raise SystemExit("policies.json이 35MB를 초과했습니다.")
 
-          required = {"title", "publishedAt", "source", "sourceType"}
-          for index, item in enumerate(payload["items"]):
+          policy_raw = policy_path.read_text(encoding="utf-8")
+          policy = json.loads(policy_raw)
+          history = json.loads(history_path.read_text(encoding="utf-8"))
+          audit = json.loads(audit_path.read_text(encoding="utf-8"))
+          bills = json.loads(bills_path.read_text(encoding="utf-8"))
+          seminars = json.loads(seminars_path.read_text(encoding="utf-8"))
+          manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+
+          items = policy.get("items")
+          if not isinstance(items, list) or not items:
+              raise SystemExit("정책레이더 items가 비어 있거나 배열이 아닙니다.")
+          if not str(policy.get("lastSync", "")).strip():
+              raise SystemExit("정책레이더 lastSync가 없습니다.")
+          required = ("title", "publishedAt", "source", "sourceType")
+          for index, item in enumerate(items):
               if not isinstance(item, dict):
                   raise SystemExit(f"items[{index}]가 객체가 아닙니다.")
-              missing = sorted(key for key in required if not str(item.get(key, "")).strip())
+              missing = [field for field in required if not str(item.get(field, "")).strip()]
               if missing:
-                  raise SystemExit(f"items[{index}] 필수값 누락: {', '.join(missing)}")
+                  raise SystemExit(f"items[{index}] 필수값 누락: {missing}")
               if item.get("sourceType") == "news" and not str(item.get("url", "")).strip():
                   raise SystemExit(f"items[{index}] 뉴스 URL이 없습니다.")
+
+          news_count = sum(
+              item.get("sourceType") == "news" or item.get("section") == "news"
+              for item in items
+          )
+          non_news_count = len(items) - news_count
+          archive_count = int(history.get("itemCount", -1))
+          audited_count = int((audit.get("counts") or {}).get("finalNewsCount", -1))
+          if audit.get("status") != "verified":
+              raise SystemExit("뉴스 보존 감사상태가 verified가 아닙니다.")
+          if news_count != archive_count or news_count != audited_count:
+              raise SystemExit(
+                  f"뉴스 보존건수 불일치: policies={news_count}, archive={archive_count}, audit={audited_count}"
+              )
+          retention = policy.get("policyRetention") or {}
+          previous_non_news = int(retention.get("previousNonNewsCount", -1))
+          if retention.get("status") != "verified" or non_news_count < previous_non_news:
+              raise SystemExit(
+                  f"누적 정책자료 보존 실패: current={non_news_count}, previous={previous_non_news}"
+              )
+
+          schedules = policy.get("institutionSchedules", [])
+          if not isinstance(schedules, list):
+              raise SystemExit("institutionSchedules가 배열이 아닙니다.")
+          evidence_seen = set()
+          for index, item in enumerate(schedules):
+              if not isinstance(item, dict):
+                  raise SystemExit(f"institutionSchedules[{index}]가 객체가 아닙니다.")
+              evidence = re.sub(
+                  r"[^0-9a-z가-힣]+", "", str(item.get("evidence", "")).lower()
+              )[:1200]
+              if len(evidence) >= 40 and evidence in evidence_seen:
+                  raise SystemExit(f"institutionSchedules[{index}] 동일 본문 중복입니다.")
+              if evidence:
+                  evidence_seen.add(evidence)
+
+          if not isinstance(bills, dict) or not isinstance(bills.get("items"), list):
+              raise SystemExit("bills.json 구조가 올바르지 않습니다.")
+          if not isinstance(seminars, dict) or not isinstance(seminars.get("items"), list):
+              raise SystemExit("assembly_seminars.json 구조가 올바르지 않습니다.")
+          excel_news = int((manifest.get("counts") or {}).get("뉴스", -1))
+          if excel_news != news_count:
+              raise SystemExit(f"엑셀 뉴스 건수 불일치: excel={excel_news}, policies={news_count}")
+          if int(manifest.get("sheetCount", 0)) != 11:
+              raise SystemExit("정책레이더 엑셀 시트 수가 11개가 아닙니다.")
+
+          for file_name in ("ets-policy-radar-events.xlsx", "ets-policy-radar-events-fixed.xlsx"):
+              path = data_dir / file_name
+              if not path.is_file() or path.stat().st_size < 10_000:
+                  raise SystemExit(f"XLSX가 없거나 비정상적으로 작습니다: {file_name}")
+              with zipfile.ZipFile(path) as archive:
+                  if archive.testzip() is not None:
+                      raise SystemExit(f"XLSX ZIP 오류: {file_name}")
+                  for member in archive.namelist():
+                      if member.endswith((".xml", ".rels")):
+                          ET.fromstring(archive.read(member))
 
           for env_name in (
               "OPENAI_API_KEY",
@@ -261,257 +344,105 @@ jobs:
               if secret and secret in policy_raw:
                   raise SystemExit(f"보안값이 policies.json에 포함되었습니다: {env_name}")
 
-          news_count = sum(item.get("sourceType") == "news" for item in payload["items"])
-          print(f"정책 검증 완료: 전체 {len(payload['items'])}건, 뉴스 {news_count}건")
-
-          schedules = payload.get("institutionSchedules", [])
-          if schedules is not None and not isinstance(schedules, list):
-              raise SystemExit("institutionSchedules가 배열이 아닙니다.")
-          schedule_evidence = set()
-          for index, item in enumerate(schedules or []):
-              if not isinstance(item, dict):
-                  raise SystemExit(f"institutionSchedules[{index}]가 객체가 아닙니다.")
-              evidence_key = re.sub(r"[^0-9a-z가-힣]+", "", str(item.get("evidence", "")).lower())[:1200]
-              if len(evidence_key) >= 40 and evidence_key in schedule_evidence:
-                  raise SystemExit(f"institutionSchedules[{index}]에 동일 본문 일정이 중복되었습니다.")
-              if evidence_key:
-                  schedule_evidence.add(evidence_key)
-
-          bills_output = Path("public/data/bills.json")
-          if not bills_output.is_file():
-              raise SystemExit("public/data/bills.json이 생성되지 않았습니다.")
-          if bills_output.stat().st_size > 5_000_000:
-              raise SystemExit("bills.json이 5MB를 초과해 비정상으로 판단했습니다.")
-
-          bills_raw = bills_output.read_text(encoding="utf-8")
-          bills = json.loads(bills_raw)
-          if not isinstance(bills, dict) or not isinstance(bills.get("items"), list):
-              raise SystemExit("bills.json의 최상위 값과 items 형식이 올바르지 않습니다.")
-          bills_fresh = os.getenv("BILLS_COLLECTION_FRESH", "").strip().lower() == "true"
-          if bills_fresh:
-              if not isinstance(bills.get("lastSync"), str) or not bills["lastSync"].strip():
-                  raise SystemExit("bills.json에 정상적인 lastSync가 없습니다.")
-              if not str(bills.get("source", "")).strip():
-                  raise SystemExit("bills.json에 공식 출처가 없습니다.")
-              if not str(bills.get("assemblyTerm", "")).strip():
-                  raise SystemExit("bills.json에 국회 대수가 없습니다.")
-              if not bills["items"]:
-                  raise SystemExit("발의법률안 수집 결과가 0건이므로 공개하지 않습니다.")
-          else:
-              print("::warning::기존 bills.json에는 JSON 구조·크기·항목 객체·보안값 최소 검증만 적용합니다.")
-          seen_bill_ids = set()
-          for index, item in enumerate(bills["items"]):
-              if not isinstance(item, dict):
-                  raise SystemExit(f"bills.items[{index}]가 객체가 아닙니다.")
-              if bills_fresh:
-                  bill_key = str(item.get("billId") or "").strip()
-                  if not bill_key or not str(item.get("title", "")).strip():
-                      raise SystemExit(f"bills.items[{index}] 의안ID·제목이 없습니다.")
-                  if str(item.get("category", "")) != "발의법률안":
-                      raise SystemExit(f"bills.items[{index}] 구분/분류가 발의법률안이 아닙니다.")
-                  if bill_key in seen_bill_ids:
-                      raise SystemExit(f"bills.items[{index}] 의안ID가 중복됩니다: {bill_key}")
-                  seen_bill_ids.add(bill_key)
-                  if not str(item.get("status", "")).strip() or not str(item.get("url", "")).strip():
-                      raise SystemExit(f"bills.items[{index}] 상태 또는 공식 URL이 없습니다.")
-
-          for env_name in ("OPENAI_API_KEY", "NAVER_API_HUB_CLIENT_ID", "NAVER_API_HUB_CLIENT_SECRET", "ASSEMBLY_API_KEY"):
-              secret = os.getenv(env_name, "")
-              if secret and (secret in policy_raw or secret in bills_raw):
-                  raise SystemExit(f"보안값이 공개 JSON에 포함되었습니다: {env_name}")
-          print(f"발의법률안 검증 완료: {len(bills['items'])}건")
-
-          seminars_output = Path("public/data/assembly_seminars.json")
-          if not seminars_output.is_file():
-              raise SystemExit("public/data/assembly_seminars.json이 생성되지 않았습니다.")
-          if seminars_output.stat().st_size > 5_000_000:
-              raise SystemExit("assembly_seminars.json이 5MB를 초과해 비정상으로 판단했습니다.")
-
-          seminars_raw = seminars_output.read_text(encoding="utf-8")
-          seminars = json.loads(seminars_raw)
-          if not isinstance(seminars, dict) or not isinstance(seminars.get("items"), list):
-              raise SystemExit("assembly_seminars.json의 최상위 값과 items 형식이 올바르지 않습니다.")
-          seminars_fresh = os.getenv("SEMINARS_COLLECTION_FRESH", "").strip().lower() == "true"
-          if seminars_fresh:
-              if not isinstance(seminars.get("lastSync"), str) or not seminars["lastSync"].strip():
-                  raise SystemExit("assembly_seminars.json에 정상적인 lastSync가 없습니다.")
-              if not str(seminars.get("source", "")).strip():
-                  raise SystemExit("assembly_seminars.json에 공식 출처가 없습니다.")
-          else:
-              print("::warning::기존 assembly_seminars.json에는 JSON 구조·크기·항목 객체·보안값 최소 검증만 적용합니다.")
-          seen_seminar_ids = set()
-          seminar_minimum = date(2026, 1, 1)
-          seminar_maximum = date.today() + timedelta(days=365)
-          for index, item in enumerate(seminars["items"]):
-              if not isinstance(item, dict):
-                  raise SystemExit(f"assembly_seminars.items[{index}]가 객체가 아닙니다.")
-              if seminars_fresh:
-                  seminar_id = str(item.get("id") or item.get("sourceId") or "").strip()
-                  if not seminar_id or seminar_id in seen_seminar_ids:
-                      raise SystemExit(f"assembly_seminars.items[{index}] ID가 없거나 중복됩니다: {seminar_id}")
-                  seen_seminar_ids.add(seminar_id)
-                  if str(item.get("category", "")) != "세미나일정":
-                      raise SystemExit(f"assembly_seminars.items[{index}] 구분/분류가 세미나일정이 아닙니다.")
-                  for field_name in ("title", "startDate", "eventType", "host", "url"):
-                      if not str(item.get(field_name, "")).strip():
-                          raise SystemExit(f"assembly_seminars.items[{index}] 필수값 누락: {field_name}")
-                  try:
-                      seminar_day = date.fromisoformat(str(item["startDate"])[:10])
-                  except ValueError as error:
-                      raise SystemExit(f"assembly_seminars.items[{index}] 행사일이 올바르지 않습니다.") from error
-                  if not seminar_minimum <= seminar_day <= seminar_maximum:
-                      raise SystemExit(f"assembly_seminars.items[{index}] 행사일이 2026년 이후 공식 수집범위를 벗어났습니다.")
-                  if not str(item["url"]).startswith("https://ampos.nanet.go.kr/"):
-                      raise SystemExit(f"assembly_seminars.items[{index}] 공식 국회도서관 URL이 아닙니다.")
-          for env_name in ("OPENAI_API_KEY", "NAVER_API_HUB_CLIENT_ID", "NAVER_API_HUB_CLIENT_SECRET", "ASSEMBLY_API_KEY"):
-              secret = os.getenv(env_name, "")
-              if secret and secret in seminars_raw:
-                  raise SystemExit(f"보안값이 assembly_seminars.json에 포함되었습니다: {env_name}")
-          print(f"국회의원 세미나 일정 검증 완료: {len(seminars['items'])}건")
+          print(
+              "POLICY_RADAR_VALIDATED "
+              f"lastSync={policy['lastSync']} total={len(items)} "
+              f"news={news_count} non_news={non_news_count} schedules={len(schedules)}"
+          )
           PY
 
-      - name: Confirm only approved data files changed
+      - name: Confirm only approved files changed
         id: changes
         shell: bash
         run: |
           set -euo pipefail
-
-          changed_paths="$({
-            git diff --name-only
-            git ls-files --others --exclude-standard
-          } | sort -u)"
-
+          changed_paths="$({ git diff --name-only; git ls-files --others --exclude-standard; } | sort -u)"
           unexpected=0
           while IFS= read -r path; do
             [[ -z "$path" ]] && continue
             case "$path" in
-              public/data/policies.json|public/data/bills.json|public/data/assembly_seminars.json) ;;
-              *)
-                echo "::error::수집기가 허용되지 않은 파일을 변경했습니다: $path"
-                unexpected=1
-                ;;
+              public/data/policies.json|\
+              public/data/news-history.json|\
+              public/data/news-retention-audit.json|\
+              public/data/bills.json|\
+              public/data/assembly_seminars.json|\
+              public/data/ets-policy-radar-events.xlsx|\
+              public/data/ets-policy-radar-events-fixed.xlsx|\
+              public/data/policy-radar-excel.json) ;;
+              *) echo "::error::허용되지 않은 변경 파일: $path"; unexpected=1 ;;
             esac
           done <<< "$changed_paths"
-          if [[ "$unexpected" -ne 0 ]]; then
-            exit 1
-          fi
-
-          if [[ -n "$(git status --porcelain -- public/data/policies.json public/data/bills.json public/data/assembly_seminars.json)" ]]; then
+          [[ "$unexpected" -eq 0 ]]
+          if [[ -n "$changed_paths" ]]; then
             echo "changed=true" >> "$GITHUB_OUTPUT"
-            echo "정책·발의법률안·국회 세미나 데이터 변경사항을 확인했습니다."
           else
             echo "changed=false" >> "$GITHUB_OUTPUT"
-            echo "저장할 변경사항이 없습니다. 최신 커밋의 사이트를 배포합니다."
           fi
 
-      - name: Commit policy, legislation and Assembly seminar data
+      - name: Commit policy radar outputs
         if: steps.changes.outputs.changed == 'true'
         shell: bash
         run: |
           set -euo pipefail
-
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -- public/data/policies.json public/data/bills.json public/data/assembly_seminars.json
-
-          staged="$(git diff --cached --name-only)"
-          while IFS= read -r path; do
-            [[ -z "$path" ]] && continue
-            case "$path" in
-              public/data/policies.json|public/data/bills.json|public/data/assembly_seminars.json) ;;
-              *)
-                echo "::error::허용되지 않은 커밋 대상입니다: $path"
-                exit 1
-                ;;
-            esac
-          done <<< "$staged"
-
-          git commit -m "chore(data): sync policies, legislation and Assembly seminars"
+          git add -- \
+            public/data/policies.json \
+            public/data/news-history.json \
+            public/data/news-retention-audit.json \
+            public/data/bills.json \
+            public/data/assembly_seminars.json \
+            public/data/ets-policy-radar-events.xlsx \
+            public/data/ets-policy-radar-events-fixed.xlsx \
+            public/data/policy-radar-excel.json
+          git commit -m "chore(data): sync retained policy radar"
 
       - name: Rebase safely and push to main
         if: steps.changes.outputs.changed == 'true'
         shell: bash
         run: |
           set -euo pipefail
-
           pushed=0
           for attempt in 1 2 3; do
             echo "main 반영 시도 ${attempt}/3"
             git fetch origin main
             if ! git rebase origin/main; then
               git rebase --abort || true
-              echo "::error::원격 main과 정책·발의법률안·국회 세미나 데이터 변경이 충돌했습니다. 강제 푸시하지 않습니다."
+              echo "::error::원격 main과 정책레이더 데이터 변경이 충돌했습니다."
               exit 1
             fi
             if git push origin HEAD:main; then
               pushed=1
               break
             fi
+            sleep $((attempt * 4))
           done
-
-          if [[ "$pushed" -ne 1 ]]; then
-            echo "::error::원격 main이 계속 변경되어 3회 시도 후 중단했습니다. 다음 실행에서 재시도합니다."
+          [[ "$pushed" -eq 1 ]] || {
+            echo "::error::3회 시도 후 main 반영에 실패했습니다."
             exit 1
-          fi
+          }
 
-          echo "정책·발의법률안·국회 세미나 데이터를 main에 반영했습니다: $(git rev-parse HEAD)"
-
-      - name: Align deployment source with a committed revision
-        id: source_revision
+      - name: Align deployment source with latest main
         shell: bash
         run: |
           set -euo pipefail
-
-          # The collector may overlap another data workflow. Always deploy the
-          # newest committed main revision, never an uncommitted worktree.
           git fetch origin main
-          local_sha="$(git rev-parse HEAD)"
-          remote_sha="$(git rev-parse origin/main)"
-          if [[ "$local_sha" != "$remote_sha" ]]; then
-            if ! git merge-base --is-ancestor HEAD origin/main; then
-              echo "::error::배포 직전 로컬 HEAD와 origin/main이 갈라졌습니다."
-              exit 1
-            fi
-            git merge --ff-only origin/main
-          fi
+          git reset --hard origin/main
+          test -z "$(git status --porcelain)"
 
-          if [[ "$(git rev-parse HEAD)" != "$(git rev-parse origin/main)" ]]; then
-            echo "::error::배포 원본이 최신 origin/main과 일치하지 않습니다."
-            exit 1
-          fi
+      - name: Calculate public verification hashes
+        id: hashes
+        shell: bash
+        run: |
+          set -euo pipefail
+          echo "policies=$(sha256sum public/data/policies.json | awk '{print $1}')" >> "$GITHUB_OUTPUT"
+          echo "history=$(sha256sum public/data/news-history.json | awk '{print $1}')" >> "$GITHUB_OUTPUT"
+          echo "manifest=$(sha256sum public/data/policy-radar-excel.json | awk '{print $1}')" >> "$GITHUB_OUTPUT"
 
-          if [[ -n "$(git status --porcelain)" ]]; then
-            echo "::error::배포 직전 작업트리가 커밋 상태와 다릅니다."
-            git status --short
-            exit 1
-          fi
-
-          for data_file in public/data/policies.json public/data/bills.json public/data/assembly_seminars.json; do
-            committed_hash="$(git show "HEAD:${data_file}" | sha256sum | awk '{print $1}')"
-            worktree_hash="$(sha256sum "$data_file" | awk '{print $1}')"
-            if [[ "$committed_hash" != "$worktree_hash" ]]; then
-              echo "::error::배포할 ${data_file}이 현재 HEAD 커밋과 다릅니다."
-              exit 1
-            fi
-          done
-
-          site_sha="$(git rev-parse HEAD)"
-          policies_hash="$(sha256sum public/data/policies.json | awk '{print $1}')"
-          bills_hash="$(sha256sum public/data/bills.json | awk '{print $1}')"
-          seminars_hash="$(sha256sum public/data/assembly_seminars.json | awk '{print $1}')"
-          echo "site_sha=$site_sha" >> "$GITHUB_OUTPUT"
-          echo "policies_sha256=$policies_hash" >> "$GITHUB_OUTPUT"
-          echo "bills_sha256=$bills_hash" >> "$GITHUB_OUTPUT"
-          echo "seminars_sha256=$seminars_hash" >> "$GITHUB_OUTPUT"
-          echo "배포 원본 커밋: $site_sha"
-          echo "policies.json SHA-256: $policies_hash"
-          echo "bills.json SHA-256: $bills_hash"
-          echo "assembly_seminars.json SHA-256: $seminars_hash"
-
-      - name: Configure GitHub Pages
+      - name: Configure Pages
         uses: actions/configure-pages@v6
 
-      - name: Upload the committed public directory
+      - name: Upload complete public directory
         uses: actions/upload-pages-artifact@v5
         with:
           path: ./public
@@ -520,46 +451,47 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v5
 
-      - name: Verify the public policy, legislation and Assembly seminar data
+      - name: Verify deployed policy radar
         shell: bash
         env:
           PAGE_URL: ${{ steps.deployment.outputs.page_url }}
-          EXPECTED_POLICIES_SHA256: ${{ steps.source_revision.outputs.policies_sha256 }}
-          EXPECTED_BILLS_SHA256: ${{ steps.source_revision.outputs.bills_sha256 }}
-          EXPECTED_SEMINARS_SHA256: ${{ steps.source_revision.outputs.seminars_sha256 }}
+          POLICIES_SHA: ${{ steps.hashes.outputs.policies }}
+          HISTORY_SHA: ${{ steps.hashes.outputs.history }}
+          MANIFEST_SHA: ${{ steps.hashes.outputs.manifest }}
         run: |
           set -euo pipefail
-
-          page_root="${PAGE_URL%/}"
-          verify_public_file() {
-            local relative_path="$1"
-            local expected_sha256="$2"
-            local downloaded
-            downloaded="$(mktemp)"
-
+          root="${PAGE_URL%/}"
+          verify() {
+            local file="$1" expected="$2" output actual
+            output="$(mktemp)"
             for attempt in 1 2 3 4 5 6 7 8; do
-              echo "${relative_path} 공개 반영 확인 ${attempt}/8"
-              if curl --fail --silent --show-error --location \
-                --max-time 20 \
-                --header "Cache-Control: no-cache" \
-                "${page_root}/${relative_path}?verify=${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}-${attempt}" \
-                --output "$downloaded"; then
-                actual_sha256="$(sha256sum "$downloaded" | awk '{print $1}')"
-                if [[ "$actual_sha256" == "$expected_sha256" ]]; then
-                  echo "공개 ${relative_path} 반영 확인: $actual_sha256"
-                  rm -f "$downloaded"
+              if curl -fsSL --max-time 60 -H "Cache-Control: no-cache" \
+                "${root}/data/${file}?verify=${GITHUB_RUN_ID}-${attempt}" -o "$output"; then
+                actual="$(sha256sum "$output" | awk '{print $1}')"
+                if [[ "$actual" == "$expected" ]]; then
+                  rm -f "$output"
                   return 0
                 fi
-                echo "아직 이전 ${relative_path}입니다: $actual_sha256"
               fi
               sleep 8
             done
-
-            rm -f "$downloaded"
-            echo "::error::Pages 배포 후 공개 ${relative_path}이 배포 원본과 일치하지 않습니다."
+            rm -f "$output"
             return 1
           }
-
-          verify_public_file "data/policies.json" "$EXPECTED_POLICIES_SHA256"
-          verify_public_file "data/bills.json" "$EXPECTED_BILLS_SHA256"
-          verify_public_file "data/assembly_seminars.json" "$EXPECTED_SEMINARS_SHA256"
+          verify "policies.json" "$POLICIES_SHA"
+          verify "news-history.json" "$HISTORY_SHA"
+          verify "policy-radar-excel.json" "$MANIFEST_SHA"
+          curl -fsSL --max-time 60 \
+            "${root}/data/policies.json?count=${GITHUB_RUN_ID}" -o /tmp/public-policies.json
+          python - <<'PY'
+          import json
+          payload = json.load(open("/tmp/public-policies.json", encoding="utf-8"))
+          news = sum(
+              item.get("sourceType") == "news" or item.get("section") == "news"
+              for item in payload.get("items", [])
+          )
+          print(
+              f"PUBLIC_POLICY_RADAR_VERIFIED lastSync={payload.get('lastSync')} "
+              f"items={len(payload.get('items', []))} news={news}"
+          )
+          PY
