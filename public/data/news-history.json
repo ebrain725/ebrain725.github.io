@@ -1,17 +1,90 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-09-15T23:47:47+09:00",
+  "generatedAt": "2026-09-16T08:12:09+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 591,
+  "itemCount": 594,
   "earliestPublishedAt": "2026-08-06",
-  "latestPublishedAt": "2026-09-15",
+  "latestPublishedAt": "2026-09-16",
   "sourceCommitsScanned": 0,
   "sourceSnapshotsScanned": 0,
   "historicalRowsScanned": 0,
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "e118179f2bea5bad",
+      "publishedAt": "2026-09-16",
+      "title": "정부, 국제감축사업 제도 개선 추진...전문가들, 총괄 기관 신설 한 목소...",
+      "category": "상쇄·외부사업",
+      "summary": "기업의 자체 사업은 주로 ITMO를 들여와 탄소 배출권 거래제의 상쇄 배출권 으로 사용하기 위해 추진된다. 기업이 ITMO를 상쇄 배출권 으로 제출하면 ITMO의 소유가 정부로 이전돼 NDC의 국제감축사업 이행으로 이어진다. 이르면...",
+      "source": "esgeconomy.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.esgeconomy.com/news/articleView.html?idxno=16742",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권",
+        "상쇄배출권"
+      ],
+      "duplicateSources": [
+        "esgeconomy.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "f052c733ddfbc224",
+      "publishedAt": "2026-09-16",
+      "title": "‘미래의 온도’보다 ‘오늘의 생명’에 무게중심 옮겨야 할 때",
+      "category": "시장·가격",
+      "summary": "발전소와 공장, 자동차에서 배출되는 온실가스 를 계산하고 연도별 감축 목표를 정할 수 있다. 탄소에 가격을 매겨 배출권 을 사고팔 수도 있다. 국가 간에 공통 목표를 정하고 이행 여부를 비교하기도 수월하다. 반면 제방...",
+      "source": "shindonga.donga.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://shindonga.donga.com/3/all/13/6386752/1",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "shindonga.donga.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "92dc829f2b27d518",
+      "publishedAt": "2026-09-16",
+      "title": "4000만 달러 흑연의 인연… 탄자니아, 포스코에 문 활짝 열었다",
+      "category": "제도",
+      "summary": "탄소 배출권 거래와 함께 현지 산업 생산성을 끌어올리기 위한 인공지능(AI), 로봇, 디지털 분석 분야 기술 협력 방안도 테이블에 올랐다. 구체적 사업 과제는 추가 실무 협의를 거쳐 도출하기로 했다. 지분 19.9% 확보와...",
+      "source": "g-enews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.g-enews.com/view.php?ud=202609160532391768fbbec65dfb_1",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "g-enews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
     {
       "id": "2aaa7c6de8761e5a",
       "publishedAt": "2026-09-15",
@@ -75,9 +148,10 @@
         "탄소배출권"
       ],
       "section": "news",
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "duplicateSources": [
-        "sankyungtoday.com"
+        "sankyungtoday.com",
+        "산경투데이"
       ],
       "searchProviders": [
         "Google News RSS"
@@ -170,8 +244,8 @@
       "publishedAt": "2026-09-15",
       "title": "유엔 탄소배출권 안전장치 도입에 반발...애플·환경단체까지 반대한 까닭",
       "category": "제도",
-      "summary": "유엔 탄소배출권 안전장치 도입에 반발...애플·환경단체까지 반대한 까닭 임팩트온",
-      "source": "임팩트온",
+      "summary": "유엔 탄소배출권 안전장치 도입에 반발...애플·환경단체까지 반대한 까닭 impacton.net",
+      "source": "impacton.net",
       "sourceType": "news",
       "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1YR05rUHNQZGVvRGpjY256SjFUSGd2cHdmRnY4a2Iya1hQbDVubTMwRFRLVHF2aVdRaWNZSWZ2Z2xvcElGckdBcmw5MkZ3b3Z0YVRRWDhTTFhPYzUxaHhJa2N2d3Vmckhv0gFsQVVfeXFMTmFKTjRIdXNEMzBBVk13M1l6T09TeTE4RzNhaW5uWll3cV9qVmIyX2l6TnF3ZmFOWnlqeWpBUFRieDVEWlNQOHBtVVd5TzlxX3JXZTVSRWlpanVGUU1PZG01XzBOWFVqdzNzdk9S?oc=5",
       "searchProvider": "Google News RSS",
@@ -180,9 +254,10 @@
         "탄소배출권"
       ],
       "section": "news",
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "duplicateSources": [
-        "임팩트온"
+        "임팩트온",
+        "impacton.net"
       ],
       "searchProviders": [
         "Google News RSS"
@@ -485,8 +560,8 @@
       "publishedAt": "2026-09-15",
       "title": "[온실가스 배출권] 9월 15일 KAU26, 4만원 문턱서 하락",
       "category": "시장·가격",
-      "summary": "[온실가스 배출권] 9월 15일 KAU26, 4만원 문턱서 하락 데일리e뉴스",
-      "source": "데일리e뉴스",
+      "summary": "[온실가스 배출권] 9월 15일 KAU26, 4만원 문턱서 하락 dailyenews.co.kr",
+      "source": "dailyenews.co.kr",
       "sourceType": "news",
       "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1oRWtlSFRDV2U2TzdESzlOZGVEZUxKeXB2ZHJGZlpPZkVhSTZDUzRPNnBWUXN6UFVna0MzZ0V1V2ZIdFJyaHpwV2lTNklKRFJqNGhkdWxTS0RBQTA0eEpKM0VvcGRLbFZBSGNzZEJPSQ?oc=5",
       "searchProvider": "Google News RSS",
@@ -496,9 +571,10 @@
         "KAU26"
       ],
       "section": "news",
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "duplicateSources": [
-        "데일리e뉴스"
+        "데일리e뉴스",
+        "dailyenews.co.kr"
       ],
       "searchProviders": [
         "Google News RSS"
@@ -543,8 +619,8 @@
       "publishedAt": "2026-09-15",
       "title": "EU ETS 개편 초안, 배출권 수입 75% 산업 탈탄소 재투자…무상할당 조건도 강화",
       "category": "제도",
-      "summary": "EU ETS 개편 초안, 배출권 수입 75% 산업 탈탄소 재투자…무상할당 조건도 강화 임팩트온",
-      "source": "임팩트온",
+      "summary": "EU ETS 개편 초안, 배출권 수입 75% 산업 탈탄소 재투자…무상할당 조건도 강화 impacton.net",
+      "source": "impacton.net",
       "sourceType": "news",
       "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1uSkZuTGFQdzNSUUVpeXY1WUVuOEhLbUhSRWdwWEJwTnl6enQ3TC1HQVoyWFJuR2VPdlRwdDMyQkcyUW1EVnVPM3NUV0l6VzJyQzg3blhrQkZuSmdMQi1xQm9CWW55QVhF0gFsQVVfeXFMTUd4QlNRYnJmRTBKaDJzbmNXMFFzb0J6SFhEOThDTmpTMl9NVW5YbGJHb3VUd2lpY2RWb2ctUUNzaGs5OXJDZGlDdG1FdUVaS05XRjRpS3NkTVd1VTk3VEFmM1p2S2VtM2N4NUtm?oc=5",
       "searchProvider": "Google News RSS",
@@ -552,9 +628,10 @@
         "배출권"
       ],
       "section": "news",
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "duplicateSources": [
-        "임팩트온"
+        "임팩트온",
+        "impacton.net"
       ],
       "searchProviders": [
         "Google News RSS"
@@ -808,8 +885,8 @@
       "publishedAt": "2026-09-14",
       "title": "유럽의회, 탄소배출권 비축량 상한선 4억→6억5000만개로 완충재 확대",
       "category": "제도",
-      "summary": "유럽의회, 탄소배출권 비축량 상한선 4억→6억5000만개로 완충재 확대 임팩트온",
-      "source": "임팩트온",
+      "summary": "유럽의회, 탄소배출권 비축량 상한선 4억→6억5000만개로 완충재 확대 impacton.net",
+      "source": "impacton.net",
       "sourceType": "news",
       "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE16eF8tRDdWRm0xR3kwSXM5SUNMVnpiTFhwd1A4RlpSRlBCdFJlZTMxM1hmcE5hLTh1RE9RV3htc0tIODVfQUlKODh6M1k4V2U5MVF3VHhlUmgza2puR2N3dlo4R2EwQl9L0gFsQVVfeXFMUFdxVFhycTd1X0xRcGRNVEl1UUFWOF9aU3A4VmxVR0MyME1uTVRqSXFYRFpVRnZFQmM3ZFc5Z3lLQWM1RE14cFMxZHVQaGtYZ1BQZmdNZVhsTHNTV2pzbjlKRFRXYUNtaG8xN3pu?oc=5",
       "searchProvider": "Google News RSS",
@@ -818,9 +895,10 @@
         "탄소배출권"
       ],
       "section": "news",
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "duplicateSources": [
-        "임팩트온"
+        "임팩트온",
+        "impacton.net"
       ],
       "searchProviders": [
         "Google News RSS"
@@ -1151,8 +1229,8 @@
       "publishedAt": "2026-09-14",
       "title": "[온실가스 배출권] 9월 14일 KAU26, 100원 올라",
       "category": "시장·가격",
-      "summary": "[온실가스 배출권] 9월 14일 KAU26, 100원 올라 데일리e뉴스",
-      "source": "데일리e뉴스",
+      "summary": "[온실가스 배출권] 9월 14일 KAU26, 100원 올라 dailyenews.co.kr",
+      "source": "dailyenews.co.kr",
       "sourceType": "news",
       "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBjU0QyZGxzMDJtdlVYd2JwQzl6Zk1iaVBZbHpPTlp4RF9OX1ZkRGZTUXN1QVo2Q2JZbzJ4bTZZRy1VYWExajFYQUY4T1o0VV9WUm13WUtxRFZJYUZBX0l4Q0pmNU5ZaGwyLUVhYVE2Zw?oc=5",
       "searchProvider": "Google News RSS",
@@ -1162,9 +1240,10 @@
         "KAU26"
       ],
       "section": "news",
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "duplicateSources": [
-        "데일리e뉴스"
+        "데일리e뉴스",
+        "dailyenews.co.kr"
       ],
       "searchProviders": [
         "Google News RSS"
@@ -1879,8 +1958,8 @@
       "publishedAt": "2026-09-11",
       "title": "[온실가스 배출권] 9월 11일 KAU26, 300원 오른 3만750원으로 한 주 마감",
       "category": "시장·가격",
-      "summary": "[온실가스 배출권] 9월 11일 KAU26, 300원 오른 3만750원으로 한 주 마감 데일리e뉴스",
-      "source": "데일리e뉴스",
+      "summary": "[온실가스 배출권] 9월 11일 KAU26, 300원 오른 3만750원으로 한 주 마감 dailyenews.co.kr",
+      "source": "dailyenews.co.kr",
       "sourceType": "news",
       "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5ZU01udnZDRW9PaDZKXzA1V2VNR3VQcDdoZE5LVmc2UTIxMk5nYlE1bk84MGc1R3M3TWJQTGlXckt0dGJRcVJkQ1ZRRE03dlpmRExaZXllaFpwdFZ3V1l3VllvRG45MXotdnZZbEp2SQ?oc=5",
       "searchProvider": "Google News RSS",
@@ -1890,9 +1969,10 @@
         "KAU26"
       ],
       "section": "news",
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "duplicateSources": [
-        "데일리e뉴스"
+        "데일리e뉴스",
+        "dailyenews.co.kr"
       ],
       "searchProviders": [
         "Google News RSS"
@@ -2459,8 +2539,8 @@
       "publishedAt": "2026-09-10",
       "title": "[온실가스 배출권] 9월 10일 KAU26, 장 중 약세 딛고 전날 종가 유지",
       "category": "시장·가격",
-      "summary": "[온실가스 배출권] 9월 10일 KAU26, 장 중 약세 딛고 전날 종가 유지 데일리e뉴스",
-      "source": "데일리e뉴스",
+      "summary": "[온실가스 배출권] 9월 10일 KAU26, 장 중 약세 딛고 전날 종가 유지 dailyenews.co.kr",
+      "source": "dailyenews.co.kr",
       "sourceType": "news",
       "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9Gc2FuNVV6dmdUUjBQcVg1aG5mRXlrZHNQZV9PMFFTcWtJNS1qUnZ3SHRvQ2YyZ0FucDdIRC1BVkV0T1g5MFJJR1ZWYkJkY3Z0YWxyeFdZTFpxWV9OMzlORGJ5aE4xcW4xZS0yREVyZw?oc=5",
       "searchProvider": "Google News RSS",
@@ -2470,9 +2550,10 @@
         "KAU26"
       ],
       "section": "news",
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "duplicateSources": [
-        "데일리e뉴스"
+        "데일리e뉴스",
+        "dailyenews.co.kr"
       ],
       "searchProviders": [
         "Google News RSS"
@@ -3059,8 +3140,8 @@
       "publishedAt": "2026-09-09",
       "title": "[온실가스 배출권] 9월 9일 KAU26, 300원 오른 3만450원",
       "category": "시장·가격",
-      "summary": "[온실가스 배출권] 9월 9일 KAU26, 300원 오른 3만450원 데일리e뉴스",
-      "source": "데일리e뉴스",
+      "summary": "[온실가스 배출권] 9월 9일 KAU26, 300원 오른 3만450원 dailyenews.co.kr",
+      "source": "dailyenews.co.kr",
       "sourceType": "news",
       "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9yMUlfZzMydlBwYmY5dzhFaHRHbFJudkJlY21VRWJOaXBKSE5hdzBVdDkzcm9XLThONXJpWGNjeTZXMjl5Skgxc3prSjB4Z2pHV1FjSXdlY1BFWnMtbjFRbXVzYjJkbzQteTN1aUxvYw?oc=5",
       "searchProvider": "Google News RSS",
@@ -3070,9 +3151,10 @@
         "KAU26"
       ],
       "section": "news",
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "duplicateSources": [
-        "데일리e뉴스"
+        "데일리e뉴스",
+        "dailyenews.co.kr"
       ],
       "searchProviders": [
         "Google News RSS"
@@ -6517,13 +6599,14 @@
         "sentv.co.kr",
         "digitalbizon.com",
         "catchnews.kr",
-        "yna.co.kr"
+        "yna.co.kr",
+        "디지털비즈온"
       ],
       "searchProviders": [
         "Google News RSS",
         "NAVER API HUB"
       ],
-      "duplicateCount": 18,
+      "duplicateCount": 19,
       "region": "국내"
     },
     {
@@ -7900,11 +7983,11 @@
       "duplicateSources": [
         "연합뉴스",
         "yna.co.kr",
+        "이투데이",
         "etoday.co.kr",
         "econonews.co.kr",
         "ebn.co.kr",
         "오토투데이",
-        "이투데이",
         "뉴스1",
         "asiatoday.co.kr",
         "news1.kr",
@@ -8201,12 +8284,14 @@
         "온실가스 배출권"
       ],
       "duplicateSources": [
+        "전자신문",
         "etnews.com"
       ],
       "searchProviders": [
+        "Google News RSS",
         "NAVER API HUB"
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "region": "국내"
     },
     {
@@ -9731,8 +9816,9 @@
       "duplicateCount": 5,
       "duplicateSources": [
         "동아경제",
-        "energyprosumer.info",
+        "에너지프로슈머",
         "연합뉴스",
+        "energyprosumer.info",
         "yna.co.kr"
       ],
       "searchProviders": [
@@ -11608,8 +11694,8 @@
       "publishedAt": "2026-08-24",
       "title": "[온실가스 배출권] 8월 24일 KAU25, 널뛰기 장 속 250원 오른 2만9150원",
       "category": "시장·가격",
-      "summary": "[온실가스 배출권] 8월 24일 KAU25, 널뛰기 장 속 250원 오른 2만9150원 데일리e뉴스",
-      "source": "데일리e뉴스",
+      "summary": "[온실가스 배출권] 8월 24일 KAU25, 널뛰기 장 속 250원 오른 2만9150원 dailyenews.co.kr",
+      "source": "dailyenews.co.kr",
       "sourceType": "news",
       "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFB0MDlaelhQVjlEaGNxVmlwXzlnQnktNXdEQi1OaUtaYmNtbkFUMm85cXJ4cUF2ZFZIVXB6WHFmRTdET0ljZllCYzRPbXlySmlSQ0Y2M3F2S1hjNk9YWGY0QnFITnc5R0psLTkycl93Zw?oc=5",
       "matchedKeywords": [
@@ -11618,14 +11704,16 @@
         "KAU25"
       ],
       "section": "news",
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "duplicateSources": [
-        "데일리e뉴스"
+        "데일리e뉴스",
+        "dailyenews.co.kr"
       ],
       "region": "국내",
       "searchProviders": [
         "Google News RSS"
-      ]
+      ],
+      "searchProvider": "Google News RSS"
     },
     {
       "id": "d04fc4b06dc35319",
