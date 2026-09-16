@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-09-16T08:12:09+09:00",
+  "generatedAt": "2026-09-16T10:12:31+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 594,
+  "itemCount": 603,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-09-16",
   "sourceCommitsScanned": 0,
@@ -12,6 +12,29 @@
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "a9f2f2639fb4007c",
+      "publishedAt": "2026-09-16",
+      "title": "탄소 중립, 선언 넘어 성장전략으로…'2026 국제기후포럼'",
+      "category": "제도",
+      "summary": "참석자들은 기후외교를 에너지 안보와 공급망, 탄소시장 까지 아우르는 종합 국가전략으로 발전시켜야 한다는 데 의견을 모았습니다. 아울러 재생에너지와 청정수소, 친환경 모빌리티 등 녹색 혁신기술을 미래 핵심...",
+      "source": "mbn.mk.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://mbn.mk.co.kr/pages/news/newsView.php?category=mbn00007&news_seq_no=5219510",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "mbn.mk.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
     {
       "id": "e118179f2bea5bad",
       "publishedAt": "2026-09-16",
@@ -31,6 +54,54 @@
       ],
       "duplicateSources": [
         "esgeconomy.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "3da8aba45f62d6f5",
+      "publishedAt": "2026-09-16",
+      "title": "국회기후변화포럼 세미나…\"한국 양자협력, 일본·스위스·싱가포르보다...",
+      "category": "상쇄·외부사업",
+      "summary": "K-ETS 상쇄 제도 인정 대상을 제6.2조 기반 ITMO 중심으로 재편, REDD+ 및 구체적 제거 활동을 포함한 전략적 감축... 민간 배출권 발행기구의 조건부 활용 제도화 필요성을 제시했다. 박두병 THANKS CARBON 대표는 총괄·책임...",
+      "source": "gukjenews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.gukjenews.com/news/articleView.html?idxno=3696503",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "K-ETS"
+      ],
+      "duplicateSources": [
+        "gukjenews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "187a25031af619e2",
+      "publishedAt": "2026-09-16",
+      "title": "국회, 메탄 배출 직접 측정 관리체계 전환 주장 나와",
+      "category": "제도",
+      "summary": "김소희 의원은 축사에서 \"메탄은 대기 중 체류 기간은 짧지만 온실가스 영향이 커, 누출을 줄이는... 또한 국제메탄관리체계(OGMP 2.0) 참여와 배출권 거래제 연계 등 단계적 정책 추진의 필요성을 언급했다. 종합토론에서는...",
+      "source": "gukjenews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.gukjenews.com/news/articleView.html?idxno=3696621",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "gukjenews.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -62,6 +133,79 @@
       "region": "국내"
     },
     {
+      "id": "a2e7d4f4b9c48029",
+      "publishedAt": "2026-09-16",
+      "title": "[해외브리핑] EU의회, CBAM 긴급 면제 조항 삭제 추진",
+      "category": "제도",
+      "summary": "https://www.bloomberg.com/news/articles/2026-09-15/eu-bank-breaks-40-year-nuclear-taboo-with-finnish-investment?re_source=postr_story_2 EU 회원국, 주요 산업 탄소배출권 무상할당 확대 추진 유럽연합(EU) 회원국들이 글로벌 경쟁...",
+      "source": "esgeconomy.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.esgeconomy.com/news/articleView.html?idxno=16745",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "esgeconomy.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
+      "id": "c48699bae0d7d2eb",
+      "publishedAt": "2026-09-16",
+      "title": "[ESG 아카데미 9기 강의소개 ②] 탄소시장의 이해",
+      "category": "제도",
+      "summary": "[ESG 아카데미 9기 강의소개 ②] 탄소시장의 이해 - 탄소 감축 계층 구조, 탄소 배출권 시장 및 생태계 등 CPA뉴스",
+      "source": "CPA뉴스",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBGdjNodHBFVm1HNUhsN2pKeTBLaUVJcFByZHg3XzdfUzRjUWcwSm4tUF9HWjdPVXFDTm85dFpaM2VhNWV3NmpHakNhZDNFZVFKemRHSzdvM1hRaHEzYmFiS1ItU2d4UHI4?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "탄소시장",
+        "배출권",
+        "탄소배출권"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "CPA뉴스"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "884e7002220205d7",
+      "publishedAt": "2026-09-16",
+      "title": "AI로 에너지 줄이는 집…LG전자, WCE서 고효율 주거 설루션 공개",
+      "category": "제도",
+      "summary": "2013년부터 고효율 냉장고 등을 통해 탄소 배출권 확보에 나선 데 이어 지난해부터는 히트펌프를 활용한 탄소 배출권 확보에도 적극적으로 나서고 있다. 온실가스 감축을 위한 자체 목표도 세웠다. LG전자는 2030년까지...",
+      "source": "news1.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.news1.kr/industry/general-industry/6291879",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "news1.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "92dc829f2b27d518",
       "publishedAt": "2026-09-16",
       "title": "4000만 달러 흑연의 인연… 탄자니아, 포스코에 문 활짝 열었다",
@@ -78,6 +222,31 @@
       ],
       "duplicateSources": [
         "g-enews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "347bd701d3e65127",
+      "publishedAt": "2026-09-16",
+      "title": "\"철도 탄소중립, 에너지 절감·재생에너지 확대 함께 추진해야\"",
+      "category": "제도",
+      "summary": "탄소 배출권 거래제의 경우 기업별 배출량을 할당하고, 초과 배출분은 배출권 을 구매하도록 하는 방식이다. 반대로 배출량을 줄이면 잉여 배출권 을 판매할 수 있어 감축 설비에 투자할 경제적 유인이 생긴다. 최근 국내...",
+      "source": "electimes.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.electimes.com/news/articleView.html?idxno=372442",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "electimes.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -427,6 +596,30 @@
       ],
       "duplicateSources": [
         "kdpress.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "caaaa62e1703b88e",
+      "publishedAt": "2026-09-15",
+      "title": "기후변화재단, 국회토론회서 MRV 구축 논의",
+      "category": "제도",
+      "summary": "축사에 나선 김소희 의원은 \"메탄은 대기 중 체류 기간은 짧지만 온실가스 영향이 큰 만큼, 누출을 줄이는... 0 참여와 배출권 거래제 연계 등 단계적인 정책 추진이 필요하다\"고 밝혔다. 이 같은 정책 방향은 지난 11일...",
+      "source": "todayenergy.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.todayenergy.kr/news/articleView.html?idxno=303129",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "todayenergy.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -972,6 +1165,30 @@
       "duplicateCount": 1,
       "duplicateSources": [
         "이미디어"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "42a60270b03213a6",
+      "publishedAt": "2026-09-14",
+      "title": "서울시, 전국 지자체 최초 ‘탄소배출권’ 모의거래 시행",
+      "category": "제도",
+      "summary": "서울시, 전국 지자체 최초 ‘탄소배출권’ 모의거래 시행 기계설비신문",
+      "source": "기계설비신문",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9KVi0yaEx2ZllpcXhZeFlKWDVlUWw1Z2lwMGhMeXc3N3VQRGtSUDNaTXAtdGRHNDU0ZE1VdEZtdlAyMkZOTWxPVWF3Tktlb1ZaX1NyMWtSX0dmQ21OV1pIdVFGR2ttWFpqbXhMVA?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "기계설비신문"
       ],
       "searchProviders": [
         "Google News RSS"
@@ -2205,7 +2422,9 @@
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
         "배출권",
-        "탄소배출권"
+        "탄소배출권",
+        "배출권거래제",
+        "K-ETS"
       ],
       "duplicateSources": [
         "아시아투데이",
@@ -2729,8 +2948,8 @@
         "유상할당"
       ],
       "duplicateSources": [
-        "energydaily.co.kr",
-        "에너지데일리"
+        "에너지데일리",
+        "energydaily.co.kr"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -4748,7 +4967,8 @@
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
         "배출권",
-        "배출권거래제"
+        "배출권거래제",
+        "상쇄배출권"
       ],
       "duplicateSources": [
         "vegannews.co.kr"
@@ -4773,10 +4993,11 @@
         "탄소시장"
       ],
       "section": "news",
-      "duplicateCount": 2,
+      "duplicateCount": 3,
       "duplicateSources": [
         "newmediastock.co.kr",
-        "4차산업행정뉴스"
+        "4차산업행정뉴스",
+        "4ihjnews.com"
       ],
       "searchProviders": [
         "Google News RSS"
@@ -6505,6 +6726,7 @@
         "배출권거래제"
       ],
       "duplicateSources": [
+        "news.kbs.co.kr",
         "KBS 뉴스",
         "kbs.co.kr"
       ],
@@ -6512,7 +6734,7 @@
         "Google News RSS",
         "NAVER API HUB"
       ],
-      "duplicateCount": 2,
+      "duplicateCount": 3,
       "region": "국내"
     },
     {
@@ -6582,10 +6804,10 @@
         "탄소배출권"
       ],
       "duplicateSources": [
+        "daily.hankooki.com",
+        "bizwnews.com",
         "v.daum.net",
         "hankyung.com",
-        "bizwnews.com",
-        "daily.hankooki.com",
         "dt.co.kr",
         "businesskorea.co.kr",
         "kpenews.com",
@@ -6603,8 +6825,8 @@
         "디지털비즈온"
       ],
       "searchProviders": [
-        "Google News RSS",
-        "NAVER API HUB"
+        "NAVER API HUB",
+        "Google News RSS"
       ],
       "duplicateCount": 19,
       "region": "국내"
@@ -8106,6 +8328,7 @@
         "배출권거래제"
       ],
       "duplicateSources": [
+        "news.kbs.co.kr",
         "KBS 뉴스",
         "kbs.co.kr"
       ],
@@ -8113,7 +8336,7 @@
         "Google News RSS",
         "NAVER API HUB"
       ],
-      "duplicateCount": 2,
+      "duplicateCount": 3,
       "region": "국내"
     },
     {
@@ -9816,9 +10039,9 @@
       "duplicateCount": 5,
       "duplicateSources": [
         "동아경제",
-        "에너지프로슈머",
-        "연합뉴스",
         "energyprosumer.info",
+        "연합뉴스",
+        "에너지프로슈머",
         "yna.co.kr"
       ],
       "searchProviders": [
