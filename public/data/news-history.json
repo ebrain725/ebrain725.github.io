@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-09-16T10:12:31+09:00",
+  "generatedAt": "2026-09-16T13:12:23+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 603,
+  "itemCount": 613,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-09-16",
   "sourceCommitsScanned": 0,
@@ -54,6 +54,100 @@
       ],
       "duplicateSources": [
         "esgeconomy.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "f0f29494ae5fbedd",
+      "publishedAt": "2026-09-16",
+      "title": "위성곤 지사 \"제주 해상풍력, 국가계통 연계 필요...수도권까지 보내야...",
+      "category": "제도",
+      "summary": "자발적 탄소시장 활성화 필요성도 언급했다. 위 지사는 \"국내 자발적 탄소시장 은 미개척 단계\"라며 \"시장을 개척해 실질적으로 도민들이 기후 행동을 할 수 있도록 하는 게 중요하다\"고 말했다. 재생에너지 비중이 높은...",
+      "source": "wowtv.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202609160239&t=NN",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "wowtv.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "e7b6d93df9c7cbde",
+      "publishedAt": "2026-09-16",
+      "title": "위성곤 제주지사 \"비싼 수소트램 전면 백지화…전기트램·제주형 요금제...",
+      "category": "제도",
+      "summary": "도민들의 일상적인 온실가스 감축 노력을 금전적 가치로 환산하는 자발적 탄소시장 활성화에도 시동을 건다. 기후행동 참여 실적을 탄소크레딧으로 교환하고 자유롭게 거래할 수 있는 선도적인 시스템을 제주에 가장 먼저...",
+      "source": "widedaily.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.widedaily.com/news/articleView.html?idxno=301135",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 2,
+      "duplicateSources": [
+        "widedaily.com",
+        "newsis.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "3cda49d124b97729",
+      "publishedAt": "2026-09-16",
+      "title": "위성곤 제주지사 \"2차 공공기관 이전, 마사회·공항공사·에기평 유치 추...",
+      "category": "제도",
+      "summary": "또 \"자발적 탄소시장 도 더 개척해서 국민이 기후행동을 할 수 있게끔 하고, 기후행동을 탄소크레딧으로 교환·거래할 수 있는 시스템을 만들 것\"이라고 했다. 주민참여형 풍력 모델로는 제주한림해상풍력을 들었다. 위...",
+      "source": "etoday.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.etoday.co.kr/news/view/2625989",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "etoday.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "564adfce34f32aeb",
+      "publishedAt": "2026-09-16",
+      "title": "산림청, 중앙아 4개국과 산림협력 논의…산림위성·탄소 배출권 등",
+      "category": "제도",
+      "summary": "박은식 산림청장은 \"제1차 한-중앙아 정상회담 계기로 개최한 산림·기후대응 장관급 포럼을 통해 산림위성 활용·탄소 배출권 거래 등 한-중앙아 산림협력을 강화하고, 유엔사막화방지협약(UNCCD), 아시아산림협력기구...",
+      "source": "woodkorea.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.woodkorea.co.kr/news/articleView.html?idxno=91394",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "woodkorea.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -133,6 +227,30 @@
       "region": "국내"
     },
     {
+      "id": "09df4c9487b7d665",
+      "publishedAt": "2026-09-16",
+      "title": "[현장] 위성곤 제주지사 \"2035 탄소 중립·해상풍력 고도화…제주, '기후...",
+      "category": "제도",
+      "summary": "탄소중립 전략의 핵심으로는 '자발적 탄소시장 (VCM)' 활성화를 지목했다. 위 지사는 \"제주는 공장 등이 없어 강제배출권 시장에서 할 수 있는 게 많지 않다\"며 \"전 세계적으로 성장 가능성이 높은 자발적 탄소시장 에 집중해...",
+      "source": "dailian.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.dailian.co.kr/news/view/1690951/?sc=Naver",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소시장"
+      ],
+      "duplicateSources": [
+        "dailian.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "a2e7d4f4b9c48029",
       "publishedAt": "2026-09-16",
       "title": "[해외브리핑] EU의회, CBAM 긴급 면제 조항 삭제 추진",
@@ -155,6 +273,55 @@
       ],
       "duplicateCount": 1,
       "region": "해외"
+    },
+    {
+      "id": "b99adf6d6c014faa",
+      "publishedAt": "2026-09-16",
+      "title": "[인터뷰]위성곤 지사 \"제주를 기후경제수도로…기업유치하고 산업 키우...",
+      "category": "제도",
+      "summary": "공장이 적은 제주의 특성상 온실가스 배출권 거래제만으로는 새로운 시장을 만들기 어렵다는 판단에서다. 도민이 에너지 절약이나 친환경 교통 이용 등 기후행동을 하면 이를 탄소 크레딧으로 전환하고 거래할 수 있는...",
+      "source": "view.asiae.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://view.asiae.co.kr/article/2026091518133465564",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "온실가스 배출권"
+      ],
+      "duplicateSources": [
+        "view.asiae.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "3767b6563f0e135b",
+      "publishedAt": "2026-09-16",
+      "title": "[르포] 실외기 한 대로 냉난방·온수까지…제주서 시험대 오른 히트펌프",
+      "category": "제도",
+      "summary": "히트펌프 설치로 줄인 온실가스 를 감축 실적으로 인정받아 탄소 배출권 으로 판매하는 수익모델도 검토되고 있다. 다만 전국적인 확산까지는 넘어야 할 문턱이 남아 있다. 현재 사업은 태양광 설비를 갖춘 단독...",
+      "source": "ajunews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.ajunews.com/view/20260916095648709",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "ajunews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
     },
     {
       "id": "c48699bae0d7d2eb",
@@ -230,6 +397,30 @@
       "region": "국내"
     },
     {
+      "id": "864d80f3514954df",
+      "publishedAt": "2026-09-16",
+      "title": "'히트펌프' 보급 시동거는 제주도…삼성전자 손잡고 탄소중립 속도",
+      "category": "제도",
+      "summary": "기후부는 감축 실적을 탄소 배출권 으로 인증받아 판매하는 수익 모델 구축도 함께 추진하고 있다. 히트펌프는 공기 중의 열을 흡수해 냉난방과 급탕에 활용하는 고효율 기술이다. 제주 실증에 적용된 'EHS 올인원...",
+      "source": "einfomax.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4435152",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "einfomax.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "347bd701d3e65127",
       "publishedAt": "2026-09-16",
       "title": "\"철도 탄소중립, 에너지 절감·재생에너지 확대 함께 추진해야\"",
@@ -247,6 +438,30 @@
       ],
       "duplicateSources": [
         "electimes.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "e4a02929e6e9a368",
+      "publishedAt": "2026-09-16",
+      "title": "\"LNG서 줄줄 새는 메탄, 배출량 통계엔 안 잡혀\"",
+      "category": "제도",
+      "summary": "\"대기 중 체류 기간 짧지만 온실가스 영향은 크다\" 국내에서도 관련 논의가 활발하다. 15일... 국가 인벤토리와 배출권 거래제는 연료 사용량에 배출계수를 곱하는 방식을 기본으로 하는데, 탈루 배출은 연료 사용량과...",
+      "source": "newspenguin.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newspenguin.com/news/articleView.html?idxno=22184",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "newspenguin.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -352,7 +567,7 @@
         "Google News RSS",
         "NAVER API HUB"
       ],
-      "duplicateCount": 3,
+      "duplicateCount": 4,
       "region": "국내"
     },
     {
@@ -3078,6 +3293,31 @@
       "region": "국내"
     },
     {
+      "id": "d3ba92f5d2c8b4aa",
+      "publishedAt": "2026-09-09",
+      "title": "탄소배출권 90%가 '유령 크레딧'…블록체인, 탄소시장의 신뢰를 짓다[비트코인 A to Z]",
+      "category": "제도",
+      "summary": "탄소배출권 90%가 '유령 크레딧'…블록체인, 탄소시장의 신뢰를 짓다[비트코인 A to Z] 한경매거진&북",
+      "source": "한경매거진&북",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9pTFhkWmYzMTVveEY1c3cxNk11TEt6UW1QNFV0dEphVGN6UnUxTl9jdGRvRnNJcFdaby1Ld2ZfclFGUFA3LVlZcTZPOVpSdGpqd1A4S29Qd2xockVNRmNQN0xKYThueGdzbHlwZQ?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권",
+        "탄소시장"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "한경매거진&북"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "209857295b460b9d",
       "publishedAt": "2026-09-09",
       "title": "정부, 국내 탄소 크레딧 무결성 개선에 주력",
@@ -4191,7 +4431,8 @@
       ],
       "section": "news",
       "duplicateSources": [
-        "전기신문"
+        "전기신문",
+        "electimes.com"
       ],
       "searchProviders": [
         "Google News RSS"
@@ -4822,7 +5063,8 @@
       "matchedKeywords": [
         "탄소시장",
         "배출권",
-        "배출권거래제"
+        "배출권거래제",
+        "K-ETS"
       ],
       "duplicateSources": [
         "esgeconomy.com"
@@ -6726,8 +6968,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "news.kbs.co.kr",
         "KBS 뉴스",
+        "news.kbs.co.kr",
         "kbs.co.kr"
       ],
       "searchProviders": [
@@ -6755,13 +6997,14 @@
       ],
       "duplicateSources": [
         "yna.co.kr",
-        "연합뉴스"
+        "연합뉴스",
+        "매일경제 마켓"
       ],
       "searchProviders": [
         "NAVER API HUB",
         "Google News RSS"
       ],
-      "duplicateCount": 2,
+      "duplicateCount": 3,
       "region": "국내"
     },
     {
@@ -7016,12 +7259,13 @@
       ],
       "section": "news",
       "duplicateSources": [
-        "전기신문"
+        "전기신문",
+        "electimes.com"
       ],
       "searchProviders": [
         "Google News RSS"
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "region": "국내"
     },
     {
@@ -7445,8 +7689,8 @@
       "publishedAt": "2026-09-03",
       "title": "GGGI, '한·중·일+동남아' 탄소시장 연계 워크숍 시리즈 런칭",
       "category": "제도",
-      "summary": "GGGI, '한·중·일+동남아' 탄소시장 연계 워크숍 시리즈 런칭 넷제로뉴스",
-      "source": "넷제로뉴스",
+      "summary": "GGGI, '한·중·일+동남아' 탄소시장 연계 워크숍 시리즈 런칭 netzeronews.kr",
+      "source": "netzeronews.kr",
       "sourceType": "news",
       "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9HT0FJemc3Q3UxaUpLbGlaY2Z6OVZYOVl1Mjlzb0ZlMEdubS1OUWRVNTRDOVctSGI0Y3J2RDlobW4ycmZrSDNOUnB5Tk4wNHU0Sks5SFlYczVDVk9IbHoxVFp1ZnowWE91LUHSAW5BVV95cUxQb0liQi1fTjBqNVdTeGNyUTd2c1R4NVhsQ29pVjM5aDI5TVR5amo2MFVMTWp5TzgtX3FRc1BFVHBXMlhzYkJGdDdmVFZIRWNZWnlxM0JfMW0xUllmOGZycUo0ZDV5cXJTcDNTUHNSQQ?oc=5",
       "searchProvider": "Google News RSS",
@@ -7454,9 +7698,10 @@
         "탄소시장"
       ],
       "section": "news",
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "duplicateSources": [
-        "넷제로뉴스"
+        "넷제로뉴스",
+        "netzeronews.kr"
       ],
       "searchProviders": [
         "Google News RSS"
@@ -7857,12 +8102,13 @@
       ],
       "section": "news",
       "duplicateSources": [
-        "넷제로뉴스"
+        "넷제로뉴스",
+        "netzeronews.kr"
       ],
       "searchProviders": [
         "Google News RSS"
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "region": "국내"
     },
     {
@@ -8328,8 +8574,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "news.kbs.co.kr",
         "KBS 뉴스",
+        "news.kbs.co.kr",
         "kbs.co.kr"
       ],
       "searchProviders": [
@@ -10039,9 +10285,9 @@
       "duplicateCount": 5,
       "duplicateSources": [
         "동아경제",
-        "energyprosumer.info",
-        "연합뉴스",
         "에너지프로슈머",
+        "연합뉴스",
+        "energyprosumer.info",
         "yna.co.kr"
       ],
       "searchProviders": [
@@ -10207,12 +10453,13 @@
       ],
       "section": "news",
       "duplicateSources": [
-        "전기신문"
+        "전기신문",
+        "electimes.com"
       ],
       "searchProviders": [
         "Google News RSS"
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "region": "국내"
     },
     {
