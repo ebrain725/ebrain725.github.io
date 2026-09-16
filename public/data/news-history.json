@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-09-16T15:12:21+09:00",
+  "generatedAt": "2026-09-16T18:12:51+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 619,
+  "itemCount": 629,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-09-16",
   "sourceCommitsScanned": 0,
@@ -12,6 +12,52 @@
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "ebab004e2348ba6d",
+      "publishedAt": "2026-09-16",
+      "title": "한·중앙亞, 정상회의 정례화…5개국에 ‘코리아 데스크’ 설치",
+      "category": "제도",
+      "summary": "디지털 산림복원과 온실가스 감축, 저탄소 기술, 수자원 관리, 재생에너지, 탄소시장 등으로 협력 범위를 넓힌다. 안보 분야에서는 한반도의 완전한 비핵화와 항구적 평화 구축에 대한 의지를 재확인했다. 중앙아시아...",
+      "source": "etoday.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.etoday.co.kr/news/view/2626408",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "etoday.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "d6cf9518a58d2408",
+      "publishedAt": "2026-09-16",
+      "title": "한-중앙아시아 정상회의 '서울선언' 채택…4가지 중점 주제 설정[전문]",
+      "category": "제도",
+      "summary": "아울러 사막화, 토지 황폐화 및 빙하 소실에 따른 부정적 영향에 대응하고, 기후금융, 탄소시장 및 녹색성장 정책 분야에서 경험을 공유하는 것이 중요하다는 점을 강조하였다. 정상들은 지역센터 설립을 통한 기후기술...",
+      "source": "joseilbo.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.joseilbo.com/news/news_read.php?uid=575828&class=32&grp=",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "joseilbo.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
     {
       "id": "a9f2f2639fb4007c",
       "publishedAt": "2026-09-16",
@@ -33,6 +79,29 @@
       "searchProviders": [
         "NAVER API HUB"
       ],
+      "region": "국내"
+    },
+    {
+      "id": "049f40ad3fd5ddd8",
+      "publishedAt": "2026-09-16",
+      "title": "탄소 줄이는 식품기업들···설비·포장·재생에너지 투자 확대",
+      "category": "제도",
+      "summary": "오리온은 2022년 식품업계 최초로 '글로벌 탄소배출 통합관리 시스템'을 구축해 온실가스 와 배출권 , 배출시설 관련 데이터를 통합 관리하고 있다. 익산공장에서는 배합기·오븐의 폐열을 온수 생산에 활용하고, 기존...",
+      "source": "seoulfn.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.seoulfn.com/news/articleView.html?idxno=638118",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "seoulfn.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
       "region": "국내"
     },
     {
@@ -58,6 +127,31 @@
       ],
       "duplicateCount": 1,
       "region": "국내"
+    },
+    {
+      "id": "62f03f0bd4ef4a22",
+      "publishedAt": "2026-09-16",
+      "title": "정치적 불확실성에도 \"북미 지역 탄소 제거 시장 주도\"",
+      "category": "상쇄·외부사업",
+      "summary": "캘리포니아주의 탄소 배출권 거래제도 미국의 탄소 제거 크레딧 수요와 공급을 촉발시키고 있다.... 캘리포니아 대기자원위원회(CARB)는 탄소 제거 크레딧을 규제 준수를 위한 탄소 상쇄 에 사용할 수 있도록 하는...",
+      "source": "esgeconomy.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.esgeconomy.com/news/articleView.html?idxno=16757",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "esgeconomy.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
     },
     {
       "id": "e118179f2bea5bad",
@@ -180,6 +274,30 @@
       "region": "국내"
     },
     {
+      "id": "b4e94c84dba9414f",
+      "publishedAt": "2026-09-16",
+      "title": "버려지는 서버 열, 데이터센터 전기로 되돌린다",
+      "category": "제도",
+      "summary": "발전소의 전력 생산량이 감소하면서 온실가스 배출량도 연간 약 8만∼15만 톤 줄었다. 유럽연합 배출권 거래제와 같이 탄소배출에 비용을 부과하면 연간 약 500만∼1,000만 달러의 탄소 비용을 추가로 절감할 수 있는 것으로...",
+      "source": "viva100.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.viva100.com/article/20260916501415",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "viva100.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
       "id": "cec538773ccfe15e",
       "publishedAt": "2026-09-16",
       "title": "메탄 감축, '추정'에서 '실측'으로…2035년까지 한국형 MRV 구축 제안",
@@ -201,6 +319,53 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "ccbdce2c03702a6a",
+      "publishedAt": "2026-09-16",
+      "title": "대구시의회 \"에너지자원공사 최적지는 대구\"…\"정부, 균형발전 원칙 지...",
+      "category": "제도",
+      "summary": "\"대구는 전국 지자체 최초로 '솔라시티' 정책과 탄소 배출권 거래 사업을 추진해 온 에너지 정책 선도 도시\"라며 \"세계에너지총회(WEC)와 세계가스총회(WGC) 등 대형 국제행사를 성공리에 치러내며 강력한 글로벌 네트워크를...",
+      "source": "hidomin.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.hidomin.com/news/articleView.html?idxno=721465",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "newsclaim.co.kr",
+        "fnnews.com",
+        "bzeronews.com",
+        "hansbiz.co.kr",
+        "tk.newdaily.co.kr",
+        "kbsm.net",
+        "nocutnews.co.kr",
+        "hankyung.com",
+        "pennmike.com",
+        "bbsi.co.kr",
+        "eroun.net",
+        "idaegu.co.kr",
+        "kmib.co.kr",
+        "segye.com",
+        "kbmaeil.com",
+        "idaegu.com",
+        "hidomin.com",
+        "imaeil.com",
+        "ohmynews.com",
+        "yna.co.kr",
+        "seoul.co.kr",
+        "breaknews.com",
+        "hankookilbo.com",
+        "newsis.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 24,
       "region": "국내"
     },
     {
@@ -276,6 +441,30 @@
       "region": "해외"
     },
     {
+      "id": "627f3f27923da864",
+      "publishedAt": "2026-09-16",
+      "title": "“에너지공사는 대구로, 지방 몫 7000억은 지켜라”…대구시의회, 정부...",
+      "category": "제도",
+      "summary": "또 대구의 솔라시티 정책과 탄소 배출권 거래사업 추진 경험, 세계에너지총회와 세계가스총회 개최 등을 유치 근거로 제시했다. 다만 대구가 통합공사의 ‘최적지’라는 판단은 대구시의회의 유치 논리다. 통합기관의...",
+      "source": "inews24.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.inews24.com/view/2006311",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "inews24.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "f052c733ddfbc224",
       "publishedAt": "2026-09-16",
       "title": "‘미래의 온도’보다 ‘오늘의 생명’에 무게중심 옮겨야 할 때",
@@ -314,12 +503,14 @@
         "탄소시장"
       ],
       "duplicateSources": [
+        "etnews.com",
+        "wowtv.co.kr",
         "dailian.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 3,
       "region": "국내"
     },
     {
@@ -417,6 +608,53 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "7527666b302f8460",
+      "publishedAt": "2026-09-16",
+      "title": "[ETF 시황] 반도체 ETF 강세…SK하이닉스 레버리지 '질주'",
+      "category": "시장·가격",
+      "summary": "BNK 카카오그룹포커스가 4.35% 하락했고 ACE K휴머노이드로봇산업TOP2+(-4.01%), KODEX 원자력SMR(-3.43%), KODEX 유럽탄소 배출권 선물ICE(H)(-3.32%) 등이 약세를 보였다. 레버리지와 인버스를 포함한 전체 ETF 상승률...",
+      "source": "newspim.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newspim.com/news/view/20260916000990",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "newspim.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
+      "id": "a6fe9f4e4d252130",
+      "publishedAt": "2026-09-16",
+      "title": "[ESGX 용어 5] EU ESG 평가규정·전환금융·ITMO·WSR·ESA Harm",
+      "category": "상쇄·외부사업",
+      "summary": "국가 간 협력을 통해 탄소감축 비용을 낮추고 국제 탄소시장 을 확대하기 위한 제도다. ITMO를 이전할 때는 하나의 감축실적을 두 국가가 동시에 자국의 감축성과로 인정하는 ‘이중계산’을 막기 위한 승인과...",
+      "source": "etoday.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.etoday.co.kr/news/view/2626308",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "etoday.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
       "region": "국내"
     },
     {
@@ -533,6 +771,31 @@
       ],
       "duplicateSources": [
         "hankookilbo.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "2006d1f2c1792e09",
+      "publishedAt": "2026-09-16",
+      "title": "\"통합·경제성·연속성 최적지\"… 석유·가스공사 통합법인 유치전 사활",
+      "category": "제도",
+      "summary": "대구시는 지자체 가운데 처음으로 솔라시티 사업과 탄소 배출권 거래제 를 도입해 국내 에너지 전환 정책을 끌어왔다. 세계에너지총회와 세계가스총회 등 굵직한 국제 컨벤션을 연이어 치러내며 해외 주요 에너지 기관 및...",
+      "source": "dkilbo.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.dkilbo.com/news/articleView.html?idxno=554574",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "dkilbo.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -1698,7 +1961,8 @@
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
         "배출권",
-        "탄소배출권"
+        "탄소배출권",
+        "배출권거래제"
       ],
       "duplicateSources": [
         "edaily.co.kr"
@@ -8606,12 +8870,12 @@
       "duplicateSources": [
         "연합뉴스",
         "yna.co.kr",
+        "이투데이",
         "etoday.co.kr",
         "econonews.co.kr",
         "ebn.co.kr",
         "오토투데이",
         "뉴스1",
-        "이투데이",
         "asiatoday.co.kr",
         "news1.kr",
         "아시아경제",
@@ -9135,8 +9399,8 @@
       "publishedAt": "2026-09-02",
       "title": "\"탄소배출권처럼 사회문제 해결 성과도 거래할 수 있을까\"...SK사회적가치연구원-MYSC 공동 세미나 개최",
       "category": "제도",
-      "summary": "\"탄소배출권처럼 사회문제 해결 성과도 거래할 수 있을까\"...SK사회적가치연구원-MYSC 공동 세미나 개최 라이프인",
-      "source": "라이프인",
+      "summary": "\"탄소배출권처럼 사회문제 해결 성과도 거래할 수 있을까\"...SK사회적가치연구원-MYSC 공동 세미나 개최 lifein.news",
+      "source": "lifein.news",
       "sourceType": "news",
       "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9HZG94ZjM0aUlPRjNHSFNGMHZCMzI0ZmVLT2I5ekdMek5iT004aWN0a1pUZ19Ta3g3aElTb08tMktjSHFGam9xM3FGVlJfeFBQaFFQZmVlb01LdGxXZzV5dWNMS2ZEcUNJ?oc=5",
       "searchProvider": "Google News RSS",
@@ -9145,9 +9409,10 @@
         "탄소배출권"
       ],
       "section": "news",
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "duplicateSources": [
-        "라이프인"
+        "라이프인",
+        "lifein.news"
       ],
       "searchProviders": [
         "Google News RSS"
@@ -11591,7 +11856,8 @@
       "section": "news",
       "duplicateCount": 2,
       "duplicateSources": [
-        "데일리연합"
+        "데일리연합",
+        "dailyan.com"
       ],
       "region": "국내",
       "searchProviders": [
