@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-09-16T18:12:43+09:00",
+  "lastSync": "2026-09-16T20:58:50+09:00",
   "keywords": [
     "배출권",
     "배출권거래제",
@@ -30,7 +30,7 @@
   "warning": null,
   "aiInsight": {
     "summary": "최근 공식자료의 직접적인 수급 변수는 유상경매입니다. 최근 경매가 높은 낙찰가로 소화돼 공급보다 이행수요가 강하다는 신호입니다.",
-    "generatedAt": "2026-09-16T18:12:43+09:00",
+    "generatedAt": "2026-09-16T20:58:50+09:00",
     "basisLatestDate": "2026-09-09",
     "basisCount": 10,
     "source": "fallback",
@@ -732,6 +732,7 @@
         "tk.newdaily.co.kr",
         "kbsm.net",
         "nocutnews.co.kr",
+        "kyongbuk.co.kr",
         "hankyung.com",
         "pennmike.com",
         "bbsi.co.kr",
@@ -753,7 +754,7 @@
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 24,
+      "duplicateCount": 25,
       "region": "국내"
     },
     {
@@ -926,6 +927,54 @@
       "region": "해외"
     },
     {
+      "id": "50d94378aeadcb31",
+      "publishedAt": "2026-09-16",
+      "title": "[한-중앙亞 정상회의] '서울선언' 채택, 2년 주기 정상회의 정례화…4대...",
+      "category": "제도",
+      "summary": "아울러 사막화, 토지 황폐화 및 빙하 소실에 따른 부정적 영향에 대응하고, 기후금융, 탄소시장 및 녹색성장 정책 분야에서 경험을 공유하는 것이 중요하다는 점을 강조하였다. 정상들은 지역센터 설립을 통한 기후기술...",
+      "source": "polinews.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.polinews.co.kr/news/articleView.html?idxno=743329",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 2,
+      "duplicateSources": [
+        "joseilbo.com",
+        "polinews.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "d0faa107b356bfa1",
+      "publishedAt": "2026-09-16",
+      "title": "[패트롤]대구시의회-경산시-청도군-달서구-대구환경청-공군11전비",
+      "category": "제도",
+      "summary": "시의회는 대구가 솔라시티 정책과 탄소 배출권 거래사업을 선도적으로 시행하는 등 에너지정책 추진 경험을 쌓아왔다고 설명했다. 세계에너지총회와 세계가스총회 등 대규모 국제행사를 개최하며 국제적인 에너지...",
+      "source": "ekn.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.ekn.kr/web/view.php?key=20260916021275686",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "ekn.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "b99adf6d6c014faa",
       "publishedAt": "2026-09-16",
       "title": "[인터뷰]위성곤 지사 \"제주를 기후경제수도로…기업유치하고 산업 키우...",
@@ -951,6 +1000,31 @@
       "region": "국내"
     },
     {
+      "id": "56f22a373218ad52",
+      "publishedAt": "2026-09-16",
+      "title": "[온실가스 배출권] 9월 16일 KAU26, 전날 종가 유지",
+      "category": "시장·가격",
+      "summary": "[온실가스 배출권] 9월 16일 KAU26, 전날 종가 유지 데일리e뉴스",
+      "source": "데일리e뉴스",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5Yc2lFVVdxbWZnMHJPWGdMazlWQTY5WnJBV1lfcEdPTzR0RW1DbVFVLWhMLXNsU2ZZdTMyMEVBeDZya05vMTZyazdNemRMcjNib3UyRl9WQTZJOUpodndIb29qRElZY3FUbHNBVUZKcw?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "온실가스 배출권",
+        "KAU26"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "데일리e뉴스"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "3767b6563f0e135b",
       "publishedAt": "2026-09-16",
       "title": "[르포] 실외기 한 대로 냉난방·온수까지…제주서 시험대 오른 히트펌프",
@@ -967,6 +1041,30 @@
       ],
       "duplicateSources": [
         "ajunews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "aa3c30522e727e3b",
+      "publishedAt": "2026-09-16",
+      "title": "[공공기관장이 말한다] 유엔 ‘황사 이니셔티브’와 인천의 역할",
+      "category": "제도",
+      "summary": "셋째는, 이 프로그램의 실효성을 높이기 위하여 탄소 배출권 제도와 연계하는 일이다. 이를 통해 참여하는 국가나 기관 등에 대한 인센티브를 주고, 사막화 지역 거주 주민들의 능동적인 참여를 유도해야 한다. 마침...",
+      "source": "dt.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.dt.co.kr/article/12084394?ref=naver",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "dt.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -3970,8 +4068,8 @@
         "유상할당"
       ],
       "duplicateSources": [
-        "에너지데일리",
-        "energydaily.co.kr"
+        "energydaily.co.kr",
+        "에너지데일리"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -8210,6 +8308,30 @@
       "region": "국내"
     },
     {
+      "id": "d8ddb26d2eafff1c",
+      "publishedAt": "2026-09-03",
+      "title": "농협은행·농진원, 제주 농가서 ‘탄소배출권’ 매입…“저탄소 농업이 새 수익원”",
+      "category": "제도",
+      "summary": "농협은행·농진원, 제주 농가서 ‘탄소배출권’ 매입…“저탄소 농업이 새 수익원” v.daum.net",
+      "source": "v.daum.net",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5rVVl2SEtXemJ2N0N1cDJxOHIwaHo5T3J6eEN5emtOTWxwZWozQUpIc2RtV1RneldWVkNlRjMwcUlZSE9reU5HV0o5RFdrLWtJRG9Wbw?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "v.daum.net"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "cc738fc30bc3779f",
       "publishedAt": "2026-09-03",
       "title": "농협은행, 제주 농가에 '농업부문 탄소 배출권 구매대금' 전달",
@@ -10780,8 +10902,8 @@
         "온실가스 배출권"
       ],
       "duplicateSources": [
-        "비즈니스포스트",
-        "businesspost.co.kr"
+        "businesspost.co.kr",
+        "비즈니스포스트"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -14700,11 +14822,12 @@
         "K-ETS"
       ],
       "section": "news",
-      "duplicateCount": 5,
+      "duplicateCount": 6,
       "duplicateSources": [
         "서울경제TV",
         "v.daum.net",
         "sentv.co.kr",
+        "mt.co.kr",
         "머니투데이",
         "dt.co.kr"
       ],
@@ -17685,7 +17808,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "e7cc74cedb1a7350",
+      "id": "c315dd89d2d3d43a",
       "publishedAt": "2026-07-24",
       "title": "「배출권거래제 고도화 및 간접배출 관리체계 개선 방안 연구」 입찰 재공고",
       "category": "제도",
@@ -17693,7 +17816,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C%EA%B1%B0%EB%9E%98%EC%A0%9C&menuId=10524&orgCd=&boardMasterId=39&boardId=1879830",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C%EA%B1%B0%EB%9E%98%EC%A0%9C&menuId=10524&orgCd=&boardMasterId=39&boardId=1879830",
       "matchedKeywords": [
         "배출권거래제"
       ]
@@ -18730,7 +18853,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "58d9ce645cb06946",
+      "id": "78ae7cb43ef1e7aa",
       "publishedAt": "2026-07-03",
       "title": "「배출권거래제 고도화 및 간접배출 관리체계 개선 방안 연구」 입찰 공고",
       "category": "제도",
@@ -18738,7 +18861,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C%EA%B1%B0%EB%9E%98%EC%A0%9C&menuId=10524&orgCd=&boardMasterId=39&boardId=1875540",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C%EA%B1%B0%EB%9E%98%EC%A0%9C&menuId=10524&orgCd=&boardMasterId=39&boardId=1875540",
       "matchedKeywords": [
         "배출권거래제"
       ]
@@ -27405,7 +27528,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "45ae9c9285f11d33",
+      "id": "eafd57a5985c46be",
       "publishedAt": "2026-02-25",
       "title": "「배출권거래제 외부사업 활성화 방안 마련 연구」 입찰 공고",
       "category": "상쇄·외부사업",
@@ -27413,7 +27536,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C%EA%B1%B0%EB%9E%98%EC%A0%9C&menuId=10524&orgCd=&boardMasterId=39&boardId=1845320",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C%EA%B1%B0%EB%9E%98%EC%A0%9C&menuId=10524&orgCd=&boardMasterId=39&boardId=1845320",
       "matchedKeywords": [
         "배출권거래제"
       ]
@@ -33458,7 +33581,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "59c187c1846bd4fd",
+      "id": "1754468216cbfcf5",
       "publishedAt": "2025-11-26",
       "title": "배출권 거래 시장 참여자별 배출권 보유 한도 공고",
       "category": "제도",
@@ -33466,7 +33589,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C&menuId=10524&orgCd=&boardMasterId=39&boardId=1823160",
+      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C&menuId=10524&orgCd=&boardMasterId=39&boardId=1823160",
       "matchedKeywords": [
         "배출권"
       ]
@@ -34199,7 +34322,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "f1d99a975cb32c41",
+      "id": "73f36c800861b330",
       "publishedAt": "2025-11-14",
       "title": "온실가스 배출권거래제 제4차 계획기간 국가 배출권 할당계획 공고",
       "category": "제도",
@@ -34207,7 +34330,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C%EA%B1%B0%EB%9E%98%EC%A0%9C&menuId=10524&orgCd=&boardMasterId=39&boardId=1819470",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C%EA%B1%B0%EB%9E%98%EC%A0%9C&menuId=10524&orgCd=&boardMasterId=39&boardId=1819470",
       "matchedKeywords": [
         "배출권거래제"
       ]
@@ -34290,7 +34413,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "093fe729da33efbf",
+      "id": "b2db31eba5c50b6f",
       "publishedAt": "2025-11-14",
       "title": "온실가스 배출권거래제 제3차 계획기간 국가 배출권 할당계획 변경사항 공고",
       "category": "제도",
@@ -34298,7 +34421,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C%EA%B1%B0%EB%9E%98%EC%A0%9C&menuId=10524&orgCd=&boardMasterId=39&boardId=1819480",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C%EA%B1%B0%EB%9E%98%EC%A0%9C&menuId=10524&orgCd=&boardMasterId=39&boardId=1819480",
       "matchedKeywords": [
         "배출권거래제"
       ]
@@ -36704,7 +36827,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "0873155641698fe5",
+      "id": "08410269414fbf10",
       "publishedAt": "2025-09-26",
       "title": "제4차 계획기간 국가 배출권 할당계획(안) 설명회 개최 공고",
       "category": "제도",
@@ -36712,7 +36835,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C&menuId=10524&orgCd=&boardMasterId=39&boardId=1768870",
+      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C&menuId=10524&orgCd=&boardMasterId=39&boardId=1768870",
       "matchedKeywords": [
         "배출권"
       ]
@@ -37789,7 +37912,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "5cf0d1575746981f",
+      "id": "5f579d1e8fa62b44",
       "publishedAt": "2025-09-10",
       "title": "배출권거래법 위반에 따른 과태료 부과 고지서 공시송달",
       "category": "제도",
@@ -37797,7 +37920,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C&menuId=10524&orgCd=&boardMasterId=39&boardId=1764950",
+      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C&menuId=10524&orgCd=&boardMasterId=39&boardId=1764950",
       "matchedKeywords": [
         "배출권"
       ]
@@ -38358,7 +38481,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "70ce79175ffcc841",
+      "id": "23bf824129393836",
       "publishedAt": "2025-08-29",
       "title": "제4차 계획기간 국가 배출권 할당계획(안) 및 제3차 계획기간 국가 배출권 할당계획 변경(안) 공청회 개최 공고(내용 추가)",
       "category": "제도",
@@ -38366,7 +38489,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C&menuId=10524&orgCd=&boardMasterId=39&boardId=1761570",
+      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C&menuId=10524&orgCd=&boardMasterId=39&boardId=1761570",
       "matchedKeywords": [
         "배출권"
       ]
@@ -40629,7 +40752,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "51372abb448e18aa",
+      "id": "b67a6c195ed54d0a",
       "publishedAt": "2025-07-23",
       "title": "온실가스 배출권의 할당 및 거래에 관한 법률 위반에 따른 과태료 부과 사전통지 공시송달",
       "category": "제도",
@@ -40637,7 +40760,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C&menuId=10524&orgCd=&boardMasterId=39&boardId=1755160",
+      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C&menuId=10524&orgCd=&boardMasterId=39&boardId=1755160",
       "matchedKeywords": [
         "배출권"
       ]
@@ -42180,7 +42303,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "d536d0fd889f6309",
+      "id": "f1c375a64457d464",
       "publishedAt": "2025-06-30",
       "title": "온실가스 배출권의 할당 및 거래에 관한 법률 위반에 따른 과태료 부과 고지서 공시송달",
       "category": "제도",
@@ -42188,7 +42311,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C&menuId=10524&orgCd=&boardMasterId=39&boardId=1750700",
+      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C&menuId=10524&orgCd=&boardMasterId=39&boardId=1750700",
       "matchedKeywords": [
         "배출권"
       ]
@@ -42779,7 +42902,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "58828e56b31f8f6a",
+      "id": "d7fb8dedcd1e45ae",
       "publishedAt": "2025-06-09",
       "title": "배출권거래제 자발적 참여업체 신청 절차 공고",
       "category": "제도",
@@ -42787,7 +42910,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C%EA%B1%B0%EB%9E%98%EC%A0%9C&menuId=10524&orgCd=&boardMasterId=39&boardId=1746990",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C%EA%B1%B0%EB%9E%98%EC%A0%9C&menuId=10524&orgCd=&boardMasterId=39&boardId=1746990",
       "matchedKeywords": [
         "배출권거래제"
       ]
@@ -52187,7 +52310,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "cd43602a3ac2b6c0",
+      "id": "c42e59430c76006a",
       "publishedAt": "2024-12-24",
       "title": "온실가스 배출권거래제 제3차 계획기간 국가 배출권 할당계획 변경사항 공고",
       "category": "제도",
@@ -52195,7 +52318,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C%EA%B1%B0%EB%9E%98%EC%A0%9C&menuId=10524&orgCd=&boardMasterId=39&boardId=1715690",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C%EA%B1%B0%EB%9E%98%EC%A0%9C&menuId=10524&orgCd=&boardMasterId=39&boardId=1715690",
       "matchedKeywords": [
         "배출권거래제"
       ]
@@ -54138,7 +54261,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "f17c476f0da28b8c",
+      "id": "3399eabf2b5b62d4",
       "publishedAt": "2024-11-12",
       "title": "제4차 배출권거래제 기본계획(안) 및 제3차 배출권 할당계획 변경(안) 공청회 개최 공고",
       "category": "제도",
@@ -54146,7 +54269,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C%EA%B1%B0%EB%9E%98%EC%A0%9C&menuId=10524&orgCd=&boardMasterId=39&boardId=1707640",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C%EA%B1%B0%EB%9E%98%EC%A0%9C&menuId=10524&orgCd=&boardMasterId=39&boardId=1707640",
       "matchedKeywords": [
         "배출권거래제"
       ]
@@ -244405,10 +244528,10 @@
   },
   "newsRetention": {
     "policy": "append-only",
-    "lastMergedAt": "2026-09-16T18:12:51+09:00",
-    "itemCount": 629,
-    "archiveBefore": 619,
-    "currentBefore": 532,
+    "lastMergedAt": "2026-09-16T20:58:58+09:00",
+    "itemCount": 634,
+    "archiveBefore": 629,
+    "currentBefore": 536,
     "gitRecoveryEnabled": false
   }
 }
