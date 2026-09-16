@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-09-16T13:12:23+09:00",
+  "generatedAt": "2026-09-16T15:12:21+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 613,
+  "itemCount": 619,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-09-16",
   "sourceCommitsScanned": 0,
@@ -33,6 +33,30 @@
       "searchProviders": [
         "NAVER API HUB"
       ],
+      "region": "국내"
+    },
+    {
+      "id": "e0e141865d34f5e7",
+      "publishedAt": "2026-09-16",
+      "title": "충주 제1산단에 14MW 태양광…지역난방공사, 충주그린에너지 SPC 참여",
+      "category": "제도",
+      "summary": "유아이네트웍스는 14MW급 태양광과 전기차(EV) 충전소의 탄소 배출권 검증 플랫폼을 구축한다. 사업비는 연차별로 국비와 지방비, SPC 민간 출자금 등을 분담해 집행한다. 전체 사업비 330억원 가운데 SPC 출자금은...",
+      "source": "discoverynews.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.discoverynews.kr/news/articleView.html?idxno=1101761",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "discoverynews.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
       "region": "국내"
     },
     {
@@ -156,6 +180,30 @@
       "region": "국내"
     },
     {
+      "id": "cec538773ccfe15e",
+      "publishedAt": "2026-09-16",
+      "title": "메탄 감축, '추정'에서 '실측'으로…2035년까지 한국형 MRV 구축 제안",
+      "category": "상쇄·외부사업",
+      "summary": "배관 재질과 연령, 밸브·정압기 수량, 압축기 가동시간, 누출탐지·보수(LDAR) 이력 등을 배출권 거래제나... 사업자가 회수된 가스의 경제적 가치를 활용하도록 하면 감축 투자비의 일부를 상쇄 할 수 있다. 도시가스 배관과...",
+      "source": "energydaily.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.energydaily.co.kr/news/articleView.html?idxno=203118",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "energydaily.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "3da8aba45f62d6f5",
       "publishedAt": "2026-09-16",
       "title": "국회기후변화포럼 세미나…\"한국 양자협력, 일본·스위스·싱가포르보다...",
@@ -202,6 +250,30 @@
       ],
       "duplicateCount": 1,
       "region": "국내"
+    },
+    {
+      "id": "f7b86e3f16ae3f33",
+      "publishedAt": "2026-09-16",
+      "title": "국내 연구진 “폐열 재활용 AI 데이터센터, 비용 48%· 온실가스 72% 줄여...",
+      "category": "제도",
+      "summary": "EU 배출권 거래제처럼 탄소 배출에 비용을 부과하는 제도를 고려하면 온실가스 배출 감소를 통해 연간 약 500만~1000만 달러의 탄소 배출 비용도 줄일 수 있는 것으로 나타났다. 전력 공급 방식의 경제성은 지역별로 차이가...",
+      "source": "hellot.net",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.hellot.net/news/article.html?no=114994",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "hellot.net"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
     },
     {
       "id": "f052c733ddfbc224",
@@ -324,6 +396,30 @@
       "region": "국내"
     },
     {
+      "id": "468ec50c05414831",
+      "publishedAt": "2026-09-16",
+      "title": "[KAI 세미나] 지현영 서울대 CEELP 변호사 “ESG 인증 기관, 외형 요건으...",
+      "category": "제도",
+      "summary": "지속가능성 공시 관련한 법개정안 관련해서 환경 정보 공개 제도 또는 배출권 거래제 명세서 등이 연동될 수 있도록 해 기업의 중복 보고 부담을 완화하고 이용자가 혼선에 없도록 신뢰성 있게 정보를 정합시키는 것이...",
+      "source": "tfmedia.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.tfmedia.co.kr/news/article.html?no=207258",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "tfmedia.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "c48699bae0d7d2eb",
       "publishedAt": "2026-09-16",
       "title": "[ESG 아카데미 9기 강의소개 ②] 탄소시장의 이해",
@@ -421,6 +517,30 @@
       "region": "국내"
     },
     {
+      "id": "b948071ac631c031",
+      "publishedAt": "2026-09-16",
+      "title": "\"한국가스공사 중심 통합해야\"... 대구시의회, 에너지자원공사 본사 대...",
+      "category": "제도",
+      "summary": "시의회는 \"대구시는 전국 최초로 '솔라시티 조례'를 제정하고 탄소 배출권 거래 사업을 선도적으로 시작한 도시\"라며 \"정부는 소모적인 지방경쟁 유도를 중단하고 일관된 국가균형발전의 대원칙을 엄격히 준수해야 한다\"고...",
+      "source": "hankookilbo.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.hankookilbo.com/news/article/A2026091614070001916?did=NA",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "hankookilbo.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "347bd701d3e65127",
       "publishedAt": "2026-09-16",
       "title": "\"철도 탄소중립, 에너지 절감·재생에너지 확대 함께 추진해야\"",
@@ -443,6 +563,41 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "ac939bc6d42b6ecc",
+      "publishedAt": "2026-09-16",
+      "title": "\"에너지자원공사 대구 유치 확정하라\" 대구시의회 성명",
+      "category": "제도",
+      "summary": "이어 \"대구는 대한민국을 대표하는 준비된 에너지 혁신 도시\"라며 \"전국 최초로 '솔라시티 조례'를 제정하고 탄소 배출권 거래 사업을 선도적으로 시작한 도시며 글로벌 에너지 네트워크를 구축해 왔다\"고 강조했다. 또한...",
+      "source": "newsis.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newsis.com/view/NISX20260916_0003791966",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "fnnews.com",
+        "kbsm.net",
+        "hankyung.com",
+        "eroun.net",
+        "idaegu.co.kr",
+        "kmib.co.kr",
+        "segye.com",
+        "kbmaeil.com",
+        "idaegu.com",
+        "yna.co.kr",
+        "newsis.com",
+        "nocutnews.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 12,
       "region": "국내"
     },
     {
@@ -3404,7 +3559,7 @@
       "matchedKeywords": [
         "탄소시장"
       ],
-      "duplicateCount": 3,
+      "duplicateCount": 4,
       "duplicateSources": [
         "news1.kr",
         "v.daum.net"
@@ -8451,12 +8606,12 @@
       "duplicateSources": [
         "연합뉴스",
         "yna.co.kr",
-        "이투데이",
         "etoday.co.kr",
         "econonews.co.kr",
         "ebn.co.kr",
         "오토투데이",
         "뉴스1",
+        "이투데이",
         "asiatoday.co.kr",
         "news1.kr",
         "아시아경제",
