@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-09-16T20:58:58+09:00",
+  "generatedAt": "2026-09-17T02:15:19+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
   "itemCount": 634,
@@ -1077,6 +1077,7 @@
       ],
       "duplicateSources": [
         "v.daum.net",
+        "연합뉴스",
         "yna.co.kr"
       ],
       "searchProviders": [
@@ -5095,13 +5096,14 @@
       ],
       "duplicateSources": [
         "edaily.co.kr",
-        "마켓인"
+        "마켓인",
+        "marketin.edaily.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB",
         "Google News RSS"
       ],
-      "duplicateCount": 2,
+      "duplicateCount": 3,
       "region": "국내"
     },
     {
@@ -7188,6 +7190,7 @@
       "duplicateSources": [
         "lifein.news",
         "todayenergy.kr",
+        "뉴스와이어",
         "hansbiz.co.kr",
         "lawissue.co.kr",
         "m-i.kr",
@@ -7539,7 +7542,7 @@
         "탄소배출권"
       ],
       "section": "news",
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "duplicateSources": [
         "v.daum.net"
       ],
@@ -8725,14 +8728,14 @@
       "region": "국내"
     },
     {
-      "id": "9eb1c6ec6b5aff94",
+      "id": "2583adbaadc91d0a",
       "publishedAt": "2026-09-02",
       "title": "자발적 탄소시장 생태계 확충을 위해 카타르 글로벌탄소위원회(GCC)와 협력 강화",
       "category": "제도",
-      "summary": "자발적 탄소시장 생태계 확충을 위해 카타르 글로벌탄소위원회(GCC)와 협력 강화 한국방송뉴스",
-      "source": "한국방송뉴스",
+      "summary": "자발적 탄소시장 생태계 확충을 위해 카타르 글로벌탄소위원회(GCC)와 협력 강화 ikbn.news",
+      "source": "ikbn.news",
       "sourceType": "news",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1jZjJBb2RRenR4REtSVDk1SUtJelE1QXdISGk4TVI2dE9oNEl1TjJYNExQOUc2a2I1bmo4Q3BkdTQyZkp0Y3E5Ri1zM0dTOWdZZzNqX3ZuN3ZLdGZfWHBNZA?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9pTGFBV0hGd2YyZ3JmYjBtYUpGVERwV1RyN3V4NlloU2l2MUNobVJoZGJILTZRMkNBOF9TSUZCWEhPc1hWVmI4RWVWSjVxNkxlbTEzYUM1eTczTHZKZGc?oc=5",
       "searchProvider": "Google News RSS",
       "matchedKeywords": [
         "탄소시장"
@@ -8740,7 +8743,8 @@
       "section": "news",
       "duplicateCount": 2,
       "duplicateSources": [
-        "한국방송뉴스"
+        "한국방송뉴스",
+        "ikbn.news"
       ],
       "searchProviders": [
         "Google News RSS"
@@ -9012,13 +9016,14 @@
         "m-i.kr",
         "viva100.com",
         "sisafocus.co.kr",
-        "마켓인"
+        "마켓인",
+        "marketin.edaily.co.kr"
       ],
       "searchProviders": [
         "Google News RSS",
         "NAVER API HUB"
       ],
-      "duplicateCount": 23,
+      "duplicateCount": 24,
       "region": "국내"
     },
     {
@@ -9607,8 +9612,8 @@
         "온실가스 배출권"
       ],
       "duplicateSources": [
-        "businesspost.co.kr",
-        "비즈니스포스트"
+        "비즈니스포스트",
+        "businesspost.co.kr"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -13160,8 +13165,8 @@
         "서울경제TV",
         "v.daum.net",
         "sentv.co.kr",
-        "mt.co.kr",
         "머니투데이",
+        "mt.co.kr",
         "dt.co.kr"
       ],
       "region": "국내",
