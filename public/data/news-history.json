@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-09-18T02:14:26+09:00",
+  "generatedAt": "2026-09-18T08:12:23+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 670,
+  "itemCount": 673,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-09-18",
   "sourceCommitsScanned": 0,
@@ -12,6 +12,54 @@
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "6b0d2e0eaf202e1b",
+      "publishedAt": "2026-09-18",
+      "title": "亞 LNG 수요 2년 연속 감소 전망 속, ' 가스 텍 2026'선 친환경 선박 계약...",
+      "category": "제도",
+      "summary": "방콕에서 열린 ‘ 가스 텍 2026’ 현장에서는 국제해사기구(IMO)의 환경 규제 강화와 탄소 배출권 비용... 이어지는 온실가스 감축 규제라는 '구조적 전환'에 맞춰 장기 인프라 투자를 흔들림 없이 집행하고 있음을...",
+      "source": "g-enews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.g-enews.com/view.php?ud=202609180808051960c8c1c064d_1",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "g-enews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "9e3e81325c34bb0c",
+      "publishedAt": "2026-09-18",
+      "title": "“교역자 수급난 해소안 절실” “AI 시대, 기독교적 관점 제시”",
+      "category": "제도",
+      "summary": "탄소 배출권 제도처럼 기업이 돈을 내고 배출할 수 있도록 하는 현 방식이 과연 충분한 대안인지 고민할 필요가 있다. 한국교회와 함께 국내외 산림 조성 등 구체적인 캠페인을 펼치는 방안을 모색하는 일이 절실하다....",
+      "source": "kmib.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.kmib.co.kr/article/view.asp?arcid=9000013236&cp=nv",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "kmib.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
     {
       "id": "3dede1b2ec3910be",
       "publishedAt": "2026-09-18",
@@ -30,6 +78,30 @@
       ],
       "duplicateSources": [
         "ksilbo.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
+      "id": "19da24d71db059d8",
+      "publishedAt": "2026-09-18",
+      "title": "DS투자증권 “LNG 벙커링선, 2030년까지 최소 75척 추가 발주…중형 조선...",
+      "category": "제도",
+      "summary": "글로벌 LNG 선박 연료 잠재 수요는 1100만톤 수준이지만 실제 벙커링 수요는 약 400만톤에 그치고 있으며 수요 대부분은 2026년부터 유럽연합 배출권 거래제(EU ETS) 탄소비용이 100% 부과되는 유럽 항만에 집중돼 있다....",
+      "source": "etoday.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.etoday.co.kr/news/view/2627032",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "etoday.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -596,12 +668,14 @@
         "탄소배출권"
       ],
       "duplicateSources": [
+        "v.daum.net",
         "etoday.co.kr"
       ],
       "searchProviders": [
+        "Google News RSS",
         "NAVER API HUB"
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "region": "해외"
     },
     {
