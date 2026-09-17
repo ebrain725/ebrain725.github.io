@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-09-17T15:15:13+09:00",
+  "generatedAt": "2026-09-17T18:12:36+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 660,
+  "itemCount": 668,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-09-17",
   "sourceCommitsScanned": 0,
@@ -60,6 +60,30 @@
       "region": "해외"
     },
     {
+      "id": "281c771a008e0c4e",
+      "publishedAt": "2026-09-17",
+      "title": "철강업계 전기요금 부담 해법은…\"얼마나 낮출까보다 어떻게 지원할까...",
+      "category": "유상경매",
+      "summary": "해외 주요국처럼 전력 다소비·무역집약 산업을 객관적인 기준으로 선별하고 배출권 경매수입 등 법정... 재원으로는 배출권 경매수입을 활용하는 방안을 제시했다. 배출권 거래제로 발생하는 산업계의 탄소비용을 같은...",
+      "source": "ddaily.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.ddaily.co.kr/page/view/2026091714585875994",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "ddaily.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "3b4a63dcba557b93",
       "publishedAt": "2026-09-17",
       "title": "중국, 제품 탄소발자국 인증 본격화…배터리·태양광 등 17개 품목 기준...",
@@ -83,6 +107,29 @@
       ],
       "duplicateCount": 1,
       "region": "국내"
+    },
+    {
+      "id": "1ad5d57e2f3a121d",
+      "publishedAt": "2026-09-17",
+      "title": "전기료 10% 내려도 역부족…철강업계 \"별도 지원체계 마련해야\"",
+      "category": "상쇄·외부사업",
+      "summary": "한전 부담 방식으론 한계…2~3년 뒤 할인효과 상쇄 우려 독일·영국 등은 재정·기금 활용…장기 지원체계... 감면, 배출권 비용 보전 등을 병행하고 있다. 전력·에너지 집약도와 무역 노출도 등 객관적인 기준을 토대로...",
+      "source": "ajunews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.ajunews.com/view/20260917165858983",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "ajunews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
     },
     {
       "id": "2899deeb26079310",
@@ -232,6 +279,36 @@
       "region": "국내"
     },
     {
+      "id": "35887ac3b331023a",
+      "publishedAt": "2026-09-17",
+      "title": "남부발전, 산업계 녹색전환 해법 모색",
+      "category": "제도",
+      "summary": "이번 세미나는 국가 온실가스 감축목표(NDC) 강화와 제4차 배출권 거래제 계획기간 시행 등 탄소중립 정책 환경... 주제 발표와 토론에서는 배출권 거래제(ETS), 자발적 탄소시장(VCM), 신재생에너지공급의무화제도(RPS) 등 개별...",
+      "source": "ikld.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.ikld.kr/news/articleView.html?idxno=340901",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소시장"
+      ],
+      "duplicateSources": [
+        "lawissue.co.kr",
+        "mt.co.kr",
+        "cnbnews.com",
+        "gukjenews.com",
+        "pinpointnews.co.kr",
+        "ikld.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 6,
+      "region": "국내"
+    },
+    {
       "id": "322446192f21656c",
       "publishedAt": "2026-09-17",
       "title": "고려대 캠퍼스타운 입주기업 ‘NAWA’, 기후에너지혁신상 장관상 수상",
@@ -255,6 +332,31 @@
       ],
       "duplicateCount": 1,
       "region": "국내"
+    },
+    {
+      "id": "db8e7bfa0b791d27",
+      "publishedAt": "2026-09-17",
+      "title": "中 탄소 배출권 거래 사상 최대…지난해 2억3500만t",
+      "category": "시장·가격",
+      "summary": "17일 신화통신 보도에 따르면 '전국 탄소시장 발전 보고서(2026)'는 2025년 탄소배출권 시장 거래량이 2억3500만t으로 전년보다 24.36% 증가해 역대 최대를 기록했다고 밝혔다. 거래액은 146억3000만위안이었다. 올 8월...",
+      "source": "the-today.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.the-today.com/news/articleView.html?idxno=90316",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권",
+        "탄소시장"
+      ],
+      "duplicateSources": [
+        "the-today.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
     },
     {
       "id": "6569bddf544be38f",
@@ -402,6 +504,32 @@
       "region": "국내"
     },
     {
+      "id": "97ab7cb0221acd03",
+      "publishedAt": "2026-09-17",
+      "title": "[기획]탄소 비용 부담 커진다…녹색 청구서 '주의보'",
+      "category": "제도",
+      "summary": "17일 업계에 따르면 올해부터 오는 2030년까지 온실가스 배출권 거래제 제4차 계획기간이 적용된다. 발전 부문의 유상할당 비율은 올해 15%에서 2030년 50%로 단계적으로 높아진다. 그 밖의 발전 외 부문의 유상할당 비율도...",
+      "source": "m-i.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.m-i.kr/news/articleView.html?idxno=1415168",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "온실가스 배출권",
+        "유상할당"
+      ],
+      "duplicateSources": [
+        "m-i.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "6e448a45a9264e58",
       "publishedAt": "2026-09-17",
       "title": "[ESGX 이슈 5] EU, 산업계에 무상 배출권 확대…탄소비용 82억유로 절감",
@@ -478,8 +606,8 @@
       "publishedAt": "2026-09-17",
       "title": "EU, 철강·화학 등 중공업에 탄소배출권 더 푼다…무상할당 1억2100만톤 확대",
       "category": "제도",
-      "summary": "EU, 철강·화학 등 중공업에 탄소배출권 더 푼다…무상할당 1억2100만톤 확대 ESG비즈니스리뷰",
-      "source": "ESG비즈니스리뷰",
+      "summary": "EU, 철강·화학 등 중공업에 탄소배출권 더 푼다…무상할당 1억2100만톤 확대 esgbusinessreview.kr",
+      "source": "esgbusinessreview.kr",
       "sourceType": "news",
       "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9DSGJtZE5nd3dKYXdud1pweGdFQWVOb1ktSlJkcklWeE5pTktWNk93QnJFY25wMGNsX2ZBTHp1dlVqX3hqMTNzTDIwR3VZZVBUQjRwd1M2c0xHVzZRRjMyMV9YRTVoN0RkRW1Kb3d2bmU0bGs?oc=5",
       "searchProvider": "Google News RSS",
@@ -488,14 +616,38 @@
         "탄소배출권"
       ],
       "section": "news",
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "duplicateSources": [
-        "ESG비즈니스리뷰"
+        "ESG비즈니스리뷰",
+        "esgbusinessreview.kr"
       ],
       "searchProviders": [
         "Google News RSS"
       ],
       "region": "해외"
+    },
+    {
+      "id": "6c7e04eb05693938",
+      "publishedAt": "2026-09-17",
+      "title": "CATL·제로바, 테슬라 세미 넘은 전기트럭 기술 공개…1000km 달리고 25분...",
+      "category": "제도",
+      "summary": "이들은 충전 인프라 부족과 높은 전기요금을 이유로 들며 충전소 확대와 전력망 연결 속도 개선, 이산화탄소 배출량과 연계한 도로 통행료 확대, 배출권 거래 수입의 인프라 및 무배출 차량 보급 재투자 등이...",
+      "source": "digitaltoday.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=701284",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "digitaltoday.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
     },
     {
       "id": "2e2097663dfe48bd",
@@ -610,6 +762,30 @@
       ],
       "duplicateSources": [
         "kpenews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "e6e052bf82dead8e",
+      "publishedAt": "2026-09-17",
+      "title": "\"철강 전기료 할인, 통상마찰 우려\"",
+      "category": "제도",
+      "summary": "미국 상무부는 지난 5월 포스코가 2023년 미국에 수출한 후판에 3.7%의 상계관세를 확정하면서 한국의 산업용 전기요금 제도와 배출권거래제 (ETS)를 보조금으로 인정했다. 요금 설계를 맡은 한국전력도 통상 리스크를...",
+      "source": "mtn.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://news.mtn.co.kr/news-detail/2026091715405536253",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "mtn.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -2205,7 +2381,8 @@
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
         "배출권",
-        "탄소배출권"
+        "탄소배출권",
+        "KAU25"
       ],
       "duplicateSources": [
         "wowtv.co.kr"
@@ -3344,6 +3521,32 @@
       "region": "국내"
     },
     {
+      "id": "bf1faab74a9fe304",
+      "publishedAt": "2026-09-11",
+      "title": "배출권거래제, 탄소세보다 물가 더 흔든다",
+      "category": "제도",
+      "summary": "배출권거래제, 탄소세보다 물가 더 흔든다 wikyung.com",
+      "source": "wikyung.com",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9MQWxXWGZuQWo0LUxnMV85S2FqMzdkQjZyUWZFQWpONmdwdm8tT1lqRElpRnFBTDFqaE9hS2N2NFY4SnlkNnN2bEZCcGh2MHM5TktPbA?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "section": "news",
+      "duplicateCount": 2,
+      "duplicateSources": [
+        ":: 위즈경제 ::",
+        "wikyung.com"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "국내",
+      "impact": "중립"
+    },
+    {
       "id": "cc62022534de2824",
       "publishedAt": "2026-09-11",
       "title": "메탄 감축 '추정' 넘어 '측정'으로…한국형 MRV 전략 국회서 논의",
@@ -4263,8 +4466,8 @@
         "K-ETS"
       ],
       "duplicateSources": [
-        "전자신문",
-        "etnews.com"
+        "etnews.com",
+        "전자신문"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -6894,8 +7097,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "v.daum.net",
         "아주경제",
+        "v.daum.net",
         "ajunews.com"
       ],
       "searchProviders": [
@@ -8025,6 +8228,30 @@
       ],
       "searchProviders": [
         "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "4dbdb4b4774468f4",
+      "publishedAt": "2026-09-03",
+      "title": "배출권거래제·PPA 손질 논의…기후부, 산업계 애로 청취",
+      "category": "제도",
+      "summary": "배출권거래제·PPA 손질 논의…기후부, 산업계 애로 청취 v.daum.net",
+      "source": "v.daum.net",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1LbVhhQndlSGY1NUZmU1hvRWUycXUxUWJGbkZpYThiY3dCVTkwa19fOUlIS1AyZHJ3TUh2VVd2eG90NUJJT0Myc2g4aTVxTlp5MDJiMA?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "v.daum.net"
+      ],
+      "searchProviders": [
+        "Google News RSS"
       ],
       "region": "국내"
     },
@@ -11339,7 +11566,7 @@
       "matchedKeywords": [
         "탄소시장"
       ],
-      "duplicateCount": 12,
+      "duplicateCount": 13,
       "duplicateSources": [
         "newsis.com",
         "뉴스1",
@@ -11352,7 +11579,8 @@
         "동아경제",
         "에너지프로슈머",
         "연합뉴스",
-        "energyprosumer.info"
+        "energyprosumer.info",
+        "v.daum.net"
       ],
       "searchProviders": [
         "NAVER API HUB",
@@ -12016,8 +12244,8 @@
         "유상할당"
       ],
       "duplicateSources": [
-        "전자신문",
-        "etnews.com"
+        "etnews.com",
+        "전자신문"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -15237,31 +15465,6 @@
       ],
       "region": "해외",
       "searchProviders": [],
-      "impact": "중립"
-    },
-    {
-      "id": "bf1faab74a9fe304",
-      "publishedAt": "2026-08-14",
-      "title": "배출권거래제, 탄소세보다 물가 더 흔든다",
-      "category": "제도",
-      "summary": "배출권거래제, 탄소세보다 물가 더 흔든다 :: 위즈경제 ::",
-      "source": ":: 위즈경제 ::",
-      "sourceType": "news",
-      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9MQWxXWGZuQWo0LUxnMV85S2FqMzdkQjZyUWZFQWpONmdwdm8tT1lqRElpRnFBTDFqaE9hS2N2NFY4SnlkNnN2bEZCcGh2MHM5TktPbA?oc=5",
-      "searchProvider": "Google News RSS",
-      "matchedKeywords": [
-        "배출권",
-        "배출권거래제"
-      ],
-      "section": "news",
-      "duplicateCount": 1,
-      "duplicateSources": [
-        ":: 위즈경제 ::"
-      ],
-      "searchProviders": [
-        "Google News RSS"
-      ],
-      "region": "국내",
       "impact": "중립"
     },
     {
