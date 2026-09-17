@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-09-17T08:15:04+09:00",
+  "generatedAt": "2026-09-17T10:12:31+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 638,
+  "itemCount": 645,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-09-17",
   "sourceCommitsScanned": 0,
@@ -12,6 +12,31 @@
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "3b4a63dcba557b93",
+      "publishedAt": "2026-09-17",
+      "title": "중국, 제품 탄소발자국 인증 본격화…배터리·태양광 등 17개 품목 기준...",
+      "category": "제도",
+      "summary": "상하이, 인증기업에 배출권 할당 0.5% 추가…탄소정책과 연계 실제 제품 탄소발자국 인증 결과를 다른 탄소정책에 활용하는 사례도 나오고 있다. 상하이시는 탄소 배출권 거래제 관리 대상 기업이 제품 탄소발자국 인증을...",
+      "source": "impacton.net",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.impacton.net/news/articleView.html?idxno=20353",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "impacton.net"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
     {
       "id": "2899deeb26079310",
       "publishedAt": "2026-09-17",
@@ -37,6 +62,56 @@
       "region": "국내"
     },
     {
+      "id": "153ab13dbc27ed00",
+      "publishedAt": "2026-09-17",
+      "title": "삼성전자만큼 오른 탄소 배출권",
+      "category": "시장·가격",
+      "summary": "탄소 배출권 가격이 오르면서 국내 금융 시장 에서는 관련 ETF의 수익률도 따라 움직이고 있다. 지난 1일부터 전날까지 'KODEX 유럽 탄소 배출권선물ICE(H)' ETF는 2.87% 올랐다. 'SOL 유럽 탄소 배출권선물S&P(H)' ETF 역시 2.66...",
+      "source": "smedaily.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.smedaily.co.kr/news/articleView.html?idxno=363359",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "중소기업신문",
+        "smedaily.co.kr"
+      ],
+      "searchProviders": [
+        "Google News RSS",
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 2,
+      "region": "해외"
+    },
+    {
+      "id": "a865636172ce95a0",
+      "publishedAt": "2026-09-17",
+      "title": "부산시, 국제금융센터지수(GFCI) 글로벌 22위…역대 최고 순위 경신",
+      "category": "제도",
+      "summary": "자본 시장 의 지각변동 속에서 지자체의 금융도시 순위 상승은 해외 자본 유치와 다국적 금융기관의 지사 설립을 견인하는 공신력 있는 평판 지표로 작용한다. 전통적 금융 인프라 외에 친환경 선박금융, 탄소 배출권...",
+      "source": "megaeconomy.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.megaeconomy.co.kr/news/newsview.php?ncode=1065569261826351",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "megaeconomy.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "70f56eadfc59b6ed",
       "publishedAt": "2026-09-17",
       "title": "대구시의회, 에너지자원공사 대구 유치 성명서 발표",
@@ -53,6 +128,78 @@
       ],
       "duplicateSources": [
         "biz.heraldcorp.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "05a340cdc92936d7",
+      "publishedAt": "2026-09-17",
+      "title": "‘LNG 수입국’ 한국, 메탄 관리 공백…“직접 측정하는 MMRV 도입 시급”",
+      "category": "제도",
+      "summary": "반면 현행 국내 메탄 관리는 국가 온실가스 인벤토리와 배출권 거래제 등 국내 배출 집계에 주로 초점이 맞춰져 있어 실제 한국의 에너지 소비와 연결된 해외 공급망 배출구조를 충분히 반영하지 못하고 있다는...",
+      "source": "m-economynews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.m-economynews.com/news/article.html?no=70744",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "m-economynews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "3f723e5608e73812",
+      "publishedAt": "2026-09-17",
+      "title": "[해외브리핑] EU, 기후재난 대응 위한 '기후보험 연합' 출범",
+      "category": "제도",
+      "summary": "https://www.reuters.com/business/energy/google-agrees-biggest-carbon-removal-deal-yet-aims-scale-new-model-2026-09-16/ EU 회원국, 중공업 탄소배출권 무상할당 확대 유럽연합(EU) 회원국들이 경쟁력 확보에 어려움을 겪는 기업을...",
+      "source": "esgeconomy.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.esgeconomy.com/news/articleView.html?idxno=16761",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "esgeconomy.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
+      "id": "4171e14cdc8f8300",
+      "publishedAt": "2026-09-17",
+      "title": "[대구 24시] 대구시의회 \"에너지자원공사는 가스공사가 있는 대구로\"",
+      "category": "제도",
+      "summary": "또 대구가 솔라시티 정책과 탄소 배출권 거래 사업을 전국 지자체 최초로 시행하고 세계에너지·가스총회 등 대형 국제행사를 개최하는 등 글로벌 에너지 네트워크를 보유한 점을 강점으로 제시했다. 정부는 지난 9월3일...",
+      "source": "sisajournal.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.sisajournal.com/news/articleView.html?idxno=387442",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "sisajournal.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -874,6 +1021,30 @@
         "Google News RSS"
       ],
       "region": "국내"
+    },
+    {
+      "id": "3415baecfeb9db38",
+      "publishedAt": "2026-09-16",
+      "title": "EU \"상상초월 해킹 AI, 적들의 손에 들어갈 것…AI 위험예방 방안 서둘러...",
+      "category": "제도",
+      "summary": "EU는 과거에도 개인정보보호 및 디지털 플랫폼 규제, 탄소 배출권 규정 등에서도 전세계 표준을 주도해 이른바 ‘브뤼셀 효과’를 갖고 있다. 이는 지리적 규모와 구매력 있는 4억5천만명의 소비시장을 무기로 규제를...",
+      "source": "hankyung.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.hankyung.com/article/202609169631i",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "hankyung.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
     },
     {
       "id": "884e7002220205d7",
@@ -6358,14 +6529,15 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "아주경제",
-        "ajunews.com"
+        "v.daum.net",
+        "ajunews.com",
+        "아주경제"
       ],
       "searchProviders": [
         "Google News RSS",
         "NAVER API HUB"
       ],
-      "duplicateCount": 2,
+      "duplicateCount": 3,
       "region": "국내"
     },
     {
@@ -7286,8 +7458,8 @@
       "duplicateSources": [
         "lifein.news",
         "todayenergy.kr",
-        "newswire.co.kr",
         "뉴스와이어",
+        "newswire.co.kr",
         "hansbiz.co.kr",
         "lawissue.co.kr",
         "m-i.kr",
@@ -9098,8 +9270,8 @@
         "econonews.co.kr",
         "ebn.co.kr",
         "오토투데이",
-        "news1.kr",
         "뉴스1",
+        "news1.kr",
         "asiatoday.co.kr",
         "아시아경제",
         "view.asiae.co.kr",
