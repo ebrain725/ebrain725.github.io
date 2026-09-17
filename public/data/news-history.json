@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-09-17T18:12:36+09:00",
+  "generatedAt": "2026-09-17T21:03:25+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 668,
+  "itemCount": 669,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-09-17",
   "sourceCommitsScanned": 0,
@@ -156,6 +156,30 @@
       "region": "국내"
     },
     {
+      "id": "8f9a5e174e7c1722",
+      "publishedAt": "2026-09-17",
+      "title": "이브자리, 환경영화제에 탄소배출권 88톤 기부",
+      "category": "제도",
+      "summary": "이브자리, 환경영화제에 탄소배출권 88톤 기부 TIN뉴스",
+      "source": "TIN뉴스",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMiREFVX3lxTE9VelZzWVh5aEhkTmN3Q2FRZG15YWRmYkotaVJqcmFVd1pYQUw4VWRHQ2NHaVo0TVUwM0VZaDJRNmU1WW16?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "TIN뉴스"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "92536bfe519431f1",
       "publishedAt": "2026-09-17",
       "title": "수소산업 '조정기'에도 멈추지 않는 준비… KOPIA, 11월 수소·암모니아...",
@@ -298,14 +322,16 @@
         "lawissue.co.kr",
         "mt.co.kr",
         "cnbnews.com",
+        "e-platform.net",
         "gukjenews.com",
         "pinpointnews.co.kr",
-        "ikld.kr"
+        "ikld.kr",
+        "newstown.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 6,
+      "duplicateCount": 8,
       "region": "국내"
     },
     {
@@ -4466,8 +4492,8 @@
         "K-ETS"
       ],
       "duplicateSources": [
-        "etnews.com",
-        "전자신문"
+        "전자신문",
+        "etnews.com"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -4516,8 +4542,8 @@
         "유상할당"
       ],
       "duplicateSources": [
-        "energydaily.co.kr",
-        "에너지데일리"
+        "에너지데일리",
+        "energydaily.co.kr"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -12244,8 +12270,8 @@
         "유상할당"
       ],
       "duplicateSources": [
-        "etnews.com",
-        "전자신문"
+        "전자신문",
+        "etnews.com"
       ],
       "searchProviders": [
         "Google News RSS",
