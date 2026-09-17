@@ -1,17 +1,42 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-09-17T21:03:25+09:00",
+  "generatedAt": "2026-09-18T02:14:26+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 669,
+  "itemCount": 670,
   "earliestPublishedAt": "2026-08-06",
-  "latestPublishedAt": "2026-09-17",
+  "latestPublishedAt": "2026-09-18",
   "sourceCommitsScanned": 0,
   "sourceSnapshotsScanned": 0,
   "historicalRowsScanned": 0,
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "3dede1b2ec3910be",
+      "publishedAt": "2026-09-18",
+      "title": "[경상일보-울산TP '울산 산업 전환의 시간' 좌담회]자율운항·친환경선...",
+      "category": "제도",
+      "summary": "유태규 센터장은 \"최근 시장 은 IMO(국제해사기구)의 넷제로와 EU의 탄소 배출권 거래제 등 규제가 갈수록 높아지고 있다\"며 \"지금까지 울산은 글로벌 규제가 만들어지면 잘 따라가는 역할이었지만, 관련 실증 데이터와 평가...",
+      "source": "ksilbo.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.ksilbo.co.kr/news/articleView.html?idxno=1067703",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "ksilbo.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
     {
       "id": "cfa5ff2bc104cd66",
       "publishedAt": "2026-09-17",
@@ -220,8 +245,8 @@
         "KAU25"
       ],
       "duplicateSources": [
-        "중소기업신문",
-        "smedaily.co.kr"
+        "smedaily.co.kr",
+        "중소기업신문"
       ],
       "searchProviders": [
         "Google News RSS",
