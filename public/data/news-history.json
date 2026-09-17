@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-09-17T10:12:31+09:00",
+  "generatedAt": "2026-09-17T13:15:04+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 645,
+  "itemCount": 653,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-09-17",
   "sourceCommitsScanned": 0,
@@ -12,6 +12,30 @@
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "8782c0463775a9f1",
+      "publishedAt": "2026-09-17",
+      "title": "철강에서 車부품으로 번진 ‘탄소청구서’ … 韓 부품 생태계 ‘빨간불...",
+      "category": "시장·가격",
+      "summary": "수입사는 제품에 내재된 탄소배출량에 따라 EU 배출권 가격과 연동된 인증서를 구매해야 한다. 철강... EU의 탄소 배출권 무상할당 비율이 203년 39%로 낮아지고 2034년에는 사라지면서 역외 기업의 부담도 확대된다는...",
+      "source": "biz.newdaily.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://biz.newdaily.co.kr/site/data/html/2026/09/17/2026091700131.html",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "biz.newdaily.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
     {
       "id": "3b4a63dcba557b93",
       "publishedAt": "2026-09-17",
@@ -40,7 +64,7 @@
     {
       "id": "2899deeb26079310",
       "publishedAt": "2026-09-17",
-      "title": "인재위해 심은 '자작나무의 숲'…거대한 탄소 저장고로 대전환",
+      "title": "인재 위해 심은 '자작나무의 숲'…거대한 탄소 저장고로 대전환",
       "category": "상쇄·외부사업",
       "summary": "SK임업은 2017년부터 한국 보유의 임야를 산림탄소 상쇄 제도로 등록, 자발적 탄소 배출권 을 확보하는 근간을 마련했다. 이 사업을 통해 향후 30년간 매년 3만7000tCO₂가 상쇄 될 것으로 내다봤다. 이는 매년 1만 5000km를...",
       "source": "edaily.co.kr",
@@ -54,6 +78,30 @@
       ],
       "duplicateSources": [
         "edaily.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "92536bfe519431f1",
+      "publishedAt": "2026-09-17",
+      "title": "수소산업 '조정기'에도 멈추지 않는 준비… KOPIA, 11월 수소·암모니아...",
+      "category": "제도",
+      "summary": "국제에너지기구(IEA)와 국제재생에너지기구(IRENA)의 최근 전망에 따르면 전 세계 에너지 시장 은 화석연료... ESG, 산업/정책( 탄소 배출권·CBAM), CCUS, SMR, 폐자원에너지, 바이오플라스틱, 바이오에너지까지 저 탄소 플랜트...",
+      "source": "todayenergy.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.todayenergy.kr/news/articleView.html?idxno=303186",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "todayenergy.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -136,6 +184,30 @@
       "region": "국내"
     },
     {
+      "id": "6569bddf544be38f",
+      "publishedAt": "2026-09-17",
+      "title": "“AI, ESG 전쟁 종식에 도움” [ESG 뉴스 5]",
+      "category": "제도",
+      "summary": "EU, 산업계에 탄소 배출권 1억2100만장 더 푼다 유럽연합(EU) 회원국들이 에너지 집약 산업에 2026~2030년 무상 탄소 배출권 을 추가 배정하는 방안을 지지했다. 16일 EU 이사회에 따르면 기존 무상할당분에서 활용할 수 있는...",
+      "source": "magazine.hankyung.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://magazine.hankyung.com/business/article/202609170706b",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "magazine.hankyung.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
       "id": "05a340cdc92936d7",
       "publishedAt": "2026-09-17",
       "title": "‘LNG 수입국’ 한국, 메탄 관리 공백…“직접 측정하는 MMRV 도입 시급”",
@@ -184,6 +256,31 @@
       "region": "해외"
     },
     {
+      "id": "8d9e89434ccadca1",
+      "publishedAt": "2026-09-17",
+      "title": "[온실가스 배출권] 9월 17일 KAU26, 2거래일 연속 3만550원에 머물러",
+      "category": "시장·가격",
+      "summary": "[온실가스 배출권] 9월 17일 KAU26, 2거래일 연속 3만550원에 머물러 데일리e뉴스",
+      "source": "데일리e뉴스",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE01MGhURERoM3NiTWZjd28zZEZkbVdYVDluQkhWeWw5WjlOX3hpeko2UTI3WVBndlpDR3AwYU9jQnlSSnl5ZXRLbGUxUnpBcXc0d0lsTlBPU3lwSU55Y3JNY2dab19hVVkzQVlXRENlWQ?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "온실가스 배출권",
+        "KAU26"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "데일리e뉴스"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "4171e14cdc8f8300",
       "publishedAt": "2026-09-17",
       "title": "[대구 24시] 대구시의회 \"에너지자원공사는 가스공사가 있는 대구로\"",
@@ -206,6 +303,30 @@
       ],
       "duplicateCount": 1,
       "region": "국내"
+    },
+    {
+      "id": "1a5d631ebb45aed9",
+      "publishedAt": "2026-09-17",
+      "title": "UNIST, AI데이터센터 폐열로 전기 생산…울산 GPU 6만장 시대 냉각비 줄...",
+      "category": "시장·가격",
+      "summary": "탄소 배출에 가격을 매기는 EU 배출권 거래제 같은 제도를 반영할 경우 탄소비용 감소 효과도 커졌다. 연구팀 분석에서는 연간 약 500만~1000만달러의 탄소배출 비용을 줄일 수 있는 것으로 계산됐다. 한국은 가스값이...",
+      "source": "g-enews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.g-enews.com/view.php?ud=202609170855196138f7ba87f45b_1",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "g-enews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
     },
     {
       "id": "ece2892b605a614a",
@@ -232,6 +353,29 @@
       "region": "해외"
     },
     {
+      "id": "2e2097663dfe48bd",
+      "publishedAt": "2026-09-17",
+      "title": "AI센터 늘자 전력망 압박…산업계 \"제때 전력공급 관건\"",
+      "category": "제도",
+      "summary": "그는 녹색 채권과 탄소시장 도 \"사업성이 확보된 프로젝트를 대신할 수 없다\"며 예비타당성 검토와 토지·계통 확보, 수익구조 설계가 먼저라고 말했다. AI 전력 수요에 대응하려면 정책 목표뿐 아니라 실제 투자 가능한...",
+      "source": "news1.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.news1.kr/economy/env-policy/6293462",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "news1.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "85494150ca3a631d",
       "publishedAt": "2026-09-17",
       "title": "3만원 탄소값, 석탄 퇴출 재촉…대체비용은 숙제",
@@ -247,6 +391,55 @@
       ],
       "duplicateSources": [
         "hansbiz.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "684560456c2b7e7d",
+      "publishedAt": "2026-09-17",
+      "title": "'산업용 지역 전기요금제' 철강업계에 실질적 도움 될까",
+      "category": "제도",
+      "summary": "재원을 시장 효율화와 송전비용 세분화, 정부 재정 지원 등으로 조달할 계획이다. 천현민 한전... 정 교수는 업종별 전력집약도 지표 정비·공표, K-ETS(배출권거래제) 탄소 비용의 전력요금 전가율 산정 방법을 우선적으로...",
+      "source": "electimes.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.electimes.com/news/articleView.html?idxno=372559",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "K-ETS"
+      ],
+      "duplicateSources": [
+        "electimes.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "dfa3cfef4d7d240d",
+      "publishedAt": "2026-09-17",
+      "title": "'규모의' 대한항공, 보잉과 61조 계약..'효율의' 에어버스로 맞불놓는 L...",
+      "category": "상쇄·외부사업",
+      "summary": "국제항공 탄소 상쇄제도 코르시아(CORSIA) 시행으로 탄소 배출권 비용 부담이 커졌기 때문이다. 아시아태평양이 향후 세계 항공기 수요의 최대 시장 으로 부상하면서 에어버스도 이 지역에서 높은 기단 점유율을...",
+      "source": "kpenews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://kpenews.com/View.aspx?No=4231001",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "kpenews.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -6530,8 +6723,8 @@
       ],
       "duplicateSources": [
         "v.daum.net",
-        "ajunews.com",
-        "아주경제"
+        "아주경제",
+        "ajunews.com"
       ],
       "searchProviders": [
         "Google News RSS",
