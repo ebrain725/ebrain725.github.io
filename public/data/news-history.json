@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-09-18T20:44:09+09:00",
+  "generatedAt": "2026-09-19T01:40:46+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 693,
+  "itemCount": 694,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-09-18",
   "sourceCommitsScanned": 0,
@@ -96,7 +96,9 @@
       "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1724862",
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
-        "배출권"
+        "배출권",
+        "배출권거래제",
+        "유상할당"
       ],
       "duplicateSources": [
         "ebn.co.kr"
@@ -152,13 +154,15 @@
       ],
       "duplicateSources": [
         "jejudomin.co.kr",
+        "뉴스제주",
         "newsjeju.net",
         "headlinejeju.co.kr"
       ],
       "searchProviders": [
-        "NAVER API HUB"
+        "NAVER API HUB",
+        "Google News RSS"
       ],
-      "duplicateCount": 3,
+      "duplicateCount": 4,
       "region": "국내"
     },
     {
@@ -404,8 +408,8 @@
       "publishedAt": "2026-09-18",
       "title": "[온실가스 배출권] 9월 18일 KAU26, 오름세 멈췄나…3거래일 연속 3만550원",
       "category": "시장·가격",
-      "summary": "[온실가스 배출권] 9월 18일 KAU26, 오름세 멈췄나…3거래일 연속 3만550원 데일리e뉴스",
-      "source": "데일리e뉴스",
+      "summary": "[온실가스 배출권] 9월 18일 KAU26, 오름세 멈췄나…3거래일 연속 3만550원 dailyenews.co.kr",
+      "source": "dailyenews.co.kr",
       "sourceType": "news",
       "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1uTWpta3RZcHQ1aHhWa21EcnJmNWhjdnlKMHdmRC1GdkF3cDdEVFNBbzJSY2F4VkhGUllybDZaQ3VlR083bFRQem1yWWY3Z2UxcnY0UVJkN0tFd2JJUW5HenFNOU1OeWdiRGxwdDhwUQ?oc=5",
       "searchProvider": "Google News RSS",
@@ -415,9 +419,33 @@
         "KAU26"
       ],
       "section": "news",
+      "duplicateCount": 2,
+      "duplicateSources": [
+        "데일리e뉴스",
+        "dailyenews.co.kr"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "24d6b2c73c97bac2",
+      "publishedAt": "2026-09-18",
+      "title": "[국회철강포럼] 과기대 정연제 교수 “주요국 전력 지원, 배출권 수익쓰고 탈탄소투자 의무화”",
+      "category": "제도",
+      "summary": "[국회철강포럼] 과기대 정연제 교수 “주요국 전력 지원, 배출권 수익쓰고 탈탄소투자 의무화” 철강금속신문",
+      "source": "철강금속신문",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBLbVd5V0R5VXBTaEdwNE1GRVRYTmZCM1MwLVAtTG1FZjJ0NDVJeTBUa1Y2bDIxZU1sdlRnNXh1OTBiNkRjRFNtVUJvZUFiZmphTmtpeEFhT0ZwNWZQUFJNSGxZeW40aGxia1E?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "section": "news",
       "duplicateCount": 1,
       "duplicateSources": [
-        "데일리e뉴스"
+        "철강금속신문"
       ],
       "searchProviders": [
         "Google News RSS"
@@ -1063,8 +1091,8 @@
       "publishedAt": "2026-09-17",
       "title": "[온실가스 배출권] 9월 17일 KAU26, 2거래일 연속 3만550원에 머물러",
       "category": "시장·가격",
-      "summary": "[온실가스 배출권] 9월 17일 KAU26, 2거래일 연속 3만550원에 머물러 데일리e뉴스",
-      "source": "데일리e뉴스",
+      "summary": "[온실가스 배출권] 9월 17일 KAU26, 2거래일 연속 3만550원에 머물러 dailyenews.co.kr",
+      "source": "dailyenews.co.kr",
       "sourceType": "news",
       "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE01MGhURERoM3NiTWZjd28zZEZkbVdYVDluQkhWeWw5WjlOX3hpeko2UTI3WVBndlpDR3AwYU9jQnlSSnl5ZXRLbGUxUnpBcXc0d0lsTlBPU3lwSU55Y3JNY2dab19hVVkzQVlXRENlWQ?oc=5",
       "searchProvider": "Google News RSS",
@@ -1074,9 +1102,10 @@
         "KAU26"
       ],
       "section": "news",
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "duplicateSources": [
-        "데일리e뉴스"
+        "데일리e뉴스",
+        "dailyenews.co.kr"
       ],
       "searchProviders": [
         "Google News RSS"
@@ -2003,8 +2032,8 @@
       "publishedAt": "2026-09-16",
       "title": "[온실가스 배출권] 9월 16일 KAU26, 전날 종가 유지",
       "category": "시장·가격",
-      "summary": "[온실가스 배출권] 9월 16일 KAU26, 전날 종가 유지 데일리e뉴스",
-      "source": "데일리e뉴스",
+      "summary": "[온실가스 배출권] 9월 16일 KAU26, 전날 종가 유지 dailyenews.co.kr",
+      "source": "dailyenews.co.kr",
       "sourceType": "news",
       "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5Yc2lFVVdxbWZnMHJPWGdMazlWQTY5WnJBV1lfcEdPTzR0RW1DbVFVLWhMLXNsU2ZZdTMyMEVBeDZya05vMTZyazdNemRMcjNib3UyRl9WQTZJOUpodndIb29qRElZY3FUbHNBVUZKcw?oc=5",
       "searchProvider": "Google News RSS",
@@ -2014,9 +2043,10 @@
         "KAU26"
       ],
       "section": "news",
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "duplicateSources": [
-        "데일리e뉴스"
+        "데일리e뉴스",
+        "dailyenews.co.kr"
       ],
       "searchProviders": [
         "Google News RSS"
@@ -2487,8 +2517,8 @@
         "KAU25"
       ],
       "duplicateSources": [
-        "연합뉴스",
         "v.daum.net",
+        "연합뉴스",
         "yna.co.kr"
       ],
       "searchProviders": [
@@ -3630,8 +3660,8 @@
         "온실가스 배출권"
       ],
       "duplicateSources": [
-        "뉴스;트리",
-        "newstree.kr"
+        "newstree.kr",
+        "뉴스;트리"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -7704,8 +7734,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "ajunews.com",
         "아주경제",
+        "ajunews.com",
         "v.daum.net"
       ],
       "searchProviders": [
@@ -8956,8 +8986,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "news.kbs.co.kr",
         "KBS 뉴스",
+        "news.kbs.co.kr",
         "kbs.co.kr"
       ],
       "searchProviders": [
@@ -10589,8 +10619,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "news.kbs.co.kr",
         "KBS 뉴스",
+        "news.kbs.co.kr",
         "kbs.co.kr"
       ],
       "searchProviders": [
