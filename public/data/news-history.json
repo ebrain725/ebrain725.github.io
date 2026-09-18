@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-09-18T08:12:23+09:00",
+  "generatedAt": "2026-09-18T10:12:08+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 673,
+  "itemCount": 675,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-09-18",
   "sourceCommitsScanned": 0,
@@ -12,6 +12,29 @@
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "d1e32f886e3504e1",
+      "publishedAt": "2026-09-18",
+      "title": "한화오션, 프랑스 뷰로베리타스(BV)와 LCO₂ 화물처리시스템 기술 협약",
+      "category": "시장·가격",
+      "summary": "'탄소 국경세· 배출권 '에 폭증하는 CCUS… 고부가 가스선 영토 확장 글로벌 조선업계가 LCO₂선에 주목하는 이유는 유럽연합(EU)의 탄소국경조정제도(CBAM) 시행과 배출권 가격 상승으로 인해 중공업·발전 부문의 탄소...",
+      "source": "g-enews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.g-enews.com/view.php?ud=2026091808200475320c8c1c064d_1",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "g-enews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
     {
       "id": "6b0d2e0eaf202e1b",
       "publishedAt": "2026-09-18",
@@ -551,6 +574,29 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "ec165e0a2dd03655",
+      "publishedAt": "2026-09-17",
+      "title": "[현장] 국회 '철강산업 전기요금' 토론회, \"요금 인하 '폭'보다 '지원방...",
+      "category": "유상경매",
+      "summary": "정 교수는 해외 사례를 고려할 때 배출권 경매수입 등 탄소 관련 재원을 활용해 전력다소비 산업의 탈탄소 비용을 지원하는 방안을 제시했다. 산업위기지역을 대상으로 '전력산업기반기금 부담금' 자체를 면제하거나...",
+      "source": "businesspost.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.businesspost.co.kr/BP?command=article_view&num=447496",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "businesspost.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
       "region": "국내"
     },
     {
@@ -3149,8 +3195,8 @@
         "온실가스 배출권"
       ],
       "duplicateSources": [
-        "뉴스;트리",
-        "newstree.kr"
+        "newstree.kr",
+        "뉴스;트리"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -8474,8 +8520,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "KBS 뉴스",
         "news.kbs.co.kr",
+        "KBS 뉴스",
         "kbs.co.kr"
       ],
       "searchProviders": [
@@ -10106,8 +10152,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "KBS 뉴스",
         "news.kbs.co.kr",
+        "KBS 뉴스",
         "kbs.co.kr"
       ],
       "searchProviders": [
@@ -13371,10 +13417,11 @@
         "KAU25"
       ],
       "section": "news",
-      "duplicateCount": 2,
+      "duplicateCount": 3,
       "duplicateSources": [
         "기후에너지데이터뱅크",
-        "ekn.kr"
+        "ekn.kr",
+        "edata.ekn.kr"
       ],
       "region": "국내",
       "searchProviders": [
