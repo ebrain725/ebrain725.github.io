@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-09-19T01:40:46+09:00",
+  "generatedAt": "2026-09-19T08:12:15+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
   "itemCount": 694,
@@ -128,13 +128,14 @@
       "duplicateSources": [
         "제민일보",
         "jemin.com",
-        "뉴스N제주"
+        "뉴스N제주",
+        "newszoom.kr"
       ],
       "searchProviders": [
         "Google News RSS",
         "NAVER API HUB"
       ],
-      "duplicateCount": 3,
+      "duplicateCount": 4,
       "region": "국내"
     },
     {
@@ -3660,8 +3661,8 @@
         "온실가스 배출권"
       ],
       "duplicateSources": [
-        "newstree.kr",
-        "뉴스;트리"
+        "뉴스;트리",
+        "newstree.kr"
       ],
       "searchProviders": [
         "Google News RSS",
