@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-09-18T15:15:20+09:00",
+  "generatedAt": "2026-09-18T18:12:34+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 685,
+  "itemCount": 689,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-09-18",
   "sourceCommitsScanned": 0,
@@ -83,6 +83,33 @@
       "region": "해외"
     },
     {
+      "id": "5cb544de150cabf0",
+      "publishedAt": "2026-09-18",
+      "title": "제주, 국제 탄소시장 실증 무대로…'기후경제수도' 시동",
+      "category": "시장·가격",
+      "summary": "포럼에서는 넷제로와 탄소가격 정책 동향, 배출권 거래제(ETS) 운영 결과, 탄소가격 메커니즘과 제품 탄소발자국 연계 등을 주제로 발표와 토론이 진행됐다. 국가 온실가스 감축목표(NDC), 배출권 할당계획, 민간 참여, 측정...",
+      "source": "jemin.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.jemin.com/news/articleView.html?idxno=843186",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장",
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "제민일보",
+        "jemin.com"
+      ],
+      "searchProviders": [
+        "Google News RSS",
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 2,
+      "region": "국내"
+    },
+    {
       "id": "e0dfef0f9c2f35ec",
       "publishedAt": "2026-09-18",
       "title": "제11차 한중일 탄소가격 메커니즘 포럼 제주서 개최",
@@ -99,12 +126,13 @@
       ],
       "duplicateSources": [
         "jejudomin.co.kr",
+        "newsjeju.net",
         "headlinejeju.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 2,
+      "duplicateCount": 3,
       "region": "국내"
     },
     {
@@ -128,6 +156,32 @@
       "searchProviders": [
         "NAVER API HUB"
       ],
+      "region": "국내"
+    },
+    {
+      "id": "107f22e566abae93",
+      "publishedAt": "2026-09-18",
+      "title": "에스원 '빌딩 에너지 솔루션', 여름철 노후빌딩 에너지 낭비 막는다",
+      "category": "제도",
+      "summary": "탄소 배출권 시장과의 접점도 커지고 있다. 국내 탄소 배출권 거래제(K-ETS) 적용 대상이 중견·중소 사업장으로 단계적으로 확대되면서, BEMS를 통한 온실가스 감축 실적이 곧 팔 수 있는 자산이 될 수 있다. 에너지 절감...",
+      "source": "nextdaily.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.nextdaily.co.kr/news/articleView.html?idxno=253192",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권",
+        "K-ETS"
+      ],
+      "duplicateSources": [
+        "nextdaily.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
       "region": "국내"
     },
     {
@@ -273,6 +327,29 @@
       "region": "국내"
     },
     {
+      "id": "f1e0460edca52fcd",
+      "publishedAt": "2026-09-18",
+      "title": "[지속경영보고서] '흑자 전환' SK證, 환원 진행 중",
+      "category": "제도",
+      "summary": "▲ 배출권 ·GCF '최초' 행보…ESG 종합 A등급 환경 분야에서는 '최초' 행보를 이어가며 관련 사업을 확대하고 있다. SK증권은 2021년 국내 증권사 최초로 한국거래소 배출권 시장 시장조성자로 선정된 뒤 자기자본을...",
+      "source": "hansbiz.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.hansbiz.co.kr/news/articleView.html?idxno=866587",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "hansbiz.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "8b87ed916571faa5",
       "publishedAt": "2026-09-18",
       "title": "[온실가스 배출권] 9월 18일 KAU26, 오름세 멈췄나…3거래일 연속 3만550원",
@@ -369,6 +446,29 @@
       ],
       "duplicateCount": 1,
       "region": "해외"
+    },
+    {
+      "id": "55ce2ec8a3b2e25e",
+      "publishedAt": "2026-09-18",
+      "title": "\" 탄소시장 진출, 천안에서 길을 찾다\"…천안시 기후테크 스타트업 밋업...",
+      "category": "제도",
+      "summary": "행사의 하이라이트인 패널토론은 '한국 주요 타겟 탄소시장 진출 전략'을 주제로 천안 소재 기업 ㈜세라의 김도연 대표가 좌장을 맡아 진행됐다. 패널로는 베라의 윈 심 탄(Win Sim Tan) 아태지역 대표, 라오스 농업환경부...",
+      "source": "newsworks.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newsworks.co.kr/news/articleView.html?idxno=854272",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "newsworks.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
     },
     {
       "id": "cfa5ff2bc104cd66",
@@ -2290,9 +2390,9 @@
         "KAU25"
       ],
       "duplicateSources": [
+        "연합뉴스",
         "v.daum.net",
-        "yna.co.kr",
-        "연합뉴스"
+        "yna.co.kr"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -7458,8 +7558,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "뉴스1",
-        "news1.kr"
+        "news1.kr",
+        "뉴스1"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -8436,8 +8536,8 @@
       "duplicateSources": [
         "lifein.news",
         "todayenergy.kr",
-        "newswire.co.kr",
         "뉴스와이어",
+        "newswire.co.kr",
         "hansbiz.co.kr",
         "lawissue.co.kr",
         "m-i.kr",
@@ -9759,8 +9859,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "ESG경제",
-        "esgeconomy.com"
+        "esgeconomy.com",
+        "ESG경제"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -10265,15 +10365,15 @@
         "온실가스 배출권"
       ],
       "duplicateSources": [
+        "연합뉴스",
         "yna.co.kr",
         "이투데이",
         "etoday.co.kr",
         "econonews.co.kr",
         "ebn.co.kr",
         "오토투데이",
-        "뉴스1",
-        "연합뉴스",
         "news1.kr",
+        "뉴스1",
         "asiatoday.co.kr",
         "아시아경제",
         "view.asiae.co.kr",

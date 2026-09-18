@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-09-18T15:15:13+09:00",
+  "lastSync": "2026-09-18T18:12:26+09:00",
   "keywords": [
     "배출권",
     "배출권거래제",
@@ -27,10 +27,10 @@
     "Google News RSS",
     "NAVER API HUB"
   ],
-  "warning": "기후부 보도자료: 키워드별 공식검색과 기본 RSS 복구에 모두 실패했습니다: 배출권: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 배출권거래제: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 유상할당: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 유상경매: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 탄소시장: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 시장안정화: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 상쇄배출권: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 기본 RSS 복구: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 기후부 공지·공고: 키워드별 공식검색과 기본 RSS 복구에 모두 실패했습니다: 배출권: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 배출권거래제: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 유상할당: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 유상경매: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 탄소시장: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 시장안정화: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 상쇄배출권: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 기본 RSS 복구: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out>",
+  "warning": null,
   "aiInsight": {
     "summary": "최근 공식자료의 직접적인 수급 변수는 유상경매입니다. 최근 경매가 높은 낙찰가로 소화돼 공급보다 이행수요가 강하다는 신호입니다.",
-    "generatedAt": "2026-09-18T15:15:13+09:00",
+    "generatedAt": "2026-09-18T18:12:26+09:00",
     "basisLatestDate": "2026-09-09",
     "basisCount": 10,
     "source": "fallback",
@@ -471,6 +471,33 @@
       "region": "해외"
     },
     {
+      "id": "5cb544de150cabf0",
+      "publishedAt": "2026-09-18",
+      "title": "제주, 국제 탄소시장 실증 무대로…'기후경제수도' 시동",
+      "category": "시장·가격",
+      "summary": "포럼에서는 넷제로와 탄소가격 정책 동향, 배출권 거래제(ETS) 운영 결과, 탄소가격 메커니즘과 제품 탄소발자국 연계 등을 주제로 발표와 토론이 진행됐다. 국가 온실가스 감축목표(NDC), 배출권 할당계획, 민간 참여, 측정...",
+      "source": "jemin.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.jemin.com/news/articleView.html?idxno=843186",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장",
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "제민일보",
+        "jemin.com"
+      ],
+      "searchProviders": [
+        "Google News RSS",
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 2,
+      "region": "국내"
+    },
+    {
       "id": "e0dfef0f9c2f35ec",
       "publishedAt": "2026-09-18",
       "title": "제11차 한중일 탄소가격 메커니즘 포럼 제주서 개최",
@@ -487,12 +514,13 @@
       ],
       "duplicateSources": [
         "jejudomin.co.kr",
+        "newsjeju.net",
         "headlinejeju.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 2,
+      "duplicateCount": 3,
       "region": "국내"
     },
     {
@@ -516,6 +544,32 @@
       "searchProviders": [
         "NAVER API HUB"
       ],
+      "region": "국내"
+    },
+    {
+      "id": "107f22e566abae93",
+      "publishedAt": "2026-09-18",
+      "title": "에스원 '빌딩 에너지 솔루션', 여름철 노후빌딩 에너지 낭비 막는다",
+      "category": "제도",
+      "summary": "탄소 배출권 시장과의 접점도 커지고 있다. 국내 탄소 배출권 거래제(K-ETS) 적용 대상이 중견·중소 사업장으로 단계적으로 확대되면서, BEMS를 통한 온실가스 감축 실적이 곧 팔 수 있는 자산이 될 수 있다. 에너지 절감...",
+      "source": "nextdaily.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.nextdaily.co.kr/news/articleView.html?idxno=253192",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권",
+        "K-ETS"
+      ],
+      "duplicateSources": [
+        "nextdaily.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
       "region": "국내"
     },
     {
@@ -661,6 +715,29 @@
       "region": "국내"
     },
     {
+      "id": "f1e0460edca52fcd",
+      "publishedAt": "2026-09-18",
+      "title": "[지속경영보고서] '흑자 전환' SK證, 환원 진행 중",
+      "category": "제도",
+      "summary": "▲ 배출권 ·GCF '최초' 행보…ESG 종합 A등급 환경 분야에서는 '최초' 행보를 이어가며 관련 사업을 확대하고 있다. SK증권은 2021년 국내 증권사 최초로 한국거래소 배출권 시장 시장조성자로 선정된 뒤 자기자본을...",
+      "source": "hansbiz.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.hansbiz.co.kr/news/articleView.html?idxno=866587",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "hansbiz.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "8b87ed916571faa5",
       "publishedAt": "2026-09-18",
       "title": "[온실가스 배출권] 9월 18일 KAU26, 오름세 멈췄나…3거래일 연속 3만550원",
@@ -757,6 +834,29 @@
       ],
       "duplicateCount": 1,
       "region": "해외"
+    },
+    {
+      "id": "55ce2ec8a3b2e25e",
+      "publishedAt": "2026-09-18",
+      "title": "\" 탄소시장 진출, 천안에서 길을 찾다\"…천안시 기후테크 스타트업 밋업...",
+      "category": "제도",
+      "summary": "행사의 하이라이트인 패널토론은 '한국 주요 타겟 탄소시장 진출 전략'을 주제로 천안 소재 기업 ㈜세라의 김도연 대표가 좌장을 맡아 진행됐다. 패널로는 베라의 윈 심 탄(Win Sim Tan) 아태지역 대표, 라오스 농업환경부...",
+      "source": "newsworks.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newsworks.co.kr/news/articleView.html?idxno=854272",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "newsworks.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
     },
     {
       "id": "cfa5ff2bc104cd66",
@@ -2678,9 +2778,9 @@
         "KAU25"
       ],
       "duplicateSources": [
+        "연합뉴스",
         "v.daum.net",
-        "yna.co.kr",
-        "연합뉴스"
+        "yna.co.kr"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -8184,8 +8284,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "뉴스1",
-        "news1.kr"
+        "news1.kr",
+        "뉴스1"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -9219,8 +9319,8 @@
       "duplicateSources": [
         "lifein.news",
         "todayenergy.kr",
-        "newswire.co.kr",
         "뉴스와이어",
+        "newswire.co.kr",
         "hansbiz.co.kr",
         "lawissue.co.kr",
         "m-i.kr",
@@ -10581,8 +10681,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "ESG경제",
-        "esgeconomy.com"
+        "esgeconomy.com",
+        "ESG경제"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -11284,15 +11384,15 @@
         "온실가스 배출권"
       ],
       "duplicateSources": [
+        "연합뉴스",
         "yna.co.kr",
         "이투데이",
         "etoday.co.kr",
         "econonews.co.kr",
         "ebn.co.kr",
         "오토투데이",
-        "뉴스1",
-        "연합뉴스",
         "news1.kr",
+        "뉴스1",
         "asiatoday.co.kr",
         "아시아경제",
         "view.asiae.co.kr",
@@ -19081,6 +19181,20 @@
       ]
     },
     {
+      "id": "d2a1871df8900da6",
+      "publishedAt": "2026-07-24",
+      "title": "「배출권거래제 고도화 및 간접배출 관리체계 개선 방안 연구」 입찰 재공고",
+      "category": "제도",
+      "summary": "“제안서/공모안 제출내역”(제안서) 메뉴에서 확인하실 수 있습니다. 타. 문의처 : - (과업내용 및 제안서) 기후에너지환경부 기후경제과(044-201-6587) - (입찰 및 계약사항) 운영지원과(044-201-6264)",
+      "source": "기후부 공지·공고",
+      "sourceType": "official",
+      "section": "notice",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C&menuId=10524&orgCd=&boardMasterId=39&boardId=1879830",
+      "matchedKeywords": [
+        "배출권"
+      ]
+    },
+    {
       "id": "motie_press-ATCL3f49a5a8c-172047",
       "sourceId": "172047",
       "sourceBoard": "ATCL3f49a5a8c",
@@ -20123,6 +20237,20 @@
       "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C%EA%B1%B0%EB%9E%98%EC%A0%9C&menuId=10524&orgCd=&boardMasterId=39&boardId=1875540",
       "matchedKeywords": [
         "배출권거래제"
+      ]
+    },
+    {
+      "id": "03ea5422bde1b606",
+      "publishedAt": "2026-07-03",
+      "title": "「배출권거래제 고도화 및 간접배출 관리체계 개선 방안 연구」 입찰 공고",
+      "category": "제도",
+      "summary": "“제안서/공모안 제출내역”(제안서) 메뉴에서 확인하실 수 있습니다. 타. 문의처 : - (과업내용 및 제안서) 기후에너지환경부 기후경제과(044-201-6587) - (입찰 및 계약사항) 운영지원과(044-201-6264)",
+      "source": "기후부 공지·공고",
+      "sourceType": "official",
+      "section": "notice",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C&menuId=10524&orgCd=&boardMasterId=39&boardId=1875540",
+      "matchedKeywords": [
+        "배출권"
       ]
     },
     {
@@ -28801,6 +28929,20 @@
       ]
     },
     {
+      "id": "c0d456ffc4fe0a88",
+      "publishedAt": "2026-02-25",
+      "title": "「배출권거래제 외부사업 활성화 방안 마련 연구」 입찰 공고",
+      "category": "상쇄·외부사업",
+      "summary": "“제안서/공모안 제출내역”(제안서) 메뉴에서 확인하실 수 있습니다. 타. 문의처 : - (과업내용 및 제안서) 기후에너지환경부 기후경제과(044-201-6596) - (입찰 및 계약사항) 운영지원과(044-201-6264)",
+      "source": "기후부 공지·공고",
+      "sourceType": "official",
+      "section": "notice",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C&menuId=10524&orgCd=&boardMasterId=39&boardId=1845320",
+      "matchedKeywords": [
+        "배출권"
+      ]
+    },
+    {
       "id": "motie_notice-ATCLc01b2801b-70871",
       "sourceId": "70871",
       "sourceBoard": "ATCLc01b2801b",
@@ -35595,6 +35737,20 @@
       ]
     },
     {
+      "id": "3d8e51e0df8e2c58",
+      "publishedAt": "2025-11-14",
+      "title": "온실가스 배출권거래제 제4차 계획기간 국가 배출권 할당계획 공고",
+      "category": "제도",
+      "summary": "(기후에너지환경부공고 제2025-61호) 제4차 계획기간 국가 배출권 할당계획 공고 「온실가스 배출권의 할당 및 거래에 관한 법률(이하 “법”이라 함)」제5조에 따라 온실가스 배출권거래제 제4차 계획기간(2026년∼2030년) 국가 배출권 할당계획을 수립하여 공고합니다. 자세한 사항은 첨부파일을 참고하시기 바랍니다.",
+      "source": "기후부 공지·공고",
+      "sourceType": "official",
+      "section": "notice",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C&menuId=10524&orgCd=&boardMasterId=39&boardId=1819470",
+      "matchedKeywords": [
+        "배출권"
+      ]
+    },
+    {
       "id": "d282ff3b2fd5bf24",
       "publishedAt": "2025-11-14",
       "title": "온실가스 배출권거래제 제3차 계획기간 국가 배출권 할당계획 변경사항 공고",
@@ -35683,6 +35839,20 @@
       "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C%EA%B1%B0%EB%9E%98%EC%A0%9C&menuId=10524&orgCd=&boardMasterId=39&boardId=1819480",
       "matchedKeywords": [
         "배출권거래제"
+      ]
+    },
+    {
+      "id": "a1d20de2729397f9",
+      "publishedAt": "2025-11-14",
+      "title": "온실가스 배출권거래제 제3차 계획기간 국가 배출권 할당계획 변경사항 공고",
+      "category": "제도",
+      "summary": "(기후에너지환경부공고 제2025-67호) 제3차 계획기간 국가 배출권 할당계획 변경사항 「온실가스 배출권의 할당 및 거래에 관한 법률(이하 “법”이라 함)」제5조에 따라 온실가스 제3차 계획기간(2021년∼2025년) 국가 배출권 할당계획을 변경하여 공고합니다. 자세한 사항은 첨부파일을 참고하시기 바랍니다.",
+      "source": "기후부 공지·공고",
+      "sourceType": "official",
+      "section": "notice",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C&menuId=10524&orgCd=&boardMasterId=39&boardId=1819480",
+      "matchedKeywords": [
+        "배출권"
       ]
     },
     {
@@ -245780,17 +245950,17 @@
     "policy": "append-only",
     "status": "verified",
     "previousNonNewsCount": 4582,
-    "generatedNonNewsCount": 4582,
-    "finalNonNewsCount": 4582,
+    "generatedNonNewsCount": 4587,
+    "finalNonNewsCount": 4587,
     "previousScheduleCount": 11,
     "finalScheduleCount": 11
   },
   "newsRetention": {
     "policy": "append-only",
-    "lastMergedAt": "2026-09-18T15:15:20+09:00",
-    "itemCount": 685,
-    "archiveBefore": 680,
-    "currentBefore": 586,
+    "lastMergedAt": "2026-09-18T18:12:34+09:00",
+    "itemCount": 689,
+    "archiveBefore": 685,
+    "currentBefore": 590,
     "gitRecoveryEnabled": false
   }
 }
