@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-09-19T20:26:54+09:00",
+  "generatedAt": "2026-09-20T01:02:14+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
   "itemCount": 699,
@@ -5445,7 +5445,7 @@
       "matchedKeywords": [
         "탄소시장"
       ],
-      "duplicateCount": 3,
+      "duplicateCount": 4,
       "duplicateSources": [
         "yna.co.kr",
         "v.daum.net",
@@ -6321,8 +6321,8 @@
       "publishedAt": "2026-09-08",
       "title": "[온실가스 배출권] 9월 8일 KAU26, 100원 오르며 3거래일 연속 상승",
       "category": "시장·가격",
-      "summary": "[온실가스 배출권] 9월 8일 KAU26, 100원 오르며 3거래일 연속 상승 데일리e뉴스",
-      "source": "데일리e뉴스",
+      "summary": "[온실가스 배출권] 9월 8일 KAU26, 100원 오르며 3거래일 연속 상승 dailyenews.co.kr",
+      "source": "dailyenews.co.kr",
       "sourceType": "news",
       "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBndzFNbEtLdE4xS3FUVDBKX2Rzb1QybzVSOUdNazQ1T3cyRjdZSXZPU3dKVGJxVTRYRTZWekR3QTFkNlpObGViNW1JbTFsbWozLW5zZWU3RFpibllzWldUS2RLZGZ4RFpMQ2dsMV9LYw?oc=5",
       "searchProvider": "Google News RSS",
@@ -6332,9 +6332,10 @@
         "KAU26"
       ],
       "section": "news",
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "duplicateSources": [
-        "데일리e뉴스"
+        "데일리e뉴스",
+        "dailyenews.co.kr"
       ],
       "searchProviders": [
         "Google News RSS"
@@ -10620,13 +10621,13 @@
       "duplicateSources": [
         "연합뉴스",
         "yna.co.kr",
-        "아시아투데이",
         "이투데이",
         "etoday.co.kr",
         "econonews.co.kr",
         "ebn.co.kr",
         "오토투데이",
         "뉴스1",
+        "아시아투데이",
         "news1.kr",
         "asiatoday.co.kr",
         "아시아경제",
@@ -13917,22 +13918,24 @@
       "publishedAt": "2026-08-26",
       "title": "배출권 과징금 사실상 마비 상태… 배출권 과징금 99.7% 떼이고 강제징수 0건",
       "category": "제도",
-      "summary": "배출권 과징금 사실상 마비 상태… 배출권 과징금 99.7% 떼이고 강제징수 0건 파인드비",
-      "source": "파인드비",
+      "summary": "배출권 과징금 사실상 마비 상태… 배출권 과징금 99.7% 떼이고 강제징수 0건 findb.co.kr",
+      "source": "findb.co.kr",
       "sourceType": "news",
       "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5xZ3QzSjlYXzRHY0dnRnBtZTNOTjVsZGl1b0FMWU5YdjNMMzE5eGM4bHN2LVNSREt5NmdFRG5pZndFMWxtdDBJTmcxam5DbWdsRFJXUUlTS0Z1eWU4UWV3dm9rX0tpUdIBakFVX3lxTE55ZTZQd2NzTjJXVXhwUzF0TmQxTVpXVEhyenVpa1FjU2lHVi1TWG9kczNIcWlLckJsR0NmSTFjZmUtUEczWllXQmJxRkplRTVPY1pZMTlJRGs3cU5Hc01RaTA1RVc4dnBCYkE?oc=5",
       "matchedKeywords": [
         "배출권"
       ],
       "section": "news",
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "duplicateSources": [
-        "파인드비"
+        "파인드비",
+        "findb.co.kr"
       ],
       "region": "국내",
       "searchProviders": [
         "Google News RSS"
-      ]
+      ],
+      "searchProvider": "Google News RSS"
     },
     {
       "id": "9e7415f5b0315b88",
