@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-09-19T15:12:24+09:00",
+  "generatedAt": "2026-09-19T18:12:57+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
   "itemCount": 699,
@@ -226,8 +226,8 @@
       ],
       "duplicateSources": [
         "jejudomin.co.kr",
-        "뉴스제주",
         "newsjeju.net",
+        "뉴스제주",
         "headlinejeju.co.kr"
       ],
       "searchProviders": [
@@ -2275,8 +2275,8 @@
       "publishedAt": "2026-09-16",
       "title": "[ESG 아카데미 9기 강의소개 ②] 탄소시장의 이해",
       "category": "제도",
-      "summary": "[ESG 아카데미 9기 강의소개 ②] 탄소시장의 이해 - 탄소 감축 계층 구조, 탄소 배출권 시장 및 생태계 등 CPA뉴스",
-      "source": "CPA뉴스",
+      "summary": "[ESG 아카데미 9기 강의소개 ②] 탄소시장의 이해 - 탄소 감축 계층 구조, 탄소 배출권 시장 및 생태계 등 news.kicpa.or.kr",
+      "source": "news.kicpa.or.kr",
       "sourceType": "news",
       "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBGdjNodHBFVm1HNUhsN2pKeTBLaUVJcFByZHg3XzdfUzRjUWcwSm4tUF9HWjdPVXFDTm85dFpaM2VhNWV3NmpHakNhZDNFZVFKemRHSzdvM1hRaHEzYmFiS1ItU2d4UHI4?oc=5",
       "searchProvider": "Google News RSS",
@@ -2286,9 +2286,10 @@
         "탄소배출권"
       ],
       "section": "news",
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "duplicateSources": [
-        "CPA뉴스"
+        "CPA뉴스",
+        "news.kicpa.or.kr"
       ],
       "searchProviders": [
         "Google News RSS"
@@ -5470,9 +5471,10 @@
         "탄소시장"
       ],
       "section": "news",
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "duplicateSources": [
-        "SPN 서울평양뉴스"
+        "SPN 서울평양뉴스",
+        "spnews.co.kr"
       ],
       "searchProviders": [
         "Google News RSS"
@@ -9110,8 +9112,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "news.kbs.co.kr",
         "KBS 뉴스",
+        "news.kbs.co.kr",
         "kbs.co.kr"
       ],
       "searchProviders": [
@@ -10744,8 +10746,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "news.kbs.co.kr",
         "KBS 뉴스",
+        "news.kbs.co.kr",
         "kbs.co.kr"
       ],
       "searchProviders": [
