@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-09-19T10:15:07+09:00",
+  "generatedAt": "2026-09-19T13:12:26+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
   "itemCount": 698,
@@ -2615,8 +2615,8 @@
       ],
       "duplicateSources": [
         "v.daum.net",
-        "연합뉴스",
-        "yna.co.kr"
+        "yna.co.kr",
+        "연합뉴스"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -3447,8 +3447,8 @@
       "publishedAt": "2026-09-14",
       "title": "서울시, 전국 지자체 최초 ‘탄소배출권’ 모의거래 시행",
       "category": "제도",
-      "summary": "서울시, 전국 지자체 최초 ‘탄소배출권’ 모의거래 시행 기계설비신문",
-      "source": "기계설비신문",
+      "summary": "서울시, 전국 지자체 최초 ‘탄소배출권’ 모의거래 시행 kmecnews.co.kr",
+      "source": "kmecnews.co.kr",
       "sourceType": "news",
       "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9KVi0yaEx2ZllpcXhZeFlKWDVlUWw1Z2lwMGhMeXc3N3VQRGtSUDNaTXAtdGRHNDU0ZE1VdEZtdlAyMkZOTWxPVWF3Tktlb1ZaX1NyMWtSX0dmQ21OV1pIdVFGR2ttWFpqbXhMVA?oc=5",
       "searchProvider": "Google News RSS",
@@ -3457,9 +3457,10 @@
         "탄소배출권"
       ],
       "section": "news",
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "duplicateSources": [
-        "기계설비신문"
+        "기계설비신문",
+        "kmecnews.co.kr"
       ],
       "searchProviders": [
         "Google News RSS"
@@ -10589,7 +10590,6 @@
         "온실가스 배출권"
       ],
       "duplicateSources": [
-        "연합뉴스",
         "yna.co.kr",
         "아시아투데이",
         "이투데이",
@@ -10597,6 +10597,7 @@
         "econonews.co.kr",
         "ebn.co.kr",
         "오토투데이",
+        "연합뉴스",
         "뉴스1",
         "news1.kr",
         "asiatoday.co.kr",
