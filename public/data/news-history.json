@@ -1,17 +1,88 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-09-19T08:12:15+09:00",
+  "generatedAt": "2026-09-19T10:15:07+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 694,
+  "itemCount": 698,
   "earliestPublishedAt": "2026-08-06",
-  "latestPublishedAt": "2026-09-18",
+  "latestPublishedAt": "2026-09-19",
   "sourceCommitsScanned": 0,
   "sourceSnapshotsScanned": 0,
   "historicalRowsScanned": 0,
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "2cb7a4767e59f016",
+      "publishedAt": "2026-09-19",
+      "title": "난방부터 AI 데이터센터까지…삼성전자, WCE서 제시한 '친환경 일상'",
+      "category": "제도",
+      "summary": "삼성전자가 주거 공간부터 대규모 인공지능(AI) 데이터센터, 빌딩에 이르기까지 일상과 산업 전반을 아우르는 고효율 공조 기술과 지능형 에너지 솔루션을 선보이며 글로벌 탈 탄소 시장 공략에 속도를 내고 있다....",
+      "source": "financialpost.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.financialpost.co.kr/news/articleView.html?idxno=276556",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "financialpost.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "fdcc790dd7772cb5",
+      "publishedAt": "2026-09-19",
+      "title": "[기후·멸종 콕콕] \"정부, 기업 탄소저감 강하게 압박 안 해\"",
+      "category": "제도",
+      "summary": "기업이 기존 안전관리 체계를 바탕으로 메탄 관리에 나서도록 하고, 국제메탄관리체계인 OGMP 2.0 참여와 배출권 거래제 연계 등 단계적인 정책 추진이 필요하다\" -김진수 한양대학교 자원환경공학과 교수. 메탄 감축 관련...",
+      "source": "newspenguin.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newspenguin.com/news/articleView.html?idxno=22197",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "newspenguin.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "e063137897b39baa",
+      "publishedAt": "2026-09-19",
+      "title": "\"농업이 기후위기 해법\"…경영인 사로잡은 바이오플랜",
+      "category": "제도",
+      "summary": "그는 \"이제 세계가 탄소 배출권 을 확보하기 위해 벼농사가 이뤄지는 지역으로 모이고 있다\"며 \"베트남의... 24만5000톤의 온실가스 감축 효과를 기대할 수 있다. 이 가운데 3분의 1 수준인 약 1만1000ha만 참여해도 연간...",
+      "source": "newsfarm.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.newsfarm.co.kr/news/articleView.html?idxno=102384",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "newsfarm.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
     {
       "id": "d1e32f886e3504e1",
       "publishedAt": "2026-09-18",
@@ -155,8 +226,8 @@
       ],
       "duplicateSources": [
         "jejudomin.co.kr",
-        "뉴스제주",
         "newsjeju.net",
+        "뉴스제주",
         "headlinejeju.co.kr"
       ],
       "searchProviders": [
@@ -526,6 +597,30 @@
       "region": "해외"
     },
     {
+      "id": "db019253ad4c4395",
+      "publishedAt": "2026-09-18",
+      "title": "[ENTECH 2026] 전력·환경·그린에너지 신기술 총출동",
+      "category": "제도",
+      "summary": "이 서비스는 에너지 진단부터 고효율 설비 교체, 스마트팩토리 도입, 탄소 배출권 등록 및 환급까지 원스톱으로 지원하는 종합 패키지이다. 주진테크놀로지는 산업현장에 방출되는 저·중온 폐열을 전기로 전환하는...",
+      "source": "todayenergy.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.todayenergy.kr/news/articleView.html?idxno=303263",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "todayenergy.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "ab6683ead67593f3",
       "publishedAt": "2026-09-18",
       "title": "EU, 지속가능항공유 의무화 첫해 목표 초과 달성…다음 과제는?",
@@ -744,8 +839,8 @@
       "publishedAt": "2026-09-17",
       "title": "이브자리, 환경영화제에 탄소배출권 88톤 기부",
       "category": "제도",
-      "summary": "이브자리, 환경영화제에 탄소배출권 88톤 기부 TIN뉴스",
-      "source": "TIN뉴스",
+      "summary": "이브자리, 환경영화제에 탄소배출권 88톤 기부 tinnews.co.kr",
+      "source": "tinnews.co.kr",
       "sourceType": "news",
       "url": "https://news.google.com/rss/articles/CBMiREFVX3lxTE9VelZzWVh5aEhkTmN3Q2FRZG15YWRmYkotaVJqcmFVd1pYQUw4VWRHQ2NHaVo0TVUwM0VZaDJRNmU1WW16?oc=5",
       "searchProvider": "Google News RSS",
@@ -754,9 +849,10 @@
         "탄소배출권"
       ],
       "section": "news",
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "duplicateSources": [
-        "TIN뉴스"
+        "TIN뉴스",
+        "tinnews.co.kr"
       ],
       "searchProviders": [
         "Google News RSS"
@@ -4998,8 +5094,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "safetimes.co.kr",
         "jeonmae.co.kr",
+        "safetimes.co.kr",
         "newsis.com",
         "lawtimes.co.kr",
         "newspim.com",
@@ -10495,6 +10591,7 @@
       "duplicateSources": [
         "연합뉴스",
         "yna.co.kr",
+        "아시아투데이",
         "이투데이",
         "etoday.co.kr",
         "econonews.co.kr",
@@ -10523,7 +10620,7 @@
         "Google News RSS",
         "NAVER API HUB"
       ],
-      "duplicateCount": 25,
+      "duplicateCount": 26,
       "region": "국내"
     },
     {
@@ -13887,11 +13984,12 @@
         "KAU25"
       ],
       "section": "news",
-      "duplicateCount": 3,
+      "duplicateCount": 4,
       "duplicateSources": [
         "기후에너지데이터뱅크",
         "ekn.kr",
-        "edata.ekn.kr"
+        "edata.ekn.kr",
+        "에너지경제신문"
       ],
       "region": "국내",
       "searchProviders": [
