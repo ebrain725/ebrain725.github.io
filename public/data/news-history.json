@@ -1,17 +1,40 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-09-20T20:46:00+09:00",
+  "generatedAt": "2026-09-21T01:25:34+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 708,
+  "itemCount": 709,
   "earliestPublishedAt": "2026-08-06",
-  "latestPublishedAt": "2026-09-20",
+  "latestPublishedAt": "2026-09-21",
   "sourceCommitsScanned": 0,
   "sourceSnapshotsScanned": 0,
   "historicalRowsScanned": 0,
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "b664d9876f95b024",
+      "publishedAt": "2026-09-21",
+      "title": "[2026 추석] 연휴 시작 전 미리 확인해야 할 금융거래 정보",
+      "category": "제도",
+      "summary": "반면 일반채권·환매조건부채권·금· 배출권 은 23일 매도하면 당일 대금을 받을 수 있다. 해외주식 거래 일정은 증권사별 공지나 해외주식 데스크에서 확인해야 한다. 연휴 중 만기가 돌아오는 어음·수표·기업 간...",
+      "source": "insnews.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.insnews.co.kr/news/articleView.html?idxno=92849",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "insnews.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
     {
       "id": "6fa9a4d965a8d6f5",
       "publishedAt": "2026-09-20",
@@ -7015,7 +7038,7 @@
         "배출권거래제"
       ],
       "section": "news",
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "duplicateSources": [
         "v.daum.net"
       ],
@@ -8031,8 +8054,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "news1.kr",
-        "뉴스1"
+        "뉴스1",
+        "news1.kr"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -10841,13 +10864,13 @@
       "duplicateSources": [
         "연합뉴스",
         "yna.co.kr",
+        "이투데이",
         "etoday.co.kr",
         "econonews.co.kr",
         "ebn.co.kr",
         "오토투데이",
-        "news1.kr",
         "뉴스1",
-        "이투데이",
+        "news1.kr",
         "아시아투데이",
         "asiatoday.co.kr",
         "아시아경제",
