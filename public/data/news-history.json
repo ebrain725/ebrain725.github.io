@@ -1,17 +1,113 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-09-20T10:15:17+09:00",
+  "generatedAt": "2026-09-20T13:12:30+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 699,
+  "itemCount": 704,
   "earliestPublishedAt": "2026-08-06",
-  "latestPublishedAt": "2026-09-19",
+  "latestPublishedAt": "2026-09-20",
   "sourceCommitsScanned": 0,
   "sourceSnapshotsScanned": 0,
   "historicalRowsScanned": 0,
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "61701243c80939fe",
+      "publishedAt": "2026-09-20",
+      "title": "제11차 한중일 탄소 가격 메커니즘 포럼 제주 개최",
+      "category": "시장·가격",
+      "summary": "동북아 3국이 제주에 모여 탄소시장 의 미래를 논의했다. 한국·중국·일본이 2016년부터 번갈아 열어온 '한중일 탄소가격 메커니즘 포럼'이 올해 11번째로 제주에서 열려 3국 정부와 학계 전문가들이 각국의 탄소시장 ...",
+      "source": "jejumaeil.net",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.jejumaeil.net/news/articleView.html?idxno=404884",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "jejumaeil.net"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "해외"
+    },
+    {
+      "id": "eab5b8e2cefbd9a3",
+      "publishedAt": "2026-09-20",
+      "title": "작년 온실가스 0.9% 감소했지만…석탄발전 증가로 전력 부문은 ‘역행’",
+      "category": "시장·가격",
+      "summary": "지난해 11월 2035년 국가 온실가스 감축목표(2035 NDC)와 4차 배출권 할당계획을 수립한 데 이어 올해는... 이 밖에도 전기차 100만대 보급 달성과 온실가스 배출권 시장 가격이 지난해 평균 1만원 수준에서 지난달 20일...",
+      "source": "ekn.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.ekn.kr/web/view.php?key=20260920022286761",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "온실가스 배출권"
+      ],
+      "duplicateSources": [
+        "ekn.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "853166f7f1e6366a",
+      "publishedAt": "2026-09-20",
+      "title": "온실가스 배출 6억8571만톤…전년比 0.9% 감소, 전력·건물은 증가",
+      "category": "시장·가격",
+      "summary": "이에 따라 배출권 가격은 지난해 평균 1만원 수준에서 올해 8월20일 기준 3만원대까지 상승했으며, 정부는 배출권 시장이 정상화되고 있는 것으로 평가했다. 최민지 온실가스 종합정보센터장은 \"2030 국가 온실가스 ...",
+      "source": "mt.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.mt.co.kr/economy/2026/09/20/2026092009575495616",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "mt.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "ccb357ba4e16fd99",
+      "publishedAt": "2026-09-20",
+      "title": "[EE칼럼] 기후관련 법안이 밀물처럼 밀려온다.",
+      "category": "제도",
+      "summary": "네번째는 제4차 온실가스 배출권 거래제다. 2026년부터 2030년까지 적용되는 '제4차 배출권 거래제 할당 계획'에서는 배출허용 총량이 17% 감소되는데 이는 총 25억 3,730만 톤 정도다. 발전 부문의 유상할당 비율은 2030년까지...",
+      "source": "ekn.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.ekn.kr/web/view.php?key=20260919023329428",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "온실가스 배출권",
+        "유상할당"
+      ],
+      "duplicateSources": [
+        "ekn.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
     {
       "id": "2cb7a4767e59f016",
       "publishedAt": "2026-09-19",
@@ -34,6 +130,30 @@
         "NAVER API HUB"
       ],
       "region": "국내"
+    },
+    {
+      "id": "edf0d9f0df0d78ae",
+      "publishedAt": "2026-09-19",
+      "title": "[창간24/넥스트레벨] \"고로도 AI가 읽는다\"···K-철강, 쇳물 원가를 바...",
+      "category": "시장·가격",
+      "summary": "또한 철강 산업에 수반되는 탄소 배출권 비용 및 철스크랩 가격 상승도 압박으로 작용한다. 특히 유럽연합이 시행한 탄소국경조정제도(CBAM)는 수출국이 아닌 실제 생산 과정에서 발생한 탄소배출량을 기준으로 비용을...",
+      "source": "seoulfn.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.seoulfn.com/news/articleView.html?idxno=638327",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "seoulfn.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
     },
     {
       "id": "fdcc790dd7772cb5",
@@ -2617,8 +2737,8 @@
       ],
       "duplicateSources": [
         "v.daum.net",
-        "연합뉴스",
-        "yna.co.kr"
+        "yna.co.kr",
+        "연합뉴스"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -8791,8 +8911,8 @@
       "duplicateSources": [
         "lifein.news",
         "todayenergy.kr",
-        "뉴스와이어",
         "newswire.co.kr",
+        "뉴스와이어",
         "hansbiz.co.kr",
         "lawissue.co.kr",
         "m-i.kr",
@@ -9114,8 +9234,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "KBS 뉴스",
         "news.kbs.co.kr",
+        "KBS 뉴스",
         "kbs.co.kr"
       ],
       "searchProviders": [
@@ -10620,14 +10740,14 @@
         "온실가스 배출권"
       ],
       "duplicateSources": [
-        "연합뉴스",
         "yna.co.kr",
-        "이투데이",
         "etoday.co.kr",
         "econonews.co.kr",
         "ebn.co.kr",
         "오토투데이",
         "뉴스1",
+        "연합뉴스",
+        "이투데이",
         "아시아투데이",
         "news1.kr",
         "asiatoday.co.kr",
@@ -10748,8 +10868,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "KBS 뉴스",
         "news.kbs.co.kr",
+        "KBS 뉴스",
         "kbs.co.kr"
       ],
       "searchProviders": [
