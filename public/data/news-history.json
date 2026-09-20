@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-09-20T13:12:30+09:00",
+  "generatedAt": "2026-09-20T15:15:28+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 704,
+  "itemCount": 705,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-09-20",
   "sourceCommitsScanned": 0,
@@ -75,6 +75,31 @@
       ],
       "duplicateSources": [
         "mt.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "7522f199850c8885",
+      "publishedAt": "2026-09-20",
+      "title": "안동의 깊은 역사와 자연 속, 가을에 거닐기 좋은 가볼 만한 곳",
+      "category": "제도",
+      "summary": "이곳은 산림 부문 온실가스 배출권 거래제 사업으로 등록되어 연간 65톤의 이산화탄소를 흡수하는 친환경적인 공간으로, 후손들에게 건강한 지구를 물려주려는 노력이 담겨 있다. 숲 둘레에는 약 1km 길이의 황톳길 산책로가...",
+      "source": "topstarnews.net",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.topstarnews.net/news/articleView.html?idxno=16192541",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "온실가스 배출권"
+      ],
+      "duplicateSources": [
+        "topstarnews.net"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -2737,8 +2762,8 @@
       ],
       "duplicateSources": [
         "v.daum.net",
-        "yna.co.kr",
-        "연합뉴스"
+        "연합뉴스",
+        "yna.co.kr"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -9234,8 +9259,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "news.kbs.co.kr",
         "KBS 뉴스",
+        "news.kbs.co.kr",
         "kbs.co.kr"
       ],
       "searchProviders": [
@@ -10740,13 +10765,13 @@
         "온실가스 배출권"
       ],
       "duplicateSources": [
+        "연합뉴스",
         "yna.co.kr",
         "etoday.co.kr",
         "econonews.co.kr",
         "ebn.co.kr",
         "오토투데이",
         "뉴스1",
-        "연합뉴스",
         "이투데이",
         "아시아투데이",
         "news1.kr",
@@ -10868,8 +10893,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "news.kbs.co.kr",
         "KBS 뉴스",
+        "news.kbs.co.kr",
         "kbs.co.kr"
       ],
       "searchProviders": [
