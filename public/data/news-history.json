@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-09-20T18:12:05+09:00",
+  "generatedAt": "2026-09-20T20:46:00+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
   "itemCount": 708,
@@ -4798,7 +4798,8 @@
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
         "배출권",
-        "탄소배출권"
+        "탄소배출권",
+        "배출권거래제"
       ],
       "duplicateSources": [
         "newspenguin.com"
@@ -8030,8 +8031,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "뉴스1",
-        "news1.kr"
+        "news1.kr",
+        "뉴스1"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -10844,10 +10845,10 @@
         "econonews.co.kr",
         "ebn.co.kr",
         "오토투데이",
+        "news1.kr",
         "뉴스1",
         "이투데이",
         "아시아투데이",
-        "news1.kr",
         "asiatoday.co.kr",
         "아시아경제",
         "view.asiae.co.kr",
@@ -11018,8 +11019,8 @@
         "상쇄배출권"
       ],
       "duplicateSources": [
-        "news.bbsi.co.kr",
         "BBS불교방송",
+        "news.bbsi.co.kr",
         "bbsi.co.kr"
       ],
       "searchProviders": [
