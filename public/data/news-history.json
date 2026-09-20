@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-09-20T08:12:27+09:00",
+  "generatedAt": "2026-09-20T10:15:17+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
   "itemCount": 699,
@@ -5742,8 +5742,8 @@
       "publishedAt": "2026-09-09",
       "title": "[IB토마토]롯데그룹, 배출권 부족한데 송도공장은 미반영…탄소비용 '복병'",
       "category": "제도",
-      "summary": "[IB토마토]롯데그룹, 배출권 부족한데 송도공장은 미반영…탄소비용 '복병' 뉴스토마토",
-      "source": "뉴스토마토",
+      "summary": "[IB토마토]롯데그룹, 배출권 부족한데 송도공장은 미반영…탄소비용 '복병' newstomato.com",
+      "source": "newstomato.com",
       "sourceType": "news",
       "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5WZk1JeXBZcHhxSTZYMWJOYXc3Z214S0dENFZEbzRIZUt3dUwyUjY5Sl9weVV5R2hiRmpZSG1VM2E4TlRzWmFWVXY5RVNQVDJQbTk0Nkg5U3BoQzU1Nm9xWA?oc=5",
       "searchProvider": "Google News RSS",
@@ -5751,9 +5751,10 @@
         "배출권"
       ],
       "section": "news",
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "duplicateSources": [
-        "뉴스토마토"
+        "뉴스토마토",
+        "newstomato.com"
       ],
       "searchProviders": [
         "Google News RSS"
@@ -10799,8 +10800,8 @@
         "상쇄배출권"
       ],
       "duplicateSources": [
-        "news.bbsi.co.kr",
         "BBS불교방송",
+        "news.bbsi.co.kr",
         "bbsi.co.kr"
       ],
       "searchProviders": [
@@ -11240,8 +11241,8 @@
         "온실가스 배출권"
       ],
       "duplicateSources": [
-        "businesspost.co.kr",
-        "비즈니스포스트"
+        "비즈니스포스트",
+        "businesspost.co.kr"
       ],
       "searchProviders": [
         "Google News RSS",
