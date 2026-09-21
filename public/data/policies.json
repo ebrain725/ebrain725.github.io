@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-09-21T10:15:01+09:00",
+  "lastSync": "2026-09-21T13:12:32+09:00",
   "keywords": [
     "배출권",
     "배출권거래제",
@@ -27,11 +27,11 @@
     "Google News RSS",
     "NAVER API HUB"
   ],
-  "warning": "기후부 보도자료: 키워드별 공식검색과 기본 RSS 복구에 모두 실패했습니다: 배출권: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 배출권거래제: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 유상할당: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 유상경매: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 탄소시장: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 시장안정화: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 상쇄배출권: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 기본 RSS 복구: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 기후부 공지·공고: 키워드별 공식검색과 기본 RSS 복구에 모두 실패했습니다: 배출권: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 배출권거래제: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 유상할당: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 유상경매: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 탄소시장: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 시장안정화: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 상쇄배출권: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 기본 RSS 복구: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out>",
+  "warning": null,
   "aiInsight": {
     "summary": "최근 공식자료의 직접적인 수급 변수는 유상경매입니다. 최근 경매가 높은 낙찰가로 소화돼 공급보다 이행수요가 강하다는 신호입니다.",
-    "generatedAt": "2026-09-21T10:15:01+09:00",
-    "basisLatestDate": "2026-09-09",
+    "generatedAt": "2026-09-21T13:12:32+09:00",
+    "basisLatestDate": "2026-09-21",
     "basisCount": 10,
     "source": "fallback",
     "model": null
@@ -401,6 +401,29 @@
   ],
   "items": [
     {
+      "id": "c259ad449d0fdf61",
+      "publishedAt": "2026-09-21",
+      "title": "충북도, 청주권광역소각시설에 폐 가스 열에너지 회수 설비 설치",
+      "category": "제도",
+      "summary": "온실가스 감축설비 지원사업은 배출권 거래법 제8조에 따라 환경기초시설(쓰레기소각장, 매립장, 하수처리장 등)의 폐에너지 회수·이용설비, 연료전환, 고효율 기기 교체 및 설치 비용을 국비(50%)로 지원하는...",
+      "source": "jbnews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.jbnews.com/news/articleView.html?idxno=1511977",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "jbnews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "7aabd3e862042974",
       "publishedAt": "2026-09-21",
       "title": "충북도, 온실가스 감축사업 국비 24억 확보…청주·제천 환경시설 지원",
@@ -415,12 +438,14 @@
         "배출권"
       ],
       "duplicateSources": [
+        "yna.co.kr",
+        "ggilbo.com",
         "gukjenews.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 3,
       "region": "국내"
     },
     {
@@ -542,6 +567,30 @@
       "region": "국내"
     },
     {
+      "id": "f715685afdb49a46",
+      "publishedAt": "2026-09-21",
+      "title": "[GS 신사업] [AIDC] 동해 AIDC 2.4GW…‘RE100’과 석탄발전 사이 딜레마",
+      "category": "제도",
+      "summary": "이어 “글로벌 고객사가 무탄소 전력 사용이나 탄소배출 감축을 요구한다면 한전을 통한 전력 조달과 별개로 탄소 배출권 이나 관련 크레딧 등을 활용해 대응하는 방안도 있을 수 있다”고 덧붙였다.",
+      "source": "dealsite.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://dealsite.co.kr/articles/168933",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "dealsite.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "b664d9876f95b024",
       "publishedAt": "2026-09-21",
       "title": "[2026 추석] 연휴 시작 전 미리 확인해야 할 금융거래 정보",
@@ -563,6 +612,20 @@
         "NAVER API HUB"
       ],
       "region": "국내"
+    },
+    {
+      "id": "c8a47b93fdd85fad",
+      "publishedAt": "2026-09-21",
+      "title": "2025년도 국가 온실가스 잠정배출량 6억 8,571만톤",
+      "category": "제도",
+      "summary": "▷ ‘기후변화에 관한 정부간 협의체(IPCC)’ 2006년도 지침에 따른 총배출량은 전년 대비 610만톤 감소(△0.9%) ▷ 국가 온실가스 감축목표 달성을 위해서는 전기국가 전환과 재생에너지 중심의 탈탄소 가속화 필요 기후에너지환경부 소속 온실가스종합정보센터(센터장 최민지)는 ‘2025년도 국가 온실가스 배출량’을 잠정 추계한 결과, 총배출량 기준 6억 8,571만 톤으로 나타났다고 밝혔다. 이는 2024년 총배출량(잠정) 대비 610만톤(△0.9%) 감소한 수치다. 부문별로는 산업, 수송, 농축수산, 폐기물 부문에서 전년보다 배출량이 감소했으며, 전력, 건물, 냉매 등 부문에서는 배출량이 증가했다. 파리협정에 따라 국제 통계 산정 기준이 ‘기후변화에 관한 정부간 협의체(IPCC)’ 2006년도 지침으로 변경됨에 따라 온실가스종합정보센터는 새로운 통계기준을 적용한 국가 온실가스 통계를 작년 유엔에 제출했으며, 같은 해 11월 ‘2035 국가 온실가스 감축목표’도 새로운 지침을 적용하여 수립,발표했다. * 2006 기후변화에 관한 정부간협의체 지침(2006 Intergovernmental Panel on Climate Change GL) 전력 부문 배출량은 2억 2,043만톤으로 전년 대비 0.2%(+0.4백만톤) 증가했다. 총발전량은 작년과 유사(+0.01%)한 수준이며, 재생에너지 발전량이 큰 폭으로 증가(+8.5%)했으나, 원자력 발전이 감소(△2.2%)했고 석탄 발전이 증가(+2.2%)했다. 이는 원전 예방 정비·정지일수 증가*로 전력 공급 안정성을 위해 석탄발전이 증가하여 나타난 현상이다. * [원전 정비·정지일수] `24년 2,096.1일 → `25년 2,239.6일 (한국수력원자력) 발전원별 변화를 2018년과 비교하여 살펴보면 무탄소(원전+재생) 비중이 증가(29%→40.8%)함에 따라 석탄 비중이 감소(41.9%→28.7%)하여 배출량은 21.5%(△60.3백만톤)감소했다. * 출처 : 한국전력통계 산업 부문 배출량은 2억 4,293만톤으로 전년 대비 2.1% 감소(△5.3백만톤)하여 전년도(’23년~’24년)보다 감소폭이 확대(△1.2%→△2.1%)됐다. 이는 철강·석유화학·비금속(시멘트) 등 다배출 업종의 생산 감소*가 주요원인으로 분석되었다. 반도체 업종은 생산활동이 증가하였음에도 공정 저감효율 개선** 등으로 배출량 증가를 억제(+1.3%, +0.04백만톤)한 것으로 나타났다. * [철강업종 조강 생산량] `24년 6,365만톤 → `25년 6,223만톤 (한국철강협회) [석유화학업종 기초유분 6종 생산량] `24년 3,313만톤 → `25년 3,238만톤 (한국화학산업협회) [시멘트 출하량] `24년 4,371만톤 → `25년 3,810만톤 (한국시멘트협회) [반도체 생산지수(2020=100)] `24년 160.1 → `25년 180.7 (국가데이터처) ** 공정에서 사용된 불소계 온실가스를 스크러버에서 고온으로 분해 처리 냉장·냉방기기에 주입되는 냉매용 수소불화탄소(HFCs) 등 불소계 온실가스 배출량은 3,628만톤으로 전년 대비 3.9% 증가했다. 최근의 고온 이상기후, 저온유통(콜드체인) 산업 성장으로 냉매 소비량이 증가했고, 주입된 냉매는 상당기간 기기에서 사용되면서 누출되는 특성으로 인해 과거 누적 사용량의 증가가 배출량 증가에 영향을 준 것으로 나타났다. 다만 국제사회의 몬트리올 의정서(키갈리 개정)에 따라 단계적 감축 시행 등으로 전년도(’23년~’24년) 배출량 증가율(4.5%)보다는 완화된 것으로 나타났다. 건물 부문의 배출량은 전년 대비 3.3% 증가한 4,500만톤(+1.4백만톤)으로 난방도일* 증가(+10.8%)로 인한 도시가스 소비 증가가 원인으로 나타났다. 국제에너지기구(IEA)에 따르면 2025년 선진국을 중심으로 이상저온 현상이 발생하여 주요국 난방 에너지 소비가 증가한 것으로 분석**됐다. 한편 건물부문 전력에너지의 경우 냉방기기 보급 및 난방 전기화 추세가 지속되어 전년 대비 1.6% 증가***했다. * 일평균기온과 난방 기준온도(18℃)의 차이를 누적한…",
+      "source": "기후부 보도자료",
+      "sourceType": "official",
+      "section": "press",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10598&orgCd=&boardMasterId=939&boardId=1892310",
+      "matchedKeywords": [
+        "유상할당"
+      ]
     },
     {
       "id": "6fa9a4d965a8d6f5",
@@ -700,6 +763,31 @@
       ],
       "duplicateSources": [
         "topstarnews.net"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "46ce7dec8192fd39",
+      "publishedAt": "2026-09-20",
+      "title": "“2030년 재생에너지 3배(100GW) 확대…전기국가 전환 서두를 것”",
+      "category": "제도",
+      "summary": "민간 투자의 위험을 낮추기 위해 저리 융자와 보증을 늘리고 탄소 배출권 유상할당 수익을 기후대응기금... 기후대응위는 2035 국가 온실가스 감축목표에 맞춰 부문별·연도별 감축경로를 담은 제2차 국가기본계획을 내년...",
+      "source": "kookje.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.kookje.co.kr/news2011/asp/newsbody.asp?code=0200&key=20260921.22004006541",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권",
+        "유상할당"
+      ],
+      "duplicateSources": [
+        "kookje.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -4530,8 +4618,8 @@
         "온실가스 배출권"
       ],
       "duplicateSources": [
-        "뉴스;트리",
-        "newstree.kr"
+        "newstree.kr",
+        "뉴스;트리"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -4745,7 +4833,8 @@
       "url": "https://www.nocutnews.co.kr/news/6577151?utm_source=naver&utm_medium=article&utm_campaign=20260913050039",
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
-        "배출권"
+        "배출권",
+        "배출권거래제"
       ],
       "duplicateSources": [
         "nocutnews.co.kr"
@@ -6025,8 +6114,8 @@
         "유상할당"
       ],
       "duplicateSources": [
-        "에너지데일리",
-        "energydaily.co.kr"
+        "energydaily.co.kr",
+        "에너지데일리"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -12027,12 +12116,12 @@
       "duplicateSources": [
         "연합뉴스",
         "yna.co.kr",
+        "이투데이",
         "etoday.co.kr",
         "econonews.co.kr",
         "ebn.co.kr",
         "오토투데이",
         "뉴스1",
-        "이투데이",
         "news1.kr",
         "아시아투데이",
         "asiatoday.co.kr",
@@ -246595,17 +246684,17 @@
     "policy": "append-only",
     "status": "verified",
     "previousNonNewsCount": 4587,
-    "generatedNonNewsCount": 4587,
-    "finalNonNewsCount": 4587,
+    "generatedNonNewsCount": 4588,
+    "finalNonNewsCount": 4588,
     "previousScheduleCount": 11,
     "finalScheduleCount": 11
   },
   "newsRetention": {
     "policy": "append-only",
-    "lastMergedAt": "2026-09-21T10:15:08+09:00",
-    "itemCount": 715,
-    "archiveBefore": 711,
-    "currentBefore": 614,
+    "lastMergedAt": "2026-09-21T13:12:39+09:00",
+    "itemCount": 718,
+    "archiveBefore": 715,
+    "currentBefore": 617,
     "gitRecoveryEnabled": false
   }
 }

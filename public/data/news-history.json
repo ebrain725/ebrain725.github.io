@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-09-21T10:15:08+09:00",
+  "generatedAt": "2026-09-21T13:12:39+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 715,
+  "itemCount": 718,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-09-21",
   "sourceCommitsScanned": 0,
@@ -12,6 +12,29 @@
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "c259ad449d0fdf61",
+      "publishedAt": "2026-09-21",
+      "title": "충북도, 청주권광역소각시설에 폐 가스 열에너지 회수 설비 설치",
+      "category": "제도",
+      "summary": "온실가스 감축설비 지원사업은 배출권 거래법 제8조에 따라 환경기초시설(쓰레기소각장, 매립장, 하수처리장 등)의 폐에너지 회수·이용설비, 연료전환, 고효율 기기 교체 및 설치 비용을 국비(50%)로 지원하는...",
+      "source": "jbnews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.jbnews.com/news/articleView.html?idxno=1511977",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "jbnews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
     {
       "id": "7aabd3e862042974",
       "publishedAt": "2026-09-21",
@@ -27,12 +50,14 @@
         "배출권"
       ],
       "duplicateSources": [
+        "yna.co.kr",
+        "ggilbo.com",
         "gukjenews.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 3,
       "region": "국내"
     },
     {
@@ -151,6 +176,30 @@
       "searchProviders": [
         "NAVER API HUB"
       ],
+      "region": "국내"
+    },
+    {
+      "id": "f715685afdb49a46",
+      "publishedAt": "2026-09-21",
+      "title": "[GS 신사업] [AIDC] 동해 AIDC 2.4GW…‘RE100’과 석탄발전 사이 딜레마",
+      "category": "제도",
+      "summary": "이어 “글로벌 고객사가 무탄소 전력 사용이나 탄소배출 감축을 요구한다면 한전을 통한 전력 조달과 별개로 탄소 배출권 이나 관련 크레딧 등을 활용해 대응하는 방안도 있을 수 있다”고 덧붙였다.",
+      "source": "dealsite.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://dealsite.co.kr/articles/168933",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "dealsite.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
       "region": "국내"
     },
     {
@@ -312,6 +361,31 @@
       ],
       "duplicateSources": [
         "topstarnews.net"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "46ce7dec8192fd39",
+      "publishedAt": "2026-09-20",
+      "title": "“2030년 재생에너지 3배(100GW) 확대…전기국가 전환 서두를 것”",
+      "category": "제도",
+      "summary": "민간 투자의 위험을 낮추기 위해 저리 융자와 보증을 늘리고 탄소 배출권 유상할당 수익을 기후대응기금... 기후대응위는 2035 국가 온실가스 감축목표에 맞춰 부문별·연도별 감축경로를 담은 제2차 국가기본계획을 내년...",
+      "source": "kookje.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.kookje.co.kr/news2011/asp/newsbody.asp?code=0200&key=20260921.22004006541",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권",
+        "유상할당"
+      ],
+      "duplicateSources": [
+        "kookje.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -4142,8 +4216,8 @@
         "온실가스 배출권"
       ],
       "duplicateSources": [
-        "뉴스;트리",
-        "newstree.kr"
+        "newstree.kr",
+        "뉴스;트리"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -4357,7 +4431,8 @@
       "url": "https://www.nocutnews.co.kr/news/6577151?utm_source=naver&utm_medium=article&utm_campaign=20260913050039",
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
-        "배출권"
+        "배출권",
+        "배출권거래제"
       ],
       "duplicateSources": [
         "nocutnews.co.kr"
@@ -5637,8 +5712,8 @@
         "유상할당"
       ],
       "duplicateSources": [
-        "에너지데일리",
-        "energydaily.co.kr"
+        "energydaily.co.kr",
+        "에너지데일리"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -11008,12 +11083,12 @@
       "duplicateSources": [
         "연합뉴스",
         "yna.co.kr",
+        "이투데이",
         "etoday.co.kr",
         "econonews.co.kr",
         "ebn.co.kr",
         "오토투데이",
         "뉴스1",
-        "이투데이",
         "news1.kr",
         "아시아투데이",
         "asiatoday.co.kr",
