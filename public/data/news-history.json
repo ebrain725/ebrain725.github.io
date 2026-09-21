@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-09-21T15:12:20+09:00",
+  "generatedAt": "2026-09-21T18:12:22+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 723,
+  "itemCount": 730,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-09-21",
   "sourceCommitsScanned": 0,
@@ -73,7 +73,10 @@
         "배출권"
       ],
       "duplicateSources": [
+        "inews365.com",
         "yna.co.kr",
+        "ccdailynews.com",
+        "dynews.co.kr",
         "daejonilbo.com",
         "ggilbo.com",
         "gukjenews.com"
@@ -81,7 +84,7 @@
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 4,
+      "duplicateCount": 7,
       "region": "국내"
     },
     {
@@ -107,6 +110,30 @@
       ],
       "duplicateCount": 1,
       "region": "국내"
+    },
+    {
+      "id": "4119af3b11985a94",
+      "publishedAt": "2026-09-21",
+      "title": "온실가스 0.9% 감소…산업 부문 감축 영향 [ESG 뉴스 5]",
+      "category": "제도",
+      "summary": "온실가스 0.9% 감소…산업 부문 감축 영향 지난해 국내 온실가스 총배출량이 6억8571만t으로 전년보다 0.9... 유럽연합(EU) 배출권 거래제와 퓨얼EU 마리타임 등 탄소 규제 비용까지 반영하면 바이오디젤은 대부분의...",
+      "source": "magazine.hankyung.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://magazine.hankyung.com/business/article/202609217241b",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "magazine.hankyung.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
     },
     {
       "id": "cc5e54fde22f2f9f",
@@ -170,7 +197,8 @@
       "matchedKeywords": [
         "탄소시장",
         "배출권",
-        "탄소배출권"
+        "탄소배출권",
+        "유상할당"
       ],
       "duplicateSources": [
         "ESG경제",
@@ -182,6 +210,77 @@
       ],
       "duplicateCount": 2,
       "region": "해외"
+    },
+    {
+      "id": "1bf8e43570f5ae00",
+      "publishedAt": "2026-09-21",
+      "title": "【공시 모니터링】 하나금융, 기후위험 충당금 2050년 최대 3조원…전환...",
+      "category": "시장·가격",
+      "summary": "탄소 배출권 가격이 뛰고 환경 규제가 강해지면서, 고탄소 기업 차주의 재무 상환능력이 급격히 떨어지는 경로를 반영했기 때문이다. 반대로 물리적 위험은 온실가스 감축 대응이 늦어질수록 기하급수적으로...",
+      "source": "impacton.net",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.impacton.net/news/articleView.html?idxno=20388",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "impacton.net"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "a8cf7099a8a52d15",
+      "publishedAt": "2026-09-21",
+      "title": "【ESG 채용】영풍, ERM코리아, TP, 에코앤파트너스",
+      "category": "제도",
+      "summary": "트렌드, 탄소시장 등 분석을 통한 인사이트 도출 및 서비스 개발 기여 주니어 팀원 리드 및 역량 개발 지원 제안서 작성, 고객 피칭, 신규 기회 발굴 등 사업개발(BD) 활동 경력 5년 이상 4년제 대학 졸업 이상...",
+      "source": "impacton.net",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.impacton.net/news/articleView.html?idxno=30002",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "impacton.net"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "ef2f530ab55282fa",
+      "publishedAt": "2026-09-21",
+      "title": "“개발부터 실증, 연료수급까지 SMR 토털 패키지 지원책 마련해야”",
+      "category": "제도",
+      "summary": "부분까지 온실가스 감축 노력으로 인정해 탄소 배출권 을 부여해주고, 원전수소(핑크수소)도 청정수소로 인정해서 정부가 지원해줄 것을 요청드린다\"고 말했다. 산업 지원 뿐만 아니라 차세대 SMR에 필요한 규제 체계를...",
+      "source": "ekn.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.ekn.kr/web/view.php?key=20260921023227468",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "ekn.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
     },
     {
       "id": "b6f394d2dccc54a8",
@@ -229,6 +328,29 @@
       "searchProviders": [
         "Google News RSS"
       ],
+      "region": "국내"
+    },
+    {
+      "id": "79a547fb11378f7c",
+      "publishedAt": "2026-09-21",
+      "title": "[비바100] 김소희 의원 “기후특위, 여야협치 결실⋯ 기후적응법 제정 ...",
+      "category": "제도",
+      "summary": "기본법과 배출권 거래법 관련 법안 심사 권한을 특위에 부여했다\"며 “출발선부터 한 단계 진일보했던 셈”이라고 평가했다. 김 의원은 이번 특위의 가장 큰 성과로 여야 합의를 통한 온실가스 감축 경로 도출과...",
+      "source": "viva100.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.viva100.com/article/20260919500208",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "viva100.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
       "region": "국내"
     },
     {
@@ -303,6 +425,31 @@
       "region": "국내"
     },
     {
+      "id": "9937bbcbbc4640e6",
+      "publishedAt": "2026-09-21",
+      "title": "[EU 모빌리티 업계] 유럽 트럭업계, ‚EU 2030년 탄소 감축 목표 시행 3년...",
+      "category": "제도",
+      "summary": "이에 트럭업계는 원활한 탄소배출 목표치 달성을 위해서 EU 정책 입안자들에게 전기차 충전 시설과 전력망, 신규 CO2 기반 도로통행료 체제를 신속히 확충하고, EU가 탄소 배출권 거래제 를 통해 벌어들인 수익을...",
+      "source": "greened.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.greened.kr/news/articleView.html?idxno=350255",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "greened.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
       "id": "b664d9876f95b024",
       "publishedAt": "2026-09-21",
       "title": "[2026 추석] 연휴 시작 전 미리 확인해야 할 금융거래 정보",
@@ -347,6 +494,31 @@
       ],
       "duplicateCount": 1,
       "region": "국내"
+    },
+    {
+      "id": "0f3ebee87d09327f",
+      "publishedAt": "2026-09-21",
+      "title": "'12조 유동성' HMM, 불황 전 '자사 선박 확충' 승부수",
+      "category": "제도",
+      "summary": "유럽연합(EU)의 탄소 배출권 거래제(EU-ETS)가 내년부터 해운 온실가스 규제를 100% 전면 시행하기로 확정 지으면서, 글로벌 친환경 규제의 압박이 본격화된다. 대주주인 산업은행 등 채권단의 눈치를 보느라 적기 투자의...",
+      "source": "newsfreezone.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newsfreezone.co.kr/news/articleView.html?idxno=710470",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "newsfreezone.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
     },
     {
       "id": "6fa9a4d965a8d6f5",
@@ -3196,8 +3368,8 @@
       ],
       "duplicateSources": [
         "v.daum.net",
-        "yna.co.kr",
-        "연합뉴스"
+        "연합뉴스",
+        "yna.co.kr"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -4087,7 +4259,8 @@
       "matchedKeywords": [
         "배출권",
         "탄소배출권",
-        "탄소시장"
+        "탄소시장",
+        "상쇄배출권"
       ],
       "duplicateSources": [
         "dailyt.co.kr"
@@ -8396,8 +8569,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "뉴스1",
-        "news1.kr"
+        "news1.kr",
+        "뉴스1"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -11204,15 +11377,15 @@
         "온실가스 배출권"
       ],
       "duplicateSources": [
+        "연합뉴스",
         "yna.co.kr",
         "이투데이",
         "etoday.co.kr",
         "econonews.co.kr",
         "ebn.co.kr",
         "오토투데이",
-        "뉴스1",
-        "연합뉴스",
         "news1.kr",
+        "뉴스1",
         "아시아투데이",
         "asiatoday.co.kr",
         "아시아경제",
