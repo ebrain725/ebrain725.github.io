@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-09-21T08:12:17+09:00",
+  "generatedAt": "2026-09-21T10:15:08+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 711,
+  "itemCount": 715,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-09-21",
   "sourceCommitsScanned": 0,
@@ -12,6 +12,29 @@
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "7aabd3e862042974",
+      "publishedAt": "2026-09-21",
+      "title": "충북도, 온실가스 감축사업 국비 24억 확보…청주·제천 환경시설 지원",
+      "category": "제도",
+      "summary": "이 사업은 ' 배출권 거래법' 제8조에 따라 할당 대상업체로 지정된 청주, 충주, 제천의 환경기초시설을 대상으로 한다. 쓰레기소각장, 매립장, 하수처리장 등 대규모 에너지 소비 및 온실가스 배출 시설에 대해 폐에너지...",
+      "source": "gukjenews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.gukjenews.com/news/articleView.html?idxno=3701771",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "gukjenews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
     {
       "id": "cc5e54fde22f2f9f",
       "publishedAt": "2026-09-21",
@@ -38,6 +61,52 @@
       "region": "국내"
     },
     {
+      "id": "b77027242300c886",
+      "publishedAt": "2026-09-21",
+      "title": "국가 온실가스 배출량 감소 불구 전력부문 소폭증가",
+      "category": "상쇄·외부사업",
+      "summary": "온실가스를 흡수·저장해 총배출량을 상쇄 하는 산림·토지 분야 흡수량은 3103만톤으로 전년대비 22.8... 작년에는 2035 NDC를 비롯해 제4차 배출권 할당계획을, 올해는 국민주권정부 에너지 대전환 추진계획과 제1차...",
+      "source": "e2news.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.e2news.com/news/articleView.html?idxno=334452",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "e2news.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "b6f394d2dccc54a8",
+      "publishedAt": "2026-09-21",
+      "title": "[인터뷰] 교통개발정책연구소 류다이종 동아시아 대표 \"청정수소, 인센...",
+      "category": "제도",
+      "summary": "결국 청정수소인증제는 보조금, 탄소시장 , 산업단지 정책과 결합돼야 실제 효과가 발생합니다.\" 류다이종 대표는 지속가능 교통, 도시계획 및 기후정책 분야 전문가로 친환경 교통체계 및 탄소중립 도시 정책 논의를...",
+      "source": "gasnews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.gasnews.com/news/articleView.html?idxno=126893",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "gasnews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "a5cdd48d622c38f1",
       "publishedAt": "2026-09-21",
       "title": "[더벨]GS글로벌, 탄소 배출권 트레이딩 사업 진출한다",
@@ -59,6 +128,29 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "7da0eff0a78612cc",
+      "publishedAt": "2026-09-21",
+      "title": "[기획] “버려질 식품, 얼마나 탄소 를 줄였나”…전주서 ‘푸드레스큐 ...",
+      "category": "상쇄·외부사업",
+      "summary": "에이트루프가 검토하는 기준은 글로벌 자발적 탄소시장 표준기관 베라(Verra)의 ‘VM0046 식품손실 및 폐기물 감축 방법론(Methodology for Reducing Food Loss and Waste)’이다. VM0046은 농장과 식품가공, 소매, 외식·숙박, 가정 등...",
+      "source": "viva100.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.viva100.com/article/20260921500005",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "viva100.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
       "region": "국내"
     },
     {
@@ -868,8 +960,8 @@
       "publishedAt": "2026-09-18",
       "title": "[ESG특집] EU 탄소시장 개혁 논의, 한국 산업 생존의 새 기준 되나",
       "category": "제도",
-      "summary": "[ESG특집] EU 탄소시장 개혁 논의, 한국 산업 생존의 새 기준 되나 데일리연합",
-      "source": "데일리연합",
+      "summary": "[ESG특집] EU 탄소시장 개혁 논의, 한국 산업 생존의 새 기준 되나 dailyan.com",
+      "source": "dailyan.com",
       "sourceType": "news",
       "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE56TWc4UDlWc09Pdi1kTVhXY2RQMVlIdG9TUDBVeUJFV3ZKVk1sZ2JyWmgwcU1FMVFBeWpQV2FXTXlGZ2xWYkdETVlqYl8zUTR2Sm1SZjVvZ2hBcDg?oc=5",
       "searchProvider": "Google News RSS",
@@ -879,7 +971,8 @@
       "section": "news",
       "duplicateCount": 2,
       "duplicateSources": [
-        "데일리연합"
+        "데일리연합",
+        "dailyan.com"
       ],
       "searchProviders": [
         "Google News RSS"
@@ -10407,8 +10500,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "ESG경제",
-        "esgeconomy.com"
+        "esgeconomy.com",
+        "ESG경제"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -10915,12 +11008,12 @@
       "duplicateSources": [
         "연합뉴스",
         "yna.co.kr",
-        "이투데이",
         "etoday.co.kr",
         "econonews.co.kr",
         "ebn.co.kr",
         "오토투데이",
         "뉴스1",
+        "이투데이",
         "news1.kr",
         "아시아투데이",
         "asiatoday.co.kr",
