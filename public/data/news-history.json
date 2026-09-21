@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-09-21T13:12:39+09:00",
+  "generatedAt": "2026-09-21T15:12:20+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 718,
+  "itemCount": 723,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-09-21",
   "sourceCommitsScanned": 0,
@@ -36,6 +36,29 @@
       "region": "국내"
     },
     {
+      "id": "8c80ed146f2f7c21",
+      "publishedAt": "2026-09-21",
+      "title": "충북도, 온실가스 감축설비 국비 24억원 확보…전국 예산 31.5%",
+      "category": "제도",
+      "summary": "◆ 청주 폐열 회수·제천 태양광 설비 교체 온실가스 감축설비 지원사업은 배출권 거래법에 따른 할당 대상업체로 지정된 청주·충주·제천의 환경기초시설을 대상으로 폐에너지 회수·이용설비, 연료전환, 고효율 기기...",
+      "source": "newstnt.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newstnt.com/news/articleView.html?idxno=719480",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "newstnt.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "7aabd3e862042974",
       "publishedAt": "2026-09-21",
       "title": "충북도, 온실가스 감축사업 국비 24억 확보…청주·제천 환경시설 지원",
@@ -51,13 +74,38 @@
       ],
       "duplicateSources": [
         "yna.co.kr",
+        "daejonilbo.com",
         "ggilbo.com",
         "gukjenews.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 3,
+      "duplicateCount": 4,
+      "region": "국내"
+    },
+    {
+      "id": "c37fb8d93371aac6",
+      "publishedAt": "2026-09-21",
+      "title": "지정학 위기가 부른 ‘탄소 폭탄’…국내 산업계 감축 압박 커진다",
+      "category": "제도",
+      "summary": "일반적으로 석유와 천연 가스 의 업스트림 배출(채굴, 정제, 수송)은 연료 전과정(Life-cycle) 온실가스 ... 탄소 배출권 을 구매해야 하는 가혹한 감축 압박을 받게 된다. 따라서 공급망 위기 시기에는 공장에서 제품을 만들...",
+      "source": "ekn.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.ekn.kr/web/view.php?key=20260921027557083",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "ekn.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
       "region": "국내"
     },
     {
@@ -109,6 +157,33 @@
       "region": "국내"
     },
     {
+      "id": "5a67ab310d67ac6f",
+      "publishedAt": "2026-09-21",
+      "title": "中 탄소시장 거래액 증가세 가속…올해 1~8월 전년比 67.6%↑",
+      "category": "시장·가격",
+      "summary": "중국 생태환경부가 9월 발간한 '중국 전국 탄소시장 발전보고서 2026(Progress Report of China's National Carbon Market 2026)'에 따르면 올해 1~8월 전국 ETS의 탄소배출권 거래량은 전년 동기 대비 46.53%, 거래액은 67.64...",
+      "source": "esgeconomy.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.esgeconomy.com/news/articleView.html?idxno=16799",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장",
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "ESG경제",
+        "esgeconomy.com"
+      ],
+      "searchProviders": [
+        "Google News RSS",
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 2,
+      "region": "해외"
+    },
+    {
       "id": "b6f394d2dccc54a8",
       "publishedAt": "2026-09-21",
       "title": "[인터뷰] 교통개발정책연구소 류다이종 동아시아 대표 \"청정수소, 인센...",
@@ -128,6 +203,31 @@
       ],
       "searchProviders": [
         "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "0a403b4694cdce1c",
+      "publishedAt": "2026-09-21",
+      "title": "[온실가스 배출권] 9월 21일 KAU26, 100원 하락한 3만450원",
+      "category": "시장·가격",
+      "summary": "[온실가스 배출권] 9월 21일 KAU26, 100원 하락한 3만450원 데일리e뉴스",
+      "source": "데일리e뉴스",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5kb1Jid3ZhTmNaOGF0MmdpTGw0ckg5dEdkdnctMTJDTUUxVV9xN0R3ekVRNjVUZTAtM1VGS0FxN0lvQWpMSThoc3ppbU5pa0s4Z2pRbHhuWlk1bGxhdDc1Z2EwYm1McnA5ZU9wNFY0WQ?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "온실가스 배출권",
+        "KAU26"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "데일리e뉴스"
+      ],
+      "searchProviders": [
+        "Google News RSS"
       ],
       "region": "국내"
     },
@@ -223,6 +323,29 @@
       "searchProviders": [
         "NAVER API HUB"
       ],
+      "region": "국내"
+    },
+    {
+      "id": "2a02e196afa82fee",
+      "publishedAt": "2026-09-21",
+      "title": "25년도 국가 온실가스 잠정 배출량 전년比 0.9% 감소",
+      "category": "상쇄·외부사업",
+      "summary": "온실가스를 흡수․저장하여 총배출량을 상쇄 하는 산림·토지 분야 흡수량은 3103만톤으로 전년 대비 22.8... 작년에는 '2035 국가 온실가스 감축목표(2025.11)', '제4차 배출권 할당계획(2025.11)'을, 올해는 '국민주권정부...",
+      "source": "todayenergy.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.todayenergy.kr/news/articleView.html?idxno=303341",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "todayenergy.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
       "region": "국내"
     },
     {
@@ -3073,8 +3196,8 @@
       ],
       "duplicateSources": [
         "v.daum.net",
-        "연합뉴스",
-        "yna.co.kr"
+        "yna.co.kr",
+        "연합뉴스"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -4216,8 +4339,8 @@
         "온실가스 배출권"
       ],
       "duplicateSources": [
-        "newstree.kr",
-        "뉴스;트리"
+        "뉴스;트리",
+        "newstree.kr"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -5712,8 +5835,8 @@
         "유상할당"
       ],
       "duplicateSources": [
-        "energydaily.co.kr",
-        "에너지데일리"
+        "에너지데일리",
+        "energydaily.co.kr"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -10575,8 +10698,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "esgeconomy.com",
-        "ESG경제"
+        "ESG경제",
+        "esgeconomy.com"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -11081,7 +11204,6 @@
         "온실가스 배출권"
       ],
       "duplicateSources": [
-        "연합뉴스",
         "yna.co.kr",
         "이투데이",
         "etoday.co.kr",
@@ -11089,6 +11211,7 @@
         "ebn.co.kr",
         "오토투데이",
         "뉴스1",
+        "연합뉴스",
         "news1.kr",
         "아시아투데이",
         "asiatoday.co.kr",
