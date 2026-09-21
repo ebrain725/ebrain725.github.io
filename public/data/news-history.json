@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-09-21T18:12:22+09:00",
+  "generatedAt": "2026-09-21T22:16:33+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 730,
+  "itemCount": 734,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-09-21",
   "sourceCommitsScanned": 0,
@@ -12,6 +12,30 @@
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "297e9794643e7711",
+      "publishedAt": "2026-09-21",
+      "title": "한전 전력연구원, '에너지부터 환경까지' 기술로 증명한다",
+      "category": "상쇄·외부사업",
+      "summary": "향후에는 외부 기관이 보유한 폐 SF6를 처리하여 상쇄 배출권 을 확보하는 모델을 중심으로 사업화를 추진할... 감축 실적은 배출권 수익으로, 국산화는 에너지 안보 가치로, 실증 성과는 국내외 신사업 동력으로 이어져...",
+      "source": "energy-news.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=228454",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "상쇄배출권"
+      ],
+      "duplicateSources": [
+        "energy-news.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
     {
       "id": "c259ad449d0fdf61",
       "publishedAt": "2026-09-21",
@@ -85,6 +109,37 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 7,
+      "region": "국내"
+    },
+    {
+      "id": "7a5f28ac349a9db0",
+      "publishedAt": "2026-09-21",
+      "title": "충북도 온실가스 감축 사업 선정",
+      "category": "제도",
+      "summary": "이 사업은 ` 온실가스 배출권 의 할당 및 거래에 관한 법률'에 따라 대규모 에너지 소비 및 온실가스 배출시설의 폐에너지 회수·이용설비·연료전환·고효율 기기 교체 및 설치 비용을 국비로 일부(50%) 지원하는 정책이다....",
+      "source": "cctimes.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.cctimes.kr/news/articleView.html?idxno=928893",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "온실가스 배출권"
+      ],
+      "duplicateSources": [
+        "inews365.com",
+        "yna.co.kr",
+        "ccdailynews.com",
+        "dynews.co.kr",
+        "daejonilbo.com",
+        "ggilbo.com",
+        "gukjenews.com",
+        "cctimes.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 8,
       "region": "국내"
     },
     {
@@ -283,6 +338,29 @@
       "region": "국내"
     },
     {
+      "id": "26a4f84c2abf096b",
+      "publishedAt": "2026-09-21",
+      "title": "[제주도] 제주 '기후경제수도' 실현에 속도…국제 탄소시장 논의 무대로",
+      "category": "제도",
+      "summary": "[제주도] 제주 '기후경제수도' 실현에 속도…국제 탄소시장 논의 무대로 워터저널",
+      "source": "워터저널",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1rcVRNUk56bnMySFMtLWZEV1kxTThKcUFUcDNrYUZxZm1sb1E4X1lYRDF5U1NhQ1lqSDA1cmpKdDJDTTNhRFRkZFVhRFppU29WTjhtRFhyU1dwUHNSaGhpNy1zWVpwdmVZeEhPTGRDTm1UN1ZMSmfSAXZBVV95cUxNa3FUTVJOem5zMkhTLS1mRFdZMU04SnFBVHAza2FGcWZtbG9ROF9ZWEQxeVNTYUNZakgwNXJqSnQyQ00zYURUZGRVYURaaVNvVk44bURYclNXcFBzUmhoaTctc1lacHZlWXhIT0xkQ05tVDdWTEpn?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "워터저널"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "b6f394d2dccc54a8",
       "publishedAt": "2026-09-21",
       "title": "[인터뷰] 교통개발정책연구소 류다이종 동아시아 대표 \"청정수소, 인센...",
@@ -398,6 +476,30 @@
       "searchProviders": [
         "NAVER API HUB"
       ],
+      "region": "국내"
+    },
+    {
+      "id": "dbde64a0a5c65254",
+      "publishedAt": "2026-09-21",
+      "title": "[경일칼럼] 탄소 장벽 시대, 경남 제조업은 준비됐는가",
+      "category": "제도",
+      "summary": "중국은 탄소 배출권 거래 시장 을 철강·시멘트·알루미늄 등으로 확대했고, 미국은 EU CBAM에 통상 부담을 우려하면서도 중국을 겨냥한 자체 탄소 관세('미국판 탄소 국경세') 도입을 저울질하고 있다. 접근 방식은 달라도...",
+      "source": "gnnews.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.gnnews.co.kr/news/articleView.html?idxno=646028",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "gnnews.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
       "region": "국내"
     },
     {
@@ -3368,8 +3470,8 @@
       ],
       "duplicateSources": [
         "v.daum.net",
-        "연합뉴스",
-        "yna.co.kr"
+        "yna.co.kr",
+        "연합뉴스"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -4512,8 +4614,8 @@
         "온실가스 배출권"
       ],
       "duplicateSources": [
-        "뉴스;트리",
-        "newstree.kr"
+        "newstree.kr",
+        "뉴스;트리"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -8569,8 +8671,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "news1.kr",
-        "뉴스1"
+        "뉴스1",
+        "news1.kr"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -11377,15 +11479,15 @@
         "온실가스 배출권"
       ],
       "duplicateSources": [
-        "연합뉴스",
         "yna.co.kr",
         "이투데이",
         "etoday.co.kr",
         "econonews.co.kr",
         "ebn.co.kr",
         "오토투데이",
-        "news1.kr",
         "뉴스1",
+        "연합뉴스",
+        "news1.kr",
         "아시아투데이",
         "asiatoday.co.kr",
         "아시아경제",
