@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-09-22T08:12:25+09:00",
+  "generatedAt": "2026-09-22T10:12:43+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 738,
+  "itemCount": 742,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-09-22",
   "sourceCommitsScanned": 0,
@@ -12,6 +12,30 @@
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "b346c26818490287",
+      "publishedAt": "2026-09-22",
+      "title": "해운용 바이오디젤, 화석연료보다 싸졌다…EU 규제로 가격 역전",
+      "category": "시장·가격",
+      "summary": "아거스는 배출규제 준수비용과 EU 배출권 가격까지 포함하면 바이오디젤이 거의 모든 기존 선박연료보다... EU 배출권 거래제도 화석연료 사용비용을 높인다. 해운업은 2024년 EU ETS에 편입됐으며 2026년 발생 배출량부터...",
+      "source": "impacton.net",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.impacton.net/news/articleView.html?idxno=30006",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "impacton.net"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
     {
       "id": "a5895c29738c06d1",
       "publishedAt": "2026-09-22",
@@ -59,6 +83,54 @@
       ],
       "duplicateCount": 1,
       "region": "국내"
+    },
+    {
+      "id": "4dc65f1a3be64a2b",
+      "publishedAt": "2026-09-22",
+      "title": "李 대통령 유엔총회 참석…뉴욕선 기후위기 ‘안보 의제’로 부상 [ESG ...",
+      "category": "제도",
+      "summary": "EU, 남는 탄소 배출권 폐기 대신 비축 검토 유럽연합(EU)이 시장에 남아도는 탄소 배출권 을 없애지 않고... 유엔 “AI업계, 배출 감축 입증해야” 유엔 기후변화협약(UNFCCC)이 AI 기업에 온실가스 배출 감축과 에너지 효율...",
+      "source": "magazine.hankyung.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://magazine.hankyung.com/business/article/202609229877b",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "magazine.hankyung.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
+      "id": "274537eb683ab49f",
+      "publishedAt": "2026-09-22",
+      "title": "[해외브리핑] EU, 데이터센터 전력·용수 효율 공개 의무화 추진",
+      "category": "제도",
+      "summary": "https://carbonherald.com/ineos-opens-first-commercial-scale-offshore-co2-storage-site-in-the-eu/ 뉴질랜드, 탄소 배출권 산림 조성 확대에 목축업계와 갈등 뉴질랜드에서 지난 20년간 탄소 배출권 발급을 위한 산림 조성...",
+      "source": "esgeconomy.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.esgeconomy.com/news/articleView.html?idxno=16807",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "esgeconomy.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
     },
     {
       "id": "4895dde35a254417",
@@ -1176,8 +1248,8 @@
       ],
       "duplicateSources": [
         "jejudomin.co.kr",
-        "뉴스제주",
         "newsjeju.net",
+        "뉴스제주",
         "headlinejeju.co.kr"
       ],
       "searchProviders": [
@@ -2715,6 +2787,30 @@
       "region": "국내"
     },
     {
+      "id": "34b9efe0c13dc9be",
+      "publishedAt": "2026-09-16",
+      "title": "세계 9위 탄소배출국 한국 탄소배출권 가격 급등...원인과 전망은?",
+      "category": "시장·가격",
+      "summary": "세계 9위 탄소배출국 한국 탄소배출권 가격 급등...원인과 전망은? 엔트로피타임즈",
+      "source": "엔트로피타임즈",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9oTmNleUhJelFQZXdBdUZuYjV5TjhyZERHQm5hYjQ1R0l4cVdydkZYRFpRQTQwcnhFTE5RTjl3NVZMTk9uNWtqT05xN0QtSGZYcEZ2ZXNuejc0d2ZoR0lvME1JMA?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "엔트로피타임즈"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "564adfce34f32aeb",
       "publishedAt": "2026-09-16",
       "title": "산림청, 중앙아 4개국과 산림협력 논의…산림위성·탄소 배출권 등",
@@ -3568,8 +3664,8 @@
       ],
       "duplicateSources": [
         "v.daum.net",
-        "연합뉴스",
-        "yna.co.kr"
+        "yna.co.kr",
+        "연합뉴스"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -11578,13 +11674,13 @@
         "온실가스 배출권"
       ],
       "duplicateSources": [
-        "연합뉴스",
         "yna.co.kr",
         "etoday.co.kr",
         "econonews.co.kr",
         "ebn.co.kr",
         "오토투데이",
         "뉴스1",
+        "연합뉴스",
         "이투데이",
         "news1.kr",
         "아시아투데이",
@@ -12201,8 +12297,8 @@
         "온실가스 배출권"
       ],
       "duplicateSources": [
-        "비즈니스포스트",
-        "businesspost.co.kr"
+        "businesspost.co.kr",
+        "비즈니스포스트"
       ],
       "searchProviders": [
         "Google News RSS",
