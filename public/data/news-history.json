@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-09-22T10:12:43+09:00",
+  "generatedAt": "2026-09-22T13:13:40+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 742,
+  "itemCount": 744,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-09-22",
   "sourceCommitsScanned": 0,
@@ -133,6 +133,31 @@
       "region": "해외"
     },
     {
+      "id": "85c65709731c1f51",
+      "publishedAt": "2026-09-22",
+      "title": "[최승준 변호사의 건설법률 상식-42]ESG·탄소중립 정책과 건설·부동산...",
+      "category": "시장·가격",
+      "summary": "탄소 배출권 거래제와 온실가스 배출 관리 역시 건설·부동산 사업자에게 점차 중요한 경영·법률 이슈가 되고... 탄소가격의 상승, 배출권 할당기준의 변경, 공급망 차원의 배출정보 제출 요구는 조달가격과 계약이행에...",
+      "source": "ikld.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.ikld.kr/news/articleView.html?idxno=341187",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "ikld.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "4895dde35a254417",
       "publishedAt": "2026-09-22",
       "title": "[국민의 기업] 친환경 경영 결실 … 환경청 평가서 4개 지사 연이어 수...",
@@ -155,6 +180,30 @@
       ],
       "duplicateCount": 1,
       "region": "국내"
+    },
+    {
+      "id": "f1e916c32f087bf7",
+      "publishedAt": "2026-09-22",
+      "title": "[ESGX 이슈 5] EU, 데이터센터 에너지·물 효율 등급제 추진…환경성적표...",
+      "category": "시장·가격",
+      "summary": "여기에 EU 배출권 거래제(ETS)와 FuelEU Maritime에 따른 탄소비용을 반영하면 바이오디젤의 가격 경쟁력은 더 높아진다. 기존 선박 엔진을 대폭 개조하지 않고 사용할 수 있다는 점도 장점이다. 다만 바이오연료는 세계...",
+      "source": "etoday.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.etoday.co.kr/news/view/2628459",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "etoday.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
     },
     {
       "id": "50aac9ff4748202b",
@@ -12297,8 +12346,8 @@
         "온실가스 배출권"
       ],
       "duplicateSources": [
-        "businesspost.co.kr",
-        "비즈니스포스트"
+        "비즈니스포스트",
+        "businesspost.co.kr"
       ],
       "searchProviders": [
         "Google News RSS",
