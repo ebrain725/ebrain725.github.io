@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-09-22T15:12:25+09:00",
+  "generatedAt": "2026-09-22T18:15:15+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 748,
+  "itemCount": 752,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-09-22",
   "sourceCommitsScanned": 0,
@@ -111,6 +111,29 @@
       "region": "국내"
     },
     {
+      "id": "b09b75a114468a77",
+      "publishedAt": "2026-09-22",
+      "title": "교대운전 땐 자동차보험 미리 확인…현금 뽑으려면 휴게소로",
+      "category": "제도",
+      "summary": "반면 채권과 금, 배출권 은 23일 매도하면 당일 대금을 받을 수 있다. 연휴 기간 현금이 필요하다면 고속도로 휴게소 등에 설치된 이동점포를 이용할 수 있다. 올해는 10개 은행이 전국 11곳에서 이동점포를 운영한다....",
+      "source": "hankyung.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.hankyung.com/article/2026092200701",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "hankyung.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "4dc65f1a3be64a2b",
       "publishedAt": "2026-09-22",
       "title": "李 대통령 유엔총회 참석…뉴욕선 기후위기 ‘안보 의제’로 부상 [ESG ...",
@@ -158,6 +181,30 @@
       "region": "국내"
     },
     {
+      "id": "aad27ef40b4b35f3",
+      "publishedAt": "2026-09-22",
+      "title": "[현장] “도시락부터 마음건강까지”…배민·롯데百·KT&G, '가치 담은' ...",
+      "category": "제도",
+      "summary": "순환존에는 보일러에서 배출되는 이산화탄소를 자원화하는 리필과 가축분뇨 처리에 탄소 배출권 인증을 연계한 사이클엑스, 무선인식(RFID) 기반 다회용기 순환·세척 솔루션을 운영하는 써큘러랩스, 친환경 자동차 부품...",
+      "source": "socialvalue.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.socialvalue.kr/news/view/1065592429295528",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "socialvalue.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "274537eb683ab49f",
       "publishedAt": "2026-09-22",
       "title": "[해외브리핑] EU, 데이터센터 전력·용수 효율 공개 의무화 추진",
@@ -180,6 +227,30 @@
       ],
       "duplicateCount": 1,
       "region": "해외"
+    },
+    {
+      "id": "4632564c1aa620b6",
+      "publishedAt": "2026-09-22",
+      "title": "[핫이슈] 은행권, 추석 특별자금 79조6000억 공급…NH농협銀 최대 2.3% 금...",
+      "category": "제도",
+      "summary": "NH농협은행 또한 외국환 거래, 요구불 평잔 거래, 생산적 금융 대상 업종, 중소·중견 기업, 모범납세자, 탄소 배출권 거래 기업 등 조건에 따라 우대금리가 달라진다. NH농협은행은 올해 추석 특별자금 공급 규모를...",
+      "source": "newswatch.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.newswatch.kr/news/articleView.html?idxno=81261",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "newswatch.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
     },
     {
       "id": "85c65709731c1f51",
@@ -211,8 +282,8 @@
       "publishedAt": "2026-09-22",
       "title": "[온실가스 배출권] 9월 22일 KAU26, 250원 하락한 3만200원",
       "category": "시장·가격",
-      "summary": "[온실가스 배출권] 9월 22일 KAU26, 250원 하락한 3만200원 데일리e뉴스",
-      "source": "데일리e뉴스",
+      "summary": "[온실가스 배출권] 9월 22일 KAU26, 250원 하락한 3만200원 dailyenews.co.kr",
+      "source": "dailyenews.co.kr",
       "sourceType": "news",
       "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1ET1dKVkdhcDdjemxfRFc2SkNILVQ2OE5BbWhLSWtfMnpneTJ1XzhsUElCeHdMNWtobVRLX19NbEptY1hDQTItLWk0eHg5eHVBem8wd1o2Q0RCd082QUQzSmNaWDJMS2tkbWw1cGswSQ?oc=5",
       "searchProvider": "Google News RSS",
@@ -222,9 +293,10 @@
         "KAU26"
       ],
       "section": "news",
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "duplicateSources": [
-        "데일리e뉴스"
+        "데일리e뉴스",
+        "dailyenews.co.kr"
       ],
       "searchProviders": [
         "Google News RSS"
@@ -319,6 +391,8 @@
         "탄소배출권"
       ],
       "duplicateSources": [
+        "브릿지경제",
+        "viva100.com",
         "v.daum.net",
         "dt.co.kr"
       ],
@@ -326,7 +400,7 @@
         "Google News RSS",
         "NAVER API HUB"
       ],
-      "duplicateCount": 2,
+      "duplicateCount": 4,
       "region": "국내"
     },
     {
@@ -705,8 +779,8 @@
       "publishedAt": "2026-09-21",
       "title": "[온실가스 배출권] 9월 21일 KAU26, 100원 하락한 3만450원",
       "category": "시장·가격",
-      "summary": "[온실가스 배출권] 9월 21일 KAU26, 100원 하락한 3만450원 데일리e뉴스",
-      "source": "데일리e뉴스",
+      "summary": "[온실가스 배출권] 9월 21일 KAU26, 100원 하락한 3만450원 dailyenews.co.kr",
+      "source": "dailyenews.co.kr",
       "sourceType": "news",
       "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5kb1Jid3ZhTmNaOGF0MmdpTGw0ckg5dEdkdnctMTJDTUUxVV9xN0R3ekVRNjVUZTAtM1VGS0FxN0lvQWpMSThoc3ppbU5pa0s4Z2pRbHhuWlk1bGxhdDc1Z2EwYm1McnA5ZU9wNFY0WQ?oc=5",
       "searchProvider": "Google News RSS",
@@ -716,9 +790,10 @@
         "KAU26"
       ],
       "section": "news",
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "duplicateSources": [
-        "데일리e뉴스"
+        "데일리e뉴스",
+        "dailyenews.co.kr"
       ],
       "searchProviders": [
         "Google News RSS"
@@ -9013,8 +9088,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "news1.kr",
-        "뉴스1"
+        "뉴스1",
+        "news1.kr"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -11827,8 +11902,8 @@
         "econonews.co.kr",
         "ebn.co.kr",
         "오토투데이",
-        "news1.kr",
         "뉴스1",
+        "news1.kr",
         "이투데이",
         "아시아투데이",
         "asiatoday.co.kr",
@@ -15073,6 +15148,30 @@
       "searchProviders": [
         "Google News RSS"
       ]
+    },
+    {
+      "id": "63b4230b809eaacf",
+      "publishedAt": "2026-08-26",
+      "title": "온실가스 배출권 과징금 99.7% '미납'…미수납액 91.3억원",
+      "category": "제도",
+      "summary": "온실가스 배출권 과징금 99.7% '미납'…미수납액 91.3억원 newstree.kr",
+      "source": "newstree.kr",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE0zQzZvSjlyazZRcUJkRl8tV1BnY0p6MnVWRDZSdzVjdmk3S3pPNFhKeW0wUmk2WjV1Qzc4c0l0SDZydkxJRzhsN0xmbTdvTjdUT09xaHQxZEY0ak5h?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "온실가스 배출권"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "newstree.kr"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "국내"
     },
     {
       "id": "451018126f834c20",
