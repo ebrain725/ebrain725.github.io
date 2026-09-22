@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-09-22T13:13:40+09:00",
+  "generatedAt": "2026-09-22T15:12:25+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 744,
+  "itemCount": 748,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-09-22",
   "sourceCommitsScanned": 0,
@@ -35,6 +35,32 @@
       ],
       "duplicateCount": 1,
       "region": "해외"
+    },
+    {
+      "id": "cf2fc6321b7fe30f",
+      "publishedAt": "2026-09-22",
+      "title": "씨씨벤처스, 천안 기후테크 밋업…' 탄소 감축 기술을 금융으로' 녹색금융...",
+      "category": "제도",
+      "summary": "지난 9월 10일 천안SB플라자와 충남창업마루나비에서 열린 '2026 천안시 기후테크 스타트업 밋업 & 원스톱 컨설팅'에서는 탄소중립 기술과 글로벌 탄소시장 뿐 아니라 스타트업의 자금조달을 위한 녹색금융이 주요 의제로...",
+      "source": "e2news.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.e2news.com/news/articleView.html?idxno=334522",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 4,
+      "duplicateSources": [
+        "ekn.kr",
+        "e2news.com",
+        "bizwnews.com",
+        "enetnews.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
     },
     {
       "id": "a5895c29738c06d1",
@@ -109,6 +135,29 @@
       "region": "해외"
     },
     {
+      "id": "af78b148c25970b3",
+      "publishedAt": "2026-09-22",
+      "title": "【기획】국내 대기업 99개사 탄소 감축 전략① - 효율·재생전력은 기본...",
+      "category": "제도",
+      "summary": "연료전환과 탄소시장 활용, 탄소흡수·제거는 각각 66.7%(4개사)였다. 운송·항공·물류에서는 연료전환이 66.7%(4개사), 대체연료가 50.0%(3개사)에서 확인됐다. 금융업은 자체 사업장 감축보다 대출·투자자산을 바꾸는...",
+      "source": "impacton.net",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.impacton.net/news/articleView.html?idxno=30018",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "impacton.net"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "274537eb683ab49f",
       "publishedAt": "2026-09-22",
       "title": "[해외브리핑] EU, 데이터센터 전력·용수 효율 공개 의무화 추진",
@@ -156,6 +205,55 @@
       ],
       "duplicateCount": 1,
       "region": "국내"
+    },
+    {
+      "id": "f8991b3c7d7ddc80",
+      "publishedAt": "2026-09-22",
+      "title": "[온실가스 배출권] 9월 22일 KAU26, 250원 하락한 3만200원",
+      "category": "시장·가격",
+      "summary": "[온실가스 배출권] 9월 22일 KAU26, 250원 하락한 3만200원 데일리e뉴스",
+      "source": "데일리e뉴스",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1ET1dKVkdhcDdjemxfRFc2SkNILVQ2OE5BbWhLSWtfMnpneTJ1XzhsUElCeHdMNWtobVRLX19NbEptY1hDQTItLWk0eHg5eHVBem8wd1o2Q0RCd082QUQzSmNaWDJMS2tkbWw1cGswSQ?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "온실가스 배출권",
+        "KAU26"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "데일리e뉴스"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "3bddfb7abd2826e7",
+      "publishedAt": "2026-09-22",
+      "title": "[산업진단] 유럽에 철강 팔수록 탄소값 붙는다…포스코·현대제철 'CBAM ...",
+      "category": "시장·가격",
+      "summary": "철강 가격표 옆에 붙은 '탄소 가격표' CBAM의 출발점은 EU 배출권 거래제(ETS)다. EU 역내 철강업체는 ETS를 통해 탄소배출 비용을 부담한다. EU는 역외에서 생산한 제품이 같은 수준의 탄소비용을 부담하지 않으면 규제가...",
+      "source": "polinews.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.polinews.co.kr/news/articleView.html?idxno=743832",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "polinews.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
     },
     {
       "id": "4895dde35a254417",
@@ -3713,8 +3811,8 @@
       ],
       "duplicateSources": [
         "v.daum.net",
-        "yna.co.kr",
-        "연합뉴스"
+        "연합뉴스",
+        "yna.co.kr"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -4858,8 +4956,8 @@
         "유상할당"
       ],
       "duplicateSources": [
-        "뉴스;트리",
-        "newstree.kr"
+        "newstree.kr",
+        "뉴스;트리"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -8915,8 +9013,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "뉴스1",
-        "news1.kr"
+        "news1.kr",
+        "뉴스1"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -11723,15 +11821,15 @@
         "온실가스 배출권"
       ],
       "duplicateSources": [
+        "연합뉴스",
         "yna.co.kr",
         "etoday.co.kr",
         "econonews.co.kr",
         "ebn.co.kr",
         "오토투데이",
-        "뉴스1",
-        "연합뉴스",
-        "이투데이",
         "news1.kr",
+        "뉴스1",
+        "이투데이",
         "아시아투데이",
         "asiatoday.co.kr",
         "아시아경제",
