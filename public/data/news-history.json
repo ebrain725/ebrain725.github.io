@@ -1,17 +1,65 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-09-22T20:59:44+09:00",
+  "generatedAt": "2026-09-23T02:15:31+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 752,
+  "itemCount": 754,
   "earliestPublishedAt": "2026-08-06",
-  "latestPublishedAt": "2026-09-22",
+  "latestPublishedAt": "2026-09-23",
   "sourceCommitsScanned": 0,
   "sourceSnapshotsScanned": 0,
   "historicalRowsScanned": 0,
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "d594cf6def30ab9c",
+      "publishedAt": "2026-09-23",
+      "title": "배출권 거래제 지침으로 배출량 공시 기업, 보완할 점은?",
+      "category": "상쇄·외부사업",
+      "summary": "일치\"하지만 배출권 거래제 지침에 따라 공시하는 기업은 스코프 2 배출량 공시에서 추가해야 할 공시 정보가 있다고 말했다. 노 연구원에 따르면 이 두 가지 방식에서 사실상 일치하는 항목은 ▲탄소 상쇄 및 탄소 크레딧...",
+      "source": "esgeconomy.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.esgeconomy.com/news/articleView.html?idxno=16821",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "esgeconomy.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "b3b8d63b3b40735e",
+      "publishedAt": "2026-09-23",
+      "title": "[ESG 인사이드 (96)] 미·EU 탄소 정책 디커플링.. 탄소규제는 갈라져도...",
+      "category": "시장·가격",
+      "summary": "지난 9월 14일 미국 환경보호청(EPA)은 2024년 도입한 화석연료 발전소의 온실가스 규제 대부분을 폐지했다.... EU는 기업의 탄소배출 측정 및 공시 외에도 탄소배출을 가격으로 전환, 배출권 거래제(ETS)를 통한 탄소 가격...",
+      "source": "news2day.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.news2day.co.kr/article/20260922500171",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "news2day.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
     {
       "id": "b346c26818490287",
       "publishedAt": "2026-09-22",
@@ -391,14 +439,14 @@
         "탄소배출권"
       ],
       "duplicateSources": [
-        "브릿지경제",
         "viva100.com",
         "v.daum.net",
+        "브릿지경제",
         "dt.co.kr"
       ],
       "searchProviders": [
-        "Google News RSS",
-        "NAVER API HUB"
+        "NAVER API HUB",
+        "Google News RSS"
       ],
       "duplicateCount": 4,
       "region": "국내"
@@ -2022,7 +2070,8 @@
       "matchedKeywords": [
         "배출권",
         "배출권거래제",
-        "탄소배출권"
+        "탄소배출권",
+        "탄소시장"
       ],
       "duplicateSources": [
         "impacton.net"
@@ -2146,8 +2195,8 @@
         "KAU25"
       ],
       "duplicateSources": [
-        "중소기업신문",
-        "smedaily.co.kr"
+        "smedaily.co.kr",
+        "중소기업신문"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -5031,8 +5080,8 @@
         "유상할당"
       ],
       "duplicateSources": [
-        "newstree.kr",
-        "뉴스;트리"
+        "뉴스;트리",
+        "newstree.kr"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -10390,8 +10439,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "news.kbs.co.kr",
         "KBS 뉴스",
+        "news.kbs.co.kr",
         "kbs.co.kr"
       ],
       "searchProviders": [
@@ -11390,8 +11439,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "ESG경제",
-        "esgeconomy.com"
+        "esgeconomy.com",
+        "ESG경제"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -12024,8 +12073,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "news.kbs.co.kr",
         "KBS 뉴스",
+        "news.kbs.co.kr",
         "kbs.co.kr"
       ],
       "searchProviders": [
@@ -12545,8 +12594,8 @@
       ],
       "duplicateCount": 2,
       "duplicateSources": [
-        "임팩트온",
-        "impacton.net"
+        "impacton.net",
+        "임팩트온"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -14292,8 +14341,8 @@
         "유상할당"
       ],
       "duplicateSources": [
-        "etnews.com",
-        "전자신문"
+        "전자신문",
+        "etnews.com"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -15164,9 +15213,10 @@
         "온실가스 배출권"
       ],
       "section": "news",
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "duplicateSources": [
-        "newstree.kr"
+        "newstree.kr",
+        "뉴스;트리"
       ],
       "searchProviders": [
         "Google News RSS"
