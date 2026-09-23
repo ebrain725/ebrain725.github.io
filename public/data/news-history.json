@@ -1,17 +1,64 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-09-24T02:25:26+09:00",
+  "generatedAt": "2026-09-24T08:12:21+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 777,
+  "itemCount": 779,
   "earliestPublishedAt": "2026-08-06",
-  "latestPublishedAt": "2026-09-23",
+  "latestPublishedAt": "2026-09-24",
   "sourceCommitsScanned": 0,
   "sourceSnapshotsScanned": 0,
   "historicalRowsScanned": 0,
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "22855baeeffd8f29",
+      "publishedAt": "2026-09-24",
+      "title": "알아두면 유용한 추석 명절 금융거래 팁",
+      "category": "제도",
+      "summary": "반면 일반채권·Repo·금· 배출권 은 23일 매도하면 당일 대금을 받을 수 있다. 금융위원회는 최근 이 같은... 매매대금 결제시한이 매매일 당일인 채권(일반채권·Repo), 금· 배출권 을 설 연휴 직전인 23일에 매도하면...",
+      "source": "mediapen.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.mediapen.com/news/view/1125691",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "mediapen.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "42015015579a7072",
+      "publishedAt": "2026-09-24",
+      "title": "CA 전기요금 평균 75달러 자동 차감...“신청 안 해도 받는다”",
+      "category": "제도",
+      "summary": "온실가스 배출권 거래를 통해 확보한 수익 일부를 전기 고객에게 돌려주는 방식이다. 올여름 CA주 곳곳에서 폭염과 높은 습도가 이어지며 냉방비 부담이 커진 가운데 크레딧이 지급되고 있다.",
+      "source": "radiokorea.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.radiokorea.com/news/article.php?uid=504973",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "온실가스 배출권"
+      ],
+      "duplicateSources": [
+        "radiokorea.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
     {
       "id": "4e691775f57e686a",
       "publishedAt": "2026-09-23",
@@ -275,8 +322,8 @@
       "publishedAt": "2026-09-23",
       "title": "[온실가스 배출권] 9월 23일 KAU26, 50원 하락하며 3만150원",
       "category": "시장·가격",
-      "summary": "[온실가스 배출권] 9월 23일 KAU26, 50원 하락하며 3만150원 데일리e뉴스",
-      "source": "데일리e뉴스",
+      "summary": "[온실가스 배출권] 9월 23일 KAU26, 50원 하락하며 3만150원 dailyenews.co.kr",
+      "source": "dailyenews.co.kr",
       "sourceType": "news",
       "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBSZ0dPTC10MzdRbWw1SWF4dXEzdFhFVmFxT0xfbXcydnR3M0hDLTd1UzJLOW5IcVY3Y3QxQlVMajVEUWpWSnpwc3VwSDZ4MXY5TnVRQzdWZGo4dlB6b1VhcTlLakFSYUJZX25seFpMOA?oc=5",
       "searchProvider": "Google News RSS",
@@ -286,9 +333,10 @@
         "KAU26"
       ],
       "section": "news",
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "duplicateSources": [
-        "데일리e뉴스"
+        "데일리e뉴스",
+        "dailyenews.co.kr"
       ],
       "searchProviders": [
         "Google News RSS"
@@ -2739,8 +2787,8 @@
         "KAU25"
       ],
       "duplicateSources": [
-        "smedaily.co.kr",
-        "중소기업신문"
+        "중소기업신문",
+        "smedaily.co.kr"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -4504,8 +4552,8 @@
       ],
       "duplicateSources": [
         "v.daum.net",
-        "연합뉴스",
-        "yna.co.kr"
+        "yna.co.kr",
+        "연합뉴스"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -5649,8 +5697,8 @@
         "유상할당"
       ],
       "duplicateSources": [
-        "newstree.kr",
-        "뉴스;트리"
+        "뉴스;트리",
+        "newstree.kr"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -7145,8 +7193,8 @@
         "유상할당"
       ],
       "duplicateSources": [
-        "에너지데일리",
-        "energydaily.co.kr"
+        "energydaily.co.kr",
+        "에너지데일리"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -10684,8 +10732,8 @@
       "duplicateSources": [
         "lifein.news",
         "todayenergy.kr",
-        "newswire.co.kr",
         "뉴스와이어",
+        "newswire.co.kr",
         "사회적경제뉴스",
         "hansbiz.co.kr",
         "lawissue.co.kr",
@@ -11113,12 +11161,12 @@
       "duplicateSources": [
         "v.daum.net",
         "한국경제",
-        "연합뉴스",
         "yna.co.kr",
         "서울경제TV",
         "sentv.co.kr",
         "디지털비즈온",
         "catchnews.kr",
+        "연합뉴스",
         "hankyung.com",
         "digitalbizon.com",
         "daily.hankooki.com",
@@ -12515,13 +12563,13 @@
         "온실가스 배출권"
       ],
       "duplicateSources": [
-        "연합뉴스",
         "yna.co.kr",
         "etoday.co.kr",
         "econonews.co.kr",
         "ebn.co.kr",
         "오토투데이",
         "뉴스1",
+        "연합뉴스",
         "news1.kr",
         "이투데이",
         "아시아투데이",
