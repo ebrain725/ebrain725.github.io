@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-09-23T13:12:31+09:00",
+  "generatedAt": "2026-09-23T15:15:44+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 768,
+  "itemCount": 771,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-09-23",
   "sourceCommitsScanned": 0,
@@ -37,31 +37,86 @@
       "region": "국내"
     },
     {
-      "id": "2284584357b5425f",
+      "id": "43cb554f5e53350d",
       "publishedAt": "2026-09-23",
-      "title": "한전KPS, 인니 수력발전 지분 인수… 첫 해외 재생에너지 투자",
+      "title": "한전KPS, 인도네시아 하상 수력발전소 지분 40% 인수",
       "category": "제도",
-      "summary": "이번 계약으로 한전KPS는 해외에서 재생에너지 발전자산을 처음 확보하게 됐으며, 탄소 배출권 도 함께... 탄소 배출권 확보 효과까지 거둘 수 있게 된 것이다. 특히, 이번 지분 참여는 한전KPS가 지난 30여년간 전 세계...",
-      "source": "cnbizm.com",
+      "summary": "발전소 지분 투자와 함께 운전·정비(O&M)를 맡고, 향후 탄소배출권 과 연계한 사업도 추진할 계획이다. 한전KPS는 지난 22일 LX인터내셔널과 인도네시아 북수마트라에 위치한 하상(Hasang) 수력발전소 운영법인 PT. BNE의...",
+      "source": "idsn.co.kr",
       "sourceType": "news",
       "section": "news",
-      "url": "https://www.cnbizm.com/news/articleView.html?idxno=316181",
+      "url": "https://idsn.co.kr/news/view/1065592262927263",
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
         "배출권",
         "탄소배출권"
       ],
       "duplicateSources": [
+        "datasom.co.kr",
+        "idsn.co.kr",
+        "fnnews.com",
+        "pressian.com",
         "eroun.net",
         "cnbizm.com",
         "todayenergy.kr",
         "discoverynews.kr",
-        "newsworker.co.kr"
+        "newsworker.co.kr",
+        "etnews.com",
+        "energydaily.co.kr",
+        "beyondpost.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 5,
+      "duplicateCount": 12,
+      "region": "국내"
+    },
+    {
+      "id": "f34aaa874d14ac0c",
+      "publishedAt": "2026-09-23",
+      "title": "한전KPS, 인니 수력발전 지분 인수… 첫 해외재생에너지 투자",
+      "category": "제도",
+      "summary": "탄소 배출권 도 함께 확보해 다각적인 글로벌 사업영역 확장 사례다. LX인터내셔널은 지분 60%의 최대주주... 탄소 배출권 확보 효과까지 거둘 수 있게 된 것이다. 특히 이번 지분 참여는 한전KPS가 지난 30여 년간 전 세계...",
+      "source": "mcnews.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://mcnews.co.kr/86705",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "mcnews.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "34ac1c2c6412c5b5",
+      "publishedAt": "2026-09-23",
+      "title": "한전KPS, 인니 수력 주주된다...해외 재생E 첫 지분투자",
+      "category": "제도",
+      "summary": "향후 탄소 배출권 을 확보할 가능성이 생긴 셈이지만, 실제 발급량과 수익은 별도의 절차와 검증 결과에 따라 달라질 수 있다. 한전KPS 관계자는 \"해외 사업이 정비 용역에서 발전자산 투자로 확장되는 첫 사례라는...",
+      "source": "energy-news.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=228550",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "energy-news.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
       "region": "국내"
     },
     {
@@ -158,6 +213,31 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "572f4b63e0c99942",
+      "publishedAt": "2026-09-23",
+      "title": "[온실가스 배출권] 9월 23일 KAU26, 50원 하락하며 3만150원",
+      "category": "시장·가격",
+      "summary": "[온실가스 배출권] 9월 23일 KAU26, 50원 하락하며 3만150원 데일리e뉴스",
+      "source": "데일리e뉴스",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBSZ0dPTC10MzdRbWw1SWF4dXEzdFhFVmFxT0xfbXcydnR3M0hDLTd1UzJLOW5IcVY3Y3QxQlVMajVEUWpWSnpwc3VwSDZ4MXY5TnVRQzdWZGo4dlB6b1VhcTlLakFSYUJZX25seFpMOA?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "온실가스 배출권",
+        "KAU26"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "데일리e뉴스"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
       "region": "국내"
     },
     {
@@ -2611,10 +2691,10 @@
       "duplicateSources": [
         "lawissue.co.kr",
         "mt.co.kr",
+        "pinpointnews.co.kr",
         "cnbnews.com",
         "e-platform.net",
         "gukjenews.com",
-        "pinpointnews.co.kr",
         "ikld.kr",
         "newstown.co.kr"
       ],
@@ -3698,7 +3778,8 @@
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
         "배출권",
-        "탄소배출권"
+        "탄소배출권",
+        "배출권거래제"
       ],
       "duplicateSources": [
         "esgeconomy.com"
@@ -4274,8 +4355,8 @@
       ],
       "duplicateSources": [
         "v.daum.net",
-        "yna.co.kr",
-        "연합뉴스"
+        "연합뉴스",
+        "yna.co.kr"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -10778,8 +10859,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "news.kbs.co.kr",
         "KBS 뉴스",
+        "news.kbs.co.kr",
         "kbs.co.kr"
       ],
       "searchProviders": [
@@ -12284,13 +12365,13 @@
         "온실가스 배출권"
       ],
       "duplicateSources": [
+        "연합뉴스",
         "yna.co.kr",
         "etoday.co.kr",
         "econonews.co.kr",
         "ebn.co.kr",
         "오토투데이",
         "뉴스1",
-        "연합뉴스",
         "news1.kr",
         "이투데이",
         "아시아투데이",
@@ -12412,8 +12493,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "news.kbs.co.kr",
         "KBS 뉴스",
+        "news.kbs.co.kr",
         "kbs.co.kr"
       ],
       "searchProviders": [
