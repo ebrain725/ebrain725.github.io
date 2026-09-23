@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-09-23T18:12:45+09:00",
+  "generatedAt": "2026-09-23T21:01:52+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
   "itemCount": 776,
@@ -69,12 +69,13 @@
         "e-platform.net",
         "niceeconomy.co.kr",
         "lawissue.co.kr",
-        "knpnews.com"
+        "knpnews.com",
+        "enewstoday.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 18,
+      "duplicateCount": 19,
       "region": "국내"
     },
     {
@@ -934,14 +935,14 @@
         "탄소배출권"
       ],
       "duplicateSources": [
-        "브릿지경제",
         "viva100.com",
-        "v.daum.net",
-        "dt.co.kr"
+        "dt.co.kr",
+        "브릿지경제",
+        "v.daum.net"
       ],
       "searchProviders": [
-        "Google News RSS",
-        "NAVER API HUB"
+        "NAVER API HUB",
+        "Google News RSS"
       ],
       "duplicateCount": 4,
       "region": "국내"
@@ -2715,8 +2716,8 @@
         "KAU25"
       ],
       "duplicateSources": [
-        "smedaily.co.kr",
-        "중소기업신문"
+        "중소기업신문",
+        "smedaily.co.kr"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -3720,9 +3721,9 @@
         "pennmike.com",
         "bbsi.co.kr",
         "eroun.net",
-        "idaegu.co.kr",
         "segye.com",
         "idaegu.com",
+        "idaegu.co.kr",
         "fnnews.com",
         "bzeronews.com",
         "hansbiz.co.kr",
@@ -9682,8 +9683,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "뉴스1",
-        "news1.kr"
+        "news1.kr",
+        "뉴스1"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -10984,8 +10985,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "KBS 뉴스",
         "news.kbs.co.kr",
+        "KBS 뉴스",
         "kbs.co.kr"
       ],
       "searchProviders": [
@@ -11088,16 +11089,17 @@
       ],
       "duplicateSources": [
         "v.daum.net",
-        "한국경제",
+        "hankyung.com",
         "연합뉴스",
         "yna.co.kr",
         "서울경제TV",
         "sentv.co.kr",
-        "디지털비즈온",
+        "digitalbizon.com",
         "catchnews.kr",
+        "한국경제",
+        "디지털비즈온",
         "daily.hankooki.com",
         "bizwnews.com",
-        "hankyung.com",
         "dt.co.kr",
         "businesskorea.co.kr",
         "kpenews.com",
@@ -11105,8 +11107,7 @@
         "nextdaily.co.kr",
         "joongangenews.com",
         "파이낸셜신문",
-        "efnews.co.kr",
-        "digitalbizon.com"
+        "efnews.co.kr"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -12497,8 +12498,8 @@
         "econonews.co.kr",
         "ebn.co.kr",
         "오토투데이",
-        "뉴스1",
         "news1.kr",
+        "뉴스1",
         "이투데이",
         "아시아투데이",
         "asiatoday.co.kr",
@@ -12619,8 +12620,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "KBS 뉴스",
         "news.kbs.co.kr",
+        "KBS 뉴스",
         "kbs.co.kr"
       ],
       "searchProviders": [
