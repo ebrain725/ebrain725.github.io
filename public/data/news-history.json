@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-09-23T08:15:09+09:00",
+  "generatedAt": "2026-09-23T10:12:36+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 757,
+  "itemCount": 760,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-09-23",
   "sourceCommitsScanned": 0,
@@ -36,6 +36,29 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 2,
+      "region": "국내"
+    },
+    {
+      "id": "46e4a97e4794ba04",
+      "publishedAt": "2026-09-23",
+      "title": "국장은 쉬는데 미장은 열린다..추석 연휴 투자자 체크포인트",
+      "category": "제도",
+      "summary": "반면 매매대금 결제 시한이 당일인 일반채권과 환매조건부채권(RP), 금, 배출권 은 23일 매도할 경우 당일 대금을 받을 수 있다. ■ 국장은 쉬어도 미국주식 거래 계속 국내 증시가 쉬는 동안에도 해외주식 거래는...",
+      "source": "kpenews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://kpenews.com/View.aspx?No=4239370",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "kpenews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
       "region": "국내"
     },
     {
@@ -150,6 +173,29 @@
       ],
       "duplicateSources": [
         "impacton.net"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
+      "id": "8b58bd251216bc9d",
+      "publishedAt": "2026-09-22",
+      "title": "항공유 수출강국 다음 승부처, 'K-SAF 상생동맹'",
+      "category": "제도",
+      "summary": "또 2030년까지 최대 2000만개, 약 15억유로 상당의 EU ETS 배출권을 별도로 두고 SAF 종류와 급유 지역에 따라... 따라서 필요한 것은 선언적 협의체가 아니라 투자와 위험, 이익을 계약으로 나누는 'K-SAF 상생동맹'이다....",
+      "source": "energy-news.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=228491",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "energy-news.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -3127,6 +3173,29 @@
       ],
       "searchProviders": [
         "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "446d366a25ea9e65",
+      "publishedAt": "2026-09-16",
+      "title": "에코아이, 탄소시장 대응 역량 강화",
+      "category": "제도",
+      "summary": "에코아이, 탄소시장 대응 역량 강화 수소신문",
+      "source": "수소신문",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9RQzR6QTJfWnBaX3BQZEt6c2Vfb1hFSXFPTF80QWNvNV8xZjdVLTYyMG42TVU3TFNDN2FRZkRNZHNlUmc1d3dBSTFjOXg5ejd6bWw3dVhlWU53S2plc205Nm40eXVaWWRXcV9qLXo1VTDSAXRBVV95cUxQbktmRHMxMlFKOGxjdWppd3FiX2JQcko1T2paa1lobHhPX1hiZExxMEtPTXJmZkRaRlFub2pQRmUzU2lmczg4U0JGQ2N6NjZucUpYNXEtRWpYcXdWM21YUU14VXZLakVYTVZDcGltbnNvVWFiYQ?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "수소신문"
+      ],
+      "searchProviders": [
+        "Google News RSS"
       ],
       "region": "국내"
     },
