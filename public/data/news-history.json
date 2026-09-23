@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-09-23T15:15:44+09:00",
+  "generatedAt": "2026-09-23T18:12:45+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 771,
+  "itemCount": 776,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-09-23",
   "sourceCommitsScanned": 0,
@@ -63,12 +63,18 @@
         "newsworker.co.kr",
         "etnews.com",
         "energydaily.co.kr",
-        "beyondpost.co.kr"
+        "beyondpost.co.kr",
+        "newslock.co.kr",
+        "businesskorea.co.kr",
+        "e-platform.net",
+        "niceeconomy.co.kr",
+        "lawissue.co.kr",
+        "knpnews.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 12,
+      "duplicateCount": 18,
       "region": "국내"
     },
     {
@@ -120,6 +126,30 @@
       "region": "국내"
     },
     {
+      "id": "0ff5058304ed0019",
+      "publishedAt": "2026-09-23",
+      "title": "정비회사서 발전소 주주로… 한전KPS, 인니 수력 지분 40% 인수",
+      "category": "제도",
+      "summary": "정비 공사로 매출을 올리던 방식에서 발전 자산을 직접 보유하며 전력 판매와 탄소 배출권 수익을 함께... 탄소 배출권 도 함께 확보했다. 이 발전소는 올해 1월 인도네시아 환경부로부터 파리협정 제6.4조에 따른 탄소...",
+      "source": "newscj.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newscj.com/news/articleView.html?idxno=3435083",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "newscj.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "dc8381c9b54ffe6b",
       "publishedAt": "2026-09-23",
       "title": "일본제철, 슬로바키아 전기로 전환에 9억유로…EU가 3.5억유로 지원",
@@ -135,6 +165,30 @@
       ],
       "duplicateSources": [
         "impacton.net"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
+      "id": "76fb8d8ec9947cef",
+      "publishedAt": "2026-09-23",
+      "title": "부산 스타트업, AI 기술로 세계 정상 ‘우뚝’",
+      "category": "제도",
+      "summary": "선박이 매일 보내는 운항 보고서인 ‘눈(noon) 리포트’ 등을 분석해 탄소 배출량과 필요한 탄소 배출권 규모를 계산하기도 한다. 마리나체인 측은 국내에서 유럽에 기항하는 선박의 70% 이상이 자사를 통해 유럽 탄소...",
+      "source": "busan.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.busan.com/view/busan/view.php?code=2026092317232508311",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "busan.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -362,6 +416,29 @@
       "region": "국내"
     },
     {
+      "id": "06782d6e856d1eaa",
+      "publishedAt": "2026-09-23",
+      "title": "[ESG특집] 글로벌 탄소시장 인프라 확장 가속화, 한국 기업 생존 전략은?",
+      "category": "제도",
+      "summary": "[ESG특집] 글로벌 탄소시장 인프라 확장 가속화, 한국 기업 생존 전략은? 데일리연합",
+      "source": "데일리연합",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBaZlduOXRTb0lzZjlRWFVwMVpMYzBhT0tXMGlZRndjajNhNHZ3enYzVS13U1liT1pBMk1qWC1Fd3lyWU5MMWNPbEhCUjRmXzFpNnFzRHFYYk1yTlU?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "데일리연합"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "b3b8d63b3b40735e",
       "publishedAt": "2026-09-23",
       "title": "[ESG 인사이드 (96)] 미·EU 탄소 정책 디커플링.. 탄소규제는 갈라져도...",
@@ -429,6 +506,30 @@
       "searchProviders": [
         "NAVER API HUB"
       ],
+      "region": "국내"
+    },
+    {
+      "id": "ead1e04667961cdd",
+      "publishedAt": "2026-09-23",
+      "title": "KT&G 상상스타트업캠프, 사회문제 푸는 10개 스타트업 한자리에…1700명...",
+      "category": "제도",
+      "summary": "사이클엑스(대표 류준상)는 탄소저감형 가축분뇨 처리장치와 MRV 플랫폼을 기반으로 온실가스 감축 및 탄소 배출권 인증 솔루션을 개발한다. 리필(대표 이지은)은 건물...",
+      "source": "venturesquare.net",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.venturesquare.net/1115945/",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "venturesquare.net"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
       "region": "국내"
     },
     {
@@ -833,14 +934,14 @@
         "탄소배출권"
       ],
       "duplicateSources": [
+        "브릿지경제",
         "viva100.com",
         "v.daum.net",
-        "브릿지경제",
         "dt.co.kr"
       ],
       "searchProviders": [
-        "NAVER API HUB",
-        "Google News RSS"
+        "Google News RSS",
+        "NAVER API HUB"
       ],
       "duplicateCount": 4,
       "region": "국내"
@@ -2381,6 +2482,30 @@
       "region": "국내"
     },
     {
+      "id": "ca20769a05f900be",
+      "publishedAt": "2026-09-17",
+      "title": "한국남부발전, 17일 부산서 4개 산업 녹색전환 해법 논의",
+      "category": "제도",
+      "summary": "이번 논의는 국가 온실가스 감축목표 강화와 제4차 배출권거래제 계획기간 시행 등 탄소중립 정책 환경이 빠르게 달라지는 상황을 배경으로 마련됐다. 산업계가 감축 목표를 실제 경영과 생산 현장에 적용하려면 제도와...",
+      "source": "newstown.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.newstown.co.kr/news/articleView.html?idxno=716220",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "newstown.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "cfa5ff2bc104cd66",
       "publishedAt": "2026-09-17",
       "title": "탄소 모아 협동조합 출범, 제주 유휴지 활용해 탄소 흡수원 조성",
@@ -2590,8 +2715,8 @@
         "KAU25"
       ],
       "duplicateSources": [
-        "중소기업신문",
-        "smedaily.co.kr"
+        "smedaily.co.kr",
+        "중소기업신문"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -3589,22 +3714,22 @@
       ],
       "duplicateSources": [
         "newsclaim.co.kr",
-        "fnnews.com",
-        "bzeronews.com",
-        "hansbiz.co.kr",
         "tk.newdaily.co.kr",
         "kbsm.net",
-        "nocutnews.co.kr",
         "kyongbuk.co.kr",
-        "hankyung.com",
         "pennmike.com",
         "bbsi.co.kr",
         "eroun.net",
         "idaegu.co.kr",
-        "kmib.co.kr",
         "segye.com",
-        "kbmaeil.com",
         "idaegu.com",
+        "fnnews.com",
+        "bzeronews.com",
+        "hansbiz.co.kr",
+        "nocutnews.co.kr",
+        "hankyung.com",
+        "kmib.co.kr",
+        "kbmaeil.com",
         "hidomin.com",
         "imaeil.com",
         "ohmynews.com",
@@ -10962,9 +11087,16 @@
         "탄소배출권"
       ],
       "duplicateSources": [
+        "v.daum.net",
+        "한국경제",
+        "연합뉴스",
+        "yna.co.kr",
+        "서울경제TV",
+        "sentv.co.kr",
+        "디지털비즈온",
+        "catchnews.kr",
         "daily.hankooki.com",
         "bizwnews.com",
-        "v.daum.net",
         "hankyung.com",
         "dt.co.kr",
         "businesskorea.co.kr",
@@ -10974,19 +11106,13 @@
         "joongangenews.com",
         "파이낸셜신문",
         "efnews.co.kr",
-        "연합뉴스",
-        "서울경제TV",
-        "sentv.co.kr",
-        "digitalbizon.com",
-        "catchnews.kr",
-        "yna.co.kr",
-        "디지털비즈온"
+        "digitalbizon.com"
       ],
       "searchProviders": [
-        "NAVER API HUB",
-        "Google News RSS"
+        "Google News RSS",
+        "NAVER API HUB"
       ],
-      "duplicateCount": 19,
+      "duplicateCount": 20,
       "region": "국내"
     },
     {
