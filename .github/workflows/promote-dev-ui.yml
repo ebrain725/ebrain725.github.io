@@ -1,0 +1,121 @@
+name: Promote DEV UI to production PR
+
+on:
+  workflow_dispatch:
+    inputs:
+      dev_ref:
+        description: 'DEV ref: develop or a 40-character commit SHA'
+        required: true
+        default: develop
+        type: string
+      paths:
+        description: 'One public/*.html, .css or .js file per line (no data files)'
+        required: true
+        type: string
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: promote-dev-ui
+  cancel-in-progress: false
+
+jobs:
+  propose:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Validate source and credentials
+        shell: bash
+        env:
+          DEV_REF: ${{ inputs.dev_ref }}
+          DEV_READ_TOKEN: ${{ secrets.DEV_REPO_READ_TOKEN }}
+        run: |
+          set -euo pipefail
+          if [[ "$DEV_REF" != "develop" && ! "$DEV_REF" =~ ^[0-9a-f]{40}$ ]]; then
+            echo '::error::Use develop or a full 40-character commit SHA.'
+            exit 1
+          fi
+          if [[ -z "$DEV_READ_TOKEN" ]]; then
+            echo '::error::Add DEV_REPO_READ_TOKEN (fine-grained, read-only Contents access to ets-dashboard-dev) to production repository secrets.'
+            exit 1
+          fi
+
+      - name: Check out production
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          path: production-site
+
+      - name: Check out private DEV source
+        uses: actions/checkout@v4
+        with:
+          repository: ebrain725/ets-dashboard-dev
+          ref: ${{ inputs.dev_ref }}
+          token: ${{ secrets.DEV_REPO_READ_TOKEN }}
+          persist-credentials: false
+          path: dev-site
+
+      - name: Test promotion safeguards
+        run: python -m unittest discover -s production-site/scripts -p test_promote_dev_ui.py
+
+      - name: Stage selected UI files
+        shell: bash
+        env:
+          PROMOTE_PATHS: ${{ inputs.paths }}
+        run: |
+          set -euo pipefail
+          python production-site/scripts/promote_dev_ui.py \
+            --dev "$GITHUB_WORKSPACE/dev-site" \
+            --production "$GITHUB_WORKSPACE/production-site" \
+            --paths "$PROMOTE_PATHS"
+          git -C production-site add -- public
+          git -C production-site diff --cached --check
+          if git -C production-site diff --cached --name-only | grep -vE '^public/.*\.(html|css|js)$'; then
+            echo '::error::Promotion staged a non-UI file.'
+            exit 1
+          fi
+          while IFS= read -r file; do
+            if [[ "$file" == *.js ]]; then
+              node --check "production-site/$file"
+            fi
+          done < <(git -C production-site diff --cached --name-only)
+
+      - name: Open production review PR
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PROMOTE_PATHS: ${{ inputs.paths }}
+        run: |
+          set -euo pipefail
+          cd production-site
+          if git diff --cached --quiet; then
+            echo 'No UI changes to promote.' >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          dev_sha="$(git -C ../dev-site rev-parse HEAD)"
+          branch="promotion/dev-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
+          git switch -c "$branch"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m "Propose DEV UI from ${dev_sha:0:12}"
+          git push origin "HEAD:refs/heads/$branch"
+          {
+            echo "DEV source: ebrain725/ets-dashboard-dev@${dev_sha}"
+            echo
+            echo 'Selected paths:'
+            echo '```'
+            echo "$PROMOTE_PATHS"
+            echo '```'
+            echo
+            echo 'Only selected UI files are staged. Production data and collectors remain unchanged.'
+            echo 'Review the diff and merge this PR to trigger the existing GitHub Pages deployment.'
+          } > "$RUNNER_TEMP/promotion-body.md"
+          gh pr create \
+            --repo "$GITHUB_REPOSITORY" \
+            --base main \
+            --head "$branch" \
+            --title "Promote DEV UI (${dev_sha:0:12})" \
+            --body-file "$RUNNER_TEMP/promotion-body.md" \
+            | tee "$GITHUB_STEP_SUMMARY"
