@@ -9,7 +9,7 @@ on:
         default: develop
         type: string
       paths:
-        description: 'One public/*.html, .css or .js file per line (no data files)'
+        description: 'UI file paths separated by commas, e.g. public/index.html, public/assets/app.js'
         required: true
         type: string
 
