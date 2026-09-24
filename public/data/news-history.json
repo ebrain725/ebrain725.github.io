@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-09-24T15:12:27+09:00",
+  "generatedAt": "2026-09-24T18:13:03+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
   "itemCount": 781,
@@ -1053,14 +1053,14 @@
         "탄소배출권"
       ],
       "duplicateSources": [
+        "브릿지경제",
         "viva100.com",
         "v.daum.net",
-        "dt.co.kr",
-        "브릿지경제"
+        "dt.co.kr"
       ],
       "searchProviders": [
-        "NAVER API HUB",
-        "Google News RSS"
+        "Google News RSS",
+        "NAVER API HUB"
       ],
       "duplicateCount": 4,
       "region": "국내"
@@ -13233,8 +13233,8 @@
         "온실가스 배출권"
       ],
       "duplicateSources": [
-        "businesspost.co.kr",
-        "비즈니스포스트"
+        "비즈니스포스트",
+        "businesspost.co.kr"
       ],
       "searchProviders": [
         "Google News RSS",
