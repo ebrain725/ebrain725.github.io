@@ -22,7 +22,7 @@ SCRIPTS = re.compile(r'<script\b[^>]*\bsrc\s*=\s*["\']([^"\']+)["\']', re.IGNORE
 
 def parse_paths(raw: str) -> list[PurePosixPath]:
     paths: list[PurePosixPath] = []
-    for line in raw.splitlines():
+    for line in re.split(r"[\r\n,]+", raw):
         value = line.strip()
         if not value:
             continue

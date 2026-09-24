@@ -6,6 +6,12 @@ from promote_dev_ui import parse_paths, stage
 
 
 class PromotionTests(unittest.TestCase):
+    def test_accepts_comma_separated_input(self):
+        self.assertEqual(
+            [str(path) for path in parse_paths("public/index.html, public/assets/app.js")],
+            ["public/index.html", "public/assets/app.js"],
+        )
+
     def test_rejects_non_ui_and_traversal(self):
         for value in (
             "public/data/prices.csv",
