@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-09-25T02:29:50+09:00",
+  "generatedAt": "2026-09-25T08:15:21+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
   "itemCount": 781,
@@ -3839,8 +3839,8 @@
         "pennmike.com",
         "bbsi.co.kr",
         "eroun.net",
-        "segye.com",
         "idaegu.com",
+        "segye.com",
         "kbsm.net",
         "idaegu.co.kr",
         "fnnews.com",
@@ -4600,8 +4600,8 @@
       ],
       "duplicateSources": [
         "v.daum.net",
-        "yna.co.kr",
-        "연합뉴스"
+        "연합뉴스",
+        "yna.co.kr"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -11209,12 +11209,12 @@
       "duplicateSources": [
         "v.daum.net",
         "한국경제",
+        "연합뉴스",
         "yna.co.kr",
+        "서울경제TV",
         "sentv.co.kr",
         "디지털비즈온",
         "catchnews.kr",
-        "연합뉴스",
-        "서울경제TV",
         "hankyung.com",
         "digitalbizon.com",
         "daily.hankooki.com",
@@ -12611,13 +12611,13 @@
         "온실가스 배출권"
       ],
       "duplicateSources": [
+        "연합뉴스",
         "yna.co.kr",
         "etoday.co.kr",
         "econonews.co.kr",
         "ebn.co.kr",
         "오토투데이",
         "뉴스1",
-        "연합뉴스",
         "news1.kr",
         "이투데이",
         "아시아투데이",
@@ -15326,7 +15326,8 @@
       ],
       "region": "국내",
       "searchProviders": [
-        "NAVER API HUB"
+        "NAVER API HUB",
+        "Google News RSS"
       ],
       "searchProvider": "NAVER API HUB"
     },
