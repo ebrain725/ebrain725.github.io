@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-09-24T10:15:24+09:00",
+  "generatedAt": "2026-09-24T13:12:39+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 780,
+  "itemCount": 781,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-09-24",
   "sourceCommitsScanned": 0,
@@ -12,6 +12,30 @@
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "9ed4111a3dbc5bab",
+      "publishedAt": "2026-09-24",
+      "title": "한전KPS, 발전소 정비 넘어 직접 운영한다…인니 수력발전 40% 확보",
+      "category": "제도",
+      "summary": "인도네시아 수력발전소 지분 40%를 확보하면서 전력 판매와 발전소 운전·정비(O&M), 탄소배출권 을 하나의 사업으로 연결한다. 한전KPS는 LX인터내셔널과 인도네시아 북수마트라 하상(Hasang) 수력발전소 운영법인 PT. BNE의...",
+      "source": "e-science.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.e-science.co.kr/news/articleView.html?idxno=136113",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "e-science.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
     {
       "id": "5ae4a00f0a38305d",
       "publishedAt": "2026-09-24",
@@ -3810,13 +3834,13 @@
       "duplicateSources": [
         "newsclaim.co.kr",
         "tk.newdaily.co.kr",
-        "kbsm.net",
         "kyongbuk.co.kr",
         "pennmike.com",
         "bbsi.co.kr",
         "eroun.net",
         "segye.com",
         "idaegu.com",
+        "kbsm.net",
         "idaegu.co.kr",
         "fnnews.com",
         "bzeronews.com",
@@ -4575,8 +4599,8 @@
       ],
       "duplicateSources": [
         "v.daum.net",
-        "yna.co.kr",
-        "연합뉴스"
+        "연합뉴스",
+        "yna.co.kr"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -5025,9 +5049,9 @@
         "ksilbo.co.kr",
         "aitimes.kr",
         "newstree.kr",
-        "sedaily.com",
         "munhwa.com",
         "amenews.kr",
+        "sedaily.com",
         "etnews.com",
         "enewstoday.co.kr"
       ],
@@ -7216,8 +7240,8 @@
         "유상할당"
       ],
       "duplicateSources": [
-        "energydaily.co.kr",
-        "에너지데일리"
+        "에너지데일리",
+        "energydaily.co.kr"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -11184,12 +11208,12 @@
       "duplicateSources": [
         "v.daum.net",
         "한국경제",
+        "연합뉴스",
         "yna.co.kr",
         "서울경제TV",
         "sentv.co.kr",
         "디지털비즈온",
         "catchnews.kr",
-        "연합뉴스",
         "hankyung.com",
         "digitalbizon.com",
         "daily.hankooki.com",
@@ -12586,13 +12610,13 @@
         "온실가스 배출권"
       ],
       "duplicateSources": [
+        "연합뉴스",
         "yna.co.kr",
         "etoday.co.kr",
         "econonews.co.kr",
         "ebn.co.kr",
         "오토투데이",
         "뉴스1",
-        "연합뉴스",
         "news1.kr",
         "이투데이",
         "아시아투데이",
@@ -13209,8 +13233,8 @@
         "온실가스 배출권"
       ],
       "duplicateSources": [
-        "businesspost.co.kr",
-        "비즈니스포스트"
+        "비즈니스포스트",
+        "businesspost.co.kr"
       ],
       "searchProviders": [
         "Google News RSS",
