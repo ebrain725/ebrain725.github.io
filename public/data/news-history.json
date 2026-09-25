@@ -1,17 +1,43 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-09-25T08:15:21+09:00",
+  "generatedAt": "2026-09-25T10:12:30+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 781,
+  "itemCount": 782,
   "earliestPublishedAt": "2026-08-06",
-  "latestPublishedAt": "2026-09-24",
+  "latestPublishedAt": "2026-09-25",
   "sourceCommitsScanned": 0,
   "sourceSnapshotsScanned": 0,
   "historicalRowsScanned": 0,
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "cf06665e6a1f3507",
+      "publishedAt": "2026-09-25",
+      "title": "1년 새 3배 오른 K탄소배출권 가격…개인 투자상품은 언제쯤?",
+      "category": "시장·가격",
+      "summary": "25일 한국거래소에 따르면 지난 23일 2026년 배출권( KAU26 ) 가격은 톤당 3만150원을 기록했다. 지난 14일에는 최고 3만850원까지 오르기도 했다. 2025년 배출권인 KAU25는 지난해 상반기까지만해도 8000~1만원대에 머물러...",
+      "source": "mt.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.mt.co.kr/economy/2026/09/25/2026092316294854588",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권",
+        "KAU25",
+        "KAU26"
+      ],
+      "duplicateSources": [
+        "mt.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
     {
       "id": "9ed4111a3dbc5bab",
       "publishedAt": "2026-09-24",
@@ -3702,8 +3728,8 @@
       "publishedAt": "2026-09-16",
       "title": "에코아이, 탄소시장 대응 역량 강화",
       "category": "제도",
-      "summary": "에코아이, 탄소시장 대응 역량 강화 수소신문",
-      "source": "수소신문",
+      "summary": "에코아이, 탄소시장 대응 역량 강화 hydrogennews.co.kr",
+      "source": "hydrogennews.co.kr",
       "sourceType": "news",
       "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9RQzR6QTJfWnBaX3BQZEt6c2Vfb1hFSXFPTF80QWNvNV8xZjdVLTYyMG42TVU3TFNDN2FRZkRNZHNlUmc1d3dBSTFjOXg5ejd6bWw3dVhlWU53S2plc205Nm40eXVaWWRXcV9qLXo1VTDSAXRBVV95cUxQbktmRHMxMlFKOGxjdWppd3FiX2JQcko1T2paa1lobHhPX1hiZExxMEtPTXJmZkRaRlFub2pQRmUzU2lmczg4U0JGQ2N6NjZucUpYNXEtRWpYcXdWM21YUU14VXZLakVYTVZDcGltbnNvVWFiYQ?oc=5",
       "searchProvider": "Google News RSS",
@@ -3711,9 +3737,10 @@
         "탄소시장"
       ],
       "section": "news",
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "duplicateSources": [
-        "수소신문"
+        "수소신문",
+        "hydrogennews.co.kr"
       ],
       "searchProviders": [
         "Google News RSS"
@@ -4600,8 +4627,8 @@
       ],
       "duplicateSources": [
         "v.daum.net",
-        "연합뉴스",
-        "yna.co.kr"
+        "yna.co.kr",
+        "연합뉴스"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -11209,12 +11236,12 @@
       "duplicateSources": [
         "v.daum.net",
         "한국경제",
-        "연합뉴스",
         "yna.co.kr",
         "서울경제TV",
         "sentv.co.kr",
         "디지털비즈온",
         "catchnews.kr",
+        "연합뉴스",
         "hankyung.com",
         "digitalbizon.com",
         "daily.hankooki.com",
@@ -12611,13 +12638,13 @@
         "온실가스 배출권"
       ],
       "duplicateSources": [
-        "연합뉴스",
         "yna.co.kr",
         "etoday.co.kr",
         "econonews.co.kr",
         "ebn.co.kr",
         "오토투데이",
         "뉴스1",
+        "연합뉴스",
         "news1.kr",
         "이투데이",
         "아시아투데이",
