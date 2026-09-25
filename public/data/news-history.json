@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-09-25T15:12:35+09:00",
+  "generatedAt": "2026-09-25T18:12:32+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
   "itemCount": 783,
@@ -1115,7 +1115,7 @@
         "Google News RSS",
         "NAVER API HUB"
       ],
-      "duplicateCount": 4,
+      "duplicateCount": 5,
       "region": "국내"
     },
     {
@@ -2186,8 +2186,8 @@
       ],
       "duplicateSources": [
         "jejudomin.co.kr",
-        "newsjeju.net",
         "뉴스제주",
+        "newsjeju.net",
         "headlinejeju.co.kr"
       ],
       "searchProviders": [
@@ -11054,7 +11054,7 @@
         "배출권거래제"
       ],
       "section": "news",
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "duplicateSources": [
         "v.daum.net"
       ],
@@ -12741,12 +12741,14 @@
         "온실가스 배출권"
       ],
       "duplicateSources": [
-        "newsis.com"
+        "newsis.com",
+        "뉴시스"
       ],
       "searchProviders": [
-        "NAVER API HUB"
+        "NAVER API HUB",
+        "Google News RSS"
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "region": "국내"
     },
     {
