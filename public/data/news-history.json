@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-09-25T21:07:38+09:00",
+  "generatedAt": "2026-09-26T02:29:52+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
   "itemCount": 784,
@@ -17,8 +17,8 @@
       "publishedAt": "2026-09-25",
       "title": "캐나다, 국제 탄소시장 진입 추진",
       "category": "제도",
-      "summary": "캐나다, 국제 탄소시장 진입 추진 넷제로뉴스",
-      "source": "넷제로뉴스",
+      "summary": "캐나다, 국제 탄소시장 진입 추진 netzeronews.kr",
+      "source": "netzeronews.kr",
       "sourceType": "news",
       "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBMazQwNWQ4TWJoWkVvTjlYRzNkdWpkQW1NM3JiMHY4Rjd0aTNBZFc1Z2FmOFB4RklYU2t4UGdHQ3FlR2J4UWFmaTZFdDFkRE5LbVVSRHdyYWNRYXc5VmxSQzBXNmkzTllHMXfSAW5BVV95cUxOOUY5dmNmTFREb0tnRGdicWpuUXgtT3NHZzZ1RlFXS0llTGdRZ2xlR3d3ZGZWYjBaWnZZek5VbEtiOW1YSFhYTTJrQUNVUkFUUWZPeVpsRy1mLTQwUWRsa0VUTUxXeXhRNVJOeXRXUQ?oc=5",
       "searchProvider": "Google News RSS",
@@ -26,9 +26,10 @@
         "탄소시장"
       ],
       "section": "news",
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "duplicateSources": [
-        "넷제로뉴스"
+        "넷제로뉴스",
+        "netzeronews.kr"
       ],
       "searchProviders": [
         "Google News RSS"
@@ -577,8 +578,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "Chosunbiz",
-        "biz.chosun.com"
+        "biz.chosun.com",
+        "Chosunbiz"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -7563,7 +7564,8 @@
       "duplicateCount": 4,
       "duplicateSources": [
         "news1.kr",
-        "v.daum.net"
+        "v.daum.net",
+        "뉴스1"
       ],
       "searchProviders": [
         "NAVER API HUB",
@@ -10856,8 +10858,8 @@
       "duplicateSources": [
         "lifein.news",
         "todayenergy.kr",
-        "newswire.co.kr",
         "뉴스와이어",
+        "newswire.co.kr",
         "사회적경제뉴스",
         "hansbiz.co.kr",
         "lawissue.co.kr",
@@ -12869,8 +12871,8 @@
         "상쇄배출권"
       ],
       "duplicateSources": [
-        "news.bbsi.co.kr",
         "BBS불교방송",
+        "news.bbsi.co.kr",
         "bbsi.co.kr"
       ],
       "searchProviders": [
