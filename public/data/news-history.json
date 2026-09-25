@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-09-25T18:12:32+09:00",
+  "generatedAt": "2026-09-25T21:07:38+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 783,
+  "itemCount": 784,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-09-25",
   "sourceCommitsScanned": 0,
@@ -12,6 +12,29 @@
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "c518e624aa9b78e1",
+      "publishedAt": "2026-09-25",
+      "title": "캐나다, 국제 탄소시장 진입 추진",
+      "category": "제도",
+      "summary": "캐나다, 국제 탄소시장 진입 추진 넷제로뉴스",
+      "source": "넷제로뉴스",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBMazQwNWQ4TWJoWkVvTjlYRzNkdWpkQW1NM3JiMHY4Rjd0aTNBZFc1Z2FmOFB4RklYU2t4UGdHQ3FlR2J4UWFmaTZFdDFkRE5LbVVSRHdyYWNRYXc5VmxSQzBXNmkzTllHMXfSAW5BVV95cUxOOUY5dmNmTFREb0tnRGdicWpuUXgtT3NHZzZ1RlFXS0llTGdRZ2xlR3d3ZGZWYjBaWnZZek5VbEtiOW1YSFhYTTJrQUNVUkFUUWZPeVpsRy1mLTQwUWRsa0VUTUxXeXhRNVJOeXRXUQ?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "넷제로뉴스"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "해외"
+    },
     {
       "id": "4db0845088d0ff87",
       "publishedAt": "2026-09-25",
@@ -10833,8 +10856,8 @@
       "duplicateSources": [
         "lifein.news",
         "todayenergy.kr",
-        "뉴스와이어",
         "newswire.co.kr",
+        "뉴스와이어",
         "사회적경제뉴스",
         "hansbiz.co.kr",
         "lawissue.co.kr",
@@ -12846,8 +12869,8 @@
         "상쇄배출권"
       ],
       "duplicateSources": [
-        "BBS불교방송",
         "news.bbsi.co.kr",
+        "BBS불교방송",
         "bbsi.co.kr"
       ],
       "searchProviders": [
