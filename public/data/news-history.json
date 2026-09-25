@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-09-26T02:29:52+09:00",
+  "generatedAt": "2026-09-26T08:12:23+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 784,
+  "itemCount": 785,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-09-25",
   "sourceCommitsScanned": 0,
@@ -1321,6 +1321,30 @@
       "region": "해외"
     },
     {
+      "id": "b586171f9efd3bb3",
+      "publishedAt": "2026-09-21",
+      "title": "배출권거래제 지침으로 배출량 공시 기업, 보완할 점은?",
+      "category": "제도",
+      "summary": "배출권거래제 지침으로 배출량 공시 기업, 보완할 점은? ESG경제",
+      "source": "ESG경제",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9VNEpBRU90eXB6NHRGamZZc3V6Qlhlcl9KMFp4Ynh4NEtick13c2h5Q3BJbkNnY3BhTkVZaEdtVWFQUGpYUnp4dmxqQWlqT243SmR2U3lQcm5GSEtCdDNKREhQejR6dE1ZMVZyNw?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "ESG경제"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "cc5e54fde22f2f9f",
       "publishedAt": "2026-09-21",
       "title": "국회철강포럼, 산업용 전기요금 개편 논의…철강 경쟁력 지원 '과제'",
@@ -2210,8 +2234,8 @@
       ],
       "duplicateSources": [
         "jejudomin.co.kr",
-        "뉴스제주",
         "newsjeju.net",
+        "뉴스제주",
         "headlinejeju.co.kr"
       ],
       "searchProviders": [
@@ -7318,8 +7342,8 @@
         "유상할당"
       ],
       "duplicateSources": [
-        "에너지데일리",
-        "energydaily.co.kr"
+        "energydaily.co.kr",
+        "에너지데일리"
       ],
       "searchProviders": [
         "Google News RSS",
