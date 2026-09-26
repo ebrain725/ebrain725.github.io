@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-09-26T15:12:39+09:00",
+  "lastSync": "2026-09-26T18:12:43+09:00",
   "keywords": [
     "배출권",
     "배출권거래제",
@@ -30,7 +30,7 @@
   "warning": null,
   "aiInsight": {
     "summary": "최근 공식자료의 직접적인 수급 변수는 유상경매입니다. 최근 경매가 높은 낙찰가로 소화돼 공급보다 이행수요가 강하다는 신호입니다.",
-    "generatedAt": "2026-09-26T15:12:39+09:00",
+    "generatedAt": "2026-09-26T18:12:43+09:00",
     "basisLatestDate": "2026-09-20",
     "basisCount": 10,
     "source": "fallback",
@@ -400,6 +400,30 @@
     }
   ],
   "items": [
+    {
+      "id": "933a09e3e47e02b8",
+      "publishedAt": "2026-09-26",
+      "title": "영국 순환경제 투자 막는 시장·정책 불확실성",
+      "category": "제도",
+      "summary": "영국 배출권 거래제 수입 일부를 순환경제 인프라에 투입하는 방안 역시 권고에 포함됐다. 보고서는 투자 판단에서 재무 수익뿐 아니라 자원 안보, 일자리, 폐기물 감축, 오염 저감 같은 사회·환경적 가치도 충분히...",
+      "source": "vegannews.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.vegannews.co.kr/news/article.html?no=388087",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "vegannews.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
     {
       "id": "5aa489ea36303efc",
       "publishedAt": "2026-09-26",
@@ -991,8 +1015,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "biz.chosun.com",
-        "Chosunbiz"
+        "Chosunbiz",
+        "biz.chosun.com"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -3119,11 +3143,13 @@
       "matchedKeywords": [
         "탄소시장"
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "duplicateSources": [
+        "뉴스웍스",
         "newsworks.co.kr"
       ],
       "searchProviders": [
+        "Google News RSS",
         "NAVER API HUB"
       ],
       "region": "국내"
@@ -6575,6 +6601,30 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "c065ba4f6d112746",
+      "publishedAt": "2026-09-12",
+      "title": "[ESG특집] GSK, 인도 재생농업 탄소배출권 대규모 확보…한국 기업 공급망 ESG 전략 시사점",
+      "category": "제도",
+      "summary": "[ESG특집] GSK, 인도 재생농업 탄소배출권 대규모 확보…한국 기업 공급망 ESG 전략 시사점 데일리연합",
+      "source": "데일리연합",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1rSlNVZThIUXdvbEQtemVtb0xGbWxRWXo5RHBNc0xYeUxUZHFyX0JQQWhHM2FMcFZPckZ0S3h3N3k1aHZaVTN5ekpuWXVHdTZPODRzd3hzTjZ4R2c?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "데일리연합"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
       "region": "국내"
     },
     {
@@ -12137,10 +12187,10 @@
         "yna.co.kr",
         "서울경제TV",
         "sentv.co.kr",
-        "digitalbizon.com",
-        "catchnews.kr",
-        "hankyung.com",
         "디지털비즈온",
+        "catchnews.kr",
+        "digitalbizon.com",
+        "hankyung.com",
         "daily.hankooki.com",
         "bizwnews.com",
         "dt.co.kr",
@@ -12826,6 +12876,29 @@
       "duplicateSources": [
         "넷제로뉴스",
         "netzeronews.kr"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "65a43ff4a0945d7d",
+      "publishedAt": "2026-09-03",
+      "title": "GGGI",
+      "category": "제도",
+      "summary": "GGGI - UNESCAP 한중일 동남아 탄소시장 연계 워크숍 개최 2news.co.kr",
+      "source": "2news.co.kr",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE4wZlJKVjBXaU1fS0xRcHJMS0pTRk9XNjYxVklxNm1KaFgyWS1ITmtBNVRxYzZfSjZueXF3SFluYy1pdEpDNzBRR0lsbFg0cVo0U0pTd2ZIN3dfb0UzRlV6TGFsV1ZhYm5O?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "2news.co.kr"
       ],
       "searchProviders": [
         "Google News RSS"
@@ -13771,6 +13844,12 @@
         "온실가스 배출권"
       ],
       "duplicateSources": [
+        "한국방송뉴스",
+        "ikbn.news",
+        "한방통신사",
+        "shinailbo.co.kr",
+        "worktoday.co.kr",
+        "seoulfn.com",
         "연합뉴스",
         "yna.co.kr",
         "etoday.co.kr",
@@ -13784,10 +13863,7 @@
         "asiatoday.co.kr",
         "아시아경제",
         "view.asiae.co.kr",
-        "shinailbo.co.kr",
-        "worktoday.co.kr",
         "서울파이낸스",
-        "seoulfn.com",
         "edaily.co.kr",
         "nocutnews.co.kr",
         "metroseoul.co.kr",
@@ -13802,7 +13878,7 @@
         "Google News RSS",
         "NAVER API HUB"
       ],
-      "duplicateCount": 26,
+      "duplicateCount": 29,
       "region": "국내"
     },
     {
@@ -13953,8 +14029,8 @@
         "상쇄배출권"
       ],
       "duplicateSources": [
-        "BBS불교방송",
         "news.bbsi.co.kr",
+        "BBS불교방송",
         "bbsi.co.kr"
       ],
       "searchProviders": [
@@ -49327,7 +49403,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "bf2c7b48532214c8",
+      "id": "34bb2d30171c09a1",
       "publishedAt": "2025-04-04",
       "title": "2025년 4월 배출권 유상할당 입찰 공고",
       "category": "유상경매",
@@ -49335,7 +49411,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10524&orgCd=&boardMasterId=39&boardId=1735370",
+      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10524&orgCd=&boardMasterId=39&boardId=1735370",
       "matchedKeywords": [
         "유상할당"
       ]
@@ -53687,7 +53763,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "05fc79bd8614e601",
+      "id": "e597e32e06bc0f82",
       "publishedAt": "2025-02-06",
       "title": "2025년 2월 배출권 유상할당 입찰 공고",
       "category": "유상경매",
@@ -53695,7 +53771,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10524&orgCd=&boardMasterId=39&boardId=1723130",
+      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10524&orgCd=&boardMasterId=39&boardId=1723130",
       "matchedKeywords": [
         "유상할당"
       ]
@@ -248380,10 +248456,10 @@
   },
   "newsRetention": {
     "policy": "append-only",
-    "lastMergedAt": "2026-09-26T15:12:45+09:00",
-    "itemCount": 786,
+    "lastMergedAt": "2026-09-26T18:12:50+09:00",
+    "itemCount": 789,
     "archiveBefore": 786,
-    "currentBefore": 683,
+    "currentBefore": 685,
     "gitRecoveryEnabled": false
   }
 }
