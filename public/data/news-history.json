@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-09-26T20:43:45+09:00",
+  "generatedAt": "2026-09-27T01:39:43+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 789,
+  "itemCount": 790,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-09-26",
   "sourceCommitsScanned": 0,
@@ -35,6 +35,32 @@
       ],
       "duplicateCount": 1,
       "region": "해외"
+    },
+    {
+      "id": "b9b9165de171e26f",
+      "publishedAt": "2026-09-26",
+      "title": "국제 탄소시장, 이제 '규칙 협상' 끝나고 국가 시스템 경쟁으로",
+      "category": "제도",
+      "summary": "한국은 이미 배출권거래제( K-ETS )를 운영하고 있고 2030 NDC 달성을 위해 국제감축을 활용하는 정책도 추진해왔다. 동시에 국내 기업들은 동남아시아와 중앙아시아 등에서 다양한 온실가스 감축사업을 검토하고 있다....",
+      "source": "esgeconomy.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.esgeconomy.com/news/articleView.html?idxno=16827",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장",
+        "배출권",
+        "배출권거래제",
+        "K-ETS"
+      ],
+      "duplicateSources": [
+        "esgeconomy.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
     },
     {
       "id": "5aa489ea36303efc",
@@ -3369,7 +3395,7 @@
         "Google News RSS",
         "NAVER API HUB"
       ],
-      "duplicateCount": 2,
+      "duplicateCount": 3,
       "region": "해외"
     },
     {
@@ -5982,7 +6008,7 @@
         "Google News RSS",
         "NAVER API HUB"
       ],
-      "duplicateCount": 2,
+      "duplicateCount": 3,
       "region": "국내"
     },
     {
@@ -9980,8 +10006,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "뉴스1",
-        "news1.kr"
+        "news1.kr",
+        "뉴스1"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -11389,10 +11415,10 @@
         "한국경제",
         "연합뉴스",
         "yna.co.kr",
-        "서울경제TV",
         "sentv.co.kr",
         "디지털비즈온",
         "catchnews.kr",
+        "서울경제TV",
         "digitalbizon.com",
         "hankyung.com",
         "daily.hankooki.com",
@@ -12812,18 +12838,18 @@
         "온실가스 배출권"
       ],
       "duplicateSources": [
-        "연합뉴스",
-        "yna.co.kr",
-        "etoday.co.kr",
-        "econonews.co.kr",
-        "ebn.co.kr",
-        "오토투데이",
         "한국방송뉴스",
         "ikbn.news",
         "한방통신사",
         "shinailbo.co.kr",
         "worktoday.co.kr",
         "seoulfn.com",
+        "연합뉴스",
+        "yna.co.kr",
+        "etoday.co.kr",
+        "econonews.co.kr",
+        "ebn.co.kr",
+        "오토투데이",
         "뉴스1",
         "news1.kr",
         "이투데이",
@@ -12997,8 +13023,8 @@
         "상쇄배출권"
       ],
       "duplicateSources": [
-        "BBS불교방송",
         "news.bbsi.co.kr",
+        "BBS불교방송",
         "bbsi.co.kr"
       ],
       "searchProviders": [
