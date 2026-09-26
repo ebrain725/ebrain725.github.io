@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-09-26T08:12:17+09:00",
+  "lastSync": "2026-09-26T10:12:50+09:00",
   "keywords": [
     "배출권",
     "배출권거래제",
@@ -30,7 +30,7 @@
   "warning": null,
   "aiInsight": {
     "summary": "최근 공식자료의 직접적인 수급 변수는 유상경매입니다. 최근 경매가 높은 낙찰가로 소화돼 공급보다 이행수요가 강하다는 신호입니다.",
-    "generatedAt": "2026-09-26T08:12:17+09:00",
+    "generatedAt": "2026-09-26T10:12:50+09:00",
     "basisLatestDate": "2026-09-20",
     "basisCount": 10,
     "source": "fallback",
@@ -400,6 +400,31 @@
     }
   ],
   "items": [
+    {
+      "id": "5aa489ea36303efc",
+      "publishedAt": "2026-09-26",
+      "title": "中 조선 호황 겹쳤다…HD현대重 엔진 성장 동력으로 '우뚝'",
+      "category": "제도",
+      "summary": "데이터센터 시장 수요까지 맞물리며 HD현대중공업[329180]의 엔진 사업이 핵심 성장 동력으로 떠오르고... 국제해사기구(IMO)와 EU(유럽연합) ETS( 탄소 배출권 거래제) 등 환경 규제 강화에 대응하기 위해 선주들이 고사양...",
+      "source": "einfomax.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4436532",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "einfomax.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
     {
       "id": "c518e624aa9b78e1",
       "publishedAt": "2026-09-25",
@@ -7744,8 +7769,8 @@
         "유상할당"
       ],
       "duplicateSources": [
-        "energydaily.co.kr",
-        "에너지데일리"
+        "에너지데일리",
+        "energydaily.co.kr"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -10644,8 +10669,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "뉴스1",
-        "news1.kr"
+        "news1.kr",
+        "뉴스1"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -49302,7 +49327,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "bf2c7b48532214c8",
+      "id": "34bb2d30171c09a1",
       "publishedAt": "2025-04-04",
       "title": "2025년 4월 배출권 유상할당 입찰 공고",
       "category": "유상경매",
@@ -49310,7 +49335,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10524&orgCd=&boardMasterId=39&boardId=1735370",
+      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10524&orgCd=&boardMasterId=39&boardId=1735370",
       "matchedKeywords": [
         "유상할당"
       ]
@@ -53662,7 +53687,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "05fc79bd8614e601",
+      "id": "e597e32e06bc0f82",
       "publishedAt": "2025-02-06",
       "title": "2025년 2월 배출권 유상할당 입찰 공고",
       "category": "유상경매",
@@ -53670,7 +53695,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10524&orgCd=&boardMasterId=39&boardId=1723130",
+      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10524&orgCd=&boardMasterId=39&boardId=1723130",
       "matchedKeywords": [
         "유상할당"
       ]
@@ -248355,10 +248380,10 @@
   },
   "newsRetention": {
     "policy": "append-only",
-    "lastMergedAt": "2026-09-26T08:12:23+09:00",
-    "itemCount": 785,
-    "archiveBefore": 784,
-    "currentBefore": 682,
+    "lastMergedAt": "2026-09-26T10:12:57+09:00",
+    "itemCount": 786,
+    "archiveBefore": 785,
+    "currentBefore": 683,
     "gitRecoveryEnabled": false
   }
 }

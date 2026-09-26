@@ -1,17 +1,42 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-09-26T08:12:23+09:00",
+  "generatedAt": "2026-09-26T10:12:57+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 785,
+  "itemCount": 786,
   "earliestPublishedAt": "2026-08-06",
-  "latestPublishedAt": "2026-09-25",
+  "latestPublishedAt": "2026-09-26",
   "sourceCommitsScanned": 0,
   "sourceSnapshotsScanned": 0,
   "historicalRowsScanned": 0,
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "5aa489ea36303efc",
+      "publishedAt": "2026-09-26",
+      "title": "中 조선 호황 겹쳤다…HD현대重 엔진 성장 동력으로 '우뚝'",
+      "category": "제도",
+      "summary": "데이터센터 시장 수요까지 맞물리며 HD현대중공업[329180]의 엔진 사업이 핵심 성장 동력으로 떠오르고... 국제해사기구(IMO)와 EU(유럽연합) ETS( 탄소 배출권 거래제) 등 환경 규제 강화에 대응하기 위해 선주들이 고사양...",
+      "source": "einfomax.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4436532",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "einfomax.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
     {
       "id": "c518e624aa9b78e1",
       "publishedAt": "2026-09-25",
@@ -7342,8 +7367,8 @@
         "유상할당"
       ],
       "duplicateSources": [
-        "energydaily.co.kr",
-        "에너지데일리"
+        "에너지데일리",
+        "energydaily.co.kr"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -9904,8 +9929,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "뉴스1",
-        "news1.kr"
+        "news1.kr",
+        "뉴스1"
       ],
       "searchProviders": [
         "Google News RSS",
