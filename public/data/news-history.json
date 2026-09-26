@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-09-26T18:12:50+09:00",
+  "generatedAt": "2026-09-26T20:43:45+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
   "itemCount": 789,
@@ -2257,13 +2257,14 @@
         "제민일보",
         "jemin.com",
         "뉴스N제주",
-        "newszoom.kr"
+        "newszoom.kr",
+        "제주환경일보"
       ],
       "searchProviders": [
         "Google News RSS",
         "NAVER API HUB"
       ],
-      "duplicateCount": 4,
+      "duplicateCount": 5,
       "region": "국내"
     },
     {
@@ -12811,18 +12812,18 @@
         "온실가스 배출권"
       ],
       "duplicateSources": [
-        "한국방송뉴스",
-        "ikbn.news",
-        "한방통신사",
-        "shinailbo.co.kr",
-        "worktoday.co.kr",
-        "seoulfn.com",
         "연합뉴스",
         "yna.co.kr",
         "etoday.co.kr",
         "econonews.co.kr",
         "ebn.co.kr",
         "오토투데이",
+        "한국방송뉴스",
+        "ikbn.news",
+        "한방통신사",
+        "shinailbo.co.kr",
+        "worktoday.co.kr",
+        "seoulfn.com",
         "뉴스1",
         "news1.kr",
         "이투데이",
@@ -12996,8 +12997,8 @@
         "상쇄배출권"
       ],
       "duplicateSources": [
-        "news.bbsi.co.kr",
         "BBS불교방송",
+        "news.bbsi.co.kr",
         "bbsi.co.kr"
       ],
       "searchProviders": [
