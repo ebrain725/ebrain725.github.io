@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-09-27T08:12:46+09:00",
+  "generatedAt": "2026-09-27T10:12:30+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
   "itemCount": 790,
@@ -5926,8 +5926,8 @@
         "유상할당"
       ],
       "duplicateSources": [
-        "뉴스;트리",
-        "newstree.kr"
+        "newstree.kr",
+        "뉴스;트리"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -10084,8 +10084,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "뉴스;트리",
-        "newstree.kr"
+        "newstree.kr",
+        "뉴스;트리"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -11417,10 +11417,10 @@
         "한국경제",
         "연합뉴스",
         "yna.co.kr",
+        "서울경제TV",
         "sentv.co.kr",
         "디지털비즈온",
         "catchnews.kr",
-        "서울경제TV",
         "digitalbizon.com",
         "hankyung.com",
         "daily.hankooki.com",
@@ -13080,8 +13080,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "헤럴드경제",
-        "biz.heraldcorp.com"
+        "biz.heraldcorp.com",
+        "헤럴드경제"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -15622,12 +15622,14 @@
         "탄소배출권"
       ],
       "section": "news",
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "duplicateSources": [
         "임팩트온"
       ],
       "region": "해외",
-      "searchProviders": []
+      "searchProviders": [
+        "Google News RSS"
+      ]
     },
     {
       "id": "15e8fe116d2fa28c",
