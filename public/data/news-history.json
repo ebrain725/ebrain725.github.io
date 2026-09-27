@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-09-27T18:12:42+09:00",
+  "generatedAt": "2026-09-27T21:22:49+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 794,
+  "itemCount": 795,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-09-27",
   "sourceCommitsScanned": 0,
@@ -12,6 +12,29 @@
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "874c652d05d52456",
+      "publishedAt": "2026-09-27",
+      "title": "한전KPS, 인니 하상수력발전소 지분 40% 인수 계약",
+      "category": "제도",
+      "summary": "올해 1월에는 인도네시아 환경부로부터 파리협정 제6.4조 기반 탄소감축사업으로 승인을 받아 배출권 까지 확보했다. 파리협정 시행 이래 인도네시아 정부가 자국내 사업을 같은 체제 안에서 감축사업을 인정한 첫...",
+      "source": "e2news.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.e2news.com/news/articleView.html?idxno=334594",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "e2news.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
     {
       "id": "48a45eeec0bae2f8",
       "publishedAt": "2026-09-27",
@@ -6021,8 +6044,8 @@
         "유상할당"
       ],
       "duplicateSources": [
-        "newstree.kr",
-        "뉴스;트리"
+        "뉴스;트리",
+        "newstree.kr"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -10105,8 +10128,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "news1.kr",
-        "뉴스1"
+        "뉴스1",
+        "news1.kr"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -10181,8 +10204,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "newstree.kr",
-        "뉴스;트리"
+        "뉴스;트리",
+        "newstree.kr"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -13122,8 +13145,8 @@
         "상쇄배출권"
       ],
       "duplicateSources": [
-        "news.bbsi.co.kr",
         "BBS불교방송",
+        "news.bbsi.co.kr",
         "bbsi.co.kr"
       ],
       "searchProviders": [
