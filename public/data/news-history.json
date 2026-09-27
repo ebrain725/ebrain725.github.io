@@ -1,17 +1,64 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-09-28T02:13:33+09:00",
+  "generatedAt": "2026-09-28T08:12:41+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 796,
+  "itemCount": 799,
   "earliestPublishedAt": "2026-08-06",
-  "latestPublishedAt": "2026-09-27",
+  "latestPublishedAt": "2026-09-28",
   "sourceCommitsScanned": 0,
   "sourceSnapshotsScanned": 0,
   "historicalRowsScanned": 0,
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "5c668b8624f1f262",
+      "publishedAt": "2026-09-28",
+      "title": "[테크 차이나] 전력·탄소·인증을 한 장부에 묶는다…중국수출 인프라...",
+      "category": "제도",
+      "summary": "중국 녹색전력증서는 재생에너지 환경가치를 나타내지만, 탄소 배출권 ·자발적 감축시장과 중복 계산되지 않아야 한다. 2025년에는 녹색전력증서 시스템과 자발적 감축 등록시스템 정보연계가 이뤄졌다. 2026년 비화석전력...",
+      "source": "etnews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.etnews.com/20260918000152",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "etnews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
+      "id": "b86473dc59e47030",
+      "publishedAt": "2026-09-28",
+      "title": "[아프리카 녹색전환] ①전력난 속 태양광·전기차 채비…中·UAE 공세",
+      "category": "제도",
+      "summary": "한국 기후테크 기업들도 아프리카 대륙 내에서 탄소시장 규제 관련 시스템을 선도적으로 구축한 서아프리카 가나와 동아프리카 케냐를 양대 거점으로 삼아 시장 진출을 집중적으로 준비하고 있다고 김홍석 소장은...",
+      "source": "yna.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.yna.co.kr/view/AKR20260914111100898?input=1195m",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "yna.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
     {
       "id": "874c652d05d52456",
       "publishedAt": "2026-09-27",
@@ -248,6 +295,30 @@
       ],
       "duplicateSources": [
         "dailian.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "23e5531e245dfde0",
+      "publishedAt": "2026-09-25",
+      "title": "[직장 돋보기 분석] 한국남동발전, 평균연봉 9960만원... 400MW 태양광 발...",
+      "category": "제도",
+      "summary": "특히 태양광·풍력·해양 소수력 등 다양한 신재생에너지 발전사업을 추진하는 한편, 해외 신재생에너지 개발과 탄소 배출권 확보 등으로 사업 범위를 넓히며 에너지 전환에 적극 대응하고 있다. 이를 바탕으로...",
+      "source": "news2day.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.news2day.co.kr/article/20260911500220",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "news2day.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -3156,8 +3227,8 @@
         "KAU25"
       ],
       "duplicateSources": [
-        "중소기업신문",
-        "smedaily.co.kr"
+        "smedaily.co.kr",
+        "중소기업신문"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -4159,8 +4230,8 @@
         "tk.newdaily.co.kr",
         "kyongbuk.co.kr",
         "pennmike.com",
-        "bbsi.co.kr",
         "eroun.net",
+        "bbsi.co.kr",
         "idaegu.com",
         "segye.com",
         "kbsm.net",
@@ -11129,8 +11200,8 @@
       "duplicateSources": [
         "lifein.news",
         "todayenergy.kr",
-        "newswire.co.kr",
         "뉴스와이어",
+        "newswire.co.kr",
         "사회적경제뉴스",
         "hansbiz.co.kr",
         "lawissue.co.kr",
