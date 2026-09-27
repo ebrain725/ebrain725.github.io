@@ -1,17 +1,64 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-09-27T10:12:30+09:00",
+  "generatedAt": "2026-09-27T13:12:40+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 790,
+  "itemCount": 792,
   "earliestPublishedAt": "2026-08-06",
-  "latestPublishedAt": "2026-09-26",
+  "latestPublishedAt": "2026-09-27",
   "sourceCommitsScanned": 0,
   "sourceSnapshotsScanned": 0,
   "historicalRowsScanned": 0,
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "48a45eeec0bae2f8",
+      "publishedAt": "2026-09-27",
+      "title": "중국이 움직이자 아시아 탄소시장도 연결된다…국제 ETS 연합 ‘실행 단계’ 진입",
+      "category": "제도",
+      "summary": "중국이 움직이자 아시아 탄소시장도 연결된다…국제 ETS 연합 ‘실행 단계’ 진입 climatepol.com",
+      "source": "climatepol.com",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE01MDViNDhmWHQ4cEJrNzNxRV9ENVNhMVlpX2s5VjVUUFRFdXk3dW5DckUxclQtd1haeDFhSlhncTVoX1B6cEFaMFBIdXRtbFVZLVpKQ2hrQTh0Qy1QZXhucU1EQUJkemtQZy1wMg?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "climatepol.com"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "해외"
+    },
+    {
+      "id": "54e5a0ed833cb4d7",
+      "publishedAt": "2026-09-27",
+      "title": "[김평희 칼럼] 보이는 물량으로는 이길 수 없다",
+      "category": "시장·가격",
+      "summary": "한국은 우리도 배출권 거래제를 시행하고 있어서 특별 대우를 요구하지만 두 시장 의 탄소 가격 격차 앞에서 통하지 않는다. 제품의 탄소 이력을 기록하게 하는 디지털 제품 여권(DPP)의 1차 시행은 배터리 대상...",
+      "source": "ajunews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.ajunews.com/view/20260926091447655",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "ajunews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
     {
       "id": "933a09e3e47e02b8",
       "publishedAt": "2026-09-26",
@@ -5926,8 +5973,8 @@
         "유상할당"
       ],
       "duplicateSources": [
-        "newstree.kr",
-        "뉴스;트리"
+        "뉴스;트리",
+        "newstree.kr"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -6235,8 +6282,8 @@
       "publishedAt": "2026-09-12",
       "title": "[ESG특집] GSK, 인도 재생농업 탄소배출권 대규모 확보…한국 기업 공급망 ESG 전략 시사점",
       "category": "제도",
-      "summary": "[ESG특집] GSK, 인도 재생농업 탄소배출권 대규모 확보…한국 기업 공급망 ESG 전략 시사점 데일리연합",
-      "source": "데일리연합",
+      "summary": "[ESG특집] GSK, 인도 재생농업 탄소배출권 대규모 확보…한국 기업 공급망 ESG 전략 시사점 dailyan.com",
+      "source": "dailyan.com",
       "sourceType": "news",
       "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1rSlNVZThIUXdvbEQtemVtb0xGbWxRWXo5RHBNc0xYeUxUZHFyX0JQQWhHM2FMcFZPckZ0S3h3N3k1aHZaVTN5ekpuWXVHdTZPODRzd3hzTjZ4R2c?oc=5",
       "searchProvider": "Google News RSS",
@@ -6245,9 +6292,10 @@
         "탄소배출권"
       ],
       "section": "news",
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "duplicateSources": [
-        "데일리연합"
+        "데일리연합",
+        "dailyan.com"
       ],
       "searchProviders": [
         "Google News RSS"
@@ -9549,11 +9597,12 @@
         "탄소시장"
       ],
       "section": "news",
-      "duplicateCount": 3,
+      "duplicateCount": 4,
       "duplicateSources": [
         "newmediastock.co.kr",
         "4차산업행정뉴스",
-        "4ihjnews.com"
+        "4ihjnews.com",
+        "ijelder.com"
       ],
       "searchProviders": [
         "Google News RSS"
@@ -10084,8 +10133,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "newstree.kr",
-        "뉴스;트리"
+        "뉴스;트리",
+        "newstree.kr"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -13080,8 +13129,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "biz.heraldcorp.com",
-        "헤럴드경제"
+        "헤럴드경제",
+        "biz.heraldcorp.com"
       ],
       "searchProviders": [
         "Google News RSS",
