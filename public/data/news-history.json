@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-09-27T21:22:49+09:00",
+  "generatedAt": "2026-09-28T02:13:33+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 795,
+  "itemCount": 796,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-09-27",
   "sourceCommitsScanned": 0,
@@ -254,6 +254,29 @@
       ],
       "duplicateCount": 1,
       "region": "국내"
+    },
+    {
+      "id": "04cf4839f9ef4ef6",
+      "publishedAt": "2026-09-25",
+      "title": "[돈 버는 탄소 중립 (41)] 섹터 커플링, 에너지 부문의 경계 허무는 탈탄...",
+      "category": "제도",
+      "summary": "[정리=최봉 산업경제 전문기자] ◀ 유종민(Yu, Jongmin) ▶ 미국 일리노이대 응용경제학 박사 / 서울대학교 경제학 학사 / 홍익대학교 경제학부 교수 / 미국 포틀랜드 주립대 겸임교수 / 환경부 배출권 할당심의위원회 위원...",
+      "source": "news2day.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.news2day.co.kr/article/20260924500083",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "news2day.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "해외"
     },
     {
       "id": "cf06665e6a1f3507",
@@ -7808,7 +7831,7 @@
       "matchedKeywords": [
         "탄소시장"
       ],
-      "duplicateCount": 4,
+      "duplicateCount": 5,
       "duplicateSources": [
         "news1.kr",
         "v.daum.net",
@@ -11106,8 +11129,8 @@
       "duplicateSources": [
         "lifein.news",
         "todayenergy.kr",
-        "뉴스와이어",
         "newswire.co.kr",
+        "뉴스와이어",
         "사회적경제뉴스",
         "hansbiz.co.kr",
         "lawissue.co.kr",
