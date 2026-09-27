@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-09-27T15:12:37+09:00",
+  "generatedAt": "2026-09-27T18:12:42+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 792,
+  "itemCount": 794,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-09-27",
   "sourceCommitsScanned": 0,
@@ -34,6 +34,54 @@
         "Google News RSS"
       ],
       "region": "해외"
+    },
+    {
+      "id": "069142648ccb4fc3",
+      "publishedAt": "2026-09-27",
+      "title": "음원서 전력까지…막오른 토큰증권 킬러상품 전쟁",
+      "category": "제도",
+      "summary": "27일 금융투자 업계에 따르면 STO 시장 에 참전하는 증권사들은 초기 사모 시장 을 통해 시스템 안정성과 자본 시장 신뢰를 먼저 검증한 뒤 향후 일반 공모 허용과 규제 완화 일정에 발맞춰 음원 저작권, 탄소 배출권...",
+      "source": "sedaily.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.sedaily.com/article/20095225?ref=naver",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "sedaily.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "14b749c7ef09b774",
+      "publishedAt": "2026-09-27",
+      "title": "“수천억 PF·우량채권도 쪼개서 판다”…기업금융 새 자금줄 부상",
+      "category": "제도",
+      "summary": "(IB) 시장 의 새로운 자금 조달 창구로 부상하고 있다. 27일 금융투자 업계에 따르면 증권사들은 기관 전용... 주요 증권사들은 태양광·풍력 발전소에서 향후 발생할 전력 판매 대금과 탄소 배출권, 선박 및 항공기 엔진 금융...",
+      "source": "sedaily.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.sedaily.com/article/20095231?ref=naver",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "sedaily.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
     },
     {
       "id": "54e5a0ed833cb4d7",
@@ -5973,8 +6021,8 @@
         "유상할당"
       ],
       "duplicateSources": [
-        "뉴스;트리",
-        "newstree.kr"
+        "newstree.kr",
+        "뉴스;트리"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -10133,8 +10181,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "뉴스;트리",
-        "newstree.kr"
+        "newstree.kr",
+        "뉴스;트리"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -13074,8 +13122,8 @@
         "상쇄배출권"
       ],
       "duplicateSources": [
-        "BBS불교방송",
         "news.bbsi.co.kr",
+        "BBS불교방송",
         "bbsi.co.kr"
       ],
       "searchProviders": [
@@ -15290,8 +15338,8 @@
         "유상할당"
       ],
       "duplicateSources": [
-        "etnews.com",
-        "전자신문"
+        "전자신문",
+        "etnews.com"
       ],
       "searchProviders": [
         "Google News RSS",
