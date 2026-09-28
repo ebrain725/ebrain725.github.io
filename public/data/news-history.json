@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-09-28T18:12:45+09:00",
+  "generatedAt": "2026-09-28T23:25:52+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 839,
+  "itemCount": 844,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-09-28",
   "sourceCommitsScanned": 0,
@@ -75,8 +75,8 @@
         "배출권"
       ],
       "duplicateSources": [
-        "ngonews.kr",
         "한국NGO신문",
+        "ngonews.kr",
         "newstree.kr",
         "뉴스;트리"
       ],
@@ -254,12 +254,14 @@
         "배출권거래제"
       ],
       "duplicateSources": [
+        "ESG경제",
         "esgeconomy.com"
       ],
       "searchProviders": [
+        "Google News RSS",
         "NAVER API HUB"
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "region": "해외"
     },
     {
@@ -276,7 +278,7 @@
       "matchedKeywords": [
         "탄소시장"
       ],
-      "duplicateCount": 2,
+      "duplicateCount": 3,
       "duplicateSources": [
         "v.daum.net",
         "khan.co.kr"
@@ -325,8 +327,9 @@
       "matchedKeywords": [
         "탄소시장"
       ],
-      "duplicateCount": 4,
+      "duplicateCount": 5,
       "duplicateSources": [
+        "kyosu.net",
         "newsquest.co.kr",
         "naeil.com",
         "newspim.com",
@@ -378,17 +381,17 @@
       ],
       "duplicateCount": 11,
       "duplicateSources": [
+        "segye.com",
+        "opinionnews.co.kr",
+        "kmib.co.kr",
+        "smartbizn.com",
+        "seoul.co.kr",
         "kyosu.net",
         "newsquest.co.kr",
         "naeil.com",
         "newspim.com",
         "mk.co.kr",
-        "seoul.co.kr",
-        "biotimes.co.kr",
-        "smartbizn.com",
-        "segye.com",
-        "opinionnews.co.kr",
-        "kmib.co.kr"
+        "biotimes.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -558,6 +561,29 @@
       ],
       "duplicateSources": [
         "sedaily.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "ebac98b21083fc4a",
+      "publishedAt": "2026-09-28",
+      "title": "“전환금융, 미래 탄소가격·상환능력까지 따져야”…한일 전문가 제언",
+      "category": "시장·가격",
+      "summary": "허규만 아시아개발은행(ADB) 박사는 금융회사가 전환금융 대출·투자를 심사할 때 현재 배출권 가격이 아닌... 고배출 기업은 감축설비에 투자해 배출량을 줄이거나 부족한 배출권 을 사야 한다. 탄소가격이 오르면 배출권 ...",
+      "source": "etoday.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.etoday.co.kr/news/view/2629985",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "etoday.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -799,6 +825,56 @@
       "region": "국내"
     },
     {
+      "id": "f9551f39afe32d0f",
+      "publishedAt": "2026-09-28",
+      "title": "[온실가스 배출권] 9월 28일 KAU26, 250원 하락하며 3만원대 붕괴",
+      "category": "시장·가격",
+      "summary": "[온실가스 배출권] 9월 28일 KAU26, 250원 하락하며 3만원대 붕괴 데일리e뉴스",
+      "source": "데일리e뉴스",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE4tNDUycnl4R0R3S0RUVVppai1wZzhqNlE2TEdjRnRCNmJ3Z3IydVZ1ZWN1clJ2aTlYT1plWVV5QzFIZ3RrMkNSTVJaNFhoekViODBhTjRURVRjTTZBdllZNU9MZzRfYVRoMTFUOElJMA?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "온실가스 배출권",
+        "KAU26"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "데일리e뉴스"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "5dd316838fa04cb6",
+      "publishedAt": "2026-09-28",
+      "title": "[에어 라이브] 제주항공ㆍ트리니티항공ㆍ에어프랑스",
+      "category": "제도",
+      "summary": "◇트리니티항공, NH투자증권과 CORSIA 탄소 배출권 업무협약 트리니티항공이 NH투자증권과 함께 국제항공... 트리니티항공은 지난 21일 서울 강서구 소노트리니티 커먼스에서 NH투자증권과 ‘CORSIA 및 배출권 거래제에...",
+      "source": "dnews.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.dnews.co.kr/uhtml/view.jsp?idxno=202609281945332360634",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "dnews.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "a2026cbe83d2175d",
       "publishedAt": "2026-09-28",
       "title": "[아프리카 녹색전환] ③그린 ODA 2.0…농업서 에너지까지 '자립 생태계'",
@@ -839,6 +915,29 @@
       "duplicateCount": 1,
       "duplicateSources": [
         "yna.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "820ea7d22aa30975",
+      "publishedAt": "2026-09-28",
+      "title": "[사실은 이렇습니다] (보도설명) 그린워싱을 방지하고 신뢰받는 자발적...",
+      "category": "제도",
+      "summary": "2026.9.28.(월) 경향신문「정부가 만드는 자발적 탄소시장 …'감축 뻥튀기' 걸러낼 수 있나」 기사 관련 설명자료입니다.",
+      "source": "korea.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148972706&call_from=naver_news",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "korea.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -917,6 +1016,29 @@
       ],
       "duplicateCount": 1,
       "region": "해외"
+    },
+    {
+      "id": "8480db9824f0a69e",
+      "publishedAt": "2026-09-28",
+      "title": "[9월29일자] 비즈니스포스트 아침의 주요기사",
+      "category": "제도",
+      "summary": "자발적 탄소시장 제도 보완 시급 ● [김민정 기자의 '코스뽀'] '적외선영상센서' 아이쓰리시스템 주가 반등 기대, 정한 '민수사업' 겨냥 비냉각 센서 키운다 ● 컬리 N마트 담당 조직 위상 '본부'로 격상, 김슬아 덩치...",
+      "source": "businesspost.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.businesspost.co.kr/BP?command=article_view&num=448115",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "businesspost.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
     },
     {
       "id": "9ae961541db32de1",
@@ -1017,6 +1139,7 @@
         "finomy.com",
         "pinpointnews.co.kr",
         "businessplus.kr",
+        "포춘코리아",
         "fetv.co.kr",
         "머니투데이",
         "mt.co.kr",
@@ -1038,6 +1161,7 @@
         "whitepaper.co.kr",
         "pennmike.com",
         "ppss.kr",
+        "글로벌E",
         "globale.co.kr",
         "todayeconomic.com",
         "widedaily.com",
@@ -1050,11 +1174,12 @@
         "inthenews.co.kr",
         "mediapen.com",
         "financialpost.co.kr",
+        "sisacast.kr",
         "economist.co.kr",
         "kpenews.com",
+        "wolyo.co.kr",
         "digitaltoday.co.kr",
         "job-post.co.kr",
-        "wolyo.co.kr",
         "lcnews.co.kr",
         "newscape.co.kr",
         "biztribune.co.kr",
@@ -1068,7 +1193,6 @@
         "newspim.com",
         "브릿지경제",
         "moneystorm.kr",
-        "포춘코리아",
         "dealsitetv.com",
         "dailypop.kr",
         "sateconomy.co.kr",
@@ -1076,15 +1200,15 @@
         "popcornnews.net",
         "wsobi.com",
         "huffingtonpost.kr",
-        "v.daum.net",
         "news1.kr",
         "연합뉴스",
         "yna.co.kr",
         "ftoday.co.kr",
-        "asiae.co.kr",
+        "아시아경제",
         "catchnews.kr",
         "thefairnews.co.kr",
-        "아시아경제",
+        "v.daum.net",
+        "asiae.co.kr",
         "뉴시스",
         "더팩트",
         "2news.co.kr",
@@ -1096,13 +1220,14 @@
         "seoulfn.com",
         "thevaluenews.co.kr",
         "hankookilbo.com",
-        "theviewers.co.kr"
+        "theviewers.co.kr",
+        "한국일보"
       ],
       "searchProviders": [
         "NAVER API HUB",
         "Google News RSS"
       ],
-      "duplicateCount": 123,
+      "duplicateCount": 125,
       "region": "국내"
     },
     {
@@ -4389,8 +4514,8 @@
         "KAU25"
       ],
       "duplicateSources": [
-        "smedaily.co.kr",
-        "중소기업신문"
+        "중소기업신문",
+        "smedaily.co.kr"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -7302,8 +7427,8 @@
         "유상할당"
       ],
       "duplicateSources": [
-        "newstree.kr",
-        "뉴스;트리"
+        "뉴스;트리",
+        "newstree.kr"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -11462,8 +11587,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "newstree.kr",
-        "뉴스;트리"
+        "뉴스;트리",
+        "newstree.kr"
       ],
       "searchProviders": [
         "Google News RSS",
