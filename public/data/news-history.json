@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-09-28T15:13:06+09:00",
+  "generatedAt": "2026-09-28T18:12:45+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 828,
+  "itemCount": 839,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-09-28",
   "sourceCommitsScanned": 0,
@@ -12,6 +12,29 @@
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "c2c2345bf1517f61",
+      "publishedAt": "2026-09-28",
+      "title": "해외서 줄인 탄소 , 국내 NDC에 활용…국제감축 활성화 논의",
+      "category": "제도",
+      "summary": "온실가스 국제감축사업을 기업이 실제 사업화할 수 있도록 제도 개선과 금융지원, 탄소시장 연계 방안을 논의하는 정책 토론회가 국회에서 열린다. 온실가스국제감축산업협회는 오는 10월 6일 국회도서관 소강당에서...",
+      "source": "newsquest.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newsquest.co.kr/news/articleView.html?idxno=301634",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "newsquest.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
     {
       "id": "25ab5e36d760d93f",
       "publishedAt": "2026-09-28",
@@ -52,8 +75,8 @@
         "배출권"
       ],
       "duplicateSources": [
-        "한국NGO신문",
         "ngonews.kr",
+        "한국NGO신문",
         "newstree.kr",
         "뉴스;트리"
       ],
@@ -115,6 +138,32 @@
       "region": "국내"
     },
     {
+      "id": "b8aced7476bdc4f5",
+      "publishedAt": "2026-09-28",
+      "title": "트리니티항공, 금융사와 '탄소 배출권 ' 시장 상호협력 체계 구축",
+      "category": "제도",
+      "summary": "및 배출권 거래제에 관한 상호협력 업무협약(MOU)을 체결했다고 28일 밝혔다. 이번 협약은 국토교통부가... 양사는 CORSIA 및 국내 온실가스 배출권 시장·정책 정보 교류와 공동 대응체계 구축, 배출권 관련 사업 공동...",
+      "source": "enewstoday.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.enewstoday.co.kr/news/articleView.html?idxno=2474764",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권",
+        "배출권거래제",
+        "온실가스 배출권"
+      ],
+      "duplicateSources": [
+        "enewstoday.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "8ae7e7015d5ffb51",
       "publishedAt": "2026-09-28",
       "title": "트리니티항공, NH투자증권과 맞손…탄소 배출권 2만톤 매입·소각",
@@ -131,6 +180,31 @@
       ],
       "duplicateSources": [
         "news1.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "4b4aaf6f9eb26857",
+      "publishedAt": "2026-09-28",
+      "title": "탄소 배출권 확보…항공사 발등의 불",
+      "category": "상쇄·외부사업",
+      "summary": "트리니티항공은 최근 NH투자증권과 국제항공 탄소 상쇄 ·감축제도(CORSIA) 및 국내 배출권 거래제 대응 업무협약을 체결했다고 28일 밝혔다. 트리니티항공은 이번 협약에 따라 NH투자증권의 중개로 적격 배출권 2만t을...",
+      "source": "mk.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.mk.co.kr/article/12162958",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "mk.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -162,6 +236,80 @@
         "NAVER API HUB"
       ],
       "region": "해외"
+    },
+    {
+      "id": "6e5f44ef64733054",
+      "publishedAt": "2026-09-28",
+      "title": "중국 주도 아시아 탄소시장 연결…국제 ETS 연합 '실행 단계' 진입",
+      "category": "상쇄·외부사업",
+      "summary": "그동안 각국은 자국 안에서 배출권 거래제(ETS)와 탄소세를 만들고 탄소에 가격을 매기는 데 집중했다.... 따라서 OCCCM은 고품질(high-integrity) 탄소크레딧과 상쇄 메커니즘을 주요 협력 분야로 설정했다. EU 역시 연합...",
+      "source": "esgeconomy.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.esgeconomy.com/news/articleView.html?idxno=16842",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장",
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "esgeconomy.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
+      "id": "bf2e93f3fa1f8a84",
+      "publishedAt": "2026-09-28",
+      "title": "정부가 만드는 자발적 탄소시장 …‘감축 뻥튀기’ 걸러낼 수 있나",
+      "category": "상쇄·외부사업",
+      "summary": "정부가 ‘한국형 자발적 탄소시장 ’의 제도화를 추진하고 있는 상황에서 민간에서 운영 중인 자발적 탄소시장 의 감축실적이 실제보다 크게 부풀려졌다는 분석이 나왔다. 제도화에 앞서 감축실적의 실효성을 검증할...",
+      "source": "khan.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.khan.co.kr/article/202609281512011",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 2,
+      "duplicateSources": [
+        "v.daum.net",
+        "khan.co.kr"
+      ],
+      "searchProviders": [
+        "Google News RSS",
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "18022d51df8f56b3",
+      "publishedAt": "2026-09-28",
+      "title": "위성 AI부터 음식물 쓰레기까지… '2026 서울 유니콘 챌린지' 대상은 자...",
+      "category": "제도",
+      "summary": "자연기반 탄소 배출권 개발 전 과정을 앱 하나로 관리하는 솔루션을 각각 제시했다. 국내 3개사·해외... 서울 시장 상이 함께 수여됐다. 수상 기업에는 서울창업허브 입주 기회와 투자자 네트워킹, 클라우드 인프라...",
+      "source": "kr.aving.net",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://kr.aving.net/news/articleView.html?idxno=1814825",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "kr.aving.net"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
     },
     {
       "id": "448c104f28a10bcd",
@@ -208,6 +356,39 @@
         "opinionnews.co.kr",
         "kmib.co.kr",
         "smartbizn.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "5d599acc6855b1fd",
+      "publishedAt": "2026-09-28",
+      "title": "온실가스 국제감축산업협회, 10월 6일 '국제감축사업 활성화' 정책 토론...",
+      "category": "제도",
+      "summary": "손영기 온실가스 국제감축산업협회 상임부회장은 '기업의 국제감축사업 애로요인과 개선과제'를 주제로 발표하며, 김태훈 글로벌녹색성장기구(GGGI) 부장은 '글로벌 자발적 탄소시장 추진현황과 국제감축사업 연계방안'을...",
+      "source": "biotimes.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.biotimes.co.kr/news/articleView.html?idxno=34753",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 11,
+      "duplicateSources": [
+        "kyosu.net",
+        "newsquest.co.kr",
+        "naeil.com",
+        "newspim.com",
+        "mk.co.kr",
+        "seoul.co.kr",
+        "biotimes.co.kr",
+        "smartbizn.com",
+        "segye.com",
+        "opinionnews.co.kr",
+        "kmib.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -313,6 +494,30 @@
       "region": "국내"
     },
     {
+      "id": "7d34423b5ff7424e",
+      "publishedAt": "2026-09-28",
+      "title": "고유가·탄소규제 '이중 부담'…항공업계, 친환경 체질개선 속도",
+      "category": "제도",
+      "summary": "연료 효율이 높은 차세대 항공기로 기단을 재편하는 한편 지속가능항공유(SAF) 사용과 탄소 배출권 ... A321neo 항공기./사진=대한항공 제공 ◆ SAF 의무화에 배출권 확보까지…커지는 '탄소 비용' 국토교통부와...",
+      "source": "mediapen.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.mediapen.com/news/view/1126375",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "mediapen.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "338abc084ea9ff78",
       "publishedAt": "2026-09-28",
       "title": "경기도, 연안 생태복원 이끄는 블루카본 정책 기반 마련",
@@ -353,6 +558,30 @@
       ],
       "duplicateSources": [
         "sedaily.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "35a3d2478347c9c1",
+      "publishedAt": "2026-09-28",
+      "title": "[현장] 강병하 메리츠증권 상무 “RWA 확대는 기정사실…글로벌 호환 가...",
+      "category": "제도",
+      "summary": "일례로 데이터 인프라와 원자재, 광산, 탄소 배출권 등도 토큰화 대상이 될 수 있다고 봤다. 아울러 투자자와 시장 의 범위를 넓히는 계기도 될 수 있다고 했다. 기존에는 특정 국가의 금융 인프라나 유통망 안에서만...",
+      "source": "news2day.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.news2day.co.kr/article/20260928500255",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "news2day.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -499,6 +728,30 @@
       "region": "국내"
     },
     {
+      "id": "b6a0c35d951e81ec",
+      "publishedAt": "2026-09-28",
+      "title": "[증권UP+] 금투업계, AI 금융부터 탄소배출권 ·ETF까지 사업 다각화",
+      "category": "제도",
+      "summary": "| 스마트비즈 = 최준 기자 | 금융투자업계가 AI 인프라 금융부터 탄소배출권 거래, AI 기반 업무 혁신, 월분배형 ETF까지 사업 영역을 넓히며 금융 서비스 다변화에 나서고 있다. 데이터센터 PF와 GPU 파이낸싱 시장 개척...",
+      "source": "smartbizn.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.smartbizn.com/news/articleView.html?idxno=154973",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "smartbizn.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "73c7221f80152886",
       "publishedAt": "2026-09-28",
       "title": "[줌인] 한전KPS, 정비 넘어 발전사업까지…인니 수력발전 투자로 해외사...",
@@ -590,6 +843,30 @@
       "searchProviders": [
         "NAVER API HUB"
       ],
+      "region": "국내"
+    },
+    {
+      "id": "6244ad4d7c3a6a8b",
+      "publishedAt": "2026-09-28",
+      "title": "[비즈&] 롯데백화점, 가을 맞이 '스포츠 테마 행사' 外",
+      "category": "제도",
+      "summary": "트리니티항공은 NH증권을 통해 온실가스 배출권 을 조달할 계획입니다. ▶ 삼성SDI ESS, 화재 안전성 글로벌 인증 획득 삼성SDI의 에너지저장장치, ESS 제품인 'SBB 2.0'이 글로벌 안전 인증기관의 대형 화재 테스트를...",
+      "source": "yonhapnewstv.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.yonhapnewstv.co.kr/news/MYH20260928172609VIw",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "온실가스 배출권"
+      ],
+      "duplicateSources": [
+        "yonhapnewstv.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
       "region": "국내"
     },
     {
@@ -709,22 +986,22 @@
         "4th.kr",
         "srtimes.kr",
         "cstimes.com",
-        "view.asiae.co.kr",
         "digitalchosun.dizzo.com",
+        "view.asiae.co.kr",
         "slist.kr",
         "discoverynews.kr",
-        "imaeil.com",
         "inews24.com",
-        "biz.heraldcorp.com",
+        "pointdaily.co.kr",
         "글로벌이코노믹",
+        "etoday.co.kr",
         "뉴스핌",
         "metroseoul.co.kr",
+        "socialvalue.kr",
         "asiatime.co.kr",
+        "biz.heraldcorp.com",
         "getnews.co.kr",
         "biz.chosun.com",
-        "pointdaily.co.kr",
         "g-enews.com",
-        "etoday.co.kr",
         "sedaily.com",
         "paxetv.com",
         "tf.co.kr",
@@ -737,6 +1014,7 @@
         "dailycar.co.kr",
         "thebigdata.co.kr",
         "kbsm.net",
+        "finomy.com",
         "pinpointnews.co.kr",
         "businessplus.kr",
         "fetv.co.kr",
@@ -745,8 +1023,10 @@
         "매일일보",
         "m-i.kr",
         "joongangenews.com",
+        "fntimes.com",
         "newsprime.co.kr",
         "ebn.co.kr",
+        "imaeil.com",
         "newsis.com",
         "iminju.net",
         "ttlnews.com",
@@ -756,6 +1036,7 @@
         "delighti.co.kr",
         "smedaily.co.kr",
         "whitepaper.co.kr",
+        "pennmike.com",
         "ppss.kr",
         "globale.co.kr",
         "todayeconomic.com",
@@ -767,13 +1048,17 @@
         "bizwnews.com",
         "edaily.co.kr",
         "inthenews.co.kr",
+        "mediapen.com",
+        "financialpost.co.kr",
         "economist.co.kr",
         "kpenews.com",
         "digitaltoday.co.kr",
         "job-post.co.kr",
         "wolyo.co.kr",
         "lcnews.co.kr",
+        "newscape.co.kr",
         "biztribune.co.kr",
+        "sports.hankooki.com",
         "pointe.co.kr",
         "swtvnews.com",
         "서울경제TV",
@@ -783,35 +1068,41 @@
         "newspim.com",
         "브릿지경제",
         "moneystorm.kr",
+        "포춘코리아",
         "dealsitetv.com",
+        "dailypop.kr",
         "sateconomy.co.kr",
         "ezyeconomy.com",
         "popcornnews.net",
+        "wsobi.com",
+        "huffingtonpost.kr",
         "v.daum.net",
         "news1.kr",
         "연합뉴스",
         "yna.co.kr",
         "ftoday.co.kr",
-        "아시아경제",
-        "뉴시스",
+        "asiae.co.kr",
         "catchnews.kr",
         "thefairnews.co.kr",
+        "아시아경제",
+        "뉴시스",
         "더팩트",
         "2news.co.kr",
         "뉴시안",
         "라이센스뉴스",
-        "asiae.co.kr",
         "매일신문",
         "dnews.co.kr",
         "enetnews.co.kr",
         "seoulfn.com",
-        "thevaluenews.co.kr"
+        "thevaluenews.co.kr",
+        "hankookilbo.com",
+        "theviewers.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB",
         "Google News RSS"
       ],
-      "duplicateCount": 109,
+      "duplicateCount": 123,
       "region": "국내"
     },
     {
@@ -4098,8 +4389,8 @@
         "KAU25"
       ],
       "duplicateSources": [
-        "중소기업신문",
-        "smedaily.co.kr"
+        "smedaily.co.kr",
+        "중소기업신문"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -7011,8 +7302,8 @@
         "유상할당"
       ],
       "duplicateSources": [
-        "뉴스;트리",
-        "newstree.kr"
+        "newstree.kr",
+        "뉴스;트리"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -11171,8 +11462,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "뉴스;트리",
-        "newstree.kr"
+        "newstree.kr",
+        "뉴스;트리"
       ],
       "searchProviders": [
         "Google News RSS",
