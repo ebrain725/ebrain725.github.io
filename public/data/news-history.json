@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-09-28T13:15:11+09:00",
+  "generatedAt": "2026-09-28T15:13:06+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 821,
+  "itemCount": 828,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-09-28",
   "sourceCommitsScanned": 0,
@@ -54,13 +54,38 @@
       "duplicateSources": [
         "한국NGO신문",
         "ngonews.kr",
-        "newstree.kr"
+        "newstree.kr",
+        "뉴스;트리"
       ],
       "searchProviders": [
         "Google News RSS",
         "NAVER API HUB"
       ],
       "duplicateCount": 4,
+      "region": "국내"
+    },
+    {
+      "id": "3b39a70d881ae35c",
+      "publishedAt": "2026-09-28",
+      "title": "트리니티항공, 항공 탄소 규제 대응 위해 배출권 확보",
+      "category": "상쇄·외부사업",
+      "summary": "양사는 CORSIA와 국내 온실가스 배출권 시장 ·정책 정보 교류, 공동 대응체계 구축, 배출권 관련 사업 추진 등에서 협력할 계획이다. CORSIA는 국제항공 부문의 탄소 배출 증가분을 상쇄하기 위해 국제민간항공기구가...",
+      "source": "theviewers.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://theviewers.co.kr/View.aspx?No=4243310",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "온실가스 배출권"
+      ],
+      "duplicateSources": [
+        "theviewers.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
       "region": "국내"
     },
     {
@@ -79,12 +104,14 @@
         "탄소배출권"
       ],
       "duplicateSources": [
+        "뉴스웍스",
         "newsworks.co.kr"
       ],
       "searchProviders": [
+        "Google News RSS",
         "NAVER API HUB"
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "region": "국내"
     },
     {
@@ -137,6 +164,57 @@
       "region": "해외"
     },
     {
+      "id": "448c104f28a10bcd",
+      "publishedAt": "2026-09-28",
+      "title": "온실가스국제감축산업협회, 온실가스 감축사업 활성화 방안 찾는다",
+      "category": "제도",
+      "summary": "김태훈 글로벌녹색성장기구(GGGI) 부장은 '글로벌 자발적 탄소시장 추진현황과 국제감축사업 연계방안' 등을 다룬다. 주제 발표 이후 오대균 국가녹색기술연구소 소장이 좌장을 맡은 종합 토론도 이어진다. 토론에는...",
+      "source": "newspim.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newspim.com/news/view/20260928000750",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 4,
+      "duplicateSources": [
+        "newsquest.co.kr",
+        "naeil.com",
+        "newspim.com",
+        "mk.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "6ea8cc2555ec9a2c",
+      "publishedAt": "2026-09-28",
+      "title": "온실가스국제감축산업협회, 내달 6일 국회도서관서 '온실가스 감축 정책...",
+      "category": "제도",
+      "summary": "손영기 온실가스국제감축산업협회 상임부회장이 '기업의 국제감축사업 애로요인과 개선과제'를, 김태훈 글로벌녹색성장기구(GGGI) 부장이 '글로벌 자발적 탄소시장 추진현황과 국제감축사업 연계방안'을 주제로 발표한다....",
+      "source": "opinionnews.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.opinionnews.co.kr/news/articleView.html?idxno=144954",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 3,
+      "duplicateSources": [
+        "opinionnews.co.kr",
+        "kmib.co.kr",
+        "smartbizn.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "4cc09d6788e12811",
       "publishedAt": "2026-09-28",
       "title": "사회공헌 태양광서 나온 감축실적, 다시 재생E로…'탄소감축 선순환'",
@@ -159,6 +237,55 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "89fede6b646ed9cd",
+      "publishedAt": "2026-09-28",
+      "title": "민간에서 거래 '탄소 감축 실적' 부적격 논란 커져, 연내 출범 자발적 탄...",
+      "category": "제도",
+      "summary": "정부가 기업 등에 탄소 배출권 을 할당하고 이를 기업들이 거래하는 온실가스 배출권 거래제와 구분된다. 플랜1.5가 탄소 크레딧 평가를 분석한 결과, 대한상의가 감축사업으로 인정한 사업 대다수에서 '경제적 추가성...",
+      "source": "businesspost.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.businesspost.co.kr/BP?command=article_view&num=448057",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권",
+        "온실가스 배출권"
+      ],
+      "duplicateSources": [
+        "businesspost.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "19027f2849d56b33",
+      "publishedAt": "2026-09-28",
+      "title": "민간 '탄소 감축 실적' 부적격 논란 커져, 연내 출범 자발적 탄소시장 제도 보완 시급",
+      "category": "제도",
+      "summary": "민간 '탄소 감축 실적' 부적격 논란 커져, 연내 출범 자발적 탄소시장 제도 보완 시급 businesspost.co.kr",
+      "source": "businesspost.co.kr",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBkczVVUFJ4ME1YYklNajZpc3ZqclZZZVVTV2stNzB0UDN1bVJzd0ZiYXJjSlNUVC1vMGhqSzdTdTJLcjNwQVVON0x3X0wwT1FmQmROTWpDeDgtd0dLVHlTc2VKOWlKNkJHUUhQa3cyRjE1MDQ?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "businesspost.co.kr"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
       "region": "국내"
     },
     {
@@ -372,6 +499,30 @@
       "region": "국내"
     },
     {
+      "id": "73c7221f80152886",
+      "publishedAt": "2026-09-28",
+      "title": "[줌인] 한전KPS, 정비 넘어 발전사업까지…인니 수력발전 투자로 해외사...",
+      "category": "제도",
+      "summary": "하상 프로젝트는 기존 청정개발체제(CDM) 사업에서 파리협정 제6.4조 체제로 전환된 사업으로, 기존 CDM 등록자료에서 제시된 연간 예상 온실가스 감축량은 21만6320톤이다. 실제 탄소 배출권 의 발급 및 수익 규모는...",
+      "source": "dailypop.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.dailypop.kr/news/articleView.html?idxno=102897",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "dailypop.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "bd373423c993d117",
       "publishedAt": "2026-09-28",
       "title": "[인터뷰|류광남 뉴톤 대표] “흩어진 데이터를 끌어 모아 탄소시장 가속...",
@@ -477,7 +628,9 @@
       "url": "https://www.etoday.co.kr/news/view/2629782",
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
-        "탄소시장"
+        "탄소시장",
+        "배출권",
+        "배출권거래제"
       ],
       "duplicateSources": [
         "etoday.co.kr"
@@ -555,6 +708,7 @@
       "duplicateSources": [
         "4th.kr",
         "srtimes.kr",
+        "cstimes.com",
         "view.asiae.co.kr",
         "digitalchosun.dizzo.com",
         "slist.kr",
@@ -564,8 +718,9 @@
         "biz.heraldcorp.com",
         "글로벌이코노믹",
         "뉴스핌",
-        "더팩트",
+        "metroseoul.co.kr",
         "asiatime.co.kr",
+        "getnews.co.kr",
         "biz.chosun.com",
         "pointdaily.co.kr",
         "g-enews.com",
@@ -573,13 +728,11 @@
         "sedaily.com",
         "paxetv.com",
         "tf.co.kr",
-        "metroseoul.co.kr",
         "ddaily.co.kr",
         "econovill.com",
         "megaeconomy.co.kr",
         "smarttoday.co.kr",
         "뉴스1",
-        "sentv.co.kr",
         "viva100.com",
         "dailycar.co.kr",
         "thebigdata.co.kr",
@@ -592,12 +745,16 @@
         "매일일보",
         "m-i.kr",
         "joongangenews.com",
-        "2news.co.kr",
+        "newsprime.co.kr",
+        "ebn.co.kr",
         "newsis.com",
+        "iminju.net",
         "ttlnews.com",
         "e-science.co.kr",
         "주간한국",
         "weekly.hankooki.com",
+        "delighti.co.kr",
+        "smedaily.co.kr",
         "whitepaper.co.kr",
         "ppss.kr",
         "globale.co.kr",
@@ -606,44 +763,55 @@
         "newsroad.co.kr",
         "연합뉴스TV",
         "yonhapnewstv.co.kr",
-        "뉴시안",
         "newsian.co.kr",
+        "bizwnews.com",
         "edaily.co.kr",
-        "cstimes.com",
         "inthenews.co.kr",
         "economist.co.kr",
         "kpenews.com",
-        "라이센스뉴스",
         "digitaltoday.co.kr",
         "job-post.co.kr",
         "wolyo.co.kr",
         "lcnews.co.kr",
+        "biztribune.co.kr",
         "pointe.co.kr",
+        "swtvnews.com",
+        "서울경제TV",
+        "sentv.co.kr",
         "kfenews.co.kr",
         "wowtv.co.kr",
         "newspim.com",
         "브릿지경제",
+        "moneystorm.kr",
         "dealsitetv.com",
         "sateconomy.co.kr",
         "ezyeconomy.com",
         "popcornnews.net",
         "v.daum.net",
         "news1.kr",
+        "연합뉴스",
         "yna.co.kr",
         "ftoday.co.kr",
-        "asiae.co.kr",
-        "뉴시스",
-        "thefairnews.co.kr",
-        "매일신문",
         "아시아경제",
+        "뉴시스",
+        "catchnews.kr",
+        "thefairnews.co.kr",
+        "더팩트",
+        "2news.co.kr",
+        "뉴시안",
+        "라이센스뉴스",
+        "asiae.co.kr",
+        "매일신문",
         "dnews.co.kr",
-        "iminju.net"
+        "enetnews.co.kr",
+        "seoulfn.com",
+        "thevaluenews.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB",
         "Google News RSS"
       ],
-      "duplicateCount": 97,
+      "duplicateCount": 109,
       "region": "국내"
     },
     {
@@ -1176,6 +1344,33 @@
       "region": "국내"
     },
     {
+      "id": "27eddde150985f75",
+      "publishedAt": "2026-09-23",
+      "title": "한전KPS, 인니 수력발전 지분 인수…해외 재생E 진출 기반 구축",
+      "category": "제도",
+      "summary": "특히 한전KPS는 탄소배출권 도 함께 확보해 다각적인 글로벌 사업영역 확장 사례로서, 향후 해외 진출에 청신호를 주고 있다. 한전KPS는 인도네시아 북수마트라 소재 '하상(Hasang) 수력발전소' 운영법인 PT. BNE사(社)의...",
+      "source": "knpnews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.knpnews.com/news/articleView.html?idxno=34549",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateCount": 4,
+      "duplicateSources": [
+        "e-platform.net",
+        "mcnews.co.kr",
+        "enewstoday.co.kr",
+        "knpnews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "f34aaa874d14ac0c",
       "publishedAt": "2026-09-23",
       "title": "한전KPS, 인니 수력발전 지분 인수… 첫 해외재생에너지 투자",
@@ -1503,7 +1698,8 @@
       "matchedKeywords": [
         "배출권",
         "탄소배출권",
-        "배출권거래제"
+        "배출권거래제",
+        "유상할당"
       ],
       "duplicateSources": [
         "Chosunbiz",
@@ -2060,8 +2256,8 @@
       ],
       "duplicateSources": [
         "브릿지경제",
-        "viva100.com",
         "v.daum.net",
+        "viva100.com",
         "dt.co.kr"
       ],
       "searchProviders": [
@@ -2696,7 +2892,10 @@
       "url": "https://www.todayenergy.kr/news/articleView.html?idxno=303341",
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
-        "배출권"
+        "배출권",
+        "배출권거래제",
+        "온실가스 배출권",
+        "유상할당"
       ],
       "duplicateSources": [
         "todayenergy.kr"
@@ -2744,7 +2943,10 @@
       "url": "http://www.e-platform.net/news/articleView.html?idxno=105565",
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
-        "배출권"
+        "배출권",
+        "배출권거래제",
+        "온실가스 배출권",
+        "유상할당"
       ],
       "duplicateSources": [
         "e-platform.net"
@@ -3794,7 +3996,8 @@
       "url": "https://www.ajunews.com/view/20260917165858983",
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
-        "배출권"
+        "배출권",
+        "유상할당"
       ],
       "duplicateSources": [
         "ajunews.com"
@@ -5670,7 +5873,7 @@
         "Google News RSS",
         "NAVER API HUB"
       ],
-      "duplicateCount": 4,
+      "duplicateCount": 5,
       "region": "국내"
     },
     {
@@ -6808,8 +7011,8 @@
         "유상할당"
       ],
       "duplicateSources": [
-        "newstree.kr",
-        "뉴스;트리"
+        "뉴스;트리",
+        "newstree.kr"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -10968,8 +11171,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "newstree.kr",
-        "뉴스;트리"
+        "뉴스;트리",
+        "newstree.kr"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -12194,8 +12397,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "news.kbs.co.kr",
         "KBS 뉴스",
+        "news.kbs.co.kr",
         "kbs.co.kr"
       ],
       "searchProviders": [
@@ -13857,8 +14060,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "news.kbs.co.kr",
         "KBS 뉴스",
+        "news.kbs.co.kr",
         "kbs.co.kr"
       ],
       "searchProviders": [
