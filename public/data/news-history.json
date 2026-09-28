@@ -1,17 +1,138 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-09-28T23:25:52+09:00",
+  "generatedAt": "2026-09-29T08:13:11+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 844,
+  "itemCount": 849,
   "earliestPublishedAt": "2026-08-06",
-  "latestPublishedAt": "2026-09-28",
+  "latestPublishedAt": "2026-09-29",
   "sourceCommitsScanned": 0,
   "sourceSnapshotsScanned": 0,
   "historicalRowsScanned": 0,
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "fb01947dcf4a8f4d",
+      "publishedAt": "2026-09-29",
+      "title": "탄소중립규제 잘 설계해야 네팔의 비극 막는다 [이런 규제 이상하지 않...",
+      "category": "제도",
+      "summary": "정부는 2035년까지 2018년 대비 온실가스 를 53~61% 줄이겠다는 목표를 내걸었지만, 재생에너지 비중은 여전히 낮고 배출권 거래제도의 과도한 무상할당으로 기업의 감축유인을 충분히 만들어내지 못하고 있다. 2024년...",
+      "source": "weekly.chosun.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://weekly.chosun.com/news/articleView.html?idxno=55430",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "weekly.chosun.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "93684fea71253066",
+      "publishedAt": "2026-09-29",
+      "title": "민간 탄소시장 탄소감축량 90% \"그린워싱\"",
+      "category": "제도",
+      "summary": "기대 효과는 탄소감축 의무를 가진 기업들이 탄소를 직접 감축하거나, 배출권 거래제를 활용하거나 아니면... 탄소감축과 배출권 거래 그리고 탄소시장은 각각 참여의 난도가 있어 탄소감축이나 배출권 거래를 하기 어려운...",
+      "source": "labortoday.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.labortoday.co.kr/news/articleView.html?idxno=236974",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장",
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "labortoday.co.kr"
+      ],
+      "searchProviders": [
+        "Google News RSS",
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 2,
+      "region": "국내"
+    },
+    {
+      "id": "939b2a350e35440d",
+      "publishedAt": "2026-09-29",
+      "title": "국내 항공사 ‘코르시아’ 대응 분주… 트리니티, 탄소 배출권 2만t 사들...",
+      "category": "상쇄·외부사업",
+      "summary": "국적 항공사 11곳 예상 비용 3354억 국내 항공사들이 ‘국제항공 탄소 상쇄 ·감축제도(CORSIA·코르시아)’ 대응을 위해 탄소 배출권 을 잇따라 사들이고 있다. 작년 말 이스타항공이 우리 항공사 중 처음으로 10만t(톤)...",
+      "source": "chosun.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.chosun.com/economy/industry-company/2026/09/29/UDZHJDUS3VFRJDKD3SXXQZYTUQ/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "chosun.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "34904ff40e3b4503",
+      "publishedAt": "2026-09-29",
+      "title": "(보도설명) 그린워싱을 방지하고 신뢰받는 자발적 탄소시장 생태계를 구축하는 것이 한국형 자발적 탄소시장 조성 방향의 핵심입니다",
+      "category": "제도",
+      "summary": "(보도설명) 그린워싱을 방지하고 신뢰받는 자발적 탄소시장 생태계를 구축하는 것이 한국형 자발적 탄소시장 조성 방향의 핵심입니다 정책브리핑",
+      "source": "정책브리핑",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQcEVxd081VW1HR1NPZVZLMWNPQ1dFZW1TalFwdkJ5NDNLVDhseXpjMmphM1NPVFZiYnpUNjRLTHZlcHFwRms0M041NFRfUXZHSE9DazU0SE0zV2ZEM1VnWms1eEVhblNUenBmY2l3THFVWnFxUDVpYVFVTjVJNm40SHd2dkdabWpxbWRBUndzWQ?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "정책브리핑"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "3da3dd217b6385f5",
+      "publishedAt": "2026-09-29",
+      "title": "\"온실가스 국제감축사업 어떻게 활성화하나\" 국회 정책토론회 개최",
+      "category": "제도",
+      "summary": "이어 손영기 온실가스 국제감축산업협회 상임부회장의 '기업의 국제감축사업 애로요인과 개선과제', 김태훈 글로벌녹색성장기구(GGGI) 부장의 '글로벌 자발적 탄소시장 추진현황과 국제감축사업 연계방안' 등의 발표가...",
+      "source": "newsian.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.newsian.co.kr/news/articleView.html?idxno=96150",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 2,
+      "duplicateSources": [
+        "edaily.co.kr",
+        "newsian.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
     {
       "id": "c2c2345bf1517f61",
       "publishedAt": "2026-09-28",
@@ -1116,7 +1237,7 @@
         "pointdaily.co.kr",
         "글로벌이코노믹",
         "etoday.co.kr",
-        "뉴스핌",
+        "newspim.com",
         "metroseoul.co.kr",
         "socialvalue.kr",
         "asiatime.co.kr",
@@ -1129,9 +1250,8 @@
         "tf.co.kr",
         "ddaily.co.kr",
         "econovill.com",
-        "megaeconomy.co.kr",
         "smarttoday.co.kr",
-        "뉴스1",
+        "news1.kr",
         "viva100.com",
         "dailycar.co.kr",
         "thebigdata.co.kr",
@@ -1154,7 +1274,6 @@
         "iminju.net",
         "ttlnews.com",
         "e-science.co.kr",
-        "주간한국",
         "weekly.hankooki.com",
         "delighti.co.kr",
         "smedaily.co.kr",
@@ -1178,6 +1297,7 @@
         "economist.co.kr",
         "kpenews.com",
         "wolyo.co.kr",
+        "megaeconomy.co.kr",
         "digitaltoday.co.kr",
         "job-post.co.kr",
         "lcnews.co.kr",
@@ -1186,12 +1306,9 @@
         "sports.hankooki.com",
         "pointe.co.kr",
         "swtvnews.com",
-        "서울경제TV",
         "sentv.co.kr",
         "kfenews.co.kr",
         "wowtv.co.kr",
-        "newspim.com",
-        "브릿지경제",
         "moneystorm.kr",
         "dealsitetv.com",
         "dailypop.kr",
@@ -1200,13 +1317,17 @@
         "popcornnews.net",
         "wsobi.com",
         "huffingtonpost.kr",
-        "news1.kr",
         "연합뉴스",
         "yna.co.kr",
         "ftoday.co.kr",
         "아시아경제",
         "catchnews.kr",
         "thefairnews.co.kr",
+        "뉴스핌",
+        "뉴스1",
+        "주간한국",
+        "서울경제TV",
+        "브릿지경제",
         "v.daum.net",
         "asiae.co.kr",
         "뉴시스",
@@ -2671,9 +2792,9 @@
         "탄소배출권"
       ],
       "duplicateSources": [
-        "브릿지경제",
-        "v.daum.net",
         "viva100.com",
+        "v.daum.net",
+        "브릿지경제",
         "dt.co.kr"
       ],
       "searchProviders": [
@@ -11511,8 +11632,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "뉴스1",
-        "news1.kr"
+        "news1.kr",
+        "뉴스1"
       ],
       "searchProviders": [
         "Google News RSS",
