@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-09-29T10:13:33+09:00",
+  "generatedAt": "2026-09-29T13:13:13+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 852,
+  "itemCount": 859,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-09-29",
   "sourceCommitsScanned": 0,
@@ -37,6 +37,53 @@
       "region": "국내"
     },
     {
+      "id": "b368fb0edab6a2a6",
+      "publishedAt": "2026-09-29",
+      "title": "인천시, 농어업·동물복지·어촌 재생 합친 '민생·미래 시정' 가속",
+      "category": "제도",
+      "summary": "나아가 전국 갯벌 면적의 28%를 보유한 지리적 이점을 살려 총 585억 원 규모의 국책 과제와 연계한 '블루카본(해양 탄소 흡수원)' 연구개발에 착수해 탄소 배출권 확보와 기업 투자 유치에 나선다. 김익중 인천시...",
+      "source": "tournews21.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.tournews21.com/news/articleView.html?idxno=144490",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "tournews21.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "ba7a4e311e06196f",
+      "publishedAt": "2026-09-29",
+      "title": "인천시, 갯벌·해조류 활용 '블루카본' 연구개발 본격화··· 총 585억원...",
+      "category": "제도",
+      "summary": "탄소중립 수단 '블루카본' 인천시 생산 최적지··· 탄소시장 대응 계획 시는 최근 글로벌 기후위기 대응이 강화되고 자발적 탄소시장 이 커지면서, 단순한 탄소 배출 감축을 넘어 탄소를 직접 흡수·저장하는 블루카본이...",
+      "source": "incheontoday.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.incheontoday.com/news/articleView.html?idxno=324260",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateSources": [
+        "incheontoday.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "edf28f27a1467174",
       "publishedAt": "2026-09-29",
       "title": "온실가스 국제감축사업 활성화 토론회 내달 6일 개최",
@@ -50,11 +97,35 @@
       "matchedKeywords": [
         "탄소시장"
       ],
-      "duplicateCount": 3,
+      "duplicateCount": 4,
       "duplicateSources": [
+        "fieldnews.kr",
         "ajunews.com",
         "edaily.co.kr",
         "newsian.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "4a7486752148e870",
+      "publishedAt": "2026-09-29",
+      "title": "온실가스 국제 감축 사업 활성화, 어떻게 할까?",
+      "category": "제도",
+      "summary": "토론회에서는 기업의 국제감축사업 참여 과정에서 발생하는 애로사항과 제도 개선 방안, 글로벌 자발적 탄소시장 과 국제감축사업 간 연계 방안 등이 다뤄질 에정이다. 이날 토론회에서는 김주영 의원을 비롯해 김정호...",
+      "source": "pressian.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.pressian.com/pages/articles/2026092911114319810?utm_source=naver&utm_medium=search",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "pressian.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -75,7 +146,7 @@
       "matchedKeywords": [
         "탄소시장"
       ],
-      "duplicateCount": 36,
+      "duplicateCount": 58,
       "duplicateSources": [
         "newsfreezone.co.kr",
         "yna.co.kr",
@@ -112,7 +183,59 @@
         "press9.kr",
         "dt.co.kr",
         "finomy.com",
-        "e-science.co.kr"
+        "e-science.co.kr",
+        "seoultimes.news",
+        "choicenews.co.kr",
+        "delighti.co.kr",
+        "econonews.co.kr",
+        "enewstoday.co.kr",
+        "hg-times.com",
+        "newskr.kr",
+        "popcornnews.net",
+        "todayeconomic.com",
+        "g-enews.com",
+        "globale.co.kr",
+        "econovill.com",
+        "biz.newdaily.co.kr",
+        "ekn.kr",
+        "4th.kr",
+        "bizwnews.com",
+        "wsobi.com",
+        "seoulfn.com",
+        "dailysmart.co.kr",
+        "catchnews.kr",
+        "newswell.co.kr",
+        "sateconomy.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "8097de10193687fc",
+      "publishedAt": "2026-09-29",
+      "title": "신한금융, 한·일 금융협력 컨퍼런스 열어…기후금융·디지털혁신 논의",
+      "category": "제도",
+      "summary": "신한금융그룹이 한·일 양국의 전환금융, 탄소시장 , 디지털금융 분야 협력 방안을 논의하며 미래 금융 사업 협력 기반 확대에 나섰다. 신한금융그룹은 지난 28일 서울 여의도 한국금융투자협회에서 '아시아의 신뢰할 수...",
+      "source": "newsmap.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newsmap.co.kr/news/articleView.html?idxno=3586",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 8,
+      "duplicateSources": [
+        "public25.com",
+        "fnnews.com",
+        "tf.co.kr",
+        "newsmap.co.kr",
+        "koreaittimes.com",
+        "beyondpost.co.kr",
+        "digitaltoday.co.kr",
+        "lcnews.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -147,6 +270,29 @@
       "region": "국내"
     },
     {
+      "id": "aef54b21bec01f63",
+      "publishedAt": "2026-09-29",
+      "title": "금융권, AI 기반 결제·업무 혁신 가속화",
+      "category": "제도",
+      "summary": "연세대 환경금융대학원과 한국녹색금융포럼이 주관한 이날 행사에서는 전환금융, 탄소시장 , 디지털금융 등에 대한 논의가 이뤄졌으며, 신한금융은 패널토론에서 그룹의 전환금융 추진 전략과 디지털자산...",
+      "source": "pressman.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.pressman.kr/news/articleView.html?idxno=103809",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "pressman.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "939b2a350e35440d",
       "publishedAt": "2026-09-29",
       "title": "국내 항공사 ‘코르시아’ 대응 분주… 트리니티, 탄소 배출권 2만t 사들...",
@@ -171,6 +317,30 @@
       "region": "국내"
     },
     {
+      "id": "5f10f8ff1a914485",
+      "publishedAt": "2026-09-29",
+      "title": "[브리핑] 인니 진출에 열 올리는 전력 공기업들…성과는 '아직'",
+      "category": "제도",
+      "summary": "대한무역투자진흥공사(KOTRA)가 2021년 발간한 '인도네시아 신재생에너지 전력 발전 시장 동향' 보고서에... 탄소 배출권 획득도 노림수의 하나다. 하상 발전소는 올해 1월 인도네시아 환경부로부터 파리협정 제6조...",
+      "source": "niceeconomy.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.niceeconomy.co.kr/news/articleView.html?idxno=91140",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "niceeconomy.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "8d55188127dfc9cc",
       "publishedAt": "2026-09-29",
       "title": "[디깅 인사이드] 포스코 노조위원장 금품수수 의혹…사측 임원 \"나중에...",
@@ -187,6 +357,30 @@
       ],
       "duplicateSources": [
         "newsian.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "0974a09d6429200a",
+      "publishedAt": "2026-09-29",
+      "title": "[EBN 데이터센터] 항공주 약세...합병 기대와 비용 부담이 주가 갈랐다",
+      "category": "시장·가격",
+      "summary": "탄소 배출권 비용 증가 같은 부담 요인이 함께 작용하는 모습이다. 특히 대한항공과 아시아나항공의 통합... 2024년부터 2026년까지 국적사 11곳의 탄소 배출권 구입 비용은 총 3354억원으로 추산된다. 대한항공이...",
+      "source": "ebn.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1725988",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "ebn.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -304,8 +498,8 @@
         "배출권"
       ],
       "duplicateSources": [
-        "한국NGO신문",
         "ngonews.kr",
+        "한국NGO신문",
         "newstree.kr",
         "뉴스;트리"
       ],
@@ -1339,16 +1533,13 @@
         "cstimes.com",
         "digitalchosun.dizzo.com",
         "slist.kr",
-        "discoverynews.kr",
         "inews24.com",
-        "pointdaily.co.kr",
         "글로벌이코노믹",
         "etoday.co.kr",
-        "newspim.com",
+        "뉴스핌",
         "metroseoul.co.kr",
         "socialvalue.kr",
         "asiatime.co.kr",
-        "biz.heraldcorp.com",
         "getnews.co.kr",
         "biz.chosun.com",
         "g-enews.com",
@@ -1368,7 +1559,6 @@
         "businessplus.kr",
         "포춘코리아",
         "fetv.co.kr",
-        "머니투데이",
         "mt.co.kr",
         "매일일보",
         "m-i.kr",
@@ -1418,6 +1608,7 @@
         "sentv.co.kr",
         "kfenews.co.kr",
         "wowtv.co.kr",
+        "newspim.com",
         "브릿지경제",
         "moneystorm.kr",
         "dealsitetv.com",
@@ -1428,14 +1619,17 @@
         "wsobi.com",
         "huffingtonpost.kr",
         "news1.kr",
-        "연합뉴스",
         "yna.co.kr",
         "ftoday.co.kr",
         "아시아경제",
         "view.asiae.co.kr",
         "catchnews.kr",
         "thefairnews.co.kr",
-        "뉴스핌",
+        "discoverynews.kr",
+        "pointdaily.co.kr",
+        "biz.heraldcorp.com",
+        "머니투데이",
+        "연합뉴스",
         "v.daum.net",
         "asiae.co.kr",
         "뉴시스",
@@ -6511,8 +6705,8 @@
       ],
       "duplicateSources": [
         "v.daum.net",
-        "연합뉴스",
-        "yna.co.kr"
+        "yna.co.kr",
+        "연합뉴스"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -14572,15 +14766,15 @@
         "온실가스 배출권"
       ],
       "duplicateSources": [
-        "연합뉴스",
+        "yna.co.kr",
         "오토투데이",
+        "연합뉴스",
         "한국방송뉴스",
         "ikbn.news",
         "한방통신사",
         "shinailbo.co.kr",
         "worktoday.co.kr",
         "seoulfn.com",
-        "yna.co.kr",
         "etoday.co.kr",
         "econonews.co.kr",
         "ebn.co.kr",
