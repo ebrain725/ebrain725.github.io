@@ -1,11 +1,7 @@
 #!/usr/bin/env python3
-"""Expand and preserve climate-ministry policy history with the shared 30-keyword set.
+"""Expand and preserve climate-ministry history using the shared keyword configuration.
 
-The seven direct ETS keywords are matched against titles and RSS descriptions.
-The 23 broader climate, industry, trade and power keywords are accepted only
-when they appear in the title. This is the same keyword split used by the
-industrial-ministry collector, while keeping false positives from broad body
-text under control.
+Core keywords match titles and RSS descriptions. Broader keywords match titles.
 """
 
 from __future__ import annotations
@@ -37,7 +33,7 @@ HISTORY_PATH = ROOT / "public" / "data" / "policy-official-history.json"
 SUMMARY_PATH = ROOT / "public" / "data" / "policy-official-history-summary.json"
 START_DATE = "2015-01-01"
 DEFAULT_LOOKBACK_DAYS = 60
-EXPANSION_VERSION = "2026-09-09-v1-shared-30-keywords"
+EXPANSION_VERSION = "2026-09-11-v1-38-topics"
 CLIMATE_SECTIONS = {"press", "notice"}
 VALID_SECTIONS = {"press", "notice", "krx_notice"}
 MCEE_HOSTS = {"mcee.go.kr", "www.mcee.go.kr"}
@@ -93,10 +89,10 @@ def load_keywords() -> tuple[list[str], list[str]]:
     document = json.loads(KEYWORD_PATH.read_text(encoding="utf-8"))
     core = dedupe(document.get("titleAndContent", []))
     broad = [value for value in dedupe(document.get("titleOnly", [])) if value not in core]
-    if len(core) != 7 or len(broad) != 23:
-        raise RuntimeError(
-            f"공유 공식자료 키워드는 핵심 7개·확대 23개여야 합니다: {len(core)}/{len(broad)}"
-        )
+    if not core or not broad:
+        raise RuntimeError("공유 공식자료의 핵심·확대 키워드가 비었습니다.")
+    if document.get("schemaVersion") != EXPANSION_VERSION:
+        raise RuntimeError("공유 키워드 설정 버전과 수집기 버전이 다릅니다.")
     return core, broad
 
 
@@ -589,7 +585,7 @@ def self_test() -> None:
     assert matched[1]["matchedFields"] == ["title"]
     assert not rows[2]["matchedKeywords"]
     core, broad = load_keywords()
-    assert len(core) == 7 and len(broad) == 23
+    assert core and broad
     print("CLIMATE_EXPANDED_SELF_TEST=PASS")
 
 
@@ -694,7 +690,7 @@ def main() -> int:
     history["queryStartDate"] = query_start
     history["queryEndDate"] = query_end
     history["scope"] = {
-        "ministry": "기후부 보도자료·공지사항 중 핵심 7개는 제목·본문, 확대 23개는 제목에 포함된 공식자료",
+        "ministry": "기후부 보도자료·공지사항: 핵심 키워드는 제목·본문, 확대 키워드는 제목으로 판정; 이전 이력 보존",
         "krx": "한국거래소 배출권시장 공지사항 일반 게시물 전체",
         "keywords": {"titleAndContent": core, "titleOnly": broad},
     }

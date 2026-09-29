@@ -62,7 +62,7 @@ jobs:
             exit 1
           }
           test -f config/motie_policy_keywords.json || {
-            echo "::error::산업부와 공유할 30개 키워드 설정이 없습니다."
+            echo "::error::산업부와 공유할 키워드 설정이 없습니다."
             exit 1
           }
 
@@ -79,36 +79,10 @@ jobs:
           # 산업부 항목이 기후부 공지로 오분류되지 않도록 먼저 분리한다.
           python scripts/sync_motie_official_history.py --remove-from-policy
 
-          full=false
-          if ! python - <<'PY'
-          import json
-          from pathlib import Path
-
-          history = json.loads(
-              Path("public/data/policy-official-history.json").read_text(encoding="utf-8")
-          )
-          marker = history.get("climateKeywordExpansion") or {}
-          raise SystemExit(
-              0
-              if marker.get("version") == "2026-09-09-v1-shared-30-keywords"
-              else 1
-          )
-          PY
-          then
-            full=true
-          fi
-
-          if [[ "$full" == "true" ]]; then
-            echo "기후부 보도자료·공지사항을 2015-01-01부터 30개 키워드로 전수 재수집합니다."
-            python scripts/sync_climate_policy_expanded.py \
-              --start-date 2015-01-01 \
-              --full
-          else
-            echo "기후부 확대 키워드 이력을 최근 60일 범위로 증분 갱신합니다."
-            python scripts/sync_climate_policy_expanded.py \
-              --start-date 2015-01-01 \
-              --lookback-days 60
-          fi
+          echo "기후부 확대 키워드 이력을 최근 60일 범위로 증분 갱신합니다."
+          python scripts/sync_climate_policy_expanded.py \
+            --start-date 2015-01-01 \
+            --lookback-days 60
 
       - name: 확대 이력과 대시보드 병합 검증
         shell: bash
@@ -135,15 +109,15 @@ jobs:
           summary = json.loads(summary_path.read_text(encoding="utf-8"))
           keyword_config = json.loads(keyword_path.read_text(encoding="utf-8"))
           marker = history.get("climateKeywordExpansion") or {}
-          if marker.get("version") != "2026-09-09-v1-shared-30-keywords":
+          if marker.get("version") != keyword_config.get("schemaVersion"):
               raise SystemExit(f"기후부 확대 버전이 올바르지 않습니다: {marker}")
           rule = marker.get("keywordRule") or {}
           if rule.get("titleAndContent") != keyword_config.get("titleAndContent"):
               raise SystemExit("기후부 핵심 키워드가 산업부 설정과 다릅니다.")
           if rule.get("titleOnly") != keyword_config.get("titleOnly"):
               raise SystemExit("기후부 확대 키워드가 산업부 설정과 다릅니다.")
-          if len(rule.get("titleAndContent", [])) != 7 or len(rule.get("titleOnly", [])) != 23:
-              raise SystemExit("기후부 키워드 수가 핵심 7개·확대 23개가 아닙니다.")
+          if not rule.get("titleAndContent") or not rule.get("titleOnly"):
+              raise SystemExit("기후부 핵심·확대 키워드가 비었습니다.")
 
           items = history.get("items", [])
           coverage = history.get("coverage") or {}
@@ -160,9 +134,9 @@ jobs:
           if int(counts.get("krx_notice", 0)) < 312:
               raise SystemExit(f"한국거래소 이력이 감소했습니다: {counts}")
           if int(related.get("press", 0)) <= 0 or int(related.get("notice", 0)) <= 0:
-              raise SystemExit(f"확대 23개 키워드로 추가된 기후부 자료가 없습니다: {related}")
+              raise SystemExit(f"확대 키워드로 추가된 기후부 자료가 없습니다: {related}")
           if int(direct.get("press", 0)) <= 0 or int(direct.get("notice", 0)) <= 0:
-              raise SystemExit(f"기본 7개 키워드 자료가 비었습니다: {direct}")
+              raise SystemExit(f"기본 키워드 자료가 비었습니다: {direct}")
           if history.get("requestedStartDate") != "2015-01-01":
               raise SystemExit("공식자료 기준일이 2015-01-01이 아닙니다.")
 
@@ -291,7 +265,9 @@ jobs:
 
                   summary = load("data/policy-official-history-summary.json")
                   policies = load("data/policies.json")
-                  if summary.get("keywordExpansionVersion") != "2026-09-09-v1-shared-30-keywords":
+                  with open("config/motie_policy_keywords.json", encoding="utf-8") as handle:
+                      keyword_version = json.load(handle)["schemaVersion"]
+                  if summary.get("keywordExpansionVersion") != keyword_version:
                       raise RuntimeError("공개 확대 버전이 일치하지 않습니다.")
                   counts = summary.get("counts") or {}
                   related = summary.get("relatedCounts") or {}
