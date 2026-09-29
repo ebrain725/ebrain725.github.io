@@ -14,9 +14,11 @@ on:
         required: false
         default: "manual"
         type: string
-  # Native backup: 09:35, 12:35, 15:35, 18:35, 21:35 KST.
-  # A successful external run within the preceding 90 minutes makes this a no-op.
+  # Native checks near the external dispatch: 08:27, 10:27, 13:27, 15:27, 18:27, 21:27 KST.
+  # A second backup runs at 09:35, 12:35, 15:35, 18:35, 21:35 KST.
+  # Freshness preflight skips collection when data was updated within 90 minutes.
   schedule:
+    - cron: "27 23,1,4,6,9,12 * * *"
     - cron: "35 0,3,6,9,12 * * *"
 
 permissions:
@@ -183,7 +185,7 @@ jobs:
         run: |
           set -euo pipefail
           output="public/data/bills.json"
-          if ! python scripts/sync_bills.py; then
+          if ! timeout --signal=TERM --kill-after=10s 480s python scripts/sync_bills.py; then
             echo "::warning::국회 법안 수집 실패. 기존 데이터로 계속합니다."
             if git cat-file -e "HEAD:${output}" 2>/dev/null; then
               git restore --source=HEAD --worktree -- "$output"
@@ -199,7 +201,7 @@ jobs:
         run: |
           set -euo pipefail
           output="public/data/assembly_seminars.json"
-          if ! python scripts/sync_assembly_seminars.py; then
+          if ! timeout --signal=TERM --kill-after=10s 180s python scripts/sync_assembly_seminars.py; then
             echo "::warning::국회 세미나 수집 실패. 기존 데이터로 계속합니다."
             if git cat-file -e "HEAD:${output}" 2>/dev/null; then
               git restore --source=HEAD --worktree -- "$output"
