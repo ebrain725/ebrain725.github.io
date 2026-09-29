@@ -1,8 +1,7 @@
 name: Sync KRX Daily Trading Trends
 
 on:
-  # 기존 cron-job.org가 실행하는 정책 워크플로 완료 신호만 이용합니다.
-  # 기존 정책·시장 워크플로 파일과 스케줄은 변경하지 않습니다.
+  # 정책 수집 완료 신호와 독립 예약으로 일일 거래동향을 갱신합니다.
   # 수집기·워크플로 코드가 바뀐 경우에는 배포 직후 1회 검증 수집합니다.
   push:
     branches:
@@ -11,9 +10,13 @@ on:
       - scripts/sync_krx_daily_trends.py
       - scripts/krx_daily_manual_overrides.json
       - .github/workflows/sync-krx-daily-trends.yml
+  schedule:
+    # 정책 워크플로 완료 이벤트 누락에도 평일 08:55·18:55 KST 수집
+    - cron: "55 23 * * 0-4"
+    - cron: "55 9 * * 1-5"
   workflow_run:
     workflows:
-      - Sync Ministry Policies
+      - Sync Policy Radar
     types:
       - completed
   workflow_dispatch:
@@ -61,6 +64,7 @@ jobs:
     if: >-
       (github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main') ||
       (github.event_name == 'push' && github.ref == 'refs/heads/main') ||
+      (github.event_name == 'schedule' && github.ref == 'refs/heads/main') ||
       (github.event_name == 'workflow_run' &&
        github.event.workflow_run.head_branch == 'main' &&
        github.event.workflow_run.event == 'workflow_dispatch')
@@ -101,7 +105,7 @@ jobs:
               exit 1
             fi
             hour="$(TZ=Asia/Seoul date --date="$parent_started" +%H)"
-            # 기존 외부 스케줄의 아침·저녁 실행만 활용합니다.
+            # 외부 스케줄의 아침·저녁 실행만 활용합니다.
             if [[ "$hour" != "08" && "$hour" != "18" ]]; then
               should_run=false
               echo "KRX 일일동향 생략: 상위 실행 시작 KST ${hour}시는 08시·18시 수집 창이 아닙니다."
