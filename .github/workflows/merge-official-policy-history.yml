@@ -1,9 +1,9 @@
 name: Merge Complete Official Policy History
 
 on:
-  workflow_run:
-    workflows: ["Sync Ministry Policies"]
-    types: [completed]
+  # 공식자료 장기 이력은 야간에 한 번 갱신하고, 완료 후 산업부 이력으로 연결합니다.
+  schedule:
+    - cron: "30 13 * * *" # 22:30 KST
   workflow_dispatch:
   push:
     branches: [main]
@@ -30,7 +30,6 @@ env:
 
 jobs:
   merge-history:
-    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
