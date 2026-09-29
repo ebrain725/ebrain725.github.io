@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-09-29T15:03:07+09:00",
+  "generatedAt": "2026-09-29T15:15:21+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 862,
+  "itemCount": 863,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-09-29",
   "sourceCommitsScanned": 0,
@@ -465,6 +465,29 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "dde809e7ed1713b9",
+      "publishedAt": "2026-09-29",
+      "title": "Korean airlines scramble for carbon credits",
+      "category": "제도",
+      "summary": "21 to cooperate on compliance with the Carbon Offsetting and Reduction Scheme for International Aviation (CORSIA) and the Korea Emissions Trading Scheme ( K-ETS ), the airline said Monday. Under...",
+      "source": "mk.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.mk.co.kr/article/12163662",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "K-ETS"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "mk.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
       "region": "국내"
     },
     {
@@ -1630,7 +1653,7 @@
         "ddaily.co.kr",
         "econovill.com",
         "smarttoday.co.kr",
-        "뉴스1",
+        "news1.kr",
         "viva100.com",
         "dailycar.co.kr",
         "thebigdata.co.kr",
@@ -1653,6 +1676,7 @@
         "iminju.net",
         "ttlnews.com",
         "e-science.co.kr",
+        "주간한국",
         "weekly.hankooki.com",
         "delighti.co.kr",
         "smedaily.co.kr",
@@ -1664,7 +1688,6 @@
         "todayeconomic.com",
         "widedaily.com",
         "newsroad.co.kr",
-        "연합뉴스TV",
         "yonhapnewstv.co.kr",
         "뉴시안",
         "newsian.co.kr",
@@ -1701,20 +1724,20 @@
         "wsobi.com",
         "huffingtonpost.kr",
         "v.daum.net",
-        "news1.kr",
         "yna.co.kr",
         "ftoday.co.kr",
         "아시아경제",
         "view.asiae.co.kr",
+        "뉴시스",
         "catchnews.kr",
         "thefairnews.co.kr",
-        "주간한국",
+        "뉴스1",
+        "연합뉴스TV",
         "discoverynews.kr",
         "pointdaily.co.kr",
         "biz.heraldcorp.com",
         "연합뉴스",
         "asiae.co.kr",
-        "뉴시스",
         "더팩트",
         "2news.co.kr",
         "라이센스뉴스",
@@ -12015,8 +12038,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "뉴스1",
-        "news1.kr"
+        "news1.kr",
+        "뉴스1"
       ],
       "searchProviders": [
         "Google News RSS",

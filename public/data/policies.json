@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-09-29T15:03:01+09:00",
+  "lastSync": "2026-09-29T15:15:15+09:00",
   "keywords": [
     "배출권",
     "배출권거래제",
@@ -27,10 +27,10 @@
     "Google News RSS",
     "NAVER API HUB"
   ],
-  "warning": null,
+  "warning": "기후부 보도자료: 키워드별 공식검색과 기본 RSS 복구에 모두 실패했습니다: 배출권: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 배출권거래제: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 유상할당: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 유상경매: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 탄소시장: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 시장안정화: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 상쇄배출권: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 기본 RSS 복구: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 기후부 공지·공고: 키워드별 공식검색과 기본 RSS 복구에 모두 실패했습니다: 배출권: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 배출권거래제: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 유상할당: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 유상경매: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 탄소시장: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 시장안정화: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 상쇄배출권: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 기본 RSS 복구: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out>",
   "aiInsight": {
     "summary": "최근 공식자료의 직접적인 수급 변수는 유상경매입니다. 최근 경매가 높은 낙찰가로 소화돼 공급보다 이행수요가 강하다는 신호입니다.",
-    "generatedAt": "2026-09-29T15:03:01+09:00",
+    "generatedAt": "2026-09-29T15:15:15+09:00",
     "basisLatestDate": "2026-09-28",
     "basisCount": 10,
     "source": "fallback",
@@ -1017,6 +1017,29 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "dde809e7ed1713b9",
+      "publishedAt": "2026-09-29",
+      "title": "Korean airlines scramble for carbon credits",
+      "category": "제도",
+      "summary": "21 to cooperate on compliance with the Carbon Offsetting and Reduction Scheme for International Aviation (CORSIA) and the Korea Emissions Trading Scheme ( K-ETS ), the airline said Monday. Under...",
+      "source": "mk.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.mk.co.kr/article/12163662",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "K-ETS"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "mk.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
       "region": "국내"
     },
     {
@@ -2234,7 +2257,7 @@
         "ddaily.co.kr",
         "econovill.com",
         "smarttoday.co.kr",
-        "뉴스1",
+        "news1.kr",
         "viva100.com",
         "dailycar.co.kr",
         "thebigdata.co.kr",
@@ -2257,6 +2280,7 @@
         "iminju.net",
         "ttlnews.com",
         "e-science.co.kr",
+        "주간한국",
         "weekly.hankooki.com",
         "delighti.co.kr",
         "smedaily.co.kr",
@@ -2268,7 +2292,6 @@
         "todayeconomic.com",
         "widedaily.com",
         "newsroad.co.kr",
-        "연합뉴스TV",
         "yonhapnewstv.co.kr",
         "뉴시안",
         "newsian.co.kr",
@@ -2305,20 +2328,20 @@
         "wsobi.com",
         "huffingtonpost.kr",
         "v.daum.net",
-        "news1.kr",
         "yna.co.kr",
         "ftoday.co.kr",
         "아시아경제",
         "view.asiae.co.kr",
+        "뉴시스",
         "catchnews.kr",
         "thefairnews.co.kr",
-        "주간한국",
+        "뉴스1",
+        "연합뉴스TV",
         "discoverynews.kr",
         "pointdaily.co.kr",
         "biz.heraldcorp.com",
         "연합뉴스",
         "asiae.co.kr",
-        "뉴시스",
         "더팩트",
         "2news.co.kr",
         "라이센스뉴스",
@@ -13154,8 +13177,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "뉴스1",
-        "news1.kr"
+        "news1.kr",
+        "뉴스1"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -249774,10 +249797,10 @@
   },
   "newsRetention": {
     "policy": "append-only",
-    "lastMergedAt": "2026-09-29T15:03:07+09:00",
-    "itemCount": 862,
-    "archiveBefore": 859,
-    "currentBefore": 760,
+    "lastMergedAt": "2026-09-29T15:15:21+09:00",
+    "itemCount": 863,
+    "archiveBefore": 862,
+    "currentBefore": 761,
     "gitRecoveryEnabled": false
   }
 }
