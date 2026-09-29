@@ -1,10 +1,7 @@
 name: Apply Policy Radar 38 Topics
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - ".github/workflows/apply-policy-radar-38-topics.yml"
+  # 전체 2015년 이후 이력 재수집은 검토 후 수동 실행합니다.
   workflow_dispatch:
 
 permissions:
@@ -94,22 +91,22 @@ jobs:
                       raise SystemExit("산업부 수집기 main 실행부를 찾지 못했습니다.")
                   hook = r'''
 
-# POLICY_RADAR_38_TOPIC_HOOK
-_original_main_without_policy_radar_taxonomy = main
+          # POLICY_RADAR_38_TOPIC_HOOK
+          _original_main_without_policy_radar_taxonomy = main
 
 
-def main() -> int:
-    """Run the existing collector, then apply the shared contextual taxonomy."""
-    import sys
+          def main() -> int:
+              """Run the existing collector, then apply the shared contextual taxonomy."""
+              import sys
 
-    result = _original_main_without_policy_radar_taxonomy()
-    args = set(sys.argv[1:])
-    if result == 0 and "--self-test" not in args and "--remove-from-policy" not in args:
-        from apply_policy_radar_topic_taxonomy import apply_taxonomy
+              result = _original_main_without_policy_radar_taxonomy()
+              args = set(sys.argv[1:])
+              if result == 0 and "--self-test" not in args and "--remove-from-policy" not in args:
+                  from apply_policy_radar_topic_taxonomy import apply_taxonomy
 
-        apply_taxonomy()
-    return result
-'''
+                  apply_taxonomy()
+              return result
+          '''
                   text = text.replace(marker, hook + marker, 1)
 
               if text == original:
