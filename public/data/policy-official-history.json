@@ -2,7 +2,7 @@
   "schemaVersion": "1.0",
   "requestedStartDate": "2015-01-01",
   "startedAt": "2026-09-09T19:46:11+09:00",
-  "generatedAt": "2026-09-30T03:45:51+09:00",
+  "generatedAt": "2026-10-01T03:30:10+09:00",
   "scope": {
     "ministry": "기후부 보도자료·공지사항: 핵심 키워드는 제목·본문, 확대 키워드는 제목으로 판정; 이전 이력 보존",
     "krx": "한국거래소 배출권시장 공지사항 일반 게시물 전체",
@@ -126,7 +126,7 @@
     {
       "source": "기후부 보도자료",
       "section": "press",
-      "requestedStartDate": "2026-08-01",
+      "requestedStartDate": "2026-08-02",
       "transport": "unfiltered-rss-local-split-keyword-filter",
       "keywordRule": {
         "titleAndContent": [
@@ -246,14 +246,14 @@
       "pageSize": 1000,
       "pagesFetched": 1,
       "rawRows": 1000,
-      "inRangeMatchedRows": 30,
-      "itemCount": 30,
+      "inRangeMatchedRows": 31,
+      "itemCount": 31,
       "directCount": 6,
-      "relatedCount": 24,
+      "relatedCount": 25,
       "earliest": "2026-08-07",
-      "latest": "2026-09-29",
-      "oldestSeen": "2025-11-18",
-      "newestSeen": "2026-09-29",
+      "latest": "2026-09-30",
+      "oldestSeen": "2025-11-20",
+      "newestSeen": "2026-09-30",
       "crossedRequestedStart": true,
       "stopReason": "date-boundary",
       "complete": true,
@@ -332,7 +332,7 @@
         "불시정지": 0,
         "정비연장": 0,
         "계획예방정비": 0,
-        "화재": 0,
+        "화재": 1,
         "폭발": 0,
         "침수": 2,
         "가동중단": 0,
@@ -372,7 +372,7 @@
     {
       "source": "기후부 공지·공고",
       "section": "notice",
-      "requestedStartDate": "2026-08-01",
+      "requestedStartDate": "2026-08-02",
       "transport": "unfiltered-rss-local-split-keyword-filter",
       "keywordRule": {
         "titleAndContent": [
@@ -499,7 +499,7 @@
       "earliest": "2026-08-05",
       "latest": "2026-09-29",
       "oldestSeen": "2026-06-02",
-      "newestSeen": "2026-09-29",
+      "newestSeen": "2026-10-01",
       "crossedRequestedStart": true,
       "stopReason": "date-boundary",
       "complete": true,
@@ -635,11 +635,11 @@
   ],
   "warnings": [],
   "coverage": {
-    "itemCount": 1669,
+    "itemCount": 1670,
     "counts": {
       "krx_notice": 313,
       "notice": 429,
-      "press": 927
+      "press": 928
     },
     "earliest": {
       "krx_notice": "2015-01-07",
@@ -649,14 +649,14 @@
     "latest": {
       "krx_notice": "2026-09-28",
       "notice": "2026-09-29",
-      "press": "2026-09-29"
+      "press": "2026-09-30"
     },
     "directCounts": {
       "press": 432,
       "notice": 222
     },
     "relatedCounts": {
-      "press": 495,
+      "press": 496,
       "notice": 207
     },
     "labels": {
@@ -666,6 +666,24 @@
     }
   },
   "items": [
+    {
+      "id": "2de785a17ee229db",
+      "publishedAt": "2026-09-30",
+      "title": "유해화학물질 물류창고 화재 시 수질오염 복합사고 막는다… 비상대응정보집 발간",
+      "category": "제도",
+      "summary": "▷ 경기권 물류사업장 69곳 대상 1차 발간에 이어 전국 92곳 대상으로 2차 발간 ▷ 평택 화재 시 실효성 입증… 농수로 위·경도 좌표 등 추가해 현장 정확성 극대화 ▷ 전국 27개 시군구 재난대응부서 배포로 화학재난 2차 복합사고 원천 차단 기대 기후에너지환경부 소속 화학물질안전원(원장 박봉균)은 유해화학물질 물류창고 화재 발생 시 소방용수의 수계 유입으로 인한 2차 환경오염 등 복합사고를 예방하기 위해 ‘유해화학물질 보관·저장업 비상대응정보집’을 전국 27개 시군구 재난대응부서에 9월 30일부터 배포한다고 밝혔다. 이번 정보집은 유해화학물질과 소방용수가 수계로 유입되어 발생할 수 있는 환경오염을 초기 단계에서 차단하기 위해 제작됐다. 정보집에는 △사업장 정보 및 취급 물질, △전체 배치도, △소방용수 발생 예측량, △사업장 내·외부 소방용수 이동 경로, △수계 유입 예상 경로, △주요 차단 지점별 대책 등 현장 대응에 필요한 핵심정보를 한데 담았다. 종전에는 수계 유입을 막기 위한 사업장 정보가 없거나, 사업장 일반 정보, 취급 물질 및 배치도 수준으로만 관리돼 사고대응에 한계가 있었다. 반면 이번 정보집은 사고 대응자가 사업장 현황과 주요 위험정보, 방재 경로를 한눈에 확인할 수 있도록 개선했으며, 현장 확인을 통해 정보의 정확도를 높였다. 앞서 화학물질안전원은 올해 4월 경기지역 69곳의 물류사업장을 대상으로 정보집을 시범 발간한 바 있다. 해당 정보집은 지난 8월에 발생한 평택 물류창고 화재 당시 현장 대응과 방재 둑 사전 설치에 활용되어 수계 유입 차단 효과를 입증했다. 이에 화학물질안전원은 현장의 목소리를 추가 반영하여 전국의 총 92곳의 물류사업장을 대상으로 이번 정보집을 확대 구축했다. 특히 현장에서 즉시 활용할 수 있도록 방재장비 사용방법과 방재요령을 보완했으며, 주소만으로 위치를 특정하기 어려운 농수로 등 수계 구간에는 위·경도 좌표를 추가해 방재지점 탐색의 정확성을 높였다. 박봉균 화학물질안전원장은 “유해화학물질 취급 사업장에서 화재 등 사고가 발생했을 때 2차 환경피해를 막기 위해서는 신속하고 정확한 초동대응이 무엇보다 중요하다”라며, “앞으로도 국민의 안전과 환경을 지킬 수 있도록 현장에서 실제 활용할 수 있는 화학사고 대응정보를 지속적으로 확충해 촘촘한 화학사고 안전망을 구축하겠다”라고 밝혔다. 붙임 비상대응정보집 예시. 끝.",
+      "source": "기후부 보도자료",
+      "sourceType": "official",
+      "section": "press",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=1000&maxIndexPages=10&searchKey=&searchValue=&menuId=10598&orgCd=&boardMasterId=939&boardId=1895120",
+      "matchedKeywords": [
+        "화재"
+      ],
+      "matchedFields": [
+        "title"
+      ],
+      "keywordScope": "related"
+    },
     {
       "id": "f5ce4f385f739143",
       "publishedAt": "2026-09-29",
@@ -96998,8 +97016,8 @@
     }
   ],
   "collectionMode": "incremental",
-  "queryStartDate": "2026-08-01",
-  "queryEndDate": "2026-09-30",
+  "queryStartDate": "2026-08-02",
+  "queryEndDate": "2026-10-01",
   "climateKeywordExpansion": {
     "version": "2026-09-11-v1-38-topics",
     "sharedWith": "산업부 보도자료·공지사항",
@@ -97120,8 +97138,8 @@
       ]
     },
     "collectionMode": "incremental",
-    "queryStartDate": "2026-08-01",
-    "queryEndDate": "2026-09-30"
+    "queryStartDate": "2026-08-02",
+    "queryEndDate": "2026-10-01"
   },
   "policyEventTaxonomy": {
     "version": "2026-09-11-v1-user-38-events",
