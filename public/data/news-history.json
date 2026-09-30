@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-09-30T21:56:51+09:00",
+  "generatedAt": "2026-10-01T03:05:05+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 918,
+  "itemCount": 919,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-09-30",
   "sourceCommitsScanned": 0,
@@ -83,8 +83,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "hankookilbo.com",
-        "한국일보"
+        "한국일보",
+        "hankookilbo.com"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -882,11 +882,36 @@
         "온실가스 배출권"
       ],
       "duplicateSources": [
-        "Chosunbiz",
-        "biz.chosun.com"
+        "biz.chosun.com",
+        "Chosunbiz"
       ],
       "searchProviders": [
         "Google News RSS",
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 2,
+      "region": "국내"
+    },
+    {
+      "id": "aaa6332e7bd1e5ea",
+      "publishedAt": "2026-09-30",
+      "title": "R]전기료 인하만으론 부족..철강업계 \"추가 지원 필요\"",
+      "category": "제도",
+      "summary": "당장 탄소 배출권 구매 부담이 커지고 있고, 전기로와 수소환원제철 등 저탄소 설비 전환에도 막대한 비용이... ◀ INT ▶ 송재만/ 철강노동조합연대 의장 \"(현대제철은) 앞으로 탄소 배출권 도 연간 약 1천억 원 내야 하고...",
+      "source": "andongmbc.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://andongmbc.co.kr/adboard/NewsView85034",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "phmbc.co.kr",
+        "andongmbc.co.kr"
+      ],
+      "searchProviders": [
         "NAVER API HUB"
       ],
       "duplicateCount": 2,
@@ -2013,8 +2038,8 @@
         "탄소배출권"
       ],
       "duplicateSources": [
-        "newsworks.co.kr",
-        "뉴스웍스"
+        "뉴스웍스",
+        "newsworks.co.kr"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -3002,7 +3027,7 @@
         "digitalchosun.dizzo.com",
         "글로벌이코노믹",
         "이투데이",
-        "뉴스핌",
+        "newspim.com",
         "더팩트",
         "metroseoul.co.kr",
         "socialvalue.kr",
@@ -3029,6 +3054,7 @@
         "iminju.net",
         "ttlnews.com",
         "e-science.co.kr",
+        "주간한국",
         "weekly.hankooki.com",
         "delighti.co.kr",
         "smedaily.co.kr",
@@ -3069,7 +3095,6 @@
         "sentv.co.kr",
         "kfenews.co.kr",
         "wowtv.co.kr",
-        "newspim.com",
         "브릿지경제",
         "viva100.com",
         "moneystorm.kr",
@@ -3089,8 +3114,8 @@
         "newsis.com",
         "catchnews.kr",
         "thefairnews.co.kr",
+        "뉴스핌",
         "fortunekorea.co.kr",
-        "주간한국",
         "inews24.com",
         "businessplus.kr",
         "asiae.co.kr",
@@ -4012,8 +4037,8 @@
         "유상할당"
       ],
       "duplicateSources": [
-        "Chosunbiz",
-        "biz.chosun.com"
+        "biz.chosun.com",
+        "Chosunbiz"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -8177,8 +8202,8 @@
       ],
       "duplicateSources": [
         "v.daum.net",
-        "연합뉴스",
-        "yna.co.kr"
+        "yna.co.kr",
+        "연합뉴스"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -9322,8 +9347,8 @@
         "유상할당"
       ],
       "duplicateSources": [
-        "newstree.kr",
-        "뉴스;트리"
+        "뉴스;트리",
+        "newstree.kr"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -13482,8 +13507,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "newstree.kr",
-        "뉴스;트리"
+        "뉴스;트리",
+        "newstree.kr"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -16238,9 +16263,9 @@
         "온실가스 배출권"
       ],
       "duplicateSources": [
-        "연합뉴스",
-        "오토투데이",
         "yna.co.kr",
+        "오토투데이",
+        "연합뉴스",
         "한국방송뉴스",
         "ikbn.news",
         "한방통신사",
