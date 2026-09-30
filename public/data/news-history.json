@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-09-30T13:12:59+09:00",
+  "generatedAt": "2026-09-30T14:52:55+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 897,
+  "itemCount": 901,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-09-30",
   "sourceCommitsScanned": 0,
@@ -137,6 +137,29 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "449d0620a68486e1",
+      "publishedAt": "2026-09-30",
+      "title": "임업진흥원, '우리숲더하기 플러스' 캠페인 돌입",
+      "category": "상쇄·외부사업",
+      "summary": "특히 캠페인에서 쓰이는 크레딧은 국내 자발적 탄소시장 인 산림탄소상쇄제도에서 공식 인증 받은 것으로, 거래 대금 전액이 산림의 지속 가능한 경영과 탄소흡수 능력 확충에 쓰여 환경적 의미를 더한다. 이번 캠페인은...",
+      "source": "amnews.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.amnews.co.kr/news/articleView.html?idxno=74787",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "amnews.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
       "region": "국내"
     },
     {
@@ -304,6 +327,30 @@
       "region": "해외"
     },
     {
+      "id": "e1c391076b466573",
+      "publishedAt": "2026-09-30",
+      "title": "메텍홀딩스, 'Climate Week NYC 연계 KCTS 2026' 참가",
+      "category": "제도",
+      "summary": "한편 축산 메탄 감축과 연계된 탄소 배출권 (carbon credit) 시장의 성장 전망과 관련해 시장조사업체 Growth Market Reports에 따르면 글로벌 축산 메탄 감축 관련 탄소 배출권 시장 규모는 2024년 약 18억7000만...",
+      "source": "aflnews.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.aflnews.co.kr/news/articleView.html?idxno=329048",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "aflnews.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "a35c8d2f0cc4bb39",
       "publishedAt": "2026-09-30",
       "title": "두산밥캣 협력부터 AI 비용 절감까지…K스타트업, 뉴욕서 투자 유치 도...",
@@ -339,7 +386,9 @@
       "url": "https://www.esgeconomy.com/news/articleView.html?idxno=16874",
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
-        "탄소시장"
+        "탄소시장",
+        "배출권",
+        "배출권거래제"
       ],
       "duplicateSources": [
         "esgeconomy.com"
@@ -474,6 +523,33 @@
       "region": "국내"
     },
     {
+      "id": "cada2d4adffe0342",
+      "publishedAt": "2026-09-30",
+      "title": "'탈석탄' 위해서라면…\"月 3230원까지 더 낼 수 있다\"",
+      "category": "제도",
+      "summary": "탈석탄 재원으로는 탄소 배출권 유상할당 수입이 거론됐다. 전문가 조사에서 한국 배출권 거래제(K-ETS) 유상할당 수입을 재원 1순위로 꼽은 비율은 50%였고 1·2순위를 합치면 70%에 달했다. 2030년 유상할당 비중이 50%까지...",
+      "source": "hankyung.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.hankyung.com/article/202609304823i",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권",
+        "유상할당",
+        "K-ETS"
+      ],
+      "duplicateSources": [
+        "hankyung.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "2e50939cfe3e60ff",
       "publishedAt": "2026-09-30",
       "title": "'2025 국가온실가스 순배출량' 5.9억만톤...감축률 1.3% 그쳐",
@@ -495,6 +571,30 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "2543155e5620deea",
+      "publishedAt": "2026-09-30",
+      "title": "\"자연기반 탄소배출권 시장 변화 이렇게 대비하라”…WEF 보고서",
+      "category": "제도",
+      "summary": "\"자연기반 탄소배출권 시장 변화 이렇게 대비하라”…WEF 보고서 넷제로뉴스",
+      "source": "넷제로뉴스",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5ZVXpOX3JWeXZkbDQ2UnVLQlVaZXRHVXBOUG9SeDk1ZGVVdkd1Q0lMb296TDRuNDRaZGMtbGdiWU1sRGdZRlNDYmZYWFdkODNjdVlSOUctMEV5RWFTck9vRV9uemt1NW9wQnc?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "넷제로뉴스"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
       "region": "국내"
     },
     {
@@ -1441,8 +1541,8 @@
         "배출권"
       ],
       "duplicateSources": [
-        "한국NGO신문",
         "ngonews.kr",
+        "한국NGO신문",
         "newstree.kr",
         "뉴스;트리"
       ],
@@ -2043,7 +2143,10 @@
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
         "배출권",
-        "탄소배출권"
+        "탄소배출권",
+        "배출권거래제",
+        "온실가스 배출권",
+        "K-ETS"
       ],
       "duplicateSources": [
         "sateconomy.co.kr"
@@ -2480,7 +2583,6 @@
         "글로벌이코노믹",
         "etoday.co.kr",
         "뉴스핌",
-        "더팩트",
         "metroseoul.co.kr",
         "socialvalue.kr",
         "inews24.com",
@@ -2490,7 +2592,7 @@
         "paxetv.com",
         "tf.co.kr",
         "asiatime.co.kr",
-        "뉴스1",
+        "news1.kr",
         "dailycar.co.kr",
         "thebigdata.co.kr",
         "kbsm.net",
@@ -2504,7 +2606,6 @@
         "m-i.kr",
         "joongangenews.com",
         "fntimes.com",
-        "2news.co.kr",
         "newsprime.co.kr",
         "ebn.co.kr",
         "imaeil.com",
@@ -2525,7 +2626,6 @@
         "newsroad.co.kr",
         "연합뉴스TV",
         "yonhapnewstv.co.kr",
-        "뉴시안",
         "newsian.co.kr",
         "비즈월드",
         "bizwnews.com",
@@ -2561,7 +2661,6 @@
         "wsobi.com",
         "huffingtonpost.kr",
         "v.daum.net",
-        "news1.kr",
         "yna.co.kr",
         "ftoday.co.kr",
         "아시아경제",
@@ -2570,6 +2669,10 @@
         "newsis.com",
         "catchnews.kr",
         "thefairnews.co.kr",
+        "더팩트",
+        "뉴스1",
+        "2news.co.kr",
+        "뉴시안",
         "이투데이",
         "biz.chosun.com",
         "ddaily.co.kr",
@@ -3488,8 +3591,8 @@
         "유상할당"
       ],
       "duplicateSources": [
-        "Chosunbiz",
-        "biz.chosun.com"
+        "biz.chosun.com",
+        "Chosunbiz"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -12882,8 +12985,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "뉴스1",
-        "news1.kr"
+        "news1.kr",
+        "뉴스1"
       ],
       "searchProviders": [
         "Google News RSS",
