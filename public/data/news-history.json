@@ -1,17 +1,136 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-01T03:05:05+09:00",
+  "generatedAt": "2026-10-01T08:12:58+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 919,
+  "itemCount": 924,
   "earliestPublishedAt": "2026-08-06",
-  "latestPublishedAt": "2026-09-30",
+  "latestPublishedAt": "2026-10-01",
   "sourceCommitsScanned": 0,
   "sourceSnapshotsScanned": 0,
   "historicalRowsScanned": 0,
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "708c39a8b32df65d",
+      "publishedAt": "2026-10-01",
+      "title": "후시파트너스-한국투자증권, 기후· 탄소 분야 포괄적 업무협약 체결",
+      "category": "상쇄·외부사업",
+      "summary": "후시파트너스는 탄소배출권 발굴부터 MRV, 거래까지 전 과정을 수직 통합한 국내 유일의 풀스택(Full-Stack) 카본 인프라 기업이다. 방법론 설계와 정부 승인 대응, 데이터 수집·검증, 배출권 인증 및 매각 구조 설계까지...",
+      "source": "mk.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.mk.co.kr/article/12165221",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "mk.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "34a9a88219ae0c7a",
+      "publishedAt": "2026-10-01",
+      "title": "캐나다, 국경 넘는 탄소 감축 실적 거래 틀 검토",
+      "category": "제도",
+      "summary": "국제 탄소시장 에서 거래할 수 있는 길을 넓히되, 한 번 줄인 온실가스를 두 나라가 각각 자국의 감축 실적으로 계산하지 않도록 회계 기준을 갖추는 것이 핵심이다. 캐나다 환경기후변화부는 9월 24일 ‘국제적으로 이전된...",
+      "source": "dailyt.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.dailyt.co.kr/newsView/dlt202610010005",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "dailyt.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "해외"
+    },
+    {
+      "id": "33cd174d24aa4498",
+      "publishedAt": "2026-10-01",
+      "title": "업루트와이, 키르기스스탄서 소수력· 탄소 사업 확대",
+      "category": "제도",
+      "summary": "업루트와이는 국제 자발적 탄소시장 인증기준인 베라(Verra)의 VCS 등록 절차를 추진할 계획이다. △프로젝트설계문서(PDD) 작성 △검증기관(VVB) 심사 △키르기스스탄 환경당국 산하 국가지정기구(DNA)의 승인 등을 거쳐...",
+      "source": "hansbiz.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.hansbiz.co.kr/news/articleView.html?idxno=869206",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "hansbiz.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "a4b52685e1fe1664",
+      "publishedAt": "2026-10-01",
+      "title": "샤오펑, 포르쉐 등과 탄소배출권 거래 총액 10억 위안 돌파…2026년 수익...",
+      "category": "제도",
+      "summary": "중국 전기차 업체 샤오펑(XPENG)이 포르쉐를 비롯한 글로벌 완성차 업체들과 EU·영국·호주 규제를 포괄하는 총 10억 위안(약 2020억 8000만원) 규모의 탄소배출권 거래 계약을 체결했다. 자동차 전문 매체 가스구(Gasgoo)는...",
+      "source": "g-enews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.g-enews.com/view.php?ud=2026093021322627262bd56fbc3c_1",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "g-enews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "842aebf60de51581",
+      "publishedAt": "2026-10-01",
+      "title": "SK이노베이션 E&S, 독자 밸류체인으로 AI·반도체 전력 수요 끌어안는다",
+      "category": "제도",
+      "summary": "현재 국내 발전 시장 은 재생에너지 확대, 노후 LNG 규제 및 탄소 배출권 유상 할당 강화 등 강력한 친환경 정책 기조 아래 놓여 있다. 동시에 전력 수요 성장에 대응하기 위한 공급 안정성 확보라는 과제를 동시에...",
+      "source": "dt.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.dt.co.kr/article/12086807?ref=naver",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권",
+        "유상할당"
+      ],
+      "duplicateSources": [
+        "dt.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
     {
       "id": "fcacdcaf9eed97b9",
       "publishedAt": "2026-09-30",
@@ -186,12 +305,14 @@
         "상쇄배출권"
       ],
       "duplicateSources": [
+        "Chosunbiz",
         "biz.chosun.com"
       ],
       "searchProviders": [
+        "Google News RSS",
         "NAVER API HUB"
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "region": "국내"
     },
     {
@@ -882,8 +1003,8 @@
         "온실가스 배출권"
       ],
       "duplicateSources": [
-        "biz.chosun.com",
-        "Chosunbiz"
+        "Chosunbiz",
+        "biz.chosun.com"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -1506,8 +1627,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "매일노동뉴스",
-        "labortoday.co.kr"
+        "labortoday.co.kr",
+        "매일노동뉴스"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -3027,8 +3148,7 @@
         "digitalchosun.dizzo.com",
         "글로벌이코노믹",
         "이투데이",
-        "newspim.com",
-        "더팩트",
+        "뉴스핌",
         "metroseoul.co.kr",
         "socialvalue.kr",
         "getnews.co.kr",
@@ -3038,11 +3158,12 @@
         "tf.co.kr",
         "asiatime.co.kr",
         "뉴스1",
+        "브릿지경제",
         "dailycar.co.kr",
         "kbsm.net",
         "finomy.com",
         "pinpointnews.co.kr",
-        "포춘코리아",
+        "fortunekorea.co.kr",
         "fetv.co.kr",
         "머니투데이",
         "m-i.kr",
@@ -3050,8 +3171,6 @@
         "fntimes.com",
         "newsprime.co.kr",
         "ebn.co.kr",
-        "imaeil.com",
-        "iminju.net",
         "ttlnews.com",
         "e-science.co.kr",
         "주간한국",
@@ -3068,9 +3187,7 @@
         "newsroad.co.kr",
         "연합뉴스TV",
         "yonhapnewstv.co.kr",
-        "뉴시안",
         "newsian.co.kr",
-        "비즈월드",
         "bizwnews.com",
         "매일일보",
         "edaily.co.kr",
@@ -3091,11 +3208,10 @@
         "sports.hankooki.com",
         "pointe.co.kr",
         "swtvnews.com",
-        "서울경제TV",
         "sentv.co.kr",
         "kfenews.co.kr",
         "wowtv.co.kr",
-        "브릿지경제",
+        "newspim.com",
         "viva100.com",
         "moneystorm.kr",
         "dealsitetv.com",
@@ -3110,12 +3226,17 @@
         "ftoday.co.kr",
         "아시아경제",
         "view.asiae.co.kr",
-        "뉴시스",
         "newsis.com",
         "catchnews.kr",
         "thefairnews.co.kr",
-        "뉴스핌",
-        "fortunekorea.co.kr",
+        "더팩트",
+        "포춘코리아",
+        "imaeil.com",
+        "iminju.net",
+        "뉴시안",
+        "비즈월드",
+        "서울경제TV",
+        "뉴시스",
         "inews24.com",
         "businessplus.kr",
         "asiae.co.kr",
@@ -4037,8 +4158,8 @@
         "유상할당"
       ],
       "duplicateSources": [
-        "biz.chosun.com",
-        "Chosunbiz"
+        "Chosunbiz",
+        "biz.chosun.com"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -8202,8 +8323,8 @@
       ],
       "duplicateSources": [
         "v.daum.net",
-        "yna.co.kr",
-        "연합뉴스"
+        "연합뉴스",
+        "yna.co.kr"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -15710,12 +15831,14 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "m-economynews.com"
+        "m-economynews.com",
+        "M이코노미뉴스"
       ],
       "searchProviders": [
-        "NAVER API HUB"
+        "NAVER API HUB",
+        "Google News RSS"
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "region": "국내"
     },
     {
@@ -16263,9 +16386,9 @@
         "온실가스 배출권"
       ],
       "duplicateSources": [
-        "yna.co.kr",
-        "오토투데이",
         "연합뉴스",
+        "오토투데이",
+        "yna.co.kr",
         "한국방송뉴스",
         "ikbn.news",
         "한방통신사",
