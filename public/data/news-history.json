@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-09-30T08:12:56+09:00",
+  "generatedAt": "2026-09-30T10:12:36+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 883,
+  "itemCount": 887,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-09-30",
   "sourceCommitsScanned": 0,
@@ -12,6 +12,31 @@
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "138131fd97956c9f",
+      "publishedAt": "2026-09-30",
+      "title": "한국탄소 배출권 산업협회, 지자체 온실가스 ‘상시 관리체계’ 전환 제안",
+      "category": "제도",
+      "summary": "온실가스 감축목표 강화와 배출권 거래제 제4차 계획기간(2026~2030년) 시행 등 관련 제도 환경이 변화하면서 지자체의 온실가스 관리 방식도 보다 체계화할 필요가 있다는 설명이다. 한국탄소 배출권 산업협회는 29일 “현재와...",
+      "source": "hankookilbo.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.hankookilbo.com/news/article/A2026092918050001345?did=NA",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "hankookilbo.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
     {
       "id": "137d4aa694c5b169",
       "publishedAt": "2026-09-30",
@@ -81,6 +106,52 @@
         "NAVER API HUB"
       ],
       "region": "국내"
+    },
+    {
+      "id": "ac4616b357677152",
+      "publishedAt": "2026-09-30",
+      "title": "세계 곳곳서 치명적 폭우·태풍…인도·네팔·태국 등 '직격'",
+      "category": "제도",
+      "summary": "조르자 멜로니 이탈리아 총리와 안드레이 바비시 체코 총리는 다음달 15~16일 열리는 유럽연합(EU) 정상회의에서 에너지 비용 절감 및 탄소시장 개편을 위한 공동 제안에 나설 예정이다. 양국은 대체 가스 공급원 확보를...",
+      "source": "edaily.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.edaily.co.kr/News/Read?newsId=02968406645585368&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "edaily.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "해외"
+    },
+    {
+      "id": "5d52f7981ce7a6f0",
+      "publishedAt": "2026-09-30",
+      "title": "[해외브리핑] GRI, 식음료 업종 지속가능성 보고 기준 개발 추진",
+      "category": "제도",
+      "summary": "https://trellis.net/article/ghg-protocol-ami-white-paper-consultation/ 이탈리아·체코 정상, EU 에너지 비용· 탄소시장 개편 공동 제안 조르자 멜로니 이탈리아 총리와 안드레이 바비시 체코 총리가 에너지 비용을...",
+      "source": "esgeconomy.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.esgeconomy.com/news/articleView.html?idxno=16874",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateSources": [
+        "esgeconomy.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
     },
     {
       "id": "39e62081dbbe8fb4",
@@ -166,7 +237,8 @@
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
         "배출권",
-        "KAU26"
+        "KAU26",
+        "온실가스 배출권"
       ],
       "duplicateSources": [
         "biz.chosun.com"
@@ -194,6 +266,29 @@
       ],
       "duplicateSources": [
         "edaily.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "f9067515d260907e",
+      "publishedAt": "2026-09-30",
+      "title": "\"美 연비 규제 완화, 장기적으로 승자는 현대차·기아\"",
+      "category": "제도",
+      "summary": "규제 준수를 위해 전기차 관련 투자를 늘리거나 다른 업체로부터 배출권 을 매입해야 할 부담이 줄어들기 때문이다. NHTSA는 이번 규제 완화로 2027~2031년 자동차 산업의 연비 기술 비용이 기존 1158억달러에서 606억달러로...",
+      "source": "fnnews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.fnnews.com/news/202609300845354533",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "fnnews.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -616,8 +711,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "매일노동뉴스",
-        "labortoday.co.kr"
+        "labortoday.co.kr",
+        "매일노동뉴스"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -961,14 +1056,14 @@
       "region": "국내"
     },
     {
-      "id": "34904ff40e3b4503",
+      "id": "501184f03775fa38",
       "publishedAt": "2026-09-29",
       "title": "(보도설명) 그린워싱을 방지하고 신뢰받는 자발적 탄소시장 생태계를 구축하는 것이 한국형 자발적 탄소시장 조성 방향의 핵심입니다",
       "category": "제도",
-      "summary": "(보도설명) 그린워싱을 방지하고 신뢰받는 자발적 탄소시장 생태계를 구축하는 것이 한국형 자발적 탄소시장 조성 방향의 핵심입니다 정책브리핑",
-      "source": "정책브리핑",
+      "summary": "(보도설명) 그린워싱을 방지하고 신뢰받는 자발적 탄소시장 생태계를 구축하는 것이 한국형 자발적 탄소시장 조성 방향의 핵심입니다 대한민국 정책브리핑",
+      "source": "대한민국 정책브리핑",
       "sourceType": "news",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQcEVxd081VW1HR1NPZVZLMWNPQ1dFZW1TalFwdkJ5NDNLVDhseXpjMmphM1NPVFZiYnpUNjRLTHZlcHFwRms0M041NFRfUXZHSE9DazU0SE0zV2ZEM1VnWms1eEVhblNUenBmY2l3THFVWnFxUDVpYVFVTjVJNm40SHd2dkdabWpxbWRBUndzWQ?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPaW9zVEdDSlAtdktqbXdEV254dl9kY1dnemNyNkpUN09nWjlKdmNOZzdkM1l3a0dvdmdrN1VzQnJ5SDZCQjBxdUNHS19vSndJWnJNRWFmWk12WXNNRUpaX1NxSDVtNGNOSklUbkQybHZjU056aEtNNDdDX3ZRSUJzcEMtaW9WMDY2cDRCT0R3?oc=5",
       "searchProvider": "Google News RSS",
       "matchedKeywords": [
         "탄소시장"
@@ -976,7 +1071,8 @@
       "section": "news",
       "duplicateCount": 2,
       "duplicateSources": [
-        "정책브리핑"
+        "정책브리핑",
+        "대한민국 정책브리핑"
       ],
       "searchProviders": [
         "Google News RSS"
@@ -2138,13 +2234,13 @@
         "더팩트",
         "metroseoul.co.kr",
         "socialvalue.kr",
-        "asiatime.co.kr",
         "getnews.co.kr",
         "biz.chosun.com",
         "g-enews.com",
         "sedaily.com",
         "paxetv.com",
         "tf.co.kr",
+        "asiatime.co.kr",
         "ddaily.co.kr",
         "econovill.com",
         "뉴스1",
@@ -2176,7 +2272,6 @@
         "whitepaper.co.kr",
         "pennmike.com",
         "ppss.kr",
-        "글로벌E",
         "globale.co.kr",
         "todayeconomic.com",
         "widedaily.com",
@@ -2205,6 +2300,7 @@
         "sports.hankooki.com",
         "pointe.co.kr",
         "swtvnews.com",
+        "서울경제TV",
         "sentv.co.kr",
         "kfenews.co.kr",
         "wowtv.co.kr",
@@ -2222,16 +2318,16 @@
         "news1.kr",
         "yna.co.kr",
         "ftoday.co.kr",
-        "asiae.co.kr",
+        "아시아경제",
         "view.asiae.co.kr",
+        "뉴시스",
         "newsis.com",
         "catchnews.kr",
         "thefairnews.co.kr",
+        "글로벌E",
+        "asiae.co.kr",
         "smarttoday.co.kr",
-        "서울경제TV",
         "popcornnews.net",
-        "아시아경제",
-        "뉴시스",
         "slist.kr",
         "discoverynews.kr",
         "pointdaily.co.kr",
@@ -14862,8 +14958,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "esgeconomy.com",
-        "ESG경제"
+        "ESG경제",
+        "esgeconomy.com"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -15368,8 +15464,8 @@
         "온실가스 배출권"
       ],
       "duplicateSources": [
-        "연합뉴스",
         "오토투데이",
+        "연합뉴스",
         "yna.co.kr",
         "한국방송뉴스",
         "ikbn.news",
