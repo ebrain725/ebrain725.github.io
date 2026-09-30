@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-09-30T18:12:40+09:00",
+  "generatedAt": "2026-09-30T21:56:51+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 913,
+  "itemCount": 918,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-09-30",
   "sourceCommitsScanned": 0,
@@ -83,8 +83,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "한국일보",
-        "hankookilbo.com"
+        "hankookilbo.com",
+        "한국일보"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -107,12 +107,15 @@
       "matchedKeywords": [
         "탄소시장"
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 3,
       "duplicateSources": [
-        "kado.net"
+        "kado.net",
+        "강원일보",
+        "kwnews.co.kr"
       ],
       "searchProviders": [
-        "NAVER API HUB"
+        "NAVER API HUB",
+        "Google News RSS"
       ],
       "region": "국내"
     },
@@ -192,6 +195,77 @@
       "region": "국내"
     },
     {
+      "id": "a37ea0b840f4d155",
+      "publishedAt": "2026-09-30",
+      "title": "탄소 감축 넘어 도민 소득으로···자연의 패러다임 바꾼다",
+      "category": "제도",
+      "summary": "과거의 기후 정책이 온실가스 감축이나 화석연료 대체 등 규제와 보존 중심의 수동적 성격에 머물렀다면, '기후경제'는 재생에너지와 탄소시장 , 기후기술 산업을 기반으로 부가가치를 창출하고 이를 도민의 기본소득과...",
+      "source": "samdailbo.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.samdailbo.com/news/articleView.html?idxno=270839",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "samdailbo.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "3a2544a80fbef455",
+      "publishedAt": "2026-09-30",
+      "title": "철강연대 \"포항 철강산업 살려야\"…정부에 전력비·탄소전환 지원 촉구",
+      "category": "제도",
+      "summary": "먼저 국내 철강기업들은 제4차 배출권거래제 기간 연평균 약 283만tCO₂의 배출권 부족과 약 1천22억원의 연간 구매비용이 예상되고, 저탄소 공정전환에도 약 1천600억원이 투입된 사례가 있다고 밝혔다. 반면 일본...",
+      "source": "kyongbuk.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.kyongbuk.co.kr/news/articleView.html?idxno=4085913",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "kyongbuk.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "a37486eaf05c432f",
+      "publishedAt": "2026-09-30",
+      "title": "전기료 인하만으론 부족..철강업계 \"추가 지원 필요\"",
+      "category": "제도",
+      "summary": "당장 탄소 배출권 구매 부담이 커지고 있고, 전기로와 수소환원제철 등 저탄소 설비 전환에도 막대한 비용이... ◀ INT ▶ 송재만/ 철강노동조합연대 의장 \"(현대제철은) 앞으로 탄소 배출권 도 연간 약 1천억 원 내야 하고...",
+      "source": "phmbc.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.phmbc.co.kr/www/news/desk_news?idx=204770&mode=view",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "phmbc.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "137d4aa694c5b169",
       "publishedAt": "2026-09-30",
       "title": "잉여 전력 2000MW, 파키스탄 비트코인 채굴·AI에 배정",
@@ -254,8 +328,8 @@
       ],
       "duplicateCount": 3,
       "duplicateSources": [
-        "mt.co.kr",
         "seoul.co.kr",
+        "mt.co.kr",
         "amnews.co.kr"
       ],
       "searchProviders": [
@@ -547,6 +621,30 @@
       "region": "국내"
     },
     {
+      "id": "586d8e78ca3ef9ce",
+      "publishedAt": "2026-09-30",
+      "title": "“메가프로젝트 반영하니…탈석탄 오히려 5년 빨라진다”",
+      "category": "제도",
+      "summary": "2035년 국가 온실가스 감축목표(NDC)를 달성하려면 정부가 제시한 2040년보다 최대 5년가량 일찍 석탄발전을... “향후 배출권 거래제 강화까지 고려하면 석탄발전이 10~15년 뒤에도 값싼 전원이라고 보기는 어렵다\"고...",
+      "source": "ekn.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.ekn.kr/web/view.php?key=20260930028020705",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "ekn.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "75f0ed1629cd22cd",
       "publishedAt": "2026-09-30",
       "title": "‘숲으로 얻은 탄소 흡수 실적, 기업이 구매한다’… 임업진흥원, 산림탄...",
@@ -619,6 +717,31 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "33db0ba0bb5b6272",
+      "publishedAt": "2026-09-30",
+      "title": "[온실가스 배출권] 9월 30일 KAU26, 50원 하락하며 3만원대 턱걸이",
+      "category": "시장·가격",
+      "summary": "[온실가스 배출권] 9월 30일 KAU26, 50원 하락하며 3만원대 턱걸이 데일리e뉴스",
+      "source": "데일리e뉴스",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBQbDR5WE10amw3NXlLcDVvcUwxTmtBTGIwUjR4TlVkSFUwMGNsUnNCbTVGZkd6MzVNT0t6cEZ6ODM1VGJKcjdjMTEtRVlfSkdqTGF6ZENhUjlqOEFveVB5d2pHWmNsOFNxTDQ1TVBTbw?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "온실가스 배출권",
+        "KAU26"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "데일리e뉴스"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
       "region": "국내"
     },
     {
@@ -861,12 +984,13 @@
         "배출권거래제"
       ],
       "duplicateSources": [
+        "dkilbo.com",
         "etoday.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "region": "국내"
     },
     {
@@ -2893,7 +3017,7 @@
         "kbsm.net",
         "finomy.com",
         "pinpointnews.co.kr",
-        "fortunekorea.co.kr",
+        "포춘코리아",
         "fetv.co.kr",
         "머니투데이",
         "m-i.kr",
@@ -2905,7 +3029,6 @@
         "iminju.net",
         "ttlnews.com",
         "e-science.co.kr",
-        "주간한국",
         "weekly.hankooki.com",
         "delighti.co.kr",
         "smedaily.co.kr",
@@ -2917,11 +3040,13 @@
         "todayeconomic.com",
         "widedaily.com",
         "newsroad.co.kr",
+        "연합뉴스TV",
         "yonhapnewstv.co.kr",
         "뉴시안",
         "newsian.co.kr",
         "비즈월드",
         "bizwnews.com",
+        "매일일보",
         "edaily.co.kr",
         "inthenews.co.kr",
         "mediapen.com",
@@ -2945,6 +3070,7 @@
         "kfenews.co.kr",
         "wowtv.co.kr",
         "newspim.com",
+        "브릿지경제",
         "viva100.com",
         "moneystorm.kr",
         "dealsitetv.com",
@@ -2963,12 +3089,10 @@
         "newsis.com",
         "catchnews.kr",
         "thefairnews.co.kr",
+        "fortunekorea.co.kr",
+        "주간한국",
         "inews24.com",
         "businessplus.kr",
-        "포춘코리아",
-        "매일일보",
-        "연합뉴스TV",
-        "브릿지경제",
         "asiae.co.kr",
         "thebigdata.co.kr",
         "2news.co.kr",
@@ -4441,9 +4565,9 @@
         "탄소배출권"
       ],
       "duplicateSources": [
-        "viva100.com",
-        "v.daum.net",
         "브릿지경제",
+        "v.daum.net",
+        "viva100.com",
         "dt.co.kr"
       ],
       "searchProviders": [
@@ -8053,8 +8177,8 @@
       ],
       "duplicateSources": [
         "v.daum.net",
-        "yna.co.kr",
-        "연합뉴스"
+        "연합뉴스",
+        "yna.co.kr"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -9198,8 +9322,8 @@
         "유상할당"
       ],
       "duplicateSources": [
-        "뉴스;트리",
-        "newstree.kr"
+        "newstree.kr",
+        "뉴스;트리"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -13358,8 +13482,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "뉴스;트리",
-        "newstree.kr"
+        "newstree.kr",
+        "뉴스;트리"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -16114,8 +16238,8 @@
         "온실가스 배출권"
       ],
       "duplicateSources": [
-        "오토투데이",
         "연합뉴스",
+        "오토투데이",
         "yna.co.kr",
         "한국방송뉴스",
         "ikbn.news",
@@ -16429,8 +16553,8 @@
         "온실가스 배출권"
       ],
       "duplicateSources": [
-        "etnews.com",
-        "전자신문"
+        "전자신문",
+        "etnews.com"
       ],
       "searchProviders": [
         "Google News RSS",
