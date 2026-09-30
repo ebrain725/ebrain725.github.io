@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-09-30T14:52:50+09:00",
+  "lastSync": "2026-09-30T15:12:53+09:00",
   "keywords": [
     "배출권",
     "배출권거래제",
@@ -30,7 +30,7 @@
   "warning": null,
   "aiInsight": {
     "summary": "최근 공식자료의 직접적인 수급 변수는 유상경매입니다. 최근 경매가 높은 낙찰가로 소화돼 공급보다 이행수요가 강하다는 신호입니다.",
-    "generatedAt": "2026-09-30T14:52:50+09:00",
+    "generatedAt": "2026-09-30T15:12:53+09:00",
     "basisLatestDate": "2026-09-28",
     "basisCount": 10,
     "source": "fallback",
@@ -745,8 +745,9 @@
       "matchedKeywords": [
         "탄소시장"
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "duplicateSources": [
+        "mt.co.kr",
         "amnews.co.kr"
       ],
       "searchProviders": [
@@ -959,6 +960,31 @@
       ],
       "duplicateSources": [
         "edaily.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "75f0ed1629cd22cd",
+      "publishedAt": "2026-09-30",
+      "title": "‘숲으로 얻은 탄소 흡수 실적, 기업이 구매한다’… 임업진흥원, 산림탄...",
+      "category": "상쇄·외부사업",
+      "summary": "캠페인 크레딧은 의무적인 배출권거래제와 별개로 운영하는 자발적 탄소시장 의 인증 실적이다. 기업과 기관, 개인은 이를 환경·사회·지배구조(ESG) 경영과 탄소중립 활동에 활용한다. 상쇄 성과를 공개할 때는 실제...",
+      "source": "kukinews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.kukinews.com/article/view/kuk202609300156",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소시장"
+      ],
+      "duplicateSources": [
+        "kukinews.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -2169,8 +2195,8 @@
         "배출권"
       ],
       "duplicateSources": [
-        "ngonews.kr",
         "한국NGO신문",
+        "ngonews.kr",
         "newstree.kr",
         "뉴스;트리"
       ],
@@ -3243,8 +3269,9 @@
         "cstimes.com",
         "digitalchosun.dizzo.com",
         "글로벌이코노믹",
-        "etoday.co.kr",
+        "이투데이",
         "뉴스핌",
+        "더팩트",
         "metroseoul.co.kr",
         "socialvalue.kr",
         "inews24.com",
@@ -3254,9 +3281,8 @@
         "paxetv.com",
         "tf.co.kr",
         "asiatime.co.kr",
-        "news1.kr",
+        "뉴스1",
         "dailycar.co.kr",
-        "thebigdata.co.kr",
         "kbsm.net",
         "finomy.com",
         "pinpointnews.co.kr",
@@ -3303,6 +3329,7 @@
         "digitaltoday.co.kr",
         "job-post.co.kr",
         "lcnews.co.kr",
+        "etoday.co.kr",
         "newscape.co.kr",
         "biztribune.co.kr",
         "sports.hankooki.com",
@@ -3323,24 +3350,23 @@
         "wsobi.com",
         "huffingtonpost.kr",
         "v.daum.net",
+        "news1.kr",
         "yna.co.kr",
         "ftoday.co.kr",
-        "아시아경제",
+        "asiae.co.kr",
         "view.asiae.co.kr",
         "뉴시스",
         "newsis.com",
         "catchnews.kr",
         "thefairnews.co.kr",
-        "더팩트",
-        "뉴스1",
+        "thebigdata.co.kr",
+        "아시아경제",
         "2news.co.kr",
         "뉴시안",
-        "이투데이",
         "biz.chosun.com",
         "ddaily.co.kr",
         "econovill.com",
         "mt.co.kr",
-        "asiae.co.kr",
         "smarttoday.co.kr",
         "popcornnews.net",
         "slist.kr",
@@ -51811,7 +51837,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "34bb2d30171c09a1",
+      "id": "bf2c7b48532214c8",
       "publishedAt": "2025-04-04",
       "title": "2025년 4월 배출권 유상할당 입찰 공고",
       "category": "유상경매",
@@ -51819,7 +51845,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10524&orgCd=&boardMasterId=39&boardId=1735370",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10524&orgCd=&boardMasterId=39&boardId=1735370",
       "matchedKeywords": [
         "유상할당"
       ]
@@ -56157,7 +56183,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "e597e32e06bc0f82",
+      "id": "05fc79bd8614e601",
       "publishedAt": "2025-02-06",
       "title": "2025년 2월 배출권 유상할당 입찰 공고",
       "category": "유상경매",
@@ -56165,7 +56191,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10524&orgCd=&boardMasterId=39&boardId=1723130",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10524&orgCd=&boardMasterId=39&boardId=1723130",
       "matchedKeywords": [
         "유상할당"
       ]
@@ -250802,10 +250828,10 @@
   },
   "newsRetention": {
     "policy": "append-only",
-    "lastMergedAt": "2026-09-30T14:52:55+09:00",
-    "itemCount": 901,
-    "archiveBefore": 897,
-    "currentBefore": 798,
+    "lastMergedAt": "2026-09-30T15:13:00+09:00",
+    "itemCount": 902,
+    "archiveBefore": 901,
+    "currentBefore": 799,
     "gitRecoveryEnabled": false
   }
 }
