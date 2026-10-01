@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-01T20:07:03+09:00",
+  "generatedAt": "2026-10-01T22:48:25+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 957,
+  "itemCount": 958,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-01",
   "sourceCommitsScanned": 0,
@@ -229,11 +229,13 @@
       "matchedKeywords": [
         "탄소시장"
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "duplicateSources": [
+        "ESG경제",
         "esgeconomy.com"
       ],
       "searchProviders": [
+        "Google News RSS",
         "NAVER API HUB"
       ],
       "region": "국내"
@@ -717,6 +719,30 @@
       "region": "국내"
     },
     {
+      "id": "16f3b384e46104cb",
+      "publishedAt": "2026-10-01",
+      "title": "[클라우드 월드] 한국딥러닝 '딥 에이전트 모바일'·엑셈 '영업양수'·베...",
+      "category": "제도",
+      "summary": "이들은 주유소 추천, 영양제 효능 검증, 개인별 공공주택 추천 같은 생활 밀착형 아이디어와 온실가스 배출권 수요 예측, 항만 입항 최적화 등 산업 분야 과제를 다룬다. 참가자는 고등학생부터 대학원생, 직장인...",
+      "source": "newsworks.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newsworks.co.kr/news/articleView.html?idxno=855389",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "온실가스 배출권"
+      ],
+      "duplicateSources": [
+        "newsworks.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "b31665824c8034da",
       "publishedAt": "2026-10-01",
       "title": "[온실가스 배출권] 10월 1일 KAU26, 400원 하락한 2만9600원",
@@ -732,9 +758,10 @@
         "KAU26"
       ],
       "section": "news",
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "duplicateSources": [
-        "dailyenews.co.kr"
+        "dailyenews.co.kr",
+        "데일리e뉴스"
       ],
       "searchProviders": [
         "Google News RSS"
@@ -4008,7 +4035,7 @@
         "kbsm.net",
         "finomy.com",
         "pinpointnews.co.kr",
-        "포춘코리아",
+        "fortunekorea.co.kr",
         "fetv.co.kr",
         "머니투데이",
         "m-i.kr",
@@ -4060,12 +4087,13 @@
         "huffingtonpost.kr",
         "v.daum.net",
         "yna.co.kr",
-        "ftoday.co.kr",
         "아시아경제",
         "view.asiae.co.kr",
         "newsis.com",
         "catchnews.kr",
         "thefairnews.co.kr",
+        "포춘코리아",
+        "ftoday.co.kr",
         "글로벌E",
         "더팩트",
         "kfenews.co.kr",
@@ -4078,7 +4106,6 @@
         "lcnews.co.kr",
         "dealsitetv.com",
         "이투데이",
-        "fortunekorea.co.kr",
         "imaeil.com",
         "iminju.net",
         "뉴시안",
@@ -17547,8 +17574,8 @@
         "온실가스 배출권"
       ],
       "duplicateSources": [
-        "etnews.com",
-        "전자신문"
+        "전자신문",
+        "etnews.com"
       ],
       "searchProviders": [
         "Google News RSS",
