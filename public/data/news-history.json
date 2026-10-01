@@ -1,17 +1,40 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-02T03:32:01+09:00",
+  "generatedAt": "2026-10-02T08:13:18+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 958,
+  "itemCount": 959,
   "earliestPublishedAt": "2026-08-06",
-  "latestPublishedAt": "2026-10-01",
+  "latestPublishedAt": "2026-10-02",
   "sourceCommitsScanned": 0,
   "sourceSnapshotsScanned": 0,
   "historicalRowsScanned": 0,
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "9492344dbc19b122",
+      "publishedAt": "2026-10-02",
+      "title": "韓, 배출권 가격 낮아 탈탄소 산업전환 어렵다",
+      "category": "시장·가격",
+      "summary": "韓, 배출권 가격 낮아 탈탄소 산업전환 어렵다 한국경제",
+      "source": "한국경제",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE0zUWdCLVJNNFpPbFJzX3RVa0UxY2FwckhCMlZTNDRya2dxNy1rNFlXaFEzVGpSZHJ3TTNpc0FHV0hzYU1tcmN6dHpkVXlzbXdmN0JQT0loSXJxZw?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "한국경제"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "국내"
+    },
     {
       "id": "7d9bb36b60a0859d",
       "publishedAt": "2026-10-01",
@@ -603,7 +626,9 @@
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
         "배출권",
-        "온실가스 배출권"
+        "온실가스 배출권",
+        "탄소배출권",
+        "유상할당"
       ],
       "duplicateSources": [
         "mt.co.kr"
@@ -2486,8 +2511,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "매일노동뉴스",
-        "labortoday.co.kr"
+        "labortoday.co.kr",
+        "매일노동뉴스"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -4035,7 +4060,6 @@
         "kbsm.net",
         "finomy.com",
         "pinpointnews.co.kr",
-        "포춘코리아",
         "fetv.co.kr",
         "머니투데이",
         "m-i.kr",
@@ -4056,6 +4080,7 @@
         "newsroad.co.kr",
         "연합뉴스TV",
         "newsian.co.kr",
+        "비즈월드",
         "bizwnews.com",
         "매일일보",
         "edaily.co.kr",
@@ -4087,12 +4112,13 @@
         "huffingtonpost.kr",
         "v.daum.net",
         "yna.co.kr",
-        "ftoday.co.kr",
         "아시아경제",
         "view.asiae.co.kr",
         "newsis.com",
         "catchnews.kr",
         "thefairnews.co.kr",
+        "포춘코리아",
+        "ftoday.co.kr",
         "fortunekorea.co.kr",
         "글로벌E",
         "더팩트",
@@ -4109,7 +4135,6 @@
         "imaeil.com",
         "iminju.net",
         "뉴시안",
-        "비즈월드",
         "inews24.com",
         "businessplus.kr",
         "asiae.co.kr",
@@ -10340,8 +10365,8 @@
         "유상할당"
       ],
       "duplicateSources": [
-        "newstree.kr",
-        "뉴스;트리"
+        "뉴스;트리",
+        "newstree.kr"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -14501,8 +14526,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "newstree.kr",
-        "뉴스;트리"
+        "뉴스;트리",
+        "newstree.kr"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -15727,8 +15752,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "KBS 뉴스",
         "news.kbs.co.kr",
+        "KBS 뉴스",
         "kbs.co.kr"
       ],
       "searchProviders": [
@@ -17392,8 +17417,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "KBS 뉴스",
         "news.kbs.co.kr",
+        "KBS 뉴스",
         "kbs.co.kr"
       ],
       "searchProviders": [
