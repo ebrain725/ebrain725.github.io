@@ -166,6 +166,10 @@ jobs:
             scripts/export_policy_radar_excel_compatible.py
           python scripts/news_retention.py --self-test
 
+      - name: Snapshot accepted official post IDs
+        shell: bash
+        run: cp public/data/policies.json "$RUNNER_TEMP/policy-before.json"
+
       - name: Collect policy materials and news
         shell: bash
         env:
@@ -352,6 +356,10 @@ jobs:
               f"news={news_count} non_news={non_news_count} schedules={len(schedules)}"
           )
           PY
+
+      - name: Block publication if any accepted official post is missing
+        shell: bash
+        run: python scripts/policy_integrity.py --before "$RUNNER_TEMP/policy-before.json"
 
       - name: Confirm only approved files changed
         id: changes

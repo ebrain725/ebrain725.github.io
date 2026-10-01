@@ -11,6 +11,7 @@ from sync_policies_core import *  # noqa: F401,F403
 import merge_official_policy_history as _climate_history
 import news_retention as _news_retention
 import sync_policies_core as _core
+from policy_integrity import official_key, assert_preserved, classified_section
 
 POLICY_PATH = _news_retention.POLICY_PATH
 POLICY_HISTORY_PATHS = (
@@ -75,7 +76,7 @@ def _valid_non_news(item: Any) -> bool:
 
 
 def _section(item: dict[str, Any]) -> str:
-    explicit = _news_retention.clean_text(item.get("section")).lower()
+    explicit = _news_retention.clean_text(classified_section(item)).lower()
     if explicit:
         return explicit
     source = _news_retention.clean_text(item.get("source")).lower()
@@ -89,6 +90,9 @@ def _section(item: dict[str, Any]) -> str:
 
 def _item_key(item: dict[str, Any]) -> str:
     """Return one strong key only, avoiding cross-board and KRX URL collisions."""
+    identity = official_key(item)
+    if identity and identity.startswith(("climate|", "industry|", "krx|")):
+        return identity
     section = _section(item)
     published = _news_retention.clean_text(
         item.get("publishedAt") or item.get("date")
@@ -118,6 +122,8 @@ def _unique_non_news(documents: Iterable[dict[str, Any]]) -> list[dict[str, Any]
                 continue
             item = dict(raw)
             item["section"] = _section(item)
+            if item["section"] in {"motie_press", "motie_notice"}:
+                item["source"] = "산업부 보도자료" if item["section"] == "motie_press" else "산업부 공지사항"
             key = _item_key(item)
             merged[key] = _merge(merged[key], item) if key in merged else item
     return sorted(
@@ -231,6 +237,7 @@ def main() -> int:
             f"누적 정책자료 감소: {len(final_official)} < {len(previous_official)}"
         )
 
+    assert_preserved([item for document in [*histories, before] for item in document.get("items", [])], final_official)
     generated["items"] = [*final_official, *generated_news]
     generated["institutionSchedules"] = final_schedules
     generated["policyRetention"] = {
@@ -253,6 +260,7 @@ def main() -> int:
         maximum_commits=1,
     )
     final = _load(POLICY_PATH)
+    assert_preserved(previous_official, final.get("items", []))
     final_news_count = int((audit.get("counts") or {}).get("finalNewsCount", -1))
     final_official_count = sum(1 for item in final.get("items", []) if _valid_non_news(item))
     if final_news_count < len(previous_news):

@@ -20,6 +20,8 @@ from pathlib import Path
 from typing import Any
 from zoneinfo import ZoneInfo
 
+from policy_integrity import CLIMATE_HOSTS, assert_preserved, classified_section, official_key, publisher
+
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_POLICY_PATH = ROOT / "public" / "data" / "policies.json"
 DEFAULT_HISTORY_PATH = ROOT / "public" / "data" / "policy-official-history.json"
@@ -86,6 +88,9 @@ def _normalized_title(value: Any) -> str:
 
 
 def _stable_key(item: dict[str, Any]) -> str:
+    identity = official_key(item)
+    if identity and identity.startswith(("climate|", "krx|")):
+        return identity
     section = _section(item)
     if section == "krx_notice":
         source_id = _clean(item.get("sourceId"))
@@ -136,6 +141,8 @@ def _normalize_official(item: Any, start_date: str) -> dict[str, Any] | None:
     if not isinstance(item, dict):
         return None
     if _clean(item.get("sourceType")).lower() == "news":
+        return None
+    if publisher(item) not in CLIMATE_HOSTS | {"ets.krx.co.kr"}:
         return None
     published = _clean(item.get("publishedAt"))[:10]
     title = _clean(item.get("title"))
@@ -222,6 +229,7 @@ def merge_files(
             "items": [],
         }
 
+    previous_history_items = list(history["items"])
     requested_start = _clean(history.get("requestedStartDate")) or start_date
     requested_start = min(requested_start, start_date)
     merged: dict[str, dict[str, Any]] = {}
@@ -241,6 +249,20 @@ def merge_files(
         ),
         reverse=True,
     )
+    # Preserve other publishers verbatim; this archive owns only climate and KRX.
+    passthrough_by_id = {}
+    for raw in policy["items"]:
+        if not isinstance(raw, dict) or _normalize_official(raw, requested_start) is not None:
+            continue
+        if _clean(raw.get("sourceType")).lower() == "news":
+            continue
+        item = dict(raw)
+        item["section"] = classified_section(item)
+        if item["section"] in {"motie_press", "motie_notice"}:
+            item["source"] = "산업부 보도자료" if item["section"] == "motie_press" else "산업부 공지사항"
+        key = official_key(item)
+        if key not in passthrough_by_id or item.get("sourceBoard"):
+            passthrough_by_id[key] = item
     current_news = [
         dict(item)
         for item in policy.get("items", [])
@@ -266,11 +288,13 @@ def merge_files(
         **coverage,
     }
     policy["items"] = sorted(
-        [*official, *current_news],
+        [*official, *passthrough_by_id.values(), *current_news],
         key=lambda item: (_clean(item.get("publishedAt")), _clean(item.get("title"))),
         reverse=True,
     )
 
+    assert_preserved(json.loads(policy_path.read_text(encoding="utf-8"))["items"], policy["items"])
+    assert_preserved(previous_history_items, official)
     history_changed = _atomic_write(history_path, history)
     policy_changed = _atomic_write(policy_path, policy)
     return {

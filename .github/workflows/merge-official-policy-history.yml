@@ -12,6 +12,9 @@ on:
       - ".github/workflows/merge-official-policy-history.yml"
       - "scripts/sync_climate_policy_expanded.py"
       - "config/motie_policy_keywords.json"
+      - "config/policy_retained_posts.json"
+      - "scripts/policy_integrity.py"
+      - "scripts/merge_official_policy_history.py"
 
 permissions:
   contents: write
@@ -49,6 +52,10 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Snapshot accepted official post IDs
+        shell: bash
+        run: cp public/data/policies.json "$RUNNER_TEMP/policy-before.json"
+
       - name: 기후부 확대 키워드 이력 갱신
         shell: bash
         run: |
@@ -75,10 +82,6 @@ jobs:
             scripts/sync_policies.py
           python scripts/sync_climate_policy_expanded.py --self-test
 
-          # 산업부 자료는 다음 전용 워크플로가 다시 병합한다. 기후부 병합 과정에서
-          # 산업부 항목이 기후부 공지로 오분류되지 않도록 먼저 분리한다.
-          python scripts/sync_motie_official_history.py --remove-from-policy
-
           echo "기후부 확대 키워드 이력을 최근 60일 범위로 증분 갱신합니다."
           python scripts/sync_climate_policy_expanded.py \
             --start-date 2015-01-01 \
@@ -92,7 +95,10 @@ jobs:
           import json
           import re
           import urllib.parse
+          import sys
           from pathlib import Path
+          sys.path.insert(0, "scripts")
+          from policy_integrity import official_key
 
           history_path = Path("public/data/policy-official-history.json")
           policy_path = Path("public/data/policies.json")
@@ -156,7 +162,7 @@ jobs:
                       raise SystemExit(f"기후부 공식 도메인 오류: {host}")
                   if not item.get("matchedKeywords"):
                       raise SystemExit(f"기후부 항목에 일치 키워드가 없습니다: {index}")
-                  key = f"{section}|{url or published + '|' + str(item.get('title', ''))}"
+                  key = official_key(item)
               else:
                   key = f"krx_notice|{item.get('sourceId') or item.get('id')}"
               if key in seen:
@@ -166,9 +172,8 @@ jobs:
           current_official = [
               item for item in policies.get("items", [])
               if item.get("sourceType") != "news"
+              and item.get("section") in required
           ]
-          if any(item.get("section") in {"motie_press", "motie_notice"} for item in current_official):
-              raise SystemExit("기후부 병합 단계에 산업부 항목이 남아 있습니다.")
           if len(current_official) != len(items):
               raise SystemExit(
                   f"대시보드 공식자료 {len(current_official)}건과 이력 {len(items)}건이 다릅니다."
@@ -194,6 +199,10 @@ jobs:
               f"KRX {counts['krx_notice']}건"
           )
           PY
+
+      - name: Block publication if any accepted official post is missing
+        shell: bash
+        run: python scripts/policy_integrity.py --before "$RUNNER_TEMP/policy-before.json"
 
       - name: 확대 이력 파일 저장
         shell: bash
