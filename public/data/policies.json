@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-10-01T18:12:58+09:00",
+  "lastSync": "2026-10-01T20:06:57+09:00",
   "keywords": [
     "배출권",
     "배출권거래제",
@@ -30,7 +30,7 @@
   "warning": null,
   "aiInsight": {
     "summary": "최근 공식자료의 직접적인 수급 변수는 유상경매입니다. 최근 경매가 높은 낙찰가로 소화돼 공급보다 이행수요가 강하다는 신호입니다.",
-    "generatedAt": "2026-10-01T18:12:58+09:00",
+    "generatedAt": "2026-10-01T20:06:57+09:00",
     "basisLatestDate": "2026-10-01",
     "basisCount": 10,
     "source": "fallback",
@@ -1109,6 +1109,30 @@
       "region": "국내"
     },
     {
+      "id": "a058bef2add9b6c6",
+      "publishedAt": "2026-10-01",
+      "title": "베트남 주식거래, 경제중심지 호찌민 거래소로 연말 통합",
+      "category": "제도",
+      "summary": "앞으로 HNX는 주식을 제외한 채권·파생상품·비상장주식 거래를 계속 맡으며, 탄소 배출권 시장 ·스타트업을 위한 자본거래 시장 등 신규 금융 시장 ·상품 개발에 주력할 것으로 예상된다. 앞서 지난달 21일 글로벌...",
+      "source": "yna.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.yna.co.kr/view/AKR20261001183400084?input=1195m",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "yna.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
       "id": "eeb3375f9d2eb17c",
       "publishedAt": "2026-10-01",
       "title": "메텍홀딩스, 뉴욕서 축산 탄소데이터 인프라 공개…\"연내 美법인 설립\"",
@@ -1303,12 +1327,41 @@
         "korea.kr",
         "dailian.co.kr",
         "yna.co.kr",
-        "kbs.co.kr"
+        "kbs.co.kr",
+        "etnews.com",
+        "ddaily.co.kr",
+        "digitaltoday.co.kr",
+        "zdnet.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 5,
+      "duplicateCount": 9,
+      "region": "국내"
+    },
+    {
+      "id": "b31665824c8034da",
+      "publishedAt": "2026-10-01",
+      "title": "[온실가스 배출권] 10월 1일 KAU26, 400원 하락한 2만9600원",
+      "category": "시장·가격",
+      "summary": "[온실가스 배출권] 10월 1일 KAU26, 400원 하락한 2만9600원 dailyenews.co.kr",
+      "source": "dailyenews.co.kr",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBOVk5YQS0wa19Ec1UxNms5RXFUM0ZnUFdSOG9PVl9FYS15WjBzbFFSSkVXV3NjU3pQb2FsTmZXdkVRRThFRDZTS1RRRDFONElES0JJN0VQTE5obXljZXNhTmRqLVdrN3FDY09kQm8yNA?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "온실가스 배출권",
+        "KAU26"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "dailyenews.co.kr"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
       "region": "국내"
     },
     {
@@ -1694,8 +1747,8 @@
         "상쇄배출권"
       ],
       "duplicateSources": [
-        "biz.chosun.com",
-        "Chosunbiz"
+        "Chosunbiz",
+        "biz.chosun.com"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -2433,8 +2486,8 @@
         "온실가스 배출권"
       ],
       "duplicateSources": [
-        "biz.chosun.com",
-        "Chosunbiz"
+        "Chosunbiz",
+        "biz.chosun.com"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -2599,8 +2652,8 @@
       "publishedAt": "2026-09-30",
       "title": "\"자연기반 탄소배출권 시장 변화 이렇게 대비하라”…WEF 보고서",
       "category": "제도",
-      "summary": "\"자연기반 탄소배출권 시장 변화 이렇게 대비하라”…WEF 보고서 넷제로뉴스",
-      "source": "넷제로뉴스",
+      "summary": "\"자연기반 탄소배출권 시장 변화 이렇게 대비하라”…WEF 보고서 netzeronews.kr",
+      "source": "netzeronews.kr",
       "sourceType": "news",
       "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5ZVXpOX3JWeXZkbDQ2UnVLQlVaZXRHVXBOUG9SeDk1ZGVVdkd1Q0lMb296TDRuNDRaZGMtbGdiWU1sRGdZRlNDYmZYWFdkODNjdVlSOUctMEV5RWFTck9vRV9uemt1NW9wQnc?oc=5",
       "searchProvider": "Google News RSS",
@@ -2609,9 +2662,10 @@
         "탄소배출권"
       ],
       "section": "news",
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "duplicateSources": [
-        "넷제로뉴스"
+        "넷제로뉴스",
+        "netzeronews.kr"
       ],
       "searchProviders": [
         "Google News RSS"
@@ -4717,7 +4771,6 @@
         "smedaily.co.kr",
         "whitepaper.co.kr",
         "ppss.kr",
-        "글로벌E",
         "globale.co.kr",
         "todayeconomic.com",
         "newsroad.co.kr",
@@ -4754,14 +4807,15 @@
         "huffingtonpost.kr",
         "v.daum.net",
         "yna.co.kr",
+        "ftoday.co.kr",
         "아시아경제",
         "view.asiae.co.kr",
         "newsis.com",
         "catchnews.kr",
         "thefairnews.co.kr",
+        "글로벌E",
         "더팩트",
         "kfenews.co.kr",
-        "ftoday.co.kr",
         "뉴시스",
         "pennmike.com",
         "widedaily.com",
@@ -5696,8 +5750,8 @@
         "유상할당"
       ],
       "duplicateSources": [
-        "biz.chosun.com",
-        "Chosunbiz"
+        "Chosunbiz",
+        "biz.chosun.com"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -11287,8 +11341,8 @@
         "유상할당"
       ],
       "duplicateSources": [
-        "newstree.kr",
-        "뉴스;트리"
+        "뉴스;트리",
+        "newstree.kr"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -15702,8 +15756,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "newstree.kr",
-        "뉴스;트리"
+        "뉴스;트리",
+        "newstree.kr"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -18915,8 +18969,8 @@
         "온실가스 배출권"
       ],
       "duplicateSources": [
-        "전자신문",
-        "etnews.com"
+        "etnews.com",
+        "전자신문"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -19294,6 +19348,20 @@
       "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1887850",
       "matchedKeywords": [
         "시장안정화"
+      ]
+    },
+    {
+      "id": "106d622679ffd65b",
+      "publishedAt": "2026-09-02",
+      "title": "2026년 9월 배출권 유상할당 입찰계획 공고",
+      "category": "유상경매",
+      "summary": "기후에너지환경부 공고 제2026-848호 「온실가스 배출권의 할당 및 거래에 관한 법률」제12조 및 같은 법 시행령 제18조 및「배출권 유상할당 및 시장안정화 조치를 위한 배출권 추가할당에 관한 규정」에 따라 2026년도 9월의 온실가스 배출권 유상할당 경매에 대한 입찰을 다음과 같이 공고합니다. 2026년 9월 2일 기 후 에 너 지 환 경 부 장 관",
+      "source": "기후부 공지·공고",
+      "sourceType": "official",
+      "section": "notice",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10524&orgCd=&boardMasterId=39&boardId=1887850",
+      "matchedKeywords": [
+        "유상할당"
       ]
     },
     {
@@ -25827,6 +25895,20 @@
       ]
     },
     {
+      "id": "410e01bbe6f15039",
+      "publishedAt": "2026-08-05",
+      "title": "2026년 8월 배출권 유상할당 입찰계획 공고",
+      "category": "유상경매",
+      "summary": "기후에너지환경부 공고 제2026-770호 「온실가스 배출권의 할당 및 거래에 관한 법률」제12조 및 같은 법 시행령 제18조 및「배출권 유상할당 및 시장안정화 조치를 위한 배출권 추가할당에 관한 규정」에 따라 2026년도 8월의 온실가스 배출권 유상할당 경매에 대한 입찰을 다음과 같이 공고합니다. 2026년 8월 5일 기 후 에 너 지 환 경 부 장 관",
+      "source": "기후부 공지·공고",
+      "sourceType": "official",
+      "section": "notice",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10524&orgCd=&boardMasterId=39&boardId=1882160",
+      "matchedKeywords": [
+        "유상할당"
+      ]
+    },
+    {
       "id": "7db06b3e65c3c49a",
       "publishedAt": "2026-07-24",
       "title": "「배출권거래제 고도화 및 간접배출 관리체계 개선 방안 연구」 입찰 재공고",
@@ -25870,7 +25952,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "c315dd89d2d3d43a",
+      "id": "e7cc74cedb1a7350",
       "publishedAt": "2026-07-24",
       "title": "「배출권거래제 고도화 및 간접배출 관리체계 개선 방안 연구」 입찰 재공고",
       "category": "제도",
@@ -25878,7 +25960,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C%EA%B1%B0%EB%9E%98%EC%A0%9C&menuId=10524&orgCd=&boardMasterId=39&boardId=1879830",
+      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C%EA%B1%B0%EB%9E%98%EC%A0%9C&menuId=10524&orgCd=&boardMasterId=39&boardId=1879830",
       "matchedKeywords": [
         "배출권거래제"
       ]
@@ -26915,7 +26997,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "78ae7cb43ef1e7aa",
+      "id": "58d9ce645cb06946",
       "publishedAt": "2026-07-03",
       "title": "「배출권거래제 고도화 및 간접배출 관리체계 개선 방안 연구」 입찰 공고",
       "category": "제도",
@@ -26923,7 +27005,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C%EA%B1%B0%EB%9E%98%EC%A0%9C&menuId=10524&orgCd=&boardMasterId=39&boardId=1875540",
+      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C%EA%B1%B0%EB%9E%98%EC%A0%9C&menuId=10524&orgCd=&boardMasterId=39&boardId=1875540",
       "matchedKeywords": [
         "배출권거래제"
       ]
@@ -27287,6 +27369,20 @@
       "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1874990",
       "matchedKeywords": [
         "시장안정화"
+      ]
+    },
+    {
+      "id": "e95f8c69fdca2832",
+      "publishedAt": "2026-07-01",
+      "title": "2026년 7월 배출권 유상할당 입찰계획 공고",
+      "category": "유상경매",
+      "summary": "기후에너지환경부 공고 제2026-649호 「온실가스 배출권의 할당 및 거래에 관한 법률」제12조 및 같은 법 시행령 제18조 및「배출권 유상할당 및 시장안정화 조치를 위한 배출권 추가할당에 관한 규정」에 따라 2026년도 7월의 온실가스 배출권 유상할당 경매에 대한 입찰을 붙임과 같이 공고합니다. 2026년 7월 1일 기 후 에 너 지 환 경 부 장 관",
+      "source": "기후부 공지·공고",
+      "sourceType": "official",
+      "section": "notice",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10524&orgCd=&boardMasterId=39&boardId=1874990",
+      "matchedKeywords": [
+        "유상할당"
       ]
     },
     {
@@ -28454,6 +28550,20 @@
       ]
     },
     {
+      "id": "84f3fcddb085f812",
+      "publishedAt": "2026-06-12",
+      "title": "2026년도 온실가스 배출권 유상할당 경매계획 변경공고",
+      "category": "유상경매",
+      "summary": "기후에너지환경부 공고 제2026-591호 「온실가스 배출권의 할당 및 거래에 관한 법률」제12조 및 동법 시행령 제18조,「배출권 유상할당 및 시장안정화 조치를 위한 배출권 추가할당에 관한 규정」제3조에 따라 2026년도 유상할당 경매계획을 다음과 같이 변경하여 공고합니다. 2026년 6월 12일 기 후 에 너 지 환 경 부 장 관",
+      "source": "기후부 공지·공고",
+      "sourceType": "official",
+      "section": "notice",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10524&orgCd=&boardMasterId=39&boardId=1870290",
+      "matchedKeywords": [
+        "유상할당"
+      ]
+    },
+    {
       "id": "2ea217dbd5cb99e8",
       "publishedAt": "2026-06-11",
       "title": "과기정통부-기후부, 폐통신장비 순환이용(재활용)으로 자원안보와 탄소중립 두 마리 토끼 잡는다",
@@ -29438,6 +29548,20 @@
       "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1867940",
       "matchedKeywords": [
         "시장안정화"
+      ]
+    },
+    {
+      "id": "ac0a11e4627cd653",
+      "publishedAt": "2026-06-02",
+      "title": "2026년 6월 배출권 유상할당 입찰계획 공고",
+      "category": "유상경매",
+      "summary": "기후에너지환경부 공고 제2026-563호 「온실가스 배출권의 할당 및 거래에 관한 법률」제12조 및 같은 법 시행령 제18조 및「배출권 유상할당 및 시장안정화 조치를 위한 배출권 추가할당에 관한 규정」에 따라 2026년도 6월의 온실가스 배출권 유상할당 경매에 대한 입찰을 붙임과 같이 공고합니다. 2026년 6월 2일 기 후 에 너 지 환 경 부 장 관",
+      "source": "기후부 공지·공고",
+      "sourceType": "official",
+      "section": "notice",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10524&orgCd=&boardMasterId=39&boardId=1867940",
+      "matchedKeywords": [
+        "유상할당"
       ]
     },
     {
@@ -30633,6 +30757,20 @@
       "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1862050",
       "matchedKeywords": [
         "시장안정화"
+      ]
+    },
+    {
+      "id": "f7d1e7a29bd79d51",
+      "publishedAt": "2026-05-06",
+      "title": "2026년 5월 배출권 유상할당 입찰계획 공고",
+      "category": "유상경매",
+      "summary": "기후에너지환경부 공고 제 2026-474호 「온실가스 배출권의 할당 및 거래에 관한 법률」제12조 및 같은 법 시행령 제18조 및「배출권 유상할당 및 시장안정화 조치를 위한 배출권 추가할당에 관한 규정」에 따라 2026년도 5월의 온실가스 배출권 유상할당 경매에 대한 입찰을 다음과 같이 공고합니다. 2026년 5월 6일 기 후 에 너 지 환 경 부 장 관",
+      "source": "기후부 공지·공고",
+      "sourceType": "official",
+      "section": "notice",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10524&orgCd=&boardMasterId=39&boardId=1862050",
+      "matchedKeywords": [
+        "유상할당"
       ]
     },
     {
@@ -33226,6 +33364,20 @@
       ]
     },
     {
+      "id": "bd24d1a46fa3650e",
+      "publishedAt": "2026-04-01",
+      "title": "2026년 4월 배출권 유상할당 경매 입찰 공고",
+      "category": "유상경매",
+      "summary": "기후에너지환경부 공고 제2026-366호 「온실가스 배출권의 할당 및 거래에 관한 법률」제12조 및 같은 법 시행령 제18조 및 「배출권 유상할당 및 시장안정화 조치를 위한 배출권 추가할당에 관한 규정」에 따라 2026년도 4월의 온실가스 배출권 유상할당 경매에 대한 입찰을 다음과 같이 공고합니다. 기후에너지환경부 장관 2026년 4월 1일",
+      "source": "기후부 공지·공고",
+      "sourceType": "official",
+      "section": "notice",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10524&orgCd=&boardMasterId=39&boardId=1854410",
+      "matchedKeywords": [
+        "유상할당"
+      ]
+    },
+    {
       "id": "motie_notice-ATCLc01b2801b-70979",
       "sourceId": "70979",
       "sourceBoard": "ATCLc01b2801b",
@@ -35134,6 +35286,20 @@
       ]
     },
     {
+      "id": "63b8e074b70cd01b",
+      "publishedAt": "2026-03-04",
+      "title": "2026년 3월 배출권 유상할당 경매 입찰 공고",
+      "category": "유상경매",
+      "summary": "기후에너지환경부 공고 제2026-221호 「온실가스 배출권의 할당 및 거래에 관한 법률」제12조 및 같은 법 시행령 제18조 및 「배출권 유상할당 및 시장안정화 조치를 위한 배출권 추가할당에 관한 규정」에 따라 2026년도 3월의 온실가스 배출권 유상할당 경매에 대한 입찰을 다음과 같이 공고합니다. 기후에너지환경부 장관 2026년 3월 4일",
+      "source": "기후부 공지·공고",
+      "sourceType": "official",
+      "section": "notice",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10524&orgCd=&boardMasterId=39&boardId=1847110",
+      "matchedKeywords": [
+        "유상할당"
+      ]
+    },
+    {
       "id": "304290098c598a1f",
       "publishedAt": "2026-03-03",
       "title": "(참고) 기후부 제2차관, OECD 국제에너지기구 사무총장과 중동 정세 관련 긴급 통화",
@@ -35506,7 +35672,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "eafd57a5985c46be",
+      "id": "45ae9c9285f11d33",
       "publishedAt": "2026-02-25",
       "title": "「배출권거래제 외부사업 활성화 방안 마련 연구」 입찰 공고",
       "category": "상쇄·외부사업",
@@ -35514,7 +35680,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C%EA%B1%B0%EB%9E%98%EC%A0%9C&menuId=10524&orgCd=&boardMasterId=39&boardId=1845320",
+      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C%EA%B1%B0%EB%9E%98%EC%A0%9C&menuId=10524&orgCd=&boardMasterId=39&boardId=1845320",
       "matchedKeywords": [
         "배출권거래제"
       ]
@@ -36687,6 +36853,20 @@
       "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1839990",
       "matchedKeywords": [
         "시장안정화"
+      ]
+    },
+    {
+      "id": "082175f1b839fefe",
+      "publishedAt": "2026-02-04",
+      "title": "2026년 2월 배출권 유상할당 경매 입찰 공고",
+      "category": "유상경매",
+      "summary": "기후에너지환경부 공고 제2026-93호 「온실가스 배출권의 할당 및 거래에 관한 법률」제12조 및 같은 법 시행령 제18조 및 「배출권 유상할당 및 시장안정화 조치를 위한 배출권 추가할당에 관한 규정」에 따라 2026년도 2월의 온실가스 배출권 유상할당 경매에 대한 입찰을 다음과 같이 공고합니다. 기후에너지환경부 장관 2026년 2월 4일",
+      "source": "기후부 공지·공고",
+      "sourceType": "official",
+      "section": "notice",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10524&orgCd=&boardMasterId=39&boardId=1839990",
+      "matchedKeywords": [
+        "유상할당"
       ]
     },
     {
@@ -37948,6 +38128,20 @@
       ]
     },
     {
+      "id": "d391cd18916008c7",
+      "publishedAt": "2026-01-07",
+      "title": "2026년 1월 배출권 유상할당 경매 입찰 공고",
+      "category": "유상경매",
+      "summary": "기후에너지환경부 공고 제2026-17호 「온실가스 배출권의 할당 및 거래에 관한 법률」제12조 및 같은 법 시행령 제18조 및 「배출권 유상할당 및 시장안정화 조치를 위한 배출권 추가할당에 관한 규정」에 따라 2026년도 1월의 온실가스 배출권 유상할당 경매에 대한 입찰을 다음과 같이 공고합니다. 기후에너지환경부 장관 2026년 1월 7일",
+      "source": "기후부 공지·공고",
+      "sourceType": "official",
+      "section": "notice",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10524&orgCd=&boardMasterId=39&boardId=1833770",
+      "matchedKeywords": [
+        "유상할당"
+      ]
+    },
+    {
       "id": "33bc2a1764f94217",
       "publishedAt": "2026-01-05",
       "title": "「탄소중립을 위한 에너지 전환방안 연구」 용역 입찰 재공고",
@@ -38469,6 +38663,20 @@
       "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1832000",
       "matchedKeywords": [
         "시장안정화"
+      ]
+    },
+    {
+      "id": "59ec6d329b2c716f",
+      "publishedAt": "2025-12-30",
+      "title": "2026년도 온실가스 배출권 유상할당 경매계획",
+      "category": "유상경매",
+      "summary": "기후에너지환경부 공고 제2025-229호 「온실가스 배출권의 할당 및 거래에 관한 법률」제12조 및 동법 시행령 제18조,「배출권 유상할당 및 시장안정화 조치를 위한 배출권 추가할당에 관한 규정」제3조에 따라 2026년도 유상할당 경매계획을 다음과 같이 공고합니다. 2025년 12월 30일 기 후 에 너 지 환 경 부 장 관",
+      "source": "기후부 공지·공고",
+      "sourceType": "official",
+      "section": "notice",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10524&orgCd=&boardMasterId=39&boardId=1832000",
+      "matchedKeywords": [
+        "유상할당"
       ]
     },
     {
@@ -40307,6 +40515,20 @@
       ]
     },
     {
+      "id": "8c21ea7006a56784",
+      "publishedAt": "2025-12-11",
+      "title": "2025년 12월 배출권 유상할당 경매 추가 입찰 공고",
+      "category": "유상경매",
+      "summary": "기후에너지환경부 공고 제2025-181호 「온실가스 배출권의 할당 및 거래에 관한 법률」제12조 및 같은 법 시행령 제18조 및「배출권 유상할당 및 시장안정화 조치를 위한 배출권 추가할당에 관한 규정」에 따라 2025년도 12월의 온실가스 배출권 유상할당 경매에 대한 입찰을 다음과 같이 공고합니다. 2025년 12월 11일 기 후 에 너 지 환 경 부 장 관 2025년 12월 배출권 유상할당 추가 입찰공고 □ 입찰일 : 12월 17일(수) □ 입찰시간 : 14:00~15:00(1시간) □ 유상할당규모 : 1,000,000톤(입찰 배출권 종류 : KAU25) □ 입찰참가자격 :「배출권 유상할당 및 시장안정화 조치를 위한 배출권 추가할당에 관한 규정」제5조에 따른 입찰참가자 ㅇ 입찰참가자 : 할당대상업체(유상·무상할당 대상업체 모두 포함) □ 입찰방식 : 한국거래소 배출권 거래시장 호가제출시스템(K-ETS) 내 경매 입력창을 통해 응찰가격 및 수량 제출 ㅇ 입찰기준 : 응찰 최저수량 1,000톤, 응찰단위 100톤, 호가가격단위는 한국거래소의「배출권 거래시장 운영규정」제34조에 따름 ㅇ 경매참가자는 1개의 응찰호가만 제시(정정시 원호가 취소후 신규호가 가능) □ 낙찰방식 ① 낙찰하한가 적용 : 최근 시장동향 등에 따라 기준가격을 결정하고, 할인율을 공제하여 낙찰하한가 설정(계산식 비공개) - 낙찰하한가에 미치지 못하는 응찰은 무효 ② 낙찰한도 : 업체별 낙찰수량은 해당 입찰예정일의 입찰수량(해당일 입찰수량)의 15% 이상 ~ 30% 이하로 설정 - 낙찰수량의 총합이 해당일 총 입찰수량보다 적은 경우, 해당 초과수량은 익월 경매 입찰 수량으로 이월할 수 있음 ③ 낙찰기업 결정방법 : 유효 응찰가격 중 높은 가격순으로 해당일 입찰수량에 도달하는 가격의 수량까지 순차적으로 낙찰 - 응찰가격이 같은 경우, 응찰번호(주문번호) 순서에 따라 수량 배정 ④ 낙찰가격 결정방법 - 유효응찰 가격들 중 최저응찰가격을 낙찰가격으로 설정 □ 대금결제 : 입찰참가자는 응찰가격에 응찰수량을 곱하여 산정한 금액에 거래소의 수수료 및 수수료에 대한 부가가치세를 더한 금액을 입찰보증금으로 거래소에 납부(입금시한 : 경매일 12:00) ※ 수수료 및 부가가치세 : 낙찰대금의 0.11%(배출권 거래시장과 동일) □ 기타사항 : 「배출권 유상할당 및 시장안정화 조치를 위한 배출권 추가할당에 관한 규정」등에 따름",
+      "source": "기후부 공지·공고",
+      "sourceType": "official",
+      "section": "notice",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10524&orgCd=&boardMasterId=39&boardId=1827900",
+      "matchedKeywords": [
+        "유상할당"
+      ]
+    },
+    {
       "id": "krx-ets-564",
       "sourceId": "564",
       "publishedAt": "2025-12-11",
@@ -40998,6 +41220,20 @@
       "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1825540",
       "matchedKeywords": [
         "시장안정화"
+      ]
+    },
+    {
+      "id": "6def55481adbc2c8",
+      "publishedAt": "2025-12-03",
+      "title": "2025년 12월 배출권 유상할당 경매 입찰 공고",
+      "category": "유상경매",
+      "summary": "기후에너지환경부 공고 제2025-149호 「온실가스 배출권의 할당 및 거래에 관한 법률」제12조 및 같은 법 시행령 제18조 및「배출권 유상할당 및 시장안정화 조치를 위한 배출권 추가할당에 관한 규정」에 따라 2025년도 12월의 온실가스 배출권 유상할당 경매에 대한 입찰을 아래와 같이 공고합니다. 2025년 12월 3일 기 후 에 너 지 환 경 부 장 관 2025년 12월 배출권 유상할당 입찰공고 □ 입찰일 : 12월 10일(수) ㅇ 입찰결과 및 시장상황 등 고려하여 필요시, 12월 17일(수) 추가 입찰 예정 ※ 추가 입찰시 12월 11일(목) 공고 예정이며, 미공고시 추가 입찰은 실시하지 않음 □ 입찰시간 : 14:00~15:00(1시간) ※ 「배출권 유상할당 및 시장안정화 조치를 위한 배출권 추가할당에 관한 규정」 일부개정에 따른 경매시간 변경(기존-13:00~14:00 / 변경-14:00~15:00) □ 유상할당규모 : 4,000,000톤(입찰 배출권 종류 : KAU25) □ 입찰참가자격 :「배출권 유상할당 및 시장안정화 조치를 위한 배출권 추가할당에 관한 규정」제5조에 따른 입찰참가자 ㅇ 입찰참가자 : 할당대상업체(유상·무상할당 대상업체 모두 포함) □ 입찰방식 : 한국거래소 배출권 거래시장 호가제출시스템(K-ETS) 내 경매 입력창을 통해 응찰가격 및 수량 제출 ㅇ 입찰기준 : 응찰 최저수량 1,000톤, 응찰단위 100톤, 호가가격단위는 한국거래소의「배출권 거래시장 운영규정」제34조에 따름 ㅇ 경매참가자는 1개의 응찰호가만 제시(정정시 원호가 취소후 신규호가 가능) □ 낙찰방식 ① 낙찰하한가 적용 : 최근 시장동향 등에 따라 기준가격을 결정하고, 할인율을 공제하여 낙찰하한가 설정(계산식 비공개) - 낙찰하한가에 미치지 못하는 응찰은 무효 ② 낙찰한도 : 업체별 낙찰수량은 해당 입찰예정일의 입찰수량(해당일 입찰수량)의 15% 이상 ~ 30% 이하로 설정 - 낙찰수량의 총합이 해당일 총 입찰수량보다 적은 경우, 해당 초과수량은 익월 경매 입찰 수량으로 이월할 수 있음 ③ 낙찰기업 결정방법 : 유효 응찰가격 중 높은 가격순으로 해당일 입찰수량에 도달하는 가격의 수량까지 순차적으로 낙찰 - 응찰가격이 같은 경우, 응찰번호(주문번호) 순서에 따라 수량 배정 ④ 낙찰가격 결정방법 - 유효응찰 가격들 중 최저응찰가격을 낙찰가격으로 설정 □ 대금결제 : 입찰참가자는 응찰가격에 응찰수량을 곱하여 산정한 금액에 거래소의 수수료 및 수수료에 대한 부가가치세를 더한 금액을 입찰보증금으로 거래소에 납부(입금시한 : 경매일 12:00) ※ 수수료 및 부가가치세 : 낙찰대금의 0.11%(배출권 거래시장과 동일) □ 기타사항 : 「배출권 유상할당 및 시장안정화 조치를 위한 배출권 추가할당에 관한 규정」등에 따름",
+      "source": "기후부 공지·공고",
+      "sourceType": "official",
+      "section": "notice",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10524&orgCd=&boardMasterId=39&boardId=1825540",
+      "matchedKeywords": [
+        "유상할당"
       ]
     },
     {
@@ -42216,7 +42452,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "73f36c800861b330",
+      "id": "f1d99a975cb32c41",
       "publishedAt": "2025-11-14",
       "title": "온실가스 배출권거래제 제4차 계획기간 국가 배출권 할당계획 공고",
       "category": "제도",
@@ -42224,7 +42460,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C%EA%B1%B0%EB%9E%98%EC%A0%9C&menuId=10524&orgCd=&boardMasterId=39&boardId=1819470",
+      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C%EA%B1%B0%EB%9E%98%EC%A0%9C&menuId=10524&orgCd=&boardMasterId=39&boardId=1819470",
       "matchedKeywords": [
         "배출권거래제"
       ]
@@ -42307,7 +42543,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "b2db31eba5c50b6f",
+      "id": "093fe729da33efbf",
       "publishedAt": "2025-11-14",
       "title": "온실가스 배출권거래제 제3차 계획기간 국가 배출권 할당계획 변경사항 공고",
       "category": "제도",
@@ -42315,7 +42551,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C%EA%B1%B0%EB%9E%98%EC%A0%9C&menuId=10524&orgCd=&boardMasterId=39&boardId=1819480",
+      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C%EA%B1%B0%EB%9E%98%EC%A0%9C&menuId=10524&orgCd=&boardMasterId=39&boardId=1819480",
       "matchedKeywords": [
         "배출권거래제"
       ]
@@ -43180,6 +43416,20 @@
       ]
     },
     {
+      "id": "ec493cb889d5b8be",
+      "publishedAt": "2025-11-05",
+      "title": "2025년도 온실가스 배출권 유상할당 경매계획 변경 재공고",
+      "category": "유상경매",
+      "summary": "기후에너지환경부 공고 제2025-65호 「온실가스 배출권의 할당 및 거래에 관한 법률」제12조 및 동법 시행령 제18조,「배출권 유상할당 및 시장안정화 조치를 위한 배출권 추가할당에 관한 규정」제3조에 따라 2025년도 유상할당 경매계획을 다음과 같이 변경하여 공고합니다. ※ (변경내용) 경매참가자격 관련 입찰참가자를 할당대상업체(유상·무상할당 대상업체 모두 포함)로 명확화 2025년 11월 5일 기 후 에 너 지 환 경 부 장 관",
+      "source": "기후부 공지·공고",
+      "sourceType": "official",
+      "section": "notice",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10524&orgCd=&boardMasterId=39&boardId=1774090",
+      "matchedKeywords": [
+        "유상할당"
+      ]
+    },
+    {
       "id": "077a56bd0c4a01e0",
       "publishedAt": "2025-11-05",
       "title": "2025년 11월 배출권 유상할당 경매 입찰 공고",
@@ -43288,6 +43538,20 @@
       "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1774080",
       "matchedKeywords": [
         "시장안정화"
+      ]
+    },
+    {
+      "id": "e7e1967619831d20",
+      "publishedAt": "2025-11-05",
+      "title": "2025년 11월 배출권 유상할당 경매 입찰 공고",
+      "category": "유상경매",
+      "summary": "기후에너지환경부 공고 제2025-63호 「온실가스 배출권의 할당 및 거래에 관한 법률」제12조 및 같은 법 시행령 제18조 및 「배출권 유상할당 및 시장안정화 조치를 위한 배출권 추가할당에 관한 규정」에 따라 2025년도 11월의 온실가스 배출권 유상할당 경매에 대한 입찰을 다음과 같이 공고합니다. 기후에너지환경부 장관 2025년 11월 5일",
+      "source": "기후부 공지·공고",
+      "sourceType": "official",
+      "section": "notice",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10524&orgCd=&boardMasterId=39&boardId=1774080",
+      "matchedKeywords": [
+        "유상할당"
       ]
     },
     {
@@ -46128,6 +46392,20 @@
       ]
     },
     {
+      "id": "4616ef17cd0e5971",
+      "publishedAt": "2025-09-03",
+      "title": "2025년 9월 배출권 유상할당 입찰 공고",
+      "category": "유상경매",
+      "summary": "환경부 공고 제2025-571호 「온실가스 배출권의 할당 및 거래에 관한 법률」제12조 및 같은 법 시행령 제18조,「배출권 유상할당 및 시장안정화 조치를 위한 배출권 추가할당에 관한 규정」제3조 및 환경부 공고 제2025-456호에 따라 2025년도 9월의 온실가스 배출권 유상할당 경매에 대한 입찰을 다음과 같이 공고합니다. 2025년 9월 3일 환 경 부 장 관",
+      "source": "기후부 공지·공고",
+      "sourceType": "official",
+      "section": "notice",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10524&orgCd=&boardMasterId=39&boardId=1762780",
+      "matchedKeywords": [
+        "유상할당"
+      ]
+    },
+    {
       "id": "05e2720989972b72",
       "publishedAt": "2025-09-02",
       "title": "개도국 기후 투명성 역량강화… 인천에서 국제 협력 모색",
@@ -47898,6 +48176,20 @@
       "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1758000",
       "matchedKeywords": [
         "시장안정화"
+      ]
+    },
+    {
+      "id": "969b5ccf15a333cf",
+      "publishedAt": "2025-08-07",
+      "title": "2025년 8월 배출권 유상할당 입찰 공고",
+      "category": "유상경매",
+      "summary": "환경부 공고 제2025-529호 「온실가스 배출권의 할당 및 거래에 관한 법률」제12조 및 같은 법 시행령 제18조,「배출권 유상할당 및 시장안정화 조치를 위한 배출권 추가할당에 관한 규정」제3조 및 환경부 공고 제2025-456호에 따라 2025년도 8월의 온실가스 배출권 유상할당 경매에 대한 입찰을 다음과 같이 공고합니다. 2025년 8월 6일 환 경 부 장 관",
+      "source": "기후부 공지·공고",
+      "sourceType": "official",
+      "section": "notice",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10524&orgCd=&boardMasterId=39&boardId=1758000",
+      "matchedKeywords": [
+        "유상할당"
       ]
     },
     {
@@ -49719,6 +50011,20 @@
       ]
     },
     {
+      "id": "b7d9dbb56dbb4753",
+      "publishedAt": "2025-07-03",
+      "title": "2025년도 온실가스 배출권 유상할당 경매계획 변경공고",
+      "category": "유상경매",
+      "summary": "환경부 공고 제2025-456호 「온실가스 배출권의 할당 및 거래에 관한 법률」제12조 및 동법 시행령 제18조,「배출권 유상할당 및 시장안정화 조치를 위한 배출권 추가할당에 관한 규정」제3조에 따라 2025년도 유상할당 경매계획을 다음과 같이 변경하여 공고합니다. 2025년 7월 3일 환 경 부 장 관",
+      "source": "기후부 공지·공고",
+      "sourceType": "official",
+      "section": "notice",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10524&orgCd=&boardMasterId=39&boardId=1752110",
+      "matchedKeywords": [
+        "유상할당"
+      ]
+    },
+    {
       "id": "krx-ets-547",
       "sourceId": "547",
       "publishedAt": "2025-07-03",
@@ -50051,6 +50357,20 @@
       "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1752120",
       "matchedKeywords": [
         "시장안정화"
+      ]
+    },
+    {
+      "id": "a44f4132388ece97",
+      "publishedAt": "2025-07-03",
+      "title": "2025년 7월 배출권 유상할당 입찰 공고",
+      "category": "유상경매",
+      "summary": "환경부 공고 제2025-452호 「온실가스 배출권의 할당 및 거래에 관한 법률」제12조 및 같은 법 시행령 제18조,「배출권 유상할당 및 시장안정화 조치를 위한 배출권 추가할당에 관한 규정」제3조 및 환경부 공고 제2025-456호에 따라 2025년도 7월의 온실가스 배출권 유상할당 경매에 대한 입찰을 다음과 같이 공고합니다. 2025년 7월 3일 환 경 부 장 관",
+      "source": "기후부 공지·공고",
+      "sourceType": "official",
+      "section": "notice",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10524&orgCd=&boardMasterId=39&boardId=1752120",
+      "matchedKeywords": [
+        "유상할당"
       ]
     },
     {
@@ -50712,7 +51032,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "d7fb8dedcd1e45ae",
+      "id": "58828e56b31f8f6a",
       "publishedAt": "2025-06-09",
       "title": "배출권거래제 자발적 참여업체 신청 절차 공고",
       "category": "제도",
@@ -50720,7 +51040,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C%EA%B1%B0%EB%9E%98%EC%A0%9C&menuId=10524&orgCd=&boardMasterId=39&boardId=1746990",
+      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C%EA%B1%B0%EB%9E%98%EC%A0%9C&menuId=10524&orgCd=&boardMasterId=39&boardId=1746990",
       "matchedKeywords": [
         "배출권거래제"
       ]
@@ -51024,6 +51344,20 @@
       "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1746560",
       "matchedKeywords": [
         "시장안정화"
+      ]
+    },
+    {
+      "id": "4181744ed1ffb8a5",
+      "publishedAt": "2025-06-04",
+      "title": "2025년 6월 배출권 유상할당 입찰 공고",
+      "category": "유상경매",
+      "summary": "환경부 공고 제2025-389호 「온실가스 배출권의 할당 및 거래에 관한 법률」제12조 및 같은 법 시행령 제18조,「배출권 유상할당 및 시장안정화 조치를 위한 배출권 추가할당에 관한 규정」제3조 및 환경부 공고 제2024-813호에 따라 2025년도 6월의 온실가스 배출권 유상할당 경매에 대한 입찰을 다음과 같이 공고합니다. 2025년 6월 4일 환 경 부 장 관",
+      "source": "기후부 공지·공고",
+      "sourceType": "official",
+      "section": "notice",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10524&orgCd=&boardMasterId=39&boardId=1746560",
+      "matchedKeywords": [
+        "유상할당"
       ]
     },
     {
@@ -52239,6 +52573,20 @@
       "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1740920",
       "matchedKeywords": [
         "시장안정화"
+      ]
+    },
+    {
+      "id": "dba910b622d2fe09",
+      "publishedAt": "2025-05-08",
+      "title": "2025년 5월 배출권 유상할당 입찰공고",
+      "category": "유상경매",
+      "summary": "환경부 공고 제2025-329호 「온실가스 배출권의 할당 및 거래에 관한 법률」제12조 및 같은 법 시행령 제18조,「배출권 유상할당 및 시장안정화 조치를 위한 배출권 추가할당에 관한 규정」제3조 및 환경부 공고 제2024-813호에 따라 2025년도 5월의 온실가스 배출권 유상할당 경매에 대한 입찰을 다음과 같이 공고합니다. 2025년 5월 8일 환 경 부 장 관",
+      "source": "기후부 공지·공고",
+      "sourceType": "official",
+      "section": "notice",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10524&orgCd=&boardMasterId=39&boardId=1740920",
+      "matchedKeywords": [
+        "유상할당"
       ]
     },
     {
@@ -54791,6 +55139,20 @@
       "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1728550",
       "matchedKeywords": [
         "시장안정화"
+      ]
+    },
+    {
+      "id": "506378a596190008",
+      "publishedAt": "2025-03-07",
+      "title": "2025년 3월 배출권 유상할당 입찰 공고",
+      "category": "유상경매",
+      "summary": "환경부 공고 제2025-165호 「온실가스 배출권의 할당 및 거래에 관한 법률」제12조 및 같은 법 시행령 제18조,「배출권 유상할당 및 시장안정화 조치를 위한 배출권 추가할당에 관한 규정」제3조 및 환경부 공고 제2024-813호에 따라 2025년도 3월의 온실가스 배출권 유상할당 경매에 대한 입찰을 다음과 같이 공고합니다. 2025년 3월 7일 환 경 부 장 관",
+      "source": "기후부 공지·공고",
+      "sourceType": "official",
+      "section": "notice",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10524&orgCd=&boardMasterId=39&boardId=1728550",
+      "matchedKeywords": [
+        "유상할당"
       ]
     },
     {
@@ -59907,6 +60269,20 @@
       ]
     },
     {
+      "id": "93445a15a68be375",
+      "publishedAt": "2024-12-27",
+      "title": "2025년도 온실가스 배출권 유상할당 경매계획",
+      "category": "유상경매",
+      "summary": "환경부 공고 제2024-813호 「온실가스 배출권의 할당 및 거래에 관한 법률」제12조 및 동법 시행령 제18조, 「배출권 유상할당 및 시장안정화 조치를 위한 배출권 추가할당에 관한 규정」 제3조에 따라 2025년도 유상할당 경매계획을 다음과 같이 공고합니다. 2024년 12월 27일 환 경 부 장 관",
+      "source": "기후부 공지·공고",
+      "sourceType": "official",
+      "section": "notice",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10524&orgCd=&boardMasterId=39&boardId=1716810",
+      "matchedKeywords": [
+        "유상할당"
+      ]
+    },
+    {
       "id": "d9b024378993a511",
       "publishedAt": "2024-12-26",
       "title": "기후위기 대응전략 모색을 위한 논의의 장 마련",
@@ -60064,7 +60440,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "c42e59430c76006a",
+      "id": "cd43602a3ac2b6c0",
       "publishedAt": "2024-12-24",
       "title": "온실가스 배출권거래제 제3차 계획기간 국가 배출권 할당계획 변경사항 공고",
       "category": "제도",
@@ -60072,7 +60448,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C%EA%B1%B0%EB%9E%98%EC%A0%9C&menuId=10524&orgCd=&boardMasterId=39&boardId=1715690",
+      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C%EA%B1%B0%EB%9E%98%EC%A0%9C&menuId=10524&orgCd=&boardMasterId=39&boardId=1715690",
       "matchedKeywords": [
         "배출권거래제"
       ]
@@ -61182,6 +61558,20 @@
       ]
     },
     {
+      "id": "729180966069418a",
+      "publishedAt": "2024-12-04",
+      "title": "2024년 12월 배출권 유상할당 입찰 공고",
+      "category": "유상경매",
+      "summary": "환경부 공고 제2024-749호 「온실가스 배출권의 할당 및 거래에 관한 법률」제12조 및 같은 법 시행령 제18조,「배출권 유상할당 및 시장안정화 조치를 위한 배출권 추가할당에 관한 규정」제3조 및 환경부 공고 제2024-427호에 따라 2024년도 12월의 온실가스 배출권 유상할당 경매에 대한 입찰을 붙임과 같이 공고합니다. 2024년 12월 4일 환 경 부 장 관",
+      "source": "기후부 공지·공고",
+      "sourceType": "official",
+      "section": "notice",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10524&orgCd=&boardMasterId=39&boardId=1712550",
+      "matchedKeywords": [
+        "유상할당"
+      ]
+    },
+    {
       "id": "motie_press-ATCL3f49a5a8c-169883",
       "sourceId": "169883",
       "sourceBoard": "ATCL3f49a5a8c",
@@ -62001,7 +62391,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "3399eabf2b5b62d4",
+      "id": "f17c476f0da28b8c",
       "publishedAt": "2024-11-12",
       "title": "제4차 배출권거래제 기본계획(안) 및 제3차 배출권 할당계획 변경(안) 공청회 개최 공고",
       "category": "제도",
@@ -62009,7 +62399,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C%EA%B1%B0%EB%9E%98%EC%A0%9C&menuId=10524&orgCd=&boardMasterId=39&boardId=1707640",
+      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C%EA%B1%B0%EB%9E%98%EC%A0%9C&menuId=10524&orgCd=&boardMasterId=39&boardId=1707640",
       "matchedKeywords": [
         "배출권거래제"
       ]
@@ -252240,17 +252630,17 @@
   "policyRetention": {
     "policy": "append-only",
     "status": "verified",
-    "previousNonNewsCount": 4582,
-    "generatedNonNewsCount": 4583,
-    "finalNonNewsCount": 4583,
+    "previousNonNewsCount": 4583,
+    "generatedNonNewsCount": 4607,
+    "finalNonNewsCount": 4607,
     "previousScheduleCount": 18,
     "finalScheduleCount": 18
   },
   "newsRetention": {
     "policy": "append-only",
-    "lastMergedAt": "2026-10-01T18:13:04+09:00",
-    "itemCount": 955,
-    "archiveBefore": 943,
+    "lastMergedAt": "2026-10-01T20:07:03+09:00",
+    "itemCount": 957,
+    "archiveBefore": 955,
     "currentBefore": 847,
     "gitRecoveryEnabled": false
   }

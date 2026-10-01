@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-01T18:13:04+09:00",
+  "generatedAt": "2026-10-01T20:07:03+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 955,
+  "itemCount": 957,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-01",
   "sourceCommitsScanned": 0,
@@ -486,6 +486,30 @@
       "region": "국내"
     },
     {
+      "id": "a058bef2add9b6c6",
+      "publishedAt": "2026-10-01",
+      "title": "베트남 주식거래, 경제중심지 호찌민 거래소로 연말 통합",
+      "category": "제도",
+      "summary": "앞으로 HNX는 주식을 제외한 채권·파생상품·비상장주식 거래를 계속 맡으며, 탄소 배출권 시장 ·스타트업을 위한 자본거래 시장 등 신규 금융 시장 ·상품 개발에 주력할 것으로 예상된다. 앞서 지난달 21일 글로벌...",
+      "source": "yna.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.yna.co.kr/view/AKR20261001183400084?input=1195m",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "yna.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
       "id": "eeb3375f9d2eb17c",
       "publishedAt": "2026-10-01",
       "title": "메텍홀딩스, 뉴욕서 축산 탄소데이터 인프라 공개…\"연내 美법인 설립\"",
@@ -680,12 +704,41 @@
         "korea.kr",
         "dailian.co.kr",
         "yna.co.kr",
-        "kbs.co.kr"
+        "kbs.co.kr",
+        "etnews.com",
+        "ddaily.co.kr",
+        "digitaltoday.co.kr",
+        "zdnet.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 5,
+      "duplicateCount": 9,
+      "region": "국내"
+    },
+    {
+      "id": "b31665824c8034da",
+      "publishedAt": "2026-10-01",
+      "title": "[온실가스 배출권] 10월 1일 KAU26, 400원 하락한 2만9600원",
+      "category": "시장·가격",
+      "summary": "[온실가스 배출권] 10월 1일 KAU26, 400원 하락한 2만9600원 dailyenews.co.kr",
+      "source": "dailyenews.co.kr",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBOVk5YQS0wa19Ec1UxNms5RXFUM0ZnUFdSOG9PVl9FYS15WjBzbFFSSkVXV3NjU3pQb2FsTmZXdkVRRThFRDZTS1RRRDFONElES0JJN0VQTE5obXljZXNhTmRqLVdrN3FDY09kQm8yNA?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "온실가스 배출권",
+        "KAU26"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "dailyenews.co.kr"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
       "region": "국내"
     },
     {
@@ -1057,8 +1110,8 @@
         "상쇄배출권"
       ],
       "duplicateSources": [
-        "biz.chosun.com",
-        "Chosunbiz"
+        "Chosunbiz",
+        "biz.chosun.com"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -1756,8 +1809,8 @@
         "온실가스 배출권"
       ],
       "duplicateSources": [
-        "biz.chosun.com",
-        "Chosunbiz"
+        "Chosunbiz",
+        "biz.chosun.com"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -1922,8 +1975,8 @@
       "publishedAt": "2026-09-30",
       "title": "\"자연기반 탄소배출권 시장 변화 이렇게 대비하라”…WEF 보고서",
       "category": "제도",
-      "summary": "\"자연기반 탄소배출권 시장 변화 이렇게 대비하라”…WEF 보고서 넷제로뉴스",
-      "source": "넷제로뉴스",
+      "summary": "\"자연기반 탄소배출권 시장 변화 이렇게 대비하라”…WEF 보고서 netzeronews.kr",
+      "source": "netzeronews.kr",
       "sourceType": "news",
       "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5ZVXpOX3JWeXZkbDQ2UnVLQlVaZXRHVXBOUG9SeDk1ZGVVdkd1Q0lMb296TDRuNDRaZGMtbGdiWU1sRGdZRlNDYmZYWFdkODNjdVlSOUctMEV5RWFTck9vRV9uemt1NW9wQnc?oc=5",
       "searchProvider": "Google News RSS",
@@ -1932,9 +1985,10 @@
         "탄소배출권"
       ],
       "section": "news",
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "duplicateSources": [
-        "넷제로뉴스"
+        "넷제로뉴스",
+        "netzeronews.kr"
       ],
       "searchProviders": [
         "Google News RSS"
@@ -3970,7 +4024,6 @@
         "smedaily.co.kr",
         "whitepaper.co.kr",
         "ppss.kr",
-        "글로벌E",
         "globale.co.kr",
         "todayeconomic.com",
         "newsroad.co.kr",
@@ -4007,14 +4060,15 @@
         "huffingtonpost.kr",
         "v.daum.net",
         "yna.co.kr",
+        "ftoday.co.kr",
         "아시아경제",
         "view.asiae.co.kr",
         "newsis.com",
         "catchnews.kr",
         "thefairnews.co.kr",
+        "글로벌E",
         "더팩트",
         "kfenews.co.kr",
-        "ftoday.co.kr",
         "뉴시스",
         "pennmike.com",
         "widedaily.com",
@@ -4949,8 +5003,8 @@
         "유상할당"
       ],
       "duplicateSources": [
-        "biz.chosun.com",
-        "Chosunbiz"
+        "Chosunbiz",
+        "biz.chosun.com"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -10259,8 +10313,8 @@
         "유상할당"
       ],
       "duplicateSources": [
-        "newstree.kr",
-        "뉴스;트리"
+        "뉴스;트리",
+        "newstree.kr"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -14420,8 +14474,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "newstree.kr",
-        "뉴스;트리"
+        "뉴스;트리",
+        "newstree.kr"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -17493,8 +17547,8 @@
         "온실가스 배출권"
       ],
       "duplicateSources": [
-        "전자신문",
-        "etnews.com"
+        "etnews.com",
+        "전자신문"
       ],
       "searchProviders": [
         "Google News RSS",
