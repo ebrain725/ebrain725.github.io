@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-01T10:12:53+09:00",
+  "generatedAt": "2026-10-01T13:13:16+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 928,
+  "itemCount": 936,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-01",
   "sourceCommitsScanned": 0,
@@ -55,6 +55,30 @@
       ],
       "duplicateSources": [
         "mk.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "488119c223c7b8f5",
+      "publishedAt": "2026-10-01",
+      "title": "항공권 살 때 eSIM도 한 번에…트리니티항공, 국적사 최초 동시 구매 서...",
+      "category": "상쇄·외부사업",
+      "summary": "한편, 트리니티항공은 최근 NH투자증권과 ‘국제항공 탄소 상쇄 ·감축제도(CORSIA) 및 배출권 거래제에 관한 상호협력 업무협약(MOU)’을 체결하는 등 국제 탄소규제 대응에도 적극 나서고 있다.",
+      "source": "biz.heraldcorp.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://biz.heraldcorp.com/article/10890409?ref=naver",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "biz.heraldcorp.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -120,6 +144,56 @@
       "region": "국내"
     },
     {
+      "id": "79d95b59240b5718",
+      "publishedAt": "2026-10-01",
+      "title": "플러그링크, 아시아 기후테크 경진대회 파이널리스트 선정…\"한국 기업...",
+      "category": "제도",
+      "summary": "참가 대상도 시장 검증을 마친 기업으로 제한됐다. Pre-Seed부터 Series B 단계 기업 가운데 이미 제품이나... 충전 네트워크를 기반으로 기업 대상 충전 서비스인 '플링Biz'를 비롯해 수요반응(DR), 탄소 배출권 사업 등을...",
+      "source": "digitalchosun.dizzo.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://digitalchosun.dizzo.com/site/data/html_dir/2026/10/01/2026100180065.html",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "digitalchosun.dizzo.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "d601ec4fd328c16f",
+      "publishedAt": "2026-10-01",
+      "title": "탄소배출권산업협회, 감축실적 과대 산정 논란에 “우려 무겁게 받아들...",
+      "category": "상쇄·외부사업",
+      "summary": "정부 집계로는 배출권거래제( K-ETS )가 관리하는 배출량이 국가 전체의 약 70% 수준이다. 협회는 중소·중견기업과 공급망, 건물·수송·농업 등 나머지 영역에는 감축을 유도할 제도적 수단이 부족하다고 지적했다. 크레딧의...",
+      "source": "donga.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.donga.com/news/Economy/article/all/20261001/134766887/1",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권",
+        "배출권거래제",
+        "K-ETS"
+      ],
+      "duplicateSources": [
+        "donga.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "34a9a88219ae0c7a",
       "publishedAt": "2026-10-01",
       "title": "캐나다, 국경 넘는 탄소 감축 실적 거래 틀 검토",
@@ -143,6 +217,30 @@
       "region": "해외"
     },
     {
+      "id": "5174dcfde24454e7",
+      "publishedAt": "2026-10-01",
+      "title": "철강노조연대, 기후부에 경쟁력 회복 5대 대책 요구",
+      "category": "제도",
+      "summary": "노조 연대는 높은 전기요금과 탄소 배출권 비용 등으로 기업 부담이 커지고 있다며, 전기료 인하와 저탄소 공정 전환을 위한 금융 지원, 저탄소 철강제품 공공조달 확대 등 5대 핵심 요구안을 전달했습니다.",
+      "source": "tbc.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.tbc.co.kr/news/view?pno=20260930175035AE06237&id=211636",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "tbc.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "33cd174d24aa4498",
       "publishedAt": "2026-10-01",
       "title": "업루트와이, 키르기스스탄서 소수력· 탄소 사업 확대",
@@ -163,6 +261,31 @@
       "searchProviders": [
         "NAVER API HUB"
       ],
+      "region": "국내"
+    },
+    {
+      "id": "b9fccba5c0bbabef",
+      "publishedAt": "2026-10-01",
+      "title": "수요 상향치에 NDC 목표 반영시 석탄퇴출 7년 빨라져…보상·입법 과제 ...",
+      "category": "제도",
+      "summary": "재원 조달 방안은 ' 배출권 거래제 유상할당 수입(50%)'이 가장 많았다. 또 일반국민의 2040 탈석탄 정책 찬성률은 53.2%로 파악됐다. 전기요금 추가 부담 의사는 가구당 월평균 중앙값 3230원으로 연간 약 9000억원, 5년 누적...",
+      "source": "electimes.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.electimes.com/news/articleView.html?idxno=373003",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "유상할당"
+      ],
+      "duplicateSources": [
+        "electimes.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
       "region": "국내"
     },
     {
@@ -189,6 +312,59 @@
         "Google News RSS"
       ],
       "duplicateCount": 2,
+      "region": "국내"
+    },
+    {
+      "id": "5053f63ed049026e",
+      "publishedAt": "2026-10-01",
+      "title": "단양 한국석회석신소재연구소, 석회산업 탄소중립 대응 협력 강화",
+      "category": "제도",
+      "summary": "올해 6월부터 9월까지 세 차례 세미나를 열어 탄소 배출권 거래제 와 국내외 탄소시장 동향, 글로벌 석회산업의 탄소중립 기술·정책 등을 공유했다. 이어 지난 29일에는 '공급망 ESG 규제와 동향' 및 'NOx 감축 기술'을 주제로...",
+      "source": "cctimes.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.cctimes.kr/news/articleView.html?idxno=930213",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권",
+        "탄소시장"
+      ],
+      "duplicateSources": [
+        "inews365.com",
+        "cctimes.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 2,
+      "region": "국내"
+    },
+    {
+      "id": "cee3e50c34ec59cc",
+      "publishedAt": "2026-10-01",
+      "title": "단양 석회업계 탄소중립 대응 본격화… 온실가스 감축 해법 모색",
+      "category": "제도",
+      "summary": "올해 6월부터 9월까지 열린 세 차례 세미나에서는 탄소 배출권 거래제와 국내외 탄소시장 동향, 글로벌 석회산업의 탄소중립 기술 및 정책 등이 다뤄졌다. 석회산업은 제조 과정에서 상당량의 온실가스 가 발생하는...",
+      "source": "daejonilbo.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.daejonilbo.com/news/articleView.html?idxno=2304479",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권",
+        "탄소시장"
+      ],
+      "duplicateSources": [
+        "daejonilbo.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
       "region": "국내"
     },
     {
@@ -953,8 +1129,8 @@
       "publishedAt": "2026-09-30",
       "title": "[온실가스 배출권] 9월 30일 KAU26, 50원 하락하며 3만원대 턱걸이",
       "category": "시장·가격",
-      "summary": "[온실가스 배출권] 9월 30일 KAU26, 50원 하락하며 3만원대 턱걸이 데일리e뉴스",
-      "source": "데일리e뉴스",
+      "summary": "[온실가스 배출권] 9월 30일 KAU26, 50원 하락하며 3만원대 턱걸이 dailyenews.co.kr",
+      "source": "dailyenews.co.kr",
       "sourceType": "news",
       "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBQbDR5WE10amw3NXlLcDVvcUwxTmtBTGIwUjR4TlVkSFUwMGNsUnNCbTVGZkd6MzVNT0t6cEZ6ODM1VGJKcjdjMTEtRVlfSkdqTGF6ZENhUjlqOEFveVB5d2pHWmNsOFNxTDQ1TVBTbw?oc=5",
       "searchProvider": "Google News RSS",
@@ -964,9 +1140,10 @@
         "KAU26"
       ],
       "section": "news",
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "duplicateSources": [
-        "데일리e뉴스"
+        "데일리e뉴스",
+        "dailyenews.co.kr"
       ],
       "searchProviders": [
         "Google News RSS"
@@ -1191,6 +1368,31 @@
       ],
       "duplicateSources": [
         "hankyung.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "b859575070b9f8d3",
+      "publishedAt": "2026-09-30",
+      "title": "'2040 탈석탄' 좌초자산 19조원대···민간 발전업계, \"공기업이 지분 ...",
+      "category": "제도",
+      "summary": "재원은 정부의 온실가스 배출권 유상할당 수입을 우선 활용하고 전기요금을 통한 분담으로 보완하는 구상이다. 설문 분석에서 국민의 추가 부담 의사액은 가구당 월 중앙값 3230원으로 추정됐다. 정 연구위원은 이를...",
+      "source": "enewstoday.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.enewstoday.co.kr/news/articleView.html?idxno=2475838",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "온실가스 배출권",
+        "유상할당"
+      ],
+      "duplicateSources": [
+        "enewstoday.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -1891,8 +2093,8 @@
       "publishedAt": "2026-09-29",
       "title": "[온실가스 배출권] 9월 29일 KAU26, 150원 오르며 3만원대 재진입",
       "category": "시장·가격",
-      "summary": "[온실가스 배출권] 9월 29일 KAU26, 150원 오르며 3만원대 재진입 데일리e뉴스",
-      "source": "데일리e뉴스",
+      "summary": "[온실가스 배출권] 9월 29일 KAU26, 150원 오르며 3만원대 재진입 dailyenews.co.kr",
+      "source": "dailyenews.co.kr",
       "sourceType": "news",
       "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE05Q0RkTy1EdlFsaHRZR3RNYTdZa01teFF6YXlqV0hXWG83NUwyRExMTVlpYlFmSlhXcE1acjZfUWxybnY0aDFtaU5HLXJQQkFjUlpWMWhOSDlZSFMwZllnN05lSkVfeEptM19IT1prRQ?oc=5",
       "searchProvider": "Google News RSS",
@@ -1902,9 +2104,10 @@
         "KAU26"
       ],
       "section": "news",
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "duplicateSources": [
-        "데일리e뉴스"
+        "데일리e뉴스",
+        "dailyenews.co.kr"
       ],
       "searchProviders": [
         "Google News RSS"
@@ -2215,8 +2418,8 @@
         "배출권"
       ],
       "duplicateSources": [
-        "한국NGO신문",
         "ngonews.kr",
+        "한국NGO신문",
         "newstree.kr",
         "뉴스;트리"
       ],
@@ -2267,8 +2470,8 @@
         "탄소배출권"
       ],
       "duplicateSources": [
-        "newsworks.co.kr",
-        "뉴스웍스"
+        "뉴스웍스",
+        "newsworks.co.kr"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -2823,12 +3026,21 @@
         "K-ETS"
       ],
       "duplicateSources": [
-        "sateconomy.co.kr"
+        "sateconomy.co.kr",
+        "iminju.net",
+        "pennmike.com",
+        "widedaily.com",
+        "inthenews.co.kr",
+        "mediapen.com",
+        "lcnews.co.kr",
+        "etoday.co.kr",
+        "dealsitetv.com",
+        "thevaluenews.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 10,
       "region": "국내"
     },
     {
@@ -2974,8 +3186,8 @@
       "publishedAt": "2026-09-28",
       "title": "[온실가스 배출권] 9월 28일 KAU26, 250원 하락하며 3만원대 붕괴",
       "category": "시장·가격",
-      "summary": "[온실가스 배출권] 9월 28일 KAU26, 250원 하락하며 3만원대 붕괴 데일리e뉴스",
-      "source": "데일리e뉴스",
+      "summary": "[온실가스 배출권] 9월 28일 KAU26, 250원 하락하며 3만원대 붕괴 dailyenews.co.kr",
+      "source": "dailyenews.co.kr",
       "sourceType": "news",
       "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE4tNDUycnl4R0R3S0RUVVppai1wZzhqNlE2TEdjRnRCNmJ3Z3IydVZ1ZWN1clJ2aTlYT1plWVV5QzFIZ3RrMkNSTVJaNFhoekViODBhTjRURVRjTTZBdllZNU9MZzRfYVRoMTFUOElJMA?oc=5",
       "searchProvider": "Google News RSS",
@@ -2985,9 +3197,10 @@
         "KAU26"
       ],
       "section": "news",
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "duplicateSources": [
-        "데일리e뉴스"
+        "데일리e뉴스",
+        "dailyenews.co.kr"
       ],
       "searchProviders": [
         "Google News RSS"
@@ -3254,18 +3467,17 @@
         "srtimes.kr",
         "cstimes.com",
         "digitalchosun.dizzo.com",
-        "글로벌이코노믹",
+        "g-enews.com",
         "뉴스핌",
+        "tf.co.kr",
         "metroseoul.co.kr",
         "socialvalue.kr",
         "asiatime.co.kr",
         "getnews.co.kr",
-        "g-enews.com",
         "sedaily.com",
         "paxetv.com",
-        "tf.co.kr",
-        "뉴스1",
-        "브릿지경제",
+        "smarttoday.co.kr",
+        "news1.kr",
         "dailycar.co.kr",
         "kbsm.net",
         "finomy.com",
@@ -3285,20 +3497,16 @@
         "delighti.co.kr",
         "smedaily.co.kr",
         "whitepaper.co.kr",
-        "pennmike.com",
         "ppss.kr",
+        "글로벌E",
         "globale.co.kr",
         "todayeconomic.com",
-        "widedaily.com",
         "newsroad.co.kr",
         "연합뉴스TV",
-        "yonhapnewstv.co.kr",
         "newsian.co.kr",
         "bizwnews.com",
         "매일일보",
         "edaily.co.kr",
-        "inthenews.co.kr",
-        "mediapen.com",
         "financialpost.co.kr",
         "sisacast.kr",
         "economist.co.kr",
@@ -3307,8 +3515,6 @@
         "megaeconomy.co.kr",
         "digitaltoday.co.kr",
         "job-post.co.kr",
-        "lcnews.co.kr",
-        "etoday.co.kr",
         "newscape.co.kr",
         "biztribune.co.kr",
         "sports.hankooki.com",
@@ -3319,32 +3525,40 @@
         "kfenews.co.kr",
         "wowtv.co.kr",
         "newspim.com",
+        "브릿지경제",
         "viva100.com",
         "moneystorm.kr",
-        "dealsitetv.com",
         "dailypop.kr",
         "sateconomy.co.kr",
         "ezyeconomy.com",
         "wsobi.com",
         "huffingtonpost.kr",
         "v.daum.net",
-        "news1.kr",
         "yna.co.kr",
         "ftoday.co.kr",
         "아시아경제",
         "view.asiae.co.kr",
+        "뉴시스",
         "newsis.com",
         "catchnews.kr",
         "thefairnews.co.kr",
+        "글로벌이코노믹",
+        "뉴스1",
+        "pennmike.com",
+        "widedaily.com",
+        "yonhapnewstv.co.kr",
+        "inthenews.co.kr",
+        "mediapen.com",
+        "lcnews.co.kr",
+        "etoday.co.kr",
+        "dealsitetv.com",
         "이투데이",
         "fortunekorea.co.kr",
-        "글로벌E",
         "더팩트",
         "imaeil.com",
         "iminju.net",
         "뉴시안",
         "비즈월드",
-        "뉴시스",
         "inews24.com",
         "businessplus.kr",
         "asiae.co.kr",
@@ -3354,7 +3568,6 @@
         "ddaily.co.kr",
         "econovill.com",
         "mt.co.kr",
-        "smarttoday.co.kr",
         "popcornnews.net",
         "slist.kr",
         "discoverynews.kr",
@@ -14963,8 +15176,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "news.kbs.co.kr",
         "KBS 뉴스",
+        "news.kbs.co.kr",
         "kbs.co.kr"
       ],
       "searchProviders": [
@@ -16628,8 +16841,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "news.kbs.co.kr",
         "KBS 뉴스",
+        "news.kbs.co.kr",
         "kbs.co.kr"
       ],
       "searchProviders": [
