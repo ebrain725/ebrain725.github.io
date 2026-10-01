@@ -3,6 +3,28 @@
   "requestedStartDate": "2015-01-01",
   "items": [
     {
+      "id": "motie_press-ATCL3f49a5a8c-172257",
+      "sourceId": "172257",
+      "sourceBoard": "ATCL3f49a5a8c",
+      "sourceBoardKey": "press_release",
+      "boardCategory": "보도·참고자료",
+      "title": "(참고자료)K-원전(APR1400) 팀코리아, 미국 진출 시동건다",
+      "summary": "원전수출진흥과 담당 · 참고자료입니다. 원문에서 세부 내용을 확인하세요.",
+      "url": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/172257/view",
+      "publishedAt": "2026-10-01",
+      "source": "산업부 보도자료",
+      "sourceType": "official",
+      "section": "motie_press",
+      "category": "참고자료",
+      "department": "원전수출진흥과",
+      "matchedKeywords": [
+        "원전"
+      ],
+      "matchedFields": [
+        "title"
+      ]
+    },
+    {
       "id": "motie_press-ATCL3f49a5a8c-172246",
       "sourceId": "172246",
       "sourceBoard": "ATCL3f49a5a8c",
@@ -130553,10 +130575,10 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     }
   ],
-  "generatedAt": "2026-10-01T04:09:14+09:00",
+  "generatedAt": "2026-10-02T04:36:26+09:00",
   "collectionMode": "incremental",
-  "queryStartDate": "2026-08-02",
-  "queryEndDate": "2026-10-01",
+  "queryStartDate": "2026-08-03",
+  "queryEndDate": "2026-10-02",
   "policyKeywords": {
     "titleAndContent": [
       "배출권",
@@ -130689,11 +130711,11 @@
     },
     "motie_press": {
       "label": "산업부 보도자료",
-      "records": 1885,
+      "records": 1886,
       "earliest": "2016-01-19",
-      "latest": "2026-09-30",
+      "latest": "2026-10-01",
       "byBoardCategory": {
-        "보도·참고자료": 1364,
+        "보도·참고자료": 1365,
         "보도설명자료": 521
       }
     }
@@ -130705,14 +130727,14 @@
       "section": "motie_press",
       "boardCategory": "보도·참고자료",
       "boardUrl": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c",
-      "requestedStartDate": "2026-08-02",
-      "requestedEndDate": "2026-10-01",
+      "requestedStartDate": "2026-08-03",
+      "requestedEndDate": "2026-10-02",
       "searchMode": "official-expanded-keyword-query",
       "pagesFetched": 149,
-      "parsedRows": 6,
-      "itemCount": 5,
+      "parsedRows": 7,
+      "itemCount": 6,
       "earliest": "2026-08-13",
-      "latest": "2026-09-30",
+      "latest": "2026-10-01",
       "complete": true,
       "queries": [
         {
@@ -131096,9 +131118,9 @@
         {
           "keyword": "원전",
           "field": "title",
-          "reportedTotal": 3,
+          "reportedTotal": 4,
           "pagesFetched": 1,
-          "parsedRows": 3
+          "parsedRows": 4
         },
         {
           "keyword": "재생에너지",
@@ -131766,8 +131788,8 @@
       "section": "motie_press",
       "boardCategory": "보도설명자료",
       "boardUrl": "https://www.motir.go.kr/kor/article/ATCLe0854704d",
-      "requestedStartDate": "2026-08-02",
-      "requestedEndDate": "2026-10-01",
+      "requestedStartDate": "2026-08-03",
+      "requestedEndDate": "2026-10-02",
       "searchMode": "official-expanded-keyword-query",
       "pagesFetched": 149,
       "parsedRows": 3,
@@ -132827,8 +132849,8 @@
       "section": "motie_notice",
       "boardCategory": "공지사항",
       "boardUrl": "https://www.motir.go.kr/kor/article/ATCL6e90bb9de",
-      "requestedStartDate": "2026-08-02",
-      "requestedEndDate": "2026-10-01",
+      "requestedStartDate": "2026-08-03",
+      "requestedEndDate": "2026-10-02",
       "searchMode": "official-expanded-keyword-query",
       "pagesFetched": 149,
       "parsedRows": 0,
@@ -133888,8 +133910,8 @@
       "section": "motie_notice",
       "boardCategory": "사업공고",
       "boardUrl": "https://www.motir.go.kr/kor/article/ATCL2826a2625",
-      "requestedStartDate": "2026-08-02",
-      "requestedEndDate": "2026-10-01",
+      "requestedStartDate": "2026-08-03",
+      "requestedEndDate": "2026-10-02",
       "searchMode": "official-expanded-keyword-query",
       "pagesFetched": 149,
       "parsedRows": 0,
@@ -134949,8 +134971,8 @@
       "section": "motie_notice",
       "boardCategory": "입법예고",
       "boardUrl": "https://www.motir.go.kr/kor/article/ATCLa1cb24c71",
-      "requestedStartDate": "2026-08-02",
-      "requestedEndDate": "2026-10-01",
+      "requestedStartDate": "2026-08-03",
+      "requestedEndDate": "2026-10-02",
       "searchMode": "official-expanded-keyword-query",
       "pagesFetched": 149,
       "parsedRows": 0,
@@ -136010,8 +136032,8 @@
       "section": "motie_notice",
       "boardCategory": "행정예고",
       "boardUrl": "https://www.motir.go.kr/kor/article/ATCLa6723dc7b",
-      "requestedStartDate": "2026-08-02",
-      "requestedEndDate": "2026-10-01",
+      "requestedStartDate": "2026-08-03",
+      "requestedEndDate": "2026-10-02",
       "searchMode": "official-expanded-keyword-query",
       "pagesFetched": 149,
       "parsedRows": 0,
@@ -137071,8 +137093,8 @@
       "section": "motie_notice",
       "boardCategory": "고시",
       "boardUrl": "https://www.motir.go.kr/kor/article/ATCL0c554f816",
-      "requestedStartDate": "2026-08-02",
-      "requestedEndDate": "2026-10-01",
+      "requestedStartDate": "2026-08-03",
+      "requestedEndDate": "2026-10-02",
       "searchMode": "official-expanded-keyword-query",
       "pagesFetched": 149,
       "parsedRows": 2,
@@ -138132,8 +138154,8 @@
       "section": "motie_notice",
       "boardCategory": "공고",
       "boardUrl": "https://www.motir.go.kr/kor/article/ATCLc01b2801b",
-      "requestedStartDate": "2026-08-02",
-      "requestedEndDate": "2026-10-01",
+      "requestedStartDate": "2026-08-03",
+      "requestedEndDate": "2026-10-02",
       "searchMode": "official-expanded-keyword-query",
       "pagesFetched": 149,
       "parsedRows": 0,
