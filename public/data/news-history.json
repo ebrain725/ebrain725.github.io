@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-01T22:48:25+09:00",
+  "generatedAt": "2026-10-02T03:32:01+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
   "itemCount": 958,
@@ -3173,8 +3173,8 @@
       ],
       "duplicateCount": 3,
       "duplicateSources": [
-        "v.daum.net",
         "경향신문",
+        "v.daum.net",
         "khan.co.kr"
       ],
       "searchProviders": [
@@ -4035,7 +4035,7 @@
         "kbsm.net",
         "finomy.com",
         "pinpointnews.co.kr",
-        "fortunekorea.co.kr",
+        "포춘코리아",
         "fetv.co.kr",
         "머니투데이",
         "m-i.kr",
@@ -4087,13 +4087,13 @@
         "huffingtonpost.kr",
         "v.daum.net",
         "yna.co.kr",
+        "ftoday.co.kr",
         "아시아경제",
         "view.asiae.co.kr",
         "newsis.com",
         "catchnews.kr",
         "thefairnews.co.kr",
-        "포춘코리아",
-        "ftoday.co.kr",
+        "fortunekorea.co.kr",
         "글로벌E",
         "더팩트",
         "kfenews.co.kr",
@@ -10340,8 +10340,8 @@
         "유상할당"
       ],
       "duplicateSources": [
-        "뉴스;트리",
-        "newstree.kr"
+        "newstree.kr",
+        "뉴스;트리"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -14501,8 +14501,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "뉴스;트리",
-        "newstree.kr"
+        "newstree.kr",
+        "뉴스;트리"
       ],
       "searchProviders": [
         "Google News RSS",
