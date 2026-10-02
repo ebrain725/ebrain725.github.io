@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-02T15:15:50+09:00",
+  "generatedAt": "2026-10-02T18:13:01+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 969,
+  "itemCount": 975,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-02",
   "sourceCommitsScanned": 0,
@@ -111,6 +111,34 @@
       "region": "국내"
     },
     {
+      "id": "b5fed1cb3458c82a",
+      "publishedAt": "2026-10-02",
+      "title": "나라스페이스, 메탄 관측 초소형위성 '경기샛-2A' 발사 후 첫 교신 성공",
+      "category": "제도",
+      "summary": "박재필 대표는 \"최근 위성 기반 글로벌 메탄 배출량 데이터가 탄소 배출권 시장 , 에너지 안보 측면에서 높은 가치와 희소성을 지니는 만큼, 경기샛과 향후 발사를 준비 중인 자체 메탄 관측 위성군 '나르샤(NarSha)'를 통해...",
+      "source": "platum.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://platum.kr/archives/295702",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "e-science.co.kr",
+        "platum.kr",
+        "fnnews.com",
+        "yna.co.kr",
+        "dongascience.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 5,
+      "region": "국내"
+    },
+    {
       "id": "fd9eae7553ed2aae",
       "publishedAt": "2026-10-02",
       "title": "나라스페이스, 국내 최초 메탄 관측 위성 '경기샛-2A' 양방향 교신 성공",
@@ -158,6 +186,33 @@
       "searchProviders": [
         "Google News RSS"
       ],
+      "region": "국내"
+    },
+    {
+      "id": "276e12c0d2f826ce",
+      "publishedAt": "2026-10-02",
+      "title": "【박소현의 탄소시장 브리핑】한국형 자발적탄소시장, 수요에 답할 수 ...",
+      "category": "제도",
+      "summary": "온실가스 감축 목표 설정은 SBTi(과학기반감축목표 이니셔티브), 탄소중립은 ISO(국제표준화기구). ESG... 탄소시장 측면에서는 올해 초 GX(녹색전환·Green Transformation) 배출권 거래제가 처음 시행됐고, 참여 기업들은...",
+      "source": "impacton.net",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.impacton.net/news/articleView.html?idxno=30136",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장",
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "임팩트온",
+        "impacton.net"
+      ],
+      "searchProviders": [
+        "Google News RSS",
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 2,
       "region": "국내"
     },
     {
@@ -209,6 +264,31 @@
       "region": "국내"
     },
     {
+      "id": "03ba109ca69b1544",
+      "publishedAt": "2026-10-02",
+      "title": "[단독] 기본사회 재원 '탄소세·햇빛배당' 검토…산업계 부담도 따진다",
+      "category": "제도",
+      "summary": "국내에서는 2015년부터 기업에 대한 탄소 배출권 유상할당을 통해 공공 수입이 발생하고 있으며... 탄소 배출을 억제한다는 정책 목표가 달성될수록 세입이나 배출권 관련 수입이 감소할 수 있기 때문이다. 연구원도 이를...",
+      "source": "straightnews.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.straightnews.co.kr/news/articleView.html?idxno=312450",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권",
+        "유상할당"
+      ],
+      "duplicateSources": [
+        "straightnews.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "2e6c400ae33aac70",
       "publishedAt": "2026-10-02",
       "title": "[남성현의 산림르네상스(35)] '숲으로 잘 사는 나라'… 유엔(UN)의 새로운...",
@@ -227,6 +307,54 @@
       ],
       "duplicateSources": [
         "lecturernews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "5e75f8597adeb778",
+      "publishedAt": "2026-10-02",
+      "title": "KOPIA, 탄소중립 플랜트 핵심 4개 과정 개설",
+      "category": "제도",
+      "summary": "한국플랜트산업협회(KOPIA)는 10월 16일부터 23일까지 탄소 배출권 , SMR, CCS, 수소·암모니아 저장 등 탄소중립 핵심 분야 4개 과정을 집중 개설한다고 밝혔다. 첫 과정은 16일 열리는 '탄소저감 및 탄소 배출권 심화Ⅱ...",
+      "source": "todayenergy.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.todayenergy.kr/news/articleView.html?idxno=303794",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "todayenergy.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "6998062b449185b6",
+      "publishedAt": "2026-10-02",
+      "title": "85억 투자 뒤 지분 전량 귀속…국내 1위 열분해유 기업 지평선에너지 경...",
+      "category": "제도",
+      "summary": "2025년 기준 연간 매출액은 64억4452만4518원을 기록했으며, 군산공장 증설에 힘입어 2027년 예상 매출 160억 원에 보조금과 탄소 배출권 수익을 합쳐 160억 원 규모의 순이익을 창출할 것으로 기대를 모았다. 그러나 회사의...",
+      "source": "ttlnews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.ttlnews.com/news/articleView.html?idxno=3149057",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "ttlnews.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -255,6 +383,30 @@
       "searchProviders": [
         "NAVER API HUB"
       ],
+      "region": "국내"
+    },
+    {
+      "id": "b3c4ccfde3b17bdd",
+      "publishedAt": "2026-10-02",
+      "title": "\"블록버스터처럼 망할라\"...美 신용협동조합, 블록체인 도입 강조",
+      "category": "제도",
+      "summary": "브라질 국영 석유 기업 페트로브라스(Petrobras)는 항공유와 디젤의 탄소 배출권 중복 계산을 방지하고 생산 전 과정의 연료 데이터를 추적하기 위해 카르다노(Cardano, ADA) 블록체인을 활용한 두 건의 연구 프로젝트를...",
+      "source": "coinreaders.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://coinreaders.com/261356",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "coinreaders.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
       "region": "국내"
     },
     {
@@ -476,8 +628,8 @@
       ],
       "duplicateCount": 2,
       "duplicateSources": [
-        "ESG경제",
-        "esgeconomy.com"
+        "esgeconomy.com",
+        "ESG경제"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -503,8 +655,8 @@
         "K-ETS"
       ],
       "duplicateSources": [
-        "donga.com",
-        "동아일보"
+        "동아일보",
+        "donga.com"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -2552,8 +2704,8 @@
         "탄소배출권"
       ],
       "duplicateSources": [
-        "서울신문",
-        "seoul.co.kr"
+        "seoul.co.kr",
+        "서울신문"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -3418,8 +3570,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "ESG경제",
-        "esgeconomy.com"
+        "esgeconomy.com",
+        "ESG경제"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -4289,19 +4441,20 @@
         "srtimes.kr",
         "cstimes.com",
         "digitalchosun.dizzo.com",
-        "글로벌이코노믹",
+        "g-enews.com",
         "뉴스핌",
         "metroseoul.co.kr",
         "socialvalue.kr",
         "asiatime.co.kr",
         "getnews.co.kr",
-        "g-enews.com",
         "sedaily.com",
         "paxetv.com",
         "tf.co.kr",
         "smarttoday.co.kr",
         "뉴스1",
+        "v.daum.net",
         "news1.kr",
+        "viva100.com",
         "dailycar.co.kr",
         "kbsm.net",
         "finomy.com",
@@ -4313,9 +4466,9 @@
         "fntimes.com",
         "newsprime.co.kr",
         "ebn.co.kr",
+        "imaeil.com",
         "ttlnews.com",
         "e-science.co.kr",
-        "주간한국",
         "weekly.hankooki.com",
         "delighti.co.kr",
         "smedaily.co.kr",
@@ -4326,7 +4479,6 @@
         "newsroad.co.kr",
         "연합뉴스TV",
         "newsian.co.kr",
-        "비즈월드",
         "bizwnews.com",
         "매일일보",
         "edaily.co.kr",
@@ -4348,21 +4500,22 @@
         "sentv.co.kr",
         "wowtv.co.kr",
         "newspim.com",
-        "브릿지경제",
-        "viva100.com",
         "moneystorm.kr",
         "dailypop.kr",
         "sateconomy.co.kr",
         "ezyeconomy.com",
         "wsobi.com",
         "huffingtonpost.kr",
-        "v.daum.net",
         "yna.co.kr",
         "아시아경제",
         "view.asiae.co.kr",
         "newsis.com",
         "catchnews.kr",
         "thefairnews.co.kr",
+        "글로벌이코노믹",
+        "주간한국",
+        "비즈월드",
+        "브릿지경제",
         "asiae.co.kr",
         "yonhapnewstv.co.kr",
         "포춘코리아",
@@ -4379,7 +4532,6 @@
         "lcnews.co.kr",
         "dealsitetv.com",
         "이투데이",
-        "imaeil.com",
         "iminju.net",
         "뉴시안",
         "inews24.com",
@@ -4597,8 +4749,8 @@
         "K-ETS"
       ],
       "duplicateSources": [
-        "ESG경제",
-        "esgeconomy.com"
+        "esgeconomy.com",
+        "ESG경제"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -5854,9 +6006,9 @@
         "탄소배출권"
       ],
       "duplicateSources": [
-        "브릿지경제",
-        "v.daum.net",
         "viva100.com",
+        "v.daum.net",
+        "브릿지경제",
         "dt.co.kr"
       ],
       "searchProviders": [
@@ -15673,9 +15825,9 @@
         "탄소배출권"
       ],
       "duplicateSources": [
+        "뉴스와이어",
         "lifein.news",
         "todayenergy.kr",
-        "뉴스와이어",
         "newswire.co.kr",
         "사회적경제뉴스",
         "hansbiz.co.kr",
@@ -15684,8 +15836,8 @@
         "woodkorea.co.kr"
       ],
       "searchProviders": [
-        "NAVER API HUB",
-        "Google News RSS"
+        "Google News RSS",
+        "NAVER API HUB"
       ],
       "duplicateCount": 9,
       "region": "국내"
@@ -15999,8 +16151,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "KBS 뉴스",
         "news.kbs.co.kr",
+        "KBS 뉴스",
         "kbs.co.kr"
       ],
       "searchProviders": [
@@ -17531,8 +17683,8 @@
         "온실가스 배출권"
       ],
       "duplicateSources": [
-        "연합뉴스",
         "오토투데이",
+        "연합뉴스",
         "yna.co.kr",
         "한국방송뉴스",
         "ikbn.news",
