@@ -1058,6 +1058,52 @@
       "region": "국내"
     },
     {
+      "id": "motie_notice-ATCLc01b2801b-71355",
+      "sourceId": "71355",
+      "sourceBoard": "ATCLc01b2801b",
+      "sourceBoardKey": "announcement",
+      "boardCategory": "공고",
+      "title": "2026년 산업 분야 「온실가스 국제감축사업」 공고 (2차)",
+      "summary": "기후경제통상과 담당 · 공고입니다. 원문에서 세부 내용을 확인하세요.",
+      "url": "https://www.motir.go.kr/kor/article/ATCLc01b2801b/71355/view",
+      "publishedAt": "2026-10-02",
+      "source": "산업부 공지사항",
+      "sourceType": "official",
+      "section": "motie_notice",
+      "category": "공고",
+      "department": "기후경제통상과",
+      "matchedKeywords": [
+        "국제감축",
+        "온실가스"
+      ],
+      "matchedFields": [
+        "title"
+      ]
+    },
+    {
+      "id": "motie_notice-ATCL2826a2625-71355",
+      "sourceId": "71355",
+      "sourceBoard": "ATCL2826a2625",
+      "sourceBoardKey": "business_notice",
+      "boardCategory": "사업공고",
+      "title": "2026년 산업 분야 「온실가스 국제감축사업」 공고 (2차)",
+      "summary": "기후경제통상과 담당 · 사업공고입니다. 원문에서 세부 내용을 확인하세요.",
+      "url": "https://www.motir.go.kr/kor/article/ATCL2826a2625/71355/view",
+      "publishedAt": "2026-10-02",
+      "source": "산업부 공지사항",
+      "sourceType": "official",
+      "section": "motie_notice",
+      "category": "사업공고",
+      "department": "기후경제통상과",
+      "matchedKeywords": [
+        "국제감축",
+        "온실가스"
+      ],
+      "matchedFields": [
+        "title"
+      ]
+    },
+    {
       "id": "7af2f8bf72cec8e9",
       "publishedAt": "2026-10-02",
       "title": "2026 재생에너지의 날 기념 AI 숏폼 공모전 입상작 발표 연기(10월 8일 발표)",
@@ -251839,5 +251885,80 @@
       "notice": "기후부 공지사항",
       "krx_notice": "한국거래소 공지사항"
     }
+  },
+  "motieOfficialHistory": {
+    "file": "data/motie-policy-history.json",
+    "schemaVersion": "2.0",
+    "requestedStartDate": "2015-01-01",
+    "generatedAt": "2026-10-03T04:13:35+09:00",
+    "coverage": {
+      "motie_notice": {
+        "label": "산업부 공지사항",
+        "records": 952,
+        "earliest": "2015-01-06",
+        "latest": "2026-10-02",
+        "byBoardCategory": {
+          "고시": 231,
+          "공고": 423,
+          "공지사항": 2,
+          "사업공고": 206,
+          "입법예고": 25,
+          "행정예고": 65
+        }
+      },
+      "motie_press": {
+        "label": "산업부 보도자료",
+        "records": 1886,
+        "earliest": "2016-01-19",
+        "latest": "2026-10-01",
+        "byBoardCategory": {
+          "보도·참고자료": 1365,
+          "보도설명자료": 521
+        }
+      }
+    },
+    "itemCount": 2838,
+    "sourceBoards": [
+      {
+        "key": "press_release",
+        "category": "보도·참고자료",
+        "url": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c"
+      },
+      {
+        "key": "press_explanation",
+        "category": "보도설명자료",
+        "url": "https://www.motir.go.kr/kor/article/ATCLe0854704d"
+      },
+      {
+        "key": "notice",
+        "category": "공지사항",
+        "url": "https://www.motir.go.kr/kor/article/ATCL6e90bb9de"
+      },
+      {
+        "key": "business_notice",
+        "category": "사업공고",
+        "url": "https://www.motir.go.kr/kor/article/ATCL2826a2625"
+      },
+      {
+        "key": "legislation_notice",
+        "category": "입법예고",
+        "url": "https://www.motir.go.kr/kor/article/ATCLa1cb24c71"
+      },
+      {
+        "key": "administrative_notice",
+        "category": "행정예고",
+        "url": "https://www.motir.go.kr/kor/article/ATCLa6723dc7b"
+      },
+      {
+        "key": "public_notice",
+        "category": "고시",
+        "url": "https://www.motir.go.kr/kor/article/ATCL0c554f816"
+      },
+      {
+        "key": "announcement",
+        "category": "공고",
+        "url": "https://www.motir.go.kr/kor/article/ATCLc01b2801b"
+      }
+    ]
   }
 }
