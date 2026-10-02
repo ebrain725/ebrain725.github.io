@@ -1,0 +1,42 @@
+name: Test official policy retention
+
+on:
+  pull_request:
+    paths:
+      - "scripts/*polic*.py"
+      - "tests/test_policy_retention.py"
+      - "config/policy_retained_posts.json"
+      - ".github/workflows/*polic*.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  retention:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Test official identities and missing-post protection
+        run: python -m unittest discover -s tests -p test_policy_retention.py -v
+      - name: Replay archive repair without external collection
+        shell: bash
+        run: |
+          set -euo pipefail
+          cp public/data/policies.json "$RUNNER_TEMP/before.json"
+          python scripts/sync_climate_policy_expanded.py --retain-only
+          python scripts/policy_integrity.py --before "$RUNNER_TEMP/before.json"
+          python - <<'PY'
+          import json
+          import sys
+          from pathlib import Path
+          sys.path.insert(0, "scripts")
+          from policy_integrity import assert_preserved
+          seeds = json.loads(Path("config/policy_retained_posts.json").read_text())["items"]
+          history = json.loads(Path("public/data/policy-official-history.json").read_text())["items"]
+          assert_preserved(seeds, history)
+          PY

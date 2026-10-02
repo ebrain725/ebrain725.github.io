@@ -24,6 +24,7 @@ import backfill_official_policy_history as legacy
 import backfill_official_policy_history_v2 as archive
 import merge_official_policy_history as merger
 import sync_policies as policy_core
+from policy_integrity import CLIMATE_HOSTS, assert_preserved, publisher
 
 ROOT = Path(__file__).resolve().parents[1]
 SETTINGS_PATH = ROOT / "config" / "settings.json"
@@ -290,7 +291,7 @@ def collect_source(
             published = str(item.get("publishedAt", ""))[:10]
             if published < start_date:
                 continue
-            key = legacy.ministry_item_key(item)
+            key = item_key(item)
             collected[key] = merge_item(collected[key], item) if key in collected else item
 
         matched_rows += sum(
@@ -370,31 +371,30 @@ def collect_source(
 
 
 def item_key(item: dict[str, Any]) -> str:
-    section = str(item.get("section", "")).strip().lower()
-    if section == "krx_notice":
-        source_id = str(item.get("sourceId", "")).strip()
-        if source_id:
-            return f"krx_notice|{source_id}"
-    return legacy.ministry_item_key(item)
+    return merger._stable_key(item)
 
 
-def remove_climate_from_policy() -> dict[str, Any]:
-    policy = json.loads(POLICY_PATH.read_text(encoding="utf-8"))
-    items = policy.get("items", [])
-    if not isinstance(policy, dict) or not isinstance(items, list):
-        raise RuntimeError("policies.json 형식이 올바르지 않습니다.")
-    before = len(items)
-    policy["items"] = [
-        item
-        for item in items
-        if not (
-            isinstance(item, dict)
-            and str(item.get("sourceType", "")).lower() != "news"
-            and str(item.get("section", "")).lower() in CLIMATE_SECTIONS
-        )
-    ]
-    changed = atomic_write(POLICY_PATH, policy)
-    return {"changed": changed, "removed": before - len(policy["items"])}
+def retained_items(history_items: list[dict], public_items: list[dict],
+                   collected: list[dict], start_date: str) -> list[dict]:
+    """A full crawl changes query range only, never deletes accepted posts."""
+    merged: dict[str, dict] = {}
+    accepted = [item for item in [*history_items, *public_items]
+                if isinstance(item, dict) and item.get("sourceType") != "news"
+                and publisher(item) in CLIMATE_HOSTS | KRX_HOSTS]
+    for raw in [*accepted, *collected]:
+        item = merger._normalize_official(raw, start_date)
+        if item is None:
+            raise RuntimeError(f"기존 공식 게시물 정규화 실패: {raw.get('url')}")
+        if item["section"] in CLIMATE_SECTIONS:
+            # Keep historical matching evidence even if today's keywords differ.
+            item.setdefault("keywordScope", "direct")
+        key = item_key(item)
+        merged[key] = merge_item(merged[key], item) if key in merged else item
+    result = sorted(merged.values(), key=lambda item: (
+        str(item.get("publishedAt", "")), str(item.get("title", "")),
+        str(item.get("sourceId", ""))), reverse=True)
+    assert_preserved(accepted, result)
+    return result
 
 
 def coverage(items: list[dict[str, Any]]) -> dict[str, Any]:
@@ -595,6 +595,7 @@ def main() -> int:
     parser.add_argument("--lookback-days", type=int, default=DEFAULT_LOOKBACK_DAYS)
     parser.add_argument("--full", action="store_true")
     parser.add_argument("--self-test", action="store_true")
+    parser.add_argument("--retain-only", action="store_true", help="기존 공개 자료를 이력에 보존 (네트워크 수집 없음)")
     args = parser.parse_args()
 
     if args.self_test:
@@ -626,15 +627,16 @@ def main() -> int:
     previous_items = previous_history.get("items", [])
     if not isinstance(previous_items, list):
         raise RuntimeError("기존 공식자료 이력 items가 배열이 아닙니다.")
-    previous_cov = previous_history.get("coverage", {})
-    previous_counts = {
-        key: int((previous_cov.get("counts") or {}).get(key, 0))
-        for key in VALID_SECTIONS
-    }
+    previous_policy = json.loads(POLICY_PATH.read_text(encoding="utf-8"))
+    repair_path = ROOT / "config" / "policy_retained_posts.json"
+    repairs = json.loads(repair_path.read_text(encoding="utf-8"))["items"] if repair_path.exists() else []
+    previous_items = [*previous_items, *repairs]
+    baseline = retained_items(previous_items, previous_policy["items"], [], args.start_date)
+    previous_counts = coverage(baseline)["counts"]
 
     collected: list[dict[str, Any]] = []
     audits: list[dict[str, Any]] = []
-    for source in sources:
+    for source in ([] if args.retain_only else sources):
         items, audit = collect_source(source, core, broad, query_start)
         if not audit.get("complete"):
             raise RuntimeError(
@@ -643,29 +645,7 @@ def main() -> int:
         collected.extend(items)
         audits.append(audit)
 
-    merged: dict[str, dict[str, Any]] = {}
-    for raw in previous_items:
-        if not isinstance(raw, dict):
-            continue
-        section = str(raw.get("section", "")).strip().lower()
-        if section not in VALID_SECTIONS:
-            continue
-        if args.full and section in CLIMATE_SECTIONS:
-            continue
-        merged[item_key(raw)] = raw
-    for item in collected:
-        key = item_key(item)
-        merged[key] = merge_item(merged[key], item) if key in merged else item
-
-    final_items = sorted(
-        merged.values(),
-        key=lambda item: (
-            str(item.get("publishedAt", "")),
-            str(item.get("title", "")),
-            str(item.get("sourceId", "")),
-        ),
-        reverse=True,
-    )
+    final_items = retained_items(previous_items, previous_policy["items"], collected, args.start_date)
     validation = validate_items(final_items, args.start_date, previous_counts)
     final_cov = coverage(final_items)
 
@@ -703,12 +683,16 @@ def main() -> int:
         "queryStartDate": query_start,
         "queryEndDate": query_end,
     }
-    history["sourceAudit"] = [*audits, *preserved_audits]
+    history["sourceAudit"] = previous_history.get("sourceAudit", []) if args.retain_only else [*audits, *preserved_audits]
     history["coverage"] = final_cov
     history["items"] = final_items
+    if args.retain_only:
+        # Do not claim a new collection window or collection audit for offline repair.
+        for field in ("collectionMode", "queryStartDate", "queryEndDate", "climateKeywordExpansion"):
+            if field in previous_history:
+                history[field] = previous_history[field]
+    history["retentionAudit"] = assert_preserved(baseline, final_items)
     atomic_write(HISTORY_PATH, history)
-
-    removal = remove_climate_from_policy()
     merge_result = merger.merge_files(
         POLICY_PATH,
         HISTORY_PATH,
@@ -721,8 +705,8 @@ def main() -> int:
     final_history["scope"] = history["scope"]
     final_history["sourceAudit"] = history["sourceAudit"]
     final_history["collectionMode"] = history["collectionMode"]
-    final_history["queryStartDate"] = query_start
-    final_history["queryEndDate"] = query_end
+    final_history["queryStartDate"] = history["queryStartDate"]
+    final_history["queryEndDate"] = history["queryEndDate"]
     atomic_write(HISTORY_PATH, final_history)
 
     final_validation = validate_items(
@@ -730,6 +714,7 @@ def main() -> int:
         args.start_date,
         previous_counts,
     )
+    assert_preserved(previous_policy["items"], json.loads(POLICY_PATH.read_text(encoding="utf-8"))["items"])
     summary_changed = write_summary(final_history, final_validation)
 
     result = {
@@ -739,7 +724,7 @@ def main() -> int:
         "queryEndDate": query_end,
         "coverage": final_history.get("coverage", {}),
         "validation": final_validation,
-        "policyRemoval": removal,
+        "retentionAudit": history["retentionAudit"],
         "merge": merge_result,
         "summaryChanged": summary_changed,
         "sourceAudit": audits,

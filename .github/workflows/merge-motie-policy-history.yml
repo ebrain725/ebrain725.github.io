@@ -63,6 +63,10 @@ jobs:
           python scripts/sync_motie_policy_expanded.py --self-test
           node --check public/assets/policy-motie-extension.js
 
+      - name: Snapshot accepted official post IDs
+        shell: bash
+        run: cp public/data/policies.json "$RUNNER_TEMP/policy-before.json"
+
       - name: Collect industrial ministry official materials
         shell: bash
         run: |
@@ -172,6 +176,10 @@ jobs:
           print("MOTIE_EXPANDED_BOARD_COUNTS=" + json.dumps(board_counts, ensure_ascii=False))
           print(f"MOTIE_EXPANDED_TOTAL={len(items)}")
           PY
+
+      - name: Block publication if any accepted official post is missing
+        shell: bash
+        run: python scripts/policy_integrity.py --before "$RUNNER_TEMP/policy-before.json"
 
       - name: Commit expanded industrial ministry history
         shell: bash
