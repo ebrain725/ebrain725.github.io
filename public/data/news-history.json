@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-02T10:41:25+09:00",
+  "generatedAt": "2026-10-02T13:13:05+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 965,
+  "itemCount": 969,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-02",
   "sourceCommitsScanned": 0,
@@ -87,6 +87,30 @@
       "region": "국내"
     },
     {
+      "id": "4ada821b655f0d5d",
+      "publishedAt": "2026-10-02",
+      "title": "베트남증권거래소, '하노이증시 전종목→호치민증시' 이전상장 발표…...",
+      "category": "시장·가격",
+      "summary": "앞으로 호치민증시는 △주식 △펀드 △주식워런트증권 거래를 전담하고 하노이증시는 △채권 △파생상품 △비상장주식 △ 탄소 배출권 거래를 담당할 예정이다. 한편, 현재 시장 별 가격제한폭은 호치민증시가 일 ±7...",
+      "source": "insidevina.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.insidevina.com/news/articleView.html?idxno=44187",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "insidevina.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "fd9eae7553ed2aae",
       "publishedAt": "2026-10-02",
       "title": "나라스페이스, 국내 최초 메탄 관측 위성 '경기샛-2A' 양방향 교신 성공",
@@ -102,6 +126,7 @@
         "탄소배출권"
       ],
       "duplicateSources": [
+        "e-science.co.kr",
         "fnnews.com",
         "yna.co.kr",
         "dongascience.com"
@@ -109,7 +134,7 @@
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 3,
+      "duplicateCount": 4,
       "region": "국내"
     },
     {
@@ -157,6 +182,79 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "3b0514d58c336768",
+      "publishedAt": "2026-10-02",
+      "title": "[아시아라운드업 20261002] 이스라엘행 여객기 난동 사건 조사 본격화",
+      "category": "제도",
+      "summary": "앞으로 HNX는 주식을 제외한 채권·파생상품·비상장주식 거래를 계속 맡으며, 탄소 배출권 시장 ·스타트업을 위한 자본거래 시장 등 신규 금융 시장 ·상품 개발에 주력할 것으로 예상.- 앞서 지난달 21일 글로벌 금융지수...",
+      "source": "kor.theasian.asia",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://kor.theasian.asia/archives/417134",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "kor.theasian.asia"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "2e6c400ae33aac70",
+      "publishedAt": "2026-10-02",
+      "title": "[남성현의 산림르네상스(35)] '숲으로 잘 사는 나라'… 유엔(UN)의 새로운...",
+      "category": "제도",
+      "summary": "유럽연합의 산림전용방지규정(EUDR)과 자연 자본 재무정보공개(TNFD)가 국제 무역과 투자의 새로운 룰로 굳어지는 지금, 우리 기업들이 자발적 산림 탄소 시장(VCM)과 K-ETS( 배출권거래제 )를 통해 산림경영에 참여할...",
+      "source": "lecturernews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.lecturernews.com/news/articleView.html?idxno=211452",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "K-ETS",
+        "탄소시장"
+      ],
+      "duplicateSources": [
+        "lecturernews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "fb81bbb24147f614",
+      "publishedAt": "2026-10-02",
+      "title": "6일 ‘온실가스 정책 토론회’… 국제사회 친환경 대응 논의",
+      "category": "제도",
+      "summary": "손영기 온실가스국제감축산업협회 상임부회장이 ‘기업의 국제감축사업 애로 요인과 개선과제’를, 김태훈 글로벌녹색성장기구(GGGI) 부장이 ‘글로벌 자발적 탄소시장 추진현황과 국제감축사업 연계방안’을 주제로...",
+      "source": "munhwa.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.munhwa.com/article/11621098?ref=naver",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "munhwa.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
       "region": "국내"
     },
     {
@@ -1184,8 +1282,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "한국일보",
-        "hankookilbo.com"
+        "hankookilbo.com",
+        "한국일보"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -3140,8 +3238,8 @@
         "배출권"
       ],
       "duplicateSources": [
-        "한국NGO신문",
         "ngonews.kr",
+        "한국NGO신문",
         "newstree.kr",
         "뉴스;트리"
       ],
@@ -4191,13 +4289,12 @@
         "srtimes.kr",
         "cstimes.com",
         "digitalchosun.dizzo.com",
-        "글로벌이코노믹",
+        "g-enews.com",
         "뉴스핌",
         "metroseoul.co.kr",
         "socialvalue.kr",
         "asiatime.co.kr",
         "getnews.co.kr",
-        "g-enews.com",
         "sedaily.com",
         "paxetv.com",
         "tf.co.kr",
@@ -4226,10 +4323,11 @@
         "globale.co.kr",
         "todayeconomic.com",
         "newsroad.co.kr",
-        "yonhapnewstv.co.kr",
+        "연합뉴스TV",
         "newsian.co.kr",
         "비즈월드",
         "bizwnews.com",
+        "매일일보",
         "edaily.co.kr",
         "financialpost.co.kr",
         "sisacast.kr",
@@ -4264,8 +4362,8 @@
         "newsis.com",
         "catchnews.kr",
         "thefairnews.co.kr",
-        "연합뉴스TV",
-        "매일일보",
+        "글로벌이코노믹",
+        "yonhapnewstv.co.kr",
         "포춘코리아",
         "ftoday.co.kr",
         "fortunekorea.co.kr",
@@ -9368,8 +9466,8 @@
       ],
       "duplicateSources": [
         "v.daum.net",
-        "yna.co.kr",
-        "연합뉴스"
+        "연합뉴스",
+        "yna.co.kr"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -10513,8 +10611,8 @@
         "유상할당"
       ],
       "duplicateSources": [
-        "뉴스;트리",
-        "newstree.kr"
+        "newstree.kr",
+        "뉴스;트리"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -13967,7 +14065,8 @@
         "탄소시장",
         "배출권",
         "배출권거래제",
-        "K-ETS"
+        "K-ETS",
+        "유상할당"
       ],
       "duplicateSources": [
         "esgeconomy.com"
@@ -14674,8 +14773,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "뉴스;트리",
-        "newstree.kr"
+        "newstree.kr",
+        "뉴스;트리"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -17432,9 +17531,9 @@
         "온실가스 배출권"
       ],
       "duplicateSources": [
-        "yna.co.kr",
-        "오토투데이",
         "연합뉴스",
+        "오토투데이",
+        "yna.co.kr",
         "한국방송뉴스",
         "ikbn.news",
         "한방통신사",
@@ -17747,8 +17846,8 @@
         "온실가스 배출권"
       ],
       "duplicateSources": [
-        "전자신문",
-        "etnews.com"
+        "etnews.com",
+        "전자신문"
       ],
       "searchProviders": [
         "Google News RSS",
