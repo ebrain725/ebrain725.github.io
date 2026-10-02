@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-03T02:59:02+09:00",
+  "generatedAt": "2026-10-03T08:15:50+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 979,
+  "itemCount": 980,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-02",
   "sourceCommitsScanned": 0,
@@ -29,6 +29,29 @@
       ],
       "duplicateSources": [
         "itbiznews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "eb4fa11ee1181c13",
+      "publishedAt": "2026-10-02",
+      "title": "탈석탄 앞두고 20조 '좌초자산' 위기…\"폐지·보상 법제화 시급\"",
+      "category": "제도",
+      "summary": "폐지 시한·정부 권한 현행법엔 빠져 -전문가·국민 조사 모두 ‘현금 보상보다 대체사업권’ 선호... 배출권 ... 특히 앞으로 전력수요가 크게 늘더라도 국가 온실가스 감축목표(NDC)를 지키려면 석탄발전을 오히려...",
+      "source": "m-economynews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.m-economynews.com/news/article.html?no=71281",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "m-economynews.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -2800,8 +2823,8 @@
         "탄소배출권"
       ],
       "duplicateSources": [
-        "서울신문",
-        "seoul.co.kr"
+        "seoul.co.kr",
+        "서울신문"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -4537,20 +4560,20 @@
         "srtimes.kr",
         "cstimes.com",
         "digitalchosun.dizzo.com",
-        "g-enews.com",
+        "글로벌이코노믹",
         "v.daum.net",
         "뉴스핌",
         "metroseoul.co.kr",
         "socialvalue.kr",
         "asiatime.co.kr",
         "getnews.co.kr",
+        "g-enews.com",
         "sedaily.com",
         "paxetv.com",
         "tf.co.kr",
         "smarttoday.co.kr",
         "뉴스1",
         "news1.kr",
-        "브릿지경제",
         "dailycar.co.kr",
         "kbsm.net",
         "finomy.com",
@@ -4565,6 +4588,7 @@
         "imaeil.com",
         "ttlnews.com",
         "e-science.co.kr",
+        "주간한국",
         "weekly.hankooki.com",
         "delighti.co.kr",
         "smedaily.co.kr",
@@ -4576,6 +4600,7 @@
         "연합뉴스TV",
         "newsian.co.kr",
         "bizwnews.com",
+        "매일일보",
         "edaily.co.kr",
         "financialpost.co.kr",
         "sisacast.kr",
@@ -4583,6 +4608,7 @@
         "kpenews.com",
         "wolyo.co.kr",
         "megaeconomy.co.kr",
+        "lcnews.co.kr",
         "etoday.co.kr",
         "digitaltoday.co.kr",
         "job-post.co.kr",
@@ -4591,10 +4617,10 @@
         "sports.hankooki.com",
         "pointe.co.kr",
         "swtvnews.com",
-        "서울경제TV",
         "sentv.co.kr",
         "wowtv.co.kr",
         "newspim.com",
+        "브릿지경제",
         "viva100.com",
         "moneystorm.kr",
         "dailypop.kr",
@@ -4608,9 +4634,7 @@
         "newsis.com",
         "catchnews.kr",
         "thefairnews.co.kr",
-        "글로벌이코노믹",
-        "매일일보",
-        "주간한국",
+        "서울경제TV",
         "비즈월드",
         "asiae.co.kr",
         "yonhapnewstv.co.kr",
@@ -4625,7 +4649,6 @@
         "widedaily.com",
         "inthenews.co.kr",
         "mediapen.com",
-        "lcnews.co.kr",
         "dealsitetv.com",
         "이투데이",
         "iminju.net",
@@ -7946,8 +7969,8 @@
         "KAU25"
       ],
       "duplicateSources": [
-        "중소기업신문",
-        "smedaily.co.kr"
+        "smedaily.co.kr",
+        "중소기업신문"
       ],
       "searchProviders": [
         "Google News RSS",
