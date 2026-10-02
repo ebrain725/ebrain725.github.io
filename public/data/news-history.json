@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-02T18:13:01+09:00",
+  "generatedAt": "2026-10-02T22:02:52+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 975,
+  "itemCount": 979,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-02",
   "sourceCommitsScanned": 0,
@@ -79,6 +79,30 @@
       ],
       "duplicateSources": [
         "fntimes.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "52b843947b9d2f60",
+      "publishedAt": "2026-10-02",
+      "title": "탄소 상쇄 인증은 하나가 아니다…감축사업·검증·등록 확인",
+      "category": "상쇄·외부사업",
+      "summary": "국내 배출권 거래제와 자발적 크레딧 제도 구분 탄소 상쇄 인증은 하나의 국제 공통 제도를 뜻하지 않는다. 국내 배출권 거래제의 외부사업 감축실적과 Verra·Gold Standard 등 자발적 탄소표준의 크레딧은 적용 기준과 등록...",
+      "source": "vegannews.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.vegannews.co.kr/news/article.html?no=390513",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "vegannews.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -240,6 +264,31 @@
       "region": "국내"
     },
     {
+      "id": "187b1025a6a97b30",
+      "publishedAt": "2026-10-02",
+      "title": "[온실가스 배출권] 10월 2일 KAU26, 3만원 재진입 못 하고 2만9600원으로 마감",
+      "category": "시장·가격",
+      "summary": "[온실가스 배출권] 10월 2일 KAU26, 3만원 재진입 못 하고 2만9600원으로 마감 데일리e뉴스",
+      "source": "데일리e뉴스",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9wai1Kb0szSUZ0M1FZVUdZVHZvNDFObVlkR3dpSWlJYTkzeTRMWkZwX3JNQzJ6OXVsSEJ4NHdIaEtNVXJuRVliRWM0TkhpZHNoeml3LTZnOVlRQW1VTmNDQ3VCYk4zUzZQbG9iNWdkZw?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "온실가스 배출권",
+        "KAU26"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "데일리e뉴스"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "3b0514d58c336768",
       "publishedAt": "2026-10-02",
       "title": "[아시아라운드업 20261002] 이스라엘행 여객기 난동 사건 조사 본격화",
@@ -386,6 +435,30 @@
       "region": "국내"
     },
     {
+      "id": "560f84a6ade0a4df",
+      "publishedAt": "2026-10-02",
+      "title": "\"아시아 기후금융, 디지털 인프라 구축이 핵심\"",
+      "category": "제도",
+      "summary": "디지털 기반의 데이터 인프라는 탄소 배출권 거래의 투명성을 높이고, 국경 간 감축 실적의 상호 인정... 정 의장은 \"이러한 디지털 금융 인프라가 신재생에너지 설비, 탄소 배출권 등 다양한 기후·환경 자산의 자금...",
+      "source": "magazine.hankyung.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://magazine.hankyung.com/business/article/202610021204b",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "magazine.hankyung.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "b3c4ccfde3b17bdd",
       "publishedAt": "2026-10-02",
       "title": "\"블록버스터처럼 망할라\"...美 신용협동조합, 블록체인 도입 강조",
@@ -407,6 +480,29 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "ba6d65344682008a",
+      "publishedAt": "2026-10-02",
+      "title": "\"부풀려진 탄소 감축 안 통해\"… 배출권 업계도 '거래 기준 강화' 촉구",
+      "category": "제도",
+      "summary": "\"부풀려진 탄소 감축 안 통해\"… 배출권 업계도 '거래 기준 강화' 촉구 파인드비",
+      "source": "파인드비",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFAtVm9WVlNDdmFiX2s3VDlBZUZNek1lQ1piYUxBN05xdGRXOVBXX3dqTGszREdOTGYwMUZsUExzNTFFVmpERTRnTkRpQXhsUEJ4ZzZhWTY1amltTlRwYW10QWZ5bjFKT0k?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "파인드비"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
       "region": "국내"
     },
     {
@@ -628,8 +724,8 @@
       ],
       "duplicateCount": 2,
       "duplicateSources": [
-        "esgeconomy.com",
-        "ESG경제"
+        "ESG경제",
+        "esgeconomy.com"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -2704,8 +2800,8 @@
         "탄소배출권"
       ],
       "duplicateSources": [
-        "seoul.co.kr",
-        "서울신문"
+        "서울신문",
+        "seoul.co.kr"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -3570,8 +3666,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "esgeconomy.com",
-        "ESG경제"
+        "ESG경제",
+        "esgeconomy.com"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -4441,20 +4537,20 @@
         "srtimes.kr",
         "cstimes.com",
         "digitalchosun.dizzo.com",
-        "g-enews.com",
+        "글로벌이코노믹",
+        "v.daum.net",
         "뉴스핌",
         "metroseoul.co.kr",
         "socialvalue.kr",
         "asiatime.co.kr",
         "getnews.co.kr",
+        "g-enews.com",
         "sedaily.com",
         "paxetv.com",
         "tf.co.kr",
         "smarttoday.co.kr",
-        "뉴스1",
-        "v.daum.net",
         "news1.kr",
-        "viva100.com",
+        "브릿지경제",
         "dailycar.co.kr",
         "kbsm.net",
         "finomy.com",
@@ -4480,7 +4576,6 @@
         "연합뉴스TV",
         "newsian.co.kr",
         "bizwnews.com",
-        "매일일보",
         "edaily.co.kr",
         "financialpost.co.kr",
         "sisacast.kr",
@@ -4500,6 +4595,7 @@
         "sentv.co.kr",
         "wowtv.co.kr",
         "newspim.com",
+        "viva100.com",
         "moneystorm.kr",
         "dailypop.kr",
         "sateconomy.co.kr",
@@ -4512,10 +4608,10 @@
         "newsis.com",
         "catchnews.kr",
         "thefairnews.co.kr",
-        "글로벌이코노믹",
+        "뉴스1",
+        "매일일보",
         "주간한국",
         "비즈월드",
-        "브릿지경제",
         "asiae.co.kr",
         "yonhapnewstv.co.kr",
         "포춘코리아",
@@ -4749,8 +4845,8 @@
         "K-ETS"
       ],
       "duplicateSources": [
-        "esgeconomy.com",
-        "ESG경제"
+        "ESG경제",
+        "esgeconomy.com"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -6006,9 +6102,9 @@
         "탄소배출권"
       ],
       "duplicateSources": [
-        "viva100.com",
-        "v.daum.net",
         "브릿지경제",
+        "v.daum.net",
+        "viva100.com",
         "dt.co.kr"
       ],
       "searchProviders": [
@@ -16151,8 +16247,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "news.kbs.co.kr",
         "KBS 뉴스",
+        "news.kbs.co.kr",
         "kbs.co.kr"
       ],
       "searchProviders": [
