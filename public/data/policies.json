@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-10-03T15:12:51+09:00",
+  "lastSync": "2026-10-03T18:13:01+09:00",
   "keywords": [
     "배출권",
     "배출권거래제",
@@ -30,7 +30,7 @@
   "warning": null,
   "aiInsight": {
     "summary": "최근 공식자료의 직접적인 수급 변수는 유상경매입니다. 최근 경매가 높은 낙찰가로 소화돼 공급보다 이행수요가 강하다는 신호입니다.",
-    "generatedAt": "2026-10-03T15:12:51+09:00",
+    "generatedAt": "2026-10-03T18:13:01+09:00",
     "basisLatestDate": "2026-10-01",
     "basisCount": 10,
     "source": "fallback",
@@ -2414,8 +2414,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "한국일보",
-        "hankookilbo.com"
+        "hankookilbo.com",
+        "한국일보"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -5536,7 +5536,9 @@
         "digitalchosun.dizzo.com",
         "글로벌이코노믹",
         "v.daum.net",
+        "etoday.co.kr",
         "뉴스핌",
+        "메트로신문",
         "metroseoul.co.kr",
         "socialvalue.kr",
         "asiatime.co.kr",
@@ -5545,6 +5547,7 @@
         "sedaily.com",
         "paxetv.com",
         "tf.co.kr",
+        "스마트투데이",
         "smarttoday.co.kr",
         "뉴스1",
         "news1.kr",
@@ -5559,6 +5562,7 @@
         "m-i.kr",
         "joongangenews.com",
         "fntimes.com",
+        "2news.co.kr",
         "newsprime.co.kr",
         "ebn.co.kr",
         "imaeil.com",
@@ -5576,7 +5580,6 @@
         "연합뉴스TV",
         "newsian.co.kr",
         "bizwnews.com",
-        "매일일보",
         "edaily.co.kr",
         "financialpost.co.kr",
         "sisacast.kr",
@@ -5585,7 +5588,6 @@
         "wolyo.co.kr",
         "megaeconomy.co.kr",
         "라이센스뉴스",
-        "etoday.co.kr",
         "digitaltoday.co.kr",
         "job-post.co.kr",
         "newscape.co.kr",
@@ -5605,15 +5607,16 @@
         "wsobi.com",
         "huffingtonpost.kr",
         "yna.co.kr",
-        "아시아경제",
+        "asiae.co.kr",
         "view.asiae.co.kr",
         "newsis.com",
         "catchnews.kr",
         "thefairnews.co.kr",
+        "매일일보",
+        "아시아경제",
         "mt.co.kr",
         "lcnews.co.kr",
         "비즈월드",
-        "asiae.co.kr",
         "yonhapnewstv.co.kr",
         "ftoday.co.kr",
         "fortunekorea.co.kr",
@@ -5632,7 +5635,6 @@
         "inews24.com",
         "businessplus.kr",
         "thebigdata.co.kr",
-        "2news.co.kr",
         "biz.chosun.com",
         "ddaily.co.kr",
         "econovill.com",
@@ -251974,9 +251976,9 @@
   },
   "newsRetention": {
     "policy": "append-only",
-    "lastMergedAt": "2026-10-03T15:12:57+09:00",
+    "lastMergedAt": "2026-10-03T18:13:08+09:00",
     "itemCount": 984,
-    "archiveBefore": 982,
+    "archiveBefore": 984,
     "currentBefore": 873,
     "gitRecoveryEnabled": false
   }
