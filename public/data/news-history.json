@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-03T20:58:27+09:00",
+  "generatedAt": "2026-10-04T01:35:51+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 984,
+  "itemCount": 985,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-03",
   "sourceCommitsScanned": 0,
@@ -3230,6 +3230,29 @@
       "region": "국내"
     },
     {
+      "id": "9936f02d6aea4cdf",
+      "publishedAt": "2026-09-29",
+      "title": "[항공탄소 대응 금융길 연다]NH투자증권, 트리니티항공과 CORSIA·배출권 시장 협력 강화",
+      "category": "제도",
+      "summary": "[항공탄소 대응 금융길 연다]NH투자증권, 트리니티항공과 CORSIA·배출권 시장 협력 강화 전국뉴스",
+      "source": "전국뉴스",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1MWTM0eFJ5eVZDbDY0cWxIaWVncERUM2Q5c0lUQW1rQzV5WVVITWVkNjVjZmNZSTJkemQ0NkxfeXJWZnJpTElsaENPZU9wakFEMWdMSXRKZ2hiVllpTEpSTjJuX29kNmZJc3l0elY5UTU?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "전국뉴스"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "557a88570f586076",
       "publishedAt": "2026-09-29",
       "title": "[이재윤 칼럼] 'K-GX' 전략으로 철강산업의 돌파구를 열어야",
@@ -3658,8 +3681,8 @@
         "탄소배출권"
       ],
       "duplicateSources": [
-        "뉴스웍스",
-        "newsworks.co.kr"
+        "newsworks.co.kr",
+        "뉴스웍스"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -4659,7 +4682,7 @@
         "digitalchosun.dizzo.com",
         "글로벌이코노믹",
         "v.daum.net",
-        "이투데이",
+        "etoday.co.kr",
         "뉴스핌",
         "메트로신문",
         "metroseoul.co.kr",
@@ -4672,14 +4695,12 @@
         "tf.co.kr",
         "스마트투데이",
         "smarttoday.co.kr",
-        "뉴스1",
         "news1.kr",
-        "브릿지경제",
+        "viva100.com",
         "dailycar.co.kr",
         "kbsm.net",
         "finomy.com",
         "pinpointnews.co.kr",
-        "포춘코리아",
         "fetv.co.kr",
         "머니투데이",
         "m-i.kr",
@@ -4703,16 +4724,15 @@
         "연합뉴스TV",
         "newsian.co.kr",
         "bizwnews.com",
-        "매일일보",
         "edaily.co.kr",
         "financialpost.co.kr",
+        "시사캐스트",
         "sisacast.kr",
         "economist.co.kr",
         "kpenews.com",
         "wolyo.co.kr",
         "megaeconomy.co.kr",
-        "lcnews.co.kr",
-        "etoday.co.kr",
+        "라이센스뉴스",
         "digitaltoday.co.kr",
         "job-post.co.kr",
         "newscape.co.kr",
@@ -4724,7 +4744,6 @@
         "sentv.co.kr",
         "wowtv.co.kr",
         "newspim.com",
-        "viva100.com",
         "moneystorm.kr",
         "dailypop.kr",
         "sateconomy.co.kr",
@@ -4737,7 +4756,12 @@
         "newsis.com",
         "catchnews.kr",
         "thefairnews.co.kr",
-        "라이센스뉴스",
+        "이투데이",
+        "뉴스1",
+        "브릿지경제",
+        "포춘코리아",
+        "매일일보",
+        "lcnews.co.kr",
         "asiae.co.kr",
         "mt.co.kr",
         "비즈월드",
@@ -6224,9 +6248,9 @@
         "탄소배출권"
       ],
       "duplicateSources": [
-        "브릿지경제",
-        "v.daum.net",
         "viva100.com",
+        "v.daum.net",
+        "브릿지경제",
         "dt.co.kr"
       ],
       "searchProviders": [
@@ -10981,8 +11005,8 @@
         "유상할당"
       ],
       "duplicateSources": [
-        "뉴스;트리",
-        "newstree.kr"
+        "newstree.kr",
+        "뉴스;트리"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -15143,8 +15167,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "뉴스;트리",
-        "newstree.kr"
+        "newstree.kr",
+        "뉴스;트리"
       ],
       "searchProviders": [
         "Google News RSS",
