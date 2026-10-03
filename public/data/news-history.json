@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-03T13:13:02+09:00",
+  "generatedAt": "2026-10-03T15:12:57+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 982,
+  "itemCount": 984,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-03",
   "sourceCommitsScanned": 0,
@@ -35,6 +35,53 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "ed20ddf0b0afaaf4",
+      "publishedAt": "2026-10-03",
+      "title": "[ESG특집] EU 탄소배출권 시장 강화 논의",
+      "category": "제도",
+      "summary": "[ESG특집] EU 탄소배출권 시장 강화 논의 데일리연합",
+      "source": "데일리연합",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9ycFQ4X3JaR1FCWmE5SElrTVc4aTZsZDBoQ1k1VzBkRzZEQ0kwTklhU2p1NHNCdVphNFJ6WnJLOHcwOGZaSndDWng3SHZvelVYc1FYV1d5RW43dUU?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "데일리연합"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "해외"
+    },
+    {
+      "id": "163944be2f85c903",
+      "publishedAt": "2026-10-03",
+      "title": "[COP31, 튀르키에 안탈리아로 가는 길] COP31 한 달여 앞으로…튀르키예...",
+      "category": "상쇄·외부사업",
+      "summary": "Article 6 국제 탄소시장 도 '실전'으로 파리협정 제6조도 COP31의 주요 실무 의제다. Article 6.2에 따른 국가 간 국제감축실적 이전과 Article 6.4의 UN 중심 탄소시장 메커니즘이 실제 운영단계에 들어가면서 승인·등록부...",
+      "source": "ilemonde.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.ilemonde.com/news/articleView.html?idxno=30738",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "ilemonde.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
       "region": "국내"
     },
     {
@@ -3077,8 +3124,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "매일노동뉴스",
-        "labortoday.co.kr"
+        "labortoday.co.kr",
+        "매일노동뉴스"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -4629,8 +4676,9 @@
         "kbsm.net",
         "finomy.com",
         "pinpointnews.co.kr",
+        "포춘코리아",
         "fetv.co.kr",
-        "mt.co.kr",
+        "머니투데이",
         "m-i.kr",
         "joongangenews.com",
         "fntimes.com",
@@ -4685,12 +4733,11 @@
         "newsis.com",
         "catchnews.kr",
         "thefairnews.co.kr",
-        "머니투데이",
+        "mt.co.kr",
         "lcnews.co.kr",
         "비즈월드",
         "asiae.co.kr",
         "yonhapnewstv.co.kr",
-        "포춘코리아",
         "ftoday.co.kr",
         "fortunekorea.co.kr",
         "글로벌E",
@@ -8019,8 +8066,8 @@
         "KAU25"
       ],
       "duplicateSources": [
-        "smedaily.co.kr",
-        "중소기업신문"
+        "중소기업신문",
+        "smedaily.co.kr"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -9787,8 +9834,8 @@
       ],
       "duplicateSources": [
         "v.daum.net",
-        "yna.co.kr",
-        "연합뉴스"
+        "연합뉴스",
+        "yna.co.kr"
       ],
       "searchProviders": [
         "Google News RSS",
