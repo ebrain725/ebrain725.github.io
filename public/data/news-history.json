@@ -1,17 +1,66 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-03T08:15:50+09:00",
+  "generatedAt": "2026-10-03T10:13:10+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 980,
+  "itemCount": 982,
   "earliestPublishedAt": "2026-08-06",
-  "latestPublishedAt": "2026-10-02",
+  "latestPublishedAt": "2026-10-03",
   "sourceCommitsScanned": 0,
   "sourceSnapshotsScanned": 0,
   "historicalRowsScanned": 0,
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "3fe40c3037248d09",
+      "publishedAt": "2026-10-03",
+      "title": "[신간도서 출간] ‘AI는 공짜가 아니야’·‘가나다라: 세상 모든 소리...",
+      "category": "제도",
+      "summary": "AI 사용 확대에 따른 데이터센터 전력 수요와 온실가스 문제부터 재생에너지, 에너지저장장치, 탄소 배출권 거래제 , RE100 등으로 논의를 확장한다. 특히 AI 기술의 편익과 환경 부담을 한쪽으로 단정하기보다 기술 발전과...",
+      "source": "ekn.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.ekn.kr/web/view.php?key=20261002023561776",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "ekn.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "945786ab06e0778f",
+      "publishedAt": "2026-10-03",
+      "title": "'첫 파업' 포스코 노조, 김성호 위원장 '3연임' 성공…강경 기조 이어질...",
+      "category": "제도",
+      "summary": "김성호 한국노총 금속노련 포스코노동조합 위원장(왼쪽)이 지난 3월 19일 오전 서울 여의도 국회 소통관에서 기자회견을 열고 산업용 전기료 부담 완화, 탄소 배출권 제도 개선, 수소환원제철 기술혁신 지원을...",
+      "source": "newsian.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.newsian.co.kr/news/articleView.html?idxno=96481",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "newsian.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
     {
       "id": "5af0dac9603efed4",
       "publishedAt": "2026-10-02",
@@ -2823,8 +2872,8 @@
         "탄소배출권"
       ],
       "duplicateSources": [
-        "seoul.co.kr",
-        "서울신문"
+        "서울신문",
+        "seoul.co.kr"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -3387,10 +3436,11 @@
         "탄소시장"
       ],
       "section": "news",
-      "duplicateCount": 2,
+      "duplicateCount": 3,
       "duplicateSources": [
         "정책브리핑",
-        "대한민국 정책브리핑"
+        "대한민국 정책브리핑",
+        "korea.kr"
       ],
       "searchProviders": [
         "Google News RSS"
@@ -4562,7 +4612,7 @@
         "digitalchosun.dizzo.com",
         "글로벌이코노믹",
         "v.daum.net",
-        "뉴스핌",
+        "newspim.com",
         "metroseoul.co.kr",
         "socialvalue.kr",
         "asiatime.co.kr",
@@ -4574,6 +4624,7 @@
         "smarttoday.co.kr",
         "뉴스1",
         "news1.kr",
+        "브릿지경제",
         "dailycar.co.kr",
         "kbsm.net",
         "finomy.com",
@@ -4608,7 +4659,7 @@
         "kpenews.com",
         "wolyo.co.kr",
         "megaeconomy.co.kr",
-        "lcnews.co.kr",
+        "라이센스뉴스",
         "etoday.co.kr",
         "digitaltoday.co.kr",
         "job-post.co.kr",
@@ -4617,10 +4668,9 @@
         "sports.hankooki.com",
         "pointe.co.kr",
         "swtvnews.com",
+        "서울경제TV",
         "sentv.co.kr",
         "wowtv.co.kr",
-        "newspim.com",
-        "브릿지경제",
         "viva100.com",
         "moneystorm.kr",
         "dailypop.kr",
@@ -4634,7 +4684,8 @@
         "newsis.com",
         "catchnews.kr",
         "thefairnews.co.kr",
-        "서울경제TV",
+        "뉴스핌",
+        "lcnews.co.kr",
         "비즈월드",
         "asiae.co.kr",
         "yonhapnewstv.co.kr",
@@ -4667,7 +4718,6 @@
         "pointdaily.co.kr",
         "biz.heraldcorp.com",
         "연합뉴스",
-        "라이센스뉴스",
         "매일신문",
         "dnews.co.kr",
         "enetnews.co.kr",
@@ -7969,8 +8019,8 @@
         "KAU25"
       ],
       "duplicateSources": [
-        "smedaily.co.kr",
-        "중소기업신문"
+        "중소기업신문",
+        "smedaily.co.kr"
       ],
       "searchProviders": [
         "Google News RSS",
