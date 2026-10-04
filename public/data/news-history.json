@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-04T08:13:19+09:00",
+  "generatedAt": "2026-10-04T10:13:17+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
   "itemCount": 985,
@@ -313,8 +313,8 @@
       "publishedAt": "2026-10-02",
       "title": "韓, 배출권 가격 낮아 탈탄소 산업전환 어렵다",
       "category": "시장·가격",
-      "summary": "韓, 배출권 가격 낮아 탈탄소 산업전환 어렵다 한국경제",
-      "source": "한국경제",
+      "summary": "韓, 배출권 가격 낮아 탈탄소 산업전환 어렵다 hankyung.com",
+      "source": "hankyung.com",
       "sourceType": "news",
       "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE0zUWdCLVJNNFpPbFJzX3RVa0UxY2FwckhCMlZTNDRya2dxNy1rNFlXaFEzVGpSZHJ3TTNpc0FHV0hzYU1tcmN6dHpkVXlzbXdmN0JQT0loSXJxZw?oc=5",
       "searchProvider": "Google News RSS",
@@ -322,9 +322,10 @@
         "배출권"
       ],
       "section": "news",
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "duplicateSources": [
-        "한국경제"
+        "한국경제",
+        "hankyung.com"
       ],
       "searchProviders": [
         "Google News RSS"
@@ -1776,8 +1777,8 @@
         "상쇄배출권"
       ],
       "duplicateSources": [
-        "biz.chosun.com",
-        "Chosunbiz"
+        "Chosunbiz",
+        "biz.chosun.com"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -2475,8 +2476,8 @@
         "온실가스 배출권"
       ],
       "duplicateSources": [
-        "biz.chosun.com",
-        "Chosunbiz"
+        "Chosunbiz",
+        "biz.chosun.com"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -3836,8 +3837,8 @@
       ],
       "duplicateCount": 4,
       "duplicateSources": [
-        "khan.co.kr",
         "경향신문",
+        "khan.co.kr",
         "v.daum.net"
       ],
       "searchProviders": [
@@ -4686,25 +4687,28 @@
         "매일신문",
         "imaeil.com",
         "edaily.co.kr",
-        "g-enews.com",
+        "글로벌이코노믹",
         "v.daum.net",
         "이투데이",
-        "뉴스핌",
+        "newspim.com",
+        "메트로신문",
         "metroseoul.co.kr",
         "socialvalue.kr",
         "asiatime.co.kr",
         "getnews.co.kr",
+        "g-enews.com",
         "sedaily.com",
         "paxetv.com",
         "tf.co.kr",
         "smarttoday.co.kr",
+        "뉴스1",
         "news1.kr",
-        "viva100.com",
+        "브릿지경제",
         "dailycar.co.kr",
         "kbsm.net",
         "finomy.com",
         "pinpointnews.co.kr",
-        "포춘코리아",
+        "fortunekorea.co.kr",
         "fetv.co.kr",
         "머니투데이",
         "m-i.kr",
@@ -4719,7 +4723,7 @@
         "delighti.co.kr",
         "smedaily.co.kr",
         "whitepaper.co.kr",
-        "pennmike.com",
+        "펜앤마이크",
         "ppss.kr",
         "globale.co.kr",
         "todayeconomic.com",
@@ -4743,7 +4747,7 @@
         "서울경제TV",
         "sentv.co.kr",
         "wowtv.co.kr",
-        "newspim.com",
+        "viva100.com",
         "moneystorm.kr",
         "dailypop.kr",
         "이지경제",
@@ -4751,22 +4755,21 @@
         "ezyeconomy.com",
         "wsobi.com",
         "huffingtonpost.kr",
-        "연합뉴스",
         "yna.co.kr",
         "아시아경제",
         "view.asiae.co.kr",
         "newsis.com",
         "catchnews.kr",
         "thefairnews.co.kr",
-        "글로벌이코노믹",
-        "메트로신문",
+        "뉴스핌",
+        "포춘코리아",
+        "pennmike.com",
+        "연합뉴스",
         "스마트투데이",
         "주간한국",
         "연합뉴스TV",
         "시사캐스트",
         "라이센스뉴스",
-        "뉴스1",
-        "브릿지경제",
         "매일일보",
         "lcnews.co.kr",
         "asiae.co.kr",
@@ -4774,7 +4777,6 @@
         "비즈월드",
         "yonhapnewstv.co.kr",
         "ftoday.co.kr",
-        "fortunekorea.co.kr",
         "글로벌E",
         "더팩트",
         "kfenews.co.kr",
@@ -4807,7 +4809,7 @@
         "NAVER API HUB",
         "Google News RSS"
       ],
-      "duplicateCount": 125,
+      "duplicateCount": 126,
       "region": "국내"
     },
     {
@@ -5698,8 +5700,8 @@
         "유상할당"
       ],
       "duplicateSources": [
-        "biz.chosun.com",
-        "Chosunbiz"
+        "Chosunbiz",
+        "biz.chosun.com"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -6251,9 +6253,9 @@
         "탄소배출권"
       ],
       "duplicateSources": [
-        "viva100.com",
-        "v.daum.net",
         "브릿지경제",
+        "v.daum.net",
+        "viva100.com",
         "dt.co.kr"
       ],
       "searchProviders": [
@@ -8095,8 +8097,8 @@
         "KAU25"
       ],
       "duplicateSources": [
-        "중소기업신문",
-        "smedaily.co.kr"
+        "smedaily.co.kr",
+        "중소기업신문"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -9863,8 +9865,8 @@
       ],
       "duplicateSources": [
         "v.daum.net",
-        "연합뉴스",
-        "yna.co.kr"
+        "yna.co.kr",
+        "연합뉴스"
       ],
       "searchProviders": [
         "Google News RSS",
