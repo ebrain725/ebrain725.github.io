@@ -1,17 +1,66 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-05T01:57:00+09:00",
+  "generatedAt": "2026-10-05T08:12:19+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 988,
+  "itemCount": 990,
   "earliestPublishedAt": "2026-08-06",
-  "latestPublishedAt": "2026-10-04",
+  "latestPublishedAt": "2026-10-05",
   "sourceCommitsScanned": 0,
   "sourceSnapshotsScanned": 0,
   "historicalRowsScanned": 0,
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "c9f8d56112315226",
+      "publishedAt": "2026-10-05",
+      "title": "주유소 추천부터 공공주택 찾기까지…시민 AI 아이디어 12팀 본선 돌입",
+      "category": "제도",
+      "summary": "온실가스 배출권 수요 예측과 항만 입항 최적화, 소상공인의 수요·발주량 예측도 포함됐다. 참가자는 고등학생부터 대학생·대학원생, 직장인, 공무원까지 다양하다. 본선팀은 10월부터 약 두 달간 카카오...",
+      "source": "dailyt.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.dailyt.co.kr/newsView/dlt202610050005",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "온실가스 배출권"
+      ],
+      "duplicateSources": [
+        "dailyt.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "96893e4402ed1920",
+      "publishedAt": "2026-10-05",
+      "title": "알래스카 LNG 검토 단계인데…트럼프 한 마디에 여야 공방 예고",
+      "category": "제도",
+      "summary": "기후부 국감에서는 재생에너지, 신규 원전 등 에너지 관련뿐 아니라 4대강 재자연화나 탄소 배출권 ... 2035년 국가 온실가스 감축목표(NDC)의 이행 방안과 배출권 거래제 4차 계획기간의 부담도 관심사다. 발전 부문의...",
+      "source": "mt.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.mt.co.kr/economy/2026/10/05/2026100214575017869",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "mt.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
     {
       "id": "9c030dcc2163d9e9",
       "publishedAt": "2026-10-04",
@@ -1849,8 +1898,8 @@
         "상쇄배출권"
       ],
       "duplicateSources": [
-        "biz.chosun.com",
-        "Chosunbiz"
+        "Chosunbiz",
+        "biz.chosun.com"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -2548,8 +2597,8 @@
         "온실가스 배출권"
       ],
       "duplicateSources": [
-        "biz.chosun.com",
-        "Chosunbiz"
+        "Chosunbiz",
+        "biz.chosun.com"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -4760,8 +4809,8 @@
         "imaeil.com",
         "edaily.co.kr",
         "글로벌이코노믹",
-        "v.daum.net",
         "이투데이",
+        "v.daum.net",
         "뉴스핌",
         "메트로신문",
         "metroseoul.co.kr",
@@ -4794,7 +4843,7 @@
         "delighti.co.kr",
         "smedaily.co.kr",
         "whitepaper.co.kr",
-        "pennmike.com",
+        "펜앤마이크",
         "ppss.kr",
         "글로벌E",
         "globale.co.kr",
@@ -4822,7 +4871,6 @@
         "newspim.com",
         "viva100.com",
         "moneystorm.kr",
-        "포춘코리아",
         "dailypop.kr",
         "이지경제",
         "sateconomy.co.kr",
@@ -4836,7 +4884,8 @@
         "newsis.com",
         "catchnews.kr",
         "thefairnews.co.kr",
-        "펜앤마이크",
+        "pennmike.com",
+        "포춘코리아",
         "인사이트코리아",
         "insightkorea.co.kr",
         "연합뉴스TV",
@@ -5774,8 +5823,8 @@
         "유상할당"
       ],
       "duplicateSources": [
-        "biz.chosun.com",
-        "Chosunbiz"
+        "Chosunbiz",
+        "biz.chosun.com"
       ],
       "searchProviders": [
         "Google News RSS",
