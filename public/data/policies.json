@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-10-04T21:47:52+09:00",
+  "lastSync": "2026-10-05T01:56:55+09:00",
   "keywords": [
     "배출권",
     "배출권거래제",
@@ -30,7 +30,7 @@
   "warning": null,
   "aiInsight": {
     "summary": "최근 공식자료의 직접적인 수급 변수는 유상경매입니다. 최근 경매가 높은 낙찰가로 소화돼 공급보다 이행수요가 강하다는 신호입니다.",
-    "generatedAt": "2026-10-04T21:47:52+09:00",
+    "generatedAt": "2026-10-05T01:56:55+09:00",
     "basisLatestDate": "2026-10-01",
     "basisCount": 10,
     "source": "fallback",
@@ -1097,6 +1097,29 @@
       ],
       "duplicateSources": [
         "kor.theasian.asia"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "5fa3552cee464e6e",
+      "publishedAt": "2026-10-02",
+      "title": "[분석] 에너지 기술확산, '개발 이후'까지 설계한다…10대 분야 산업화...",
+      "category": "제도",
+      "summary": "객관적인 감축량과 품질이 확인되면 배출권 인정과 금융·구매 지원의 근거도 강화될 수 있다. 연차별 실행계획이 핵심…개발 일정과 제도·시장 준비를 함께 점검 10대 분야를 관통하는 과제는 기술개발과 현장 적용의...",
+      "source": "energydaily.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.energydaily.co.kr/news/articleView.html?idxno=203793",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "energydaily.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -2591,8 +2614,8 @@
         "상쇄배출권"
       ],
       "duplicateSources": [
-        "Chosunbiz",
-        "biz.chosun.com"
+        "biz.chosun.com",
+        "Chosunbiz"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -3330,8 +3353,8 @@
         "온실가스 배출권"
       ],
       "duplicateSources": [
-        "Chosunbiz",
-        "biz.chosun.com"
+        "biz.chosun.com",
+        "Chosunbiz"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -5627,6 +5650,7 @@
         "paxetv.com",
         "tf.co.kr",
         "smarttoday.co.kr",
+        "뉴스1",
         "news1.kr",
         "브릿지경제",
         "dailycar.co.kr",
@@ -5638,6 +5662,7 @@
         "m-i.kr",
         "joongangenews.com",
         "fntimes.com",
+        "2news.co.kr",
         "newsprime.co.kr",
         "ebn.co.kr",
         "ttlnews.com",
@@ -5646,7 +5671,7 @@
         "delighti.co.kr",
         "smedaily.co.kr",
         "whitepaper.co.kr",
-        "펜앤마이크",
+        "pennmike.com",
         "ppss.kr",
         "글로벌E",
         "globale.co.kr",
@@ -5661,7 +5686,6 @@
         "wolyo.co.kr",
         "megaeconomy.co.kr",
         "etoday.co.kr",
-        "인사이트코리아",
         "digitaltoday.co.kr",
         "job-post.co.kr",
         "newscape.co.kr",
@@ -5675,6 +5699,7 @@
         "newspim.com",
         "viva100.com",
         "moneystorm.kr",
+        "포춘코리아",
         "dailypop.kr",
         "이지경제",
         "sateconomy.co.kr",
@@ -5688,14 +5713,12 @@
         "newsis.com",
         "catchnews.kr",
         "thefairnews.co.kr",
-        "뉴스1",
-        "포춘코리아",
+        "펜앤마이크",
+        "인사이트코리아",
         "insightkorea.co.kr",
-        "2news.co.kr",
         "연합뉴스TV",
         "fortunekorea.co.kr",
         "mt.co.kr",
-        "pennmike.com",
         "스마트투데이",
         "주간한국",
         "시사캐스트",
@@ -6628,8 +6651,8 @@
         "유상할당"
       ],
       "duplicateSources": [
-        "Chosunbiz",
-        "biz.chosun.com"
+        "biz.chosun.com",
+        "Chosunbiz"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -252056,10 +252079,10 @@
   },
   "newsRetention": {
     "policy": "append-only",
-    "lastMergedAt": "2026-10-04T21:47:59+09:00",
-    "itemCount": 987,
+    "lastMergedAt": "2026-10-05T01:57:00+09:00",
+    "itemCount": 988,
     "archiveBefore": 987,
-    "currentBefore": 876,
+    "currentBefore": 877,
     "gitRecoveryEnabled": false
   }
 }
