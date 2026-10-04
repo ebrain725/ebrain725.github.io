@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-10-04T11:51:54+09:00",
+  "lastSync": "2026-10-04T13:12:56+09:00",
   "keywords": [
     "배출권",
     "배출권거래제",
@@ -27,10 +27,10 @@
     "Google News RSS",
     "NAVER API HUB"
   ],
-  "warning": "기후부 보도자료: 키워드별 공식검색과 기본 RSS 복구에 모두 실패했습니다: 배출권: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 배출권거래제: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 유상할당: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 유상경매: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 탄소시장: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 시장안정화: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 상쇄배출권: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 기본 RSS 복구: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 기후부 공지·공고: 키워드별 공식검색과 기본 RSS 복구에 모두 실패했습니다: 배출권: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 배출권거래제: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 유상할당: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 유상경매: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 탄소시장: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 시장안정화: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 상쇄배출권: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 기본 RSS 복구: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 한국거래소 배출권 공지사항: 한국거래소 공지 목록을 해석하지 못했습니다. 1페이지: HTTP Error 403: Forbidden",
+  "warning": null,
   "aiInsight": {
     "summary": "최근 공식자료의 직접적인 수급 변수는 유상경매입니다. 최근 경매가 높은 낙찰가로 소화돼 공급보다 이행수요가 강하다는 신호입니다.",
-    "generatedAt": "2026-10-04T11:51:54+09:00",
+    "generatedAt": "2026-10-04T13:12:56+09:00",
     "basisLatestDate": "2026-10-01",
     "basisCount": 10,
     "source": "fallback",
@@ -635,6 +635,54 @@
     }
   ],
   "items": [
+    {
+      "id": "9c030dcc2163d9e9",
+      "publishedAt": "2026-10-04",
+      "title": "기후위기비상행동 \"탄소중립법 개정, 헌재 결정 취지 못 살려\"",
+      "category": "제도",
+      "summary": "특히 온실가스 감축 경로의 실효성을 높이고 탄소예산을 실제 정책에 연계할 장치가 필요하다는 지적이다.... 그러나 감축목표의 하한이 배출권 거래제 규제목표와 연결돼 있고 탄소예산이 실제 정책 결정에 강제력을 갖지...",
+      "source": "ngonews.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.ngonews.kr/news/articleView.html?idxno=239831",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "ngonews.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "2992019642a33c0d",
+      "publishedAt": "2026-10-04",
+      "title": "\"버릴 음식 살려 이웃에 재분배, '탄소배출권 창출' 지구도 살린다\"",
+      "category": "제도",
+      "summary": "\"버릴 음식 살려 이웃에 재분배, '탄소배출권 창출' 지구도 살린다\" 넷제로뉴스",
+      "source": "넷제로뉴스",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1uQ1hhZGZmajZNOVZ2UEdpQXVpYWZYWTd3UlNYa2JqTDh5aDBQcmJoYjNrQnF0SlNNQ2tOZ1E0V3pxdVpjZF9JeGcxM1dxckNYcUtoVTBkeWduNzl5UjJJYVRQMmRYOC1YYUE?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "넷제로뉴스"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "국내"
+    },
     {
       "id": "3fe40c3037248d09",
       "publishedAt": "2026-10-03",
@@ -5559,34 +5607,34 @@
         "srtimes.kr",
         "cstimes.com",
         "digitalchosun.dizzo.com",
-        "뷰어스",
         "theviewers.co.kr",
         "매일신문",
         "imaeil.com",
         "edaily.co.kr",
-        "g-enews.com",
+        "글로벌이코노믹",
         "v.daum.net",
-        "etoday.co.kr",
+        "이투데이",
         "뉴스핌",
         "메트로신문",
         "metroseoul.co.kr",
         "socialvalue.kr",
         "asiatime.co.kr",
         "getnews.co.kr",
+        "g-enews.com",
         "sedaily.com",
         "paxetv.com",
         "tf.co.kr",
         "smarttoday.co.kr",
         "뉴스1",
         "news1.kr",
-        "viva100.com",
+        "브릿지경제",
         "dailycar.co.kr",
         "kbsm.net",
         "finomy.com",
         "pinpointnews.co.kr",
-        "fortunekorea.co.kr",
+        "포춘코리아",
         "fetv.co.kr",
-        "mt.co.kr",
+        "머니투데이",
         "m-i.kr",
         "joongangenews.com",
         "fntimes.com",
@@ -5613,6 +5661,7 @@
         "kpenews.com",
         "wolyo.co.kr",
         "megaeconomy.co.kr",
+        "etoday.co.kr",
         "digitaltoday.co.kr",
         "job-post.co.kr",
         "newscape.co.kr",
@@ -5620,10 +5669,10 @@
         "sports.hankooki.com",
         "pointe.co.kr",
         "swtvnews.com",
-        "서울경제TV",
         "sentv.co.kr",
         "wowtv.co.kr",
         "newspim.com",
+        "viva100.com",
         "moneystorm.kr",
         "dailypop.kr",
         "이지경제",
@@ -5637,11 +5686,10 @@
         "newsis.com",
         "catchnews.kr",
         "thefairnews.co.kr",
-        "글로벌이코노믹",
-        "이투데이",
-        "브릿지경제",
-        "머니투데이",
-        "포춘코리아",
+        "뷰어스",
+        "fortunekorea.co.kr",
+        "mt.co.kr",
+        "서울경제TV",
         "pennmike.com",
         "연합뉴스",
         "스마트투데이",
@@ -7166,9 +7214,9 @@
         "탄소배출권"
       ],
       "duplicateSources": [
-        "viva100.com",
-        "v.daum.net",
         "브릿지경제",
+        "v.daum.net",
+        "viva100.com",
         "dt.co.kr"
       ],
       "searchProviders": [
@@ -9165,8 +9213,8 @@
         "KAU25"
       ],
       "duplicateSources": [
-        "중소기업신문",
-        "smedaily.co.kr"
+        "smedaily.co.kr",
+        "중소기업신문"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -10970,8 +11018,8 @@
       ],
       "duplicateSources": [
         "v.daum.net",
-        "yna.co.kr",
-        "연합뉴스"
+        "연합뉴스",
+        "yna.co.kr"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -53049,7 +53097,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "34bb2d30171c09a1",
+      "id": "bf2c7b48532214c8",
       "publishedAt": "2025-04-04",
       "title": "2025년 4월 배출권 유상할당 입찰 공고",
       "category": "유상경매",
@@ -53057,7 +53105,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10524&orgCd=&boardMasterId=39&boardId=1735370",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10524&orgCd=&boardMasterId=39&boardId=1735370",
       "matchedKeywords": [
         "유상할당",
         "유상 할당",
@@ -57367,7 +57415,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "e597e32e06bc0f82",
+      "id": "05fc79bd8614e601",
       "publishedAt": "2025-02-06",
       "title": "2025년 2월 배출권 유상할당 입찰 공고",
       "category": "유상경매",
@@ -57375,7 +57423,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10524&orgCd=&boardMasterId=39&boardId=1723130",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10524&orgCd=&boardMasterId=39&boardId=1723130",
       "matchedKeywords": [
         "유상할당",
         "유상 할당",
@@ -252005,10 +252053,10 @@
   },
   "newsRetention": {
     "policy": "append-only",
-    "lastMergedAt": "2026-10-04T11:52:00+09:00",
-    "itemCount": 985,
+    "lastMergedAt": "2026-10-04T13:13:03+09:00",
+    "itemCount": 987,
     "archiveBefore": 985,
-    "currentBefore": 874,
+    "currentBefore": 876,
     "gitRecoveryEnabled": false
   }
 }

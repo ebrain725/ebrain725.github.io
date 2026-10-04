@@ -1,17 +1,65 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-04T11:52:00+09:00",
+  "generatedAt": "2026-10-04T13:13:03+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 985,
+  "itemCount": 987,
   "earliestPublishedAt": "2026-08-06",
-  "latestPublishedAt": "2026-10-03",
+  "latestPublishedAt": "2026-10-04",
   "sourceCommitsScanned": 0,
   "sourceSnapshotsScanned": 0,
   "historicalRowsScanned": 0,
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "9c030dcc2163d9e9",
+      "publishedAt": "2026-10-04",
+      "title": "기후위기비상행동 \"탄소중립법 개정, 헌재 결정 취지 못 살려\"",
+      "category": "제도",
+      "summary": "특히 온실가스 감축 경로의 실효성을 높이고 탄소예산을 실제 정책에 연계할 장치가 필요하다는 지적이다.... 그러나 감축목표의 하한이 배출권 거래제 규제목표와 연결돼 있고 탄소예산이 실제 정책 결정에 강제력을 갖지...",
+      "source": "ngonews.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.ngonews.kr/news/articleView.html?idxno=239831",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "ngonews.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "2992019642a33c0d",
+      "publishedAt": "2026-10-04",
+      "title": "\"버릴 음식 살려 이웃에 재분배, '탄소배출권 창출' 지구도 살린다\"",
+      "category": "제도",
+      "summary": "\"버릴 음식 살려 이웃에 재분배, '탄소배출권 창출' 지구도 살린다\" 넷제로뉴스",
+      "source": "넷제로뉴스",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1uQ1hhZGZmajZNOVZ2UEdpQXVpYWZYWTd3UlNYa2JqTDh5aDBQcmJoYjNrQnF0SlNNQ2tOZ1E0V3pxdVpjZF9JeGcxM1dxckNYcUtoVTBkeWduNzl5UjJJYVRQMmRYOC1YYUE?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "넷제로뉴스"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "국내"
+    },
     {
       "id": "3fe40c3037248d09",
       "publishedAt": "2026-10-03",
@@ -4682,34 +4730,34 @@
         "srtimes.kr",
         "cstimes.com",
         "digitalchosun.dizzo.com",
-        "뷰어스",
         "theviewers.co.kr",
         "매일신문",
         "imaeil.com",
         "edaily.co.kr",
-        "g-enews.com",
+        "글로벌이코노믹",
         "v.daum.net",
-        "etoday.co.kr",
+        "이투데이",
         "뉴스핌",
         "메트로신문",
         "metroseoul.co.kr",
         "socialvalue.kr",
         "asiatime.co.kr",
         "getnews.co.kr",
+        "g-enews.com",
         "sedaily.com",
         "paxetv.com",
         "tf.co.kr",
         "smarttoday.co.kr",
         "뉴스1",
         "news1.kr",
-        "viva100.com",
+        "브릿지경제",
         "dailycar.co.kr",
         "kbsm.net",
         "finomy.com",
         "pinpointnews.co.kr",
-        "fortunekorea.co.kr",
+        "포춘코리아",
         "fetv.co.kr",
-        "mt.co.kr",
+        "머니투데이",
         "m-i.kr",
         "joongangenews.com",
         "fntimes.com",
@@ -4736,6 +4784,7 @@
         "kpenews.com",
         "wolyo.co.kr",
         "megaeconomy.co.kr",
+        "etoday.co.kr",
         "digitaltoday.co.kr",
         "job-post.co.kr",
         "newscape.co.kr",
@@ -4743,10 +4792,10 @@
         "sports.hankooki.com",
         "pointe.co.kr",
         "swtvnews.com",
-        "서울경제TV",
         "sentv.co.kr",
         "wowtv.co.kr",
         "newspim.com",
+        "viva100.com",
         "moneystorm.kr",
         "dailypop.kr",
         "이지경제",
@@ -4760,11 +4809,10 @@
         "newsis.com",
         "catchnews.kr",
         "thefairnews.co.kr",
-        "글로벌이코노믹",
-        "이투데이",
-        "브릿지경제",
-        "머니투데이",
-        "포춘코리아",
+        "뷰어스",
+        "fortunekorea.co.kr",
+        "mt.co.kr",
+        "서울경제TV",
         "pennmike.com",
         "연합뉴스",
         "스마트투데이",
@@ -6253,9 +6301,9 @@
         "탄소배출권"
       ],
       "duplicateSources": [
-        "viva100.com",
-        "v.daum.net",
         "브릿지경제",
+        "v.daum.net",
+        "viva100.com",
         "dt.co.kr"
       ],
       "searchProviders": [
@@ -8097,8 +8145,8 @@
         "KAU25"
       ],
       "duplicateSources": [
-        "중소기업신문",
-        "smedaily.co.kr"
+        "smedaily.co.kr",
+        "중소기업신문"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -9865,8 +9913,8 @@
       ],
       "duplicateSources": [
         "v.daum.net",
-        "yna.co.kr",
-        "연합뉴스"
+        "연합뉴스",
+        "yna.co.kr"
       ],
       "searchProviders": [
         "Google News RSS",
