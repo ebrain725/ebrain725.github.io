@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-04T13:13:03+09:00",
+  "generatedAt": "2026-10-04T15:13:01+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
   "itemCount": 987,
@@ -90,8 +90,8 @@
       "publishedAt": "2026-10-03",
       "title": "[ESG특집] EU 탄소배출권 시장 강화 논의",
       "category": "제도",
-      "summary": "[ESG특집] EU 탄소배출권 시장 강화 논의 데일리연합",
-      "source": "데일리연합",
+      "summary": "[ESG특집] EU 탄소배출권 시장 강화 논의 dailyan.com",
+      "source": "dailyan.com",
       "sourceType": "news",
       "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9ycFQ4X3JaR1FCWmE5SElrTVc4aTZsZDBoQ1k1VzBkRzZEQ0kwTklhU2p1NHNCdVphNFJ6WnJLOHcwOGZaSndDWng3SHZvelVYc1FYV1d5RW43dUU?oc=5",
       "searchProvider": "Google News RSS",
@@ -100,9 +100,10 @@
         "탄소배출권"
       ],
       "section": "news",
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "duplicateSources": [
-        "데일리연합"
+        "데일리연합",
+        "dailyan.com"
       ],
       "searchProviders": [
         "Google News RSS"
@@ -3679,8 +3680,8 @@
         "배출권"
       ],
       "duplicateSources": [
-        "한국NGO신문",
         "ngonews.kr",
+        "한국NGO신문",
         "newstree.kr",
         "뉴스;트리"
       ],
@@ -3886,8 +3887,8 @@
       "duplicateCount": 4,
       "duplicateSources": [
         "경향신문",
-        "khan.co.kr",
-        "v.daum.net"
+        "v.daum.net",
+        "khan.co.kr"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -4730,6 +4731,7 @@
         "srtimes.kr",
         "cstimes.com",
         "digitalchosun.dizzo.com",
+        "뷰어스",
         "theviewers.co.kr",
         "매일신문",
         "imaeil.com",
@@ -4755,7 +4757,6 @@
         "kbsm.net",
         "finomy.com",
         "pinpointnews.co.kr",
-        "포춘코리아",
         "fetv.co.kr",
         "머니투데이",
         "m-i.kr",
@@ -4770,12 +4771,10 @@
         "delighti.co.kr",
         "smedaily.co.kr",
         "whitepaper.co.kr",
-        "펜앤마이크",
         "ppss.kr",
         "globale.co.kr",
         "todayeconomic.com",
         "newsroad.co.kr",
-        "연합뉴스TV",
         "newsian.co.kr",
         "bizwnews.com",
         "financialpost.co.kr",
@@ -4792,6 +4791,7 @@
         "sports.hankooki.com",
         "pointe.co.kr",
         "swtvnews.com",
+        "서울경제TV",
         "sentv.co.kr",
         "wowtv.co.kr",
         "newspim.com",
@@ -4803,18 +4803,19 @@
         "ezyeconomy.com",
         "wsobi.com",
         "huffingtonpost.kr",
+        "연합뉴스",
         "yna.co.kr",
         "아시아경제",
         "view.asiae.co.kr",
         "newsis.com",
         "catchnews.kr",
         "thefairnews.co.kr",
-        "뷰어스",
+        "포춘코리아",
+        "펜앤마이크",
+        "연합뉴스TV",
         "fortunekorea.co.kr",
         "mt.co.kr",
-        "서울경제TV",
         "pennmike.com",
-        "연합뉴스",
         "스마트투데이",
         "주간한국",
         "시사캐스트",
@@ -8145,8 +8146,8 @@
         "KAU25"
       ],
       "duplicateSources": [
-        "smedaily.co.kr",
-        "중소기업신문"
+        "중소기업신문",
+        "smedaily.co.kr"
       ],
       "searchProviders": [
         "Google News RSS",
