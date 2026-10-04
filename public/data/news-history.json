@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-04T15:13:01+09:00",
+  "generatedAt": "2026-10-04T18:13:05+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
   "itemCount": 987,
@@ -3680,8 +3680,8 @@
         "배출권"
       ],
       "duplicateSources": [
-        "ngonews.kr",
         "한국NGO신문",
+        "ngonews.kr",
         "newstree.kr",
         "뉴스;트리"
       ],
@@ -4757,12 +4757,12 @@
         "kbsm.net",
         "finomy.com",
         "pinpointnews.co.kr",
+        "포춘코리아",
         "fetv.co.kr",
         "머니투데이",
         "m-i.kr",
         "joongangenews.com",
         "fntimes.com",
-        "2news.co.kr",
         "newsprime.co.kr",
         "ebn.co.kr",
         "ttlnews.com",
@@ -4771,6 +4771,7 @@
         "delighti.co.kr",
         "smedaily.co.kr",
         "whitepaper.co.kr",
+        "펜앤마이크",
         "ppss.kr",
         "globale.co.kr",
         "todayeconomic.com",
@@ -4784,6 +4785,7 @@
         "wolyo.co.kr",
         "megaeconomy.co.kr",
         "etoday.co.kr",
+        "insightkorea.co.kr",
         "digitaltoday.co.kr",
         "job-post.co.kr",
         "newscape.co.kr",
@@ -4803,15 +4805,14 @@
         "ezyeconomy.com",
         "wsobi.com",
         "huffingtonpost.kr",
-        "연합뉴스",
         "yna.co.kr",
-        "아시아경제",
         "view.asiae.co.kr",
         "newsis.com",
         "catchnews.kr",
         "thefairnews.co.kr",
-        "포춘코리아",
-        "펜앤마이크",
+        "2news.co.kr",
+        "연합뉴스",
+        "아시아경제",
         "연합뉴스TV",
         "fortunekorea.co.kr",
         "mt.co.kr",
@@ -4858,7 +4859,7 @@
         "NAVER API HUB",
         "Google News RSS"
       ],
-      "duplicateCount": 126,
+      "duplicateCount": 127,
       "region": "국내"
     },
     {
@@ -9914,8 +9915,8 @@
       ],
       "duplicateSources": [
         "v.daum.net",
-        "연합뉴스",
-        "yna.co.kr"
+        "yna.co.kr",
+        "연합뉴스"
       ],
       "searchProviders": [
         "Google News RSS",
