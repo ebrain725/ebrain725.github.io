@@ -662,6 +662,28 @@
       "region": "국내"
     },
     {
+      "id": "motie_notice-ATCL0c554f816-65089",
+      "sourceId": "65089",
+      "sourceBoard": "ATCL0c554f816",
+      "sourceBoardKey": "public_notice",
+      "boardCategory": "고시",
+      "title": "2026년도 산업부문 온실가스 목표관리업체 지정고시 중 정정",
+      "summary": "산업에너지협력과 담당 · 고시입니다. 원문에서 세부 내용을 확인하세요.",
+      "url": "https://www.motir.go.kr/kor/article/ATCL0c554f816/65089/view",
+      "publishedAt": "2026-10-06",
+      "source": "산업부 공지사항",
+      "sourceType": "official",
+      "section": "motie_notice",
+      "category": "고시",
+      "department": "산업에너지협력과",
+      "matchedKeywords": [
+        "온실가스"
+      ],
+      "matchedFields": [
+        "title"
+      ]
+    },
+    {
       "id": "c9f8d56112315226",
       "publishedAt": "2026-10-05",
       "title": "주유소 추천부터 공공주택 찾기까지…시민 AI 아이디어 12팀 본선 돌입",
@@ -252721,5 +252743,80 @@
       "notice": "기후부 공지사항",
       "krx_notice": "한국거래소 공지사항"
     }
+  },
+  "motieOfficialHistory": {
+    "file": "data/motie-policy-history.json",
+    "schemaVersion": "2.0",
+    "requestedStartDate": "2015-01-01",
+    "generatedAt": "2026-10-06T06:55:10+09:00",
+    "coverage": {
+      "motie_notice": {
+        "label": "산업부 공지사항",
+        "records": 953,
+        "earliest": "2015-01-06",
+        "latest": "2026-10-06",
+        "byBoardCategory": {
+          "고시": 232,
+          "공고": 423,
+          "공지사항": 2,
+          "사업공고": 206,
+          "입법예고": 25,
+          "행정예고": 65
+        }
+      },
+      "motie_press": {
+        "label": "산업부 보도자료",
+        "records": 1886,
+        "earliest": "2016-01-19",
+        "latest": "2026-10-01",
+        "byBoardCategory": {
+          "보도·참고자료": 1365,
+          "보도설명자료": 521
+        }
+      }
+    },
+    "itemCount": 2839,
+    "sourceBoards": [
+      {
+        "key": "press_release",
+        "category": "보도·참고자료",
+        "url": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c"
+      },
+      {
+        "key": "press_explanation",
+        "category": "보도설명자료",
+        "url": "https://www.motir.go.kr/kor/article/ATCLe0854704d"
+      },
+      {
+        "key": "notice",
+        "category": "공지사항",
+        "url": "https://www.motir.go.kr/kor/article/ATCL6e90bb9de"
+      },
+      {
+        "key": "business_notice",
+        "category": "사업공고",
+        "url": "https://www.motir.go.kr/kor/article/ATCL2826a2625"
+      },
+      {
+        "key": "legislation_notice",
+        "category": "입법예고",
+        "url": "https://www.motir.go.kr/kor/article/ATCLa1cb24c71"
+      },
+      {
+        "key": "administrative_notice",
+        "category": "행정예고",
+        "url": "https://www.motir.go.kr/kor/article/ATCLa6723dc7b"
+      },
+      {
+        "key": "public_notice",
+        "category": "고시",
+        "url": "https://www.motir.go.kr/kor/article/ATCL0c554f816"
+      },
+      {
+        "key": "announcement",
+        "category": "공고",
+        "url": "https://www.motir.go.kr/kor/article/ATCLc01b2801b"
+      }
+    ]
   }
 }
