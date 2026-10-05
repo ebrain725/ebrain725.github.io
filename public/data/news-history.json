@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-05T18:13:06+09:00",
+  "generatedAt": "2026-10-05T20:44:43+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1008,
+  "itemCount": 1009,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-05",
   "sourceCommitsScanned": 0,
@@ -307,6 +307,34 @@
       "region": "국내"
     },
     {
+      "id": "5c1d7297f30f344a",
+      "publishedAt": "2026-10-05",
+      "title": "대구시, 방천리 매립가스 자원화로 탄소 배출권 21만 9천 톤 신규 확보",
+      "category": "제도",
+      "summary": "대구광역시는 올해 9월 '방천리 매립장 매립가스 자원화사업'을 통해 약 66억 원 상당에 달하는 탄소 배출권 ... 승인받은 배출권 은 2023년부터 2024년까지의 감축 실적으로 자동차 약 9만 1천 대가 1년간 배출하는...",
+      "source": "bbsi.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://news.bbsi.co.kr/news/articleView.html?idxno=4110341",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "BBS불교방송",
+        "bbsi.co.kr",
+        "세명일보",
+        "smnews.co.kr"
+      ],
+      "searchProviders": [
+        "Google News RSS",
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 4,
+      "region": "국내"
+    },
+    {
       "id": "3ca9dca4502cb053",
       "publishedAt": "2026-10-05",
       "title": "대구시, 매립가스 자원화로 탄소 배출권 21만9천t 신규 확보",
@@ -352,6 +380,7 @@
         "탄소배출권"
       ],
       "duplicateSources": [
+        "프레시안",
         "pressian.com"
       ],
       "searchProviders": [
@@ -386,14 +415,14 @@
       "region": "국내"
     },
     {
-      "id": "7cef6d8f4b489f04",
+      "id": "17843fba55cc7040",
       "publishedAt": "2026-10-05",
-      "title": "대구, 매립가스 자원화 \\'탄소배출권 21만 9천 톤 신규 확보\\'",
+      "title": "대구, 매립가스 자원화…탄소배출권 21만9천톤 신규 확보",
       "category": "제도",
       "summary": "대구, 매립가스 자원화 \\'탄소배출권 21만 9천 톤 신규 확보\\' 세명일보",
-      "source": "세명일보",
+      "source": "서울일보",
       "sourceType": "news",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE94VGNVQ0xUb3VXVEEteE42UGVCZ3h1Z0s5Tk9UemRMTWp1cktleFpNbVQ3R2lTLVBwX25rNkd2VzVoWHZQQXVjZzFXajlvVmlla2ZJWDR5X3RtbGx2dU44ZUVRa1pNVmtmVlZCQ0VoVUs?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9WRENDNFhQSWphOVYyZ2pLeFFra1RsQ1hMbWZtOXZUQjM3bWk3RnplZzExNm5ucnk4ekJzc0RzNGhRN1VmN1FHd1FkamJIbXgyR01fM2dhVW9nZnFFLUtaSWRjY2l2b0t2SHdIWnFiZ9IBb0FVX3lxTE9WRENDNFhQSWphOVYyZ2pLeFFra1RsQ1hMbWZtOXZUQjM3bWk3RnplZzExNm5ucnk4ekJzc0RzNGhRN1VmN1FHd1FkamJIbXgyR01fM2dhVW9nZnFFLUtaSWRjY2l2b0t2SHdIWnFiZw?oc=5",
       "searchProvider": "Google News RSS",
       "matchedKeywords": [
         "배출권",
@@ -402,7 +431,7 @@
       "section": "news",
       "duplicateCount": 1,
       "duplicateSources": [
-        "세명일보"
+        "서울일보"
       ],
       "searchProviders": [
         "Google News RSS"
@@ -5285,7 +5314,6 @@
         "digitalchosun.dizzo.com",
         "뷰어스",
         "theviewers.co.kr",
-        "매일신문",
         "imaeil.com",
         "edaily.co.kr",
         "글로벌이코노믹",
@@ -5355,14 +5383,15 @@
         "huffingtonpost.kr",
         "연합뉴스",
         "yna.co.kr",
-        "아시아경제",
+        "asiae.co.kr",
         "view.asiae.co.kr",
         "newsis.com",
         "catchnews.kr",
         "thefairnews.co.kr",
+        "매일신문",
+        "아시아경제",
         "펜앤마이크",
         "이지경제",
-        "asiae.co.kr",
         "연합뉴스TV",
         "2news.co.kr",
         "글로벌E",
@@ -11613,8 +11642,8 @@
         "유상할당"
       ],
       "duplicateSources": [
-        "뉴스;트리",
-        "newstree.kr"
+        "newstree.kr",
+        "뉴스;트리"
       ],
       "searchProviders": [
         "Google News RSS",
