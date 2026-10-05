@@ -2,7 +2,7 @@
   "schemaVersion": "1.0",
   "requestedStartDate": "2015-01-01",
   "startedAt": "2026-09-09T19:46:11+09:00",
-  "generatedAt": "2026-10-03T03:34:49+09:00",
+  "generatedAt": "2026-10-06T06:11:13+09:00",
   "scope": {
     "ministry": "기후부 보도자료·공지사항: 핵심 키워드는 제목·본문, 확대 키워드는 제목으로 판정; 이전 이력 보존",
     "krx": "한국거래소 배출권시장 공지사항 일반 게시물 전체",
@@ -126,7 +126,7 @@
     {
       "source": "기후부 보도자료",
       "section": "press",
-      "requestedStartDate": "2026-08-04",
+      "requestedStartDate": "2026-08-07",
       "transport": "unfiltered-rss-local-split-keyword-filter",
       "keywordRule": {
         "titleAndContent": [
@@ -253,7 +253,7 @@
       "earliest": "2026-08-07",
       "latest": "2026-10-02",
       "oldestSeen": "2025-11-23",
-      "newestSeen": "2026-10-02",
+      "newestSeen": "2026-10-05",
       "crossedRequestedStart": true,
       "stopReason": "date-boundary",
       "complete": true,
@@ -372,7 +372,7 @@
     {
       "source": "기후부 공지·공고",
       "section": "notice",
-      "requestedStartDate": "2026-08-04",
+      "requestedStartDate": "2026-08-07",
       "transport": "unfiltered-rss-local-split-keyword-filter",
       "keywordRule": {
         "titleAndContent": [
@@ -492,11 +492,11 @@
       "pageSize": 200,
       "pagesFetched": 1,
       "rawRows": 200,
-      "inRangeMatchedRows": 19,
-      "itemCount": 19,
-      "directCount": 6,
+      "inRangeMatchedRows": 18,
+      "itemCount": 18,
+      "directCount": 5,
       "relatedCount": 13,
-      "earliest": "2026-08-05",
+      "earliest": "2026-08-10",
       "latest": "2026-10-02",
       "oldestSeen": "2026-06-04",
       "newestSeen": "2026-10-02",
@@ -504,7 +504,7 @@
       "stopReason": "date-boundary",
       "complete": true,
       "keywordHits": {
-        "배출권": 2,
+        "배출권": 1,
         "배출권거래제": 0,
         "K-ETS": 0,
         "ETS": 0,
@@ -512,9 +512,9 @@
         "할당량": 0,
         "배출허용총량": 0,
         "할당대상업체": 0,
-        "추가할당": 2,
+        "추가할당": 1,
         "할당취소": 0,
-        "유상할당": 2,
+        "유상할당": 1,
         "유상경매": 0,
         "배출권 경매": 0,
         "낙찰가": 0,
@@ -524,7 +524,7 @@
         "차입": 1,
         "상쇄배출권": 0,
         "전환한도": 0,
-        "시장안정화": 2,
+        "시장안정화": 1,
         "K-MSR": 0,
         "MSR": 0,
         "국제감축": 1,
@@ -97109,8 +97109,8 @@
     }
   ],
   "collectionMode": "incremental",
-  "queryStartDate": "2026-08-04",
-  "queryEndDate": "2026-10-03",
+  "queryStartDate": "2026-08-07",
+  "queryEndDate": "2026-10-06",
   "climateKeywordExpansion": {
     "version": "2026-09-11-v1-38-topics",
     "sharedWith": "산업부 보도자료·공지사항",
@@ -97231,8 +97231,8 @@
       ]
     },
     "collectionMode": "incremental",
-    "queryStartDate": "2026-08-04",
-    "queryEndDate": "2026-10-03"
+    "queryStartDate": "2026-08-07",
+    "queryEndDate": "2026-10-06"
   },
   "policyEventTaxonomy": {
     "version": "2026-09-11-v1-user-38-events",
@@ -97245,7 +97245,7 @@
     "krxRule": "배출권시장 전용 공지 전체를 direct로 보존하고 세부 이벤트를 태깅"
   },
   "retentionAudit": {
-    "previousUnique": 1673,
+    "previousUnique": 1675,
     "currentUnique": 1675,
     "missing": 0
   }
