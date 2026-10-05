@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-05T13:12:51+09:00",
+  "generatedAt": "2026-10-05T15:07:05+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 997,
+  "itemCount": 1003,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-05",
   "sourceCommitsScanned": 0,
@@ -34,6 +34,44 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "2824b0c15d669fe0",
+      "publishedAt": "2026-10-05",
+      "title": "온실가스 줄이고 돈도 벌고…대구 방천리 매립가스 자원화사업 탄소배...",
+      "category": "제도",
+      "summary": "5일 대구시에 따르면 지난 9월 해당 사업을 통해 탄소 배출권 21만9432톤을 신규 확보했다. 최근 국내 탄소 배출권 거래 시세를 적용하면 66억원에 달하는 규모다. 이번에 확보한 탄소 배출권 은 2023년부터 2024년까지 2년간...",
+      "source": "hidomin.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.hidomin.com/news/articleView.html?idxno=723621",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "hidomin.com",
+        "newsclaim.co.kr",
+        "kukinews.com",
+        "gyeongsangtoday.com",
+        "v.daum.net",
+        "pennmike.com",
+        "yna.co.kr",
+        "khan.co.kr",
+        "gukjenews.com",
+        "경향신문",
+        "hankookilbo.com",
+        "inews24.com",
+        "조선일보",
+        "chosun.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB",
+        "Google News RSS"
+      ],
+      "duplicateCount": 14,
       "region": "국내"
     },
     {
@@ -88,6 +126,30 @@
       "region": "국내"
     },
     {
+      "id": "f8270f133d43c2f3",
+      "publishedAt": "2026-10-05",
+      "title": "매립 가스 가 '66억원 자산'으로…대구시, 배출권 21만톤 확보",
+      "category": "제도",
+      "summary": "탄소 배출권 은 온실가스 를 내보낼 수 있는 권리를 말한다. 온실가스 를 줄인 만큼 받을 수 있고, 시장에서 사고팔 수도 있다. 최근 이 배출권 값은 크게 오르는 추세다. 시는 '방천리 매립장 매립 가스 자원화사업'으로...",
+      "source": "dailian.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.dailian.co.kr/news/view/1697885/?sc=Naver",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "dailian.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "e77186bbfbf4438b",
       "publishedAt": "2026-10-05",
       "title": "대구시, 탄소 배출권 21만 9432톤 신규 확보",
@@ -104,6 +166,56 @@
       ],
       "duplicateSources": [
         "wikitree.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "64240594ae2577ca",
+      "publishedAt": "2026-10-05",
+      "title": "대구시, 탄소 배출권 21만 9000톤으로 66억 상당 확보",
+      "category": "제도",
+      "summary": "대구시는 올 9월 ‘방천리 매립장 매립가스 자원화사업’을 통해 탄소 배출권 21만 9432톤, 거래시세로 66억원 상당을 신규 확보했다고 5일 밝혔다.이에 따라 대구시의 누적 탄소 배출권 확보량은 총 335만 2347톤에...",
+      "source": "kbsm.net",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.kbsm.net/news/view.php?idx=536551",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "경북신문",
+        "kbsm.net"
+      ],
+      "searchProviders": [
+        "Google News RSS",
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 2,
+      "region": "국내"
+    },
+    {
+      "id": "391e9e437f7e9d78",
+      "publishedAt": "2026-10-05",
+      "title": "대구시, 방천리 매립가스 자원화로 탄소 배출권 22만 톤 확보…66억 원 상...",
+      "category": "제도",
+      "summary": "대구시가 '방천리 매립장 매립가스 자원화사업'을 통해 탄소 배출권 21만 9432톤을 추가로 확보했다. 이는 최근 국내 탄소 배출권 시세 기준으로 약 66억 원에 달하는 규모이며, 승용차 9만 1000여 대가 1년 동안 배출하는...",
+      "source": "pennmike.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.pennmike.com/news/articleView.html?idxno=128966",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "pennmike.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -190,6 +302,30 @@
       "region": "국내"
     },
     {
+      "id": "7cef6d8f4b489f04",
+      "publishedAt": "2026-10-05",
+      "title": "대구, 매립가스 자원화 \\'탄소배출권 21만 9천 톤 신규 확보\\'",
+      "category": "제도",
+      "summary": "대구, 매립가스 자원화 \\'탄소배출권 21만 9천 톤 신규 확보\\' 세명일보",
+      "source": "세명일보",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE94VGNVQ0xUb3VXVEEteE42UGVCZ3h1Z0s5Tk9UemRMTWp1cktleFpNbVQ3R2lTLVBwX25rNkd2VzVoWHZQQXVjZzFXajlvVmlla2ZJWDR5X3RtbGx2dU44ZUVRa1pNVmtmVlZCQ0VoVUs?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "세명일보"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "f8c8fb058e71a980",
       "publishedAt": "2026-10-05",
       "title": "다시 열지 않는 정유공장…유럽, 원유 급등이 반복되는 이유",
@@ -267,8 +403,8 @@
       "publishedAt": "2026-10-04",
       "title": "\"버릴 음식 살려 이웃에 재분배, '탄소배출권 창출' 지구도 살린다\"",
       "category": "제도",
-      "summary": "\"버릴 음식 살려 이웃에 재분배, '탄소배출권 창출' 지구도 살린다\" 넷제로뉴스",
-      "source": "넷제로뉴스",
+      "summary": "\"버릴 음식 살려 이웃에 재분배, '탄소배출권 창출' 지구도 살린다\" netzeronews.kr",
+      "source": "netzeronews.kr",
       "sourceType": "news",
       "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1uQ1hhZGZmajZNOVZ2UEdpQXVpYWZYWTd3UlNYa2JqTDh5aDBQcmJoYjNrQnF0SlNNQ2tOZ1E0V3pxdVpjZF9JeGcxM1dxckNYcUtoVTBkeWduNzl5UjJJYVRQMmRYOC1YYUE?oc=5",
       "searchProvider": "Google News RSS",
@@ -277,9 +413,10 @@
         "탄소배출권"
       ],
       "section": "news",
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "duplicateSources": [
-        "넷제로뉴스"
+        "넷제로뉴스",
+        "netzeronews.kr"
       ],
       "searchProviders": [
         "Google News RSS"
@@ -2758,6 +2895,30 @@
       "region": "해외"
     },
     {
+      "id": "7b2752d85f9c0d1d",
+      "publishedAt": "2026-09-30",
+      "title": "SK텔레콤, 탄소배출권은 부족…올해 107억원 부담 전망",
+      "category": "제도",
+      "summary": "SK텔레콤, 탄소배출권은 부족…올해 107억원 부담 전망 뉴스저널리즘",
+      "source": "뉴스저널리즘",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE96MXVVbWt5WkdCMnFJWWNWcmdKM2FwR2h4N3p5UkNNYXpMX3c4MEZpTk5IQl9LYjkzaGVKSWlwZTk1WkxkMjVhODl2MmZWSXJ3ZXBHeExHTzVqM2FFRFlSd0w0V2kzYkxwOEZB?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "뉴스저널리즘"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "20eee6f8017144bd",
       "publishedAt": "2026-09-30",
       "title": "SK텔레콤, 올해 온실가스 35만t 부족… “AI 데이터센터 전력 소요량 증...",
@@ -4137,8 +4298,8 @@
       ],
       "duplicateCount": 4,
       "duplicateSources": [
-        "khan.co.kr",
         "경향신문",
+        "khan.co.kr",
         "v.daum.net"
       ],
       "searchProviders": [
@@ -5026,7 +5187,6 @@
         "globale.co.kr",
         "todayeconomic.com",
         "newsroad.co.kr",
-        "연합뉴스TV",
         "newsian.co.kr",
         "bizwnews.com",
         "financialpost.co.kr",
@@ -5061,6 +5221,7 @@
         "newsis.com",
         "catchnews.kr",
         "thefairnews.co.kr",
+        "연합뉴스TV",
         "2news.co.kr",
         "글로벌E",
         "연합뉴스",
@@ -10167,8 +10328,8 @@
       ],
       "duplicateSources": [
         "v.daum.net",
-        "연합뉴스",
-        "yna.co.kr"
+        "yna.co.kr",
+        "연합뉴스"
       ],
       "searchProviders": [
         "Google News RSS",
