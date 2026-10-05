@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-05T10:12:42+09:00",
+  "generatedAt": "2026-10-05T13:12:51+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 992,
+  "itemCount": 997,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-05",
   "sourceCommitsScanned": 0,
@@ -62,6 +62,80 @@
       "region": "국내"
     },
     {
+      "id": "efc73730466df90b",
+      "publishedAt": "2026-10-05",
+      "title": "악취 잡고 온실가스 줄여 66억 벌었다… 대구시, 탄소 배출권 22만 톤 확...",
+      "category": "제도",
+      "summary": "지난 2020년 UN CDM 사업이 공식 종료된 이후에도 국내 외부 감축 사업으로 적극 연계 전환해 온실가스 감축 실적을 꾸준히 인정받아 왔다. 이번에 확보한 탄소 배출권 은 2023년부터 2024년까지 2개년 동안 달성한 감축...",
+      "source": "eroun.net",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.eroun.net/news/articleView.html?idxno=91565",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "이로운넷",
+        "eroun.net"
+      ],
+      "searchProviders": [
+        "Google News RSS",
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 2,
+      "region": "국내"
+    },
+    {
+      "id": "e77186bbfbf4438b",
+      "publishedAt": "2026-10-05",
+      "title": "대구시, 탄소 배출권 21만 9432톤 신규 확보",
+      "category": "제도",
+      "summary": "[대구=위키트리]전병수 기자=대구시가 약 66억 원 상당의 탄소 배출권 21만 9432톤을 신규 확보하며 추진 중인... 이번에 확보한 탄소 배출권 은 2023년부터 2024년까지의 감축 실적으로, 자동차 약 9만 1천 대가 1년간 배출하는...",
+      "source": "wikitree.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.wikitree.co.kr/articles/1164001",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "wikitree.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "c1a1b0473ffdd273",
+      "publishedAt": "2026-10-05",
+      "title": "대구시, 방천리 매립가스 자원화로 탄소 배출권 21만9천톤 확보",
+      "category": "제도",
+      "summary": "쿠키뉴스=최재용 기자 | 대구시는 올해 9월 ‘방천리 매립장 매립가스 자원화사업’을 통해 탄소 배출권 21만9432톤을 추가 확보했다고 5일 밝혔다. 최근 국내 탄소 배출권 거래 시세를 반영하면 약 66억원 규모다. 이번에...",
+      "source": "kukinews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.kukinews.com/article/view/kuk202610050011",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "kukinews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "3ca9dca4502cb053",
       "publishedAt": "2026-10-05",
       "title": "대구시, 매립가스 자원화로 탄소 배출권 21만9천t 신규 확보",
@@ -77,13 +151,42 @@
         "탄소배출권"
       ],
       "duplicateSources": [
+        "pennmike.com",
+        "v.daum.net",
         "kukinews.com",
-        "yna.co.kr"
+        "yna.co.kr",
+        "khan.co.kr",
+        "newsclaim.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB",
+        "Google News RSS"
+      ],
+      "duplicateCount": 6,
+      "region": "국내"
+    },
+    {
+      "id": "4be66d45bc911204",
+      "publishedAt": "2026-10-05",
+      "title": "대구광역시, 방천리 매립 가스 자원화로 21만9432톤 탄소 배출권 확보...6...",
+      "category": "제도",
+      "summary": "이번 탄소 배출권 은 2023년부터 2024년까지의 온실가스 감축 실적을 인정받아 확보된 것으로, 이는 자동차 약 9만1000대가 1년간 배출하는 이산화탄소량과 비슷한 규모라고 대구시는 설명했다. 방천리 매립 가스 ...",
+      "source": "gukjenews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.gukjenews.com/news/articleView.html?idxno=3713206",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "gukjenews.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 2,
+      "duplicateCount": 1,
       "region": "국내"
     },
     {
@@ -109,6 +212,31 @@
       ],
       "duplicateCount": 1,
       "region": "해외"
+    },
+    {
+      "id": "e7ebd7565288f38c",
+      "publishedAt": "2026-10-05",
+      "title": "[여론광장] 시멘트의 변신은 무죄, 탄소를 먹는 콘크리트가 온다",
+      "category": "제도",
+      "summary": "그러나 세계 각국이 탄소 배출권 거래제 를 강화하고 건축물의 온실가스 배출 규제를 높임에 따라, 탄소 흡수형 콘크리트는 선택이 아닌 필수 기술로 자리 잡고 있다. 우리가 날마다 거니는 도로, 매일 거주하는 아파트...",
+      "source": "daejonilbo.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.daejonilbo.com/news/articleView.html?idxno=2305112",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "daejonilbo.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
     },
     {
       "id": "9c030dcc2163d9e9",
@@ -3879,7 +4007,8 @@
         "배출권",
         "탄소배출권",
         "배출권거래제",
-        "온실가스 배출권"
+        "온실가스 배출권",
+        "탄소시장"
       ],
       "duplicateSources": [
         "enewstoday.co.kr"
@@ -4008,9 +4137,9 @@
       ],
       "duplicateCount": 4,
       "duplicateSources": [
+        "khan.co.kr",
         "경향신문",
-        "v.daum.net",
-        "khan.co.kr"
+        "v.daum.net"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -4853,6 +4982,16 @@
         "srtimes.kr",
         "cstimes.com",
         "digitalchosun.dizzo.com",
+        "뷰어스",
+        "theviewers.co.kr",
+        "매일신문",
+        "imaeil.com",
+        "edaily.co.kr",
+        "글로벌이코노믹",
+        "이투데이",
+        "v.daum.net",
+        "뉴스핌",
+        "메트로신문",
         "metroseoul.co.kr",
         "socialvalue.kr",
         "asiatime.co.kr",
@@ -4862,30 +5001,34 @@
         "paxetv.com",
         "tf.co.kr",
         "smarttoday.co.kr",
+        "뉴스1",
         "news1.kr",
+        "브릿지경제",
         "dailycar.co.kr",
         "kbsm.net",
         "finomy.com",
         "pinpointnews.co.kr",
         "fetv.co.kr",
+        "머니투데이",
+        "m-i.kr",
         "joongangenews.com",
         "fntimes.com",
         "newsprime.co.kr",
         "ebn.co.kr",
-        "imaeil.com",
         "ttlnews.com",
         "e-science.co.kr",
         "weekly.hankooki.com",
         "delighti.co.kr",
         "smedaily.co.kr",
         "whitepaper.co.kr",
+        "펜앤마이크",
         "ppss.kr",
         "globale.co.kr",
         "todayeconomic.com",
         "newsroad.co.kr",
+        "연합뉴스TV",
         "newsian.co.kr",
         "bizwnews.com",
-        "edaily.co.kr",
         "financialpost.co.kr",
         "sisacast.kr",
         "economist.co.kr",
@@ -4900,45 +5043,31 @@
         "sports.hankooki.com",
         "pointe.co.kr",
         "swtvnews.com",
+        "서울경제TV",
         "sentv.co.kr",
         "wowtv.co.kr",
         "newspim.com",
         "viva100.com",
         "moneystorm.kr",
         "dailypop.kr",
+        "이지경제",
         "sateconomy.co.kr",
         "ezyeconomy.com",
         "wsobi.com",
         "huffingtonpost.kr",
         "yna.co.kr",
+        "아시아경제",
         "view.asiae.co.kr",
         "newsis.com",
         "catchnews.kr",
         "thefairnews.co.kr",
-        "뷰어스",
-        "theviewers.co.kr",
-        "매일신문",
-        "글로벌이코노믹",
-        "이투데이",
-        "v.daum.net",
-        "뉴스핌",
-        "메트로신문",
-        "뉴스1",
-        "브릿지경제",
-        "머니투데이",
-        "m-i.kr",
         "2news.co.kr",
-        "펜앤마이크",
         "글로벌E",
-        "서울경제TV",
-        "이지경제",
         "연합뉴스",
-        "아시아경제",
         "pennmike.com",
         "포춘코리아",
         "인사이트코리아",
         "insightkorea.co.kr",
-        "연합뉴스TV",
         "fortunekorea.co.kr",
         "mt.co.kr",
         "스마트투데이",
@@ -10037,13 +10166,13 @@
         "KAU25"
       ],
       "duplicateSources": [
-        "yna.co.kr",
         "v.daum.net",
-        "연합뉴스"
+        "연합뉴스",
+        "yna.co.kr"
       ],
       "searchProviders": [
-        "NAVER API HUB",
-        "Google News RSS"
+        "Google News RSS",
+        "NAVER API HUB"
       ],
       "duplicateCount": 5,
       "region": "국내"
