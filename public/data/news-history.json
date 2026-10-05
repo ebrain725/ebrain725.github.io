@@ -1,17 +1,43 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-06T00:12:25+09:00",
+  "generatedAt": "2026-10-06T05:45:12+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1010,
+  "itemCount": 1011,
   "earliestPublishedAt": "2026-08-06",
-  "latestPublishedAt": "2026-10-05",
+  "latestPublishedAt": "2026-10-06",
   "sourceCommitsScanned": 0,
   "sourceSnapshotsScanned": 0,
   "historicalRowsScanned": 0,
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "c28d116851b81a11",
+      "publishedAt": "2026-10-06",
+      "title": "‘감축 뻥튀기’ 논란 자발적 탄소시장…연말 개장 앞두고 ‘품질 기준...",
+      "category": "제도",
+      "summary": "국내 배출권 거래제(ETS)가 국가 온실가스 배출량의 약 70%를 관리하는 만큼 규제 밖 기업의 감축을 유도한다는... 한국탄소 배출권 산업협회는 1일 성명을 내고 경제적 추가성 평가의 적격요건 명시와 제품 판매형 감축사업의...",
+      "source": "etoday.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.etoday.co.kr/news/view/2631880",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장",
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "etoday.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
     {
       "id": "c9f8d56112315226",
       "publishedAt": "2026-10-05",
@@ -2249,8 +2275,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "한국일보",
-        "hankookilbo.com"
+        "hankookilbo.com",
+        "한국일보"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -5339,8 +5365,8 @@
         "srtimes.kr",
         "cstimes.com",
         "digitalchosun.dizzo.com",
-        "뷰어스",
         "theviewers.co.kr",
+        "매일신문",
         "imaeil.com",
         "edaily.co.kr",
         "글로벌이코노믹",
@@ -5364,7 +5390,6 @@
         "kbsm.net",
         "finomy.com",
         "pinpointnews.co.kr",
-        "fetv.co.kr",
         "머니투데이",
         "m-i.kr",
         "joongangenews.com",
@@ -5415,8 +5440,9 @@
         "newsis.com",
         "catchnews.kr",
         "thefairnews.co.kr",
+        "뷰어스",
+        "fetv.co.kr",
         "asiae.co.kr",
-        "매일신문",
         "펜앤마이크",
         "이지경제",
         "연합뉴스TV",
