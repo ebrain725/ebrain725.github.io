@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-05T15:07:05+09:00",
+  "generatedAt": "2026-10-05T15:15:44+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
   "itemCount": 1003,
@@ -65,13 +65,14 @@
         "hankookilbo.com",
         "inews24.com",
         "조선일보",
-        "chosun.com"
+        "chosun.com",
+        "한국일보"
       ],
       "searchProviders": [
         "NAVER API HUB",
         "Google News RSS"
       ],
-      "duplicateCount": 14,
+      "duplicateCount": 15,
       "region": "국내"
     },
     {
@@ -4299,8 +4300,8 @@
       "duplicateCount": 4,
       "duplicateSources": [
         "경향신문",
-        "khan.co.kr",
-        "v.daum.net"
+        "v.daum.net",
+        "khan.co.kr"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -5145,11 +5146,10 @@
         "digitalchosun.dizzo.com",
         "뷰어스",
         "theviewers.co.kr",
-        "매일신문",
         "imaeil.com",
         "edaily.co.kr",
         "글로벌이코노믹",
-        "이투데이",
+        "etoday.co.kr",
         "v.daum.net",
         "뉴스핌",
         "메트로신문",
@@ -5195,7 +5195,6 @@
         "kpenews.com",
         "wolyo.co.kr",
         "megaeconomy.co.kr",
-        "etoday.co.kr",
         "digitaltoday.co.kr",
         "job-post.co.kr",
         "newscape.co.kr",
@@ -5215,16 +5214,19 @@
         "ezyeconomy.com",
         "wsobi.com",
         "huffingtonpost.kr",
+        "연합뉴스",
         "yna.co.kr",
-        "아시아경제",
+        "asiae.co.kr",
         "view.asiae.co.kr",
         "newsis.com",
         "catchnews.kr",
         "thefairnews.co.kr",
+        "매일신문",
+        "이투데이",
+        "아시아경제",
         "연합뉴스TV",
         "2news.co.kr",
         "글로벌E",
-        "연합뉴스",
         "pennmike.com",
         "포춘코리아",
         "인사이트코리아",
@@ -5237,7 +5239,6 @@
         "라이센스뉴스",
         "매일일보",
         "lcnews.co.kr",
-        "asiae.co.kr",
         "비즈월드",
         "yonhapnewstv.co.kr",
         "ftoday.co.kr",
@@ -10328,8 +10329,8 @@
       ],
       "duplicateSources": [
         "v.daum.net",
-        "yna.co.kr",
-        "연합뉴스"
+        "연합뉴스",
+        "yna.co.kr"
       ],
       "searchProviders": [
         "Google News RSS",
