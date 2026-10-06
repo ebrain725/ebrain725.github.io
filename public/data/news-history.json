@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-07T03:36:16+09:00",
+  "generatedAt": "2026-10-07T08:13:22+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1038,
+  "itemCount": 1040,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-07",
   "sourceCommitsScanned": 0,
@@ -12,6 +12,55 @@
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "101103c7facd2458",
+      "publishedAt": "2026-10-07",
+      "title": "포스코, 美 냉연 3.64% 상계관세 소송…후판 이어 '전력 보조금' 또 다툰...",
+      "category": "제도",
+      "summary": "포스코가 미국 정부가 한국의 산업용 전력 공급과 배출권거래제( K-ETS ) 등을 보조금으로 판단해 부과한 냉연강판 상계관세에 불복해 법적 대응에 나섰다. 포스코는 앞서 후판 상계관세 소송에서도 미국 상무부가 한국의...",
+      "source": "pinpointnews.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=493083",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "K-ETS"
+      ],
+      "duplicateSources": [
+        "pinpointnews.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
+      "id": "9a1d180e78ad603d",
+      "publishedAt": "2026-10-07",
+      "title": "대구시 탄소배출권, 21만 9,432톤 확보 의미",
+      "category": "제도",
+      "summary": "대구시 탄소배출권, 21만 9,432톤 확보 의미 세명일보",
+      "source": "세명일보",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE05LW5PWkhGRVVOVTdqOFhZX0ItRjVVeGFRT2RaMkRLMk5tek5kbWFQR1lfUWZxdWNzZXhLQ0ZLLVJPZUJlLVdwUmJTUjJ5YWVNb2pHMjloWmNpYUtiS2k0Ni1sMDNEakdjbXlySGdQZFQ?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "세명일보"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "국내"
+    },
     {
       "id": "6683986e65a4e12c",
       "publishedAt": "2026-10-07",
@@ -371,7 +420,10 @@
       "url": "https://www.ekn.kr/web/view.php?key=20261006025542443",
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
-        "탄소시장"
+        "탄소시장",
+        "배출권",
+        "배출권거래제",
+        "K-ETS"
       ],
       "duplicateSources": [
         "ekn.kr"
@@ -448,8 +500,8 @@
         "탄소배출권"
       ],
       "duplicateSources": [
-        "Daum",
         "이투데이",
+        "Daum",
         "etoday.co.kr"
       ],
       "searchProviders": [
@@ -6128,7 +6180,6 @@
         "sentv.co.kr",
         "wowtv.co.kr",
         "newspim.com",
-        "브릿지경제",
         "viva100.com",
         "dailypop.kr",
         "sateconomy.co.kr",
@@ -6141,6 +6192,7 @@
         "newsis.com",
         "catchnews.kr",
         "thefairnews.co.kr",
+        "브릿지경제",
         "v.daum.net",
         "mt.co.kr",
         "연합뉴스TV",
