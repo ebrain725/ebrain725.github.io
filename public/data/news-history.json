@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-06T15:13:26+09:00",
+  "generatedAt": "2026-10-06T18:12:58+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1030,
+  "itemCount": 1035,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-06",
   "sourceCommitsScanned": 0,
@@ -28,6 +28,30 @@
       ],
       "duplicateSources": [
         "bizwnews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "771540108411b8b2",
+      "publishedAt": "2026-10-06",
+      "title": "유류세 인하 장기화…15.4조 세수·400만t 탄소 감축 놓쳐",
+      "category": "시장·가격",
+      "summary": "국내 배출권 거래제(ETS) 가격을 반영하고, 톤당 8만원 수준의 탄소세 또는 국제통화기금(IMF)이 제시한 탄소비용을 적용하는 방안을 분석했다. 그 결과 휘발유·경유 수요는 기준 시나리오보다 9~18% 감소하고, 온실가스 ...",
+      "source": "esgeconomy.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.esgeconomy.com/news/articleView.html?idxno=16924",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "esgeconomy.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -76,6 +100,8 @@
         "탄소배출권"
       ],
       "duplicateSources": [
+        "뉴데일리 대구경북",
+        "tk.newdaily.co.kr",
         "가스신문",
         "gasnews.com",
         "tbc.co.kr",
@@ -85,7 +111,7 @@
         "Google News RSS",
         "NAVER API HUB"
       ],
-      "duplicateCount": 4,
+      "duplicateCount": 6,
       "region": "국내"
     },
     {
@@ -152,23 +178,11 @@
         "배출권"
       ],
       "duplicateSources": [
-        "fnnews.com",
-        "segye.com",
-        "yna.co.kr",
-        "gokorea.kr",
-        "newsis.com",
-        "kookje.co.kr",
-        "einfomax.co.kr",
-        "mt.co.kr",
-        "etoday.co.kr",
-        "e-platform.net",
+        "m-economynews.com",
         "hansbiz.co.kr",
         "mediapen.com",
         "view.asiae.co.kr",
-        "ajunews.com",
-        "newspim.com",
         "dailian.co.kr",
-        "electimes.com",
         "bbsi.co.kr",
         "iminju.net",
         "news1.kr",
@@ -177,13 +191,50 @@
         "dt.co.kr",
         "edaily.co.kr",
         "tjb.co.kr",
+        "yna.co.kr",
+        "gokorea.kr",
+        "newsis.com",
+        "kookje.co.kr",
+        "einfomax.co.kr",
+        "mt.co.kr",
+        "etoday.co.kr",
+        "fnnews.com",
+        "segye.com",
+        "e-platform.net",
+        "ajunews.com",
+        "newspim.com",
+        "electimes.com",
         "energydaily.co.kr",
         "seoul.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 27,
+      "duplicateCount": 28,
+      "region": "국내"
+    },
+    {
+      "id": "4670f08bc973188e",
+      "publishedAt": "2026-10-06",
+      "title": "기후부, '에너지 대전환' 속도…2030년 재생e 100GW·석탄발전 2040년 퇴출",
+      "category": "시장안정",
+      "summary": "배출권 거래제에는 전기화 전환 인센티브 등을 도입하고 가격 변동에 따른 투자 위험을 줄이기 위한 한국형 시장안정화예비분(K-MSR)도 연내 도입한다. 철강·석유화학·정유·시멘트·반도체 등 다배출 5대 업종은 탈탄소...",
+      "source": "news1.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.news1.kr/economy/trend/6311231",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "news1.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
       "region": "국내"
     },
     {
@@ -231,6 +282,29 @@
       "searchProviders": [
         "NAVER API HUB"
       ],
+      "region": "국내"
+    },
+    {
+      "id": "912b8f45248f719b",
+      "publishedAt": "2026-10-06",
+      "title": "국제 온실가스 감축사업…“이제는 발굴에서 ‘실적 확보’로 나아가야...",
+      "category": "상쇄·외부사업",
+      "summary": "6일 오후 서울 여의도 국회도서관에서 열린 '온실가스 국제감축사업 활성화 정책토론회'에서는 글로벌 자발적 탄소시장 (GVCM)과의 연계, 한-아세안 협력 플랫폼 구축, 장기적인 감축실적 수요 창출과 금융 지원 등이 주요...",
+      "source": "ekn.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.ekn.kr/web/view.php?key=20261006025542443",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateSources": [
+        "ekn.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
       "region": "국내"
     },
     {
@@ -382,6 +456,30 @@
       "region": "국내"
     },
     {
+      "id": "b33c890bb93f160b",
+      "publishedAt": "2026-10-06",
+      "title": "[위클리오늘] 의정부시, 4대 교통법정계획 수립 착수…교통정책 방향 마...",
+      "category": "제도",
+      "summary": "운영, 배출권 거래제 관리 등에 행정 역량을 집중하기로 했다. 아울러 기존 에너지관리팀을 신재생에너지팀으로 변경하여 연료전지 발전사업, 태양광 발전 등 신재생에너지 보급 확대와 에너지 전환 정책도 적극 추진한다....",
+      "source": "weeklytoday.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.weeklytoday.com/news/articleView.html?idxno=796966",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "weeklytoday.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "f94f8898bbf74c16",
       "publishedAt": "2026-10-06",
       "title": "[온실가스 배출권] 10월 6일 KAU26, 50원 오른 2만9650원으로 마감",
@@ -453,6 +551,29 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "8d0046b31489ee91",
+      "publishedAt": "2026-10-06",
+      "title": "[SDG 15] 생물다양성 크레딧, 탄소시장을 복제해선 안 된다…‘하나의 숫자’보다 검증이 우선",
+      "category": "제도",
+      "summary": "[SDG 15] 생물다양성 크레딧, 탄소시장을 복제해선 안 된다…‘하나의 숫자’보다 검증이 우선 SDG뉴스",
+      "source": "SDG뉴스",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5ucDdSVVhqYXU0NWJFTkcyQkl2VGdYeTI0aWlNdDJQWnVOTG9KbFJLUUVuX0VqdF9UQXpZeDdWUVo0TThmVExXVjhfTmpBbFJ4QmdLbk5OSDIyV3RVS1k2ZUkwQzc3dDRGdjRr0gFrQVVfeXFMTm5wN1JVWGphdTQ1YkVORzJCSXZUZ1h5MjRpaU10MlBadU5Mb0psUktRRW5fRWp0X1RBell4N1ZRWjRNOGZUTFdWOF9OakFsUnhCZ0tuTk5IMjJXdFVLWTZlSTBDNzd0NEZ2NGs?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "SDG뉴스"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
       "region": "국내"
     },
     {
@@ -766,8 +887,8 @@
         "탄소배출권"
       ],
       "duplicateSources": [
-        "경북신문",
-        "kbsm.net"
+        "kbsm.net",
+        "경북신문"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -1965,8 +2086,8 @@
       ],
       "duplicateCount": 2,
       "duplicateSources": [
-        "esgeconomy.com",
-        "ESG경제"
+        "ESG경제",
+        "esgeconomy.com"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -2462,15 +2583,15 @@
         "온실가스 배출권"
       ],
       "duplicateSources": [
-        "news1.kr",
-        "korea.kr",
-        "dailian.co.kr",
-        "yna.co.kr",
-        "kbs.co.kr",
-        "etnews.com",
         "ddaily.co.kr",
         "digitaltoday.co.kr",
-        "zdnet.co.kr"
+        "zdnet.co.kr",
+        "etnews.com",
+        "korea.kr",
+        "news1.kr",
+        "dailian.co.kr",
+        "yna.co.kr",
+        "kbs.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -4992,8 +5113,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "esgeconomy.com",
-        "ESG경제"
+        "ESG경제",
+        "esgeconomy.com"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -5018,9 +5139,9 @@
       ],
       "duplicateCount": 4,
       "duplicateSources": [
-        "경향신문",
+        "khan.co.kr",
         "v.daum.net",
-        "khan.co.kr"
+        "경향신문"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -5876,13 +5997,9 @@
         "srtimes.kr",
         "cstimes.com",
         "digitalchosun.dizzo.com",
-        "뷰어스",
-        "theviewers.co.kr",
-        "매일신문",
-        "imaeil.com",
-        "edaily.co.kr",
         "글로벌이코노믹",
         "뉴스핌",
+        "메트로신문",
         "metroseoul.co.kr",
         "socialvalue.kr",
         "asiatime.co.kr",
@@ -5905,6 +6022,7 @@
         "joongangenews.com",
         "fntimes.com",
         "newsprime.co.kr",
+        "imaeil.com",
         "ttlnews.com",
         "e-science.co.kr",
         "weekly.hankooki.com",
@@ -5913,6 +6031,7 @@
         "globale.co.kr",
         "newsroad.co.kr",
         "newsian.co.kr",
+        "edaily.co.kr",
         "sisacast.kr",
         "economist.co.kr",
         "kpenews.com",
@@ -5938,8 +6057,10 @@
         "newsis.com",
         "catchnews.kr",
         "thefairnews.co.kr",
+        "뷰어스",
+        "theviewers.co.kr",
+        "매일신문",
         "이투데이",
-        "메트로신문",
         "sports.hankooki.com",
         "wsobi.com",
         "ebn.co.kr",
@@ -6192,8 +6313,8 @@
         "K-ETS"
       ],
       "duplicateSources": [
-        "esgeconomy.com",
-        "ESG경제"
+        "ESG경제",
+        "esgeconomy.com"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -9293,8 +9414,8 @@
         "KAU25"
       ],
       "duplicateSources": [
-        "smedaily.co.kr",
-        "중소기업신문"
+        "중소기업신문",
+        "smedaily.co.kr"
       ],
       "searchProviders": [
         "Google News RSS",
