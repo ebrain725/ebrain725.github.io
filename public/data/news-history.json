@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-06T10:13:13+09:00",
+  "generatedAt": "2026-10-06T12:12:54+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1015,
+  "itemCount": 1023,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-06",
   "sourceCommitsScanned": 0,
@@ -12,6 +12,31 @@
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "aaa4070738991649",
+      "publishedAt": "2026-10-06",
+      "title": "독일·프랑스 유럽연합에 수출기업 지원 조치 요구, 온실가스 배출권 무...",
+      "category": "제도",
+      "summary": "유럽연합은 현재 온실가스 배출권 거래제(EU-ETS)를 시행하고 있는데 산업계의 부담을 줄여준다는 명목으로 시멘트, 알루미늄, 철강 등 탄소 배출량이 높은 산업에 무상할당 배출권 을 제공하고 있다. 유럽연합은 올해부터...",
+      "source": "businesspost.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.businesspost.co.kr/BP?command=article_view&num=448660",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "온실가스 배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "businesspost.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
     {
       "id": "860cb4497fa3d5b6",
       "publishedAt": "2026-10-06",
@@ -30,13 +55,14 @@
       "duplicateSources": [
         "가스신문",
         "gasnews.com",
-        "tbc.co.kr"
+        "tbc.co.kr",
+        "Tbc.co.kr"
       ],
       "searchProviders": [
         "Google News RSS",
         "NAVER API HUB"
       ],
-      "duplicateCount": 3,
+      "duplicateCount": 4,
       "region": "국내"
     },
     {
@@ -56,6 +82,97 @@
       ],
       "duplicateSources": [
         "segye.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "d55f2fe270cd2311",
+      "publishedAt": "2026-10-06",
+      "title": "기후부, 재생에너지 100GW·2040 탈석탄 추진…전력·물관리 체계 전면 ...",
+      "category": "제도",
+      "summary": "산업 탈 탄소 ·배출권 시장 개편…2035 NDC 이행체계 구체화 기후부는 2035 국가 온실가스 감축목표(NDC)와 정책 여건 변화를 반영해 새로운 온실가스 감축 로드맵을 수립한다. 2006년 IPCC 통계지침을 기준으로 연도별·부문별...",
+      "source": "energydaily.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.energydaily.co.kr/news/articleView.html?idxno=203824",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "bbsi.co.kr",
+        "news1.kr",
+        "newspim.com",
+        "ziksir.com",
+        "kukinews.com",
+        "dt.co.kr",
+        "edaily.co.kr",
+        "tjb.co.kr",
+        "yna.co.kr",
+        "gokorea.kr",
+        "newsis.com",
+        "kookje.co.kr",
+        "einfomax.co.kr",
+        "mt.co.kr",
+        "etoday.co.kr",
+        "energydaily.co.kr",
+        "mediapen.com",
+        "view.asiae.co.kr",
+        "dailian.co.kr",
+        "electimes.com",
+        "seoul.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 21,
+      "region": "국내"
+    },
+    {
+      "id": "4bb5cfbfea9dbe06",
+      "publishedAt": "2026-10-06",
+      "title": "국제ESG협회·고려대 공동주최 ‘APBC 2026’ 13일 개막 …25개국 197건 연...",
+      "category": "제도",
+      "summary": "농업 부산물로 만든 숯 ‘바이오차’를 탄소시장 과 산업으로 연결하는 방안을 모색하는 국제 학술대회가 서울에서 열린다. 국제ESG협회(IESGA)와 고려대 글로벌 바이오차·기후솔루션센터(GCBCS)는 오는 13~15일 서울...",
+      "source": "donga.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.donga.com/news/Economy/article/all/20261006/134791996/1",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 2,
+      "duplicateSources": [
+        "donga.com",
+        "mk.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "3c05ffddbdec60d1",
+      "publishedAt": "2026-10-06",
+      "title": "공조필터가 탄소감축 수단으로…뉴라이즌, 국내 첫 산정기준 확보",
+      "category": "상쇄·외부사업",
+      "summary": "효과를 온실가스 감축량으로 환산할 수 있는 기준을 제시했다는 데 있다. 해당 방법론은 글로벌 인증기관 DNV의 제3자 타당성 평가를 거쳤다. 뉴라이즌 측은 국내 배출권 거래제 외부사업은 물론 국제적으로 활용되는...",
+      "source": "startuptoday.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.startuptoday.co.kr/news/articleView.html?idxno=815035",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "startuptoday.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -106,6 +223,103 @@
       ],
       "duplicateSources": [
         "etoday.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "beaf5df5ef6b43a2",
+      "publishedAt": "2026-10-06",
+      "title": "[해외브리핑] 美 캘리포니아·뉴욕 등 25곳, 차량 연비 기준 완화에 소송",
+      "category": "제도",
+      "summary": "EU는 향후 10년에 걸쳐 EU 탄소 배출권 거래제(ETS)에서 중공업에 제공해 온 무상 배출권 을 단계적으로 폐지할 예정이다. 이에 따라 철강·시멘트 등 에너지집약적 산업은 배출하는 이산화탄소에 대한...",
+      "source": "esgeconomy.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.esgeconomy.com/news/articleView.html?idxno=16917",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "esgeconomy.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
+      "id": "806532c7eb6aea7e",
+      "publishedAt": "2026-10-06",
+      "title": "[하이빔]미국의 車 효율 규제 완화는 ‘득보다 실’",
+      "category": "제도",
+      "summary": "동시에 평균 효율을 맞추기 위해 마지못해 구입했던 배출권 도 사 올 필요가 없다. 효율 기준 완화의 배경은 미국의 강력한 석유 지배력 때문이다. 세계 석유의 60%를 가졌다는 트럼프 대통령의 허풍에도 불구하고 미국의...",
+      "source": "autotimes.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://autotimes.co.kr/detail.php?number=689402&thread=27",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "autotimes.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
+      "id": "cbed4ea0fe50fd87",
+      "publishedAt": "2026-10-06",
+      "title": "[뉴노멀시대의 물류 ⑤] 탄소가 비용이 되는 시대, 국제물류의 선택은?",
+      "category": "제도",
+      "summary": "유럽연합(EU)은 2024년부터 해운을 배출권 거래제(EU ETS)에 포함했다. EU 역내 운항과 EU 항만에서 발생하는... 해당하는 배출권 을 제출해야 한다. 2026년부터는 이산화탄소(CO₂)뿐 아니라 메탄(CH₄)과 아산화질소(N₂O)도...",
+      "source": "dailylog.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.dailylog.co.kr/news/articleView.html?idxno=26791",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "dailylog.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
+      "id": "180e2207e6dbebc3",
+      "publishedAt": "2026-10-06",
+      "title": "[국감] 김성환 \"재생에너지 확대·에너지믹스 조화...미래산업 뒷받침\"",
+      "category": "제도",
+      "summary": "김 장관은 \"2035 NDC를 반영한 로드맵을 수립하고 온실가스 배출권 거래제를 통한 감축 유인을 강화해 전방위적인 탈탄소 전환을 이끌겠다\"며 \"탈탄소 에너지 산업을 수출 주력 산업으로 만들겠다\"고 강조했다. 극한기후에...",
+      "source": "joongangenews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.joongangenews.com/news/articleView.html?idxno=552810",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "온실가스 배출권"
+      ],
+      "duplicateSources": [
+        "joongangenews.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -450,6 +664,7 @@
         "탄소배출권"
       ],
       "duplicateSources": [
+        "news.bbsi.co.kr",
         "BBS불교방송",
         "bbsi.co.kr",
         "세명일보",
@@ -460,7 +675,7 @@
         "Google News RSS",
         "NAVER API HUB"
       ],
-      "duplicateCount": 5,
+      "duplicateCount": 6,
       "region": "국내"
     },
     {
@@ -1573,8 +1788,8 @@
       ],
       "duplicateCount": 2,
       "duplicateSources": [
-        "ESG경제",
-        "esgeconomy.com"
+        "esgeconomy.com",
+        "ESG경제"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -3911,8 +4126,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "labortoday.co.kr",
-        "매일노동뉴스"
+        "매일노동뉴스",
+        "labortoday.co.kr"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -4598,8 +4813,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "ESG경제",
-        "esgeconomy.com"
+        "esgeconomy.com",
+        "ESG경제"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -5038,12 +5253,22 @@
         "thevaluenews.co.kr",
         "kfenews.co.kr",
         "ftoday.co.kr",
-        "news1.kr"
+        "news1.kr",
+        "delighti.co.kr",
+        "smedaily.co.kr",
+        "todayeconomic.com",
+        "bizwnews.com",
+        "financialpost.co.kr",
+        "job-post.co.kr",
+        "newscape.co.kr",
+        "swtvnews.com",
+        "moneystorm.kr",
+        "ebn.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 13,
+      "duplicateCount": 23,
       "region": "국내"
     },
     {
@@ -5501,20 +5726,14 @@
         "joongangenews.com",
         "fntimes.com",
         "newsprime.co.kr",
-        "ebn.co.kr",
         "ttlnews.com",
         "e-science.co.kr",
         "weekly.hankooki.com",
-        "delighti.co.kr",
-        "smedaily.co.kr",
         "whitepaper.co.kr",
         "ppss.kr",
         "globale.co.kr",
-        "todayeconomic.com",
         "newsroad.co.kr",
         "newsian.co.kr",
-        "bizwnews.com",
-        "financialpost.co.kr",
         "sisacast.kr",
         "economist.co.kr",
         "kpenews.com",
@@ -5522,18 +5741,14 @@
         "megaeconomy.co.kr",
         "etoday.co.kr",
         "digitaltoday.co.kr",
-        "job-post.co.kr",
-        "newscape.co.kr",
         "biztribune.co.kr",
         "sports.hankooki.com",
         "pointe.co.kr",
-        "swtvnews.com",
         "서울경제TV",
         "sentv.co.kr",
         "wowtv.co.kr",
         "newspim.com",
         "viva100.com",
-        "moneystorm.kr",
         "dailypop.kr",
         "sateconomy.co.kr",
         "ezyeconomy.com",
@@ -5546,6 +5761,16 @@
         "newsis.com",
         "catchnews.kr",
         "thefairnews.co.kr",
+        "ebn.co.kr",
+        "delighti.co.kr",
+        "smedaily.co.kr",
+        "todayeconomic.com",
+        "bizwnews.com",
+        "financialpost.co.kr",
+        "job-post.co.kr",
+        "newscape.co.kr",
+        "swtvnews.com",
+        "moneystorm.kr",
         "mt.co.kr",
         "asiae.co.kr",
         "fetv.co.kr",
@@ -5786,8 +6011,8 @@
         "K-ETS"
       ],
       "duplicateSources": [
-        "ESG경제",
-        "esgeconomy.com"
+        "esgeconomy.com",
+        "ESG경제"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -6490,8 +6715,8 @@
         "유상할당"
       ],
       "duplicateSources": [
-        "Chosunbiz",
-        "biz.chosun.com"
+        "biz.chosun.com",
+        "Chosunbiz"
       ],
       "searchProviders": [
         "Google News RSS",
