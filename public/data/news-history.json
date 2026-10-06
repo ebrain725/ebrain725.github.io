@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-06T18:12:58+09:00",
+  "generatedAt": "2026-10-06T20:26:36+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1035,
+  "itemCount": 1036,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-06",
   "sourceCommitsScanned": 0,
@@ -24,7 +24,9 @@
       "url": "http://www.bizwnews.com/news/articleView.html?idxno=148169",
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
-        "탄소시장"
+        "탄소시장",
+        "배출권",
+        "탄소배출권"
       ],
       "duplicateSources": [
         "bizwnews.com"
@@ -161,6 +163,30 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 2,
+      "region": "국내"
+    },
+    {
+      "id": "c1c4bf9c192489a5",
+      "publishedAt": "2026-10-06",
+      "title": "김성환 \"호남반도체 전력·용수 공급 가능…2030년까지 재생e 100GW 확대...",
+      "category": "제도",
+      "summary": "기후부는 또 2035 국가 온실가스 감축목표(NDC)를 반영한 감축 로드맵을 마련하고 배출권 거래제 개편, 철강·석유화학·정유·시멘트·반도체 등 5대 다배출 업종의 탈탄소 전환 지원, 2030년 신차 전기차 비중 50% 확대 등을...",
+      "source": "news1.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.news1.kr/economy/trend/6311973",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "news1.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
       "region": "국내"
     },
     {
@@ -887,8 +913,8 @@
         "탄소배출권"
       ],
       "duplicateSources": [
-        "kbsm.net",
-        "경북신문"
+        "경북신문",
+        "kbsm.net"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -2113,8 +2139,8 @@
         "K-ETS"
       ],
       "duplicateSources": [
-        "동아일보",
-        "donga.com"
+        "donga.com",
+        "동아일보"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -5139,9 +5165,9 @@
       ],
       "duplicateCount": 4,
       "duplicateSources": [
-        "khan.co.kr",
+        "경향신문",
         "v.daum.net",
-        "경향신문"
+        "khan.co.kr"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -5541,36 +5567,37 @@
         "K-ETS"
       ],
       "duplicateSources": [
-        "sateconomy.co.kr",
+        "finomy.com",
+        "ebn.co.kr",
         "iminju.net",
-        "pennmike.com",
-        "widedaily.com",
-        "inthenews.co.kr",
-        "mediapen.com",
-        "lcnews.co.kr",
-        "etoday.co.kr",
-        "dealsitetv.com",
-        "thevaluenews.co.kr",
-        "kfenews.co.kr",
-        "ftoday.co.kr",
-        "news1.kr",
         "delighti.co.kr",
         "smedaily.co.kr",
+        "pennmike.com",
         "todayeconomic.com",
+        "widedaily.com",
         "bizwnews.com",
+        "inthenews.co.kr",
+        "mediapen.com",
         "financialpost.co.kr",
         "job-post.co.kr",
         "newscape.co.kr",
-        "swtvnews.com",
-        "moneystorm.kr",
-        "ebn.co.kr",
         "sports.hankooki.com",
-        "wsobi.com"
+        "swtvnews.com",
+        "kfenews.co.kr",
+        "moneystorm.kr",
+        "dealsitetv.com",
+        "wsobi.com",
+        "news1.kr",
+        "ftoday.co.kr",
+        "sateconomy.co.kr",
+        "lcnews.co.kr",
+        "etoday.co.kr",
+        "thevaluenews.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 25,
+      "duplicateCount": 26,
       "region": "국내"
     },
     {
@@ -5998,7 +6025,7 @@
         "cstimes.com",
         "digitalchosun.dizzo.com",
         "글로벌이코노믹",
-        "뉴스핌",
+        "newspim.com",
         "메트로신문",
         "metroseoul.co.kr",
         "socialvalue.kr",
@@ -6015,7 +6042,6 @@
         "브릿지경제",
         "dailycar.co.kr",
         "kbsm.net",
-        "finomy.com",
         "pinpointnews.co.kr",
         "머니투데이",
         "m-i.kr",
@@ -6030,6 +6056,7 @@
         "ppss.kr",
         "globale.co.kr",
         "newsroad.co.kr",
+        "연합뉴스TV",
         "newsian.co.kr",
         "edaily.co.kr",
         "sisacast.kr",
@@ -6044,19 +6071,20 @@
         "서울경제TV",
         "sentv.co.kr",
         "wowtv.co.kr",
-        "newspim.com",
         "viva100.com",
         "dailypop.kr",
         "sateconomy.co.kr",
         "ezyeconomy.com",
         "huffingtonpost.kr",
-        "연합뉴스",
         "yna.co.kr",
         "아시아경제",
         "view.asiae.co.kr",
         "newsis.com",
         "catchnews.kr",
         "thefairnews.co.kr",
+        "뉴스핌",
+        "finomy.com",
+        "연합뉴스",
         "뷰어스",
         "theviewers.co.kr",
         "매일신문",
@@ -6078,7 +6106,6 @@
         "fetv.co.kr",
         "펜앤마이크",
         "이지경제",
-        "연합뉴스TV",
         "2news.co.kr",
         "글로벌E",
         "pennmike.com",
