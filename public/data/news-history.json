@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-06T13:15:31+09:00",
+  "generatedAt": "2026-10-06T15:13:26+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1023,
+  "itemCount": 1030,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-06",
   "sourceCommitsScanned": 0,
@@ -12,6 +12,29 @@
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "4bdeaf03b33f4568",
+      "publishedAt": "2026-10-06",
+      "title": "인천시, 해양수산자원 활용 '블루카본' 확보 박차",
+      "category": "제도",
+      "summary": "표=인천시 최근 글로벌 기후위기 대응이 강화되고 자발적 탄소시장 이 확대되면서 단순한 탄소 배출 감축을 넘어 탄소를 직접 흡수·저장하는 '블루카본(Blue Carbon)'이 탄소중립을 위한 새로운 핵심 수단으로 주목받고...",
+      "source": "bizwnews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.bizwnews.com/news/articleView.html?idxno=148169",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateSources": [
+        "bizwnews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
     {
       "id": "aaa4070738991649",
       "publishedAt": "2026-10-06",
@@ -90,6 +113,31 @@
       "region": "국내"
     },
     {
+      "id": "72fee635991d6679",
+      "publishedAt": "2026-10-06",
+      "title": "뉴라이즌, 공조필터 첫 탄소감축 인증",
+      "category": "상쇄·외부사업",
+      "summary": "생산·폐기량을 온실가스 감축량으로 환산하는 방식이다. 글로벌 인증기관 DNV가 제3자 타당성 평가를 맡았다. 회사 측에 따르면 국내 배출권 거래제 외부사업과 대한상의 인증체계뿐 아니라 청정개발체제(CDM), 베라(VCS)...",
+      "source": "imaeil.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.imaeil.com/page/view/2026100609531536201",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "imaeil.com",
+        "startuptoday.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 2,
+      "region": "국내"
+    },
+    {
       "id": "d55f2fe270cd2311",
       "publishedAt": "2026-10-06",
       "title": "기후부, 재생에너지 100GW·2040 탈석탄 추진…전력·물관리 체계 전면 ...",
@@ -104,15 +152,8 @@
         "배출권"
       ],
       "duplicateSources": [
-        "bbsi.co.kr",
-        "iminju.net",
-        "news1.kr",
-        "newspim.com",
-        "ziksir.com",
-        "kukinews.com",
-        "dt.co.kr",
-        "edaily.co.kr",
-        "tjb.co.kr",
+        "fnnews.com",
+        "segye.com",
         "yna.co.kr",
         "gokorea.kr",
         "newsis.com",
@@ -120,17 +161,52 @@
         "einfomax.co.kr",
         "mt.co.kr",
         "etoday.co.kr",
-        "energydaily.co.kr",
+        "e-platform.net",
+        "hansbiz.co.kr",
         "mediapen.com",
         "view.asiae.co.kr",
+        "ajunews.com",
+        "newspim.com",
         "dailian.co.kr",
         "electimes.com",
+        "bbsi.co.kr",
+        "iminju.net",
+        "news1.kr",
+        "ziksir.com",
+        "kukinews.com",
+        "dt.co.kr",
+        "edaily.co.kr",
+        "tjb.co.kr",
+        "energydaily.co.kr",
         "seoul.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 22,
+      "duplicateCount": 27,
+      "region": "국내"
+    },
+    {
+      "id": "74424b1203cdd53f",
+      "publishedAt": "2026-10-06",
+      "title": "기름값 깎아주다 탄소중립 놓친다?",
+      "category": "시장·가격",
+      "summary": "2030년까지 유류세를 주요국 수준으로 올리거나 국내 배출권 가격, 톤당 8만원 수준의 탄소세, 국제통화기금(IMF)이 제시한 기후비용을 반영하는 네 가지 시나리오를 비교한 결과, 연간 약 370만~700만t의 온실가스 를...",
+      "source": "newspenguin.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newspenguin.com/news/articleView.html?idxno=22260",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "newspenguin.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
       "region": "국내"
     },
     {
@@ -223,12 +299,14 @@
         "탄소배출권"
       ],
       "duplicateSources": [
+        "이투데이",
         "etoday.co.kr"
       ],
       "searchProviders": [
+        "Google News RSS",
         "NAVER API HUB"
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "region": "국내"
     },
     {
@@ -278,6 +356,55 @@
       ],
       "duplicateCount": 1,
       "region": "해외"
+    },
+    {
+      "id": "4ecd8a1d89de6191",
+      "publishedAt": "2026-10-06",
+      "title": "[진단] 소나무재선충병 피해 고사목 처리 비상등",
+      "category": "제도",
+      "summary": "더욱이 소모성 예산을 절감하고 탄소배출권 확보로 '국부 창출본 시스템'을 도입할 경우 국가 재정 측면에서 정량적 순 편익이 발생한다. 이른바 ▲훈증 약제비와 비닐비 전액 절감, ▲수거비 절감 및 곤돌라 하산에 따른...",
+      "source": "newsclaim.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newsclaim.co.kr/news/articleView.html?idxno=3077518",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "newsclaim.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "f94f8898bbf74c16",
+      "publishedAt": "2026-10-06",
+      "title": "[온실가스 배출권] 10월 6일 KAU26, 50원 오른 2만9650원으로 마감",
+      "category": "시장·가격",
+      "summary": "[온실가스 배출권] 10월 6일 KAU26, 50원 오른 2만9650원으로 마감 데일리e뉴스",
+      "source": "데일리e뉴스",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE0yVk9jcjk4Z0xTX09DbmxPR1dKbUxuM1h0a0tmcEI0TGpXckt3c05GR0xXM2ltTXBnME1vZ1pNcE00TEJVQ0ZsazZMYVYydlZZQTBFRlNyM0xaUC1rUndXSGdvSUhSZ2ZzdmxKMHloYw?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "온실가스 배출권",
+        "KAU26"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "데일리e뉴스"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "국내"
     },
     {
       "id": "cbed4ea0fe50fd87",
@@ -350,6 +477,54 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "3abefaf2c32f6cff",
+      "publishedAt": "2026-10-06",
+      "title": "EU CBAM 탄소가격 82.32유로로 9% 급등",
+      "category": "유상경매",
+      "summary": "가격을 온실가스 톤당 82.32유로(약 12만4000원)로 확정해 발표했다. 올해 1분기 75.36유로(약 11만3500원)... EU 배출권 경매가격 연동해 산정… 실제 정산은 2027년 개시 CBAM 인증서 가격은 유럽연합이 임의로 부과하는...",
+      "source": "impacton.net",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.impacton.net/news/articleView.html?idxno=30151",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "impacton.net"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
+      "id": "a2b6e6d5d6039171",
+      "publishedAt": "2026-10-06",
+      "title": "\"전력·부동산 다 잡았다…SGC에너지, 'AI 데이터센터'로 밸류에이션 재...",
+      "category": "시장·가격",
+      "summary": "온실가스 배출권 의 공급 감소로 가격 강세가 이어지고 있으며, 4분기에는 전략적으로 이월물량 충족이 가능한 수준에서 판매가 집중될 것으로 예상된다. AI DC 1단계 사업의 경우 수전용량 60㎿W로 추진되며...",
+      "source": "newsquest.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newsquest.co.kr/news/articleView.html?idxno=302113",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "온실가스 배출권"
+      ],
+      "duplicateSources": [
+        "newsprime.co.kr",
+        "newsquest.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 2,
       "region": "국내"
     },
     {
@@ -1270,8 +1445,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "impacton.net",
-        "임팩트온"
+        "임팩트온",
+        "impacton.net"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -1790,8 +1965,8 @@
       ],
       "duplicateCount": 2,
       "duplicateSources": [
-        "ESG경제",
-        "esgeconomy.com"
+        "esgeconomy.com",
+        "ESG경제"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -2367,7 +2542,9 @@
       "matchedKeywords": [
         "배출권",
         "온실가스 배출권",
-        "탄소시장"
+        "탄소시장",
+        "배출권거래제",
+        "탄소배출권"
       ],
       "duplicateSources": [
         "dealsitetv.com"
@@ -4815,8 +4992,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "ESG경제",
-        "esgeconomy.com"
+        "esgeconomy.com",
+        "ESG경제"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -5265,12 +5442,14 @@
         "newscape.co.kr",
         "swtvnews.com",
         "moneystorm.kr",
-        "ebn.co.kr"
+        "ebn.co.kr",
+        "sports.hankooki.com",
+        "wsobi.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 23,
+      "duplicateCount": 25,
       "region": "국내"
     },
     {
@@ -5703,10 +5882,7 @@
         "imaeil.com",
         "edaily.co.kr",
         "글로벌이코노믹",
-        "이투데이",
-        "v.daum.net",
         "뉴스핌",
-        "메트로신문",
         "metroseoul.co.kr",
         "socialvalue.kr",
         "asiatime.co.kr",
@@ -5717,6 +5893,7 @@
         "tf.co.kr",
         "smarttoday.co.kr",
         "뉴스1",
+        "v.daum.net",
         "news1.kr",
         "브릿지경제",
         "dailycar.co.kr",
@@ -5744,7 +5921,6 @@
         "etoday.co.kr",
         "digitaltoday.co.kr",
         "biztribune.co.kr",
-        "sports.hankooki.com",
         "pointe.co.kr",
         "서울경제TV",
         "sentv.co.kr",
@@ -5754,7 +5930,6 @@
         "dailypop.kr",
         "sateconomy.co.kr",
         "ezyeconomy.com",
-        "wsobi.com",
         "huffingtonpost.kr",
         "연합뉴스",
         "yna.co.kr",
@@ -5763,6 +5938,10 @@
         "newsis.com",
         "catchnews.kr",
         "thefairnews.co.kr",
+        "이투데이",
+        "메트로신문",
+        "sports.hankooki.com",
+        "wsobi.com",
         "ebn.co.kr",
         "delighti.co.kr",
         "smedaily.co.kr",
@@ -6013,8 +6192,8 @@
         "K-ETS"
       ],
       "duplicateSources": [
-        "ESG경제",
-        "esgeconomy.com"
+        "esgeconomy.com",
+        "ESG경제"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -9114,8 +9293,8 @@
         "KAU25"
       ],
       "duplicateSources": [
-        "중소기업신문",
-        "smedaily.co.kr"
+        "smedaily.co.kr",
+        "중소기업신문"
       ],
       "searchProviders": [
         "Google News RSS",
