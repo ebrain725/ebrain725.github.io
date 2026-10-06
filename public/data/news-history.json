@@ -1,11 +1,11 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-07T01:13:07+09:00",
+  "generatedAt": "2026-10-07T03:36:16+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1037,
+  "itemCount": 1038,
   "earliestPublishedAt": "2026-08-06",
-  "latestPublishedAt": "2026-10-06",
+  "latestPublishedAt": "2026-10-07",
   "sourceCommitsScanned": 0,
   "sourceSnapshotsScanned": 0,
   "historicalRowsScanned": 0,
@@ -13,12 +13,36 @@
   "recoveredFromGitHistory": 0,
   "items": [
     {
+      "id": "6683986e65a4e12c",
+      "publishedAt": "2026-10-07",
+      "title": "'전력수요부터 요금까지' 에너지정책 근거 따진 기후부 국감",
+      "category": "제도",
+      "summary": "또 2035 국가 온실가스 감축목표를 반영한 로드맵 수립과 배출권 거래제를 통한 감축 유인 강화도 제시했다. 국정감사에서 제기된 수요 전망의 불확실성, 요금제의 수혜 편중 우려, 정책금융의 성과 관리 문제는 정책을...",
+      "source": "energy-news.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=228791",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "energy-news.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "3ca9a25c147de22c",
       "publishedAt": "2026-10-06",
       "title": "탄소값을 한국에서 낼까, 유럽에서 낼까…CBAM 시대 배출권거래제의 역설",
       "category": "제도",
-      "summary": "탄소값을 한국에서 낼까, 유럽에서 낼까…CBAM 시대 배출권거래제의 역설 climatepol.com",
-      "source": "climatepol.com",
+      "summary": "탄소값을 한국에서 낼까, 유럽에서 낼까…CBAM 시대 배출권거래제의 역설 https://www.climatepol.com/",
+      "source": "https://www.climatepol.com/",
       "sourceType": "news",
       "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1ObTVqYXc0TmFCSHlzdlRQYzBpQTlfakFtUDZsSHFLckRtSmJqdlVhanpfdDgwNjZlWUdTZ2JBOV9NUGhUQnBtWTJiQlRIM2xoQzZiYkY1TFJlbUZkLV9KclpLd3dPMzZycmhCNg?oc=5",
       "searchProvider": "Google News RSS",
@@ -27,9 +51,10 @@
         "배출권거래제"
       ],
       "section": "news",
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "duplicateSources": [
-        "climatepol.com"
+        "climatepol.com",
+        "https://www.climatepol.com/"
       ],
       "searchProviders": [
         "Google News RSS"
@@ -423,6 +448,7 @@
         "탄소배출권"
       ],
       "duplicateSources": [
+        "Daum",
         "이투데이",
         "etoday.co.kr"
       ],
@@ -430,7 +456,7 @@
         "Google News RSS",
         "NAVER API HUB"
       ],
-      "duplicateCount": 2,
+      "duplicateCount": 3,
       "region": "국내"
     },
     {
@@ -767,13 +793,16 @@
         "2news.co.kr",
         "넷제로뉴스",
         "netzeronews.kr",
-        "연합뉴스"
+        "연합뉴스",
+        "경북일보",
+        "https://www.2news.co.kr/",
+        "Daum"
       ],
       "searchProviders": [
         "NAVER API HUB",
         "Google News RSS"
       ],
-      "duplicateCount": 29,
+      "duplicateCount": 32,
       "region": "국내"
     },
     {
@@ -2015,13 +2044,14 @@
       "duplicateSources": [
         "economist.co.kr",
         "이코노미스트",
-        "edaily.co.kr"
+        "edaily.co.kr",
+        "이데일리"
       ],
       "searchProviders": [
         "NAVER API HUB",
         "Google News RSS"
       ],
-      "duplicateCount": 3,
+      "duplicateCount": 4,
       "region": "국내"
     },
     {
@@ -2535,7 +2565,8 @@
       "url": "https://view.asiae.co.kr/article/2026100111311266971",
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
-        "배출권"
+        "배출권",
+        "유상할당"
       ],
       "duplicateSources": [
         "view.asiae.co.kr"
@@ -5192,6 +5223,7 @@
       "duplicateCount": 4,
       "duplicateSources": [
         "경향신문",
+        "Daum",
         "v.daum.net",
         "khan.co.kr"
       ],
@@ -6063,12 +6095,12 @@
         "tf.co.kr",
         "smarttoday.co.kr",
         "뉴스1",
-        "v.daum.net",
+        "Daum",
         "news1.kr",
         "dailycar.co.kr",
         "kbsm.net",
         "pinpointnews.co.kr",
-        "mt.co.kr",
+        "머니투데이",
         "m-i.kr",
         "joongangenews.com",
         "fntimes.com",
@@ -6109,7 +6141,8 @@
         "newsis.com",
         "catchnews.kr",
         "thefairnews.co.kr",
-        "머니투데이",
+        "v.daum.net",
+        "mt.co.kr",
         "연합뉴스TV",
         "finomy.com",
         "뷰어스",
@@ -6179,7 +6212,7 @@
         "NAVER API HUB",
         "Google News RSS"
       ],
-      "duplicateCount": 128,
+      "duplicateCount": 129,
       "region": "국내"
     },
     {
@@ -7624,6 +7657,7 @@
       ],
       "duplicateSources": [
         "브릿지경제",
+        "Daum",
         "v.daum.net",
         "viva100.com",
         "dt.co.kr"
@@ -11234,9 +11268,10 @@
         "KAU25"
       ],
       "duplicateSources": [
-        "v.daum.net",
+        "Daum",
         "연합뉴스",
-        "yna.co.kr"
+        "yna.co.kr",
+        "v.daum.net"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -12278,13 +12313,14 @@
       "duplicateSources": [
         "hani.co.kr",
         "한겨레",
-        "v.daum.net"
+        "v.daum.net",
+        "Daum"
       ],
       "searchProviders": [
         "NAVER API HUB",
         "Google News RSS"
       ],
-      "duplicateCount": 3,
+      "duplicateCount": 4,
       "region": "국내"
     },
     {
@@ -12458,6 +12494,7 @@
         "K-ETS"
       ],
       "duplicateSources": [
+        "Daum",
         "v.daum.net",
         "magazine.hankyung.com"
       ],
