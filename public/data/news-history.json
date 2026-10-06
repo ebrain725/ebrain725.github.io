@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-06T08:12:37+09:00",
+  "generatedAt": "2026-10-06T10:13:13+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1013,
+  "itemCount": 1015,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-06",
   "sourceCommitsScanned": 0,
@@ -12,6 +12,33 @@
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "860cb4497fa3d5b6",
+      "publishedAt": "2026-10-06",
+      "title": "대구시, 방천리 매립가스 자원화 사업으로 탄소 배출권 21만t 확보",
+      "category": "제도",
+      "summary": "대구시 매립가스 자원화 시설 대구광역시가 '방천리 매립장 매립가스 자원화 사업'을 통해 탄소 배출권 21만 9432톤을 새로 확보했다. 최근 국내 탄소 배출권 거래 시세를 적용하면 약 66억 원 상당이다. 대구시는 5일 이...",
+      "source": "gasnews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.gasnews.com/news/articleView.html?idxno=127054",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "가스신문",
+        "gasnews.com",
+        "tbc.co.kr"
+      ],
+      "searchProviders": [
+        "Google News RSS",
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 3,
+      "region": "국내"
+    },
     {
       "id": "e7b83e01a388f3de",
       "publishedAt": "2026-10-06",
@@ -35,6 +62,30 @@
       ],
       "duplicateCount": 1,
       "region": "국내"
+    },
+    {
+      "id": "ef862d006d5ddb82",
+      "publishedAt": "2026-10-06",
+      "title": "美 대법원, ‘기후소송’ 허용 여부 심리 [ESG 뉴스 5]",
+      "category": "제도",
+      "summary": "EU는 향후 10년간 배출권 거래제(EU ETS)의 무상할당을 단계적으로 폐지해 철강 등 탄소집약 산업의 비용... EU 환경장관들은 12일 룩셈부르크 회의에서 배출권 시장 개편안을 논의할 예정이다. 美 SEC 주주제안 폐지 추진...",
+      "source": "magazine.hankyung.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://magazine.hankyung.com/business/article/202610064629b",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "magazine.hankyung.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
     },
     {
       "id": "c28d116851b81a11",
@@ -417,8 +468,8 @@
       "publishedAt": "2026-10-05",
       "title": "대구시, 매립가스 자원화로 탄소배출권 21만9천톤 확보…66억원 규모",
       "category": "제도",
-      "summary": "대구시, 매립가스 자원화로 탄소배출권 21만9천톤 확보…66억원 규모 웹플러스뉴스",
-      "source": "웹플러스뉴스",
+      "summary": "대구시, 매립가스 자원화로 탄소배출권 21만9천톤 확보…66억원 규모 webplusnews.kr",
+      "source": "webplusnews.kr",
       "sourceType": "news",
       "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5yU2t3UHVEZWZaeEg1SXhZWnhRUjlEb2JHZkcwTmdyT2doSVpuSkE2R256QTR1aTI0TDJ3eXFuc2ZMY1AxMFlJTUdrTU11NWdkUGRuR1BFaUZCdzlxYkIzTGYtRmF3WTZfeEE4?oc=5",
       "searchProvider": "Google News RSS",
@@ -427,11 +478,12 @@
         "탄소배출권"
       ],
       "section": "news",
-      "duplicateCount": 3,
+      "duplicateCount": 4,
       "duplicateSources": [
         "웹플러스뉴스",
         "서울일보",
-        "seoulilbo.com"
+        "seoulilbo.com",
+        "webplusnews.kr"
       ],
       "searchProviders": [
         "Google News RSS"
@@ -603,7 +655,8 @@
       "url": "https://www.esgeconomy.com/news/articleView.html?idxno=16915",
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
-        "탄소시장"
+        "탄소시장",
+        "배출권"
       ],
       "duplicateSources": [
         "esgeconomy.com"
@@ -3858,8 +3911,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "매일노동뉴스",
-        "labortoday.co.kr"
+        "labortoday.co.kr",
+        "매일노동뉴스"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -4984,12 +5037,13 @@
         "dealsitetv.com",
         "thevaluenews.co.kr",
         "kfenews.co.kr",
-        "ftoday.co.kr"
+        "ftoday.co.kr",
+        "news1.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 12,
+      "duplicateCount": 13,
       "region": "국내"
     },
     {
@@ -5424,7 +5478,8 @@
         "글로벌이코노믹",
         "이투데이",
         "v.daum.net",
-        "newspim.com",
+        "뉴스핌",
+        "메트로신문",
         "metroseoul.co.kr",
         "socialvalue.kr",
         "asiatime.co.kr",
@@ -5441,7 +5496,7 @@
         "kbsm.net",
         "finomy.com",
         "pinpointnews.co.kr",
-        "mt.co.kr",
+        "머니투데이",
         "m-i.kr",
         "joongangenews.com",
         "fntimes.com",
@@ -5476,6 +5531,7 @@
         "서울경제TV",
         "sentv.co.kr",
         "wowtv.co.kr",
+        "newspim.com",
         "viva100.com",
         "moneystorm.kr",
         "dailypop.kr",
@@ -5485,15 +5541,13 @@
         "huffingtonpost.kr",
         "연합뉴스",
         "yna.co.kr",
-        "asiae.co.kr",
+        "아시아경제",
         "view.asiae.co.kr",
         "newsis.com",
         "catchnews.kr",
         "thefairnews.co.kr",
-        "뉴스핌",
-        "메트로신문",
-        "머니투데이",
-        "아시아경제",
+        "mt.co.kr",
+        "asiae.co.kr",
         "fetv.co.kr",
         "펜앤마이크",
         "이지경제",
@@ -8833,8 +8887,8 @@
         "KAU25"
       ],
       "duplicateSources": [
-        "smedaily.co.kr",
-        "중소기업신문"
+        "중소기업신문",
+        "smedaily.co.kr"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -11643,13 +11697,14 @@
       ],
       "duplicateSources": [
         "hani.co.kr",
-        "한겨레"
+        "한겨레",
+        "v.daum.net"
       ],
       "searchProviders": [
         "NAVER API HUB",
         "Google News RSS"
       ],
-      "duplicateCount": 2,
+      "duplicateCount": 3,
       "region": "국내"
     },
     {
