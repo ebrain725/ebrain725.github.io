@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-06T12:12:54+09:00",
+  "generatedAt": "2026-10-06T13:15:31+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
   "itemCount": 1023,
@@ -105,6 +105,7 @@
       ],
       "duplicateSources": [
         "bbsi.co.kr",
+        "iminju.net",
         "news1.kr",
         "newspim.com",
         "ziksir.com",
@@ -129,7 +130,7 @@
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 21,
+      "duplicateCount": 22,
       "region": "국내"
     },
     {
@@ -664,8 +665,8 @@
         "탄소배출권"
       ],
       "duplicateSources": [
-        "news.bbsi.co.kr",
         "BBS불교방송",
+        "news.bbsi.co.kr",
         "bbsi.co.kr",
         "세명일보",
         "smnews.co.kr",
@@ -1269,8 +1270,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "임팩트온",
-        "impacton.net"
+        "impacton.net",
+        "임팩트온"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -1308,8 +1309,8 @@
       "publishedAt": "2026-10-02",
       "title": "[온실가스 배출권] 10월 2일 KAU26, 3만원 재진입 못 하고 2만9600원으로 마감",
       "category": "시장·가격",
-      "summary": "[온실가스 배출권] 10월 2일 KAU26, 3만원 재진입 못 하고 2만9600원으로 마감 데일리e뉴스",
-      "source": "데일리e뉴스",
+      "summary": "[온실가스 배출권] 10월 2일 KAU26, 3만원 재진입 못 하고 2만9600원으로 마감 dailyenews.co.kr",
+      "source": "dailyenews.co.kr",
       "sourceType": "news",
       "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9wai1Kb0szSUZ0M1FZVUdZVHZvNDFObVlkR3dpSWlJYTkzeTRMWkZwX3JNQzJ6OXVsSEJ4NHdIaEtNVXJuRVliRWM0TkhpZHNoeml3LTZnOVlRQW1VTmNDQ3VCYk4zUzZQbG9iNWdkZw?oc=5",
       "searchProvider": "Google News RSS",
@@ -1319,9 +1320,10 @@
         "KAU26"
       ],
       "section": "news",
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "duplicateSources": [
-        "데일리e뉴스"
+        "데일리e뉴스",
+        "dailyenews.co.kr"
       ],
       "searchProviders": [
         "Google News RSS"
@@ -1788,8 +1790,8 @@
       ],
       "duplicateCount": 2,
       "duplicateSources": [
-        "esgeconomy.com",
-        "ESG경제"
+        "ESG경제",
+        "esgeconomy.com"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -4813,8 +4815,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "esgeconomy.com",
-        "ESG경제"
+        "ESG경제",
+        "esgeconomy.com"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -6011,8 +6013,8 @@
         "K-ETS"
       ],
       "duplicateSources": [
-        "esgeconomy.com",
-        "ESG경제"
+        "ESG경제",
+        "esgeconomy.com"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -6715,8 +6717,8 @@
         "유상할당"
       ],
       "duplicateSources": [
-        "biz.chosun.com",
-        "Chosunbiz"
+        "Chosunbiz",
+        "biz.chosun.com"
       ],
       "searchProviders": [
         "Google News RSS",
