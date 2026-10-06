@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-06T20:26:36+09:00",
+  "generatedAt": "2026-10-07T01:13:07+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1036,
+  "itemCount": 1037,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-06",
   "sourceCommitsScanned": 0,
@@ -12,6 +12,30 @@
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "3ca9a25c147de22c",
+      "publishedAt": "2026-10-06",
+      "title": "탄소값을 한국에서 낼까, 유럽에서 낼까…CBAM 시대 배출권거래제의 역설",
+      "category": "제도",
+      "summary": "탄소값을 한국에서 낼까, 유럽에서 낼까…CBAM 시대 배출권거래제의 역설 climatepol.com",
+      "source": "climatepol.com",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1ObTVqYXc0TmFCSHlzdlRQYzBpQTlfakFtUDZsSHFLckRtSmJqdlVhanpfdDgwNjZlWUdTZ2JBOV9NUGhUQnBtWTJiQlRIM2xoQzZiYkY1TFJlbUZkLV9KclpLd3dPMzZycmhCNg?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "climatepol.com"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "해외"
+    },
     {
       "id": "4bdeaf03b33f4568",
       "publishedAt": "2026-10-06",
@@ -584,8 +608,8 @@
       "publishedAt": "2026-10-06",
       "title": "[SDG 15] 생물다양성 크레딧, 탄소시장을 복제해선 안 된다…‘하나의 숫자’보다 검증이 우선",
       "category": "제도",
-      "summary": "[SDG 15] 생물다양성 크레딧, 탄소시장을 복제해선 안 된다…‘하나의 숫자’보다 검증이 우선 SDG뉴스",
-      "source": "SDG뉴스",
+      "summary": "[SDG 15] 생물다양성 크레딧, 탄소시장을 복제해선 안 된다…‘하나의 숫자’보다 검증이 우선 sdgnews.net",
+      "source": "sdgnews.net",
       "sourceType": "news",
       "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5ucDdSVVhqYXU0NWJFTkcyQkl2VGdYeTI0aWlNdDJQWnVOTG9KbFJLUUVuX0VqdF9UQXpZeDdWUVo0TThmVExXVjhfTmpBbFJ4QmdLbk5OSDIyV3RVS1k2ZUkwQzc3dDRGdjRr0gFrQVVfeXFMTm5wN1JVWGphdTQ1YkVORzJCSXZUZ1h5MjRpaU10MlBadU5Mb0psUktRRW5fRWp0X1RBell4N1ZRWjRNOGZUTFdWOF9OakFsUnhCZ0tuTk5IMjJXdFVLWTZlSTBDNzd0NEZ2NGs?oc=5",
       "searchProvider": "Google News RSS",
@@ -593,9 +617,10 @@
         "탄소시장"
       ],
       "section": "news",
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "duplicateSources": [
-        "SDG뉴스"
+        "SDG뉴스",
+        "sdgnews.net"
       ],
       "searchProviders": [
         "Google News RSS"
@@ -741,13 +766,14 @@
         "kbmaeil.com",
         "2news.co.kr",
         "넷제로뉴스",
-        "netzeronews.kr"
+        "netzeronews.kr",
+        "연합뉴스"
       ],
       "searchProviders": [
         "NAVER API HUB",
         "Google News RSS"
       ],
-      "duplicateCount": 28,
+      "duplicateCount": 29,
       "region": "국내"
     },
     {
@@ -2139,8 +2165,8 @@
         "K-ETS"
       ],
       "duplicateSources": [
-        "donga.com",
-        "동아일보"
+        "동아일보",
+        "donga.com"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -6025,7 +6051,7 @@
         "cstimes.com",
         "digitalchosun.dizzo.com",
         "글로벌이코노믹",
-        "newspim.com",
+        "뉴스핌",
         "메트로신문",
         "metroseoul.co.kr",
         "socialvalue.kr",
@@ -6039,11 +6065,10 @@
         "뉴스1",
         "v.daum.net",
         "news1.kr",
-        "브릿지경제",
         "dailycar.co.kr",
         "kbsm.net",
         "pinpointnews.co.kr",
-        "머니투데이",
+        "mt.co.kr",
         "m-i.kr",
         "joongangenews.com",
         "fntimes.com",
@@ -6056,7 +6081,6 @@
         "ppss.kr",
         "globale.co.kr",
         "newsroad.co.kr",
-        "연합뉴스TV",
         "newsian.co.kr",
         "edaily.co.kr",
         "sisacast.kr",
@@ -6071,20 +6095,23 @@
         "서울경제TV",
         "sentv.co.kr",
         "wowtv.co.kr",
+        "newspim.com",
+        "브릿지경제",
         "viva100.com",
         "dailypop.kr",
         "sateconomy.co.kr",
         "ezyeconomy.com",
         "huffingtonpost.kr",
+        "연합뉴스",
         "yna.co.kr",
         "아시아경제",
         "view.asiae.co.kr",
         "newsis.com",
         "catchnews.kr",
         "thefairnews.co.kr",
-        "뉴스핌",
+        "머니투데이",
+        "연합뉴스TV",
         "finomy.com",
-        "연합뉴스",
         "뷰어스",
         "theviewers.co.kr",
         "매일신문",
@@ -6101,7 +6128,6 @@
         "newscape.co.kr",
         "swtvnews.com",
         "moneystorm.kr",
-        "mt.co.kr",
         "asiae.co.kr",
         "fetv.co.kr",
         "펜앤마이크",
