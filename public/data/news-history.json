@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-07T20:14:54+09:00",
+  "generatedAt": "2026-10-07T22:47:08+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
   "itemCount": 1068,
@@ -239,19 +239,19 @@
       "matchedKeywords": [
         "탄소시장"
       ],
-      "duplicateCount": 45,
+      "duplicateCount": 46,
       "duplicateSources": [
         "mediapen.com",
-        "sidae.com",
-        "ddaily.co.kr",
-        "etnews.com",
         "donga.com",
         "sedaily.com",
         "biz.chosun.com",
-        "gukjenews.com",
         "newscj.com",
         "joongangenews.com",
         "thelec.kr",
+        "sidae.com",
+        "ddaily.co.kr",
+        "etnews.com",
+        "gukjenews.com",
         "bizwork.co.kr",
         "kbmaeil.com",
         "hidomin.com",
@@ -285,7 +285,8 @@
         "dkilbo.com",
         "news2day.co.kr",
         "srtimes.kr",
-        "dizzotv.com"
+        "dizzotv.com",
+        "apnews.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -314,7 +315,7 @@
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "region": "국내"
     },
     {
@@ -589,7 +590,7 @@
     {
       "id": "85b2256580a4157d",
       "publishedAt": "2026-10-07",
-      "title": "[영상] 위성곤 도정 출범 100일 기자회견",
+      "title": "[영상] 위성곤 제주도정 출범 100일 기자회견",
       "category": "제도",
       "summary": "제주형 탄소시장 도 본격 추진해 탄소 감축이 곧 도민의 경제적 이익으로 돌아오는 기후경제수도 제주의 신화를 써가겠습니다. 4·3의 정의로운 해결과 완전한 명예 회복도 이어가겠습니다. 갈등 현안은 오직 도민의...",
       "source": "kbs.co.kr",
@@ -6853,7 +6854,6 @@
         "srtimes.kr",
         "cstimes.com",
         "digitalchosun.dizzo.com",
-        "글로벌이코노믹",
         "뉴스핌",
         "메트로신문",
         "metroseoul.co.kr",
@@ -6884,7 +6884,6 @@
         "ppss.kr",
         "globale.co.kr",
         "newsroad.co.kr",
-        "연합뉴스TV",
         "newsian.co.kr",
         "edaily.co.kr",
         "sisacast.kr",
@@ -6905,12 +6904,14 @@
         "sateconomy.co.kr",
         "ezyeconomy.com",
         "huffingtonpost.kr",
+        "연합뉴스",
         "yna.co.kr",
         "view.asiae.co.kr",
         "newsis.com",
         "catchnews.kr",
         "thefairnews.co.kr",
-        "연합뉴스",
+        "글로벌이코노믹",
+        "연합뉴스TV",
         "아시아경제",
         "브릿지경제",
         "v.daum.net",
