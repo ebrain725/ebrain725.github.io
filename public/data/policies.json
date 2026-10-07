@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-10-07T15:15:53+09:00",
+  "lastSync": "2026-10-07T18:13:20+09:00",
   "keywords": [
     "배출권",
     "배출권거래제",
@@ -27,10 +27,10 @@
     "Google News RSS",
     "NAVER API HUB"
   ],
-  "warning": "기후부 보도자료: 키워드별 공식검색과 기본 RSS 복구에 모두 실패했습니다: 배출권: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 배출권거래제: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 유상할당: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 유상경매: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 탄소시장: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 시장안정화: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 상쇄배출권: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 기본 RSS 복구: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 기후부 공지·공고: 키워드별 공식검색과 기본 RSS 복구에 모두 실패했습니다: 배출권: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 배출권거래제: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 유상할당: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 유상경매: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 탄소시장: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 시장안정화: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 상쇄배출권: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 기본 RSS 복구: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out>",
+  "warning": null,
   "aiInsight": {
     "summary": "최근 공식자료의 직접적인 수급 변수는 유상경매입니다. 최근 경매가 높은 낙찰가로 소화돼 공급보다 이행수요가 강하다는 신호입니다.",
-    "generatedAt": "2026-10-07T15:15:53+09:00",
+    "generatedAt": "2026-10-07T18:13:20+09:00",
     "basisLatestDate": "2026-10-06",
     "basisCount": 10,
     "source": "fallback",
@@ -670,7 +670,8 @@
       "url": "https://www.businesspost.co.kr/BP?command=article_view&num=448813",
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
-        "배출권"
+        "배출권",
+        "배출권거래제"
       ],
       "duplicateSources": [
         "businesspost.co.kr"
@@ -679,6 +680,29 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "4485c904a8f731b3",
+      "publishedAt": "2026-10-07",
+      "title": "포스코, 하이렉스로 '철강 GX' 구축…포항서 광양까지 탈 탄소 벨트",
+      "category": "제도",
+      "summary": "기업이 기술개발과 설비 전환 등을 맡고 정부가 청정에너지 공급 기반과 인프라, 저 탄소 시장 조성을 지원하는 구상이다. 첫 실증 지역으로는 포항을 중심으로 한 동남권을 제시했다. 하이렉스 실증설비와 청정수소...",
+      "source": "fnnews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.fnnews.com/news/202610071734541648",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "fnnews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
       "region": "국내"
     },
     {
@@ -778,6 +802,111 @@
       "region": "해외"
     },
     {
+      "id": "9db6e550687fba4b",
+      "publishedAt": "2026-10-07",
+      "title": "철강 GX, 포항서 먼저 터뜨린다… 포스코, 2028년 하이렉스 실증·동남권...",
+      "category": "제도",
+      "summary": "△T(Technology, 기술)·I(Installation, 설비전환): 기업이 혁신 기술 개발과 현장 설비 전환 담당 △M(Market, 시장)·U(Utility, 에너지)·P(Policy, 정책): 정부가 청정에너지 기반 및 저 탄소 시장 조성, 인프라 지원 담당 \"제조업의...",
+      "source": "eroun.net",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.eroun.net/news/articleView.html?idxno=91859",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 34,
+      "duplicateSources": [
+        "bizwork.co.kr",
+        "kbmaeil.com",
+        "hidomin.com",
+        "s-journal.co.kr",
+        "koreareport.co.kr",
+        "einfomax.co.kr",
+        "fetv.co.kr",
+        "ziksir.com",
+        "techholic.co.kr",
+        "dealsitetv.com",
+        "sidae.com",
+        "ajunews.com",
+        "news1.kr",
+        "ddaily.co.kr",
+        "etnews.com",
+        "tf.co.kr",
+        "sedaily.com",
+        "g-enews.com",
+        "gukjenews.com",
+        "newslock.co.kr",
+        "newscj.com",
+        "ebn.co.kr",
+        "shinailbo.co.kr",
+        "sportschosun.com",
+        "pointe.co.kr",
+        "biz.sbs.co.kr",
+        "joongangenews.com",
+        "popcornnews.net",
+        "eroun.net",
+        "asiatoday.co.kr",
+        "smartbizn.com",
+        "metroseoul.co.kr",
+        "cnbnews.com",
+        "nocutnews.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "37a36a2456bc55f5",
+      "publishedAt": "2026-10-07",
+      "title": "정부, ‘녹색대전환’에 1000조 투입···2035년까지 70% 이상 전기·수...",
+      "category": "시장·가격",
+      "summary": "기후단체 플랜 1.5는 논평에서 “K-GX는 지원 일변도 정책”이라며 “산업 탈탄소 전환을 위해서는 규제 강화, 특히 탄소 배출권 가격 정상화와 유상 할당 전환이 선결돼야 한다”고 밝혔다. 김병권 녹색전환연구소장은...",
+      "source": "khan.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.khan.co.kr/article/202610071722001",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권",
+        "유상할당"
+      ],
+      "duplicateSources": [
+        "khan.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "fa331324e1b881c5",
+      "publishedAt": "2026-10-07",
+      "title": "정부, K-GX에 10년간 1000조 지원…산업·에너지·지역 녹색전환 추진",
+      "category": "제도",
+      "summary": "재정 측면에서는 기후대응기금 지출사업 규모를 올해 2조 6000억 원에서 내년 정부안 기준 7조 6000억 원으로 확대하고, 배출권 유상할당 수입과 다른 회계·기금 전입금 등으로 수입 기반을 확보한다. 녹색국채는 내년...",
+      "source": "esgeconomy.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.esgeconomy.com/news/articleView.html?idxno=16931",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "유상할당"
+      ],
+      "duplicateSources": [
+        "esgeconomy.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "56207789e04172b9",
       "publishedAt": "2026-10-07",
       "title": "정부, '2035년 탄소감축' 녹색대전환에 1000조 푼다",
@@ -795,6 +924,30 @@
       ],
       "duplicateSources": [
         "edaily.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "79f4e97a8952bdea",
+      "publishedAt": "2026-10-07",
+      "title": "정부 ‘1000조 녹색대전환’ 발표에…기후단체 “ 배출권 가격 정상화부...",
+      "category": "시장·가격",
+      "summary": "탄소 배출권 은 온실가스 를 배출할 권리로, 시장에서 사고팔 수 있다. 배출권 가격이 낮을수록 기업이 온실가스 감축에 투자할 유인은 작아진다. 이날 기준 한국 탄소 배출권 은 1t당 2만9550원이다. 한국은행이 탄소중립...",
+      "source": "khan.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.khan.co.kr/article/202610071654001",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "khan.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -866,13 +1019,37 @@
         "탄소배출권"
       ],
       "section": "news",
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "duplicateSources": [
         "세명일보"
       ],
       "searchProviders": [
         "Google News RSS"
       ],
+      "region": "국내"
+    },
+    {
+      "id": "6d1dd7b4e63fa053",
+      "publishedAt": "2026-10-07",
+      "title": "李 \"적자기업에 先보조금 검토하라\"",
+      "category": "시장안정",
+      "summary": "탄소 배출권 가격 급등락을 막기 위한 장치도 마련한다. 배출권 가격이 일정 범위를 벗어나면 시장 공급 물량을 자동으로 조절하는 ‘ 시장 안정화예비분(MSR)’ 제도를 연내 도입한다. 1000조원 규모의 K-GX 재정·금융...",
+      "source": "hankyung.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.hankyung.com/article/2026100791851",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "hankyung.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
       "region": "국내"
     },
     {
@@ -941,6 +1118,54 @@
       ],
       "duplicateSources": [
         "etoday.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "fa3c6afd3c49bb4a",
+      "publishedAt": "2026-10-07",
+      "title": "[2026 국감] 탄소자료 요구 커지는데...중기부, 지원기업 대응 현황도 파...",
+      "category": "제도",
+      "summary": "그는 대기업은 2015년부터 배출권 거래제에 대응하며 배출량을 측정·산정하고 매년 보고해 왔다면서 \"중소기업은 배출량 산정을 어떻게 하는지 아예 모르는 경우가 압도적으로 많다\"고 말했다. 탄소감축 설비에 대한...",
+      "source": "newspim.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newspim.com/news/view/20261007001502",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "newspim.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "a9bf7673ae67042c",
+      "publishedAt": "2026-10-07",
+      "title": "[2026 국감] 기술 뺏기고 AI·탄소장벽 대응도 버겁다…중소기업 경쟁력...",
+      "category": "제도",
+      "summary": "대기업은 배출권 거래제에 대응하면서 탄소배출량 측정과 산정 경험을 축적했지만 중소기업 상당수는 배출량 산정 방법부터 어려움을 겪는다는 설명이다. 지원 수요에 비해 정부 사업 규모가 부족하다는 지적도 나왔다....",
+      "source": "popcornnews.net",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.popcornnews.net/news/articleView.html?idxno=135258",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "popcornnews.net"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -7434,7 +7659,6 @@
         "srtimes.kr",
         "cstimes.com",
         "digitalchosun.dizzo.com",
-        "글로벌이코노믹",
         "뉴스핌",
         "메트로신문",
         "metroseoul.co.kr",
@@ -7487,11 +7711,12 @@
         "huffingtonpost.kr",
         "연합뉴스",
         "yna.co.kr",
+        "아시아경제",
         "view.asiae.co.kr",
         "newsis.com",
         "catchnews.kr",
         "thefairnews.co.kr",
-        "아시아경제",
+        "글로벌이코노믹",
         "브릿지경제",
         "v.daum.net",
         "mt.co.kr",
@@ -253888,10 +254113,10 @@
   },
   "newsRetention": {
     "policy": "append-only",
-    "lastMergedAt": "2026-10-07T15:15:59+09:00",
-    "itemCount": 1055,
-    "archiveBefore": 1046,
-    "currentBefore": 938,
+    "lastMergedAt": "2026-10-07T18:13:26+09:00",
+    "itemCount": 1063,
+    "archiveBefore": 1055,
+    "currentBefore": 948,
     "gitRecoveryEnabled": false
   }
 }
