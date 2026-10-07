@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-07T10:12:57+09:00",
+  "generatedAt": "2026-10-07T13:13:22+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1041,
+  "itemCount": 1046,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-07",
   "sourceCommitsScanned": 0,
@@ -36,6 +36,53 @@
       ],
       "duplicateCount": 1,
       "region": "해외"
+    },
+    {
+      "id": "38f81b1dec55cc0b",
+      "publishedAt": "2026-10-07",
+      "title": "탄소 크레딧 소각 감소에도 시장 가치 상승",
+      "category": "제도",
+      "summary": "탄소 크레딧 평가기관 실베라가 5일 공개한 3분기 자발적 탄소시장 동향 보고서에 따르면 3분기에 소각된 탄소 크레딧은 3060만톤으로 지난해 같은 분기의 3370만톤보다 9% 감소했다. 3분기까지 누적 소각량은...",
+      "source": "esgeconomy.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.esgeconomy.com/news/articleView.html?idxno=16933",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "esgeconomy.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "c54a71c323232a65",
+      "publishedAt": "2026-10-07",
+      "title": "매립가스가 탄소 배출권 으로…대구시 66억 원 확보",
+      "category": "제도",
+      "summary": "대구시가 매립가스 자원화 사업으로 약 66억 원 상당의 탄소 배출권 21만 9천 톤을 신규 확보했습니다. 이... 대구시는 이번에 확보한 배출권 을 향후 온실가스 할당량을 초과 배출할 때 발생하는 부족분을 충당하는 데...",
+      "source": "kbs.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8679395&ref=A",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "kbs.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
     },
     {
       "id": "9a1d180e78ad603d",
@@ -75,14 +122,87 @@
       "matchedKeywords": [
         "탄소시장"
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "duplicateSources": [
-        "headlinejeju.co.kr"
+        "headlinejeju.co.kr",
+        "jejusori.net"
       ],
       "searchProviders": [
         "NAVER API HUB"
       ],
       "region": "국내"
+    },
+    {
+      "id": "9865b4120cc0bde3",
+      "publishedAt": "2026-10-07",
+      "title": "[ESGX 이슈 5] 구글, 美 원전 11기 출력 높인다…AI 전력 확보에 43억달러...",
+      "category": "제도",
+      "summary": "2035 국가 온실가스 감축목표(NDC)를 반영한 로드맵을 마련하고 배출권 거래제를 통한 기업의 감축 유인도 강화할 계획이다. 급증할 것으로 예상되는 AI 데이터센터 전력수요에 대해서는 과잉 추계 가능성을 제기했다....",
+      "source": "etoday.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.etoday.co.kr/news/view/2633276",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "etoday.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "a26e2fab1463357b",
+      "publishedAt": "2026-10-07",
+      "title": "[2026 국감-환노위] 산업용 지역 전기요금·AI센터전력수요·호남 반도체...",
+      "category": "제도",
+      "summary": "배출권 거래제를 통한 온실가스 감축 유인을 강화하고 산업 전환을 지원하겠다는 방침도 밝혔다. 특히 AI 데이터센터 확대에 따른 전력수요 증가와 대규모 반도체 산업단지 조성 등 새로운 전력 수요에 대응하기 위해...",
+      "source": "polinews.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.polinews.co.kr/news/articleView.html?idxno=745072",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "polinews.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "cfe9cb49c324c4b9",
+      "publishedAt": "2026-10-07",
+      "title": "ABB·이베르드롤라 등 50곳, \"EU ETS2 예정대로 시행\" 촉구",
+      "category": "제도",
+      "summary": "매기는 '제2 배출권 거래제(ETS2)'를 2028년 예정대로 시행하라고 촉구했다. 올해 EU가 ETS2 시행을 이미... \"게임 도중 규칙 바꾸면 먼저 투자한 기업이 손해\" ETS2는 기존 EU 배출권 거래제(ETS1)와 별도로 건물 난방과...",
+      "source": "impacton.net",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.impacton.net/news/articleView.html?idxno=30167",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "impacton.net"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
     },
     {
       "id": "6683986e65a4e12c",
@@ -6210,11 +6330,11 @@
         "huffingtonpost.kr",
         "연합뉴스",
         "yna.co.kr",
+        "아시아경제",
         "view.asiae.co.kr",
         "newsis.com",
         "catchnews.kr",
         "thefairnews.co.kr",
-        "아시아경제",
         "브릿지경제",
         "v.daum.net",
         "mt.co.kr",
