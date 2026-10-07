@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-07T18:13:26+09:00",
+  "generatedAt": "2026-10-07T20:14:54+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1063,
+  "itemCount": 1068,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-07",
   "sourceCommitsScanned": 0,
@@ -83,6 +83,29 @@
       "region": "국내"
     },
     {
+      "id": "4c2928da7e5724e4",
+      "publishedAt": "2026-10-07",
+      "title": "포스코, 수소환원제철 사업 닻 올렸다…탈 탄소 전환",
+      "category": "제도",
+      "summary": "기업은 기술 개발과 설비 전환을 맡고, 정부는 청정에너지 공급 기반과 저 탄소 시장 , 인프라 구축을 지원하는 방식입니다. 이주태 포스코홀딩스 사장은 \"철은 반세기 넘게 산업의 쌀로서 대한민국 제조업과 함께 성장해...",
+      "source": "biz.sbs.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://biz.sbs.co.kr/article_hub/20000338811?division=NAVER",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "biz.sbs.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "101103c7facd2458",
       "publishedAt": "2026-10-07",
       "title": "포스코, 美 냉연 3.64% 상계관세 소송…후판 이어 '전력 보조금' 또 다툰...",
@@ -155,6 +178,30 @@
       "region": "국내"
     },
     {
+      "id": "595032477caff841",
+      "publishedAt": "2026-10-07",
+      "title": "탄소 감축 넘어 ‘녹색 성장’ 선도… ‘그린 AI’ 부재는 한계",
+      "category": "제도",
+      "summary": "대표적으로 온실가스 배출량이 많은 철강업의 경우 2030년까지 수소환원제철 기술을 개발해 온실가스 ... 최 활동가는 “정부는 K-GX 전략 실행을 위해 배출권 유상할당 수입을 주요 재원으로 하는 기후대응기금을 대폭...",
+      "source": "segye.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.segye.com/newsView/20261007516849?OutUrl=naver",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "유상할당"
+      ],
+      "duplicateSources": [
+        "segye.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "ae4a3be1200c320b",
       "publishedAt": "2026-10-07",
       "title": "최봉혁 ESG칼럼니스트 ESG와 탄소중립, 녹색기술과 청색기술을 일반 시...",
@@ -192,8 +239,19 @@
       "matchedKeywords": [
         "탄소시장"
       ],
-      "duplicateCount": 34,
+      "duplicateCount": 45,
       "duplicateSources": [
+        "mediapen.com",
+        "sidae.com",
+        "ddaily.co.kr",
+        "etnews.com",
+        "donga.com",
+        "sedaily.com",
+        "biz.chosun.com",
+        "gukjenews.com",
+        "newscj.com",
+        "joongangenews.com",
+        "thelec.kr",
         "bizwork.co.kr",
         "kbmaeil.com",
         "hidomin.com",
@@ -204,30 +262,30 @@
         "ziksir.com",
         "techholic.co.kr",
         "dealsitetv.com",
-        "sidae.com",
         "ajunews.com",
         "news1.kr",
-        "ddaily.co.kr",
-        "etnews.com",
         "tf.co.kr",
-        "sedaily.com",
         "g-enews.com",
-        "gukjenews.com",
         "newslock.co.kr",
-        "newscj.com",
         "ebn.co.kr",
         "shinailbo.co.kr",
         "sportschosun.com",
         "pointe.co.kr",
         "biz.sbs.co.kr",
-        "joongangenews.com",
         "popcornnews.net",
         "eroun.net",
         "asiatoday.co.kr",
         "smartbizn.com",
         "metroseoul.co.kr",
         "cnbnews.com",
-        "nocutnews.co.kr"
+        "nocutnews.co.kr",
+        "kyongbuk.co.kr",
+        "dt.co.kr",
+        "paxetv.com",
+        "dkilbo.com",
+        "news2day.co.kr",
+        "srtimes.kr",
+        "dizzotv.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -284,6 +342,30 @@
       "region": "국내"
     },
     {
+      "id": "b7e8f1b9a6e63f45",
+      "publishedAt": "2026-10-07",
+      "title": "정부, 1000조원 규모 K-GX 가동… 탈탄소 산업·녹색기술 키운다",
+      "category": "제도",
+      "summary": "국가 온실가스 감축목표(NDC) 기여도로 평가하는 방법과 운영 시점은 제시하지 않았다.전환금융에는 지원... 배출권 유상할당을 확대하고 업종·기업·제품별 탄소집약도를 공개해 지원 목표와 이행 점검에 연동해야...",
+      "source": "asiatoday.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.asiatoday.co.kr/kn/view.php?key=20261007010002133",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "유상할당"
+      ],
+      "duplicateSources": [
+        "asiatoday.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "56207789e04172b9",
       "publishedAt": "2026-10-07",
       "title": "정부, '2035년 탄소감축' 녹색대전환에 1000조 푼다",
@@ -324,12 +406,14 @@
         "탄소배출권"
       ],
       "duplicateSources": [
+        "경향신문",
         "khan.co.kr"
       ],
       "searchProviders": [
+        "Google News RSS",
         "NAVER API HUB"
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "region": "국내"
     },
     {
@@ -430,6 +514,30 @@
       "region": "국내"
     },
     {
+      "id": "7762f9e52a5a63de",
+      "publishedAt": "2026-10-07",
+      "title": "李 \"보조금 준 뒤 생산세액공제서 차감\" 지시",
+      "category": "시장안정",
+      "summary": "탄소 배출권 가격 급등락을 막기 위한 장치도 마련한다. 배출권 가격이 일정 범위를 벗어나면 시장 공급 물량을 자동으로 조절하는 ‘ 시장 안정화예비분(MSR)’ 제도를 연내 도입한다. 1000조원 규모의 K-GX 재정·금융...",
+      "source": "hankyung.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.hankyung.com/article/2026100792341",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "hankyung.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 2,
+      "region": "국내"
+    },
+    {
       "id": "a272625d9a5aae67",
       "publishedAt": "2026-10-07",
       "title": "[전문] 위성곤 제주특별자치도지사, 취임 100일 기자회견",
@@ -475,6 +583,29 @@
       ],
       "searchProviders": [
         "Google News RSS"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "85b2256580a4157d",
+      "publishedAt": "2026-10-07",
+      "title": "[영상] 위성곤 도정 출범 100일 기자회견",
+      "category": "제도",
+      "summary": "제주형 탄소시장 도 본격 추진해 탄소 감축이 곧 도민의 경제적 이익으로 돌아오는 기후경제수도 제주의 신화를 써가겠습니다. 4·3의 정의로운 해결과 완전한 명예 회복도 이어가겠습니다. 갈등 현안은 오직 도민의...",
+      "source": "kbs.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8679961&ref=A",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "kbs.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
       ],
       "region": "국내"
     },
@@ -1458,7 +1589,8 @@
       "matchedKeywords": [
         "배출권",
         "배출권거래제",
-        "탄소배출권"
+        "탄소배출권",
+        "유상할당"
       ],
       "duplicateSources": [
         "mt.co.kr"
@@ -6721,6 +6853,7 @@
         "srtimes.kr",
         "cstimes.com",
         "digitalchosun.dizzo.com",
+        "글로벌이코노믹",
         "뉴스핌",
         "메트로신문",
         "metroseoul.co.kr",
@@ -6751,6 +6884,7 @@
         "ppss.kr",
         "globale.co.kr",
         "newsroad.co.kr",
+        "연합뉴스TV",
         "newsian.co.kr",
         "edaily.co.kr",
         "sisacast.kr",
@@ -6771,18 +6905,16 @@
         "sateconomy.co.kr",
         "ezyeconomy.com",
         "huffingtonpost.kr",
-        "연합뉴스",
         "yna.co.kr",
-        "아시아경제",
         "view.asiae.co.kr",
         "newsis.com",
         "catchnews.kr",
         "thefairnews.co.kr",
-        "글로벌이코노믹",
+        "연합뉴스",
+        "아시아경제",
         "브릿지경제",
         "v.daum.net",
         "mt.co.kr",
-        "연합뉴스TV",
         "finomy.com",
         "뷰어스",
         "theviewers.co.kr",
