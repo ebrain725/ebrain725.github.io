@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-10-07T13:13:14+09:00",
+  "lastSync": "2026-10-07T15:15:53+09:00",
   "keywords": [
     "배출권",
     "배출권거래제",
@@ -27,10 +27,10 @@
     "Google News RSS",
     "NAVER API HUB"
   ],
-  "warning": null,
+  "warning": "기후부 보도자료: 키워드별 공식검색과 기본 RSS 복구에 모두 실패했습니다: 배출권: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 배출권거래제: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 유상할당: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 유상경매: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 탄소시장: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 시장안정화: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 상쇄배출권: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 기본 RSS 복구: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 기후부 공지·공고: 키워드별 공식검색과 기본 RSS 복구에 모두 실패했습니다: 배출권: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 배출권거래제: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 유상할당: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 유상경매: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 탄소시장: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 시장안정화: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 상쇄배출권: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 기본 RSS 복구: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out>",
   "aiInsight": {
     "summary": "최근 공식자료의 직접적인 수급 변수는 유상경매입니다. 최근 경매가 높은 낙찰가로 소화돼 공급보다 이행수요가 강하다는 신호입니다.",
-    "generatedAt": "2026-10-07T13:13:14+09:00",
+    "generatedAt": "2026-10-07T15:15:53+09:00",
     "basisLatestDate": "2026-10-06",
     "basisCount": 10,
     "source": "fallback",
@@ -636,6 +636,52 @@
   ],
   "items": [
     {
+      "id": "f26550a4ae916f2d",
+      "publishedAt": "2026-10-07",
+      "title": "한국임업진흥원, '우리숲더하기 플러스'로 산림 탄소 상쇄 전 과정 지원",
+      "category": "상쇄·외부사업",
+      "summary": "캠페인에서 활용하는 산림탄소크레딧은 한국의 자발적 탄소시장 인 산림탄소상쇄제도에서 인증받은 크레딧이다. 크레딧 거래대금은 산림을 지속 가능하게 경영하고 탄소흡수 능력을 높이는 데 활용된다. ■ 기업·기관...",
+      "source": "woodkorea.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.woodkorea.co.kr/news/articleView.html?idxno=91715",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "woodkorea.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "152102f360e084cf",
+      "publishedAt": "2026-10-07",
+      "title": "플랜1.5 \"K-GX 1천조 '밑 빠진 독 물 붓기' 될 수도, 다배출 기업 규제 강...",
+      "category": "시장안정",
+      "summary": "이날 정부는 보고회에서 온실가스 다배출 업계의 탈 탄소 전환 등 K-GX 전략 이행을 위해 향후 10년 동안 약... 그러면서 \"정부는 배출권 가격 상하한에 기초한 시장 안정화예비분(비상용 배출권) 제도를 연내에 도입할...",
+      "source": "businesspost.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.businesspost.co.kr/BP?command=article_view&num=448813",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "businesspost.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "101103c7facd2458",
       "publishedAt": "2026-10-07",
       "title": "포스코, 美 냉연 3.64% 상계관세 소송…후판 이어 '전력 보조금' 또 다툰...",
@@ -682,6 +728,104 @@
         "NAVER API HUB"
       ],
       "region": "국내"
+    },
+    {
+      "id": "3b5c8c4dd475b273",
+      "publishedAt": "2026-10-07",
+      "title": "탄소 배출권 21.9만톤 신규 확보",
+      "category": "제도",
+      "summary": "대구시는 지난 9월까지 ‘방천리 매립장 매립가스 자원화사업’을 통해 탄소 배출권 21만 9432톤을 신규 확보했다고 7일 밝혔다. 최근 국내 탄소 배출권 거래 시세를 적용하면 약 66억 원에 상당하는 가치다. 대구시는...",
+      "source": "naeil.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.naeil.com/news/read/604468?ref=naver",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "naeil.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "ae4a3be1200c320b",
+      "publishedAt": "2026-10-07",
+      "title": "최봉혁 ESG칼럼니스트 ESG와 탄소중립, 녹색기술과 청색기술을 일반 시...",
+      "category": "제도",
+      "summary": "책은 전 12회 본문과 부록을 통해 녹색기술과 청색기술(자연모사기술)의 기초 개념부터 재생에너지, 수소경제, 전기차, 탄소 배출권 , 유럽연합(EU)의 탄소국경조정제도(CBAM), 인공지능(AI) 융복합 분야까지 망라했다. 특히...",
+      "source": "welfarenews.net",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.welfarenews.net/news/articleView.html?idxno=211944",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "welfarenews.net"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
+      "id": "56207789e04172b9",
+      "publishedAt": "2026-10-07",
+      "title": "정부, '2035년 탄소감축' 녹색대전환에 1000조 푼다",
+      "category": "시장안정",
+      "summary": "녹색대전환(K-GX) 전략’을 발표했다. 이번 전략은 2035년 온실가스 배출량을 2018년 대비 53~61%까지 낮춘다는... 배출권거래제( ETS )에 시장안정화예비분(MSR)을 도입하는 등 탄소시장 고도화도 병행한다. 자료=재정경제부...",
+      "source": "edaily.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.edaily.co.kr/News/Read?newsId=04031126645610624&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소시장"
+      ],
+      "duplicateSources": [
+        "edaily.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "ce89179f5afc474a",
+      "publishedAt": "2026-10-07",
+      "title": "올포랜드, 선박 최적운항 돕는 AI 해양 솔루션 '눈길'",
+      "category": "제도",
+      "summary": "IMO의 탄소집약도지수(CII) 등급과 유럽연합 탄소 배출권 거래제(EU ETS) 비용을 사전에 시뮬레이션하고, 에너지 절감 장치(ESD) 도입 시 투자 회수 기간을 산출해 준다. 이들 데이터는 직관적인 대시보드 형태의 선대 관리...",
+      "source": "zdnet.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://zdnet.co.kr/view/?no=20261007140855",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "zdnet.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
     },
     {
       "id": "c54a71c323232a65",
@@ -756,6 +900,31 @@
       "region": "국내"
     },
     {
+      "id": "34ae5a2e5ebf0fcb",
+      "publishedAt": "2026-10-07",
+      "title": "[온실가스 배출권] 10월 7일 KAU26, ,100원 내린 2만9550원",
+      "category": "시장·가격",
+      "summary": "[온실가스 배출권] 10월 7일 KAU26, ,100원 내린 2만9550원 데일리e뉴스",
+      "source": "데일리e뉴스",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1SdnFxX05fazlYWkV6MmZ5aUhGZElHSGM0ZTBQRlRtZ1hiOFJVZ1JibjZqc3ZZTDk2VmpnamZrSmJxWDZGMlZJQjFXMTFGNER3bVJRUm1lRGxEY0R3THNUYmdaVmJ0Znp5ZGRqbG80WQ?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "온실가스 배출권",
+        "KAU26"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "데일리e뉴스"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "9865b4120cc0bde3",
       "publishedAt": "2026-10-07",
       "title": "[ESGX 이슈 5] 구글, 美 원전 11기 출력 높인다…AI 전력 확보에 43억달러...",
@@ -804,6 +973,31 @@
       "region": "국내"
     },
     {
+      "id": "dd42e8dbfa3be00b",
+      "publishedAt": "2026-10-07",
+      "title": "EU, 美빅테크서 더 걷는다…트럼프 보복 피할 '우회 과세' 검토",
+      "category": "제도",
+      "summary": "EU는 탄소 배출권 거래제와 탄소국경조정제도(CBAM), 미수거 전자폐기물 부담금, 담배소비세 재원 등을 포함한 신규 자체 재원 전체로는 연간 약 585억 유로(약 88조 원)를 조달한다는 계획이다. 다만 신규 EU 자체...",
+      "source": "news1.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.news1.kr/world/europe/6312984",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "news1.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
       "id": "cfe9cb49c324c4b9",
       "publishedAt": "2026-10-07",
       "title": "ABB·이베르드롤라 등 50곳, \"EU ETS2 예정대로 시행\" 촉구",
@@ -826,6 +1020,31 @@
       ],
       "duplicateCount": 1,
       "region": "해외"
+    },
+    {
+      "id": "af8e954e50c37673",
+      "publishedAt": "2026-10-07",
+      "title": "10월 온실가스 배출권 283만톤 유상할당 입찰",
+      "category": "유상경매",
+      "summary": "10월 온실가스 배출권 283만톤 유상할당 입찰 인사이트에너지뉴스",
+      "source": "인사이트에너지뉴스",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFB6QzF6OG5kaGpmZ0hYNTItSEtZTWNzRVgxYjJTN0hyd2NCS3dPeExSaTBsOVZrZlVHMTdQMDlXeHVLdUg0YUZ1WElCTnhTQm9hbmMtUjlUcUlkMVo0MUJ5RUQ0bXY3VUHSAWtBVV95cUxNd3RxN1pHMmNud1MxdGpYMnZJLTk0RUt6OHU3V0U1bmQtR1I2Um82bzA1WHRRNnVMa2Z0ZUk5SVMzRFh1OU02SjNaUFpTOTdRWXJ6TGQxcG5OS3V6eWkwUnJQSkdpTTY3dVQycw?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "온실가스 배출권",
+        "유상할당"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "인사이트에너지뉴스"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "국내"
     },
     {
       "id": "6683986e65a4e12c",
@@ -7268,11 +7487,11 @@
         "huffingtonpost.kr",
         "연합뉴스",
         "yna.co.kr",
-        "아시아경제",
         "view.asiae.co.kr",
         "newsis.com",
         "catchnews.kr",
         "thefairnews.co.kr",
+        "아시아경제",
         "브릿지경제",
         "v.daum.net",
         "mt.co.kr",
@@ -253669,10 +253888,10 @@
   },
   "newsRetention": {
     "policy": "append-only",
-    "lastMergedAt": "2026-10-07T13:13:22+09:00",
-    "itemCount": 1046,
-    "archiveBefore": 1041,
-    "currentBefore": 929,
+    "lastMergedAt": "2026-10-07T15:15:59+09:00",
+    "itemCount": 1055,
+    "archiveBefore": 1046,
+    "currentBefore": 938,
     "gitRecoveryEnabled": false
   }
 }
