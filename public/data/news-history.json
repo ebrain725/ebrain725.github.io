@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-07T22:47:08+09:00",
+  "generatedAt": "2026-10-08T04:03:26+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1068,
+  "itemCount": 1070,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-07",
   "sourceCommitsScanned": 0,
@@ -57,6 +57,41 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "de156e00e0f2c277",
+      "publishedAt": "2026-10-07",
+      "title": "포스코그룹, K-GX 참여…철강 탈 탄소 생태계 구축",
+      "category": "제도",
+      "summary": "기술(Technology), 설비전환(Installation), 시장(Market), 에너지(Utility), 정책(Policy)의 앞 글자를 조합한 것으로, 기업은 기술 개발과 설비 전환을 맡고 정부는 청정에너지 공급 기반과 저 탄소 시장 , 관련 인프라 구축을...",
+      "source": "donga.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.donga.com/news/Economy/article/all/20261007/134805358/1",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 13,
+      "duplicateSources": [
+        "mediapen.com",
+        "donga.com",
+        "biz.chosun.com",
+        "dt.co.kr",
+        "hidomin.com",
+        "koreareport.co.kr",
+        "paxetv.com",
+        "dkilbo.com",
+        "apnews.kr",
+        "fetv.co.kr",
+        "news2day.co.kr",
+        "gukjenews.com",
+        "kyongbuk.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
       "region": "국내"
     },
     {
@@ -129,6 +164,29 @@
       ],
       "duplicateCount": 1,
       "region": "해외"
+    },
+    {
+      "id": "630e77f88719dc58",
+      "publishedAt": "2026-10-07",
+      "title": "포스코, 2028년 포항에 하이렉스 실증설비 구축",
+      "category": "제도",
+      "summary": "이주태 포스코홀딩스 사장은 \"저 탄소 시장 창출과 경제적인 청정에너지 공급을 바탕으로 탈탄소 산업 생태계를 만들고 국가 탄소중립과 제조업의 녹색전환에 역할을 다하겠다\"고 말했다.",
+      "source": "thelec.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.thelec.kr/news/articleView.html?idxno=63435",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "thelec.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
     },
     {
       "id": "38f81b1dec55cc0b",
@@ -241,6 +299,8 @@
       ],
       "duplicateCount": 46,
       "duplicateSources": [
+        "srtimes.kr",
+        "dizzotv.com",
         "mediapen.com",
         "donga.com",
         "sedaily.com",
@@ -284,8 +344,6 @@
         "paxetv.com",
         "dkilbo.com",
         "news2day.co.kr",
-        "srtimes.kr",
-        "dizzotv.com",
         "apnews.kr"
       ],
       "searchProviders": [
@@ -491,6 +549,30 @@
       "region": "국내"
     },
     {
+      "id": "7762f9e52a5a63de",
+      "publishedAt": "2026-10-07",
+      "title": "李대통령 \"보조금 준 뒤 생산세액공제서 차감\" 지시",
+      "category": "시장안정",
+      "summary": "탄소 배출권 가격 급등락을 막기 위한 장치도 마련한다. 배출권 가격이 일정 범위를 벗어나면 시장 공급 물량을 자동으로 조절하는 ‘ 시장 안정화예비분(MSR)’ 제도를 연내 도입한다. 1000조원 규모의 K-GX 재정·금융...",
+      "source": "hankyung.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.hankyung.com/article/2026100792341",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "hankyung.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 2,
+      "region": "국내"
+    },
+    {
       "id": "6d1dd7b4e63fa053",
       "publishedAt": "2026-10-07",
       "title": "李 \"적자기업에 先보조금 검토하라\"",
@@ -512,30 +594,6 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 1,
-      "region": "국내"
-    },
-    {
-      "id": "7762f9e52a5a63de",
-      "publishedAt": "2026-10-07",
-      "title": "李 \"보조금 준 뒤 생산세액공제서 차감\" 지시",
-      "category": "시장안정",
-      "summary": "탄소 배출권 가격 급등락을 막기 위한 장치도 마련한다. 배출권 가격이 일정 범위를 벗어나면 시장 공급 물량을 자동으로 조절하는 ‘ 시장 안정화예비분(MSR)’ 제도를 연내 도입한다. 1000조원 규모의 K-GX 재정·금융...",
-      "source": "hankyung.com",
-      "sourceType": "news",
-      "section": "news",
-      "url": "https://www.hankyung.com/article/2026100792341",
-      "searchProvider": "NAVER API HUB",
-      "matchedKeywords": [
-        "배출권",
-        "탄소배출권"
-      ],
-      "duplicateSources": [
-        "hankyung.com"
-      ],
-      "searchProviders": [
-        "NAVER API HUB"
-      ],
-      "duplicateCount": 2,
       "region": "국내"
     },
     {
@@ -895,12 +953,14 @@
         "배출권거래제"
       ],
       "duplicateSources": [
+        "비즈니스포스트",
         "businesspost.co.kr"
       ],
       "searchProviders": [
+        "Google News RSS",
         "NAVER API HUB"
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "region": "해외"
     },
     {
