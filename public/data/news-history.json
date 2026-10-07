@@ -1,17 +1,64 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-08T04:03:26+09:00",
+  "generatedAt": "2026-10-08T08:13:44+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1070,
+  "itemCount": 1072,
   "earliestPublishedAt": "2026-08-06",
-  "latestPublishedAt": "2026-10-07",
+  "latestPublishedAt": "2026-10-08",
   "sourceCommitsScanned": 0,
   "sourceSnapshotsScanned": 0,
   "historicalRowsScanned": 0,
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "38a113e666eb520c",
+      "publishedAt": "2026-10-08",
+      "title": "SAF·CORSIA 의무화 코앞…항공업계, 연료· 배출권 확보 총력",
+      "category": "상쇄·외부사업",
+      "summary": "연말까지 2028년 1월 예정된 1단계 정산에 필요한 배출권 의 10% 이상을 단계적으로 확보할 계획이다. CORSIA는 국제항공 운항에서 발생하는 온실가스 배출량을 상쇄 하기 위한 국제 제도다. 현재 2024~2026년 1단계가...",
+      "source": "cstimes.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.cstimes.com/news/articleView.html?idxno=723221",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "cstimes.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "53fc83062abda0dc",
+      "publishedAt": "2026-10-08",
+      "title": "\"녹색 전환 위해 10년간 1천조원 규모 재원 투입\"",
+      "category": "제도",
+      "summary": "그는 유엔총회에서 \"대한민국은 '2035년 국가 온실가스 감축목표'를 세우고, 파리협정과 유엔 중심의 기후... 국내 배출량의 70% 이상을 관리하는 핵심 규제수단인 배출권 거래제가 효과적으로 작동해야 한다\"고 지적했다.",
+      "source": "labortoday.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.labortoday.co.kr/news/articleView.html?idxno=237127",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "labortoday.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
     {
       "id": "f26550a4ae916f2d",
       "publishedAt": "2026-10-07",
@@ -6928,9 +6975,9 @@
         "뉴스1",
         "Daum",
         "news1.kr",
+        "브릿지경제",
         "dailycar.co.kr",
         "kbsm.net",
-        "pinpointnews.co.kr",
         "머니투데이",
         "m-i.kr",
         "joongangenews.com",
@@ -6951,6 +6998,7 @@
         "kpenews.com",
         "wolyo.co.kr",
         "megaeconomy.co.kr",
+        "pinpointnews.co.kr",
         "etoday.co.kr",
         "digitaltoday.co.kr",
         "biztribune.co.kr",
@@ -6973,7 +7021,6 @@
         "글로벌이코노믹",
         "연합뉴스TV",
         "아시아경제",
-        "브릿지경제",
         "v.daum.net",
         "mt.co.kr",
         "finomy.com",
