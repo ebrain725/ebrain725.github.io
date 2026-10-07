@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-07T08:13:22+09:00",
+  "generatedAt": "2026-10-07T10:12:57+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1040,
+  "itemCount": 1041,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-07",
   "sourceCommitsScanned": 0,
@@ -58,6 +58,29 @@
       ],
       "searchProviders": [
         "Google News RSS"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "a272625d9a5aae67",
+      "publishedAt": "2026-10-07",
+      "title": "[전문] 위성곤 제주특별자치도지사, 취임 100일 기자회견",
+      "category": "제도",
+      "summary": "제주형 탄소시장 도 본격 추진해 탄소 감축이 곧 도민의 경제적 이익으로 돌아오는 기후경제수도 제주의 신화를 써 내려가겠습니다. 제주라는 무대를 세계로 넓혀가겠습니다. 2028년 G20 정상회의와 글로벌 AI 허브라는...",
+      "source": "headlinejeju.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.headlinejeju.co.kr/news/articleView.html?idxno=600093",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "headlinejeju.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
       ],
       "region": "국내"
     },
@@ -6187,11 +6210,11 @@
         "huffingtonpost.kr",
         "연합뉴스",
         "yna.co.kr",
-        "아시아경제",
         "view.asiae.co.kr",
         "newsis.com",
         "catchnews.kr",
         "thefairnews.co.kr",
+        "아시아경제",
         "브릿지경제",
         "v.daum.net",
         "mt.co.kr",
