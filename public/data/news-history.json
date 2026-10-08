@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-08T18:13:50+09:00",
+  "generatedAt": "2026-10-08T20:32:38+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1094,
+  "itemCount": 1095,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-08",
   "sourceCommitsScanned": 0,
@@ -12,6 +12,30 @@
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "874e6841712e9f05",
+      "publishedAt": "2026-10-08",
+      "title": "한국형 녹색대전환, '밑 빠진 독'에 1000조 붓기?",
+      "category": "시장·가격",
+      "summary": "핵심 규제는 국내 배출량의 70% 이상을 관리하는 배출권 거래제다. 최 변호사는 거래제가 제 기능을 못 하고... 배출권 가격도 낮다는 평가다. 정부는 2030년 가격을 톤당 4만~5만 원으로 전망한다. 지난 정부가 1차 탄소중립...",
+      "source": "newspenguin.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newspenguin.com/news/articleView.html?idxno=22277",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "newspenguin.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
     {
       "id": "32646c52526a16c0",
       "publishedAt": "2026-10-08",
@@ -387,6 +411,7 @@
         "biztribune.co.kr",
         "efnews.co.kr",
         "businessplus.kr",
+        "sports.hankooki.com",
         "wsobi.com",
         "public25.com",
         "fntimes.com",
@@ -397,7 +422,7 @@
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 10,
+      "duplicateCount": 11,
       "region": "국내"
     },
     {
@@ -7531,7 +7556,6 @@
         "globale.co.kr",
         "newsroad.co.kr",
         "newsian.co.kr",
-        "매일일보",
         "edaily.co.kr",
         "sisacast.kr",
         "economist.co.kr",
@@ -7558,6 +7582,7 @@
         "newsis.com",
         "catchnews.kr",
         "thefairnews.co.kr",
+        "매일일보",
         "메트로신문",
         "연합뉴스TV",
         "글로벌이코노믹",
