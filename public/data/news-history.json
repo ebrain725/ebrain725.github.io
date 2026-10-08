@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-08T15:13:41+09:00",
+  "generatedAt": "2026-10-08T18:13:50+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1089,
+  "itemCount": 1094,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-08",
   "sourceCommitsScanned": 0,
@@ -145,6 +145,30 @@
       ],
       "duplicateSources": [
         "ekoreanews.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "af9bac9b724277ea",
+      "publishedAt": "2026-10-08",
+      "title": "오래가는 브랜드는 서두르지 않는다, 신간",
+      "category": "제도",
+      "summary": "제조 방식과 사업 모델, 탄소 배출권 사업은 하나의 본질을 가리킨다고 본다. '지속가능한 에너지 시대로의 전환을 앞당기는 것'이다. 책은 본질에 닿을 수 있다면 비효율도 마다하지 않는다고 분석한다. 세계 각국 정상의...",
+      "source": "hankyung.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.hankyung.com/article/202610081080i",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "hankyung.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -359,10 +383,68 @@
         "탄소배출권"
       ],
       "duplicateSources": [
+        "arunews.com",
+        "biztribune.co.kr",
+        "efnews.co.kr",
         "businessplus.kr",
-        "wsobi.com"
+        "wsobi.com",
+        "public25.com",
+        "fntimes.com",
+        "mediapen.com",
+        "apnews.kr",
+        "enetnews.co.kr"
       ],
       "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 10,
+      "region": "국내"
+    },
+    {
+      "id": "0dacff698ae5576c",
+      "publishedAt": "2026-10-08",
+      "title": "EU 강소국 슬로베니아, 개방성과 연결성이 경제 성장의 핵심",
+      "category": "제도",
+      "summary": "1% 7 Belektron 탄소 배출권 트레이딩 977.63 996.56 98.1% Impol 알루미늄 및 금속 가공 814.16 1,072.67 75.9% Revoz 완성차 제조 (르노 그룹) 731.95 753.81 97.1% Novartis Slovenia 제약·바이오 703.84 893.20 78.8% 자료: 슬로베니아 현지언론...",
+      "source": "dream.kotra.or.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://dream.kotra.or.kr/kotranews/cms/news/actionKotraBoardDetail.do?SITE_NO=3&MENU_ID=80&CONTENTS_NO=2&bbsGbn=242&bbsSn=242&pNttSn=244031",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "dream.kotra.or.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "25af918520792bcf",
+      "publishedAt": "2026-10-08",
+      "title": "CBAM 대응부터 탄소 배출권 발급까지…기업 실무자가 알아야 할 탄소 실...",
+      "category": "상쇄·외부사업",
+      "summary": "i-DEA, EU 탄소국경조정제도 대응·국내 탄소 배출권 외부사업 초급 및 전문가과정 운영 3개 과정 총 51차시... 탄소 배출권 발급 실무를 다루는 3개 교육과정을 운영한다. 교육은 'EU CBAM 확정기간 대응 실무 전문가과정...",
+      "source": "hellot.net",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.hellot.net/news/article.html?no=115346",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "헬로티",
+        "hellot.net"
+      ],
+      "searchProviders": [
+        "Google News RSS",
         "NAVER API HUB"
       ],
       "duplicateCount": 2,
@@ -394,6 +476,54 @@
       "region": "국내"
     },
     {
+      "id": "2d142469bdc50b3f",
+      "publishedAt": "2026-10-08",
+      "title": "AI 뇌절 파티 4: 월 1억을 배당 받는 사회",
+      "category": "제도",
+      "summary": "탄소 배출권 과 비슷한 방식인데, AI를 가동하는 연산 능력과 로봇 생산에 상한을 정하고, 허가권을 기업에 파는 식이다. 시나리오에서는 피지컬 AI 한 대의 허가권이 20만 달러(2억 6천만 원), H100 칩 수준의 연산 능력은...",
+      "source": "ddanzi.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.ddanzi.com/896568011",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "ddanzi.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "302d54e9f8949caa",
+      "publishedAt": "2026-10-08",
+      "title": "10월 1주차 해외 ESG 핫클립",
+      "category": "제도",
+      "summary": "EU CBAM, WTO 분쟁 심리 절차 진입…한국도 제3자 참여 세계무역기구(WTO)가 EU 탄소국경조정제도(CBAM)와 배출권 거래제(ETS)를 둘러싼 분쟁을 심리하기 위한 패널을 설치했다. 한국도 제3자로 참여해 관련 논의에 의견을...",
+      "source": "impacton.net",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.impacton.net/news/articleView.html?idxno=30195",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "impacton.net"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
       "id": "67ded9b38e806c57",
       "publishedAt": "2026-10-08",
       "title": "'수소환원제철'로 탈 탄소 리드하는 포스코그룹···정부 'K-GX' 참여",
@@ -407,8 +537,10 @@
       "matchedKeywords": [
         "탄소시장"
       ],
-      "duplicateCount": 2,
+      "duplicateCount": 4,
       "duplicateSources": [
+        "econovill.com",
+        "pinpointnews.co.kr",
         "breaknews.com",
         "seoulfn.com"
       ],
@@ -7370,7 +7502,6 @@
         "cstimes.com",
         "digitalchosun.dizzo.com",
         "뉴스핌",
-        "메트로신문",
         "metroseoul.co.kr",
         "socialvalue.kr",
         "asiatime.co.kr",
@@ -7400,6 +7531,7 @@
         "globale.co.kr",
         "newsroad.co.kr",
         "newsian.co.kr",
+        "매일일보",
         "edaily.co.kr",
         "sisacast.kr",
         "economist.co.kr",
@@ -7426,6 +7558,7 @@
         "newsis.com",
         "catchnews.kr",
         "thefairnews.co.kr",
+        "메트로신문",
         "연합뉴스TV",
         "글로벌이코노믹",
         "아시아경제",
@@ -7463,7 +7596,6 @@
         "주간한국",
         "시사캐스트",
         "라이센스뉴스",
-        "매일일보",
         "lcnews.co.kr",
         "비즈월드",
         "yonhapnewstv.co.kr",
