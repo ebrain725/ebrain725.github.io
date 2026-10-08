@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-09T03:58:48+09:00",
+  "generatedAt": "2026-10-09T08:12:48+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1097,
+  "itemCount": 1098,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-08",
   "sourceCommitsScanned": 0,
@@ -151,6 +151,29 @@
       ],
       "duplicateCount": 1,
       "region": "국내"
+    },
+    {
+      "id": "8c22beb3fac89599",
+      "publishedAt": "2026-10-08",
+      "title": "중국 탄소시장 9억6100만t 거래…석유화학·화학 CO₂ 배출 80%까지 통제 확대 추진",
+      "category": "제도",
+      "summary": "중국 탄소시장 9억6100만t 거래…석유화학·화학 CO₂ 배출 80%까지 통제 확대 추진 넷제로뉴스",
+      "source": "넷제로뉴스",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFB2ZHo4X3FxSWJYbVZXN0t6VldfX1k2U1RMNVROdXhxWFJLNHZkNzN2T19uenRjVVlPRUViZ0JyenhpYkh5THlfVElsQVRFV2ltRV9KX0xrT2NCRGRnQ1R5WElWU3BsTUk4MVHSAW5BVV95cUxOR0pFeW1mVjlmaGdhNlhQMklhRHNPaE5zRE5mU1ZfWkhjU2N1TTFncTQ3TjA3c1ZYTmRSTFpUaVIzZmJBdDMwUnFtNmhHbm1YTVgyM2JyOWJrdU9nVDZJbTNGbkVYVTduTHZfSk16Zw?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "넷제로뉴스"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "해외"
     },
     {
       "id": "91d5f05a52b34fd7",
