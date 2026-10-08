@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-08T08:13:44+09:00",
+  "generatedAt": "2026-10-08T10:13:00+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1072,
+  "itemCount": 1077,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-08",
   "sourceCommitsScanned": 0,
@@ -12,6 +12,75 @@
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "32646c52526a16c0",
+      "publishedAt": "2026-10-08",
+      "title": "포스코그룹, K-GX 전략 참여…하이렉스 기반 철강 탈 탄소 생태계 구축",
+      "category": "제도",
+      "summary": "기업은 혁신기술 개발과 설비 전환을 담당하고, 정부는 청정에너지 공급 기반과 저 탄소 시장 조성, 인프라 구축을 지원하는 방식이다. 철강 GX의 출발점으로는 포항을 중심으로 한 동남권 클러스터를 제시했다....",
+      "source": "pinpointnews.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=493550",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "pinpointnews.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "034ca854320bf3b2",
+      "publishedAt": "2026-10-08",
+      "title": "포스코, 정부 K-GX 참여…“값싼 청정에너지·저 탄소 철강 시장 필요”",
+      "category": "제도",
+      "summary": "이주태 포스코홀딩스 사장은 “정부의 K-GX 전략 아래 민관이 팀업을 이뤄 저 탄소 시장 창출과 경제적인 청정에너지 공급을 바탕으로 탈탄소 산업 생태계를 만들어가겠다\"고 말했다. 포스코그룹은 향후 철강뿐 아니라...",
+      "source": "ekn.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.ekn.kr/web/view.php?key=20261008022213629",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "ekn.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "43c593ccb760fa3b",
+      "publishedAt": "2026-10-08",
+      "title": "수소환원제철 실증에 7868억…태양광·이차전지 국내생산 세액공제",
+      "category": "제도",
+      "summary": "국가 온실가스 감축목표(NDC)와 현장 실증 여건을 고려한 단계별 목표를 설정할 계획이다. 전기 NCC 개발 823억... 내년 상반기에는 화석연료를 사용하는 설비를 전기로 가동하는 설비로 바꾼 기업에 배출권 할당 혜택을...",
+      "source": "esgeconomy.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.esgeconomy.com/news/articleView.html?idxno=16941",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "esgeconomy.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
     {
       "id": "38a113e666eb520c",
       "publishedAt": "2026-10-08",
@@ -33,6 +102,29 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "67ded9b38e806c57",
+      "publishedAt": "2026-10-08",
+      "title": "'수소환원제철'로 탈 탄소 리드하는 포스코그룹···정부 'K-GX' 참여",
+      "category": "제도",
+      "summary": "이주태 포스코홀딩스 대표이사 사장은 \"철은 지난 반세기 이상 '산업의 쌀'로서 대한민국 제조업 부흥을 든든하게 받쳐왔다\"며 \"정부의 K-GX 전략에 발맞춰 민관이 견고한 팀업을 이뤄 저 탄소 시장 을 열고 청정에너지...",
+      "source": "seoulfn.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.seoulfn.com/news/articleView.html?idxno=639631",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "seoulfn.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
       "region": "국내"
     },
     {
@@ -636,6 +728,30 @@
       ],
       "duplicateSources": [
         "hankyung.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "4ef9587d51aa86d4",
+      "publishedAt": "2026-10-07",
+      "title": "[패트롤] 경기도-동두천시-남양주시-양주시-의정부시",
+      "category": "제도",
+      "summary": "운영, 배출권 거래제 관리 등에 행정력을 집중하기로 했다. 아울러 기존 에너지관리팀을 신재생에너지팀으로 변경해 연료전지 발전사업, 태양광 발전 등 신재생에너지 보급 확대와 에너지 전환 정책도 적극 추진한다....",
+      "source": "ekn.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.ekn.kr/web/view.php?key=20261007020373562",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "ekn.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -6962,7 +7078,6 @@
         "cstimes.com",
         "digitalchosun.dizzo.com",
         "뉴스핌",
-        "메트로신문",
         "metroseoul.co.kr",
         "socialvalue.kr",
         "asiatime.co.kr",
@@ -7018,6 +7133,7 @@
         "newsis.com",
         "catchnews.kr",
         "thefairnews.co.kr",
+        "메트로신문",
         "글로벌이코노믹",
         "연합뉴스TV",
         "아시아경제",
