@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-08T20:32:38+09:00",
+  "generatedAt": "2026-10-08T22:56:49+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1095,
+  "itemCount": 1097,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-08",
   "sourceCommitsScanned": 0,
@@ -298,6 +298,29 @@
       "region": "국내"
     },
     {
+      "id": "7df39c79098f8fc4",
+      "publishedAt": "2026-10-08",
+      "title": "【공시 모니터링】 현대차, 폭염· 전기차 시장 확대에 대한 재무영향 ...",
+      "category": "제도",
+      "summary": "물리적 위험은 사업장별 재해 영향을 금액으로 산정했고, 전환위험은 배출권 비용으로 계산했다. 전동화... 현재 배출 집약도를 유지하고 배출권 무상할당 비율을 70%로 가정하면 2035년 959억~3318억원의 배출부채가...",
+      "source": "impacton.net",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.impacton.net/news/articleView.html?idxno=30173",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "impacton.net"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "a308a7c439ca7e14",
       "publishedAt": "2026-10-08",
       "title": "[특별기고] 농가·기업·소비자 잇는 '탄소 플랫폼'…새마을운동의 새로...",
@@ -424,6 +447,31 @@
       ],
       "duplicateCount": 11,
       "region": "국내"
+    },
+    {
+      "id": "c82273e701eb8c0a",
+      "publishedAt": "2026-10-08",
+      "title": "EU, 미국 빅테크 조준 '기업 부담금' 손질…대기업 과세 강화 검토",
+      "category": "제도",
+      "summary": "EU는 탄소 배출권 거래제와 탄소국경조정제도(CBAM), 미수거 전자폐기물 부담금 등을 포함한 신규 자체 재원 전체로는 연간 약 585억 유로(약 88조 원)를 조달한다는 계획이다. 다만 신규 EU 자체 재원을 도입하려면 27개...",
+      "source": "mt.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.mt.co.kr/world/2026/10/08/2026100821003290310",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "mt.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
     },
     {
       "id": "0dacff698ae5576c",
@@ -7556,6 +7604,7 @@
         "globale.co.kr",
         "newsroad.co.kr",
         "newsian.co.kr",
+        "매일일보",
         "edaily.co.kr",
         "sisacast.kr",
         "economist.co.kr",
@@ -7582,7 +7631,6 @@
         "newsis.com",
         "catchnews.kr",
         "thefairnews.co.kr",
-        "매일일보",
         "메트로신문",
         "연합뉴스TV",
         "글로벌이코노믹",
