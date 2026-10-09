@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-09T15:13:14+09:00",
+  "generatedAt": "2026-10-09T18:12:40+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1100,
+  "itemCount": 1104,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-09",
   "sourceCommitsScanned": 0,
@@ -56,6 +56,30 @@
       "searchProviders": [
         "NAVER API HUB"
       ],
+      "region": "국내"
+    },
+    {
+      "id": "9cb429862bfc50b9",
+      "publishedAt": "2026-10-09",
+      "title": "[책마을] 숏폼 시대에 느린 마케팅이 필요한 이유",
+      "category": "제도",
+      "summary": "제조 방식과 사업 모델, 탄소 배출권 사업은 하나의 본질을 가리킨다고 본다. ‘지속가능한 에너지 시대로의 전환을 앞당기는 것’이다. 세계 각국 정상의 만찬장에 와인을 올리는 코코 팜 와이너리도 대표적인 예로 든다....",
+      "source": "hankyung.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.hankyung.com/article/2026100928311",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "hankyung.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
       "region": "국내"
     },
     {
@@ -435,6 +459,31 @@
       "searchProviders": [
         "Google News RSS"
       ],
+      "region": "국내"
+    },
+    {
+      "id": "903115cf9c16f685",
+      "publishedAt": "2026-10-08",
+      "title": "[에너지논단] 한국형 녹색대전환(K-GX) 전략을 보고",
+      "category": "제도",
+      "summary": "송전망과 저장장치가 뒷받침되지 못하면 생산된 전력은 버려지고, 배출권거래제 의 유상할당 확대 없이 보조금만 제공해서는 기업의 실질적인 재생전력 수요를 이끌어낼 수 없다. 정부가 제시한 재생에너지 100GW 목표는...",
+      "source": "energy-news.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=228860",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "유상할당"
+      ],
+      "duplicateSources": [
+        "energy-news.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
       "region": "국내"
     },
     {
@@ -1661,6 +1710,30 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "608e531ab06dd5b6",
+      "publishedAt": "2026-10-06",
+      "title": "베라, 탄소배출권 프로젝트 우선심사 대상 전면 확대",
+      "category": "제도",
+      "summary": "베라, 탄소배출권 프로젝트 우선심사 대상 전면 확대 넷제로뉴스",
+      "source": "넷제로뉴스",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1UX0ZrLTJ5YTQxYTIyZ2NYUmd3eG9uTUNjcEsxYW04S0VMOXNiV2pwRUhtOTBZYlBxb0ZKRmh4UVMwYjVMWm0yU0FyN2NQNTJoOUhJOVNabUFHLWwzaW9KNGpTelBXT1JibWfSAW5BVV95cUxQa0t0YjBJSzBWNUlnZ3E3dk4yZnVDUmt6QVpfeUFNMEpBRVUzN1oxQ0hBdXhsWE1oUEgwNndWbXhYN2VHVUc0YWRxVldJTTlBWFk3TDVzVERHTEplcnhxTDVjcnN4YUxEQmhSZnl1UQ?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "넷제로뉴스"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
       "region": "국내"
     },
     {
@@ -6955,6 +7028,29 @@
       "region": "국내"
     },
     {
+      "id": "90a472613c8b766b",
+      "publishedAt": "2026-09-28",
+      "title": "민간 탄소시장 탄소감축량 90% “그린워싱”",
+      "category": "제도",
+      "summary": "민간 탄소시장 탄소감축량 90% “그린워싱” 매일노동뉴스",
+      "source": "매일노동뉴스",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBoVEVjU3RPQUE5aVg0emJ1LXdKcC1hOFFQT09qeTBKSzFCRmczTW1jLU1tS1dsbTdqNGlqekd6TkxzOXJBanVubGxqTmYydXduai1HQ2dnUlR2MW5fQnJiR3lYTndUOTdFZW1sZGlfakU?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "매일노동뉴스"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "19027f2849d56b33",
       "publishedAt": "2026-09-28",
       "title": "민간 '탄소 감축 실적' 부적격 논란 커져, 연내 출범 자발적 탄소시장 제도 보완 시급",
@@ -7674,6 +7770,7 @@
         "e-science.co.kr",
         "weekly.hankooki.com",
         "whitepaper.co.kr",
+        "펜앤마이크",
         "ppss.kr",
         "globale.co.kr",
         "newsroad.co.kr",
@@ -7695,6 +7792,7 @@
         "newspim.com",
         "viva100.com",
         "dailypop.kr",
+        "이지경제",
         "sateconomy.co.kr",
         "ezyeconomy.com",
         "huffingtonpost.kr",
@@ -7725,8 +7823,6 @@
         "moneystorm.kr",
         "asiae.co.kr",
         "fetv.co.kr",
-        "펜앤마이크",
-        "이지경제",
         "2news.co.kr",
         "글로벌E",
         "pennmike.com",
