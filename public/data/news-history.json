@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-09T22:41:33+09:00",
+  "generatedAt": "2026-10-10T03:31:46+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
   "itemCount": 1104,
@@ -1779,16 +1779,16 @@
         "탄소배출권"
       ],
       "duplicateSources": [
-        "뉴데일리 대구경북",
         "tk.newdaily.co.kr",
         "가스신문",
+        "뉴데일리 대구경북",
         "gasnews.com",
         "tbc.co.kr",
         "Tbc.co.kr"
       ],
       "searchProviders": [
-        "Google News RSS",
-        "NAVER API HUB"
+        "NAVER API HUB",
+        "Google News RSS"
       ],
       "duplicateCount": 6,
       "region": "국내"
@@ -7747,6 +7747,7 @@
         "이투데이",
         "Daum",
         "뉴스핌",
+        "서울경제",
         "metroseoul.co.kr",
         "socialvalue.kr",
         "asiatime.co.kr",
@@ -7772,9 +7773,9 @@
         "whitepaper.co.kr",
         "펜앤마이크",
         "ppss.kr",
+        "글로벌E",
         "globale.co.kr",
         "newsroad.co.kr",
-        "뉴시안",
         "newsian.co.kr",
         "매일일보",
         "sisacast.kr",
@@ -7793,6 +7794,7 @@
         "newspim.com",
         "viva100.com",
         "dailypop.kr",
+        "이지경제",
         "sateconomy.co.kr",
         "ezyeconomy.com",
         "huffingtonpost.kr",
@@ -7802,7 +7804,7 @@
         "newsis.com",
         "catchnews.kr",
         "thefairnews.co.kr",
-        "이지경제",
+        "뉴시안",
         "메트로신문",
         "연합뉴스TV",
         "글로벌이코노믹",
@@ -7825,7 +7827,6 @@
         "asiae.co.kr",
         "fetv.co.kr",
         "2news.co.kr",
-        "글로벌E",
         "pennmike.com",
         "포춘코리아",
         "인사이트코리아",
@@ -7869,7 +7870,7 @@
         "NAVER API HUB",
         "Google News RSS"
       ],
-      "duplicateCount": 129,
+      "duplicateCount": 130,
       "region": "국내"
     },
     {
