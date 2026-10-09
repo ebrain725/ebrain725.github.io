@@ -1,7 +1,7 @@
 {
   "schemaVersion": "2.0",
   "requestedStartDate": "2015-01-01",
-  "verifiedAt": "2026-10-08T04:26:10+09:00",
+  "verifiedAt": "2026-10-10T03:54:12+09:00",
   "keywordExpansionVersion": "2026-09-11-v1-38-topics",
   "keywordRule": {
     "titleAndContent": [
@@ -123,19 +123,19 @@
     "notice": "기후부 공지·공고 전체 이력에서 핵심 7개는 제목·본문, 확대 23개는 제목으로 판정",
     "krx_notice": "한국거래소 배출권시장 공지사항의 2015-01-01 이후 일반 공지 전체"
   },
-  "officialItemCount": 1678,
+  "officialItemCount": 1681,
   "counts": {
-    "krx_notice": 314,
-    "notice": 433,
-    "press": 931
+    "krx_notice": 315,
+    "notice": 434,
+    "press": 932
   },
   "directCounts": {
     "press": 434,
     "notice": 224
   },
   "relatedCounts": {
-    "press": 497,
-    "notice": 209
+    "press": 498,
+    "notice": 210
   },
   "earliest": {
     "krx_notice": "2015-01-07",
@@ -143,9 +143,9 @@
     "press": "2015-01-08"
   },
   "latest": {
-    "krx_notice": "2026-10-06",
-    "notice": "2026-10-07",
-    "press": "2026-10-02"
+    "krx_notice": "2026-10-08",
+    "notice": "2026-10-08",
+    "press": "2026-10-08"
   },
   "sourceAudit": [
     {
@@ -153,10 +153,10 @@
       "section": "press",
       "pagesFetched": 1,
       "rawRowsScanned": 1000,
-      "finalMergedItems": 931,
+      "finalMergedItems": 932,
       "directCount": 7,
       "relatedCount": 24,
-      "oldestSourceDateSeen": "2025-11-25",
+      "oldestSourceDateSeen": "2025-11-26",
       "crossedRequestedStart": true,
       "complete": true
     },
@@ -165,8 +165,8 @@
       "section": "notice",
       "pagesFetched": 1,
       "rawRowsScanned": 200,
-      "finalMergedItems": 433,
-      "directCount": 7,
+      "finalMergedItems": 434,
+      "directCount": 6,
       "relatedCount": 13,
       "oldestSourceDateSeen": "2026-06-09",
       "crossedRequestedStart": true,
@@ -177,7 +177,7 @@
       "section": "krx_notice",
       "pagesFetched": 33,
       "rawRowsScanned": 316,
-      "finalMergedItems": 314,
+      "finalMergedItems": 315,
       "directCount": null,
       "relatedCount": null,
       "oldestSourceDateSeen": "2014-12-18",
@@ -186,15 +186,15 @@
     }
   ],
   "validation": {
-    "itemCount": 1678,
+    "itemCount": 1681,
     "counts": {
-      "notice": 433,
-      "press": 931,
-      "krx_notice": 314
+      "notice": 434,
+      "press": 932,
+      "krx_notice": 315
     },
     "relatedCounts": {
-      "press": 497,
-      "notice": 209
+      "press": 498,
+      "notice": 210
     },
     "duplicateKeys": 0,
     "invalidDates": 0,
