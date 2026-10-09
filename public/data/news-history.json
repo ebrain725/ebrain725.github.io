@@ -1,17 +1,42 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-10T03:31:46+09:00",
+  "generatedAt": "2026-10-10T08:16:03+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1104,
+  "itemCount": 1105,
   "earliestPublishedAt": "2026-08-06",
-  "latestPublishedAt": "2026-10-09",
+  "latestPublishedAt": "2026-10-10",
   "sourceCommitsScanned": 0,
   "sourceSnapshotsScanned": 0,
   "historicalRowsScanned": 0,
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "48ab3dbcf87da099",
+      "publishedAt": "2026-10-10",
+      "title": "1000조 K-GX 성공하려면…배출권·제도 뒷받침돼야 [이원희의 기후兵法...",
+      "category": "제도",
+      "summary": "정부의 K-GX 전략은 산업 탈 탄소 전환과 녹색산업 육성, 미래 시장 조성, 지역성장 등을 중심으로 향후 10년간 대규모 자금을 공급하는 것이 핵심이다. 철강·석유화학·시멘트·반도체·디스플레이·정유 등 다배출 산업의...",
+      "source": "ekn.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.ekn.kr/web/view.php?key=20261008028463817",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "에너지경제신문",
+        "ekn.kr"
+      ],
+      "searchProviders": [
+        "Google News RSS",
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 2,
+      "region": "국내"
+    },
     {
       "id": "51e726f63db7f8c1",
       "publishedAt": "2026-10-09",
@@ -7747,7 +7772,6 @@
         "이투데이",
         "Daum",
         "뉴스핌",
-        "서울경제",
         "metroseoul.co.kr",
         "socialvalue.kr",
         "asiatime.co.kr",
@@ -7773,9 +7797,9 @@
         "whitepaper.co.kr",
         "펜앤마이크",
         "ppss.kr",
-        "글로벌E",
         "globale.co.kr",
         "newsroad.co.kr",
+        "뉴시안",
         "newsian.co.kr",
         "매일일보",
         "sisacast.kr",
@@ -7794,7 +7818,6 @@
         "newspim.com",
         "viva100.com",
         "dailypop.kr",
-        "이지경제",
         "sateconomy.co.kr",
         "ezyeconomy.com",
         "huffingtonpost.kr",
@@ -7804,7 +7827,9 @@
         "newsis.com",
         "catchnews.kr",
         "thefairnews.co.kr",
-        "뉴시안",
+        "서울경제",
+        "글로벌E",
+        "이지경제",
         "메트로신문",
         "연합뉴스TV",
         "글로벌이코노믹",
