@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-09T13:13:25+09:00",
+  "generatedAt": "2026-10-09T15:13:14+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1099,
+  "itemCount": 1100,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-09",
   "sourceCommitsScanned": 0,
@@ -12,6 +12,29 @@
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "51e726f63db7f8c1",
+      "publishedAt": "2026-10-09",
+      "title": "정부, K-GX 시동…30만 톤 수소환원제철 실증 추진",
+      "category": "제도",
+      "summary": "…젝트 연계 향후 10년간 재정·기후금융 1000조 원 투입…민간도 220조 원 규모 투자 철강 등 5대 다배출 업종 전환 '초점'…청정에너지·저탄소 시장 기반 구축",
+      "source": "ferrotimes.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.ferrotimes.com/news/articleView.html?idxno=50797",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "ferrotimes.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
     {
       "id": "dd7e5fa0d22708f6",
       "publishedAt": "2026-10-09",
@@ -12806,9 +12829,9 @@
         "KAU25"
       ],
       "duplicateSources": [
-        "Daum",
         "연합뉴스",
         "yna.co.kr",
+        "Daum",
         "v.daum.net"
       ],
       "searchProviders": [
@@ -15724,7 +15747,8 @@
       "duplicateSources": [
         "news1.kr",
         "v.daum.net",
-        "뉴스1"
+        "뉴스1",
+        "Daum"
       ],
       "searchProviders": [
         "NAVER API HUB",
