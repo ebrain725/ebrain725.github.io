@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-10T10:13:22+09:00",
+  "generatedAt": "2026-10-10T13:13:00+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1106,
+  "itemCount": 1109,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-10",
   "sourceCommitsScanned": 0,
@@ -12,6 +12,30 @@
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "174b58d63e6cabc2",
+      "publishedAt": "2026-10-10",
+      "title": "탄소배출권 신탁 'CTWO', 3분기 주당 순자산가치 18.94달러...배출권 가격 상승에 분기 순이익",
+      "category": "시장·가격",
+      "summary": "탄소배출권 신탁 'CTWO', 3분기 주당 순자산가치 18.94달러...배출권 가격 상승에 분기 순이익 데이터투자",
+      "source": "데이터투자",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1wZ3RSeFJ6X2RGRTVIZFFqM0dPQUdBenlyczB5ei14Z201VWsweDRjc08tYTV3S3Vfc0xOSVM1M3lkVkt3LTVlQ2hSeXVDX01SeHA1MlE4YlktLVZOakxnVEVuNHdic2tzc2hSWUxhcHlud00?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "데이터투자"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "국내"
+    },
     {
       "id": "15b0a99e5af77f72",
       "publishedAt": "2026-10-10",
@@ -36,6 +60,29 @@
       ],
       "duplicateCount": 1,
       "region": "해외"
+    },
+    {
+      "id": "4c987c86c7b6a16c",
+      "publishedAt": "2026-10-10",
+      "title": "[해설] '한국형 녹색대전환(K-GX)', 경제 대도약 청사진",
+      "category": "제도",
+      "summary": "최근 정부가 발표한 '한국형 녹색대전환(K-GX)' 추진은 녹색 혁신을 통한 경제 대도약의 청사진이자 국가... 전환금융 도입 및 탄소시장( ETS ·VCM)의 고도화 다배출 업종의 저탄소 전환을 안정적으로 뒷받침하기 위해...",
+      "source": "todayenergy.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.todayenergy.kr/news/articleView.html?idxno=304019",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateSources": [
+        "todayenergy.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
     },
     {
       "id": "48ab3dbcf87da099",
@@ -556,6 +603,29 @@
       ],
       "searchProviders": [
         "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "94c9649ba4e8b9f2",
+      "publishedAt": "2026-10-08",
+      "title": "[대구광역시] '매립가스' 난방열 · 배출권 됐다...전국 지방정부 최초, 유엔기후변화협약 '청정개발체제사업' 등록",
+      "category": "제도",
+      "summary": "[대구광역시] '매립가스' 난방열 · 배출권 됐다...전국 지방정부 최초, 유엔기후변화협약 '청정개발체제사업' 등록 한국지방정부신문",
+      "source": "한국지방정부신문",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5yMTdxamdGS21oNFV4TGNBaURCbnkxUG56aHVPd1FPQ1NWNUdhcm1XR0lHOEZuZnBQMmMxMUpSbTl1bFJCdEV1TGpmeGxQNXFyak1WMzdLRW9zQURsWHNiWFdTbjdkb0tiVjdHRHFRY0lrUQ?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "한국지방정부신문"
+      ],
+      "searchProviders": [
+        "Google News RSS"
       ],
       "region": "국내"
     },
@@ -7823,7 +7893,6 @@
         "ppss.kr",
         "globale.co.kr",
         "newsroad.co.kr",
-        "뉴시안",
         "newsian.co.kr",
         "매일일보",
         "sisacast.kr",
@@ -7852,6 +7921,7 @@
         "newsis.com",
         "catchnews.kr",
         "thefairnews.co.kr",
+        "뉴시안",
         "paxetv.com",
         "서울경제",
         "글로벌E",
