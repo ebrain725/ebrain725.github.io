@@ -1,17 +1,67 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-11T02:27:15+09:00",
+  "generatedAt": "2026-10-11T08:12:56+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1109,
+  "itemCount": 1111,
   "earliestPublishedAt": "2026-08-06",
-  "latestPublishedAt": "2026-10-10",
+  "latestPublishedAt": "2026-10-11",
   "sourceCommitsScanned": 0,
   "sourceSnapshotsScanned": 0,
   "historicalRowsScanned": 0,
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "89c6b3e2050f5663",
+      "publishedAt": "2026-10-11",
+      "title": "탄소값 오르고 쇳물 출처까지…복잡해지는 철강 수출",
+      "category": "유상경매",
+      "summary": "분기별 인증서 가격은 EU 배출권 거래시스템(EU ETS)에서 낙찰 가격의 평균으로 계산된다. 즉, EU 배출권 가격도 상승하고 있다는 의미다. 이와 관련해서는 탄소시장 분석업체 비트(Veyt)가 지난달 16일 공개한 분석에 다르면...",
+      "source": "dt.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.dt.co.kr/article/12088245?ref=naver",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소시장"
+      ],
+      "duplicateSources": [
+        "dt.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "f5e498ba71b10db4",
+      "publishedAt": "2026-10-11",
+      "title": "생산 줄어든 시멘트업계, 탄소 배출권 적극 처분…\"안 팔면 이월도 못해...",
+      "category": "제도",
+      "summary": "배출권을 시장 에 적극 처분하고 있다는 분석이다. 지난해 한일시멘트의 탄소 배출부채 환입액은 25억 7872만 원으로, 전년(9억9012만원) 대비 160%(15억8860만원) 급증했다. 탄소 배출권 관련 회계 항목은 기타이익이 아닌...",
+      "source": "newspim.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newspim.com/news/view/20261008001232",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "뉴스핌",
+        "newspim.com"
+      ],
+      "searchProviders": [
+        "Google News RSS",
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 2,
+      "region": "국내"
+    },
     {
       "id": "174b58d63e6cabc2",
       "publishedAt": "2026-10-10",
@@ -1388,12 +1438,14 @@
         "탄소배출권"
       ],
       "duplicateSources": [
+        "KBS 뉴스",
         "kbs.co.kr"
       ],
       "searchProviders": [
+        "Google News RSS",
         "NAVER API HUB"
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "region": "국내"
     },
     {
@@ -7867,7 +7919,6 @@
         "이투데이",
         "Daum",
         "뉴스핌",
-        "팍스경제TV",
         "메트로신문",
         "metroseoul.co.kr",
         "socialvalue.kr",
@@ -7898,7 +7949,6 @@
         "뉴시안",
         "newsian.co.kr",
         "매일일보",
-        "마켓인",
         "sisacast.kr",
         "economist.co.kr",
         "kpenews.com",
@@ -7915,7 +7965,6 @@
         "newspim.com",
         "viva100.com",
         "dailypop.kr",
-        "이지경제",
         "sateconomy.co.kr",
         "ezyeconomy.com",
         "huffingtonpost.kr",
@@ -7925,6 +7974,9 @@
         "newsis.com",
         "catchnews.kr",
         "thefairnews.co.kr",
+        "팍스경제TV",
+        "마켓인",
+        "이지경제",
         "paxetv.com",
         "서울경제",
         "글로벌E",
