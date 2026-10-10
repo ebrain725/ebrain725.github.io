@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-10T08:16:03+09:00",
+  "generatedAt": "2026-10-10T10:13:22+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1105,
+  "itemCount": 1106,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-10",
   "sourceCommitsScanned": 0,
@@ -12,6 +12,31 @@
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "15b0a99e5af77f72",
+      "publishedAt": "2026-10-10",
+      "title": "에코아이, 탄소크레딧 판매 회복 기대…항공 탄소시장 진출 주목",
+      "category": "상쇄·외부사업",
+      "summary": "온실가스 감축사업 전문기업 에코아이가 국제항공 탄소 상쇄 시장 진입과 글로벌 탄소 배출권 거래 회복을... 유럽연합(EU)과 영국의 탄소 배출권 시장에서도 배출권 을 매입·판매하며 사업 영역을 넓히고 있다. 탄소...",
+      "source": "pinpointnews.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=494043",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장",
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "pinpointnews.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
     {
       "id": "48ab3dbcf87da099",
       "publishedAt": "2026-10-10",
@@ -7778,7 +7803,6 @@
         "getnews.co.kr",
         "g-enews.com",
         "sedaily.com",
-        "paxetv.com",
         "tf.co.kr",
         "smarttoday.co.kr",
         "뉴스1",
@@ -7818,6 +7842,7 @@
         "newspim.com",
         "viva100.com",
         "dailypop.kr",
+        "이지경제",
         "sateconomy.co.kr",
         "ezyeconomy.com",
         "huffingtonpost.kr",
@@ -7827,9 +7852,9 @@
         "newsis.com",
         "catchnews.kr",
         "thefairnews.co.kr",
+        "paxetv.com",
         "서울경제",
         "글로벌E",
-        "이지경제",
         "메트로신문",
         "연합뉴스TV",
         "글로벌이코노믹",
