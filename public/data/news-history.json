@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-11T10:13:19+09:00",
+  "generatedAt": "2026-10-11T13:13:16+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1112,
+  "itemCount": 1113,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-11",
   "sourceCommitsScanned": 0,
@@ -29,6 +29,30 @@
       ],
       "duplicateSources": [
         "g-enews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "eef9d9739df4af9e",
+      "publishedAt": "2026-10-11",
+      "title": "판가 올린 철강 빅2, 3분기 실적 개선 ‘기대 이하’…판매량에 온도차",
+      "category": "상쇄·외부사업",
+      "summary": "일부 상쇄 했다는 평가다. 여기에 판매량 차이가 양사의 실적 개선폭을 갈랐다는 분석이다. 포스코는 4분기... 이재윤 산업연구원은 현대제철이 비용 측면에서도 상대적으로 불리하다며 전력비와 탄소 배출권 을 부담...",
+      "source": "metroseoul.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.metroseoul.co.kr/article/20261011500083",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "metroseoul.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -7487,7 +7511,6 @@
         "todayeconomic.com",
         "widedaily.com",
         "bizwnews.com",
-        "inthenews.co.kr",
         "mediapen.com",
         "financialpost.co.kr",
         "job-post.co.kr",
@@ -7500,6 +7523,7 @@
         "wsobi.com",
         "news1.kr",
         "ftoday.co.kr",
+        "inthenews.co.kr",
         "sateconomy.co.kr",
         "lcnews.co.kr",
         "etoday.co.kr",
@@ -7943,6 +7967,7 @@
         "이투데이",
         "Daum",
         "뉴스핌",
+        "팍스경제TV",
         "메트로신문",
         "metroseoul.co.kr",
         "socialvalue.kr",
@@ -7973,6 +7998,8 @@
         "뉴시안",
         "newsian.co.kr",
         "매일일보",
+        "마켓인",
+        "inthenews.co.kr",
         "sisacast.kr",
         "economist.co.kr",
         "kpenews.com",
@@ -7998,8 +8025,6 @@
         "newsis.com",
         "catchnews.kr",
         "thefairnews.co.kr",
-        "팍스경제TV",
-        "마켓인",
         "이지경제",
         "paxetv.com",
         "서울경제",
@@ -8042,7 +8067,6 @@
         "kfenews.co.kr",
         "뉴시스",
         "widedaily.com",
-        "inthenews.co.kr",
         "mediapen.com",
         "dealsitetv.com",
         "iminju.net",
@@ -9512,8 +9536,8 @@
         "탄소배출권"
       ],
       "duplicateSources": [
-        "Daum",
         "브릿지경제",
+        "Daum",
         "v.daum.net",
         "viva100.com",
         "dt.co.kr"
