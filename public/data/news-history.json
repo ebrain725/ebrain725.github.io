@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-11T18:13:20+09:00",
+  "generatedAt": "2026-10-11T19:58:44+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1115,
+  "itemCount": 1116,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-11",
   "sourceCommitsScanned": 0,
@@ -246,7 +246,8 @@
       "url": "https://www.ekn.kr/web/view.php?key=20261008028463817",
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
-        "배출권"
+        "배출권",
+        "배출권거래제"
       ],
       "duplicateSources": [
         "에너지경제신문",
@@ -322,6 +323,30 @@
       ],
       "duplicateSources": [
         "hankyung.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "a295d6581bac88b5",
+      "publishedAt": "2026-10-09",
+      "title": "[제2서울핀테크랩 스타트업 CEO] 난방약자와 기후투자자를 연결하는 히...",
+      "category": "제도",
+      "summary": "전력수요관리, 탄소배출권 , 재생 열 인증서를 거래하는 시스템을 개발하여 플랫폼을 고도화하고자 한다”고 말했다. “이러한 플랫폼을 통해서 고객에게 구독서비스가 단순히 비싼 초기 투자비를 해소해 주는 것뿐만...",
+      "source": "magazine.hankyung.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://magazine.hankyung.com/job-joy/article/202610093106d",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "magazine.hankyung.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
