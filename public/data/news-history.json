@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-11T22:21:05+09:00",
+  "generatedAt": "2026-10-12T02:46:38+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1118,
+  "itemCount": 1119,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-11",
   "sourceCommitsScanned": 0,
@@ -159,6 +159,30 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 2,
+      "region": "국내"
+    },
+    {
+      "id": "26721b2498194e62",
+      "publishedAt": "2026-10-11",
+      "title": "매립가스 자원화···탄소배출권 21만톤 신규 확보",
+      "category": "제도",
+      "summary": "매립가스 자원화···탄소배출권 21만톤 신규 확보 대구광역일보",
+      "source": "대구광역일보",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE4zbVc1bUJ2SFZzZ3gtQWhTZ0o0RFpmeElvbWpkalQ0NTVXcm9WQ21zQWhFMTc2dGNWek1DRFhhYXdCZklYT0t5ZklVQ1ZGYlZWNGdyV01EWXQ?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "대구광역일보"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
       "region": "국내"
     },
     {
@@ -8102,7 +8126,6 @@
         "smarttoday.co.kr",
         "뉴스1",
         "news1.kr",
-        "브릿지경제",
         "dailycar.co.kr",
         "kbsm.net",
         "머니투데이",
@@ -8136,6 +8159,7 @@
         "sentv.co.kr",
         "wowtv.co.kr",
         "newspim.com",
+        "브릿지경제",
         "viva100.com",
         "dailypop.kr",
         "sateconomy.co.kr",
