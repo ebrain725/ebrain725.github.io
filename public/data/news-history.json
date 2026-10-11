@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-11T19:58:44+09:00",
+  "generatedAt": "2026-10-11T22:21:05+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1116,
+  "itemCount": 1118,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-11",
   "sourceCommitsScanned": 0,
@@ -12,6 +12,29 @@
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "a16cdb94616d0202",
+      "publishedAt": "2026-10-11",
+      "title": "포스코그룹 탈 탄소 구축에 거는 기대",
+      "category": "제도",
+      "summary": "기업은 혁신기술 개발과 설비전환을 담당하고, 정부는 청정에너지 공급 기반과 저 탄소 시장 조성, 인프라 구축을 지원하는 방식으로 서로 역할을 분담하자는 것이다. 타이밍이 매우 적절한 제안이었다. 포스코그룹은...",
+      "source": "hidomin.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.hidomin.com/news/articleView.html?idxno=724401",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "hidomin.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
     {
       "id": "eca6870962509246",
       "publishedAt": "2026-10-11",
@@ -227,6 +250,30 @@
       ],
       "duplicateSources": [
         "todayenergy.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "a21c1182ce964b4c",
+      "publishedAt": "2026-10-10",
+      "title": "AI 데이터센터가 살린 철강…관세 50%에도 대미 수출 급증",
+      "category": "제도",
+      "summary": "그는 \"전기요금 보조, 고용 안정 지원 등 지역 차원에서 감당하기 어려운 과제는 중앙정부 차원의 정책적 검토가 필요하다\"며 \"산업전환기 배출권 유상할당 수익을 저탄소 고부가 전환과 에너지요금 보조에...",
+      "source": "newsis.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newsis.com/view/NISX20261006_0003815046",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "유상할당"
+      ],
+      "duplicateSources": [
+        "newsis.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -8041,10 +8088,10 @@
         "매일신문",
         "imaeil.com",
         "edaily.co.kr",
+        "글로벌이코노믹",
         "이투데이",
         "Daum",
         "뉴스핌",
-        "메트로신문",
         "metroseoul.co.kr",
         "socialvalue.kr",
         "asiatime.co.kr",
@@ -8100,6 +8147,7 @@
         "newsis.com",
         "catchnews.kr",
         "thefairnews.co.kr",
+        "메트로신문",
         "팍스경제TV",
         "마켓인",
         "이지경제",
@@ -8107,7 +8155,6 @@
         "서울경제",
         "글로벌E",
         "연합뉴스TV",
-        "글로벌이코노믹",
         "아시아경제",
         "v.daum.net",
         "mt.co.kr",
