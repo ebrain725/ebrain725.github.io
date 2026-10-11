@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-11T08:12:56+09:00",
+  "generatedAt": "2026-10-11T10:13:19+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1111,
+  "itemCount": 1112,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-11",
   "sourceCommitsScanned": 0,
@@ -12,6 +12,30 @@
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "eca6870962509246",
+      "publishedAt": "2026-10-11",
+      "title": "포스코 소폭 낮추고 현대제철 유지…美, 한국산 열연강판 상계관세 최종...",
+      "category": "제도",
+      "summary": "전력· 배출권 ·정책금융 등 검토 연방관보에 따르면 상무부는 지난 4월 10일 예비 결과를 공고하고... 공고에 첨부된 쟁점 목록에는 한국 정부의 전력 공급이 보조금에 해당하는지, 한국 배출권 거래제의 배출권 제공이...",
+      "source": "g-enews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.g-enews.com/view.php?ud=20261011094605536fbbec65dfb_1",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "g-enews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
     {
       "id": "89c6b3e2050f5663",
       "publishedAt": "2026-10-11",
