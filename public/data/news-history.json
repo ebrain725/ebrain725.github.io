@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-11T15:13:21+09:00",
+  "generatedAt": "2026-10-11T18:13:20+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1113,
+  "itemCount": 1115,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-11",
   "sourceCommitsScanned": 0,
@@ -61,6 +61,34 @@
       "region": "국내"
     },
     {
+      "id": "9848d1a65311576b",
+      "publishedAt": "2026-10-11",
+      "title": "탄소배출권 가격 급등…1년새 3배로 뛰었다",
+      "category": "시장·가격",
+      "summary": "지난 8월 거래가 종료된 KAU25 도 3만원 선에 육박한 2만9450원에 장을 마쳤다. 1년 전(8800원)보다 234.7% 뛰었다. 기업이 탄소 배출에 쓰는 비용이 1년 만에 3배 이상으로 늘었다는 뜻이다. 2015년 시작한 배출권거래제는...",
+      "source": "hankyung.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.hankyung.com/article/2026101144481",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권",
+        "배출권거래제",
+        "KAU25"
+      ],
+      "duplicateSources": [
+        "한국경제",
+        "hankyung.com"
+      ],
+      "searchProviders": [
+        "Google News RSS",
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 2,
+      "region": "국내"
+    },
+    {
       "id": "89c6b3e2050f5663",
       "publishedAt": "2026-10-11",
       "title": "탄소값 오르고 쇳물 출처까지…복잡해지는 철강 수출",
@@ -108,6 +136,30 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 2,
+      "region": "국내"
+    },
+    {
+      "id": "f6ad47254d12bbc9",
+      "publishedAt": "2026-10-11",
+      "title": "\"1년새 3배, 원유 수익률도 제쳤다\"...몸값 뛰는 탄소배출권",
+      "category": "제도",
+      "summary": "\"1년새 3배, 원유 수익률도 제쳤다\"...몸값 뛰는 탄소배출권 한국경제",
+      "source": "한국경제",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5fUnphd3ktSXkxbmZyWmFoSGM4SlNoam9rR205bUdqSmhlc3pDLTF2UkU4QVVkRTRXNHFjUTg4Q215Y0ROZ0FBcWtsYU1tVlJaZTFPcXg5SV9IZw?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "한국경제"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
       "region": "국내"
     },
     {
@@ -7967,7 +8019,6 @@
         "이투데이",
         "Daum",
         "뉴스핌",
-        "팍스경제TV",
         "메트로신문",
         "metroseoul.co.kr",
         "socialvalue.kr",
@@ -8024,6 +8075,7 @@
         "newsis.com",
         "catchnews.kr",
         "thefairnews.co.kr",
+        "팍스경제TV",
         "마켓인",
         "이지경제",
         "paxetv.com",
