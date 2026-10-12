@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-10-12T15:12:31+09:00",
+  "lastSync": "2026-10-12T18:16:03+09:00",
   "keywords": [
     "배출권",
     "배출권거래제",
@@ -27,10 +27,10 @@
     "Google News RSS",
     "NAVER API HUB"
   ],
-  "warning": null,
+  "warning": "기후부 보도자료: 키워드별 공식검색과 기본 RSS 복구에 모두 실패했습니다: 배출권: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 배출권거래제: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 유상할당: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 유상경매: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 탄소시장: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 시장안정화: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 상쇄배출권: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 기본 RSS 복구: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 기후부 공지·공고: 키워드별 공식검색과 기본 RSS 복구에 모두 실패했습니다: 배출권: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 배출권거래제: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 유상할당: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 유상경매: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 탄소시장: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 시장안정화: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 상쇄배출권: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out> | 기본 RSS 복구: www.mcee.go.kr: <urlopen error timed out> / mcee.go.kr: <urlopen error timed out>",
   "aiInsight": {
     "summary": "최근 공식자료의 직접적인 수급 변수는 유상경매입니다. 최근 경매가 높은 낙찰가로 소화돼 공급보다 이행수요가 강하다는 신호입니다.",
-    "generatedAt": "2026-10-12T15:12:31+09:00",
+    "generatedAt": "2026-10-12T18:16:03+09:00",
     "basisLatestDate": "2026-10-08",
     "basisCount": 10,
     "source": "fallback",
@@ -636,6 +636,29 @@
   ],
   "items": [
     {
+      "id": "16c449aae876403d",
+      "publishedAt": "2026-10-12",
+      "title": "해외서 온실가스 줄이면 국내 감축목표 하향…‘글로벌 탄소 시장 ’ 만...",
+      "category": "제도",
+      "summary": "정부가 해외에서 온실가스를 줄인 성과를 거래할 수 있는 새로운 탄소 시장 을 만든다. 정부는 12일 이형일 부총리 겸 재정경제부 장관 주재로 대외경제장관회의를 열어 ‘글로벌 고신뢰 탄소 시장 (Global Verified Carbon...",
+      "source": "donga.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.donga.com/news/Economy/article/all/20261012/134826189/1",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "donga.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "173502611c4adc16",
       "publishedAt": "2026-10-12",
       "title": "해외 탄소 감축 실적 거래 시장 내년 가동…한국거래소서 거래",
@@ -760,6 +783,30 @@
       "region": "국내"
     },
     {
+      "id": "e4a0d1c61924569c",
+      "publishedAt": "2026-10-12",
+      "title": "포스코 상계관세율 2.5배로…현대제철은 절반 수준 하락",
+      "category": "제도",
+      "summary": "포스코인터내셔널의 보조금 반영 여부와 한국의 전력요금· 탄소 배출권 제도 등이 심사 대상에 포함됐다.... 현지 생산은 미국 시장 에 제품을 공급하는 방식과 원가 구조를 바꿀 수 있지만, 공장 건설비와 가동 이후 원료...",
+      "source": "thetracker.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://thetracker.co.kr/View.aspx?No=4259903",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "thetracker.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
       "id": "0e6a49bdd634ca7d",
       "publishedAt": "2026-10-12",
       "title": "탄소시장 판 키우는 정부…국제표준 GVCM 내년 본격 가동",
@@ -779,6 +826,31 @@
         "newscape.co.kr"
       ],
       "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 2,
+      "region": "국내"
+    },
+    {
+      "id": "3090afc2b61f7adf",
+      "publishedAt": "2026-10-12",
+      "title": "탄소시장 ‘구매자’서 ‘설계자’로… 한국형 GVCM의 승부수",
+      "category": "제도",
+      "summary": "고신뢰 탄소시장 (GVCM)’ 구축에 나선다. 12일 재정경제부에 따르면 정부는 이날 제274차 대외경제장관회의에서 ‘GVCM 세부 추진 방안’을 발표하고, 11월 유엔기후변화협약 당사국총회(COP31)에서 참여국을 모으기로...",
+      "source": "dnews.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.dnews.co.kr/uhtml/view.jsp?idxno=202610121337507650176",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateSources": [
+        "대한경제",
+        "dnews.co.kr"
+      ],
+      "searchProviders": [
+        "Google News RSS",
         "NAVER API HUB"
       ],
       "duplicateCount": 2,
@@ -832,6 +904,29 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 3,
+      "region": "국내"
+    },
+    {
+      "id": "dfc0ae623a07e202",
+      "publishedAt": "2026-10-12",
+      "title": "정부, 온실가스 감축 실적 사고파는 ‘글로벌 탄소 시장’ 만든다",
+      "category": "제도",
+      "summary": "정부, 온실가스 감축 실적 사고파는 ‘글로벌 탄소 시장’ 만든다 동아일보",
+      "source": "동아일보",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFA3c1dEWjlnaGVOUGFmYzFzaVItekxydzBzUmxfcHVqTEhfRE5INDByY3dBSWc2dkZLdWlEVzhvU2RIdTVfMWNZSGYxMDBXOWtTNS1qLXp5eXZCN3NLYVlXenBWSHI1QdIBZkFVX3lxTFA3c1dEWjlnaGVOUGFmYzFzaVItekxydzBzUmxfcHVqTEhfRE5INDByY3dBSWc2dkZLdWlEVzhvU2RIdTVfMWNZSGYxMDBXOWtTNS1qLXp5eXZCN3NLYVlXenBWSHI1QQ?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "동아일보"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
       "region": "국내"
     },
     {
@@ -893,6 +988,29 @@
       "region": "국내"
     },
     {
+      "id": "0ba7aa78fabc293e",
+      "publishedAt": "2026-10-12",
+      "title": "정부, 글로벌 고신뢰 탄소시장 시동...내년 발행기구 구성",
+      "category": "제도",
+      "summary": "‘블록체인 활용’ 글로벌 탄소시장 정부, 내년 발행기구 구성해 가동 정부가 해외 온실가스 감축 실적을 거래하는 ‘글로벌 고신뢰 탄소시장 (GVCM)’을 내년부터 본격 가동한다. 감축 실적을 탄소 크레딧으로 발행해...",
+      "source": "mk.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.mk.co.kr/article/12173656",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "mk.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "a2aca96727304eb2",
       "publishedAt": "2026-10-12",
       "title": "정부, 개도국과 탄소크레딧 시장 구축…내년 발행기구 출범 목표",
@@ -909,6 +1027,52 @@
       ],
       "duplicateSources": [
         "ajunews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "00e45e4289fb750a",
+      "publishedAt": "2026-10-12",
+      "title": "정부, 3조 규모 '해외건설 신전략펀드' 조성…해외진출 기반 강화",
+      "category": "제도",
+      "summary": "GVCM은 기존 국제 탄소시장 보다 신뢰도를 높여서 글로벌 거래 활성화가 가능하도록 유엔기후변화협약, 글로벌녹색성장기구와 협력해 구축 중인 국제 탄소시장 이다. GVCM은 규제시장과 자발적 시장에서 모두 활용할 수...",
+      "source": "korea.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148973316&call_from=naver_news",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "korea.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "f68b76a1536415e1",
+      "publishedAt": "2026-10-12",
+      "title": "정부 '온실가스 감축' 글로벌 스탠다드 구축 본격화, 해외실적 국내 활...",
+      "category": "상쇄·외부사업",
+      "summary": "국내 배출권 시장에 쓰는 것이나 국제항공 탄소 상쇄 ·감축제도(CORSIA)에서도 끌 수 있데 인증을 추진하려고 하고 있다\"고 말했다. CORSIA는 국제민간항공기구(ICAO)가 국제선 항공편에서 발생하는 이산화탄소 배출 증가분을...",
+      "source": "businesspost.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.businesspost.co.kr/BP?command=article_view&num=449096",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "businesspost.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -1020,6 +1184,30 @@
       "region": "국내"
     },
     {
+      "id": "3cf116fea8e868fe",
+      "publishedAt": "2026-10-12",
+      "title": "소가 배출하는 메탄 실시간 측정… \"커넥티드 카우로 축산계 '테슬라' 도...",
+      "category": "제도",
+      "summary": "박차 \"탄소 배출권 시장 진입이 목표\" \"커넥티드 카는 들어보셨어도 '커넥티드 카우'는 처음 들어보셨죠?... 탄소 배출권 시장에 진입하는 것이 핵심이다. 박 대표는 \"2028년 베라나 골드스탠더드 등 국제 자발적 탄소 배출권 ...",
+      "source": "mk.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.mk.co.kr/article/12173690",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "mk.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "83bec247cec91fdf",
       "publishedAt": "2026-10-12",
       "title": "배출량 산정자 역량 평가하는 등록제 등장…ISEP, 역량 평가 기준 마련",
@@ -1060,6 +1248,54 @@
       ],
       "duplicateSources": [
         "impacton.net"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "712f22933dff9e14",
+      "publishedAt": "2026-10-12",
+      "title": "동해 폐 가스 전 철거 나선 산업부",
+      "category": "시장·가격",
+      "summary": "그러나 탄소를 포집해 바닷속에 묻는 데 드는 비용에 비해 탄소 배출권 가격이 턱없이 낮아 예비타당성조사... ◇“기후부, CCU 기술 육성에 더 무게” 철강과 석유화학 등 산업계는 2035년 국가 온실가스 감축목표(NDC)...",
+      "source": "hankyung.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.hankyung.com/article/2026101270411",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "hankyung.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "4b4a6957fc92bffc",
+      "publishedAt": "2026-10-12",
+      "title": "니켈·코발트 없는 LFP 배터리도 쓸까... 폴스타가 '새 배터리' 검토하는...",
+      "category": "상쇄·외부사업",
+      "summary": "폴스타 0 프로젝트는 탄소 배출권 구매나 나무 심기 등 상쇄 방식에 의존하지 않고, 원재료 채굴부터 부품 생산과 차량 제조에 이르는 과정에서 온실가스 배출을 제거하는 것을 목표로 한다.당초 2030년까지...",
+      "source": "insight.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.insight.co.kr/news/577422",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "insight.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -1173,6 +1409,29 @@
       "region": "국내"
     },
     {
+      "id": "27880b527082bd1c",
+      "publishedAt": "2026-10-12",
+      "title": "“해외건설 수주 지원” 3조 新전략펀드 조성",
+      "category": "제도",
+      "summary": "해외 온실가스 감축 실적을 거래하는 ‘글로벌 고신뢰 탄소시장 (GVCM)’은 내년 본격 운영을 추진한다. 탄소감축 실적의 신뢰성을 높이기 위해 핵심 정보를 블록체인에 기록하고, 한국거래소를 통한 거래 체계를 마련할...",
+      "source": "biz.heraldcorp.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://biz.heraldcorp.com/article/10899468?ref=naver",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "biz.heraldcorp.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "deab85af2a2ea28b",
       "publishedAt": "2026-10-12",
       "title": "‘글로벌 고신뢰 탄소시장 ’ 내년부터 운영",
@@ -1223,6 +1482,55 @@
       "region": "국내"
     },
     {
+      "id": "9fad81c21fc8b92c",
+      "publishedAt": "2026-10-12",
+      "title": "[알림] 제16회 에너지·탄소 포럼 개최합니다",
+      "category": "제도",
+      "summary": "EU-ETS( 배출권 거래제)와 FuelEU Maritime(연료규제)은 2025년부터 유럽 항만을 오가는 선박에 적용되는 탄소... 핵심 전략은 저탄소 연료 전환, 운항 효율화, 탄소 배출권 헤징 등을 통한 리스크 관리입니다. 이에...",
+      "source": "seoulfn.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.seoulfn.com/news/articleView.html?idxno=639867",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "seoulfn.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
+      "id": "930bcdc7266d062c",
+      "publishedAt": "2026-10-12",
+      "title": "[살맛나는 세상 이야기] 하나증권, 이웃 곁에 오래 잇는 나눔…함께 키...",
+      "category": "상쇄·외부사업",
+      "summary": "해외 사업에서 확보한 탄소 배출권 은 국내의 환경 실천에도 활용됐다. 하나증권은 대전하나시티즌의... 탄소 배출권 을 활용한 상쇄 업무를 수행했다. 환경 사업을 지원하는 금융 역량을 구단의 탄소중립 실천과 연결한...",
+      "source": "metroseoul.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.metroseoul.co.kr/article/20261012500454",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "metroseoul.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "b4fc722c34684694",
       "publishedAt": "2026-10-12",
       "title": "[박수연 칼럼] K-시멘트 체질 개선 시동…관건은 수익성과 저탄소 설비...",
@@ -1264,6 +1572,30 @@
       ],
       "duplicateSources": [
         "hankyung.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "a582b1c34ac5af6c",
+      "publishedAt": "2026-10-12",
+      "title": "EU CBAM 인증서 가격 12만원대로 '껑충'…한국 기업 대응은",
+      "category": "유상경매",
+      "summary": "실제 제출 수량도 제품에 내재된 배출량 전체가 아니라, EU 배출권 거래제의 무상할당에 상응하는 조정과... EC는 유럽연합 배출권 거래제(EU Emissions Trading System·EU ETS)의 공식 경매 낙찰가격을 경매 물량으로 가중평균해...",
+      "source": "esgeconomy.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.esgeconomy.com/news/articleView.html?idxno=16976",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "esgeconomy.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -3722,7 +4054,8 @@
       "url": "https://www.energydaily.co.kr/news/articleView.html?idxno=203824",
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
-        "배출권"
+        "배출권",
+        "배출권거래제"
       ],
       "duplicateSources": [
         "m-economynews.com",
@@ -4586,13 +4919,14 @@
         "bbsi.co.kr",
         "세명일보",
         "smnews.co.kr",
-        "서울일보"
+        "서울일보",
+        "세계환경신문"
       ],
       "searchProviders": [
         "Google News RSS",
         "NAVER API HUB"
       ],
-      "duplicateCount": 6,
+      "duplicateCount": 7,
       "region": "국내"
     },
     {
@@ -5846,13 +6180,14 @@
       ],
       "duplicateSources": [
         "동아일보",
+        "Daum",
         "donga.com"
       ],
       "searchProviders": [
         "Google News RSS",
         "NAVER API HUB"
       ],
-      "duplicateCount": 2,
+      "duplicateCount": 3,
       "region": "국내"
     },
     {
@@ -9950,12 +10285,10 @@
         "4th.kr",
         "srtimes.kr",
         "cstimes.com",
-        "digitalchosun.dizzo.com",
         "글로벌이코노믹",
         "뉴스핌",
         "socialvalue.kr",
         "getnews.co.kr",
-        "g-enews.com",
         "뉴스1",
         "smarttoday.co.kr",
         "news1.kr",
@@ -10001,13 +10334,15 @@
         "sateconomy.co.kr",
         "ezyeconomy.com",
         "huffingtonpost.kr",
-        "Daum",
         "연합뉴스",
         "yna.co.kr",
         "view.asiae.co.kr",
         "newsis.com",
         "catchnews.kr",
         "thefairnews.co.kr",
+        "digitalchosun.dizzo.com",
+        "g-enews.com",
+        "Daum",
         "뷰어스",
         "theviewers.co.kr",
         "매일신문",
@@ -256409,10 +256744,10 @@
   },
   "newsRetention": {
     "policy": "append-only",
-    "lastMergedAt": "2026-10-12T15:12:35+09:00",
-    "itemCount": 1151,
-    "archiveBefore": 1146,
-    "currentBefore": 1036,
+    "lastMergedAt": "2026-10-12T18:16:09+09:00",
+    "itemCount": 1165,
+    "archiveBefore": 1151,
+    "currentBefore": 1050,
     "gitRecoveryEnabled": false
   }
 }
