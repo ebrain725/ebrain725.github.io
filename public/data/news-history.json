@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-13T06:23:10+09:00",
+  "generatedAt": "2026-10-13T08:13:28+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1169,
+  "itemCount": 1172,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-13",
   "sourceCommitsScanned": 0,
@@ -36,6 +36,78 @@
         "Google News RSS"
       ],
       "region": "국내"
+    },
+    {
+      "id": "f119da8f5fbbd428",
+      "publishedAt": "2026-10-13",
+      "title": "英·EU, 내달 20일 정상회의…브렉시트 6년만에 관계 재건 주목",
+      "category": "제도",
+      "summary": "이번 정상회의에서는 △농식품에 대한 국경 검사를 줄이기 위한 공중보건 규정 △청년 이동성 프로그램 도입 △ 탄소 배출권 거래제 연계 △영국의 EU 역내 전력 시장 참여 등에 대한 논의가 이뤄질 것으로 예상된다. 특히...",
+      "source": "news1.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.news1.kr/world/europe/6317602",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "news1.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
+      "id": "826e3fb34511584b",
+      "publishedAt": "2026-10-13",
+      "title": "[N2 포커스] EU 탄소 가격 9% 상승…철강업계 수출 부담 커진다",
+      "category": "시장·가격",
+      "summary": "따라서 EU 탄소시장 의 가격 변동이 수입제품의 탄소비용 산정에도 반영되는 구조다. 실제 인증서 구매는 내년 2월부터 시작된다. 올해 EU로 수입된 CBAM 적용 제품에 대한 최초 신고와 인증서 제출 기한은 내년 9월...",
+      "source": "news2day.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.news2day.co.kr/article/20261012500302",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateSources": [
+        "news2day.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
+      "id": "c63cbf667bd70425",
+      "publishedAt": "2026-10-13",
+      "title": "EU·영국 11월 정상회담 개최… 배출권 거래제 등 핵심 의제 논의",
+      "category": "제도",
+      "summary": "배출권 거래제와 전력시장 등 주요 협력 의제 이번 정상회담 테이블에는 양측이 지속해 온 주요 경제와 통상 협력 과제들이 오른다. 구체적인 논의 분야로는 배출권 거래제 연계 방안을 비롯해 영국의 유럽연합 내부...",
+      "source": "g-enews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.g-enews.com/view.php?ud=202610130623066792bd56fbc3c_1",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "g-enews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
     },
     {
       "id": "16c449aae876403d",
@@ -4988,7 +5060,8 @@
         "배출권",
         "배출권거래제",
         "K-ETS",
-        "탄소시장"
+        "탄소시장",
+        "탄소배출권"
       ],
       "duplicateSources": [
         "lecturernews.com"
