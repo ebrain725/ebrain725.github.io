@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-13T00:58:47+09:00",
+  "generatedAt": "2026-10-13T06:23:10+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
   "itemCount": 1169,
@@ -26,12 +26,14 @@
       "matchedKeywords": [
         "탄소시장"
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "duplicateSources": [
-        "donga.com"
+        "donga.com",
+        "동아일보"
       ],
       "searchProviders": [
-        "NAVER API HUB"
+        "NAVER API HUB",
+        "Google News RSS"
       ],
       "region": "국내"
     },
@@ -3335,16 +3337,16 @@
         "탄소배출권"
       ],
       "duplicateSources": [
+        "뉴데일리 대구경북",
         "tk.newdaily.co.kr",
         "가스신문",
-        "뉴데일리 대구경북",
         "gasnews.com",
         "tbc.co.kr",
         "Tbc.co.kr"
       ],
       "searchProviders": [
-        "NAVER API HUB",
-        "Google News RSS"
+        "Google News RSS",
+        "NAVER API HUB"
       ],
       "duplicateCount": 6,
       "region": "국내"
@@ -3636,8 +3638,8 @@
         "탄소배출권"
       ],
       "duplicateSources": [
-        "Daum",
         "이투데이",
+        "Daum",
         "etoday.co.kr"
       ],
       "searchProviders": [
