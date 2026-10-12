@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-12T18:16:09+09:00",
+  "generatedAt": "2026-10-12T21:18:27+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1165,
+  "itemCount": 1167,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-12",
   "sourceCommitsScanned": 0,
@@ -635,9 +635,9 @@
     {
       "id": "712f22933dff9e14",
       "publishedAt": "2026-10-12",
-      "title": "동해 폐 가스 전 철거 나선 산업부",
+      "title": "동해 폐 가스 전, 재활용 대신 철거 가닥…\"CCS 기술 축적 길 막혀\"",
       "category": "시장·가격",
-      "summary": "그러나 탄소를 포집해 바닷속에 묻는 데 드는 비용에 비해 탄소 배출권 가격이 턱없이 낮아 예비타당성조사... ◇“기후부, CCU 기술 육성에 더 무게” 철강과 석유화학 등 산업계는 2035년 국가 온실가스 감축목표(NDC)...",
+      "summary": "그러나 탄소를 포집해 바닷속에 묻는 데 드는 비용에 비해 탄소 배출권 가격이 턱없이 낮아 예비타당성조사... 철강과 석유화학 등 산업계는 2035년 국가 온실가스 감축목표(NDC)를 달성하기 위해 국가 주도의 초기 CCS 인프라...",
       "source": "hankyung.com",
       "sourceType": "news",
       "section": "news",
@@ -737,6 +737,34 @@
         "Google News RSS"
       ],
       "duplicateCount": 11,
+      "region": "국내"
+    },
+    {
+      "id": "cb53545d9a6e0d3c",
+      "publishedAt": "2026-10-12",
+      "title": "글로벌 고신뢰 탄소시장…정부, 내년부터 본격운영",
+      "category": "제도",
+      "summary": "정부가 무분별하게 유통되던 탄소 배출권 시장의 신뢰도를 높이기 위해 내년부터 ‘글로벌 고신뢰 탄소시장... 이에 정부는 글로벌 탄소 배출권 시장에서 리더십을 확보하기 위해 GVCM 사업을 주도적으로 추진해 왔다....",
+      "source": "hankyung.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.hankyung.com/article/2026101269961",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장",
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "hankyung.com",
+        "문화일보",
+        "munhwa.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB",
+        "Google News RSS"
+      ],
+      "duplicateCount": 3,
       "region": "국내"
     },
     {
@@ -1028,6 +1056,29 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "939d86b0fd8fa90e",
+      "publishedAt": "2026-10-12",
+      "title": "'글로벌 고신뢰 탄소시장 ' 구축···내년 출범",
+      "category": "제도",
+      "summary": "임보라 앵커> 정부가 국가 간 온실가스 감축 실적을 거래하는 국제 탄소시장 을 구축합니다. 올해 참여국을 모집해 내년부터 본격 운영에 들어갈 계획인데요. 조태영 기자입니다. 조태영 기자> 세계 각국은 파리기후협정에...",
+      "source": "ktv.go.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.ktv.go.kr/content/view?content_id=762292",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "ktv.go.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
       "region": "국내"
     },
     {
