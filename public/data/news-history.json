@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-13T08:13:28+09:00",
+  "generatedAt": "2026-10-13T10:13:14+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1172,
+  "itemCount": 1175,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-13",
   "sourceCommitsScanned": 0,
@@ -12,6 +12,29 @@
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "36ea9548b5db1272",
+      "publishedAt": "2026-10-13",
+      "title": "포스코, 온톨로지 기술로 Agentic AI 고도화 추진...'철강 GX 기반 탈 탄소 ...",
+      "category": "제도",
+      "summary": "기업은 혁신기술 개발과 설비 전환을 담당하고, 정부는 청정에너지 공급 기반과 저 탄소 시장 조성, 인프라 구축을 지원하는 방식으로 역할을 분담하는 내용이다. 또한, 포스코그룹은 철강 GX의 출발점으로 포항을...",
+      "source": "wsobi.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.wsobi.com/news/articleView.html?idxno=319539",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "wsobi.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
     {
       "id": "79543ed85453f61e",
       "publishedAt": "2026-10-13",
@@ -108,6 +131,30 @@
       ],
       "duplicateCount": 1,
       "region": "해외"
+    },
+    {
+      "id": "a23d8457b6fbf66c",
+      "publishedAt": "2026-10-13",
+      "title": "\"세계 잇는 한인 여성 파워\"… 일본 후쿠오카 달궜다",
+      "category": "제도",
+      "summary": "이 외에도 차세대 글로벌 인재 육성을 위한 장학금 전달식과 지속 가능한 미래를 위한 '탄소 배출권 을 위한 여성네트워크 실천운동' 세미나가 진행되어 의미를 더했다. 대회 후반부 참가자들은 군함도 등 강제 동원의...",
+      "source": "dongponews.net",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.dongponews.net/news/articleView.html?idxno=61014",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "dongponews.net"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
     },
     {
       "id": "16c449aae876403d",
@@ -331,6 +378,30 @@
       ],
       "duplicateCount": 2,
       "region": "국내"
+    },
+    {
+      "id": "f4ce62298bf5ecf4",
+      "publishedAt": "2026-10-12",
+      "title": "캘리포니아 전기요금 왜 비싼가…재생에너지 의무비율·배터리·탄소정...",
+      "category": "제도",
+      "summary": "자소는 발전기업들이 부담하는 배출권 과 규제 관련 비용이 결국 전기요금으로 전가될 수 있다고 주장했다. 캘리포니아주는 소비자 부담을 줄이기 위해 '캘리포니아 기후 크레딧'을 제공하고 있다. 이는 탄소 배출권 ...",
+      "source": "fntoday.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.fntoday.co.kr/news/articleView.html?idxno=395038",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "fntoday.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
     },
     {
       "id": "8763d970d6707644",
@@ -3409,16 +3480,16 @@
         "탄소배출권"
       ],
       "duplicateSources": [
-        "뉴데일리 대구경북",
         "tk.newdaily.co.kr",
+        "뉴데일리 대구경북",
         "가스신문",
         "gasnews.com",
         "tbc.co.kr",
         "Tbc.co.kr"
       ],
       "searchProviders": [
-        "Google News RSS",
-        "NAVER API HUB"
+        "NAVER API HUB",
+        "Google News RSS"
       ],
       "duplicateCount": 6,
       "region": "국내"
@@ -9446,7 +9517,6 @@
         "newsroad.co.kr",
         "뉴시안",
         "newsian.co.kr",
-        "매일일보",
         "마켓인",
         "edaily.co.kr",
         "inthenews.co.kr",
@@ -9464,7 +9534,6 @@
         "sentv.co.kr",
         "wowtv.co.kr",
         "newspim.com",
-        "브릿지경제",
         "viva100.com",
         "dealsitetv.com",
         "dailypop.kr",
@@ -9477,6 +9546,8 @@
         "newsis.com",
         "catchnews.kr",
         "thefairnews.co.kr",
+        "매일일보",
+        "브릿지경제",
         "m-i.kr",
         "digitalchosun.dizzo.com",
         "g-enews.com",
