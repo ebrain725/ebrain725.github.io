@@ -1,17 +1,41 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-13T21:02:38+09:00",
+  "generatedAt": "2026-10-14T02:06:15+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1192,
+  "itemCount": 1194,
   "earliestPublishedAt": "2026-08-06",
-  "latestPublishedAt": "2026-10-13",
+  "latestPublishedAt": "2026-10-14",
   "sourceCommitsScanned": 0,
   "sourceSnapshotsScanned": 0,
   "historicalRowsScanned": 0,
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "3a37fe2b7c83929d",
+      "publishedAt": "2026-10-14",
+      "title": "[ESG 리더스] 강성묵 하나증권 대표, 채용부터 탄소 금융까지...'생활 속...",
+      "category": "제도",
+      "summary": "재계는 급변하는 글로벌 시장 에 대응하기 위해 ESG에 사활을 걸고 있다. 이제 ESG는 거스를 수 없는 대세로... 탄소 배출권과 해외 온실가스 감축 사업 등 환경(E) 부문에서는 금융투자회사 본업과 접점을 넓히는 한편...",
+      "source": "greened.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.greened.kr/news/articleView.html?idxno=351052",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "greened.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
     {
       "id": "33da0750eaeab4d1",
       "publishedAt": "2026-10-13",
@@ -1857,6 +1881,30 @@
       "duplicateCount": 1,
       "duplicateSources": [
         "대구광역일보"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "d9a718c0e147bb46",
+      "publishedAt": "2026-10-11",
+      "title": "골드스탠더드, 신규 탄소배출권 인증 방법론 도입",
+      "category": "상쇄·외부사업",
+      "summary": "골드스탠더드, 신규 탄소배출권 인증 방법론 도입 넷제로뉴스",
+      "source": "넷제로뉴스",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9XVTBZb2x1RFhaR2ZrYWVKVURIOFBXVF9PaDJiNVI0c09HckZyb3lOYjdtVFltaU9UUTVzZmdjeTB2RGFma3JhanlKOVpDWG85dnk5MU9UWDAwQXV2UUZVSTNqSHYtMW1VUGfSAW5BVV95cUxOZGVnTXZmaUo1QkJLRUozOUpsclo3WFNKMERlaHJabE5kZjhsY25tSXJSaW9hbURsU1U4N1Z1dlEwS0p2c2xhN25NTmNiUy14T1g4Uk1nc2JWU2NpNDhlOEhFaU9WR185WF81dGNOUQ?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "넷제로뉴스"
       ],
       "searchProviders": [
         "Google News RSS"
@@ -9904,17 +9952,23 @@
       "matchedKeywords": [
         "배출권",
         "배출권거래제",
-        "온실가스 배출권"
+        "온실가스 배출권",
+        "탄소배출권",
+        "K-ETS"
       ],
       "duplicateSources": [
         "4th.kr",
         "srtimes.kr",
         "cstimes.com",
+        "뷰어스",
+        "theviewers.co.kr",
+        "매일신문",
+        "edaily.co.kr",
         "글로벌이코노믹",
-        "이투데이",
         "뉴스핌",
         "socialvalue.kr",
         "getnews.co.kr",
+        "뉴스1",
         "smarttoday.co.kr",
         "news1.kr",
         "kbsm.net",
@@ -9935,7 +9989,6 @@
         "뉴시안",
         "newsian.co.kr",
         "마켓인",
-        "edaily.co.kr",
         "inthenews.co.kr",
         "sisacast.kr",
         "economist.co.kr",
@@ -9951,6 +10004,7 @@
         "sentv.co.kr",
         "wowtv.co.kr",
         "newspim.com",
+        "브릿지경제",
         "viva100.com",
         "dealsitetv.com",
         "dailypop.kr",
@@ -9962,17 +10016,13 @@
         "newsis.com",
         "catchnews.kr",
         "thefairnews.co.kr",
-        "뉴스1",
-        "브릿지경제",
+        "이투데이",
         "연합뉴스",
         "매일일보",
         "m-i.kr",
         "digitalchosun.dizzo.com",
         "g-enews.com",
         "Daum",
-        "뷰어스",
-        "theviewers.co.kr",
-        "매일신문",
         "펜앤마이크",
         "메트로신문",
         "metroseoul.co.kr",
