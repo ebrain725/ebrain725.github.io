@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-13T12:44:26+09:00",
+  "generatedAt": "2026-10-13T13:13:20+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1177,
+  "itemCount": 1178,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-13",
   "sourceCommitsScanned": 0,
@@ -131,6 +131,31 @@
       ],
       "duplicateCount": 1,
       "region": "해외"
+    },
+    {
+      "id": "efb6a3060ca09993",
+      "publishedAt": "2026-10-13",
+      "title": "[온실가스 배출권] 10월 13일 KAU26, 3만350원 유지",
+      "category": "시장·가격",
+      "summary": "[온실가스 배출권] 10월 13일 KAU26, 3만350원 유지 데일리e뉴스",
+      "source": "데일리e뉴스",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9oRTZsQVVDYnZSM3QtOUdTRUNLSDhkR04yUGpnWlZ3VExmZHN6SkJXczkybW1DVU9Nbnd5THlSemtncURGcjZMR0N2enhxVWpVYW1iQzd1UFZXVThWYlhrLTM0eVhsOFZGREJWZUpRVQ?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "온실가스 배출권",
+        "KAU26"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "데일리e뉴스"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "국내"
     },
     {
       "id": "826e3fb34511584b",
@@ -9567,6 +9592,7 @@
         "newsroad.co.kr",
         "뉴시안",
         "newsian.co.kr",
+        "매일일보",
         "마켓인",
         "edaily.co.kr",
         "inthenews.co.kr",
@@ -9597,7 +9623,6 @@
         "newsis.com",
         "catchnews.kr",
         "thefairnews.co.kr",
-        "매일일보",
         "m-i.kr",
         "digitalchosun.dizzo.com",
         "g-enews.com",
