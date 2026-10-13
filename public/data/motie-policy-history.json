@@ -3,6 +3,28 @@
   "requestedStartDate": "2015-01-01",
   "items": [
     {
+      "id": "motie_press-ATCLe0854704d-172286",
+      "sourceId": "172286",
+      "sourceBoard": "ATCLe0854704d",
+      "sourceBoardKey": "press_explanation",
+      "boardCategory": "보도설명자료",
+      "title": "(설명자료)글로벌 빅테크의 사실상 탄소중립 포기, 연기 언급은 빅테크의 AI 데이터센터 발 신규 화석연료 발전기 건설 현상을 언급한 것입니다.",
+      "summary": "산업에너지협력과 담당 · 보도설명자료입니다. 원문에서 세부 내용을 확인하세요.",
+      "url": "https://www.motir.go.kr/kor/article/ATCLe0854704d/172286/view",
+      "publishedAt": "2026-10-13",
+      "source": "산업부 보도자료",
+      "sourceType": "official",
+      "section": "motie_press",
+      "category": "보도설명자료",
+      "department": "산업에너지협력과",
+      "matchedKeywords": [
+        "탄소중립"
+      ],
+      "matchedFields": [
+        "title"
+      ]
+    },
+    {
       "id": "motie_press-ATCL3f49a5a8c-172267",
       "sourceId": "172267",
       "sourceBoard": "ATCL3f49a5a8c",
@@ -130665,10 +130687,10 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     }
   ],
-  "generatedAt": "2026-10-13T07:26:49+09:00",
+  "generatedAt": "2026-10-14T05:34:06+09:00",
   "collectionMode": "incremental",
-  "queryStartDate": "2026-08-14",
-  "queryEndDate": "2026-10-13",
+  "queryStartDate": "2026-08-15",
+  "queryEndDate": "2026-10-14",
   "policyKeywords": {
     "titleAndContent": [
       "배출권",
@@ -130801,12 +130823,12 @@
     },
     "motie_press": {
       "label": "산업부 보도자료",
-      "records": 1887,
+      "records": 1888,
       "earliest": "2016-01-19",
-      "latest": "2026-10-07",
+      "latest": "2026-10-13",
       "byBoardCategory": {
         "보도·참고자료": 1366,
-        "보도설명자료": 521
+        "보도설명자료": 522
       }
     }
   },
@@ -130817,13 +130839,13 @@
       "section": "motie_press",
       "boardCategory": "보도·참고자료",
       "boardUrl": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c",
-      "requestedStartDate": "2026-08-14",
-      "requestedEndDate": "2026-10-13",
+      "requestedStartDate": "2026-08-15",
+      "requestedEndDate": "2026-10-14",
       "searchMode": "official-expanded-keyword-query",
       "pagesFetched": 149,
-      "parsedRows": 7,
-      "itemCount": 6,
-      "earliest": "2026-08-14",
+      "parsedRows": 6,
+      "itemCount": 5,
+      "earliest": "2026-09-02",
       "latest": "2026-10-07",
       "complete": true,
       "queries": [
@@ -131208,9 +131230,9 @@
         {
           "keyword": "원전",
           "field": "title",
-          "reportedTotal": 4,
+          "reportedTotal": 3,
           "pagesFetched": 1,
-          "parsedRows": 4
+          "parsedRows": 3
         },
         {
           "keyword": "재생에너지",
@@ -131878,14 +131900,14 @@
       "section": "motie_press",
       "boardCategory": "보도설명자료",
       "boardUrl": "https://www.motir.go.kr/kor/article/ATCLe0854704d",
-      "requestedStartDate": "2026-08-14",
-      "requestedEndDate": "2026-10-13",
+      "requestedStartDate": "2026-08-15",
+      "requestedEndDate": "2026-10-14",
       "searchMode": "official-expanded-keyword-query",
       "pagesFetched": 149,
-      "parsedRows": 3,
-      "itemCount": 3,
+      "parsedRows": 4,
+      "itemCount": 4,
       "earliest": "2026-09-07",
-      "latest": "2026-09-15",
+      "latest": "2026-10-13",
       "complete": true,
       "queries": [
         {
@@ -132591,9 +132613,9 @@
         {
           "keyword": "탄소중립",
           "field": "title",
-          "reportedTotal": 0,
+          "reportedTotal": 1,
           "pagesFetched": 1,
-          "parsedRows": 0
+          "parsedRows": 1
         },
         {
           "keyword": "탄소중립 기본계획",
@@ -132939,8 +132961,8 @@
       "section": "motie_notice",
       "boardCategory": "공지사항",
       "boardUrl": "https://www.motir.go.kr/kor/article/ATCL6e90bb9de",
-      "requestedStartDate": "2026-08-14",
-      "requestedEndDate": "2026-10-13",
+      "requestedStartDate": "2026-08-15",
+      "requestedEndDate": "2026-10-14",
       "searchMode": "official-expanded-keyword-query",
       "pagesFetched": 149,
       "parsedRows": 0,
@@ -134000,8 +134022,8 @@
       "section": "motie_notice",
       "boardCategory": "사업공고",
       "boardUrl": "https://www.motir.go.kr/kor/article/ATCL2826a2625",
-      "requestedStartDate": "2026-08-14",
-      "requestedEndDate": "2026-10-13",
+      "requestedStartDate": "2026-08-15",
+      "requestedEndDate": "2026-10-14",
       "searchMode": "official-expanded-keyword-query",
       "pagesFetched": 149,
       "parsedRows": 2,
@@ -135061,8 +135083,8 @@
       "section": "motie_notice",
       "boardCategory": "입법예고",
       "boardUrl": "https://www.motir.go.kr/kor/article/ATCLa1cb24c71",
-      "requestedStartDate": "2026-08-14",
-      "requestedEndDate": "2026-10-13",
+      "requestedStartDate": "2026-08-15",
+      "requestedEndDate": "2026-10-14",
       "searchMode": "official-expanded-keyword-query",
       "pagesFetched": 149,
       "parsedRows": 0,
@@ -136122,8 +136144,8 @@
       "section": "motie_notice",
       "boardCategory": "행정예고",
       "boardUrl": "https://www.motir.go.kr/kor/article/ATCLa6723dc7b",
-      "requestedStartDate": "2026-08-14",
-      "requestedEndDate": "2026-10-13",
+      "requestedStartDate": "2026-08-15",
+      "requestedEndDate": "2026-10-14",
       "searchMode": "official-expanded-keyword-query",
       "pagesFetched": 149,
       "parsedRows": 0,
@@ -137183,8 +137205,8 @@
       "section": "motie_notice",
       "boardCategory": "고시",
       "boardUrl": "https://www.motir.go.kr/kor/article/ATCL0c554f816",
-      "requestedStartDate": "2026-08-14",
-      "requestedEndDate": "2026-10-13",
+      "requestedStartDate": "2026-08-15",
+      "requestedEndDate": "2026-10-14",
       "searchMode": "official-expanded-keyword-query",
       "pagesFetched": 149,
       "parsedRows": 0,
@@ -138244,8 +138266,8 @@
       "section": "motie_notice",
       "boardCategory": "공고",
       "boardUrl": "https://www.motir.go.kr/kor/article/ATCLc01b2801b",
-      "requestedStartDate": "2026-08-14",
-      "requestedEndDate": "2026-10-13",
+      "requestedStartDate": "2026-08-15",
+      "requestedEndDate": "2026-10-14",
       "searchMode": "official-expanded-keyword-query",
       "pagesFetched": 149,
       "parsedRows": 2,
