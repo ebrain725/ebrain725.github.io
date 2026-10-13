@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-13T10:13:14+09:00",
+  "generatedAt": "2026-10-13T12:44:26+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1175,
+  "itemCount": 1177,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-13",
   "sourceCommitsScanned": 0,
@@ -61,6 +61,29 @@
       "region": "국내"
     },
     {
+      "id": "0a14456d9b645786",
+      "publishedAt": "2026-10-13",
+      "title": "정부 '글로벌 고신뢰 탄소시장' 내년 가동 : 해외 감축 실적이 국내 거래소로 들어온다",
+      "category": "제도",
+      "summary": "정부 '글로벌 고신뢰 탄소시장' 내년 가동 : 해외 감축 실적이 국내 거래소로 들어온다 https://technovalue.com/",
+      "source": "https://technovalue.com/",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBEbHZpRkdKdWNMOVFJYW5CaF90SURNcHFCa0FycjA1VXI4WlhvYWViUXMwdkJuWjB3eEl6YzNTX0JnRDZFQjRsWE5Gc0tzeVlUX1ZoVzRiWQ?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "https://technovalue.com/"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "f119da8f5fbbd428",
       "publishedAt": "2026-10-13",
       "title": "英·EU, 내달 20일 정상회의…브렉시트 6년만에 관계 재건 주목",
@@ -78,6 +101,30 @@
       ],
       "duplicateSources": [
         "news1.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
+      "id": "fc555fa965436f77",
+      "publishedAt": "2026-10-13",
+      "title": "英·EU, 내달 20일 정상회의…EU 재가입 논의 탄력 받나",
+      "category": "제도",
+      "summary": "버넘 총리 \"현상 유지로는 부족…EU와 장기적 관계 재검토\" 농식품 교역· 탄소배출권 거래·청년 이동 프로그램 협정 추진 황진현 기자 jinhyun97@ajunews.com 유럽연합 [사진=로이터·연합뉴스] 영국과 유럽연합(EU)이 다음 달...",
+      "source": "ajunews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.ajunews.com/view/20261013095956645",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "ajunews.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -318,7 +365,9 @@
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
         "배출권",
-        "탄소배출권"
+        "탄소배출권",
+        "배출권거래제",
+        "K-ETS"
       ],
       "duplicateSources": [
         "thetracker.co.kr"
@@ -366,7 +415,8 @@
       "url": "https://www.dnews.co.kr/uhtml/view.jsp?idxno=202610121337507650176",
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
-        "탄소시장"
+        "탄소시장",
+        "배출권"
       ],
       "duplicateSources": [
         "대한경제",
@@ -3480,16 +3530,16 @@
         "탄소배출권"
       ],
       "duplicateSources": [
-        "tk.newdaily.co.kr",
         "뉴데일리 대구경북",
+        "tk.newdaily.co.kr",
         "가스신문",
         "gasnews.com",
         "tbc.co.kr",
         "Tbc.co.kr"
       ],
       "searchProviders": [
-        "NAVER API HUB",
-        "Google News RSS"
+        "Google News RSS",
+        "NAVER API HUB"
       ],
       "duplicateCount": 6,
       "region": "국내"
@@ -9534,6 +9584,7 @@
         "sentv.co.kr",
         "wowtv.co.kr",
         "newspim.com",
+        "브릿지경제",
         "viva100.com",
         "dealsitetv.com",
         "dailypop.kr",
@@ -9547,7 +9598,6 @@
         "catchnews.kr",
         "thefairnews.co.kr",
         "매일일보",
-        "브릿지경제",
         "m-i.kr",
         "digitalchosun.dizzo.com",
         "g-enews.com",
