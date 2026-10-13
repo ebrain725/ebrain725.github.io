@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-13T15:13:36+09:00",
+  "generatedAt": "2026-10-13T18:13:31+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1182,
+  "itemCount": 1189,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-13",
   "sourceCommitsScanned": 0,
@@ -133,6 +133,31 @@
       "region": "국내"
     },
     {
+      "id": "89211cd2db0807a4",
+      "publishedAt": "2026-10-13",
+      "title": "영·EU 관계, '리셋'하고 더 가까워진다… 다음 달 20일 정상회담",
+      "category": "제도",
+      "summary": "아울러 기후변화 대응과 탈 탄소 화 목표 달성을 위한 탄소 배출권 거래제(ETS) 연계 방안, 영국의 EU 역내 전력 시장 재참여 등 에너지 안보 분야에서의 구체적 협력 모델도 논의될 전망이다. 한편 영국은 2016년 국민투표를...",
+      "source": "hankookilbo.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.hankookilbo.com/news/article/A2026101309410002150?did=NA",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "hankookilbo.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
       "id": "2a32c15e0d2cb042",
       "publishedAt": "2026-10-13",
       "title": "에너지공단, 기후· 온실가스 감축사업 감사서 10건 지적돼",
@@ -149,6 +174,31 @@
       ],
       "duplicateSources": [
         "discoverynews.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "cb36dc5009501a76",
+      "publishedAt": "2026-10-13",
+      "title": "다시 유럽을 바라보는 영국, 브렉시트의 역설",
+      "category": "제도",
+      "summary": "식품·농산물 교역 규정 조정, 탄소 배출권 거래제 연계, 청년들의 상호 거주·취업 기회 확대, 전력 시장 협력 등이 주요 의제로 거론된다. 당장 EU 재가입을 결정하기보다는, 경제와 안보 분야의 협력을 확대하면서...",
+      "source": "ohmynews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003274904&CMPT_CD=P0010&utm_source=naver&utm_medium=newsearch&utm_campaign=naver_news",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "ohmynews.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -206,6 +256,29 @@
       "region": "해외"
     },
     {
+      "id": "1a45e1fcd22fd370",
+      "publishedAt": "2026-10-13",
+      "title": "英·EU, 내달 20일 '관계 재설정' 정상회의…버넘 \"EU 재가입 첫걸음\"",
+      "category": "제도",
+      "summary": "양측은 이번 회의에서 농식품 교역, 배출권 거래, 청년 이동 프로그램 등에 관한 신규 협정을 체결하는 것을 목표로 하고 있다. 버넘 총리는 성명에서 지난해 5월 스타머 정부에서 시작된 관련 협정을 마무리하고, 향후...",
+      "source": "newsis.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newsis.com/view/NISX20261013_0003823919",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "newsis.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "efb6a3060ca09993",
       "publishedAt": "2026-10-13",
       "title": "[온실가스 배출권] 10월 13일 KAU26, 3만350원 유지",
@@ -224,6 +297,30 @@
       "duplicateCount": 1,
       "duplicateSources": [
         "데일리e뉴스"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "329204f3fd977c5f",
+      "publishedAt": "2026-10-13",
+      "title": "[대구시] 대구시, 매립가스 자원화로 탄소배출권 21만9천톤 신규 확보",
+      "category": "제도",
+      "summary": "[대구시] 대구시, 매립가스 자원화로 탄소배출권 21만9천톤 신규 확보 워터저널",
+      "source": "워터저널",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5sZWpiZElLdm9JYnRrOXF0YWVOejRoQVBEUWk0eXpETWp6RlI1NFd4LTZuTG83YW9jQjNfNVRXbEU2ajVhLTllVHI2YkVibzFWWjNOUlBPRk00TkRUWWYtUFRrVDMwM1NjT09JcUhOYVdTQi1sZEHSAXZBVV95cUxObGVqYmRJS3ZvSWJ0azlxdGFlTno0aEFQRFFpNHl6RE1qekZSNTRXeC02bkxvN2FvY0IzXzVUV2xFNmo1YS05ZVRyNmJFYm8xVlozTlJQT0ZNNE5EVFlmLVBUa1QzMDNTY09PSXFITmFXU0ItbGRB?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "워터저널"
       ],
       "searchProviders": [
         "Google News RSS"
@@ -280,6 +377,54 @@
       "region": "해외"
     },
     {
+      "id": "dd9d9884cbe74c30",
+      "publishedAt": "2026-10-13",
+      "title": "[EU+e-모빌리티 이슈] 유럽 트럭제조업체들, ‚우리는 전기차 출시 준비...",
+      "category": "제도",
+      "summary": "- 도로 수송 연료와 건물(난방) 부문으로 확대 적용되는 유럽연합의 2차 배출권 거래제(EU ETS2) 법령은 2028년부터 시행하, 법령 시행을 통해 발생된 수익을 e-모빌리티 인프라 구축과 에너지 전환 지원에 재투자할 것...",
+      "source": "greened.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.greened.kr/news/articleView.html?idxno=351531",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "greened.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
+      "id": "1494a651111b3c42",
+      "publishedAt": "2026-10-13",
+      "title": "[ETF 시황] 코스피 급락에 인버스 ETF '강세'…SK하이닉스 레버리지 20%↓",
+      "category": "시장·가격",
+      "summary": "멕시코 테마가 2.20% 올라 상승률 1위를 기록했고, 원유·가스기업(2.17%), Nifty50(1.92%), 탄소 배출권 (1.84%) 등이 뒤를 이었다. 'ACE MSCI멕시코(합성)'는 2.20%, 'RISE 미국천연가스밸류체인'은 3.05%, 'KODEX...",
+      "source": "newspim.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newspim.com/news/view/20261013001108",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "newspim.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "c63cbf667bd70425",
       "publishedAt": "2026-10-13",
       "title": "EU·영국 11월 정상회담 개최… 배출권 거래제 등 핵심 의제 논의",
@@ -296,6 +441,29 @@
       ],
       "duplicateSources": [
         "g-enews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
+      "id": "b524e6f7af96f4b6",
+      "publishedAt": "2026-10-13",
+      "title": "EU, SAF 사용 항공사 무상할당 확대",
+      "category": "시장·가격",
+      "summary": "EU는 ETS가 적용되는 노선을 운항하는 항공사들이 적격 SAF를 사용할 때 등유와 SAF 간 가격 차이의 일부를 무상 배출권 으로 보전해 주고 있다. 이런 용도로 배정된 배출권 은 약 2000만톤, 금액으로는 약 15억 유로에...",
+      "source": "esgeconomy.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.esgeconomy.com/news/articleView.html?idxno=16990",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "esgeconomy.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
