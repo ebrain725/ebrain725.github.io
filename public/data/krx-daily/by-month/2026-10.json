@@ -589,7 +589,91 @@
         "balanced": true
       },
       "pdfUrl": "data/krx-daily/pdfs/2026-10/2026-10-13.pdf"
+    },
+    {
+      "tradeDate": "2026-10-14",
+      "publishedDate": "2026-10-14",
+      "boardRn": 614,
+      "bbsSeq": "683",
+      "attachFileSeq": "1",
+      "title": "배출권 거래시장 일일동향(장내) 26.10.14",
+      "sourceKey": "krx:683:1",
+      "sourceRevisionId": "krx:683:1:8a5257fe4350",
+      "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=683",
+      "filename": "배출권 거래시장 일일동향_261014.pdf",
+      "sha256": "8a5257fe435068d30fbe8b3927ae314479fac7b80d75a64fd0132f8ec931e4e7",
+      "fileSize": 119817,
+      "pages": 1,
+      "parserVersion": "1.3.0",
+      "participantScope": "all_instruments",
+      "taxonomyVersion": "financial_institutions_and_others",
+      "market": {
+        "totalVolume": 62000,
+        "representativeInstrument": {
+          "symbol": "KAU26",
+          "close": 30350,
+          "change": 0,
+          "volume": 62000
+        }
+      },
+      "participantFlows": [
+        {
+          "categoryKey": "liable_entities",
+          "label": "할당대상업체",
+          "netByMethod": {
+            "competitive": -5000,
+            "negotiated": 0,
+            "auction": 0,
+            "total": -5000
+          }
+        },
+        {
+          "categoryKey": "market_makers",
+          "label": "시장조성자",
+          "netByMethod": {
+            "competitive": 5000,
+            "negotiated": 0,
+            "auction": 0,
+            "total": 5000
+          }
+        },
+        {
+          "categoryKey": "financial_institutions",
+          "label": "금융기관",
+          "netByMethod": {
+            "competitive": 0,
+            "negotiated": 0,
+            "auction": 0,
+            "total": 0
+          }
+        },
+        {
+          "categoryKey": "others",
+          "label": "기타",
+          "netByMethod": {
+            "competitive": 0,
+            "negotiated": 0,
+            "auction": 0,
+            "total": 0
+          }
+        },
+        {
+          "categoryKey": "koc_specialists",
+          "label": "KOC전문회원",
+          "netByMethod": {
+            "competitive": 0,
+            "negotiated": 0,
+            "auction": 0,
+            "total": 0
+          }
+        }
+      ],
+      "validation": {
+        "netTotal": 0,
+        "balanced": true
+      },
+      "pdfUrl": "data/krx-daily/pdfs/2026-10/2026-10-14.pdf"
     }
   ],
-  "generatedAt": "2026-10-13T13:25:24+09:00"
+  "generatedAt": "2026-10-14T18:20:48+09:00"
 }
