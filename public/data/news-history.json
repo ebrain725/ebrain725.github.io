@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-14T15:13:00+09:00",
+  "generatedAt": "2026-10-14T18:13:48+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1216,
+  "itemCount": 1222,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-14",
   "sourceCommitsScanned": 0,
@@ -12,6 +12,29 @@
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "1058e7bec5a666fa",
+      "publishedAt": "2026-10-14",
+      "title": "환경공단 ‘청년창업 네트워킹 데이’ 개최…16개 업체 성장 지원",
+      "category": "제도",
+      "summary": "환경 분야 청년창업기업 시장 안착과 기술 사업화를 돕기 위한 소통 자리가 마련됐다. 한국환경공단은 14일... 전담 자문단은 환경영향평가와 자원순환, 폐기물 관리, 탄소 중립, 배출권거래, 환경분석·실증 등 전문 분야를...",
+      "source": "dailian.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.dailian.co.kr/news/view/1701585/?sc=Naver",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "dailian.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
     {
       "id": "8a45890c2d878afa",
       "publishedAt": "2026-10-14",
@@ -197,6 +220,32 @@
       "region": "국내"
     },
     {
+      "id": "9d96d83b9601c0d8",
+      "publishedAt": "2026-10-14",
+      "title": "삼성중공업, 친환경 하이브리드 셔틀탱커로 탈 탄소 시장 공략",
+      "category": "제도",
+      "summary": "IMO 규제· 탄소 세 폭탄··· 13조 하이브리드 선박 시장 뜬다 국제해사기구(IMO)의 배출 규제와 유럽연합 온실가스 배출권 거래제(EU ETS) 확대로 해양 업계의 탈 탄소 전환이 빠르다. 글로벌 해양 하이브리드 추진 시스템...",
+      "source": "greenpostkorea.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.greenpostkorea.co.kr/news/articleView.html?idxno=307690",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장",
+        "배출권",
+        "배출권거래제",
+        "온실가스 배출권"
+      ],
+      "duplicateSources": [
+        "greenpostkorea.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
       "id": "af2fe2ba9e4fdc18",
       "publishedAt": "2026-10-14",
       "title": "기후·에너지 비즈니스 전략수립 필독서… '기후에너지 인사이트 2027' 1...",
@@ -255,6 +304,46 @@
       "region": "국내"
     },
     {
+      "id": "ad7116dc43b0506d",
+      "publishedAt": "2026-10-14",
+      "title": "거래소, 고품질 탄소 크레딧 시장 개설 박차…글로벌 평가사 ‘비제로’...",
+      "category": "제도",
+      "summary": "한국거래소는 현재 정부의 ‘한국형 자발적 탄소시장 ’ 정책 지원과 아시아 탄소시장 허브 도약을 목표로 ‘KRX 탄소크레딧 시장’ 개설을 추진 중이다. 이번 협약을 통해 시장의 고무결성(high integrity)을 확보한다는...",
+      "source": "biz.heraldcorp.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://biz.heraldcorp.com/article/10902681?ref=naver",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateSources": [
+        "nspna.com",
+        "seoulfn.com",
+        "insightkorea.co.kr",
+        "newspim.com",
+        "edaily.co.kr",
+        "bizwnews.com",
+        "financialpost.co.kr",
+        "weekly.hankooki.com",
+        "newsis.com",
+        "news1.kr",
+        "pinpointnews.co.kr",
+        "metroseoul.co.kr",
+        "cstimes.com",
+        "wowtv.co.kr",
+        "viva100.com",
+        "mt.co.kr",
+        "economist.co.kr",
+        "biz.heraldcorp.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 18,
+      "region": "국내"
+    },
+    {
       "id": "28217bc26a9d0ad0",
       "publishedAt": "2026-10-14",
       "title": "거래소, '탄소크레딧 시장' 개설 속도…글로벌 평가사 비제로와 맞손",
@@ -289,6 +378,29 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 14,
+      "region": "국내"
+    },
+    {
+      "id": "95e559d93befa194",
+      "publishedAt": "2026-10-14",
+      "title": "【공시 모니터링】 삼성생명, 투자자산 탄소비용 8826억원 산정…전 직...",
+      "category": "시장·가격",
+      "summary": "삼성생명은 국내 배출권 가격(KAU24) 최고가와 녹색프리미엄, 재생에너지 공급인증서(REC) 구매비용을 반영해 내부탄소가격을 톤당 2만1800~7만9323원으로 설정했다. 다만 성과급에서 기후 성과가 차지하는 비중이...",
+      "source": "impacton.net",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.impacton.net/news/articleView.html?idxno=30233",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "impacton.net"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
       "region": "국내"
     },
     {
@@ -364,6 +476,32 @@
       "region": "국내"
     },
     {
+      "id": "1f303a7e62339902",
+      "publishedAt": "2026-10-14",
+      "title": "[단독] AI·GPU 돌리느라 '전기먹는 하마'된 서울대 … 온실가스 배출권 ...",
+      "category": "제도",
+      "summary": "서울대학교의 온실가스 배출량이 해마다 늘면서 2030년에는 모자라는 탄소 배출권 을 사는 데만 한해 약 20억... 탄소 배출권 구매비용, 2030년 20억 원 전망도 배출권 구매 부담도 커지고 있다. 현행 배출권 거래제는...",
+      "source": "hankookilbo.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.hankookilbo.com/news/article/A2026101409480004973?did=NA",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "온실가스 배출권",
+        "배출권거래제",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "hankookilbo.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "dfb61c1e1cd1acae",
       "publishedAt": "2026-10-14",
       "title": "[금융권 이모저모]한국투자신탁운용, ETF·펀드 비교·모의투자 플랫폼...",
@@ -380,12 +518,24 @@
         "K-ETS"
       ],
       "duplicateSources": [
-        "businessplus.kr"
+        "인더스트리뉴스",
+        "industrynews.co.kr",
+        "paxetv.com",
+        "newsdream.kr",
+        "dailian.co.kr",
+        "edaily.co.kr",
+        "businessplus.kr",
+        "view.asiae.co.kr",
+        "yna.co.kr",
+        "아시아경제",
+        "연합뉴스",
+        "e2news.com"
       ],
       "searchProviders": [
+        "Google News RSS",
         "NAVER API HUB"
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 12,
       "region": "국내"
     },
     {
@@ -1351,14 +1501,14 @@
         "배출권"
       ],
       "duplicateSources": [
-        "한국일보",
         "hankookilbo.com",
+        "한국일보",
         "newsis.com",
         "뉴시스"
       ],
       "searchProviders": [
-        "Google News RSS",
-        "NAVER API HUB"
+        "NAVER API HUB",
+        "Google News RSS"
       ],
       "duplicateCount": 4,
       "region": "국내"
@@ -1403,16 +1553,16 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "view.asiae.co.kr",
         "아시아경제",
+        "view.asiae.co.kr",
         "etnews.com",
         "dt.co.kr",
         "전자신문",
         "naeil.com"
       ],
       "searchProviders": [
-        "NAVER API HUB",
-        "Google News RSS"
+        "Google News RSS",
+        "NAVER API HUB"
       ],
       "duplicateCount": 6,
       "region": "국내"
@@ -2684,7 +2834,8 @@
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
         "배출권",
-        "배출권거래제"
+        "배출권거래제",
+        "유상할당"
       ],
       "duplicateSources": [
         "newspenguin.com"
@@ -4528,6 +4679,31 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 2,
+      "region": "국내"
+    },
+    {
+      "id": "67845aef3da446a1",
+      "publishedAt": "2026-10-06",
+      "title": "김성환 기후장관 \"재생에너지 100GW 조기 달성…전력망 병목 해소\"",
+      "category": "제도",
+      "summary": "온실가스 감축을 위한 산업 전반의 탈탄소 전환과 관련해서는 \"2035 국가온실가스감축목표(NDC)를 반영한 온실가스 감축 로드맵을 수립하고, 배출권거래제 의 감축 유인을 강화하며 산업, 냉난방, 수송 분야의 전방위적인...",
+      "source": "iminju.net",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.iminju.net/news/articleView.html?idxno=170407",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateCount": 2,
+      "duplicateSources": [
+        "iminju.net",
+        "hansbiz.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
       "region": "국내"
     },
     {
@@ -10457,11 +10633,11 @@
       ],
       "duplicateSources": [
         "finomy.com",
-        "ebn.co.kr",
         "delighti.co.kr",
         "smedaily.co.kr",
         "pennmike.com",
         "bizwnews.com",
+        "ebn.co.kr",
         "todayeconomic.com",
         "mediapen.com",
         "financialpost.co.kr",
@@ -10547,6 +10723,10 @@
         "4th.kr",
         "srtimes.kr",
         "cstimes.com",
+        "뷰어스",
+        "theviewers.co.kr",
+        "매일신문",
+        "edaily.co.kr",
         "글로벌이코노믹",
         "뉴스핌",
         "socialvalue.kr",
@@ -10557,6 +10737,7 @@
         "머니투데이",
         "fntimes.com",
         "newsprime.co.kr",
+        "ebn.co.kr",
         "imaeil.com",
         "ttlnews.com",
         "e-science.co.kr",
@@ -10571,7 +10752,6 @@
         "뉴시안",
         "newsian.co.kr",
         "마켓인",
-        "edaily.co.kr",
         "inthenews.co.kr",
         "sisacast.kr",
         "economist.co.kr",
@@ -10601,9 +10781,6 @@
         "catchnews.kr",
         "thefairnews.co.kr",
         "kbsm.net",
-        "뷰어스",
-        "theviewers.co.kr",
-        "매일신문",
         "joongangenews.com",
         "브릿지경제",
         "이투데이",
@@ -10631,7 +10808,6 @@
         "finomy.com",
         "sports.hankooki.com",
         "wsobi.com",
-        "ebn.co.kr",
         "delighti.co.kr",
         "smedaily.co.kr",
         "bizwnews.com",
@@ -15737,9 +15913,9 @@
         "KAU25"
       ],
       "duplicateSources": [
-        "Daum",
         "연합뉴스",
         "yna.co.kr",
+        "Daum",
         "v.daum.net"
       ],
       "searchProviders": [
