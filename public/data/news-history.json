@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-15T02:29:49+09:00",
+  "generatedAt": "2026-10-15T08:12:48+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1231,
+  "itemCount": 1234,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-15",
   "sourceCommitsScanned": 0,
@@ -53,6 +53,78 @@
       ],
       "duplicateSources": [
         "ksilbo.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "1c7a4d82d792d437",
+      "publishedAt": "2026-10-15",
+      "title": "[금융 경제] 기후위기에 대응하는 재테크",
+      "category": "제도",
+      "summary": "탄소 배출권 시장 세계 각국은 온실가스 배출총량을 관리하기 위하여 기업들에게 온실가스 배출 목표를 부여하고 해당 목표를 달성하지 못했을 경우에는 경제적 제재 (과징금 등)를 부과를 통해서 동기를 부여하고 있다....",
+      "source": "queen.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.queen.co.kr/news/articleView.html?idxno=463970",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "queen.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "9d1d8843fd83556b",
+      "publishedAt": "2026-10-15",
+      "title": "'노동·탄소 한계' 부딪힌 K-조선…\"선박 전기화와 조선소 AX가 생존 승...",
+      "category": "제도",
+      "summary": "2023년부터 본격 가동된 에너지효율기존선지수(EEXI) 및 탄소집약도지표(CII) 제도를 비롯해 2024년 유럽연합 배출권 거래제(EU ETS)의 해운 편입, 2025년 해운연료기준(퓨얼이유 마리타임·FuelEU Maritime) 시행, 2030년부터...",
+      "source": "news1.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.news1.kr/economy/idustry-trade/6320336",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "news1.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
+      "id": "a9cec7c1713c926d",
+      "publishedAt": "2026-10-15",
+      "title": "\"구리는 최고치, 석탄은 규제 압박\"… 호주 광물 시장, '에너지 전환'에...",
+      "category": "상쇄·외부사업",
+      "summary": "기준치를 초과한 탄광은 시장에서 고가의 탄소 배출권 을 직접 사들여 상쇄 해야 한다. 이에 따라 물라르벤 광산은 하루 디젤 5,000리터를 소비하는 대형 운송 트럭을 고연비 모델로 교체하는 등 안간힘을 쓰고 있으며...",
+      "source": "g-enews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.g-enews.com/view.php?ud=2026101417582431990c8c1c064d_1",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "g-enews.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -732,13 +804,13 @@
         "K-ETS"
       ],
       "duplicateSources": [
-        "인더스트리뉴스",
         "industrynews.co.kr",
-        "팍스경제TV",
         "paxetv.com",
         "newsdream.kr",
         "dailian.co.kr",
         "edaily.co.kr",
+        "인더스트리뉴스",
+        "팍스경제TV",
         "businessplus.kr",
         "view.asiae.co.kr",
         "yna.co.kr",
@@ -747,8 +819,8 @@
         "e2news.com"
       ],
       "searchProviders": [
-        "Google News RSS",
-        "NAVER API HUB"
+        "NAVER API HUB",
+        "Google News RSS"
       ],
       "duplicateCount": 13,
       "region": "국내"
@@ -10848,10 +10920,10 @@
       ],
       "duplicateSources": [
         "finomy.com",
-        "delighti.co.kr",
         "smedaily.co.kr",
         "pennmike.com",
         "bizwnews.com",
+        "delighti.co.kr",
         "ebn.co.kr",
         "todayeconomic.com",
         "mediapen.com",
@@ -10938,14 +11010,10 @@
         "4th.kr",
         "srtimes.kr",
         "cstimes.com",
-        "글로벌이코노믹",
-        "뉴스핌",
         "socialvalue.kr",
         "getnews.co.kr",
-        "뉴스1",
         "smarttoday.co.kr",
         "news1.kr",
-        "머니투데이",
         "fntimes.com",
         "newsprime.co.kr",
         "ebn.co.kr",
@@ -10953,16 +11021,14 @@
         "ttlnews.com",
         "e-science.co.kr",
         "weekly.hankooki.com",
+        "delighti.co.kr",
         "whitepaper.co.kr",
         "ppss.kr",
         "todayeconomic.com",
         "globale.co.kr",
         "widedaily.com",
         "newsroad.co.kr",
-        "연합뉴스TV",
-        "뉴시안",
         "newsian.co.kr",
-        "마켓인",
         "edaily.co.kr",
         "inthenews.co.kr",
         "sisacast.kr",
@@ -10976,7 +11042,6 @@
         "digitaltoday.co.kr",
         "biztribune.co.kr",
         "pointe.co.kr",
-        "서울경제TV",
         "sentv.co.kr",
         "kfenews.co.kr",
         "wowtv.co.kr",
@@ -10992,6 +11057,14 @@
         "newsis.com",
         "catchnews.kr",
         "thefairnews.co.kr",
+        "글로벌이코노믹",
+        "뉴스핌",
+        "뉴스1",
+        "머니투데이",
+        "연합뉴스TV",
+        "뉴시안",
+        "마켓인",
+        "서울경제TV",
         "뷰어스",
         "theviewers.co.kr",
         "매일신문",
@@ -11023,7 +11096,6 @@
         "finomy.com",
         "sports.hankooki.com",
         "wsobi.com",
-        "delighti.co.kr",
         "smedaily.co.kr",
         "bizwnews.com",
         "financialpost.co.kr",
@@ -16128,14 +16200,14 @@
         "KAU25"
       ],
       "duplicateSources": [
+        "yna.co.kr",
         "Daum",
         "연합뉴스",
-        "yna.co.kr",
         "v.daum.net"
       ],
       "searchProviders": [
-        "Google News RSS",
-        "NAVER API HUB"
+        "NAVER API HUB",
+        "Google News RSS"
       ],
       "duplicateCount": 5,
       "region": "국내"
