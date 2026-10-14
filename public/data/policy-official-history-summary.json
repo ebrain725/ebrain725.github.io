@@ -1,7 +1,7 @@
 {
   "schemaVersion": "2.0",
   "requestedStartDate": "2015-01-01",
-  "verifiedAt": "2026-10-14T04:55:16+09:00",
+  "verifiedAt": "2026-10-15T03:05:51+09:00",
   "keywordExpansionVersion": "2026-09-11-v1-38-topics",
   "keywordRule": {
     "titleAndContent": [
@@ -123,18 +123,18 @@
     "notice": "기후부 공지·공고 전체 이력에서 핵심 7개는 제목·본문, 확대 23개는 제목으로 판정",
     "krx_notice": "한국거래소 배출권시장 공지사항의 2015-01-01 이후 일반 공지 전체"
   },
-  "officialItemCount": 1681,
+  "officialItemCount": 1683,
   "counts": {
-    "krx_notice": 315,
+    "krx_notice": 316,
     "notice": 434,
-    "press": 932
+    "press": 933
   },
   "directCounts": {
     "press": 434,
     "notice": 224
   },
   "relatedCounts": {
-    "press": 498,
+    "press": 499,
     "notice": 210
   },
   "earliest": {
@@ -143,9 +143,9 @@
     "press": "2015-01-08"
   },
   "latest": {
-    "krx_notice": "2026-10-08",
+    "krx_notice": "2026-10-14",
     "notice": "2026-10-08",
-    "press": "2026-10-08"
+    "press": "2026-10-14"
   },
   "sourceAudit": [
     {
@@ -153,7 +153,7 @@
       "section": "press",
       "pagesFetched": 1,
       "rawRowsScanned": 1000,
-      "finalMergedItems": 932,
+      "finalMergedItems": 933,
       "directCount": 7,
       "relatedCount": 23,
       "oldestSourceDateSeen": "2025-11-26",
@@ -168,7 +168,7 @@
       "finalMergedItems": 434,
       "directCount": 6,
       "relatedCount": 13,
-      "oldestSourceDateSeen": "2026-06-10",
+      "oldestSourceDateSeen": "2026-06-12",
       "crossedRequestedStart": true,
       "complete": true
     },
@@ -177,7 +177,7 @@
       "section": "krx_notice",
       "pagesFetched": 33,
       "rawRowsScanned": 316,
-      "finalMergedItems": 315,
+      "finalMergedItems": 316,
       "directCount": null,
       "relatedCount": null,
       "oldestSourceDateSeen": "2014-12-18",
@@ -186,14 +186,14 @@
     }
   ],
   "validation": {
-    "itemCount": 1681,
+    "itemCount": 1683,
     "counts": {
-      "press": 932,
       "notice": 434,
-      "krx_notice": 315
+      "press": 933,
+      "krx_notice": 316
     },
     "relatedCounts": {
-      "press": 498,
+      "press": 499,
       "notice": 210
     },
     "duplicateKeys": 0,
