@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-15T13:16:20+09:00",
+  "generatedAt": "2026-10-15T15:13:35+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1245,
+  "itemCount": 1251,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-15",
   "sourceCommitsScanned": 0,
@@ -89,6 +89,54 @@
       "region": "국내"
     },
     {
+      "id": "907821fe3720e376",
+      "publishedAt": "2026-10-15",
+      "title": "코트라 “2030년 대일 수출 350억달러”… 韓日 경제협력 지평 넓힌다",
+      "category": "제도",
+      "summary": "일본은 올해 4월 GX 배출권거래제(GX- ETS )를 본격 가동해 산업계 탈탄소를 의무화했다. 에너지저장장치(ESS)·페로브스카이트 등 국내 기업이 강점을 가진 분야를 중심으로, 한국 대·중소기업과 일본 종합상사...",
+      "source": "etnews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.etnews.com/20261015000273",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "etnews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
+      "id": "43aad8145a266f7b",
+      "publishedAt": "2026-10-15",
+      "title": "우양상선, 브라질 발레와 25년 장기운송계약…친환경 벌크선 4척 발주",
+      "category": "제도",
+      "summary": "IMO가 추진하는 선박탄소집약도지수(CII)와 온실가스 연료 집약도(GFI) 관련 규제, EU의 배출권 거래제(EU ETS)와 해운 연료 규제인 FuelEU Maritime 등에 대응하기 위한 조치로 풀이된다. 기존 중고 선박을 친환경 선박으로...",
+      "source": "cwn.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.cwn.kr/news/articleView.html?idxno=59476",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "cwn.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "fc94c9fe825901f4",
       "publishedAt": "2026-10-15",
       "title": "박영사, '스타트업 마에스트로: 기후·에너지 딥테크를 위한 24단계 플레...",
@@ -105,6 +153,30 @@
       ],
       "duplicateSources": [
         "nbntv.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "3a7d9134617ac833",
+      "publishedAt": "2026-10-15",
+      "title": "대표 시멘트기업 쌍용C&E, 창립 64년 만에 본사 강원도로 이전",
+      "category": "제도",
+      "summary": "과거에는 시멘트 생산량을 늘려 단위당 고정비 부담을 낮추는 데 주력했지만, 이제는 탄소 배출권 비용 등을 함께 고려해 생산량을 조절하는 것이 중요해졌다는 것이다. 경영진이 현장 상황을 바로 파악하고 생산...",
+      "source": "hankyung.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.hankyung.com/article/202610153940i",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "hankyung.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -130,6 +202,20 @@
       ],
       "duplicateSources": [
         "financialpost.co.kr",
+        "insight.co.kr",
+        "tvchosun.com",
+        "beyondpost.co.kr",
+        "delighti.co.kr",
+        "donga.com",
+        "consumernews.co.kr",
+        "choicenews.co.kr",
+        "inews24.com",
+        "dailypop.kr",
+        "koreareport.co.kr",
+        "biz.sbs.co.kr",
+        "viva100.com",
+        "onews.tv",
+        "paxetv.com",
         "ppss.kr",
         "thefairnews.co.kr",
         "ziksir.com",
@@ -137,17 +223,10 @@
         "tfmedia.co.kr",
         "metroseoul.co.kr",
         "mt.co.kr",
-        "beyondpost.co.kr",
-        "delighti.co.kr",
         "cnbizm.com",
         "cstimes.com",
-        "consumernews.co.kr",
-        "choicenews.co.kr",
         "fetv.co.kr",
         "4th.kr",
-        "biz.sbs.co.kr",
-        "viva100.com",
-        "onews.tv",
         "cnbnews.com",
         "kpenews.com",
         "public25.com",
@@ -174,12 +253,18 @@
         "apnews.kr",
         "moneystorm.kr",
         "bbsi.co.kr",
-        "pinpointnews.co.kr"
+        "pinpointnews.co.kr",
+        "smartbizn.com",
+        "arunews.com",
+        "sisaon.co.kr",
+        "lawissue.co.kr",
+        "dt.co.kr",
+        "finomy.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 46,
+      "duplicateCount": 59,
       "region": "국내"
     },
     {
@@ -254,6 +339,29 @@
       "region": "국내"
     },
     {
+      "id": "3a6231fbaa457698",
+      "publishedAt": "2026-10-15",
+      "title": "[민주 부동산] 현대엔지니어링·BS한양·대우건설",
+      "category": "상쇄·외부사업",
+      "summary": "확보한 크레딧은 자발적 탄소시장 거래와 해외사업장 온실가스 배출량 상쇄 등에 활용하는 방안을 검토하고 있으며 탄소저감 건설자재 개발과 현장 적용도 확대할 방침이다.",
+      "source": "iminju.net",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.iminju.net/news/articleView.html?idxno=170897",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "iminju.net"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "9907a27ba19e63bc",
       "publishedAt": "2026-10-15",
       "title": "[맹소영의 기후2050]녹색과 성장, 이제는 한 길 위에",
@@ -302,6 +410,29 @@
       "region": "국내"
     },
     {
+      "id": "0f4d4bd94887aa09",
+      "publishedAt": "2026-10-15",
+      "title": "[건설 Pick] 한화 건설부문·현대엔지니어링·대우건설, 디지털 혁신 & ...",
+      "category": "상쇄·외부사업",
+      "summary": "대우건설은 향후 마지막 관문인 모니터링 보고서 심의를 마친 뒤 발급받는 크레딧을 자발적 탄소시장 에서 거래하거나 해외 사업장의 탄소 배출량을 상쇄하는 용도로 활용할 방침이다. 정부가 2026년 말 개설을 목표로...",
+      "source": "lcnews.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.lcnews.co.kr/news/articleView.html?idxno=209659",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "lcnews.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "cabbb760eecf03e2",
       "publishedAt": "2026-10-15",
       "title": "[K-ODA 현장]⑩ '원조 넘어 상생'…신흥 시장 영토 넓히는 한국 기업(끝...",
@@ -341,6 +472,30 @@
       ],
       "duplicateSources": [
         "ekn.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "5027c1c2bfeb1f7e",
+      "publishedAt": "2026-10-15",
+      "title": "KB자산운용, 'RISE 미국천연가스밸류체인' ETF 1주 6.01%…수익률 1위",
+      "category": "제도",
+      "summary": "78% ▲'KODEX 운송' 4.48% ▲'HANARO 글로벌탄소 배출권 선물ICE(합성)' 4.45% ▲'RISE 인도디지털성장' 4.35% ▲'KODEX WTI원유선물(H)' 4.30% 순으로 나타났다. 사진/KB자산운용",
+      "source": "press9.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.press9.kr/news/articleView.html?idxno=84307",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "press9.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -4581,7 +4736,8 @@
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
         "배출권",
-        "탄소배출권"
+        "탄소배출권",
+        "유상할당"
       ],
       "duplicateSources": [
         "경향신문",
@@ -11350,7 +11506,6 @@
         "widedaily.com",
         "newsroad.co.kr",
         "연합뉴스TV",
-        "뉴시안",
         "newsian.co.kr",
         "bizwnews.com",
         "마켓인",
@@ -11383,6 +11538,7 @@
         "newsis.com",
         "catchnews.kr",
         "thefairnews.co.kr",
+        "뉴시안",
         "뉴스1",
         "뷰어스",
         "theviewers.co.kr",
