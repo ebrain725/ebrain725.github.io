@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-15T23:18:20+09:00",
+  "generatedAt": "2026-10-16T02:18:52+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
   "itemCount": 1258,
@@ -326,12 +326,13 @@
         "datanews.co.kr",
         "industrynews.co.kr",
         "shinailbo.co.kr",
-        "biztribune.co.kr"
+        "biztribune.co.kr",
+        "job-post.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 76,
+      "duplicateCount": 77,
       "region": "국내"
     },
     {
@@ -1057,7 +1058,7 @@
         "탄소시장"
       ],
       "section": "news",
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "duplicateSources": [
         "넷제로뉴스"
       ],
