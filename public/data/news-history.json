@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-15T15:13:35+09:00",
+  "generatedAt": "2026-10-15T18:13:33+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1251,
+  "itemCount": 1257,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-15",
   "sourceCommitsScanned": 0,
@@ -35,6 +35,30 @@
       "searchProviders": [
         "NAVER API HUB"
       ],
+      "region": "국내"
+    },
+    {
+      "id": "41c8eb926584d59b",
+      "publishedAt": "2026-10-15",
+      "title": "해외 온실가스 줄여 배출권 산다? \"감축량 부풀리기부터 막아야\"",
+      "category": "제도",
+      "summary": "국내 배출권 거래제와 목표관리제에 활용하는 방안을 검토한다. '자발적' 시장에서 '고신뢰' 시장으로... 배출권 거래제 연계에 대해서도 \"굉장히 위험한 발상\"이라고 우려했다. 권 활동가는 \"규제시장은 거래제에서...",
+      "source": "newspenguin.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newspenguin.com/news/articleView.html?idxno=22304",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "newspenguin.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
       "region": "국내"
     },
     {
@@ -81,6 +105,30 @@
       ],
       "duplicateSources": [
         "kr.aving.net"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "ccd289ba42039a01",
+      "publishedAt": "2026-10-15",
+      "title": "코트라 “올해 수출, 사상 최초로 일본 추월할 듯… 대일 상생안 모색”",
+      "category": "제도",
+      "summary": "올해 상반기에도 선박 공장 스마트운영 솔루션 수출계약(100만 달러), 일본제철 공급망 진입 양해각서 체결(MOU, 100만 달러) 등 비반도체 분야 성과가 이어졌다.그린에너지 분야에서는 올해 4월 배출권 거래제(GX-ETS)가...",
+      "source": "weeklytrade.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://weeklytrade.co.kr/news/view.html?section=1&category=3&item=&no=101735",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "weeklytrade.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -201,16 +249,24 @@
         "탄소시장"
       ],
       "duplicateSources": [
-        "financialpost.co.kr",
-        "insight.co.kr",
+        "the-pr.co.kr",
         "tvchosun.com",
-        "beyondpost.co.kr",
-        "delighti.co.kr",
+        "newspost.kr",
+        "fntoday.co.kr",
+        "smarttimes.co.kr",
+        "newstnt.com",
+        "seoultimes.news",
         "donga.com",
-        "consumernews.co.kr",
         "choicenews.co.kr",
         "inews24.com",
+        "segyebiz.com",
         "dailypop.kr",
+        "businessplus.kr",
+        "financialpost.co.kr",
+        "insight.co.kr",
+        "beyondpost.co.kr",
+        "delighti.co.kr",
+        "consumernews.co.kr",
         "koreareport.co.kr",
         "biz.sbs.co.kr",
         "viva100.com",
@@ -259,12 +315,45 @@
         "sisaon.co.kr",
         "lawissue.co.kr",
         "dt.co.kr",
-        "finomy.com"
+        "finomy.com",
+        "businesspost.co.kr",
+        "mediapen.com",
+        "catchnews.kr",
+        "newstree.kr",
+        "areyou.co.kr",
+        "datanews.co.kr",
+        "industrynews.co.kr",
+        "shinailbo.co.kr",
+        "biztribune.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 59,
+      "duplicateCount": 76,
+      "region": "국내"
+    },
+    {
+      "id": "cdda20a7ff59f6d1",
+      "publishedAt": "2026-10-15",
+      "title": "대우건설 '데코콘' 탄소감축인증 2관문 통과··· 탄소크레딧 '눈앞'",
+      "category": "상쇄·외부사업",
+      "summary": "이에 따라 대우건설은 탄소크레딧(탄소 배출권 )을 확보해 수익화 하거나 해외 현장의 온실가스 배출 상쇄 에 활용할 발판을 마련했다. 대한상의 인증은 감축 방식을 정하는 방법론, 실제 사업 구조를 따지는 사업계획서...",
+      "source": "greenpostkorea.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.greenpostkorea.co.kr/news/articleView.html?idxno=307703",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "greenpostkorea.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
       "region": "국내"
     },
     {
@@ -410,6 +499,29 @@
       "region": "국내"
     },
     {
+      "id": "dcb75aad22c64134",
+      "publishedAt": "2026-10-15",
+      "title": "[건설 브리핑] 대우건설·LH·현대엔지니어링·DL이앤씨",
+      "category": "상쇄·외부사업",
+      "summary": "한편 대우건설은 탄소크레딧을 확보하면 자발적 탄소시장 에서 거래하거나 해외사업장의 온실가스 배출량을 상쇄하는 데 활용하는 방안을 검토하고 있다. [사진 = 한국토지주택공사 제공] ◇ LH, 자립준비청년 대상...",
+      "source": "niceeconomy.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.niceeconomy.co.kr/news/articleView.html?idxno=91343",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "niceeconomy.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "0f4d4bd94887aa09",
       "publishedAt": "2026-10-15",
       "title": "[건설 Pick] 한화 건설부문·현대엔지니어링·대우건설, 디지털 혁신 & ...",
@@ -423,8 +535,9 @@
       "matchedKeywords": [
         "탄소시장"
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "duplicateSources": [
+        "newscj.com",
         "lcnews.co.kr"
       ],
       "searchProviders": [
@@ -551,6 +664,31 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 2,
+      "region": "국내"
+    },
+    {
+      "id": "0149f5389b643e09",
+      "publishedAt": "2026-10-15",
+      "title": "(2026 국감)박지혜 의원 \"대기오염 배출권 과다 할당…감축 유인 없어\"",
+      "category": "제도",
+      "summary": "남은 배출권 을 다른 사업장에 판매할 수 있도록 하는 제도다. 수도권에서 2008년부터 시행됐으며 2020년에는... 특히 환경공단이 국정과제 이행 성과 점검자료에서 배출권 거래 활성화를 성과로 제시한 점을 지적했다. 박...",
+      "source": "electimes.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.electimes.com/news/articleView.html?idxno=373498",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 2,
+      "duplicateSources": [
+        "전기신문",
+        "electimes.com"
+      ],
+      "searchProviders": [
+        "Google News RSS",
+        "NAVER API HUB"
+      ],
       "region": "국내"
     },
     {
@@ -6138,6 +6276,30 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 2,
+      "region": "국내"
+    },
+    {
+      "id": "eab547eba0c89e79",
+      "publishedAt": "2026-10-05",
+      "title": "쓰레기 매립가스가 ‘66억원 탄소 자산’ 됐다…대구시, 배출권 21만9432톤...",
+      "category": "제도",
+      "summary": "대구시가 방천리 매립가스 자원화사업을 통해 21만9432톤의 탄소배출권 을 새로 확보했다. 최근 국내 탄소배출권 거래 시세를 적용하면 약 66억원 상당이다. 대구시는 올해 9월 방천리 매립가스 자원화사업의 2023~2024년...",
+      "source": "inews24.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.inews24.com/view/2011765",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "inews24.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
       "region": "국내"
     },
     {
@@ -16673,14 +16835,14 @@
         "KAU25"
       ],
       "duplicateSources": [
+        "yna.co.kr",
         "Daum",
         "연합뉴스",
-        "yna.co.kr",
         "v.daum.net"
       ],
       "searchProviders": [
-        "Google News RSS",
-        "NAVER API HUB"
+        "NAVER API HUB",
+        "Google News RSS"
       ],
       "duplicateCount": 5,
       "region": "국내"
