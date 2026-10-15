@@ -1,17 +1,41 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-16T02:18:52+09:00",
+  "generatedAt": "2026-10-16T08:13:07+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1258,
+  "itemCount": 1259,
   "earliestPublishedAt": "2026-08-06",
-  "latestPublishedAt": "2026-10-15",
+  "latestPublishedAt": "2026-10-16",
   "sourceCommitsScanned": 0,
   "sourceSnapshotsScanned": 0,
   "historicalRowsScanned": 0,
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "f6e182f88e39078f",
+      "publishedAt": "2026-10-16",
+      "title": "[ESG 리더스] 이찬우 농협금융 회장, 은행·증권 묶어 탄소금융 키운다...",
+      "category": "제도",
+      "summary": "농업인 탄소 배출권 은 3년간 1만4918톤을 사들였다. 농협은행의 여신과 NH투자증권의 배출권 거래를 묶어 기업의 전환투자를 돕고, 농가의 감축 실적은 추가 소득으로 연결하는 방식이다. 이 회장 체제의 특징은 ESG를...",
+      "source": "greened.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.greened.kr/news/articleView.html?idxno=352008",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "greened.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
     {
       "id": "59fdb30709771219",
       "publishedAt": "2026-10-15",
@@ -251,7 +275,10 @@
         "탄소시장"
       ],
       "duplicateSources": [
-        "the-pr.co.kr",
+        "datanews.co.kr",
+        "industrynews.co.kr",
+        "job-post.co.kr",
+        "biztribune.co.kr",
         "newspost.kr",
         "fntoday.co.kr",
         "smarttimes.co.kr",
@@ -259,6 +286,7 @@
         "seoultimes.news",
         "choicenews.co.kr",
         "segyebiz.com",
+        "the-pr.co.kr",
         "businessplus.kr",
         "tvchosun.com",
         "donga.com",
@@ -323,11 +351,7 @@
         "catchnews.kr",
         "newstree.kr",
         "areyou.co.kr",
-        "datanews.co.kr",
-        "industrynews.co.kr",
-        "shinailbo.co.kr",
-        "biztribune.co.kr",
-        "job-post.co.kr"
+        "shinailbo.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -2478,16 +2502,16 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "view.asiae.co.kr",
         "아시아경제",
+        "view.asiae.co.kr",
         "etnews.com",
         "dt.co.kr",
         "전자신문",
         "naeil.com"
       ],
       "searchProviders": [
-        "NAVER API HUB",
-        "Google News RSS"
+        "Google News RSS",
+        "NAVER API HUB"
       ],
       "duplicateCount": 6,
       "region": "국내"
@@ -11717,6 +11741,7 @@
         "kfenews.co.kr",
         "wowtv.co.kr",
         "newspim.com",
+        "브릿지경제",
         "viva100.com",
         "dealsitetv.com",
         "dailypop.kr",
@@ -11735,7 +11760,6 @@
         "매일신문",
         "kbsm.net",
         "joongangenews.com",
-        "브릿지경제",
         "이투데이",
         "연합뉴스",
         "매일일보",
