@@ -47,20 +47,20 @@
         <p class="eyebrow">K-ETS MARKET INTELLIGENCE</p>
         <p class="hero-copy">배출권 가격, 기후에너지환경부 정책, 한국거래소 공지, 데일리 브리핑을 연결해 시장 변화를 한 흐름으로 보여줍니다.</p>
       </div>
-      <div class="asof"><span class="live-dot"></span> 데이터 기준 <b id="asofDate">불러오는 중</b><small>GitHub 자동 갱신</small></div>
+      <div class="asof"><span class="live-dot"></span> 데이터 기준 <b id="asofDate">불러오는 중</b><small>수집 기준일 확인 중</small></div>
     </section>
 
     <section class="kpi-grid" id="market" aria-label="시장 핵심 지표">
       <article class="kpi-card featured">
-        <div class="kpi-head"><span>현재가</span><strong id="symbol">KAU25</strong></div>
+        <div class="kpi-head"><span>최근 확인 가격</span><strong id="symbol">KAU25</strong></div>
         <div class="price-value"><span id="currentPrice">-</span><small>원</small></div>
         <div class="change" id="dailyChange">-</div>
         <div class="range-track"><span id="rangeMarker"></span></div>
         <div class="range-label"><span id="rangeLow">52주 저 -</span><span id="rangeHigh">52주 고 -</span></div>
       </article>
-      <article class="kpi-card"><span class="kpi-label">당일 거래량</span><strong class="kpi-number" id="volume">-</strong><small class="kpi-unit">톤</small><p id="tradeValue">거래대금 -</p></article>
+      <article class="kpi-card"><span class="kpi-label">기준일 거래량</span><strong class="kpi-number" id="volume">-</strong><small class="kpi-unit">톤</small><p id="tradeValue">거래대금 -</p></article>
       <article class="kpi-card"><span class="kpi-label">가격 조회기간 등락</span><strong class="kpi-number" id="periodChange">-</strong><small class="kpi-unit" id="periodLabel">3개월 기준</small><p id="recordCount">가격 조회 -거래일 · KRX PDF 수집과 별도</p></article>
-      <article class="kpi-card"><span class="kpi-label">일중 가격 범위</span><strong class="kpi-number compact" id="dayRange">-</strong><small class="kpi-unit">원 / 톤</small><p id="openPrice">시가 -</p></article>
+      <article class="kpi-card"><span class="kpi-label">기준일 가격 범위</span><strong class="kpi-number compact" id="dayRange">-</strong><small class="kpi-unit">원 / 톤</small><p id="openPrice">시가 -</p></article>
     </section>
 
     <section class="market-layout">
@@ -78,7 +78,7 @@
         <div class="chart-legend"><span id="singlePriceLegend"><i class="legend-line"></i>종가</span><span id="kau25Legend" hidden><i class="legend-kau25"></i>KAU25</span><span id="kau26PreviewLegend" hidden><i class="legend-kau26-preview"></i>KAU26 · 8.31 이전</span><span id="kau26Legend" hidden><i class="legend-kau26"></i>KAU26 · 8.31 이후</span><span><i class="legend-bar"></i>거래량</span><span id="rolloverLegend" hidden><i class="legend-rollover"></i>종목 전환</span><span><i class="legend-event"></i>정책 발표</span><small>8월 31일 전환 전 거래량은 KAU25이며, 툴팁 괄호에 KAU26 거래량을 함께 표시합니다.</small></div>
       </article>
       <aside class="panel pulse-panel">
-        <div class="panel-head"><div><span class="section-tag">MARKET PULSE</span><h2>오늘의 시장 점검</h2></div></div>
+        <div class="panel-head"><div><span class="section-tag">MARKET PULSE</span><h2>기준일 시장 점검</h2></div></div>
         <div class="pulse-item"><span>20거래일 가격 위치</span><strong id="pulsePosition">-</strong><div class="mini-track"><i id="positionTrack"></i></div><p id="pulsePositionDetail">20일 평균 계산 중</p></div>
         <div class="pulse-item"><span>수급 강도</span><strong id="supplyStatus">-</strong><p class="pulse-detail" id="supplyDetail">20일 거래 강도 계산 중</p><p class="pulse-analysis" id="supplyAnalysis">가격과 거래량의 동행 여부를 분석합니다.</p></div>
         <div class="pulse-item"><span>최근 정책 인사이트</span><strong class="policy-brief" id="latestPolicy">수집 중</strong></div>
@@ -141,5 +141,34 @@
   <noscript>이 대시보드는 JavaScript를 사용합니다. 브라우저 설정에서 JavaScript를 켜주세요.</noscript>
   <script src="assets/app.js?v=20260902-price-period-label-v1" defer></script>
   <script src="assets/policy-motie-extension.js?v=20260910-no-excel-v2" defer></script>
+  <script id="price-freshness-labels-v1">
+  // Display provenance only. Never change a price, trade date, volume or forecast.
+  (()=>{'use strict';
+    const dateNode=document.getElementById('asofDate');if(!dateNode)return;
+    let receipt=null;
+    const set=(node,text)=>{if(node&&node.textContent!==text)node.textContent=text;};
+    function refresh(){
+      const day=dateNode.textContent.trim().replaceAll('.','-');
+      if(!/^\d{4}-\d{2}-\d{2}$/.test(day))return;
+      const parts=Object.fromEntries(new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Seoul',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(new Date()).map(x=>[x.type,x.value]));
+      const today=`${parts.year}-${parts.month}-${parts.day}`,old=day<today,md=day.slice(5).replace('-','/');
+      set(document.querySelector('#market .featured .kpi-head>span'),old?`${md} 종가`:'오늘 수집 시세');
+      set(document.querySelector('#market .kpi-card:nth-child(2) .kpi-label'),old?'기준일 거래량':'오늘 거래량');
+      set(document.querySelector('#market .kpi-card:nth-child(4) .kpi-label'),old?'기준일 가격 범위':'오늘 가격 범위');
+      set(document.querySelector('.pulse-panel .panel-head h2'),old?'기준일 시장 점검':'오늘의 시장 점검');
+      const pending=old&&receipt?.status==='source_not_current'&&String(receipt.collected_at||'').startsWith(today);
+      const note=document.querySelector('.asof>small');
+      set(note,pending?`오늘 시세 미반영 · ${md} 종가 표시 중`:old?'해당 기준일 종가 · 실시간 시세 아님':'오늘 수집된 시세 · 실시간 아님');
+      const dot=document.querySelector('.asof .live-dot');
+      if(dot)dot.style.background=old?'#b77b23':'';
+      if(note){note.style.color=pending?'#94611b':'';note.setAttribute('role','status');}
+      document.documentElement.dataset.priceFreshness=pending?'same-day-not-received':old?'stored-day':'same-day';
+    }
+    new MutationObserver(refresh).observe(dateNode,{childList:true,subtree:true,characterData:true});
+    fetch('data/krx-market-refresh.json',{cache:'no-store'}).then(r=>r.ok?r.json():null).then(r=>{receipt=r;refresh();}).catch(()=>refresh());
+    document.addEventListener('visibilitychange',()=>{if(!document.hidden)refresh();});
+    refresh();
+  })();
+  </script>
 </body>
 </html>
