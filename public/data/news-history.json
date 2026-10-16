@@ -1,17 +1,41 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-17T01:55:03+09:00",
+  "generatedAt": "2026-10-17T08:12:41+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1285,
+  "itemCount": 1286,
   "earliestPublishedAt": "2026-08-06",
-  "latestPublishedAt": "2026-10-16",
+  "latestPublishedAt": "2026-10-17",
   "sourceCommitsScanned": 0,
   "sourceSnapshotsScanned": 0,
   "historicalRowsScanned": 0,
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "fd4b77118bd35066",
+      "publishedAt": "2026-10-17",
+      "title": "EU 정상회의, 장기 예산 돌파구 마련 실패",
+      "category": "시장·가격",
+      "summary": "이탈리아와 그리스, 그리고 비셰그라드 4개국은 EU의 두 번째 배출권 거래제인 ETS2의 시행을 2030년까지 연기하자고 요구했다. 탄소 가격 책정이 가계와 기업에 추가 부담을 줄 것이라는 이유에서였다. 반면 북유럽...",
+      "source": "newsis.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newsis.com/view/NISX20261017_0003829832",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "newsis.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
     {
       "id": "adaacbd26ffeb8ba",
       "publishedAt": "2026-10-16",
@@ -12378,6 +12402,7 @@
         "newspim.com",
         "브릿지경제",
         "viva100.com",
+        "포춘코리아",
         "dealsitetv.com",
         "dailypop.kr",
         "sateconomy.co.kr",
@@ -12426,7 +12451,6 @@
         "fetv.co.kr",
         "2news.co.kr",
         "pennmike.com",
-        "포춘코리아",
         "인사이트코리아",
         "insightkorea.co.kr",
         "fortunekorea.co.kr",
