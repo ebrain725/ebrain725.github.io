@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-16T08:13:07+09:00",
+  "generatedAt": "2026-10-16T10:13:20+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1259,
+  "itemCount": 1265,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-16",
   "sourceCommitsScanned": 0,
@@ -12,6 +12,126 @@
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "690eed2ddda1092b",
+      "publishedAt": "2026-10-16",
+      "title": "폭락장에 ETF 가격도 '삐끗'…괴리 벌어진 종목 평소의 5배",
+      "category": "시장·가격",
+      "summary": "(ETF) 시장 에서도 시장 가격과 순자산가치(NAV) 간 괴리가 크게 벌어진 상품이 평소의 5배 수준으로... 해외 ETF에서는 'HANARO 글로벌 탄소 배출권선물ICE(합성)'가 마이너스 7.39%를 기록해 5% 관리범위를 이탈했다....",
+      "source": "einfomax.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4439587",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "einfomax.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "6862c0caead4018a",
+      "publishedAt": "2026-10-16",
+      "title": "코레일 전기요금 연 6322억…\"에너지 절감·계량제도 개선 병행해야\"",
+      "category": "제도",
+      "summary": "온실가스 배출권 할당 축소와 재생에너지 사용 확대 요구에도 대비해야 한다고 짚었다. 기술적 대응의 하나는 최대수요전력 관리다. 코레일은 경부고속선 평택전철변전소 구간 시범운영에서 최대수요전력을 3~4% 낮추는...",
+      "source": "electimes.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.electimes.com/news/articleView.html?idxno=373501",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "온실가스 배출권"
+      ],
+      "duplicateSources": [
+        "electimes.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "1eb0ed1a53c50ac5",
+      "publishedAt": "2026-10-16",
+      "title": "증시 붕괴 속 글로벌 ' 탄소 배출권' 촉각...국내 상승, 유럽·영국 하락",
+      "category": "시장·가격",
+      "summary": "16일 최관순 SK증권 연구원이 작성한 글로벌 탄소시장 자료에 따르면, 15일 기준 국내 KAU 가격은 톤당 3만200원으로 전일 대비 3.1% 상승했다. 반면 유럽연합 배출권(EUA) 선물은 톤당 85.8유로로 1.5% 하락했고...",
+      "source": "financialpost.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.financialpost.co.kr/news/articleView.html?idxno=280772",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권",
+        "탄소시장"
+      ],
+      "duplicateSources": [
+        "financialpost.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
+      "id": "b1c0931e5e4a2bae",
+      "publishedAt": "2026-10-16",
+      "title": "대우건설, 현장타설 콘크리트 탄소 크레딧 확보 추진…3.2만t 감축 예상",
+      "category": "상쇄·외부사업",
+      "summary": "대우건설은 향후 모니터링 보고서 심의를 거쳐 탄소크레딧을 발급받으면 이를 자발적 탄소시장 에서 거래하거나 해외사업장 등에서 발생하는 온실가스 배출량을 자발적으로 상쇄하는 데 활용하는 방안을 검토하고 있다....",
+      "source": "sentv.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.sentv.co.kr/article/view/sentv202610160008",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "sentv.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "49f7316d0b920e33",
+      "publishedAt": "2026-10-16",
+      "title": "노르웨이 국부펀드, 안보 앞에 ESG 원칙 흔들 [ESG 뉴스 5]",
+      "category": "상쇄·외부사업",
+      "summary": "15일 로이터에 따르면 양국은 신차의 탄소 배출량을 2021년 대비 90% 줄이되, 나머지 10%에 대한 별도의 상쇄 ... 헝가리, 체코, 폴란드, 슬로바키아는 건물과 도로교통에 탄소가격을 부과하는 배출권 거래제(ETS2)의 시행을...",
+      "source": "magazine.hankyung.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://magazine.hankyung.com/business/article/202610165606b",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "magazine.hankyung.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
     {
       "id": "f6e182f88e39078f",
       "publishedAt": "2026-10-16",
@@ -35,6 +155,30 @@
       ],
       "duplicateCount": 1,
       "region": "국내"
+    },
+    {
+      "id": "ead7ed04343f6af3",
+      "publishedAt": "2026-10-16",
+      "title": "(특별기고) 탄소 중립의 골든타임, '금융 규제 혁신'이라는 마중물이 필요...",
+      "category": "상쇄·외부사업",
+      "summary": "국제스왑파생상품협회(ISDA) 역시 2021년 EU 배출권 시장 의 변동성을 분석해 탄소 배출권 위험값을 60%에서 37% 수준으로 낮출 필요가 있다고 제안했다. 해외 감축실적 확보에도 자본규제 '벽' 2035 NDC 달성을 위해서는 국내...",
+      "source": "newstomato.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.newstomato.com/ReadNews.aspx?no=1316905&inflow=N",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "newstomato.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
     },
     {
       "id": "59fdb30709771219",
@@ -275,16 +419,16 @@
         "탄소시장"
       ],
       "duplicateSources": [
-        "datanews.co.kr",
         "industrynews.co.kr",
         "job-post.co.kr",
-        "biztribune.co.kr",
         "newspost.kr",
+        "choicenews.co.kr",
+        "datanews.co.kr",
+        "biztribune.co.kr",
         "fntoday.co.kr",
         "smarttimes.co.kr",
         "newstnt.com",
         "seoultimes.news",
-        "choicenews.co.kr",
         "segyebiz.com",
         "the-pr.co.kr",
         "businessplus.kr",
@@ -11736,6 +11880,7 @@
         "digitaltoday.co.kr",
         "biztribune.co.kr",
         "pointe.co.kr",
+        "swtvnews.com",
         "서울경제TV",
         "sentv.co.kr",
         "kfenews.co.kr",
@@ -11787,7 +11932,6 @@
         "wsobi.com",
         "financialpost.co.kr",
         "newscape.co.kr",
-        "swtvnews.com",
         "moneystorm.kr",
         "asiae.co.kr",
         "fetv.co.kr",
