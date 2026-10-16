@@ -2,21 +2,23 @@ name: Sync KRX Market & Auction Data v4
 
 on:
   schedule:
-    # KRX 전일 데이터 갱신(08:00 KST) 이후 매일 08:37 KST 실행
+    # KRX 전일 데이터 갱신 이후 매일 08:37 KST 실행
     - cron: "37 23 * * *"
-    # KRX 배출권시장 종료 후 당일 시세를 12:07 KST에 반영 (평일)
+    # 당일 시세: 12:07 KST, 미반영 시 13:27/15:27 KST 보완
     - cron: "7 3 * * 1-5"
-    # 유상경매일 17:17 KST부터 재시도. 실제 수집 후 중복 실행은 자동 생략합니다.
+    - cron: "27 4 * * 1-5"
+    - cron: "27 6 * * 1-5"
+    # 유상경매 보완 예약은 기존 유지
     - cron: "17 8 * * 3"
     - cron: "17 9 * * 3"
     - cron: "17 10 * * 3"
     - cron: "17 11 * * 3"
-    # GitHub 예약 지연에 대비한 다음 날 08:47 KST 최종 보완
     - cron: "47 23 * * 3"
   push:
     branches: [main]
     paths:
       - ".github/triggers/krx-auction-refresh.txt"
+      - ".github/triggers/krx-market-refresh.txt"
   workflow_dispatch:
     inputs:
       mode:
@@ -24,10 +26,7 @@ on:
         required: true
         default: "site-today"
         type: choice
-        options:
-          - site-today
-          - openapi
-          - auction
+        options: [site-today, openapi, auction]
       target_date:
         description: "Open API 전용: 조회 기준일 YYYY-MM-DD (비우면 전일)"
         required: false
@@ -37,9 +36,7 @@ on:
         required: true
         default: "manual"
         type: choice
-        options:
-          - manual
-          - scheduler
+        options: [manual, scheduler]
 
 permissions:
   contents: write
@@ -67,6 +64,7 @@ jobs:
       - name: 저장소 불러오기
         uses: actions/checkout@v4
         with:
+          ref: main
           fetch-depth: 0
 
       - name: Python 준비
@@ -77,40 +75,67 @@ jobs:
       - name: 수집 방식 결정
         id: mode_check
         shell: bash
+        env:
+          REQUEST_MODE: ${{ inputs.mode }}
+          REQUEST_TRIGGER: ${{ inputs.trigger_type }}
+          EVENT_SCHEDULE: ${{ github.event.schedule }}
         run: |
           set -euo pipefail
-          MODE="${{ inputs.mode }}"
-          TRIGGER_TYPE="${{ inputs.trigger_type }}"
-
-          if [[ "${{ github.event_name }}" == "push" ]]; then
-            MODE="auction"
+          MODE="${REQUEST_MODE:-}"
+          TRIGGER_TYPE="${REQUEST_TRIGGER:-}"
+          PRICE_BACKUP=false
+          if [[ "$GITHUB_EVENT_NAME" == "push" ]]; then
+            if git diff-tree --no-commit-id --name-only -r "$GITHUB_SHA" | grep -Fxq '.github/triggers/krx-market-refresh.txt'; then
+              MODE="site-today"
+            else
+              MODE="auction"
+            fi
             TRIGGER_TYPE="manual"
-          elif [[ "${{ github.event_name }}" == "schedule" ]]; then
+          elif [[ "$GITHUB_EVENT_NAME" == "schedule" ]]; then
             TRIGGER_TYPE="scheduler"
-            case "${{ github.event.schedule }}" in
-              "7 3 * * 1-5")
-                MODE="site-today"
-                ;;
-              "17 8 * * 3"|"17 9 * * 3"|"17 10 * * 3"|"17 11 * * 3"|"47 23 * * 3")
-                MODE="auction"
-                ;;
-              *)
-                MODE="openapi"
-                ;;
+            case "${EVENT_SCHEDULE:-}" in
+              "7 3 * * 1-5") MODE="site-today" ;;
+              "27 4 * * 1-5"|"27 6 * * 1-5") MODE="site-today"; PRICE_BACKUP=true ;;
+              "17 8 * * 3"|"17 9 * * 3"|"17 10 * * 3"|"17 11 * * 3"|"47 23 * * 3") MODE="auction" ;;
+              *) MODE="openapi" ;;
             esac
           fi
-
-          if [[ -z "$MODE" ]]; then
-            MODE="site-today"
-          fi
-          if [[ -z "$TRIGGER_TYPE" ]]; then
-            TRIGGER_TYPE="manual"
-          fi
-
+          MODE="${MODE:-site-today}"
+          TRIGGER_TYPE="${TRIGGER_TYPE:-manual}"
+          case "$MODE" in site-today|openapi|auction) ;; *) exit 1 ;; esac
           echo "KRX_SYNC_MODE=$MODE" >> "$GITHUB_ENV"
           echo "KRX_TRIGGER_TYPE=$TRIGGER_TYPE" >> "$GITHUB_ENV"
+          echo "PRICE_BACKUP=$PRICE_BACKUP" >> "$GITHUB_ENV"
           echo "SHOULD_RUN=true" >> "$GITHUB_ENV"
-          echo "수집 방식: $MODE / 실행 주체: $TRIGGER_TYPE"
+          echo "수집 방식: $MODE / 실행 주체: $TRIGGER_TYPE / 당일 보완: $PRICE_BACKUP"
+
+      - name: 당일 보완의 중복 수집 방지
+        if: env.PRICE_BACKUP == 'true'
+        run: |
+          python - <<'PY'
+          import csv, hashlib, json, os
+          from datetime import datetime, time
+          from pathlib import Path
+          from zoneinfo import ZoneInfo
+          now=datetime.now(ZoneInfo('Asia/Seoul'))
+          status=Path('public/data/krx-market-refresh.json')
+          prices=Path('public/data/prices.csv')
+          try:
+              receipt=json.loads(status.read_text())
+              collected=datetime.fromisoformat(receipt['collected_at']).astimezone(ZoneInfo('Asia/Seoul'))
+              rows=list(csv.DictReader(prices.open(encoding='utf-8-sig')))
+              today=[r for r in rows if r['date']==now.date().isoformat() and r['symbol'].startswith('KAU') and float(r['close'])>0]
+              done=(receipt.get('status')=='same_day_collected' and receipt.get('trade_date')==now.date().isoformat()
+                    and collected.date()==now.date() and collected.time()>=time(12,5) and bool(today)
+                    and receipt.get('prices_sha256')==hashlib.sha256(prices.read_bytes()).hexdigest())
+          except (OSError,ValueError,KeyError,TypeError):
+              done=False
+          if done:
+              with open(os.environ['GITHUB_ENV'],'a') as f:f.write('SHOULD_RUN=false\n')
+              print('오늘 장 마감 이후 시세가 이미 원장에 반영됐습니다. 보완 수집·재배포를 생략합니다.')
+          else:
+              print('당일 반영 확인이 없어 KRX 원천 시세를 다시 조회합니다.')
+          PY
 
       - name: 경매일·중복 실행 점검
         if: env.KRX_SYNC_MODE == 'auction' && env.KRX_TRIGGER_TYPE == 'scheduler'
@@ -118,69 +143,59 @@ jobs:
         run: |
           python - <<'PY'
           from datetime import date, datetime, time, timedelta
-          import json
-          import os
+          import json, os
           from pathlib import Path
           from zoneinfo import ZoneInfo
-
-          now = datetime.now(ZoneInfo("Asia/Seoul"))
-          first = date(now.year, now.month, 1)
-          first_wednesday = first + timedelta(days=(2 - first.weekday()) % 7)
-          expected = first_wednesday + timedelta(days=7)
-
-          in_window = expected <= now.date() <= expected + timedelta(days=2)
-          after_open = now.date() > expected or now.time() >= time(17, 0)
-          due = in_window and after_open
-
-          path = Path("public/data/auctions.json")
-          existing_dates = set()
-          if path.exists():
-              document = json.loads(path.read_text(encoding="utf-8"))
-              existing_dates = {
-                  str(item.get("date", ""))
-                  for item in document.get("items", [])
-                  if isinstance(item, dict)
-              }
-
-          already_collected = expected.isoformat() in existing_dates
-          should_run = due and not already_collected
-
-          with open(os.environ["GITHUB_ENV"], "a", encoding="utf-8") as output:
-              output.write(f"EXPECTED_AUCTION_DATE={expected.isoformat()}\n")
-              output.write(f"SHOULD_RUN={'true' if should_run else 'false'}\n")
-
-          print(f"현재시각(KST): {now.isoformat(timespec='seconds')}")
-          print(f"이번 달 둘째 수요일: {expected.isoformat()}")
-          print(f"경매 수집기간 여부: {due}")
-          print(f"이미 수집 여부: {already_collected}")
-          print(f"실행 여부: {should_run}")
+          now=datetime.now(ZoneInfo('Asia/Seoul'))
+          first=date(now.year,now.month,1)
+          expected=first+timedelta(days=(2-first.weekday())%7+7)
+          due=expected<=now.date()<=expected+timedelta(days=2) and (now.date()>expected or now.time()>=time(17,0))
+          p=Path('public/data/auctions.json')
+          dates={str(x.get('date','')) for x in json.loads(p.read_text()).get('items',[]) if isinstance(x,dict)} if p.exists() else set()
+          should_run=due and expected.isoformat() not in dates
+          with open(os.environ['GITHUB_ENV'],'a') as f:
+              f.write(f"EXPECTED_AUCTION_DATE={expected.isoformat()}\nSHOULD_RUN={'true' if should_run else 'false'}\n")
+          print(f'경매 기준일 {expected}; 수집기간 {due}; 실행 {should_run}')
           PY
 
       - name: KRX 배출권 시세·경매 수집
         if: env.SHOULD_RUN == 'true'
         run: python scripts/sync_krx.py
 
-      - name: 경매 결과 강제 검증
-        if: env.SHOULD_RUN == 'true' && env.KRX_SYNC_MODE == 'auction' && env.EXPECTED_AUCTION_DATE != ''
-        shell: bash
+      - name: 당일 시세 반영 결과 기록
+        if: env.SHOULD_RUN == 'true' && env.KRX_SYNC_MODE == 'site-today'
         run: |
           python - <<'PY'
-          import json
-          import os
+          import csv, hashlib, json, os
+          from datetime import datetime
           from pathlib import Path
+          from zoneinfo import ZoneInfo
+          now=datetime.now(ZoneInfo('Asia/Seoul'))
+          p=Path('public/data/prices.csv')
+          rows=list(csv.DictReader(p.open(encoding='utf-8-sig')))
+          latest=max(r['date'] for r in rows)
+          today=[r for r in rows if r['date']==now.date().isoformat() and r['symbol'].startswith('KAU') and float(r['close'])>0]
+          receipt={'version':'krx-market-refresh-1','collected_at':now.isoformat(timespec='seconds'),'trade_date':latest,
+                   'status':'same_day_collected' if today else 'source_not_current','source':'KRX ETS 정보플랫폼',
+                   'source_url':'https://ets.krx.co.kr/contents/ETS/03/03010000/ETS03010000.jsp',
+                   'workflow_run_id':os.environ['GITHUB_RUN_ID'],'prices_sha256':hashlib.sha256(p.read_bytes()).hexdigest(),
+                   'same_day_rows':today,'live_deployment_verified':False}
+          Path('public/data/krx-market-refresh.json').write_text(json.dumps(receipt,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          print(json.dumps(receipt,ensure_ascii=False))
+          if not today:
+              print('::warning::당일 시세는 미확보입니다. 기존 시세의 날짜를 오늘로 변경하지 않습니다.')
+          PY
 
-          expected = os.environ["EXPECTED_AUCTION_DATE"]
-          document = json.loads(Path("public/data/auctions.json").read_text(encoding="utf-8"))
-          dates = {
-              str(item.get("date", ""))
-              for item in document.get("items", [])
-              if isinstance(item, dict)
-          }
-          if expected not in dates:
-              raise SystemExit(
-                  f"공식 원천에서 {expected} 유상경매 결과를 확인하지 못했습니다. 다음 예약에서 재시도합니다."
-              )
-          print(f"유상경매 결과 검증 완료: {expected}")
+      - name: 경매 결과 강제 검증
+        if: env.SHOULD_RUN == 'true' && env.KRX_SYNC_MODE == 'auction' && env.EXPECTED_AUCTION_DATE != ''
+        run: |
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          expected=os.environ['EXPECTED_AUCTION_DATE']
+          dates={str(x.get('date','')) for x in json.loads(Path('public/data/auctions.json').read_text()).get('items',[]) if isinstance(x,dict)}
+          if expected not in dates:raise SystemExit(f'공식 원천에서 {expected} 경매 결과를 확인하지 못했습니다.')
+          print('경매 결과 검증 완료:',expected)
           PY
 
       - name: 변경된 시세·경매 저장
@@ -191,28 +206,23 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add public/data/prices.csv public/data/auctions.json
-
+          if [[ -f public/data/krx-market-refresh.json ]]; then git add public/data/krx-market-refresh.json; fi
           if git diff --cached --quiet; then
             echo "새로운 KRX 시세 또는 경매 결과가 없습니다."
-            exit 0
+          else
+            git commit -m "data: update verified KRX market observation and refresh receipt"
+            pushed=false
+            for attempt in 1 2 3; do
+              if git pull --rebase origin main && git push origin HEAD:main; then pushed=true; break; fi
+              git rebase --abort 2>/dev/null || true
+              sleep $((attempt * 3))
+            done
+            test "$pushed" = true
           fi
-
-          git commit -m "data: update KRX emissions market and auction"
-          for attempt in 1 2 3; do
-            if git pull --rebase origin main && git push origin HEAD:main; then
-              echo "KRX 데이터 저장 완료"
-              exit 0
-            fi
-            echo "동시 업데이트 감지: ${attempt}/3 재시도"
-            git rebase --abort 2>/dev/null || true
-            sleep $((attempt * 3))
-          done
-          echo "::error::KRX 데이터 저장소 push에 실패했습니다."
-          exit 1
 
       - name: 실행 생략 사유
         if: env.SHOULD_RUN != 'true'
-        run: echo "경매일이 아니거나 해당 경매 결과가 이미 수집되어 실행을 생략했습니다."
+        run: echo "기준일 결과가 이미 반영됐거나 경매 수집기간이 아니므로 수집·배포를 생략합니다."
 
       - name: Pages 설정
         if: env.SHOULD_RUN == 'true'
@@ -228,3 +238,31 @@ jobs:
         if: env.SHOULD_RUN == 'true'
         id: deployment
         uses: actions/deploy-pages@v4
+
+      - name: 공개 사이트의 실제 시세 파일 대조
+        if: env.SHOULD_RUN == 'true' && env.KRX_SYNC_MODE == 'site-today'
+        env:
+          PUBLIC_PAGE_URL: ${{ steps.deployment.outputs.page_url }}
+        run: |
+          python - <<'PY'
+          import csv, io, json, os, time, urllib.request
+          from pathlib import Path
+          rows=list(csv.DictReader(Path('public/data/prices.csv').open(encoding='utf-8-sig')))
+          day=max(r['date'] for r in rows)
+          expected={(r['date'],r['symbol']):r for r in rows if r['date']==day}
+          base=os.environ['PUBLIC_PAGE_URL'].rstrip('/')+'/'
+          ok=False
+          for attempt in range(6):
+              try:
+                  url=base+'data/prices.csv?verify='+os.environ['GITHUB_RUN_ID']+'-'+str(attempt)
+                  req=urllib.request.Request(url,headers={'Cache-Control':'no-cache','User-Agent':'ETS-Market-Deployment-Check/1.0'})
+                  text=urllib.request.urlopen(req,timeout=25).read().decode('utf-8-sig')
+                  live={(r['date'],r['symbol']):r for r in csv.DictReader(io.StringIO(text))}
+                  if all(live.get(key)==row for key,row in expected.items()):
+                      print(json.dumps({'status':'live_prices_match','verified_date':day,'rows':list(expected.values()),'site':base},ensure_ascii=False))
+                      ok=True;break
+              except (OSError,ValueError,KeyError) as e:
+                  print('배포 검증 재시도:',type(e).__name__)
+              time.sleep(10)
+          if not ok:raise SystemExit('배포된 시세 파일과 검증한 최신 원장 값이 일치하지 않습니다.')
+          PY
