@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-16T18:11:46+09:00",
+  "generatedAt": "2026-10-16T18:21:54+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1284,
+  "itemCount": 1285,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-16",
   "sourceCommitsScanned": 0,
@@ -131,6 +131,29 @@
       ],
       "duplicateCount": 1,
       "region": "해외"
+    },
+    {
+      "id": "de96839a8612d604",
+      "publishedAt": "2026-10-16",
+      "title": "정유사 친환경 전환 '의무만으로는 어렵다'...SAF·CCUS 등 정책 지원 필...",
+      "category": "시장·가격",
+      "summary": "예를 들어 CCUS 운영에 필요한 탄소가격이 톤당 15만원인데 실제 배출권 가격이 8만원이면 차액을 보전해 투자경제성을 확보하도록 하는 구조다. CCUS처럼 투자비가 크고 회수기간이 긴 사업에서는 일회성 보조금보다...",
+      "source": "e-platform.net",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.e-platform.net/news/articleView.html?idxno=106164",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "e-platform.net"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
     },
     {
       "id": "97e72dbcb71eef1d",
@@ -12308,7 +12331,6 @@
         "cstimes.com",
         "글로벌이코노믹",
         "뉴스핌",
-        "팍스경제TV",
         "socialvalue.kr",
         "getnews.co.kr",
         "smarttoday.co.kr",
@@ -12364,6 +12386,7 @@
         "newsis.com",
         "catchnews.kr",
         "thefairnews.co.kr",
+        "팍스경제TV",
         "뉴시안",
         "뉴스1",
         "뷰어스",
