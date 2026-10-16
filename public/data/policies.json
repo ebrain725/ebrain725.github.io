@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-10-16T13:13:28+09:00",
+  "lastSync": "2026-10-16T15:13:21+09:00",
   "keywords": [
     "배출권",
     "배출권거래제",
@@ -30,7 +30,7 @@
   "warning": "한국거래소 배출권 공지사항: 한국거래소 공지 목록을 해석하지 못했습니다. 1페이지: HTTP Error 403: Forbidden",
   "aiInsight": {
     "summary": "최근 공식자료의 직접적인 수급 변수는 유상경매입니다. 최근 경매가 높은 낙찰가로 소화돼 공급보다 이행수요가 강하다는 신호입니다.",
-    "generatedAt": "2026-10-16T13:13:28+09:00",
+    "generatedAt": "2026-10-16T15:13:21+09:00",
     "basisLatestDate": "2026-10-14",
     "basisCount": 10,
     "source": "fallback",
@@ -636,6 +636,30 @@
   ],
   "items": [
     {
+      "id": "d0dba0815c967000",
+      "publishedAt": "2026-10-16",
+      "title": "환경기술원, 반도체·디스플레이 온실가스 배출계수 114건 개발",
+      "category": "상쇄·외부사업",
+      "summary": "이번 성과는 국가 온실가스 배출량 산정체계 고도화와 국가 고유계수 개발은 물론, 배출권 거래제에서 기업의 배출량과 감축실적을 합리적으로 산정하는 데 활용될 수 있다. 또한 스크러버 운전조건별 저감성능 비교를...",
+      "source": "amenews.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://amenews.kr/news/view.php?idx=68334",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "amenews.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "690eed2ddda1092b",
       "publishedAt": "2026-10-16",
       "title": "폭락장에 ETF 가격도 '삐끗'…괴리 벌어진 종목 평소의 5배",
@@ -748,12 +772,13 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "e2news.com"
+        "e2news.com",
+        "ksg.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "region": "국내"
     },
     {
@@ -828,6 +853,56 @@
       "region": "국내"
     },
     {
+      "id": "7bfdd0e258b7eca6",
+      "publishedAt": "2026-10-16",
+      "title": "기업들 ‘탄소값’ 2.3배 비싸게 샀다…경매대금 벌써 작년 추월",
+      "category": "유상경매",
+      "summary": "2025년 배출권( KAU25 ) 낙찰가격은 지난 1월 t당 1만700원에서 5월 1만9600원, 8월 2만7900원으로 약 2.6배 뛰었다. 경매 대상이 2026년 배출권(KAU26)으로 바뀐 9월에는 2만9500원을 기록했다. 지난달 경매에서만 배출권...",
+      "source": "dailian.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.dailian.co.kr/news/view/1702440/?sc=Naver",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "KAU25",
+        "KAU26"
+      ],
+      "duplicateSources": [
+        "dailian.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "6a270ea91929d42c",
+      "publishedAt": "2026-10-16",
+      "title": "[온실가스 배출권] 10월 16일 KAU26, 3만원대 무너지며 2만9950원 마감",
+      "category": "시장·가격",
+      "summary": "[온실가스 배출권] 10월 16일 KAU26, 3만원대 무너지며 2만9950원 마감 데일리e뉴스",
+      "source": "데일리e뉴스",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1IenhVQW1odWhDWHIxODdwUmZ3NGtIZVJIRlRwbEJzOW9IZFh5WWJlNWdpQ0xaQVRtZjhVYVROaHVRVXlra1hobDlObmJGUmZfYnNVM2JEWXBjY3NlbkdXUGhyR1Y1T2ZkNDc4bTVjaw?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "온실가스 배출권",
+        "KAU26"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "데일리e뉴스"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "5158e9b06ff71d13",
       "publishedAt": "2026-10-16",
       "title": "[건설 라운지] GS건설·현대건설·호반건설·IPARK현산·대우건설·DL이앤...",
@@ -890,6 +965,55 @@
       ],
       "duplicateSources": [
         "greened.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "9f5153eb22c20b17",
+      "publishedAt": "2026-10-16",
+      "title": "EU, 탄소시장 변동성 낮추고 메탄규정 일부 1년 연기…“에너지값 대응...",
+      "category": "시장·가격",
+      "summary": "다만 EU 정상들은 배출권거래제 (ETS)의 탄소가격 신호와 에너지전환의 핵심 역할은 유지한다는 원칙을 재확인했다. EU 정상들은 15일 브뤼셀에서 열린 유럽이사회에서 에너지 가격 급등이 가계와 산업, 경제 전반에 부담을...",
+      "source": "dailyt.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.dailyt.co.kr/newsView/dlt202610160011",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장",
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "dailyt.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
+      "id": "664fed6d2d2cdb51",
+      "publishedAt": "2026-10-16",
+      "title": "EU CBAM 대응, 배출량 산정만으로 충분할까?…i-DEA, 실무 교육 운영",
+      "category": "제도",
+      "summary": "EU 배출권 거래제의 무상할당 조정에 활용되는 벤치마크와 CBAM 계수 등의 적용 원리를 설명하고, 이를 바탕으로 최종 인증서 제출 수량과 비용을 산정하는 실무를 교육한다. 산업 현장의 구체적인 사례를 활용한 교육도...",
+      "source": "hellot.net",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.hellot.net/news/article.html?no=115541",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "hellot.net"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -968,6 +1092,29 @@
       ],
       "duplicateCount": 1,
       "region": "해외"
+    },
+    {
+      "id": "6ca82c134cf686c8",
+      "publishedAt": "2026-10-16",
+      "title": "\"IMO 넷제로 프레임워크 채택 지연…해운업계 불확실성 커질 듯\"",
+      "category": "제도",
+      "summary": "선박이 사용한 연료와 온실가스 배출수준을 매년 계산해 정해진 기준과 비교한 뒤 기준보다 배출이 적은 선박은 다른 선박에 배출권 을 이전할 수 있는 혜택을 주고, 반대로 기준을 넘는 선박에는 초과한 정도에 따라...",
+      "source": "news1.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.news1.kr/local/busan-gyeongnam/6322470",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "news1.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
     },
     {
       "id": "59fdb30709771219",
@@ -5615,7 +5762,8 @@
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
         "배출권",
-        "배출권거래제"
+        "배출권거래제",
+        "탄소배출권"
       ],
       "duplicateSources": [
         "businesspost.co.kr"
@@ -60662,7 +60810,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "34bb2d30171c09a1",
+      "id": "bf2c7b48532214c8",
       "publishedAt": "2025-04-04",
       "title": "2025년 4월 배출권 유상할당 입찰 공고",
       "category": "유상경매",
@@ -60670,7 +60818,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10524&orgCd=&boardMasterId=39&boardId=1735370",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10524&orgCd=&boardMasterId=39&boardId=1735370",
       "matchedKeywords": [
         "유상할당",
         "유상 할당",
@@ -64980,7 +65128,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "e597e32e06bc0f82",
+      "id": "05fc79bd8614e601",
       "publishedAt": "2025-02-06",
       "title": "2025년 2월 배출권 유상할당 입찰 공고",
       "category": "유상경매",
@@ -64988,7 +65136,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10524&orgCd=&boardMasterId=39&boardId=1723130",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10524&orgCd=&boardMasterId=39&boardId=1723130",
       "matchedKeywords": [
         "유상할당",
         "유상 할당",
@@ -259618,10 +259766,10 @@
   },
   "newsRetention": {
     "policy": "append-only",
-    "lastMergedAt": "2026-10-16T13:13:34+09:00",
-    "itemCount": 1272,
-    "archiveBefore": 1265,
-    "currentBefore": 1152,
+    "lastMergedAt": "2026-10-16T15:13:28+09:00",
+    "itemCount": 1278,
+    "archiveBefore": 1272,
+    "currentBefore": 1158,
     "gitRecoveryEnabled": false
   }
 }
