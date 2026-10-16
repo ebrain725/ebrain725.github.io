@@ -1,4 +1,5 @@
 Request: refresh the official KRX same-day KAU market prices.
 Requested on: 2026-10-16 (Asia/Seoul).
-Target: existing sync-market.yml site-today mode, followed by repository save and public Pages verification.
-Do not input a guessed price or relabel the previous trading day's price as today's observation.
+Attempt 2: public site returned HTTP 403; use existing authorized KRX Open API for the exact current date as fallback.
+Target: sync-market.yml with sync_krx_resilient.py, preserve historical prices, save result and verify public Pages.
+No prior-day substitution, invented market value, or access-control workaround is permitted.
