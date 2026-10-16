@@ -160,7 +160,9 @@ jobs:
 
       - name: KRX 배출권 시세·경매 수집
         if: env.SHOULD_RUN == 'true'
-        run: python scripts/sync_krx.py
+        run: |
+          python -m py_compile scripts/sync_krx.py scripts/sync_krx_resilient.py
+          python scripts/sync_krx_resilient.py
 
       - name: 당일 시세 반영 결과 기록
         if: env.SHOULD_RUN == 'true' && env.KRX_SYNC_MODE == 'site-today'
@@ -176,8 +178,8 @@ jobs:
           latest=max(r['date'] for r in rows)
           today=[r for r in rows if r['date']==now.date().isoformat() and r['symbol'].startswith('KAU') and float(r['close'])>0]
           receipt={'version':'krx-market-refresh-1','collected_at':now.isoformat(timespec='seconds'),'trade_date':latest,
-                   'status':'same_day_collected' if today else 'source_not_current','source':'KRX ETS 정보플랫폼',
-                   'source_url':'https://ets.krx.co.kr/contents/ETS/03/03010000/ETS03010000.jsp',
+                   'status':'same_day_collected' if today else 'source_not_current','source':'KRX 공식 시세 — 웹 조회 또는 승인된 Open API',
+                   'source_urls':['https://ets.krx.co.kr/contents/ETS/03/03010000/ETS03010000.jsp','https://data-dbg.krx.co.kr/svc/apis/gen/ets_bydd_trd'],
                    'workflow_run_id':os.environ['GITHUB_RUN_ID'],'prices_sha256':hashlib.sha256(p.read_bytes()).hexdigest(),
                    'same_day_rows':today,'live_deployment_verified':False}
           Path('public/data/krx-market-refresh.json').write_text(json.dumps(receipt,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
