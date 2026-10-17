@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-17T15:12:43+09:00",
+  "generatedAt": "2026-10-17T18:12:56+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1287,
+  "itemCount": 1288,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-17",
   "sourceCommitsScanned": 0,
@@ -58,6 +58,32 @@
       ],
       "duplicateCount": 1,
       "region": "해외"
+    },
+    {
+      "id": "8a8fddadaa0d35d4",
+      "publishedAt": "2026-10-17",
+      "title": "\"블루카본, 국제인증 넘어 탄소 시장으로\"",
+      "category": "상쇄·외부사업",
+      "summary": "갯벌 복원사업, 탄소배출권 거래제 연계 추진 김영남 해양환경공단 해양보호복원처장은 '갯벌복원사업 및 외부사업 추진 현황' 발표에서 갯벌 복원사업의 성과와 민간기업 참여 사례를 소개했다. 전국 29개소에서 추진된...",
+      "source": "hdhy.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.hdhy.co.kr/news/articleView.html?idxno=35486",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장",
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "hdhy.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
     },
     {
       "id": "adaacbd26ffeb8ba",
@@ -3097,14 +3123,14 @@
         "배출권"
       ],
       "duplicateSources": [
-        "hankookilbo.com",
         "한국일보",
+        "hankookilbo.com",
         "newsis.com",
         "뉴시스"
       ],
       "searchProviders": [
-        "NAVER API HUB",
-        "Google News RSS"
+        "Google News RSS",
+        "NAVER API HUB"
       ],
       "duplicateCount": 4,
       "region": "국내"
@@ -3582,13 +3608,14 @@
         "segyebiz.com",
         "디지털데일리",
         "ddaily.co.kr",
-        "블루밍비트"
+        "블루밍비트",
+        "서울경제"
       ],
       "searchProviders": [
         "NAVER API HUB",
         "Google News RSS"
       ],
-      "duplicateCount": 11,
+      "duplicateCount": 12,
       "region": "국내"
     },
     {
@@ -12378,15 +12405,14 @@
         "srtimes.kr",
         "cstimes.com",
         "글로벌이코노믹",
+        "이투데이",
         "뉴스핌",
-        "팍스경제TV",
         "socialvalue.kr",
         "getnews.co.kr",
         "smarttoday.co.kr",
         "news1.kr",
         "머니투데이",
         "fntimes.com",
-        "newsprime.co.kr",
         "ebn.co.kr",
         "imaeil.com",
         "ttlnews.com",
@@ -12436,6 +12462,8 @@
         "newsis.com",
         "catchnews.kr",
         "thefairnews.co.kr",
+        "팍스경제TV",
+        "newsprime.co.kr",
         "뉴시안",
         "뉴스1",
         "뷰어스",
@@ -12443,7 +12471,6 @@
         "매일신문",
         "kbsm.net",
         "joongangenews.com",
-        "이투데이",
         "연합뉴스",
         "매일일보",
         "m-i.kr",
