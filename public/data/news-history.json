@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-17T20:04:18+09:00",
+  "generatedAt": "2026-10-18T00:52:16+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1289,
+  "itemCount": 1290,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-17",
   "sourceCommitsScanned": 0,
@@ -29,6 +29,29 @@
       "duplicateCount": 1,
       "duplicateSources": [
         "mbn.mk.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "203e8182d7f5b0f0",
+      "publishedAt": "2026-10-17",
+      "title": "저 탄소 콘크리트 탄소 감축인증 2단계 심의 통과",
+      "category": "상쇄·외부사업",
+      "summary": "대우건설은 확보한 크레딧을 자발적 탄소시장 에서 거래하거나 해외사업장 등의 온실가스 배출을 자발적으로 상쇄하는 데 활용하는 방안을 검토하고 있다. 정부도 지난 4월 '한국형 자발적 탄소시장 조성 방향'을...",
+      "source": "thedailypost.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.thedailypost.kr/news/articleView.html?idxno=116253",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "thedailypost.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
