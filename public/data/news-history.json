@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-17T18:12:56+09:00",
+  "generatedAt": "2026-10-17T20:04:18+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1288,
+  "itemCount": 1289,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-17",
   "sourceCommitsScanned": 0,
@@ -12,6 +12,29 @@
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "543cc63e8e5d6548",
+      "publishedAt": "2026-10-17",
+      "title": "청년들이 전하는 기후위기 메시지… 탄소 중립 실천 앞장",
+      "category": "제도",
+      "summary": "■ 국제기후포럼 현장 취재…청년 목소리로 기후 현안 전달 특히 기자단은 재단이 주최한 '제5회 2026 국제기후포럼' 현장을 직접 취재하며 기후외교와 탄소시장 , 친환경 산업 등 주요 의제를 청년의 시각으로...",
+      "source": "mbn.mk.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://mbn.mk.co.kr/pages/news/newsView.php?category=mbn00007&news_seq_no=5225577",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "mbn.mk.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
     {
       "id": "77ec00fed9462cff",
       "publishedAt": "2026-10-17",
@@ -2139,11 +2162,11 @@
       ],
       "duplicateSources": [
         "industrynews.co.kr",
-        "팍스경제TV",
         "paxetv.com",
         "newsdream.kr",
         "dailian.co.kr",
         "edaily.co.kr",
+        "팍스경제TV",
         "인더스트리뉴스",
         "뉴스드림",
         "businessplus.kr",
@@ -3123,14 +3146,14 @@
         "배출권"
       ],
       "duplicateSources": [
-        "한국일보",
         "hankookilbo.com",
+        "한국일보",
         "newsis.com",
         "뉴시스"
       ],
       "searchProviders": [
-        "Google News RSS",
-        "NAVER API HUB"
+        "NAVER API HUB",
+        "Google News RSS"
       ],
       "duplicateCount": 4,
       "region": "국내"
@@ -6221,8 +6244,8 @@
       ],
       "duplicateSources": [
         "tk.newdaily.co.kr",
-        "뉴데일리 대구경북",
         "가스신문",
+        "뉴데일리 대구경북",
         "gasnews.com",
         "tbc.co.kr",
         "Tbc.co.kr"
@@ -12405,8 +12428,8 @@
         "srtimes.kr",
         "cstimes.com",
         "글로벌이코노믹",
-        "이투데이",
         "뉴스핌",
+        "팍스경제TV",
         "socialvalue.kr",
         "getnews.co.kr",
         "smarttoday.co.kr",
@@ -12429,6 +12452,7 @@
         "연합뉴스TV",
         "newsian.co.kr",
         "bizwnews.com",
+        "매일일보",
         "마켓인",
         "edaily.co.kr",
         "inthenews.co.kr",
@@ -12462,7 +12486,7 @@
         "newsis.com",
         "catchnews.kr",
         "thefairnews.co.kr",
-        "팍스경제TV",
+        "이투데이",
         "newsprime.co.kr",
         "뉴시안",
         "뉴스1",
@@ -12472,7 +12496,6 @@
         "kbsm.net",
         "joongangenews.com",
         "연합뉴스",
-        "매일일보",
         "m-i.kr",
         "digitalchosun.dizzo.com",
         "g-enews.com",
