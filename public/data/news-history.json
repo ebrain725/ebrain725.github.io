@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-18T15:24:26+09:00",
+  "generatedAt": "2026-10-18T18:13:17+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1297,
+  "itemCount": 1298,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-18",
   "sourceCommitsScanned": 0,
@@ -104,6 +104,30 @@
       "searchProviders": [
         "NAVER API HUB"
       ],
+      "region": "국내"
+    },
+    {
+      "id": "e8652e03cc29bec0",
+      "publishedAt": "2026-10-18",
+      "title": "DP월드, 부산항 신항에 전기 야드 트랙터 55대 도입",
+      "category": "제도",
+      "summary": "한국 배출권 거래제(ETS)에 참여하고 있는 DP월드 부산은 터미널 운영 과정에서 발생하는 배출량을 줄이기 위해 다양한 감축 활동을 추진하고 있다. 이번 전기 야드 트랙터 도입 역시 이러한 노력의 일환으로, 저탄소...",
+      "source": "busan.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.busan.com/view/busan/view.php?code=2026101817303972360",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "busan.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
       "region": "국내"
     },
     {
@@ -12625,6 +12649,7 @@
         "getnews.co.kr",
         "smarttoday.co.kr",
         "news1.kr",
+        "포춘코리아",
         "머니투데이",
         "fntimes.com",
         "ebn.co.kr",
@@ -12665,7 +12690,6 @@
         "newspim.com",
         "브릿지경제",
         "viva100.com",
-        "포춘코리아",
         "dealsitetv.com",
         "dailypop.kr",
         "sateconomy.co.kr",
