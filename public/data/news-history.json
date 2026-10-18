@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-18T10:13:31+09:00",
+  "generatedAt": "2026-10-18T13:14:08+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1293,
+  "itemCount": 1295,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-18",
   "sourceCommitsScanned": 0,
@@ -34,6 +34,29 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "3e85dea3cabf4161",
+      "publishedAt": "2026-10-18",
+      "title": "[2026 국감] \"아무것도 안 해도 100점\"…대기오염 성과지표 재검토",
+      "category": "제도",
+      "summary": "기후노동위 국감현장 / 알티케이뉴스 DB 대기오염물질을 배출하는 사업장 4곳 중 3곳이 배출권 이 전혀... 따르면 배출권 이 부족한 사업장들이 사들인 물량은 모두 3227톤으로 전체 할당량의 1%를 조금 넘는다. 거래액으로...",
+      "source": "rightknow.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.rightknow.co.kr/news/articleView.html?idxno=35138",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "rightknow.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
       "region": "국내"
     },
     {
@@ -781,6 +804,30 @@
       ],
       "duplicateCount": 1,
       "region": "해외"
+    },
+    {
+      "id": "b72a4e09ff5cac23",
+      "publishedAt": "2026-10-16",
+      "title": "\"바이오메탄·바이오수소, 산업별 활용 방식 달라야\"",
+      "category": "제도",
+      "summary": "특히 석유화학업계에서는 정부의 탄소 배출권 무상할당 축소 기조와 글로벌 탄소규제 강화에 따라 정유·석유화학 기업들이 기존 그레이수소를 바이오수소 등 저탄소 수소로 대체하려는 수요가 확대될 것으로 내다봤다....",
+      "source": "energy-news.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=229033",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "energy-news.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
     },
     {
       "id": "6ca82c134cf686c8",
@@ -12529,7 +12576,6 @@
         "뉴스핌",
         "socialvalue.kr",
         "getnews.co.kr",
-        "뉴스1",
         "smarttoday.co.kr",
         "news1.kr",
         "머니투데이",
@@ -12585,6 +12631,7 @@
         "newsis.com",
         "catchnews.kr",
         "thefairnews.co.kr",
+        "뉴스1",
         "팍스경제TV",
         "연합뉴스TV",
         "이투데이",
