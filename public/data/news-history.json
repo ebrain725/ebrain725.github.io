@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-18T20:30:19+09:00",
+  "generatedAt": "2026-10-19T01:04:20+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1298,
+  "itemCount": 1299,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-18",
   "sourceCommitsScanned": 0,
@@ -9123,6 +9123,29 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "4c643c7687f548d3",
+      "publishedAt": "2026-10-01",
+      "title": "“탄소시장 키우려면 ‘신뢰할 수 있는 크레딧’부터”",
+      "category": "제도",
+      "summary": "“탄소시장 키우려면 ‘신뢰할 수 있는 크레딧’부터” 수소신문",
+      "source": "수소신문",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE05MG9kMGVuaEh6V0cxOHo2TW0wZEJsR1RZUlBvVk1zbVdyTFRHMVZpeXpGTGxEQ0NpOTkwN05jNFlhdHV6Nld1Sl9kTi1PZnFNZ1g4ckhjLWZodnRQeWFwNFlzRnh2cmN3bFE4TEpQS2HSAXRBVV95cUxPcWJoaHZDY2FPalUyZWhhT05lVVNnb21KODhTNElURlYtdnIybUQxS25BQzNVWDdiYnBqalBYODhSRmw4SGNZbWN1Wmc5NVktSnJ3UUpQSWR3WnU3OUhFRGtub1FjMjdtN3UtRmRJM09RRTZoWQ?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "수소신문"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
       "region": "국내"
     },
     {
