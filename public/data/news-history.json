@@ -1,17 +1,135 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-19T01:04:20+09:00",
+  "generatedAt": "2026-10-19T08:13:29+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1299,
+  "itemCount": 1304,
   "earliestPublishedAt": "2026-08-06",
-  "latestPublishedAt": "2026-10-18",
+  "latestPublishedAt": "2026-10-19",
   "sourceCommitsScanned": 0,
   "sourceSnapshotsScanned": 0,
   "historicalRowsScanned": 0,
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "2ea66c5a3669605c",
+      "publishedAt": "2026-10-19",
+      "title": "한국환경법학회, 제주 학술대회서 AI-재생에너지전환 법제 과제 논의",
+      "category": "제도",
+      "summary": "정책과 배출권 거래 시스템'을 발표할 예정이다. 두 발제자는 환경법을 하나의 고유 법영역으로 발전시킨 양국 대표 법학자이자 법과 정책에 깊이 관여하고 있는 전문가들이다. 특별세션 종합토론에는 현준원...",
+      "source": "e2news.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.e2news.com/news/articleView.html?idxno=335192",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "e2news.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "c7405ee8c969e369",
+      "publishedAt": "2026-10-19",
+      "title": "박영사, '스타트업 마에스트로: 기후·에너지 딥테크를 위한 24단계 플레...",
+      "category": "제도",
+      "summary": "국내 기술이전 제도, 배출권 거래제, 정부 창업지원사업, 특수목적법인 활용법 등을 추가했으며, 아산나눔재단의 아산 기업가정신 리뷰 자료 등을 바탕으로 한국 기후테크 기업 30개사의 사업화 사례 분석을 접목했다....",
+      "source": "gokorea.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.gokorea.kr/news/articleView.html?idxno=881609",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "gokorea.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "7465056f2a0e5d11",
+      "publishedAt": "2026-10-19",
+      "title": "박연규 표준연 부원장 \"AI는 초정밀 측정기술 한계 극복할 혁신도구\"",
+      "category": "제도",
+      "summary": "\"탄소배출 측정장비·분석 결과 신뢰성 높일 객관적 검증 뒷받침할 것\" 박 부원장은 \"유럽연합의 탄소국경조정제도(CBAM)나 탄소 배출권 거래제 등으로 인해 탄소배출량은 단순한 환경 지표를 넘어 기업의 비용과 국제...",
+      "source": "zdnet.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://zdnet.co.kr/view/?no=20261018141406",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "zdnet.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
+      "id": "f887104b0682806f",
+      "publishedAt": "2026-10-19",
+      "title": "“연어 키우고 공동주택 PC 공법· 탄소 저감까지”…건설사들, ‘첨단기...",
+      "category": "상쇄·외부사업",
+      "summary": "이를 자발적 탄소시장 에서 거래하거나 해외사업장의 온실가스 배출량 상쇄에 활용하는 방안을 검토한다는 방안이다. GS건설은 건설업에서 축적한 기술력을 활용해 수산업으로 사업 영역을 넓히고 있다. GS건설은 지난달...",
+      "source": "dailian.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.dailian.co.kr/news/view/1702458/?sc=Naver",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "dailian.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "99b70e66469d69ce",
+      "publishedAt": "2026-10-19",
+      "title": "[Who Is ?] 김지용 국민대학교 법인 이사장",
+      "category": "제도",
+      "summary": "이번 협약은 HUSS 환경컨소시엄 학생들이 글로벌 탄소시장 과 기후산업에 대한 이해와 실무 경험을 넓히고, 중동 지역을 기반으로 한 글로벌 진로·취업 및 연구 기회를 확보하는 데 초점을 맞췄다. 협약을 바탕으로...",
+      "source": "businesspost.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.businesspost.co.kr/BP?command=article_view&num=449304",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "businesspost.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
     {
       "id": "3a48b3160afc36a9",
       "publishedAt": "2026-10-18",
@@ -12691,7 +12809,6 @@
         "newsian.co.kr",
         "bizwnews.com",
         "매일일보",
-        "마켓인",
         "edaily.co.kr",
         "inthenews.co.kr",
         "sisacast.kr",
@@ -12725,6 +12842,7 @@
         "newsis.com",
         "catchnews.kr",
         "thefairnews.co.kr",
+        "마켓인",
         "뉴스1",
         "팍스경제TV",
         "연합뉴스TV",
