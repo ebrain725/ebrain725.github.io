@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-10-18T13:13:57+09:00",
+  "lastSync": "2026-10-18T15:13:27+09:00",
   "keywords": [
     "배출권",
     "배출권거래제",
@@ -30,7 +30,7 @@
   "warning": "한국거래소 배출권 공지사항: 한국거래소 공지 목록을 해석하지 못했습니다. 1페이지: HTTP Error 403: Forbidden",
   "aiInsight": {
     "summary": "최근 공식자료의 직접적인 수급 변수는 유상경매입니다. 최근 경매가 높은 낙찰가로 소화돼 공급보다 이행수요가 강하다는 신호입니다.",
-    "generatedAt": "2026-10-18T13:13:57+09:00",
+    "generatedAt": "2026-10-18T15:13:27+09:00",
     "basisLatestDate": "2026-10-14",
     "basisCount": 10,
     "source": "fallback",
@@ -636,6 +636,30 @@
   ],
   "items": [
     {
+      "id": "3a48b3160afc36a9",
+      "publishedAt": "2026-10-18",
+      "title": "탈탄소 '전기 NCC'···불황의 K석화, 투자 여력 있나",
+      "category": "유상경매",
+      "summary": "전기요금 인하에 따른 부담을 한국전력에 넘기기보다 정부 재정으로 보전하거나 온실가스 배출권 경매수입을 활용하는 방안 등을 검토하자는 것이다. 산업 경쟁력을 유지하면서 탄소 감축 투자도 촉진할 수 있도록...",
+      "source": "enewstoday.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.enewstoday.co.kr/news/articleView.html?idxno=2481406",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "온실가스 배출권"
+      ],
+      "duplicateSources": [
+        "enewstoday.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "9755c2d249740bad",
       "publishedAt": "2026-10-18",
       "title": "시민 제안 기후정책 90% 버려졌다...'답정너' 기후공론화",
@@ -652,6 +676,29 @@
       ],
       "duplicateSources": [
         "newspenguin.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "8a3361b2e8176320",
+      "publishedAt": "2026-10-18",
+      "title": "기후부 출범 1주년, 장수가 없다 [기후에너지환경단상]",
+      "category": "제도",
+      "summary": "환경공단은 온실가스 감축과 배출권 관련 업무부터 대기·수질·폐기물, 전기차 충전시설 관리까지 환경 정책의 상당 부분을 집행하는 기관이다. 물론 현 정부가 탄핵 정국을 거쳐 출범했고 전 정부에서 임명된 공공기관장...",
+      "source": "ekn.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.ekn.kr/web/view.php?key=20261016023427035",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "ekn.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -260181,10 +260228,10 @@
   },
   "newsRetention": {
     "policy": "append-only",
-    "lastMergedAt": "2026-10-18T13:14:08+09:00",
-    "itemCount": 1295,
-    "archiveBefore": 1293,
-    "currentBefore": 1173,
+    "lastMergedAt": "2026-10-18T15:13:33+09:00",
+    "itemCount": 1297,
+    "archiveBefore": 1295,
+    "currentBefore": 1175,
     "gitRecoveryEnabled": false
   }
 }
