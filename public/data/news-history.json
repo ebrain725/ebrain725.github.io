@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-19T18:13:38+09:00",
+  "generatedAt": "2026-10-19T22:52:10+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1323,
+  "itemCount": 1325,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-19",
   "sourceCommitsScanned": 0,
@@ -32,15 +32,16 @@
       "duplicateSources": [
         "4th.kr",
         "metroseoul.co.kr",
+        "ziksir.com",
         "megaeconomy.co.kr",
         "paxetv.com",
         "newspim.com",
         "pinpointnews.co.kr",
-        "ziksir.com",
         "kpenews.com",
         "fetv.co.kr",
         "financialpost.co.kr",
         "cstimes.com",
+        "biztribune.co.kr",
         "weekly.hankooki.com",
         "newsis.com",
         "srtimes.kr",
@@ -57,7 +58,7 @@
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 23,
+      "duplicateCount": 24,
       "region": "국내"
     },
     {
@@ -296,6 +297,31 @@
       ],
       "duplicateCount": 1,
       "region": "해외"
+    },
+    {
+      "id": "b117adbed066af23",
+      "publishedAt": "2026-10-19",
+      "title": "[온실가스 배출권] 10월 19일 KAU26, 200원 오른 3만150원",
+      "category": "시장·가격",
+      "summary": "[온실가스 배출권] 10월 19일 KAU26, 200원 오른 3만150원 데일리e뉴스",
+      "source": "데일리e뉴스",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5pM1RSaVc3bWtMUmNRMElJUkVPemtjaGdTOUltY1VRSXhDbEQ3dXhwb1pmQUEwSFBNQVYtalZsUUpHcGcxa0Q5QjF3QVRDSWk2STRNMjZ4eHB3eWxvNnI1eFB3dTJ0Rk9PUjhGbFhmTQ?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "온실가스 배출권",
+        "KAU26"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "데일리e뉴스"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "국내"
     },
     {
       "id": "8f908639d9f799ea",
@@ -869,6 +895,29 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "21ac6b2c423e2b1c",
+      "publishedAt": "2026-10-16",
+      "title": "해외 온실가스 줄여 배출권 산다? \"감축량 부풀리기부터 막아야\"",
+      "category": "제도",
+      "summary": "해외 온실가스 줄여 배출권 산다? \"감축량 부풀리기부터 막아야\" 뉴스펭귄",
+      "source": "뉴스펭귄",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBNR2JXZGFSSExGaElrTXVCX01RVThmc2x6bjBDTnhJOVpQejVDNGJUREFvN0FUZzlqYy15N213TnJTX0V0cHV5MjFlMEtHUjZOUWEzS1Z4X1NPMlJhM0NqcjlnaVhlNG52V1JXV1J30gFyQVVfeXFMTkNSSjg5aTFLTnF2Zzl0cTRPUkVGeUNheTdRUEVaSEV5UUhWU19NWllGbjVQcWJKdWZ1Zk1ucFR6QzNpbnN2R1JTMEVfSVR2REg5MkFUSlQwbmZKTFRkNThxX0dNeXdRVGRHdTJCeHZseDJ3?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "뉴스펭귄"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
       "region": "국내"
     },
     {
