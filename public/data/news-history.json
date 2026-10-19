@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-19T13:13:45+09:00",
+  "generatedAt": "2026-10-19T15:14:08+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1314,
+  "itemCount": 1316,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-19",
   "sourceCommitsScanned": 0,
@@ -30,19 +30,28 @@
         "탄소배출권"
       ],
       "duplicateSources": [
+        "4th.kr",
         "metroseoul.co.kr",
         "paxetv.com",
+        "pinpointnews.co.kr",
+        "ziksir.com",
+        "kpenews.com",
+        "financialpost.co.kr",
+        "weekly.hankooki.com",
         "newsis.com",
         "srtimes.kr",
         "kdfnews.com",
         "sentv.co.kr",
+        "g-enews.com",
         "newsroad.co.kr",
-        "financialpost.co.kr"
+        "view.asiae.co.kr",
+        "tf.co.kr",
+        "fnnews.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 8,
+      "duplicateCount": 17,
       "region": "국내"
     },
     {
@@ -237,6 +246,30 @@
       "region": "해외"
     },
     {
+      "id": "1ea7a2d231d2a7c8",
+      "publishedAt": "2026-10-19",
+      "title": "[더밸류 브리핑] 오늘의 증권사 소식…메리츠증권·다올투자증권·현대...",
+      "category": "제도",
+      "summary": "[이미지=현대차증권] 행사에는 배출권 거래제 할당대상업체와 온실가스 목표관리제 대상업체 등 탄소금융 관련 기업 담당자가 참여할 수 있다. 신청은 오는 10월 26일 정오까지 행사 포스터의 QR코드를 통해 진행한다....",
+      "source": "thevaluenews.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.thevaluenews.co.kr/news/view.php?idx=202463",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "thevaluenews.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "99b70e66469d69ce",
       "publishedAt": "2026-10-19",
       "title": "[Who Is ?] 김지용 국민대학교 법인 이사장",
@@ -330,6 +363,30 @@
       ],
       "duplicateCount": 1,
       "region": "해외"
+    },
+    {
+      "id": "47183113835f5e4d",
+      "publishedAt": "2026-10-19",
+      "title": "\" 배출권 거래제·온실가스규제 대응모색\" 현대차증권, 10월27일 '탄소금융...",
+      "category": "상쇄·외부사업",
+      "summary": "탄소금융 관련 최신 동향과 외부사업 추진 사례를 공유하고, 배출권 거래제와 온실가스 규제에 대응하는... 참여 대상은 배출권 거래제 할당대상업체와 온실가스 목표관리제 대상업체 등 탄소금융 관련 기업 담당자다....",
+      "source": "catchnews.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.catchnews.kr/news/articleView.html?idxno=129458",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "catchnews.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
     },
     {
       "id": "3a48b3160afc36a9",
@@ -2718,13 +2775,13 @@
         "K-ETS"
       ],
       "duplicateSources": [
+        "인더스트리뉴스",
         "industrynews.co.kr",
         "paxetv.com",
         "newsdream.kr",
         "dailian.co.kr",
         "edaily.co.kr",
         "팍스경제TV",
-        "인더스트리뉴스",
         "뉴스드림",
         "businessplus.kr",
         "view.asiae.co.kr",
@@ -2734,8 +2791,8 @@
         "e2news.com"
       ],
       "searchProviders": [
-        "NAVER API HUB",
-        "Google News RSS"
+        "Google News RSS",
+        "NAVER API HUB"
       ],
       "duplicateCount": 14,
       "region": "국내"
@@ -5773,7 +5830,8 @@
       "matchedKeywords": [
         "배출권",
         "배출권거래제",
-        "탄소배출권"
+        "탄소배출권",
+        "유상할당"
       ],
       "duplicateSources": [
         "businesspost.co.kr"
@@ -13044,6 +13102,7 @@
         "포춘코리아",
         "머니투데이",
         "fntimes.com",
+        "seoulfn.com",
         "ebn.co.kr",
         "imaeil.com",
         "ttlnews.com",
@@ -13060,7 +13119,6 @@
         "newsian.co.kr",
         "bizwnews.com",
         "매일일보",
-        "마켓인",
         "edaily.co.kr",
         "inthenews.co.kr",
         "sisacast.kr",
@@ -13094,6 +13152,7 @@
         "newsis.com",
         "catchnews.kr",
         "thefairnews.co.kr",
+        "마켓인",
         "뉴스1",
         "팍스경제TV",
         "연합뉴스TV",
@@ -13160,7 +13219,6 @@
         "biz.heraldcorp.com",
         "dnews.co.kr",
         "enetnews.co.kr",
-        "seoulfn.com",
         "thevaluenews.co.kr",
         "hankookilbo.com",
         "한국일보"
