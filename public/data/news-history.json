@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-19T08:13:29+09:00",
+  "generatedAt": "2026-10-19T10:13:29+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1304,
+  "itemCount": 1306,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-19",
   "sourceCommitsScanned": 0,
@@ -106,6 +106,54 @@
         "NAVER API HUB"
       ],
       "region": "국내"
+    },
+    {
+      "id": "0c0e2ca7764fd047",
+      "publishedAt": "2026-10-19",
+      "title": "[해외브리핑] 中, 태양광기술 12종 수출통제…첨단기술 해외이전 제한",
+      "category": "제도",
+      "summary": "국제 탄소시장 수익 일부를 기후적응기금에 배분하는 방안도 제안했으며, COP31에서 개발도상국의 기후재정 지원 확대를 주요 의제로 다룰 계획이다. https://www.bloomberg.com/news/articles/2026-10-16/south-africa...",
+      "source": "esgeconomy.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.esgeconomy.com/news/articleView.html?idxno=17042",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "esgeconomy.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "8f908639d9f799ea",
+      "publishedAt": "2026-10-19",
+      "title": "[알림] 해운업계 탄소 규제 대응과 비용 최소화···제16회 에너지·탄...",
+      "category": "제도",
+      "summary": "EU-ETS( 배출권 거래제)와 FuelEU Maritime(연료규제)은 2025년부터 유럽 항만을 오가는 선박에 적용되는 탄소... 핵심 전략은 저탄소 연료 전환, 운항 효율화, 탄소 배출권 헤징 등을 통한 리스크 관리입니다. 이에...",
+      "source": "seoulfn.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.seoulfn.com/news/articleView.html?idxno=640359",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "seoulfn.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
     },
     {
       "id": "99b70e66469d69ce",
