@@ -2,7 +2,7 @@
   "schemaVersion": "1.0",
   "requestedStartDate": "2015-01-01",
   "startedAt": "2026-09-09T19:46:11+09:00",
-  "generatedAt": "2026-10-19T01:39:49+09:00",
+  "generatedAt": "2026-10-20T04:24:29+09:00",
   "scope": {
     "ministry": "기후부 보도자료·공지사항: 핵심 키워드는 제목·본문, 확대 키워드는 제목으로 판정; 이전 이력 보존",
     "krx": "한국거래소 배출권시장 공지사항 일반 게시물 전체",
@@ -126,7 +126,7 @@
     {
       "source": "기후부 보도자료",
       "section": "press",
-      "requestedStartDate": "2026-08-20",
+      "requestedStartDate": "2026-08-21",
       "transport": "unfiltered-rss-local-split-keyword-filter",
       "keywordRule": {
         "titleAndContent": [
@@ -246,14 +246,14 @@
       "pageSize": 1000,
       "pagesFetched": 1,
       "rawRows": 1000,
-      "inRangeMatchedRows": 32,
-      "itemCount": 32,
+      "inRangeMatchedRows": 30,
+      "itemCount": 30,
       "directCount": 7,
-      "relatedCount": 25,
-      "earliest": "2026-08-20",
+      "relatedCount": 23,
+      "earliest": "2026-08-21",
       "latest": "2026-10-15",
-      "oldestSeen": "2025-11-27",
-      "newestSeen": "2026-10-16",
+      "oldestSeen": "2025-11-28",
+      "newestSeen": "2026-10-19",
       "crossedRequestedStart": true,
       "stopReason": "date-boundary",
       "complete": true,
@@ -302,7 +302,7 @@
         "국가 온실가스 감축목표": 0,
         "국가 감축목표": 0,
         "전력시장": 0,
-        "급전": 1,
+        "급전": 0,
         "경제급전": 0,
         "계통운영": 1,
         "석탄발전": 1,
@@ -313,7 +313,7 @@
         "계통한계가격": 0,
         "원자력발전": 0,
         "원전": 6,
-        "재생에너지": 10,
+        "재생에너지": 8,
         "신재생에너지": 0,
         "RPS": 0,
         "수소발전": 0,
@@ -372,7 +372,7 @@
     {
       "source": "기후부 공지·공고",
       "section": "notice",
-      "requestedStartDate": "2026-08-20",
+      "requestedStartDate": "2026-08-21",
       "transport": "unfiltered-rss-local-split-keyword-filter",
       "keywordRule": {
         "titleAndContent": [
@@ -498,8 +498,8 @@
       "relatedCount": 13,
       "earliest": "2026-08-21",
       "latest": "2026-10-15",
-      "oldestSeen": "2026-06-15",
-      "newestSeen": "2026-10-16",
+      "oldestSeen": "2026-06-16",
+      "newestSeen": "2026-10-20",
       "crossedRequestedStart": true,
       "stopReason": "date-boundary",
       "complete": true,
@@ -21132,7 +21132,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "bf2c7b48532214c8",
+      "id": "34bb2d30171c09a1",
       "publishedAt": "2025-04-04",
       "title": "2025년 4월 배출권 유상할당 입찰 공고",
       "category": "유상경매",
@@ -21140,7 +21140,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10524&orgCd=&boardMasterId=39&boardId=1735370",
+      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10524&orgCd=&boardMasterId=39&boardId=1735370",
       "matchedKeywords": [
         "유상할당",
         "유상 할당",
@@ -22364,7 +22364,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "05fc79bd8614e601",
+      "id": "e597e32e06bc0f82",
       "publishedAt": "2025-02-06",
       "title": "2025년 2월 배출권 유상할당 입찰 공고",
       "category": "유상경매",
@@ -22372,7 +22372,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10524&orgCd=&boardMasterId=39&boardId=1723130",
+      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10524&orgCd=&boardMasterId=39&boardId=1723130",
       "matchedKeywords": [
         "유상할당",
         "유상 할당",
@@ -97316,8 +97316,8 @@
     }
   ],
   "collectionMode": "incremental",
-  "queryStartDate": "2026-08-20",
-  "queryEndDate": "2026-10-19",
+  "queryStartDate": "2026-08-21",
+  "queryEndDate": "2026-10-20",
   "climateKeywordExpansion": {
     "version": "2026-09-11-v1-38-topics",
     "sharedWith": "산업부 보도자료·공지사항",
@@ -97438,8 +97438,8 @@
       ]
     },
     "collectionMode": "incremental",
-    "queryStartDate": "2026-08-20",
-    "queryEndDate": "2026-10-19"
+    "queryStartDate": "2026-08-21",
+    "queryEndDate": "2026-10-20"
   },
   "policyEventTaxonomy": {
     "version": "2026-09-11-v1-user-38-events",
