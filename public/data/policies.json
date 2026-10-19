@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-10-19T10:13:22+09:00",
+  "lastSync": "2026-10-19T13:13:38+09:00",
   "keywords": [
     "배출권",
     "배출권거래제",
@@ -30,7 +30,7 @@
   "warning": "한국거래소 배출권 공지사항: 한국거래소 공지 목록을 해석하지 못했습니다. 1페이지: HTTP Error 403: Forbidden",
   "aiInsight": {
     "summary": "최근 공식자료의 직접적인 수급 변수는 유상경매입니다. 최근 경매가 높은 낙찰가로 소화돼 공급보다 이행수요가 강하다는 신호입니다.",
-    "generatedAt": "2026-10-19T10:13:22+09:00",
+    "generatedAt": "2026-10-19T13:13:38+09:00",
     "basisLatestDate": "2026-10-14",
     "basisCount": 10,
     "source": "fallback",
@@ -636,6 +636,39 @@
   ],
   "items": [
     {
+      "id": "712316a2baa75adc",
+      "publishedAt": "2026-10-19",
+      "title": "현대차증권, '제2회 2026년 탄소금융 인사이트 데이' 연다…탄소시장 전...",
+      "category": "상쇄·외부사업",
+      "summary": "행사에는 탄소금융 관련 분야의 전문가들이 연사로 참여해 국내외 탄소 규제 변화, 탄소 배출권 시장 흐름, 외부사업(Offset) 개발·투자 사례 등 실무 중심 강연을 진행할 예정이다. 특히 제4차 배출권 거래제 계획기간에...",
+      "source": "newsroad.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.newsroad.co.kr/news/articleView.html?idxno=66005",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장",
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "metroseoul.co.kr",
+        "paxetv.com",
+        "newsis.com",
+        "srtimes.kr",
+        "kdfnews.com",
+        "sentv.co.kr",
+        "newsroad.co.kr",
+        "financialpost.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 8,
+      "region": "국내"
+    },
+    {
       "id": "2ea66c5a3669605c",
       "publishedAt": "2026-10-19",
       "title": "한국환경법학회, 제주 학술대회서 AI-재생에너지전환 법제 과제 논의",
@@ -652,6 +685,54 @@
       "duplicateCount": 1,
       "duplicateSources": [
         "e2news.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "15f52233951b5cbc",
+      "publishedAt": "2026-10-19",
+      "title": "영국 CBAM, 철강·알루미늄 기본 배출량 10% 가산…실제값으로 정정 불가",
+      "category": "시장·가격",
+      "summary": "기본값은 실제 배출량을 확인할 수 없을 때 적용하는 제품 1톤당 온실가스 배출량으로, 가산율은 이번에... 영국 정부는 지난 8월 발표한 탄소가격 공제 인정 제도 목록에 한국 배출권 거래제(K-ETS)를 포함했다. 다만...",
+      "source": "impacton.net",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.impacton.net/news/articleView.html?idxno=30306",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "K-ETS"
+      ],
+      "duplicateSources": [
+        "impacton.net"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
+      "id": "b8e5d52704e864bf",
+      "publishedAt": "2026-10-19",
+      "title": "수중 블루카본 조사비 갯벌의 ‘50배’…문금주 “2030 통계 반영 차질...",
+      "category": "상쇄·외부사업",
+      "summary": "블루카본센터와 해양탄소등록부 구축, 크레딧 이중 계상 방지 등 민간 탄소시장 제도도 과제로 남아 있다. 문 의원은 “블루카본이 감축 실적으로 이어지려면 국제 기준에 맞는 산정방법론과 객관적인 검증체계가...",
+      "source": "betanews.net",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.betanews.net/article/view/beta202610190030",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "betanews.net"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -800,6 +881,78 @@
         "NAVER API HUB"
       ],
       "region": "국내"
+    },
+    {
+      "id": "cbbac311e1bb80b6",
+      "publishedAt": "2026-10-19",
+      "title": "[Who Is ?] 김성환 기후에너지환경부 장관",
+      "category": "제도",
+      "summary": "국회예산정책처는 2025년 5월 발표한 보고서에서 \"우리나라는 2030 NDC 달성을 위해 배출권 거래제 등 다양한 정책을 시행하고 있으나, 감축 목표달성을 위한 추가적인 수단에 대한 고려가 필요한 상황\"이라고 진단했다....",
+      "source": "businesspost.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.businesspost.co.kr/BP?command=article_view&num=449012",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "businesspost.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "30808437d1a1a2bd",
+      "publishedAt": "2026-10-19",
+      "title": "[2026 차세대 리더-환경·NGO] 윤세종 플랜1.5 정책활동가 및 변호사",
+      "category": "제도",
+      "summary": "이후 플랜1.5에서 정책활동가로 활동하며 국가 온실가스 감축 목표와 배출권 거래제 등 기후 정책 전반을 분석하고 제도 개선을 요구하는 활동을 이어가고 있다. 김앤장에서 쌓은 법률 전문성을 공익과 기후위기 대응에...",
+      "source": "sisajournal.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.sisajournal.com/news/articleView.html?idxno=390015",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "sisajournal.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "c96ecdf4479d77d0",
+      "publishedAt": "2026-10-19",
+      "title": "HD현대마린솔루션, AI 항로 최적화 'OSR-OW' 상용화…에이치라인해운과...",
+      "category": "제도",
+      "summary": "국제해사기구(IMO)의 탄소집약도지표(CII) 규제 및 유럽연합 배출권 거래제(EU ETS) 확대 등 갈수록 환경 규제가 엄격해지는 가운데 해운사들 사이에서 탄소 배출을 즉각 줄이고 연료비를 절감할 수 있는 디지털 솔루션이...",
+      "source": "theguru.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.theguru.co.kr/news/article.html?no=108437",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "theguru.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
     },
     {
       "id": "3a48b3160afc36a9",
@@ -3003,20 +3156,44 @@
         "K-ETS"
       ],
       "duplicateSources": [
+        "연합뉴스",
         "newsdream.kr",
         "dailian.co.kr",
         "edaily.co.kr",
         "view.asiae.co.kr",
         "yna.co.kr",
         "아시아경제",
-        "연합뉴스",
         "e2news.com"
       ],
       "searchProviders": [
-        "NAVER API HUB",
-        "Google News RSS"
+        "Google News RSS",
+        "NAVER API HUB"
       ],
       "duplicateCount": 8,
+      "region": "국내"
+    },
+    {
+      "id": "4678593d9a77be27",
+      "publishedAt": "2026-10-14",
+      "title": "거래소-배출권시장협의회, 배출권거래제 세미나 개최",
+      "category": "제도",
+      "summary": "이어진 패널 토론에서는 배출권시장 관련 각계 전문가가 모여 정부의 제4차 배출권거래제 (2026∼2030) 주요 정책 변화와 산업계 대응 과제 등을 논의할 예정이다. 배출권시장협의회는 배출권거래제 를 통한 온실가스...",
+      "source": "view.asiae.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://view.asiae.co.kr/article/2026101411001243820",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "view.asiae.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
       "region": "국내"
     },
     {
@@ -5482,7 +5659,8 @@
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
         "배출권",
-        "배출권거래제"
+        "배출권거래제",
+        "탄소배출권"
       ],
       "duplicateSources": [
         "에너지경제신문",
@@ -10663,6 +10841,31 @@
       "region": "국내"
     },
     {
+      "id": "16e1bae9fb2f799b",
+      "publishedAt": "2026-09-30",
+      "title": "한국탄소배출권산업협회, ‘자발적 탄소시장법’ 지지…적격기준 강화 제안",
+      "category": "제도",
+      "summary": "한국탄소배출권산업협회, ‘자발적 탄소시장법’ 지지…적격기준 강화 제안 이코노미스트",
+      "source": "이코노미스트",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1aMGQyUnBMa2dUaHVDbUhjTnJNWkJFb3Z3UEprN1NoaHo4dVJtclVSNzhfZVA1NEJ1bFI5Sjkyc0xfdVh5bVp3bUhZT3BXaEJ3a29GUnhURHVOclF3djVpeGJB?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권",
+        "탄소시장"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "이코노미스트"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "138131fd97956c9f",
       "publishedAt": "2026-09-30",
       "title": "한국탄소 배출권 산업협회, 지자체 온실가스 ‘상시 관리체계’ 전환 제안",
@@ -14007,6 +14210,7 @@
         "newsian.co.kr",
         "bizwnews.com",
         "매일일보",
+        "마켓인",
         "edaily.co.kr",
         "inthenews.co.kr",
         "sisacast.kr",
@@ -14040,7 +14244,6 @@
         "newsis.com",
         "catchnews.kr",
         "thefairnews.co.kr",
-        "마켓인",
         "뉴스1",
         "팍스경제TV",
         "연합뉴스TV",
@@ -260441,10 +260644,10 @@
   },
   "newsRetention": {
     "policy": "append-only",
-    "lastMergedAt": "2026-10-19T10:13:29+09:00",
-    "itemCount": 1306,
-    "archiveBefore": 1304,
-    "currentBefore": 1184,
+    "lastMergedAt": "2026-10-19T13:13:45+09:00",
+    "itemCount": 1314,
+    "archiveBefore": 1306,
+    "currentBefore": 1193,
     "gitRecoveryEnabled": false
   }
 }
