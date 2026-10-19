@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-10-19T15:14:02+09:00",
+  "lastSync": "2026-10-19T18:13:31+09:00",
   "keywords": [
     "배출권",
     "배출권거래제",
@@ -30,7 +30,7 @@
   "warning": "한국거래소 배출권 공지사항: 한국거래소 공지 목록을 해석하지 못했습니다. 1페이지: HTTP Error 403: Forbidden",
   "aiInsight": {
     "summary": "최근 공식자료의 직접적인 수급 변수는 유상경매입니다. 최근 경매가 높은 낙찰가로 소화돼 공급보다 이행수요가 강하다는 신호입니다.",
-    "generatedAt": "2026-10-19T15:14:02+09:00",
+    "generatedAt": "2026-10-19T18:13:31+09:00",
     "basisLatestDate": "2026-10-14",
     "basisCount": 10,
     "source": "fallback",
@@ -655,26 +655,32 @@
       "duplicateSources": [
         "4th.kr",
         "metroseoul.co.kr",
+        "megaeconomy.co.kr",
         "paxetv.com",
+        "newspim.com",
         "pinpointnews.co.kr",
         "ziksir.com",
         "kpenews.com",
+        "fetv.co.kr",
         "financialpost.co.kr",
+        "cstimes.com",
         "weekly.hankooki.com",
         "newsis.com",
         "srtimes.kr",
         "kdfnews.com",
         "sentv.co.kr",
         "g-enews.com",
+        "enewstoday.co.kr",
         "newsroad.co.kr",
         "view.asiae.co.kr",
         "tf.co.kr",
-        "fnnews.com"
+        "fnnews.com",
+        "lcnews.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 17,
+      "duplicateCount": 23,
       "region": "국내"
     },
     {
@@ -749,6 +755,31 @@
       "region": "국내"
     },
     {
+      "id": "09acf1b9612d9eac",
+      "publishedAt": "2026-10-19",
+      "title": "배출권 거래제 외부사업에 CCUS·바이오차 감축기술 추가...전기화 기업에...",
+      "category": "상쇄·외부사업",
+      "summary": "배출권 거래제 대상 기업이 할당량을 초과하는 온실가스 를 배출할 경우 시장에서 배출권 을 매입하거나 외부 감축사업의 인증실적(Korea Offset Credit, KOC)을 장외시장에서 구매한 후 이를 상쇄 배출권 (Korea Credit Unit, KCU)으로...",
+      "source": "esgeconomy.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.esgeconomy.com/news/articleView.html?idxno=17055",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "상쇄배출권"
+      ],
+      "duplicateSources": [
+        "esgeconomy.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "c7405ee8c969e369",
       "publishedAt": "2026-10-19",
       "title": "박영사, '스타트업 마에스트로: 기후·에너지 딥테크를 위한 24단계 플레...",
@@ -798,6 +829,29 @@
       "region": "해외"
     },
     {
+      "id": "2d2152415d90f1ac",
+      "publishedAt": "2026-10-19",
+      "title": "【공시 모니터링】㈜한화, 폭염으로 인한 재무영향 39억원 추산…임원 ...",
+      "category": "시장·가격",
+      "summary": "전환위험으로는 배출권 무상할당 축소, 전기요금 상승, 고탄소 제품 수요 감소를 제시했다. 다만 이에... 배출권 (KAU) 평균 거래단가를 기준으로 2025년 내부탄소가격을 톤당 1만4545원으로 정했다. 내부탄소가격은 직접...",
+      "source": "impacton.net",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.impacton.net/news/articleView.html?idxno=30271",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "impacton.net"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "f887104b0682806f",
       "publishedAt": "2026-10-19",
       "title": "“연어 키우고 공동주택 PC 공법· 탄소 저감까지”…건설사들, ‘첨단기...",
@@ -844,6 +898,29 @@
       "region": "국내"
     },
     {
+      "id": "613044055c3055e0",
+      "publishedAt": "2026-10-19",
+      "title": "[증권가] KODEX 미국배당다우존스액티브 ETF 출시 등",
+      "category": "제도",
+      "summary": "국내 탄소 시장 활성화에 기여하겠다”고 말했다. KB자산운용, ‘KB 미국 빅테크 TOP10 50 목표전환 펀드’ 출시 KB자산운용은 인공지능(AI) 산업을 이끄는 미국 대표 기술기업 10곳에 투자하는 ‘KB 미국 빅테크 TOP10 50...",
+      "source": "smarttoday.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.smarttoday.co.kr/ko-kr/articles/112885",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateSources": [
+        "smarttoday.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
       "id": "8f908639d9f799ea",
       "publishedAt": "2026-10-19",
       "title": "[알림] 해운업계 탄소 규제 대응과 비용 최소화···제16회 에너지·탄...",
@@ -869,6 +946,31 @@
       "region": "해외"
     },
     {
+      "id": "32d6fb97c2fd3d73",
+      "publishedAt": "2026-10-19",
+      "title": "[더벨]첫발 뗀 신한 탄소 배출권 협의체…100억 펀드 출항",
+      "category": "제도",
+      "summary": "정부의 4기 배출권거래제 (2026~2030년) 할당 대상 기업은 816개로 3기보다 102개 많다. 넷제로를 선언하는 기업이 늘면서 의무 할당 대상이 아닌 기업의 자발적 크레딧 수요도 커지고 있다는 게 업계 설명이다. 신한금융은...",
+      "source": "thebell.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202610151534116280103769",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "thebell.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "1ea7a2d231d2a7c8",
       "publishedAt": "2026-10-19",
       "title": "[더밸류 브리핑] 오늘의 증권사 소식…메리츠증권·다올투자증권·현대...",
@@ -885,6 +987,29 @@
       ],
       "duplicateSources": [
         "thevaluenews.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "9dab29b4c06de528",
+      "publishedAt": "2026-10-19",
+      "title": "[금융권 이모저모]미래에셋자산운용, AI 서버 핵심부품 ETF 상장 外",
+      "category": "제도",
+      "summary": "국내 탄소 시장 활성화에 기여하겠다\"고 말했다. 지난 11일 수협중앙회 직원들을 대상으로 열린 AI 기반 기업신용분석 교육에서 참석자들이 강연을 듣고 있다. / 사진=Sh수협은행 ◇Sh수협은행, 수협중앙회와 AI...",
+      "source": "businessplus.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.businessplus.kr/news/articleView.html?idxno=118390",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateSources": [
+        "businessplus.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -986,6 +1111,31 @@
       ],
       "duplicateCount": 1,
       "region": "해외"
+    },
+    {
+      "id": "3e56656f925490f8",
+      "publishedAt": "2026-10-19",
+      "title": "GS글로벌, 후시파트너스에 지분투자…탄소 배출권 사업 본격화",
+      "category": "상쇄·외부사업",
+      "summary": "이번 투자는 제4차 배출권거래제 (2026~2030년) 시행에 맞춘 선제적 대응으로, 탄소배출권을 미래 성장 동력으로 육성하기 위한 것이다. 2021년 설립된 후시파트너스는 탄소배출권 방법론 개발부터 감축사업 발굴·운영...",
+      "source": "magazine.hankyung.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://magazine.hankyung.com/business/article/202610191614b",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "magazine.hankyung.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
     },
     {
       "id": "47183113835f5e4d",
@@ -3474,11 +3624,11 @@
       "duplicateSources": [
         "인더스트리뉴스",
         "industrynews.co.kr",
+        "팍스경제TV",
         "paxetv.com",
         "newsdream.kr",
         "dailian.co.kr",
         "edaily.co.kr",
-        "팍스경제TV",
         "뉴스드림",
         "businessplus.kr",
         "view.asiae.co.kr",
@@ -4944,7 +5094,8 @@
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
         "배출권",
-        "배출권거래제"
+        "배출권거래제",
+        "탄소배출권"
       ],
       "duplicateSources": [
         "kbiznews.co.kr"
@@ -7694,16 +7845,16 @@
         "탄소배출권"
       ],
       "duplicateSources": [
-        "tk.newdaily.co.kr",
         "가스신문",
+        "tk.newdaily.co.kr",
         "뉴데일리 대구경북",
         "gasnews.com",
         "tbc.co.kr",
         "Tbc.co.kr"
       ],
       "searchProviders": [
-        "NAVER API HUB",
-        "Google News RSS"
+        "Google News RSS",
+        "NAVER API HUB"
       ],
       "duplicateCount": 6,
       "region": "국내"
@@ -13169,6 +13320,30 @@
       "region": "국내"
     },
     {
+      "id": "c1b950e1f84a8d0b",
+      "publishedAt": "2026-09-28",
+      "title": "트리니티항공, '탄소 청구서' 선제 대응 나선다",
+      "category": "상쇄·외부사업",
+      "summary": "트리니티항공은 지난 21일 서울 강서구 소노트리니티 커먼스에서 NH투자증권과 '국제항공 탄소 상쇄 ·감축제도(CORSIA) 및 배출권 거래제에 관한 상호협력 업무협약(MOU)'을 체결했다고 28일 밝혔다. 이는 국내 항공사와...",
+      "source": "fntimes.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.fntimes.com/html/view.php?ud=202609281606559481fa6b69a559_18",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "fntimes.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "4b4aaf6f9eb26857",
       "publishedAt": "2026-09-28",
       "title": "탄소 배출권 확보…항공사 발등의 불",
@@ -14242,16 +14417,13 @@
       "duplicateSources": [
         "4th.kr",
         "srtimes.kr",
-        "cstimes.com",
         "글로벌이코노믹",
         "뉴스핌",
         "socialvalue.kr",
-        "getnews.co.kr",
         "smarttoday.co.kr",
         "news1.kr",
         "포춘코리아",
         "머니투데이",
-        "fntimes.com",
         "seoulfn.com",
         "ebn.co.kr",
         "imaeil.com",
@@ -14270,6 +14442,7 @@
         "bizwnews.com",
         "매일일보",
         "edaily.co.kr",
+        "cstimes.com",
         "inthenews.co.kr",
         "sisacast.kr",
         "economist.co.kr",
@@ -14288,7 +14461,6 @@
         "kfenews.co.kr",
         "wowtv.co.kr",
         "newspim.com",
-        "브릿지경제",
         "viva100.com",
         "dealsitetv.com",
         "dailypop.kr",
@@ -14302,6 +14474,9 @@
         "newsis.com",
         "catchnews.kr",
         "thefairnews.co.kr",
+        "getnews.co.kr",
+        "fntimes.com",
+        "브릿지경제",
         "마켓인",
         "뉴스1",
         "팍스경제TV",
@@ -260702,10 +260877,10 @@
   },
   "newsRetention": {
     "policy": "append-only",
-    "lastMergedAt": "2026-10-19T15:14:08+09:00",
-    "itemCount": 1316,
-    "archiveBefore": 1314,
-    "currentBefore": 1193,
+    "lastMergedAt": "2026-10-19T18:13:38+09:00",
+    "itemCount": 1323,
+    "archiveBefore": 1316,
+    "currentBefore": 1200,
     "gitRecoveryEnabled": false
   }
 }
