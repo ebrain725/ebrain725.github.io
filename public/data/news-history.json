@@ -1,17 +1,126 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-20T01:44:38+09:00",
+  "generatedAt": "2026-10-20T08:14:36+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1325,
+  "itemCount": 1329,
   "earliestPublishedAt": "2026-08-06",
-  "latestPublishedAt": "2026-10-19",
+  "latestPublishedAt": "2026-10-20",
   "sourceCommitsScanned": 0,
   "sourceSnapshotsScanned": 0,
   "historicalRowsScanned": 0,
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "3512f126bcb4a84b",
+      "publishedAt": "2026-10-20",
+      "title": "현대차증권, '제2회 탄소금융 인사이트 데이' 개최…규제 대응 전략 공...",
+      "category": "제도",
+      "summary": "참여 대상은 배출권 거래제 할당대상업체나 온실가스 목표관리제 대상업체 등 탄소금융 유관 기업 담당자로, 오는 26일 정오까지 포스터 내 QR코드를 통해 신청서를 작성하면 된다. 현대차증권 지속가능경영팀 장성백...",
+      "source": "thepublic.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.thepublic.kr/news/articleView.html?idxno=322831",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "thepublic.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "4821b818fcb52aa3",
+      "publishedAt": "2026-10-20",
+      "title": "배출권 총량 16% 축소에 탄소배출권 가격 급등…정유·석화업계 '비상'",
+      "category": "유상경매",
+      "summary": "지난 8월 진행된 유상 할당 경매 에서는 역대 최다인 20개사가 응찰에 참여해 283만톤이 2만7900원에 전량 낙찰되기도 했다. 시장 전문가들은 올해 4분기 배출권 월평균 가격 역시 3만원 안팎의 높은 수준을 형성할 것으로...",
+      "source": "ebn.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1728325",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권",
+        "유상할당"
+      ],
+      "duplicateSources": [
+        "Investing.com 한국어",
+        "www.ebn.co.kr",
+        "ebn.co.kr"
+      ],
+      "searchProviders": [
+        "Google News RSS",
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 3,
+      "region": "국내"
+    },
+    {
+      "id": "a21c95c36dd9cf8e",
+      "publishedAt": "2026-10-20",
+      "title": "‘탄소 감축’ 외쳤지만 농민 쫓기고 숲은 없어졌다…K-산림 사업의 역...",
+      "category": "제도",
+      "summary": "탄소 배출권 으로 인정받는 제도다. 주로 산림 훼손 행위 단속, 인식 개선 캠페인 등으로 이뤄진다. 한국은... 상황이 이런데도 캄보디아 사업을 통해선 탄소 배출권 64만5413톤이 발행됐고, 이 가운데 52만2843톤이 판매돼...",
+      "source": "hani.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.hani.co.kr/arti/society/environment/1283162.html",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "hani.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "d4a185a376761586",
+      "publishedAt": "2026-10-20",
+      "title": "GS글로벌, 탄소 배출권 전문기업 '후시파트너스' 지분 투자",
+      "category": "제도",
+      "summary": "GS글로벌이 지난 19일 탄소 배출권 전문기업 후시파트너스에 지분을 투자하고 전략적 협력에 나섰다고 20일 밝혔다. 이번 투자는 제4차 배출권 거래제(2026~2030년) 시행에 발맞춘 행보다. 탄소배출허용 총량 축소와 유상할당...",
+      "source": "mt.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.mt.co.kr/industry/2026/10/20/2026101916180040134",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권",
+        "배출권거래제",
+        "유상할당"
+      ],
+      "duplicateSources": [
+        "edaily.co.kr",
+        "view.asiae.co.kr",
+        "머니투데이",
+        "sedaily.com",
+        "mt.co.kr",
+        "dizzotv.com",
+        "yna.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB",
+        "Google News RSS"
+      ],
+      "duplicateCount": 7,
+      "region": "국내"
+    },
     {
       "id": "712316a2baa75adc",
       "publishedAt": "2026-10-19",
@@ -409,7 +518,9 @@
       "url": "https://www.businessplus.kr/news/articleView.html?idxno=118390",
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
-        "탄소시장"
+        "탄소시장",
+        "배출권",
+        "탄소배출권"
       ],
       "duplicateSources": [
         "businessplus.kr"
@@ -5778,10 +5889,10 @@
       ],
       "duplicateSources": [
         "arunews.com",
-        "biztribune.co.kr",
         "efnews.co.kr",
-        "businessplus.kr",
         "sports.hankooki.com",
+        "biztribune.co.kr",
+        "businessplus.kr",
         "wsobi.com",
         "public25.com",
         "fntimes.com",
