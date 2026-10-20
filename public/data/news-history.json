@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-20T13:13:59+09:00",
+  "generatedAt": "2026-10-20T15:13:41+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1337,
+  "itemCount": 1342,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-20",
   "sourceCommitsScanned": 0,
@@ -12,6 +12,29 @@
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "43440c4ad42a2040",
+      "publishedAt": "2026-10-20",
+      "title": "호주, 대규모 태양광 투자결정...3.5GW로 연간 역대 최대 기록",
+      "category": "제도",
+      "summary": "호주 청정에너지규제청(CER)이 지난 15일(현지시간) 공개한 2026년 3분기 탄소시장 자료에 따르면, 올해 1월부터 9월까지 최종투자결정에 도달한 대규모 태양광발전 사업은 총 3.5GW로 집계됐다. 분기별로는 2분기에 2GW...",
+      "source": "aitimes.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=216428",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "aitimes.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
     {
       "id": "3512f126bcb4a84b",
       "publishedAt": "2026-10-20",
@@ -53,6 +76,56 @@
       ],
       "duplicateSources": [
         "sedaily.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
+      "id": "78aa55a592a5cfe1",
+      "publishedAt": "2026-10-20",
+      "title": "탄소규제 강화가 부산 해양산업에 새 성장동력? 韓銀 “선박 투자 10.7조...",
+      "category": "시장·가격",
+      "summary": "조선업의 경우 유럽 탄소 배출권 (EUA) 가격이 52.2% 상승하면 신규선박 투자가 약 10조 7000억 원 유발되고, 부산지역에는 약 1조 5920억 원의 생산유발효과, 8991명의 고용유발효과, 6268억 원의 부가가치유발효과로 이어질...",
+      "source": "viva100.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.viva100.com/article/20261020500596",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "sedaily.com",
+        "viva100.com",
+        "nocutnews.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 3,
+      "region": "해외"
+    },
+    {
+      "id": "8727218135c8c844",
+      "publishedAt": "2026-10-20",
+      "title": "유럽까지 22일…북극항로 왕복 성공에도 상업화는 ‘산 넘어 산’",
+      "category": "제도",
+      "summary": "해당 운항 조건에서 연료비 약 52만6000달러와 유럽연합 배출권 거래제(EU ETS) 비용 약 11만6000달러를 절감할 수 있다. 다만 연료비 절감이 전체 운송비 감소로 이어지는 것은 아니다. 북극항로를 운항하기 위해서는 유빙을...",
+      "source": "dailian.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.dailian.co.kr/news/view/1703668/?sc=Naver",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "dailian.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -159,6 +232,53 @@
       "region": "국내"
     },
     {
+      "id": "6c75c0c4a00bba4b",
+      "publishedAt": "2026-10-20",
+      "title": "[초점] 일반수소발전 입찰시장 개편과 남겨진 숙제 전년 대비 입찰물량...",
+      "category": "유상경매",
+      "summary": "배출권 유상할당 비율 등 제도 변경사항을 고려해 유상할당 전환계수를 기존 0.0007에서 0.0006으로 조정했다. 기준년도 배출권 소요량은 연료 사용량에 0.0006을 곱해 산정하며, 배출권 가격과 소요량 변동에 따른...",
+      "source": "gasnews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.gasnews.com/news/articleView.html?idxno=127241",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "유상할당"
+      ],
+      "duplicateSources": [
+        "gasnews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "44d7149f895fb375",
+      "publishedAt": "2026-10-20",
+      "title": "KGM·후시파트너스, EU CBAM 선제 대응 목적 MOU 체결",
+      "category": "제도",
+      "summary": "이 기업은 복잡한 탄소중립과 환경 규제에 대응하고, 감축 노력을 경제적 가치( 배출권 )로 전환할 수 있도록 돕는 솔루션을 제공한다. CBAM은 EU로 수입되는 제품의 생산 과정별 탄소 배출량에 비용을 부과하는...",
+      "source": "lcnews.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.lcnews.co.kr/news/articleView.html?idxno=209946",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "lcnews.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "7155bbbee426ab6a",
       "publishedAt": "2026-10-20",
       "title": "GS글로벌, 후시파트너스 지분투자…탄소 배출권 사업 확장",
@@ -241,10 +361,12 @@
         "biz.heraldcorp.com",
         "yna.co.kr",
         "연합뉴스",
+        "metroseoul.co.kr",
         "cstimes.com",
         "biz.sbs.co.kr",
         "inews24.com",
         "smedaily.co.kr",
+        "dealsite.co.kr",
         "etnews.com",
         "econovill.com"
       ],
@@ -252,7 +374,7 @@
         "NAVER API HUB",
         "Google News RSS"
       ],
-      "duplicateCount": 27,
+      "duplicateCount": 29,
       "region": "국내"
     },
     {
@@ -355,12 +477,13 @@
         "탄소배출권"
       ],
       "duplicateSources": [
+        "fnnews.com",
         "news1.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "region": "해외"
     },
     {
@@ -3075,13 +3198,13 @@
       ],
       "duplicateSources": [
         "연합뉴스",
+        "e2news.com",
         "newsdream.kr",
         "dailian.co.kr",
         "edaily.co.kr",
         "view.asiae.co.kr",
         "yna.co.kr",
-        "아시아경제",
-        "e2news.com"
+        "아시아경제"
       ],
       "searchProviders": [
         "Google News RSS",
