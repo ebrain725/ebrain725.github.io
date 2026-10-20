@@ -1,17 +1,91 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-21T02:26:20+09:00",
+  "generatedAt": "2026-10-21T08:12:54+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1353,
+  "itemCount": 1356,
   "earliestPublishedAt": "2026-08-06",
-  "latestPublishedAt": "2026-10-20",
+  "latestPublishedAt": "2026-10-21",
   "sourceCommitsScanned": 0,
   "sourceSnapshotsScanned": 0,
   "historicalRowsScanned": 0,
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "6ea796e53eb1624e",
+      "publishedAt": "2026-10-21",
+      "title": "한국미래기술교육연구원, 탄소시장 경제성·대응전략 세미나 개최",
+      "category": "시장안정",
+      "summary": "배출권 수급에 따라 공급량을 조절하는 한국형 시장안정화예비분(K-MSR)도 도입된다. 배출권 이월 확대와... 세미나에서는 EU ETS ·CBAM과 국내 배출권거래제 변화에 따른 제조업 탄소비용 전망을 비롯해 온실가스...",
+      "source": "hansbiz.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.hansbiz.co.kr/news/articleView.html?idxno=874617",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장",
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "hansbiz.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "f493487e27b9023f",
+      "publishedAt": "2026-10-21",
+      "title": "에테리온, 베트남 DKNEC와 디지털트윈 에너지관리 MOU",
+      "category": "제도",
+      "summary": "에너지 절감 성과를 베트남 탄소 배출권 제도와 연계하는 방안도 모색한다. 파사드는 건물·시설의 3차원 디지털트윈(BIM)에 설비와 계측 데이터를 연결해 에너지 사용량과 비용, 탄소배출을 통합 관리하는...",
+      "source": "mt.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.mt.co.kr/industry/2026/10/21/2026102016461630563",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "mt.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
+      "id": "273a4772f81324f6",
+      "publishedAt": "2026-10-21",
+      "title": "대형 선박 위에 굴뚝·날개가?…“한 세기 만에 돌아온 ‘돛’입니다”...",
+      "category": "제도",
+      "summary": "국제해사기구(IMO)는 2050년 해운업 탄소 중립을 목표로 내걸고 온실가스 배출 기준을 충족하지 못하는 선박에는 설비, 운항을 바꾸는 개선 계획을 제출케 하고 있다. 유럽연합도 2024년 해운 부문을 탄소 배출권 거래제(ETS)...",
+      "source": "khan.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.khan.co.kr/article/202610210600061",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "khan.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
     {
       "id": "43440c4ad42a2040",
       "publishedAt": "2026-10-20",
