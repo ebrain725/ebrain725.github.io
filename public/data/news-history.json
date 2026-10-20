@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-20T10:13:28+09:00",
+  "generatedAt": "2026-10-20T13:13:59+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1332,
+  "itemCount": 1337,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-20",
   "sourceCommitsScanned": 0,
@@ -34,6 +34,53 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "d14c66d60c20837b",
+      "publishedAt": "2026-10-20",
+      "title": "탄소규제, 부산 해양산업엔 기회…친환경 선박 투자 조 단위 전망",
+      "category": "시장·가격",
+      "summary": "탄소배출 규제가 강화되면서 고효율 및 대체연료 추진 선박 발주가 늘어남에 따라, 유럽 탄소 배출권 (EUA) 가격이 52.2% 상승할 때 국내적으로 총 10조7000억 원 규모의 신규 친환경 선박 투자가 유발될 것으로 추정됐다....",
+      "source": "sedaily.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.sedaily.com/article/20103692?ref=naver",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "sedaily.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
+      "id": "96eb5496cd0f514d",
+      "publishedAt": "2026-10-20",
+      "title": "유럽 싱크탱크 한국 자발적 탄소시장 에 우려 표명, \"감축 실적 발급 과...",
+      "category": "제도",
+      "summary": "올해 4월 대한상공회의소에서 열린 '한국형 자발적 탄소시장 얼라이언스' 출범식에서 주요 인사들이 기념사진을 촬영하고 있다. 유럽의 탄소시장 전문 싱크탱크가 한국의 국제감축사업 및 자발적 탄소시장 ...",
+      "source": "businesspost.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.businesspost.co.kr/BP?command=article_view&num=449752",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "businesspost.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
       "region": "국내"
     },
     {
@@ -174,12 +221,64 @@
         "유상할당"
       ],
       "duplicateSources": [
+        "etoday.co.kr",
+        "edaily.co.kr",
+        "newslock.co.kr",
+        "newsinside.kr",
+        "뉴스핌",
+        "fetv.co.kr",
+        "dailian.co.kr",
+        "view.asiae.co.kr",
+        "popcornnews.net",
+        "머니투데이",
+        "신아일보",
+        "smarttoday.co.kr",
+        "sedaily.com",
+        "shinailbo.co.kr",
+        "dizzotv.com",
+        "financialpost.co.kr",
+        "daily.hankooki.com",
+        "biz.heraldcorp.com",
+        "yna.co.kr",
+        "연합뉴스",
+        "cstimes.com",
+        "biz.sbs.co.kr",
+        "inews24.com",
+        "smedaily.co.kr",
+        "etnews.com",
         "econovill.com"
       ],
       "searchProviders": [
+        "NAVER API HUB",
+        "Google News RSS"
+      ],
+      "duplicateCount": 27,
+      "region": "국내"
+    },
+    {
+      "id": "eb453152c5f0919f",
+      "publishedAt": "2026-10-20",
+      "title": "GS글로벌, 탄소 배출권 진출",
+      "category": "제도",
+      "summary": "GS글로벌이 탄소 배출권 전문기업 후시파트너스에 지분을 투자해 탄소 배출권 사업에 본격 진출한다. GS글로벌은 후시파트너스에 지분 투자로 전략적 협력 기반을 마련했다고 20일 밝혔다. 기존 친환경 사업에서 온실가스...",
+      "source": "munhwa.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.munhwa.com/article/11624829?ref=naver",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "문화일보",
+        "munhwa.com"
+      ],
+      "searchProviders": [
+        "Google News RSS",
         "NAVER API HUB"
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "region": "국내"
     },
     {
@@ -200,6 +299,7 @@
         "유상할당"
       ],
       "duplicateSources": [
+        "fnnews.com",
         "edaily.co.kr",
         "view.asiae.co.kr",
         "머니투데이",
@@ -212,8 +312,56 @@
         "NAVER API HUB",
         "Google News RSS"
       ],
-      "duplicateCount": 7,
+      "duplicateCount": 8,
       "region": "국내"
+    },
+    {
+      "id": "7be1572ce69d2a3f",
+      "publishedAt": "2026-10-20",
+      "title": "(월드뉴스) EU, 탄소중립 기술 77개 프로젝트에 34억 유로 지원",
+      "category": "제도",
+      "summary": "혁신기금은 2020~2030년 EU 배출권 거래제(EU ETS)에서 발생할 것으로 추산되는 400억 유로의 수익을 활용해... DACCS는 대기 중 이산화탄소를 직접 포집한 뒤 저장하는 기술로, 온실가스 감축과 탄소 제거를 위한 기술적...",
+      "source": "electimes.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.electimes.com/news/articleView.html?idxno=373663",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "electimes.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
+      "id": "ddf0c84b7693c0dd",
+      "publishedAt": "2026-10-20",
+      "title": "\"국제사회 탈탄소 규제강화, 부산 해양산업 고도화 기회로 삼아야\"",
+      "category": "시장·가격",
+      "summary": "유럽 탄소 배출권 (European Union Allowance, EUA) 가격이 52.2% 상승할 경우 약 10조 7000억 원 규모의 신규선박 투자가... 6% 감소하며 이에 따라 약 52만6000달러(7억8000만 원)의 연료비와 11만6000달러(1억7000만 원)의 유럽연합 배출권 ...",
+      "source": "news1.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.news1.kr/local/busan-gyeongnam/6325610",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "news1.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
     },
     {
       "id": "712316a2baa75adc",
@@ -739,12 +887,14 @@
         "배출권거래제"
       ],
       "duplicateSources": [
+        "한경매거진",
         "magazine.hankyung.com"
       ],
       "searchProviders": [
+        "Google News RSS",
         "NAVER API HUB"
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "region": "국내"
     },
     {
@@ -2682,7 +2832,8 @@
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
         "배출권",
-        "배출권거래제"
+        "배출권거래제",
+        "K-ETS"
       ],
       "duplicateSources": [
         "pinpointnews.co.kr"
@@ -13432,7 +13583,8 @@
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
         "배출권",
-        "온실가스 배출권"
+        "온실가스 배출권",
+        "K-ETS"
       ],
       "duplicateSources": [
         "finomy.com",
@@ -13525,8 +13677,6 @@
       "duplicateSources": [
         "4th.kr",
         "srtimes.kr",
-        "글로벌이코노믹",
-        "뉴스핌",
         "socialvalue.kr",
         "smarttoday.co.kr",
         "news1.kr",
@@ -13582,6 +13732,8 @@
         "newsis.com",
         "catchnews.kr",
         "thefairnews.co.kr",
+        "글로벌이코노믹",
+        "뉴스핌",
         "연합뉴스",
         "서울경제TV",
         "getnews.co.kr",
