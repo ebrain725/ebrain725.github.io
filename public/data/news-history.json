@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-20T18:15:55+09:00",
+  "generatedAt": "2026-10-20T21:00:57+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1351,
+  "itemCount": 1353,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-20",
   "sourceCommitsScanned": 0,
@@ -303,6 +303,33 @@
       "region": "국내"
     },
     {
+      "id": "9d91e2cf1931ef64",
+      "publishedAt": "2026-10-20",
+      "title": "“친환경 항만 투자 100억 당, 부산 124억 생산유발”",
+      "category": "시장·가격",
+      "summary": "유럽 탄소 배출권 (EUA) 가격이 52.2% 상승할 때 신규 선박 투자는 약 10조7000억 원 유발될 것으로 추산한다. 이때 부산지역은 약 1조5920억 원의 생산유발효과와 8991명의 고용유발효과, 6268억 원의 부가가치유발효과로 이어질...",
+      "source": "kookje.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.kookje.co.kr/news2011/asp/newsbody.asp?code=0200&key=20261021.22008005744",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "sedaily.com",
+        "viva100.com",
+        "nocutnews.co.kr",
+        "kookje.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 4,
+      "region": "해외"
+    },
+    {
       "id": "a2756a964dd8a9ad",
       "publishedAt": "2026-10-20",
       "title": "“ 탄소 규제, 조선·항만·해운 등 부산 경제엔 기회… 지역 해양산업 전...",
@@ -375,6 +402,31 @@
       "region": "국내"
     },
     {
+      "id": "4ba1d2ea136947ec",
+      "publishedAt": "2026-10-20",
+      "title": "[온실가스 배출권] 10월 20일 KAU26, 50원 하락하며 3만100원",
+      "category": "시장·가격",
+      "summary": "[온실가스 배출권] 10월 20일 KAU26, 50원 하락하며 3만100원 데일리e뉴스",
+      "source": "데일리e뉴스",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9XUmZ2OXl5WWFIMFRWU1RHTmVELXhtY092amNBTGVZeHcyUDQ5bENRazZ2eTRuaXNINENSbHl2NUh2LXEtV1JfdlpKVFVUMUJNdHhKNzVCbFhmMkVxQ05EOTN3cDlBZVRPbzJyN1FKSQ?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "온실가스 배출권",
+        "KAU26"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "데일리e뉴스"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "6551d255fedfa6d2",
       "publishedAt": "2026-10-20",
       "title": "[단독] 탄소 감축 규제 더 옥죄자 … 발전사 부담 2600억 늘어",
@@ -425,8 +477,8 @@
       "id": "0a5f17b9528b5700",
       "publishedAt": "2026-10-20",
       "title": "[단독] “3배 비싸지는데 더 사라고 하니”…발전사 빚보태는 애물단지...",
-      "category": "시장·가격",
-      "summary": "탄소감축강화로 배출권 3배 급등 내년 추가 비용부담 2600억 달할 듯 발전사 재무건전성 개선에 ‘비상’ 정부가 탄소배출을 줄이기 위해 기업이 돈을 주고 온실가스 배출권 을 사야 하는 비중을 대폭 올리면서 내년...",
+      "category": "제도",
+      "summary": "정부는 탄소 배출을 많이 한 발전기업이 시장 에서 배출권을 구매해야 하는 비율(유상할당비율)을 올해 15%에서 내년 20%, 2030년 50%로 대폭 높였다. 발전회사들은 과거와 같은 양의 탄소 를 배출해도 더 많은 비용을...",
       "source": "mk.co.kr",
       "sourceType": "news",
       "section": "news",
@@ -434,7 +486,8 @@
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
         "배출권",
-        "온실가스 배출권"
+        "온실가스 배출권",
+        "유상할당"
       ],
       "duplicateSources": [
         "mk.co.kr"
@@ -699,7 +752,7 @@
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 2,
+      "duplicateCount": 3,
       "region": "해외"
     },
     {
@@ -14016,6 +14069,7 @@
       "duplicateSources": [
         "4th.kr",
         "srtimes.kr",
+        "뉴스핌",
         "socialvalue.kr",
         "smarttoday.co.kr",
         "news1.kr",
@@ -14066,13 +14120,12 @@
         "ezyeconomy.com",
         "huffingtonpost.kr",
         "yna.co.kr",
-        "아시아경제",
         "view.asiae.co.kr",
         "newsis.com",
         "catchnews.kr",
         "thefairnews.co.kr",
+        "아시아경제",
         "글로벌이코노믹",
-        "뉴스핌",
         "연합뉴스",
         "서울경제TV",
         "getnews.co.kr",
