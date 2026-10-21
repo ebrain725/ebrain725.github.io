@@ -2,7 +2,7 @@
   "schemaVersion": "1.0",
   "requestedStartDate": "2015-01-01",
   "startedAt": "2026-09-09T19:46:11+09:00",
-  "generatedAt": "2026-10-21T03:03:41+09:00",
+  "generatedAt": "2026-10-22T03:09:50+09:00",
   "scope": {
     "ministry": "기후부 보도자료·공지사항: 핵심 키워드는 제목·본문, 확대 키워드는 제목으로 판정; 이전 이력 보존",
     "krx": "한국거래소 배출권시장 공지사항 일반 게시물 전체",
@@ -126,7 +126,7 @@
     {
       "source": "기후부 보도자료",
       "section": "press",
-      "requestedStartDate": "2026-08-22",
+      "requestedStartDate": "2026-08-23",
       "transport": "unfiltered-rss-local-split-keyword-filter",
       "keywordRule": {
         "titleAndContent": [
@@ -246,14 +246,14 @@
       "pageSize": 1000,
       "pagesFetched": 1,
       "rawRows": 1000,
-      "inRangeMatchedRows": 29,
-      "itemCount": 29,
+      "inRangeMatchedRows": 30,
+      "itemCount": 30,
       "directCount": 7,
-      "relatedCount": 22,
+      "relatedCount": 23,
       "earliest": "2026-08-25",
-      "latest": "2026-10-15",
-      "oldestSeen": "2025-11-30",
-      "newestSeen": "2026-10-20",
+      "latest": "2026-10-21",
+      "oldestSeen": "2025-12-01",
+      "newestSeen": "2026-10-21",
       "crossedRequestedStart": true,
       "stopReason": "date-boundary",
       "complete": true,
@@ -305,7 +305,7 @@
         "급전": 0,
         "경제급전": 0,
         "계통운영": 1,
-        "석탄발전": 1,
+        "석탄발전": 2,
         "석탄화력": 0,
         "LNG발전": 0,
         "가스발전": 0,
@@ -372,7 +372,7 @@
     {
       "source": "기후부 공지·공고",
       "section": "notice",
-      "requestedStartDate": "2026-08-22",
+      "requestedStartDate": "2026-08-23",
       "transport": "unfiltered-rss-local-split-keyword-filter",
       "keywordRule": {
         "titleAndContent": [
@@ -635,11 +635,11 @@
   ],
   "warnings": [],
   "coverage": {
-    "itemCount": 1687,
+    "itemCount": 1689,
     "counts": {
       "krx_notice": 316,
       "notice": 436,
-      "press": 935
+      "press": 937
     },
     "earliest": {
       "krx_notice": "2015-01-07",
@@ -649,14 +649,14 @@
     "latest": {
       "krx_notice": "2026-10-14",
       "notice": "2026-10-21",
-      "press": "2026-10-15"
+      "press": "2026-10-21"
     },
     "directCounts": {
-      "press": 434,
+      "press": 435,
       "notice": 226
     },
     "relatedCounts": {
-      "press": 501,
+      "press": 502,
       "notice": 210
     },
     "labels": {
@@ -666,6 +666,39 @@
     }
   },
   "items": [
+    {
+      "id": "e77915d0538be717",
+      "publishedAt": "2026-10-21",
+      "title": "한국형 녹색 대전환(K-GX), 새로운 사업기회 연다… 대한민국 친환경대전 개최",
+      "category": "제도",
+      "summary": "▷ 녹색제품, 전력·에너지, 순환자원, 탄소중립, 친환경 경영까지 ‘한국형 녹색 대전환’의 해법을 한자리에, 국민 참여 기후행동 전시공간도 마련 ▷ 이에스지(ESG)포럼 동시 개최로 기후공시 등 녹색대전환의 산업계 대응 소개 기후에너지환경부(장관 김성환)와 한국환경산업기술원(원장 남광우)은 ‘2026 대한민국 이에스지(ESG) 친환경대전’을 10월 21일부터 23일까지 코엑스(서울 강남구 소재)에서 개최한다고 밝혔다. 2005년부터 시작된 친환경대전은 올해로 22회를 맞은 국내 최대 환경전시회로 그간 환경 기술과 환경 산업의 미래 청사진을 선보이고 국민의 녹색소비 생활을 촉진해 오면서 명성을 쌓아왔다. 올해는 기후에너지환경부 출범 이후 처음 맞는 전시회로 ‘한국형 녹색 대전환(K-GX)’을 주제로 산업계의 탈탄소 전환 기술과 제품 및 서비스를 전시하고 각종 토론회 및 참가기업 발표를 통해 기술을 사업화할 수 있도록 사람들을 연결하는 데 중점을 두었다. 올해 전시회에는 총 234개 기업이 참여해 433개 전시공간(부스)을 총 5개관으로 구성하여 정부와 산업계가 녹색 대전환 전과정에서 나아갈 길을 관련 종사자와 관심 있는 국민 모두가 관람할 수 있도록 구성했다. 특히 올해 신설한 전력·에너지관에서는 재생에너지, 에너지 효율 향상 기술, 스마트 전력관리 등 전력·에너지 부문의 탈탄소 전환을 지원하는 기술과 서비스를 소개한다. 탄소중립솔루션관에서는 연료전환, 온실가스 관리 등 기업의 탄소 감축을 돕는 기술 및 서비스를, 이에스지(ESG)솔루션관에서는 공시 플랫폼과 상담(컨설팅), 공급망 관리 시스템 및 관련 정부 지원사업을 확인할 수 있다. 자원순환관은 플라스틱뿐 아니라 태양광 패널, 해양·산업 폐기물 등으로 대상을 넓혀 폐자원의 재활용·재사용과 원료 재자원화 기술을 소개한다. 녹색제품·건축관에서는 환경표지·저탄소제품, 새활용(업사이클링) 제품, 친환경 건축 등 지속가능한 생산과 소비를 연결하는 제품과 서비스를 만날 수 있다. 전시공간 현장에서는 다양한 녹색전환에 활용되는 디지털 기술도 살펴볼 수 있다. 사용 후 배터리 해체 공정을 자동화하는 피지컬 인공지능(AI) 로봇 시스템, 기업의 '환경·사회·투명 경영(ESG)' 데이터를 표준화하고 검증 가능한 체계로 관리하는 공시 대응 플랫폼 등을 소개한다. 인공지능(AI) 특별관에서는 환경 분야에서 인공지능을 활용한 응용 제품과 서비스의 상용화를 지원하는 사업과 참여기업을 선보인다. 관람객이 참여하는 다채로운 기후행동 행사도 마련됐다. 그린카드 홍보관에서는 녹색소비와 대중교통 이용 등 기후행동을 돕는 제도와 이용 방법을 안내한다. 에코라이프 테마관과 제로웨이스트 체험관에서는 일상에서 실천할 수 있는 친환경 소비와 자원절약 방법을 확인할 수 있다. 행사 운영에서도 국내 전시회 최초로 탄소발자국을 계량화하는 시범 사업을 추진하여 탄소 배출을 최소화하며 일회용품 사용을 줄이는 한편 다회용컵(텀블러) 세척기가 준비됐다. [ 부대 행사 ] 전시 둘째날인 10월 22일 전시장 내 토론(포럼)장에서 열리는 ‘제5회 대한민국 이에스지(ESG)포럼’은 기존 전시만으로는 볼 수 없는 정부 정책과 산업계의 친환경 전략을 다루는 토론회다. 올해는 ‘한국형 녹색 대전환(K-GX)’을 성장기회, 기후공시를 신뢰자산으로’를 주제로 정부의 정책·제도 동향 발표와 함께 각 산업계의 선도 기업이 참석하여 탄소중립과 '환경·사회·투명 경영(ESG)'에 대응하는 사례를 함께 다루어 참여 기업들의 탈탄소 전환 대응 준비를 돕는다. 오전 토론회에서는 한국형 녹색대전환(K-GX) 전략과 국가 온실가스 감축목표 이행 방향, 전환금융, 국내 지속가능성 공시기준, 자발적 탄소시장 등 정책·제도의 흐름을 살펴본다. 오후 토론회에서는 기후공시 협치(거버넌스)와 디지털 플랫폼을 활용한 '환경·사회·투명 경영' 공시 대응, 제품환경규제 대응, 제조업의 에너지 전환과 저탄소 전략, 인공지능을 활용한 전과정평가(LCA) 등 기업의 실행 전략과 사례를 공유한다. 올해 새롭게 마련한 전시장 내 ‘그린 스테이지(Green stage)’는…",
+      "source": "기후부 보도자료",
+      "sourceType": "official",
+      "section": "press",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%ED%83%84%EC%86%8C%EC%8B%9C%EC%9E%A5&menuId=10598&orgCd=&boardMasterId=939&boardId=1901210",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "keywordScope": "direct"
+    },
+    {
+      "id": "13e68e14bca3a4e3",
+      "publishedAt": "2026-10-21",
+      "title": "석탄발전 폐지에 대응한 고용 안정과 일자리 전환 방안 논의",
+      "category": "제도",
+      "summary": "▷ 10월 22일 국회에서 노동계·정부·전문가 참여 정책토론회 개최 ▷ 특별법 이행과 정의로운 전환 특별지구 연계 방안 모색 기후에너지환경부(장관 김성환)는 김주영 국회의원 등 14개 의원실과 함께 10월 22일 오전 국회의원회관(서울 영등포구 소재) 제1세미나실에서 ‘석탄 발전 폐지 대응 노동정책 토론회’를 개최한다고 밝혔다. 이번 토론회는 2040년까지의 석탄발전소 단계적 폐지에 따른 고용 영향을 최소화하고, 노동자의 고용 안정과 원활한 일자리 전환을 지원하기 위한 정책과제를 논의하기 위해 마련됐다. 특히 내년(2027년) 9월 16일부터 시행할 예정인 ‘석탄화력발전소 노동자 및 폐지 지역 지원 특별법’의 이행 방안과 정의로운 전환 특별지구 제도를 중심으로 노동계 등 이해관계자의 의견을 수렴한다. 토론회는 김주영 국회의원의 개회사와 이호현 기후에너지환경부 제2차관의 인사말에 이어 주제발표와 참여자(패널) 토론 순으로 진행된다. 먼저 이경희 한국법제연구원 연구위원이 ‘석탄 발전 폐지 지역의 정의로운 노동 전환을 위한 법제 전략’을 주제로 발표한다. 이 발표에서는 발전소 폐지 이전부터 고용 대책을 준비하기 위한 특별법의 역할과 노동자 지원 범위, 참여 체계, 직업훈련 및 재원 등 주요 이행과제를 살펴본다. 이어서 어일천 고용노동부 과장이 ‘정의로운 전환 특별지구 제도 및 고시안 개요’를 발표한다. 이 발표에서는 탄소중립 이행으로 고용·산업구조의 변화가 예상되는 지역을 선제적으로 지원하기 위한 특별지구 지정 기준과 절차, 지원 대책 및 특별법과의 연계 방안을 소개한다. 참여자 토론은 오상봉 한국노동연구원 부원장이 사회를 맡고, 전력연맹·공공노련·공공운수노조 등 노동계와 법률·노동 분야 전문가, 기후에너지환경부 청정전력전환과장이 참여한다. 토론 참여자들은 발전사업자와 협력업체 등 소속 노동자의 고용 안정, 일자리 전환 지원방안을 논의할 예정이다. ※ 토론 참여자(6명): 김동규 전력연맹 부위원장(서부발전 노조위원장), 이병화 코엔서비스 노조위원장(공공노련), 홍원표 공공운수노조 공공기관사업국장, 이현규 김앤장 변호사, 전주희 서교인문사회연구실 연구원, 강부영 기후에너지환경부 청정전력전환과장 기후에너지환경부는 이번 토론회에서 제시된 의견을 검토하여 제12차 전력수급기본계획과 연계하여 준비 중인 ‘석탄발전 전환 이행안(로드맵)’과 특별법 하위 법령, 관련 계획 등 마련 과정에 반영할 계획이다. 아울러 고용노동부 등 관계부처, 지방정부 및 노동계와 소통하며 고용 안정과 일자리 전환 지원방안을 구체화해 나갈 예정이다. 이호현 기후에너지환경부 제2차관은 “에너지전환 과정에서 발전소 노동자의 고용에 미치는 영향을 함께 살피는 것이 중요하다”라며, “노동계 등 현장의 목소리를 충분히 듣고 관계 부처·지방정부와 협력하여 고용안정과 일자리 전환을 뒷받침할 지원방안을 구체화해 나가겠다”라고 밝혔다. 붙임 ‘석탄발전 폐지 대응 노동정책 토론회’ 포스터. 끝.",
+      "source": "기후부 보도자료",
+      "sourceType": "official",
+      "section": "press",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=1000&maxIndexPages=10&searchKey=&searchValue=&menuId=10598&orgCd=&boardMasterId=939&boardId=1901100",
+      "matchedKeywords": [
+        "석탄발전"
+      ],
+      "matchedFields": [
+        "title"
+      ],
+      "keywordScope": "related"
+    },
     {
       "id": "638b4bf19084b52e",
       "publishedAt": "2026-10-21",
@@ -2259,7 +2292,7 @@
       "keywordScope": "direct"
     },
     {
-      "id": "d2a1871df8900da6",
+      "id": "c315dd89d2d3d43a",
       "publishedAt": "2026-07-24",
       "title": "「배출권거래제 고도화 및 간접배출 관리체계 개선 방안 연구」 입찰 재공고",
       "category": "제도",
@@ -2267,7 +2300,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C&menuId=10524&orgCd=&boardMasterId=39&boardId=1879830",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C%EA%B1%B0%EB%9E%98%EC%A0%9C&menuId=10524&orgCd=&boardMasterId=39&boardId=1879830",
       "matchedKeywords": [
         "배출권",
         "배출권거래제"
@@ -3178,7 +3211,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "03ea5422bde1b606",
+      "id": "78ae7cb43ef1e7aa",
       "publishedAt": "2026-07-03",
       "title": "「배출권거래제 고도화 및 간접배출 관리체계 개선 방안 연구」 입찰 공고",
       "category": "제도",
@@ -3186,7 +3219,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C&menuId=10524&orgCd=&boardMasterId=39&boardId=1875540",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C%EA%B1%B0%EB%9E%98%EC%A0%9C&menuId=10524&orgCd=&boardMasterId=39&boardId=1875540",
       "matchedKeywords": [
         "배출권",
         "배출권거래제"
@@ -9414,7 +9447,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "c0d456ffc4fe0a88",
+      "id": "eafd57a5985c46be",
       "publishedAt": "2026-02-25",
       "title": "「배출권거래제 외부사업 활성화 방안 마련 연구」 입찰 공고",
       "category": "상쇄·외부사업",
@@ -9422,7 +9455,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C&menuId=10524&orgCd=&boardMasterId=39&boardId=1845320",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C%EA%B1%B0%EB%9E%98%EC%A0%9C&menuId=10524&orgCd=&boardMasterId=39&boardId=1845320",
       "matchedKeywords": [
         "외부사업",
         "외부 사업",
@@ -14597,7 +14630,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "3d8e51e0df8e2c58",
+      "id": "73f36c800861b330",
       "publishedAt": "2025-11-14",
       "title": "온실가스 배출권거래제 제4차 계획기간 국가 배출권 할당계획 공고",
       "category": "제도",
@@ -14605,7 +14638,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C&menuId=10524&orgCd=&boardMasterId=39&boardId=1819470",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C%EA%B1%B0%EB%9E%98%EC%A0%9C&menuId=10524&orgCd=&boardMasterId=39&boardId=1819470",
       "matchedKeywords": [
         "온실가스",
         "할당계획",
@@ -14674,7 +14707,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "a1d20de2729397f9",
+      "id": "b2db31eba5c50b6f",
       "publishedAt": "2025-11-14",
       "title": "온실가스 배출권거래제 제3차 계획기간 국가 배출권 할당계획 변경사항 공고",
       "category": "제도",
@@ -14682,7 +14715,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C&menuId=10524&orgCd=&boardMasterId=39&boardId=1819480",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C%EA%B1%B0%EB%9E%98%EC%A0%9C&menuId=10524&orgCd=&boardMasterId=39&boardId=1819480",
       "matchedKeywords": [
         "온실가스",
         "할당계획",
@@ -19762,7 +19795,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "58828e56b31f8f6a",
+      "id": "d7fb8dedcd1e45ae",
       "publishedAt": "2025-06-09",
       "title": "배출권거래제 자발적 참여업체 신청 절차 공고",
       "category": "제도",
@@ -19770,7 +19803,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C%EA%B1%B0%EB%9E%98%EC%A0%9C&menuId=10524&orgCd=&boardMasterId=39&boardId=1746990",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C%EA%B1%B0%EB%9E%98%EC%A0%9C&menuId=10524&orgCd=&boardMasterId=39&boardId=1746990",
       "matchedKeywords": [
         "할당대상업체",
         "배출권",
@@ -23803,7 +23836,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "cd43602a3ac2b6c0",
+      "id": "c42e59430c76006a",
       "publishedAt": "2024-12-24",
       "title": "온실가스 배출권거래제 제3차 계획기간 국가 배출권 할당계획 변경사항 공고",
       "category": "제도",
@@ -23811,7 +23844,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C%EA%B1%B0%EB%9E%98%EC%A0%9C&menuId=10524&orgCd=&boardMasterId=39&boardId=1715690",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C%EA%B1%B0%EB%9E%98%EC%A0%9C&menuId=10524&orgCd=&boardMasterId=39&boardId=1715690",
       "matchedKeywords": [
         "온실가스",
         "할당계획",
@@ -97334,8 +97367,8 @@
     }
   ],
   "collectionMode": "incremental",
-  "queryStartDate": "2026-08-22",
-  "queryEndDate": "2026-10-21",
+  "queryStartDate": "2026-08-23",
+  "queryEndDate": "2026-10-22",
   "climateKeywordExpansion": {
     "version": "2026-09-11-v1-38-topics",
     "sharedWith": "산업부 보도자료·공지사항",
@@ -97456,8 +97489,8 @@
       ]
     },
     "collectionMode": "incremental",
-    "queryStartDate": "2026-08-22",
-    "queryEndDate": "2026-10-21"
+    "queryStartDate": "2026-08-23",
+    "queryEndDate": "2026-10-22"
   },
   "policyEventTaxonomy": {
     "version": "2026-09-11-v1-user-38-events",
@@ -97470,8 +97503,8 @@
     "krxRule": "배출권시장 전용 공지 전체를 direct로 보존하고 세부 이벤트를 태깅"
   },
   "retentionAudit": {
-    "previousUnique": 1686,
-    "currentUnique": 1687,
+    "previousUnique": 1688,
+    "currentUnique": 1689,
     "missing": 0
   }
 }
