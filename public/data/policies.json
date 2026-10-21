@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-10-21T18:13:46+09:00",
+  "lastSync": "2026-10-21T21:16:01+09:00",
   "keywords": [
     "배출권",
     "배출권거래제",
@@ -30,7 +30,7 @@
   "warning": "한국거래소 배출권 공지사항: 한국거래소 공지 목록을 해석하지 못했습니다. 1페이지: HTTP Error 403: Forbidden",
   "aiInsight": {
     "summary": "최근 공식자료의 직접적인 수급 변수는 유상경매입니다. 최근 경매가 높은 낙찰가로 소화돼 공급보다 이행수요가 강하다는 신호입니다.",
-    "generatedAt": "2026-10-21T18:13:46+09:00",
+    "generatedAt": "2026-10-21T21:16:01+09:00",
     "basisLatestDate": "2026-10-21",
     "basisCount": 10,
     "source": "fallback",
@@ -752,12 +752,16 @@
         "K-ETS"
       ],
       "duplicateSources": [
-        "pinpointnews.co.kr"
+        "핀포인트뉴스",
+        "pinpointnews.co.kr",
+        "hansbiz.co.kr",
+        "gasnews.com"
       ],
       "searchProviders": [
+        "Google News RSS",
         "NAVER API HUB"
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 4,
       "region": "국내"
     },
     {
@@ -784,6 +788,30 @@
       ],
       "duplicateCount": 1,
       "region": "국내"
+    },
+    {
+      "id": "b501484212514db6",
+      "publishedAt": "2026-10-21",
+      "title": "한·EU, NDC·배출권거래제·해상풍력 등 정책 협력 논의",
+      "category": "제도",
+      "summary": "한·EU, NDC·배출권거래제·해상풍력 등 정책 협력 논의 ACN아시아콘텐츠뉴스",
+      "source": "ACN아시아콘텐츠뉴스",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBZbEVSSFVzYXNWcGZycXU3YkFOSDg5eWoxaUI3QzB6RmlvVE56cDFTTGViVnhjRnNJR0hGUFB4M3BlNHVIZjJLeDcyVXhGQ29YdlQ1MU1NcVJXaVZfbnM3cnU5eFo3WU4y?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "ACN아시아콘텐츠뉴스"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "해외"
     },
     {
       "id": "e1921070d455c0f2",
@@ -906,6 +934,31 @@
       ],
       "duplicateCount": 1,
       "region": "해외"
+    },
+    {
+      "id": "ca76abc6a605d812",
+      "publishedAt": "2026-10-21",
+      "title": "산업계 탈 탄소 기술 한자리에···234개 기업 참여 '친환경대전' 개막",
+      "category": "제도",
+      "summary": "22일 열리는 '제5회 대한민국 ESG포럼'에서는 K-GX 전략과 국가 온실가스 감축목표 이행 방향, 전환금융, 국내 지속가능성 공시기준, 자발적 탄소시장 등 주요 정책과 제도를 다룬다. 기후공시 거버넌스와 디지털 플랫폼을...",
+      "source": "enewstoday.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.enewstoday.co.kr/news/articleView.html?idxno=2483058",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 3,
+      "duplicateSources": [
+        "enewstoday.co.kr",
+        "energy-news.co.kr",
+        "energydaily.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
     },
     {
       "id": "1947ceb4cb4d9a65",
@@ -1050,12 +1103,14 @@
         "탄소배출권"
       ],
       "duplicateSources": [
+        "ESG경제",
         "esgeconomy.com"
       ],
       "searchProviders": [
+        "Google News RSS",
         "NAVER API HUB"
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "region": "해외"
     },
     {
@@ -1098,12 +1153,14 @@
         "탄소배출권"
       ],
       "duplicateSources": [
+        "파이낸셜포스트",
         "financialpost.co.kr"
       ],
       "searchProviders": [
+        "Google News RSS",
         "NAVER API HUB"
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "region": "국내"
     },
     {
@@ -1196,6 +1253,30 @@
       "region": "해외"
     },
     {
+      "id": "6ccfe3bc8bd06df3",
+      "publishedAt": "2026-10-21",
+      "title": "[차관칼럼] GX·AX, 미래성장의 두 엔진",
+      "category": "제도",
+      "summary": "녹색 프리미엄이 보장되도록 기후가치평가 시스템을 정교화하고, 배출권 거래제(ETS) 개편과 함께 민간... K-GX 전략은 국가 온실가스 감축목표(NDC) 달성을 위한 방어적 카드가 아니다. 기후위기라는 미증유의 도전과제를...",
+      "source": "fnnews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.fnnews.com/news/202610211820171259",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "fnnews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "03bc898b9fd342b8",
       "publishedAt": "2026-10-21",
       "title": "[전문가 기고] 그린메탄올의 핵심 역할 및 시장 전망 글로벌 에너지 전...",
@@ -1216,6 +1297,31 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "cd9a0a1b62725b78",
+      "publishedAt": "2026-10-21",
+      "title": "[온실가스 배출권] 10월 21일 KAU26, 50원 오른 3만150원으로 마감",
+      "category": "시장·가격",
+      "summary": "[온실가스 배출권] 10월 21일 KAU26, 50원 오른 3만150원으로 마감 데일리e뉴스",
+      "source": "데일리e뉴스",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE4xaVRmWGtTbV8xRTlxN0tnSjlEUm5sZFVTOEZxWWRCaDh2NC1yZUEwd3BxM280Z3lrWThIOFYycW5ob3hUa0p3YVNhcGJHaGZITXE4WEZOT1R1c2xYdnZ1TGFCTnZBMVNjMWhQbEYwaw?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "온실가스 배출권",
+        "KAU26"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "데일리e뉴스"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
       "region": "국내"
     },
     {
@@ -1765,11 +1871,13 @@
       "matchedKeywords": [
         "탄소시장"
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "duplicateSources": [
+        "비즈니스포스트",
         "businesspost.co.kr"
       ],
       "searchProviders": [
+        "Google News RSS",
         "NAVER API HUB"
       ],
       "region": "국내"
@@ -2181,6 +2289,9 @@
       ],
       "duplicateSources": [
         "etoday.co.kr",
+        "마켓인",
+        "메트로신문",
+        "뉴스락",
         "edaily.co.kr",
         "newslock.co.kr",
         "newsinside.kr",
@@ -2201,20 +2312,36 @@
         "yna.co.kr",
         "연합뉴스",
         "metroseoul.co.kr",
+        "FETV",
+        "파이낸셜뉴스",
+        "서울타임즈뉴스",
+        "아시아경제",
+        "데일리안",
         "seoultimes.news",
         "cstimes.com",
+        "SBS Biz",
+        "서울경제",
+        "동행미디어 시대",
+        "디지털포스트",
+        "아이뉴스24",
+        "디지틀조선TV",
+        "아시아투데이",
+        "한국아이닷컴",
         "biz.sbs.co.kr",
         "inews24.com",
+        "파이낸셜포스트",
         "smedaily.co.kr",
         "dealsite.co.kr",
         "etnews.com",
-        "econovill.com"
+        "스마트투데이",
+        "econovill.com",
+        "ER 이코노믹리뷰"
       ],
       "searchProviders": [
         "NAVER API HUB",
         "Google News RSS"
       ],
-      "duplicateCount": 29,
+      "duplicateCount": 48,
       "region": "국내"
     },
     {
@@ -2445,6 +2572,30 @@
         "NAVER API HUB"
       ],
       "region": "국내"
+    },
+    {
+      "id": "da9a44e5d9fc22db",
+      "publishedAt": "2026-10-19",
+      "title": "선주단체들, EU ETS 해운 탄소배출권 비축분 세 배 확대 촉구",
+      "category": "제도",
+      "summary": "선주단체들, EU ETS 해운 탄소배출권 비축분 세 배 확대 촉구 - 뉴스 및 통계 IndexBox",
+      "source": "IndexBox",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNTmh1MnJwbk9HMzF3aWt1ZWE1SVQzNVBZbmhqbWR1aVpzamo0akFxZXhPZk9iS0lsR3NUSkRXWFR6cGNhd0ZhWHJzTUszTzVsbWxOeWI3eUh1cHNYb2xoVU92dmM3dFdnWWMzXzdocHhzQThXUnM2ZG1JQUk3MTBldkx4LVN0OVBLc2lRb0pyTElscDdKLXR6eEtmeG4wdDBEaTlTZVRuaUU2czh4WVFrLUFSdEp1a0VNcHg2bXdFOWlqck54d1Iw?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "IndexBox"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "해외"
     },
     {
       "id": "09acf1b9612d9eac",
@@ -5112,8 +5263,8 @@
         "K-ETS"
       ],
       "duplicateSources": [
-        "e2news.com",
         "연합뉴스",
+        "e2news.com",
         "newsdream.kr",
         "dailian.co.kr",
         "edaily.co.kr",
@@ -5122,8 +5273,8 @@
         "아시아경제"
       ],
       "searchProviders": [
-        "NAVER API HUB",
-        "Google News RSS"
+        "Google News RSS",
+        "NAVER API HUB"
       ],
       "duplicateCount": 8,
       "region": "국내"
@@ -5371,13 +5522,15 @@
         "K-ETS"
       ],
       "duplicateSources": [
-        "인더스트리뉴스",
         "industrynews.co.kr",
-        "팍스경제TV",
         "paxetv.com",
         "newsdream.kr",
+        "데일리안",
         "dailian.co.kr",
+        "마켓인",
         "edaily.co.kr",
+        "인더스트리뉴스",
+        "팍스경제TV",
         "뉴스드림",
         "businessplus.kr",
         "view.asiae.co.kr",
@@ -5387,10 +5540,10 @@
         "e2news.com"
       ],
       "searchProviders": [
-        "Google News RSS",
-        "NAVER API HUB"
+        "NAVER API HUB",
+        "Google News RSS"
       ],
-      "duplicateCount": 14,
+      "duplicateCount": 16,
       "region": "국내"
     },
     {
@@ -6448,16 +6601,16 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "아시아경제",
         "view.asiae.co.kr",
+        "아시아경제",
         "etnews.com",
         "dt.co.kr",
         "전자신문",
         "naeil.com"
       ],
       "searchProviders": [
-        "Google News RSS",
-        "NAVER API HUB"
+        "NAVER API HUB",
+        "Google News RSS"
       ],
       "duplicateCount": 6,
       "region": "국내"
@@ -10686,13 +10839,14 @@
         "배출권",
         "탄소배출권"
       ],
-      "duplicateCount": 5,
+      "duplicateCount": 6,
       "duplicateSources": [
-        "kbmaeil.com",
+        "kukinews.com",
         "웹플러스뉴스",
         "서울일보",
         "seoulilbo.com",
-        "webplusnews.kr"
+        "webplusnews.kr",
+        "kbmaeil.com"
       ],
       "searchProviders": [
         "NAVER API HUB",
@@ -10744,17 +10898,19 @@
       ],
       "duplicateSources": [
         "pennmike.com",
+        "연합뉴스",
         "v.daum.net",
         "kukinews.com",
         "yna.co.kr",
         "khan.co.kr",
-        "newsclaim.co.kr"
+        "newsclaim.co.kr",
+        "경향신문"
       ],
       "searchProviders": [
         "NAVER API HUB",
         "Google News RSS"
       ],
-      "duplicateCount": 6,
+      "duplicateCount": 8,
       "region": "국내"
     },
     {
@@ -16168,10 +16324,10 @@
       "duplicateSources": [
         "4th.kr",
         "뉴스핌",
+        "서울경제",
         "socialvalue.kr",
         "smarttoday.co.kr",
         "news1.kr",
-        "포춘코리아",
         "머니투데이",
         "seoulfn.com",
         "ebn.co.kr",
@@ -16190,8 +16346,6 @@
         "연합뉴스TV",
         "newsian.co.kr",
         "bizwnews.com",
-        "매일일보",
-        "edaily.co.kr",
         "inthenews.co.kr",
         "sisacast.kr",
         "economist.co.kr",
@@ -16216,10 +16370,13 @@
         "ezyeconomy.com",
         "huffingtonpost.kr",
         "yna.co.kr",
-        "아시아경제",
         "view.asiae.co.kr",
         "newsis.com",
         "catchnews.kr",
+        "포춘코리아",
+        "매일일보",
+        "edaily.co.kr",
+        "아시아경제",
         "srtimes.kr",
         "cstimes.com",
         "kpenews.com",
@@ -16254,7 +16411,6 @@
         "dailycar.co.kr",
         "이지경제",
         "paxetv.com",
-        "서울경제",
         "글로벌E",
         "v.daum.net",
         "mt.co.kr",
@@ -262628,10 +262784,10 @@
   },
   "newsRetention": {
     "policy": "append-only",
-    "lastMergedAt": "2026-10-21T18:13:53+09:00",
-    "itemCount": 1387,
-    "archiveBefore": 1378,
-    "currentBefore": 1261,
+    "lastMergedAt": "2026-10-21T21:16:09+09:00",
+    "itemCount": 1392,
+    "archiveBefore": 1387,
+    "currentBefore": 1266,
     "gitRecoveryEnabled": false
   }
 }
