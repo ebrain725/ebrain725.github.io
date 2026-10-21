@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-21T08:12:54+09:00",
+  "generatedAt": "2026-10-21T10:13:45+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1356,
+  "itemCount": 1365,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-21",
   "sourceCommitsScanned": 0,
@@ -12,6 +12,32 @@
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "ea82330a1c847235",
+      "publishedAt": "2026-10-21",
+      "title": "한국미래기술교육연구원,탄소가격 상승에 따른 탄소 시장 경제성 비교 ...",
+      "category": "상쇄·외부사업",
+      "summary": "세미나에서는 EU ETS와 CBAM, 국내 배출권거래제( K-ETS ) 변화에 따른 제조업의 탄소비용 전망을 비롯해 온실가스 감축실적의 산정·측정·보고·검증(MRV) 절차와 탄소자산 전환 방안이 다뤄진다. 배출권 가격변동에...",
+      "source": "pinpointnews.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=497093",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장",
+        "배출권",
+        "배출권거래제",
+        "K-ETS"
+      ],
+      "duplicateSources": [
+        "pinpointnews.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
     {
       "id": "6ea796e53eb1624e",
       "publishedAt": "2026-10-21",
@@ -38,6 +64,29 @@
       "region": "국내"
     },
     {
+      "id": "86ad6aa84f5b9706",
+      "publishedAt": "2026-10-21",
+      "title": "중국 탄소시장, 화학산업까지 넓힌다...수소도 하나의 선택지",
+      "category": "제도",
+      "summary": "중국 탄소시장, 화학산업까지 넓힌다...수소도 하나의 선택지 월간수소경제",
+      "source": "월간수소경제",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5jSHhQMk1Ob2ZKbVJTUTBTWUJKSG9jSm5vQlU1blQyRkItMnFhMVhvcVFXcG5pbUFoM1I5UFdpSnFneV8wMUJ1cVpRXy1pYVFoU1pJUHJMUkNtM1pWajlVb2xRNnNWdw?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "월간수소경제"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "해외"
+    },
+    {
       "id": "f493487e27b9023f",
       "publishedAt": "2026-10-21",
       "title": "에테리온, 베트남 DKNEC와 디지털트윈 에너지관리 MOU",
@@ -62,6 +111,84 @@
       "region": "해외"
     },
     {
+      "id": "1947ceb4cb4d9a65",
+      "publishedAt": "2026-10-21",
+      "title": "블루카본의 보고(寶庫) 인천갯벌, 기후위기 시대의 가장 강력한 미래 자...",
+      "category": "제도",
+      "summary": "소래습지 생태공원의 꼬마물떼새 탄소 배출권 이 곧 국가와 도시의 경쟁력이 되는 시대이다. 글로벌 기업들은 이미 생물다양성과 탄소 감축 실적을 찾아 천문학적인 자금을 움직이고 있다. 이러한 패러다임 변화 속에서...",
+      "source": "incheonin.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.incheonin.com/news/articleView.html?idxno=121627",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "incheonin.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "4ddf9921ca166175",
+      "publishedAt": "2026-10-21",
+      "title": "배출권거래제 활성화…'탄소배출 감축설비 투자'가 관건",
+      "category": "시장·가격",
+      "summary": "실제 한국거래소 배출권시장에서 KAU26 은 2026년 9월 29일 톤당 3만50원에 거래를 마쳐 탄소비용이 기업의 재무계획과 투자 의사결정에 미치는 영향도 커지고 있다. 이번 세미나에서는 EU ETS·CBAM과 K-ETS 변화에 따른...",
+      "source": "kmecnews.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.kmecnews.co.kr/news/articleView.html?idxno=52392",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "KAU26",
+        "K-ETS"
+      ],
+      "duplicateSources": [
+        "기계설비신문",
+        "kmecnews.co.kr"
+      ],
+      "searchProviders": [
+        "Google News RSS",
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 2,
+      "region": "국내"
+    },
+    {
+      "id": "7e2088413758b749",
+      "publishedAt": "2026-10-21",
+      "title": "미래기술교육연구원, '탄소 시장 경제성 비교 및 대응 전략' 세미나 개...",
+      "category": "제도",
+      "summary": "발전 부문의 유상할당 비율은 2030년까지 50%로 단계적으로 높아지며, 발전 외 부문도 탄소누출업종을 제외한 일부 업종의 유상할당 비율이 기존 10%에서 15%로 확대된다. 배출권 수급에 따라 공급량을 조절하는 한국형...",
+      "source": "gasnews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.gasnews.com/news/articleView.html?idxno=127268",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장",
+        "배출권",
+        "유상할당"
+      ],
+      "duplicateSources": [
+        "hansbiz.co.kr",
+        "gasnews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 2,
+      "region": "국내"
+    },
+    {
       "id": "273a4772f81324f6",
       "publishedAt": "2026-10-21",
       "title": "대형 선박 위에 굴뚝·날개가?…“한 세기 만에 돌아온 ‘돛’입니다”...",
@@ -79,6 +206,103 @@
       ],
       "duplicateSources": [
         "khan.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
+      "id": "75412b13c27dd3c2",
+      "publishedAt": "2026-10-21",
+      "title": "글로벌 탄소 배출권 동반 하락…3개월간 지역별 가격 흐름은 엇갈려",
+      "category": "시장·가격",
+      "summary": "탄소 배출권 관련 투자상품에서도 시장 별 차이가 나타났다. 글로벌 탄소 배출권 상장지수펀드(ETF)인 KRBN은 34.1달러로 최근 일주일간 1.1% 하락했다. 탄소 배출권 관련 상장지수증권(ETN)인 GRN도 2.8% 내렸다. 반면...",
+      "source": "financialpost.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.financialpost.co.kr/news/articleView.html?idxno=281591",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "financialpost.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "d9685967ffcd3142",
+      "publishedAt": "2026-10-21",
+      "title": "[해외브리핑] 유럽의회 주요 정당, '35년 자동차 배출 감축목표 완화 합...",
+      "category": "제도",
+      "summary": "https://www.reuters.com/business/eu-lawmakers-reach-deal-weaken-car-co2-targets-2026-10-20/ EU, 탈탄소 기술 프로젝트 77개에 34억 유로 지원...ETS 수입 재원 유럽연합 집행위원회가 유럽연합 배출권 거래제(EU ETS)를 통해 조성한...",
+      "source": "esgeconomy.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.esgeconomy.com/news/articleView.html?idxno=17071",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "esgeconomy.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
+      "id": "97bc889686063b7a",
+      "publishedAt": "2026-10-21",
+      "title": "K뷰티, 영국 화장품 시장 기준 됐다…에이피알 현지 매출 네 자릿수 성...",
+      "category": "제도",
+      "summary": "■ 탄소 신 시장 : GS글로벌(001250)이 탄소 배출권 전문기업 후시파트너스에 지분을 투자하며 배출권 거래·중개 시장 에 본격 진출한다. 탄소 배출허용 총량 축소와 유상할당 확대로 기업들의 배출권 조달 부담이 커지는...",
+      "source": "sedaily.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.sedaily.com/article/20104167?ref=naver",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권",
+        "유상할당"
+      ],
+      "duplicateSources": [
+        "sedaily.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "decdfc568aae427f",
+      "publishedAt": "2026-10-21",
+      "title": "\"HD현대重 건조 친환경 선박\"… 대만 양밍, LNG 이중연료 컨선 'YM 웨이트...",
+      "category": "제도",
+      "summary": "(NOx)과 온실가스 배출량을 대폭 감축할 수 있다. 이와 함께 선박에는 위성 통신 기반의 통합 텔레매틱스... EU 배출권 거래제(EU ETS) 비용 방어에 결정적인 무기가 될 것\"이라고 평가했다. 신경원 글로벌이코노믹 기자",
+      "source": "g-enews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.g-enews.com/view.php?ud=202610210814146970c8c1c064d_1",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "g-enews.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -514,7 +738,8 @@
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
         "배출권",
-        "유상할당"
+        "유상할당",
+        "온실가스 배출권"
       ],
       "duplicateSources": [
         "mk.co.kr"
@@ -2581,7 +2806,8 @@
       "matchedKeywords": [
         "배출권",
         "배출권거래제",
-        "탄소시장"
+        "탄소시장",
+        "탄소배출권"
       ],
       "duplicateSources": [
         "industrynews.co.kr",
@@ -14169,11 +14395,9 @@
         "bizwnews.com",
         "매일일보",
         "edaily.co.kr",
-        "cstimes.com",
         "inthenews.co.kr",
         "sisacast.kr",
         "economist.co.kr",
-        "kpenews.com",
         "job-post.co.kr",
         "wolyo.co.kr",
         "megaeconomy.co.kr",
@@ -14199,6 +14423,8 @@
         "view.asiae.co.kr",
         "newsis.com",
         "catchnews.kr",
+        "cstimes.com",
+        "kpenews.com",
         "thefairnews.co.kr",
         "글로벌이코노믹",
         "연합뉴스",
