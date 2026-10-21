@@ -1,17 +1,42 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-21T21:16:09+09:00",
+  "generatedAt": "2026-10-22T02:32:41+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1392,
+  "itemCount": 1393,
   "earliestPublishedAt": "2026-08-06",
-  "latestPublishedAt": "2026-10-21",
+  "latestPublishedAt": "2026-10-22",
   "sourceCommitsScanned": 0,
   "sourceSnapshotsScanned": 0,
   "historicalRowsScanned": 0,
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "bfbec5b3de0c46b2",
+      "publishedAt": "2026-10-22",
+      "title": "[구수진의 생활과 화학(9)]탄소와 함께 살아가는 지혜",
+      "category": "제도",
+      "summary": "탄소 배출권 거래제는 기업의 온실가스 감축을 유도해 기업에 배출권 을 할당하고 이를 거래하도록 해 배출에 따른 비용을 경제활동에 반영하는 유익한 제도이다. 다만 배출권 이 지나치게 많이 공급되면 기업이 배출을 줄일...",
+      "source": "ksilbo.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.ksilbo.co.kr/news/articleView.html?idxno=1070186",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "ksilbo.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
     {
       "id": "c91a9864dd62e79f",
       "publishedAt": "2026-10-21",
@@ -1550,9 +1575,6 @@
       ],
       "duplicateSources": [
         "etoday.co.kr",
-        "마켓인",
-        "메트로신문",
-        "뉴스락",
         "edaily.co.kr",
         "newslock.co.kr",
         "newsinside.kr",
@@ -1573,13 +1595,21 @@
         "yna.co.kr",
         "연합뉴스",
         "metroseoul.co.kr",
+        "seoultimes.news",
+        "cstimes.com",
+        "biz.sbs.co.kr",
+        "inews24.com",
+        "smedaily.co.kr",
+        "dealsite.co.kr",
+        "etnews.com",
+        "마켓인",
+        "메트로신문",
+        "뉴스락",
         "FETV",
         "파이낸셜뉴스",
         "서울타임즈뉴스",
         "아시아경제",
         "데일리안",
-        "seoultimes.news",
-        "cstimes.com",
         "SBS Biz",
         "서울경제",
         "동행미디어 시대",
@@ -1588,12 +1618,7 @@
         "디지틀조선TV",
         "아시아투데이",
         "한국아이닷컴",
-        "biz.sbs.co.kr",
-        "inews24.com",
         "파이낸셜포스트",
-        "smedaily.co.kr",
-        "dealsite.co.kr",
-        "etnews.com",
         "스마트투데이",
         "econovill.com",
         "ER 이코노믹리뷰"
@@ -4450,8 +4475,8 @@
         "K-ETS"
       ],
       "duplicateSources": [
-        "연합뉴스",
         "e2news.com",
+        "연합뉴스",
         "newsdream.kr",
         "dailian.co.kr",
         "edaily.co.kr",
@@ -4460,8 +4485,8 @@
         "아시아경제"
       ],
       "searchProviders": [
-        "Google News RSS",
-        "NAVER API HUB"
+        "NAVER API HUB",
+        "Google News RSS"
       ],
       "duplicateCount": 8,
       "region": "국내"
@@ -4710,14 +4735,14 @@
       ],
       "duplicateSources": [
         "industrynews.co.kr",
+        "팍스경제TV",
         "paxetv.com",
         "newsdream.kr",
-        "데일리안",
         "dailian.co.kr",
-        "마켓인",
         "edaily.co.kr",
+        "데일리안",
+        "마켓인",
         "인더스트리뉴스",
-        "팍스경제TV",
         "뉴스드림",
         "businessplus.kr",
         "view.asiae.co.kr",
@@ -5748,16 +5773,16 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "view.asiae.co.kr",
         "아시아경제",
+        "view.asiae.co.kr",
         "etnews.com",
         "dt.co.kr",
         "전자신문",
         "naeil.com"
       ],
       "searchProviders": [
-        "NAVER API HUB",
-        "Google News RSS"
+        "Google News RSS",
+        "NAVER API HUB"
       ],
       "duplicateCount": 6,
       "region": "국내"
@@ -15058,10 +15083,10 @@
       "duplicateSources": [
         "4th.kr",
         "뉴스핌",
-        "서울경제",
         "socialvalue.kr",
         "smarttoday.co.kr",
         "news1.kr",
+        "포춘코리아",
         "머니투데이",
         "seoulfn.com",
         "ebn.co.kr",
@@ -15080,6 +15105,7 @@
         "연합뉴스TV",
         "newsian.co.kr",
         "bizwnews.com",
+        "매일일보",
         "inthenews.co.kr",
         "sisacast.kr",
         "economist.co.kr",
@@ -15097,6 +15123,7 @@
         "wowtv.co.kr",
         "newspim.com",
         "moneystorm.kr",
+        "브릿지경제",
         "viva100.com",
         "dealsitetv.com",
         "dailypop.kr",
@@ -15104,13 +15131,12 @@
         "ezyeconomy.com",
         "huffingtonpost.kr",
         "yna.co.kr",
+        "아시아경제",
         "view.asiae.co.kr",
         "newsis.com",
         "catchnews.kr",
-        "포춘코리아",
-        "매일일보",
+        "서울경제",
         "edaily.co.kr",
-        "아시아경제",
         "srtimes.kr",
         "cstimes.com",
         "kpenews.com",
@@ -15120,7 +15146,6 @@
         "서울경제TV",
         "getnews.co.kr",
         "fntimes.com",
-        "브릿지경제",
         "마켓인",
         "뉴스1",
         "팍스경제TV",
