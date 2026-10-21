@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-21T10:13:45+09:00",
+  "generatedAt": "2026-10-21T13:14:22+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1365,
+  "itemCount": 1370,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-21",
   "sourceCommitsScanned": 0,
@@ -62,6 +62,31 @@
       ],
       "duplicateCount": 1,
       "region": "국내"
+    },
+    {
+      "id": "e1921070d455c0f2",
+      "publishedAt": "2026-10-21",
+      "title": "친환경 기술력에 선대 확장 전략 맞물렸다…HD현대·HMM 2조원 맞손",
+      "category": "제도",
+      "summary": "유럽연합(EU)도 해운 부문 탄소 배출권 거래제를 단계적으로 확대해 올해 배출량부터 적용 대상 온실가스 배출량의 100%에 대해 배출권 제출 의무를 부과한다. 탄소 배출 규제가 강화되면서 대체연료 추진 선박에...",
+      "source": "greened.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.greened.kr/news/articleView.html?idxno=352573",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "greened.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
     },
     {
       "id": "86ad6aa84f5b9706",
@@ -262,6 +287,78 @@
       "region": "해외"
     },
     {
+      "id": "03bc898b9fd342b8",
+      "publishedAt": "2026-10-21",
+      "title": "[전문가 기고] 그린메탄올의 핵심 역할 및 시장 전망 글로벌 에너지 전...",
+      "category": "제도",
+      "summary": "이에 따라 생산자는 시장 상황에 맞춰 수송용 연료 시장과 화학 원료 시장 중 배출권 프리미엄이 높은 쪽으로 물량을 유연하게 공급할 수 있게 됐다. 2034년 최대 452억 달러 시장…아시아-태평양이 성장의 중심...",
+      "source": "gasnews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.gasnews.com/news/articleView.html?idxno=127254",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "gasnews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "c18167e01e277e19",
+      "publishedAt": "2026-10-21",
+      "title": "[ESGX 이슈 5] EU 자동차 탄소규제 완화 절충안…전기차 전환 속도 조정",
+      "category": "제도",
+      "summary": "EU, 청정기술 77개 사업에 34억유로 지원… 배출권 수입 재투자 유럽연합(EU)이 탄소 배출권 거래제(EU ETS) 수입을 활용해 청정기술 프로젝트 77개를 지원 대상으로 선정했다. 20일 ESG Today에 따르면 EU 집행위원회는 최근...",
+      "source": "etoday.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.etoday.co.kr/news/view/2638291",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "etoday.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
+      "id": "0ee7a096aa00585e",
+      "publishedAt": "2026-10-21",
+      "title": "[EE칼럼] 기후부 출범 1년, 통합의 시너지는 어디에?",
+      "category": "제도",
+      "summary": "필자 역시 출범 직후 칼럼에서 기대와 걱정을 밝히며 전력시장 개방과 배출권 거래제 정상화를 성공의... 2035년 온실가스 감축목표(NDC) 확정, 2030년 재생에너지 100GW 조기 달성 계획, 전력망 접속제도 개선, 제4차 배출권 거래...",
+      "source": "ekn.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.ekn.kr/web/view.php?key=20261021020001422",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "ekn.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "97bc889686063b7a",
       "publishedAt": "2026-10-21",
       "title": "K뷰티, 영국 화장품 시장 기준 됐다…에이피알 현지 매출 네 자릿수 성...",
@@ -279,6 +376,31 @@
       ],
       "duplicateSources": [
         "sedaily.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "7cad7b6e0e3a172e",
+      "publishedAt": "2026-10-21",
+      "title": "'트럼프 당선 모욕적'이라더니…구글 창업자, 공화당 후원하며 부유세 ...",
+      "category": "제도",
+      "summary": "과거 브린의 정치자금 후원은 동성결혼 보호, 줄기세포 연구, 탄소 배출권 거래제 유지 등 특정 의제에 집중됐다. 2008년에는 동성결혼 금지 주민투표안이 정부의 사생활 침해를 부추긴다며 반대했다. 석유 채굴에 세금을...",
+      "source": "newsis.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newsis.com/view/NISX20261021_0003834755",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "newsis.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -3767,8 +3889,8 @@
         "K-ETS"
       ],
       "duplicateSources": [
-        "연합뉴스",
         "e2news.com",
+        "연합뉴스",
         "newsdream.kr",
         "dailian.co.kr",
         "edaily.co.kr",
@@ -3777,8 +3899,8 @@
         "아시아경제"
       ],
       "searchProviders": [
-        "Google News RSS",
-        "NAVER API HUB"
+        "NAVER API HUB",
+        "Google News RSS"
       ],
       "duplicateCount": 8,
       "region": "국내"
