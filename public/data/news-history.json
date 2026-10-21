@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-21T13:14:22+09:00",
+  "generatedAt": "2026-10-21T15:12:56+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1370,
+  "itemCount": 1378,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-21",
   "sourceCommitsScanned": 0,
@@ -12,6 +12,29 @@
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "c91a9864dd62e79f",
+      "publishedAt": "2026-10-21",
+      "title": "한국형 녹색 대전환(K-GX) 해법 한자리에…‘대한민국 ESG 친환경 대전’...",
+      "category": "제도",
+      "summary": "'2026 대한민국 ESG 친환경 대전' 오전 토론회에서는 K-GX 전략과 국가 온실가스 감축목표 이행 방향, 전환금융, 국내 지속가능성 공시기준, 자발적 탄소시장 등 정책·제도의 흐름을 살펴본다. 오후 토론회에서는 기후공시...",
+      "source": "zdnet.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://zdnet.co.kr/view/?no=20261021135557",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "zdnet.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
     {
       "id": "ea82330a1c847235",
       "publishedAt": "2026-10-21",
@@ -110,6 +133,29 @@
         "Google News RSS"
       ],
       "region": "해외"
+    },
+    {
+      "id": "d18251cfbff5519c",
+      "publishedAt": "2026-10-21",
+      "title": "재생에너지부터 배터리 해체 AI까지…녹색전환 기술 한자리에",
+      "category": "제도",
+      "summary": "오전에는 한국형 녹색 대전환 전략과 국가 온실가스 감축목표 이행 방향, 전환금융, 국내 지속가능성 공시기준, 자발적 탄소시장 등 정책·제도 동향을 다룬다. 오후에는 디지털 플랫폼을 활용한 ESG 공시와...",
+      "source": "ajunews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.ajunews.com/view/20261021104858705",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "ajunews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
     },
     {
       "id": "f493487e27b9023f",
@@ -239,6 +285,30 @@
       "region": "해외"
     },
     {
+      "id": "30d47221b1205a4d",
+      "publishedAt": "2026-10-21",
+      "title": "금융업계, 맞춤형 상생금융부터 탄소금융 세미나·혁신 상품까지 다각도...",
+      "category": "제도",
+      "summary": "■ 현대차증권, 오는 27일 '제2회 탄소금융 인사이트 데이' 개최 현대차증권은 오는 27일 서울 대한상공회의소에서 배출권 거래제 할당대상업체 및 온실가스 목표관리제 대상업체 실무자를 대상으로 '제2회 2026년...",
+      "source": "dailypop.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.dailypop.kr/news/articleView.html?idxno=103583",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "dailypop.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "75412b13c27dd3c2",
       "publishedAt": "2026-10-21",
       "title": "글로벌 탄소 배출권 동반 하락…3개월간 지역별 가격 흐름은 엇갈려",
@@ -302,6 +372,79 @@
       ],
       "duplicateSources": [
         "gasnews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "6e8e06f00f478139",
+      "publishedAt": "2026-10-21",
+      "title": "[기후경영 포럼] 윤나영 한국회계기준원 팀장 “ 온실가스 배출량 측정,...",
+      "category": "제도",
+      "summary": "한국형 녹색전환(K-GX) 정책이 본격적인 실행 단계에 진입하면서 기업의 온실가스 배출량 공시 준비도... 국내 배출권 거래제와 달리 재생전력 사용분도 총배출량에 포함한다. 윤 팀장은 기업들이 공시 준비 과정에서...",
+      "source": "ekn.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.ekn.kr/web/view.php?key=20261021025339221",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "ekn.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "1fc41dcdafbef0c1",
+      "publishedAt": "2026-10-21",
+      "title": "[기후경영 포럼] “순환경제가 기업 탄소감축 좌우…명확한 목표·정보...",
+      "category": "시장·가격",
+      "summary": "탄소 배출권 거래제 같은 탄소 가격 요인도 같은 역할을 한다. 특히 순환경제를 위해서는 통합적인 탄소... 그러면서 “전 세계적으로 자원 채굴·가공에서 배출하는 온실가스 가 전체의 50%를 넘지만, 순환율이 6.9%로...",
+      "source": "ekn.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.ekn.kr/web/view.php?key=20261021024399114",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "ekn.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "f01bf2ddf2c2cb93",
+      "publishedAt": "2026-10-21",
+      "title": "[기후경영 포럼] “기후공시, 탄소 배출량 넘어 기업의 대응 전략·재무...",
+      "category": "시장·가격",
+      "summary": "예컨대 탄소 배출권 가격 상승이나 홍수 위험에 따른 잠재적 손실과 대응 계획은 재무제표만으로 충분히... kr KSSB 공시기준, 재무제표 보완해 기업의 미래 위험·기회 제시 “의무공시 대상 아니어도 시장 요구 대비...",
+      "source": "ekn.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.ekn.kr/web/view.php?key=20261021025119233",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "ekn.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -382,6 +525,30 @@
       ],
       "duplicateCount": 1,
       "region": "국내"
+    },
+    {
+      "id": "ab15aab2abe75973",
+      "publishedAt": "2026-10-21",
+      "title": "EU, 34억유로 탈탄소 사업 77개 선정…소형원전·직접공기포집 첫 포함",
+      "category": "제도",
+      "summary": "선정된 사업은 유럽경제지역(EEA) 23개국에서 추진되며, 지원금은 EU 배출권 거래제(ETS) 수익으로 마련할... EU 집행위원회는 온실가스 감축 잠재력과 기술 혁신성, 사업 준비 수준, 다른 산업으로의 확대 적용...",
+      "source": "impacton.net",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.impacton.net/news/articleView.html?idxno=30340",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "impacton.net"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
     },
     {
       "id": "7cad7b6e0e3a172e",
@@ -577,6 +744,30 @@
       ],
       "duplicateCount": 1,
       "region": "국내"
+    },
+    {
+      "id": "34f4853900f9e105",
+      "publishedAt": "2026-10-20",
+      "title": "중국 전국 탄소배출권 누적 거래량 10억 톤 돌파",
+      "category": "시장·가격",
+      "summary": "중국 전국 탄소배출권 누적 거래량 10억 톤 돌파 CGTN",
+      "source": "CGTN",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBkN0dWYl8wWUJfS0JWc3RNa1RUelVzWnlpakxjeW0yYk9VUGFVUTVycmdpNlZXYVZCVVlvRmlVaEttTHBBdDZlZV9VajctazBBYTRubkdMSVpjMmJ5ejdVRnU3UQ?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "CGTN"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "해외"
     },
     {
       "id": "8727218135c8c844",
@@ -4148,13 +4339,13 @@
         "K-ETS"
       ],
       "duplicateSources": [
+        "인더스트리뉴스",
         "industrynews.co.kr",
         "팍스경제TV",
         "paxetv.com",
         "newsdream.kr",
         "dailian.co.kr",
         "edaily.co.kr",
-        "인더스트리뉴스",
         "뉴스드림",
         "businessplus.kr",
         "view.asiae.co.kr",
@@ -4164,8 +4355,8 @@
         "e2news.com"
       ],
       "searchProviders": [
-        "NAVER API HUB",
-        "Google News RSS"
+        "Google News RSS",
+        "NAVER API HUB"
       ],
       "duplicateCount": 14,
       "region": "국내"
