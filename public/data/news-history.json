@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-22T02:32:41+09:00",
+  "generatedAt": "2026-10-22T08:12:36+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1393,
+  "itemCount": 1399,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-22",
   "sourceCommitsScanned": 0,
@@ -12,6 +12,125 @@
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "03190b65cd7d5b55",
+      "publishedAt": "2026-10-22",
+      "title": "테슬라, 설비투자 계획 낮춰…FSD 앞세워 현금흐름 흑자",
+      "category": "제도",
+      "summary": "탄소 배출권 판매 수익을 뺀 자동차 매출총이익률도 18.1%로 2분기(16.3%)보다 올랐다. 다만 영업이익은 7억1800만달러로 56% 줄었고 영업이익률 역시 2.6%에 그쳤다. 연구개발(R&D) 비용이 27억6000만달러로 69% 늘어난...",
+      "source": "mk.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.mk.co.kr/article/12182408",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "mk.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "ac4b50f6ebf45d3a",
+      "publishedAt": "2026-10-22",
+      "title": "지역 전기요금제 가시화…자가발전 비중 따라 철강사 ‘희비’",
+      "category": "제도",
+      "summary": "전력 의존도는 온실가스 배출 구조에서도 드러난다. 전체 배출량의 64.4%가 외부에서 공급받은 전력 사용에... 그러나 상무부는 별도 절차인 2023년 수출분 연례 재심에서 전기요금과 배출권 거래제를 다시 보조금으로...",
+      "source": "ceoscoredaily.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.ceoscoredaily.com/page/view/2026102111024656043",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "ceoscoredaily.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "07f0aea095f14214",
+      "publishedAt": "2026-10-22",
+      "title": "유럽 철강업계, EU CBAM 확대 촉구…다운스트림 제품 규제 강화 '초점'",
+      "category": "시장·가격",
+      "summary": "특히 EU 배출권 거래제(ETS)의 무상할당이 단계적으로 축소되면 역내 제조업체의 탄소비용 부담은 더욱 확대될 예정이다. 반면 역외 제품이 이에 상응하는 비용을 부담하지 않으면 수입품과의 가격 경쟁에서 유럽...",
+      "source": "ferrotimes.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.ferrotimes.com/news/articleView.html?idxno=51038",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "ferrotimes.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
+      "id": "789f066d1392dcf4",
+      "publishedAt": "2026-10-22",
+      "title": "기후부, 녹색 대전환 가속…탈 탄소 기술로 신 시장 연다",
+      "category": "제도",
+      "summary": "22일에는 '제5회 대한민국 ESG 포럼'이 열려 한국형 녹색 대 전환 전략과 기후공시 제도, 전환금융, 탄소시장 등 주요 정책과 산업계 대응 방향을 논의한다. 삼성SDS와 LG에너지솔루션, LG화학 등 주요 기업 관계자들도...",
+      "source": "kdpress.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.kdpress.co.kr/news/articleView.html?idxno=209434",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "kdpress.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "4fe1eeecbe8d20f1",
+      "publishedAt": "2026-10-22",
+      "title": "[클리프] 기후에너지…어라, 환경은 어디갔나요?",
+      "category": "제도",
+      "summary": "온실가스 감축목표(NDC)와 전력 계획을 한 부처가 같은 해에 내놓은 점, 2040년 석탄발전 퇴출 로드맵과 배출권 거래제 강화 방안을 마련하고 일관성 있게 추진하는 점을 긍정적 사례로 꼽은 응답자들도 있었다. 7년째 에너지...",
+      "source": "joongang.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.joongang.co.kr/article/25471813",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "joongang.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
     {
       "id": "bfbec5b3de0c46b2",
       "publishedAt": "2026-10-22",
@@ -642,6 +761,30 @@
       "sourceType": "news",
       "section": "news",
       "url": "https://www.ekn.kr/web/view.php?key=20261021025339221",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "ekn.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "e455fa58648ede71",
+      "publishedAt": "2026-10-21",
+      "title": "[기후경영 포럼] 실태조사 기업 중 기후테크 도입 기업 6% 불과…“배출...",
+      "category": "제도",
+      "summary": "특히 거래처의 온실가스 요구 여부에 따른 기후기술 도입 검토 비율 차이는 12배인 것으로 나타났다. 최 연구원은 “ 배출권 거래제 대상이 되거나 목표 관리제 대상일수록 기후기술 도입 단계가 상용화 이상인 기업이...",
+      "source": "ekn.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.ekn.kr/web/view.php?key=20261021027529340",
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
         "배출권",
@@ -1762,8 +1905,8 @@
         "ziksir.com",
         "megaeconomy.co.kr",
         "paxetv.com",
-        "newspim.com",
         "pinpointnews.co.kr",
+        "newspim.com",
         "kpenews.com",
         "fetv.co.kr",
         "cstimes.com",
@@ -15082,7 +15225,6 @@
       ],
       "duplicateSources": [
         "4th.kr",
-        "뉴스핌",
         "socialvalue.kr",
         "smarttoday.co.kr",
         "news1.kr",
@@ -15104,6 +15246,7 @@
         "newsroad.co.kr",
         "연합뉴스TV",
         "newsian.co.kr",
+        "비즈월드",
         "bizwnews.com",
         "매일일보",
         "inthenews.co.kr",
@@ -15135,6 +15278,7 @@
         "view.asiae.co.kr",
         "newsis.com",
         "catchnews.kr",
+        "뉴스핌",
         "서울경제",
         "edaily.co.kr",
         "srtimes.kr",
@@ -15190,7 +15334,6 @@
         "시사캐스트",
         "라이센스뉴스",
         "lcnews.co.kr",
-        "비즈월드",
         "yonhapnewstv.co.kr",
         "ftoday.co.kr",
         "더팩트",
