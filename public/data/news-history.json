@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-21T15:12:56+09:00",
+  "generatedAt": "2026-10-21T18:13:53+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1378,
+  "itemCount": 1387,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-21",
   "sourceCommitsScanned": 0,
@@ -158,6 +158,33 @@
       "region": "국내"
     },
     {
+      "id": "d29cc98d522c315f",
+      "publishedAt": "2026-10-21",
+      "title": "외교부, EU와 에너지·환경·기후변화 협력 강화 논의",
+      "category": "제도",
+      "summary": "양측은 국가 온실가스 감축목표(NDC) 이행과 배출권 거래제 등 정책 동향을 공유하고, 제31차 유엔기후변화협약 당사국총회(COP31)를 비롯한 다자 무대에서 협력을 강화하기로 했다. 또 재생에너지 확대, 전기화, 해상풍력...",
+      "source": "yna.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.yna.co.kr/view/AKR20261021121800504?input=1195m",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "news1.kr",
+        "newsis.com",
+        "yna.co.kr",
+        "factin.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 4,
+      "region": "국내"
+    },
+    {
       "id": "f493487e27b9023f",
       "publishedAt": "2026-10-21",
       "title": "에테리온, 베트남 DKNEC와 디지털트윈 에너지관리 MOU",
@@ -260,6 +287,30 @@
       "region": "국내"
     },
     {
+      "id": "96df2b846f46e582",
+      "publishedAt": "2026-10-21",
+      "title": "메리츠증권, 옵티미즘과 맞손…토큰화 금융자산 사업 기반 마련",
+      "category": "제도",
+      "summary": "광산, 탄소 배출권 등 기존 금융상품에 담기 어려웠던 실물자산도 토큰화를 거치면 투자상품으로 활용할 수 있다는 것이다. 국내 자산에 대한 해외 투자자의 접근성이 높아지면 새로운 수요를 확보하고 유통 시장 도...",
+      "source": "news2day.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.news2day.co.kr/article/20261021500219",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "news2day.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "273a4772f81324f6",
       "publishedAt": "2026-10-21",
       "title": "대형 선박 위에 굴뚝·날개가?…“한 세기 만에 돌아온 ‘돛’입니다”...",
@@ -277,6 +328,30 @@
       ],
       "duplicateSources": [
         "khan.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
+      "id": "34cdf66f967b71ee",
+      "publishedAt": "2026-10-21",
+      "title": "나와, 'ESG 친환경대전' 참가… 탄소 배출권 사업 확대",
+      "category": "상쇄·외부사업",
+      "summary": "나와 관계자는 \"국내뿐만 아니라 일본 시장 에서도 탄소 배출권 방법론 개발과 ESG 리포트 작성 등 관련 비즈니스를 동시 추진 중\"이라며 \"지난달 전략적 업무협약(MOU)을 체결한 일본의 'Impact Circle'이 그 첫 단추가 될...",
+      "source": "esgeconomy.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.esgeconomy.com/news/articleView.html?idxno=17081",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "esgeconomy.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -325,6 +400,53 @@
       ],
       "duplicateSources": [
         "financialpost.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "2d5141a1f0753192",
+      "publishedAt": "2026-10-21",
+      "title": "‘ 탄소 규제 강화’ 부산 조선·항만·해운업 새 도약 기회",
+      "category": "시장·가격",
+      "summary": "유럽 탄소배출권 가격이 52.2% 상승하는 시나리오에서 국내 친환경 선박 투자 규모는 약 10조 7000억 원 늘어나며, 이에 따른 부산 지역 파급효과는 생산유발 1조 5920억 원, 고용유발 8991명, 부가가치유발 6268억 원으로...",
+      "source": "busan.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.busan.com/view/busan/view.php?code=2026102117355373017",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "busan.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
+      "id": "d2ea9527ef2cad36",
+      "publishedAt": "2026-10-21",
+      "title": "[현장] 엔라이튼, 친환경대전서 PPA·DR 원스톱 솔루션 공개",
+      "category": "시장·가격",
+      "summary": "김 매니저는 PPA 수요 확대 배경으로 전기요금 상승과 전력 시장 변동성 확대, RE100· 탄소 중립 압박, 배출권 가격 상승을 꼽았다. 기업이 기존처럼 한전 계통으로 전기를 쓰되, 재생에너지로 계약한 물량은 엔라이튼이...",
+      "source": "todayenergy.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.todayenergy.kr/news/articleView.html?idxno=304489",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "todayenergy.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -404,6 +526,31 @@
       "region": "국내"
     },
     {
+      "id": "6a14febc88106bee",
+      "publishedAt": "2026-10-21",
+      "title": "[기후경영 포럼] “탄소감축 효과 따질 데이터 모은 AI 에이전트 개발…...",
+      "category": "제도",
+      "summary": "류 대표는 대통령직속 2050 탄소중립녹색성장위원회 민간위원을 역임하고 2035 국가 온실가스 감축목표(NDC) 및 제4차 배출권 거래제 기본계획 설계에 참여한 기후·에너지 정책 및 탄소시장 AI 기술 전문가다. 류 대표는...",
+      "source": "ekn.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.ekn.kr/web/view.php?key=20261021028399381",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소시장"
+      ],
+      "duplicateSources": [
+        "ekn.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "1fc41dcdafbef0c1",
       "publishedAt": "2026-10-21",
       "title": "[기후경영 포럼] “순환경제가 기업 탄소감축 좌우…명확한 목표·정보...",
@@ -418,6 +565,30 @@
         "배출권",
         "배출권거래제",
         "탄소배출권"
+      ],
+      "duplicateSources": [
+        "ekn.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "df2302e13acec4ea",
+      "publishedAt": "2026-10-21",
+      "title": "[기후경영 포럼] “기후테크, 개발 넘어 실증·시장 창출이 다음 관문”",
+      "category": "제도",
+      "summary": "있도록 배출권 거래제와 국제감축을 활용해 새로운 시장을 만들어야 한다고 제안했다. 김 국장은 “기후테크 활성화를 위해서는 무엇보다 시장을 만들어주는 것이 중요하다\"며 “기후가치평가를 통과한 기술은 배출권 거...",
+      "source": "ekn.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.ekn.kr/web/view.php?key=20261021026539173",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
       ],
       "duplicateSources": [
         "ekn.kr"
@@ -527,6 +698,30 @@
       "region": "국내"
     },
     {
+      "id": "d92f18a901d61ff5",
+      "publishedAt": "2026-10-21",
+      "title": "K-GX가 여는 새 시장 …친환경대전, '규제 대응' 넘어 녹색사업화 무대로",
+      "category": "제도",
+      "summary": "오전에는 K-GX 전략과 국가 온실가스 감축목표 이행방향, 전환금융, 지속가능성 공시기준, 자발적 탄소시장 등 정책·제도 변화가 논의된다. 오후에는 기후공시 거버넌스와 디지털 ESG 플랫폼, 제품환경규제 대응, 제조업...",
+      "source": "energydaily.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.energydaily.co.kr/news/articleView.html?idxno=204250",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 2,
+      "duplicateSources": [
+        "energy-news.co.kr",
+        "energydaily.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "ab15aab2abe75973",
       "publishedAt": "2026-10-21",
       "title": "EU, 34억유로 탈탄소 사업 77개 선정…소형원전·직접공기포집 첫 포함",
@@ -568,6 +763,30 @@
       ],
       "duplicateSources": [
         "newsis.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "2fa156fc78767bf5",
+      "publishedAt": "2026-10-21",
+      "title": "'전환금융' 실무 모범규준 이달 말 나온다…농협 2210억 약정, 은행권 확...",
+      "category": "제도",
+      "summary": "790조원 기후금융 공급계획… 배출권 비용도 변수 전환금융은 녹색금융과 함께 정부 기후금융 확대 정책의... 올해 시작된 제4차 배출권 거래제 계획기간(2026~2030년)에 기업이 떠안을 배출권 구매 비용이 만만치 않아서다....",
+      "source": "greened.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.greened.kr/news/articleView.html?idxno=352647",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "greened.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -14682,7 +14901,6 @@
       ],
       "duplicateSources": [
         "4th.kr",
-        "srtimes.kr",
         "뉴스핌",
         "socialvalue.kr",
         "smarttoday.co.kr",
@@ -14736,6 +14954,7 @@
         "view.asiae.co.kr",
         "newsis.com",
         "catchnews.kr",
+        "srtimes.kr",
         "cstimes.com",
         "kpenews.com",
         "thefairnews.co.kr",
