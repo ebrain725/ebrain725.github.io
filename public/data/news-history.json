@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-22T15:12:38+09:00",
+  "generatedAt": "2026-10-22T18:12:42+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1415,
+  "itemCount": 1431,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-22",
   "sourceCommitsScanned": 0,
@@ -12,6 +12,30 @@
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "55fffe7dcc197969",
+      "publishedAt": "2026-10-22",
+      "title": "후시파트너스, 신보 'Pre-ICON' 선정…40억원 규모 보증 확보",
+      "category": "제도",
+      "summary": "후시파트너스는 이번 선정을 계기로 탄소 배출권 사업과 탄소자산 관리·거래 플랫폼 '후시커넥트'의 경쟁력을 강화할 계획이다. 회사는 감축사업 발굴부터 배출권 인증 및 거래까지 통합 수행하는 사업 모델을 운영하고...",
+      "source": "mt.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.mt.co.kr/industry/2026/10/22/2026102209542820345",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "mt.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
     {
       "id": "28f64ad1b90d7cb0",
       "publishedAt": "2026-10-22",
@@ -184,6 +208,30 @@
       "region": "국내"
     },
     {
+      "id": "4c1aa5b72084ebeb",
+      "publishedAt": "2026-10-22",
+      "title": "송옥주 의원, 농업 탄소배출권 활성화 입법 추진…“온실가스 감축을 농가 소득으로”",
+      "category": "제도",
+      "summary": "송옥주 의원, 농업 탄소배출권 활성화 입법 추진…“온실가스 감축을 농가 소득으로” 아이뉴스24",
+      "source": "아이뉴스24",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFBxSHlITEdrR0lGLXg2YjNUc21FWThnTF9NX0g5Nm1vdUoxZ1diU3g5S3RBUl9lcGJjbEZyWWR6OHhERlNhVjlCM3NXTms?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "아이뉴스24"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "cd700b3c2577b856",
       "publishedAt": "2026-10-22",
       "title": "송옥주 의원, 농가 탄소 소득 촉구",
@@ -208,6 +256,30 @@
       "region": "국내"
     },
     {
+      "id": "9c1100419dfec45c",
+      "publishedAt": "2026-10-22",
+      "title": "송옥주 의원, “농림축산 탄소배출권 활성화로 소득 창출”",
+      "category": "제도",
+      "summary": "송옥주 의원, “농림축산 탄소배출권 활성화로 소득 창출” 경기in",
+      "source": "경기in",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE8wVURoZHBhaDFxajY5Ui1tbS1UX2NrdWRsTWxJV1FZRzZxbkdqVld2WDRxNWNKWU1ZemxjSFBXZDNMOFE?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "경기in"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "ab09736d8ac123b8",
       "publishedAt": "2026-10-22",
       "title": "송옥주 의원, '농림축산업 탄소 배출권 활성화 입법·정책 제언' 자료집...",
@@ -223,13 +295,39 @@
         "탄소배출권"
       ],
       "duplicateSources": [
+        "프레시안",
         "pressian.com"
       ],
       "searchProviders": [
+        "Google News RSS",
         "NAVER API HUB"
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "region": "해외"
+    },
+    {
+      "id": "cca15dd81f608e14",
+      "publishedAt": "2026-10-22",
+      "title": "송옥주 의원 “농민도 탄소배출권으로 소득 창출해야”…농가 비과세 등 4대 입법과제 제안",
+      "category": "제도",
+      "summary": "송옥주 의원 “농민도 탄소배출권으로 소득 창출해야”…농가 비과세 등 4대 입법과제 제안 월드장애인사랑뉴스",
+      "source": "월드장애인사랑뉴스",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBrcEh0VUtfbm9hWEx3Y0thZG5rZ1BVRmx0NVNtTVFRY0FrSkRLVzZuUkxsT1ZEQnpDbnFTTDFOX1dHRzA1ZnhWSmIzaU9ENWZEV1JVNTBfUExETFF3V2xKMExTSTZMekhpNEdhUmItMA?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "월드장애인사랑뉴스"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "국내"
     },
     {
       "id": "ae244c98a2f7a222",
@@ -248,6 +346,31 @@
       ],
       "duplicateSources": [
         "view.asiae.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "821c89a06844172e",
+      "publishedAt": "2026-10-22",
+      "title": "무너진 ‘1.5도’ 대신 ‘1.7도’라도 방어… 10년간 온실가스 절반 줄여...",
+      "category": "제도",
+      "summary": "현재 전세계 온실가스 배출량을 4년 동안 5분의 4 수준, 10년 동안 절반 수준으로 줄이면, 기온 상승 폭을 1.... 탄소 배출권 거래제·탄소세 등 경제적 수단들은 5~13% 감축 효과를 냈다고 지적했다. 다만 이런 성공이...",
+      "source": "hani.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.hani.co.kr/arti/science/science_general/1283697.html",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "hani.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -299,6 +422,29 @@
       ],
       "searchProviders": [
         "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "dc8af0cec89189cf",
+      "publishedAt": "2026-10-22",
+      "title": "권동혁 BNZ파트너스 부대표 “배출권 수급 빠듯…추가할당 적극 활용해야”",
+      "category": "제도",
+      "summary": "권동혁 BNZ파트너스 부대표 “배출권 수급 빠듯…추가할당 적극 활용해야” 철강금속신문",
+      "source": "철강금속신문",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBCS2VxSngzeXRGTFZXVWRXM1p4UTJTdGlscUZnNUFyM2pzR1VMTTlJZWwwUzh4RENnSmVkVTgzZ0dscnptdDhrNkdCbjVGOEJLVnZybEdEX0hsdERjSzd0QlgtN1JrRlVIclE?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "철강금속신문"
+      ],
+      "searchProviders": [
+        "Google News RSS"
       ],
       "region": "국내"
     },
@@ -475,6 +621,78 @@
       "region": "국내"
     },
     {
+      "id": "16de7c3f713a0f6d",
+      "publishedAt": "2026-10-22",
+      "title": "[온실가스 배출권] 10월 22일 KAU26, 100원 오른 3만250원",
+      "category": "시장·가격",
+      "summary": "[온실가스 배출권] 10월 22일 KAU26, 100원 오른 3만250원 데일리e뉴스",
+      "source": "데일리e뉴스",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9BeDJTQXdTYVE2RmlXZEpmUkNBcVY4YTl1TE9USVlIQlRUNEFYMTRPR1pSeEpYcjREc1JhZlpTbUhQLTU4TnlDV2FCN0otRHpUR29DRFRWaktRcDJWMjRyeDh6S1JRY1NiNWNoaGFoZw?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "온실가스 배출권",
+        "KAU26"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "데일리e뉴스"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "1c029bb36c4c4943",
+      "publishedAt": "2026-10-22",
+      "title": "[알림] 해운·금융·에너지 업계와 함께 '탄소 규제 대응 전략'··· 16회...",
+      "category": "제도",
+      "summary": "이번 포럼은 'EU-ETS(유럽 배출권 거래제) 및 FuelEU Maritime(연료규제) 대응 방안과 비용 극소화 전략'을 주제로, 2025년부터 유럽 항만을 오가는 선박에 적용되는 탄소 규제 체계에 대한 대응 전략을 심도 있게...",
+      "source": "seoulfn.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.seoulfn.com/news/articleView.html?idxno=640747",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "seoulfn.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
+      "id": "f1cade4af28ca440",
+      "publishedAt": "2026-10-22",
+      "title": "[국회] 복잡한 절차에 가린 농촌 탄소 감축, 배출권 거래로 농가 새 소득원 만든다",
+      "category": "제도",
+      "summary": "[국회] 복잡한 절차에 가린 농촌 탄소 감축, 배출권 거래로 농가 새 소득원 만든다 월간친환경",
+      "source": "월간친환경",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5nZ19wZEtRd2pYZXc0bU5BQ1VPNFlocTNqYkFQdXNUY2d4VVV6Um03WXdxZzlRWG1RUUN1Wkt4RFJwVHU1dERSRDQ4RERfNTkyRVJrdjN2TGJnVjF0VUhWYlJJaENMcEtaRlNjLWxKUzlFQQ?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "월간친환경"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "bfbec5b3de0c46b2",
       "publishedAt": "2026-10-22",
       "title": "[구수진의 생활과 화학(9)]탄소와 함께 살아가는 지혜",
@@ -524,6 +742,77 @@
       "region": "국내"
     },
     {
+      "id": "13d546d84f5f97b0",
+      "publishedAt": "2026-10-22",
+      "title": "SGC에너지, 발전부문 호조에 3분기 영업이익 57%↑…AIDC 사업 속도",
+      "category": "제도",
+      "summary": "배출권 도 수익성을 뒷받침했다. SGC에너지는 3분기 118만REC를 공급해 전분기보다 공급량을 2% 늘렸다. 올해 누적 공급량은 350만REC로 전년 동기보다 17% 증가했으며 연간 목표의 80% 이상을 달성했다. 탄소 배출권 ...",
+      "source": "ddaily.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.ddaily.co.kr/page/view/2026102217094433861",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "ddaily.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "d2270476335b7417",
+      "publishedAt": "2026-10-22",
+      "title": "SGC에너지, 3분기 영업익 399억원···전년 동기比 56.8% 증가",
+      "category": "시장·가격",
+      "summary": "3분기 탄소배출권 평균 가격도 2만7549원으로 전년 동기보다 204% 상승했다. 반면 건설·부동산 부문은 매출 2678억원으로 전년 동기 대비 18.4% 감소했고 영업이익은 116억원으로 5.7% 줄었다. 플랜트 사업은 지정학적...",
+      "source": "ziksir.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.ziksir.com/news/articleView.html?idxno=150425",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "ziksir.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "4a8584cde3f57f3f",
+      "publishedAt": "2026-10-22",
+      "title": "GGGI, 서울서 글로벌 파리협정 제6조 포럼 개최…20개국 이상 탄소시장 협력 확대",
+      "category": "제도",
+      "summary": "GGGI, 서울서 글로벌 파리협정 제6조 포럼 개최…20개국 이상 탄소시장 협력 확대 https://www.2news.co.kr/",
+      "source": "https://www.2news.co.kr/",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFAzb0lOT1FaTVBLVHlOQTA0dkowRVBsRkxCZzQ3NnVIZF9fNDRURHQ2U3lqRGt1ZnZVVF9QSW85VnRqVkpFeGxHOVpGYThITlAtSVBFMjlmUTlReUdqbHZvT0poWGJhV2Nn?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "https://www.2news.co.kr/"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "22f366cf3a338cd4",
       "publishedAt": "2026-10-22",
       "title": "\"한전채, 2029년까지 발행한도 2배 못 맞춰…투자 유의\"",
@@ -541,6 +830,29 @@
       ],
       "duplicateSources": [
         "news2day.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "4a4436916657a9be",
+      "publishedAt": "2026-10-22",
+      "title": "\"'친환경 숯' 바이오차, 농업용에 편중…용도·판로 확대해야\"",
+      "category": "제도",
+      "summary": "바이오차는 식물성 폐기물이나 농업 부산물, 음식물 쓰레기, 가축 분뇨 등을 열처리해 만든 탄소 덩어리(숯)로, 최근 글로벌 탄소시장 에서 각광받고 있는 소재다. 농업용 비료뿐 아니라 최근에는 철강이나 배터리 등 산업용...",
+      "source": "edaily.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.edaily.co.kr/News/Read?newsId=05218486645615544&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateSources": [
+        "edaily.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -923,6 +1235,29 @@
       ],
       "duplicateCount": 1,
       "region": "해외"
+    },
+    {
+      "id": "78b444683629bad4",
+      "publishedAt": "2026-10-21",
+      "title": "농가 탄소감축 실적도 돈으로…배출권 거래 소득 비과세 추진",
+      "category": "제도",
+      "summary": "농가 탄소감축 실적도 돈으로…배출권 거래 소득 비과세 추진 헤럴드경제 미주판",
+      "source": "헤럴드경제 미주판",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE96Wk1uWl82d0JLaVpibXJWaHJMXzhyZnoxcG5hVWN4Zi1FVlBINVFWMGJvOFJmV0VubG5EVHdvMlFBWmZiTlUtNU1rcnpDc19ORGViazhsUnNkT0ZnTTFsTA?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "헤럴드경제 미주판"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "국내"
     },
     {
       "id": "34cdf66f967b71ee",
@@ -1548,12 +1883,14 @@
         "KAU26"
       ],
       "duplicateSources": [
+        "핀포인트뉴스",
         "pinpointnews.co.kr"
       ],
       "searchProviders": [
+        "Google News RSS",
         "NAVER API HUB"
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "region": "해외"
     },
     {
@@ -1622,12 +1959,14 @@
         "탄소배출권"
       ],
       "duplicateSources": [
+        "서울경제",
         "sedaily.com"
       ],
       "searchProviders": [
+        "Google News RSS",
         "NAVER API HUB"
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "region": "국내"
     },
     {
@@ -1799,6 +2138,30 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "f43633900b2174e3",
+      "publishedAt": "2026-10-20",
+      "title": "日 첫 대형 산림펀드 추진…최대 1000억엔 투입해 목재·탄소배출권 수익화",
+      "category": "제도",
+      "summary": "日 첫 대형 산림펀드 추진…최대 1000억엔 투입해 목재·탄소배출권 수익화 메디컬투데이",
+      "source": "메디컬투데이",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5NWkhsTmtMcDJYT19yVVVlUVV4NGJ4Q2dlX0lSaDNTdk9wQk8tdmtqT3dsSEljQTQ0Q0g5TG53WE43cHBSYWR0X0phVE9OcmxXRTZ2MW0tbnNEZ3NaT0xQcG91MnhTQ2g0ekFFSg?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "메디컬투데이"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
       "region": "국내"
     },
     {
@@ -2109,6 +2472,7 @@
         "유상할당"
       ],
       "duplicateSources": [
+        "이투데이",
         "etoday.co.kr",
         "edaily.co.kr",
         "newslock.co.kr",
@@ -2132,6 +2496,7 @@
         "metroseoul.co.kr",
         "seoultimes.news",
         "cstimes.com",
+        "디지틀조선TV",
         "biz.sbs.co.kr",
         "inews24.com",
         "smedaily.co.kr",
@@ -2150,7 +2515,6 @@
         "동행미디어 시대",
         "디지털포스트",
         "아이뉴스24",
-        "디지틀조선TV",
         "아시아투데이",
         "한국아이닷컴",
         "파이낸셜포스트",
@@ -2159,10 +2523,10 @@
         "ER 이코노믹리뷰"
       ],
       "searchProviders": [
-        "NAVER API HUB",
-        "Google News RSS"
+        "Google News RSS",
+        "NAVER API HUB"
       ],
-      "duplicateCount": 48,
+      "duplicateCount": 49,
       "region": "국내"
     },
     {
@@ -2293,10 +2657,10 @@
       ],
       "duplicateSources": [
         "4th.kr",
-        "metroseoul.co.kr",
         "ziksir.com",
         "megaeconomy.co.kr",
         "pinpointnews.co.kr",
+        "metroseoul.co.kr",
         "paxetv.com",
         "newspim.com",
         "kpenews.com",
@@ -2904,6 +3268,29 @@
       ],
       "duplicateCount": 1,
       "region": "국내"
+    },
+    {
+      "id": "574d7f892725eeea",
+      "publishedAt": "2026-10-18",
+      "title": "녹색 신용이 탄소 시장과 결합하여 기업에 자본을 조달하는 새로운 방법을 제시합니다.",
+      "category": "제도",
+      "summary": "녹색 신용이 탄소 시장과 결합하여 기업에 자본을 조달하는 새로운 방법을 제시합니다. Vietnam.vn",
+      "source": "Vietnam.vn",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPNWhSNzV5Y2IzTldhWE80TVFodjV0TW9rb1N5bmpPNEhtMDJldEJZWUVPMFdGdnlJV3JJaHItOWg3MW1EX09Kay1BYVFkbDY4YnBNYjVWeE5CejJ5MExHMzdCenRBOEcyQ3ZSdVc0Qm9QSEQyUm9Ua2lRbjBDMDdmdTR1UTBnQkQ3eG41dm5TV29NZmJFMVpBX0EwcVRBX0k?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "Vietnam.vn"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "해외"
     },
     {
       "id": "8a3361b2e8176320",
@@ -5011,8 +5398,8 @@
         "K-ETS"
       ],
       "duplicateSources": [
-        "e2news.com",
         "연합뉴스",
+        "e2news.com",
         "newsdream.kr",
         "dailian.co.kr",
         "edaily.co.kr",
@@ -5021,8 +5408,8 @@
         "아시아경제"
       ],
       "searchProviders": [
-        "NAVER API HUB",
-        "Google News RSS"
+        "Google News RSS",
+        "NAVER API HUB"
       ],
       "duplicateCount": 8,
       "region": "국내"
@@ -5270,28 +5657,30 @@
         "K-ETS"
       ],
       "duplicateSources": [
+        "이투데이",
         "industrynews.co.kr",
-        "팍스경제TV",
+        "pinpointnews.co.kr",
         "paxetv.com",
         "newsdream.kr",
         "dailian.co.kr",
+        "view.asiae.co.kr",
         "edaily.co.kr",
+        "팍스경제TV",
         "데일리안",
         "마켓인",
         "인더스트리뉴스",
         "뉴스드림",
         "businessplus.kr",
-        "view.asiae.co.kr",
         "yna.co.kr",
         "아시아경제",
         "연합뉴스",
         "e2news.com"
       ],
       "searchProviders": [
-        "NAVER API HUB",
-        "Google News RSS"
+        "Google News RSS",
+        "NAVER API HUB"
       ],
-      "duplicateCount": 16,
+      "duplicateCount": 18,
       "region": "국내"
     },
     {
@@ -6309,16 +6698,16 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "아시아경제",
         "view.asiae.co.kr",
+        "아시아경제",
         "etnews.com",
         "dt.co.kr",
         "전자신문",
         "naeil.com"
       ],
       "searchProviders": [
-        "Google News RSS",
-        "NAVER API HUB"
+        "NAVER API HUB",
+        "Google News RSS"
       ],
       "duplicateCount": 6,
       "region": "국내"
@@ -15212,7 +15601,10 @@
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
         "배출권",
-        "탄소배출권"
+        "탄소배출권",
+        "배출권거래제",
+        "온실가스 배출권",
+        "K-ETS"
       ],
       "duplicateSources": [
         "smartbizn.com"
@@ -15618,10 +16010,10 @@
       ],
       "duplicateSources": [
         "4th.kr",
+        "서울경제",
         "socialvalue.kr",
         "smarttoday.co.kr",
         "news1.kr",
-        "포춘코리아",
         "머니투데이",
         "seoulfn.com",
         "ebn.co.kr",
@@ -15640,9 +16032,7 @@
         "newsroad.co.kr",
         "연합뉴스TV",
         "newsian.co.kr",
-        "비즈월드",
         "bizwnews.com",
-        "매일일보",
         "inthenews.co.kr",
         "sisacast.kr",
         "economist.co.kr",
@@ -15660,20 +16050,22 @@
         "wowtv.co.kr",
         "newspim.com",
         "moneystorm.kr",
-        "브릿지경제",
         "dealsitetv.com",
         "dailypop.kr",
         "sateconomy.co.kr",
         "ezyeconomy.com",
         "huffingtonpost.kr",
         "yna.co.kr",
-        "아시아경제",
         "view.asiae.co.kr",
         "newsis.com",
         "catchnews.kr",
+        "포춘코리아",
+        "비즈월드",
+        "매일일보",
+        "브릿지경제",
+        "아시아경제",
         "viva100.com",
         "뉴스핌",
-        "서울경제",
         "edaily.co.kr",
         "srtimes.kr",
         "cstimes.com",
