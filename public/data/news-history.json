@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-23T02:28:20+09:00",
+  "generatedAt": "2026-10-23T08:12:36+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1437,
+  "itemCount": 1439,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-23",
   "sourceCommitsScanned": 0,
@@ -12,6 +12,30 @@
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "deaa1eb8beaa8017",
+      "publishedAt": "2026-10-23",
+      "title": "온실가스 감축 비용이 탄소 배출권 가격의 364배… 효율 낮은 3800억 탄소...",
+      "category": "시장·가격",
+      "summary": "3800억 원 이상이 투입되는 ‘탄소포집·활용(CCU) 실증사업’의 t당 온실가스 감축 비용이 탄소 배출권 가격의 360배를 웃도는 것으로 나타났다. 탄소를 직접 줄이는 데 드는 비용보다 같은 양의 배출권 을 구매하는...",
+      "source": "donga.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.donga.com/news/Society/article/all/20261022/134893333/2",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "donga.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
     {
       "id": "b7fc1c547e740af1",
       "publishedAt": "2026-10-23",
@@ -30,6 +54,29 @@
       ],
       "duplicateSources": [
         "kmib.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "5fc9fa7ba43ca9a0",
+      "publishedAt": "2026-10-23",
+      "title": "CBAM 청구서 쌓이는데...K-스틸법엔 '돈'이 없다",
+      "category": "시장·가격",
+      "summary": "배출권 시장가격이 약정 가격보다 낮으면 그 차액을 정부가 보전해 주는 방식이다. 이달 7일에는 2035년까지 10년간 재정 200조원과 기후금융 790조원 이상 등 모두 1000조원을 투입하는 ‘한국형 녹색대전환(K-GX) 전략’...",
+      "source": "socialvalue.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.socialvalue.kr/news/view/1065595167298416",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "socialvalue.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -2819,9 +2866,9 @@
         "weekly.hankooki.com",
         "kdfnews.com",
         "srtimes.kr",
-        "sentv.co.kr",
         "g-enews.com",
         "enewstoday.co.kr",
+        "sentv.co.kr",
         "paxetv.com",
         "newsis.com",
         "newsroad.co.kr",
@@ -3359,7 +3406,8 @@
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
         "배출권",
-        "배출권거래제"
+        "배출권거래제",
+        "탄소배출권"
       ],
       "duplicateSources": [
         "catchnews.kr"
@@ -16159,6 +16207,7 @@
       ],
       "duplicateSources": [
         "4th.kr",
+        "뉴스핌",
         "socialvalue.kr",
         "smarttoday.co.kr",
         "news1.kr",
@@ -16195,7 +16244,6 @@
         "biztribune.co.kr",
         "pointe.co.kr",
         "swtvnews.com",
-        "서울경제TV",
         "sentv.co.kr",
         "kfenews.co.kr",
         "wowtv.co.kr",
@@ -16213,10 +16261,10 @@
         "view.asiae.co.kr",
         "newsis.com",
         "catchnews.kr",
+        "서울경제TV",
         "wolyo.co.kr",
         "서울경제",
         "viva100.com",
-        "뉴스핌",
         "edaily.co.kr",
         "srtimes.kr",
         "cstimes.com",
