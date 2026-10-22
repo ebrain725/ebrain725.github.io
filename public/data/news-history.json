@@ -1,17 +1,42 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-22T21:18:23+09:00",
+  "generatedAt": "2026-10-23T02:28:20+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1433,
+  "itemCount": 1437,
   "earliestPublishedAt": "2026-08-06",
-  "latestPublishedAt": "2026-10-22",
+  "latestPublishedAt": "2026-10-23",
   "sourceCommitsScanned": 0,
   "sourceSnapshotsScanned": 0,
   "historicalRowsScanned": 0,
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "b7fc1c547e740af1",
+      "publishedAt": "2026-10-23",
+      "title": "기차가 떠난 자리, 쉼표가 내려앉았다",
+      "category": "상쇄·외부사업",
+      "summary": "포항시는 철길숲을 온실가스 배출권 거래제 외부사업에 등록해 연간 약 40t의 이산화탄소 흡수량을 인증받았다. 2022년에는 동아시아 최초로 영국의 그린 플래그 어워드 인증을 받았다. 폐철도와 도심 유휴공간을 활용해...",
+      "source": "kmib.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.kmib.co.kr/article/20261022502013",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "온실가스 배출권"
+      ],
+      "duplicateSources": [
+        "kmib.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
     {
       "id": "55fffe7dcc197969",
       "publishedAt": "2026-10-22",
@@ -428,6 +453,33 @@
       "region": "국내"
     },
     {
+      "id": "461b0bd50053e1af",
+      "publishedAt": "2026-10-22",
+      "title": "농가도 탄소 배출권으로 돈 벌게…송옥주, '4대 입법과제' 제안",
+      "category": "제도",
+      "summary": "유럽연합(EU)은 농림축산 부문을 배출권거래제에 직접 넣는 대신 자발적 탄소 제거인증제도(CRCF)를 만들어 탄소 농업·바이오차 크레딧을 보조금 및 자발적 시장 과 잇고 있다. 미국은 재생연료 크레딧(RIN)과 세액공제(45Q...",
+      "source": "betanews.net",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.betanews.net/article/view/beta202610220012",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "월드장애인사랑뉴스",
+        "betanews.net"
+      ],
+      "searchProviders": [
+        "Google News RSS",
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 2,
+      "region": "해외"
+    },
+    {
       "id": "e8324cfce60c186a",
       "publishedAt": "2026-10-22",
       "title": "농가 탄소 감축 실적도 돈으로…배출권 거래 소득 비과세 추진",
@@ -739,6 +791,30 @@
       "searchProviders": [
         "Google News RSS"
       ],
+      "region": "국내"
+    },
+    {
+      "id": "793d9da49a873e14",
+      "publishedAt": "2026-10-22",
+      "title": "[국감] 용인 반도체 3GW LNG, 탄소부담 해법 찾나…'e-메탄' 대안론",
+      "category": "상쇄·외부사업",
+      "summary": "탄소중립기본법과 배출권 거래제에서도 e-메탄 사용에 따른 온실가스 감축실적을 어떻게 인정하고 이전할 것인지에 대한 기준이 부족하다. 탄소감축 효과 역시 세밀하게 따져야 한다. e-메탄은 연소 과정에서...",
+      "source": "energydaily.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.energydaily.co.kr/news/articleView.html?idxno=204289",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "energydaily.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
       "region": "국내"
     },
     {
@@ -2139,6 +2215,30 @@
       "region": "국내"
     },
     {
+      "id": "4c8e97e14244eb07",
+      "publishedAt": "2026-10-20",
+      "title": "베트남·일본, 탄소배출권 공동사업 규칙 승인…국제감축 확대나선다",
+      "category": "제도",
+      "summary": "베트남·일본, 탄소배출권 공동사업 규칙 승인…국제감축 확대나선다 넷제로뉴스",
+      "source": "넷제로뉴스",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1DY3hPQk42OVRKcVNwek5JR192UEwwYW5DbWNlMlNOMkROSDM5ak44X2RubnRRbVllT3c0LWhncERidkNxcGxNQTdIclZwQjBPZjI4eVlYamhxYlhmdW8zZDlNQVJVZk5GbkHSAW5BVV95cUxNVGFGWE1ENjB6MnhoRG1Ia2thOWxmb2N5V085SXZkZkctTmhNX1o5c1ZKaXdvSDVCcW5zb3JfMUFRWGIta2hXMkVDdktaT1dKNWZDeFBUNmtFNm1mXzlvMHRUTGt0QmF2T01NVlR0Zw?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "넷제로뉴스"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "해외"
+    },
+    {
       "id": "4821b818fcb52aa3",
       "publishedAt": "2026-10-20",
       "title": "배출권 총량 16% 축소에 탄소배출권 가격 급등…정유·석화업계 '비상'",
@@ -2707,10 +2807,9 @@
       "duplicateSources": [
         "4th.kr",
         "ziksir.com",
-        "megaeconomy.co.kr",
         "pinpointnews.co.kr",
         "metroseoul.co.kr",
-        "paxetv.com",
+        "megaeconomy.co.kr",
         "newspim.com",
         "kpenews.com",
         "fetv.co.kr",
@@ -2723,6 +2822,7 @@
         "sentv.co.kr",
         "g-enews.com",
         "enewstoday.co.kr",
+        "paxetv.com",
         "newsis.com",
         "newsroad.co.kr",
         "view.asiae.co.kr",
@@ -16088,7 +16188,6 @@
         "sisacast.kr",
         "economist.co.kr",
         "job-post.co.kr",
-        "wolyo.co.kr",
         "megaeconomy.co.kr",
         "pinpointnews.co.kr",
         "etoday.co.kr",
@@ -16096,6 +16195,7 @@
         "biztribune.co.kr",
         "pointe.co.kr",
         "swtvnews.com",
+        "서울경제TV",
         "sentv.co.kr",
         "kfenews.co.kr",
         "wowtv.co.kr",
@@ -16106,13 +16206,15 @@
         "dailypop.kr",
         "sateconomy.co.kr",
         "ezyeconomy.com",
+        "wsobi.com",
         "huffingtonpost.kr",
         "yna.co.kr",
+        "아시아경제",
         "view.asiae.co.kr",
         "newsis.com",
         "catchnews.kr",
+        "wolyo.co.kr",
         "서울경제",
-        "아시아경제",
         "viva100.com",
         "뉴스핌",
         "edaily.co.kr",
@@ -16122,7 +16224,6 @@
         "thefairnews.co.kr",
         "글로벌이코노믹",
         "연합뉴스",
-        "서울경제TV",
         "getnews.co.kr",
         "fntimes.com",
         "마켓인",
@@ -16154,7 +16255,6 @@
         "mt.co.kr",
         "finomy.com",
         "sports.hankooki.com",
-        "wsobi.com",
         "financialpost.co.kr",
         "newscape.co.kr",
         "asiae.co.kr",
