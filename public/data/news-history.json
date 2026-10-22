@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-22T13:12:39+09:00",
+  "generatedAt": "2026-10-22T15:12:38+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1412,
+  "itemCount": 1415,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-22",
   "sourceCommitsScanned": 0,
@@ -12,6 +12,31 @@
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "28f64ad1b90d7cb0",
+      "publishedAt": "2026-10-22",
+      "title": "한국형 시장안정화제도 개입가격 발표 앞두고 발전업계 촉각",
+      "category": "유상경매",
+      "summary": "2025년 배출권( KAU25 ) 낙찰가격은 지난 1월 t당 1만700원에서 8월 2만7900원으로 약 2.6배 상승했다. 경매 대상이 2026년 배출권(KAU26)으로 바뀐 9월에는 t당 2만9500원을 기록했으며 이달 21일 종가 기준으로는 3만150원까지...",
+      "source": "electimes.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.electimes.com/news/articleView.html?idxno=373767",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "KAU25",
+        "KAU26"
+      ],
+      "duplicateSources": [
+        "electimes.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
     {
       "id": "03190b65cd7d5b55",
       "publishedAt": "2026-10-22",
@@ -135,6 +160,30 @@
       "region": "국내"
     },
     {
+      "id": "bc52e8959a4cb6c4",
+      "publishedAt": "2026-10-22",
+      "title": "순이익 43% 폭락에도…테슬라, 휴머노이드 '옵티머스' 양산 강행",
+      "category": "제도",
+      "summary": "여기에 탄소 배출권 (크레딧) 판매 수입 감소와 태양광·에너지 저장 부문 매출 하락이 더해지며 수익성을 압박했다. 한편 완전자율주행(FSD) 고도화 및 로보택시 상용화 일정 역시 당초 계획보다 연기되는 모습이다....",
+      "source": "theopiniontimes.news",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://theopiniontimes.news/%ec%88%9c%ec%9d%b4%ec%9d%b5-43-%ed%8f%ad%eb%9d%bd%ec%97%90%eb%8f%84%ed%85%8c%ec%8a%ac%eb%9d%bc-%ed%9c%b4%eb%a8%b8%eb%85%b8%ec%9d%b4%eb%93%9c-%ec%98%b5%ed%8b%b0%eb%a8%b8%ec%8a%a4/",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "theopiniontimes.news"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "cd700b3c2577b856",
       "publishedAt": "2026-10-22",
       "title": "송옥주 의원, 농가 탄소 소득 촉구",
@@ -157,6 +206,30 @@
       ],
       "duplicateCount": 1,
       "region": "국내"
+    },
+    {
+      "id": "ab09736d8ac123b8",
+      "publishedAt": "2026-10-22",
+      "title": "송옥주 의원, '농림축산업 탄소 배출권 활성화 입법·정책 제언' 자료집...",
+      "category": "제도",
+      "summary": "해외 사례로는 EU의 자발적 탄소 제거인증제도(CRCF), 미국의 재생연료 관련 크레딧과 세액공제, 중국의 자발적 감축 시장 (CCER) 등을 소개하며 농림축산업의 온실가스 감축 활동을 시장 과 연계해 농촌으로 민간 자금 유입을...",
+      "source": "pressian.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.pressian.com/pages/articles/2026102214222844725?utm_source=naver&utm_medium=search",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "pressian.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
     },
     {
       "id": "ae244c98a2f7a222",
@@ -194,7 +267,8 @@
       "url": "https://biz.heraldcorp.com/article/10910729?ref=naver",
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
-        "배출권"
+        "배출권",
+        "탄소배출권"
       ],
       "duplicateSources": [
         "biz.heraldcorp.com"
@@ -242,7 +316,8 @@
       "matchedKeywords": [
         "배출권",
         "탄소배출권",
-        "탄소시장"
+        "탄소시장",
+        "배출권거래제"
       ],
       "duplicateSources": [
         "financialpost.co.kr"
@@ -2230,8 +2305,8 @@
         "financialpost.co.kr",
         "biztribune.co.kr",
         "weekly.hankooki.com",
-        "srtimes.kr",
         "kdfnews.com",
+        "srtimes.kr",
         "sentv.co.kr",
         "g-enews.com",
         "enewstoday.co.kr",
@@ -15557,6 +15632,7 @@
         "delighti.co.kr",
         "smedaily.co.kr",
         "whitepaper.co.kr",
+        "pennmike.com",
         "ppss.kr",
         "todayeconomic.com",
         "globale.co.kr",
@@ -15643,7 +15719,6 @@
         "asiae.co.kr",
         "fetv.co.kr",
         "2news.co.kr",
-        "pennmike.com",
         "인사이트코리아",
         "insightkorea.co.kr",
         "fortunekorea.co.kr",
