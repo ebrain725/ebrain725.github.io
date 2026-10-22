@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-22T18:12:42+09:00",
+  "generatedAt": "2026-10-22T21:18:23+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1431,
+  "itemCount": 1433,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-22",
   "sourceCommitsScanned": 0,
@@ -54,6 +54,31 @@
       ],
       "duplicateSources": [
         "electimes.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "f192968a10dec654",
+      "publishedAt": "2026-10-22",
+      "title": "한국형 녹색대전환(K-GX)",
+      "category": "시장·가격",
+      "summary": "기후단체 플랜 1.5는 \"산업 탈탄소 전환을 위해서는 규제 강화, 특히 탄소 배출권 가격 정상화와 유상 할당 전환이 선결돼야 한다\"고 밝혔다. 현재 탄소 배출권 은 1t당 2만9,550원인데, 한국은행은 2030년 탄소중립 목표를...",
+      "source": "danbinews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.danbinews.com/news/articleView.html?idxno=33957",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권",
+        "유상할당"
+      ],
+      "duplicateSources": [
+        "danbinews.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -132,6 +157,30 @@
       ],
       "duplicateCount": 1,
       "region": "해외"
+    },
+    {
+      "id": "2836bf2d241258ad",
+      "publishedAt": "2026-10-22",
+      "title": "오운알투텍, 잔여냉매 회수·정제 모니터링시스템 출품",
+      "category": "제도",
+      "summary": "쓰고 남은 냉매를 회수, 고순도로 정제해 재사용할 수 있도록 하고 나아가 탄소배출권 사업까지 연계하는 등 폐냉매 자원순환전문업체인 오운알투텍(대표 황병봉)이 21일부터 23일까지 코엑스에서 열리는 대한민국 ESG...",
+      "source": "gasnews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.gasnews.com/news/articleView.html?idxno=127321",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "gasnews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
     },
     {
       "id": "c579bf0155ef2bed",
@@ -2472,7 +2521,6 @@
         "유상할당"
       ],
       "duplicateSources": [
-        "이투데이",
         "etoday.co.kr",
         "edaily.co.kr",
         "newslock.co.kr",
@@ -2496,12 +2544,13 @@
         "metroseoul.co.kr",
         "seoultimes.news",
         "cstimes.com",
-        "디지틀조선TV",
         "biz.sbs.co.kr",
         "inews24.com",
         "smedaily.co.kr",
         "dealsite.co.kr",
         "etnews.com",
+        "이투데이",
+        "디지틀조선TV",
         "마켓인",
         "메트로신문",
         "뉴스락",
@@ -2523,8 +2572,8 @@
         "ER 이코노믹리뷰"
       ],
       "searchProviders": [
-        "Google News RSS",
-        "NAVER API HUB"
+        "NAVER API HUB",
+        "Google News RSS"
       ],
       "duplicateCount": 49,
       "region": "국내"
@@ -5398,8 +5447,8 @@
         "K-ETS"
       ],
       "duplicateSources": [
-        "연합뉴스",
         "e2news.com",
+        "연합뉴스",
         "newsdream.kr",
         "dailian.co.kr",
         "edaily.co.kr",
@@ -5408,8 +5457,8 @@
         "아시아경제"
       ],
       "searchProviders": [
-        "Google News RSS",
-        "NAVER API HUB"
+        "NAVER API HUB",
+        "Google News RSS"
       ],
       "duplicateCount": 8,
       "region": "국내"
@@ -5657,15 +5706,15 @@
         "K-ETS"
       ],
       "duplicateSources": [
-        "이투데이",
         "industrynews.co.kr",
-        "pinpointnews.co.kr",
+        "팍스경제TV",
         "paxetv.com",
         "newsdream.kr",
         "dailian.co.kr",
-        "view.asiae.co.kr",
         "edaily.co.kr",
-        "팍스경제TV",
+        "이투데이",
+        "pinpointnews.co.kr",
+        "view.asiae.co.kr",
         "데일리안",
         "마켓인",
         "인더스트리뉴스",
@@ -5677,8 +5726,8 @@
         "e2news.com"
       ],
       "searchProviders": [
-        "Google News RSS",
-        "NAVER API HUB"
+        "NAVER API HUB",
+        "Google News RSS"
       ],
       "duplicateCount": 18,
       "region": "국내"
@@ -6698,16 +6747,16 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "view.asiae.co.kr",
         "아시아경제",
+        "view.asiae.co.kr",
         "etnews.com",
         "dt.co.kr",
         "전자신문",
         "naeil.com"
       ],
       "searchProviders": [
-        "NAVER API HUB",
-        "Google News RSS"
+        "Google News RSS",
+        "NAVER API HUB"
       ],
       "duplicateCount": 6,
       "region": "국내"
@@ -16010,10 +16059,10 @@
       ],
       "duplicateSources": [
         "4th.kr",
-        "서울경제",
         "socialvalue.kr",
         "smarttoday.co.kr",
         "news1.kr",
+        "포춘코리아",
         "머니투데이",
         "seoulfn.com",
         "ebn.co.kr",
@@ -16032,7 +16081,9 @@
         "newsroad.co.kr",
         "연합뉴스TV",
         "newsian.co.kr",
+        "비즈월드",
         "bizwnews.com",
+        "매일일보",
         "inthenews.co.kr",
         "sisacast.kr",
         "economist.co.kr",
@@ -16050,6 +16101,7 @@
         "wowtv.co.kr",
         "newspim.com",
         "moneystorm.kr",
+        "브릿지경제",
         "dealsitetv.com",
         "dailypop.kr",
         "sateconomy.co.kr",
@@ -16059,10 +16111,7 @@
         "view.asiae.co.kr",
         "newsis.com",
         "catchnews.kr",
-        "포춘코리아",
-        "비즈월드",
-        "매일일보",
-        "브릿지경제",
+        "서울경제",
         "아시아경제",
         "viva100.com",
         "뉴스핌",
