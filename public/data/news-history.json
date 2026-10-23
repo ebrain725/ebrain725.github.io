@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-23T10:13:00+09:00",
+  "generatedAt": "2026-10-23T13:13:33+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1444,
+  "itemCount": 1448,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-23",
   "sourceCommitsScanned": 0,
@@ -86,6 +86,30 @@
       "region": "국내"
     },
     {
+      "id": "904a31eedb26ec8b",
+      "publishedAt": "2026-10-23",
+      "title": "수개월 걸리던 탄소발자국 계산, AI로 약 1주만에 한다",
+      "category": "제도",
+      "summary": "기업의 탄소 배출량을 계산하고 기록하는 탄소회계 플랫폼을 운영하는 리빗과 오후두시랩, 탄소 배출권 ... 사용량을 온실가스 배출량으로 바꾸는 데 필요한 계수(배출계수)를 연결하는 일을 돕고, 평소와 다른 수치도...",
+      "source": "byline.network",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://byline.network/?p=9004111222624392",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "byline.network"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "b7fc1c547e740af1",
       "publishedAt": "2026-10-23",
       "title": "기차가 떠난 자리, 쉼표가 내려앉았다",
@@ -103,6 +127,32 @@
       ],
       "duplicateSources": [
         "kmib.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "c13ad63cdadeda69",
+      "publishedAt": "2026-10-23",
+      "title": "“바이오차, 부산물비료 아닌 토양개량제로”",
+      "category": "제도",
+      "summary": "송 의원은 이와 함께 △탄소중립기본법 개정을 통한 영구적 탄소제거 정의 신설 △국가 검증 인증서 발급 △측정·보고·검증(MRV) 체계 구축 △ 배출권거래제 (K-ETS) 및 자발적 탄소시장과의 연계 등 종합적인 제도 지원을...",
+      "source": "naeil.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.naeil.com/news/read/606155?ref=naver",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "K-ETS",
+        "탄소시장"
+      ],
+      "duplicateSources": [
+        "naeil.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -161,6 +211,30 @@
       "region": "국내"
     },
     {
+      "id": "a2965a87d2e17a0c",
+      "publishedAt": "2026-10-23",
+      "title": "LG엔솔 폴란드 공장, EU 혁신기금 지원 대상 선정…9GWh 규모 LFP 배터리...",
+      "category": "제도",
+      "summary": "EU 혁신기금은 배출권 거래제(ETS) 수입을 활용해 탄소중립 기술 개발과 청정산업 제조시설 투자를 지원하는 제도다. EC는 지난해 12월 시작한 공모를 통해 유럽경제지역(EEA) 23개국의 프로젝트 77개를 선정했다....",
+      "source": "theguru.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.theguru.co.kr/news/article.html?no=108676",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "theguru.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
       "id": "5fc9fa7ba43ca9a0",
       "publishedAt": "2026-10-23",
       "title": "CBAM 청구서 쌓이는데...K-스틸법엔 '돈'이 없다",
@@ -176,6 +250,30 @@
       ],
       "duplicateSources": [
         "socialvalue.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "009a8d133c157b96",
+      "publishedAt": "2026-10-23",
+      "title": "\"SGC에너지, 본업 잊어라…2조 대작 'AI 데이터센터'가 진짜 본체\"",
+      "category": "시장·가격",
+      "summary": "온실가스 배출권 판매는 없었고, 연초부터 이어진 가격 상승과 2030년까지 강화될 수급 불균형을 감안할 때 2027년 이후로 이월하여 판매될 가능성이 높다. 건설/부동산 부문은 지정학적 요인으로 플랜트...",
+      "source": "newsquest.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newsquest.co.kr/news/articleView.html?idxno=303304",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "온실가스 배출권"
+      ],
+      "duplicateSources": [
+        "newsquest.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -612,7 +710,8 @@
       "matchedKeywords": [
         "배출권",
         "탄소배출권",
-        "배출권거래제"
+        "배출권거래제",
+        "K-ETS"
       ],
       "duplicateSources": [
         "월드장애인사랑뉴스",
@@ -2980,16 +3079,16 @@
         "4th.kr",
         "ziksir.com",
         "pinpointnews.co.kr",
-        "metroseoul.co.kr",
         "megaeconomy.co.kr",
         "newspim.com",
-        "kpenews.com",
         "fetv.co.kr",
         "cstimes.com",
         "biztribune.co.kr",
         "weekly.hankooki.com",
         "g-enews.com",
         "enewstoday.co.kr",
+        "metroseoul.co.kr",
+        "kpenews.com",
         "financialpost.co.kr",
         "kdfnews.com",
         "srtimes.kr",
@@ -16362,13 +16461,13 @@
         "sisacast.kr",
         "economist.co.kr",
         "job-post.co.kr",
-        "megaeconomy.co.kr",
         "pinpointnews.co.kr",
         "etoday.co.kr",
         "digitaltoday.co.kr",
         "biztribune.co.kr",
         "pointe.co.kr",
         "swtvnews.com",
+        "서울경제TV",
         "sentv.co.kr",
         "kfenews.co.kr",
         "wowtv.co.kr",
@@ -16386,7 +16485,7 @@
         "view.asiae.co.kr",
         "newsis.com",
         "catchnews.kr",
-        "서울경제TV",
+        "megaeconomy.co.kr",
         "wolyo.co.kr",
         "서울경제",
         "viva100.com",
