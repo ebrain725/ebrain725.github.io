@@ -3,6 +3,29 @@
   "requestedStartDate": "2015-01-01",
   "items": [
     {
+      "id": "motie_press-ATCL3f49a5a8c-172324",
+      "sourceId": "172324",
+      "sourceBoard": "ATCL3f49a5a8c",
+      "sourceBoardKey": "press_release",
+      "boardCategory": "보도·참고자료",
+      "title": "EU 탄소국경조정제도(CBAM) 하류재 확대 시행 대비 수출기업 맞춤형 설명회 개최",
+      "summary": "기후경제통상과 담당 · 보도자료입니다. 원문에서 세부 내용을 확인하세요.",
+      "url": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/172324/view",
+      "publishedAt": "2026-10-23",
+      "source": "산업부 보도자료",
+      "sourceType": "official",
+      "section": "motie_press",
+      "category": "보도자료",
+      "department": "기후경제통상과",
+      "matchedKeywords": [
+        "탄소국경조정",
+        "CBAM"
+      ],
+      "matchedFields": [
+        "title"
+      ]
+    },
+    {
       "id": "motie_press-ATCL3f49a5a8c-172314",
       "sourceId": "172314",
       "sourceBoard": "ATCL3f49a5a8c",
@@ -130709,10 +130732,10 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     }
   ],
-  "generatedAt": "2026-10-23T03:44:13+09:00",
+  "generatedAt": "2026-10-24T03:35:10+09:00",
   "collectionMode": "incremental",
-  "queryStartDate": "2026-08-24",
-  "queryEndDate": "2026-10-23",
+  "queryStartDate": "2026-08-25",
+  "queryEndDate": "2026-10-24",
   "policyKeywords": {
     "titleAndContent": [
       "배출권",
@@ -130845,11 +130868,11 @@
     },
     "motie_press": {
       "label": "산업부 보도자료",
-      "records": 1889,
+      "records": 1890,
       "earliest": "2016-01-19",
-      "latest": "2026-10-20",
+      "latest": "2026-10-23",
       "byBoardCategory": {
-        "보도·참고자료": 1367,
+        "보도·참고자료": 1368,
         "보도설명자료": 522
       }
     }
@@ -130861,14 +130884,14 @@
       "section": "motie_press",
       "boardCategory": "보도·참고자료",
       "boardUrl": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c",
-      "requestedStartDate": "2026-08-24",
-      "requestedEndDate": "2026-10-23",
+      "requestedStartDate": "2026-08-25",
+      "requestedEndDate": "2026-10-24",
       "searchMode": "official-expanded-keyword-query",
       "pagesFetched": 149,
-      "parsedRows": 7,
-      "itemCount": 6,
+      "parsedRows": 9,
+      "itemCount": 7,
       "earliest": "2026-09-02",
-      "latest": "2026-10-20",
+      "latest": "2026-10-23",
       "complete": true,
       "queries": [
         {
@@ -131560,16 +131583,16 @@
         {
           "keyword": "탄소국경조정",
           "field": "title",
-          "reportedTotal": 1,
+          "reportedTotal": 2,
           "pagesFetched": 1,
-          "parsedRows": 1
+          "parsedRows": 2
         },
         {
           "keyword": "CBAM",
           "field": "title",
-          "reportedTotal": 1,
+          "reportedTotal": 2,
           "pagesFetched": 1,
-          "parsedRows": 1
+          "parsedRows": 2
         },
         {
           "keyword": "탄소중립",
@@ -131922,8 +131945,8 @@
       "section": "motie_press",
       "boardCategory": "보도설명자료",
       "boardUrl": "https://www.motir.go.kr/kor/article/ATCLe0854704d",
-      "requestedStartDate": "2026-08-24",
-      "requestedEndDate": "2026-10-23",
+      "requestedStartDate": "2026-08-25",
+      "requestedEndDate": "2026-10-24",
       "searchMode": "official-expanded-keyword-query",
       "pagesFetched": 149,
       "parsedRows": 4,
@@ -132983,8 +133006,8 @@
       "section": "motie_notice",
       "boardCategory": "공지사항",
       "boardUrl": "https://www.motir.go.kr/kor/article/ATCL6e90bb9de",
-      "requestedStartDate": "2026-08-24",
-      "requestedEndDate": "2026-10-23",
+      "requestedStartDate": "2026-08-25",
+      "requestedEndDate": "2026-10-24",
       "searchMode": "official-expanded-keyword-query",
       "pagesFetched": 149,
       "parsedRows": 0,
@@ -134044,8 +134067,8 @@
       "section": "motie_notice",
       "boardCategory": "사업공고",
       "boardUrl": "https://www.motir.go.kr/kor/article/ATCL2826a2625",
-      "requestedStartDate": "2026-08-24",
-      "requestedEndDate": "2026-10-23",
+      "requestedStartDate": "2026-08-25",
+      "requestedEndDate": "2026-10-24",
       "searchMode": "official-expanded-keyword-query",
       "pagesFetched": 149,
       "parsedRows": 2,
@@ -135105,8 +135128,8 @@
       "section": "motie_notice",
       "boardCategory": "입법예고",
       "boardUrl": "https://www.motir.go.kr/kor/article/ATCLa1cb24c71",
-      "requestedStartDate": "2026-08-24",
-      "requestedEndDate": "2026-10-23",
+      "requestedStartDate": "2026-08-25",
+      "requestedEndDate": "2026-10-24",
       "searchMode": "official-expanded-keyword-query",
       "pagesFetched": 149,
       "parsedRows": 0,
@@ -136166,8 +136189,8 @@
       "section": "motie_notice",
       "boardCategory": "행정예고",
       "boardUrl": "https://www.motir.go.kr/kor/article/ATCLa6723dc7b",
-      "requestedStartDate": "2026-08-24",
-      "requestedEndDate": "2026-10-23",
+      "requestedStartDate": "2026-08-25",
+      "requestedEndDate": "2026-10-24",
       "searchMode": "official-expanded-keyword-query",
       "pagesFetched": 149,
       "parsedRows": 0,
@@ -137227,8 +137250,8 @@
       "section": "motie_notice",
       "boardCategory": "고시",
       "boardUrl": "https://www.motir.go.kr/kor/article/ATCL0c554f816",
-      "requestedStartDate": "2026-08-24",
-      "requestedEndDate": "2026-10-23",
+      "requestedStartDate": "2026-08-25",
+      "requestedEndDate": "2026-10-24",
       "searchMode": "official-expanded-keyword-query",
       "pagesFetched": 149,
       "parsedRows": 0,
@@ -138288,8 +138311,8 @@
       "section": "motie_notice",
       "boardCategory": "공고",
       "boardUrl": "https://www.motir.go.kr/kor/article/ATCLc01b2801b",
-      "requestedStartDate": "2026-08-24",
-      "requestedEndDate": "2026-10-23",
+      "requestedStartDate": "2026-08-25",
+      "requestedEndDate": "2026-10-24",
       "searchMode": "official-expanded-keyword-query",
       "pagesFetched": 149,
       "parsedRows": 2,
