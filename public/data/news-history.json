@@ -1,17 +1,41 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-24T02:22:53+09:00",
+  "generatedAt": "2026-10-24T08:13:36+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1462,
+  "itemCount": 1463,
   "earliestPublishedAt": "2026-08-06",
-  "latestPublishedAt": "2026-10-23",
+  "latestPublishedAt": "2026-10-24",
   "sourceCommitsScanned": 0,
   "sourceSnapshotsScanned": 0,
   "historicalRowsScanned": 0,
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "c40cc95abb536ec0",
+      "publishedAt": "2026-10-24",
+      "title": "[단독] 책임 부담에… 석유 최고액 정산위, 감사원에 SOS",
+      "category": "제도",
+      "summary": "예컨대 임직원 성과급은 얼마만큼 원가에 반영해야 할지, 탄소 배출권 구입비는 비용으로 볼 수 있는지 등도 쟁점이다. 회사마다 설비와 생산 제품 구성도 달라 공통 기준을 세우기도 어렵다. 가령 에쓰오일은 윤활기유...",
+      "source": "chosun.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.chosun.com/economy/industry-company/2026/10/24/SO42KMMWHVG5PEBGQHCEYROHBY/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "chosun.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
     {
       "id": "25a860ef7411f9b4",
       "publishedAt": "2026-10-23",
@@ -3435,8 +3459,8 @@
         "fetv.co.kr",
         "cstimes.com",
         "biztribune.co.kr",
-        "g-enews.com",
         "enewstoday.co.kr",
+        "g-enews.com",
         "ziksir.com",
         "weekly.hankooki.com",
         "4th.kr",
@@ -6173,8 +6197,8 @@
         "K-ETS"
       ],
       "duplicateSources": [
-        "연합뉴스",
         "e2news.com",
+        "연합뉴스",
         "newsdream.kr",
         "dailian.co.kr",
         "edaily.co.kr",
@@ -6183,8 +6207,8 @@
         "아시아경제"
       ],
       "searchProviders": [
-        "Google News RSS",
-        "NAVER API HUB"
+        "NAVER API HUB",
+        "Google News RSS"
       ],
       "duplicateCount": 8,
       "region": "국내"
@@ -6432,15 +6456,15 @@
         "K-ETS"
       ],
       "duplicateSources": [
-        "이투데이",
         "industrynews.co.kr",
-        "pinpointnews.co.kr",
+        "팍스경제TV",
         "paxetv.com",
         "newsdream.kr",
         "dailian.co.kr",
-        "view.asiae.co.kr",
         "edaily.co.kr",
-        "팍스경제TV",
+        "이투데이",
+        "pinpointnews.co.kr",
+        "view.asiae.co.kr",
         "데일리안",
         "마켓인",
         "인더스트리뉴스",
@@ -6452,8 +6476,8 @@
         "e2news.com"
       ],
       "searchProviders": [
-        "Google News RSS",
-        "NAVER API HUB"
+        "NAVER API HUB",
+        "Google News RSS"
       ],
       "duplicateCount": 18,
       "region": "국내"
@@ -7473,16 +7497,16 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "view.asiae.co.kr",
         "아시아경제",
+        "view.asiae.co.kr",
         "etnews.com",
         "dt.co.kr",
         "전자신문",
         "naeil.com"
       ],
       "searchProviders": [
-        "NAVER API HUB",
-        "Google News RSS"
+        "Google News RSS",
+        "NAVER API HUB"
       ],
       "duplicateCount": 6,
       "region": "국내"
@@ -16785,8 +16809,6 @@
       ],
       "duplicateSources": [
         "4th.kr",
-        "뉴스핌",
-        "서울경제",
         "socialvalue.kr",
         "smarttoday.co.kr",
         "news1.kr",
@@ -16809,6 +16831,7 @@
         "연합뉴스TV",
         "newsian.co.kr",
         "bizwnews.com",
+        "매일일보",
         "inthenews.co.kr",
         "sisacast.kr",
         "economist.co.kr",
@@ -16819,25 +16842,26 @@
         "biztribune.co.kr",
         "pointe.co.kr",
         "swtvnews.com",
+        "서울경제TV",
         "sentv.co.kr",
         "kfenews.co.kr",
         "wowtv.co.kr",
         "newspim.com",
         "moneystorm.kr",
+        "브릿지경제",
+        "포춘코리아",
         "dealsitetv.com",
         "dailypop.kr",
         "sateconomy.co.kr",
         "wsobi.com",
         "huffingtonpost.kr",
         "yna.co.kr",
+        "아시아경제",
         "newsis.com",
         "catchnews.kr",
-        "포춘코리아",
+        "뉴스핌",
+        "서울경제",
         "비즈월드",
-        "매일일보",
-        "서울경제TV",
-        "아시아경제",
-        "브릿지경제",
         "view.asiae.co.kr",
         "ezyeconomy.com",
         "megaeconomy.co.kr",
