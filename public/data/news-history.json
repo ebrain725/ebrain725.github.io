@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-23T13:13:33+09:00",
+  "generatedAt": "2026-10-23T15:13:00+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1448,
+  "itemCount": 1451,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-23",
   "sourceCommitsScanned": 0,
@@ -187,6 +187,31 @@
       "region": "해외"
     },
     {
+      "id": "ec6e7073bc8e4518",
+      "publishedAt": "2026-10-23",
+      "title": "[단독] 애들 보육비가 철강 보조금?…포스코·현대제철 직장어린이집까...",
+      "category": "제도",
+      "summary": "이번 재심에서는 한국 정부의 전력 공급과 배출권거래제( K-ETS )에 따른 배출권 제공, 정책금융 등도 심사 대상에 포함됐다. 이들 지원은 철강기업의 생산비용이나 사업활동과 관련된 사안이지만 직장어린이집 운영비는...",
+      "source": "snmnews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.snmnews.com/news/articleView.html?idxno=576286",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "K-ETS"
+      ],
+      "duplicateSources": [
+        "snmnews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "48093bdd10cba184",
       "publishedAt": "2026-10-23",
       "title": "[국감 ESG 브리핑]산업·에너지 쪼개니 원전도 '두 부처'…반도체 탄소...",
@@ -203,6 +228,30 @@
       ],
       "duplicateSources": [
         "impacton.net"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "a4e41f4551964972",
+      "publishedAt": "2026-10-23",
+      "title": "[Who Is ?] 박준경 금호석유화학 총괄사장",
+      "category": "제도",
+      "summary": "금호석유화학은 배출권 거래제 할당대상업체로서 온실가스 감축 효과도 누릴 수 있다. △ESG경영 확대, 국제 기준 반영한 보고서 발간 금호석유화학은 2026년 6월 국제 기준을 반영해 ESG(환경·사회·지배구조) 경영...",
+      "source": "businesspost.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.businesspost.co.kr/BP?command=article_view&num=449126",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "businesspost.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -250,6 +299,30 @@
       ],
       "duplicateSources": [
         "socialvalue.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "ea20098b851f8581",
+      "publishedAt": "2026-10-23",
+      "title": "\"해외서 '질 낮은' 감축실적 사오는 한국, 제도 악용 꼼수\"",
+      "category": "상쇄·외부사업",
+      "summary": "정부는 2030년 국가 온실가스 감축목표(NDC) 감축량의 13%인 3750만 톤을 해외에서 확보한 감축실적으로 채울... 정부는 이 크레딧을 배출권 거래제에도 쓸 수 있게 하는 방안을 검토 중이다. 배출권 거래제는 기업마다 배출...",
+      "source": "newspenguin.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newspenguin.com/news/articleView.html?idxno=22334",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "newspenguin.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -3076,9 +3149,8 @@
         "탄소배출권"
       ],
       "duplicateSources": [
-        "4th.kr",
-        "ziksir.com",
         "pinpointnews.co.kr",
+        "ziksir.com",
         "megaeconomy.co.kr",
         "newspim.com",
         "fetv.co.kr",
@@ -3087,6 +3159,7 @@
         "weekly.hankooki.com",
         "g-enews.com",
         "enewstoday.co.kr",
+        "4th.kr",
         "metroseoul.co.kr",
         "kpenews.com",
         "financialpost.co.kr",
@@ -16477,7 +16550,6 @@
         "dealsitetv.com",
         "dailypop.kr",
         "sateconomy.co.kr",
-        "ezyeconomy.com",
         "wsobi.com",
         "huffingtonpost.kr",
         "yna.co.kr",
@@ -16485,6 +16557,7 @@
         "view.asiae.co.kr",
         "newsis.com",
         "catchnews.kr",
+        "ezyeconomy.com",
         "megaeconomy.co.kr",
         "wolyo.co.kr",
         "서울경제",
