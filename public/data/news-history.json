@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-24T13:13:49+09:00",
+  "generatedAt": "2026-10-24T15:16:27+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1464,
+  "itemCount": 1465,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-24",
   "sourceCommitsScanned": 0,
@@ -28,12 +28,13 @@
         "온실가스 배출권"
       ],
       "duplicateSources": [
-        "energydaily.co.kr"
+        "energydaily.co.kr",
+        "hansbiz.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "region": "국내"
     },
     {
@@ -53,6 +54,30 @@
       ],
       "duplicateSources": [
         "chosun.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "c2ddace51134bc1b",
+      "publishedAt": "2026-10-24",
+      "title": "\"기업 탄소감축→금융가치로\"…후시파트너스, '프리아이콘' 선정",
+      "category": "제도",
+      "summary": "2021년 11월 설립된 후시파트너스는 감축사업 발굴부터 배출권 인증·거래까지 통합적으로 수행한다. 탄소 배출권 분야에서 축적해 온 전문성과 기술 기반 사업모델의 성장 가능성을 인정받아 이번 선정 대상에 올랐다....",
+      "source": "mt.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.mt.co.kr/future/2026/10/24/2026102311274245287",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "mt.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -3477,13 +3502,14 @@
         "탄소배출권"
       ],
       "duplicateSources": [
-        "pinpointnews.co.kr",
-        "megaeconomy.co.kr",
+        "lcnews.co.kr",
         "newspim.com",
         "fetv.co.kr",
         "cstimes.com",
         "biztribune.co.kr",
         "enewstoday.co.kr",
+        "pinpointnews.co.kr",
+        "megaeconomy.co.kr",
         "g-enews.com",
         "ziksir.com",
         "weekly.hankooki.com",
@@ -3499,8 +3525,7 @@
         "newsroad.co.kr",
         "view.asiae.co.kr",
         "tf.co.kr",
-        "fnnews.com",
-        "lcnews.co.kr"
+        "fnnews.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -16836,7 +16861,6 @@
         "socialvalue.kr",
         "smarttoday.co.kr",
         "news1.kr",
-        "머니투데이",
         "seoulfn.com",
         "ebn.co.kr",
         "imaeil.com",
@@ -16854,7 +16878,6 @@
         "newsroad.co.kr",
         "연합뉴스TV",
         "newsian.co.kr",
-        "비즈월드",
         "bizwnews.com",
         "매일일보",
         "inthenews.co.kr",
@@ -16884,6 +16907,8 @@
         "아시아경제",
         "newsis.com",
         "catchnews.kr",
+        "머니투데이",
+        "비즈월드",
         "뉴스핌",
         "서울경제",
         "view.asiae.co.kr",
