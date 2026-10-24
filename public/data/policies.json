@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-10-24T20:30:16+09:00",
+  "lastSync": "2026-10-24T22:29:17+09:00",
   "keywords": [
     "배출권",
     "배출권거래제",
@@ -30,7 +30,7 @@
   "warning": "한국거래소 배출권 공지사항: 한국거래소 공지 목록을 해석하지 못했습니다. 1페이지: HTTP Error 403: Forbidden",
   "aiInsight": {
     "summary": "최근 공식자료의 직접적인 수급 변수는 유상경매입니다. 최근 경매가 높은 낙찰가로 소화돼 공급보다 이행수요가 강하다는 신호입니다.",
-    "generatedAt": "2026-10-24T20:30:16+09:00",
+    "generatedAt": "2026-10-24T22:29:17+09:00",
     "basisLatestDate": "2026-10-21",
     "basisCount": 10,
     "source": "fallback",
@@ -720,6 +720,30 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 2,
+      "region": "국내"
+    },
+    {
+      "id": "334a8537f2a42c1f",
+      "publishedAt": "2026-10-24",
+      "title": "송옥주 의원, 농림축산 탄소배출권 및 가축분뇨 정책 제시",
+      "category": "제도",
+      "summary": "송옥주 의원, 농림축산 탄소배출권 및 가축분뇨 정책 제시 사회적경제뉴스",
+      "source": "사회적경제뉴스",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMiP0FVX3lxTE1XZzFZZ1puWGxOQll5N3JoaDhvMnMzN1RhVVlNcktxRDMxTHp5ZjdVdFlHOTFmbFlnWEZtWHdXaw?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "사회적경제뉴스"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
       "region": "국내"
     },
     {
@@ -1732,6 +1756,7 @@
         "탄소배출권"
       ],
       "duplicateSources": [
+        "저널25방송",
         "프레시안",
         "pressian.com"
       ],
@@ -1739,7 +1764,7 @@
         "Google News RSS",
         "NAVER API HUB"
       ],
-      "duplicateCount": 2,
+      "duplicateCount": 3,
       "region": "해외"
     },
     {
@@ -7138,8 +7163,8 @@
         "K-ETS"
       ],
       "duplicateSources": [
-        "e2news.com",
         "연합뉴스",
+        "e2news.com",
         "newsdream.kr",
         "dailian.co.kr",
         "edaily.co.kr",
@@ -7148,8 +7173,8 @@
         "아시아경제"
       ],
       "searchProviders": [
-        "NAVER API HUB",
-        "Google News RSS"
+        "Google News RSS",
+        "NAVER API HUB"
       ],
       "duplicateCount": 8,
       "region": "국내"
@@ -7398,11 +7423,11 @@
       ],
       "duplicateSources": [
         "industrynews.co.kr",
-        "팍스경제TV",
         "paxetv.com",
         "newsdream.kr",
         "dailian.co.kr",
         "edaily.co.kr",
+        "팍스경제TV",
         "이투데이",
         "pinpointnews.co.kr",
         "view.asiae.co.kr",
@@ -18203,9 +18228,12 @@
       ],
       "duplicateSources": [
         "4th.kr",
+        "뉴스핌",
+        "서울경제",
         "socialvalue.kr",
         "smarttoday.co.kr",
         "news1.kr",
+        "머니투데이",
         "seoulfn.com",
         "ebn.co.kr",
         "imaeil.com",
@@ -18224,38 +18252,36 @@
         "연합뉴스TV",
         "newsian.co.kr",
         "bizwnews.com",
-        "매일일보",
         "inthenews.co.kr",
         "sisacast.kr",
         "economist.co.kr",
         "job-post.co.kr",
         "pinpointnews.co.kr",
+        "이투데이",
         "etoday.co.kr",
         "digitaltoday.co.kr",
         "biztribune.co.kr",
         "pointe.co.kr",
         "swtvnews.com",
-        "서울경제TV",
         "sentv.co.kr",
         "kfenews.co.kr",
         "wowtv.co.kr",
         "newspim.com",
         "moneystorm.kr",
         "브릿지경제",
-        "포춘코리아",
         "dealsitetv.com",
         "dailypop.kr",
         "sateconomy.co.kr",
         "wsobi.com",
         "huffingtonpost.kr",
         "yna.co.kr",
-        "아시아경제",
         "newsis.com",
         "catchnews.kr",
-        "머니투데이",
+        "매일일보",
+        "서울경제TV",
+        "포춘코리아",
+        "아시아경제",
         "비즈월드",
-        "뉴스핌",
-        "서울경제",
         "view.asiae.co.kr",
         "ezyeconomy.com",
         "megaeconomy.co.kr",
@@ -18273,7 +18299,6 @@
         "마켓인",
         "뉴스1",
         "팍스경제TV",
-        "이투데이",
         "newsprime.co.kr",
         "뉴시안",
         "뷰어스",
@@ -264664,10 +264689,10 @@
   },
   "newsRetention": {
     "policy": "append-only",
-    "lastMergedAt": "2026-10-24T20:30:23+09:00",
-    "itemCount": 1465,
+    "lastMergedAt": "2026-10-24T22:29:25+09:00",
+    "itemCount": 1466,
     "archiveBefore": 1465,
-    "currentBefore": 1337,
+    "currentBefore": 1339,
     "gitRecoveryEnabled": false
   }
 }
