@@ -1,17 +1,63 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-25T01:12:47+09:00",
+  "generatedAt": "2026-10-25T08:12:50+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1466,
+  "itemCount": 1468,
   "earliestPublishedAt": "2026-08-06",
-  "latestPublishedAt": "2026-10-24",
+  "latestPublishedAt": "2026-10-25",
   "sourceCommitsScanned": 0,
   "sourceSnapshotsScanned": 0,
   "historicalRowsScanned": 0,
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "db6d9dcbb21d8e60",
+      "publishedAt": "2026-10-25",
+      "title": "미국이 '트럭 정의' 바꾼 진짜 이유… 현대차·완성차 전략 비상",
+      "category": "제도",
+      "summary": "규정은 자동차 제조사가 수입 차량과 미국 생산 차량 사이에서 배출권 크레딧을 이동할 수 있도록 허용하고 있어 미국 외 지역에서 생산하는 것이 유리해질 수 있다고 명시했다. 로펌 반네스펠드먼의 선임 정책...",
+      "source": "g-enews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.g-enews.com/view.php?ud=2026102504324949842bd56fbc3c_1",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "g-enews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "해외"
+    },
+    {
+      "id": "3c2c94e5f1e9fd73",
+      "publishedAt": "2026-10-25",
+      "title": "IBK투자증권 최광진 탄소금융사업 기회 잡나, 중소기업 녹색전환 선도 ...",
+      "category": "제도",
+      "summary": "탄소금융본부는 배출권 거래뿐 아니라 국내외 온실가스 감축사업 개발과 금융주선 등을 폭넓게 담당한다. 해외 감축사업에 참여하며 관련 금융·기술자문 경험도 쌓았다. IBK투자증권은 2024년 1월 친환경 소재 연구기업...",
+      "source": "businesspost.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.businesspost.co.kr/BP?command=article_view&num=449937",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "businesspost.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
     {
       "id": "9714e63de4c72e55",
       "publishedAt": "2026-10-24",
@@ -16886,6 +16932,7 @@
         "socialvalue.kr",
         "smarttoday.co.kr",
         "news1.kr",
+        "포춘코리아",
         "seoulfn.com",
         "ebn.co.kr",
         "imaeil.com",
@@ -16919,11 +16966,9 @@
         "sentv.co.kr",
         "kfenews.co.kr",
         "wowtv.co.kr",
-        "뉴스핌",
         "newspim.com",
         "moneystorm.kr",
         "브릿지경제",
-        "포춘코리아",
         "dealsitetv.com",
         "dailypop.kr",
         "sateconomy.co.kr",
@@ -16933,6 +16978,7 @@
         "아시아경제",
         "newsis.com",
         "catchnews.kr",
+        "뉴스핌",
         "서울경제",
         "머니투데이",
         "이투데이",
