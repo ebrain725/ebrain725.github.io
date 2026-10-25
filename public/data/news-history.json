@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-25T08:12:50+09:00",
+  "generatedAt": "2026-10-25T10:13:26+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1468,
+  "itemCount": 1471,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-25",
   "sourceCommitsScanned": 0,
@@ -12,6 +12,53 @@
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "c7eb2c4af2b8f57b",
+      "publishedAt": "2026-10-25",
+      "title": "탄소 1t 줄이는 데 1000만원?… 3806억 탄소포집 사업 '가성비' 논란",
+      "category": "시장·가격",
+      "summary": "정부가 3806억원을 들여 추진하는 탄소 포집·활용(CCU) 실증사업의 온실가스 감축량이 연간 1742t에 그치는... 배출권 가격을 t당 3만원으로 잡으면 약 364배다. 사업 규모는 예비 타당성 조사를 거치며 3분의 1...",
+      "source": "thepublic.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.thepublic.kr/news/articleView.html?idxno=323548",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "thepublic.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "aa0a924759a91bf5",
+      "publishedAt": "2026-10-25",
+      "title": "재생에너지 장기계약 REC 비용 90조원대...기후환경요금은 2023년부터 동...",
+      "category": "제도",
+      "summary": "발전사들의 REC 구매비용과 온실가스 배출권 거래비용, 석탄발전 감축비용 등이 포함된다. 소비자가 부담하는 금액은 사용한 전력량에 기후환경요금 단가를 곱해 계산한다. 한 달에 전기를 300kWh 사용했다면 현재...",
+      "source": "m-economynews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.m-economynews.com/news/article.html?no=72076",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "온실가스 배출권"
+      ],
+      "duplicateSources": [
+        "m-economynews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
     {
       "id": "db6d9dcbb21d8e60",
       "publishedAt": "2026-10-25",
@@ -1654,6 +1701,29 @@
       "region": "국내"
     },
     {
+      "id": "2d1c9c062d1e6b9a",
+      "publishedAt": "2026-10-22",
+      "title": "GGGI, 국제 탄소시장 협력·투자 활성화 촉진 나섰다",
+      "category": "제도",
+      "summary": "GGGI, 국제 탄소시장 협력·투자 활성화 촉진 나섰다 넷제로뉴스",
+      "source": "넷제로뉴스",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBrRUlBUldmTFpRdEc4c2g2YzZtaW5jWXY3UFlBR1VrYmF0UjVYVnl0ak9Jd0FHNUh5bDRaT2tVLVBNcU9mUzZ5R2ZkU0JyYkZOWXhRNzJZU2llRFlDaWk1Y1BDb1ZJczhYTlHSAW5BVV95cUxOQ3VXZnl5RVdlelVaSlRZREd1UC1Lc1FqT3J4MkVOR09seGRQUWltME1JNVlodWhpQnpZeDVJeUdvYjRSaGM2b1JFRktKakZLWFZORWVxQ3JMY1A5ODd3VkgxQWhyM0pUQ3l0QmFRZw?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "넷제로뉴스"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "22f366cf3a338cd4",
       "publishedAt": "2026-10-22",
       "title": "\"한전채, 2029년까지 발행한도 2배 못 맞춰…투자 유의\"",
@@ -2898,7 +2968,8 @@
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
         "탄소시장",
-        "배출권"
+        "배출권",
+        "탄소배출권"
       ],
       "duplicateSources": [
         "khan.co.kr"
@@ -16966,6 +17037,7 @@
         "sentv.co.kr",
         "kfenews.co.kr",
         "wowtv.co.kr",
+        "뉴스핌",
         "newspim.com",
         "moneystorm.kr",
         "브릿지경제",
@@ -16978,7 +17050,6 @@
         "아시아경제",
         "newsis.com",
         "catchnews.kr",
-        "뉴스핌",
         "서울경제",
         "머니투데이",
         "이투데이",
