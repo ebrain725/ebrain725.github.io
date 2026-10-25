@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-25T13:13:48+09:00",
+  "generatedAt": "2026-10-25T15:13:34+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
   "itemCount": 1473,
@@ -125,12 +125,13 @@
       "duplicateSources": [
         "m-economynews.com",
         "e-platform.net",
-        "straightnews.co.kr"
+        "straightnews.co.kr",
+        "kookje.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 3,
+      "duplicateCount": 4,
       "region": "국내"
     },
     {
