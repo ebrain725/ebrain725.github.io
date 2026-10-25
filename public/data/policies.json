@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-10-25T10:13:19+09:00",
+  "lastSync": "2026-10-25T13:13:40+09:00",
   "keywords": [
     "배출권",
     "배출권거래제",
@@ -30,7 +30,7 @@
   "warning": "한국거래소 배출권 공지사항: 한국거래소 공지 목록을 해석하지 못했습니다. 1페이지: HTTP Error 403: Forbidden",
   "aiInsight": {
     "summary": "최근 공식자료의 직접적인 수급 변수는 유상경매입니다. 최근 경매가 높은 낙찰가로 소화돼 공급보다 이행수요가 강하다는 신호입니다.",
-    "generatedAt": "2026-10-25T10:13:19+09:00",
+    "generatedAt": "2026-10-25T13:13:40+09:00",
     "basisLatestDate": "2026-10-21",
     "basisCount": 10,
     "source": "fallback",
@@ -797,6 +797,57 @@
         "NAVER API HUB"
       ],
       "region": "해외"
+    },
+    {
+      "id": "1239be61ac5fff26",
+      "publishedAt": "2026-10-25",
+      "title": "[남성현의 산림르네상스(39)] 탄소중립 시대의 숨은 영웅 '임업인', 정당...",
+      "category": "상쇄·외부사업",
+      "summary": "셋째, 임업인이 숲을 가꿔 흡수한 탄소를 기업과 거래할 수 있도록 자발적 산림 탄소 상쇄 제도를 의무적 탄소 배출권 거래제도(ETS)로 전환하여 숲을 가꾸는 일 자체가 연금처럼 안정적인 정기 소득으로 돌아오도록 제도를...",
+      "source": "lecturernews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.lecturernews.com/news/articleView.html?idxno=212576",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "lecturernews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "ed8693d125ada3e4",
+      "publishedAt": "2026-10-25",
+      "title": "[2026국감] 재생에너지 REC 비용 90조원 추산…기후환경요금은 4년째 동...",
+      "category": "제도",
+      "summary": "기후환경요금은 재생에너지 공급인증서 구매비와 온실가스 배출권 거래비용 등을 전기 사용량에 따라 부과하는 요금이다. 2021년 도입 당시 kWh당 5.3원에서 2022년 7.3원, 2023년 9원으로 올랐지만 이후 현재까지 같은...",
+      "source": "straightnews.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.straightnews.co.kr/news/articleView.html?idxno=313890",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "온실가스 배출권"
+      ],
+      "duplicateSources": [
+        "m-economynews.com",
+        "e-platform.net",
+        "straightnews.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 3,
+      "region": "국내"
     },
     {
       "id": "3c2c94e5f1e9fd73",
@@ -264837,10 +264888,10 @@
   },
   "newsRetention": {
     "policy": "append-only",
-    "lastMergedAt": "2026-10-25T10:13:26+09:00",
-    "itemCount": 1471,
-    "archiveBefore": 1468,
-    "currentBefore": 1343,
+    "lastMergedAt": "2026-10-25T13:13:48+09:00",
+    "itemCount": 1473,
+    "archiveBefore": 1471,
+    "currentBefore": 1344,
     "gitRecoveryEnabled": false
   }
 }
