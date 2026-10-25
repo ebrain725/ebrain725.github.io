@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-10-25T20:56:54+09:00",
+  "lastSync": "2026-10-26T01:41:09+09:00",
   "keywords": [
     "배출권",
     "배출권거래제",
@@ -30,7 +30,7 @@
   "warning": "한국거래소 배출권 공지사항: 한국거래소 공지 목록을 해석하지 못했습니다. 1페이지: HTTP Error 403: Forbidden",
   "aiInsight": {
     "summary": "최근 공식자료의 직접적인 수급 변수는 유상경매입니다. 최근 경매가 높은 낙찰가로 소화돼 공급보다 이행수요가 강하다는 신호입니다.",
-    "generatedAt": "2026-10-25T20:56:54+09:00",
+    "generatedAt": "2026-10-26T01:41:09+09:00",
     "basisLatestDate": "2026-10-21",
     "basisCount": 10,
     "source": "fallback",
@@ -752,6 +752,30 @@
       "region": "국내"
     },
     {
+      "id": "735aa14c67cd3af3",
+      "publishedAt": "2026-10-25",
+      "title": "친환경 규제…부산 해양산업 도약 기회로",
+      "category": "시장·가격",
+      "summary": "유럽탄소 배출권 가격이 50% 오르면, 친환경 선박 투자 확대로 부산 지역에는 생산 유발 1조 5천9백여억 원, 고용 유발 8천9백여 명, 부가가치유발효과는 6천2백여억 원에 달할 거라는 분석입니다. 또 최근 시범 운항에...",
+      "source": "kbs.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8694607&ref=A",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "kbs.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
       "id": "aa0a924759a91bf5",
       "publishedAt": "2026-10-25",
       "title": "재생에너지 장기계약 REC 비용 90조원대...기후환경요금은 2023년부터 동...",
@@ -840,6 +864,54 @@
       ],
       "duplicateSources": [
         "lecturernews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "3b2e88464215a0b2",
+      "publishedAt": "2026-10-25",
+      "title": "[COP31. 튀르키에 안탈리아로 가는길 ] 석유 로비스트 1,600명 vs 청정에...",
+      "category": "제도",
+      "summary": "COP30에서 국제 배출권 거래협회(IETA)는 60명의 대표단을 등록했다. 여기에는 엑손모빌, BP, 토탈에너지 등 주요... 탄소 배출권 거래와 국제 탄소크레딧 제도는 기업에 새로운 비용을 발생시키는 동시에 투자와 사업 기회를...",
+      "source": "ilemonde.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.ilemonde.com/news/articleView.html?idxno=30849",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "ilemonde.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "9c67851ce7c2f690",
+      "publishedAt": "2026-10-25",
+      "title": "[COP31. 튀르키에 안탈리아로 가는 길] COP31 개최국, 태양광·풍력은 두...",
+      "category": "제도",
+      "summary": "이 법은 2053년 탄소중립 목표를 국가 정책체계에 반영하고, 온실가스 배출량의 측정·보고·검증(MRV)과 국가 배출권 거래제(TR-ETS)의 법적 기반을 마련했다. 철강, 시멘트, 알루미늄, 비료 등 에너지 다소비 산업이 주요...",
+      "source": "ilemonde.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.ilemonde.com/news/articleView.html?idxno=30850",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "ilemonde.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -4381,6 +4453,7 @@
         "metroseoul.co.kr",
         "seoultimes.news",
         "cstimes.com",
+        "동행미디어 시대",
         "biz.sbs.co.kr",
         "inews24.com",
         "smedaily.co.kr",
@@ -4399,7 +4472,6 @@
         "데일리안",
         "SBS Biz",
         "서울경제",
-        "동행미디어 시대",
         "디지털포스트",
         "아이뉴스24",
         "아시아투데이",
@@ -4592,14 +4664,14 @@
         "탄소배출권"
       ],
       "duplicateSources": [
-        "4th.kr",
-        "megaeconomy.co.kr",
+        "lcnews.co.kr",
+        "newspim.com",
         "fetv.co.kr",
         "cstimes.com",
         "biztribune.co.kr",
         "enewstoday.co.kr",
-        "lcnews.co.kr",
-        "newspim.com",
+        "4th.kr",
+        "megaeconomy.co.kr",
         "pinpointnews.co.kr",
         "g-enews.com",
         "ziksir.com",
@@ -4615,12 +4687,13 @@
         "newsroad.co.kr",
         "view.asiae.co.kr",
         "tf.co.kr",
-        "fnnews.com"
+        "fnnews.com",
+        "thevaluenews.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 24,
+      "duplicateCount": 25,
       "region": "국내"
     },
     {
@@ -5001,7 +5074,8 @@
       "matchedKeywords": [
         "탄소시장",
         "배출권",
-        "탄소배출권"
+        "탄소배출권",
+        "배출권거래제"
       ],
       "duplicateSources": [
         "businessplus.kr"
@@ -7410,8 +7484,8 @@
         "K-ETS"
       ],
       "duplicateSources": [
-        "e2news.com",
         "연합뉴스",
+        "e2news.com",
         "newsdream.kr",
         "dailian.co.kr",
         "edaily.co.kr",
@@ -7420,8 +7494,8 @@
         "아시아경제"
       ],
       "searchProviders": [
-        "NAVER API HUB",
-        "Google News RSS"
+        "Google News RSS",
+        "NAVER API HUB"
       ],
       "duplicateCount": 8,
       "region": "국내"
@@ -7670,11 +7744,11 @@
       ],
       "duplicateSources": [
         "industrynews.co.kr",
-        "팍스경제TV",
         "paxetv.com",
         "newsdream.kr",
         "dailian.co.kr",
         "edaily.co.kr",
+        "팍스경제TV",
         "이투데이",
         "pinpointnews.co.kr",
         "view.asiae.co.kr",
@@ -7873,12 +7947,14 @@
         "배출권거래제"
       ],
       "duplicateSources": [
+        "핀포인트뉴스",
         "pinpointnews.co.kr"
       ],
       "searchProviders": [
+        "Google News RSS",
         "NAVER API HUB"
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "region": "해외"
     },
     {
@@ -9262,12 +9338,14 @@
       "matchedKeywords": [
         "탄소시장"
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "duplicateSources": [
-        "magazine.hankyung.com"
+        "magazine.hankyung.com",
+        "한경매거진"
       ],
       "searchProviders": [
-        "NAVER API HUB"
+        "NAVER API HUB",
+        "Google News RSS"
       ],
       "region": "국내"
     },
@@ -17297,6 +17375,30 @@
       "region": "국내"
     },
     {
+      "id": "776e4fc496e07d17",
+      "publishedAt": "2026-09-28",
+      "title": "트리니티항공, 탄소배출권 2만t 선제 확보…국제 탄소규제 대응",
+      "category": "제도",
+      "summary": "트리니티항공, 탄소배출권 2만t 선제 확보…국제 탄소규제 대응 매일신문",
+      "source": "매일신문",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1nVm1ja1JsalRlLUY0U0VneWE3ZlBnQzQtZDVZaktlM0ZJNUo3OEp1bDZzVzVqRjNjT0VZRzVMckVva2RYaE1LNmtrVUdEOEgtY09aMXhhOGxCdk1kaGV3SmNR?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "매일신문"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "1c00d6cfa220e470",
       "publishedAt": "2026-09-28",
       "title": "트리니티항공, 탄소 배출권 2만톤 구매…\"업계 탈탄소 선도하자\"",
@@ -18475,9 +18577,12 @@
       ],
       "duplicateSources": [
         "4th.kr",
-        "socialvalue.kr",
+        "뉴스핌",
+        "서울경제",
+        "뉴스1",
         "smarttoday.co.kr",
         "news1.kr",
+        "머니투데이",
         "seoulfn.com",
         "ebn.co.kr",
         "imaeil.com",
@@ -18496,39 +18601,37 @@
         "연합뉴스TV",
         "newsian.co.kr",
         "bizwnews.com",
-        "매일일보",
         "inthenews.co.kr",
         "sisacast.kr",
         "economist.co.kr",
         "job-post.co.kr",
         "pinpointnews.co.kr",
+        "이투데이",
         "etoday.co.kr",
         "digitaltoday.co.kr",
         "biztribune.co.kr",
         "sports.hankooki.com",
         "pointe.co.kr",
         "swtvnews.com",
-        "서울경제TV",
         "sentv.co.kr",
         "kfenews.co.kr",
         "wowtv.co.kr",
-        "뉴스핌",
         "newspim.com",
         "moneystorm.kr",
         "브릿지경제",
-        "포춘코리아",
         "dealsitetv.com",
         "dailypop.kr",
         "sateconomy.co.kr",
         "wsobi.com",
         "huffingtonpost.kr",
         "yna.co.kr",
-        "아시아경제",
         "newsis.com",
         "catchnews.kr",
-        "서울경제",
-        "머니투데이",
-        "이투데이",
+        "socialvalue.kr",
+        "매일일보",
+        "서울경제TV",
+        "포춘코리아",
+        "아시아경제",
         "비즈월드",
         "view.asiae.co.kr",
         "ezyeconomy.com",
@@ -18545,7 +18648,6 @@
         "getnews.co.kr",
         "fntimes.com",
         "마켓인",
-        "뉴스1",
         "팍스경제TV",
         "newsprime.co.kr",
         "뉴시안",
@@ -264936,10 +265038,10 @@
   },
   "newsRetention": {
     "policy": "append-only",
-    "lastMergedAt": "2026-10-25T20:56:59+09:00",
-    "itemCount": 1475,
+    "lastMergedAt": "2026-10-26T01:41:17+09:00",
+    "itemCount": 1479,
     "archiveBefore": 1475,
-    "currentBefore": 1345,
+    "currentBefore": 1350,
     "gitRecoveryEnabled": false
   }
 }
