@@ -1,7 +1,7 @@
 {
   "schemaVersion": "2.0",
   "requestedStartDate": "2015-01-01",
-  "verifiedAt": "2026-10-26T02:08:16+09:00",
+  "verifiedAt": "2026-10-27T04:27:54+09:00",
   "keywordExpansionVersion": "2026-09-11-v1-38-topics",
   "keywordRule": {
     "titleAndContent": [
@@ -154,9 +154,9 @@
       "pagesFetched": 1,
       "rawRowsScanned": 1000,
       "finalMergedItems": 939,
-      "directCount": 7,
+      "directCount": 6,
       "relatedCount": 23,
-      "oldestSourceDateSeen": "2025-12-02",
+      "oldestSourceDateSeen": "2025-12-03",
       "crossedRequestedStart": true,
       "complete": true
     },
@@ -168,7 +168,7 @@
       "finalMergedItems": 436,
       "directCount": 8,
       "relatedCount": 12,
-      "oldestSourceDateSeen": "2026-06-18",
+      "oldestSourceDateSeen": "2026-06-24",
       "crossedRequestedStart": true,
       "complete": true
     },
@@ -188,9 +188,9 @@
   "validation": {
     "itemCount": 1691,
     "counts": {
-      "krx_notice": 316,
+      "notice": 436,
       "press": 939,
-      "notice": 436
+      "krx_notice": 316
     },
     "relatedCounts": {
       "press": 504,

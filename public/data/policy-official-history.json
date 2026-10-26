@@ -2,7 +2,7 @@
   "schemaVersion": "1.0",
   "requestedStartDate": "2015-01-01",
   "startedAt": "2026-09-09T19:46:11+09:00",
-  "generatedAt": "2026-10-26T02:08:15+09:00",
+  "generatedAt": "2026-10-27T04:27:53+09:00",
   "scope": {
     "ministry": "기후부 보도자료·공지사항: 핵심 키워드는 제목·본문, 확대 키워드는 제목으로 판정; 이전 이력 보존",
     "krx": "한국거래소 배출권시장 공지사항 일반 게시물 전체",
@@ -126,7 +126,7 @@
     {
       "source": "기후부 보도자료",
       "section": "press",
-      "requestedStartDate": "2026-08-27",
+      "requestedStartDate": "2026-08-28",
       "transport": "unfiltered-rss-local-split-keyword-filter",
       "keywordRule": {
         "titleAndContent": [
@@ -246,14 +246,14 @@
       "pageSize": 1000,
       "pagesFetched": 1,
       "rawRows": 1000,
-      "inRangeMatchedRows": 30,
-      "itemCount": 30,
-      "directCount": 7,
+      "inRangeMatchedRows": 29,
+      "itemCount": 29,
+      "directCount": 6,
       "relatedCount": 23,
-      "earliest": "2026-08-27",
+      "earliest": "2026-08-28",
       "latest": "2026-10-23",
-      "oldestSeen": "2025-12-02",
-      "newestSeen": "2026-10-25",
+      "oldestSeen": "2025-12-03",
+      "newestSeen": "2026-10-26",
       "crossedRequestedStart": true,
       "stopReason": "date-boundary",
       "complete": true,
@@ -293,7 +293,7 @@
         "거래대금": 0,
         "대량 매도": 0,
         "보유물량 출회": 0,
-        "시장참여자": 1,
+        "시장참여자": 0,
         "시장조성": 0,
         "시장조성자": 0,
         "EU ETS": 0,
@@ -313,7 +313,7 @@
         "계통한계가격": 0,
         "원자력발전": 0,
         "원전": 7,
-        "재생에너지": 8,
+        "재생에너지": 7,
         "신재생에너지": 0,
         "RPS": 0,
         "수소발전": 0,
@@ -372,7 +372,7 @@
     {
       "source": "기후부 공지·공고",
       "section": "notice",
-      "requestedStartDate": "2026-08-27",
+      "requestedStartDate": "2026-08-28",
       "transport": "unfiltered-rss-local-split-keyword-filter",
       "keywordRule": {
         "titleAndContent": [
@@ -498,8 +498,8 @@
       "relatedCount": 12,
       "earliest": "2026-09-01",
       "latest": "2026-10-21",
-      "oldestSeen": "2026-06-18",
-      "newestSeen": "2026-10-23",
+      "oldestSeen": "2026-06-24",
+      "newestSeen": "2026-10-26",
       "crossedRequestedStart": true,
       "stopReason": "date-boundary",
       "complete": true,
@@ -97404,8 +97404,8 @@
     }
   ],
   "collectionMode": "incremental",
-  "queryStartDate": "2026-08-27",
-  "queryEndDate": "2026-10-26",
+  "queryStartDate": "2026-08-28",
+  "queryEndDate": "2026-10-27",
   "climateKeywordExpansion": {
     "version": "2026-09-11-v1-38-topics",
     "sharedWith": "산업부 보도자료·공지사항",
@@ -97526,8 +97526,8 @@
       ]
     },
     "collectionMode": "incremental",
-    "queryStartDate": "2026-08-27",
-    "queryEndDate": "2026-10-26"
+    "queryStartDate": "2026-08-28",
+    "queryEndDate": "2026-10-27"
   },
   "policyEventTaxonomy": {
     "version": "2026-09-11-v1-user-38-events",
