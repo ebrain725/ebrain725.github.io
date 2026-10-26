@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-26T13:12:46+09:00",
+  "generatedAt": "2026-10-26T15:13:15+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1496,
+  "itemCount": 1502,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-26",
   "sourceCommitsScanned": 0,
@@ -36,6 +36,53 @@
       ],
       "duplicateCount": 1,
       "region": "국내"
+    },
+    {
+      "id": "06d757337bd77fff",
+      "publishedAt": "2026-10-26",
+      "title": "한중일·아세안, 기후위기 해법 찾는다…반기문재단, 국제협력 대화 개...",
+      "category": "제도",
+      "summary": "탄소 배출 감축 실적을 거래하는 글로벌 탄소시장 을 활용해 기후금융을 활성화하고, 국가 간 협력을 통해 실제 사업으로 연결할 수 있는 방안을 모색한다. 행사에는 반기문 제8대 유엔사무총장을 비롯해 한국과 중국...",
+      "source": "khan.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.khan.co.kr/article/202610261445001",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "khan.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "ea8c9b0f54d076db",
+      "publishedAt": "2026-10-26",
+      "title": "한국국제교류재단, 477억 투입하고 엉뚱한 연구까지 성과로 집계 논란",
+      "category": "제도",
+      "summary": "네덜란드 흐로닝언대학 동아시아연구센터의 '탄소 배출권 제도의 효과: 중국의 사례', 독일국제안보연구소의 '트럼프의 귀환과 유럽의 외교정책 과제', 시카고국제문제협의회의 '대만 문제에 대한 미국 여론'도 성과...",
+      "source": "dongponews.net",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.dongponews.net/news/articleView.html?idxno=61284",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "dongponews.net"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
     },
     {
       "id": "6874731d4f0bc653",
@@ -85,6 +132,30 @@
       ],
       "duplicateCount": 1,
       "region": "해외"
+    },
+    {
+      "id": "0a192bfb40d94dac",
+      "publishedAt": "2026-10-26",
+      "title": "와이앤아처, ‘그린 유니콘 G-Corn 인사이팅데이’ 성료",
+      "category": "제도",
+      "summary": "및 탄소배출권 플랫폼) △㈜푸드로직(외식업 B2B 식자재 실시간 원가관리 솔루션) △㈜샤르베티에(한국형 샤퀴테리)가 참여해 독보적인 기술력과 성장 비전을 선보였다. 이어 3부에서는 참여기업과 투자사·대기업 간...",
+      "source": "etoday.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.etoday.co.kr/news/view/2640120",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "etoday.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
     },
     {
       "id": "7fb015a77b15972b",
@@ -158,6 +229,36 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "708eb604703ac15f",
+      "publishedAt": "2026-10-26",
+      "title": "쏘카, 전기차 주차·충전 묶는다…서울서 3개월 시범 운영",
+      "category": "상쇄·외부사업",
+      "summary": "쏘카는 2023년 국내 카셰어링 업계 최초로 전기차 운영을 통한 '탄소 배출권 외부사업'을 승인받은 데 이어 기후테크 기업 후시파트너스와 함께 추진해 온 전기차 온실가스 감축 외부사업에서 지난 9월 감축량 306톤(tCO2eq)...",
+      "source": "newsway.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newsway.co.kr/news/view?ud=2026102614403931041",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "edaily.co.kr",
+        "lawissue.co.kr",
+        "ebn.co.kr",
+        "newsway.co.kr",
+        "mk.co.kr",
+        "econovill.com",
+        "sentv.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 7,
       "region": "국내"
     },
     {
@@ -235,6 +336,29 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "6a8fd9177546e0bc",
+      "publishedAt": "2026-10-26",
+      "title": "산림청, AFoCO 워크숍... 첨단기술 활용 국제협력 확대",
+      "category": "상쇄·외부사업",
+      "summary": "녹색기후기금과 글로벌탄소위원회가 국제 탄소시장 제도와 방법론을 소개하며, 국가산림위성정보활용센터와 국내 기후기술 기업들은 위성정보 및 AI 기반의 탄소 측정·보고·검증(MRV) 기술 활용 사례를 발표한다....",
+      "source": "businesskorea.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.businesskorea.co.kr/news/articleView.html?idxno=279660",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "businesskorea.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
       "region": "국내"
     },
     {
@@ -358,6 +482,30 @@
       "searchProviders": [
         "NAVER API HUB"
       ],
+      "region": "국내"
+    },
+    {
+      "id": "ee8cabd254203383",
+      "publishedAt": "2026-10-26",
+      "title": "[입찰 정보] 10월 26일자",
+      "category": "상쇄·외부사업",
+      "summary": "◆ 전남서부권(광) 전기설비 보호계전기 제조구매설치 발주처: 한국수자원공사 마감일: 2026/10/30 10:00 ◆ 열에너지 혁신전환에 따른 배출권 거래제 영향분석 및 외부사업 개발 연구 발주처...",
+      "source": "todayenergy.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.todayenergy.kr/news/articleView.html?idxno=304667",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "todayenergy.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
       "region": "국내"
     },
     {
