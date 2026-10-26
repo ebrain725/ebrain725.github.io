@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-26T08:12:47+09:00",
+  "generatedAt": "2026-10-26T10:12:43+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1482,
+  "itemCount": 1490,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-26",
   "sourceCommitsScanned": 0,
@@ -12,6 +12,80 @@
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "8e7ec61c0614b65e",
+      "publishedAt": "2026-10-26",
+      "title": "현대차증권, 27일 '탄소금융 인사이트 데이' 개최",
+      "category": "상쇄·외부사업",
+      "summary": "참여 대상은 배출권 거래제 할당대상업체나 온실가스 목표관리제 대상업체 등 탄소금융 유관 기업... 현대차증권 측은 탄소 배출권 자기매매와 외부사업 투자, 국내 최초 모빌리티 분야 외부사업 인증실적(KOC) 확보 경험을...",
+      "source": "bizwnews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.bizwnews.com/news/articleView.html?idxno=149269",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "bizwnews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "6874731d4f0bc653",
+      "publishedAt": "2026-10-26",
+      "title": "캐나다, 지역별 탄소시장 연결 논의 착수 \"연방·주·준주 실무그룹 출...",
+      "category": "제도",
+      "summary": "대부분 지역에서는 생산량당 배출기준을 적용하는 제도를 운영하며, 퀘벡은 배출권 거래제를 시행하고 있다. 생산량 기반 제도에서는 제품 한 단위를 생산할 때 발생하는 온실가스 를 기준과 비교한다. 기준보다 배출이...",
+      "source": "dailyt.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.dailyt.co.kr/newsView/dlt202610260004",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장",
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "dailyt.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
+      "id": "c80ad8cfffcd81d8",
+      "publishedAt": "2026-10-26",
+      "title": "친환경 규제, 부산 해양산업엔 ‘성장 기회’",
+      "category": "시장·가격",
+      "summary": "유럽탄소 배출권 가격이 50% 오르면, 친환경 선박 투자 확대로 부산 지역에는 생산 유발 1조 5천9백여억 원, 고용 유발 8천9백여 명, 부가가치유발효과는 6천2백여억 원에 달할 거라는 분석입니다. 또 최근 시범 운항에...",
+      "source": "kbs.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8694756&ref=A",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "kbs.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
     {
       "id": "7fb015a77b15972b",
       "publishedAt": "2026-10-26",
@@ -37,6 +111,56 @@
       "region": "국내"
     },
     {
+      "id": "1c44e64fcc4fa765",
+      "publishedAt": "2026-10-26",
+      "title": "쏘카, 주차·충전 묶은 전기차 전용 상품 실험…서울 일부서 3개월 시범...",
+      "category": "상쇄·외부사업",
+      "summary": "2023년에는 국내 카셰어링 업계 처음으로 전기차 운영을 통한 탄소 배출권 외부사업을 승인받았고, 기후테크 기업 후시파트너스와 함께 추진한 전기차 온실가스 감축 외부사업에서 지난 9월 감축량 306톤(tCO2eq)을...",
+      "source": "lawissue.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.lawissue.co.kr/view.php?ud=202610260836015563204ead0791_12",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "edaily.co.kr",
+        "lawissue.co.kr",
+        "ebn.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 3,
+      "region": "국내"
+    },
+    {
+      "id": "5c78008ed16c9f86",
+      "publishedAt": "2026-10-26",
+      "title": "쏘카, 주차·충전 묶어 전기차 이용 결합 시범 서비스 시작",
+      "category": "상쇄·외부사업",
+      "summary": "2023년 카셰어링 업계 최초로 탄소 배출권 외부사업을 승인받았다. 후시파트너스와 추진한 감축 사업에서는 지난 9월 감축량 306톤을 정부로부터 인증받았다. 회사는 모빌리티 플랫폼을 통한 감축 성과가 공식 인정된 첫...",
+      "source": "digitaltoday.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=709807",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "digitaltoday.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "9d2983386a52e0d8",
       "publishedAt": "2026-10-26",
       "title": "삼천리, 도시가스 1위 넘어 친환경 에너지 기업으로… 탄소 중립 속도",
@@ -53,6 +177,79 @@
       ],
       "duplicateSources": [
         "pinpointnews.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "9e5288eb26e11f85",
+      "publishedAt": "2026-10-26",
+      "title": "모두의주차장, 소프트베리와 맞손…주차·충전 연계 서비스 시범 운영",
+      "category": "상쇄·외부사업",
+      "summary": "쏘카는 2023년 카셰어링 업계 최초로 전기차 운영을 통한 탄소 배출권 외부사업을 승인받았으며, 지난 9월에는 전기차 온실가스 감축 사업을 통해 확보한 감축량 306톤을 정부로부터 공식 인증받았다. 노현철...",
+      "source": "sentv.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.sentv.co.kr/article/view/sentv202610260030",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "sentv.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "1bdfa97f60a8a647",
+      "publishedAt": "2026-10-26",
+      "title": "기후테크 산업 육성 해법 찾는다, '그린테크포럼 2026' 개최",
+      "category": "제도",
+      "summary": "Web3 기반 탄소 배출권 마이닝 플랫폼을 운영하는 리사이클팜과 폐열을 활용한 열인프라 사업을 추진하는 NXN Systems가 협회 회원사 간 협업사례와 주요 성과도 공유한다. 이날 포럼과 연계되는 '2026 그린테크밋업...",
+      "source": "ikld.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.ikld.kr/news/articleView.html?idxno=342862",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "ikld.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "8f29e5ea629f5006",
+      "publishedAt": "2026-10-26",
+      "title": "韓반도체 온실가스 배출량, 실측해보니 기존 산정보다 26% 낮아",
+      "category": "제도",
+      "summary": "다만 이번에 개발된 계수가 국내 온실가스 배출권 거래제의 공식 산정기준에 즉시 반영되는 것은 아니다. 기업의 법정 배출량 보고에 적용하려면 관련 지침과 검증체계에 따른 인정 절차가 필요하다. 국제 공급망의...",
+      "source": "esgeconomy.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.esgeconomy.com/news/articleView.html?idxno=17114",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "온실가스 배출권"
+      ],
+      "duplicateSources": [
+        "esgeconomy.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -3674,6 +3871,7 @@
         "연합뉴스",
         "metroseoul.co.kr",
         "seoultimes.news",
+        "fnnews.com",
         "cstimes.com",
         "biz.sbs.co.kr",
         "inews24.com",
@@ -3706,7 +3904,7 @@
         "NAVER API HUB",
         "Google News RSS"
       ],
-      "duplicateCount": 49,
+      "duplicateCount": 50,
       "region": "국내"
     },
     {
@@ -3888,9 +4086,9 @@
       "duplicateSources": [
         "lcnews.co.kr",
         "fetv.co.kr",
-        "cstimes.com",
         "biztribune.co.kr",
         "enewstoday.co.kr",
+        "cstimes.com",
         "newspim.com",
         "4th.kr",
         "megaeconomy.co.kr",
@@ -7934,16 +8132,16 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "아시아경제",
         "view.asiae.co.kr",
+        "아시아경제",
         "etnews.com",
         "dt.co.kr",
         "전자신문",
         "naeil.com"
       ],
       "searchProviders": [
-        "Google News RSS",
-        "NAVER API HUB"
+        "NAVER API HUB",
+        "Google News RSS"
       ],
       "duplicateCount": 6,
       "region": "국내"
