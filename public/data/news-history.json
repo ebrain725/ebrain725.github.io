@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-26T15:13:15+09:00",
+  "generatedAt": "2026-10-26T18:13:39+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1502,
+  "itemCount": 1510,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-26",
   "sourceCommitsScanned": 0,
@@ -30,6 +30,29 @@
       ],
       "duplicateSources": [
         "bizwnews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "3e5d5587a4f762d8",
+      "publishedAt": "2026-10-26",
+      "title": "해외 싱크탱크, 한국 국제 탄소 감축정책 비판…“자국 내 탈 탄소 화 우선...",
+      "category": "제도",
+      "summary": "기후정책 시민단체 플랜 1.5는 유럽 기후싱크탱크인 카본카텟워치(Carbon Market Watch, 이하 CMW)가 지난 19일 발간한 한국의 국제감축 및 자발적 탄소시장 의 문제를 담은 보고서 ‘국제감축 오디세이(An Oversea Oddyssey)’을...",
+      "source": "lak.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.lak.co.kr/news/boardview.php?id=24178",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateSources": [
+        "lak.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -132,6 +155,103 @@
       ],
       "duplicateCount": 1,
       "region": "해외"
+    },
+    {
+      "id": "bc0102b97e3b3dbb",
+      "publishedAt": "2026-10-26",
+      "title": "최고가격제 6개월, 휘발유 소비자 1.4조 덜 냈다",
+      "category": "시장·가격",
+      "summary": "비용 인정 범위를 둘러싼 사후 책임 공방에 대비해 면책 근거를 확보하려는 취지로 읽힌다.쟁점으로는 임직원 성과급과 탄소 배출권 구입비를 원가로 인정할지가 꼽힌다. 산업부는 3월 13일~6월 30일분 정산금을 11월...",
+      "source": "mtn.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://news.mtn.co.kr/article/2026102615153472489",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "mtn.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "0c62e0cb5135e91e",
+      "publishedAt": "2026-10-26",
+      "title": "정유업계, 호실적에 손실보전 '안갯속'…\"정부 최고가격제, 최대 8조원 ...",
+      "category": "시장·가격",
+      "summary": "성과급과 탄소 배출권 구입비 등을 어느 범위까지 비용으로 인정할지를 놓고 견해차를 보이고 있는 것으로... 늘어날 수 있다\"며 \" 시장 왜곡과 재정 부담이 확대되는 것을 막기 위한 출구전략은 반드시 필요하다\"고 강조했다.",
+      "source": "mediapen.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.mediapen.com/news/view/1132454",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "mediapen.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "fdc03df3d504b98d",
+      "publishedAt": "2026-10-26",
+      "title": "유럽 '탄소장벽' 강화에 韓 철강수출 年 1조 타격",
+      "category": "제도",
+      "summary": "EU는 CBAM 적용 업종에 대한 탄소 배출권 무상 할당 비율을 올해 97.5%에서 2031년 39%로 낮춘 뒤 2034년부터는 완전히 폐지한다. 무상 할당 비율을 줄이는 만큼 기업의 탄소 배출권 인증서 구매 부담이 늘어난다. 현재...",
+      "source": "mk.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.mk.co.kr/article/12186098",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "mk.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
+      "id": "eb9092a81bc33d54",
+      "publishedAt": "2026-10-26",
+      "title": "와이앤아처, 농식품 유망 스타트업 투자 유치 및 오픈이노베이션 위한 ...",
+      "category": "제도",
+      "summary": "및 탄소배출권 플랫폼) △㈜푸드로직(외식업 B2B 식자재 실시간 원가관리 솔루션) △㈜샤르베티에(한국형 샤퀴테리)가 참여해 독보적인 기술력과 성장 비전을 선보였다. 이어 3부에서는 참여기업과 투자사·대기업 간...",
+      "source": "sisunnews.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.sisunnews.co.kr/news/articleView.html?idxno=248451",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "sisunnews.co.kr",
+        "etoday.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 2,
+      "region": "국내"
     },
     {
       "id": "0a192bfb40d94dac",
@@ -362,6 +482,29 @@
       "region": "국내"
     },
     {
+      "id": "fa3e06b49ac7b86f",
+      "publishedAt": "2026-10-26",
+      "title": "반기문재단, '청정 전환과 지역 기후협력' 고위급대화 개최",
+      "category": "제도",
+      "summary": "이번 고위급 대화는 동북아와 아세안 지역의 에너지 안보와 청정 전환을 함께 달성하는 방안, 저탄소 공급망과 산업구조 전환, 인공지능(AI)과 디지털 격차 해소를 위한 기후기술 협력, 글로벌 탄소시장 을 활용한 기후금융...",
+      "source": "yna.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.yna.co.kr/view/AKR20261026129100504?input=1195m",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "yna.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "9e5288eb26e11f85",
       "publishedAt": "2026-10-26",
       "title": "모두의주차장, 소프트베리와 맞손…주차·충전 연계 서비스 시범 운영",
@@ -402,6 +545,30 @@
       ],
       "duplicateSources": [
         "dt.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "77e70873687392a5",
+      "publishedAt": "2026-10-26",
+      "title": "농식품 스타트업 13곳, 투자사·대기업과 1대1 협력 논의…후속 투자·판...",
+      "category": "제도",
+      "summary": "기업의 시장 진출을 지원하는 연결 플랫폼으로 마련됐다. 글로벌 스타트업 액셀러레이터 와이앤아처는... 공정과 탄소 배출권 플랫폼을 각각 제시했다. 이 밖에 친환경 패키지 기반 스킨케어 브랜드를 운영하는...",
+      "source": "youngnong.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.youngnong.co.kr/news/articleView.html?idxno=71353",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "youngnong.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -483,6 +650,31 @@
         "NAVER API HUB"
       ],
       "region": "국내"
+    },
+    {
+      "id": "951dd4177cd2338c",
+      "publishedAt": "2026-10-26",
+      "title": "[특별기고] 탈 탄소 정책에 대한 인본주의적, 도덕적, 과학적 도전...'나...",
+      "category": "제도",
+      "summary": "2026년은 EU 전체 온실가스 배출량의 약 40%를 규제하는 세계 최대 탄소시장 인 유럽연합 배출권거래제(EU-ETS)가 2005년 출범 이래 최대의 변곡점을 맞이하는 해입니다. 2026년 중반에 발표될 ETS 개정안이 향후 10년간 EU...",
+      "source": "civicnews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.civicnews.com/news/articleView.html?idxno=40525",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소시장"
+      ],
+      "duplicateSources": [
+        "civicnews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
     },
     {
       "id": "ee8cabd254203383",
@@ -4385,8 +4577,8 @@
       ],
       "duplicateSources": [
         "lcnews.co.kr",
-        "fetv.co.kr",
         "biztribune.co.kr",
+        "fetv.co.kr",
         "enewstoday.co.kr",
         "cstimes.com",
         "newspim.com",
@@ -17818,8 +18010,8 @@
         "huffingtonpost.kr",
         "yna.co.kr",
         "아시아경제",
-        "newsis.com",
         "catchnews.kr",
+        "newsis.com",
         "서울경제",
         "뉴스1",
         "머니투데이",
