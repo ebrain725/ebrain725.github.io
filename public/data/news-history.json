@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-26T18:13:39+09:00",
+  "generatedAt": "2026-10-26T22:33:48+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1510,
+  "itemCount": 1513,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-26",
   "sourceCommitsScanned": 0,
@@ -108,6 +108,29 @@
       "region": "해외"
     },
     {
+      "id": "ced214d3aeb367de",
+      "publishedAt": "2026-10-26",
+      "title": "파리협정 6.2조 감축사업 탄력...14% 증가",
+      "category": "제도",
+      "summary": "ITMO는 국가온실가스감축목표(NDC) 이행이나 코르시아(CORSIA) 등 국제적인 감축 목적, 자발적 탄소시장 거래 등에 사용된다. 사업 유치국은 사업 승인과 ITMO 발급 승인을 위한 제도적 기반을 갖춰야 한다. ITMO 발급...",
+      "source": "esgeconomy.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.esgeconomy.com/news/articleView.html?idxno=17132",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateSources": [
+        "esgeconomy.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "6874731d4f0bc653",
       "publishedAt": "2026-10-26",
       "title": "캐나다, 지역별 탄소시장 연결 논의 착수 \"연방·주·준주 실무그룹 출...",
@@ -207,7 +230,7 @@
     {
       "id": "fdc03df3d504b98d",
       "publishedAt": "2026-10-26",
-      "title": "유럽 '탄소장벽' 강화에 韓 철강수출 年 1조 타격",
+      "title": "유럽 '탄소규제 장벽' 강화에 韓 철강수출 年1조 타격 우려",
       "category": "제도",
       "summary": "EU는 CBAM 적용 업종에 대한 탄소 배출권 무상 할당 비율을 올해 97.5%에서 2031년 39%로 낮춘 뒤 2034년부터는 완전히 폐지한다. 무상 할당 비율을 줄이는 만큼 기업의 탄소 배출권 인증서 구매 부담이 늘어난다. 현재...",
       "source": "mk.co.kr",
@@ -373,12 +396,14 @@
         "newsway.co.kr",
         "mk.co.kr",
         "econovill.com",
-        "sentv.co.kr"
+        "sentv.co.kr",
+        "hansbiz.co.kr",
+        "digitalchosun.dizzo.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 7,
+      "duplicateCount": 9,
       "region": "국내"
     },
     {
@@ -456,6 +481,29 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "0c1e0fd914e3c4ed",
+      "publishedAt": "2026-10-26",
+      "title": "산림청, 아시아 26개 산림협력사업 성과 점검…위성·AI 활용 탄소 사업...",
+      "category": "상쇄·외부사업",
+      "summary": "녹색기후기금과 글로벌탄소위원회는 국제 탄소시장 및 산림탄소사업 관련 제도와 방법론을 소개한다. 국가산림위성정보활용센터와 국내 기후기술 기업 등은 위성정보와 인공지능을 기반으로 한 탄소 측정·보고...",
+      "source": "woodkorea.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.woodkorea.co.kr/news/articleView.html?idxno=92135",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "woodkorea.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
       "region": "국내"
     },
     {
@@ -601,6 +649,35 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 4,
+      "region": "국내"
+    },
+    {
+      "id": "aa8c5561c4fcff12",
+      "publishedAt": "2026-10-26",
+      "title": "기후테크 사업화, 정책·투자 연결 방안 찾는다",
+      "category": "제도",
+      "summary": "Web3 기반 탄소 배출권 마이닝 플랫폼을 운영하는 리사이클팜과 폐열 활용 열인프라 사업을 추진하는 NXN Systems가 협업 사례와 주요 성과를 공유할 계획이다. 포럼과 연계한 '2026 그린테크밋업'에서는 기후테크 스타트업과...",
+      "source": "energy-news.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=229254",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "mt.co.kr",
+        "ikld.kr",
+        "todayenergy.kr",
+        "byline.network",
+        "naeil.com",
+        "energy-news.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 6,
       "region": "국내"
     },
     {
