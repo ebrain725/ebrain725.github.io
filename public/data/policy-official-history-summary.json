@@ -1,7 +1,7 @@
 {
   "schemaVersion": "2.0",
   "requestedStartDate": "2015-01-01",
-  "verifiedAt": "2026-10-27T04:27:54+09:00",
+  "verifiedAt": "2026-10-28T03:50:50+09:00",
   "keywordExpansionVersion": "2026-09-11-v1-38-topics",
   "keywordRule": {
     "titleAndContent": [
@@ -123,10 +123,10 @@
     "notice": "기후부 공지·공고 전체 이력에서 핵심 7개는 제목·본문, 확대 23개는 제목으로 판정",
     "krx_notice": "한국거래소 배출권시장 공지사항의 2015-01-01 이후 일반 공지 전체"
   },
-  "officialItemCount": 1691,
+  "officialItemCount": 1692,
   "counts": {
     "krx_notice": 316,
-    "notice": 436,
+    "notice": 437,
     "press": 939
   },
   "directCounts": {
@@ -135,7 +135,7 @@
   },
   "relatedCounts": {
     "press": 504,
-    "notice": 210
+    "notice": 211
   },
   "earliest": {
     "krx_notice": "2015-01-07",
@@ -144,7 +144,7 @@
   },
   "latest": {
     "krx_notice": "2026-10-14",
-    "notice": "2026-10-21",
+    "notice": "2026-10-27",
     "press": "2026-10-23"
   },
   "sourceAudit": [
@@ -155,7 +155,7 @@
       "rawRowsScanned": 1000,
       "finalMergedItems": 939,
       "directCount": 6,
-      "relatedCount": 23,
+      "relatedCount": 22,
       "oldestSourceDateSeen": "2025-12-03",
       "crossedRequestedStart": true,
       "complete": true
@@ -165,9 +165,9 @@
       "section": "notice",
       "pagesFetched": 1,
       "rawRowsScanned": 200,
-      "finalMergedItems": 436,
+      "finalMergedItems": 437,
       "directCount": 8,
-      "relatedCount": 12,
+      "relatedCount": 13,
       "oldestSourceDateSeen": "2026-06-24",
       "crossedRequestedStart": true,
       "complete": true
@@ -186,15 +186,15 @@
     }
   ],
   "validation": {
-    "itemCount": 1691,
+    "itemCount": 1692,
     "counts": {
-      "notice": 436,
       "press": 939,
+      "notice": 437,
       "krx_notice": 316
     },
     "relatedCounts": {
       "press": 504,
-      "notice": 210
+      "notice": 211
     },
     "duplicateKeys": 0,
     "invalidDates": 0,

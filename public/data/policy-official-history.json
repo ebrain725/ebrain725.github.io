@@ -2,7 +2,7 @@
   "schemaVersion": "1.0",
   "requestedStartDate": "2015-01-01",
   "startedAt": "2026-09-09T19:46:11+09:00",
-  "generatedAt": "2026-10-27T04:27:53+09:00",
+  "generatedAt": "2026-10-28T03:50:48+09:00",
   "scope": {
     "ministry": "기후부 보도자료·공지사항: 핵심 키워드는 제목·본문, 확대 키워드는 제목으로 판정; 이전 이력 보존",
     "krx": "한국거래소 배출권시장 공지사항 일반 게시물 전체",
@@ -126,7 +126,7 @@
     {
       "source": "기후부 보도자료",
       "section": "press",
-      "requestedStartDate": "2026-08-28",
+      "requestedStartDate": "2026-08-29",
       "transport": "unfiltered-rss-local-split-keyword-filter",
       "keywordRule": {
         "titleAndContent": [
@@ -246,14 +246,14 @@
       "pageSize": 1000,
       "pagesFetched": 1,
       "rawRows": 1000,
-      "inRangeMatchedRows": 29,
-      "itemCount": 29,
+      "inRangeMatchedRows": 28,
+      "itemCount": 28,
       "directCount": 6,
-      "relatedCount": 23,
-      "earliest": "2026-08-28",
+      "relatedCount": 22,
+      "earliest": "2026-08-31",
       "latest": "2026-10-23",
       "oldestSeen": "2025-12-03",
-      "newestSeen": "2026-10-26",
+      "newestSeen": "2026-10-27",
       "crossedRequestedStart": true,
       "stopReason": "date-boundary",
       "complete": true,
@@ -313,7 +313,7 @@
         "계통한계가격": 0,
         "원자력발전": 0,
         "원전": 7,
-        "재생에너지": 7,
+        "재생에너지": 6,
         "신재생에너지": 0,
         "RPS": 0,
         "수소발전": 0,
@@ -372,7 +372,7 @@
     {
       "source": "기후부 공지·공고",
       "section": "notice",
-      "requestedStartDate": "2026-08-28",
+      "requestedStartDate": "2026-08-29",
       "transport": "unfiltered-rss-local-split-keyword-filter",
       "keywordRule": {
         "titleAndContent": [
@@ -492,14 +492,14 @@
       "pageSize": 200,
       "pagesFetched": 1,
       "rawRows": 200,
-      "inRangeMatchedRows": 20,
-      "itemCount": 20,
+      "inRangeMatchedRows": 21,
+      "itemCount": 21,
       "directCount": 8,
-      "relatedCount": 12,
+      "relatedCount": 13,
       "earliest": "2026-09-01",
-      "latest": "2026-10-21",
+      "latest": "2026-10-27",
       "oldestSeen": "2026-06-24",
-      "newestSeen": "2026-10-26",
+      "newestSeen": "2026-10-27",
       "crossedRequestedStart": true,
       "stopReason": "date-boundary",
       "complete": true,
@@ -598,7 +598,7 @@
         "생산동향": 0,
         "가동률": 0,
         "업종별 생산": 0,
-        "온실가스": 2,
+        "온실가스": 3,
         "온실가스 배출량": 0,
         "배출량 명세서": 0,
         "명세서": 0,
@@ -635,10 +635,10 @@
   ],
   "warnings": [],
   "coverage": {
-    "itemCount": 1691,
+    "itemCount": 1692,
     "counts": {
       "krx_notice": 316,
-      "notice": 436,
+      "notice": 437,
       "press": 939
     },
     "earliest": {
@@ -648,7 +648,7 @@
     },
     "latest": {
       "krx_notice": "2026-10-14",
-      "notice": "2026-10-21",
+      "notice": "2026-10-27",
       "press": "2026-10-23"
     },
     "directCounts": {
@@ -657,7 +657,7 @@
     },
     "relatedCounts": {
       "press": 504,
-      "notice": 210
+      "notice": 211
     },
     "labels": {
       "press": "기후부 보도자료",
@@ -666,6 +666,24 @@
     }
   },
   "items": [
+    {
+      "id": "29f6c3af83eb29c9",
+      "publishedAt": "2026-10-27",
+      "title": "「바이오메탄 공급의 온실가스 배출 분석을 통한 지속가능성 증명 체계 구축 연구」 입찰 공고",
+      "category": "제도",
+      "summary": "“제안서/공모안 제출내역”(제안서) 메뉴에서 확인하실 수 있습니다. 타. 문의처 : - (과업내용 및 제안서) 기후에너지환경부 폐자원에너지과(송미정, 044-201-7434) - (입찰 및 계약사항) 운영지원과(044-201-6264)",
+      "source": "기후부 공지·공고",
+      "sourceType": "official",
+      "section": "notice",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=200&maxIndexPages=10&searchKey=&searchValue=&menuId=10524&orgCd=&boardMasterId=39&boardId=1902400",
+      "matchedKeywords": [
+        "온실가스"
+      ],
+      "matchedFields": [
+        "title"
+      ],
+      "keywordScope": "related"
+    },
     {
       "id": "ccbca79084945fab",
       "publishedAt": "2026-10-23",
@@ -97404,8 +97422,8 @@
     }
   ],
   "collectionMode": "incremental",
-  "queryStartDate": "2026-08-28",
-  "queryEndDate": "2026-10-27",
+  "queryStartDate": "2026-08-29",
+  "queryEndDate": "2026-10-28",
   "climateKeywordExpansion": {
     "version": "2026-09-11-v1-38-topics",
     "sharedWith": "산업부 보도자료·공지사항",
@@ -97526,8 +97544,8 @@
       ]
     },
     "collectionMode": "incremental",
-    "queryStartDate": "2026-08-28",
-    "queryEndDate": "2026-10-27"
+    "queryStartDate": "2026-08-29",
+    "queryEndDate": "2026-10-28"
   },
   "policyEventTaxonomy": {
     "version": "2026-09-11-v1-user-38-events",
@@ -97541,7 +97559,7 @@
   },
   "retentionAudit": {
     "previousUnique": 1691,
-    "currentUnique": 1691,
+    "currentUnique": 1692,
     "missing": 0
   }
 }
