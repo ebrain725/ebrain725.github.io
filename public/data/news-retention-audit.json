@@ -1,20 +1,20 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-10-27T08:13:37+09:00",
+  "generatedAt": "2026-10-27T10:14:06+09:00",
   "status": "verified",
   "retentionPolicy": "append-only",
   "counts": {
-    "currentPoliciesNewsBefore": 1378,
+    "currentPoliciesNewsBefore": 1386,
     "archiveRowsBefore": 1513,
     "archiveUniqueBefore": 1513,
-    "currentArchiveUnion": 1513,
-    "finalNewsCount": 1513,
+    "currentArchiveUnion": 1520,
+    "finalNewsCount": 1520,
     "nonNewsCount": 4534,
-    "policyItemsAfter": 6047
+    "policyItemsAfter": 6054
   },
   "coverage": {
     "earliestPublishedAt": "2026-08-06",
-    "latestPublishedAt": "2026-10-26"
+    "latestPublishedAt": "2026-10-27"
   },
   "safetyFloor": 1513,
   "allowNewsDecrease": false,
@@ -24,6 +24,6 @@
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "sha256": {
-    "newsItems": "683377820a203be559fc307676f784c13ad111e35a072df35998ec9deb47b521"
+    "newsItems": "5d5339e4d2863c79b051f1fe524a97eb20cb5f1aedfe046a0d1501ef6dab172a"
   }
 }

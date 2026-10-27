@@ -1,17 +1,139 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-27T08:13:37+09:00",
+  "generatedAt": "2026-10-27T10:14:06+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1513,
+  "itemCount": 1520,
   "earliestPublishedAt": "2026-08-06",
-  "latestPublishedAt": "2026-10-26",
+  "latestPublishedAt": "2026-10-27",
   "sourceCommitsScanned": 0,
   "sourceSnapshotsScanned": 0,
   "historicalRowsScanned": 0,
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "86aaebe39988e3a0",
+      "publishedAt": "2026-10-27",
+      "title": "탄소 배출권 계정 등록에 대한 새로운 규정.",
+      "category": "제도",
+      "summary": "탄소 배출권 계정 등록에 대한 새로운 규정. Vietnam.vn",
+      "source": "Vietnam.vn",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1JLVROSlJQeTJtUGRCZWxVVnN5Nk9tR3Awa0Eyam1HcWU3c1l2MjZnSlI4ODhmUnFYOW1fOTZSMzJLUUh0OTk5LVdkY216MHZ2YzNEek5hUzQyemRhcGtvM0M0aVg4MFJaUEFOajcySHF5QklGWDMwRWFUVU1xSDQ?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "Vietnam.vn"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "해외"
+    },
+    {
+      "id": "e9cf46fc4d094a35",
+      "publishedAt": "2026-10-27",
+      "title": "유럽·영국 탄소 배출권 동반 상승…국내 배출권도 3개월간 15.2%↑",
+      "category": "시장·가격",
+      "summary": "27일 최관순 SK증권 연구원의 글로벌 탄소시장 자료에 따르면 유럽연합 배출권(EUA) 선물 가격은 톤당 88.2유로로 전일 대비 2.2% 상승했다. 최근 일주일간 3.3%, 한 달간 1.6%, 3개월간 7.9% 올랐다. 영국 배출권(UKA)...",
+      "source": "financialpost.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.financialpost.co.kr/news/articleView.html?idxno=282623",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권",
+        "탄소시장"
+      ],
+      "duplicateSources": [
+        "파이낸셜포스트",
+        "financialpost.co.kr"
+      ],
+      "searchProviders": [
+        "Google News RSS",
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 2,
+      "region": "해외"
+    },
+    {
+      "id": "34da369ab919b1db",
+      "publishedAt": "2026-10-27",
+      "title": "韓 친환경 기술기업 4곳, 베트남 기업과 협력 확대",
+      "category": "제도",
+      "summary": "기업 간 협력과 함께 탄소시장 제도 운영을 위한 기관 간 교류도 추진된다. ASEIC은 개회식에서 베트남 기후변화국과 협력의향서(LOI)를 교환했다. 양 기관은 한국의 온실가스 관리 경험을 공유하고 베트남의 탄소시장 ...",
+      "source": "m-i.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.m-i.kr/news/articleView.html?idxno=2010598",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "m-i.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "해외"
+    },
+    {
+      "id": "99ad4ca81645615d",
+      "publishedAt": "2026-10-27",
+      "title": "ASEIC, 한국-베트남 기업 친환경 기술로 연결",
+      "category": "제도",
+      "summary": "이번 프로그램은 ASEIC이 추진하는 '베트남 중소기업 에코이노베이션 컨설팅 및 역량강화' 사업의 일환으로, 한국의 정책 및 기술 경험 공유를 통해 베트남의 탄소시장 제도 이행 역량을 강화하고 양국 간 협력을...",
+      "source": "koit.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.koit.co.kr/news/articleView.html?idxno=209666",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "koit.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "해외"
+    },
+    {
+      "id": "2f7f53cee492cbf5",
+      "publishedAt": "2026-10-27",
+      "title": "ASEIC, 베트남과 탄소시장 협력 확대",
+      "category": "제도",
+      "summary": "한국의 정책 및 기술 경험 공유를 통해 베트남의 탄소시장 제도 이행 역량을 강화하고 양국 간 협력을 확대하기 위해 마련됐다. 이날 개회식에서는 DCC와 ASEIC이 협력의향서(LOI)를 교환했고, 국내 친환경 기술기업...",
+      "source": "view.asiae.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://view.asiae.co.kr/article/2026102708531653108",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 2,
+      "duplicateSources": [
+        "아시아경제",
+        "view.asiae.co.kr"
+      ],
+      "searchProviders": [
+        "Google News RSS",
+        "NAVER API HUB"
+      ],
+      "region": "해외"
+    },
     {
       "id": "8e7ec61c0614b65e",
       "publishedAt": "2026-10-26",
@@ -49,7 +171,9 @@
       "url": "http://www.lak.co.kr/news/boardview.php?id=24178",
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
-        "탄소시장"
+        "탄소시장",
+        "배출권",
+        "탄소배출권"
       ],
       "duplicateSources": [
         "lak.co.kr"
@@ -681,6 +805,30 @@
       "region": "국내"
     },
     {
+      "id": "61704077f413a2c3",
+      "publishedAt": "2026-10-26",
+      "title": "국가 온실가스 배출 할당량 및 탄소 배출권 등록 시스템에서 계정 부여 권한 위임",
+      "category": "제도",
+      "summary": "국가 온실가스 배출 할당량 및 탄소 배출권 등록 시스템에서 계정 부여 권한 위임 Vietnam.vn",
+      "source": "Vietnam.vn",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxObjZ1dW1vR1ZSUDQ0a2xZbnRHWXJVd0RkaHFHdEl0TWpZN2ZBU0NwTXVhQjZ0LW5JNGxXVTQ4bXlqU0hXTXE2S2tLemZicUNYb3hCVkFmR205MW40UzN6SzZtZWkwOXZRT0NNQ2ZScjcwT3dpNmdUendtVWwyRzRhd3A3dlgzdW1SMmRlTnYydFhfdFhlanQyVTNvNlppd2k4UTd2VG1YdW5Nb185VU9VanRfNnV1Q29TLXZ5ZTdmU1NBY3dXQlJ4azFFTWdNMHV6M2h4Znp3?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "Vietnam.vn"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "해외"
+    },
+    {
       "id": "8f29e5ea629f5006",
       "publishedAt": "2026-10-26",
       "title": "韓반도체 온실가스 배출량, 실측해보니 기존 산정보다 26% 낮아",
@@ -775,6 +923,31 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "211143c798ab1783",
+      "publishedAt": "2026-10-26",
+      "title": "[온실가스 배출권] 10월 26일 KAU26, 상승하며 3만원 재진입 앞둬",
+      "category": "시장·가격",
+      "summary": "[온실가스 배출권] 10월 26일 KAU26, 상승하며 3만원 재진입 앞둬 데일리e뉴스",
+      "source": "데일리e뉴스",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1BelY4cUE0MVk2c2xpUWs3RlpYeXN5bUpnWVR5SFpxa1hlR2MtZnVPUFZncDhlb1ZEQVdmV205NUJDVGNmbmlXR2pGV0xRSlhUZ2ZKa2dWbHVXNWVobHhKRFlrNFozd1RNNll6SzhKaw?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "온실가스 배출권",
+        "KAU26"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "데일리e뉴스"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
       "region": "국내"
     },
     {
@@ -2241,12 +2414,14 @@
         "탄소배출권"
       ],
       "duplicateSources": [
+        "헤럴드경제",
         "biz.heraldcorp.com"
       ],
       "searchProviders": [
+        "Google News RSS",
         "NAVER API HUB"
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "region": "해외"
     },
     {
@@ -4419,7 +4594,9 @@
         "유상할당"
       ],
       "duplicateSources": [
+        "이투데이",
         "etoday.co.kr",
+        "이데일리",
         "edaily.co.kr",
         "newslock.co.kr",
         "newsinside.kr",
@@ -4450,7 +4627,6 @@
         "etnews.com",
         "동행미디어 시대",
         "스마트투데이",
-        "이투데이",
         "디지틀조선TV",
         "마켓인",
         "메트로신문",
@@ -4471,10 +4647,10 @@
         "ER 이코노믹리뷰"
       ],
       "searchProviders": [
-        "NAVER API HUB",
-        "Google News RSS"
+        "Google News RSS",
+        "NAVER API HUB"
       ],
-      "duplicateCount": 50,
+      "duplicateCount": 51,
       "region": "국내"
     },
     {
@@ -7401,8 +7577,8 @@
         "K-ETS"
       ],
       "duplicateSources": [
-        "e2news.com",
         "연합뉴스",
+        "e2news.com",
         "newsdream.kr",
         "dailian.co.kr",
         "edaily.co.kr",
@@ -7411,8 +7587,8 @@
         "아시아경제"
       ],
       "searchProviders": [
-        "NAVER API HUB",
-        "Google News RSS"
+        "Google News RSS",
+        "NAVER API HUB"
       ],
       "duplicateCount": 8,
       "region": "국내"
@@ -7660,15 +7836,15 @@
         "K-ETS"
       ],
       "duplicateSources": [
+        "이투데이",
         "industrynews.co.kr",
-        "팍스경제TV",
+        "pinpointnews.co.kr",
         "paxetv.com",
         "newsdream.kr",
         "dailian.co.kr",
-        "edaily.co.kr",
-        "이투데이",
-        "pinpointnews.co.kr",
         "view.asiae.co.kr",
+        "edaily.co.kr",
+        "팍스경제TV",
         "데일리안",
         "마켓인",
         "인더스트리뉴스",
@@ -7680,8 +7856,8 @@
         "e2news.com"
       ],
       "searchProviders": [
-        "NAVER API HUB",
-        "Google News RSS"
+        "Google News RSS",
+        "NAVER API HUB"
       ],
       "duplicateCount": 18,
       "region": "국내"
@@ -8703,16 +8879,16 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "아시아경제",
         "view.asiae.co.kr",
+        "아시아경제",
         "etnews.com",
         "dt.co.kr",
         "전자신문",
         "naeil.com"
       ],
       "searchProviders": [
-        "Google News RSS",
-        "NAVER API HUB"
+        "NAVER API HUB",
+        "Google News RSS"
       ],
       "duplicateCount": 6,
       "region": "국내"
@@ -18041,9 +18217,12 @@
       ],
       "duplicateSources": [
         "4th.kr",
+        "뉴스핌",
+        "서울경제",
+        "뉴스1",
         "smarttoday.co.kr",
         "news1.kr",
-        "포춘코리아",
+        "머니투데이",
         "seoulfn.com",
         "ebn.co.kr",
         "imaeil.com",
@@ -18062,23 +18241,21 @@
         "연합뉴스TV",
         "newsian.co.kr",
         "bizwnews.com",
-        "매일일보",
         "inthenews.co.kr",
         "sisacast.kr",
         "economist.co.kr",
         "job-post.co.kr",
         "pinpointnews.co.kr",
+        "이투데이",
         "etoday.co.kr",
         "digitaltoday.co.kr",
         "biztribune.co.kr",
         "sports.hankooki.com",
         "pointe.co.kr",
         "swtvnews.com",
-        "서울경제TV",
         "sentv.co.kr",
         "kfenews.co.kr",
         "wowtv.co.kr",
-        "뉴스핌",
         "newspim.com",
         "moneystorm.kr",
         "브릿지경제",
@@ -18088,13 +18265,12 @@
         "wsobi.com",
         "huffingtonpost.kr",
         "yna.co.kr",
-        "아시아경제",
         "catchnews.kr",
+        "포춘코리아",
+        "매일일보",
+        "서울경제TV",
+        "아시아경제",
         "newsis.com",
-        "서울경제",
-        "뉴스1",
-        "머니투데이",
-        "이투데이",
         "socialvalue.kr",
         "비즈월드",
         "view.asiae.co.kr",
