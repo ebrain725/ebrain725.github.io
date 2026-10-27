@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-28T03:18:21+09:00",
+  "generatedAt": "2026-10-28T08:13:48+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1544,
+  "itemCount": 1545,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-28",
   "sourceCommitsScanned": 0,
@@ -58,6 +58,30 @@
       ],
       "duplicateCount": 1,
       "region": "해외"
+    },
+    {
+      "id": "f9c777ca0b452b7a",
+      "publishedAt": "2026-10-28",
+      "title": "[Who Is ?] 박태동 iM증권 대표이사 사장",
+      "category": "제도",
+      "summary": "IBK투자증권은 2025년 5월 NICE피앤아이와 탄소 배출권 시장 활성화 및 평가기준 마련을 위한 업무협약을 체결해 탄소 배출권 평가모형 구축과 국제 감축사업 플랫폼 개발, 배출권 관련 금융상품 기획, 장내외 파생상품...",
+      "source": "businesspost.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.businesspost.co.kr/BP?command=article_view&num=450283",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "businesspost.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
     },
     {
       "id": "890064a6c5d31474",
@@ -18806,7 +18830,6 @@
         "서울경제",
         "smarttoday.co.kr",
         "news1.kr",
-        "머니투데이",
         "seoulfn.com",
         "ebn.co.kr",
         "imaeil.com",
@@ -18838,6 +18861,7 @@
         "kfenews.co.kr",
         "wowtv.co.kr",
         "moneystorm.kr",
+        "브릿지경제",
         "dealsitetv.com",
         "dailypop.kr",
         "sateconomy.co.kr",
@@ -18845,10 +18869,10 @@
         "huffingtonpost.kr",
         "yna.co.kr",
         "catchnews.kr",
+        "머니투데이",
         "포춘코리아",
         "매일일보",
         "서울경제TV",
-        "브릿지경제",
         "아시아경제",
         "뉴스1",
         "newsian.co.kr",
