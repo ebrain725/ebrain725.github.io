@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-27T18:13:38+09:00",
+  "generatedAt": "2026-10-27T21:42:30+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1541,
+  "itemCount": 1542,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-27",
   "sourceCommitsScanned": 0,
@@ -440,6 +440,29 @@
       ],
       "duplicateCount": 1,
       "region": "해외"
+    },
+    {
+      "id": "8514781bb5b94910",
+      "publishedAt": "2026-10-27",
+      "title": "[2026 국감] 에너지 정책 방향, 큰 틀에선 공감대...실행방안엔 시각차",
+      "category": "시장·가격",
+      "summary": "이어 \"향후 배출권 가격 상승 시 정부가 차액을 회수하는 구조인 만큼 민간 금융기법과 결합하면 재정 부담을 최소화하면서 충분히 제도 설계가 가능하다\"고 제안했다. 김 장관은 통계적 착시 지적에 동의하면서도 CCfD...",
+      "source": "daily.hankooki.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://daily.hankooki.com/news/articleView.html?idxno=1418837",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "daily.hankooki.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
     },
     {
       "id": "99ad4ca81645615d",
