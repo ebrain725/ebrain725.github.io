@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-27T15:14:08+09:00",
+  "generatedAt": "2026-10-27T18:13:38+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1535,
+  "itemCount": 1541,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-27",
   "sourceCommitsScanned": 0,
@@ -12,6 +12,30 @@
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "890064a6c5d31474",
+      "publishedAt": "2026-10-27",
+      "title": "폐열·폐배터리 기술로 베트남 공략…韓 친환경 기업 4곳 협력 시동",
+      "category": "제도",
+      "summary": "베트남은 올해 탄소시장 시범 운영에 들어갔다. 이들 기업은 폐열 회수와 에너지저장장치(ESS), 폐기물 처리 기술을 앞세워 협력 기반을 넓힌다. 27일 아셈중소기업친환경혁신센터(ASEIC)에 따르면 전날 '2026 한·베...",
+      "source": "news1.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.news1.kr/industry/sb-founded/6333813",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 2,
+      "duplicateSources": [
+        "sentv.co.kr",
+        "news1.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "해외"
+    },
     {
       "id": "43818670ea592386",
       "publishedAt": "2026-10-27",
@@ -58,6 +82,29 @@
         "Google News RSS"
       ],
       "region": "해외"
+    },
+    {
+      "id": "d4969aeb72110a15",
+      "publishedAt": "2026-10-27",
+      "title": "제주도, 행정 시장 책임행정체계 구축…2027년부터 성과평가",
+      "category": "제도",
+      "summary": "도정연계과제에는 소상공인 상권 조성, 농가 경영안정, 탄소시장 ·기후테크 산업육성, 도민 누구나 누리는 인공지능(AI) 보장, 빈집·빈 건축물 활용 관리체계 구축 등이 포함됐다. 평가는 핵심책임과제 20점, 시민체감과제...",
+      "source": "news1.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.news1.kr/local/jeju/6333602",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "news1.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
     },
     {
       "id": "e9cf46fc4d094a35",
@@ -129,6 +176,29 @@
         "newsfarm.co.kr",
         "pointdaily.co.kr",
         "esgeconomy.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "cf99358ea0b5d508",
+      "publishedAt": "2026-10-27",
+      "title": "대우건설, 3분기 영업이익 1832억원… 누적 영업이익 131% 증가",
+      "category": "상쇄·외부사업",
+      "summary": "적용해 축적한 데이터를 바탕으로 탄소감축 효과를 검증받았다. 향후 모니터링 보고서 인증을 거쳐 탄소크레딧을 발급받아 자발적 탄소시장 거래나 해외사업장 탄소배출 상쇄 등에 활용할 계획이다. [S-저널 = ]",
+      "source": "s-journal.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.s-journal.co.kr/news/articleView.html?idxno=44852",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "s-journal.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -252,6 +322,30 @@
       "region": "국내"
     },
     {
+      "id": "e7e1da53f21f8798",
+      "publishedAt": "2026-10-27",
+      "title": "[전남연구원 시군 정책보고서](㉒·完) 신안 \"햇빛연금 넘어 해상풍력·...",
+      "category": "제도",
+      "summary": "섬 데이터 플랫폼을 기반으로 갯벌 생태계를 조사·분석하는 AI 관리체계를 만들고, 블루카본 국제인증과 탄소 배출권 거래 기반을 구축한다. 기업의 ESG 투자와 연결해 '보전이 수익이 되는' 생태경제 모델로 확장한다는...",
+      "source": "namdonews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.namdonews.com/news/articleView.html?idxno=927429",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "namdonews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "d2bda4f599a39e2b",
       "publishedAt": "2026-10-27",
       "title": "[온실가스 배출권] 10월 27일 KAU26, 300원 오르며 3만원대 재진입",
@@ -293,6 +387,29 @@
       ],
       "duplicateSources": [
         "thebell.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "0a1fadb920c8dc0e",
+      "publishedAt": "2026-10-27",
+      "title": "[국감 이 사람] 송옥주 더불어민주당 의원",
+      "category": "제도",
+      "summary": "송 의원은 농림축산 분야의 온실가스 감축 성과를 제대로 인정받고 배출권 거래를 농가 소득으로 연결하자는 취지에서 4가지 입법 과제를 제시했다. 소규모 농가의 연합 등록과 표본조사·디지털 계측 모니터링을...",
+      "source": "hansbiz.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.hansbiz.co.kr/news/articleView.html?idxno=876599",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "hansbiz.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -472,6 +589,34 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "8945b88116399477",
+      "publishedAt": "2026-10-27",
+      "title": "\"탄소 배출권 가격 급등, 하락 여지없어…전환금융 확대 필요성\"",
+      "category": "상쇄·외부사업",
+      "summary": "한국 배출권 거래제(K-ETS) 규제 강화 속에서 탄소 배출권 가격이 고공행진 하고 있다. 배출권 수급이... 이를 상쇄 하는 여파다. 그는 \"2026~2030년까지 배출량이 줄어들지 않는다고 가정하면 2028년에는 잉여량이 없는 상황이...",
+      "source": "einfomax.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4441406",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권",
+        "배출권거래제",
+        "K-ETS"
+      ],
+      "duplicateSources": [
+        "연합인포맥스",
+        "einfomax.co.kr"
+      ],
+      "searchProviders": [
+        "Google News RSS",
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 2,
       "region": "국내"
     },
     {
@@ -4962,7 +5107,6 @@
         "유상할당"
       ],
       "duplicateSources": [
-        "이투데이",
         "etoday.co.kr",
         "edaily.co.kr",
         "newslock.co.kr",
@@ -4992,6 +5136,7 @@
         "smedaily.co.kr",
         "dealsite.co.kr",
         "etnews.com",
+        "이투데이",
         "이데일리",
         "동행미디어 시대",
         "스마트투데이",
@@ -5015,8 +5160,8 @@
         "ER 이코노믹리뷰"
       ],
       "searchProviders": [
-        "Google News RSS",
-        "NAVER API HUB"
+        "NAVER API HUB",
+        "Google News RSS"
       ],
       "duplicateCount": 51,
       "region": "국내"
@@ -7947,8 +8092,8 @@
         "K-ETS"
       ],
       "duplicateSources": [
-        "연합뉴스",
         "e2news.com",
+        "연합뉴스",
         "newsdream.kr",
         "dailian.co.kr",
         "edaily.co.kr",
@@ -7957,8 +8102,8 @@
         "아시아경제"
       ],
       "searchProviders": [
-        "Google News RSS",
-        "NAVER API HUB"
+        "NAVER API HUB",
+        "Google News RSS"
       ],
       "duplicateCount": 8,
       "region": "국내"
@@ -8206,16 +8351,16 @@
         "K-ETS"
       ],
       "duplicateSources": [
-        "이투데이",
         "industrynews.co.kr",
-        "pinpointnews.co.kr",
+        "팍스경제TV",
         "paxetv.com",
         "newsdream.kr",
         "dailian.co.kr",
+        "edaily.co.kr",
+        "이투데이",
+        "pinpointnews.co.kr",
         "view.asiae.co.kr",
         "마켓인",
-        "edaily.co.kr",
-        "팍스경제TV",
         "데일리안",
         "인더스트리뉴스",
         "뉴스드림",
@@ -8226,8 +8371,8 @@
         "e2news.com"
       ],
       "searchProviders": [
-        "Google News RSS",
-        "NAVER API HUB"
+        "NAVER API HUB",
+        "Google News RSS"
       ],
       "duplicateCount": 18,
       "region": "국내"
@@ -9249,16 +9394,16 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "view.asiae.co.kr",
         "아시아경제",
+        "view.asiae.co.kr",
         "etnews.com",
         "dt.co.kr",
         "전자신문",
         "naeil.com"
       ],
       "searchProviders": [
-        "NAVER API HUB",
-        "Google News RSS"
+        "Google News RSS",
+        "NAVER API HUB"
       ],
       "duplicateCount": 6,
       "region": "국내"
@@ -18587,12 +18732,9 @@
       ],
       "duplicateSources": [
         "4th.kr",
-        "뉴스핌",
-        "서울경제",
-        "뉴스1",
         "smarttoday.co.kr",
         "news1.kr",
-        "머니투데이",
+        "포춘코리아",
         "seoulfn.com",
         "ebn.co.kr",
         "imaeil.com",
@@ -18608,22 +18750,23 @@
         "widedaily.com",
         "newsroad.co.kr",
         "연합뉴스TV",
-        "newsian.co.kr",
         "bizwnews.com",
+        "매일일보",
         "inthenews.co.kr",
         "sisacast.kr",
         "economist.co.kr",
         "job-post.co.kr",
         "pinpointnews.co.kr",
-        "이투데이",
         "etoday.co.kr",
         "biztribune.co.kr",
         "sports.hankooki.com",
         "pointe.co.kr",
         "swtvnews.com",
+        "서울경제TV",
         "sentv.co.kr",
         "kfenews.co.kr",
         "wowtv.co.kr",
+        "뉴스핌",
         "moneystorm.kr",
         "브릿지경제",
         "dealsitetv.com",
@@ -18632,13 +18775,15 @@
         "wsobi.com",
         "huffingtonpost.kr",
         "yna.co.kr",
-        "catchnews.kr",
-        "포춘코리아",
-        "weekly.hankooki.com",
-        "매일일보",
-        "서울경제TV",
-        "newspim.com",
         "아시아경제",
+        "catchnews.kr",
+        "서울경제",
+        "뉴스1",
+        "머니투데이",
+        "newsian.co.kr",
+        "이투데이",
+        "weekly.hankooki.com",
+        "newspim.com",
         "digitaltoday.co.kr",
         "newsis.com",
         "socialvalue.kr",
