@@ -1,6 +1,6 @@
 {
   "version": "krx-market-refresh-1",
-  "collected_at": "2026-10-28T18:33:49+09:00",
+  "collected_at": "2026-10-28T19:42:17+09:00",
   "trade_date": "2026-10-27",
   "status": "source_not_current",
   "source": "KRX 공식 시세 — 웹 조회 또는 승인된 Open API",
@@ -8,7 +8,7 @@
     "https://ets.krx.co.kr/contents/ETS/03/03010000/ETS03010000.jsp",
     "https://data-dbg.krx.co.kr/svc/apis/gen/ets_bydd_trd"
   ],
-  "workflow_run_id": "40665104467",
+  "workflow_run_id": "40674135013",
   "prices_sha256": "bdfad5ed733afe94245c42f0c2b50bf42547138995111f4948c2571ef2d665e5",
   "same_day_rows": [],
   "live_deployment_verified": false
