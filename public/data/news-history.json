@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-28T15:07:46+09:00",
+  "generatedAt": "2026-10-28T15:16:48+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1564,
+  "itemCount": 1565,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-28",
   "sourceCommitsScanned": 0,
@@ -27,13 +27,14 @@
         "배출권"
       ],
       "duplicateSources": [
+        "newspost.kr",
         "g-enews.com",
         "niceeconomy.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 2,
+      "duplicateCount": 3,
       "region": "국내"
     },
     {
@@ -243,10 +244,12 @@
       "matchedKeywords": [
         "탄소시장"
       ],
-      "duplicateCount": 2,
+      "duplicateCount": 4,
       "duplicateSources": [
         "news1.kr",
-        "businesskorea.co.kr"
+        "businesskorea.co.kr",
+        "biz.heraldcorp.com",
+        "newsprime.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -449,6 +452,31 @@
       "region": "해외"
     },
     {
+      "id": "bada2e871fb42698",
+      "publishedAt": "2026-10-28",
+      "title": "[경제소식] NH농협은행, 금융소외계층 지원 'NH미소금융재단' 창립",
+      "category": "제도",
+      "summary": "/사진=현대차증권 현대차증권, 탄소금융 세미나 개최.. 배출권 거래제 대응 논의 현대차증권이 배출권 거래제 제4차 계획기간에 따른 탄소시장 변화와 기업들의 대응 전략을 논의하는 자리를 마련했다. 현대차증권은...",
+      "source": "4th.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.4th.kr/news/articleView.html?idxno=2120556",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소시장"
+      ],
+      "duplicateSources": [
+        "4th.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "f9c777ca0b452b7a",
       "publishedAt": "2026-10-28",
       "title": "[Who Is ?] 박태동 iM증권 대표이사 사장",
@@ -515,12 +543,14 @@
       "duplicateSources": [
         "m-economynews.com",
         "sedaily.com",
-        "yna.co.kr"
+        "mk.co.kr",
+        "yna.co.kr",
+        "view.asiae.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 3,
+      "duplicateCount": 5,
       "region": "해외"
     },
     {
@@ -5668,9 +5698,9 @@
       ],
       "duplicateSources": [
         "etoday.co.kr",
+        "newslock.co.kr",
         "newsinside.kr",
         "edaily.co.kr",
-        "newslock.co.kr",
         "뉴스핌",
         "fetv.co.kr",
         "dailian.co.kr",
@@ -19319,7 +19349,6 @@
         "economist.co.kr",
         "job-post.co.kr",
         "pinpointnews.co.kr",
-        "etoday.co.kr",
         "biztribune.co.kr",
         "sports.hankooki.com",
         "pointe.co.kr",
@@ -19337,6 +19366,7 @@
         "huffingtonpost.kr",
         "아시아경제",
         "catchnews.kr",
+        "etoday.co.kr",
         "yna.co.kr",
         "서울경제",
         "이투데이",
