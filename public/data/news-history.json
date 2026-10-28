@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-28T15:16:48+09:00",
+  "generatedAt": "2026-10-28T18:14:21+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1565,
+  "itemCount": 1586,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-28",
   "sourceCommitsScanned": 0,
@@ -12,6 +12,118 @@
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "95baacd9b3ea2e3f",
+      "publishedAt": "2026-10-28",
+      "title": "홍콩, 상품 창고증권 토큰화 담보금융 2027년 시범 추진",
+      "category": "제도",
+      "summary": "이 플랫폼에는 기존 탄소 배출권 에 더해 런던금속거래소(LME)가 승인한 창고의 상품 창고증권을 시범적으로 포함할 예정이다. 홍콩은 디지털 채권 발행에도 토큰화를 적용해 왔다. 정부는 9월 네 번째 디지털 녹색채권을...",
+      "source": "tokenpost.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.tokenpost.kr/news/policy/426610",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "tokenpost.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "00e8aeb51afcbd74",
+      "publishedAt": "2026-10-28",
+      "title": "현대차증권, 탄소금융 인사이트 데이 성료... 기업 금융지원 범위 넓힌...",
+      "category": "제도",
+      "summary": "특히 올해부터 2030년까지 적용되는 제4차 계획기간에는 배출허용총량 관리가 강화되고 유상할당 비중도 확대된다. 발전 부문의 유상할당 비율은 2026년 15%에서 2030년 50%로 단계적으로 높아지며, 발전 외 부문에도 15%가...",
+      "source": "lkp.news",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.lkp.news/news/articleView.html?idxno=85539",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "유상할당"
+      ],
+      "duplicateSources": [
+        "pinpointnews.co.kr",
+        "lkp.news",
+        "SR타임스",
+        "srtimes.kr",
+        "newspost.kr",
+        "cstimes.com",
+        "megaeconomy.co.kr",
+        "파이낸셜뉴스",
+        "g-enews.com",
+        "industrynews.co.kr",
+        "fnnews.com",
+        "niceeconomy.co.kr",
+        "asiatime.co.kr",
+        "view.asiae.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB",
+        "Google News RSS"
+      ],
+      "duplicateCount": 14,
+      "region": "국내"
+    },
+    {
+      "id": "46fd3348478dfa32",
+      "publishedAt": "2026-10-28",
+      "title": "현대차증권, 배출권 시장 변화에 기업 대응 방안 논의",
+      "category": "상쇄·외부사업",
+      "summary": "현대차증권이 제4차 배출권 거래제 계획기간 시행에 따른 탄소금융 시장 변화와 기업들의 대응 방향을... 현대차증권은 탄소 배출권 자기매매와 외부사업 투자, 국내 최초 모빌리티 분야 외부사업 인증실적(KOC) 확보 경험을...",
+      "source": "kdfnews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.kdfnews.com/news/articleView.html?idxno=190062",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "한국면세뉴스",
+        "kdfnews.com"
+      ],
+      "searchProviders": [
+        "Google News RSS",
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 2,
+      "region": "국내"
+    },
+    {
+      "id": "6e604bc6fcc3b3a8",
+      "publishedAt": "2026-10-28",
+      "title": "현대차증권, 기업 탄소 금융 대응 지원 강화",
+      "category": "제도",
+      "summary": "/현대차증권 현대차증권이 탄소 금융 관련 정책과 시장 동향을 공유하고 기업의 배출권거래제 대응 전략 수립을 지원했다. 현대차증권은 지난 27일 서울 중구 대한상공회의소에서 제2회 '2026년 탄소 금융 인사이트 데이'를...",
+      "source": "metroseoul.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.metroseoul.co.kr/article/20261028500575",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "metroseoul.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
     {
       "id": "ccc0d687cea3efea",
       "publishedAt": "2026-10-28",
@@ -38,6 +150,29 @@
       "region": "국내"
     },
     {
+      "id": "200901c079a4bd42",
+      "publishedAt": "2026-10-28",
+      "title": "현대차證 배형근 사장 \" 배출권 시장 변화 대응 위한 맞춤형 탄소금융 솔...",
+      "category": "제도",
+      "summary": "현대차증권이 탄소금융 유관기업 담당자들과 함께 제4차 계획기간에 대비한 배출권 시장 대응 전략을... 시행으로 배출권 시장 환경이 크게 바뀐 만큼 이번 세미나에서 공유된 정책 방향과 시장 전망이 기업들의 실질적인...",
+      "source": "pointe.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.pointe.co.kr/news/articleView.html?idxno=86784",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "pointe.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "e97b25237c4ebffe",
       "publishedAt": "2026-10-28",
       "title": "항로는 선사가, 지속은 항만이…북극항로 상업화 해법은?",
@@ -60,6 +195,30 @@
       ],
       "duplicateCount": 1,
       "region": "해외"
+    },
+    {
+      "id": "9ec06aa617b428da",
+      "publishedAt": "2026-10-28",
+      "title": "한은 “ 탄소 중립 정책으로 성장률 연평균 0.06~0.07%포인트↓”",
+      "category": "제도",
+      "summary": "한은은 28일 ‘BOK이슈노트: 탄소 중립 이행경로의 경제적 영향’ 에서 배출권 거래제, 재생에너지 확대 등 정책으로 2050년 탄소 중립이 되면 이같이 성장률에 영향을 받는다고 밝혔다. 한은은 2025년 말 t당 7달러 수준인...",
+      "source": "khan.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.khan.co.kr/article/202610281710001",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "khan.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
     },
     {
       "id": "b1645cd23db6c43d",
@@ -134,6 +293,30 @@
       "region": "해외"
     },
     {
+      "id": "01d7785d7c7b9301",
+      "publishedAt": "2026-10-28",
+      "title": "탄소중립 청구서 '840조'…산업경쟁력 갈린다",
+      "category": "시장·가격",
+      "summary": "온실가스 순배출량을 ‘제로(0)’로 줄이기 위해 에너지 공급 부문에만 약 840조원의 투자가 필요하고... 다만 실제 탄소 배출권 가격 전망이 아닌 모형상의 잠재가격입니다. 그러나 후반기로 갈수록 비용이 급격히...",
+      "source": "newstomato.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.newstomato.com/ReadNews.aspx?no=1318355&inflow=N",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "newstomato.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "8b878707c10e50a7",
       "publishedAt": "2026-10-28",
       "title": "탄소중립 정책 비용, 2060년까지 韓 성장률 연평균 0.06~0.07%P 끌어내린...",
@@ -159,6 +342,29 @@
       "region": "국내"
     },
     {
+      "id": "5742d279a53da7f1",
+      "publishedAt": "2026-10-28",
+      "title": "탄소중립 안 하면 경제에 이득?…기후피해까지 따져야",
+      "category": "제도",
+      "summary": "탄소중립은 온실가스 배출량과 흡수·제거량을 맞춰 순배출량을 0으로 만드는 것을 말한다. 우리나라는 2050년 탄소중립 달성을 목표로 하고 있다. 이행 과정에서는 기업이 배출 규제 강화에 맞춰 배출권 을 구매하거나...",
+      "source": "newsprime.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.newsprime.co.kr/news/article.html?no=752834",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "newsprime.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "e699f17b9ec7ec53",
       "publishedAt": "2026-10-28",
       "title": "탄소 배출권 할당 및 크레딧 계정 부여에 관한 새로운 규정.",
@@ -174,6 +380,30 @@
       ],
       "section": "news",
       "duplicateCount": 1,
+      "duplicateSources": [
+        "Vietnam.vn"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "해외"
+    },
+    {
+      "id": "a6c8030de2a39506",
+      "publishedAt": "2026-10-28",
+      "title": "정부가 탄소 배출권 할당량 및 크레딧 계정 부여에 관한 새로운 규정을 발표했습니다.",
+      "category": "제도",
+      "summary": "정부가 탄소 배출권 할당량 및 크레딧 계정 부여에 관한 새로운 규정을 발표했습니다. Vietnam.vn",
+      "source": "Vietnam.vn",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQZ2doOGZ4U1dySFhsZnY0b2lRS2xjTTlyek10dTlRWlRMQTlNVUtpNTNYSWRxWmFUNHBzTjF5aTJrY1hGMllULWtxbGZtamNZWjBOYzdiZGVweUtoOXFPdlVRMi1IYTBubkhmV180SXlHb3BqUzRIczVaNXFnNVF0VDE0TTFMYU12RVBNd3ZQZHpkeUFWVUxmazFMeHhOZGZJbkE?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "section": "news",
+      "duplicateCount": 2,
       "duplicateSources": [
         "Vietnam.vn"
       ],
@@ -204,6 +434,81 @@
       "searchProviders": [
         "Google News RSS"
       ],
+      "region": "국내"
+    },
+    {
+      "id": "1e5cbc1560f6b395",
+      "publishedAt": "2026-10-28",
+      "title": "서해 갯벌 넘어 세계로…인천시, 美 USC·켈프 아크와 '블루카본' 주도권...",
+      "category": "제도",
+      "summary": "차세대 온실가스 감축의 핵심 열쇠로 급부상하고 있다. 이러한 흐름 속에서 지방자치단체가 세계 최고... 이번 글로벌 네트워크 구축을 통해 향후 탄소 배출권 확보와 직결되는 블루카본 공식 인증 연구는 물론...",
+      "source": "joongdo.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.joongdo.co.kr/web/view.php?key=20261028010008314",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "joongdo.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "d4d618f78017e47f",
+      "publishedAt": "2026-10-28",
+      "title": "삼천리, 산업체 고객 초청 정책·기술 세미나 개최",
+      "category": "제도",
+      "summary": "사물인터넷(IoT) 기반의 스마트안전관리시스템 등 체계적인 안전관리 운영 프로세스를 통해 고객의 안전한 에너지 사용 환경을 조성하는 한편 탄소 배출권 개발, 바이오가스 도시가스 원료화, 발전용 연료전지 사업 개발...",
+      "source": "gasnews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.gasnews.com/news/articleView.html?idxno=127390",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "todayenergy.kr",
+        "gasnews.com",
+        "energy-news.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 3,
+      "region": "국내"
+    },
+    {
+      "id": "05d671805726e3ac",
+      "publishedAt": "2026-10-28",
+      "title": "삼천리, 산업체 고객 120여명과 친환경 에너지 전환 해법 모색",
+      "category": "제도",
+      "summary": "사물인터넷(IoT) 기반 스마트 안전관리시스템 등 체계적인 안전관리 프로세스를 운영하는 한편, 탄소 배출권 개발과 바이오가스의 도시가스 원료화, 발전용 연료전지 사업 개발 등을 추진하고 있다. 기존 도시가스 사업의...",
+      "source": "pinpointnews.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=499357",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "megaeconomy.co.kr",
+        "pinpointnews.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 2,
       "region": "국내"
     },
     {
@@ -280,6 +585,29 @@
       "region": "국내"
     },
     {
+      "id": "6c5e40be642ab0fd",
+      "publishedAt": "2026-10-28",
+      "title": "산림청, 아시아 산림복원 민·관협력 확대 논의",
+      "category": "제도",
+      "summary": "주요 세션에서는 산림복원 투자 가능성과 국제 탄소시장 연계, 지방정부의 탄소중립 전략 등이 다뤄졌습니다. 아시아산림협력기구가 올해 녹색기후기금 인증기관으로 승인되면서 국제기후재원을 활용한 산림협력 사업...",
+      "source": "paxetv.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.paxetv.com/news/articleView.html?idxno=285480",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "paxetv.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "b3e9e773696a5004",
       "publishedAt": "2026-10-28",
       "title": "북극항로가 해운·항만주 새 기회 될까…전용 터미널·물동량 확보가 관...",
@@ -302,6 +630,52 @@
       ],
       "duplicateCount": 1,
       "region": "해외"
+    },
+    {
+      "id": "627ec9064fe11499",
+      "publishedAt": "2026-10-28",
+      "title": "볼보자동차, 일자리 2500개 구조적 축소 계획…3분기 56억 크로나 적자",
+      "category": "제도",
+      "summary": "3분기 실적 보고서는 전체 영업손익에 폴스타 손실 반영분 9억 크로나와 미국 CAFE 배출권 재평가에 따른 비교가능성 항목 손실 11억 크로나가 포함됐다고 밝혔다. 전체 손실과 조정 손실은 집계 범위가 달라 같은...",
+      "source": "tokenpost.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.tokenpost.kr/news/market/427321",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "tokenpost.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "해외"
+    },
+    {
+      "id": "e3a67a7e76ce5391",
+      "publishedAt": "2026-10-28",
+      "title": "기후대응위, 철강·금융 분야 녹색전환 및 투자 방향 모색",
+      "category": "제도",
+      "summary": "'탄소중립 그랜드 얼라이언스'는 온실가스 다배출 산업계, 금융계 및 관계 부처 간 협력을 위해 2024년 12월 출범, 제1차 포럼(2026년 7월)에서는 산업 녹색전환(GX), 넷제로 산업, 자발적 탄소시장 간 연계방안 등을 논의한 바...",
+      "source": "todayenergy.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.todayenergy.kr/news/articleView.html?idxno=304790",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "todayenergy.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
     },
     {
       "id": "37415f26c186fb15",
@@ -364,7 +738,8 @@
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
         "탄소시장",
-        "배출권"
+        "배출권",
+        "탄소배출권"
       ],
       "duplicateSources": [
         "연합인포맥스",
@@ -375,6 +750,31 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 2,
+      "region": "국내"
+    },
+    {
+      "id": "efa5320e99e09aa2",
+      "publishedAt": "2026-10-28",
+      "title": "[온실가스 배출권] 10월 28일 KAU25, 숨 고르며 3만250원 유지",
+      "category": "시장·가격",
+      "summary": "[온실가스 배출권] 10월 28일 KAU25, 숨 고르며 3만250원 유지 데일리e뉴스",
+      "source": "데일리e뉴스",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5WeHJJcEZST1cxbE5hUHNFbm44Wm1RWVVwcV9PM1pvWmpmWTRjVUt3MTlyVE95UTNSWW1lajJJSUYtaU9BMmZ6SVl5Ui1YZXNnQjI2QzNIRHVQTUhCcDJWc1JyUGF3cGFQUzg0MnlXVQ?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "온실가스 배출권",
+        "KAU25"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "데일리e뉴스"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
       "region": "국내"
     },
     {
@@ -416,12 +816,14 @@
         "탄소배출권"
       ],
       "duplicateSources": [
+        "경향신문",
         "khan.co.kr"
       ],
       "searchProviders": [
+        "Google News RSS",
         "NAVER API HUB"
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "region": "국내"
     },
     {
@@ -443,13 +845,40 @@
         "K-ETS"
       ],
       "duplicateSources": [
-        "ngetnews.com"
+        "뉴스저널리즘",
+        "ngetnews.com",
+        "the-biz.co.kr"
+      ],
+      "searchProviders": [
+        "Google News RSS",
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 3,
+      "region": "해외"
+    },
+    {
+      "id": "33efe4fa3b97bb30",
+      "publishedAt": "2026-10-28",
+      "title": "[금융권 이모저모]IBK기업은행, 핀테크 11개사 경연…수상기업에 최대 ...",
+      "category": "제도",
+      "summary": "/ 사진=현대차증권 ◇현대차증권, 탄소 배출권 시장 변화 대응 위한 전문가 세미나 개최 현대차증권은 지난 27일 서울 중구 대한상공회의소에서 '제2회 2026년 탄소 금융 인사이트 데이'를 개최했다고 28일 밝혔다. 이번...",
+      "source": "businessplus.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.businessplus.kr/news/articleView.html?idxno=118892",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "businessplus.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
       ],
       "duplicateCount": 1,
-      "region": "해외"
+      "region": "국내"
     },
     {
       "id": "bada2e871fb42698",
@@ -526,6 +955,79 @@
       "region": "해외"
     },
     {
+      "id": "2ff0f6da4cb245f5",
+      "publishedAt": "2026-10-28",
+      "title": "30조 달러 투자자들 \"메가프로젝트, 재생에너지로 돌려야\"",
+      "category": "제도",
+      "summary": "정부는 배출권 거래제(K-ETS) 4차 계획기간(2026~2030년)에 발전사가 돈을 내고 사야 하는 배출권 비율을 10%에서 2030년 50%까지 높이기로 했다. 배출권 거래제는 기업에 온실가스 배출 허용량을 나눠 주고 남거나 모자란...",
+      "source": "newspenguin.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newspenguin.com/news/articleView.html?idxno=22357",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "K-ETS"
+      ],
+      "duplicateSources": [
+        "newspenguin.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "6cc246596d5a5900",
+      "publishedAt": "2026-10-28",
+      "title": "\"현실로 다가온 북극항로, 화물 유치 위한 정책 지원 급선무\"",
+      "category": "제도",
+      "summary": "EU 해운 탄소규제와 관련해 탄소 배출권 구매 비용과 선박 연료의 온실가스 배출 기준 준수 비용을 국가가 보전해주는 방안도 건의됐다. 이번 아크로호 운항에도 탄소비용으로 왕복 8억 원이 소요된 만큼 '탄소세' 대응...",
+      "source": "busan.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.busan.com/view/busan/view.php?code=2026102815291051211",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "busan.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
+      "id": "a7932747c5aae6e9",
+      "publishedAt": "2026-10-28",
+      "title": "\"아태 해운·항만 탈탄소화 대응\"…KMI, 국제포럼 개최",
+      "category": "제도",
+      "summary": "유럽연합(EU)의 배출권 거래제(EU ETS) 확대 등 환경 규제가 강화되면서 친환경 선박 전환은 해운업계의 필수 생존 과제가 됐다. KMI는 지난 2022년부터 친환경 선박 실용화를 위한 법·제도 개선 및 IMO 의제 개발 연구를...",
+      "source": "news1.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.news1.kr/economy/idustry-trade/6335134",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "news1.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
       "id": "9a1d4b114316cc1c",
       "publishedAt": "2026-10-28",
       "title": "\"북극항로 상업운항, 전용 터미널·화주 지원이 중요\"",
@@ -544,13 +1046,15 @@
         "m-economynews.com",
         "sedaily.com",
         "mk.co.kr",
+        "news1.kr",
         "yna.co.kr",
-        "view.asiae.co.kr"
+        "view.asiae.co.kr",
+        "biz.heraldcorp.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 5,
+      "duplicateCount": 7,
       "region": "해외"
     },
     {
@@ -2571,7 +3075,9 @@
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
         "배출권",
-        "탄소배출권"
+        "탄소배출권",
+        "배출권거래제",
+        "상쇄배출권"
       ],
       "duplicateSources": [
         "헬로티",
@@ -3513,7 +4019,9 @@
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
         "배출권",
-        "탄소배출권"
+        "탄소배출권",
+        "배출권거래제",
+        "K-ETS"
       ],
       "duplicateSources": [
         "헤럴드경제",
@@ -3612,7 +4120,8 @@
       "matchedKeywords": [
         "배출권",
         "탄소배출권",
-        "탄소시장"
+        "탄소시장",
+        "유상할당"
       ],
       "duplicateSources": [
         "뉴스핌",
@@ -4469,7 +4978,9 @@
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
         "배출권",
-        "탄소배출권"
+        "탄소배출권",
+        "배출권거래제",
+        "K-ETS"
       ],
       "duplicateSources": [
         "ESG경제",
@@ -5366,6 +5877,30 @@
       "region": "국내"
     },
     {
+      "id": "0731216dfc47bba6",
+      "publishedAt": "2026-10-20",
+      "title": "국제해운 탈탄소 규제 강화… 부산 '해양산업' 새 활로 연다",
+      "category": "제도",
+      "summary": "6% 감소하며 이에 따라 약 52만6000달러(7억8000만 원)의 연료비와 11만6000달러(1억7000만 원)의 유럽연합 배출권 거래제 (EU ETS) 비용이 절감되는 것으로 추정되기 때문이다. 다만 북극항로는 안전성·계절성·운항 인프라 등을...",
+      "source": "fnnews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.fnnews.com/news/202610201838252410",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "fnnews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "해외"
+    },
+    {
       "id": "f43633900b2174e3",
       "publishedAt": "2026-10-20",
       "title": "日 첫 대형 산림펀드 추진…최대 1000억엔 투입해 목재·탄소배출권 수익화",
@@ -5697,7 +6232,9 @@
         "유상할당"
       ],
       "duplicateSources": [
+        "이투데이",
         "etoday.co.kr",
+        "이데일리",
         "newslock.co.kr",
         "newsinside.kr",
         "edaily.co.kr",
@@ -5717,18 +6254,16 @@
         "biz.heraldcorp.com",
         "yna.co.kr",
         "연합뉴스",
-        "metroseoul.co.kr",
         "seoultimes.news",
         "fnnews.com",
-        "cstimes.com",
         "biz.sbs.co.kr",
         "inews24.com",
         "smedaily.co.kr",
         "dealsite.co.kr",
         "etnews.com",
+        "metroseoul.co.kr",
+        "cstimes.com",
         "아이뉴스24",
-        "이투데이",
-        "이데일리",
         "동행미디어 시대",
         "스마트투데이",
         "디지틀조선TV",
@@ -5750,8 +6285,8 @@
         "ER 이코노믹리뷰"
       ],
       "searchProviders": [
-        "NAVER API HUB",
-        "Google News RSS"
+        "Google News RSS",
+        "NAVER API HUB"
       ],
       "duplicateCount": 51,
       "region": "국내"
@@ -8941,28 +9476,28 @@
         "K-ETS"
       ],
       "duplicateSources": [
+        "이투데이",
+        "인더스트리뉴스",
         "industrynews.co.kr",
+        "pinpointnews.co.kr",
         "paxetv.com",
         "newsdream.kr",
         "dailian.co.kr",
-        "edaily.co.kr",
-        "이투데이",
-        "pinpointnews.co.kr",
         "view.asiae.co.kr",
+        "아시아경제",
+        "edaily.co.kr",
         "팍스경제TV",
         "마켓인",
         "데일리안",
-        "인더스트리뉴스",
         "뉴스드림",
         "businessplus.kr",
         "yna.co.kr",
-        "아시아경제",
         "연합뉴스",
         "e2news.com"
       ],
       "searchProviders": [
-        "NAVER API HUB",
-        "Google News RSS"
+        "Google News RSS",
+        "NAVER API HUB"
       ],
       "duplicateCount": 18,
       "region": "국내"
@@ -19323,13 +19858,9 @@
         "K-ETS"
       ],
       "duplicateSources": [
-        "4th.kr",
         "smarttoday.co.kr",
         "news1.kr",
-        "포춘코리아",
-        "seoulfn.com",
         "ebn.co.kr",
-        "imaeil.com",
         "ttlnews.com",
         "e-science.co.kr",
         "delighti.co.kr",
@@ -19341,9 +19872,7 @@
         "globale.co.kr",
         "widedaily.com",
         "newsroad.co.kr",
-        "연합뉴스TV",
         "bizwnews.com",
-        "매일일보",
         "inthenews.co.kr",
         "sisacast.kr",
         "economist.co.kr",
@@ -19353,19 +19882,25 @@
         "sports.hankooki.com",
         "pointe.co.kr",
         "swtvnews.com",
-        "서울경제TV",
         "sentv.co.kr",
         "kfenews.co.kr",
         "wowtv.co.kr",
-        "뉴스핌",
         "moneystorm.kr",
         "dealsitetv.com",
         "dailypop.kr",
         "sateconomy.co.kr",
         "wsobi.com",
         "huffingtonpost.kr",
-        "아시아경제",
         "catchnews.kr",
+        "4th.kr",
+        "포춘코리아",
+        "seoulfn.com",
+        "imaeil.com",
+        "연합뉴스TV",
+        "매일일보",
+        "서울경제TV",
+        "뉴스핌",
+        "아시아경제",
         "etoday.co.kr",
         "yna.co.kr",
         "서울경제",
