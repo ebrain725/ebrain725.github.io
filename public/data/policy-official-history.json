@@ -2,7 +2,7 @@
   "schemaVersion": "1.0",
   "requestedStartDate": "2015-01-01",
   "startedAt": "2026-09-09T19:46:11+09:00",
-  "generatedAt": "2026-10-28T03:50:48+09:00",
+  "generatedAt": "2026-10-29T03:58:35+09:00",
   "scope": {
     "ministry": "기후부 보도자료·공지사항: 핵심 키워드는 제목·본문, 확대 키워드는 제목으로 판정; 이전 이력 보존",
     "krx": "한국거래소 배출권시장 공지사항 일반 게시물 전체",
@@ -126,7 +126,7 @@
     {
       "source": "기후부 보도자료",
       "section": "press",
-      "requestedStartDate": "2026-08-29",
+      "requestedStartDate": "2026-08-30",
       "transport": "unfiltered-rss-local-split-keyword-filter",
       "keywordRule": {
         "titleAndContent": [
@@ -246,14 +246,14 @@
       "pageSize": 1000,
       "pagesFetched": 1,
       "rawRows": 1000,
-      "inRangeMatchedRows": 28,
-      "itemCount": 28,
-      "directCount": 6,
+      "inRangeMatchedRows": 29,
+      "itemCount": 29,
+      "directCount": 7,
       "relatedCount": 22,
       "earliest": "2026-08-31",
-      "latest": "2026-10-23",
+      "latest": "2026-10-28",
       "oldestSeen": "2025-12-03",
-      "newestSeen": "2026-10-27",
+      "newestSeen": "2026-10-28",
       "crossedRequestedStart": true,
       "stopReason": "date-boundary",
       "complete": true,
@@ -294,7 +294,7 @@
         "대량 매도": 0,
         "보유물량 출회": 0,
         "시장참여자": 0,
-        "시장조성": 0,
+        "시장조성": 1,
         "시장조성자": 0,
         "EU ETS": 0,
         "EUA": 0,
@@ -372,7 +372,7 @@
     {
       "source": "기후부 공지·공고",
       "section": "notice",
-      "requestedStartDate": "2026-08-29",
+      "requestedStartDate": "2026-08-30",
       "transport": "unfiltered-rss-local-split-keyword-filter",
       "keywordRule": {
         "titleAndContent": [
@@ -498,8 +498,8 @@
       "relatedCount": 13,
       "earliest": "2026-09-01",
       "latest": "2026-10-27",
-      "oldestSeen": "2026-06-24",
-      "newestSeen": "2026-10-27",
+      "oldestSeen": "2026-06-26",
+      "newestSeen": "2026-10-28",
       "crossedRequestedStart": true,
       "stopReason": "date-boundary",
       "complete": true,
@@ -635,11 +635,11 @@
   ],
   "warnings": [],
   "coverage": {
-    "itemCount": 1692,
+    "itemCount": 1693,
     "counts": {
       "krx_notice": 316,
       "notice": 437,
-      "press": 939
+      "press": 940
     },
     "earliest": {
       "krx_notice": "2015-01-07",
@@ -649,10 +649,10 @@
     "latest": {
       "krx_notice": "2026-10-14",
       "notice": "2026-10-27",
-      "press": "2026-10-23"
+      "press": "2026-10-28"
     },
     "directCounts": {
-      "press": 435,
+      "press": 436,
       "notice": 226
     },
     "relatedCounts": {
@@ -666,6 +666,25 @@
     }
   },
   "items": [
+    {
+      "id": "15254e0569859a48",
+      "publishedAt": "2026-10-28",
+      "title": "기후대응위, 민관 협력으로 철강산업 저탄소 전환 해법 모색",
+      "category": "시장·가격",
+      "summary": "▷ 「산업부문 저탄소 전환정책 포럼(제2차)」개최, 철강산업 현장의 전환과제와 이를 뒷받침할 투자·금융 연계방안 논의 □ 국가기후위기대응위원회(공동위원장: 한성숙 국무총리, 이창훈 민간위원장, 이하 ‘기후대응위’)는 10월 28일(수) 서울 피스앤파크컨벤션에서 정부, 철강산업계, 학계 및 금융권 관계자 등 100여 명이 참석한 가운데 「산업부문 저탄소 전환정책 포럼(제2차)」을 개최하였다. * 철강산업은 국내 산업부문 온실가스 배출량의 약 39%를 차지하는 최대 배출업종(‘18년 기준) □ 이번 포럼은 기후대응위가「탄소중립 그랜드 얼라이언스*」활동의 일환으로, 철강산업 현장의 탄소중립 전환과제와 이를 뒷받침할 투자·금융 연계방안 논의하고 관련 업계의 의견을 청취하기 위해 마련하였다. * 온실가스 다배출 산업계, 금융계 및 관계 부처 간 협력을 위해 출범(‘24.12.), 제1차 포럼(’26.7.)에서는 산업 녹색전환(GX), 넷제로 산업, 자발적 탄소시장 간 연계방안 등을 논의 □ 총 두 세션으로 나누어서 진행된 이번 포럼에서 ?첫 번째 세션에서는 난감축 업종(철강)의 저탄소 전환, 방향과 과제 ?두 번째 세션에서는 K-GX(한국형 녹색대전환) 추진을 위한 투자·금융 연계방안을 주제로 논의하였다. ㅇ 첫 번째 세션을 통해 ?강연주 산업통상부 철강세라믹과장은 철강산업 저탄소 전환을 위한 정책방향 ?구윤모 서울대학교 교수는 탄소중립시대, 국내 철강산업의 경쟁력 확보전략을 발표하였다. ㅇ 두 번째 세션에서는 ?박재훈 금융위원회 산업금융과장이 저탄소 전환을 위한 전환금융 추진현황과 방향 ?염정섭 기후에너지환경부 녹색전환정책과장이 K-GX이행을 위한 녹색·전환투자 지원방안 ?김녹영 대한상공회의소 탄소감축인증센터장이 산업계의 녹색전환 투자계획과 과제를 소개하였다. □ 한편, 산업계에서는 저탄소 전환 과정의 애로사항과 필요한 지원사항을 건의하였다. ㅇ 포스코홀딩스는 수소환원제철 등 저탄소 기술의 실증·상용화와 설비전환에 따른 투자 부담을 설명하고, 정부주도의 저탄소철강 시장 조성 지원, 청정전력·수소 공급기반 확충 및 장기적인 투자·금융 여건 조성을 검토해 줄 것을 건의하였다. ㅇ 한국철강협회는 저탄소 전환투자에 대한 세제지원, 전력비 부담 완화, 고품질 철스크랩 확보 및 저탄소 철강제품의 감축성과 인정을 업계 공통과제로 제시하였다. □ 이창훈 기후대응위 민간위원장은 “산업의 저탄소 전환은 온실가스 감축과 산업 경쟁력 확보를 위해 민관이 함께 추진해야 할 과제”라며, “정부의 정책적 뒷받침과 함께 기후금융이 기업의 전환 투자 수요와 효과적으로 연결되어 실질적인 감축으로 이어져야 한다”고 밝혔다. □ 기후대응위는 이번 포럼에서 제기된 철강산업계와 금융권의 의견을 「난감축업종 그린전환 전문위원회」논의에 참고하고, 관계부처와 공유하여 정책 간 연계·보완 필요사항을 살펴볼 계획이다. ※ 붙임: 「산업(철강) 부문 저탄소 전환 정책 포럼(제2차)」 개요 및 세부 일정",
+      "source": "기후부 보도자료",
+      "sourceType": "official",
+      "section": "press",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%ED%83%84%EC%86%8C%EC%8B%9C%EC%9E%A5&menuId=10598&orgCd=&boardMasterId=939&boardId=1902690",
+      "matchedKeywords": [
+        "탄소시장",
+        "시장조성"
+      ],
+      "matchedFields": [
+        "content"
+      ],
+      "keywordScope": "direct"
+    },
     {
       "id": "29f6c3af83eb29c9",
       "publishedAt": "2026-10-27",
@@ -97422,8 +97441,8 @@
     }
   ],
   "collectionMode": "incremental",
-  "queryStartDate": "2026-08-29",
-  "queryEndDate": "2026-10-28",
+  "queryStartDate": "2026-08-30",
+  "queryEndDate": "2026-10-29",
   "climateKeywordExpansion": {
     "version": "2026-09-11-v1-38-topics",
     "sharedWith": "산업부 보도자료·공지사항",
@@ -97544,8 +97563,8 @@
       ]
     },
     "collectionMode": "incremental",
-    "queryStartDate": "2026-08-29",
-    "queryEndDate": "2026-10-28"
+    "queryStartDate": "2026-08-30",
+    "queryEndDate": "2026-10-29"
   },
   "policyEventTaxonomy": {
     "version": "2026-09-11-v1-user-38-events",
@@ -97558,8 +97577,8 @@
     "krxRule": "배출권시장 전용 공지 전체를 direct로 보존하고 세부 이벤트를 태깅"
   },
   "retentionAudit": {
-    "previousUnique": 1691,
-    "currentUnique": 1692,
+    "previousUnique": 1693,
+    "currentUnique": 1693,
     "missing": 0
   }
 }
