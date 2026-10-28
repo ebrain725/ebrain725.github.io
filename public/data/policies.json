@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-10-28T08:13:41+09:00",
+  "lastSync": "2026-10-28T10:13:01+09:00",
   "keywords": [
     "배출권",
     "배출권거래제",
@@ -30,7 +30,7 @@
   "warning": "한국거래소 배출권 공지사항: 한국거래소 공지 목록을 해석하지 못했습니다. 1페이지: HTTP Error 403: Forbidden",
   "aiInsight": {
     "summary": "최근 공식자료의 직접적인 수급 변수는 유상경매입니다. 최근 경매가 높은 낙찰가로 소화돼 공급보다 이행수요가 강하다는 신호입니다.",
-    "generatedAt": "2026-10-28T08:13:41+09:00",
+    "generatedAt": "2026-10-28T10:13:01+09:00",
     "basisLatestDate": "2026-10-21",
     "basisCount": 10,
     "source": "fallback",
@@ -728,6 +728,29 @@
     }
   ],
   "items": [
+    {
+      "id": "ccc0d687cea3efea",
+      "publishedAt": "2026-10-28",
+      "title": "현대차증권 '탄소금융 인사이트 데이'… 배출권 넘어 외부사업 해법 모색",
+      "category": "상쇄·외부사업",
+      "summary": "권동혁 BNZ파트너스 부대표는 4차 계획기간에서 가장 큰 변화 중 하나로 배출권 총량 강화를 꼽았다. 기존 국가 감축 로드맵 방식과 달리 2030년 국가 온실가스 감축목표(NDC)를 기준으로 선형 감축경로를 적용했고, 과거 총량...",
+      "source": "niceeconomy.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.niceeconomy.co.kr/news/articleView.html?idxno=91561",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "niceeconomy.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
     {
       "id": "e699f17b9ec7ec53",
       "publishedAt": "2026-10-28",
@@ -6134,7 +6157,6 @@
         "유상할당"
       ],
       "duplicateSources": [
-        "이투데이",
         "etoday.co.kr",
         "edaily.co.kr",
         "newslock.co.kr",
@@ -6159,11 +6181,13 @@
         "seoultimes.news",
         "fnnews.com",
         "cstimes.com",
+        "아이뉴스24",
         "biz.sbs.co.kr",
         "inews24.com",
         "smedaily.co.kr",
         "dealsite.co.kr",
         "etnews.com",
+        "이투데이",
         "이데일리",
         "동행미디어 시대",
         "스마트투데이",
@@ -6179,7 +6203,6 @@
         "SBS Biz",
         "서울경제",
         "디지털포스트",
-        "아이뉴스24",
         "아시아투데이",
         "한국아이닷컴",
         "파이낸셜포스트",
@@ -6187,8 +6210,8 @@
         "ER 이코노믹리뷰"
       ],
       "searchProviders": [
-        "Google News RSS",
-        "NAVER API HUB"
+        "NAVER API HUB",
+        "Google News RSS"
       ],
       "duplicateCount": 51,
       "region": "국내"
@@ -9193,8 +9216,8 @@
         "K-ETS"
       ],
       "duplicateSources": [
-        "연합뉴스",
         "e2news.com",
+        "연합뉴스",
         "newsdream.kr",
         "dailian.co.kr",
         "edaily.co.kr",
@@ -9203,8 +9226,8 @@
         "아시아경제"
       ],
       "searchProviders": [
-        "Google News RSS",
-        "NAVER API HUB"
+        "NAVER API HUB",
+        "Google News RSS"
       ],
       "duplicateCount": 8,
       "region": "국내"
@@ -9452,14 +9475,14 @@
         "K-ETS"
       ],
       "duplicateSources": [
-        "이투데이",
         "industrynews.co.kr",
-        "pinpointnews.co.kr",
         "paxetv.com",
         "newsdream.kr",
         "dailian.co.kr",
-        "view.asiae.co.kr",
         "edaily.co.kr",
+        "이투데이",
+        "pinpointnews.co.kr",
+        "view.asiae.co.kr",
         "팍스경제TV",
         "마켓인",
         "데일리안",
@@ -9472,8 +9495,8 @@
         "e2news.com"
       ],
       "searchProviders": [
-        "Google News RSS",
-        "NAVER API HUB"
+        "NAVER API HUB",
+        "Google News RSS"
       ],
       "duplicateCount": 18,
       "region": "국내"
@@ -20286,10 +20309,9 @@
       ],
       "duplicateSources": [
         "4th.kr",
-        "뉴스핌",
-        "서울경제",
         "smarttoday.co.kr",
         "news1.kr",
+        "포춘코리아",
         "seoulfn.com",
         "ebn.co.kr",
         "imaeil.com",
@@ -20306,22 +20328,23 @@
         "newsroad.co.kr",
         "연합뉴스TV",
         "bizwnews.com",
+        "매일일보",
         "inthenews.co.kr",
         "sisacast.kr",
         "economist.co.kr",
         "job-post.co.kr",
         "pinpointnews.co.kr",
-        "이투데이",
         "etoday.co.kr",
         "biztribune.co.kr",
         "sports.hankooki.com",
         "pointe.co.kr",
         "swtvnews.com",
+        "서울경제TV",
         "sentv.co.kr",
         "kfenews.co.kr",
         "wowtv.co.kr",
+        "뉴스핌",
         "moneystorm.kr",
-        "브릿지경제",
         "dealsitetv.com",
         "dailypop.kr",
         "sateconomy.co.kr",
@@ -20329,10 +20352,10 @@
         "huffingtonpost.kr",
         "yna.co.kr",
         "catchnews.kr",
+        "서울경제",
+        "이투데이",
+        "브릿지경제",
         "머니투데이",
-        "포춘코리아",
-        "매일일보",
-        "서울경제TV",
         "아시아경제",
         "뉴스1",
         "newsian.co.kr",
@@ -41382,7 +41405,7 @@
       "keywordScope": "direct"
     },
     {
-      "id": "c315dd89d2d3d43a",
+      "id": "e7cc74cedb1a7350",
       "publishedAt": "2026-07-24",
       "title": "「배출권거래제 고도화 및 간접배출 관리체계 개선 방안 연구」 입찰 재공고",
       "category": "제도",
@@ -41390,7 +41413,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C%EA%B1%B0%EB%9E%98%EC%A0%9C&menuId=10524&orgCd=&boardMasterId=39&boardId=1879830",
+      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C%EA%B1%B0%EB%9E%98%EC%A0%9C&menuId=10524&orgCd=&boardMasterId=39&boardId=1879830",
       "matchedKeywords": [
         "배출권",
         "배출권거래제"
@@ -42413,7 +42436,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "78ae7cb43ef1e7aa",
+      "id": "58d9ce645cb06946",
       "publishedAt": "2026-07-03",
       "title": "「배출권거래제 고도화 및 간접배출 관리체계 개선 방안 연구」 입찰 공고",
       "category": "제도",
@@ -42421,7 +42444,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C%EA%B1%B0%EB%9E%98%EC%A0%9C&menuId=10524&orgCd=&boardMasterId=39&boardId=1875540",
+      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C%EA%B1%B0%EB%9E%98%EC%A0%9C&menuId=10524&orgCd=&boardMasterId=39&boardId=1875540",
       "matchedKeywords": [
         "배출권",
         "배출권거래제"
@@ -50621,7 +50644,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "eafd57a5985c46be",
+      "id": "45ae9c9285f11d33",
       "publishedAt": "2026-02-25",
       "title": "「배출권거래제 외부사업 활성화 방안 마련 연구」 입찰 공고",
       "category": "상쇄·외부사업",
@@ -50629,7 +50652,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C%EA%B1%B0%EB%9E%98%EC%A0%9C&menuId=10524&orgCd=&boardMasterId=39&boardId=1845320",
+      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C%EA%B1%B0%EB%9E%98%EC%A0%9C&menuId=10524&orgCd=&boardMasterId=39&boardId=1845320",
       "matchedKeywords": [
         "외부사업",
         "외부 사업",
@@ -56960,7 +56983,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "73f36c800861b330",
+      "id": "f1d99a975cb32c41",
       "publishedAt": "2025-11-14",
       "title": "온실가스 배출권거래제 제4차 계획기간 국가 배출권 할당계획 공고",
       "category": "제도",
@@ -56968,7 +56991,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C%EA%B1%B0%EB%9E%98%EC%A0%9C&menuId=10524&orgCd=&boardMasterId=39&boardId=1819470",
+      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C%EA%B1%B0%EB%9E%98%EC%A0%9C&menuId=10524&orgCd=&boardMasterId=39&boardId=1819470",
       "matchedKeywords": [
         "온실가스",
         "할당계획",
@@ -57037,7 +57060,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "b2db31eba5c50b6f",
+      "id": "093fe729da33efbf",
       "publishedAt": "2025-11-14",
       "title": "온실가스 배출권거래제 제3차 계획기간 국가 배출권 할당계획 변경사항 공고",
       "category": "제도",
@@ -57045,7 +57068,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C%EA%B1%B0%EB%9E%98%EC%A0%9C&menuId=10524&orgCd=&boardMasterId=39&boardId=1819480",
+      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C%EA%B1%B0%EB%9E%98%EC%A0%9C&menuId=10524&orgCd=&boardMasterId=39&boardId=1819480",
       "matchedKeywords": [
         "온실가스",
         "할당계획",
@@ -65289,7 +65312,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "d7fb8dedcd1e45ae",
+      "id": "58828e56b31f8f6a",
       "publishedAt": "2025-06-09",
       "title": "배출권거래제 자발적 참여업체 신청 절차 공고",
       "category": "제도",
@@ -65297,7 +65320,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C%EA%B1%B0%EB%9E%98%EC%A0%9C&menuId=10524&orgCd=&boardMasterId=39&boardId=1746990",
+      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C%EA%B1%B0%EB%9E%98%EC%A0%9C&menuId=10524&orgCd=&boardMasterId=39&boardId=1746990",
       "matchedKeywords": [
         "할당대상업체",
         "배출권",
@@ -67791,7 +67814,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "bf2c7b48532214c8",
+      "id": "34bb2d30171c09a1",
       "publishedAt": "2025-04-04",
       "title": "2025년 4월 배출권 유상할당 입찰 공고",
       "category": "유상경매",
@@ -67799,7 +67822,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10524&orgCd=&boardMasterId=39&boardId=1735370",
+      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10524&orgCd=&boardMasterId=39&boardId=1735370",
       "matchedKeywords": [
         "유상할당",
         "유상 할당",
@@ -72109,7 +72132,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "05fc79bd8614e601",
+      "id": "e597e32e06bc0f82",
       "publishedAt": "2025-02-06",
       "title": "2025년 2월 배출권 유상할당 입찰 공고",
       "category": "유상경매",
@@ -72117,7 +72140,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10524&orgCd=&boardMasterId=39&boardId=1723130",
+      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10524&orgCd=&boardMasterId=39&boardId=1723130",
       "matchedKeywords": [
         "유상할당",
         "유상 할당",
@@ -74528,7 +74551,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "c42e59430c76006a",
+      "id": "cd43602a3ac2b6c0",
       "publishedAt": "2024-12-24",
       "title": "온실가스 배출권거래제 제3차 계획기간 국가 배출권 할당계획 변경사항 공고",
       "category": "제도",
@@ -74536,7 +74559,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C%EA%B1%B0%EB%9E%98%EC%A0%9C&menuId=10524&orgCd=&boardMasterId=39&boardId=1715690",
+      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C%EA%B1%B0%EB%9E%98%EC%A0%9C&menuId=10524&orgCd=&boardMasterId=39&boardId=1715690",
       "matchedKeywords": [
         "온실가스",
         "할당계획",
@@ -266747,10 +266770,10 @@
   },
   "newsRetention": {
     "policy": "append-only",
-    "lastMergedAt": "2026-10-28T08:13:48+09:00",
-    "itemCount": 1545,
-    "archiveBefore": 1544,
-    "currentBefore": 1410,
+    "lastMergedAt": "2026-10-28T10:13:07+09:00",
+    "itemCount": 1546,
+    "archiveBefore": 1545,
+    "currentBefore": 1411,
     "gitRecoveryEnabled": false
   }
 }

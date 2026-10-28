@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-28T08:13:48+09:00",
+  "generatedAt": "2026-10-28T10:13:07+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1545,
+  "itemCount": 1546,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-28",
   "sourceCommitsScanned": 0,
@@ -12,6 +12,29 @@
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "ccc0d687cea3efea",
+      "publishedAt": "2026-10-28",
+      "title": "현대차증권 '탄소금융 인사이트 데이'… 배출권 넘어 외부사업 해법 모색",
+      "category": "상쇄·외부사업",
+      "summary": "권동혁 BNZ파트너스 부대표는 4차 계획기간에서 가장 큰 변화 중 하나로 배출권 총량 강화를 꼽았다. 기존 국가 감축 로드맵 방식과 달리 2030년 국가 온실가스 감축목표(NDC)를 기준으로 선형 감축경로를 적용했고, 과거 총량...",
+      "source": "niceeconomy.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.niceeconomy.co.kr/news/articleView.html?idxno=91561",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "niceeconomy.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
     {
       "id": "e699f17b9ec7ec53",
       "publishedAt": "2026-10-28",
@@ -5201,7 +5224,6 @@
         "유상할당"
       ],
       "duplicateSources": [
-        "이투데이",
         "etoday.co.kr",
         "edaily.co.kr",
         "newslock.co.kr",
@@ -5226,11 +5248,13 @@
         "seoultimes.news",
         "fnnews.com",
         "cstimes.com",
+        "아이뉴스24",
         "biz.sbs.co.kr",
         "inews24.com",
         "smedaily.co.kr",
         "dealsite.co.kr",
         "etnews.com",
+        "이투데이",
         "이데일리",
         "동행미디어 시대",
         "스마트투데이",
@@ -5246,7 +5270,6 @@
         "SBS Biz",
         "서울경제",
         "디지털포스트",
-        "아이뉴스24",
         "아시아투데이",
         "한국아이닷컴",
         "파이낸셜포스트",
@@ -5254,8 +5277,8 @@
         "ER 이코노믹리뷰"
       ],
       "searchProviders": [
-        "Google News RSS",
-        "NAVER API HUB"
+        "NAVER API HUB",
+        "Google News RSS"
       ],
       "duplicateCount": 51,
       "region": "국내"
@@ -8186,8 +8209,8 @@
         "K-ETS"
       ],
       "duplicateSources": [
-        "연합뉴스",
         "e2news.com",
+        "연합뉴스",
         "newsdream.kr",
         "dailian.co.kr",
         "edaily.co.kr",
@@ -8196,8 +8219,8 @@
         "아시아경제"
       ],
       "searchProviders": [
-        "Google News RSS",
-        "NAVER API HUB"
+        "NAVER API HUB",
+        "Google News RSS"
       ],
       "duplicateCount": 8,
       "region": "국내"
@@ -8445,14 +8468,14 @@
         "K-ETS"
       ],
       "duplicateSources": [
-        "이투데이",
         "industrynews.co.kr",
-        "pinpointnews.co.kr",
         "paxetv.com",
         "newsdream.kr",
         "dailian.co.kr",
-        "view.asiae.co.kr",
         "edaily.co.kr",
+        "이투데이",
+        "pinpointnews.co.kr",
+        "view.asiae.co.kr",
         "팍스경제TV",
         "마켓인",
         "데일리안",
@@ -8465,8 +8488,8 @@
         "e2news.com"
       ],
       "searchProviders": [
-        "Google News RSS",
-        "NAVER API HUB"
+        "NAVER API HUB",
+        "Google News RSS"
       ],
       "duplicateCount": 18,
       "region": "국내"
@@ -18826,10 +18849,9 @@
       ],
       "duplicateSources": [
         "4th.kr",
-        "뉴스핌",
-        "서울경제",
         "smarttoday.co.kr",
         "news1.kr",
+        "포춘코리아",
         "seoulfn.com",
         "ebn.co.kr",
         "imaeil.com",
@@ -18846,22 +18868,23 @@
         "newsroad.co.kr",
         "연합뉴스TV",
         "bizwnews.com",
+        "매일일보",
         "inthenews.co.kr",
         "sisacast.kr",
         "economist.co.kr",
         "job-post.co.kr",
         "pinpointnews.co.kr",
-        "이투데이",
         "etoday.co.kr",
         "biztribune.co.kr",
         "sports.hankooki.com",
         "pointe.co.kr",
         "swtvnews.com",
+        "서울경제TV",
         "sentv.co.kr",
         "kfenews.co.kr",
         "wowtv.co.kr",
+        "뉴스핌",
         "moneystorm.kr",
-        "브릿지경제",
         "dealsitetv.com",
         "dailypop.kr",
         "sateconomy.co.kr",
@@ -18869,10 +18892,10 @@
         "huffingtonpost.kr",
         "yna.co.kr",
         "catchnews.kr",
+        "서울경제",
+        "이투데이",
+        "브릿지경제",
         "머니투데이",
-        "포춘코리아",
-        "매일일보",
-        "서울경제TV",
         "아시아경제",
         "뉴스1",
         "newsian.co.kr",
