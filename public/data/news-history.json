@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-28T13:12:54+09:00",
+  "generatedAt": "2026-10-28T15:07:46+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1557,
+  "itemCount": 1564,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-28",
   "sourceCommitsScanned": 0,
@@ -27,12 +27,13 @@
         "배출권"
       ],
       "duplicateSources": [
+        "g-enews.com",
         "niceeconomy.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "region": "국내"
     },
     {
@@ -108,6 +109,30 @@
       "region": "국내"
     },
     {
+      "id": "dc9732a00ada4b51",
+      "publishedAt": "2026-10-28",
+      "title": "팬스타 북극항로 왕복운항 성공… 부산상의, 상업화 지원과제 청취",
+      "category": "제도",
+      "summary": "EU 해운 탄소규제와 관련해서는 북극항로의 짧은 운항거리가 탄소 배출 저감으로 이어지는 만큼, 유럽 기항 시 발생하는 탄소 배출권 구매 비용과 선박 연료의 온실가스 배출기준 준수 비용을 국가 차원에서 보전할 필요가...",
+      "source": "view.asiae.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://view.asiae.co.kr/article/2026102814385947866",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "view.asiae.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
       "id": "8b878707c10e50a7",
       "publishedAt": "2026-10-28",
       "title": "탄소중립 정책 비용, 2060년까지 韓 성장률 연평균 0.06~0.07%P 끌어내린...",
@@ -181,6 +206,77 @@
       "region": "국내"
     },
     {
+      "id": "4b4f56e50d9e55aa",
+      "publishedAt": "2026-10-28",
+      "title": "삼천리, CCUS·e-메탄 동향 공유…산업체 탄소중립 지원",
+      "category": "제도",
+      "summary": "사물인터넷(IoT) 기반 스마트안전관리시스템을 비롯한 체계적인 안전관리 프로세스를 통해 고객의 안전한 에너지 사용 환경을 조성하고 있으며, 탄소 배출권 개발과 바이오가스의 도시가스 원료화, 발전용 연료전지 사업...",
+      "source": "energy-news.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=229322",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "energy-news.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "e840854da72abd15",
+      "publishedAt": "2026-10-28",
+      "title": "산림청, 아시아 산림협력 기업포럼서 민관협력 확대방안 논의",
+      "category": "제도",
+      "summary": "이어 세계은행, 녹색기후기금, KT&G, SK증권 등 국제기구와 민간기업 관계자들이 산림복원 사업의 투자 가능성, 국제 탄소시장 연계방안, 민간투자 활성화를 위한 협력방안 등을 주제로 토론했다. 전북특별자치도와...",
+      "source": "news1.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.news1.kr/local/daejeon-chungnam/6334891",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 2,
+      "duplicateSources": [
+        "news1.kr",
+        "businesskorea.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "12fb7141fffdf1db",
+      "publishedAt": "2026-10-28",
+      "title": "산림청, 아시아 산림복원에 민간투자 확대 모색",
+      "category": "제도",
+      "summary": "참석자들은 산림복원 사업의 투자 가능성과 국제 탄소시장 연계, 민간투자 활성화를 위한 협력 방안 등을 논의했다. 전북특별자치도와 글로벌녹색성장기구(GGGI)가 참여한 특별세션에서는 지방정부의 탄소중립 전략과...",
+      "source": "newsprime.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.newsprime.co.kr/news/article.html?no=752739",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "newsprime.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "b3e9e773696a5004",
       "publishedAt": "2026-10-28",
       "title": "북극항로가 해운·항만주 새 기회 될까…전용 터미널·물동량 확보가 관...",
@@ -221,6 +317,30 @@
       ],
       "duplicateSources": [
         "kwnews.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "91eacf329087dd77",
+      "publishedAt": "2026-10-28",
+      "title": "e-메탄 상용화·CCUS 경제성·자가열병합 확대…산업계 에너지 전환 해법...",
+      "category": "제도",
+      "summary": "특히 저탄소 기술의 도입 효과를 높이려면 온실가스 감축 가능성뿐 아니라 연료 조달비용과 설비 투자비... 도시 가스 를 공급하고 있다. 최근에는 탄소 배출권 개발과 바이오 가스 의 도시 가스 원료화, 발전용 연료전지 사업...",
+      "source": "energydaily.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.energydaily.co.kr/news/articleView.html?idxno=204464",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "energydaily.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -276,6 +396,30 @@
       ],
       "duplicateCount": 1,
       "region": "해외"
+    },
+    {
+      "id": "8d9bc7bc8799707e",
+      "publishedAt": "2026-10-28",
+      "title": "[단독]‘불량 배출권 ’ 장사하는 공기업…감축량 부풀린 쿡스토브로 64...",
+      "category": "상쇄·외부사업",
+      "summary": "질 낮고 값싼 배출권 거래에 공기업이 앞장서고 있다는 지적이 나온다. 에너지 공기업 쿡스토브 감축실적... 탄소 배출권 을 확보해왔다. 기업이 배출한 온실가스를 쿡스토브 사업을 통해 상쇄하는 구조다. 에너지...",
+      "source": "khan.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.khan.co.kr/article/202610281359001",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "khan.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
     },
     {
       "id": "40031a3a2aebc093",
@@ -370,13 +514,39 @@
       ],
       "duplicateSources": [
         "m-economynews.com",
+        "sedaily.com",
         "yna.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 2,
+      "duplicateCount": 3,
       "region": "해외"
+    },
+    {
+      "id": "f778b85b32c0ce27",
+      "publishedAt": "2026-10-28",
+      "title": "\"12차 전기본에 반도체·AI 재생에너지 공급계획 담아야\"",
+      "category": "시장·가격",
+      "summary": "수입 연료가격 변동성과 한국 배출권 거래제(K-ETS)에 따른 탄소비용 부담, 탈탄소 전환 과정에서 기존... 한국은 2035년 온실가스 53~61% 감축(2018년 대비)과 2030년 재생에너지 100GW 보급을 목표로 하고 있으며, K-GX 전략을...",
+      "source": "esgeconomy.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.esgeconomy.com/news/articleView.html?idxno=17152",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "K-ETS"
+      ],
+      "duplicateSources": [
+        "esgeconomy.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
     },
     {
       "id": "890064a6c5d31474",
@@ -9784,16 +9954,16 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "아시아경제",
         "view.asiae.co.kr",
+        "아시아경제",
         "etnews.com",
         "dt.co.kr",
         "전자신문",
         "naeil.com"
       ],
       "searchProviders": [
-        "Google News RSS",
-        "NAVER API HUB"
+        "NAVER API HUB",
+        "Google News RSS"
       ],
       "duplicateCount": 6,
       "region": "국내"
