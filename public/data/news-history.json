@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-29T03:35:11+09:00",
+  "generatedAt": "2026-10-29T08:14:09+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1600,
+  "itemCount": 1602,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-29",
   "sourceCommitsScanned": 0,
@@ -12,6 +12,29 @@
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "f6d901f1cfb9b71f",
+      "publishedAt": "2026-10-29",
+      "title": "현대차증권, ' 탄소 금융 인사이트 데이' 개최",
+      "category": "제도",
+      "summary": "맞춤형 탄소 금융 솔루션을 제공하고 있다고 강조했다. 배형근 현대차증권 사장은 \"지난해 첫 행사에 보내주신 관심에 힘입어 올해 두 번째 행사를 마련하게 됐다\"면서 \"제4차 계획기간 시행으로 배출권 시장 환경이 크게...",
+      "source": "bizwnews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.bizwnews.com/news/articleView.html?idxno=150246",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "bizwnews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
     {
       "id": "450975726916ecdc",
       "publishedAt": "2026-10-29",
@@ -34,6 +57,31 @@
         "NAVER API HUB"
       ],
       "region": "국내"
+    },
+    {
+      "id": "b1aa2bc8892bd84a",
+      "publishedAt": "2026-10-29",
+      "title": "[전문가기고] AI부터 그린스틸까지...스웨덴, '무탄소 전력' 앞세워 산업...",
+      "category": "제도",
+      "summary": "스웨덴은 1991년 탄소세를 도입한 이후 온실가스 저감과 경제성장이라는 두 마리 토끼를 잡았다. 호르무즈... EU가 2028년부터 도로수송 연료에도 탄소 배출권 거래제(ETS2)를 적용할 예정인 가운데, 글로벌 물류업체들이...",
+      "source": "ajunews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.ajunews.com/view/20261028082448885",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "ajunews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
     },
     {
       "id": "a294b489b95146e6",
@@ -112,13 +160,14 @@
         "fnnews.com",
         "niceeconomy.co.kr",
         "asiatime.co.kr",
-        "view.asiae.co.kr"
+        "view.asiae.co.kr",
+        "thevaluenews.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB",
         "Google News RSS"
       ],
-      "duplicateCount": 14,
+      "duplicateCount": 15,
       "region": "국내"
     },
     {
@@ -609,12 +658,18 @@
       ],
       "duplicateSources": [
         "megaeconomy.co.kr",
-        "pinpointnews.co.kr"
+        "pinpointnews.co.kr",
+        "newsmap.co.kr",
+        "todayenergy.kr",
+        "gasnews.com",
+        "energy-news.co.kr",
+        "ftoday.co.kr",
+        "e2news.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 2,
+      "duplicateCount": 8,
       "region": "국내"
     },
     {
@@ -4223,8 +4278,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "프레시안",
         "저널25방송",
+        "프레시안",
         "pressian.com"
       ],
       "searchProviders": [
