@@ -1,17 +1,40 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-29T22:34:50+09:00",
+  "generatedAt": "2026-10-30T03:38:51+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1637,
+  "itemCount": 1638,
   "earliestPublishedAt": "2026-08-06",
-  "latestPublishedAt": "2026-10-29",
+  "latestPublishedAt": "2026-10-30",
   "sourceCommitsScanned": 0,
   "sourceSnapshotsScanned": 0,
   "historicalRowsScanned": 0,
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "d2a5ea118c2742be",
+      "publishedAt": "2026-10-30",
+      "title": "개도국 탄소 감축이 ‘돈’ 되는 시장 , 한국이 함께 만든다",
+      "category": "제도",
+      "summary": "개발도상국의 온실가스 감축 실적을 국제적으로 거래할 수 있는 '글로벌 검증 탄소시장 (GVCM)'을 함께 만들기로 했다. GGGI가 29일 서울 중구 웨스틴조선호텔에서 개최한 '글로벌녹색성장서밋'에서 나온 이야기다....",
+      "source": "womennews.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.womennews.co.kr/news/articleView.html?idxno=283920",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "womennews.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
     {
       "id": "6c6506b33ba3f93e",
       "publishedAt": "2026-10-29",
