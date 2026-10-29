@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-30T03:38:51+09:00",
+  "generatedAt": "2026-10-30T08:13:28+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1638,
+  "itemCount": 1640,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-30",
   "sourceCommitsScanned": 0,
@@ -12,6 +12,32 @@
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "c639425e7345b3f5",
+      "publishedAt": "2026-10-30",
+      "title": "탄소 배출권 발급, 어디서부터 시작해야 할까?…i-DEA, 외부사업 초급 교...",
+      "category": "상쇄·외부사업",
+      "summary": "사업자는 이를 배출권 할당대상업체 등에 판매할 수 있으며, 할당대상업체는 확보한 KOC를 상쇄배출권 (KCU)으로 전환해 배출권거래제의 의무 이행 등에 활용할 수 있다. 다만 외부사업 인증실적을 확보하려면 사업에 적합한...",
+      "source": "hellot.net",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.hellot.net/news/article.html?no=115807",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권",
+        "배출권거래제",
+        "상쇄배출권"
+      ],
+      "duplicateSources": [
+        "hellot.net"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
     {
       "id": "d2a5ea118c2742be",
       "publishedAt": "2026-10-30",
@@ -3479,7 +3505,8 @@
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
         "배출권",
-        "탄소배출권"
+        "탄소배출권",
+        "배출권거래제"
       ],
       "duplicateSources": [
         "pinpointnews.co.kr"
@@ -8375,6 +8402,30 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "d29421e74be64e5d",
+      "publishedAt": "2026-10-18",
+      "title": "탄소배출권 의무적립 대체 '보험' 첫 적용",
+      "category": "제도",
+      "summary": "탄소배출권 의무적립 대체 '보험' 첫 적용 넷제로뉴스",
+      "source": "넷제로뉴스",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1zS2ZWc0Vadm12TWxfR0tDVWZSSFpzeU1YckxydEtZN3VDcG1ySXJyc1FybFB0REYyd2d4WjVnU0o3amFMd3pIU1o4U2pZQl9KRVpPT3d2Y2JDU2NZanZ2UEsyWFZuSW1NQVHSAW5BVV95cUxNOW40UVFCWG54UUp3UVRlUmZVV2hYT2xMTWZvWVdDWkplSzJfcGV1YWNZWmVwc0h4WFI1RTBNcGRtZGJQZ2JnZ2ZzR19xV3dRRUVqQWQ0TDExN0EwSlB5VVoybnp3ejYtYVZOV0N3dw?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "넷제로뉴스"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
       "region": "국내"
     },
     {
