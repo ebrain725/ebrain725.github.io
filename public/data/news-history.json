@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-29T18:13:46+09:00",
+  "generatedAt": "2026-10-29T20:02:57+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1628,
+  "itemCount": 1633,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-29",
   "sourceCommitsScanned": 0,
@@ -12,6 +12,30 @@
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "6c6506b33ba3f93e",
+      "publishedAt": "2026-10-29",
+      "title": "호찌민시: 특수 탄소 배출권 관련 행정 절차 접수 및 처리에 대한 책임 배정.",
+      "category": "제도",
+      "summary": "호찌민시: 특수 탄소 배출권 관련 행정 절차 접수 및 처리에 대한 책임 배정. Vietnam.vn",
+      "source": "Vietnam.vn",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQckdqUzIzTmZsSC0wdnpTSl8tMUJjby1QbXhEaGdtTVZndVNIU0ZTUHE1Y3RUcUJWQWFXR0FsZV91a3VXeUV5X1Y1bUlMSXlOMVd1ZlhPTERQUHN6czFkUElFZFB3U1hCbzN4RjZkQ3lwa2dwSmpRQm4zaTNGcDBnWEZ2TDF6eTdGN1ZsN0dWX1RmZlp1TDE3bDZpc190ejBOUUNBTG9MVDdJaXhQSHB4c0hXNnYycHc?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "Vietnam.vn"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "해외"
+    },
     {
       "id": "f6d901f1cfb9b71f",
       "publishedAt": "2026-10-29",
@@ -475,6 +499,57 @@
       "region": "국내"
     },
     {
+      "id": "dfe949c1d86c6ed2",
+      "publishedAt": "2026-10-29",
+      "title": "국민성장펀드, 국내 최대 태양광 발전소에 1천억원…반도체 RE100 지원",
+      "category": "제도",
+      "summary": "금융위는 이번 사업이 반도체 기업의 온실가스 배출권 부담을 완화하고 RE100 달성을 지원할 것으로 기대하고 있다. 특히 태양광 모듈은 한화솔루션, 인버터는 OCI파워 제품을 사용하는 등 주요 발전설비를 100% 국산...",
+      "source": "einfomax.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4442016",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "온실가스 배출권"
+      ],
+      "duplicateSources": [
+        "einfomax.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "e50a5c7d3f8eb576",
+      "publishedAt": "2026-10-29",
+      "title": "국민성장펀드, '국내 최대 태양광·반도체 투자 결정'…1조원 대 자금지...",
+      "category": "제도",
+      "summary": "금융위는 장기계약 체계를 통해 반도체 기업들의 온실가스 배출권 부담을 낮추고, RE100 달성 노력에도 긍정적 역할을 할 것이라고 설명했다. 또한 세계 1위 국내 반도체 전공정 장비업체로 꼽히는 피에스케이[319660]의...",
+      "source": "ppss.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.ppss.kr/news/articleView.html?idxno=318098",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "온실가스 배출권"
+      ],
+      "duplicateSources": [
+        "news1.kr",
+        "etoday.co.kr",
+        "yna.co.kr",
+        "ppss.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 4,
+      "region": "국내"
+    },
+    {
       "id": "6a9d7970070e6ce7",
       "publishedAt": "2026-10-29",
       "title": "“북극항로 운항, 전용 터미널·화주 지원 필요”",
@@ -542,6 +617,30 @@
       ],
       "duplicateSources": [
         "ajunews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
+      "id": "d7ed5d8b973d081d",
+      "publishedAt": "2026-10-29",
+      "title": "[이제명의 오션 드림] 기다림에도 비용이 든다",
+      "category": "제도",
+      "summary": "국제해사기구(IMO)는 2023년 전략에서 2050년께 국제해운의 온실가스 순배출 제로를 목표로 삼았다. 이를 구체화할 넷제로(Net-Zero) 프레임워크의 채택 논의는 지연됐지만, 유럽연합의 해운 배출권 거래제와 선박연료 규제는...",
+      "source": "kookje.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.kookje.co.kr/news2011/asp/newsbody.asp?code=1700&key=20261030.22018007940",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "kookje.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -697,6 +796,30 @@
       ],
       "duplicateCount": 1,
       "region": "해외"
+    },
+    {
+      "id": "45708a821ddd1c0c",
+      "publishedAt": "2026-10-29",
+      "title": "\"지방정부 주도 탄소 배출권 확보 방안 정책토론회\" 성황리 개최",
+      "category": "제도",
+      "summary": "아시아산림협력기구(AFoCO)와 전북특별자치도 (사)지역소멸대응협회(이사장 유영태)전라북도회(회장 박우서)가 공동 주최하고 '2026 AFoCO Week'의 프로그램으로 진행된 ‘지방정부 주도 탄소 배출권 확보방안 정책토론회’...",
+      "source": "sjbnews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://sjbnews.com/news/news.php?number=891270",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "sjbnews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
     },
     {
       "id": "fbf6bebbeca981fb",
