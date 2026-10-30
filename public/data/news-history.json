@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-30T10:14:12+09:00",
+  "generatedAt": "2026-10-30T13:14:19+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1648,
+  "itemCount": 1658,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-30",
   "sourceCommitsScanned": 0,
@@ -29,6 +29,30 @@
       ],
       "duplicateSources": [
         "thepublic.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "f8821bb39e2b5cf9",
+      "publishedAt": "2026-10-30",
+      "title": "태양광 발전소와 반도체 투자로 탄소중립 앞당긴다, 1조원 대규모 프로...",
+      "category": "제도",
+      "summary": "이러한 장기 계약은 반도체 기업들이 온실가스 배출권 부담을 줄이고, RE100 목표 달성에 도움이 될 것으로 보인다. 또한, 세계 시장에서 높은 점유율을 자랑하는 피에스케이의 반도체 전공정 장비 설비 확장을 위해...",
+      "source": "gokorea.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.gokorea.kr/news/articleView.html?idxno=883371",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "온실가스 배출권"
+      ],
+      "duplicateSources": [
+        "gokorea.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -101,18 +125,21 @@
         "탄소배출권"
       ],
       "duplicateSources": [
+        "biz.heraldcorp.com",
         "thereport.co.kr",
         "view.asiae.co.kr",
         "etoday.co.kr",
+        "socialvalue.kr",
         "megaeconomy.co.kr",
         "econovill.com",
         "sedaily.com",
-        "newspost.kr"
+        "newspost.kr",
+        "businessplus.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 7,
+      "duplicateCount": 11,
       "region": "국내"
     },
     {
@@ -137,6 +164,102 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "6c5a98b4b1a69155",
+      "publishedAt": "2026-10-30",
+      "title": "로우카본 도심형 CO2 직접포집 설비 '카본트리' 조달청 혁신제품 지정",
+      "category": "제도",
+      "summary": "로우카본은 카본트리의 탄소 감축 실적을 정부가 추진 중인 자발적 탄소시장 플랫폼에 등록하는 방안도 추진하고 있다. 이를 위해 기후재단과 함께 포집한 이산화탄소를 보도블록이나 콘크리트 골재에 넣어 다시...",
+      "source": "e2news.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.e2news.com/news/articleView.html?idxno=335635",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 2,
+      "duplicateSources": [
+        "e2news.com",
+        "energy-news.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "599597748f2d50c3",
+      "publishedAt": "2026-10-30",
+      "title": "글로벌녹색성장서밋 개막, 녹색전환 이끌 기술·자본·탄소시장 협력 해법은",
+      "category": "제도",
+      "summary": "글로벌녹색성장서밋 개막, 녹색전환 이끌 기술·자본·탄소시장 협력 해법은 https://www.2news.co.kr/",
+      "source": "https://www.2news.co.kr/",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFAxUWRwOGhEM0VoYVYzYW9TUXd1bzVWUUprQ0JfYW5PSFlBdmUyLUphVzcyWS0zOXpFTWJHVXF4NkstbFBibzJMcHc4VjJGTXVOR2NsdUpUWG9wclRMZjJkbEM1V2MxNW4w?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "https://www.2news.co.kr/"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "8a3de43dd2f0e112",
+      "publishedAt": "2026-10-30",
+      "title": "국민성장펀드, 태양광·반도체 등 4건에 1조원 지원",
+      "category": "제도",
+      "summary": "금융위는 이를 통해 반도체 기업의 RE100 대응과 온실가스 배출권 부담 완화에 도움이 될 것으로 기대했다. 태양광 모듈과 인버터 등 주요 설비에는 한화솔루션과 OCI파워 제품 등 100% 국산 설비가 사용될 예정이다....",
+      "source": "newsfreezone.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newsfreezone.co.kr/news/articleView.html?idxno=716813",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "온실가스 배출권"
+      ],
+      "duplicateSources": [
+        "newsfreezone.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "e03f807a4b609837",
+      "publishedAt": "2026-10-30",
+      "title": "국민성장펀드, 반도체·바이오·태양광에 1조원대 투자…30조 고지 눈앞",
+      "category": "제도",
+      "summary": "이번 사업을 통해 반도체 기업의 온실가스 배출권 부담을 줄이고, 사용하는 전력을 재생에너지로 전환하는 RE100 이행에도 도움이 될 것으로 기대된다. 발전소에는 한화솔루션의 태양광 모듈과 OCI파워의 인버터 등 국산...",
+      "source": "tfmedia.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.tfmedia.co.kr/news/article.html?no=208505",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "온실가스 배출권"
+      ],
+      "duplicateSources": [
+        "tfmedia.co.kr",
+        "inthenews.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 2,
       "region": "국내"
     },
     {
@@ -211,6 +334,30 @@
       "region": "국내"
     },
     {
+      "id": "900171455bb33bd9",
+      "publishedAt": "2026-10-30",
+      "title": "SK텔레콤, 안동 산불 피해 복원에 AI·드론 활용…1만 그루 식재",
+      "category": "제도",
+      "summary": "SK임업은 장기 조림·재조림과 산림 관리를 바탕으로 숲의 탄소 흡수 기능을 활용한 산림 기반 탄소 배출권 사업도 추진하고 있다. 계열사별 숲 조성 활동도 이어지고 있다. SK텔레콤은 안동 산불 피해지 복원과 서울숲...",
+      "source": "lcnews.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.lcnews.co.kr/news/articleView.html?idxno=210567",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "lcnews.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "3923f6b623806ca4",
       "publishedAt": "2026-10-30",
       "title": "K-GX 1000조원...탄소 감축 성적표 없는 녹색금융",
@@ -233,6 +380,82 @@
       ],
       "duplicateCount": 1,
       "region": "국내"
+    },
+    {
+      "id": "96969c74a3626406",
+      "publishedAt": "2026-10-30",
+      "title": "HD현대마린엔진, 윈지디와 선박용 추진엔진 라이선스 계약 체결",
+      "category": "제도",
+      "summary": "국제해사기구(IMO)의 탄소 배출 규제 강화와 유럽연합 탄소 배출권 거래제(EU ETS) 확대 도입으로 글로벌 해운 시장은 친환경 이중연료 선박 발주가 지배하는 형국이다. HD현대마린엔진 유정대 대표를 비롯한 경영진은...",
+      "source": "ttlnews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.ttlnews.com/news/articleView.html?idxno=3157167",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "ttlnews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
+      "id": "92f1781812d6a82b",
+      "publishedAt": "2026-10-30",
+      "title": "GX 선도한 일본, 자연자본에 주목하는 이유",
+      "category": "제도",
+      "summary": "기후전환국채와 배출권 거래제, 전환금융 등 기존 정책·금융 체계에 자연자본을 통합하려는 접근입니다.... 영국의 생물다양성 크레딧 발행기관 Environment Bank는 지난 7월 한국이 배출권 거래제와 생태계보전부담금 등의...",
+      "source": "impacton.net",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.impacton.net/news/articleView.html?idxno=30466",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "impacton.net"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "78a909845f0f04c0",
+      "publishedAt": "2026-10-30",
+      "title": "EEX 아시아 커머셜 총괄, 서울파이낸스 주최 포럼서 '유럽 탄소시장 및...",
+      "category": "제도",
+      "summary": "및 배출권 시장 동향' 주제로 연사로 나선다. 그는 EEX의 아시아 사업 관련 상업 전략과 영업 활동을... 이번 포럼은 'EU-ETS(유럽 배출권 거래제) 및 FuelEU Maritime(연료규제) 대응 방안과 비용 극소화 전략'을...",
+      "source": "seoulfn.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.seoulfn.com/news/articleView.html?idxno=641426",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장",
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "seoulfn.com",
+        "서울파이낸스"
+      ],
+      "searchProviders": [
+        "NAVER API HUB",
+        "Google News RSS"
+      ],
+      "duplicateCount": 2,
+      "region": "해외"
     },
     {
       "id": "6c6506b33ba3f93e",
@@ -441,12 +664,13 @@
       "matchedKeywords": [
         "탄소시장"
       ],
-      "duplicateCount": 4,
+      "duplicateCount": 5,
       "duplicateSources": [
         "뉴시스",
         "newsis.com",
         "edaily.co.kr",
-        "마켓인"
+        "마켓인",
+        "이데일리"
       ],
       "searchProviders": [
         "Google News RSS",
@@ -721,6 +945,30 @@
       "region": "국내"
     },
     {
+      "id": "e78a2a7a77de9606",
+      "publishedAt": "2026-10-29",
+      "title": "꽝응아이성, 탄소 배출권 시장 참여 준비 중.",
+      "category": "제도",
+      "summary": "꽝응아이성, 탄소 배출권 시장 참여 준비 중. Vietnam.vn",
+      "source": "Vietnam.vn",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxORG5pYndxb2dfTnczOXIzTXRkdXdlSHRCbzdFSGFtajd5c0gtVVBJZXptdlRJYXp5b3Y5ZHhYVEZaNVBkRzBQY1hOWjhMY0VoVjM4ZUlDTFFNYnY1cVFDLTJNZWNmaUdiS1dDWW5pVFp3T3JQa3N3aElrV1FodTNEVWZfR0dtMjg?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "Vietnam.vn"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "해외"
+    },
+    {
       "id": "74afeb2538c2fee8",
       "publishedAt": "2026-10-29",
       "title": "금융위, 태양광·반도체 등 '1조원 규모 사업' 지원 승인",
@@ -861,12 +1109,14 @@
       "matchedKeywords": [
         "탄소시장"
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "duplicateSources": [
-        "chosun.com"
+        "chosun.com",
+        "조선일보"
       ],
       "searchProviders": [
-        "NAVER API HUB"
+        "NAVER API HUB",
+        "Google News RSS"
       ],
       "region": "해외"
     },
@@ -1033,7 +1283,8 @@
       "url": "https://www.khan.co.kr/article/202610292012005",
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
-        "배출권"
+        "배출권",
+        "배출권거래제"
       ],
       "duplicateSources": [
         "khan.co.kr"
@@ -2297,7 +2548,8 @@
       "matchedKeywords": [
         "배출권",
         "배출권거래제",
-        "탄소시장"
+        "탄소시장",
+        "탄소배출권"
       ],
       "duplicateSources": [
         "4th.kr"
@@ -4284,7 +4536,8 @@
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
         "배출권",
-        "배출권거래제"
+        "배출권거래제",
+        "탄소배출권"
       ],
       "duplicateSources": [
         "ilemonde.com"
@@ -7690,11 +7943,11 @@
         "유상할당"
       ],
       "duplicateSources": [
+        "이투데이",
         "etoday.co.kr",
+        "이데일리",
         "newslock.co.kr",
         "newsinside.kr",
-        "이투데이",
-        "이데일리",
         "edaily.co.kr",
         "뉴스핌",
         "fetv.co.kr",
@@ -7718,13 +7971,14 @@
         "inews24.com",
         "smedaily.co.kr",
         "dealsite.co.kr",
-        "etnews.com"
+        "etnews.com",
+        "헤럴드경제"
       ],
       "searchProviders": [
-        "NAVER API HUB",
-        "Google News RSS"
+        "Google News RSS",
+        "NAVER API HUB"
       ],
-      "duplicateCount": 29,
+      "duplicateCount": 30,
       "region": "국내"
     },
     {
@@ -11037,16 +11291,16 @@
         "K-ETS"
       ],
       "duplicateSources": [
+        "이투데이",
+        "인더스트리뉴스",
         "industrynews.co.kr",
-        "팍스경제TV",
+        "pinpointnews.co.kr",
         "paxetv.com",
         "newsdream.kr",
         "dailian.co.kr",
-        "edaily.co.kr",
-        "이투데이",
-        "인더스트리뉴스",
-        "pinpointnews.co.kr",
         "view.asiae.co.kr",
+        "edaily.co.kr",
+        "팍스경제TV",
         "아시아경제",
         "마켓인",
         "데일리안",
@@ -11057,8 +11311,8 @@
         "e2news.com"
       ],
       "searchProviders": [
-        "NAVER API HUB",
-        "Google News RSS"
+        "Google News RSS",
+        "NAVER API HUB"
       ],
       "duplicateCount": 18,
       "region": "국내"
@@ -12080,16 +12334,16 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "아시아경제",
         "view.asiae.co.kr",
+        "아시아경제",
         "etnews.com",
         "dt.co.kr",
         "전자신문",
         "naeil.com"
       ],
       "searchProviders": [
-        "Google News RSS",
-        "NAVER API HUB"
+        "NAVER API HUB",
+        "Google News RSS"
       ],
       "duplicateCount": 6,
       "region": "국내"
