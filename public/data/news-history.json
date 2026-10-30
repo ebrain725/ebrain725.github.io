@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-30T13:14:19+09:00",
+  "generatedAt": "2026-10-30T15:14:15+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1658,
+  "itemCount": 1664,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-30",
   "sourceCommitsScanned": 0,
@@ -110,6 +110,31 @@
       "region": "국내"
     },
     {
+      "id": "9a4dd10746648d31",
+      "publishedAt": "2026-10-30",
+      "title": "엘디카본, 폐타이어 재활용 공정에 탄소포집 기술 접목…저탄소 생산체...",
+      "category": "상쇄·외부사업",
+      "summary": "탄소 감축 실적을 배출권 사업과 연계하는 방안도 추진하고 있다. 엘디카본은 지난해 말 폐타이어 열분해 기술을 활용한 온실가스 감축 방법론에 대해 환경부의 탄소 배출권 거래제 외부 사업 방법론 승인을 받았다. 외부...",
+      "source": "news1.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.news1.kr/local/daejeon-chungnam/6337838",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "news1.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "dfb45f5be3350e2b",
       "publishedAt": "2026-10-30",
       "title": "신한자산운용, 5000억 규모 에너지 인프라 펀드 결성…‘주민수익공유·...",
@@ -128,18 +153,26 @@
         "biz.heraldcorp.com",
         "thereport.co.kr",
         "view.asiae.co.kr",
+        "industrynews.co.kr",
         "etoday.co.kr",
+        "press9.kr",
+        "polinews.co.kr",
         "socialvalue.kr",
         "megaeconomy.co.kr",
         "econovill.com",
         "sedaily.com",
         "newspost.kr",
-        "businessplus.kr"
+        "businessplus.kr",
+        "pointdaily.co.kr",
+        "news1.kr",
+        "mt.co.kr",
+        "fnnews.com",
+        "pinpointnews.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 11,
+      "duplicateCount": 19,
       "region": "국내"
     },
     {
@@ -310,6 +343,54 @@
       "region": "국내"
     },
     {
+      "id": "dcca12e40a79f15f",
+      "publishedAt": "2026-10-30",
+      "title": "【공시 모니터링】SK㈜, 데이터센터 기후위험 금액 산정…투자 자회사 ...",
+      "category": "제도",
+      "summary": "그러나 발전사의 배출권 유상할당 비용이 전력요금에 반영되면 데이터센터의 운영비가 증가할 수 있다고 분석했다. 2040년 추가 전력비용은 현행 정책을 반영한 IEA STEPS 시나리오에서 연 3억4000만원, 강한 탄소...",
+      "source": "impacton.net",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.impacton.net/news/articleView.html?idxno=30360",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "유상할당"
+      ],
+      "duplicateSources": [
+        "impacton.net"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "5dc9a93089ceb3e7",
+      "publishedAt": "2026-10-30",
+      "title": "[증권톡톡] 한화운용 '200커버드콜액티브' 분배금 비과세·미래에셋운용...",
+      "category": "제도",
+      "summary": "탄소 배출권 , 항만 탄소중립, 송배전망 등 다양한 분야에서 투자 기회를 발굴해 에너지 전환을 뒷받침하는 인프라 투자를 확대하겠다\"고 말했다. ◆KB자산운용, 적립식 투자 펀드 7종 제안 KB자산운용은 고유가·고금리와...",
+      "source": "newsworks.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newsworks.co.kr/news/articleView.html?idxno=901440",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "newsworks.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "d836e16b9b737b86",
       "publishedAt": "2026-10-30",
       "title": "[정책브리핑] '30년 기후테크 혁신기업 1천개·예비유니콘 30개 발굴",
@@ -332,6 +413,55 @@
       ],
       "duplicateCount": 1,
       "region": "국내"
+    },
+    {
+      "id": "74532f9b612fb654",
+      "publishedAt": "2026-10-30",
+      "title": "[온실가스 배출권] 10월 30일 KAU26, 4거래일째 3만250원 지속",
+      "category": "시장·가격",
+      "summary": "[온실가스 배출권] 10월 30일 KAU26, 4거래일째 3만250원 지속 데일리e뉴스",
+      "source": "데일리e뉴스",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE44ZHFZYl9NUE9qbUhiTmZHcG5kSVpieVFzLW9fbDE0YWZpdkprdFAtSEFMbGhNSWNaZDFDVTdkNUZRTnJXSG1GMUt1OGExaUpHWWo4S0xObXhNeVV4TUFSMnFSejBQdFB1aXRXNFAzOA?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "온실가스 배출권",
+        "KAU26"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "데일리e뉴스"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "bc2a65671f7e1540",
+      "publishedAt": "2026-10-30",
+      "title": "[연재] 목재이용이 지구를 바꾼다 | 제 8회 나무를 심으면 돈이 된다",
+      "category": "시장·가격",
+      "summary": "탄소수익이 긴 기다림을 보완한다 뉴질랜드는 1989년 이후 조성된 산림이 배출권 거래제(NZ ETS)에 등록하면 산림의 탄소축적 변화에 따라 뉴질랜드 배출권 (NZU)을 받을 수 있도록 했다. 수확이나 산림전용 때 배출권 ...",
+      "source": "woodkorea.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.woodkorea.co.kr/news/articleView.html?idxno=92248",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "woodkorea.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
     },
     {
       "id": "900171455bb33bd9",
@@ -3698,7 +3828,8 @@
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
         "배출권",
-        "탄소배출권"
+        "탄소배출권",
+        "배출권거래제"
       ],
       "duplicateSources": [
         "mk.co.kr"
@@ -6519,6 +6650,30 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 4,
+      "region": "국내"
+    },
+    {
+      "id": "9c3740746538b334",
+      "publishedAt": "2026-10-21",
+      "title": "온실가스 감축부터 순환경제까지…한·EU 정책 공조 확대",
+      "category": "제도",
+      "summary": "기후변화 대응 분야에서는 국가 온실가스 감축목표(NDC) 이행과 배출권거래제 등 정책 동향을 공유했다. 파리협정의 효과적인 이행을 위해 협력하고, 제31차 유엔기후변화협약 당사국총회(COP31) 등 다자 무대에서도...",
+      "source": "factin.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.factin.co.kr/news/articleView.html?idxno=7218",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "factin.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
       "region": "국내"
     },
     {
