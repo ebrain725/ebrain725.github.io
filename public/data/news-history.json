@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-30T20:01:18+09:00",
+  "generatedAt": "2026-10-30T22:25:32+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
   "itemCount": 1668,
@@ -928,8 +928,9 @@
       "matchedKeywords": [
         "탄소시장"
       ],
-      "duplicateCount": 2,
+      "duplicateCount": 3,
       "duplicateSources": [
+        "스포탈코리아",
         "뉴스1",
         "news1.kr"
       ],
@@ -8205,11 +8206,11 @@
         "유상할당"
       ],
       "duplicateSources": [
+        "이투데이",
         "etoday.co.kr",
+        "이데일리",
         "newslock.co.kr",
         "newsinside.kr",
-        "이투데이",
-        "이데일리",
         "edaily.co.kr",
         "뉴스핌",
         "fetv.co.kr",
@@ -8237,8 +8238,8 @@
         "헤럴드경제"
       ],
       "searchProviders": [
-        "NAVER API HUB",
-        "Google News RSS"
+        "Google News RSS",
+        "NAVER API HUB"
       ],
       "duplicateCount": 30,
       "region": "국내"
@@ -11553,16 +11554,16 @@
         "K-ETS"
       ],
       "duplicateSources": [
+        "이투데이",
+        "인더스트리뉴스",
         "industrynews.co.kr",
-        "팍스경제TV",
+        "pinpointnews.co.kr",
         "paxetv.com",
         "newsdream.kr",
         "dailian.co.kr",
-        "edaily.co.kr",
-        "이투데이",
-        "인더스트리뉴스",
-        "pinpointnews.co.kr",
         "view.asiae.co.kr",
+        "edaily.co.kr",
+        "팍스경제TV",
         "아시아경제",
         "마켓인",
         "데일리안",
@@ -11573,8 +11574,8 @@
         "e2news.com"
       ],
       "searchProviders": [
-        "NAVER API HUB",
-        "Google News RSS"
+        "Google News RSS",
+        "NAVER API HUB"
       ],
       "duplicateCount": 18,
       "region": "국내"
