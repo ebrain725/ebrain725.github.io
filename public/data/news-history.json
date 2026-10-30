@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-30T15:14:15+09:00",
+  "generatedAt": "2026-10-30T18:14:16+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1664,
+  "itemCount": 1668,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-30",
   "sourceCommitsScanned": 0,
@@ -155,6 +155,7 @@
         "view.asiae.co.kr",
         "industrynews.co.kr",
         "etoday.co.kr",
+        "enewstoday.co.kr",
         "press9.kr",
         "polinews.co.kr",
         "socialvalue.kr",
@@ -167,12 +168,15 @@
         "news1.kr",
         "mt.co.kr",
         "fnnews.com",
-        "pinpointnews.co.kr"
+        "pinpointnews.co.kr",
+        "weekly.hankooki.com",
+        "ebn.co.kr",
+        "ntoday.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 19,
+      "duplicateCount": 23,
       "region": "국내"
     },
     {
@@ -391,6 +395,30 @@
       "region": "국내"
     },
     {
+      "id": "1ff3408b886a6808",
+      "publishedAt": "2026-10-30",
+      "title": "[증권UP+] 금투업계, 글로벌 시장 분석·사회공헌·상품 경쟁력 제고 나...",
+      "category": "제도",
+      "summary": "| 스마트비즈 = 최준 기자 | 미국 중간선거에 따른 글로벌 금융 시장 영향을 점검하는 웨비나부터 농촌 상생... 신한자산운용은 올해 탄소 배출권과 항만 탄소 중립, 배전망 에너지저장장치(ESS), 태양광 공동개발 등 에너지...",
+      "source": "smartbizn.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.smartbizn.com/news/articleView.html?idxno=158064",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "smartbizn.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "d836e16b9b737b86",
       "publishedAt": "2026-10-30",
       "title": "[정책브리핑] '30년 기후테크 혁신기업 1천개·예비유니콘 30개 발굴",
@@ -464,6 +492,53 @@
       "region": "해외"
     },
     {
+      "id": "be9878ea07c05441",
+      "publishedAt": "2026-10-30",
+      "title": "[더밸류 브리핑] 오늘의 신한금융 소식...신한투자증권·신한자산운용",
+      "category": "제도",
+      "summary": "CMA 금리는 시장 상황과 회사 정책에 따라 변경될 수 있다. 별도의 예수금 한도는 없다. 신한투자증권... 신한자산운용은 올해 파리협정 제6.2조(ITMO) 승인 사업에 투자하는 탄소 배출권 펀드를 운용했다. ‘신한 탄소 중립...",
+      "source": "thevaluenews.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.thevaluenews.co.kr/news/view.php?idx=202829",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "thevaluenews.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "6a06c442383c7db1",
+      "publishedAt": "2026-10-30",
+      "title": "[D리포트] \"녹색 전환은 이제 경쟁\"…2026 글로벌녹색성장주간",
+      "category": "제도",
+      "summary": "또 개발도상국의 탄소 감축 실적을 국제적으로 거래할 수 있는 탄소 시장 을 만들어, 민간 투자를 끌어낸다는 구상입니다. (취재 : 소환욱 / 촬영 : 김상윤, 박우진 / 편집 : 이기은 / 디자인 : 조승현 / 제작 : 지식콘텐츠IP부...",
+      "source": "sbs.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008823136&plink=ORI&cooper=NAVER",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "sbs.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "900171455bb33bd9",
       "publishedAt": "2026-10-30",
       "title": "SK텔레콤, 안동 산불 피해 복원에 AI·드론 활용…1만 그루 식재",
@@ -485,6 +560,34 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "e47b9bb725221242",
+      "publishedAt": "2026-10-30",
+      "title": "KAIST·뉴톤, AI로 탄소시장 분석 고도화…기후변화 공동연구 추진",
+      "category": "제도",
+      "summary": "매일일보 = 오시내 기자 | KAIST가 탄소 인공지능(AI)·데이터 솔루션 기업 뉴톤과 손잡고 AI 기반 탄소시장 분석과 기후변화 대응 연구에 나선다. 기후·에너지 정책 연구에 머신러닝과 지식 그래프 등 AI 기술을 접목해...",
+      "source": "m-i.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.m-i.kr/news/articleView.html?idxno=2012655",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 5,
+      "duplicateSources": [
+        "매일일보",
+        "m-i.kr",
+        "ntoday.co.kr",
+        "전자신문",
+        "etnews.com"
+      ],
+      "searchProviders": [
+        "Google News RSS",
+        "NAVER API HUB"
+      ],
       "region": "국내"
     },
     {
@@ -565,7 +668,7 @@
       "publishedAt": "2026-10-30",
       "title": "EEX 아시아 커머셜 총괄, 서울파이낸스 주최 포럼서 '유럽 탄소시장 및...",
       "category": "제도",
-      "summary": "및 배출권 시장 동향' 주제로 연사로 나선다. 그는 EEX의 아시아 사업 관련 상업 전략과 영업 활동을... 이번 포럼은 'EU-ETS(유럽 배출권 거래제) 및 FuelEU Maritime(연료규제) 대응 방안과 비용 극소화 전략'을...",
+      "summary": "탄소 배출권 시장 동향' 주제로 연사로 나선다. 그는 EEX의 아시아 사업 관련 상업 전략과 영업 활동을... 이번 포럼은 'EU-ETS(유럽 배출권 거래제) 및 FuelEU Maritime(연료규제) 대응 방안과 비용 극소화 전략'을...",
       "source": "seoulfn.com",
       "sourceType": "news",
       "section": "news",
@@ -574,7 +677,8 @@
       "matchedKeywords": [
         "탄소시장",
         "배출권",
-        "배출권거래제"
+        "배출권거래제",
+        "탄소배출권"
       ],
       "duplicateSources": [
         "seoulfn.com",
@@ -1696,7 +1800,8 @@
       "url": "https://www.pointe.co.kr/news/articleView.html?idxno=86784",
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
-        "배출권"
+        "배출권",
+        "배출권거래제"
       ],
       "duplicateSources": [
         "pointe.co.kr"
@@ -4257,11 +4362,11 @@
         "탄소배출권"
       ],
       "duplicateSources": [
-        "mt.co.kr",
         "ikld.kr",
         "todayenergy.kr",
         "byline.network",
         "naeil.com",
+        "mt.co.kr",
         "energy-news.co.kr"
       ],
       "searchProviders": [
