@@ -1,17 +1,65 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-31T08:14:00+09:00",
+  "generatedAt": "2026-10-31T10:14:44+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1669,
+  "itemCount": 1672,
   "earliestPublishedAt": "2026-08-06",
-  "latestPublishedAt": "2026-10-30",
+  "latestPublishedAt": "2026-10-31",
   "sourceCommitsScanned": 0,
   "sourceSnapshotsScanned": 0,
   "historicalRowsScanned": 0,
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "f31e2cb0224e60f7",
+      "publishedAt": "2026-10-31",
+      "title": "대EU 철강 수출, 감소폭 줄었지만…잇단 규제에 업계 긴장",
+      "category": "제도",
+      "summary": "2028년 1월부터는 하류제품까지 적용 범위를 확대할 예정이며, 2034년까지 역내 탄소 배출권 무상 할당량을 점진적으로 줄여 폐기할 계획이다. 또 저탄소 제품과 EU산 제품의 사용을 촉진하기 위한 IAA 도입도 추진하고...",
+      "source": "yna.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.yna.co.kr/view/AKR20261030178500003?input=1195m",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "yna.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "35b1375cd2293fad",
+      "publishedAt": "2026-10-31",
+      "title": "EU 철강 수출 감소세 둔화…고율 관세·탄소규제에 업계 긴장",
+      "category": "제도",
+      "summary": "2028년부터는 적용 대상을 일부 가공제품으로 확대하고, 2034년까지 역내 탄소 배출권 무상 할당도 단계적으로 폐지할 계획이다. 저탄소 제품과 EU산 제품의 사용을 확대하는 산업가속화법(IAA)도 변수다. 지난 3월...",
+      "source": "the-today.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.the-today.com/news/articleView.html?idxno=92773",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "the-today.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
     {
       "id": "9237da787c8a1bf9",
       "publishedAt": "2026-10-30",
@@ -203,6 +251,29 @@
       ],
       "duplicateCount": 1,
       "region": "국내"
+    },
+    {
+      "id": "b6a39b22b4dd8a46",
+      "publishedAt": "2026-10-30",
+      "title": "산림 탄소 시장 발전에 필요한 조건을 마련하십시오.",
+      "category": "제도",
+      "summary": "산림 탄소 시장 발전에 필요한 조건을 마련하십시오. Vietnam.vn",
+      "source": "Vietnam.vn",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOVFZ4MU9iQTFsc2JKakxWLW1tOE5KWHdtLTRlanZoTEhTS3hudVl6RlQxdEVqbVM3NHpxMk91N0x0TU5RVm84U1NaRWR0ajZzYjZjd1NfQkJDNkVxNVUyOWtieWhrX2ZaeUtKWUJCZy1YRzB1LWRGMXRXby1KTjBlckNpaWZTWkRqb1N6cnFsLW5pblVT?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "Vietnam.vn"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "해외"
     },
     {
       "id": "6c5a98b4b1a69155",
@@ -8231,10 +8302,10 @@
         "유상할당"
       ],
       "duplicateSources": [
+        "이투데이",
         "etoday.co.kr",
         "newslock.co.kr",
         "newsinside.kr",
-        "이투데이",
         "이데일리",
         "edaily.co.kr",
         "뉴스핌",
@@ -8263,8 +8334,8 @@
         "헤럴드경제"
       ],
       "searchProviders": [
-        "NAVER API HUB",
-        "Google News RSS"
+        "Google News RSS",
+        "NAVER API HUB"
       ],
       "duplicateCount": 30,
       "region": "국내"
@@ -11579,16 +11650,16 @@
         "K-ETS"
       ],
       "duplicateSources": [
+        "이투데이",
+        "인더스트리뉴스",
         "industrynews.co.kr",
-        "팍스경제TV",
+        "pinpointnews.co.kr",
         "paxetv.com",
         "newsdream.kr",
         "dailian.co.kr",
-        "edaily.co.kr",
-        "이투데이",
-        "인더스트리뉴스",
-        "pinpointnews.co.kr",
         "view.asiae.co.kr",
+        "edaily.co.kr",
+        "팍스경제TV",
         "아시아경제",
         "마켓인",
         "데일리안",
@@ -11599,8 +11670,8 @@
         "e2news.com"
       ],
       "searchProviders": [
-        "NAVER API HUB",
-        "Google News RSS"
+        "Google News RSS",
+        "NAVER API HUB"
       ],
       "duplicateCount": 18,
       "region": "국내"
