@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-10-31T21:59:41+09:00",
+  "lastSync": "2026-11-01T02:21:36+09:00",
   "keywords": [
     "배출권",
     "배출권거래제",
@@ -30,7 +30,7 @@
   "warning": "한국거래소 배출권 공지사항: 한국거래소 공지 목록을 해석하지 못했습니다. 1페이지: HTTP Error 403: Forbidden",
   "aiInsight": {
     "summary": "최근 공식자료의 직접적인 수급 변수는 유상경매입니다. 최근 경매가 높은 낙찰가로 소화돼 공급보다 이행수요가 강하다는 신호입니다.",
-    "generatedAt": "2026-10-31T21:59:41+09:00",
+    "generatedAt": "2026-11-01T02:21:36+09:00",
     "basisLatestDate": "2026-10-28",
     "basisCount": 10,
     "source": "fallback",
@@ -829,6 +829,30 @@
       ],
       "duplicateCount": 1,
       "region": "국내"
+    },
+    {
+      "id": "315493292333ec79",
+      "publishedAt": "2026-10-31",
+      "title": "[요즘투자] \"옥수수 밭에 풍력 발전기\" 글로벌 자본, 미국 땅 임차 탄소배출권 사업 붐",
+      "category": "제도",
+      "summary": "[요즘투자] \"옥수수 밭에 풍력 발전기\" 글로벌 자본, 미국 땅 임차 탄소배출권 사업 붐 저스트 이코노믹스",
+      "source": "저스트 이코노믹스",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5TelR2cUFLdndBeTBqUzN4VjNkenE3aDY5MWVnenE4ZjdWSGNZNUVFNmdVZU5uaG1QdG1FcGU4Y2hJdVNYOU55SWtlYjVZWmkwdmFfMnRueVJNWWZpMUtR?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "저스트 이코노믹스"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "해외"
     },
     {
       "id": "b0fd04a882909906",
@@ -270152,10 +270176,10 @@
   },
   "newsRetention": {
     "policy": "append-only",
-    "lastMergedAt": "2026-10-31T21:59:47+09:00",
-    "itemCount": 1675,
+    "lastMergedAt": "2026-11-01T02:21:42+09:00",
+    "itemCount": 1676,
     "archiveBefore": 1675,
-    "currentBefore": 1528,
+    "currentBefore": 1529,
     "gitRecoveryEnabled": false
   }
 }

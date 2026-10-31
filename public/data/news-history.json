@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-31T21:59:47+09:00",
+  "generatedAt": "2026-11-01T02:21:42+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1675,
+  "itemCount": 1676,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-31",
   "sourceCommitsScanned": 0,
@@ -82,6 +82,30 @@
       ],
       "duplicateCount": 1,
       "region": "국내"
+    },
+    {
+      "id": "315493292333ec79",
+      "publishedAt": "2026-10-31",
+      "title": "[요즘투자] \"옥수수 밭에 풍력 발전기\" 글로벌 자본, 미국 땅 임차 탄소배출권 사업 붐",
+      "category": "제도",
+      "summary": "[요즘투자] \"옥수수 밭에 풍력 발전기\" 글로벌 자본, 미국 땅 임차 탄소배출권 사업 붐 저스트 이코노믹스",
+      "source": "저스트 이코노믹스",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5TelR2cUFLdndBeTBqUzN4VjNkenE3aDY5MWVnenE4ZjdWSGNZNUVFNmdVZU5uaG1QdG1FcGU4Y2hJdVNYOU55SWtlYjVZWmkwdmFfMnRueVJNWWZpMUtR?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "저스트 이코노믹스"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "해외"
     },
     {
       "id": "b0fd04a882909906",
