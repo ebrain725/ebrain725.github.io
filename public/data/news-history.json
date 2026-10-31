@@ -1,17 +1,64 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-01T02:21:42+09:00",
+  "generatedAt": "2026-11-01T08:14:14+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1676,
+  "itemCount": 1678,
   "earliestPublishedAt": "2026-08-06",
-  "latestPublishedAt": "2026-10-31",
+  "latestPublishedAt": "2026-11-01",
   "sourceCommitsScanned": 0,
   "sourceSnapshotsScanned": 0,
   "historicalRowsScanned": 0,
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "16becc059d8d2fc0",
+      "publishedAt": "2026-11-01",
+      "title": "대EU 철강 수출 -1.3%...감소폭 줄었지만 쿼터 부담 커 업계 긴장",
+      "category": "제도",
+      "summary": "2028년 1월부터는 하류제품까지 적용 범위를 확대할 예정이며, 2034년까지 역내 탄소 배출권 무상 할당량을 점진적으로 줄여 폐기할 계획이다. 또 저탄소 제품과 EU산 제품의 사용을 촉진하기 위한 IAA 도입도 추진하고...",
+      "source": "tfmedia.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.tfmedia.co.kr/news/article.html?no=208534",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "tfmedia.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "acc7086d37632b6b",
+      "publishedAt": "2026-11-01",
+      "title": "[기후위기-문명을 재설계하라 ⑦] 지구의 열과 탄소를 품은 바다...언제...",
+      "category": "제도",
+      "summary": "해양 온난화와 산성화는 서로 다른 과정이지만 인간의 온실가스 배출에서 함께 비롯된다. 세계기상기구(WMO)... 해조류 생장량을 그대로 배출권 으로 바꾸기보다 추가적인 장기 저장이 입증된 성과에 보상해야 한다....",
+      "source": "newsverse.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newsverse.kr/news/articleView.html?idxno=11797",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "newsverse.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
     {
       "id": "f31e2cb0224e60f7",
       "publishedAt": "2026-10-31",
