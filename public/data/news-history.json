@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-31T10:14:44+09:00",
+  "generatedAt": "2026-10-31T13:13:50+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1672,
+  "itemCount": 1674,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-10-31",
   "sourceCommitsScanned": 0,
@@ -28,13 +28,61 @@
         "탄소배출권"
       ],
       "duplicateSources": [
-        "yna.co.kr"
+        "yna.co.kr",
+        "newstomato.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 2,
+      "region": "국내"
+    },
+    {
+      "id": "9f5033b79daffe8d",
+      "publishedAt": "2026-10-31",
+      "title": "뉴톤-카이스트, 기후변화·인공지능 분야 연구협력 MOU 체결",
+      "category": "제도",
+      "summary": "KAIST 녹색성장지속가능대학원은 탄소 AI·데이터 솔루션 전문 기업 뉴톤과 지난 30일 탄소시장 , 기후변화 및 인공지능 관련 분야 연구협력을 위한 양해각서(MOU)를 체결했다고 밝혔다. 이번 협약은 양 기관이 보유한...",
+      "source": "magazine.hankyung.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://magazine.hankyung.com/business/article/202610317438b",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "magazine.hankyung.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "b0fd04a882909906",
+      "publishedAt": "2026-10-31",
+      "title": "EU 철강 수출 감소폭 줄었지만…쿼터·탄소 규제에 업계 긴장",
+      "category": "제도",
+      "summary": "EU 역내 탄소 배출권 무상 할당량도 2034년까지 단계적으로 줄어든다. 저탄소 제품과 EU산 제품 사용을 촉진하는 IAA도 변수다. 지난 3월 공개된 법안 초안에는 2029년부터 일부 공공조달과 지원사업에서 철강의 25...",
+      "source": "newsway.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newsway.co.kr/news/view?ud=2026103110344604175",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "newsway.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
       ],
       "duplicateCount": 1,
-      "region": "국내"
+      "region": "해외"
     },
     {
       "id": "35b1375cd2293fad",
@@ -52,12 +100,14 @@
         "탄소배출권"
       ],
       "duplicateSources": [
+        "m-economynews.com",
+        "ebn.co.kr",
         "the-today.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 3,
       "region": "해외"
     },
     {
@@ -11650,15 +11700,15 @@
         "K-ETS"
       ],
       "duplicateSources": [
-        "이투데이",
         "인더스트리뉴스",
         "industrynews.co.kr",
-        "pinpointnews.co.kr",
         "paxetv.com",
         "newsdream.kr",
         "dailian.co.kr",
-        "view.asiae.co.kr",
         "edaily.co.kr",
+        "이투데이",
+        "pinpointnews.co.kr",
+        "view.asiae.co.kr",
         "팍스경제TV",
         "아시아경제",
         "마켓인",
