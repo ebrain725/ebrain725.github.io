@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-10-31T15:22:10+09:00",
+  "generatedAt": "2026-10-31T18:14:34+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
   "itemCount": 1675,
@@ -544,7 +544,7 @@
       "publishedAt": "2026-10-30",
       "title": "[증권가H] 금융위, 2027년 회계사 최소선발 인원 11월 말 확정 등",
       "category": "상쇄·외부사업",
-      "summary": "금융위는 장기계약을 통해 반도체 기업의 온실가스 배출권 부담 완화 및 RE100(재생에너지로 만든 전기만... 파리협정 제6.2조에 따른 국제감축실적(ITMO) 승인 사업에 투자하는 탄소 배출권 펀드를 운용하고 있으며...",
+      "summary": "금융위는 장기계약을 통해 반도체 기업의 온실가스 배출권 부담 완화 및 RE100(재생에너지로 만든 전기만... 파리협정 제6.2조에 따른 국제감축실적(ITMO) 승인 사업에 투자하는 탄소 배출권 펀드를 운용하고 있으며, '신한...",
       "source": "hansbiz.co.kr",
       "sourceType": "news",
       "section": "news",
@@ -8404,13 +8404,14 @@
         "smedaily.co.kr",
         "dealsite.co.kr",
         "etnews.com",
-        "헤럴드경제"
+        "헤럴드경제",
+        "전자신문"
       ],
       "searchProviders": [
         "NAVER API HUB",
         "Google News RSS"
       ],
-      "duplicateCount": 30,
+      "duplicateCount": 31,
       "region": "국내"
     },
     {
