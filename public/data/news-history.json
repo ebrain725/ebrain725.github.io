@@ -1,17 +1,41 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-01T20:27:45+09:00",
+  "generatedAt": "2026-11-02T01:21:13+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1688,
+  "itemCount": 1689,
   "earliestPublishedAt": "2026-08-06",
-  "latestPublishedAt": "2026-11-01",
+  "latestPublishedAt": "2026-11-02",
   "sourceCommitsScanned": 0,
   "sourceSnapshotsScanned": 0,
   "historicalRowsScanned": 0,
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "f91219c1850563ff",
+      "publishedAt": "2026-11-02",
+      "title": "리비안 3분기 매출 38% 증가…R2 판매 1위, 연간 전망 상향",
+      "category": "제도",
+      "summary": "반면 탄소배출권 판매 수익 8100만 달러와 상호관세(IEEPA) 환급 예정액이 손실을 줄였다. 대당 자동차 원가는 R2 비중 확대로 직전 분기보다 1만2000달러 넘게 낮아졌다. 조정 EBITDA(상각전영업이익)는 4억3500만...",
+      "source": "thefairnews.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.thefairnews.co.kr/news/articleView.html?idxno=92616",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "thefairnews.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
     {
       "id": "4ed9ec1ec39453fd",
       "publishedAt": "2026-11-01",
@@ -99,6 +123,8 @@
         "배출권"
       ],
       "duplicateSources": [
+        "ksmnews.co.kr",
+        "dkilbo.com",
         "mhns.co.kr",
         "gukjenews.com",
         "inews24.com"
@@ -106,7 +132,7 @@
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 3,
+      "duplicateCount": 5,
       "region": "국내"
     },
     {

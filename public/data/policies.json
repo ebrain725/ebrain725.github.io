@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-11-01T20:27:39+09:00",
+  "lastSync": "2026-11-02T01:21:06+09:00",
   "keywords": [
     "배출권",
     "배출권거래제",
@@ -30,7 +30,7 @@
   "warning": "한국거래소 배출권 공지사항: 한국거래소 공지 목록을 해석하지 못했습니다. 1페이지: HTTP Error 403: Forbidden",
   "aiInsight": {
     "summary": "최근 공식자료의 직접적인 수급 변수는 유상경매입니다. 최근 경매가 높은 낙찰가로 소화돼 공급보다 이행수요가 강하다는 신호입니다.",
-    "generatedAt": "2026-11-01T20:27:39+09:00",
+    "generatedAt": "2026-11-02T01:21:06+09:00",
     "basisLatestDate": "2026-10-28",
     "basisCount": 10,
     "source": "fallback",
@@ -760,6 +760,30 @@
   ],
   "items": [
     {
+      "id": "f91219c1850563ff",
+      "publishedAt": "2026-11-02",
+      "title": "리비안 3분기 매출 38% 증가…R2 판매 1위, 연간 전망 상향",
+      "category": "제도",
+      "summary": "반면 탄소배출권 판매 수익 8100만 달러와 상호관세(IEEPA) 환급 예정액이 손실을 줄였다. 대당 자동차 원가는 R2 비중 확대로 직전 분기보다 1만2000달러 넘게 낮아졌다. 조정 EBITDA(상각전영업이익)는 4억3500만...",
+      "source": "thefairnews.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.thefairnews.co.kr/news/articleView.html?idxno=92616",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "thefairnews.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "4ed9ec1ec39453fd",
       "publishedAt": "2026-11-01",
       "title": "한국해운협회, '탄소 규제 대응과 비용 최소화' 포럼 개최",
@@ -846,6 +870,8 @@
         "배출권"
       ],
       "duplicateSources": [
+        "ksmnews.co.kr",
+        "dkilbo.com",
         "mhns.co.kr",
         "gukjenews.com",
         "inews24.com"
@@ -853,7 +879,7 @@
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 3,
+      "duplicateCount": 5,
       "region": "국내"
     },
     {
@@ -270463,9 +270489,9 @@
   },
   "newsRetention": {
     "policy": "append-only",
-    "lastMergedAt": "2026-11-01T20:27:45+09:00",
-    "itemCount": 1688,
-    "archiveBefore": 1687,
+    "lastMergedAt": "2026-11-02T01:21:13+09:00",
+    "itemCount": 1689,
+    "archiveBefore": 1688,
     "currentBefore": 1539,
     "gitRecoveryEnabled": false
   }
