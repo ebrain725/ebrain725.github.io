@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-02T03:03:59+09:00",
+  "generatedAt": "2026-11-02T08:13:37+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1689,
+  "itemCount": 1690,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-02",
   "sourceCommitsScanned": 0,
@@ -12,6 +12,29 @@
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "b24cdf1273c3a3f5",
+      "publishedAt": "2026-11-02",
+      "title": "부산서 아시아 금융협력 미래 논의..‘ASEAN+3 채권 시장 국제포럼’ 개...",
+      "category": "제도",
+      "summary": "이어지는 국제포럼에서는 탄소시장 과 국가 간 탄소거래, 예금토큰과 디지털채권 등 금융환경 변화에 대응하기 위한 정책과제를 논의한다. ASEAN+3 채권시장포럼에서는 역내 자본시장 동향과 국가 간 지급결제...",
+      "source": "kpenews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://kpenews.com/View.aspx?No=4292551",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "kpenews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
     {
       "id": "f91219c1850563ff",
       "publishedAt": "2026-11-02",
@@ -8712,10 +8735,10 @@
         "유상할당"
       ],
       "duplicateSources": [
+        "이투데이",
         "etoday.co.kr",
         "newslock.co.kr",
         "newsinside.kr",
-        "이투데이",
         "이데일리",
         "edaily.co.kr",
         "뉴스핌",
@@ -8745,8 +8768,8 @@
         "전자신문"
       ],
       "searchProviders": [
-        "NAVER API HUB",
-        "Google News RSS"
+        "Google News RSS",
+        "NAVER API HUB"
       ],
       "duplicateCount": 31,
       "region": "국내"
@@ -12061,12 +12084,12 @@
         "K-ETS"
       ],
       "duplicateSources": [
+        "인더스트리뉴스",
         "industrynews.co.kr",
         "paxetv.com",
         "newsdream.kr",
         "dailian.co.kr",
         "edaily.co.kr",
-        "인더스트리뉴스",
         "팍스경제TV",
         "이투데이",
         "pinpointnews.co.kr",
@@ -12081,8 +12104,8 @@
         "e2news.com"
       ],
       "searchProviders": [
-        "NAVER API HUB",
-        "Google News RSS"
+        "Google News RSS",
+        "NAVER API HUB"
       ],
       "duplicateCount": 18,
       "region": "국내"
