@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-01T15:13:37+09:00",
+  "generatedAt": "2026-11-01T18:17:29+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1683,
+  "itemCount": 1687,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-01",
   "sourceCommitsScanned": 0,
@@ -12,6 +12,55 @@
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "4ed9ec1ec39453fd",
+      "publishedAt": "2026-11-01",
+      "title": "한국해운협회, '탄소 규제 대응과 비용 최소화' 포럼 개최",
+      "category": "제도",
+      "summary": "EU-ETS(탄소 배출권 거래제)와 FuelEU Maritime(연료규제)은 2025년부터 유럽 항만을 오가는 선박에 적용되는... 핵심 전략은 저탄소 연료 전환, 운항 효율화, 탄소 배출권 헤징 등을 통한 리스크 관리이다. 세부 발표...",
+      "source": "seoulfn.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.seoulfn.com/news/articleView.html?idxno=641573",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "seoulfn.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
+      "id": "9ad29a57c544b183",
+      "publishedAt": "2026-11-01",
+      "title": "대구시, 적극행정·시정혁신 14건 시상…수성구 AI 시스템 최우수",
+      "category": "제도",
+      "summary": "우수상에는 대구시 기후환경정책과의 온실가스 배출권 제도 개선 사례와 반도체소프트웨어과의 스마트 반사경 사업화 사례를 비롯해 건강증진과의 24시간 정신응급합동대응센터, 소방안전본부의 산림화재...",
+      "source": "dkilbo.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.dkilbo.com/news/articleView.html?idxno=559184",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "온실가스 배출권"
+      ],
+      "duplicateSources": [
+        "dkilbo.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
     {
       "id": "ef65bd31d93562d1",
       "publishedAt": "2026-11-01",
@@ -51,12 +100,13 @@
       ],
       "duplicateSources": [
         "mhns.co.kr",
-        "gukjenews.com"
+        "gukjenews.com",
+        "inews24.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 2,
+      "duplicateCount": 3,
       "region": "국내"
     },
     {
@@ -127,6 +177,53 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "8b8abb746897a23d",
+      "publishedAt": "2026-11-01",
+      "title": "[금융 HOT 뉴스] 신한자산운용, 주민수익공유·에너지 인프라 펀드 5000억...",
+      "category": "제도",
+      "summary": "파리협정 제6.2조(ITMO) 승인 사업에 투자하는 탄소배출권 펀드를 운용하고 '신한 탄소중립 항만인프라 펀드'를 결성해 항만 내 탄소중립 에너지 사업을 추진한다고 설명했다. 기후에너지환경부 'AI 활용 ESS 구축지원 사업...",
+      "source": "bizwnews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.bizwnews.com/news/articleView.html?idxno=150467",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "bizwnews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "95b3cbedb7b63b02",
+      "publishedAt": "2026-11-01",
+      "title": "UNEP, 24개 도시 자연복원 지원…31개 도시정책에 반영",
+      "category": "제도",
+      "summary": "사업의 생태계서비스 평가가 지방정부의 정책 검토에 쓰였고, 기후법에는 지역사회 주도 복원과 연계한 탄소시장 구상이 담겼다. 도시농업을 환경·경제 자산으로 인정하는 제도 개편도 소개됐다. 에콰도르...",
+      "source": "dailyt.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.dailyt.co.kr/newsView/dlt202611010007",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "dailyt.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
       "region": "국내"
     },
     {
@@ -8566,10 +8663,10 @@
         "유상할당"
       ],
       "duplicateSources": [
-        "이투데이",
         "etoday.co.kr",
         "newslock.co.kr",
         "newsinside.kr",
+        "이투데이",
         "이데일리",
         "edaily.co.kr",
         "뉴스핌",
@@ -8599,8 +8696,8 @@
         "전자신문"
       ],
       "searchProviders": [
-        "Google News RSS",
-        "NAVER API HUB"
+        "NAVER API HUB",
+        "Google News RSS"
       ],
       "duplicateCount": 31,
       "region": "국내"
@@ -11915,12 +12012,12 @@
         "K-ETS"
       ],
       "duplicateSources": [
-        "인더스트리뉴스",
         "industrynews.co.kr",
         "paxetv.com",
         "newsdream.kr",
         "dailian.co.kr",
         "edaily.co.kr",
+        "인더스트리뉴스",
         "팍스경제TV",
         "이투데이",
         "pinpointnews.co.kr",
@@ -11935,8 +12032,8 @@
         "e2news.com"
       ],
       "searchProviders": [
-        "Google News RSS",
-        "NAVER API HUB"
+        "NAVER API HUB",
+        "Google News RSS"
       ],
       "duplicateCount": 18,
       "region": "국내"
