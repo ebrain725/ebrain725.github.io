@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-01T10:14:24+09:00",
+  "generatedAt": "2026-11-01T13:14:06+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1680,
+  "itemCount": 1681,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-01",
   "sourceCommitsScanned": 0,
@@ -876,6 +876,33 @@
         "Google News RSS",
         "NAVER API HUB"
       ],
+      "region": "국내"
+    },
+    {
+      "id": "1eb8b40ce02a3a6c",
+      "publishedAt": "2026-10-30",
+      "title": "KAIST·뉴톤, '탄소 버티컬 AI' 개발 맞손…글로벌 탄소시장 정조준",
+      "category": "제도",
+      "summary": "탄소시장은 국가별 온실가스 감축정책과 배출권 거래제, 자발적 탄소시장, 감축·제거 크레딧 등 방대한 정책·시장 데이터를 동시에 분석해야 하는 분야다. 양측은 우선 에너지·기후변화 정책과 탄소시장, 탄소 감축...",
+      "source": "etnews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.etnews.com/20261030000272",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장",
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "전자신문",
+        "etnews.com"
+      ],
+      "searchProviders": [
+        "Google News RSS",
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 2,
       "region": "국내"
     },
     {

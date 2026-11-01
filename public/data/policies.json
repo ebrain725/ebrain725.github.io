@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-11-01T10:14:15+09:00",
+  "lastSync": "2026-11-01T13:13:59+09:00",
   "keywords": [
     "배출권",
     "배출권거래제",
@@ -30,7 +30,7 @@
   "warning": "한국거래소 배출권 공지사항: 한국거래소 공지 목록을 해석하지 못했습니다. 1페이지: HTTP Error 403: Forbidden",
   "aiInsight": {
     "summary": "최근 공식자료의 직접적인 수급 변수는 유상경매입니다. 최근 경매가 높은 낙찰가로 소화돼 공급보다 이행수요가 강하다는 신호입니다.",
-    "generatedAt": "2026-11-01T10:14:15+09:00",
+    "generatedAt": "2026-11-01T13:13:59+09:00",
     "basisLatestDate": "2026-10-28",
     "basisCount": 10,
     "source": "fallback",
@@ -1641,6 +1641,33 @@
         "Google News RSS",
         "NAVER API HUB"
       ],
+      "region": "국내"
+    },
+    {
+      "id": "1eb8b40ce02a3a6c",
+      "publishedAt": "2026-10-30",
+      "title": "KAIST·뉴톤, '탄소 버티컬 AI' 개발 맞손…글로벌 탄소시장 정조준",
+      "category": "제도",
+      "summary": "탄소시장은 국가별 온실가스 감축정책과 배출권 거래제, 자발적 탄소시장, 감축·제거 크레딧 등 방대한 정책·시장 데이터를 동시에 분석해야 하는 분야다. 양측은 우선 에너지·기후변화 정책과 탄소시장, 탄소 감축...",
+      "source": "etnews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.etnews.com/20261030000272",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장",
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "전자신문",
+        "etnews.com"
+      ],
+      "searchProviders": [
+        "Google News RSS",
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 2,
       "region": "국내"
     },
     {
@@ -270269,10 +270296,10 @@
   },
   "newsRetention": {
     "policy": "append-only",
-    "lastMergedAt": "2026-11-01T10:14:24+09:00",
-    "itemCount": 1680,
-    "archiveBefore": 1678,
-    "currentBefore": 1532,
+    "lastMergedAt": "2026-11-01T13:14:06+09:00",
+    "itemCount": 1681,
+    "archiveBefore": 1680,
+    "currentBefore": 1533,
     "gitRecoveryEnabled": false
   }
 }
