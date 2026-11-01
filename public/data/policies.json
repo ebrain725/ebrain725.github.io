@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-11-01T13:13:59+09:00",
+  "lastSync": "2026-11-01T15:13:31+09:00",
   "keywords": [
     "배출권",
     "배출권거래제",
@@ -30,7 +30,7 @@
   "warning": "한국거래소 배출권 공지사항: 한국거래소 공지 목록을 해석하지 못했습니다. 1페이지: HTTP Error 403: Forbidden",
   "aiInsight": {
     "summary": "최근 공식자료의 직접적인 수급 변수는 유상경매입니다. 최근 경매가 높은 낙찰가로 소화돼 공급보다 이행수요가 강하다는 신호입니다.",
-    "generatedAt": "2026-11-01T13:13:59+09:00",
+    "generatedAt": "2026-11-01T15:13:31+09:00",
     "basisLatestDate": "2026-10-28",
     "basisCount": 10,
     "source": "fallback",
@@ -783,6 +783,30 @@
       "region": "국내"
     },
     {
+      "id": "f8b504ece1cda1aa",
+      "publishedAt": "2026-11-01",
+      "title": "대구광역시, 적극행정·시정혁신 경진대회서 14건 우수사례 선정",
+      "category": "제도",
+      "summary": "적극행정 분야 우수상에는 대구시 기후환경정책과의 ' 온실가스 감축했더니 배출권 반납? 불합리한 제도를 바꿔 12.3억 원을 벌다!', 대구시 반도체소프트웨어과의 '스마트시티 실증에서 해외 수출까지, IoT 스마트 반사경...",
+      "source": "gukjenews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.gukjenews.com/news/articleView.html?idxno=3738765",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "mhns.co.kr",
+        "gukjenews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 2,
+      "region": "국내"
+    },
+    {
       "id": "16becc059d8d2fc0",
       "publishedAt": "2026-11-01",
       "title": "대EU 철강 수출 -1.3%...감소폭 줄었지만 쿼터 부담 커 업계 긴장",
@@ -799,6 +823,29 @@
       ],
       "duplicateSources": [
         "tfmedia.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "d68883134d7e4874",
+      "publishedAt": "2026-11-01",
+      "title": "[에너지전환2050] 공장엔 히트펌프, 장비엔 배터리···두산밥캣 '두 갈...",
+      "category": "상쇄·외부사업",
+      "summary": "목표는 2030년까지 직접배출과 전력 사용 등에 따른 간접배출을 합한 온실가스 배출량을 2021년 대비 30... 상쇄사업· 배출권 구입 등을 검토·추진할 계획이다. 제품에서도 디젤 등 화석연료 중심의 동력 구조를 바꾸고...",
+      "source": "enewstoday.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.enewstoday.co.kr/news/articleView.html?idxno=2486905",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "enewstoday.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -9574,10 +9621,10 @@
         "유상할당"
       ],
       "duplicateSources": [
+        "이투데이",
         "etoday.co.kr",
         "newslock.co.kr",
         "newsinside.kr",
-        "이투데이",
         "이데일리",
         "edaily.co.kr",
         "뉴스핌",
@@ -9607,8 +9654,8 @@
         "전자신문"
       ],
       "searchProviders": [
-        "NAVER API HUB",
-        "Google News RSS"
+        "Google News RSS",
+        "NAVER API HUB"
       ],
       "duplicateCount": 31,
       "region": "국내"
@@ -12997,12 +13044,12 @@
         "K-ETS"
       ],
       "duplicateSources": [
+        "인더스트리뉴스",
         "industrynews.co.kr",
         "paxetv.com",
         "newsdream.kr",
         "dailian.co.kr",
         "edaily.co.kr",
-        "인더스트리뉴스",
         "팍스경제TV",
         "이투데이",
         "pinpointnews.co.kr",
@@ -13017,8 +13064,8 @@
         "e2news.com"
       ],
       "searchProviders": [
-        "NAVER API HUB",
-        "Google News RSS"
+        "Google News RSS",
+        "NAVER API HUB"
       ],
       "duplicateCount": 18,
       "region": "국내"
@@ -270296,10 +270343,10 @@
   },
   "newsRetention": {
     "policy": "append-only",
-    "lastMergedAt": "2026-11-01T13:14:06+09:00",
-    "itemCount": 1681,
-    "archiveBefore": 1680,
-    "currentBefore": 1533,
+    "lastMergedAt": "2026-11-01T15:13:37+09:00",
+    "itemCount": 1683,
+    "archiveBefore": 1681,
+    "currentBefore": 1534,
     "gitRecoveryEnabled": false
   }
 }
