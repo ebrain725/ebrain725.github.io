@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-02T13:14:11+09:00",
+  "generatedAt": "2026-11-02T15:14:27+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1710,
+  "itemCount": 1716,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-02",
   "sourceCommitsScanned": 0,
@@ -54,12 +54,19 @@
         "탄소시장"
       ],
       "duplicateSources": [
-        "dailian.co.kr"
+        "데일리안",
+        "dailian.co.kr",
+        "청주일보",
+        "biz.heraldcorp.com",
+        "전자신문",
+        "etnews.com",
+        "chungnamilbo.co.kr"
       ],
       "searchProviders": [
+        "Google News RSS",
         "NAVER API HUB"
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 7,
       "region": "국내"
     },
     {
@@ -83,6 +90,30 @@
       "searchProviders": [
         "NAVER API HUB"
       ],
+      "region": "국내"
+    },
+    {
+      "id": "314cb58cce061875",
+      "publishedAt": "2026-11-02",
+      "title": "예산 한 푼 없이 AI로 부동산 거래 안전망 구축…대구 적극행정 ‘최우...",
+      "category": "제도",
+      "summary": "적극행정 분야 우수상에는 온실가스 배출권 관련 제도 개선으로 12억3000만원의 성과를 낸 기후환경정책과와 사물인터넷(IoT) 기반 스마트 반사경의 해외 수출 사업화를 추진한 반도체소프트웨어과가 선정됐다....",
+      "source": "kbmaeil.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.kbmaeil.com/article/20261101500230",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "온실가스 배출권"
+      ],
+      "duplicateSources": [
+        "kbmaeil.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
       "region": "국내"
     },
     {
@@ -165,6 +196,29 @@
       "region": "국내"
     },
     {
+      "id": "b98498c81119b9a7",
+      "publishedAt": "2026-11-02",
+      "title": "산림청, 국외산림 탄소 축적증진 실무 전문가 양성",
+      "category": "제도",
+      "summary": "산림청은 이번 교육을 통해 산림 및 탄소시장 분야 전문가들의 지식을 교육생들에게 직접 전달할 계획이다. 교육 과정은 사업의 시작부터 결과물 거래까지 전 단계를 아우르는 실무 중심 콘텐츠로 구성됐다. 주요...",
+      "source": "businesskorea.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.businesskorea.co.kr/news/articleView.html?idxno=280195",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "businesskorea.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "a8a65ebfc9799393",
       "publishedAt": "2026-11-02",
       "title": "산림청, 'REDD+ 심화교육' 참가자 모집... 국제감축사업 전문인력 양성",
@@ -229,6 +283,39 @@
       "duplicateCount": 1,
       "duplicateSources": [
         "tf.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "347d6c9b3bc7e578",
+      "publishedAt": "2026-11-02",
+      "title": "부산서 아시아 채권 시장 미래 논의…'ASEAN+3 국제포럼' 개최",
+      "category": "제도",
+      "summary": "공동회의에서는 탄소시장 과 국가 간 탄소거래, 예금토큰, 디지털채권 등을 다룬다. ASEAN+3 채권시장포럼에서는 역내 자본시장 동향과 국가 간 지급결제, 지속가능금융 발전 방향을 공유한다. 재정경제부 주관 역량강화...",
+      "source": "gukjenews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.gukjenews.com/news/articleView.html?idxno=3739459",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 11,
+      "duplicateSources": [
+        "biz.heraldcorp.com",
+        "news1.kr",
+        "yna.co.kr",
+        "nocutnews.co.kr",
+        "fnnews.com",
+        "kpenews.com",
+        "inews24.com",
+        "gukjenews.com",
+        "businesskorea.co.kr",
+        "asiatime.co.kr",
+        "cnbnews.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -329,6 +416,30 @@
       "region": "해외"
     },
     {
+      "id": "3d804882d3ac1e3d",
+      "publishedAt": "2026-11-02",
+      "title": "국민성장펀드, 해남 400MW 태양광에 1,000억원 지원… 국내 최대 규모",
+      "category": "제도",
+      "summary": "정부는 이번 장기 전력공급 계약이 기업들의 RE100 이행과 온실가스 배출권 부담 완화에 기여할 것으로 보고 있다. 한편 국민성장펀드는 이번 해남 태양광 사업과 함께 반도체 장비기업 피에스케이, 시스템반도체...",
+      "source": "industrynews.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.industrynews.co.kr/news/articleView.html?idxno=88716",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "온실가스 배출권"
+      ],
+      "duplicateSources": [
+        "industrynews.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "2b4056daf5b33e3a",
       "publishedAt": "2026-11-02",
       "title": "【ESG 채용】그리너리, 이알엠코리아, 산일전기, 롯데마트·롯데슈퍼",
@@ -399,6 +510,31 @@
       "region": "해외"
     },
     {
+      "id": "1cff064a231a05f5",
+      "publishedAt": "2026-11-02",
+      "title": "[온실가스 배출권] 11월 2일 KAU26, 250원 하락하며 3만원 턱걸이",
+      "category": "시장·가격",
+      "summary": "[온실가스 배출권] 11월 2일 KAU26, 250원 하락하며 3만원 턱걸이 데일리e뉴스",
+      "source": "데일리e뉴스",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBvNTNUSThvMXlfX0JlTnRtd3MwXzI1Qko2MVc0a1FuUnZLZUxLSXJYMlJNWEFmdHFmaUdmdmRhQWJBMnhMaGItU2hHU1pUejA0QlFKY0FnUDhWSVRZSXhPc0J3VUpvRTlBT2U3NDk1RQ?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "온실가스 배출권",
+        "KAU26"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "데일리e뉴스"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "9a44991098d5beb7",
       "publishedAt": "2026-11-02",
       "title": "[People&Planet] 탄소 배출권 은 무엇을 남기는가",
@@ -422,6 +558,30 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 2,
+      "region": "국내"
+    },
+    {
+      "id": "145b0aad1c2e6cf5",
+      "publishedAt": "2026-11-02",
+      "title": "[POSCO] 美 국제무역법원, 포스코 추가 탄소배출권 상계관세 대상 판단 유지",
+      "category": "제도",
+      "summary": "[POSCO] 美 국제무역법원, 포스코 추가 탄소배출권 상계관세 대상 판단 유지 www.ebn.co.kr",
+      "source": "www.ebn.co.kr",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9KS2lUVllQUzVXell2RWxRZEJPeDJJSl92VWM5UDhHdFVEbXhQRlpaYngxODFmUWNyN3NraE9NN0RaWk5yU2dUOFg3cWxMZFNiX0ZacElvSlNjWEw3Q0pTd1NLQ3pfcVlL?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "www.ebn.co.kr"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
       "region": "국내"
     },
     {
@@ -9221,11 +9381,11 @@
         "유상할당"
       ],
       "duplicateSources": [
+        "이투데이",
         "etoday.co.kr",
+        "이데일리",
         "newslock.co.kr",
         "newsinside.kr",
-        "이투데이",
-        "이데일리",
         "edaily.co.kr",
         "뉴스핌",
         "fetv.co.kr",
@@ -9254,8 +9414,8 @@
         "전자신문"
       ],
       "searchProviders": [
-        "NAVER API HUB",
-        "Google News RSS"
+        "Google News RSS",
+        "NAVER API HUB"
       ],
       "duplicateCount": 31,
       "region": "국내"
@@ -12570,12 +12730,12 @@
         "K-ETS"
       ],
       "duplicateSources": [
+        "인더스트리뉴스",
         "industrynews.co.kr",
         "paxetv.com",
         "newsdream.kr",
         "dailian.co.kr",
         "edaily.co.kr",
-        "인더스트리뉴스",
         "팍스경제TV",
         "이투데이",
         "pinpointnews.co.kr",
@@ -12590,8 +12750,8 @@
         "e2news.com"
       ],
       "searchProviders": [
-        "NAVER API HUB",
-        "Google News RSS"
+        "Google News RSS",
+        "NAVER API HUB"
       ],
       "duplicateCount": 18,
       "region": "국내"
