@@ -2,7 +2,7 @@
   "schemaVersion": "1.0",
   "requestedStartDate": "2015-01-01",
   "startedAt": "2026-09-09T19:46:11+09:00",
-  "generatedAt": "2026-11-02T03:29:15+09:00",
+  "generatedAt": "2026-11-03T07:24:17+09:00",
   "scope": {
     "ministry": "기후부 보도자료·공지사항: 핵심 키워드는 제목·본문, 확대 키워드는 제목으로 판정; 이전 이력 보존",
     "krx": "한국거래소 배출권시장 공지사항 일반 게시물 전체",
@@ -126,7 +126,7 @@
     {
       "source": "기후부 보도자료",
       "section": "press",
-      "requestedStartDate": "2026-09-03",
+      "requestedStartDate": "2026-09-04",
       "transport": "unfiltered-rss-local-split-keyword-filter",
       "keywordRule": {
         "titleAndContent": [
@@ -246,14 +246,14 @@
       "pageSize": 1000,
       "pagesFetched": 1,
       "rawRows": 1000,
-      "inRangeMatchedRows": 28,
-      "itemCount": 28,
-      "directCount": 5,
-      "relatedCount": 23,
-      "earliest": "2026-09-03",
-      "latest": "2026-10-30",
-      "oldestSeen": "2025-12-07",
-      "newestSeen": "2026-11-01",
+      "inRangeMatchedRows": 30,
+      "itemCount": 30,
+      "directCount": 6,
+      "relatedCount": 24,
+      "earliest": "2026-09-04",
+      "latest": "2026-11-02",
+      "oldestSeen": "2025-12-10",
+      "newestSeen": "2026-11-02",
       "crossedRequestedStart": true,
       "stopReason": "date-boundary",
       "complete": true,
@@ -286,7 +286,7 @@
         "감축실적": 1,
         "ITMO": 0,
         "배출권 제출": 0,
-        "제출기한": 0,
+        "제출기한": 1,
         "의무이행": 1,
         "이행연도": 0,
         "거래량": 0,
@@ -312,8 +312,8 @@
         "SMP": 0,
         "계통한계가격": 0,
         "원자력발전": 0,
-        "원전": 8,
-        "재생에너지": 6,
+        "원전": 9,
+        "재생에너지": 5,
         "신재생에너지": 0,
         "RPS": 0,
         "수소발전": 1,
@@ -358,7 +358,7 @@
         "명세서": 0,
         "탄소국경조정": 0,
         "CBAM": 0,
-        "탄소중립": 4,
+        "탄소중립": 5,
         "탄소중립 기본계획": 0,
         "넷제로": 0,
         "확정 지연": 0,
@@ -372,7 +372,7 @@
     {
       "source": "기후부 공지·공고",
       "section": "notice",
-      "requestedStartDate": "2026-09-03",
+      "requestedStartDate": "2026-09-04",
       "transport": "unfiltered-rss-local-split-keyword-filter",
       "keywordRule": {
         "titleAndContent": [
@@ -499,7 +499,7 @@
       "earliest": "2026-09-07",
       "latest": "2026-10-30",
       "oldestSeen": "2026-06-30",
-      "newestSeen": "2026-10-30",
+      "newestSeen": "2026-11-02",
       "crossedRequestedStart": true,
       "stopReason": "date-boundary",
       "complete": true,
@@ -635,11 +635,11 @@
   ],
   "warnings": [],
   "coverage": {
-    "itemCount": 1697,
+    "itemCount": 1700,
     "counts": {
       "krx_notice": 316,
       "notice": 438,
-      "press": 943
+      "press": 946
     },
     "earliest": {
       "krx_notice": "2015-01-07",
@@ -649,14 +649,14 @@
     "latest": {
       "krx_notice": "2026-10-14",
       "notice": "2026-10-30",
-      "press": "2026-10-30"
+      "press": "2026-11-02"
     },
     "directCounts": {
-      "press": 436,
+      "press": 437,
       "notice": 227
     },
     "relatedCounts": {
-      "press": 507,
+      "press": 509,
       "notice": 211
     },
     "labels": {
@@ -666,6 +666,60 @@
     }
   },
   "items": [
+    {
+      "id": "c02b341ab8c616a8",
+      "publishedAt": "2026-11-02",
+      "title": "지방정부 10곳 2026년도 환경교육도시로 선정… 지역 중심 탄소중립 사회 실현에 기여",
+      "category": "제도",
+      "summary": "▷ 광역 3곳(부산, 세종, 제주) 및 기초 7곳(노원, 수원, 안산, 시흥, 광명, 천안, 통영)으로 구성 기후에너지환경부(장관 김성환)는 ‘2026년도 환경교육도시’ 공모를 통해 광역지방정부 3곳(부산광역시, 세종특별자치시, 제주특별자치도)과 기초지방정부 7곳(노원구, 수원시, 안산시, 시흥시, 광명시, 천안시, 통영시) 등 총 10곳*을 선정했다고 밝혔다. * 지방정부(지자체)명 순서는 직제순 환경교육도시 지정 제도는 ‘환경교육의 활성화 및 지원에 관한 법률’에 따라 환경교육 계획과 추진실적이 우수하고 환경교육 기반이 잘 갖춰진 지방정부(지자체)를 지정해 지원하는 제도로, 2022년 처음 도입됐다. 이번 공모에는 올해 4월 20일부터 5월 26일까지 총 21곳의 지방정부(광역 3곳, 기초 18곳)가 신청했다. 평가는 △환경교육 추진 기반, △환경교육 성과, △환경교육 계획의 우수성 등을 중심으로 진행됐다. 환경교육·교육일반·환경행정·도시계획 분야 전문가들이 서류 및 현장 평가를 실시하고, 환경교육위원회 심의를 거쳐 최종 선정됐다. 이번에 선정된 10곳의 지방정부는 환경교육 활성화 조례와 자체 환경교육 계획 수립 및 이행, 지역환경교육센터 운영을 활성화하는 등 전반적인 추진 기반이 우수했으며, 기후위기 대응과 탄소중립 사회 실현을 위한 시도지사 및 시장·구청장의 의지도 높게 평가됐다. 지방정부별로는 △부산이 해양 특화 교육과 체험·탐방 과정, △세종이 공무원 환경교육과 시민과학자 양성, △제주가 곶자왈·오름 등 지역 자원을 활용한 환경교육을 추진한다. △노원은 지역 시설을 연계한 통합교육, △수원은 민·관·산·학 협력과 지역의 환경·역사 자원 활용, △안산은 산업단지 기후환경교육과 시민주도형 순환경제를 강점으로 인정받았다. △시흥은 시화호 특화 교육과 탄소중립 실천 기반, △광명은 시민참여형 환경학습, △천안은 지역기관·생태체험공간 연계 교육, △통영은 어촌·해양환경교육의 특화성이 우수한 것으로 평가됐다. 특히 부산·제주·수원·안산·시흥·광명·통영은 지난 지정기간 지역 맞춤형 환경교육의 모범사례를 구축하고 지역자원을 활용해 지속적이고 체계적인 교육을 추진한 성과를 인정받아 재지정됐다. 기후에너지환경부는 ‘2026년도 환경교육도시’ 지정 기간(’27.1.1.~’29.12.31.) 동안 전문가 상담(컨설팅)과 환경교육도시 간 상호 협력 기회를 제공하고, 토론회 등을 통해 우수 사례를 전국에 확산할 계획이다. 아울러 국비 지원을 위한 예산 확보에도 적극적으로 노력할 계획이다. 김태훈 기후에너지환경부 기후에너지환경교육팀장은 “환경교육도시는 교육을 통해 국민의 기후위기 대응 실천역량을 높이고, 지역사회 참여를 촉진한다”라며, “환경교육도시 지정을 계기로 지역 중심의 탈탄소 녹색사회가 실현되길 바란다”라고 밝혔다. 붙임 1. 2026년 환경교육도시 지정 개요. 2. 2026년 환경교육도시 지자체별 우수한 점. 끝.",
+      "source": "기후부 보도자료",
+      "sourceType": "official",
+      "section": "press",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=1000&maxIndexPages=10&searchKey=&searchValue=&menuId=10598&orgCd=&boardMasterId=939&boardId=1903390",
+      "matchedKeywords": [
+        "탄소중립"
+      ],
+      "matchedFields": [
+        "title"
+      ],
+      "keywordScope": "related"
+    },
+    {
+      "id": "17710678d30f3a4f",
+      "publishedAt": "2026-11-02",
+      "title": "제17차 생물다양성협약 당사국총회 마무리",
+      "category": "제도",
+      "summary": "▷생물다양성 보전을 위한 재정 보충 강화, 유전자원 디지털 서열 정보의 이용으로부터 발생하는 이익의 공정하고 공평한 공유 등에 대해 논의 ▷당사국총회 계기 EU, 사우디아라비아 등과 양자 면담을 통해 생물다양성 보전을 포함한 환경 정책 경험 공유 및 논의 기후에너지환경부(장관 김성환)는 10월 19일부터 아르메니아 예레반에서 열린 제17차 생물다양성협약 당사국총회(COP17)에 참석하여 생물다양성 보전을 위한 재정 보충 강화, 유전자원 디지털 서열 정보의 이용으로부터 발생하는 이익의 공정하고 공평한 공유 등의 주요 의제를 논의했다고 밝혔다. 이번 총회는 당초 예정된 폐막일(10월 30일)을 하루 넘겨 협상을 진행했으며, 10월 31일 아침 9시반경(현지시간) 최종 결정문을 도출 후 마무리됐다. ‘자연을 위한 행동(Taking Action for Nature)’을 주제로 열린 이번 총회에는 196개 당사국과 국제기구, 전문가 등 2만여 명이 참석했다. 우리나라는 김지영 기후에너지환경부 국제협력관을 수석대표로 관계부처* 공무원과 전문가로 구성된 정부 대표단이 참석했다. * 기후에너지환경부, 외교부, 해양수산부, 보건복지부, 산림청 등 이번 총회에서는 2030년까지 전 지구적으로 추진할 생물다양성 보전 목표를 담아 2022년 12월 채택된 ‘쿤밍-몬트리올 글로벌 생물다양성 체계(KM GBF*)’의 이행 진전 상황에 대한 점검과 함께 △생물다양성 보전을 위한 재정 보충 강화(자원 동원), △유전자원 디지털 서열 정보(DSI*)’ 이용으로부터 발생하는 이익의 공정하고 공평한 공유 등 체계의 실질적 이행을 위한 주요 의제들이 논의되었다. * Kunming-Montreal Global Biodiversity Framework ** Digital sequence information on genetic resources 이번 생물다양성협약 당사국총회에서는 총 23개의 의제가 논의되었으며, 주요의제는 다음과 같다. [ 쿤밍-몬트리올 글로벌 생물다양성 체계에 대한 전 지구적 이행 점검 ] 2022년 12월 캐나다 몬트리올에서 개최된 제15차 총회에서 ‘쿤밍-몬트리올 글로벌 생물다양성 체계’가 채택된 이후 처음 이뤄진 전 지구적 이행 점검 결과에 따라 2030년 목표 달성을 위한 방안이 논의되었다. 올해 3월까지 129개의 당사국이 국가보고서를 제출하였으며, 각국의 자체 평가 결과 국가별 목표 중 이행이 순조로운 목표는 절반에 미치지 못하는 것으로 나타났다. 이에는 재원과 기술 등 이행 수단의 부족이 가장 큰 걸림돌로 꼽혔다. 이에 따라 당사국들은 이행을 가속화할 방안을 담은 예레반 경로(Yerevan Pathway)를 합의하였다. 여기에는 국내외 공공 및 민간 분야 재원 동원, 개도국 이행 수단 확대, 지방정부, 여성, 청년 등 활동 주체의 참여 확대 등이 포함되었다. 또한 제8차 국가보고(2029년 6월 30일 제출 기한)를 위하여 지구환경기금(GEF)의 재원을 적시에 집행하고, 모니터링 및 지표 개선을 위한 기술전문가그룹을 구성하여 다음 총회까지 운영하기로 하였다. [ 자원 동원 및 재정 메커니즘 ] 글로벌 생물다양성 체계의 효과적인 이행을 위해 더 많은 재원을 확보하는 방안으로 재원 기여국 기반 확대 및 관련 기준과 절차 등을 논의했다. 재원 기여국 확대의 기준과 절차, 기여의 자발성 등을 둘러싼 당사국 간 입장차가 지속됨에 따라 고위급 협의와 비공식 협의를 병행하며 절충안을 모색했다. 또한, 재정 메커니즘과 관련하여 지구환경금융(GEF)에 대한 지침과 재원 지원체계 개선방안 등을 논의했으며, 논의 초기에는 재원 기여국 확대에 대해 국가별 이견이 있었으나, 각 국가의 자발적 의사에 기반해 재원 동원을 가속하는 노력을 기울이기로 합의했다. [유전자원 디지털 서열 정보(DSI) ] 유전자원 디지털 서열 정보(DSI)의 이용으로 발생하는 이익을 공정하고 공평하게 공유하기 위한 칼리 기금*(Cali Fund)의 세부 운영 방안을 논의했다. * 유전자원 데이터를 활용하여 창출한 수익을 유전자원의 출처인 개발도상국 등과 공유하기 위해 만들어진 기금으로 2024년 10월 제16차 총회에서 신설 이번 총회에서는 기금의 임시 배분과 기여 인증서의 과도기적 발급 등 DSI 다자체제와 칼리 기금의 실질적인 운영을 위한 기반을 마련했다. 기업의 기여 기준과 기여 인증서의 법적 효과 등 세부 사항은 후속 회기 간 작업반에서 구체화하기로 합의했다. [ 역량 개발, 과학기술 협력, 정보공유 체계 및 지식관리 ] 개발도상국의 글로벌 생물다양성 체계 이행 역량 강화를 위해 국가 간 역량 격차를 분석하고, 교육 자료 개발 등을 통해 국가 간 경험 공유를 확대하기로 하였다. 또한 과학기술협력 체계의 기반이 되는 글로벌조정기구의 2027~2028년 업무계획을 승인하였다. 정보공유체계(CHM*) 및 지식관리와 관련하여 개발도상국에 대한 재정 및 기술 지원을 촉구하고, 인공지능(AI) 등 신기술을 활용한 정보 접근성 개선을 요청하였다. 아울러 2030년까지의 생물다양성 교육 글로벌 실행계획을 환영하고 각국의 자발적 활용을 권장하였다. * Clearing-House Mechanism 특히 이번 결정문에는 생물다양성협약 회원국 간 과학기술 협력 증진을 위한 우리나라의 기여를 높이 평가받아, 우리나라가 운영 중인 바이오 브릿지 구상*(BBI, Bio Bridge Initiative)에 대한 생물다양성협약 사무국의 감사 표시가 포함되었다. * 2014년 평창에서 열린 제12차 총회에서 출범 [ 생물다양성과 기후변화 ] 글로벌 생물다양성 프레임워크 달성과 기후변화 대응이 밀접하게 연관되어 있음을 강조하고, 국가 전략과 정책에서 두 분야의 연계와 공동편익을 고려하며, 자연기반해법 및 생태계기반 접근법에 대한 투자를 확대하도록 권장했다. 또한 리우 3개 협약* 간 협력도 강화하기로 했다. * 생물다양성·기후변화·사막화 방지 협약 우리 대표단은 ‘쿤밍-몬트리올 글로벌 생물다양성 체계(KM GBF)’의 전 지구적 이행 점검, 자원 동원, 유전자원 디지털 서열 정보(DSI) 등 주요 의제에 대한 국제사회의 논의 동향을 면밀히 파악하고, 각국의 다양한 입장을 검토하며 국제적 합의 도출을 위한 논의에 동참했다. 10월 27일부터 28일까지 개최된 고위급 회의에서 우리 대표단은 ‘제5차 국가생물다양성전략’ 이행을 위한 국내 노력을 소개하고, 우리나라가 출범한 바이오브릿지 구상(BBI), 평화와 생물다양성 대화 구상(PBDI*) 등 기술협력 및 역량강화를 통한 국제사회 기여와 생물다양성·기후변화 등 국제환경협약 간 협력 강화의 중요성을 강조하는 국가 발언을 진행했다. * Peace and Biodiversity Dialogue Initiative 또한 유럽연합(EU), 사우디아라비아, 볼리비아, 노르웨이 등과 양자면담을 진행하여 생물다양성 보전 및 글로벌 생물다양성 프레임워크 이행을 위한 정책 경험을 공유하고, 생물다양성 관련 기술협력 등 다양한 환경 분야의 협력 방안을 논의했다. 구체적으로, 유럽연합(EU) 패트릭 차일드(Patrick Child) 환경총국 부국장과 순환경제를 포함한 환경 분야 고위급 양자 소통 창구 신설에 대해 협의했으며, 사우디아라비아 압둘모흐센 얄슈나이프(Abdulmohsen Alshnaif) 국립야생동물센터 총괄책임자와 생물다양성, 종다양성 보전 등을 위한 협력체계 구축에 대해 중점적으로 논의했다. 아울러 볼리비아 알레한드로 아라우호 무라카미(Alejandro Araujo Murakami) 기획개발환경부 생물다양성·보호지역 국장과 보호구역 및 자연공존지역(OECM*)의 확대에 대한 경험과 정책을 공유하고, 생물다양성이 풍부한 볼리비아와 AI, 위성 기술이 뛰어난 우리나라 간의 협력 방안을 논의했으며, 노르웨이의 엘렌 브루젤리우스 바케르(Ellen Bruzelius Backer) 기후환경부 지속가능전환국 부국장과 순환 경제를 비롯한 양국의 환경 정책을 공유하는 자리를 가졌다. * Other Effective area-based Conservation Measures 우리 대표단은 생물다양성 보전 및 지속 가능한 이용을 위한 국내 정책 경험과 국제 협력 성과를 공유하기 위해…",
+      "source": "기후부 보도자료",
+      "sourceType": "official",
+      "section": "press",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=1000&maxIndexPages=10&searchKey=&searchValue=&menuId=10598&orgCd=&boardMasterId=939&boardId=1903480",
+      "matchedKeywords": [
+        "제출기한"
+      ],
+      "matchedFields": [
+        "content"
+      ],
+      "keywordScope": "direct"
+    },
+    {
+      "id": "f9119af5279a5035",
+      "publishedAt": "2026-11-02",
+      "title": "원전 공론화위원회, 시민참여단 선정 위한 국민기초조사 시작",
+      "category": "제도",
+      "summary": "▷10월 31일부터 전국 만 18세 이상 국민 1만 5천 명에게 무작위로 전화해 조사 ▷참여 희망자 가운데 지역·성별·연령별로 무작위 추첨해 시민참여단 300명 선정 ‘전력수급기본계획을 위한 원전 공론화위원회(위원장 은재호, 이하 “위원회”)’는 시민참여단을 선정하기 위한 국민기초조사를 10월 31일부터 11월 14일까지 실시한다고 밝혔다. 이번 조사는 전국 만 18세 이상 국민 1만 5천 명을 대상으로 한다. 휴대전화와 집전화 번호를 무작위로 만들어 거는 방식(RDD)으로 진행하며, 지역·성별·연령대별 인구 비율에 맞춰 응답자를 확보한다. 조사 전화는 주말을 포함해 매일 오전 9시부터 오후 9시까지 걸려 온다. 조사는 위원회가 선정한 전문 조사기관인 한국능률협회컨설팅이 수행한다. 조사에서는 지역·성별·연령 등 기본 사항과 함께 공론화에 대한 인지 여부, 미래 전력 수요와 원전에 대한 생각, 시민참여단 참여 의향 등을 묻는다. 위원회는 참여 의향을 밝힌 응답자 가운데 지역·성별·연령대별로 무작위 추첨하여 시민참여단 300명을 선정한다. 시민참여단은 숙의자료집과 온라인 학습을 거쳐 12월 11일부터 13일까지 2박 3일 동안 숙의토론에 참여한다. 위원회는 국민 누구나 조사 전화를 받을 수 있는 만큼, 전화를 받으면 끝까지 응답해 줄 것을 당부하였다. 응답 내용은 통계 목적으로만 쓰이며, 개인정보는 관련 법령에 따라 관리된다. 국민기초조사 결과는 시민참여단의 숙의에 영향을 주지 않도록 숙의토론이 끝난 뒤 최종 결과와 함께 공개할 예정이다. 붙임 국민기초조사 개요. 끝.",
+      "source": "기후부 보도자료",
+      "sourceType": "official",
+      "section": "press",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=1000&maxIndexPages=10&searchKey=&searchValue=&menuId=10598&orgCd=&boardMasterId=939&boardId=1903460",
+      "matchedKeywords": [
+        "원전"
+      ],
+      "matchedFields": [
+        "title"
+      ],
+      "keywordScope": "related"
+    },
     {
       "id": "e4fc57dff2a369fb",
       "publishedAt": "2026-10-30",
@@ -1049,7 +1103,7 @@
       "keywordScope": "related"
     },
     {
-      "id": "e174a9a0095fa4b5",
+      "id": "b02e84ffadc5f7f9",
       "publishedAt": "2026-10-06",
       "title": "2026년 10월 배출권 유상할당 입찰계획 공고",
       "category": "유상경매",
@@ -1057,7 +1111,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1896770",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1896770",
       "matchedKeywords": [
         "시장안정화",
         "배출권",
@@ -1875,7 +1929,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "72de1e51f4d234f6",
+      "id": "d33fc96396cb6c87",
       "publishedAt": "2026-09-02",
       "title": "2026년 9월 배출권 유상할당 입찰계획 공고",
       "category": "유상경매",
@@ -1883,7 +1937,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1887850",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1887850",
       "matchedKeywords": [
         "추가할당",
         "추가 할당",
@@ -2411,7 +2465,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "0b9002b32f30bdd5",
+      "id": "56f944fbce63852f",
       "publishedAt": "2026-08-05",
       "title": "2026년 8월 배출권 유상할당 입찰계획 공고",
       "category": "유상경매",
@@ -2419,7 +2473,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1882160",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1882160",
       "matchedKeywords": [
         "추가할당",
         "추가 할당",
@@ -3592,7 +3646,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "11c1e93e6210d5a2",
+      "id": "f9193727736429e6",
       "publishedAt": "2026-07-01",
       "title": "2026년 7월 배출권 유상할당 입찰계획 공고",
       "category": "유상경매",
@@ -3600,7 +3654,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1874990",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1874990",
       "matchedKeywords": [
         "추가할당",
         "추가 할당",
@@ -4268,7 +4322,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "2e0783bcaf745897",
+      "id": "08f4f3a19f4809da",
       "publishedAt": "2026-06-12",
       "title": "2026년도 온실가스 배출권 유상할당 경매계획 변경공고",
       "category": "유상경매",
@@ -4276,7 +4330,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1870290",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1870290",
       "matchedKeywords": [
         "추가할당",
         "추가 할당",
@@ -5153,7 +5207,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "8376cd08edf10460",
+      "id": "fc612405c097cbd5",
       "publishedAt": "2026-06-02",
       "title": "2026년 6월 배출권 유상할당 입찰계획 공고",
       "category": "유상경매",
@@ -5161,7 +5215,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1867940",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1867940",
       "matchedKeywords": [
         "추가할당",
         "추가 할당",
@@ -6052,7 +6106,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "efa5a1e042ce1d71",
+      "id": "5e0cc26c991e6663",
       "publishedAt": "2026-05-06",
       "title": "2026년 5월 배출권 유상할당 입찰계획 공고",
       "category": "유상경매",
@@ -6060,7 +6114,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1862050",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1862050",
       "matchedKeywords": [
         "추가할당",
         "추가 할당",
@@ -7850,7 +7904,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "2c50c6739cda14dd",
+      "id": "aecde435bc94c71a",
       "publishedAt": "2026-04-01",
       "title": "2026년 4월 배출권 유상할당 경매 입찰 공고",
       "category": "유상경매",
@@ -7858,7 +7912,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1854410",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1854410",
       "matchedKeywords": [
         "추가할당",
         "추가 할당",
@@ -9332,7 +9386,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "f5b6acc067078436",
+      "id": "848d65df4311e692",
       "publishedAt": "2026-03-04",
       "title": "2026년 3월 배출권 유상할당 경매 입찰 공고",
       "category": "유상경매",
@@ -9340,7 +9394,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1847110",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1847110",
       "matchedKeywords": [
         "추가할당",
         "추가 할당",
@@ -10388,7 +10442,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "694630b0b6ad7158",
+      "id": "1804a45bc8c7c11e",
       "publishedAt": "2026-02-04",
       "title": "2026년 2월 배출권 유상할당 경매 입찰 공고",
       "category": "유상경매",
@@ -10396,7 +10450,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1839990",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1839990",
       "matchedKeywords": [
         "추가할당",
         "추가 할당",
@@ -11206,7 +11260,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "6fcc689e6811697f",
+      "id": "5b742a320674feef",
       "publishedAt": "2026-01-07",
       "title": "2026년 1월 배출권 유상할당 경매 입찰 공고",
       "category": "유상경매",
@@ -11214,7 +11268,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1833770",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1833770",
       "matchedKeywords": [
         "추가할당",
         "추가 할당",
@@ -11616,7 +11670,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "4814247a562c8770",
+      "id": "8cca28f701e28efa",
       "publishedAt": "2025-12-30",
       "title": "2026년도 온실가스 배출권 유상할당 경매계획",
       "category": "유상경매",
@@ -11624,7 +11678,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1832000",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1832000",
       "matchedKeywords": [
         "추가할당",
         "추가 할당",
@@ -13059,7 +13113,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "3108785683fa24ad",
+      "id": "59f1e38c9eac7a4b",
       "publishedAt": "2025-12-11",
       "title": "2025년 12월 배출권 유상할당 경매 추가 입찰 공고",
       "category": "유상경매",
@@ -13067,7 +13121,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1827900",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1827900",
       "matchedKeywords": [
         "추가할당",
         "추가 할당",
@@ -13725,7 +13779,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "599098f8509ca5e1",
+      "id": "864e8185ce45b0b9",
       "publishedAt": "2025-12-03",
       "title": "2025년 12월 배출권 유상할당 경매 입찰 공고",
       "category": "유상경매",
@@ -13733,7 +13787,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1825540",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1825540",
       "matchedKeywords": [
         "추가할당",
         "추가 할당",
@@ -15635,7 +15689,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "779bae99c94829d5",
+      "id": "8071a74485fe6bbe",
       "publishedAt": "2025-11-05",
       "title": "2025년도 온실가스 배출권 유상할당 경매계획 변경 재공고",
       "category": "유상경매",
@@ -15643,7 +15697,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1774090",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1774090",
       "matchedKeywords": [
         "추가할당",
         "추가 할당",
@@ -15775,7 +15829,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "33f786a992731aa3",
+      "id": "54e06f3a6c349520",
       "publishedAt": "2025-11-05",
       "title": "2025년 11월 배출권 유상할당 경매 입찰 공고",
       "category": "유상경매",
@@ -15783,7 +15837,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1774080",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1774080",
       "matchedKeywords": [
         "추가할당",
         "추가 할당",
@@ -17766,7 +17820,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "60691124adb8a7a7",
+      "id": "3f734146ca005abe",
       "publishedAt": "2025-09-03",
       "title": "2025년 9월 배출권 유상할당 입찰 공고",
       "category": "유상경매",
@@ -17774,7 +17828,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1762780",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1762780",
       "matchedKeywords": [
         "추가할당",
         "추가 할당",
@@ -18469,7 +18523,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "64fc92eea5122b1d",
+      "id": "134d8c1f71ac9a59",
       "publishedAt": "2025-08-07",
       "title": "2025년 8월 배출권 유상할당 입찰 공고",
       "category": "유상경매",
@@ -18477,7 +18531,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1758000",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1758000",
       "matchedKeywords": [
         "추가할당",
         "추가 할당",
@@ -19183,7 +19237,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "efc7ea21df878792",
+      "id": "291949ea8411aa85",
       "publishedAt": "2025-07-03",
       "title": "2025년도 온실가스 배출권 유상할당 경매계획 변경공고",
       "category": "유상경매",
@@ -19191,7 +19245,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1752110",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1752110",
       "matchedKeywords": [
         "추가할당",
         "추가 할당",
@@ -19532,7 +19586,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "eeb6a3421d9bdacf",
+      "id": "6971a3d9c1e05ce2",
       "publishedAt": "2025-07-03",
       "title": "2025년 7월 배출권 유상할당 입찰 공고",
       "category": "유상경매",
@@ -19540,7 +19594,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1752120",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1752120",
       "matchedKeywords": [
         "추가할당",
         "추가 할당",
@@ -20101,7 +20155,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "74156faab8db0e52",
+      "id": "4eacbe99fc486252",
       "publishedAt": "2025-06-04",
       "title": "2025년 6월 배출권 유상할당 입찰 공고",
       "category": "유상경매",
@@ -20109,7 +20163,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1746560",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1746560",
       "matchedKeywords": [
         "추가할당",
         "추가 할당",
@@ -20876,7 +20930,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "43eb459f5bdf4199",
+      "id": "a683b141714c6d9d",
       "publishedAt": "2025-05-08",
       "title": "2025년 5월 배출권 유상할당 입찰공고",
       "category": "유상경매",
@@ -20884,7 +20938,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1740920",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1740920",
       "matchedKeywords": [
         "추가할당",
         "추가 할당",
@@ -21329,7 +21383,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "34bb2d30171c09a1",
+      "id": "bf2c7b48532214c8",
       "publishedAt": "2025-04-04",
       "title": "2025년 4월 배출권 유상할당 입찰 공고",
       "category": "유상경매",
@@ -21337,7 +21391,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10524&orgCd=&boardMasterId=39&boardId=1735370",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10524&orgCd=&boardMasterId=39&boardId=1735370",
       "matchedKeywords": [
         "유상할당",
         "유상 할당",
@@ -22078,7 +22132,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "c6967996514b1e52",
+      "id": "85f0478dcee0de03",
       "publishedAt": "2025-03-07",
       "title": "2025년 3월 배출권 유상할당 입찰 공고",
       "category": "유상경매",
@@ -22086,7 +22140,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1728550",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1728550",
       "matchedKeywords": [
         "추가할당",
         "추가 할당",
@@ -22561,7 +22615,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "e597e32e06bc0f82",
+      "id": "05fc79bd8614e601",
       "publishedAt": "2025-02-06",
       "title": "2025년 2월 배출권 유상할당 입찰 공고",
       "category": "유상경매",
@@ -22569,7 +22623,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10524&orgCd=&boardMasterId=39&boardId=1723130",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10524&orgCd=&boardMasterId=39&boardId=1723130",
       "matchedKeywords": [
         "유상할당",
         "유상 할당",
@@ -23777,7 +23831,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "e5433657a68784ef",
+      "id": "5a9ba8a730a2073b",
       "publishedAt": "2024-12-27",
       "title": "2025년도 온실가스 배출권 유상할당 경매계획",
       "category": "유상경매",
@@ -23785,7 +23839,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1716810",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1716810",
       "matchedKeywords": [
         "추가할당",
         "추가 할당",
@@ -24678,7 +24732,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "479f3544c192625c",
+      "id": "2b5ad352907f1985",
       "publishedAt": "2024-12-04",
       "title": "2024년 12월 배출권 유상할당 입찰 공고",
       "category": "유상경매",
@@ -24686,7 +24740,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1712550",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1712550",
       "matchedKeywords": [
         "추가할당",
         "추가 할당",
@@ -97513,8 +97567,8 @@
     }
   ],
   "collectionMode": "incremental",
-  "queryStartDate": "2026-09-03",
-  "queryEndDate": "2026-11-02",
+  "queryStartDate": "2026-09-04",
+  "queryEndDate": "2026-11-03",
   "climateKeywordExpansion": {
     "version": "2026-09-11-v1-38-topics",
     "sharedWith": "산업부 보도자료·공지사항",
@@ -97635,8 +97689,8 @@
       ]
     },
     "collectionMode": "incremental",
-    "queryStartDate": "2026-09-03",
-    "queryEndDate": "2026-11-02"
+    "queryStartDate": "2026-09-04",
+    "queryEndDate": "2026-11-03"
   },
   "policyEventTaxonomy": {
     "version": "2026-09-11-v1-user-38-events",
@@ -97650,7 +97704,7 @@
   },
   "retentionAudit": {
     "previousUnique": 1697,
-    "currentUnique": 1697,
+    "currentUnique": 1700,
     "missing": 0
   }
 }
