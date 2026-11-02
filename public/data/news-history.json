@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-02T18:14:36+09:00",
+  "generatedAt": "2026-11-02T21:46:46+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1728,
+  "itemCount": 1729,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-02",
   "sourceCommitsScanned": 0,
@@ -29,13 +29,14 @@
       ],
       "duplicateSources": [
         "mt.co.kr",
+        "venturesquare.net",
         "seoul.co.kr",
         "fnnews.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 3,
+      "duplicateCount": 4,
       "region": "국내"
     },
     {
@@ -62,13 +63,14 @@
         "전자신문",
         "etnews.com",
         "chungnamilbo.co.kr",
-        "ggilbo.com"
+        "ggilbo.com",
+        "gocj.net"
       ],
       "searchProviders": [
         "Google News RSS",
         "NAVER API HUB"
       ],
-      "duplicateCount": 8,
+      "duplicateCount": 9,
       "region": "국내"
     },
     {
@@ -254,8 +256,9 @@
       "matchedKeywords": [
         "탄소시장"
       ],
-      "duplicateCount": 2,
+      "duplicateCount": 3,
       "duplicateSources": [
+        "ziksir.com",
         "etoday.co.kr",
         "sedaily.com"
       ],
@@ -427,7 +430,7 @@
       "matchedKeywords": [
         "탄소시장"
       ],
-      "duplicateCount": 13,
+      "duplicateCount": 15,
       "duplicateSources": [
         "news1.kr",
         "yna.co.kr",
@@ -441,7 +444,9 @@
         "cnbnews.com",
         "biz.heraldcorp.com",
         "seoul.co.kr",
-        "shinailbo.co.kr"
+        "shinailbo.co.kr",
+        "newspim.com",
+        "breaknews.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -972,6 +977,30 @@
       ],
       "duplicateCount": 1,
       "region": "해외"
+    },
+    {
+      "id": "9f52dbd040aaec4b",
+      "publishedAt": "2026-11-02",
+      "title": "\"연결은 웃었지만 본업은 울었다…현대제철, 아쉬운 성적표에 낮아진 눈...",
+      "category": "제도",
+      "summary": "제품 판매량이 393만톤으로 전년대비 9% 감소하면서 고정비가 증가한 것이 주원인이고, 여기에 탄소 배출권 비용 부담이 더해진 것이 또 다른 원인으로 추정된다. 봉형강은 계절적 비수기에 전방산업 부진으로...",
+      "source": "newsquest.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newsquest.co.kr/news/articleView.html?idxno=304038",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "newsquest.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
     },
     {
       "id": "1b710c6204e94ab4",
