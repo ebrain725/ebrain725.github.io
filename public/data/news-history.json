@@ -1,17 +1,63 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-02T21:46:46+09:00",
+  "generatedAt": "2026-11-03T04:45:11+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1729,
+  "itemCount": 1734,
   "earliestPublishedAt": "2026-08-06",
-  "latestPublishedAt": "2026-11-02",
+  "latestPublishedAt": "2026-11-03",
   "sourceCommitsScanned": 0,
   "sourceSnapshotsScanned": 0,
   "historicalRowsScanned": 0,
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "914c8a007590a98f",
+      "publishedAt": "2026-11-03",
+      "title": "산림청, REDD+ 심화과정 교육생 75명 모집…11월 18일 마감",
+      "category": "상쇄·외부사업",
+      "summary": "■ 탄소시장 분석부터 감축실적 거래까지 실무 교육 교육과정은 국내외 탄소시장 운영 체계 분석, REDD+ 사업 전 주기 분석, 타당성 조사 작성 및 사례, 산림배출선(FREL) 설정 및 사례, REDD+ 방법론과 운영표준...",
+      "source": "woodkorea.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.woodkorea.co.kr/news/articleView.html?idxno=92292",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "woodkorea.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "20e9191a966411b4",
+      "publishedAt": "2026-11-03",
+      "title": "[시론] 유럽 시위와 한국의 미래",
+      "category": "시장·가격",
+      "summary": "탄소 중립은 필요하지만, 막무가내로 올린 배출권 가격에 따른 비용 증가는 기업에 큰 부담으로 작용한다.... 중국 업체의 EU 전기차 배터리 시장 점유율은 2025년 전체의 절반을 넘었고 2023년에 비하면 거의 두 배가 됐다....",
+      "source": "hankyung.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.hankyung.com/article/2026110211211",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "hankyung.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
     {
       "id": "16a23d464aad0da2",
       "publishedAt": "2026-11-02",
@@ -417,6 +463,29 @@
       "region": "국내"
     },
     {
+      "id": "01aa82c8a6647a89",
+      "publishedAt": "2026-11-02",
+      "title": "부산시, 국제행사 3개 잇따라…11개국 디자인 교류·두바이 직항 추진",
+      "category": "제도",
+      "summary": "이번 포럼에서는 탄소시장 과 국가 간 탄소거래, 예금토큰과 디지털채권, 역내 지급결제 등 금융산업의 변화도 주요 의제로 다뤄진다. 마지막 날 재정경제부가 주관하는 역량강화 세미나에서는 금융 디지털화에 따른...",
+      "source": "newstown.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.newstown.co.kr/news/articleView.html?idxno=720526",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "newstown.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "347d6c9b3bc7e578",
       "publishedAt": "2026-11-02",
       "title": "부산서 아시아 채권 시장 미래 논의…'ASEAN+3 국제포럼' 개최",
@@ -807,6 +876,55 @@
       "searchProviders": [
         "Google News RSS"
       ],
+      "region": "국내"
+    },
+    {
+      "id": "9374fea8ed17a4bf",
+      "publishedAt": "2026-11-02",
+      "title": "[기고] 기업들의 ‘눈속임 친환경’, 체계적 감시로 뿌리 뽑아야",
+      "category": "상쇄·외부사업",
+      "summary": "빌 게이츠는 “오늘날 배출되는 온실가스 의 20%는 1만 년이 지나도 대기권에 남는다”며 실질적인 기술... 단순히 탄소 배출권 을 사서 상쇄하는 눈속임이 아닌, 실제 배출량 감축과 내부 노동 환경 개선 실적을 투명하게...",
+      "source": "chosun.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.chosun.com/opinion/contribution/2026/11/02/RXFLQA77YBE6DJ7XOSJRXPRTNI/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "chosun.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "884e32be850a2de1",
+      "publishedAt": "2026-11-02",
+      "title": "[WT논평] We just need the right leaders to lower gas prices(Ⅱ)",
+      "category": "제도",
+      "summary": "탄소 배출권 거래제 : 갤런당 약 24센트에서 25센트를 추가한다. 추가 항목 일부를 줄이거나 없애면 기름 값이 더 저렴해질 수도 있다. 대부분의 사람들은 더 많은 정유시설을...",
+      "source": "segye.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.segye.com/newsView/20261102514542?OutUrl=naver",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "segye.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
       "region": "국내"
     },
     {
@@ -9706,11 +9824,11 @@
         "유상할당"
       ],
       "duplicateSources": [
+        "이투데이",
         "etoday.co.kr",
+        "이데일리",
         "newslock.co.kr",
         "newsinside.kr",
-        "이투데이",
-        "이데일리",
         "edaily.co.kr",
         "뉴스핌",
         "fetv.co.kr",
@@ -9739,8 +9857,8 @@
         "전자신문"
       ],
       "searchProviders": [
-        "NAVER API HUB",
-        "Google News RSS"
+        "Google News RSS",
+        "NAVER API HUB"
       ],
       "duplicateCount": 31,
       "region": "국내"
@@ -13055,12 +13173,12 @@
         "K-ETS"
       ],
       "duplicateSources": [
+        "인더스트리뉴스",
         "industrynews.co.kr",
         "paxetv.com",
         "newsdream.kr",
         "dailian.co.kr",
         "edaily.co.kr",
-        "인더스트리뉴스",
         "팍스경제TV",
         "이투데이",
         "pinpointnews.co.kr",
@@ -13075,8 +13193,8 @@
         "e2news.com"
       ],
       "searchProviders": [
-        "NAVER API HUB",
-        "Google News RSS"
+        "Google News RSS",
+        "NAVER API HUB"
       ],
       "duplicateCount": 18,
       "region": "국내"
