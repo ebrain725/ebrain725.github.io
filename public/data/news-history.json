@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-02T10:14:17+09:00",
+  "generatedAt": "2026-11-02T13:14:11+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1694,
+  "itemCount": 1710,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-02",
   "sourceCommitsScanned": 0,
@@ -35,6 +35,54 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 2,
+      "region": "국내"
+    },
+    {
+      "id": "4c413acdf0ab4573",
+      "publishedAt": "2026-11-02",
+      "title": "해외 숲 살리고 탄소 배출권 캔다…산림청, REDD+ 심화 교육생 모집",
+      "category": "제도",
+      "summary": "세부 내용은 국내외 탄소시장 운영 체계 분석, REDD+ 사업 전 주기 단계별 분석, 현지 사업 타당성 조사 보고서 작성 실습, 온실가스 감축 실적 발행 및 배출권 시장 거래 실무 등으로 구성됐다. 이어 교육은 REDD+에 관심...",
+      "source": "dailian.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.dailian.co.kr/news/view/1709453/?sc=Naver",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권",
+        "탄소시장"
+      ],
+      "duplicateSources": [
+        "dailian.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "c7e95dd6ffd727a4",
+      "publishedAt": "2026-11-02",
+      "title": "인공지능으로 탄소시장 분석과 기후대응 ‘맞손’",
+      "category": "제도",
+      "summary": "KAIST 녹색성장지속가능대학원과 뉴톤이 인공지능을 활용한 탄소시장 분석과 기후변화 대응 연구에 함께 나선다. 이를 통해 국제 탄소시장 분석 연구를 고도화한다는 방침이다. 뉴톤은 탄소 인공지능·데이터 솔루션...",
+      "source": "naeil.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.naeil.com/news/read/607167?ref=naver",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "naeil.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
       "region": "국내"
     },
     {
@@ -75,13 +123,112 @@
       "matchedKeywords": [
         "탄소시장"
       ],
-      "duplicateCount": 5,
+      "duplicateCount": 9,
       "duplicateSources": [
         "news1.kr",
         "yna.co.kr",
         "nocutnews.co.kr",
         "fnnews.com",
-        "kpenews.com"
+        "kpenews.com",
+        "inews24.com",
+        "gukjenews.com",
+        "businesskorea.co.kr",
+        "asiatime.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "ec802cdf64349034",
+      "publishedAt": "2026-11-02",
+      "title": "석유 최고가격제 첫 정산…원가 쟁점만 수십개",
+      "category": "시장·가격",
+      "summary": "◆원가 산정따라 보상액 수천억원 차이 = 성과급과 온실가스 배출권 구매비용은 물론 원유 도입비와 정제·운송비의 인정범위에 따라 보상액이 수백억~수천억원 달라질 수 있어 정부와 정유업계의 신경전이 치열하다. 2일...",
+      "source": "naeil.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.naeil.com/news/read/607197?ref=naver",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "온실가스 배출권"
+      ],
+      "duplicateSources": [
+        "naeil.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "a8a65ebfc9799393",
+      "publishedAt": "2026-11-02",
+      "title": "산림청, 'REDD+ 심화교육' 참가자 모집... 국제감축사업 전문인력 양성",
+      "category": "제도",
+      "summary": "이번 교육은 REDD+ 사업의 운영 사례와 국내외 탄소시장 동향을 공유하고 사업 발굴부터 감축 실적 확보 및 거래에 이르는 실무 역량을 강화하기 위해 마련됐다. 교육은 오는 25일 산림교육원 온라인 과정으로 진행되며...",
+      "source": "chungnamilbo.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.chungnamilbo.co.kr/news/articleView.html?idxno=918129",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 2,
+      "duplicateSources": [
+        "etnews.com",
+        "chungnamilbo.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "337ac66c7c0ac14a",
+      "publishedAt": "2026-11-02",
+      "title": "부산에 모인 아시아 금융당국… “채권 시장 규격, 부산서 맞춘다”",
+      "category": "제도",
+      "summary": "3일 DBMF에서는 탄소 배출권과 디지털자산, 예금토큰, 디지털채권이, 4~5일 CSIF·ABMF에서는 역내 자본 시장 동향과 국가 간 지급결제, 지속가능금융 발전방향이 테이블에 오른다. 6일 재정경제부 주관 역량강화...",
+      "source": "viva100.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.viva100.com/article/20261102500358",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "viva100.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "3a5651fd3e7ba238",
+      "publishedAt": "2026-11-02",
+      "title": "부산시, 금융·해양·디자인 국제교류…두바이 직항 유치도 모색",
+      "category": "제도",
+      "summary": "이후 포럼에서는 탄소시장 과 국가 간 탄소거래, 예금토큰·디지털채권, 역내 지급결제 등을 다룬다. 마지막 날 재정경제부 주관 역량강화 세미나에서는 금융 디지털화에 따른 위험요인과 인공지능(AI)이 금융안정에...",
+      "source": "tf.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://news.tf.co.kr/read/national/2383567.htm",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "tf.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -105,6 +252,29 @@
       "duplicateCount": 1,
       "duplicateSources": [
         "kpenews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "e32934ff7365a3a1",
+      "publishedAt": "2026-11-02",
+      "title": "부산, ‘블루시티’ 품고 아시아 금융 허브로…아세안+3 채권 시장 국제포...",
+      "category": "제도",
+      "summary": "BNK부산은행서 닷새간 개최 디지털 채권· 탄소시장 등 논의 부산지역에서 지속가능금융과 금융의 디지털 전환 등을 논의하는 ‘아세안+3 채권시장 국제포럼’이 개최된다. 부산시는 2일부터 닷새간 BNK부산은행...",
+      "source": "mk.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.mk.co.kr/article/12193274",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "mk.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -136,6 +306,52 @@
       "region": "국내"
     },
     {
+      "id": "cb6d725355dbdb7a",
+      "publishedAt": "2026-11-02",
+      "title": "기후테크 스타트업 272곳, 유니콘은 아직 '0'…수요기업 실증 기회가 성...",
+      "category": "상쇄·외부사업",
+      "summary": "최 대표는 배출권 시장에서도 스타트업의 사업 기회를 짚었다. 그는 \"국내 배출권 가격은 톤당 8000~1만원으로 유럽(10만~12만원)보다 크게 낮지만 무상할당이 계속될 수 없어 거래 자유화가 예상된다\"며 \"감축 방법론...",
+      "source": "impacton.net",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.impacton.net/news/articleView.html?idxno=30483",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "impacton.net"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "해외"
+    },
+    {
+      "id": "2b4056daf5b33e3a",
+      "publishedAt": "2026-11-02",
+      "title": "【ESG 채용】그리너리, 이알엠코리아, 산일전기, 롯데마트·롯데슈퍼",
+      "category": "제도",
+      "summary": "트렌드, 탄소시장 , 신규 지속가능성 이슈 분석을 통한 인사이트 도출 및 서비스 혁신 기여 주니어 팀원 리드 및 멘토링 제안서 작성, 고객 피칭, 신규 사업 기회 발굴 등 사업개발(BD) 활동 참여 합의된 일정·예산...",
+      "source": "impacton.net",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.impacton.net/news/articleView.html?idxno=30498",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateSources": [
+        "impacton.net"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "98af8f905407d131",
       "publishedAt": "2026-11-02",
       "title": "“북극항로부터 바다 살리는 채권까지”…아시아 금융 전문가 150명 부산...",
@@ -152,6 +368,176 @@
       ],
       "duplicateSources": [
         "munhwa.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "44f2369317ac1cb4",
+      "publishedAt": "2026-11-02",
+      "title": "“골칫덩이 CO₂가 항공유로 변신”…韓, 탄소 재활용기술 어디까지 왔...",
+      "category": "시장·가격",
+      "summary": "국내 배출권 가격은 지난 20일 기준 톤당 3만100원으로 1년 전보다 약 3배 상승했다. 유럽의 배출권 가격 역시 톤당 88유로 수준으로 올라 기업들의 탄소 감축 부담이 커지고 있다. 다만 CCU로 생산한 제품이 실제 얼마나...",
+      "source": "biz.heraldcorp.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://biz.heraldcorp.com/article/10922466?ref=naver",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "biz.heraldcorp.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 2,
+      "region": "해외"
+    },
+    {
+      "id": "9a44991098d5beb7",
+      "publishedAt": "2026-11-02",
+      "title": "[People&Planet] 탄소 배출권 은 무엇을 남기는가",
+      "category": "제도",
+      "summary": "BURN이 최근 몇 년 사이 급성장할 수 있었던 배경에는 탄소 배출권 이 있다. 기후변화 대응은 결국 산업을... 이처럼 막힌 자금 조달의 통로를 열어줄 수 있는 것이 탄소 배출권 이다. 흔히 탄소 배출권 구매를 기업이...",
+      "source": "futurechosun.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://futurechosun.com/?p=165210",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "더나은미래",
+        "futurechosun.com"
+      ],
+      "searchProviders": [
+        "Google News RSS",
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 2,
+      "region": "국내"
+    },
+    {
+      "id": "f5670fbccb555693",
+      "publishedAt": "2026-11-02",
+      "title": "[EE칼럼] 손님이 하나뿐인 시장의 탄소 가격",
+      "category": "시장·가격",
+      "summary": "온실가스 배출권 가격도 마찬가지여서, 이 가격은 우리 경제가 온실가스 한 톤을 줄이는 데 대략 얼마가 드는지를 시장이 알려 주는 일종의 신호라고 할 수 있다. 그런데 정부가 발전 5사를 하나로 합친 '한국발전'을 내년...",
+      "source": "ekn.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.ekn.kr/web/view.php?key=20261102028373291",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "온실가스 배출권"
+      ],
+      "duplicateSources": [
+        "ekn.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "e604662b546a6237",
+      "publishedAt": "2026-11-02",
+      "title": "[COP31 특집] 석유 vs 청정에너지, 안탈리아에서 맞붙는다…'보이지 않는...",
+      "category": "제도",
+      "summary": "산업계의 영향력이 얼마나 투명하게 드러나고, 그것이 실제 온실가스 감축이라는 공적 목표와 어떻게... COP30에서 국제 배출권 거래협회(IETA)는 60명의 대표단을 등록했고, 여기에는 엑손모빌·BP·토탈에너지 관계자가...",
+      "source": "esgeconomy.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.esgeconomy.com/news/articleView.html?idxno=17120",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "esgeconomy.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "f81ef216878de106",
+      "publishedAt": "2026-11-02",
+      "title": "'국외산림 탄소 축적증진' 심화 과정 교육생 모집",
+      "category": "제도",
+      "summary": "교육 과정은 ▲국내외 탄소시장 운영 체계 분석 ▲REDD+ 사업 전 주기 분석 ▲타당성 조사 작성 및 사례 ▲감축 실적 발행 및 시장 거래 실무 등 현업에 바로 적용할 수 있는 알찬 내용으로 채워졌다. 김통일 산림청...",
+      "source": "amnews.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.amnews.co.kr/news/articleView.html?idxno=75360",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 3,
+      "duplicateSources": [
+        "hankyung.com",
+        "businesskorea.co.kr",
+        "amnews.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "eb3a758fff7b6f84",
+      "publishedAt": "2026-11-02",
+      "title": "\"영국, EU와 정상회담서 유럽 유학생 등록금 인하 제안 예정\"",
+      "category": "제도",
+      "summary": "양측은 정상회담에서 18∼30세를 대상으로 한 청년 체험 프로그램 출범을 마무리하고 식료품 무역 활성화 방안, 탄소 배출권 거래 연계 논의도 확정하기를 희망 중이다. EU 회원국 대사들은 오는 5일 벨기에 브뤼셀에서...",
+      "source": "yna.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.yna.co.kr/view/AKR20261102076100009?input=1195m",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "yna.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
+      "id": "1b710c6204e94ab4",
+      "publishedAt": "2026-11-02",
+      "title": "\"공동주택 히트펌프 보급, 요금제･설치 지원 시급\"",
+      "category": "제도",
+      "summary": "정 교수는 \"기후변화 위기 속에서 건물 부문은 전체 에너지 소비 및 온실가스 배출에서 상당한 비중을... 정부 차원의 설치 보조금 지원과 탄소 배출권 거래제 연계 혜택 등을 통해 초기시장 형성을 견인해야 한다\"고 제언했다.",
+      "source": "hapt.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.hapt.co.kr/news/articleView.html?idxno=169863",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "hapt.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -2806,16 +3192,16 @@
         "탄소배출권"
       ],
       "duplicateSources": [
-        "megaeconomy.co.kr",
-        "pinpointnews.co.kr",
-        "newsmap.co.kr",
         "todayenergy.kr",
+        "e-platform.net",
+        "ftoday.co.kr",
         "gasnews.com",
         "energy-news.co.kr",
-        "ftoday.co.kr",
-        "e2news.com",
         "autodaily.co.kr",
-        "e-platform.net",
+        "e2news.com",
+        "newsmap.co.kr",
+        "megaeconomy.co.kr",
+        "pinpointnews.co.kr",
         "1conomynews.co.kr"
       ],
       "searchProviders": [
