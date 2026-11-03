@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-11-03T13:01:35+09:00",
+  "lastSync": "2026-11-03T13:13:29+09:00",
   "keywords": [
     "배출권",
     "배출권거래제",
@@ -30,7 +30,7 @@
   "warning": "한국거래소 배출권 공지사항: 한국거래소 공지 목록을 해석하지 못했습니다. 1페이지: HTTP Error 403: Forbidden",
   "aiInsight": {
     "summary": "최근 공식자료의 직접적인 수급 변수는 유상경매입니다. 최근 경매가 높은 낙찰가로 소화돼 공급보다 이행수요가 강하다는 신호입니다.",
-    "generatedAt": "2026-11-03T13:01:35+09:00",
+    "generatedAt": "2026-11-03T13:13:29+09:00",
     "basisLatestDate": "2026-10-28",
     "basisCount": 10,
     "source": "fallback",
@@ -126,7 +126,7 @@
       "sources": [
         "chungnamilbo.co.kr"
       ],
-      "duplicateCount": 2,
+      "duplicateCount": 3,
       "contentFingerprint": "a594ec7eb752ee04cbd48c25957d6dcbf4f48b37",
       "contentSignature": "산림청이오는18일까지국외산림탄소축적증진심화과정교육생을모집한다사진제공산림청충남일보이승우기자산림청이국외산림을활용한온실가스감축사업의전문인력을양성하고민간분야의사업참여역량을높이기위한교육과정을운영한다산림청이오는18일까지국외산림탄소축적증진redd심화과정교육생75명을모집한다redd는개발도상국의산림전용과황폐화를방지하고산림의탄소흡수기능을강화해온실가스배출을줄이는활동이다이번교육은redd사업의운영사례와국내외탄소시장동향을공유하고사업발굴부터감축실적확보및거래에이르는실무역량을강화하기위해마련됐다교육은오는25일산림교육원온라인과정으로진행되며redd에관심있는국민이라면누구나무료로참여할수있다교육과정은국내외탄소시장운영체계분석과redd사업전주기분석타당성조사작성및사례감축실적발행과시장거래실무등으로구성됐다산림과탄소시장분야전문가들이강사로참여해사업추진과정에필요한전문지식과실무사례를공유한다참여희망자는산림교육원누리집에서회원가입을마친뒤제16차redd국내심화과정온라인을선택해신청하면된다김통일산림청해외자원담당관은이번교육이redd사업에대한이해를높이고사업발굴부터감축실적확보및시장거래까지실무역량을강화하는계기가되길바란다며산림분야국제감축사업을추진할전문인력을양성하고민간의사업참여기반을확대해나가겠다고강조했다"
     },
@@ -875,12 +875,14 @@
         "탄소배출권"
       ],
       "duplicateSources": [
+        "연합인포맥스",
         "einfomax.co.kr"
       ],
       "searchProviders": [
+        "Google News RSS",
         "NAVER API HUB"
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "region": "국내"
     },
     {
@@ -1518,12 +1520,14 @@
       "matchedKeywords": [
         "탄소시장"
       ],
-      "duplicateCount": 2,
+      "duplicateCount": 3,
       "duplicateSources": [
+        "전자신문",
         "etnews.com",
         "chungnamilbo.co.kr"
       ],
       "searchProviders": [
+        "Google News RSS",
         "NAVER API HUB"
       ],
       "region": "국내"
@@ -11245,11 +11249,11 @@
         "유상할당"
       ],
       "duplicateSources": [
-        "이투데이",
         "etoday.co.kr",
-        "이데일리",
         "newslock.co.kr",
         "newsinside.kr",
+        "이투데이",
+        "이데일리",
         "edaily.co.kr",
         "뉴스핌",
         "fetv.co.kr",
@@ -11278,8 +11282,8 @@
         "전자신문"
       ],
       "searchProviders": [
-        "Google News RSS",
-        "NAVER API HUB"
+        "NAVER API HUB",
+        "Google News RSS"
       ],
       "duplicateCount": 31,
       "region": "국내"
@@ -14668,12 +14672,12 @@
         "K-ETS"
       ],
       "duplicateSources": [
-        "인더스트리뉴스",
         "industrynews.co.kr",
         "paxetv.com",
         "newsdream.kr",
         "dailian.co.kr",
         "edaily.co.kr",
+        "인더스트리뉴스",
         "팍스경제TV",
         "이투데이",
         "pinpointnews.co.kr",
@@ -14688,8 +14692,8 @@
         "e2news.com"
       ],
       "searchProviders": [
-        "Google News RSS",
-        "NAVER API HUB"
+        "NAVER API HUB",
+        "Google News RSS"
       ],
       "duplicateCount": 18,
       "region": "국내"
@@ -19692,13 +19696,17 @@
         "연합뉴스",
         "경북일보",
         "https://www.2news.co.kr/",
-        "Daum"
+        "Daum",
+        "웹플러스뉴스",
+        "서울일보",
+        "seoulilbo.com",
+        "webplusnews.kr"
       ],
       "searchProviders": [
         "NAVER API HUB",
         "Google News RSS"
       ],
-      "duplicateCount": 32,
+      "duplicateCount": 36,
       "region": "국내"
     },
     {
@@ -73035,7 +73043,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "bf2c7b48532214c8",
+      "id": "34bb2d30171c09a1",
       "publishedAt": "2025-04-04",
       "title": "2025년 4월 배출권 유상할당 입찰 공고",
       "category": "유상경매",
@@ -73043,7 +73051,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10524&orgCd=&boardMasterId=39&boardId=1735370",
+      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10524&orgCd=&boardMasterId=39&boardId=1735370",
       "matchedKeywords": [
         "유상할당",
         "유상 할당",
@@ -77353,7 +77361,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "05fc79bd8614e601",
+      "id": "e597e32e06bc0f82",
       "publishedAt": "2025-02-06",
       "title": "2025년 2월 배출권 유상할당 입찰 공고",
       "category": "유상경매",
@@ -77361,7 +77369,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10524&orgCd=&boardMasterId=39&boardId=1723130",
+      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10524&orgCd=&boardMasterId=39&boardId=1723130",
       "matchedKeywords": [
         "유상할당",
         "유상 할당",
@@ -271991,10 +271999,10 @@
   },
   "newsRetention": {
     "policy": "append-only",
-    "lastMergedAt": "2026-11-03T13:01:42+09:00",
+    "lastMergedAt": "2026-11-03T13:13:35+09:00",
     "itemCount": 1746,
-    "archiveBefore": 1741,
-    "currentBefore": 1595,
+    "archiveBefore": 1746,
+    "currentBefore": 1594,
     "gitRecoveryEnabled": false
   }
 }
