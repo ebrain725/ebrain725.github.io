@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-11-03T15:13:21+09:00",
+  "lastSync": "2026-11-03T18:14:25+09:00",
   "keywords": [
     "배출권",
     "배출권거래제",
@@ -30,7 +30,7 @@
   "warning": "한국거래소 배출권 공지사항: 한국거래소 공지 목록을 해석하지 못했습니다. 1페이지: HTTP Error 403: Forbidden",
   "aiInsight": {
     "summary": "최근 공식자료의 직접적인 수급 변수는 유상경매입니다. 최근 경매가 높은 낙찰가로 소화돼 공급보다 이행수요가 강하다는 신호입니다.",
-    "generatedAt": "2026-11-03T15:13:21+09:00",
+    "generatedAt": "2026-11-03T18:14:25+09:00",
     "basisLatestDate": "2026-10-28",
     "basisCount": 10,
     "source": "fallback",
@@ -791,6 +791,30 @@
   ],
   "items": [
     {
+      "id": "7a6f3e9a0de66d53",
+      "publishedAt": "2026-11-03",
+      "title": "한국기후변화연구원-더이알랩 철도분야 탄소 중립 실현 업무협약",
+      "category": "상쇄·외부사업",
+      "summary": "협력 내용은 △철도분야 온실가스 감축 및 탄소중립 신규사업 공동 발굴 △철도차량과 역사 에너지 설비 등 철도 전 과정의 에너지효율 향상 및 감축기술 적용 검토 △국내외 탄소시장 과 연계한 온실가스 감축 방법론 개발...",
+      "source": "kwnews.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.kwnews.co.kr/article/20261103501450",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 2,
+      "duplicateSources": [
+        "kado.net",
+        "kwnews.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "d8c8edc9eba6d20e",
       "publishedAt": "2026-11-03",
       "title": "철강업계, 3분기 실적서 반등 조짐...돌파구는 'AI 제철소'·'친환경 탈탄...",
@@ -814,6 +838,54 @@
       "region": "국내"
     },
     {
+      "id": "319f5f067e9d1ea4",
+      "publishedAt": "2026-11-03",
+      "title": "중국 스마트 선박 - 무인화·스마트화·친환경화 흐름 속 진출 기회",
+      "category": "제도",
+      "summary": "또한, 중국 시장 진출을 준비하는 한국 IP·테크 기업은 현지 해운 데이터의 활용 규제, 탄소 배출권 거래제 연동 동향, 중국선급협회(CCS) 인증 요건 등 규제 환경을 사전에 면밀히 점검해야 한다. 중국이 '15차 5개년...",
+      "source": "dream.kotra.or.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://dream.kotra.or.kr/kotranews/cms/news/actionKotraBoardDetail.do?SITE_NO=3&MENU_ID=100&CONTENTS_NO=1&bbsGbn=322&bbsSn=322&pNttSn=244972",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "dream.kotra.or.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
+      "id": "9c8cc8b74fc84a75",
+      "publishedAt": "2026-11-03",
+      "title": "중국 기후위기 대응정책 현황 및 전망",
+      "category": "제도",
+      "summary": "아울러 「국가 기후변화 적응전략 2035(国家适应气候变化战略2035)」(2022년 발표), 「녹색·저탄소 전환 추진 및 전국 탄소시장 구축 강화에 관한 의견」(2025년 발표), 「생태환경법전」(2026년 발표), 「국가 기후변화...",
+      "source": "dream.kotra.or.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://dream.kotra.or.kr/kotranews/cms/news/actionKotraBoardDetail.do?SITE_NO=3&MENU_ID=180&CONTENTS_NO=1&bbsGbn=243&bbsSn=243&pNttSn=245012",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateSources": [
+        "dream.kotra.or.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "cf3569c09ad8bd8f",
       "publishedAt": "2026-11-03",
       "title": "유럽도 중국도 올랐다⋯ 글로벌 탄소 배출권 가격 급등에도 KAU는 '잠잠'",
@@ -829,13 +901,62 @@
         "탄소배출권"
       ],
       "duplicateSources": [
+        "아시아타임즈",
         "asiatime.co.kr"
+      ],
+      "searchProviders": [
+        "Google News RSS",
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 2,
+      "region": "해외"
+    },
+    {
+      "id": "71fb49aecca54dc3",
+      "publishedAt": "2026-11-03",
+      "title": "슈퍼 엘니뇨…은행 대출 건전성 위협 [ESG 뉴스 5]",
+      "category": "제도",
+      "summary": "그는 1992년 경제 성장과 온실가스 배출, 기온 상승, 기후 피해를 연결한 통합평가모형 '다이스(DICE)'를 개발했다. 이 모형은 탄소세와 배출권 거래제 등 기후정책의 경제적 효과를 분석하는 데 활용됐다. 환경 정책의...",
+      "source": "magazine.hankyung.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://magazine.hankyung.com/business/article/202611033698b",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "magazine.hankyung.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
       ],
       "duplicateCount": 1,
-      "region": "해외"
+      "region": "국내"
+    },
+    {
+      "id": "4da78e243811ef0a",
+      "publishedAt": "2026-11-03",
+      "title": "산림청, 아시아 산림협력 국제기후재원·민간투자 연계 추진",
+      "category": "제도",
+      "summary": "참석자들은 산림복원 사업의 투자 가능성과 국제 탄소시장 연계방안, 민간투자 활성화를 위한 협력방안 등에 대해 의견을 나눴다. 이어서 전북특별자치도와 글로벌녹색성장기구(GGGI)가 참여하는 특별세션을 통해...",
+      "source": "newsfarm.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.newsfarm.co.kr/news/articleView.html?idxno=102860",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "newsfarm.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
     },
     {
       "id": "914c8a007590a98f",
@@ -851,8 +972,9 @@
       "matchedKeywords": [
         "탄소시장"
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "duplicateSources": [
+        "newsfarm.co.kr",
         "woodkorea.co.kr"
       ],
       "searchProviders": [
@@ -904,6 +1026,31 @@
       "searchProviders": [
         "NAVER API HUB"
       ],
+      "region": "국내"
+    },
+    {
+      "id": "20e4003700fcd759",
+      "publishedAt": "2026-11-03",
+      "title": "민간 탄소크레딧도 제도권으로…발행부터 거래·소각까지 관리",
+      "category": "상쇄·외부사업",
+      "summary": "배출권 거래제 밖에 있는 중소기업의 감축투자를 유도하는 동시에 국내 자발적 탄소시장의 신뢰성을 높이는... 자발적 감축실적을 국제항공 탄소 상쇄 ·감축제도 등에 사용할 때 국제협약상 승인이나 국가 감축목표 조정이...",
+      "source": "energydaily.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.energydaily.co.kr/news/articleView.html?idxno=204692",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소시장"
+      ],
+      "duplicateSources": [
+        "energydaily.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
       "region": "국내"
     },
     {
@@ -971,12 +1118,13 @@
         "배출권거래제"
       ],
       "duplicateSources": [
+        "einfomax.co.kr",
         "biz.sbs.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "region": "해외"
     },
     {
@@ -1074,6 +1222,30 @@
       ],
       "duplicateCount": 1,
       "region": "해외"
+    },
+    {
+      "id": "6fef490f7af38ffa",
+      "publishedAt": "2026-11-03",
+      "title": "[ETF 시황] 반도체·2차전지 ETF 동반 급락…인버스는 10%↑",
+      "category": "시장·가격",
+      "summary": "멕시코 테마가 1.62% 오르며 상승률 1위를 기록했고, 명품(1.50%), 탄소 배출권 (1.38%), Nifty50(1.20%) 등이 뒤를 이었다. 'ACE MSCI멕시코(합성)'는 1.62%, 'HANARO 글로벌럭셔리S&P(합성)'는 1.81%, 'TIGER 인도니프티50'은...",
+      "source": "newspim.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newspim.com/news/view/20261103001191",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "newspim.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
     },
     {
       "id": "c5099d73552df7d1",
@@ -73165,7 +73337,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "bf2c7b48532214c8",
+      "id": "34bb2d30171c09a1",
       "publishedAt": "2025-04-04",
       "title": "2025년 4월 배출권 유상할당 입찰 공고",
       "category": "유상경매",
@@ -73173,7 +73345,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10524&orgCd=&boardMasterId=39&boardId=1735370",
+      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10524&orgCd=&boardMasterId=39&boardId=1735370",
       "matchedKeywords": [
         "유상할당",
         "유상 할당",
@@ -77483,7 +77655,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "05fc79bd8614e601",
+      "id": "e597e32e06bc0f82",
       "publishedAt": "2025-02-06",
       "title": "2025년 2월 배출권 유상할당 입찰 공고",
       "category": "유상경매",
@@ -77491,7 +77663,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10524&orgCd=&boardMasterId=39&boardId=1723130",
+      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10524&orgCd=&boardMasterId=39&boardId=1723130",
       "matchedKeywords": [
         "유상할당",
         "유상 할당",
@@ -272121,10 +272293,10 @@
   },
   "newsRetention": {
     "policy": "append-only",
-    "lastMergedAt": "2026-11-03T15:13:28+09:00",
-    "itemCount": 1751,
-    "archiveBefore": 1746,
-    "currentBefore": 1601,
+    "lastMergedAt": "2026-11-03T18:14:32+09:00",
+    "itemCount": 1758,
+    "archiveBefore": 1751,
+    "currentBefore": 1608,
     "gitRecoveryEnabled": false
   }
 }
