@@ -2,7 +2,7 @@
   "schemaVersion": "1.0",
   "requestedStartDate": "2015-01-01",
   "startedAt": "2026-09-09T19:46:11+09:00",
-  "generatedAt": "2026-11-03T07:24:17+09:00",
+  "generatedAt": "2026-11-04T05:17:10+09:00",
   "scope": {
     "ministry": "기후부 보도자료·공지사항: 핵심 키워드는 제목·본문, 확대 키워드는 제목으로 판정; 이전 이력 보존",
     "krx": "한국거래소 배출권시장 공지사항 일반 게시물 전체",
@@ -126,7 +126,7 @@
     {
       "source": "기후부 보도자료",
       "section": "press",
-      "requestedStartDate": "2026-09-04",
+      "requestedStartDate": "2026-09-05",
       "transport": "unfiltered-rss-local-split-keyword-filter",
       "keywordRule": {
         "titleAndContent": [
@@ -246,20 +246,20 @@
       "pageSize": 1000,
       "pagesFetched": 1,
       "rawRows": 1000,
-      "inRangeMatchedRows": 30,
-      "itemCount": 30,
-      "directCount": 6,
+      "inRangeMatchedRows": 29,
+      "itemCount": 29,
+      "directCount": 5,
       "relatedCount": 24,
-      "earliest": "2026-09-04",
+      "earliest": "2026-09-09",
       "latest": "2026-11-02",
       "oldestSeen": "2025-12-10",
-      "newestSeen": "2026-11-02",
+      "newestSeen": "2026-11-03",
       "crossedRequestedStart": true,
       "stopReason": "date-boundary",
       "complete": true,
       "keywordHits": {
-        "배출권": 2,
-        "배출권거래제": 1,
+        "배출권": 1,
+        "배출권거래제": 0,
         "K-ETS": 0,
         "ETS": 0,
         "할당계획": 1,
@@ -372,7 +372,7 @@
     {
       "source": "기후부 공지·공고",
       "section": "notice",
-      "requestedStartDate": "2026-09-04",
+      "requestedStartDate": "2026-09-05",
       "transport": "unfiltered-rss-local-split-keyword-filter",
       "keywordRule": {
         "titleAndContent": [
@@ -499,7 +499,7 @@
       "earliest": "2026-09-07",
       "latest": "2026-10-30",
       "oldestSeen": "2026-06-30",
-      "newestSeen": "2026-11-02",
+      "newestSeen": "2026-11-04",
       "crossedRequestedStart": true,
       "stopReason": "date-boundary",
       "complete": true,
@@ -97567,8 +97567,8 @@
     }
   ],
   "collectionMode": "incremental",
-  "queryStartDate": "2026-09-04",
-  "queryEndDate": "2026-11-03",
+  "queryStartDate": "2026-09-05",
+  "queryEndDate": "2026-11-04",
   "climateKeywordExpansion": {
     "version": "2026-09-11-v1-38-topics",
     "sharedWith": "산업부 보도자료·공지사항",
@@ -97689,8 +97689,8 @@
       ]
     },
     "collectionMode": "incremental",
-    "queryStartDate": "2026-09-04",
-    "queryEndDate": "2026-11-03"
+    "queryStartDate": "2026-09-05",
+    "queryEndDate": "2026-11-04"
   },
   "policyEventTaxonomy": {
     "version": "2026-09-11-v1-user-38-events",
@@ -97703,7 +97703,7 @@
     "krxRule": "배출권시장 전용 공지 전체를 direct로 보존하고 세부 이벤트를 태깅"
   },
   "retentionAudit": {
-    "previousUnique": 1697,
+    "previousUnique": 1700,
     "currentUnique": 1700,
     "missing": 0
   }
