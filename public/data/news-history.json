@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-04T04:57:24+09:00",
+  "generatedAt": "2026-11-04T08:13:24+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1762,
+  "itemCount": 1768,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-04",
   "sourceCommitsScanned": 0,
@@ -12,6 +12,31 @@
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "3b44a2a788f9a9f7",
+      "publishedAt": "2026-11-04",
+      "title": "메가시티 인천, 갯벌은 빈 땅이 아니다",
+      "category": "제도",
+      "summary": "큰 고기도 하구역이나 갯벌, 염습지 식생 등 연안생태계에 의존하고 있다고 하나, 실재 어 시장 수산물 80~90%는... 최근에는 국가 탄소 배출권거래제(NDC) 설정에서 탄소 를 저장하는 블루카본으로도 검토되면서 그 역할이 새삼...",
+      "source": "incheonin.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.incheonin.com/news/articleView.html?idxno=121965",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "incheonin.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
     {
       "id": "a7c630dc86420206",
       "publishedAt": "2026-11-04",
@@ -36,6 +61,127 @@
       ],
       "duplicateCount": 1,
       "region": "해외"
+    },
+    {
+      "id": "3e5c71436cccb9d1",
+      "publishedAt": "2026-11-04",
+      "title": "“기후 리스크 프라이싱에 반영해야”… GGGW서 기후금융 정책사례 논의",
+      "category": "제도",
+      "summary": "톨레도 차관은 \"에콰도르는 향후 2040 아젠다를 바탕으로 국제 탄소 시장 규정 정비, 국립개발은행을 통한 녹색·기후 파이낸싱 확대, 녹색분류체계 수립 등을 지속 추진할 방침\"이라고 밝혔다. 룩셈부르크, 공공 자금...",
+      "source": "magazine.hankyung.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://magazine.hankyung.com/business/article/202611033900b",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "magazine.hankyung.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "41b64aca28466215",
+      "publishedAt": "2026-11-04",
+      "title": "[오늘의 국회 에너지 입법 : 자발적 탄소시장 활성화 지원 근거 마련돼...",
+      "category": "시장·가격",
+      "summary": "2035 국가 온실가스 감축목표(NDC) 발표 등으로 탄소중립 목표 달성이 국가적 과제가 됐지만 현행 배출권 거래제는 국가 온실가스 배출량의 약 70%만을 포괄하고 있고 배출권 가격 하락과 공급 과잉 등으로 기업의 감축 유인이...",
+      "source": "e-platform.net",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.e-platform.net/news/articleView.html?idxno=106682",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장",
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "e-platform.net"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "9dd35ba9af6e4b0a",
+      "publishedAt": "2026-11-04",
+      "title": "[더벨]씨너지, ‘PMI 전문가' CFO로 영입…재무·전략 조직 강화",
+      "category": "제도",
+      "summary": "씨너지는 재생에너지 인증서(REC)와 탄소 배출권 등 환경상품 거래를 지원하는 기후테크 기업이다. 모건스탠리 출신 진용남 대표가 2020년 설립했으며 기업들의 RE100 이행과 탄소중립 목표 달성을 지원하는 사업을...",
+      "source": "thebell.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202611021502164080107057",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "thebell.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "d3f3a100a870b907",
+      "publishedAt": "2026-11-04",
+      "title": "[남성현 칼럼] 한국형 녹색전환 시대, 산림의 가치를 깨우자",
+      "category": "상쇄·외부사업",
+      "summary": "현재 산림탄소 상쇄 제도는 주로 기업의 사회적 책임에 기댄 ‘자발적 탄소시장’에 머물러 있어 산주와 임업인들의 적극적인 참여를 끌어내는 데 한계가 있다. 이젠 산림 탄소흡수원을 국가 온실가스 배출권 거래제와 같은...",
+      "source": "nongmin.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.nongmin.com/article/20261102500521",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "온실가스 배출권",
+        "탄소시장"
+      ],
+      "duplicateSources": [
+        "nongmin.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "29c4f2f60b3bd565",
+      "publishedAt": "2026-11-04",
+      "title": "GGGI, 글로벌 녹색성장 서밋서 녹색전환 '협력 해법' 제시",
+      "category": "제도",
+      "summary": "이 부총리는 탄소중립을 새로운 성장 동력과 양질의 일자리로 잇는'한국형 녹색대전환(K-GX)' 전략을 소개하고, 이 선순환이 국제협력 모델로 확산되도록 GGGI와 글로벌 검증 탄소시장 (GVCM) 구축에 힘을 모으겠다고...",
+      "source": "magazine.hankyung.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://magazine.hankyung.com/business/article/202611033937b",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "magazine.hankyung.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
     },
     {
       "id": "7a6f3e9a0de66d53",
@@ -4365,11 +4511,11 @@
         "탄소배출권"
       ],
       "duplicateSources": [
-        "m-economynews.com",
         "sedaily.com",
         "kbs.co.kr",
         "mk.co.kr",
         "news1.kr",
+        "m-economynews.com",
         "yna.co.kr",
         "view.asiae.co.kr",
         "biz.heraldcorp.com",
