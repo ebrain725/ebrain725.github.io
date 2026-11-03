@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-03T08:13:22+09:00",
+  "generatedAt": "2026-11-03T10:13:10+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1734,
+  "itemCount": 1741,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-03",
   "sourceCommitsScanned": 0,
@@ -36,6 +36,75 @@
       "region": "국내"
     },
     {
+      "id": "7c36572fd222506a",
+      "publishedAt": "2026-11-03",
+      "title": "부산시, ‘ASEAN+3 채권 시장 국제포럼’ 개막… 6일까지",
+      "category": "제도",
+      "summary": "디지털채권시장포럼과 국가간 결제인프라포럼 공동회의에서는 탄소시장 과 국가 간 탄소 거래, 예금토큰, 디지털채권 등을 논의한다. 마지막 날 재정경제부 주관 ASEAN+3 역량 강화 세미나에서는 금융 디지털화의 위험...",
+      "source": "metroseoul.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.metroseoul.co.kr/article/20261102500667",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "metroseoul.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "c812946a052d48cb",
+      "publishedAt": "2026-11-03",
+      "title": "국제 탄소시장의 새 규범, 한국이 설계한다",
+      "category": "제도",
+      "summary": "국제 탄소시장의 새 규범, 한국이 설계한다 한국경제",
+      "source": "한국경제",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9hcXZ0MGE5NnI0Q1o1VXBSN2tIS3doTkdrRWFxTk5rZ1FMMXdENGk1RS12b1hlS1dNRE9jazhFYVJkT2dIMFRlenFFS2I1b1lsNFNKLW5zYWpZdw?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "한국경제"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "2602143c79bc5a49",
+      "publishedAt": "2026-11-03",
+      "title": "[정책브리핑] 부산 아세안+3 채권 시장 국제포럼…지속가능금융 협력 논...",
+      "category": "제도",
+      "summary": "디지털채권시장포럼·국가 간 결제인프라포럼 공동회의에서는 탄소시장 과 국가 간 탄소거래, 예금토큰과 디지털채권 등을 다루고, ASEAN+3 채권시장포럼에서는 역내 자본시장 동향과 국가 간 지급결제, 지속가능금융...",
+      "source": "esgeconomy.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.esgeconomy.com/news/articleView.html?idxno=17215",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "esgeconomy.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "20e9191a966411b4",
       "publishedAt": "2026-11-03",
       "title": "[시론] 유럽 시위와 한국의 미래",
@@ -57,6 +126,30 @@
       ],
       "duplicateCount": 1,
       "region": "해외"
+    },
+    {
+      "id": "1fc7feae7cdb3865",
+      "publishedAt": "2026-11-03",
+      "title": "KEDIPA·제로엔, 자가용 태양광 활용 확대 추진…\"AI 기반 에너지 공유 ...",
+      "category": "제도",
+      "summary": "주요 검토 분야로는 발전 데이터 표준화와 재생에너지 사용인증서(REGO) 연계, 탄소 배출권 활용, 주민 참여형... 가상상계거래에 대한 제도적 기반을 마련하고 전력 시장 운영규칙과 정산체계 등을 검토해야 하며, 이를 위해...",
+      "source": "sisunnews.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.sisunnews.co.kr/news/articleView.html?idxno=248910",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "sisunnews.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
     },
     {
       "id": "16a23d464aad0da2",
@@ -170,6 +263,30 @@
       "region": "국내"
     },
     {
+      "id": "d9217a00a644a71a",
+      "publishedAt": "2026-11-02",
+      "title": "포스코홀딩스 \"내년 국내 철강 완만 회복세…리튬도 흑자 전환 기대\"",
+      "category": "상쇄·외부사업",
+      "summary": "4% 올랐으나, 탄소강 판매 가격을 톤당 98만2000원으로 약 2만원 인상해 원가 부담을 상쇄 했다. 이날 열린... 한편, 탄소 배출권 및 친환경 전환과 관련해 김성준 포스코홀딩스 탄소중립전략실장은 \"2027년부터 무상할당...",
+      "source": "m-i.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.m-i.kr/news/articleView.html?idxno=2013317",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "m-i.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "47a8674120947060",
       "publishedAt": "2026-11-02",
       "title": "포스코, 철강 4000억대 영업익 회복 '판가 인상·원가 절감' 효과",
@@ -216,6 +333,30 @@
       ],
       "duplicateCount": 1,
       "region": "국내"
+    },
+    {
+      "id": "ed99aefc04e491ad",
+      "publishedAt": "2026-11-02",
+      "title": "포스코 \"리튬 2공장, 1년 후 흑자 기대\"…철강 부문 실적은 '고로 개보수...",
+      "category": "제도",
+      "summary": "포스코홀딩스는 2027년부터 국내 온실가스 배출권 무상할당 물량이 부족해질 것으로 예상하고 있으며, 유럽연합(EU)의 탄소국경조정제도(CBAM)에 따른 고객사 비용 증가 가능성에도 대응할 계획이다. 현재...",
+      "source": "econovill.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.econovill.com/news/articleView.html?idxno=755724",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "온실가스 배출권"
+      ],
+      "duplicateSources": [
+        "econovill.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
     },
     {
       "id": "d9d06fb9c2c02fdd",
@@ -9824,11 +9965,11 @@
         "유상할당"
       ],
       "duplicateSources": [
+        "이투데이",
         "etoday.co.kr",
+        "이데일리",
         "newslock.co.kr",
         "newsinside.kr",
-        "이투데이",
-        "이데일리",
         "edaily.co.kr",
         "뉴스핌",
         "fetv.co.kr",
@@ -9857,8 +9998,8 @@
         "전자신문"
       ],
       "searchProviders": [
-        "NAVER API HUB",
-        "Google News RSS"
+        "Google News RSS",
+        "NAVER API HUB"
       ],
       "duplicateCount": 31,
       "region": "국내"
@@ -13173,12 +13314,12 @@
         "K-ETS"
       ],
       "duplicateSources": [
+        "인더스트리뉴스",
         "industrynews.co.kr",
         "paxetv.com",
         "newsdream.kr",
         "dailian.co.kr",
         "edaily.co.kr",
-        "인더스트리뉴스",
         "팍스경제TV",
         "이투데이",
         "pinpointnews.co.kr",
@@ -13193,8 +13334,8 @@
         "e2news.com"
       ],
       "searchProviders": [
-        "NAVER API HUB",
-        "Google News RSS"
+        "Google News RSS",
+        "NAVER API HUB"
       ],
       "duplicateCount": 18,
       "region": "국내"
@@ -18335,6 +18476,30 @@
         "서울일보",
         "seoulilbo.com",
         "webplusnews.kr"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "0f45e5488722c1de",
+      "publishedAt": "2026-10-05",
+      "title": "대구시, 매립가스 자원화로 탄소배출권 21만9432톤 확보",
+      "category": "제도",
+      "summary": "대구시, 매립가스 자원화로 탄소배출권 21만9432톤 확보 뉴스1",
+      "source": "뉴스1",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5GVHV1RFg3cncyT003VHVPbEJuLUJIZlkzT0hyNmFKUjBEUWwydTdKT1JxWEFobm40TjZJckNERHNVLUY4cUdIdnJ1aWtzOUo4UTRGZTJ2WjZWWWNQNTJF?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "뉴스1"
       ],
       "searchProviders": [
         "Google News RSS"
