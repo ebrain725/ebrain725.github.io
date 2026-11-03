@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-03T18:14:32+09:00",
+  "generatedAt": "2026-11-03T21:12:26+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1758,
+  "itemCount": 1760,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-03",
   "sourceCommitsScanned": 0,
@@ -350,6 +350,53 @@
       "region": "해외"
     },
     {
+      "id": "0418997a3de2fc6c",
+      "publishedAt": "2026-11-03",
+      "title": "“전력 ‘지산지소’ 하려면, ‘전기본’부터 권역별 수급과 연계 수립...",
+      "category": "제도",
+      "summary": "7TWh를 전남으로 옮기는 시나리오를 분석한 결과 연료비·유지관리비· 배출권 비용을 합친 전력계통 변동비용은 기존 전망보다 9.2% 줄고, 전력망이 감당하지 못해 재생에너지 발전을 강제로 멈추는 출력제한량도 18.2...",
+      "source": "hani.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.hani.co.kr/arti/economy/economy_general/1285608.html",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "hani.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "13d8bf9eb05db801",
+      "publishedAt": "2026-11-03",
+      "title": "“기후재정 마중물 붓는다”…인천시, 1000억 기금 신설",
+      "category": "제도",
+      "summary": "기금 재원은 시 일반·특별회계 전입금을 비롯해 △ 온실가스 배출권 거래 수입금 △환경개선부담금 및 배출부과금 △시 출자 기후·에너지 법인 배당금 △기금 운용 수익 등으로 다각화해 안정성을 높인다. 확보된...",
+      "source": "sedaily.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.sedaily.com/article/20109591?ref=naver",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "온실가스 배출권"
+      ],
+      "duplicateSources": [
+        "sedaily.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "2602143c79bc5a49",
       "publishedAt": "2026-11-03",
       "title": "[정책브리핑] 부산 아세안+3 채권 시장 국제포럼…지속가능금융 협력 논...",
@@ -472,7 +519,7 @@
     {
       "id": "c5099d73552df7d1",
       "publishedAt": "2026-11-03",
-      "title": "[ 온실가스 100만톤클럽 시즌4] 천만 톤 '기후악당' 9곳, 탄소배출 안 줄...",
+      "title": "[ 온실가스 100만톤클럽 시즌4] 천만톤 '기후악당' 9곳, 180만명 분량 식...",
       "category": "제도",
       "summary": "기업들이 온실가스 배출권 거래제에 따라 정부에 보고하는 명세서 기준을 그대로 따랐기 때문이다. 이렇게 하면 기업마다 생산 활동 전반에 대한 배출 책임을 온전히 보여줄 수 있지만, 기업 간에 같은 배출이 겹치는...",
       "source": "newspenguin.com",
