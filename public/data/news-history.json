@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-04T18:14:35+09:00",
+  "generatedAt": "2026-11-04T21:32:55+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1790,
+  "itemCount": 1794,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-04",
   "sourceCommitsScanned": 0,
@@ -142,6 +142,38 @@
       "region": "국내"
     },
     {
+      "id": "2e2c08e4f0b35b33",
+      "publishedAt": "2026-11-04",
+      "title": "에너지공단, '온실가스 국제감축 비즈니스 데이' 행사 개최",
+      "category": "제도",
+      "summary": "이번 행사는 국내 기업의 해외 온실가스 감축 사업 참여를 대폭 확대하고 파리협정 기반의 글로벌 탄소시장 진출을 지원하기 위한 다각적인 비즈니스 협력 강화 차원에서 추진됐다. 온실가스 국제감축 사업은 파리협정에...",
+      "source": "daily.hankooki.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://daily.hankooki.com/news/articleView.html?idxno=1421860",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 10,
+      "duplicateSources": [
+        "todayenergy.kr",
+        "hansbiz.co.kr",
+        "gasnews.com",
+        "e-platform.net",
+        "mt.co.kr",
+        "pinpointnews.co.kr",
+        "cnbnews.com",
+        "energydaily.co.kr",
+        "busan.com",
+        "daily.hankooki.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "b1171825fd58aa78",
       "publishedAt": "2026-11-04",
       "title": "시민사회·노동계, COP31 앞두고 “ 온실가스 목표 강화하라”",
@@ -157,6 +189,31 @@
       ],
       "duplicateSources": [
         "edaily.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "2964e4955dab65f4",
+      "publishedAt": "2026-11-04",
+      "title": "시민·노동계 COP31 참가단...\"온실가스 감축목표 높여라\" 정부에 촉구",
+      "category": "제도",
+      "summary": "기업에 배출권 무상지급 비율을 낮출 것을 촉구했다. 또 2030년까지 재생에너지 발전 비중을 30%로 높인다는... 또 온실가스 다배출 기업을 대상으로 한 탄소세 도입, 배출권 거래제 내 유상할당 비율의 획기적 확대...",
+      "source": "newstree.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newstree.kr/newsView/ntr202611040012",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "유상할당"
+      ],
+      "duplicateSources": [
+        "newstree.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -214,30 +271,6 @@
       "region": "국내"
     },
     {
-      "id": "7f04a25c7c85ef7a",
-      "publishedAt": "2026-11-04",
-      "title": "대만, AI·반도체 성장과 탄소감축 병행…친환경 산업 경쟁력 강화",
-      "category": "시장·가격",
-      "summary": "대만은 향후 총량규제와 배출권 거래제도도 단계적으로 도입해 탄소가격 체계를 보완할 계획이다. 최근 영국이 발표한 탄소국경조정제도(UK CBAM)의 적격 탄소가격제도 목록에 대만의 탄소부과금 제도가 포함된 것도...",
-      "source": "jeonmae.co.kr",
-      "sourceType": "news",
-      "section": "news",
-      "url": "https://www.jeonmae.co.kr/news/articleView.html?idxno=1308345",
-      "searchProvider": "NAVER API HUB",
-      "matchedKeywords": [
-        "배출권",
-        "배출권거래제"
-      ],
-      "duplicateSources": [
-        "jeonmae.co.kr"
-      ],
-      "searchProviders": [
-        "NAVER API HUB"
-      ],
-      "duplicateCount": 1,
-      "region": "해외"
-    },
-    {
       "id": "a7c630dc86420206",
       "publishedAt": "2026-11-04",
       "title": "英·EU, 18~34세 청년 상호 3년 체류·취업 허용 추진…20일 정상회의서...",
@@ -255,6 +288,30 @@
       ],
       "duplicateSources": [
         "news1.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
+      "id": "9a4e7ea4bb908432",
+      "publishedAt": "2026-11-04",
+      "title": "英·EU '관계 재설정' 정상회의 앞두고 EU 학생 영국 대학 등록금 문제 ...",
+      "category": "제도",
+      "summary": "[AI 일러스트=장일현 특파원] FT 보도에 따르면 EU는 현재 협상 중인 공동성명 초안에서 식품 교역 장벽 완화와 탄소 배출권 시장 연계, 청년 이동성 제도 등 주요 합의가 정상회의에서 원칙적으로 마무리되더라도 실제...",
+      "source": "newspim.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newspim.com/news/view/20261104001372",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "newspim.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -435,6 +492,31 @@
       "region": "국내"
     },
     {
+      "id": "576333d65d1503e9",
+      "publishedAt": "2026-11-04",
+      "title": "[단독] 내년도 기후대응기금 대폭 확대?… 되레 1300억원 줄었다 [심층기...",
+      "category": "제도",
+      "summary": "사업도 배출권 수입 부진 재정 우려 심화 정부가 온실가스 감축의 핵심 재원인 ‘기후대응기금’ 규모를... 기금의 주요 재원인 온실가스 배출권 유상할당 수입도 여전히 목표치를 크게 밑돌고 있다. 기후대응기금은...",
+      "source": "segye.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.segye.com/newsView/20261104517976?OutUrl=naver",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "온실가스 배출권",
+        "유상할당"
+      ],
+      "duplicateSources": [
+        "segye.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "d3f3a100a870b907",
       "publishedAt": "2026-11-04",
       "title": "[남성현 칼럼] 한국형 녹색전환 시대, 산림의 가치를 깨우자",
@@ -459,6 +541,30 @@
       ],
       "duplicateCount": 1,
       "region": "국내"
+    },
+    {
+      "id": "7f04a25c7c85ef7a",
+      "publishedAt": "2026-11-04",
+      "title": "[기고] 약속에서 행동으로, 대만과 세계가 함께 만드는 기후 해법",
+      "category": "시장·가격",
+      "summary": "대만은 앞으로 총량규제 및 배출권 거래제도도 단계적으로 추진해 탄소가격 제도를 더욱 보완해 나갈 계획이다. 최근 영국이 발표한 탄소국경조정제도(UK CBAM)의 적격 탄소가격제도 목록에도 대만의 탄소부과금 제도가...",
+      "source": "jeonmae.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.jeonmae.co.kr/news/articleView.html?idxno=1308345",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "jeonmae.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
     },
     {
       "id": "b5ff91538ca1ac00",
