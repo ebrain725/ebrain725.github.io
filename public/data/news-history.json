@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-04T08:13:24+09:00",
+  "generatedAt": "2026-11-04T10:13:14+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1768,
+  "itemCount": 1772,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-04",
   "sourceCommitsScanned": 0,
@@ -111,6 +111,34 @@
       "region": "국내"
     },
     {
+      "id": "ffd98fb6f54168b4",
+      "publishedAt": "2026-11-04",
+      "title": "[로펌 최강팀]공시 의무화 앞둔 탄소 시장…린 탄소기후그룹, 산정부터...",
+      "category": "제도",
+      "summary": "이병화 소장(27기)이 이끄는 탄소전략연구소는 온실가스 배출권 거래제와 유럽연합(EU) 탄소국경조정제도(CBAM)... 이를 바탕으로 린은 현재 한국환경공단의 배출권 거래시장 참여자 감독체계 마련 용역을 수행 중이다....",
+      "source": "view.asiae.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://view.asiae.co.kr/article/2026110309360121231",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장",
+        "배출권",
+        "배출권거래제",
+        "온실가스 배출권"
+      ],
+      "duplicateSources": [
+        "view.asiae.co.kr",
+        "아시아경제"
+      ],
+      "searchProviders": [
+        "NAVER API HUB",
+        "Google News RSS"
+      ],
+      "duplicateCount": 2,
+      "region": "해외"
+    },
+    {
       "id": "9dd35ba9af6e4b0a",
       "publishedAt": "2026-11-04",
       "title": "[더벨]씨너지, ‘PMI 전문가' CFO로 영입…재무·전략 조직 강화",
@@ -161,6 +189,30 @@
       "region": "국내"
     },
     {
+      "id": "bb4f393045017102",
+      "publishedAt": "2026-11-04",
+      "title": "OECD \"한국 농산물 생산자 지원율 4위\"",
+      "category": "제도",
+      "summary": "온실가스 감축을 위해서는 최근 도입한 저 탄소 농업 인센티브를 키워 논물을 댔다 뺐다 하는 간단관개와 저메탄 사료 사용을 넓히고 농업 탄소 배출권 시장 의 유동성을 높여 민간 참여를 끌어내라고 제안했다. 축산...",
+      "source": "datasom.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.datasom.co.kr/news/articleView.html?idxno=210639",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "datasom.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "29c4f2f60b3bd565",
       "publishedAt": "2026-11-04",
       "title": "GGGI, 글로벌 녹색성장 서밋서 녹색전환 '협력 해법' 제시",
@@ -177,6 +229,29 @@
       "duplicateCount": 1,
       "duplicateSources": [
         "magazine.hankyung.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "1616c27a27d1bddd",
+      "publishedAt": "2026-11-04",
+      "title": "(기고)(기후기술 개척기②) 승인서가 오토바이를 굴려 주지는 않는다",
+      "category": "제도",
+      "summary": "정부는 유엔(UN)기후변화협약, GGGI 등과 함께 개도국이 참여하는 국제 탄소시장 협력체계를 구축하고, 우리 기업의 해외 탄소 감축사업을 지원하겠다고 했다. 나는 그 문장을 몇 번이고 다시 읽었다. 우리가 캄보디아에서...",
+      "source": "newstomato.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.newstomato.com/ReadNews.aspx?no=1319032&inflow=N",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "newstomato.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -267,10 +342,37 @@
       "url": "http://dream.kotra.or.kr/kotranews/cms/news/actionKotraBoardDetail.do?SITE_NO=3&MENU_ID=180&CONTENTS_NO=1&bbsGbn=243&bbsSn=243&pNttSn=245012",
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
-        "탄소시장"
+        "탄소시장",
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
       ],
       "duplicateSources": [
         "dream.kotra.or.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "b110fe9c2d55ca92",
+      "publishedAt": "2026-11-03",
+      "title": "인천형 기후대응기금… 기후테크·녹색산업 마중물 쓴다",
+      "category": "제도",
+      "summary": "기금 재원은 일반회계·특별회계 전입금, 환경개선부담금·배출부담금, 시가 출자한 기후·에너지 관련 법인 배당금, 온실가스 배출권 거래 수입금, 기부금, 투자·융자로 발생한 회수금 및 배당금 등으로 마련한다는 게...",
+      "source": "kyeongin.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.kyeongin.com/article/1774041",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "온실가스 배출권"
+      ],
+      "duplicateSources": [
+        "kyeongin.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -10622,11 +10724,11 @@
         "유상할당"
       ],
       "duplicateSources": [
+        "이투데이",
         "etoday.co.kr",
+        "이데일리",
         "newslock.co.kr",
         "newsinside.kr",
-        "이투데이",
-        "이데일리",
         "edaily.co.kr",
         "뉴스핌",
         "fetv.co.kr",
@@ -10655,8 +10757,8 @@
         "전자신문"
       ],
       "searchProviders": [
-        "NAVER API HUB",
-        "Google News RSS"
+        "Google News RSS",
+        "NAVER API HUB"
       ],
       "duplicateCount": 31,
       "region": "국내"
@@ -13971,12 +14073,12 @@
         "K-ETS"
       ],
       "duplicateSources": [
+        "인더스트리뉴스",
         "industrynews.co.kr",
         "paxetv.com",
         "newsdream.kr",
         "dailian.co.kr",
         "edaily.co.kr",
-        "인더스트리뉴스",
         "팍스경제TV",
         "이투데이",
         "pinpointnews.co.kr",
@@ -13991,8 +14093,8 @@
         "e2news.com"
       ],
       "searchProviders": [
-        "NAVER API HUB",
-        "Google News RSS"
+        "Google News RSS",
+        "NAVER API HUB"
       ],
       "duplicateCount": 18,
       "region": "국내"
