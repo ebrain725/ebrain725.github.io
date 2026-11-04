@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-04T10:13:14+09:00",
+  "generatedAt": "2026-11-04T12:07:23+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1772,
+  "itemCount": 1774,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-04",
   "sourceCommitsScanned": 0,
@@ -36,6 +36,30 @@
       ],
       "duplicateCount": 1,
       "region": "국내"
+    },
+    {
+      "id": "7f04a25c7c85ef7a",
+      "publishedAt": "2026-11-04",
+      "title": "대만, AI·반도체 성장과 탄소감축 병행…친환경 산업 경쟁력 강화",
+      "category": "시장·가격",
+      "summary": "대만은 향후 총량규제와 배출권 거래제도도 단계적으로 도입해 탄소가격 체계를 보완할 계획이다. 최근 영국이 발표한 탄소국경조정제도(UK CBAM)의 적격 탄소가격제도 목록에 대만의 탄소부과금 제도가 포함된 것도...",
+      "source": "jeonmae.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.jeonmae.co.kr/news/articleView.html?idxno=1308345",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "jeonmae.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
     },
     {
       "id": "a7c630dc86420206",
@@ -186,6 +210,29 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "b5ff91538ca1ac00",
+      "publishedAt": "2026-11-04",
+      "title": "[COP31] 새 기후목표 다 지켜도 2035년 감축 6%…'1.5℃까지 필요한 감축...",
+      "category": "제도",
+      "summary": "파리협정 제6조에 따른 국제 탄소시장 등 자발적 협력을 활용하겠다는 당사국도 94%로 늘었다. 그러나 각국 NDC에 담긴 재생에너지 목표를 합치면 2030년 3TW로, 이미 2025년 설치된 5.2TW에도 못 미친다. 목표가 현실보다...",
+      "source": "esgeconomy.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.esgeconomy.com/news/articleView.html?idxno=17148",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "esgeconomy.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
       "region": "국내"
     },
     {
@@ -5278,7 +5325,8 @@
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
         "배출권",
-        "탄소배출권"
+        "탄소배출권",
+        "배출권거래제"
       ],
       "duplicateSources": [
         "businessplus.kr"
@@ -10726,9 +10774,9 @@
       "duplicateSources": [
         "이투데이",
         "etoday.co.kr",
-        "이데일리",
         "newslock.co.kr",
         "newsinside.kr",
+        "이데일리",
         "edaily.co.kr",
         "뉴스핌",
         "fetv.co.kr",
