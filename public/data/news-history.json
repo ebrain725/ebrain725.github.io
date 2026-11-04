@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-04T13:13:01+09:00",
+  "generatedAt": "2026-11-04T15:13:30+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1775,
+  "itemCount": 1781,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-04",
   "sourceCommitsScanned": 0,
@@ -12,6 +12,103 @@
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "e2114390d145e61e",
+      "publishedAt": "2026-11-04",
+      "title": "현대차증권, 'LEAD 기업' 2년 연속… 지속가능금융 경쟁력 강화",
+      "category": "상쇄·외부사업",
+      "summary": "지난달에는 탄소 금융 관련 기업과 전문가들을 대상으로 두 번째 ' 탄소 금융 인사이트 데이'를 열고 배출권 시장 정책과 외부사업 동향, 실제 추진 사례 등을 공유했다. 현대차증권은 탄소 배출권 자기매매와...",
+      "source": "biztribune.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.biztribune.co.kr/news/articleView.html?idxno=361860",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "biztribune.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "b686c88c316b905c",
+      "publishedAt": "2026-11-04",
+      "title": "포스코·현대제철, 철강 불황에도 수익성 반등…어떻게 꾀했나",
+      "category": "상쇄·외부사업",
+      "summary": "이를 에너지·인건비 등 비용 감소 1590억원과 판매량 증가 효과 560억원 등이 상쇄 했다. 포스코에 따르면... 것\"이라며 \"탄소 배출권 관련 에너지 비용이 늘고 환율은 하락하는 등 대내외 여건의 변동 폭이 클 것으로...",
+      "source": "ddaily.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.ddaily.co.kr/page/view/2026110317191013314",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "ddaily.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "86ecef1bc3a9f397",
+      "publishedAt": "2026-11-04",
+      "title": "에너지공단, 국제감축사업 기업 협력 지원 확대",
+      "category": "상쇄·외부사업",
+      "summary": "국제 탄소시장 참여를 추진하는 국내 기업들이 사업 개발부터 투자 유치, 온실가스 감축실적 활용까지 필요한 정보를 공유하고 협력 상대를 찾는 자리가 마련됐다. 국제감축사업의 사업화 과정에서 기업들이 겪는 실무적...",
+      "source": "pinpointnews.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=501230",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 4,
+      "duplicateSources": [
+        "gasnews.com",
+        "e-platform.net",
+        "mt.co.kr",
+        "pinpointnews.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "b1171825fd58aa78",
+      "publishedAt": "2026-11-04",
+      "title": "시민사회·노동계, COP31 앞두고 “ 온실가스 목표 강화하라”",
+      "category": "제도",
+      "summary": "이들은 “정부가 온실가스 를 많이 배출하는 기업에 배출권 을 무상으로 주는 비율을 높게 유지하고, 재생에너지 발전 비중을 30%로 높이려던 목표의 달성 시점도 2030년에서 2035년으로 늦췄다”고 지적했다. 대규모...",
+      "source": "edaily.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.edaily.co.kr/News/Read?newsId=04227926645642440&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "edaily.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
     {
       "id": "3b44a2a788f9a9f7",
       "publishedAt": "2026-11-04",
@@ -85,6 +182,30 @@
       ],
       "duplicateCount": 1,
       "region": "해외"
+    },
+    {
+      "id": "a9896c97c9bd4de2",
+      "publishedAt": "2026-11-04",
+      "title": "【인터뷰】메리엄 오미 아크 대표, \"한국 기업, 기후 거버넌스는 갖췄지...",
+      "category": "시장·가격",
+      "summary": "배출권 거래제 개편으로 특히 발전 부문의 탄소 가격 부담도 커질 예정이다. 개정 스튜어드십 코드가 시행되면 국내 기관투자자도 해외 투자자처럼 감축 목표가 믿을 만한지, 실제 투자가 뒤따르는지 따져 물을 것이다....",
+      "source": "impacton.net",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.impacton.net/news/articleView.html?idxno=30520",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "impacton.net"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
     },
     {
       "id": "3e5c71436cccb9d1",
@@ -304,6 +425,31 @@
       "searchProviders": [
         "NAVER API HUB"
       ],
+      "region": "국내"
+    },
+    {
+      "id": "b2e53daf8f6221d4",
+      "publishedAt": "2026-11-04",
+      "title": "COP31 참가단 \"2035년 NDC 감축 목표 상향해야\"",
+      "category": "제도",
+      "summary": "사진=기후위기비상행동 기후·노동단체가 정부에 2035년 국가 온실가스 감축목표(NDC)를 2018년 대비 65... 재원 조달 방안으로는 다배출 기업 대상 탄소세 도입, 배출권 거래제 내 유상할당 비율의 획기적 확대, 화석연료...",
+      "source": "newsclaim.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newsclaim.co.kr/news/articleView.html?idxno=3081379",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "유상할당"
+      ],
+      "duplicateSources": [
+        "newsclaim.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
       "region": "국내"
     },
     {
@@ -4769,9 +4915,9 @@
         "todayenergy.kr",
         "gasnews.com",
         "energy-news.co.kr",
-        "autodaily.co.kr",
         "ftoday.co.kr",
         "e2news.com",
+        "autodaily.co.kr",
         "newsmap.co.kr",
         "megaeconomy.co.kr",
         "pinpointnews.co.kr",
@@ -13886,8 +14032,8 @@
         "K-ETS"
       ],
       "duplicateSources": [
-        "연합뉴스",
         "e2news.com",
+        "연합뉴스",
         "newsdream.kr",
         "dailian.co.kr",
         "edaily.co.kr",
@@ -13896,8 +14042,8 @@
         "아시아경제"
       ],
       "searchProviders": [
-        "Google News RSS",
-        "NAVER API HUB"
+        "NAVER API HUB",
+        "Google News RSS"
       ],
       "duplicateCount": 8,
       "region": "국내"
