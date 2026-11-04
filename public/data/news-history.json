@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-05T02:46:27+09:00",
+  "generatedAt": "2026-11-05T04:59:51+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1796,
+  "itemCount": 1797,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-05",
   "sourceCommitsScanned": 0,
@@ -29,6 +29,29 @@
       "duplicateCount": 1,
       "duplicateSources": [
         "energy-news.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "282376564649f57b",
+      "publishedAt": "2026-11-05",
+      "title": "한국에너지공단, '2026 국제감축 Business Day' 개최…기업 협력·사업화...",
+      "category": "상쇄·외부사업",
+      "summary": "이번 행사는 파리협정 제6조에 근거한 국제 탄소시장 이행이 본격화된 흐름에 맞춰 기획됐다. 국제감축사업은 유치국 발굴과 승인, 기술 적용, 자금 조달, 감축실적 확보까지 여러 주체가 맞물려야 하는 구조인 만큼, 사업...",
+      "source": "tournews21.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.tournews21.com/news/articleView.html?idxno=147556",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "tournews21.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
