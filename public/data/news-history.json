@@ -1,17 +1,63 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-04T21:32:55+09:00",
+  "generatedAt": "2026-11-05T02:46:27+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1794,
+  "itemCount": 1796,
   "earliestPublishedAt": "2026-08-06",
-  "latestPublishedAt": "2026-11-04",
+  "latestPublishedAt": "2026-11-05",
   "sourceCommitsScanned": 0,
   "sourceSnapshotsScanned": 0,
   "historicalRowsScanned": 0,
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "ae151ba25cc47ed1",
+      "publishedAt": "2026-11-05",
+      "title": "해외 감축사업, 기술·투자 연결로 사업화 길 찾는다",
+      "category": "제도",
+      "summary": "이번 행사는 파리협정 제6조에 기반한 국제 탄소시장 이행에 맞춰 사업 개발자와 기술 보유 기업, 투자·금융기관 간 협력 기회를 넓히는 데 초점을 맞췄다. 실무 교육에서는 사업 추진 과정에서 기업들이 마주하는 주요...",
+      "source": "energy-news.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=229524",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "energy-news.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "2754669c8db11015",
+      "publishedAt": "2026-11-05",
+      "title": "[기업家] 대우건설 ⑤ㅣ 아프리카서 수주 낭보·체코 원전은 협상 결렬...",
+      "category": "상쇄·외부사업",
+      "summary": "향후 탄소크레딧이 발급되면 자발적 탄소시장 에서 거래하거나 해외사업장의 온실가스 배출량 상쇄에 활용할 계획이다. 대우건설 관계자는 \"남은 모니터링 보고서 심의도 조속히 마쳐 국내 건설사 최초로 현장타설...",
+      "source": "cbci.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.cbci.co.kr/news/articleView.html?idxno=623194",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "cbci.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
     {
       "id": "e2114390d145e61e",
       "publishedAt": "2026-11-04",
