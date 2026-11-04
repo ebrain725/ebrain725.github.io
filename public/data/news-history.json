@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-05T04:59:51+09:00",
+  "generatedAt": "2026-11-05T08:17:18+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1797,
+  "itemCount": 1799,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-05",
   "sourceCommitsScanned": 0,
@@ -54,6 +54,31 @@
         "tournews21.com"
       ],
       "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "d57c23662ac049e8",
+      "publishedAt": "2026-11-05",
+      "title": "에너지공단, 국내 기업 해외 탄소감축사업 진출 지원… 탄소시장 공략",
+      "category": "제도",
+      "summary": "파리협정에 따른 국제 탄소시장 운영이 본격화하면서 해외 감축사업을 발굴하고 투자·기술 협력으로 연결할 수 있는 기업의 사업화 역량을 높이겠다는 취지다. 한국에너지공단은 지난 4일 서울 종로구...",
+      "source": "g-enews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.g-enews.com/view.php?ud=202611050659042678ea13369bfa_1",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 2,
+      "duplicateSources": [
+        "글로벌이코노믹",
+        "g-enews.com"
+      ],
+      "searchProviders": [
+        "Google News RSS",
         "NAVER API HUB"
       ],
       "region": "국내"
@@ -729,6 +754,31 @@
       ],
       "duplicateCount": 1,
       "region": "국내"
+    },
+    {
+      "id": "96dd593ae2acc1c7",
+      "publishedAt": "2026-11-04",
+      "title": "HMM 부산 이전의 명암…지역 매출 늘었지만 성과는 미지수",
+      "category": "제도",
+      "summary": "국제해사기구(IMO)가 국제해운의 2050년 전후 넷제로 달성을 목표로 감축 기준을 강화하고, 유럽연합(EU)도 해운업을 탄소 배출권 거래제에 편입하는 등 글로벌 환경 규제가 강화된 영향이다. HMM은 2030년까지 컨테이너...",
+      "source": "newsway.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newsway.co.kr/news/view?ud=2026110413073091823",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "newsway.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
     },
     {
       "id": "29c4f2f60b3bd565",
