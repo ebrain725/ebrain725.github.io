@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-05T13:13:50+09:00",
+  "generatedAt": "2026-11-05T15:14:14+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1819,
+  "itemCount": 1828,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-05",
   "sourceCommitsScanned": 0,
@@ -33,6 +33,29 @@
       "searchProviders": [
         "NAVER API HUB"
       ],
+      "region": "국내"
+    },
+    {
+      "id": "965c5e387fc11f33",
+      "publishedAt": "2026-11-05",
+      "title": "한전, SF6 분해 온실가스 감축사업 추진",
+      "category": "제도",
+      "summary": "이번 협약은 전력 설비에서 발생하는 폐SF6를 회수, 분해해 온실가스 를 감축하고 이 감축 실적을 배출권 으로 연계하는 사업을 공동으로 추진하기 위해 마련됐다. 전력 설비의 절연 가스 로 사용되는 SF6(육불화황)는...",
+      "source": "todayenergy.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.todayenergy.kr/news/articleView.html?idxno=305162",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "todayenergy.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
       "region": "국내"
     },
     {
@@ -104,6 +127,65 @@
       ],
       "searchProviders": [
         "Google News RSS",
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "554d7cc331bd973e",
+      "publishedAt": "2026-11-05",
+      "title": "수능일, 주식시장 1시간 늦게 열린다…오전 10시 개장",
+      "category": "제도",
+      "summary": "일반상품 시장에서는 석유시장(오전 10시~오후 5시)과 배출권 시장(오전 10시~정오)은 거래 시간이 변동되지 않는다. 금 시장은 개장 시간만 오전 10시로 늦춰지고, KSM(KRX Startup Market)의 경우 개장·마감 시간이 모두...",
+      "source": "dailian.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.dailian.co.kr/news/view/1711163/?sc=Naver",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 37,
+      "duplicateSources": [
+        "newsmap.co.kr",
+        "etoday.co.kr",
+        "g-enews.com",
+        "tf.co.kr",
+        "dailian.co.kr",
+        "ajunews.com",
+        "sentv.co.kr",
+        "biz.heraldcorp.com",
+        "mstoday.co.kr",
+        "dnews.co.kr",
+        "metroseoul.co.kr",
+        "ebn.co.kr",
+        "sedaily.com",
+        "newsway.co.kr",
+        "newsprime.co.kr",
+        "slist.kr",
+        "seoulfn.com",
+        "fnnews.com",
+        "econovill.com",
+        "mbnmoney.mbn.co.kr",
+        "biz.newdaily.co.kr",
+        "dt.co.kr",
+        "hankookilbo.com",
+        "newsfc.co.kr",
+        "yna.co.kr",
+        "khan.co.kr",
+        "mbn.mk.co.kr",
+        "newsis.com",
+        "smarttoday.co.kr",
+        "imaeil.com",
+        "mediawatch.kr",
+        "edaily.co.kr",
+        "viva100.com",
+        "news2day.co.kr",
+        "newspim.com",
+        "kado.net",
+        "topstarnews.net"
+      ],
+      "searchProviders": [
         "NAVER API HUB"
       ],
       "region": "국내"
@@ -278,6 +360,61 @@
       "region": "국내"
     },
     {
+      "id": "507816ea2d93b67d",
+      "publishedAt": "2026-11-05",
+      "title": "수능날 증시도 ‘늦은 출발’…19일 오전 10시 개장",
+      "category": "제도",
+      "summary": "중 금시장은 오전 10시에 개장해 오후 3시 30분에 마감한다. 석유시장과 배출권 시장은 기존 거래시간을 유지한다. KSM(KRX Startup Market)은 개장과 마감을 각각 1시간씩 늦춰 오전 10시부터 오후 4시 30분까지 운영한다.",
+      "source": "magazine.hankyung.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://magazine.hankyung.com/money/article/202611058157c",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "magazine.hankyung.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "5ee0e5302b189864",
+      "publishedAt": "2026-11-05",
+      "title": "서부발전, 한전·철도공단과 육불화황 감축사업 협력한다",
+      "category": "제도",
+      "summary": "탄소 배출권 확보를 동시에 추진하는 사업이 본격화된다. 실증 단계에 머물렀던 SF6 처리기술을 실제 산업... 인증, 배출권 확보까지 이어지는 협력체계를 구축할 계획이다. 협약에 따라 국가철도공단은 철도 전력설비 교체...",
+      "source": "energydaily.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.energydaily.co.kr/news/articleView.html?idxno=204785",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "mhns.co.kr",
+        "electimes.com",
+        "bbsi.co.kr",
+        "bizwork.co.kr",
+        "핀포인트뉴스",
+        "pinpointnews.co.kr",
+        "energydaily.co.kr",
+        "thefairnews.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB",
+        "Google News RSS"
+      ],
+      "duplicateCount": 8,
+      "region": "국내"
+    },
+    {
       "id": "7cc7ba8a8b1e4363",
       "publishedAt": "2026-11-05",
       "title": "목소영 시의원 \"아리수 전력요금 891억, 효율화 시급\"",
@@ -369,6 +506,54 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "0037f415ac7c4a76",
+      "publishedAt": "2026-11-05",
+      "title": "[위클리오늘] 한전ㆍ국민연금공단ㆍSH (11.5)",
+      "category": "제도",
+      "summary": "전력 설비에서 나온 폐SF6를 회수·분해해 온실가스 를 줄이고 감축 실적을 배출권 으로 연결하는 사업이다. 육불화황(SF6)은 전력 설비 절연 가스 로 쓰이며 온실 효과가 이산화탄소의 약 2만3900배에 이르러 다 쓴 가스 를...",
+      "source": "weeklytoday.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.weeklytoday.com/news/articleView.html?idxno=801142",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "weeklytoday.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "eff4768f5f2c798f",
+      "publishedAt": "2026-11-05",
+      "title": "[온실가스 배출권] 11월 5일 KAU26, 150원 하락한 2만500원",
+      "category": "시장·가격",
+      "summary": "[온실가스 배출권] 11월 5일 KAU26, 150원 하락한 2만500원 데일리e뉴스",
+      "source": "데일리e뉴스",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9nLVUxSXZxRDNQa1Z3QTBpQkZRV0NQSE9xR0dMRXBqeDJ3OElSMDc0WkxMOGV3RXQxU2JiM1Z3S0tFbVdaMjU3bUlsVnpKR0w4cFNiZ2p0azVjSklfZnlPcWVYVTFYSU8ybXhSMXI2aw?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "온실가스 배출권",
+        "KAU26"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "데일리e뉴스"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
       "region": "국내"
     },
     {
@@ -466,6 +651,37 @@
       "region": "국내"
     },
     {
+      "id": "ecaa0ea825b6bb63",
+      "publishedAt": "2026-11-05",
+      "title": "SK증권, UNGC ‘2027년 LEAD 기업’ 선정",
+      "category": "제도",
+      "summary": "2021년 국내 증권사 최초로 탄소 배출권 시장 조성자로 참여했으며, 2023년에는 국내 민간 금융기관 최초로 녹색기후기금(GCF) 인증기구로 지정됐다. 기후공시 분야에서도 국내 증권사 최초로 TCFD 보고서와 IFRS S2 기반...",
+      "source": "g-enews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.g-enews.com/view.php?ud=202611051431305075153ddfb15a_1",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "ziksir.com",
+        "kpenews.com",
+        "pointe.co.kr",
+        "newsmap.co.kr",
+        "yna.co.kr",
+        "newspost.kr",
+        "g-enews.com",
+        "thefairnews.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 8,
+      "region": "국내"
+    },
+    {
       "id": "7b9e34f90cc06112",
       "publishedAt": "2026-11-05",
       "title": "EU, 그린클레임 철회 추진…'친환경·탄소중립' 광고 규제는 이미 시행",
@@ -507,6 +723,30 @@
       ],
       "duplicateSources": [
         "dream.kotra.or.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "758e8d0b5f5d7441",
+      "publishedAt": "2026-11-05",
+      "title": "19일 수능일 증시 1시간 순연… 외환·금선물 마감 시간은 기존과 동일",
+      "category": "제도",
+      "summary": "석유 시장 (오전 10시~오후 5시)과 탄소 배출권 시장 (오전 10시~오후 12시)의 거래시간은 기존과 동일하게 변동 없이 유지된다. 한국거래소 스타트업 전용 거래 시장 인 KSM(KRX Startup Market)의 거래시간은 정규 증권 시장 과...",
+      "source": "newsdream.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.newsdream.kr/news/articleView.html?idxno=121568",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "newsdream.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -3633,7 +3873,8 @@
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
         "배출권",
-        "탄소배출권"
+        "탄소배출권",
+        "배출권거래제"
       ],
       "duplicateSources": [
         "thepublic.kr"
@@ -3760,15 +4001,15 @@
       "duplicateSources": [
         "biz.heraldcorp.com",
         "thereport.co.kr",
-        "view.asiae.co.kr",
         "industrynews.co.kr",
-        "etoday.co.kr",
-        "pinpointnews.co.kr",
         "smarttimes.co.kr",
         "enewstoday.co.kr",
         "press9.kr",
         "polinews.co.kr",
         "socialvalue.kr",
+        "view.asiae.co.kr",
+        "etoday.co.kr",
+        "pinpointnews.co.kr",
         "megaeconomy.co.kr",
         "econovill.com",
         "sedaily.com",
@@ -3786,6 +4027,30 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 24,
+      "region": "국내"
+    },
+    {
+      "id": "ec714c23a8890eff",
+      "publishedAt": "2026-10-30",
+      "title": "신한운용, 에너지 인프라에 5000억…주민참여·전력망 투자 확대",
+      "category": "제도",
+      "summary": "신한자산운용은 올해 탄소배출권 펀드 운용과 탄소중립 항만인프라 펀드 결성, 배전망 ESS 사업 참여, 공공주도 태양광 공동개발 등 에너지 전환 분야 투자를 확대해왔다. 이호준 신한자산운용 인프라운용본부 전무는...",
+      "source": "fnnews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.fnnews.com/news/202610301502206441",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "fnnews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
       "region": "국내"
     },
     {
@@ -5304,7 +5569,8 @@
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
         "배출권",
-        "탄소배출권"
+        "탄소배출권",
+        "탄소시장"
       ],
       "duplicateSources": [
         "sjbnews.com"
@@ -13108,12 +13374,14 @@
         "탄소배출권"
       ],
       "duplicateSources": [
+        "현대해양",
         "hdhy.co.kr"
       ],
       "searchProviders": [
+        "Google News RSS",
         "NAVER API HUB"
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "region": "국내"
     },
     {
