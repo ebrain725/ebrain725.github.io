@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-05T08:17:18+09:00",
+  "generatedAt": "2026-11-05T10:14:34+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1799,
+  "itemCount": 1802,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-05",
   "sourceCommitsScanned": 0,
@@ -59,6 +59,30 @@
       "region": "국내"
     },
     {
+      "id": "247e8eec8cdab13c",
+      "publishedAt": "2026-11-05",
+      "title": "제10회 ‘K사회적가치·ESG, 경제를 살리다’ 포럼 성료",
+      "category": "제도",
+      "summary": "홍 국장은 “시스템에어컨 교체 때 버려지는 냉매를 설치업체·재생업체와 함께 회수해 탄소 배출권 수익을 나누는 플랫폼도 만들고 있다”고 소개했다. 원종석 SK바이오팜 ESG/CSR 리더는 ‘측정하는 사회적 가치’를...",
+      "source": "shindonga.donga.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://shindonga.donga.com/3/all/13/6447157/1",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "shindonga.donga.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "d57c23662ac049e8",
       "publishedAt": "2026-11-05",
       "title": "에너지공단, 국내 기업 해외 탄소감축사업 진출 지원… 탄소시장 공략",
@@ -103,6 +127,56 @@
       ],
       "searchProviders": [
         "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "cc391f6925aaa90d",
+      "publishedAt": "2026-11-05",
+      "title": "2026 한-인도 에너지 라운드테이블 현장: 인도 에너지 전환, 이제는 '저...",
+      "category": "제도",
+      "summary": "탄소 배출권 거래제(CCTS), 녹색철강 분류체계(Green Steel Taxonomy) [자료: 인도 언론정보국(PIB), 신재생에너지부(MNRE), 전력부 발표 종합, KOTRA 뉴델리무역관 정리] 주요 발표 — 인도 공공부문이 제시한 수요 재생에너지...",
+      "source": "dream.kotra.or.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://dream.kotra.or.kr/kotranews/cms/news/actionKotraBoardDetail.do?SITE_NO=3&MENU_ID=110&CONTENTS_NO=1&bbsGbn=245&bbsSn=245&pNttSn=244984",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "dream.kotra.or.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "50aa54afad2e1c03",
+      "publishedAt": "2026-11-05",
+      "title": "11월 온실가스 배출권 283만톤 유상할당 입찰",
+      "category": "유상경매",
+      "summary": "11월 온실가스 배출권 283만톤 유상할당 입찰 인사이트에너지뉴스",
+      "source": "인사이트에너지뉴스",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE55c0tGS3VzcHZMY2Z0cjh6XzV2T0hoTGNfbXdsZEozNmwwYTZkM1dRX2YtSGt4emNTVXNsZzRTWU11NkQzODRONzNxM0dvZXZxeDVOSm8ycUhzMmxPUTNBS3BsZGxkNjTSAWtBVV95cUxPVU1DdDJLWmp6cTUyOGc4NzFPV2NqaU5zUXk2S1E0cVRHR1JOU2NGT1lsTVpPQVktZmw5MkN5aEdNQWZ0X1hDVTBucHdiWERNZkZYSEVyLWttSExMNHBrUFdjakJyOGpJUGpjSQ?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "온실가스 배출권",
+        "유상할당"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "인사이트에너지뉴스"
+      ],
+      "searchProviders": [
+        "Google News RSS"
       ],
       "region": "국내"
     },
@@ -251,6 +325,7 @@
       ],
       "duplicateCount": 10,
       "duplicateSources": [
+        "busan.com",
         "todayenergy.kr",
         "hansbiz.co.kr",
         "gasnews.com",
@@ -259,7 +334,6 @@
         "pinpointnews.co.kr",
         "cnbnews.com",
         "energydaily.co.kr",
-        "busan.com",
         "daily.hankooki.com"
       ],
       "searchProviders": [
@@ -2963,7 +3037,7 @@
         "배출권"
       ],
       "section": "news",
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "duplicateSources": [
         "넷제로뉴스"
       ],
