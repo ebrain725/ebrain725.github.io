@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-11-05T10:14:28+09:00",
+  "lastSync": "2026-11-05T12:39:21+09:00",
   "keywords": [
     "배출권",
     "배출권거래제",
@@ -30,7 +30,7 @@
   "warning": "한국거래소 배출권 공지사항: 한국거래소 공지 목록을 해석하지 못했습니다. 1페이지: HTTP Error 403: Forbidden",
   "aiInsight": {
     "summary": "최근 공식자료의 직접적인 수급 변수는 유상경매입니다. 최근 경매가 높은 낙찰가로 소화돼 공급보다 이행수요가 강하다는 신호입니다.",
-    "generatedAt": "2026-11-05T10:14:28+09:00",
+    "generatedAt": "2026-11-05T12:39:21+09:00",
     "basisLatestDate": "2026-11-04",
     "basisCount": 10,
     "source": "fallback",
@@ -827,9 +827,10 @@
       "matchedKeywords": [
         "탄소시장"
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "duplicateSources": [
-        "tournews21.com"
+        "tournews21.com",
+        "gukjenews.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -886,6 +887,291 @@
       "region": "국내"
     },
     {
+      "id": "a93aa2bfff3822bc",
+      "publishedAt": "2026-11-05",
+      "title": "수능일 증시 오전 10시 개장…프리마켓 쉰다",
+      "category": "제도",
+      "summary": "석유시장(오전 10시~오후 5시)과 배출권 시장(오전 10시~낮 12시)은 거래시간 변동이 없다. KSM(KRX Startup Market) 거래시간은 정규시장과 동일하게 1시간씩 순연된 오전 10시부터 오후 4시 30분까지다. 대체거래소인...",
+      "source": "newsis.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newsis.com/view/NISX20261105_0003855960",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 31,
+      "duplicateSources": [
+        "etoday.co.kr",
+        "g-enews.com",
+        "tf.co.kr",
+        "ajunews.com",
+        "sentv.co.kr",
+        "biz.heraldcorp.com",
+        "mstoday.co.kr",
+        "dnews.co.kr",
+        "metroseoul.co.kr",
+        "ebn.co.kr",
+        "sedaily.com",
+        "newsway.co.kr",
+        "newsprime.co.kr",
+        "slist.kr",
+        "seoulfn.com",
+        "fnnews.com",
+        "biz.newdaily.co.kr",
+        "hankookilbo.com",
+        "newsfc.co.kr",
+        "yna.co.kr",
+        "khan.co.kr",
+        "mbn.mk.co.kr",
+        "newsis.com",
+        "smarttoday.co.kr",
+        "imaeil.com",
+        "mediawatch.kr",
+        "edaily.co.kr",
+        "viva100.com",
+        "news2day.co.kr",
+        "newspim.com",
+        "kado.net"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "202303d202336dbb",
+      "publishedAt": "2026-11-05",
+      "title": "수능일 주식 시장 1시간 늦게 열고 1시간 늦게 닫는다",
+      "category": "제도",
+      "summary": "일반 상품시장 중 금시장은 1시간 늦은 10시에 열어 평소처럼 15시30분에 거래를 종료합니다. 석유시장과 배출권 시장의 거래시간은 변경이 없습니다. [자료=일반상품시장]",
+      "source": "biz.sbs.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://biz.sbs.co.kr/article_hub/20000344409?division=NAVER",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "biz.sbs.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "3b49d16732195290",
+      "publishedAt": "2026-11-05",
+      "title": "수능일 19일 증시 오전 10시 개장…마감도 오후 4시 30분으로 연기",
+      "category": "제도",
+      "summary": "석유시장은 오전 10시부터 오후 5시까지, 배출권 시장은 오전 10시부터 정오까지 기존 일정을 유지한다. 한국거래소 스타트업시장(KSM)은 오전 10시부터 오후 4시 30분까지 운영된다. 거래시간 변경에 따라 결제 및...",
+      "source": "m-i.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.m-i.kr/news/articleView.html?idxno=2014761",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "m-i.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "4dc2bfc7c8e2f8ce",
+      "publishedAt": "2026-11-05",
+      "title": "수능일 19일 증시 1시간 늦게 열린다…정규장 오전 10시~오후 4시30분",
+      "category": "제도",
+      "summary": "한국거래소 스타트업 마켓(KSM) 거래시간은 시작과 끝이 1시간씩 늦춰져 오전 10시부터 오후 4시 30분까지 운영된다. 석유시장(오전 10시∼오후 5시)과 배출권 시장(오전 10시∼낮 12시)은 변동 없이 정상 운영된다.",
+      "source": "dt.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.dt.co.kr/article/12093371?ref=naver",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "dt.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "9a58f44eab89c4fd",
+      "publishedAt": "2026-11-05",
+      "title": "수능일 19일 주식 시장 1시간 늦게 개장…오전 10시부터 거래",
+      "category": "제도",
+      "summary": "종료시간은 다음 날 오전 6시로 기존과 동일하다. 일반상품시장에서는 금 거래가 오전 10시에 시작돼 오후 3시 30분에 종료된다. 석유시장과 배출권 시장의 거래시간은 변경되지 않는다.",
+      "source": "nocutnews.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.nocutnews.co.kr/news/6602513?utm_source=naver&utm_medium=article&utm_campaign=20261105105045",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "nocutnews.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "bc6a990e70f573dd",
+      "publishedAt": "2026-11-05",
+      "title": "수능시험날 증시, 프리마켓 없이 오전 10시 개장",
+      "category": "제도",
+      "summary": "오전 8시45분~오후 3시45분에서 오전 9시45분~오후 4시45분으로 1시간 뒤로 변경한다. 금 시장은 1시간 늦은 10시에 거래를 시작하고, 오후 3시30분에 닫는다. 석유시장, 배출권 시장은 거래시간이 바뀌지 않는다.",
+      "source": "bizwatch.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://news.bizwatch.co.kr/article/market/2026/11/05/0014",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "bizwatch.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "5a353c1771c232d7",
+      "publishedAt": "2026-11-05",
+      "title": "수능날 증시 개장 1시간 늦어진다",
+      "category": "제도",
+      "summary": "석유 시장과 배출권 시장은 거래시간이 바뀌지 않는다. 비상장 스타트업 거래 플랫폼인 KSM(KRX 스타트업 마켓)은 증권시장과 같이 오전 10시~오후 4시30분에 운영된다. 결제 시간도 조정된다. 당일결제 거래인...",
+      "source": "sidae.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.sidae.com/article/2026110510122864239",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "sidae.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "7cc7ba8a8b1e4363",
+      "publishedAt": "2026-11-05",
+      "title": "목소영 시의원 \"아리수 전력요금 891억, 효율화 시급\"",
+      "category": "제도",
+      "summary": "아리수본부의 2025년 전력요금은 약 891억 원에 달했으며, 기존 탄소 배출권 보유량이 소진되면서 2025년 약 1,800만 원의 배출권 을 추가 매수했다. 2026년에는 초과 배출량이 약 2만 5천 톤으로 예상돼 현 시세 기준 약 2억 5...",
+      "source": "newspim.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newspim.com/news/view/20261105000473",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "newspim.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "2359025e9ce5e80c",
+      "publishedAt": "2026-11-05",
+      "title": "거래소, 수능 당일 증시 1시간 늦은 10시 개장",
+      "category": "제도",
+      "summary": "석유시장과 배출권 시장의 거래시간은 변경 없이 기존대로 운영된다. 증권·파생상품 결제시간과 장외파생상품 청산 업무시간도 조정된다. 장내 증권·파생상품시장의 당일결제거래인 일반채권시장 및 Repo시장은...",
+      "source": "view.asiae.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://view.asiae.co.kr/article/2026110510203377880",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "view.asiae.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "c954360fb7f8eafa",
+      "publishedAt": "2026-11-05",
+      "title": "거래소 \"수능일(19일) 정규장 개장 시각 오전 10시…마감 오후 4시30분\"",
+      "category": "제도",
+      "summary": "석유시장과 배출권 시장은 거래시간에 변동이 없다. KSM(KRX Startup Market)은 증권시장과 같이 오전 10시~오후 4시 30분에 운영된다. 결제시간도 조정된다. 일반채권시장과 Repo시장 결제는 오후 4시 30분~5시 30분에...",
+      "source": "hankyung.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.hankyung.com/article/2026110576576",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "hankyung.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "5e6b634ae321f6c2",
+      "publishedAt": "2026-11-05",
+      "title": "美, 동국제강 후판 상계관세 1.89% 확정…현대제철 1.39%",
+      "category": "제도",
+      "summary": "이번 재심에서는 한국의 산업용 전기요금과 탄소 배출권 배분, 탄소 중립 설비 지원, 연구개발 보조금 등이 주요 쟁점으로 다뤄졌다. 상무부가 공개한 최종판정 쟁점 목록에는 산업용 전력 공급의 시장 원칙 부합...",
+      "source": "sateconomy.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://sateconomy.co.kr/news/view/1065575856370831",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "sateconomy.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "2754669c8db11015",
       "publishedAt": "2026-11-05",
       "title": "[기업家] 대우건설 ⑤ㅣ 아프리카서 수주 낭보·체코 원전은 협상 결렬...",
@@ -907,6 +1193,78 @@
         "NAVER API HUB"
       ],
       "region": "국내"
+    },
+    {
+      "id": "5f01d4827c82ba2b",
+      "publishedAt": "2026-11-05",
+      "title": "[금융권 이모저모]삼성자산운용, 연금 투자성향별 KODEX ETF 제안 外",
+      "category": "제도",
+      "summary": "금시장 역시 오전 10시에 개장해 오후 3시30분에 마감하며, 석유시장과 배출권 시장의 거래시간은 달라지지 않는다. 한국거래소는 거래시간 조정에 맞춰 증권·파생상품 결제시간과 장외파생상품 청산 업무시간도 일부...",
+      "source": "businessplus.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.businessplus.kr/news/articleView.html?idxno=119341",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "businessplus.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "1f243ead8db9972d",
+      "publishedAt": "2026-11-05",
+      "title": "[COP31] 개최국 튀르키예의 두 얼굴…재생에너지 확대 속 석탄발전 유럽...",
+      "category": "제도",
+      "summary": "탄소 배출권 거래제 도입 등 에너지전환 정책을 추진해 왔다. 하지만 COP31 개최국의 기후정책에는 뚜렷한... 2025년 기후법 제정…탄소 배출권 거래제 도입 추진 제도적 측면에서는 2025년 7월 제정된 튀르키예 최초의...",
+      "source": "esgeconomy.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.esgeconomy.com/news/articleView.html?idxno=17121",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "esgeconomy.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "7b9e34f90cc06112",
+      "publishedAt": "2026-11-05",
+      "title": "EU, 그린클레임 철회 추진…'친환경·탄소중립' 광고 규제는 이미 시행",
+      "category": "상쇄·외부사업",
+      "summary": "탄소 배출권 구매로 배출량을 상쇄 했다는 이유만으로 제품을 '탄소중립'이나 '기후중립'이라고 표시하는 행위도 금지된다. 해당 주장을 별도로 검증받았더라도 탄소 상쇄 에 근거한 제품의 탄소중립 광고는 허용되지...",
+      "source": "impacton.net",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.impacton.net/news/articleView.html?idxno=30541",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "impacton.net"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
     },
     {
       "id": "cc391f6925aaa90d",
@@ -1729,7 +2087,7 @@
       "region": "국내"
     },
     {
-      "id": "20036b5442f7b124",
+      "id": "6ab5a13c6e96faaa",
       "publishedAt": "2026-11-04",
       "title": "2026년 11월 배출권 유상할당 입찰계획 공고",
       "category": "유상경매",
@@ -1737,7 +2095,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1904300",
+      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1904300",
       "matchedKeywords": [
         "시장안정화",
         "배출권",
@@ -2485,9 +2843,9 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "mt.co.kr",
         "venturesquare.net",
         "seoul.co.kr",
+        "mt.co.kr",
         "fnnews.com"
       ],
       "searchProviders": [
@@ -3175,6 +3533,29 @@
       ],
       "duplicateCount": 1,
       "region": "국내"
+    },
+    {
+      "id": "7e8f2385141c65eb",
+      "publishedAt": "2026-11-02",
+      "title": "골칫덩이에서 미래 자원으로…이산화탄소는 무한변신 중",
+      "category": "시장·가격",
+      "summary": "다만 CCU 역시 전환 과정에서 사용하는 에너지와 최종 제품의 탄소 배출까지 고려해야 실질적인 온실가스 ... 국내 배출권 가격은 지난 20일 기준 톤당 3만100원으로 1년 전보다 약 3배 상승했다. 유럽의 배출권 가격 역시...",
+      "source": "biz.heraldcorp.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://biz.heraldcorp.com/article/10922543?ref=naver",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "biz.heraldcorp.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "해외"
     },
     {
       "id": "2b4056daf5b33e3a",
@@ -4062,6 +4443,30 @@
       ],
       "duplicateCount": 1,
       "region": "해외"
+    },
+    {
+      "id": "b2c8abb74aa4e922",
+      "publishedAt": "2026-10-31",
+      "title": "EU 철강 수출 감소폭 줄었지만…쿼터 축소에 탄소 규제까지 '삼중고'",
+      "category": "제도",
+      "summary": "또 2034년까지 역내 기업에 제공하는 탄소배출권 무상 할당량을 단계적으로 축소해 폐지할 계획이다. 이에 따라 국내 철강업체들은 수출 제품의 탄소배출량 산정과 검증, 관련 인증서 비용 등에 대응해야 한다. 특히...",
+      "source": "ebn.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1729954",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "ebn.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
     },
     {
       "id": "35b1375cd2293fad",
@@ -6325,10 +6730,10 @@
       "duplicateSources": [
         "view.asiae.co.kr",
         "getnews.co.kr",
-        "mk.co.kr",
-        "news1.kr",
         "m-economynews.com",
         "sedaily.com",
+        "mk.co.kr",
+        "news1.kr",
         "yna.co.kr",
         "biz.heraldcorp.com",
         "kbs.co.kr",
@@ -21001,7 +21406,7 @@
       "keywordScope": "related"
     },
     {
-      "id": "b02e84ffadc5f7f9",
+      "id": "e174a9a0095fa4b5",
       "publishedAt": "2026-10-06",
       "title": "2026년 10월 배출권 유상할당 입찰계획 공고",
       "category": "유상경매",
@@ -21009,7 +21414,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1896770",
+      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1896770",
       "matchedKeywords": [
         "시장안정화",
         "배출권",
@@ -41513,7 +41918,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "d33fc96396cb6c87",
+      "id": "72de1e51f4d234f6",
       "publishedAt": "2026-09-02",
       "title": "2026년 9월 배출권 유상할당 입찰계획 공고",
       "category": "유상경매",
@@ -41521,7 +41926,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1887850",
+      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1887850",
       "matchedKeywords": [
         "추가할당",
         "추가 할당",
@@ -48029,7 +48434,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "56f944fbce63852f",
+      "id": "0b9002b32f30bdd5",
       "publishedAt": "2026-08-05",
       "title": "2026년 8월 배출권 유상할당 입찰계획 공고",
       "category": "유상경매",
@@ -48037,7 +48442,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1882160",
+      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1882160",
       "matchedKeywords": [
         "추가할당",
         "추가 할당",
@@ -49366,7 +49771,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "f9193727736429e6",
+      "id": "11c1e93e6210d5a2",
       "publishedAt": "2026-07-01",
       "title": "2026년 7월 배출권 유상할당 입찰계획 공고",
       "category": "유상경매",
@@ -49374,7 +49779,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1874990",
+      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1874990",
       "matchedKeywords": [
         "추가할당",
         "추가 할당",
@@ -50490,7 +50895,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "08f4f3a19f4809da",
+      "id": "2e0783bcaf745897",
       "publishedAt": "2026-06-12",
       "title": "2026년도 온실가스 배출권 유상할당 경매계획 변경공고",
       "category": "유상경매",
@@ -50498,7 +50903,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1870290",
+      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1870290",
       "matchedKeywords": [
         "추가할당",
         "추가 할당",
@@ -51463,7 +51868,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "fc612405c097cbd5",
+      "id": "8376cd08edf10460",
       "publishedAt": "2026-06-02",
       "title": "2026년 6월 배출권 유상할당 입찰계획 공고",
       "category": "유상경매",
@@ -51471,7 +51876,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1867940",
+      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1867940",
       "matchedKeywords": [
         "추가할당",
         "추가 할당",
@@ -52584,7 +52989,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "5e0cc26c991e6663",
+      "id": "efa5a1e042ce1d71",
       "publishedAt": "2026-05-06",
       "title": "2026년 5월 배출권 유상할당 입찰계획 공고",
       "category": "유상경매",
@@ -52592,7 +52997,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1862050",
+      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1862050",
       "matchedKeywords": [
         "추가할당",
         "추가 할당",
@@ -55076,7 +55481,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "aecde435bc94c71a",
+      "id": "2c50c6739cda14dd",
       "publishedAt": "2026-04-01",
       "title": "2026년 4월 배출권 유상할당 경매 입찰 공고",
       "category": "유상경매",
@@ -55084,7 +55489,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1854410",
+      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1854410",
       "matchedKeywords": [
         "추가할당",
         "추가 할당",
@@ -56900,7 +57305,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "848d65df4311e692",
+      "id": "f5b6acc067078436",
       "publishedAt": "2026-03-04",
       "title": "2026년 3월 배출권 유상할당 경매 입찰 공고",
       "category": "유상경매",
@@ -56908,7 +57313,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1847110",
+      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1847110",
       "matchedKeywords": [
         "추가할당",
         "추가 할당",
@@ -58400,7 +58805,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "1804a45bc8c7c11e",
+      "id": "694630b0b6ad7158",
       "publishedAt": "2026-02-04",
       "title": "2026년 2월 배출권 유상할당 경매 입찰 공고",
       "category": "유상경매",
@@ -58408,7 +58813,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1839990",
+      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1839990",
       "matchedKeywords": [
         "추가할당",
         "추가 할당",
@@ -59616,7 +60021,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "5b742a320674feef",
+      "id": "6fcc689e6811697f",
       "publishedAt": "2026-01-07",
       "title": "2026년 1월 배출권 유상할당 경매 입찰 공고",
       "category": "유상경매",
@@ -59624,7 +60029,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1833770",
+      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1833770",
       "matchedKeywords": [
         "추가할당",
         "추가 할당",
@@ -60070,7 +60475,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "8cca28f701e28efa",
+      "id": "4814247a562c8770",
       "publishedAt": "2025-12-30",
       "title": "2026년도 온실가스 배출권 유상할당 경매계획",
       "category": "유상경매",
@@ -60078,7 +60483,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1832000",
+      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1832000",
       "matchedKeywords": [
         "추가할당",
         "추가 할당",
@@ -61739,7 +62144,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "59f1e38c9eac7a4b",
+      "id": "3108785683fa24ad",
       "publishedAt": "2025-12-11",
       "title": "2025년 12월 배출권 유상할당 경매 추가 입찰 공고",
       "category": "유상경매",
@@ -61747,7 +62152,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1827900",
+      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1827900",
       "matchedKeywords": [
         "추가할당",
         "추가 할당",
@@ -62405,7 +62810,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "864e8185ce45b0b9",
+      "id": "599098f8509ca5e1",
       "publishedAt": "2025-12-03",
       "title": "2025년 12월 배출권 유상할당 경매 입찰 공고",
       "category": "유상경매",
@@ -62413,7 +62818,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1825540",
+      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1825540",
       "matchedKeywords": [
         "추가할당",
         "추가 할당",
@@ -64493,7 +64898,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "8071a74485fe6bbe",
+      "id": "779bae99c94829d5",
       "publishedAt": "2025-11-05",
       "title": "2025년도 온실가스 배출권 유상할당 경매계획 변경 재공고",
       "category": "유상경매",
@@ -64501,7 +64906,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1774090",
+      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1774090",
       "matchedKeywords": [
         "추가할당",
         "추가 할당",
@@ -64633,7 +65038,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "54e06f3a6c349520",
+      "id": "33f786a992731aa3",
       "publishedAt": "2025-11-05",
       "title": "2025년 11월 배출권 유상할당 경매 입찰 공고",
       "category": "유상경매",
@@ -64641,7 +65046,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1774080",
+      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1774080",
       "matchedKeywords": [
         "추가할당",
         "추가 할당",
@@ -67428,7 +67833,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "3f734146ca005abe",
+      "id": "60691124adb8a7a7",
       "publishedAt": "2025-09-03",
       "title": "2025년 9월 배출권 유상할당 입찰 공고",
       "category": "유상경매",
@@ -67436,7 +67841,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1762780",
+      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1762780",
       "matchedKeywords": [
         "추가할당",
         "추가 할당",
@@ -69173,7 +69578,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "134d8c1f71ac9a59",
+      "id": "64fc92eea5122b1d",
       "publishedAt": "2025-08-07",
       "title": "2025년 8월 배출권 유상할당 입찰 공고",
       "category": "유상경매",
@@ -69181,7 +69586,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1758000",
+      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1758000",
       "matchedKeywords": [
         "추가할당",
         "추가 할당",
@@ -70935,7 +71340,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "291949ea8411aa85",
+      "id": "efc7ea21df878792",
       "publishedAt": "2025-07-03",
       "title": "2025년도 온실가스 배출권 유상할당 경매계획 변경공고",
       "category": "유상경매",
@@ -70943,7 +71348,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1752110",
+      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1752110",
       "matchedKeywords": [
         "추가할당",
         "추가 할당",
@@ -71284,7 +71689,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "6971a3d9c1e05ce2",
+      "id": "eeb6a3421d9bdacf",
       "publishedAt": "2025-07-03",
       "title": "2025년 7월 배출권 유상할당 입찰 공고",
       "category": "유상경매",
@@ -71292,7 +71697,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1752120",
+      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1752120",
       "matchedKeywords": [
         "추가할당",
         "추가 할당",
@@ -72215,7 +72620,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "4eacbe99fc486252",
+      "id": "74156faab8db0e52",
       "publishedAt": "2025-06-04",
       "title": "2025년 6월 배출권 유상할당 입찰 공고",
       "category": "유상경매",
@@ -72223,7 +72628,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1746560",
+      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1746560",
       "matchedKeywords": [
         "추가할당",
         "추가 할당",
@@ -73416,7 +73821,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "a683b141714c6d9d",
+      "id": "43eb459f5bdf4199",
       "publishedAt": "2025-05-08",
       "title": "2025년 5월 배출권 유상할당 입찰공고",
       "category": "유상경매",
@@ -73424,7 +73829,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1740920",
+      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1740920",
       "matchedKeywords": [
         "추가할당",
         "추가 할당",
@@ -75940,7 +76345,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "85f0478dcee0de03",
+      "id": "c6967996514b1e52",
       "publishedAt": "2025-03-07",
       "title": "2025년 3월 배출권 유상할당 입찰 공고",
       "category": "유상경매",
@@ -75948,7 +76353,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1728550",
+      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1728550",
       "matchedKeywords": [
         "추가할당",
         "추가 할당",
@@ -80997,7 +81402,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "5a9ba8a730a2073b",
+      "id": "e5433657a68784ef",
       "publishedAt": "2024-12-27",
       "title": "2025년도 온실가스 배출권 유상할당 경매계획",
       "category": "유상경매",
@@ -81005,7 +81410,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1716810",
+      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10524&orgCd=&boardMasterId=39&boardId=1716810",
       "matchedKeywords": [
         "추가할당",
         "추가 할당",
@@ -273421,10 +273826,10 @@
   },
   "newsRetention": {
     "policy": "append-only",
-    "lastMergedAt": "2026-11-05T10:14:34+09:00",
-    "itemCount": 1802,
-    "archiveBefore": 1799,
-    "currentBefore": 1653,
+    "lastMergedAt": "2026-11-05T12:39:28+09:00",
+    "itemCount": 1818,
+    "archiveBefore": 1802,
+    "currentBefore": 1669,
     "gitRecoveryEnabled": false
   }
 }

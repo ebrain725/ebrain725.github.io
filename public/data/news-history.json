@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-05T10:14:34+09:00",
+  "generatedAt": "2026-11-05T12:39:28+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1802,
+  "itemCount": 1818,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-05",
   "sourceCommitsScanned": 0,
@@ -49,9 +49,10 @@
       "matchedKeywords": [
         "탄소시장"
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "duplicateSources": [
-        "tournews21.com"
+        "tournews21.com",
+        "gukjenews.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -108,6 +109,291 @@
       "region": "국내"
     },
     {
+      "id": "a93aa2bfff3822bc",
+      "publishedAt": "2026-11-05",
+      "title": "수능일 증시 오전 10시 개장…프리마켓 쉰다",
+      "category": "제도",
+      "summary": "석유시장(오전 10시~오후 5시)과 배출권 시장(오전 10시~낮 12시)은 거래시간 변동이 없다. KSM(KRX Startup Market) 거래시간은 정규시장과 동일하게 1시간씩 순연된 오전 10시부터 오후 4시 30분까지다. 대체거래소인...",
+      "source": "newsis.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newsis.com/view/NISX20261105_0003855960",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 31,
+      "duplicateSources": [
+        "etoday.co.kr",
+        "g-enews.com",
+        "tf.co.kr",
+        "ajunews.com",
+        "sentv.co.kr",
+        "biz.heraldcorp.com",
+        "mstoday.co.kr",
+        "dnews.co.kr",
+        "metroseoul.co.kr",
+        "ebn.co.kr",
+        "sedaily.com",
+        "newsway.co.kr",
+        "newsprime.co.kr",
+        "slist.kr",
+        "seoulfn.com",
+        "fnnews.com",
+        "biz.newdaily.co.kr",
+        "hankookilbo.com",
+        "newsfc.co.kr",
+        "yna.co.kr",
+        "khan.co.kr",
+        "mbn.mk.co.kr",
+        "newsis.com",
+        "smarttoday.co.kr",
+        "imaeil.com",
+        "mediawatch.kr",
+        "edaily.co.kr",
+        "viva100.com",
+        "news2day.co.kr",
+        "newspim.com",
+        "kado.net"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "202303d202336dbb",
+      "publishedAt": "2026-11-05",
+      "title": "수능일 주식 시장 1시간 늦게 열고 1시간 늦게 닫는다",
+      "category": "제도",
+      "summary": "일반 상품시장 중 금시장은 1시간 늦은 10시에 열어 평소처럼 15시30분에 거래를 종료합니다. 석유시장과 배출권 시장의 거래시간은 변경이 없습니다. [자료=일반상품시장]",
+      "source": "biz.sbs.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://biz.sbs.co.kr/article_hub/20000344409?division=NAVER",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "biz.sbs.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "3b49d16732195290",
+      "publishedAt": "2026-11-05",
+      "title": "수능일 19일 증시 오전 10시 개장…마감도 오후 4시 30분으로 연기",
+      "category": "제도",
+      "summary": "석유시장은 오전 10시부터 오후 5시까지, 배출권 시장은 오전 10시부터 정오까지 기존 일정을 유지한다. 한국거래소 스타트업시장(KSM)은 오전 10시부터 오후 4시 30분까지 운영된다. 거래시간 변경에 따라 결제 및...",
+      "source": "m-i.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.m-i.kr/news/articleView.html?idxno=2014761",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "m-i.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "4dc2bfc7c8e2f8ce",
+      "publishedAt": "2026-11-05",
+      "title": "수능일 19일 증시 1시간 늦게 열린다…정규장 오전 10시~오후 4시30분",
+      "category": "제도",
+      "summary": "한국거래소 스타트업 마켓(KSM) 거래시간은 시작과 끝이 1시간씩 늦춰져 오전 10시부터 오후 4시 30분까지 운영된다. 석유시장(오전 10시∼오후 5시)과 배출권 시장(오전 10시∼낮 12시)은 변동 없이 정상 운영된다.",
+      "source": "dt.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.dt.co.kr/article/12093371?ref=naver",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "dt.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "9a58f44eab89c4fd",
+      "publishedAt": "2026-11-05",
+      "title": "수능일 19일 주식 시장 1시간 늦게 개장…오전 10시부터 거래",
+      "category": "제도",
+      "summary": "종료시간은 다음 날 오전 6시로 기존과 동일하다. 일반상품시장에서는 금 거래가 오전 10시에 시작돼 오후 3시 30분에 종료된다. 석유시장과 배출권 시장의 거래시간은 변경되지 않는다.",
+      "source": "nocutnews.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.nocutnews.co.kr/news/6602513?utm_source=naver&utm_medium=article&utm_campaign=20261105105045",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "nocutnews.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "bc6a990e70f573dd",
+      "publishedAt": "2026-11-05",
+      "title": "수능시험날 증시, 프리마켓 없이 오전 10시 개장",
+      "category": "제도",
+      "summary": "오전 8시45분~오후 3시45분에서 오전 9시45분~오후 4시45분으로 1시간 뒤로 변경한다. 금 시장은 1시간 늦은 10시에 거래를 시작하고, 오후 3시30분에 닫는다. 석유시장, 배출권 시장은 거래시간이 바뀌지 않는다.",
+      "source": "bizwatch.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://news.bizwatch.co.kr/article/market/2026/11/05/0014",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "bizwatch.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "5a353c1771c232d7",
+      "publishedAt": "2026-11-05",
+      "title": "수능날 증시 개장 1시간 늦어진다",
+      "category": "제도",
+      "summary": "석유 시장과 배출권 시장은 거래시간이 바뀌지 않는다. 비상장 스타트업 거래 플랫폼인 KSM(KRX 스타트업 마켓)은 증권시장과 같이 오전 10시~오후 4시30분에 운영된다. 결제 시간도 조정된다. 당일결제 거래인...",
+      "source": "sidae.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.sidae.com/article/2026110510122864239",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "sidae.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "7cc7ba8a8b1e4363",
+      "publishedAt": "2026-11-05",
+      "title": "목소영 시의원 \"아리수 전력요금 891억, 효율화 시급\"",
+      "category": "제도",
+      "summary": "아리수본부의 2025년 전력요금은 약 891억 원에 달했으며, 기존 탄소 배출권 보유량이 소진되면서 2025년 약 1,800만 원의 배출권 을 추가 매수했다. 2026년에는 초과 배출량이 약 2만 5천 톤으로 예상돼 현 시세 기준 약 2억 5...",
+      "source": "newspim.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newspim.com/news/view/20261105000473",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "newspim.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "2359025e9ce5e80c",
+      "publishedAt": "2026-11-05",
+      "title": "거래소, 수능 당일 증시 1시간 늦은 10시 개장",
+      "category": "제도",
+      "summary": "석유시장과 배출권 시장의 거래시간은 변경 없이 기존대로 운영된다. 증권·파생상품 결제시간과 장외파생상품 청산 업무시간도 조정된다. 장내 증권·파생상품시장의 당일결제거래인 일반채권시장 및 Repo시장은...",
+      "source": "view.asiae.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://view.asiae.co.kr/article/2026110510203377880",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "view.asiae.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "c954360fb7f8eafa",
+      "publishedAt": "2026-11-05",
+      "title": "거래소 \"수능일(19일) 정규장 개장 시각 오전 10시…마감 오후 4시30분\"",
+      "category": "제도",
+      "summary": "석유시장과 배출권 시장은 거래시간에 변동이 없다. KSM(KRX Startup Market)은 증권시장과 같이 오전 10시~오후 4시 30분에 운영된다. 결제시간도 조정된다. 일반채권시장과 Repo시장 결제는 오후 4시 30분~5시 30분에...",
+      "source": "hankyung.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.hankyung.com/article/2026110576576",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "hankyung.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "5e6b634ae321f6c2",
+      "publishedAt": "2026-11-05",
+      "title": "美, 동국제강 후판 상계관세 1.89% 확정…현대제철 1.39%",
+      "category": "제도",
+      "summary": "이번 재심에서는 한국의 산업용 전기요금과 탄소 배출권 배분, 탄소 중립 설비 지원, 연구개발 보조금 등이 주요 쟁점으로 다뤄졌다. 상무부가 공개한 최종판정 쟁점 목록에는 산업용 전력 공급의 시장 원칙 부합...",
+      "source": "sateconomy.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://sateconomy.co.kr/news/view/1065575856370831",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "sateconomy.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "2754669c8db11015",
       "publishedAt": "2026-11-05",
       "title": "[기업家] 대우건설 ⑤ㅣ 아프리카서 수주 낭보·체코 원전은 협상 결렬...",
@@ -129,6 +415,78 @@
         "NAVER API HUB"
       ],
       "region": "국내"
+    },
+    {
+      "id": "5f01d4827c82ba2b",
+      "publishedAt": "2026-11-05",
+      "title": "[금융권 이모저모]삼성자산운용, 연금 투자성향별 KODEX ETF 제안 外",
+      "category": "제도",
+      "summary": "금시장 역시 오전 10시에 개장해 오후 3시30분에 마감하며, 석유시장과 배출권 시장의 거래시간은 달라지지 않는다. 한국거래소는 거래시간 조정에 맞춰 증권·파생상품 결제시간과 장외파생상품 청산 업무시간도 일부...",
+      "source": "businessplus.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.businessplus.kr/news/articleView.html?idxno=119341",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "businessplus.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "1f243ead8db9972d",
+      "publishedAt": "2026-11-05",
+      "title": "[COP31] 개최국 튀르키예의 두 얼굴…재생에너지 확대 속 석탄발전 유럽...",
+      "category": "제도",
+      "summary": "탄소 배출권 거래제 도입 등 에너지전환 정책을 추진해 왔다. 하지만 COP31 개최국의 기후정책에는 뚜렷한... 2025년 기후법 제정…탄소 배출권 거래제 도입 추진 제도적 측면에서는 2025년 7월 제정된 튀르키예 최초의...",
+      "source": "esgeconomy.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.esgeconomy.com/news/articleView.html?idxno=17121",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "esgeconomy.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "7b9e34f90cc06112",
+      "publishedAt": "2026-11-05",
+      "title": "EU, 그린클레임 철회 추진…'친환경·탄소중립' 광고 규제는 이미 시행",
+      "category": "상쇄·외부사업",
+      "summary": "탄소 배출권 구매로 배출량을 상쇄 했다는 이유만으로 제품을 '탄소중립'이나 '기후중립'이라고 표시하는 행위도 금지된다. 해당 주장을 별도로 검증받았더라도 탄소 상쇄 에 근거한 제품의 탄소중립 광고는 허용되지...",
+      "source": "impacton.net",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.impacton.net/news/articleView.html?idxno=30541",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "impacton.net"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
     },
     {
       "id": "cc391f6925aaa90d",
@@ -1663,9 +2021,9 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "mt.co.kr",
         "venturesquare.net",
         "seoul.co.kr",
+        "mt.co.kr",
         "fnnews.com"
       ],
       "searchProviders": [
@@ -2277,6 +2635,29 @@
       ],
       "duplicateCount": 1,
       "region": "국내"
+    },
+    {
+      "id": "7e8f2385141c65eb",
+      "publishedAt": "2026-11-02",
+      "title": "골칫덩이에서 미래 자원으로…이산화탄소는 무한변신 중",
+      "category": "시장·가격",
+      "summary": "다만 CCU 역시 전환 과정에서 사용하는 에너지와 최종 제품의 탄소 배출까지 고려해야 실질적인 온실가스 ... 국내 배출권 가격은 지난 20일 기준 톤당 3만100원으로 1년 전보다 약 3배 상승했다. 유럽의 배출권 가격 역시...",
+      "source": "biz.heraldcorp.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://biz.heraldcorp.com/article/10922543?ref=naver",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "biz.heraldcorp.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "해외"
     },
     {
       "id": "2b4056daf5b33e3a",
@@ -3164,6 +3545,30 @@
       ],
       "duplicateCount": 1,
       "region": "해외"
+    },
+    {
+      "id": "b2c8abb74aa4e922",
+      "publishedAt": "2026-10-31",
+      "title": "EU 철강 수출 감소폭 줄었지만…쿼터 축소에 탄소 규제까지 '삼중고'",
+      "category": "제도",
+      "summary": "또 2034년까지 역내 기업에 제공하는 탄소배출권 무상 할당량을 단계적으로 축소해 폐지할 계획이다. 이에 따라 국내 철강업체들은 수출 제품의 탄소배출량 산정과 검증, 관련 인증서 비용 등에 대응해야 한다. 특히...",
+      "source": "ebn.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1729954",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "ebn.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
     },
     {
       "id": "35b1375cd2293fad",
@@ -5355,10 +5760,10 @@
       "duplicateSources": [
         "view.asiae.co.kr",
         "getnews.co.kr",
-        "mk.co.kr",
-        "news1.kr",
         "m-economynews.com",
         "sedaily.com",
+        "mk.co.kr",
+        "news1.kr",
         "yna.co.kr",
         "biz.heraldcorp.com",
         "kbs.co.kr",
