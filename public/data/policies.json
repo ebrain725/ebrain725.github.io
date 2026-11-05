@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-11-05T18:13:51+09:00",
+  "lastSync": "2026-11-05T21:39:57+09:00",
   "keywords": [
     "배출권",
     "배출권거래제",
@@ -30,7 +30,7 @@
   "warning": "한국거래소 배출권 공지사항: 한국거래소 공지 목록을 해석하지 못했습니다. 1페이지: HTTP Error 403: Forbidden",
   "aiInsight": {
     "summary": "최근 공식자료의 직접적인 수급 변수는 유상경매입니다. 최근 경매가 높은 낙찰가로 소화돼 공급보다 이행수요가 강하다는 신호입니다.",
-    "generatedAt": "2026-11-05T18:13:51+09:00",
+    "generatedAt": "2026-11-05T21:39:57+09:00",
     "basisLatestDate": "2026-11-04",
     "basisCount": 10,
     "source": "fallback",
@@ -951,7 +951,9 @@
         "econovill.com",
         "asiatime.co.kr",
         "e-platform.net",
+        "daily.hankooki.com",
         "bbsi.co.kr",
+        "newspim.com",
         "dt.co.kr",
         "todayenergy.kr",
         "cbci.co.kr",
@@ -971,13 +973,16 @@
         "startuptoday.co.kr",
         "biz.newdaily.co.kr",
         "the-biz.co.kr",
-        "newstree.kr"
+        "newstree.kr",
+        "beyondpost.co.kr",
+        "팍스경제TV",
+        "paxetv.com"
       ],
       "searchProviders": [
         "NAVER API HUB",
         "Google News RSS"
       ],
-      "duplicateCount": 24,
+      "duplicateCount": 29,
       "region": "국내"
     },
     {
@@ -1102,6 +1107,30 @@
       "region": "국내"
     },
     {
+      "id": "6c7ba30782b99b3b",
+      "publishedAt": "2026-11-05",
+      "title": "영남외국어대 신재생에너지과, 주택 태양광 설치 현장서 실무교육 강화",
+      "category": "제도",
+      "summary": "영천시는 지난 9월 마을 단위 주택 태양광 설치와 탄소 배출권 확보·거래를 연계하는 ‘우리마을태양광 탄소 배출권 모델사업’ 참여기업 모집을 진행했으며, 10월에는 사업 컨소시엄 선정 결과를 공고했다. 지역 내 태양광...",
+      "source": "ksmnews.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.ksmnews.co.kr/news/view.php?idx=628589",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "ksmnews.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "d57c23662ac049e8",
       "publishedAt": "2026-11-05",
       "title": "에너지공단, 국내 기업 해외 탄소감축사업 진출 지원… 탄소시장 공략",
@@ -1175,6 +1204,29 @@
       "region": "국내"
     },
     {
+      "id": "ee099f896fc5f87a",
+      "publishedAt": "2026-11-05",
+      "title": "수능일, 증권시장 오전 10시 개장…폐장도 1시간 늦춰",
+      "category": "제도",
+      "summary": "개장…석유· 배출권 시장은 동일 수능을 앞두고 고등학생들이 야간자율학습을 하고 있는 모습 [사진... 석유시장과 배출권 시장의 거래시간은 변경되지 않는다. 결제시간도 일부 조정된다. 당일 결제 거래인...",
+      "source": "news2day.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.news2day.co.kr/article/20261105500099",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "news2day.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "554d7cc331bd973e",
       "publishedAt": "2026-11-05",
       "title": "수능일, 주식시장 1시간 늦게 열린다…오전 10시 개장",
@@ -1196,7 +1248,6 @@
         "dnews.co.kr",
         "sedaily.com",
         "newsway.co.kr",
-        "newsprime.co.kr",
         "seoulfn.com",
         "fnnews.com",
         "econovill.com",
@@ -1212,6 +1263,7 @@
         "biz.heraldcorp.com",
         "metroseoul.co.kr",
         "ebn.co.kr",
+        "newsprime.co.kr",
         "slist.kr",
         "dt.co.kr",
         "newsfc.co.kr",
@@ -1327,6 +1379,29 @@
       "duplicateCount": 1,
       "duplicateSources": [
         "biz.sbs.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "68b698d062a44c5c",
+      "publishedAt": "2026-11-05",
+      "title": "수능일 국내 증시 오전 10시 개장… 거래 종료도 1시간 연기",
+      "category": "제도",
+      "summary": "일반상품시장에서는 금시장의 개장 시간이 오전 10시로 늦춰지지만, 마감 시간은 오후 3시 30분으로 유지되고, KSM(KRX 스타트업 마켓)은 오전 10시부터 오후 4시 30분까지 운영하는 반면 석유시장과 배출권 시장은 평소...",
+      "source": "mediawatch.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.mediawatch.kr/news/article.html?no=261633",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "mediawatch.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -1615,12 +1690,13 @@
         "cnbizm.com",
         "kpinews.kr",
         "metroseoul.co.kr",
-        "thevaluenews.co.kr"
+        "thevaluenews.co.kr",
+        "biztribune.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 23,
+      "duplicateCount": 24,
       "region": "국내"
     },
     {
@@ -1644,6 +1720,29 @@
       "searchProviders": [
         "NAVER API HUB"
       ],
+      "region": "국내"
+    },
+    {
+      "id": "e34ff01bd7b44731",
+      "publishedAt": "2026-11-05",
+      "title": "국가철도공단, 폐육불화황 분해로 철도 온실가스 감축 추진",
+      "category": "제도",
+      "summary": "이번 협약은 철도 변전소 등에서 사용한 폐SF6를 안전하게 처리하고 온실가스 감축 실적을 배출권 으로 연계하는 공동사업을 추진하기 위해 마련됐다. 협약식에는 3개 기관 관계자 약 20명이 참석했다. SF6는 전력설비의...",
+      "source": "ikld.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.ikld.kr/news/articleView.html?idxno=343626",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "ikld.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
       "region": "국내"
     },
     {
@@ -274642,10 +274741,10 @@
   },
   "newsRetention": {
     "policy": "append-only",
-    "lastMergedAt": "2026-11-05T18:13:59+09:00",
-    "itemCount": 1848,
-    "archiveBefore": 1828,
-    "currentBefore": 1695,
+    "lastMergedAt": "2026-11-05T21:40:06+09:00",
+    "itemCount": 1852,
+    "archiveBefore": 1848,
+    "currentBefore": 1698,
     "gitRecoveryEnabled": false
   }
 }
