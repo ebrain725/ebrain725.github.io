@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-05T12:39:28+09:00",
+  "generatedAt": "2026-11-05T13:13:50+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1818,
+  "itemCount": 1819,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-05",
   "sourceCommitsScanned": 0,
@@ -122,7 +122,7 @@
       "matchedKeywords": [
         "배출권"
       ],
-      "duplicateCount": 31,
+      "duplicateCount": 32,
       "duplicateSources": [
         "etoday.co.kr",
         "g-enews.com",
@@ -141,6 +141,7 @@
         "seoulfn.com",
         "fnnews.com",
         "biz.newdaily.co.kr",
+        "dt.co.kr",
         "hankookilbo.com",
         "newsfc.co.kr",
         "yna.co.kr",
@@ -277,29 +278,6 @@
       "region": "국내"
     },
     {
-      "id": "5a353c1771c232d7",
-      "publishedAt": "2026-11-05",
-      "title": "수능날 증시 개장 1시간 늦어진다",
-      "category": "제도",
-      "summary": "석유 시장과 배출권 시장은 거래시간이 바뀌지 않는다. 비상장 스타트업 거래 플랫폼인 KSM(KRX 스타트업 마켓)은 증권시장과 같이 오전 10시~오후 4시30분에 운영된다. 결제 시간도 조정된다. 당일결제 거래인...",
-      "source": "sidae.com",
-      "sourceType": "news",
-      "section": "news",
-      "url": "https://www.sidae.com/article/2026110510122864239",
-      "searchProvider": "NAVER API HUB",
-      "matchedKeywords": [
-        "배출권"
-      ],
-      "duplicateCount": 1,
-      "duplicateSources": [
-        "sidae.com"
-      ],
-      "searchProviders": [
-        "NAVER API HUB"
-      ],
-      "region": "국내"
-    },
-    {
       "id": "7cc7ba8a8b1e4363",
       "publishedAt": "2026-11-05",
       "title": "목소영 시의원 \"아리수 전력요금 891억, 효율화 시급\"",
@@ -386,6 +364,29 @@
       ],
       "duplicateSources": [
         "sateconomy.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "a3482622e1983c85",
+      "publishedAt": "2026-11-05",
+      "title": "[대체불가 K-에너지] \"가스는 곧 전기다\"… AI 시대 에너지 플랫폼으로...",
+      "category": "상쇄·외부사업",
+      "summary": "평택생산기지 인근 냉동물류창고에 냉열을 공급하는 사업은 2026년 9월 상쇄 등록부 등록을 마쳤다. 향후 15년간 약 2만8000t의 온실가스를 감축하고 약 8억원의 배출권 수익을 확보할 것으로 기대된다. 인천신항...",
+      "source": "metroseoul.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.metroseoul.co.kr/article/20261105500192",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "metroseoul.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -511,6 +512,29 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "5a353c1771c232d7",
+      "publishedAt": "2026-11-05",
+      "title": "19일 수능당일, 증시 개장 1시간 늦어진다",
+      "category": "제도",
+      "summary": "석유 시장과 배출권 시장은 거래시간이 바뀌지 않는다. 비상장 스타트업 거래 플랫폼인 KSM(KRX 스타트업 마켓)은 증권시장과 같이 오전 10시~오후 4시30분에 운영된다. 결제 시간도 조정된다. 당일결제 거래인...",
+      "source": "sidae.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.sidae.com/article/2026110510122864239",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "sidae.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
       "region": "국내"
     },
     {
