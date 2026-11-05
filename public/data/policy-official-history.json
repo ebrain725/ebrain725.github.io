@@ -2,7 +2,7 @@
   "schemaVersion": "1.0",
   "requestedStartDate": "2015-01-01",
   "startedAt": "2026-09-09T19:46:11+09:00",
-  "generatedAt": "2026-11-05T05:29:36+09:00",
+  "generatedAt": "2026-11-06T05:46:14+09:00",
   "scope": {
     "ministry": "기후부 보도자료·공지사항: 핵심 키워드는 제목·본문, 확대 키워드는 제목으로 판정; 이전 이력 보존",
     "krx": "한국거래소 배출권시장 공지사항 일반 게시물 전체",
@@ -126,7 +126,7 @@
     {
       "source": "기후부 보도자료",
       "section": "press",
-      "requestedStartDate": "2026-09-06",
+      "requestedStartDate": "2026-09-07",
       "transport": "unfiltered-rss-local-split-keyword-filter",
       "keywordRule": {
         "titleAndContent": [
@@ -252,8 +252,8 @@
       "relatedCount": 24,
       "earliest": "2026-09-09",
       "latest": "2026-11-02",
-      "oldestSeen": "2025-12-13",
-      "newestSeen": "2026-11-04",
+      "oldestSeen": "2025-12-14",
+      "newestSeen": "2026-11-05",
       "crossedRequestedStart": true,
       "stopReason": "date-boundary",
       "complete": true,
@@ -372,7 +372,7 @@
     {
       "source": "기후부 공지·공고",
       "section": "notice",
-      "requestedStartDate": "2026-09-06",
+      "requestedStartDate": "2026-09-07",
       "transport": "unfiltered-rss-local-split-keyword-filter",
       "keywordRule": {
         "titleAndContent": [
@@ -499,7 +499,7 @@
       "earliest": "2026-09-07",
       "latest": "2026-11-04",
       "oldestSeen": "2026-06-30",
-      "newestSeen": "2026-11-04",
+      "newestSeen": "2026-11-05",
       "crossedRequestedStart": true,
       "stopReason": "date-boundary",
       "complete": true,
@@ -21405,7 +21405,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "34bb2d30171c09a1",
+      "id": "bf2c7b48532214c8",
       "publishedAt": "2025-04-04",
       "title": "2025년 4월 배출권 유상할당 입찰 공고",
       "category": "유상경매",
@@ -21413,7 +21413,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10524&orgCd=&boardMasterId=39&boardId=1735370",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10524&orgCd=&boardMasterId=39&boardId=1735370",
       "matchedKeywords": [
         "유상할당",
         "유상 할당",
@@ -22637,7 +22637,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "e597e32e06bc0f82",
+      "id": "05fc79bd8614e601",
       "publishedAt": "2025-02-06",
       "title": "2025년 2월 배출권 유상할당 입찰 공고",
       "category": "유상경매",
@@ -22645,7 +22645,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10524&orgCd=&boardMasterId=39&boardId=1723130",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10524&orgCd=&boardMasterId=39&boardId=1723130",
       "matchedKeywords": [
         "유상할당",
         "유상 할당",
@@ -97589,8 +97589,8 @@
     }
   ],
   "collectionMode": "incremental",
-  "queryStartDate": "2026-09-06",
-  "queryEndDate": "2026-11-05",
+  "queryStartDate": "2026-09-07",
+  "queryEndDate": "2026-11-06",
   "climateKeywordExpansion": {
     "version": "2026-09-11-v1-38-topics",
     "sharedWith": "산업부 보도자료·공지사항",
@@ -97711,8 +97711,8 @@
       ]
     },
     "collectionMode": "incremental",
-    "queryStartDate": "2026-09-06",
-    "queryEndDate": "2026-11-05"
+    "queryStartDate": "2026-09-07",
+    "queryEndDate": "2026-11-06"
   },
   "policyEventTaxonomy": {
     "version": "2026-09-11-v1-user-38-events",
