@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-06T13:13:27+09:00",
+  "generatedAt": "2026-11-06T15:13:12+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1871,
+  "itemCount": 1875,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-06",
   "sourceCommitsScanned": 0,
@@ -35,12 +35,36 @@
         "ccnnews.co.kr",
         "cstimes.com",
         "econovill.com",
-        "hansbiz.co.kr"
+        "hansbiz.co.kr",
+        "megaeconomy.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 8,
+      "duplicateCount": 9,
+      "region": "국내"
+    },
+    {
+      "id": "0bb3f39fa78fd9d3",
+      "publishedAt": "2026-11-06",
+      "title": "한일시멘트, '탄소 비용' 압박…밸류체인 재편 시험대",
+      "category": "시장·가격",
+      "summary": "받더라도 배출권 부족분을 시장에서 직접 구매해야 하는 원가 압박을 안고 있다. 이러한 시멘트 업계의 비용 부담은 구체적인 수치로 산출된다. 2026년 9월 기준 배출권 가격인 3만150원을 적용할 경우 시멘트 업종이 포함된...",
+      "source": "ebn.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1730739",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "ebn.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
       "region": "국내"
     },
     {
@@ -168,6 +192,31 @@
       "region": "국내"
     },
     {
+      "id": "18c4ab00191257ab",
+      "publishedAt": "2026-11-06",
+      "title": "부산도시공사, 오시리아 생태숲 탄소흡수량 인증 추진…2028년 등록 목표",
+      "category": "상쇄·외부사업",
+      "summary": "탄소 배출권 거래와 환경·사회·지배구조(ESG) 경영에 활용할 수 있는 기반을 마련한다는 계획이다. 부산도시공사는 한국임업진흥원이 주관하는 ‘2026년 산림부문 배출권 거래제 외부사업 등록·인증 지원’ 공모사업에...",
+      "source": "viva100.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.viva100.com/article/20261106500437",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "viva100.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "6932c8bc3d629010",
       "publishedAt": "2026-11-06",
       "title": "국가철도공단의 2050 탄소중립 실현과 청렴 조직 문화 혁신 추진",
@@ -184,6 +233,31 @@
       ],
       "duplicateSources": [
         "ccnnews.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "0579304447f49d71",
+      "publishedAt": "2026-11-06",
+      "title": "공공자산 태양광 전환·절연가스 무해화… 서부발전, 맞춤형 탄소중립 ...",
+      "category": "상쇄·외부사업",
+      "summary": "한전·철도공단과 수소 활용 육불화황(SF6) 분해 및 온실가스 배출권 확보 같은 날 한국서부발전은 광주... 이후 3개 기관은 공동으로 정부의 온실가스 외부사업 승인 및 감축 실적 인증을 밟아 탄소 배출권 을 확보할...",
+      "source": "pressman.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.pressman.kr/news/articleView.html?idxno=104364",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권",
+        "온실가스 배출권"
+      ],
+      "duplicateSources": [
+        "pressman.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -237,6 +311,29 @@
       ],
       "searchProviders": [
         "Google News RSS"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "6fa6e2094abfd9db",
+      "publishedAt": "2026-11-06",
+      "title": "李대통령 \"동티모르와 녹색경제·개발협력 확대…미래 동반자로 도약\"",
+      "category": "제도",
+      "summary": "파리협정 제6조는 국가 간 온실가스 감축 실적을 국제적으로 이전하거나 활용할 수 있도록 규정한 국제 탄소시장 협력 체계다. 양국이 관련 협정 체결을 추진함에 따라 향후 온실가스 감축사업과 탄소시장 등에서 협력...",
+      "source": "einfomax.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4443493",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "einfomax.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
       ],
       "region": "국내"
     },
@@ -9516,7 +9613,8 @@
       "matchedKeywords": [
         "배출권",
         "배출권거래제",
-        "탄소시장"
+        "탄소시장",
+        "K-ETS"
       ],
       "duplicateSources": [
         "civicnews.com"
