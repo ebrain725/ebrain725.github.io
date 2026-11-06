@@ -1,17 +1,65 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-07T04:38:40+09:00",
+  "generatedAt": "2026-11-07T08:14:15+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1889,
+  "itemCount": 1891,
   "earliestPublishedAt": "2026-08-06",
-  "latestPublishedAt": "2026-11-06",
+  "latestPublishedAt": "2026-11-07",
   "sourceCommitsScanned": 0,
   "sourceSnapshotsScanned": 0,
   "historicalRowsScanned": 0,
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "856d56d6dc0b09f0",
+      "publishedAt": "2026-11-07",
+      "title": "기후에너지환경부, 2035 NDC 최종 공청회 개최… 온실가스 50~60%대 감축안...",
+      "category": "제도",
+      "summary": "기후에너지환경부가 11월 6일 2035년 국가 온실가스 감축목표(NDC) 정부 최종안을 공개하는 최종 공청회를... 목표 수치가 확정되면 전력수급기본계획, 배출권 거래제 할당 계획 등 후속 정책에도 연쇄적으로 영향을 미칠...",
+      "source": "dailyt.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.dailyt.co.kr/newsView/dlt202611070005",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "dailyt.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "1fcb51d693589532",
+      "publishedAt": "2026-11-07",
+      "title": "FAO, 바이오에너지 부산물 활용 논의…품질·인증이 관건",
+      "category": "제도",
+      "summary": "◆ 탄소저장 가능성, 농가 수익과는 구분해야 워크숍의 탄소농업 세션은 바이오차의 토양 탄소저장 가능성과 탄소 배출권 연계 사례를 다뤘다. 탄소 배출권 이 추가 수입원이 될 가능성은 있으나, 높은 초기 투자비와 분산된...",
+      "source": "vegannews.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.vegannews.co.kr/news/article.html?no=401505",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "vegannews.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
     {
       "id": "d435ed02946b8747",
       "publishedAt": "2026-11-06",
