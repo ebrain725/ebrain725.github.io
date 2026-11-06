@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-06T12:33:12+09:00",
+  "generatedAt": "2026-11-06T13:13:27+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1869,
+  "itemCount": 1871,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-06",
   "sourceCommitsScanned": 0,
@@ -34,12 +34,13 @@
         "redaily.co.kr",
         "ccnnews.co.kr",
         "cstimes.com",
-        "econovill.com"
+        "econovill.com",
+        "hansbiz.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 7,
+      "duplicateCount": 8,
       "region": "국내"
     },
     {
@@ -309,6 +310,31 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "40937efb0045492c",
+      "publishedAt": "2026-11-06",
+      "title": "[온실가스 배출권] 11월 6일 KAU26, 100원 오르며 반등 기대 남겨둬",
+      "category": "시장·가격",
+      "summary": "[온실가스 배출권] 11월 6일 KAU26, 100원 오르며 반등 기대 남겨둬 데일리e뉴스",
+      "source": "데일리e뉴스",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE02YkFfYVM5bm1lc3lSTm9LWl9ZWlBLOEI3S2IyTEN1WW1oRXVZbDU0dXhrM1NxcVVfYkdVWUpPVGU5cWN4SWdEdFFsRDFFQUdPcDVsYzNyNTdGbXNpeTJ5TDhaVmZoc3pReDNTRmpVaw?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "온실가스 배출권",
+        "KAU26"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "데일리e뉴스"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
       "region": "국내"
     },
     {
@@ -894,7 +920,7 @@
       "matchedKeywords": [
         "배출권"
       ],
-      "duplicateCount": 33,
+      "duplicateCount": 34,
       "duplicateSources": [
         "etoday.co.kr",
         "g-enews.com",
@@ -928,7 +954,8 @@
         "news2day.co.kr",
         "newspim.com",
         "kado.net",
-        "mbnmoney.mbn.co.kr"
+        "mbnmoney.mbn.co.kr",
+        "bizwatch.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -1137,6 +1164,30 @@
       "duplicateCount": 1,
       "duplicateSources": [
         "magazine.hankyung.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "f025f5d5c9cee263",
+      "publishedAt": "2026-11-05",
+      "title": "수능날 증시 오전 10시 개장…거래시간 1시간 순연",
+      "category": "제도",
+      "summary": "KSM(KRX Startup Market)은 개장과 폐장을 모두 1시간씩 늦춰 오전 10시부터 오후 4시 30분까지 운영됩니다. 석유시장(오전 10시∼오후 5시)과 배출권 시장(오전 10시∼정오)은 거래시간이 바뀌지 않습니다. [ / ]",
+      "source": "mbnmoney.mbn.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://mbnmoney.mbn.co.kr/news/view?news_no=MM1005955951",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 2,
+      "duplicateSources": [
+        "dnews.co.kr",
+        "mbnmoney.mbn.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
