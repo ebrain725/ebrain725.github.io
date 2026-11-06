@@ -1,7 +1,7 @@
 {
   "schemaVersion": "2.0",
   "requestedStartDate": "2015-01-01",
-  "verifiedAt": "2026-11-06T05:46:15+09:00",
+  "verifiedAt": "2026-11-07T05:00:58+09:00",
   "keywordExpansionVersion": "2026-09-11-v1-38-topics",
   "keywordRule": {
     "titleAndContent": [
@@ -166,9 +166,9 @@
       "pagesFetched": 1,
       "rawRowsScanned": 200,
       "finalMergedItems": 439,
-      "directCount": 8,
-      "relatedCount": 12,
-      "oldestSourceDateSeen": "2026-06-30",
+      "directCount": 7,
+      "relatedCount": 11,
+      "oldestSourceDateSeen": "2026-07-01",
       "crossedRequestedStart": true,
       "complete": true
     },
@@ -188,9 +188,9 @@
   "validation": {
     "itemCount": 1701,
     "counts": {
-      "press": 946,
       "krx_notice": 316,
-      "notice": 439
+      "notice": 439,
+      "press": 946
     },
     "relatedCounts": {
       "press": 509,
