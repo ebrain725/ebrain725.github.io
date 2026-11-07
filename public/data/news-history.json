@@ -1,17 +1,41 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-08T02:52:14+09:00",
+  "generatedAt": "2026-11-08T08:14:18+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1894,
+  "itemCount": 1895,
   "earliestPublishedAt": "2026-08-06",
-  "latestPublishedAt": "2026-11-07",
+  "latestPublishedAt": "2026-11-08",
   "sourceCommitsScanned": 0,
   "sourceSnapshotsScanned": 0,
   "historicalRowsScanned": 0,
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "7d2319cc53af3944",
+      "publishedAt": "2026-11-08",
+      "title": "美 중간선거 후폭풍…韓 해운·조선업계 ‘희비’ 엇갈리나",
+      "category": "제도",
+      "summary": "유럽연합(EU)의 배출권 거래제(ETS)와 해운연료 온실가스 규제(FuelEU Maritime) 등 환경규제가 지속되는 만큼 선박의 에너지 효율 개선과 대체연료 전환 수요는 이어질 것으로 예상된다. 다만 저유가 국면에서는 기존 선박연료...",
+      "source": "ekn.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.ekn.kr/web/view.php?key=20261106021066579",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "ekn.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
     {
       "id": "c68f5e87ea820723",
       "publishedAt": "2026-11-07",
