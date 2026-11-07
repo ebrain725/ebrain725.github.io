@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-07T22:30:20+09:00",
+  "generatedAt": "2026-11-08T02:52:14+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1893,
+  "itemCount": 1894,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-07",
   "sourceCommitsScanned": 0,
@@ -6282,6 +6282,29 @@
       ],
       "duplicateCount": 2,
       "region": "해외"
+    },
+    {
+      "id": "6d7c426075697b2d",
+      "publishedAt": "2026-10-30",
+      "title": "\"글로벌 검증 탄소시장 출범…개도국 녹색투자 새 장 열어\"",
+      "category": "제도",
+      "summary": "\"글로벌 검증 탄소시장 출범…개도국 녹색투자 새 장 열어\" 조선일보",
+      "source": "조선일보",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOak8xZ0l6RzFVUnlOM0FBWUVXN2FKbU9zVWhPZFVjMFRYSHlSbVNaMjQ2Z2NPdnRZU19oWnpubi1BT09tOVBjcDVNNEdyQXIydkRwcEVheXFxOEhMc1lGMnV4RXdoekhuY29FQk5Xb3J6cjlxbDF0WmFJZGY4Smc3VjJKallfS2xvR0h2NUJXRjNrZGx1bUQ4?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "조선일보"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "국내"
     },
     {
       "id": "6c6506b33ba3f93e",
