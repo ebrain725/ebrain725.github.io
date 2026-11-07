@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-07T18:13:06+09:00",
+  "generatedAt": "2026-11-07T20:15:41+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
   "itemCount": 1893,
@@ -891,7 +891,9 @@
       "url": "https://www.newsis.com/view/NISX20261106_0003857909",
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
-        "탄소시장"
+        "탄소시장",
+        "배출권",
+        "배출권거래제"
       ],
       "duplicateSources": [
         "newsis.com"
