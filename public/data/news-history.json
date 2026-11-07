@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-07T08:14:15+09:00",
+  "generatedAt": "2026-11-07T10:13:21+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1891,
+  "itemCount": 1892,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-07",
   "sourceCommitsScanned": 0,
@@ -12,6 +12,30 @@
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "c68f5e87ea820723",
+      "publishedAt": "2026-11-07",
+      "title": "세금 면제에 5년 비자까지…금융패권 다투는 홍콩·싱가포르 [차이나 워...",
+      "category": "제도",
+      "summary": "투자 대상도 신용·채권·디지털자산·원자재· 탄소 배출권·해외 부동산 등으로 확대한다. 국부펀드와 연기금... 자산관리 시장 의 판도도 빠르게 바뀌고 있다. 보스턴컨설팅그룹(BCG)에 따르면 홍콩의 지난해 역외자산 관리...",
+      "source": "hankyung.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.hankyung.com/article/202611061835i",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "hankyung.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
     {
       "id": "856d56d6dc0b09f0",
       "publishedAt": "2026-11-07",
