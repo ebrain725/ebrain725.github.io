@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-11-07T10:13:14+09:00",
+  "lastSync": "2026-11-07T12:01:43+09:00",
   "keywords": [
     "배출권",
     "배출권거래제",
@@ -30,7 +30,7 @@
   "warning": "한국거래소 배출권 공지사항: 한국거래소 공지 목록을 해석하지 못했습니다. 1페이지: HTTP Error 403: Forbidden",
   "aiInsight": {
     "summary": "최근 공식자료의 직접적인 수급 변수는 유상경매입니다. 최근 경매가 높은 낙찰가로 소화돼 공급보다 이행수요가 강하다는 신호입니다.",
-    "generatedAt": "2026-11-07T10:13:14+09:00",
+    "generatedAt": "2026-11-07T12:01:43+09:00",
     "basisLatestDate": "2026-11-04",
     "basisCount": 10,
     "source": "fallback",
@@ -860,6 +860,32 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "4311d5afa75fc808",
+      "publishedAt": "2026-11-07",
+      "title": "\"녹지가 돈 된다\"… 부산도시공사 오시리아 생태숲, 한국임업진흥원 탄...",
+      "category": "상쇄·외부사업",
+      "summary": "산림부문 배출권 거래제 외부사업은 산림과 녹지가 흡수한 온실가스를 감축실적(KOC)으로 인증받아 배출권 거래 등에 활용할 수 있도록 하는 제도다. 탄소 흡수원의 가치를 높이고 국가 탄소 중립 정책 이행에도 기여할 수...",
+      "source": "view.asiae.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://view.asiae.co.kr/article/2026110710265945698",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "아시아경제",
+        "view.asiae.co.kr"
+      ],
+      "searchProviders": [
+        "Google News RSS",
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 2,
       "region": "국내"
     },
     {
@@ -275735,10 +275761,10 @@
   },
   "newsRetention": {
     "policy": "append-only",
-    "lastMergedAt": "2026-11-07T10:13:21+09:00",
-    "itemCount": 1892,
-    "archiveBefore": 1891,
-    "currentBefore": 1734,
+    "lastMergedAt": "2026-11-07T12:01:51+09:00",
+    "itemCount": 1893,
+    "archiveBefore": 1892,
+    "currentBefore": 1735,
     "gitRecoveryEnabled": false
   }
 }
