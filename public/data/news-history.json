@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-08T10:14:38+09:00",
+  "generatedAt": "2026-11-08T13:13:44+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1895,
+  "itemCount": 1900,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-08",
   "sourceCommitsScanned": 0,
@@ -12,6 +12,78 @@
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "f1eccd9776af1d01",
+      "publishedAt": "2026-11-08",
+      "title": "파리협정 10년, '약속 넘어 이행'…튀르키예서 기후재원·감축 협상",
+      "category": "제도",
+      "summary": "국제 탄소시장 운영 개선과 각국의 기후정책 이행 현황을 확인하는 격년투명성보고서(BTR), 기후 관련 무역 조치도 협상 의제에 포함됐다. 한국 정부는 김성환 기후에너지환경부 장관을 수석대표로 하는 정부대표단을...",
+      "source": "news1.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.news1.kr/economy/env-policy/6346211",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "news1.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "5d5b60ebd3556748",
+      "publishedAt": "2026-11-08",
+      "title": "탄소흡수 인증 나선 부산도시공사…오시리아 생태숲 선정",
+      "category": "상쇄·외부사업",
+      "summary": "부산도시공사는 한국임업진흥원이 주관하는 '2026년 산림부문 배출권 거래제 외부사업 등록·인증 지원' 공모에 오시리아 생태숲이 최종 선정됐다고 밝혔다. 산림부문 배출권 거래제 외부사업은 산림과 녹지가 흡수한...",
+      "source": "imaeil.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.imaeil.com/page/view/2026110619161505706",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "imaeil.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "d70295d812e53451",
+      "publishedAt": "2026-11-08",
+      "title": "국가철도공단, 한전·서부발전과 온실가스 감축 협력…폐SF6 공동 처리",
+      "category": "제도",
+      "summary": "이번 협약은 철도 변전소 등에서 사용한 폐SF6(육불화황)를 회수·분해하고, 이를 통해 확보한 온실가스 감축 실적을 배출권 과 연계하기 위해 마련됐다. SF6는 전력설비의 절연 가스 로 사용되는 물질로, 온실 효과가...",
+      "source": "thepublic.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.thepublic.kr/news/articleView.html?idxno=325474",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "viva100.com",
+        "chungnamilbo.co.kr",
+        "thepublic.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 3,
+      "region": "국내"
+    },
     {
       "id": "7d2319cc53af3944",
       "publishedAt": "2026-11-08",
@@ -35,6 +107,30 @@
       ],
       "duplicateCount": 1,
       "region": "해외"
+    },
+    {
+      "id": "b185fd819d42d7c1",
+      "publishedAt": "2026-11-08",
+      "title": "'加 토큰증권 선구' 핀헤이븐 \"韓서 생산적자본 비전 실현\" [일문일답]",
+      "category": "제도",
+      "summary": "탄소 배출권 을 적용하는데 최적화돼 있다”며 “발행과 유통에서 NFT 계약시스템을 활용해 동일하지 않은 다양한 탄소 배출권 들을 자산으로서의 무결성(Integrity)을 가지고 거래할 수 있도록 할 것”이라고 말했다. 아울러...",
+      "source": "edaily.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.edaily.co.kr/News/Read?newsId=01407126645643752&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "edaily.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
     },
     {
       "id": "c68f5e87ea820723",
@@ -856,6 +952,29 @@
       "region": "국내"
     },
     {
+      "id": "a099e9e0eb9f66a6",
+      "publishedAt": "2026-11-06",
+      "title": "[에너지 NOW] 한국전력, 한국수력원자력, 한국 남동발전, 한국동서발전...",
+      "category": "제도",
+      "summary": "이번 협약은 전력 설비에서 발생하는 폐SF6(육불화황)를 회수, 분해해 온실가스 를 감축하고, 감축 실적을 배출권 으로 연계하는 사업을 공동으로 추진하고자 마련됐다. SF6는 이산화탄소보다 약 2만3900배 높은...",
+      "source": "wikileaks-kr.org",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.wikileaks-kr.org/news/articleView.html?idxno=194326",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "wikileaks-kr.org"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "8640efa5ba408125",
       "publishedAt": "2026-11-06",
       "title": "[더벨]씨너지, IPO 주관사 선정 돌입…연내 낙점 목표",
@@ -1135,6 +1254,7 @@
       ],
       "duplicateSources": [
         "econovill.com",
+        "아시아타임즈",
         "asiatime.co.kr",
         "e-platform.net",
         "daily.hankooki.com",
@@ -1144,7 +1264,6 @@
         "todayenergy.kr",
         "cbci.co.kr",
         "ttlnews.com",
-        "아시아타임즈",
         "businesskorea.co.kr",
         "bizwork.co.kr",
         "e-science.co.kr",
