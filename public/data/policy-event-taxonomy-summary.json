@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0",
   "taxonomyVersion": "2026-09-11-v1-user-38-events",
-  "generatedAt": "2026-11-08T14:33:12+09:00",
+  "generatedAt": "2026-11-09T04:26:45+09:00",
   "requestedStartDate": "2015-01-01",
   "collectionMode": "incremental",
   "eventCount": 38,
@@ -202,21 +202,21 @@
     "motie_notice": 955,
     "motie_press": 1893,
     "notice": 441,
-    "press": 952
+    "press": 953
   },
   "previousSectionCounts": {
     "krx_notice": 316,
     "motie_notice": 955,
     "motie_press": 1893,
     "notice": 439,
-    "press": 946
+    "press": 948
   },
   "addedCounts": {
     "krx_notice": 0,
     "motie_notice": 0,
     "motie_press": 0,
     "notice": 2,
-    "press": 6
+    "press": 5
   },
   "scopeCounts": {
     "krx_notice": {
@@ -236,13 +236,13 @@
       "related": 213
     },
     "press": {
-      "direct": 441,
+      "direct": 442,
       "related": 508
     }
   },
   "eventCounts": {
     "재생에너지·RPS": 919,
-    "배출권·배출권거래제·ETS": 895,
+    "배출권·배출권거래제·ETS": 896,
     "원자력발전·원전": 820,
     "온실가스·배출량·명세서": 726,
     "탄소중립 선언·기본계획": 584,
@@ -342,15 +342,15 @@
       }
     },
     "press": {
-      "records": 952,
+      "records": 953,
       "earliest": "2015-01-08",
       "latest": "2026-11-08",
       "scopeCounts": {
-        "direct": 441,
+        "direct": 442,
         "related": 508
       },
       "eventCounts": {
-        "배출권·배출권거래제·ETS": 298,
+        "배출권·배출권거래제·ETS": 299,
         "온실가스·배출량·명세서": 242,
         "탄소중립 선언·기본계획": 237,
         "할당계획·할당량": 118,
@@ -448,13 +448,13 @@
     }
   },
   "validation": {
-    "officialItemCount": 4557,
+    "officialItemCount": 4558,
     "sectionCounts": {
       "krx_notice": 316,
       "motie_notice": 955,
       "motie_press": 1893,
       "notice": 441,
-      "press": 952
+      "press": 953
     },
     "scopeCounts": {
       "krx_notice": {
@@ -474,13 +474,13 @@
         "related": 213
       },
       "press": {
-        "direct": 441,
+        "direct": 442,
         "related": 508
       }
     },
     "eventCounts": {
       "재생에너지·RPS": 919,
-      "배출권·배출권거래제·ETS": 895,
+      "배출권·배출권거래제·ETS": 896,
       "원자력발전·원전": 820,
       "온실가스·배출량·명세서": 726,
       "탄소중립 선언·기본계획": 584,
@@ -522,7 +522,7 @@
     "invalidDates": 0,
     "invalidDomains": 0,
     "unclassified": 0,
-    "taxonomyMatchedItemCount": 4546,
+    "taxonomyMatchedItemCount": 4547,
     "retainedUnmatchedItemCount": 11,
     "retainedUnmatchedKeys": [
       "motie_press|ATCL3f49a5a8c|172227",
@@ -537,8 +537,8 @@
       "press|url|https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=1000&maxIndexPages=10&searchKey=&searchValue=&menuId=10598&orgCd=&boardMasterId=939&boardId=1890080",
       "press|url|https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=1000&maxIndexPages=10&searchKey=&searchValue=&menuId=10598&orgCd=&boardMasterId=939&boardId=1892970"
     ],
-    "dashboardOfficialCount": 4557
+    "dashboardOfficialCount": 4558
   },
-  "lastRunDateKst": "2026-11-08",
-  "lastRunSlot": "2026-11-08-AM"
+  "lastRunDateKst": "2026-11-09",
+  "lastRunSlot": "2026-11-09-AM"
 }
