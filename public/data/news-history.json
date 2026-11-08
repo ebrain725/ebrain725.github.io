@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-09T03:03:44+09:00",
+  "generatedAt": "2026-11-09T08:13:46+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1911,
+  "itemCount": 1915,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-09",
   "sourceCommitsScanned": 0,
@@ -12,6 +12,29 @@
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "5b97e8ac718ba5f8",
+      "publishedAt": "2026-11-09",
+      "title": "주요국, EU 탄소국경세 확대에 집단 반발…글로벌 무역 분쟁 격화 조짐",
+      "category": "제도",
+      "summary": "영국은 추가 과금을 피하기 위해 자체 배출권 거래 시스템을 유럽연합 체계와 연동하는 방안을 추진하고 있다. 러시아는 세계무역기구에 이번 제도의 합법성에 대한 이의를 제기하며 공식 분쟁 절차를 밟기 시작했다....",
+      "source": "g-enews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.g-enews.com/view.php?ud=20261109032405137920990b2dc5_1",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "g-enews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "해외"
+    },
     {
       "id": "a78eaca9875840d3",
       "publishedAt": "2026-11-09",
@@ -28,6 +51,32 @@
       ],
       "duplicateSources": [
         "fntimes.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "ab516f61e6c2c07e",
+      "publishedAt": "2026-11-09",
+      "title": "[더벨]LG전자, 탄소 배출권 연계 냉매 회수 플랫폼 추진",
+      "category": "제도",
+      "summary": "LG전자가 냉매 회수·재생 사업을 탄소 배출권 거래제와 연계하는 방안을 추진한다. 냉매 회수에 따른... 배출권 거래법(온실가스 배출권 의 할당 및 거래에 관한 법률)에 따르면 기업이 자발적으로 온실가스를 감축한...",
+      "source": "thebell.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202611051259456320105328",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권",
+        "배출권거래제",
+        "온실가스 배출권"
+      ],
+      "duplicateSources": [
+        "thebell.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -58,6 +107,32 @@
       ],
       "duplicateCount": 1,
       "region": "국내"
+    },
+    {
+      "id": "40b058216889ce65",
+      "publishedAt": "2026-11-09",
+      "title": "EU·영국 브렉시트 6년 만에 탄소 배출권 시장 재연결 합의 임박",
+      "category": "제도",
+      "summary": "유럽연합(EU)과 영국이 브렉시트 이후 분리됐던 탄소 배출권 거래 시장을 다시 연결하는 협정 체결에 근접했다. 미국 경제·금융 전문 매체 블룸버그통신은 11월 8일(현지시각) EU와 영국이 배출권 시장 연계 협상에 거의...",
+      "source": "g-enews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.g-enews.com/view.php?ud=2026110905413029042bd56fbc3c_1",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "글로벌이코노믹",
+        "g-enews.com"
+      ],
+      "searchProviders": [
+        "Google News RSS",
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 2,
+      "region": "해외"
     },
     {
       "id": "b5044589e1778257",
@@ -131,6 +206,30 @@
         "Google News RSS"
       ],
       "duplicateCount": 4,
+      "region": "국내"
+    },
+    {
+      "id": "d7c9772e92d4661a",
+      "publishedAt": "2026-11-08",
+      "title": "철강사 이익 반등...포스코·현대제철, 4분기도 회복 가능할까",
+      "category": "상쇄·외부사업",
+      "summary": "4분기에는 가격 인상 효과를 유지하면서 물량 감소와 원가 부담을 얼마나 상쇄 하느냐가 실적을 가를... 늘어나는 탄소 배출권 ·에너지 비용 부담, 환율 하락 등으로 경영환경의 변동성이 커질 것으로 예상한다\"고 말했다.",
+      "source": "newspim.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newspim.com/news/view/20261106000650",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "newspim.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
       "region": "국내"
     },
     {
@@ -17580,15 +17679,15 @@
         "K-ETS"
       ],
       "duplicateSources": [
+        "이투데이",
         "인더스트리뉴스",
         "industrynews.co.kr",
+        "pinpointnews.co.kr",
         "paxetv.com",
         "newsdream.kr",
         "dailian.co.kr",
-        "edaily.co.kr",
-        "이투데이",
-        "pinpointnews.co.kr",
         "view.asiae.co.kr",
+        "edaily.co.kr",
         "팍스경제TV",
         "아시아경제",
         "마켓인",
