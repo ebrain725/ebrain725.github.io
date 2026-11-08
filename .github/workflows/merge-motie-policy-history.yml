@@ -15,6 +15,7 @@ on:
       - "config/motie_policy_keywords.json"
 
 permissions:
+  actions: read
   contents: write
   pages: write
   id-token: write
@@ -215,6 +216,15 @@ jobs:
         with:
           name: github-pages-${{ github.run_attempt }}
           path: ./public
+
+      - name: 이전 Pages 배포 정리·대기
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m unittest discover -s tests -p 'test_pages_deployment_guard.py' -v
+          python scripts/pages_deployment_guard.py
 
       - name: Deploy public site
         id: deployment

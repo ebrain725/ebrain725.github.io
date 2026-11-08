@@ -16,6 +16,7 @@ on:
       - ".github/workflows/export-policy-radar-excel-compatible.yml"
 
 permissions:
+  actions: read
   contents: write
   pages: write
   id-token: write
@@ -213,6 +214,15 @@ jobs:
         uses: actions/upload-pages-artifact@v5
         with:
           path: ./public
+
+      - name: 이전 Pages 배포 정리·대기
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m unittest discover -s tests -p 'test_pages_deployment_guard.py' -v
+          python scripts/pages_deployment_guard.py
 
       - name: GitHub Pages 배포
         id: deployment

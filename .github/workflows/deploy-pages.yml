@@ -5,6 +5,8 @@ on:
     branches: [main]
     paths:
       - "public/**"
+      - "scripts/pages_deployment_guard.py"
+      - "tests/test_pages_deployment_guard.py"
       - "source-data/krx-annual/Policy.zip"
       - "scripts/extract_krx_annual_sources.py"
       - "scripts/apply_krx_annual_procurement_estimate.py"
@@ -12,6 +14,7 @@ on:
   workflow_dispatch:
 
 permissions:
+  actions: read
   contents: read
   pages: write
   id-token: write
@@ -72,6 +75,15 @@ jobs:
         uses: actions/upload-pages-artifact@v4
         with:
           path: ./public
+
+      - name: 이전 Pages 배포 정리·대기
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m unittest discover -s tests -p 'test_pages_deployment_guard.py' -v
+          python scripts/pages_deployment_guard.py
 
       - name: GitHub Pages 배포
         id: deployment
