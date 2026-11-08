@@ -17,6 +17,7 @@ on:
       - "config/policy_event_taxonomy.json"
       - "scripts/policy_event_taxonomy.py"
       - "scripts/sync_policy_event_taxonomy.py"
+      - "tests/test_policy_taxonomy_retention.py"
       - ".github/workflows/apply-policy-event-taxonomy.yml"
 
 permissions:
@@ -67,6 +68,7 @@ jobs:
             scripts/sync_motie_policy_expanded.py
           python scripts/policy_event_taxonomy.py --self-test
           python scripts/sync_policy_event_taxonomy.py --self-test
+          python -m unittest discover -s tests -p 'test_policy_taxonomy_retention.py' -v
 
       - name: 전체 또는 증분 수집 결정
         id: mode
@@ -172,11 +174,21 @@ jobs:
           ]
           if len(official) != sum(int(counts[name]) for name in required):
               raise SystemExit("대시보드 공식자료 건수와 분류 요약이 다릅니다.")
+          import sys
+          sys.path.insert(0, "scripts")
+          from sync_policy_event_taxonomy import retained_unmatched, record_key
+          retained_keys = set((summary.get("validation") or {}).get("retainedUnmatchedKeys", []))
+          verified_retained = set()
           for index, item in enumerate(official):
               if not item.get("eventTypes") or not item.get("eventPrimary"):
-                  raise SystemExit(f"공식자료 {index}의 이벤트 분류가 없습니다.")
+                  if not retained_unmatched(item, config, retained_keys):
+                      raise SystemExit(f"공식자료 {index}의 이벤트 분류·원문 보존 근거가 없습니다.")
+                  verified_retained.add(record_key(item))
+                  continue
               if item.get("keywordScope") not in {"direct", "related"}:
                   raise SystemExit(f"공식자료 {index}의 직접성 구분이 잘못됐습니다.")
+          if verified_retained != retained_keys:
+              raise SystemExit("분류 제외 원문의 실제 ID와 검증 요약이 다릅니다.")
 
           for path, maximum in (
               ("public/data/policy-official-history.json", 30_000_000),

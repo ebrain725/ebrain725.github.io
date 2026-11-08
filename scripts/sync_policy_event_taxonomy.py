@@ -15,8 +15,6 @@ from pathlib import Path
 from typing import Any, Iterable
 from zoneinfo import ZoneInfo
 
-import sync_climate_policy_expanded as climate
-import sync_motie_policy_expanded as motie
 from policy_event_taxonomy import (
     classify_item,
     climate_candidate_terms,
@@ -105,7 +103,10 @@ def merge_record(
         *(previous.get("matchedFields") or []),
         *(candidate.get("matchedFields") or []),
     ])
-    return classify_item(merged, taxonomy, dedicated_ets_board=dedicated_ets_board)
+    enriched = classify_item(merged, taxonomy, dedicated_ets_board=dedicated_ets_board)
+    if is_classified(enriched):
+        enriched.pop("taxonomyRetention", None)
+    return enriched
 
 
 def section_scope_counts(items: Iterable[dict[str, Any]]) -> dict[str, dict[str, int]]:
@@ -155,8 +156,40 @@ def enrich_existing(
             dedicated_ets_board=section == "krx_notice",
         )
         if is_classified(enriched):
-            result.append(enriched)
+            enriched.pop("taxonomyRetention", None)
+        else:
+            # Reclassification is not permission to delete a previously
+            # accepted source document or fabricate a current event label.
+            enriched["previousTaxonomyClassification"] = raw.get(
+                "previousTaxonomyClassification",
+                {key: raw[key] for key in (
+                    "eventMatches", "eventIds", "eventTypes", "eventPrimary",
+                    "keywordScope", "taxonomyVersion",
+                ) if key in raw},
+            )
+            enriched["taxonomyRetention"] = {
+                "status": "retained_unmatched",
+                "reason": "NO_CURRENT_TAXONOMY_MATCH",
+                "taxonomyVersion": str(taxonomy["version"]),
+                "recordKey": record_key(raw),
+            }
+        result.append(enriched)
     return result
+
+
+def retained_unmatched(item, taxonomy, previous_keys):
+    """Only known, rechecked prior documents may have no current event label."""
+    retention = item.get("taxonomyRetention") or {}
+    return (
+        record_key(item) in previous_keys
+        and retention.get("recordKey") == record_key(item)
+        and retention.get("status") == "retained_unmatched"
+        and retention.get("reason") == "NO_CURRENT_TAXONOMY_MATCH"
+        and retention.get("taxonomyVersion") == str(taxonomy["version"])
+        and not is_classified(item)
+        and not is_classified(classify_item(item, taxonomy,
+            dedicated_ets_board=item.get("section") == "krx_notice"))
+    )
 
 
 def run_climate(
@@ -166,6 +199,7 @@ def run_climate(
     full: bool,
     lookback_days: int,
 ) -> tuple[dict[str, Any], dict[str, int]]:
+    import sync_climate_policy_expanded as climate
     history = load_document(OFFICIAL_HISTORY_PATH)
     previous_counts = Counter(
         str(item.get("section", "")).strip().lower()
@@ -199,8 +233,6 @@ def run_climate(
     merged: dict[str, dict[str, Any]] = {}
     for item in enrich_existing(history["items"], taxonomy, sections=OFFICIAL_SECTIONS):
         section = str(item.get("section", "")).strip().lower()
-        if full and section in {"press", "notice"}:
-            continue
         merged[record_key(item)] = item
 
     for item in collected:
@@ -264,6 +296,7 @@ def run_industry(
     full: bool,
     lookback_days: int,
 ) -> tuple[dict[str, Any], dict[str, int]]:
+    import sync_motie_policy_expanded as motie
     history = load_document(MOTIE_HISTORY_PATH)
     previous_counts = Counter(
         str(item.get("section", "")).strip().lower()
@@ -398,6 +431,10 @@ def rebuild_policy(
         "eventCount": len(taxonomy["events"]),
         "generatedAt": generated_at,
         "officialItemCount": len(official_items),
+        "taxonomyMatchedItemCount": sum(is_classified(item) for item in official_items),
+        "retainedUnmatchedItemCount": sum(
+            not is_classified(item) for item in official_items
+        ),
         "scopeCounts": scope_counts(official_items),
         "eventCounts": event_counts(official_items),
     }
@@ -411,13 +448,16 @@ def validate_all(
     industry: dict[str, Any],
     policy: dict[str, Any],
     previous_counts: dict[str, int],
+    previous_keys: set[str] | None = None,
 ) -> dict[str, Any]:
+    previous_keys = set() if previous_keys is None else previous_keys
     official_items = [*official["items"], *industry["items"]]
     seen: set[str] = set()
     duplicates = 0
     invalid_dates = 0
     invalid_domains = 0
     unclassified = 0
+    retained_keys = []
     counts = Counter()
 
     for item in official_items:
@@ -434,13 +474,18 @@ def validate_all(
         if host not in SOURCE_HOSTS.get(section, set()):
             invalid_domains += 1
         if not is_classified(item):
-            unclassified += 1
+            if retained_unmatched(item, taxonomy, previous_keys):
+                retained_keys.append(key)
+            else:
+                unclassified += 1
 
     if duplicates or invalid_dates or invalid_domains or unclassified:
         raise RuntimeError(
             "정책 이벤트 전체검증 실패: "
             f"중복={duplicates}, 날짜={invalid_dates}, 도메인={invalid_domains}, 미분류={unclassified}"
         )
+    if previous_keys - seen:
+        raise RuntimeError("정책 이벤트 기존 원문 ID가 누락됐습니다.")
     for section in ALL_OFFICIAL_SECTIONS:
         if counts[section] <= 0:
             raise RuntimeError(f"공식자료 구분이 비었습니다: {section}")
@@ -458,6 +503,8 @@ def validate_all(
         raise RuntimeError(
             f"대시보드 공식자료와 이력 건수가 다릅니다: {len(policy_official)} != {len(official_items)}"
         )
+    if {record_key(item) for item in policy_official} != seen:
+        raise RuntimeError("대시보드 공식자료와 이력의 원문 ID가 다릅니다.")
     if len(taxonomy["events"]) != 38:
         raise RuntimeError("정책 이벤트 분류 수가 38개가 아닙니다.")
 
@@ -470,6 +517,9 @@ def validate_all(
         "invalidDates": invalid_dates,
         "invalidDomains": invalid_domains,
         "unclassified": unclassified,
+        "taxonomyMatchedItemCount": len(official_items) - len(retained_keys),
+        "retainedUnmatchedItemCount": len(retained_keys),
+        "retainedUnmatchedKeys": sorted(retained_keys),
         "dashboardOfficialCount": len(policy_official),
     }
 
@@ -609,6 +659,10 @@ def main() -> int:
         for item in [*previous_official["items"], *previous_motie["items"]]
         if isinstance(item, dict)
     )
+    previous_keys = {
+        record_key(item) for item in [*previous_official["items"], *previous_motie["items"]]
+        if isinstance(item, dict)
+    }
 
     official, _ = run_climate(
         taxonomy,
@@ -623,7 +677,7 @@ def main() -> int:
         lookback_days=args.lookback_days,
     )
     policy = rebuild_policy(taxonomy, official, industry)
-    validation = validate_all(taxonomy, official, industry, policy, dict(previous_counts))
+    validation = validate_all(taxonomy, official, industry, policy, dict(previous_counts), previous_keys)
     summary = write_summary(
         taxonomy,
         validation,
