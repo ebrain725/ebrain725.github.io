@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.0",
   "taxonomyVersion": "2026-09-11-v1-user-38-events",
-  "generatedAt": "2026-09-11T12:07:23+09:00",
+  "generatedAt": "2026-11-08T14:33:12+09:00",
   "requestedStartDate": "2015-01-01",
-  "collectionMode": "full",
+  "collectionMode": "incremental",
   "eventCount": 38,
   "events": [
     {
@@ -198,77 +198,77 @@
     }
   ],
   "sectionCounts": {
-    "krx_notice": 312,
-    "motie_notice": 950,
-    "motie_press": 1882,
-    "notice": 421,
-    "press": 916
+    "krx_notice": 316,
+    "motie_notice": 955,
+    "motie_press": 1893,
+    "notice": 441,
+    "press": 952
   },
   "previousSectionCounts": {
-    "krx_notice": 312,
-    "motie_notice": 436,
-    "motie_press": 567,
-    "notice": 343,
-    "press": 668
+    "krx_notice": 316,
+    "motie_notice": 955,
+    "motie_press": 1893,
+    "notice": 439,
+    "press": 946
   },
   "addedCounts": {
     "krx_notice": 0,
-    "motie_notice": 514,
-    "motie_press": 1315,
-    "notice": 78,
-    "press": 248
+    "motie_notice": 0,
+    "motie_press": 0,
+    "notice": 2,
+    "press": 6
   },
   "scopeCounts": {
     "krx_notice": {
-      "direct": 312,
+      "direct": 316,
       "related": 0
     },
     "motie_notice": {
       "direct": 65,
-      "related": 885
+      "related": 890
     },
     "motie_press": {
       "direct": 28,
-      "related": 1854
+      "related": 1863
     },
     "notice": {
-      "direct": 218,
-      "related": 203
+      "direct": 222,
+      "related": 213
     },
     "press": {
-      "direct": 429,
-      "related": 487
+      "direct": 441,
+      "related": 508
     }
   },
   "eventCounts": {
-    "재생에너지·RPS": 907,
-    "배출권·배출권거래제·ETS": 878,
-    "원자력발전·원전": 804,
-    "온실가스·배출량·명세서": 717,
-    "탄소중립 선언·기본계획": 579,
-    "유상할당 비율": 353,
-    "시장안정화·MSR": 265,
+    "재생에너지·RPS": 919,
+    "배출권·배출권거래제·ETS": 895,
+    "원자력발전·원전": 820,
+    "온실가스·배출량·명세서": 726,
+    "탄소중립 선언·기본계획": 584,
+    "유상할당 비율": 360,
+    "시장안정화·MSR": 271,
     "중국 증설·반덤핑·관세": 238,
-    "추가할당·할당취소": 216,
-    "할당계획·할당량": 195,
-    "국제감축·외부사업·감축실적": 189,
+    "추가할당·할당취소": 222,
+    "할당계획·할당량": 198,
+    "국제감축·외부사업·감축실적": 196,
     "폭염·한파·전력수요": 113,
-    "이행·정산·제출기한": 101,
-    "낙찰가·응찰배수": 95,
-    "수소발전·청정수소": 83,
-    "탄소국경조정·CBAM": 72,
-    "전력수급기본계획·전원구성": 62,
-    "석탄발전": 61,
-    "증설·상업가동": 58,
+    "이행·정산·제출기한": 105,
+    "낙찰가·응찰배수": 96,
+    "수소발전·청정수소": 84,
+    "탄소국경조정·CBAM": 73,
+    "전력수급기본계획·전원구성": 63,
+    "석탄발전": 62,
+    "증설·상업가동": 59,
     "전력시장·급전(포괄)": 55,
-    "시장참여자 확대·시장조성": 46,
-    "RE100": 41,
-    "상쇄배출권·전환한도": 35,
-    "화재·폭발·침수·가동중단": 33,
+    "시장참여자 확대·시장조성": 49,
+    "RE100": 43,
+    "상쇄배출권·전환한도": 38,
+    "화재·폭발·침수·가동중단": 34,
     "유상경매 물량·일정": 32,
     "NDC·국가 감축목표": 27,
-    "거래량·거래대금": 18,
-    "이월·차입 한도": 16,
+    "거래량·거래대금": 19,
+    "이월·차입 한도": 17,
     "EU ETS·EUA": 12,
     "LNG발전": 12,
     "업종 생산·가동률 통계": 11,
@@ -282,48 +282,48 @@
   },
   "sourceCoverage": {
     "krx_notice": {
-      "records": 312,
+      "records": 316,
       "earliest": "2015-01-07",
-      "latest": "2026-09-09",
+      "latest": "2026-10-14",
       "scopeCounts": {
-        "direct": 312,
+        "direct": 316,
         "related": 0
       },
       "eventCounts": {
-        "배출권·배출권거래제·ETS": 310,
-        "유상할당 비율": 194,
-        "시장안정화·MSR": 103,
-        "추가할당·할당취소": 93,
-        "낙찰가·응찰배수": 91,
-        "할당계획·할당량": 26,
+        "배출권·배출권거래제·ETS": 314,
+        "유상할당 비율": 196,
+        "시장안정화·MSR": 105,
+        "추가할당·할당취소": 95,
+        "낙찰가·응찰배수": 92,
+        "할당계획·할당량": 27,
         "온실가스·배출량·명세서": 23,
-        "상쇄배출권·전환한도": 18,
+        "상쇄배출권·전환한도": 21,
         "유상경매 물량·일정": 15,
-        "국제감축·외부사업·감축실적": 10,
-        "시장참여자 확대·시장조성": 6,
-        "이행·정산·제출기한": 6,
-        "이월·차입 한도": 3,
-        "거래량·거래대금": 2
+        "국제감축·외부사업·감축실적": 13,
+        "시장참여자 확대·시장조성": 7,
+        "이행·정산·제출기한": 7,
+        "이월·차입 한도": 4,
+        "거래량·거래대금": 3
       }
     },
     "notice": {
-      "records": 421,
+      "records": 441,
       "earliest": "2015-01-07",
-      "latest": "2026-09-09",
+      "latest": "2026-11-04",
       "scopeCounts": {
-        "direct": 218,
-        "related": 203
+        "direct": 222,
+        "related": 213
       },
       "eventCounts": {
-        "배출권·배출권거래제·ETS": 206,
-        "온실가스·배출량·명세서": 124,
-        "유상할당 비율": 118,
-        "시장안정화·MSR": 113,
-        "추가할당·할당취소": 108,
+        "배출권·배출권거래제·ETS": 210,
+        "온실가스·배출량·명세서": 126,
+        "유상할당 비율": 122,
+        "시장안정화·MSR": 117,
+        "추가할당·할당취소": 112,
         "탄소중립 선언·기본계획": 64,
         "할당계획·할당량": 49,
-        "재생에너지·RPS": 29,
-        "국제감축·외부사업·감축실적": 22,
+        "재생에너지·RPS": 37,
+        "국제감축·외부사업·감축실적": 23,
         "유상경매 물량·일정": 17,
         "원자력발전·원전": 12,
         "수소발전·청정수소": 6,
@@ -342,44 +342,44 @@
       }
     },
     "press": {
-      "records": 916,
+      "records": 952,
       "earliest": "2015-01-08",
-      "latest": "2026-09-09",
+      "latest": "2026-11-08",
       "scopeCounts": {
-        "direct": 429,
-        "related": 487
+        "direct": 441,
+        "related": 508
       },
       "eventCounts": {
-        "배출권·배출권거래제·ETS": 289,
-        "온실가스·배출량·명세서": 240,
-        "탄소중립 선언·기본계획": 233,
-        "할당계획·할당량": 116,
-        "국제감축·외부사업·감축실적": 97,
-        "이행·정산·제출기한": 89,
-        "재생에너지·RPS": 50,
+        "배출권·배출권거래제·ETS": 298,
+        "온실가스·배출량·명세서": 242,
+        "탄소중립 선언·기본계획": 237,
+        "할당계획·할당량": 118,
+        "국제감축·외부사업·감축실적": 98,
+        "이행·정산·제출기한": 92,
+        "재생에너지·RPS": 54,
         "시장안정화·MSR": 48,
-        "유상할당 비율": 41,
-        "원자력발전·원전": 35,
-        "시장참여자 확대·시장조성": 34,
+        "원자력발전·원전": 44,
+        "유상할당 비율": 42,
+        "시장참여자 확대·시장조성": 36,
         "탄소국경조정·CBAM": 27,
-        "증설·상업가동": 23,
-        "화재·폭발·침수·가동중단": 23,
+        "증설·상업가동": 24,
+        "화재·폭발·침수·가동중단": 24,
         "폭염·한파·전력수요": 19,
         "상쇄배출권·전환한도": 17,
         "거래량·거래대금": 16,
         "추가할당·할당취소": 15,
         "NDC·국가 감축목표": 13,
+        "석탄발전": 12,
         "이월·차입 한도": 12,
         "EU ETS·EUA": 11,
-        "석탄발전": 11,
-        "수소발전·청정수소": 7,
-        "RE100": 5,
+        "수소발전·청정수소": 8,
+        "RE100": 7,
+        "전력수급기본계획·전원구성": 3,
         "전력시장·급전(포괄)": 3,
         "제도 확정 지연·소송": 3,
         "중국 증설·반덤핑·관세": 3,
         "LNG발전": 2,
         "발전제약": 2,
-        "전력수급기본계획·전원구성": 2,
         "낙찰가·응찰배수": 1,
         "대량 매도·보유물량 출회": 1,
         "업종 생산·가동률 통계": 1,
@@ -387,20 +387,20 @@
       }
     },
     "motie_notice": {
-      "records": 950,
+      "records": 955,
       "earliest": "2015-01-06",
-      "latest": "2026-08-10",
+      "latest": "2026-10-28",
       "scopeCounts": {
         "direct": 65,
-        "related": 885
+        "related": 890
       },
       "eventCounts": {
         "재생에너지·RPS": 484,
-        "온실가스·배출량·명세서": 217,
+        "온실가스·배출량·명세서": 222,
         "탄소중립 선언·기본계획": 92,
         "원자력발전·원전": 86,
         "배출권·배출권거래제·ETS": 48,
-        "국제감축·외부사업·감축실적": 41,
+        "국제감축·외부사업·감축실적": 43,
         "수소발전·청정수소": 24,
         "전력수급기본계획·전원구성": 22,
         "중국 증설·반덤핑·관세": 6,
@@ -410,24 +410,24 @@
       }
     },
     "motie_press": {
-      "records": 1882,
+      "records": 1893,
       "earliest": "2016-01-19",
-      "latest": "2026-09-09",
+      "latest": "2026-11-03",
       "scopeCounts": {
         "direct": 28,
-        "related": 1854
+        "related": 1863
       },
       "eventCounts": {
-        "원자력발전·원전": 671,
+        "원자력발전·원전": 678,
         "재생에너지·RPS": 344,
         "중국 증설·반덤핑·관세": 229,
-        "탄소중립 선언·기본계획": 190,
+        "탄소중립 선언·기본계획": 191,
         "온실가스·배출량·명세서": 113,
         "폭염·한파·전력수요": 93,
         "전력시장·급전(포괄)": 52,
         "석탄발전": 50,
         "수소발전·청정수소": 46,
-        "탄소국경조정·CBAM": 43,
+        "탄소국경조정·CBAM": 44,
         "전력수급기본계획·전원구성": 36,
         "RE100": 32,
         "증설·상업가동": 27,
@@ -448,65 +448,65 @@
     }
   },
   "validation": {
-    "officialItemCount": 4481,
+    "officialItemCount": 4557,
     "sectionCounts": {
-      "krx_notice": 312,
-      "motie_notice": 950,
-      "motie_press": 1882,
-      "notice": 421,
-      "press": 916
+      "krx_notice": 316,
+      "motie_notice": 955,
+      "motie_press": 1893,
+      "notice": 441,
+      "press": 952
     },
     "scopeCounts": {
       "krx_notice": {
-        "direct": 312,
+        "direct": 316,
         "related": 0
       },
       "motie_notice": {
         "direct": 65,
-        "related": 885
+        "related": 890
       },
       "motie_press": {
         "direct": 28,
-        "related": 1854
+        "related": 1863
       },
       "notice": {
-        "direct": 218,
-        "related": 203
+        "direct": 222,
+        "related": 213
       },
       "press": {
-        "direct": 429,
-        "related": 487
+        "direct": 441,
+        "related": 508
       }
     },
     "eventCounts": {
-      "재생에너지·RPS": 907,
-      "배출권·배출권거래제·ETS": 878,
-      "원자력발전·원전": 804,
-      "온실가스·배출량·명세서": 717,
-      "탄소중립 선언·기본계획": 579,
-      "유상할당 비율": 353,
-      "시장안정화·MSR": 265,
+      "재생에너지·RPS": 919,
+      "배출권·배출권거래제·ETS": 895,
+      "원자력발전·원전": 820,
+      "온실가스·배출량·명세서": 726,
+      "탄소중립 선언·기본계획": 584,
+      "유상할당 비율": 360,
+      "시장안정화·MSR": 271,
       "중국 증설·반덤핑·관세": 238,
-      "추가할당·할당취소": 216,
-      "할당계획·할당량": 195,
-      "국제감축·외부사업·감축실적": 189,
+      "추가할당·할당취소": 222,
+      "할당계획·할당량": 198,
+      "국제감축·외부사업·감축실적": 196,
       "폭염·한파·전력수요": 113,
-      "이행·정산·제출기한": 101,
-      "낙찰가·응찰배수": 95,
-      "수소발전·청정수소": 83,
-      "탄소국경조정·CBAM": 72,
-      "전력수급기본계획·전원구성": 62,
-      "석탄발전": 61,
-      "증설·상업가동": 58,
+      "이행·정산·제출기한": 105,
+      "낙찰가·응찰배수": 96,
+      "수소발전·청정수소": 84,
+      "탄소국경조정·CBAM": 73,
+      "전력수급기본계획·전원구성": 63,
+      "석탄발전": 62,
+      "증설·상업가동": 59,
       "전력시장·급전(포괄)": 55,
-      "시장참여자 확대·시장조성": 46,
-      "RE100": 41,
-      "상쇄배출권·전환한도": 35,
-      "화재·폭발·침수·가동중단": 33,
+      "시장참여자 확대·시장조성": 49,
+      "RE100": 43,
+      "상쇄배출권·전환한도": 38,
+      "화재·폭발·침수·가동중단": 34,
       "유상경매 물량·일정": 32,
       "NDC·국가 감축목표": 27,
-      "거래량·거래대금": 18,
-      "이월·차입 한도": 16,
+      "거래량·거래대금": 19,
+      "이월·차입 한도": 17,
       "EU ETS·EUA": 12,
       "LNG발전": 12,
       "업종 생산·가동률 통계": 11,
@@ -522,8 +522,23 @@
     "invalidDates": 0,
     "invalidDomains": 0,
     "unclassified": 0,
-    "dashboardOfficialCount": 4481
+    "taxonomyMatchedItemCount": 4546,
+    "retainedUnmatchedItemCount": 11,
+    "retainedUnmatchedKeys": [
+      "motie_press|ATCL3f49a5a8c|172227",
+      "motie_press|ATCL3f49a5a8c|172370",
+      "notice|url|https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=200&maxIndexPages=10&searchKey=&searchValue=&menuId=10524&orgCd=&boardMasterId=39&boardId=1882860",
+      "notice|url|https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=200&maxIndexPages=10&searchKey=&searchValue=&menuId=10524&orgCd=&boardMasterId=39&boardId=1889500",
+      "notice|url|https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=200&maxIndexPages=10&searchKey=&searchValue=&menuId=10524&orgCd=&boardMasterId=39&boardId=1894230",
+      "notice|url|https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=200&maxIndexPages=10&searchKey=&searchValue=&menuId=10524&orgCd=&boardMasterId=39&boardId=1895550",
+      "notice|url|https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=200&maxIndexPages=10&searchKey=&searchValue=&menuId=10524&orgCd=&boardMasterId=39&boardId=1900920",
+      "notice|url|https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=200&maxIndexPages=10&searchKey=&searchValue=&menuId=10524&orgCd=&boardMasterId=39&boardId=1903290",
+      "press|url|https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=1000&maxIndexPages=10&searchKey=&searchValue=&menuId=10598&orgCd=&boardMasterId=939&boardId=1882780",
+      "press|url|https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=1000&maxIndexPages=10&searchKey=&searchValue=&menuId=10598&orgCd=&boardMasterId=939&boardId=1890080",
+      "press|url|https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=1000&maxIndexPages=10&searchKey=&searchValue=&menuId=10598&orgCd=&boardMasterId=939&boardId=1892970"
+    ],
+    "dashboardOfficialCount": 4557
   },
-  "lastRunDateKst": "2026-09-11",
-  "lastRunSlot": "2026-09-11-AM"
+  "lastRunDateKst": "2026-11-08",
+  "lastRunSlot": "2026-11-08-AM"
 }
