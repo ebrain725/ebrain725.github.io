@@ -52,6 +52,7 @@ permissions:
 concurrency:
   # 기존 Pages 배포와 같은 그룹을 사용해 서로의 공개본을 덮어쓰지 않습니다.
   group: github-pages
+  queue: max
   cancel-in-progress: false
 
 env:
