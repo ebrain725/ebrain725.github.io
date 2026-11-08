@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-08T15:13:35+09:00",
+  "generatedAt": "2026-11-08T18:14:00+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1902,
+  "itemCount": 1903,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-08",
   "sourceCommitsScanned": 0,
@@ -74,12 +74,14 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "imaeil.com"
+        "imaeil.com",
+        "영남신문"
       ],
       "searchProviders": [
-        "NAVER API HUB"
+        "NAVER API HUB",
+        "Google News RSS"
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "region": "국내"
     },
     {
@@ -153,6 +155,29 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "017e4b655f354bfc",
+      "publishedAt": "2026-11-07",
+      "title": "이제 미국엔 데이터센터를 못 짓는 걸까",
+      "category": "제도",
+      "summary": "-데이터센터 전기 요금제를 따로 만들고, -3년마다 물과 전기, 대기오염에 관한 보고서를 내게 하고, -전기 수요를 예측하게 하고, -무상 배출권 을 이용하지 못하게 하고, -의무적으로 청정 전력 비율을 규제하게...",
+      "source": "kbs.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8706616&ref=A",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "kbs.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
       "region": "국내"
     },
     {
@@ -469,7 +494,7 @@
     {
       "id": "59293028f5eb2b95",
       "publishedAt": "2026-11-06",
-      "title": "유엔 검토 6.2조 사업 초기 보고서 내용 미흡",
+      "title": "유엔 파리협정 6.2조 사업 초기 보고서 무더기 '불일치' 판정",
       "category": "제도",
       "summary": "탄소 배출권 거래제와의 연계 등을 가능하게 하는 접근법이다. 현재로서는 양자 협력사업이 주류를 이루고 있다. 6.2조 사업은 6.4조 시장과 달리 국가 간 협력의 자율성과 다양성이 보장된다. 다양한 협력을 통해...",
       "source": "esgeconomy.com",
