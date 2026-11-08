@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-08T13:13:44+09:00",
+  "generatedAt": "2026-11-08T15:13:35+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1900,
+  "itemCount": 1902,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-08",
   "sourceCommitsScanned": 0,
@@ -12,6 +12,29 @@
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "b5044589e1778257",
+      "publishedAt": "2026-11-08",
+      "title": "파리협정 10주년에 COP31 개막…'전기화 35%' 띄운다",
+      "category": "제도",
+      "summary": "파리협정 제6조에 따른 국제 탄소시장 의 운영 개선 방안도 논의된다. 각국이 격년투명성보고서(BTR)로 제출한 기후행동 이행현황 점검 등도 함께 이뤄진다. 정의로운 전환과 관련해서는 COP30에서 설치하기로 합의한...",
+      "source": "nocutnews.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.nocutnews.co.kr/news/6603281?utm_source=naver&utm_medium=article&utm_campaign=20261108144522",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "nocutnews.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
     {
       "id": "f1eccd9776af1d01",
       "publishedAt": "2026-11-08",
@@ -991,6 +1014,29 @@
       ],
       "duplicateSources": [
         "thebell.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "886ce6c863ee2747",
+      "publishedAt": "2026-11-06",
+      "title": "[기획 시리즈 | 기후위기를 위해 뛰는 의원들] 총론. 기후위기 앞에 선...",
+      "category": "제도",
+      "summary": "배출권 거래 관련 수입 등에 영향을 받는 기금의 재원구조가 장기적인 기후투자를 충분히 뒷받침할 수 있는지에 대한 논의가 이어지고 있다. 박지혜 의원 등이 추진한 기후대응기금 관련 법률 개정은 이러한 문제를...",
+      "source": "ilemonde.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.ilemonde.com/news/articleView.html?idxno=30944",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "ilemonde.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
