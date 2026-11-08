@@ -54,7 +54,13 @@ KRX_OTP_URL = f"{KRX_ORIGIN}/contents/COM/GenerateOTP.jspx"
 KRX_FILE_DOWNLOAD_URL = "https://file.krx.co.kr/download.jspx"
 KRX_LIST_BLD = "ETS/97/97010000/ets97010000s1_01"
 KRX_BBS_ID = "ETS970100005"
-USER_AGENT = "Mozilla/5.0 (compatible; ETS-SIGNAL/1.3; +https://ebrain725.github.io/)"
+# Match the public HTML/OTP client's content negotiation already used by the
+# quote collector. Keep the same official URLs, verified TLS and cookie jar;
+# an HTTP 403 remains a hard failure rather than an empty/successful collection.
+USER_AGENT = (
+    "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
+    "(KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+)
 
 CATEGORY_KEYS = {
     "할당대상업체": "liable_entities",
@@ -397,7 +403,7 @@ class KrxSession:
         )
         self.opener.addheaders = [
             ("User-Agent", USER_AGENT),
-            ("Accept", "application/json,text/plain,*/*"),
+            ("Accept", "text/html,application/json,text/plain,*/*"),
             ("Accept-Language", "ko-KR,ko;q=0.9,en;q=0.7"),
             ("Referer", KRX_LIST_PAGE),
         ]

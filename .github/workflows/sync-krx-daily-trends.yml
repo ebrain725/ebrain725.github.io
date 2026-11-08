@@ -8,6 +8,7 @@ on:
       - main
     paths:
       - scripts/sync_krx_daily_trends.py
+      - tests/test_krx_daily_transport.py
       - scripts/krx_daily_manual_overrides.json
       - .github/workflows/sync-krx-daily-trends.yml
   schedule:
@@ -188,6 +189,7 @@ jobs:
           set -euo pipefail
           # 손상된 기존 누적본을 빈 데이터로 오인해 덮어쓰지 않도록
           # 네트워크 수집 전에 먼저 검증합니다.
+          python -B -m unittest discover -s tests -p 'test_krx_daily_transport.py' -v
           python -B scripts/sync_krx_daily_trends.py --mode validate
           python -B scripts/sync_krx_daily_trends.py
 
