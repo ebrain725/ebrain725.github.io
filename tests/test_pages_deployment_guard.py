@@ -28,6 +28,12 @@ class PagesGuardTests(unittest.TestCase):
         self.assertEqual(self.execute(api), 0)
         self.assertFalse(any(call.args[0] == 'POST' for call in api.call_args_list))
 
+    def test_official_terminal_error_states_do_not_block_a_later_deployment(self):
+        for state in ('deployment_content_failed', 'deployment_lost', 'deployment_failed', 'deployment_cancelled'):
+            api = Mock(side_effect=[dict(workflow_runs=[run()]), dict(status=state)])
+            self.assertEqual(self.execute(api), 0)
+            self.assertFalse(any(call.args[0] == 'POST' for call in api.call_args_list))
+
     def test_only_rechecked_completed_failure_is_cancelled(self):
         api = Mock(side_effect=[dict(workflow_runs=[run()]), dict(status='deployment_in_progress'),
                                run(), {}, dict(status='cancelled')])

@@ -30,10 +30,12 @@ WORKFLOWS = frozenset({
     '.github/workflows/export-policy-radar-excel-compatible.yml',
 })
 TERMINAL = frozenset({'succeed', 'succeeded', 'success', 'failed', 'failure',
-                      'canceled', 'cancelled', 'deployment_failed', 'deployment_cancelled'})
+                      'canceled', 'cancelled', 'deployment_failed', 'deployment_cancelled',
+                      'deployment_content_failed', 'deployment_lost'})
 ACTIVE = frozenset({'', 'queued', 'pending', 'building', 'build_in_progress',
                     'deploying', 'deployment_in_progress', 'in_progress',
-                    'deployment_queued', 'deployment_pending'})
+                    'deployment_queued', 'deployment_pending', 'unknown_status',
+                    'not_found', 'deployment_attempt_error'})
 FAILED = frozenset({'failure', 'cancelled', 'timed_out', 'action_required'})
 
 
