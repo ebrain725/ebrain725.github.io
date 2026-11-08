@@ -1,17 +1,64 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-08T22:51:08+09:00",
+  "generatedAt": "2026-11-09T03:03:44+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1907,
+  "itemCount": 1911,
   "earliestPublishedAt": "2026-08-06",
-  "latestPublishedAt": "2026-11-08",
+  "latestPublishedAt": "2026-11-09",
   "sourceCommitsScanned": 0,
   "sourceSnapshotsScanned": 0,
   "historicalRowsScanned": 0,
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "a78eaca9875840d3",
+      "publishedAt": "2026-11-09",
+      "title": "[장종회 칼럼] 선즉제인(先則制人)의 시간 맞은 탄소크레딧 시장",
+      "category": "상쇄·외부사업",
+      "summary": "당장 내년에는 국제항공 탄소 상쇄 ·감축제도 (CORSIA)가 2단계에 들어간다. 국제선을 운항하는 항공사가... 배출권 이 정부가 정한 배출 총량 안에서 기업에 할당·거래하는 권리라면 크레딧은 특정 사업에서 실제로 발생한...",
+      "source": "fntimes.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.fntimes.com/html/view.php?ud=202611062257154255dd55077bc2_18",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "fntimes.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "c8ca84b2b85e9712",
+      "publishedAt": "2026-11-09",
+      "title": "SOMPO리스크, 도쿄·사이타마 배출권 거래제 검증 서비스 개시",
+      "category": "제도",
+      "summary": "일본 손해보험그룹 SOMPO홀딩스 계열사인 SOMPO리스크매니지먼트가 도쿄도와 사이타마현의 배출량거래제도에 적용되는 재생에너지 크레딧 검증 서비스를 시작했다. SOMPO리스크매니지먼트(이하 SOMPO리스크)는 지난 9월...",
+      "source": "insnews.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.insnews.co.kr/news/articleView.html?idxno=93636",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "insnews.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
     {
       "id": "b5044589e1778257",
       "publishedAt": "2026-11-08",
@@ -1284,6 +1331,30 @@
       "region": "국내"
     },
     {
+      "id": "8332878f41d833f3",
+      "publishedAt": "2026-11-05",
+      "title": "한전, 온실가스 2만3900배 강한 SF6 분해사업 추진",
+      "category": "제도",
+      "summary": "한국전력이 전력설비에서 발생하는 폐육불화황(SF6)을 분해해 온실가스 배출을 줄이고, 감축 실적을 탄소 배출권 과 연계하는 사업을 추진한다. 자체 개발한 분해기술과 지난해 구축한 처리시설을 활용해 기술 실증에서...",
+      "source": "the-biz.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.the-biz.co.kr/news/articleView.html?idxno=730767",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "the-biz.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "384b5a2a2ad4e2d2",
       "publishedAt": "2026-11-05",
       "title": "한전, 온실 효과 이산화탄소의 2만3900배 'SF6' 분해 사업 추진",
@@ -1572,6 +1643,29 @@
       ],
       "duplicateSources": [
         "impacton.net"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "aa4b9869d1c7dced",
+      "publishedAt": "2026-11-05",
+      "title": "온실 효과 CO₂의 2만배…한전 'SF6 분해기술' 사업화 추진",
+      "category": "상쇄·외부사업",
+      "summary": "그동안 진행해온 기술개발과 실증을 마무리하고, 온실가스 감축실적을 배출권 으로 활용하는 사업모델 구축단계에 나선다는 구상이다. 한전은 5일 광주 김대중컨벤션센터에서 열린 'BIXPO 2026' 행사장에서 한국서부발전...",
+      "source": "newstree.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newstree.kr/newsView/ntr202611050018",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "newstree.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
