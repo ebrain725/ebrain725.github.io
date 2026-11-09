@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-09T10:13:35+09:00",
+  "generatedAt": "2026-11-09T11:53:27+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1919,
+  "itemCount": 1923,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-09",
   "sourceCommitsScanned": 0,
@@ -59,6 +59,29 @@
       "region": "국내"
     },
     {
+      "id": "54f164f1d1c516af",
+      "publishedAt": "2026-11-09",
+      "title": "포스코의 거짓말: 38년 된 용광로 고쳐서 15년 더 쓴다고?",
+      "category": "제도",
+      "summary": "포스코는 국내 온실가스 배출 1위 기업이다. 지난해 6985만 톤의 탄소를 배출했다. 탄소를 내뿜는 석탄... 배출권 도 무상으로 받는다. 포스코가 남는 배출권 을 팔아 그동안 벌어들인 수익이 1650억 원에 이른다. 지난해 K...",
+      "source": "slownews.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://slownews.kr/169204",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "slownews.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "372e94bdd6228be6",
       "publishedAt": "2026-11-09",
       "title": "파리협정 10년, 지구온난화 1.5℃ 사수 총력… COP31 개막",
@@ -84,6 +107,31 @@
       "region": "해외"
     },
     {
+      "id": "ddd921d522bd75a5",
+      "publishedAt": "2026-11-09",
+      "title": "탄소시장 새 모델…ICVCM, 석탄발전 조기폐쇄 크레딧 산정법 승인",
+      "category": "상쇄·외부사업",
+      "summary": "지난 3일(현지시각) 자발적 탄소시장 무결성위원회(ICVCM)는 베라의 석탄발전 조기폐쇄 방법론이 핵심탄소원칙(CCP)을 충족했다고 밝혔다. 이에 따라 탄소크레딧 판매수익으로 발전소 폐쇄와 재생에너지 투자비를 조달하는...",
+      "source": "impacton.net",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.impacton.net/news/articleView.html?idxno=30584",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 2,
+      "duplicateSources": [
+        "임팩트온",
+        "impacton.net"
+      ],
+      "searchProviders": [
+        "Google News RSS",
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "5b97e8ac718ba5f8",
       "publishedAt": "2026-11-09",
       "title": "주요국, EU 탄소국경세 확대에 집단 반발…글로벌 무역 분쟁 격화 조짐",
@@ -105,6 +153,30 @@
         "NAVER API HUB"
       ],
       "region": "해외"
+    },
+    {
+      "id": "e24d0f3d62cfa95d",
+      "publishedAt": "2026-11-09",
+      "title": "데이터시티위마켓 RWAHUB, 11월 18일 리베라호텔서 글로벌 성장 비전 발...",
+      "category": "제도",
+      "summary": "데이터시티위마켓은 이번 설명회를 통해 AI 자동화, 글로벌 OTA, 비즈니스 프로세스 아웃소싱(BPO), 에너지, 모빌리티, 탄소 배출권 등 다양한 산업을 연결하는 사업 포트폴리오를 제시한다. 특정 국가나 사업에 대한...",
+      "source": "dt.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.dt.co.kr/article/12093933?ref=naver",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "dt.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
     },
     {
       "id": "a78eaca9875840d3",
@@ -179,6 +251,30 @@
       ],
       "duplicateCount": 1,
       "region": "국내"
+    },
+    {
+      "id": "dbef0bda07174584",
+      "publishedAt": "2026-11-09",
+      "title": "[COP31] 정상들이 안보인다…기후위기보다 위태로운 기후정치",
+      "category": "시장·가격",
+      "summary": "배출권 거래제(ETS)를 도입하고 유럽 그린딜을 통해 2050년 탄소중립을 법적 목표로 설정했다.... 난방과 수송 부문의 탄소배출에 가격을 부과하는 새로운 배출권 거래제(ETS2)도 논란의 대상이다. 가계의 난방비와 자동차...",
+      "source": "esgeconomy.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.esgeconomy.com/news/articleView.html?idxno=17280",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "esgeconomy.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
     },
     {
       "id": "c8ca84b2b85e9712",
