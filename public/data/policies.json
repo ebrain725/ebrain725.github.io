@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-11-09T08:13:40+09:00",
+  "lastSync": "2026-11-09T10:13:27+09:00",
   "keywords": [
     "배출권",
     "배출권거래제",
@@ -30,7 +30,7 @@
   "warning": "한국거래소 배출권 공지사항: 한국거래소 공지 목록을 해석하지 못했습니다. 1페이지: HTTP Error 403: Forbidden",
   "aiInsight": {
     "summary": "최근 공식자료의 직접적인 수급 변수는 유상경매입니다. 최근 경매가 높은 낙찰가로 소화돼 공급보다 이행수요가 강하다는 신호입니다.",
-    "generatedAt": "2026-11-09T08:13:40+09:00",
+    "generatedAt": "2026-11-09T10:13:27+09:00",
     "basisLatestDate": "2026-11-08",
     "basisCount": 10,
     "source": "fallback",
@@ -791,6 +791,77 @@
   ],
   "items": [
     {
+      "id": "29f1114564c85128",
+      "publishedAt": "2026-11-09",
+      "title": "한전·서부발전, 철도공단과 SF6 분해 배출권 연계 추진",
+      "category": "제도",
+      "summary": "한전·서부발전, 철도공단과 SF6 분해 배출권 연계 추진 에너지타임즈",
+      "source": "에너지타임즈",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE41X2RNeHlhTkZXOFRwMjdDeUt1TmVtSDd3QnBOc2V1cmtVbGw4dnlzRUhhRklueVhpT3FQM3BZdjlCRGlsQkhJNnBkekY5Y3pjb2JxRlRXeXlFZnQyWU5vYUo4OHpSRDdBWkJodQ?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "에너지타임즈"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "88a6ddaa64e12c7c",
+      "publishedAt": "2026-11-09",
+      "title": "한국거래소, 대입 수능일(19일) 증권시장 개장 1시간 늦춘다",
+      "category": "제도",
+      "summary": "석유시장과 배출권 시장은 변경이 없다. KRX 스타트업 마켓(KSM)은 증권시장과 같이 오전 10시~오후 4시 30분이다. 결제시간은 당일결제거래인 일반채권시장과 Repo시장이 오후 4시 30분~5시 30분으로 1시간 늦춰진다....",
+      "source": "bizwnews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.bizwnews.com/news/articleView.html?idxno=151027",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "bizwnews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "372e94bdd6228be6",
+      "publishedAt": "2026-11-09",
+      "title": "파리협정 10년, 지구온난화 1.5℃ 사수 총력… COP31 개막",
+      "category": "제도",
+      "summary": "세계 최대 경제국이자 누적 온실가스 배출 1위국인 미국의 이탈은 온실가스 감축 동력을 약화시킬 뿐만... 결국 탄소 배출권 거래제(파리협정 제6조)의 조속한 실용화와 민간자본 유입을 촉진하는 시장 중심의 재원 확보...",
+      "source": "womentimes.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.womentimes.co.kr/news/articleView.html?idxno=107697",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "womentimes.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
       "id": "5b97e8ac718ba5f8",
       "publishedAt": "2026-11-09",
       "title": "주요국, EU 탄소국경세 확대에 집단 반발…글로벌 무역 분쟁 격화 조짐",
@@ -829,6 +900,31 @@
       ],
       "duplicateSources": [
         "fntimes.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "9670da8cfa8a6796",
+      "publishedAt": "2026-11-09",
+      "title": "[부산 브리핑 모음(11월9일)] 부산도시공사, 오시리아 생태숲 탄소배출...",
+      "category": "상쇄·외부사업",
+      "summary": "◆ 부산도시공사, 오시리아 생태숲 탄소 배출권 사업 추진 산림부문 외부사업 공모 선정…탄소중립·ESG 경영 강화 부산도시공사(사장 신창호)는 한국임업진흥원이 주관하는 ‘2026년 산림부문 배출권 거래제 외부사업 등록...",
+      "source": "dnews.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.dnews.co.kr/uhtml/view.jsp?idxno=202611071148050520052",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "dnews.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -19593,15 +19689,15 @@
         "K-ETS"
       ],
       "duplicateSources": [
-        "이투데이",
         "인더스트리뉴스",
         "industrynews.co.kr",
-        "pinpointnews.co.kr",
         "paxetv.com",
         "newsdream.kr",
         "dailian.co.kr",
-        "view.asiae.co.kr",
         "edaily.co.kr",
+        "이투데이",
+        "pinpointnews.co.kr",
+        "view.asiae.co.kr",
         "팍스경제TV",
         "아시아경제",
         "마켓인",
@@ -279625,10 +279721,10 @@
   },
   "newsRetention": {
     "policy": "append-only",
-    "lastMergedAt": "2026-11-09T08:13:46+09:00",
-    "itemCount": 1915,
-    "archiveBefore": 1911,
-    "currentBefore": 1756,
+    "lastMergedAt": "2026-11-09T10:13:35+09:00",
+    "itemCount": 1919,
+    "archiveBefore": 1915,
+    "currentBefore": 1761,
     "gitRecoveryEnabled": false
   }
 }
