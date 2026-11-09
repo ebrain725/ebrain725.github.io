@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-09T18:15:07+09:00",
+  "generatedAt": "2026-11-09T22:14:05+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1946,
+  "itemCount": 1948,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-09",
   "sourceCommitsScanned": 0,
@@ -129,6 +129,30 @@
         "Google News RSS",
         "NAVER API HUB"
       ],
+      "region": "국내"
+    },
+    {
+      "id": "7752dea7e29154ca",
+      "publishedAt": "2026-11-09",
+      "title": "탄소배출·폐기물 관리위원회 통폐합 추진…환경행정 효율화 나선다",
+      "category": "제도",
+      "summary": "탄소배출 관련 심의 기능을 배출권 운영위원회로 집중하고 폐기물 처리 자문 기능도 기존 환경정책위원회로... 현행 '온실가스 배출권 의 할당 및 거래에 관한 법률'에 따른 배출량 인증위원회와 '기후위기 대응을 위한...",
+      "source": "energydaily.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.energydaily.co.kr/news/articleView.html?idxno=204902",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "온실가스 배출권"
+      ],
+      "duplicateSources": [
+        "energydaily.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
       "region": "국내"
     },
     {
@@ -516,6 +540,30 @@
       "region": "국내"
     },
     {
+      "id": "7815aae654c86e3d",
+      "publishedAt": "2026-11-09",
+      "title": "[새전북이 만난 사람] 이수경 글로벌탄소위원회(GCC) NBS 글로벌 헤드",
+      "category": "제도",
+      "summary": "지난 9월 28일 서울 가든 호텔에서 열린 ‘지방정부 주도 탄소 배출권 확보방안 정책토론회’에 패널로 참석한 이수경 글로벌탄소위원회(GCC) NBS 글로벌 헤드는 “전북은 단순한 탄소 배출권 수요처나 소비지를 넘어...",
+      "source": "sjbnews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://sjbnews.com/news/news.php?number=892055",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "sjbnews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "9670da8cfa8a6796",
       "publishedAt": "2026-11-09",
       "title": "[부산 브리핑 모음(11월9일)] 부산도시공사, 오시리아 생태숲 탄소배출...",
@@ -585,6 +633,7 @@
         "이지경제",
         "ezyeconomy.com",
         "디지털데일리",
+        "중앙신문",
         "srtimes.kr",
         "ziksir.com",
         "socialvalue.kr",
@@ -602,6 +651,10 @@
         "서울경제TV",
         "consumernews.co.kr",
         "nongmin.com",
+        "파이낸셜투데이",
+        "ftoday.co.kr",
+        "비즈월드",
+        "bizwnews.com",
         "enewstoday.co.kr",
         "delighti.co.kr",
         "로이슈",
@@ -632,7 +685,7 @@
         "Google News RSS",
         "NAVER API HUB"
       ],
-      "duplicateCount": 45,
+      "duplicateCount": 50,
       "region": "국내"
     },
     {
