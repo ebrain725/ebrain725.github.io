@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-10T18:14:51+09:00",
+  "generatedAt": "2026-11-11T00:08:58+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1981,
+  "itemCount": 1984,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-10",
   "sourceCommitsScanned": 0,
@@ -210,6 +210,29 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 9,
+      "region": "국내"
+    },
+    {
+      "id": "e930aa70f2e91759",
+      "publishedAt": "2026-11-10",
+      "title": "업루트와이, 라오스 온실가스 국제감축사업 추진...현지 기업 등과 MOU 체...",
+      "category": "제도",
+      "summary": "이번 협약은 라오스의 재생에너지 발전량과 전기차 충전 데이터를 활용해 온실가스 감축량을 산정하고, 이를 국제 탄소시장 과 연계하는 사업을 공동으로 추진하기 위해 마련됐다. 업루트와이는 자체 개발한 인공지능...",
+      "source": "wolyo.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.wolyo.co.kr/news/articleView.html?idxno=320305",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "wolyo.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
       "region": "국내"
     },
     {
@@ -614,6 +637,54 @@
       ],
       "duplicateSources": [
         "cbci.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "33c74c319f32c522",
+      "publishedAt": "2026-11-10",
+      "title": "[NIE] 기후 재난 비용, 누가 지불해야 할까?",
+      "category": "제도",
+      "summary": "2GW로 서서히 줄이는 제11차 전력수급기본계획과, 국가 온실가스 배출량의 3분의 1 이상을 차지하는 산업부문 95% 업종에 향후 5년간 배출권 을 무상으로 할당해주는 배출권 거래제(ETS) 제4차 할당계획(2026~2035년)에...",
+      "source": "jjan.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.jjan.kr/article/20261110500026",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "jjan.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "309287a3ecb6dce6",
+      "publishedAt": "2026-11-10",
+      "title": "NH투자증권·농협상호금융·한국투자증권 등 금융권, 글로벌 투자 및 신...",
+      "category": "제도",
+      "summary": "NH투자증권은 11월 9일 서울 여의도 본사 그랜드홀에서 탄소전문기업 에코아이와 공동으로 기업 고객을 위한 '제2회 카본마켓 세미나(Carbon Market Seminar): K-ETS 정책변화와 국제탄소시장 연계'를 개최했다. 세미나에는...",
+      "source": "dailypop.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.dailypop.kr/news/articleView.html?idxno=104409",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "K-ETS",
+        "탄소시장"
+      ],
+      "duplicateSources": [
+        "dailypop.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -1445,19 +1516,19 @@
         "delighti.co.kr",
         "로이슈",
         "lawissue.co.kr",
-        "PRESS9",
         "choicenews.co.kr",
         "press9.kr",
         "view.asiae.co.kr",
         "뉴시스",
         "newsis.com",
-        "더페어",
         "financialpost.co.kr",
         "메트로신문",
         "metroseoul.co.kr",
         "wsobi.com",
         "ddaily.co.kr",
         "smarttoday.co.kr",
+        "PRESS9",
+        "더페어",
         "thevaluenews.co.kr",
         "newsian.co.kr",
         "businessplus.kr",
@@ -19348,15 +19419,15 @@
         "K-ETS"
       ],
       "duplicateSources": [
+        "이투데이",
         "인더스트리뉴스",
         "industrynews.co.kr",
+        "pinpointnews.co.kr",
         "paxetv.com",
         "newsdream.kr",
         "dailian.co.kr",
-        "edaily.co.kr",
-        "이투데이",
-        "pinpointnews.co.kr",
         "view.asiae.co.kr",
+        "edaily.co.kr",
         "팍스경제TV",
         "아시아경제",
         "마켓인",
