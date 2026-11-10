@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-10T13:14:10+09:00",
+  "generatedAt": "2026-11-10T15:15:25+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1963,
+  "itemCount": 1970,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-10",
   "sourceCommitsScanned": 0,
@@ -33,6 +33,29 @@
       "searchProviders": [
         "NAVER API HUB"
       ],
+      "region": "국내"
+    },
+    {
+      "id": "a181c594fd479faa",
+      "publishedAt": "2026-11-10",
+      "title": "임춘대 시의원 \"악취저감시설 절반 넘게 저가동·미가동\"",
+      "category": "제도",
+      "summary": "초과배출량은 줄었지만 배출권 비용 산정액은 약 7억 9천만 원에서 9억 679만 원으로 늘었다고 짚었다. 서울특별시의회 임춘대 시의원(국민의힘). 서울시의회 제공 서울시의 2030년 에너지 자립률 50%, 2040년 83% 목표와...",
+      "source": "newspim.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newspim.com/news/view/20261110001076",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "newspim.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
       "region": "국내"
     },
     {
@@ -74,18 +97,20 @@
         "탄소배출권"
       ],
       "duplicateSources": [
+        "dhnews.co.kr",
         "siminilbo.co.kr",
+        "donga.com",
         "megaeconomy.co.kr",
         "businesskorea.co.kr",
         "sisunnews.co.kr",
         "abcn.kr",
         "kdpress.co.kr",
-        "donga.com"
+        "handmk.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 7,
+      "duplicateCount": 9,
       "region": "국내"
     },
     {
@@ -128,6 +153,30 @@
       ],
       "duplicateSources": [
         "m-economynews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "a03c71efd3b619a8",
+      "publishedAt": "2026-11-10",
+      "title": "미래에셋·신한투자, 증권업계서 토큰증권 선점 가속화",
+      "category": "제도",
+      "summary": "내년 2월 토큰증권(ST) 제도 시행을 앞두고 국내 주요 증권사들이 시장 선점에 속도를 내고 있다. 10일... DB증권은 탄소 배출권을 기초자산으로 하는 토큰증권 사업을 검토 중인 것으로 알려졌다. 과거 항공기 엔진 조각투자...",
+      "source": "jasm.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.jasm.co.kr/news/view/324807/?sc=Naver",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "jasm.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -219,10 +268,35 @@
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
         "배출권",
-        "탄소시장"
+        "탄소시장",
+        "배출권거래제"
       ],
       "duplicateSources": [
         "impacton.net"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "bacd9e4ea4858666",
+      "publishedAt": "2026-11-10",
+      "title": "‘6000억’ 포스코 전기로, 수요 확보·원가절감 총력…“전기료 부담 ...",
+      "category": "시장·가격",
+      "summary": "다만 향후 탄소 배출권 가격 상승과 저탄소 강재 수요 확대에 따라 전기로의 경제성도 개선될 것으로 보고 있다. 신 공장장은 전기로 가동률을 본격적으로 높일 수 있는 시점을 2030년 이후로 내다봤다. 2028년 전후로 글로벌...",
+      "source": "biz.heraldcorp.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://biz.heraldcorp.com/article/10932284?ref=naver",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "biz.heraldcorp.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -254,6 +328,56 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "72bcb614b1e3b8a3",
+      "publishedAt": "2026-11-10",
+      "title": "[증권 & Now] 우리투자증권, 종로 무악동에 '도심 속 작은 숲' 조성 등",
+      "category": "제도",
+      "summary": "행사는 지난 9일 서울 여의도 NH투자증권 본사 그랜드홀에서 ' 배출권거래제 (K-ETS) 정책 변화와 국제탄소시장 연계'를 주제로 진행됐다. 현장에는 탄소 배출권 거래제 할당대상기업과 관련 기관 임직원 등 약 100명이...",
+      "source": "ebn.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1731087",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권",
+        "K-ETS",
+        "탄소시장"
+      ],
+      "duplicateSources": [
+        "ebn.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "7bcc5ae6117d343f",
+      "publishedAt": "2026-11-10",
+      "title": "[전문] 위성곤 제주도지사, 2027년도 예산안 제출에 즈음한 시정연설",
+      "category": "상쇄·외부사업",
+      "summary": "자발적 탄소시장 도 단계적으로 준비하겠습니다. 내년에는 감축 방법론과 탄소크레딧 등록·검증 플랫폼을 마련해 도민과 기업의 감축 성과가 경제적 기회로 이어지도록 하겠습니다. 숲과 정원을 늘려 탄소흡수원을...",
+      "source": "headlinejeju.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.headlinejeju.co.kr/news/articleView.html?idxno=601903",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "headlinejeju.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
       "region": "국내"
     },
     {
@@ -328,6 +452,56 @@
       ],
       "duplicateCount": 1,
       "region": "국내"
+    },
+    {
+      "id": "df2e9beefaca2ba4",
+      "publishedAt": "2026-11-10",
+      "title": "EU·영국 ETS 연계 임박…탄소 배출권 시장 재통합",
+      "category": "제도",
+      "summary": "사진=홈페이지 캡쳐 유럽연합(EU)과 영국의 탄소 배출권 거래제 (ETS) 연계 협상이 막바지 단계에 돌입했다. 브렉시트 이후 영국이 독자적인 배출권 거래제 를 시행한 지 6년여 만에 통합을 눈앞에 두고 있다....",
+      "source": "esgeconomy.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.esgeconomy.com/news/articleView.html?idxno=17320",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "esgeconomy.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
+      "id": "8972dfea00979209",
+      "publishedAt": "2026-11-10",
+      "title": "EU-영국, 탄소배출권 거래제 연계 임박",
+      "category": "제도",
+      "summary": "EU-영국, 탄소배출권 거래제 연계 임박 ESG경제",
+      "source": "ESG경제",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBIcUpZNFRRbXVLS01KVFJxRzZMVXFQeUZQT0lKTWxlWS1xajFwU0ZtZm8tT3NaeHNUd2s2YlZfR2RPSDE5amZ6NS04ZGVUaUlmZnNEWU51aDdkNUszSkFoYjBha0dleGNBUDdYQw?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "ESG경제"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "해외"
     },
     {
       "id": "29f1114564c85128",
@@ -1010,13 +1184,13 @@
         "view.asiae.co.kr",
         "뉴시스",
         "newsis.com",
-        "더페어",
         "financialpost.co.kr",
         "메트로신문",
         "metroseoul.co.kr",
         "wsobi.com",
         "ddaily.co.kr",
         "smarttoday.co.kr",
+        "더페어",
         "thevaluenews.co.kr",
         "newsian.co.kr",
         "businessplus.kr",
