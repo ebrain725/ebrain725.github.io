@@ -1,17 +1,90 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-11T21:03:59+09:00",
+  "generatedAt": "2026-11-12T02:26:35+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 2012,
+  "itemCount": 2016,
   "earliestPublishedAt": "2026-08-06",
-  "latestPublishedAt": "2026-11-11",
+  "latestPublishedAt": "2026-11-12",
   "sourceCommitsScanned": 0,
   "sourceSnapshotsScanned": 0,
   "historicalRowsScanned": 0,
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "c896bcd9f6ce4a2a",
+      "publishedAt": "2026-11-12",
+      "title": "해외 기관에서 '기업 생산 공정' 검증 땐 … 핵심 기술 유출될 우려도",
+      "category": "제도",
+      "summary": "국내 검증기관은 오랫동안 배출권 거래제와 온실가스 목표관리제 검증을 맡으며 기업 정보를 관리해온... 표준협회는 온실가스 목표관리제와 배출권 거래제 검증기관이자 파리협정 제6.4조 메커니즘의 지정운영기구(DOE)...",
+      "source": "mk.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.mk.co.kr/article/12205787",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "mk.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "77ac4721931b5510",
+      "publishedAt": "2026-11-12",
+      "title": "철강·알루미늄, EU 수출 숨통 …'탄소배출 검증' 국내서 받는다",
+      "category": "제도",
+      "summary": "CBAM 검증은 기존 온실가스 검증과 방식은 비슷하지만 범위가 다르다. 사업장 전체가 아니라 EU로 수출하는... 국내 배출권 거래제(K-ETS)처럼 사업장 단위 산정에 익숙한 기업들이 EU 방식의 모니터링 체계를 새로 갖추기가...",
+      "source": "mk.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.mk.co.kr/article/12205786",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "K-ETS"
+      ],
+      "duplicateSources": [
+        "mk.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
+      "id": "a86c6f735ae3188e",
+      "publishedAt": "2026-11-12",
+      "title": "산림청, 해외 산림보전사업 감축 실적 논란에 \"국가 감축목표 활용 불가...",
+      "category": "제도",
+      "summary": "통해 온실가스 배출을 줄이는 활동이다. ■ 캄보디아 시범사업 감축 실적 약 65만 톤 확보 산림청은 국외 탄소 배출권 확보에 대비해 사업 개발 및 실행체계를 사전에 확립하고자 캄보디아, 미얀마, 라오스에서 REDD...",
+      "source": "woodkorea.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.woodkorea.co.kr/news/articleView.html?idxno=92499",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "woodkorea.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
     {
       "id": "ae5ed7f51a43a69b",
       "publishedAt": "2026-11-11",
@@ -367,6 +440,30 @@
       ],
       "duplicateSources": [
         "mk.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "89625711229620b4",
+      "publishedAt": "2026-11-11",
+      "title": "[증권] 미래에셋, 개인투자용 국채 2000억원 청약…NH투자, \"퇴직연금 디...",
+      "category": "시장안정",
+      "summary": "본사에서 '제2회 카본마켓 세미나'를 개최했다고 밝혔다. 세미나는 국내 배출권 시장 동향과 가격 전망, 한국형 시장안정화제도(K-MSR), 국제 탄소시장 동향과 파리협정 제6조에 따른 탄소거래 체계 등을 논의했다.",
+      "source": "webeconomy.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.webeconomy.co.kr/news/articleView.html?idxno=2370783",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소시장"
+      ],
+      "duplicateSources": [
+        "webeconomy.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -1408,12 +1505,14 @@
         "탄소시장"
       ],
       "duplicateSources": [
-        "esgeconomy.com"
+        "esgeconomy.com",
+        "ESG경제"
       ],
       "searchProviders": [
-        "NAVER API HUB"
+        "NAVER API HUB",
+        "Google News RSS"
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "region": "해외"
     },
     {
@@ -3975,11 +4074,11 @@
       ],
       "duplicateSources": [
         "busan.com",
+        "아시아타임즈",
         "asiatime.co.kr",
         "e-platform.net",
         "daily.hankooki.com",
         "newspim.com",
-        "아시아타임즈",
         "cbci.co.kr",
         "econovill.com",
         "todayenergy.kr",
@@ -20091,15 +20190,15 @@
         "K-ETS"
       ],
       "duplicateSources": [
+        "이투데이",
         "인더스트리뉴스",
         "industrynews.co.kr",
+        "pinpointnews.co.kr",
         "paxetv.com",
         "newsdream.kr",
         "dailian.co.kr",
-        "edaily.co.kr",
-        "이투데이",
-        "pinpointnews.co.kr",
         "view.asiae.co.kr",
+        "edaily.co.kr",
         "팍스경제TV",
         "아시아경제",
         "마켓인",
