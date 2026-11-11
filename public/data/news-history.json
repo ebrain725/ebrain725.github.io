@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-11T13:13:16+09:00",
+  "generatedAt": "2026-11-11T15:14:03+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1996,
+  "itemCount": 1998,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-11",
   "sourceCommitsScanned": 0,
@@ -110,6 +110,32 @@
       "region": "국내"
     },
     {
+      "id": "966f7429f6429b42",
+      "publishedAt": "2026-11-11",
+      "title": "“EU 탄소장벽 넘는다”…한국표준협회, CBAM 공인 검증기관 자격 획득",
+      "category": "제도",
+      "summary": "온실가스 배출권거래제( K-ETS )와 목표관리제 검증을 수행하며 축적한 경험과 기업 데이터 관리 체계를 CBAM 검증에도 활용한다는 방침이다. 문동민 한국표준협회 회장은 “CBAM은 개별 기업이 혼자 넘기 어려운 규제...",
+      "source": "mk.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.mk.co.kr/article/12205140",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "온실가스 배출권",
+        "K-ETS"
+      ],
+      "duplicateSources": [
+        "mk.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "96c11be1da68e89b",
       "publishedAt": "2026-11-11",
       "title": "[정책브리핑] 하수·폐수에서 에너지 뽑아쓴다…'재생에너지원' 포함",
@@ -129,6 +155,31 @@
       ],
       "searchProviders": [
         "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "7733e73d6a3cff24",
+      "publishedAt": "2026-11-11",
+      "title": "[온실가스 배출권] 11월 11일 KAU26, 200원 오른 2만9400원",
+      "category": "시장·가격",
+      "summary": "[온실가스 배출권] 11월 11일 KAU26, 200원 오른 2만9400원 데일리e뉴스",
+      "source": "데일리e뉴스",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9XMTExU1RPbjdMVTZKNUhhZGEzcklfb1hWYTVySXFjTUVrdF83ZHRmY3RTUjNaYngzTHJBVFNHSGUwQjVFamJlenBJRVQ3X1VBSm01QzhuOVZmc0Y3ZHVFOG9nNmozMkt1RjZUWURCOA?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "온실가스 배출권",
+        "KAU26"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "데일리e뉴스"
+      ],
+      "searchProviders": [
+        "Google News RSS"
       ],
       "region": "국내"
     },
@@ -1807,13 +1858,13 @@
         "view.asiae.co.kr",
         "뉴시스",
         "newsis.com",
-        "더페어",
         "financialpost.co.kr",
         "메트로신문",
         "metroseoul.co.kr",
         "wsobi.com",
         "ddaily.co.kr",
         "smarttoday.co.kr",
+        "더페어",
         "PRESS9",
         "thevaluenews.co.kr",
         "newsian.co.kr",
