@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-11T15:14:03+09:00",
+  "generatedAt": "2026-11-11T18:13:16+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1998,
+  "itemCount": 2008,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-11",
   "sourceCommitsScanned": 0,
@@ -12,6 +12,79 @@
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "ae5ed7f51a43a69b",
+      "publishedAt": "2026-11-11",
+      "title": "휴비스, 한국특수가스와 손잡고 탄소포집 사업 추진",
+      "category": "제도",
+      "summary": "이를 통해 연간 수만 톤 규모의 탄소 감축 효과를 기대하고 있으며, 감축한 탄소 배출량에 따른 배출권 확보를 통해 넷제로(Net-Zero) 달성에도 속도를 낼 방침이다. 휴비스 관계자는 \"공장 가동 과정에서 배출되는...",
+      "source": "domin.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.domin.co.kr/news/articleView.html?idxno=1575107",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "domin.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "ceaa966410c5f1c9",
+      "publishedAt": "2026-11-11",
+      "title": "한-아시아개발은행 고위급 연례협의…정책현안ㆍ협력방안 논의",
+      "category": "제도",
+      "summary": "또한 한-ADB 기후기술허브(K-Hub)의 활동과 향후 운영계획을공유하고, 한국 측은 글로벌 고신뢰 탄소시장 (GVCM)을 향후 K-Hub 사업에 활용하는 방안을 제안했다. 한국 ADB 신탁기금의 성과관리 강화 및 후속 차관사업과의...",
+      "source": "etoday.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.etoday.co.kr/news/view/2646980",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 5,
+      "duplicateSources": [
+        "news1.kr",
+        "ajunews.com",
+        "fnnews.com",
+        "newspim.com",
+        "etoday.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "c3069a110d40f372",
+      "publishedAt": "2026-11-11",
+      "title": "코르시아 적격 크레딧 공급 급증...공급 부족은 여전",
+      "category": "상쇄·외부사업",
+      "summary": "이를 상쇄 하고 2028년 4월 30일까지 그 결과가 담긴 배출권 소각 보고서(emission unit cancellation report, EUCR)를 규제당국에 제출해야 한다. 공급 부족은 여전 올 들어 10월까지 공급된 5440만톤은 여전히 코르시아 1단계...",
+      "source": "esgeconomy.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.esgeconomy.com/news/articleView.html?idxno=17343",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "esgeconomy.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
     {
       "id": "c168d1d8cb60c5e6",
       "publishedAt": "2026-11-11",
@@ -53,12 +126,13 @@
         "탄소시장"
       ],
       "duplicateSources": [
-        "view.asiae.co.kr"
+        "view.asiae.co.kr",
+        "legaltimes.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "region": "국내"
     },
     {
@@ -85,6 +159,54 @@
       "region": "국내"
     },
     {
+      "id": "60ee5871be9105a7",
+      "publishedAt": "2026-11-11",
+      "title": "업루트와이, 라오스 국제감축사업 진출…동남아 판로 개척 본격화",
+      "category": "제도",
+      "summary": "이번 협력의 핵심은 라오스 현지의 에너지 데이터를 탄소 배출권 으로 전환하는 것이다. 업루트와이는 라오스 재생에너지 발전소의 발전 데이터와 전기차 충전소의 충전 데이터를 자체 AI 솔루션 '메가스퀘어'로 수집...",
+      "source": "wowtv.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202611110082&t=NN",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "wowtv.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "0aeb78b7029850e5",
+      "publishedAt": "2026-11-11",
+      "title": "산림청 \"REDD+ 시범사업 실적, 국가 온실가스 감축에 활용 안 해\"",
+      "category": "제도",
+      "summary": "자발적 탄소시장 에서 거래됐으며 NDC 달성에는 활용할 수 없다\"고 강조했다. NDC에 활용하려면 유엔기후변화협약(UNFCCC) 국제지침에 따라 준국가 단위 이상의 사업으로 감축량을 산정해야 한다는 설명이다. 산림청에...",
+      "source": "newsis.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newsis.com/view/NISX20261111_0003864314",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateSources": [
+        "newsis.com",
+        "newsprime.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 2,
+      "region": "국내"
+    },
+    {
       "id": "907ff1b54d0da884",
       "publishedAt": "2026-11-11",
       "title": "금호석유화학그룹, 화학 4사 SHE 구축해 '안전·환경' 최우선…지속가능...",
@@ -108,6 +230,53 @@
       ],
       "duplicateCount": 1,
       "region": "국내"
+    },
+    {
+      "id": "e684de6387f57a26",
+      "publishedAt": "2026-11-11",
+      "title": "韓·ADB 고위급 연례협의 개최…AI 협력 기반 마련",
+      "category": "제도",
+      "summary": "한국 측은 글로벌 고신뢰 탄소시장 (GVCM)을 향후 K-Hub 사업에 활용하는 방안을 제안했다. 유 부총재는 '2027~2029년 ADB 전략적 사업 전망'을 통해 공공·민간 사업과 금융·지식·정책지원을 연계해 성과를 높이겠다는...",
+      "source": "newsis.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newsis.com/view/NISX20261111_0003864394",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "newsis.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "9a26488c4ca3873c",
+      "publishedAt": "2026-11-11",
+      "title": "【규제트래커】 티센크루프, 직접환원설비 가동 2029년으로 연기…독일...",
+      "category": "제도",
+      "summary": "EU 배출권거래제(ETS) 무상할당 축소와 탄소 국경조정제도(CBAM) 본격 시행으로 유럽 철강 시장 의 탄소 비용 구조가 바뀌는 상황에서, 독일 최대 철강사의 저 탄소 전환은 2년 늦춰졌다. CBAM 비용 경쟁 구도를 보는 국내...",
+      "source": "impacton.net",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.impacton.net/news/articleView.html?idxno=30632",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "impacton.net"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
     },
     {
       "id": "966f7429f6429b42",
@@ -295,6 +464,30 @@
       ],
       "duplicateSources": [
         "dream.kotra.or.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "06e21f165a172890",
+      "publishedAt": "2026-11-11",
+      "title": "\"발행사 망하면 내 투자금은?\"…토큰증권 시대, 로펌 법률자문 확대",
+      "category": "제도",
+      "summary": "토큰증권 관련 법률자문 시장 도 다변화되는 추세다. 증권사와 조각투자 플랫폼 사업자뿐 아닌, 자산운용사, 신탁회사, 기술 플랫폼 기업 등이 관련 사업을 검토하고 있으며, 부동산·채권· 탄소 배출권·음악저작권·특허권...",
+      "source": "fnnews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.fnnews.com/news/202611111453144853",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "fnnews.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -640,6 +833,30 @@
       ],
       "duplicateCount": 1,
       "region": "국내"
+    },
+    {
+      "id": "62523fe2405ba7df",
+      "publishedAt": "2026-11-10",
+      "title": "베트남 연안 경제 개발에 녹색 탄소 배출권 생태계를 통합하는 방안: 현황 및 정책적 함의.",
+      "category": "제도",
+      "summary": "베트남 연안 경제 개발에 녹색 탄소 배출권 생태계를 통합하는 방안: 현황 및 정책적 함의. Vietnam.vn",
+      "source": "Vietnam.vn",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPNC1sSGFQbUhERVNSUm9XZGp5MW4tWFV5STM2T2UxZEN6VkJnTUlGeU5CdUVBcFNIVUgwc1I1SnZkSDR3MThGZ055ODlVOEFDdnVhR3VjeFJJcl9Ib1RyYVVKbk96MU9Pb0NCZnE1a3RWdWd6WVVQdXQ3eDhJZXJSNy1aNFNOaFBMVHptbHhXa0w0WTlvLXViLXR6MWVPN2RCNWtZUkhJNjVpTlMyUEdCUVRBZENCNWZfMVR5bW1HeHZmR2RNcno0anU1OUNOaEFBbjB6Y0gyT0E2Ums?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "Vietnam.vn"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "해외"
     },
     {
       "id": "a03c71efd3b619a8",
@@ -1440,6 +1657,29 @@
       "region": "국내"
     },
     {
+      "id": "9ffb7018d2e05755",
+      "publishedAt": "2026-11-09",
+      "title": "사막화·기후재원·탄소시장…몽골이 COP31에 가져간 과제",
+      "category": "제도",
+      "summary": "사막화·기후재원·탄소시장…몽골이 COP31에 가져간 과제 Montsame",
+      "source": "Montsame",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE12N0s5WVNtdkYweDUtaEVpdm5aWnBsZGtjTThzcG5hTXI4dW5TQk10OHM4Rkd1b2Y5RVVyRmNlSXB1aEZSeFF5b2VvRUoxUGs?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "Montsame"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "969d34a688f584cf",
       "publishedAt": "2026-11-09",
       "title": "로봇 혁신·전문성 강화… '지속가능 농업·열린 농촌' 만든다",
@@ -1795,7 +2035,8 @@
         "배출권",
         "탄소배출권",
         "배출권거래제",
-        "온실가스 배출권"
+        "온실가스 배출권",
+        "상쇄배출권"
       ],
       "duplicateSources": [
         "thebell.co.kr"
@@ -1858,13 +2099,13 @@
         "view.asiae.co.kr",
         "뉴시스",
         "newsis.com",
+        "더페어",
         "financialpost.co.kr",
         "메트로신문",
         "metroseoul.co.kr",
         "wsobi.com",
         "ddaily.co.kr",
         "smarttoday.co.kr",
-        "더페어",
         "PRESS9",
         "thevaluenews.co.kr",
         "newsian.co.kr",
