@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-12T04:49:52+09:00",
+  "generatedAt": "2026-11-12T08:15:24+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 2016,
+  "itemCount": 2020,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-12",
   "sourceCommitsScanned": 0,
@@ -83,6 +83,105 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "63f3281d92f10394",
+      "publishedAt": "2026-11-12",
+      "title": "[테크 차이나] 상하이 녹색메탄올, 공장과 선박을 잇는 계약",
+      "category": "제도",
+      "summary": "유럽연합은 배출권 거래제와 2025년 시행한 해운연료 규정으로 대상 선박의 배출과 사용 에너지의 온실가스 집약도를 관리한다. 미국의 청정연료 생산세액공제는 미국 내 적격 청정운송연료 생산을 지원한다....",
+      "source": "etnews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.etnews.com/20261028000163",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "etnews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
+      "id": "d6b00305f8ef80d6",
+      "publishedAt": "2026-11-12",
+      "title": "[오늘의 국회일정] 상임위·세미나·기자회견·주요 정당 - 11월 12일",
+      "category": "제도",
+      "summary": "자발적 탄소시장 , 이대로 괜찮은가 / 의원회관 제1간담회의실 10:30 권칠승 의원실 등, (국적 취득 절차 진행 중)아동의 보육·의료 접근성 보장을 위한 국회 토론회 / 의원회관 제2세미나실 13:30 주호영 의원실...",
+      "source": "newspim.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newspim.com/news/view/20261111001550",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 3,
+      "duplicateSources": [
+        "safetimes.co.kr",
+        "newsis.com",
+        "newspim.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "5d570ac5d5b7934c",
+      "publishedAt": "2026-11-12",
+      "title": "[SV 리포트] CJ그룹, 친환경 전환·공급망 상생으로 ESG 경쟁력 강화",
+      "category": "시장·가격",
+      "summary": "CJ제일제당은 온실가스 감축 투자 검토와 배출권 거래제 대응 등을 위해 내부 탄소가격 제도를 운영하고 있다. 주요 계열사들은 ESG 및 기후변화 관련 성과를 담당 조직과 임원의 핵심성과지표(KPI)에 반영하고, 연 1회...",
+      "source": "socialvalue.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.socialvalue.kr/news/view/1065596458316903",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "socialvalue.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "1bf009d998455ede",
+      "publishedAt": "2026-11-12",
+      "title": "EU 탄소국경조정제도 국내 첫 검증기관 인정…수출기업 부담 완화",
+      "category": "제도",
+      "summary": "기후부는 이탈리아 국가인정기구와 지속적인 협력체계를 구축해 국내 기술전문가가 인정심사에 참여할 수 있도록 지원하고, 배출권 거래제 검증심사원을 대상으로 EU CBAM 역량 강화 교육과정을 운영했다. 산업부는 EU...",
+      "source": "newsis.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newsis.com/view/NISX20261111_0003864230",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "edaily.co.kr",
+        "ajunews.com",
+        "newsis.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 3,
       "region": "국내"
     },
     {
@@ -314,7 +413,9 @@
       "url": "https://www.newsis.com/view/NISX20261111_0003864314",
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
-        "탄소시장"
+        "탄소시장",
+        "배출권",
+        "탄소배출권"
       ],
       "duplicateSources": [
         "newsis.com",
@@ -2256,10 +2357,8 @@
         "탄소시장"
       ],
       "duplicateSources": [
-        "이지경제",
         "ezyeconomy.com",
         "디지털데일리",
-        "중앙신문",
         "srtimes.kr",
         "ziksir.com",
         "socialvalue.kr",
@@ -2267,38 +2366,40 @@
         "newsinside.kr",
         "thefirstmedia.net",
         "jasm.co.kr",
-        "스페셜경제",
         "womentimes.co.kr",
         "megaeconomy.co.kr",
         "뉴스인사이드",
         "fetv.co.kr",
-        "투데이e코노믹",
         "todayeconomic.com",
         "sentv.co.kr",
-        "서울경제TV",
         "consumernews.co.kr",
         "nongmin.com",
-        "파이낸셜투데이",
         "ftoday.co.kr",
-        "비즈월드",
         "bizwnews.com",
         "enewstoday.co.kr",
         "delighti.co.kr",
-        "로이슈",
         "lawissue.co.kr",
-        "초이스경제",
         "choicenews.co.kr",
         "press9.kr",
         "view.asiae.co.kr",
         "뉴시스",
         "newsis.com",
-        "더페어",
         "financialpost.co.kr",
-        "메트로신문",
         "metroseoul.co.kr",
         "wsobi.com",
         "ddaily.co.kr",
         "smarttoday.co.kr",
+        "이지경제",
+        "중앙신문",
+        "스페셜경제",
+        "투데이e코노믹",
+        "서울경제TV",
+        "파이낸셜투데이",
+        "비즈월드",
+        "로이슈",
+        "초이스경제",
+        "더페어",
+        "메트로신문",
         "PRESS9",
         "thevaluenews.co.kr",
         "newsian.co.kr",
@@ -2312,8 +2413,8 @@
         "thefairnews.co.kr"
       ],
       "searchProviders": [
-        "Google News RSS",
-        "NAVER API HUB"
+        "NAVER API HUB",
+        "Google News RSS"
       ],
       "duplicateCount": 54,
       "region": "국내"
