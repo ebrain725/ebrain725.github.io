@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-11T11:56:51+09:00",
+  "generatedAt": "2026-11-11T13:13:16+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 1994,
+  "itemCount": 1996,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-11",
   "sourceCommitsScanned": 0,
@@ -54,6 +54,29 @@
       ],
       "duplicateSources": [
         "view.asiae.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "ffa4ddbc49e02846",
+      "publishedAt": "2026-11-11",
+      "title": "엔비디아, 이사회 독립성 시험대 [ESG 뉴스 5]",
+      "category": "상쇄·외부사업",
+      "summary": "국제 항공 탄소 상쇄 제, 크레딧 공급 부족 '비상' 국제 항공업계가 탄소배출량을 상쇄 하기 위한 배출권 확보에 어려움을 겪을 전망이다. 10일 로이터에 따르면 국제항공 탄소 상쇄 ·감축제도(CORSIA)의 2024~2026년 배출량에...",
+      "source": "magazine.hankyung.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://magazine.hankyung.com/business/article/202611110023b",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "magazine.hankyung.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -150,6 +173,29 @@
       ],
       "duplicateSources": [
         "greenpostkorea.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "f12696c007d8c871",
+      "publishedAt": "2026-11-11",
+      "title": "ICAO 적격 탄소크레딧 공급 부족…항공사 필요량의 25%도 못 채워",
+      "category": "제도",
+      "summary": "2028년까지 2억개 소각 의무…실제 공급 가능 물량은 25% 이하 국제항공운송협회(IATA)는 2024~2026년 CORSIA 첫 이행기간에 항공사들이 구매·소각해야 할 적격 배출권 을 2억개 이상으로 추산했다. CORSIA 참여국...",
+      "source": "impacton.net",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.impacton.net/news/articleView.html?idxno=30630",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "impacton.net"
       ],
       "searchProviders": [
         "NAVER API HUB"
