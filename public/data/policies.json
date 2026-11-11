@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-11-11T08:13:59+09:00",
+  "lastSync": "2026-11-11T10:14:47+09:00",
   "keywords": [
     "배출권",
     "배출권거래제",
@@ -30,8 +30,8 @@
   "warning": "한국거래소 배출권 공지사항: 한국거래소 공지 목록을 해석하지 못했습니다. 1페이지: HTTP Error 403: Forbidden",
   "aiInsight": {
     "summary": "최근 공식자료의 직접적인 수급 변수는 유상경매입니다. 최근 경매가 높은 낙찰가로 소화돼 공급보다 이행수요가 강하다는 신호입니다.",
-    "generatedAt": "2026-11-11T08:13:59+09:00",
-    "basisLatestDate": "2026-11-08",
+    "generatedAt": "2026-11-11T10:14:47+09:00",
+    "basisLatestDate": "2026-11-11",
     "basisCount": 10,
     "source": "fallback",
     "model": null
@@ -791,6 +791,91 @@
   ],
   "items": [
     {
+      "id": "c168d1d8cb60c5e6",
+      "publishedAt": "2026-11-11",
+      "title": "임춘대 서울시의원 “물재생센터 탄소 감축·악취 관리 실효성 높여야”",
+      "category": "제도",
+      "summary": "또한 온실가스 초과 배출량은 전년 대비 감소했으나 배출권 구매 비용 산정액은 약 7억 9000만 원에서 9억 679만 원으로 증가한 점을 지적했다. 임 의원은 배출권 구입에 따른 하수도 재정 부담을 완화하기 위해 에너지...",
+      "source": "seoul.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.seoul.co.kr/news/publicnews/local_govern/smc_movement/2026/11/11/20261111500036?wlog_tag3=naver",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "seoul.co.kr",
+        "cnbizm.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 2,
+      "region": "국내"
+    },
+    {
+      "id": "c67b544ee0092c46",
+      "publishedAt": "2026-11-11",
+      "title": "「배출권선물 도입을 위한 배출권거래법령 마련 및 자본시장법 정합성 확보 연구」 입찰 공고",
+      "category": "제도",
+      "summary": "“제안서/공모안 제출내역”(제안서) 메뉴에서 확인하실 수 있습니다. 타. 문의처 : - (과업내용 및 제안서) 기후에너지환경부 기후경제과(박종호, 044-201-6586) - (입찰 및 계약사항) 운영지원과(044-201-6264)",
+      "source": "기후부 공지·공고",
+      "sourceType": "official",
+      "section": "notice",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C&menuId=10524&orgCd=&boardMasterId=39&boardId=1906260",
+      "matchedKeywords": [
+        "배출권"
+      ]
+    },
+    {
+      "id": "96c11be1da68e89b",
+      "publishedAt": "2026-11-11",
+      "title": "[정책브리핑] 하수·폐수에서 에너지 뽑아쓴다…'재생에너지원' 포함",
+      "category": "제도",
+      "summary": "민간투자를 통한 개발도상국의 온실가스감축사업 활성화를 목표로 하는 글로벌 고신뢰 탄소시장 (GVCM)과 기후 기술 개발 사업화, 녹색산업 육성을 지원하는 녹색 대전환(K-GX) 등 한국의 기후 정책 경험도 언급했다....",
+      "source": "esgeconomy.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.esgeconomy.com/news/articleView.html?idxno=17328",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "esgeconomy.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "45e25e1223305bfd",
+      "publishedAt": "2026-11-11",
+      "title": "APEC 재무장관회의, 홍콩서 첫 개최…우리 기업의 금융·디지털 인프라...",
+      "category": "제도",
+      "summary": "그는 각 경제체의 재정·금융 관계자들이 이번 회의를 통해 홍콩의 역외 위안화 시장 , 녹색금융, 자산관리 분야 경쟁력을 확인했다고 설명했다. 이에 따라 홍콩이 크로스보더 자금 조달과 탄소 배출권 거래 등...",
+      "source": "dream.kotra.or.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://dream.kotra.or.kr/kotranews/cms/news/actionKotraBoardDetail.do?SITE_NO=3&MENU_ID=80&CONTENTS_NO=2&bbsGbn=242&bbsSn=242&pNttSn=245133",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "dream.kotra.or.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "a37c950af4f55a77",
       "publishedAt": "2026-11-10",
       "title": "한화에어로스페이스, 선박용 수소연료전지 세계 5번째 인증…친환경 선...",
@@ -853,6 +938,29 @@
       "duplicateCount": 1,
       "duplicateSources": [
         "dream.kotra.or.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "5290cc36bf577cd4",
+      "publishedAt": "2026-11-10",
+      "title": "재경부·ADB, 기후기술허브 컨퍼런스 개최… \"한국 사무소 설치 추진\"",
+      "category": "제도",
+      "summary": "민간투자를 통한 개도국의 온실가스 감축사업 활성화를 목표로 하는 글로벌 고신뢰 탄소시장 (GVCM)과 기후기술 개발, 사업화 및 녹색산업 육성을 지원하는 녹색대전환(K-GX) 등 정책 경험도 공유했다. 재정경제부는 \"ADB...",
+      "source": "joseilbo.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.joseilbo.com/news/news_read.php?uid=579351&class=1&grp=",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "joseilbo.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -2300,13 +2408,13 @@
         "view.asiae.co.kr",
         "뉴시스",
         "newsis.com",
+        "더페어",
         "financialpost.co.kr",
         "메트로신문",
         "metroseoul.co.kr",
         "wsobi.com",
         "ddaily.co.kr",
         "smarttoday.co.kr",
-        "더페어",
         "PRESS9",
         "thevaluenews.co.kr",
         "newsian.co.kr",
@@ -281370,17 +281478,17 @@
     "policy": "append-only",
     "status": "verified",
     "previousNonNewsCount": 4551,
-    "generatedNonNewsCount": 4551,
-    "finalNonNewsCount": 4551,
+    "generatedNonNewsCount": 4552,
+    "finalNonNewsCount": 4552,
     "previousScheduleCount": 23,
     "finalScheduleCount": 23
   },
   "newsRetention": {
     "policy": "append-only",
-    "lastMergedAt": "2026-11-11T08:14:05+09:00",
-    "itemCount": 1984,
+    "lastMergedAt": "2026-11-11T10:14:56+09:00",
+    "itemCount": 1988,
     "archiveBefore": 1984,
-    "currentBefore": 1823,
+    "currentBefore": 1826,
     "gitRecoveryEnabled": false
   }
 }
