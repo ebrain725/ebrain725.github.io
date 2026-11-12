@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-12T10:13:54+09:00",
+  "generatedAt": "2026-11-12T13:00:29+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 2021,
+  "itemCount": 2031,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-12",
   "sourceCommitsScanned": 0,
@@ -62,6 +62,31 @@
       "region": "해외"
     },
     {
+      "id": "f82e6311afd3bdd2",
+      "publishedAt": "2026-11-12",
+      "title": "이병화 법무법인 린 변호사, '2026 탄소중립 녹색경영대상' 대통령 표창...",
+      "category": "제도",
+      "summary": "이 변호사는 2018년부터 배출권 거래제 관련 자문을 수행했으며, 정부 의뢰로 자발적 탄소시장 기본법안 초안 작성에 참여했다. 유럽연합(EU)의 탄소국경조정제도(CBAM)와 공급망 실사 대응 자문, 민간주도 탄소 공동대표...",
+      "source": "lawtimes.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.lawtimes.co.kr/news/articleView.html?idxno=229242",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소시장"
+      ],
+      "duplicateSources": [
+        "lawtimes.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "a86c6f735ae3188e",
       "publishedAt": "2026-11-12",
       "title": "산림청, 해외 산림보전사업 감축 실적 논란에 \"국가 감축목표 활용 불가...",
@@ -78,6 +103,31 @@
       ],
       "duplicateSources": [
         "woodkorea.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "653047d5a81dbe2e",
+      "publishedAt": "2026-11-12",
+      "title": "“한국형 자발적 탄소시장, 감축 실효성 확보가 우선”...국회서 제도 개...",
+      "category": "상쇄·외부사업",
+      "summary": "12일 오전 국회의원회관에서 열린 '한국형 자발적 탄소시장 이대로 괜찮은가' 토론회에서는 민간의 탄소감축 투자 활성화 필요성과 함께 탄소크레딧의 환경적 건전성, 감축실적 검증체계, 기존 배출권거래제 와의 관계 등이...",
+      "source": "m-economynews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.m-economynews.com/news/article.html?no=72926",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장",
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "m-economynews.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -110,6 +160,29 @@
       "region": "해외"
     },
     {
+      "id": "8e16fc655b7a72d8",
+      "publishedAt": "2026-11-12",
+      "title": "[정치家] 이형일 부총리 겸 재정경제부 장관 ㅣ '모두의 성장'으로…경...",
+      "category": "제도",
+      "summary": "이 부총리는 온실가스 감축과 민간투자 확대를 촉진할 방안으로 글로벌 고신뢰 탄소시장 (GVCM)을 제시했다. 김상협 GGGI 사무총장은 한국그린뉴딜신탁기금(KGNDTF)을 활용해 녹색투자 성과를 높이고, GVCM을 통해 고신뢰...",
+      "source": "cbci.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.cbci.co.kr/news/articleView.html?idxno=626027",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "cbci.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "d6b00305f8ef80d6",
       "publishedAt": "2026-11-12",
       "title": "[오늘의 국회일정] 상임위·세미나·기자회견·주요 정당 - 11월 12일",
@@ -125,9 +198,9 @@
       ],
       "duplicateCount": 5,
       "duplicateSources": [
+        "jeonmae.co.kr",
         "safetimes.co.kr",
         "newsis.com",
-        "jeonmae.co.kr",
         "newspim.com",
         "dnews.co.kr"
       ],
@@ -135,6 +208,128 @@
         "NAVER API HUB"
       ],
       "region": "국내"
+    },
+    {
+      "id": "2d7e2a88547c7767",
+      "publishedAt": "2026-11-12",
+      "title": "[에너지탄소포럼] 엥엘스타드 EEX 총괄 \"유럽 탄소가격, 韓 수출 경쟁력...",
+      "category": "시장·가격",
+      "summary": "함께 배출권 가격 변동에 대한 대응도 필요하다는 설명이다. 에를렌드 엥엘스타드(Erlend Engelstad)... 및 배출권 시장 동향'을 주제로 발표하며 이같이 밝혔다. 엥엘스타드 총괄은 \"한국 기업들이 유럽 탄소가격의 영향을...",
+      "source": "seoulfn.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.seoulfn.com/news/articleView.html?idxno=642634",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "seoulfn.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "bf7a3f07125f57da",
+      "publishedAt": "2026-11-12",
+      "title": "[에너지탄소포럼] 양창호 해운협회 부회장 \"EU 탄소 규제, 해운·금융 결...",
+      "category": "제도",
+      "summary": "유럽연합(EU)의 환경 규제가 본격화하면서 국내 해운업계가 막대한 탄소 배출권 비용 부담을 안고 자금 조달과... 특히 선박 한 척당 EU 탄소 배출권 거래제와 관련한 비용이 20억~30억원씩 발생하고 있다며 대응 방안 마련을...",
+      "source": "seoulfn.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.seoulfn.com/news/articleView.html?idxno=642614",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "seoulfn.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
+      "id": "0289975ac33bf093",
+      "publishedAt": "2026-11-12",
+      "title": "[에너지탄소포럼] 서대식 HMM 책임매니저 \"연료비만이 아닌 총비용 최소...",
+      "category": "제도",
+      "summary": "EU ETS는 EU 항만을 오가는 총톤수 5000t 이상 선박에 배출량만큼 배출권 제출 의무를 부과하며, 적용 비율이 2024년 40%, 2025년 70%, 올해 100%로 높아진다. FuelEU Maritime은 지난해 1월부터 선박 연료의 온실가스 집약도...",
+      "source": "seoulfn.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.seoulfn.com/news/articleView.html?idxno=642632",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "seoulfn.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
+      "id": "f374dca03bc85248",
+      "publishedAt": "2026-11-12",
+      "title": "[에너지탄소포럼] 박경탄 삼성선물 팀장 \"EU 탄소비용 급증··· 배출권 ...",
+      "category": "시장·가격",
+      "summary": "박 팀장은 \"EU 배출권거래제 (ETS)의 해운 부문 적용 비율이 2024년 40%에서 2025년 70%, 2026년 100%로 확대됐다\"며 \"이제는 배출권 가격과 규제 변화에 따른 비용을 더욱 면밀하게 관리해야 한다\"고 말했다. EU ETS는 온실가스...",
+      "source": "seoulfn.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.seoulfn.com/news/articleView.html?idxno=642637",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "서울파이낸스",
+        "seoulfn.com"
+      ],
+      "searchProviders": [
+        "Google News RSS",
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 2,
+      "region": "해외"
+    },
+    {
+      "id": "69adb4e02e403b82",
+      "publishedAt": "2026-11-12",
+      "title": "[에너지탄소포럼] 김진형 한국선급 팀장 \"EU ETS 비용 늘고 FuelEU는 풀링...",
+      "category": "제도",
+      "summary": "(탄소 배출권 거래제) & FuelEU Maritime(연료규제) 이행동향과 대응전략'을 주제로 발표했다. 김 팀장에... FuelEU Maritime은 선박 연료의 온실가스 집약도를 2020년 기준 대비 2025년 2%, 2030년 6%, 2050년 80% 낮추도록...",
+      "source": "seoulfn.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.seoulfn.com/news/articleView.html?idxno=642625",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "seoulfn.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
     },
     {
       "id": "5d570ac5d5b7934c",
@@ -212,6 +407,65 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 3,
+      "region": "국내"
+    },
+    {
+      "id": "b3d48b86a1fce1b5",
+      "publishedAt": "2026-11-12",
+      "title": "EU 탄소국경조정제도 검증 국내서 가능해졌다···표준협회 첫 인정",
+      "category": "제도",
+      "summary": "배출권 거래제 검증심사원을 대상으로 CBAM 관련 역량 강화 교육과정도 운영했다. 산업통상부는 EU 조세총국과의 면담을 통해 국내 검증기관의 신속한 심사를 요청하고 국내 기관들의 건의사항을 EU 측에 전달하는 등 통상...",
+      "source": "enewstoday.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.enewstoday.co.kr/news/articleView.html?idxno=2491617",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "mt.co.kr",
+        "vegannews.co.kr",
+        "etnews.com",
+        "edaily.co.kr",
+        "todayenergy.kr",
+        "hellot.net",
+        "ajunews.com",
+        "m-i.kr",
+        "view.asiae.co.kr",
+        "newsis.com",
+        "enewstoday.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 11,
+      "region": "국내"
+    },
+    {
+      "id": "04fd6da191a417f4",
+      "publishedAt": "2026-11-12",
+      "title": "AI·반도체 전력수요 급증…천연 가스 역할 재조명·수소산업 전환전략 ...",
+      "category": "제도",
+      "summary": "변화가 온실가스 감축기술의 사업성에 미치는 영향을 분석했다. 제4차 배출권 거래제 계획기간인 2026~2030년에는 배출허용총량 축소와 유상할당 확대가 추진되는 만큼 메탄 배출 저감과 수소 혼입, 바이오메탄 활용 등 주요...",
+      "source": "energydaily.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.energydaily.co.kr/news/articleView.html?idxno=204989",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "유상할당"
+      ],
+      "duplicateSources": [
+        "energydaily.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
       "region": "국내"
     },
     {
@@ -591,7 +845,8 @@
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
         "배출권",
-        "탄소시장"
+        "탄소시장",
+        "탄소배출권"
       ],
       "duplicateSources": [
         "webeconomy.co.kr"
@@ -2389,47 +2644,47 @@
       "duplicateSources": [
         "ezyeconomy.com",
         "디지털데일리",
+        "중앙신문",
+        "jasm.co.kr",
         "srtimes.kr",
         "ziksir.com",
         "socialvalue.kr",
         "inthenews.co.kr",
         "newsinside.kr",
         "thefirstmedia.net",
-        "jasm.co.kr",
+        "스페셜경제",
         "womentimes.co.kr",
         "megaeconomy.co.kr",
-        "뉴스인사이드",
         "fetv.co.kr",
+        "투데이e코노믹",
         "todayeconomic.com",
         "sentv.co.kr",
+        "서울경제TV",
         "consumernews.co.kr",
         "nongmin.com",
+        "파이낸셜투데이",
         "ftoday.co.kr",
+        "비즈월드",
         "bizwnews.com",
         "enewstoday.co.kr",
         "delighti.co.kr",
+        "로이슈",
         "lawissue.co.kr",
+        "초이스경제",
         "choicenews.co.kr",
         "press9.kr",
         "view.asiae.co.kr",
         "뉴시스",
         "newsis.com",
+        "더페어",
         "financialpost.co.kr",
+        "메트로신문",
         "metroseoul.co.kr",
         "wsobi.com",
         "ddaily.co.kr",
         "smarttoday.co.kr",
+        "뉴스인사이드",
         "이지경제",
-        "중앙신문",
-        "스페셜경제",
-        "투데이e코노믹",
-        "서울경제TV",
-        "파이낸셜투데이",
-        "비즈월드",
-        "로이슈",
-        "초이스경제",
-        "더페어",
-        "메트로신문",
         "PRESS9",
         "thevaluenews.co.kr",
         "newsian.co.kr",
@@ -4206,9 +4461,9 @@
       "duplicateSources": [
         "busan.com",
         "아시아타임즈",
+        "daily.hankooki.com",
         "asiatime.co.kr",
         "e-platform.net",
-        "daily.hankooki.com",
         "newspim.com",
         "cbci.co.kr",
         "econovill.com",
