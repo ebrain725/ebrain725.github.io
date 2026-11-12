@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-13T02:44:56+09:00",
+  "generatedAt": "2026-11-13T08:15:01+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 2052,
+  "itemCount": 2055,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-13",
   "sourceCommitsScanned": 0,
@@ -12,6 +12,55 @@
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "fef4fc1aa20dfba6",
+      "publishedAt": "2026-11-13",
+      "title": "러시아 로사톰, UN 탄소시장에 SMR 진입 선언… 원전도 탄소배출권 시대 여나",
+      "category": "제도",
+      "summary": "러시아 로사톰, UN 탄소시장에 SMR 진입 선언… 원전도 탄소배출권 시대 여나 독립신문",
+      "source": "독립신문",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5jaUVUQjJCaG1jZWFuZlBxdHMxOHRoUUdmMjdjMmwtVUlhRVVNMi11T0hFZ2N2M2g3NFVuZV90V0tabkt0X3dfbVhVYXRBZDFiNlVxUEJrSTg0N0NWMmRZMW9JNS1ialNuYWtZ?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권",
+        "탄소시장"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "독립신문"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "4fd061f3b0c002af",
+      "publishedAt": "2026-11-13",
+      "title": "규제 파고 넘는 해운·조선… 한국선급, 탈탄소·해양 SMR 해법 제시",
+      "category": "제도",
+      "summary": "국제해사기구(IMO)의 온실가스 규제 확정이 미뤄졌지만, 해운업계의 탈탄소 압박은 이미 현실이 되고 있다. 유럽 배출권 거래제와 화주·금융권의 배출량 요구가 강화되면서 선박 효율을 정확히 측정하고 대체 연료의...",
+      "source": "sedaily.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.sedaily.com/article/20113791?ref=naver",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "sedaily.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
     {
       "id": "149a31870675d28c",
       "publishedAt": "2026-11-13",
@@ -35,6 +84,30 @@
       ],
       "duplicateCount": 1,
       "region": "해외"
+    },
+    {
+      "id": "24ee06f7f739ab81",
+      "publishedAt": "2026-11-13",
+      "title": "11억6200만유로 조정 EBITDA…헬레닉 에너지 매출 54% 증가",
+      "category": "제도",
+      "summary": "회사가 제시한 조정 EBITDA와 조정 순이익은 재고 평가, 비영업·비경상 항목, 이산화 탄소 배출권... 같은 기간 항공유 판매는 3% 늘었지만 전체 국내 시장 판매는 2% 감소했다. 이사회는 주당 0.40유로의 중간배당을...",
+      "source": "tokenpost.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.tokenpost.kr/news/market/437366",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "tokenpost.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
     },
     {
       "id": "c896bcd9f6ce4a2a",
@@ -3173,45 +3246,45 @@
       "duplicateSources": [
         "ezyeconomy.com",
         "디지털데일리",
-        "중앙신문",
         "jasm.co.kr",
         "srtimes.kr",
         "ziksir.com",
         "socialvalue.kr",
         "inthenews.co.kr",
         "newsinside.kr",
-        "스페셜경제",
         "womentimes.co.kr",
         "megaeconomy.co.kr",
+        "뉴스인사이드",
         "fetv.co.kr",
-        "투데이e코노믹",
         "todayeconomic.com",
         "sentv.co.kr",
-        "서울경제TV",
         "consumernews.co.kr",
         "nongmin.com",
-        "파이낸셜투데이",
         "ftoday.co.kr",
-        "비즈월드",
         "bizwnews.com",
         "enewstoday.co.kr",
         "delighti.co.kr",
-        "로이슈",
         "lawissue.co.kr",
-        "초이스경제",
         "choicenews.co.kr",
         "press9.kr",
         "view.asiae.co.kr",
         "뉴시스",
         "newsis.com",
-        "더페어",
         "financialpost.co.kr",
-        "메트로신문",
         "metroseoul.co.kr",
         "wsobi.com",
         "ddaily.co.kr",
         "smarttoday.co.kr",
-        "뉴스인사이드",
+        "중앙신문",
+        "스페셜경제",
+        "투데이e코노믹",
+        "서울경제TV",
+        "파이낸셜투데이",
+        "비즈월드",
+        "로이슈",
+        "초이스경제",
+        "더페어",
+        "메트로신문",
         "thefirstmedia.net",
         "이지경제",
         "PRESS9",
