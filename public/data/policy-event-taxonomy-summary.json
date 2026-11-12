@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0",
   "taxonomyVersion": "2026-09-11-v1-user-38-events",
-  "generatedAt": "2026-11-10T09:22:03+09:00",
+  "generatedAt": "2026-11-13T07:01:35+09:00",
   "requestedStartDate": "2015-01-01",
   "collectionMode": "incremental",
   "eventCount": 38,
@@ -200,23 +200,23 @@
   "sectionCounts": {
     "krx_notice": 316,
     "motie_notice": 955,
-    "motie_press": 1893,
-    "notice": 441,
-    "press": 953
+    "motie_press": 1895,
+    "notice": 443,
+    "press": 956
   },
   "previousSectionCounts": {
     "krx_notice": 316,
     "motie_notice": 955,
-    "motie_press": 1893,
-    "notice": 439,
-    "press": 948
+    "motie_press": 1895,
+    "notice": 440,
+    "press": 950
   },
   "addedCounts": {
     "krx_notice": 0,
     "motie_notice": 0,
     "motie_press": 0,
-    "notice": 2,
-    "press": 5
+    "notice": 3,
+    "press": 6
   },
   "scopeCounts": {
     "krx_notice": {
@@ -229,21 +229,21 @@
     },
     "motie_press": {
       "direct": 28,
-      "related": 1863
+      "related": 1865
     },
     "notice": {
-      "direct": 222,
+      "direct": 224,
       "related": 213
     },
     "press": {
-      "direct": 442,
-      "related": 508
+      "direct": 444,
+      "related": 509
     }
   },
   "eventCounts": {
-    "재생에너지·RPS": 919,
-    "배출권·배출권거래제·ETS": 896,
-    "원자력발전·원전": 820,
+    "재생에너지·RPS": 920,
+    "배출권·배출권거래제·ETS": 900,
+    "원자력발전·원전": 821,
     "온실가스·배출량·명세서": 726,
     "탄소중립 선언·기본계획": 584,
     "유상할당 비율": 360,
@@ -256,7 +256,7 @@
     "이행·정산·제출기한": 105,
     "낙찰가·응찰배수": 96,
     "수소발전·청정수소": 84,
-    "탄소국경조정·CBAM": 73,
+    "탄소국경조정·CBAM": 76,
     "전력수급기본계획·전원구성": 63,
     "석탄발전": 62,
     "증설·상업가동": 59,
@@ -307,15 +307,15 @@
       }
     },
     "notice": {
-      "records": 441,
+      "records": 443,
       "earliest": "2015-01-07",
-      "latest": "2026-11-04",
+      "latest": "2026-11-11",
       "scopeCounts": {
-        "direct": 222,
+        "direct": 224,
         "related": 213
       },
       "eventCounts": {
-        "배출권·배출권거래제·ETS": 210,
+        "배출권·배출권거래제·ETS": 212,
         "온실가스·배출량·명세서": 126,
         "유상할당 비율": 122,
         "시장안정화·MSR": 117,
@@ -342,26 +342,26 @@
       }
     },
     "press": {
-      "records": 953,
+      "records": 956,
       "earliest": "2015-01-08",
-      "latest": "2026-11-08",
+      "latest": "2026-11-12",
       "scopeCounts": {
-        "direct": 442,
-        "related": 508
+        "direct": 444,
+        "related": 509
       },
       "eventCounts": {
-        "배출권·배출권거래제·ETS": 299,
+        "배출권·배출권거래제·ETS": 301,
         "온실가스·배출량·명세서": 242,
         "탄소중립 선언·기본계획": 237,
         "할당계획·할당량": 118,
         "국제감축·외부사업·감축실적": 98,
         "이행·정산·제출기한": 92,
-        "재생에너지·RPS": 54,
+        "재생에너지·RPS": 55,
         "시장안정화·MSR": 48,
         "원자력발전·원전": 44,
         "유상할당 비율": 42,
         "시장참여자 확대·시장조성": 36,
-        "탄소국경조정·CBAM": 27,
+        "탄소국경조정·CBAM": 29,
         "증설·상업가동": 24,
         "화재·폭발·침수·가동중단": 24,
         "폭염·한파·전력수요": 19,
@@ -410,15 +410,15 @@
       }
     },
     "motie_press": {
-      "records": 1893,
+      "records": 1895,
       "earliest": "2016-01-19",
-      "latest": "2026-11-03",
+      "latest": "2026-11-12",
       "scopeCounts": {
         "direct": 28,
-        "related": 1863
+        "related": 1865
       },
       "eventCounts": {
-        "원자력발전·원전": 678,
+        "원자력발전·원전": 679,
         "재생에너지·RPS": 344,
         "중국 증설·반덤핑·관세": 229,
         "탄소중립 선언·기본계획": 191,
@@ -427,7 +427,7 @@
         "전력시장·급전(포괄)": 52,
         "석탄발전": 50,
         "수소발전·청정수소": 46,
-        "탄소국경조정·CBAM": 44,
+        "탄소국경조정·CBAM": 45,
         "전력수급기본계획·전원구성": 36,
         "RE100": 32,
         "증설·상업가동": 27,
@@ -448,13 +448,13 @@
     }
   },
   "validation": {
-    "officialItemCount": 4558,
+    "officialItemCount": 4565,
     "sectionCounts": {
       "krx_notice": 316,
       "motie_notice": 955,
-      "motie_press": 1893,
-      "notice": 441,
-      "press": 953
+      "motie_press": 1895,
+      "notice": 443,
+      "press": 956
     },
     "scopeCounts": {
       "krx_notice": {
@@ -467,21 +467,21 @@
       },
       "motie_press": {
         "direct": 28,
-        "related": 1863
+        "related": 1865
       },
       "notice": {
-        "direct": 222,
+        "direct": 224,
         "related": 213
       },
       "press": {
-        "direct": 442,
-        "related": 508
+        "direct": 444,
+        "related": 509
       }
     },
     "eventCounts": {
-      "재생에너지·RPS": 919,
-      "배출권·배출권거래제·ETS": 896,
-      "원자력발전·원전": 820,
+      "재생에너지·RPS": 920,
+      "배출권·배출권거래제·ETS": 900,
+      "원자력발전·원전": 821,
       "온실가스·배출량·명세서": 726,
       "탄소중립 선언·기본계획": 584,
       "유상할당 비율": 360,
@@ -494,7 +494,7 @@
       "이행·정산·제출기한": 105,
       "낙찰가·응찰배수": 96,
       "수소발전·청정수소": 84,
-      "탄소국경조정·CBAM": 73,
+      "탄소국경조정·CBAM": 76,
       "전력수급기본계획·전원구성": 63,
       "석탄발전": 62,
       "증설·상업가동": 59,
@@ -522,7 +522,7 @@
     "invalidDates": 0,
     "invalidDomains": 0,
     "unclassified": 0,
-    "taxonomyMatchedItemCount": 4547,
+    "taxonomyMatchedItemCount": 4554,
     "retainedUnmatchedItemCount": 11,
     "retainedUnmatchedKeys": [
       "motie_press|ATCL3f49a5a8c|172227",
@@ -537,8 +537,8 @@
       "press|url|https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=1000&maxIndexPages=10&searchKey=&searchValue=&menuId=10598&orgCd=&boardMasterId=939&boardId=1890080",
       "press|url|https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=1000&maxIndexPages=10&searchKey=&searchValue=&menuId=10598&orgCd=&boardMasterId=939&boardId=1892970"
     ],
-    "dashboardOfficialCount": 4558
+    "dashboardOfficialCount": 4565
   },
-  "lastRunDateKst": "2026-11-10",
-  "lastRunSlot": "2026-11-10-AM"
+  "lastRunDateKst": "2026-11-13",
+  "lastRunSlot": "2026-11-13-AM"
 }
