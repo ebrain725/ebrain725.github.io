@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-12T15:14:31+09:00",
+  "generatedAt": "2026-11-12T18:13:31+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 2039,
+  "itemCount": 2048,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-12",
   "sourceCommitsScanned": 0,
@@ -37,6 +37,31 @@
       "region": "국내"
     },
     {
+      "id": "32e25dd8c0600471",
+      "publishedAt": "2026-11-12",
+      "title": "한국해운협회, EU 탄소규제 비용 대응방안 모색",
+      "category": "시장·가격",
+      "summary": "최근 해운업계는 운임과 연료가격, 환율 등 기존 경영 변수에 더해 EU 배출권 거래제(EU ETS)와 FuelEU Maritime 시행에 따른 추가 비용과 운영상 변화에 대응해야 하는 상황에 놓여 있다. 이에 따라 선사들은 탄소 배출권 확보...",
+      "source": "seoulfn.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.seoulfn.com/news/articleView.html?idxno=642666",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "seoulfn.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
       "id": "c3b235084ccae71d",
       "publishedAt": "2026-11-12",
       "title": "한국발전순환자원협회, 제6회 발전순환자원 기술세미나 개최",
@@ -50,10 +75,11 @@
       "matchedKeywords": [
         "배출권"
       ],
-      "duplicateCount": 2,
+      "duplicateCount": 3,
       "duplicateSources": [
         "megaeconomy.co.kr",
-        "enetnews.co.kr"
+        "enetnews.co.kr",
+        "dailian.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -110,6 +136,29 @@
       "region": "해외"
     },
     {
+      "id": "daa5521c83798441",
+      "publishedAt": "2026-11-12",
+      "title": "제주 탄소 중립‧기후경제수도 비전 국제사회로",
+      "category": "제도",
+      "summary": "또한 전기차 배터리의 전력망 연계(V2G), 에너지저장장치(ESS) 등을 활용한 시민의 에너지 시장 참여 확대와 온실가스 감축 실천을 지원하는 마일리지 제도, 제주형 자발적 탄소시장 구축 방안도 공유했다. 이와 함께 도는...",
+      "source": "jejumaeil.net",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.jejumaeil.net/news/articleView.html?idxno=406686",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "jejumaeil.net"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "aafd7e4f815030ae",
       "publishedAt": "2026-11-12",
       "title": "정부 \"자발적 탄소크레딧, NDC· 배출권거래제 에 활용 안 해\"",
@@ -126,12 +175,14 @@
         "탄소시장"
       ],
       "duplicateSources": [
+        "ESG경제",
         "esgeconomy.com"
       ],
       "searchProviders": [
+        "Google News RSS",
         "NAVER API HUB"
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "region": "국내"
     },
     {
@@ -150,6 +201,7 @@
         "배출권"
       ],
       "duplicateSources": [
+        "기후에너지데이터뱅크",
         "에너지경제신문",
         "ekn.kr"
       ],
@@ -157,7 +209,7 @@
         "Google News RSS",
         "NAVER API HUB"
       ],
-      "duplicateCount": 2,
+      "duplicateCount": 3,
       "region": "국내"
     },
     {
@@ -255,6 +307,83 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "554a4738a3071ede",
+      "publishedAt": "2026-11-12",
+      "title": "“한국, 메가프로젝트로 화석연료 의존 심화…기후행동도 불충분”",
+      "category": "제도",
+      "summary": "국가 온실가스 감축목표와 관련해서는, 장기적인 감축목표 범위를 법제화하긴 했지만 국내 감축보다는 국제 탄소 배출권 , 탄소 제거, 탄소 포집·활용·저장 등에 의존할 여지가 있다고 지적했다. “감축목표 달성...",
+      "source": "hani.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.hani.co.kr/arti/science/science_general/1287031.html",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "hani.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "6a286f129c9aaded",
+      "publishedAt": "2026-11-12",
+      "title": "“그린워싱 조장” vs “신뢰로 키울 시장”…한국형 탄소시장 공방",
+      "category": "제도",
+      "summary": "정부가 이런 실적을 NDC(국가 온실가스 감축목표)나 배출권 거래제에 활용하면 “정부가 나서서 그린워싱을 조장하는 것이란 비판을 피하기 어려울 것”이라고 경고했다. 배슬기 환경운동연합 활동가 또한 “정부 주도의...",
+      "source": "segye.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.segye.com/newsView/20261112517172?OutUrl=naver",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장",
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "segye.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "43d5447fc171dacd",
+      "publishedAt": "2026-11-12",
+      "title": "[현장] 한국 자발적 탄소시장 토론회, \"잘 쓰면 기후테크 발전 vs 감축 실...",
+      "category": "제도",
+      "summary": "탄소 크레딧은 정부가 발행하는 온실가스 배출권 과 달리 특정 기업이나 사업 주체가 탄소 감축 프로젝트를... 이어 \"또 기획예산처 계획을 보면 배출권 거래제를 자발적 탄소시장에 연동하려고 하던데 그렇게 되면 기업들은...",
+      "source": "businesspost.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.businesspost.co.kr/BP?command=article_view&num=451835",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장",
+        "배출권",
+        "배출권거래제",
+        "온실가스 배출권"
+      ],
+      "duplicateSources": [
+        "비즈니스포스트",
+        "businesspost.co.kr"
+      ],
+      "searchProviders": [
+        "Google News RSS",
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 2,
       "region": "국내"
     },
     {
@@ -368,7 +497,8 @@
       "url": "https://www.seoulfn.com/news/articleView.html?idxno=642634",
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
-        "배출권"
+        "배출권",
+        "탄소배출권"
       ],
       "duplicateSources": [
         "seoulfn.com"
@@ -505,6 +635,29 @@
       "region": "해외"
     },
     {
+      "id": "d7e94364d1ed9493",
+      "publishedAt": "2026-11-12",
+      "title": "[에너지탄소포럼] 국적선 200척, EU 배출권에 970억···\"탄소비용은 고정비, 미리 묶어야\" (종합)",
+      "category": "제도",
+      "summary": "[에너지탄소포럼] 국적선 200척, EU 배출권에 970억···\"탄소비용은 고정비, 미리 묶어야\" (종합) 서울파이낸스",
+      "source": "서울파이낸스",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1IR21ocHlIR3hkSUcwSzVUTU85Zl9CRVh6VEFDY19rNU1ubUFZaEhyU1hVOWt0d3JJazdHWjhlcXZGSThRMkhFb0VoaF9ZeXJGcDVXeU9aVUYwRVYtS2dEWG1MWUFYbGFjX0E?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "서울파이낸스"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "해외"
+    },
+    {
       "id": "b23c768a4d56404c",
       "publishedAt": "2026-11-12",
       "title": "[단독]대한상의, 국제항공 탄소 크레딧 인증 불발…“이해상충 문제”",
@@ -525,6 +678,30 @@
       "searchProviders": [
         "NAVER API HUB"
       ],
+      "region": "국내"
+    },
+    {
+      "id": "5a4a610b362273d4",
+      "publishedAt": "2026-11-12",
+      "title": "[단독] 정부, 탄소 배출권 선물 시장 개설 속도…거래·결제 규칙 짠다",
+      "category": "제도",
+      "summary": "기후부, 배출권거래법령 정비 용역 발주 만기 배출권 이전, 장내·장외 처리 검토 매도자 결제 불이행 땐 매수 기업 구제도 정부가 내년 말 탄소 배출권 선물 시장 개설을 앞두고 거래·결제 규칙 마련에 착수했다. 선물 계약...",
+      "source": "mk.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.mk.co.kr/article/12206425",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "mk.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
       "region": "국내"
     },
     {
@@ -550,6 +727,58 @@
       ],
       "duplicateCount": 1,
       "region": "국내"
+    },
+    {
+      "id": "28264c471315c8c3",
+      "publishedAt": "2026-11-12",
+      "title": "[ETF 시황] K팝 웃고 중국 테마 울고…수익률 희비",
+      "category": "시장·가격",
+      "summary": "이 외에 통신서비스(1.66%), EuroStoxx50(1.45%), 탄소 배출권 (1.44%), 원유/가스기업(1.37%) 테마가 강세를 보였다. IPO/M&A(-3.99%), 보험(-3.91%), 희토류(-3.89%), 금채굴기업(-3.72%), 기후변화솔루션(-3.45%) 관련 ETF는...",
+      "source": "newspim.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newspim.com/news/view/20261112001241",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "newspim.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "bea1d96589b53b84",
+      "publishedAt": "2026-11-12",
+      "title": "KR, 해사업계 탈탄소 논의 ‘2026 친환경기술 컨퍼런스’ 성료",
+      "category": "제도",
+      "summary": "국제해사기구(IMO) 넷제로 프레임워크(Net-Zero Framework)의 최종 채택이 연기되는 등 국제 환경규제의 불확실성이 지속되는 가운데, 유럽 배출권 거래제와 화주·금융권의 배출량 요구는 이미 현실이 되고 있다. 이에...",
+      "source": "amenews.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://amenews.kr/news/view.php?idx=68682",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "energy-news.co.kr",
+        "enewstoday.co.kr",
+        "industrynews.co.kr",
+        "amenews.kr",
+        "cnbnews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 5,
+      "region": "해외"
     },
     {
       "id": "effe944537556d12",
@@ -628,6 +857,7 @@
         "edaily.co.kr",
         "todayenergy.kr",
         "hellot.net",
+        "weeklytrade.co.kr",
         "ajunews.com",
         "m-i.kr",
         "view.asiae.co.kr",
@@ -637,7 +867,7 @@
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 12,
+      "duplicateCount": 13,
       "region": "국내"
     },
     {
@@ -2848,7 +3078,6 @@
         "socialvalue.kr",
         "inthenews.co.kr",
         "newsinside.kr",
-        "thefirstmedia.net",
         "스페셜경제",
         "womentimes.co.kr",
         "megaeconomy.co.kr",
@@ -2881,6 +3110,7 @@
         "wsobi.com",
         "ddaily.co.kr",
         "smarttoday.co.kr",
+        "thefirstmedia.net",
         "이지경제",
         "PRESS9",
         "thevaluenews.co.kr",
@@ -3628,7 +3858,9 @@
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
         "배출권",
-        "탄소배출권"
+        "탄소배출권",
+        "배출권거래제",
+        "K-ETS"
       ],
       "duplicateSources": [
         "sateconomy.co.kr"
@@ -20773,15 +21005,15 @@
         "K-ETS"
       ],
       "duplicateSources": [
-        "이투데이",
         "인더스트리뉴스",
         "industrynews.co.kr",
-        "pinpointnews.co.kr",
         "paxetv.com",
         "newsdream.kr",
         "dailian.co.kr",
-        "view.asiae.co.kr",
         "edaily.co.kr",
+        "이투데이",
+        "pinpointnews.co.kr",
+        "view.asiae.co.kr",
         "팍스경제TV",
         "아시아경제",
         "마켓인",
