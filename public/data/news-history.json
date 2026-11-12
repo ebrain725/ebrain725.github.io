@@ -1,17 +1,41 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-12T22:04:16+09:00",
+  "generatedAt": "2026-11-13T02:44:56+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 2051,
+  "itemCount": 2052,
   "earliestPublishedAt": "2026-08-06",
-  "latestPublishedAt": "2026-11-12",
+  "latestPublishedAt": "2026-11-13",
   "sourceCommitsScanned": 0,
   "sourceSnapshotsScanned": 0,
   "historicalRowsScanned": 0,
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "149a31870675d28c",
+      "publishedAt": "2026-11-13",
+      "title": "ACE KPOP포커스 급등…삼성전자 레버리지·SK하이닉스 인버스 강세",
+      "category": "시장·가격",
+      "summary": "이 밖에 유럽 탄소 배출권 과 에너지 관련 ETF도 상승률 상위권에 이름을 올렸다. 8위 SOL 유럽탄소 배출권 선물S&P(H)는 2.94% 상승했다. 9위 RISE 미국S&P원유생산기업(합성 H)은 2.89% 오른 7천835원을 기록했다....",
+      "source": "kjdaily.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.kjdaily.com/article.php?aid=1794497113692039276",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "kjdaily.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
     {
       "id": "c896bcd9f6ce4a2a",
       "publishedAt": "2026-11-12",
@@ -201,8 +225,8 @@
         "배출권"
       ],
       "duplicateSources": [
-        "기후에너지데이터뱅크",
         "에너지경제신문",
+        "기후에너지데이터뱅크",
         "ekn.kr"
       ],
       "searchProviders": [
@@ -3159,7 +3183,6 @@
         "스페셜경제",
         "womentimes.co.kr",
         "megaeconomy.co.kr",
-        "뉴스인사이드",
         "fetv.co.kr",
         "투데이e코노믹",
         "todayeconomic.com",
@@ -3188,6 +3211,7 @@
         "wsobi.com",
         "ddaily.co.kr",
         "smarttoday.co.kr",
+        "뉴스인사이드",
         "thefirstmedia.net",
         "이지경제",
         "PRESS9",
