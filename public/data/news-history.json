@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-12T08:15:24+09:00",
+  "generatedAt": "2026-11-12T10:13:54+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 2020,
+  "itemCount": 2021,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-12",
   "sourceCommitsScanned": 0,
@@ -123,11 +123,13 @@
       "matchedKeywords": [
         "탄소시장"
       ],
-      "duplicateCount": 3,
+      "duplicateCount": 5,
       "duplicateSources": [
         "safetimes.co.kr",
         "newsis.com",
-        "newspim.com"
+        "jeonmae.co.kr",
+        "newspim.com",
+        "dnews.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -156,6 +158,34 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "effe944537556d12",
+      "publishedAt": "2026-11-12",
+      "title": "EU 탄소국경조정제도 국내 첫 검증기관 탄생…수출기업 부담 완화",
+      "category": "제도",
+      "summary": "배출권 거래제 검증심사원을 대상으로 CBAM 역량 강화 교육과정도 운영했다. 산업부는 EU 조세총국과의 면담을 통해 국내 검증기관에 대한 신속한 심사를 요청하고, 국내 기관의 건의사항을 EU 측에 지속적으로 전달하는...",
+      "source": "view.asiae.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://view.asiae.co.kr/article/2026111208303345193",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "mt.co.kr",
+        "edaily.co.kr",
+        "ajunews.com",
+        "view.asiae.co.kr",
+        "newsis.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 5,
       "region": "국내"
     },
     {
