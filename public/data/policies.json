@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-11-12T13:00:19+09:00",
+  "lastSync": "2026-11-12T13:15:01+09:00",
   "keywords": [
     "배출권",
     "배출권거래제",
@@ -30,7 +30,7 @@
   "warning": "한국거래소 배출권 공지사항: 한국거래소 공지 목록을 해석하지 못했습니다. 1페이지: HTTP Error 403: Forbidden",
   "aiInsight": {
     "summary": "최근 공식자료의 직접적인 수급 변수는 유상경매입니다. 최근 경매가 높은 낙찰가로 소화돼 공급보다 이행수요가 강하다는 신호입니다.",
-    "generatedAt": "2026-11-12T13:00:19+09:00",
+    "generatedAt": "2026-11-12T13:15:01+09:00",
     "basisLatestDate": "2026-11-12",
     "basisCount": 10,
     "source": "fallback",
@@ -875,6 +875,31 @@
       ],
       "duplicateCount": 1,
       "region": "해외"
+    },
+    {
+      "id": "aafd7e4f815030ae",
+      "publishedAt": "2026-11-12",
+      "title": "정부 \"자발적 탄소크레딧, NDC· 배출권거래제 에 활용 안 해\"",
+      "category": "상쇄·외부사업",
+      "summary": "사진=ESG경제 정부는 한국형 자발적 탄소시장(VCM)의 탄소크레딧을 국가 온실가스 감축목표(NDC) 달성이나 배출권거래제 (ETS) 의무 이행에 직접 활용할 계획이 없다고 밝혔다. 부실한 감축실적이 국가 감축목표와 의무시장에...",
+      "source": "esgeconomy.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.esgeconomy.com/news/articleView.html?idxno=17353",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소시장"
+      ],
+      "duplicateSources": [
+        "esgeconomy.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
     },
     {
       "id": "f82e6311afd3bdd2",
@@ -3520,6 +3545,7 @@
         "스페셜경제",
         "womentimes.co.kr",
         "megaeconomy.co.kr",
+        "뉴스인사이드",
         "fetv.co.kr",
         "투데이e코노믹",
         "todayeconomic.com",
@@ -3548,7 +3574,6 @@
         "wsobi.com",
         "ddaily.co.kr",
         "smarttoday.co.kr",
-        "뉴스인사이드",
         "이지경제",
         "PRESS9",
         "thevaluenews.co.kr",
@@ -282620,10 +282645,10 @@
   },
   "newsRetention": {
     "policy": "append-only",
-    "lastMergedAt": "2026-11-12T13:00:29+09:00",
-    "itemCount": 2031,
-    "archiveBefore": 2021,
-    "currentBefore": 1867,
+    "lastMergedAt": "2026-11-12T13:15:08+09:00",
+    "itemCount": 2032,
+    "archiveBefore": 2031,
+    "currentBefore": 1868,
     "gitRecoveryEnabled": false
   }
 }
