@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-13T08:15:01+09:00",
+  "generatedAt": "2026-11-13T10:14:09+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 2055,
+  "itemCount": 2060,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-13",
   "sourceCommitsScanned": 0,
@@ -12,6 +12,81 @@
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "56138c4e294402eb",
+      "publishedAt": "2026-11-13",
+      "title": "항공업계, 코르시아 본격 시행 앞두고 적격 탄소 배출권 부족 우려",
+      "category": "제도",
+      "summary": "적격 배출권 공급, 예상 수요에 못 미쳐 유럽연합(EU)은 이미 역내 항공편에 배출권거래제 (ETS)를 적용하고 있다. 코르시아는 2021년 시범 단계로 시작됐으며, 2024~2026년 1단계에는 자발적으로 참여한 국가의 항공사들이...",
+      "source": "esgeconomy.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.esgeconomy.com/news/articleView.html?idxno=17375",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "ESG경제",
+        "esgeconomy.com"
+      ],
+      "searchProviders": [
+        "Google News RSS",
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 2,
+      "region": "해외"
+    },
+    {
+      "id": "149bb202d9505276",
+      "publishedAt": "2026-11-13",
+      "title": "한국전력, 비용 부담에 실적 부진…전기요금·원전 확대 주목[애널리스...",
+      "category": "제도",
+      "summary": "월성 1호기 해체 관련 충당금과 탄소 배출권 정산 비용도 추가됐다. 탄소 배출권 정산물량이 남아 있어 4분기에도 비용이 발생할 수 있다고 봤다. 정혜정 KB증권 연구원은 \"향후 한국전력에서 가장 주목할 부분은 연말...",
+      "source": "newsway.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newsway.co.kr/news/view?ud=2026111307592120182",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "newsway.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "1fab07625f73ec12",
+      "publishedAt": "2026-11-13",
+      "title": "엠엠에스컨설팅, 글로벌 복합물류 운임 플랫폼 'BtoB-GoGo' 공개",
+      "category": "제도",
+      "summary": "선사 정시율, EU 탄소 배출권 (EU ETS) 등 경로별 부대비용, 수입 견적 및 체화료(D/D) 점검 사례, Excel 시뮬레이터 등이 수록됐으며, 연말까지 런칭 할인가로 공급된다. 엠엠에스컨설팅은 내년 1월 1일 150개 선사 요율...",
+      "source": "klnews.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.klnews.co.kr/news/articleView.html?idxno=323503",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "klnews.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
     {
       "id": "fef4fc1aa20dfba6",
       "publishedAt": "2026-11-13",
@@ -54,6 +129,30 @@
       ],
       "duplicateSources": [
         "sedaily.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
+      "id": "c57cf22a0c382985",
+      "publishedAt": "2026-11-13",
+      "title": "KR, 2026 친환경기술 컨퍼런스 성료… 안전성 검증 경험 공유",
+      "category": "제도",
+      "summary": "… 국제해사기구(IMO) 넷제로 프레임워크(Net-Zero Framework)의 최종 채택이 연기되는 등 국제 환경규제의 불확실성이 지속되는 가운데, 유럽 배출권 거래제와 화주·금융권의 배출량 요구는 이미 현실이 되고 있다. 이에...",
+      "source": "todayenergy.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.todayenergy.kr/news/articleView.html?idxno=305495",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "todayenergy.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -107,6 +206,32 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "1757c5cfcb02058e",
+      "publishedAt": "2026-11-13",
+      "title": "103% 달성 적어놓고 배출권 14억어치 샀다",
+      "category": "제도",
+      "summary": "대전시는 환경기초시설 12곳을 묶어 '대전시'라는 사업장명으로 배출권 거래제 관리를 받고 있다. 배출이 가장 많은 곳은 하수처리장이다. 환경정책과장은 \"전체 누계로 봤을 때는 달성을 하지 못하고 있다\"며 \"17%에서...",
+      "source": "thepublic.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.thepublic.kr/news/articleView.html?idxno=326461",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "더퍼블릭",
+        "thepublic.kr"
+      ],
+      "searchProviders": [
+        "Google News RSS",
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 2,
       "region": "국내"
     },
     {
@@ -4084,7 +4209,8 @@
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
         "배출권",
-        "탄소배출권"
+        "탄소배출권",
+        "배출권거래제"
       ],
       "duplicateSources": [
         "지이코노미",
@@ -4116,8 +4242,8 @@
         "탄소배출권"
       ],
       "duplicateSources": [
-        "epj.co.kr",
         "m-i.kr",
+        "epj.co.kr",
         "efnews.co.kr",
         "redaily.co.kr",
         "ccnnews.co.kr",
