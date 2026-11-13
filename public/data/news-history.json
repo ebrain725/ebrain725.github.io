@@ -1,17 +1,40 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-13T21:31:16+09:00",
+  "generatedAt": "2026-11-14T02:23:33+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 2083,
+  "itemCount": 2086,
   "earliestPublishedAt": "2026-08-06",
-  "latestPublishedAt": "2026-11-13",
+  "latestPublishedAt": "2026-11-14",
   "sourceCommitsScanned": 0,
   "sourceSnapshotsScanned": 0,
   "historicalRowsScanned": 0,
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "619737760d471f07",
+      "publishedAt": "2026-11-14",
+      "title": "베트남, COP31에서 탄소 시장 정보 포털 공개.",
+      "category": "제도",
+      "summary": "베트남, COP31에서 탄소 시장 정보 포털 공개. Vietnam.vn",
+      "source": "Vietnam.vn",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNellSa2h4eHZrdVZEUlFndTZWLVR3cS1UR2VycEpaRE1MU0ZRa1FaeW9yTFBsVGlJR3NiWkFuSDQtbHVmM2lzRm9PYXd1OEhwMEsxd3U0OW9VV0lHTTlfV3RNS2FIZ0MwWXRMQ0hZQWp2cGRwWE1TeFNqX3pCRkVvYnNNemdUUWlfZFA0eg?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "Vietnam.vn"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "해외"
+    },
     {
       "id": "56138c4e294402eb",
       "publishedAt": "2026-11-13",
@@ -108,6 +131,34 @@
       "searchProviders": [
         "Google News RSS"
       ],
+      "region": "국내"
+    },
+    {
+      "id": "9268f33323a58fb0",
+      "publishedAt": "2026-11-13",
+      "title": "제주에너지공사, 하이브리드 수전해 기술개발 본격 착수…남는 재생전...",
+      "category": "제도",
+      "summary": "설계·시험인증·전력 시장 분야 관계자 40여 명이 참석했다. 참석자들은 기관별 연구 일정과 실증 설비 배치... 공사는 제주지역 전력배출계수를 적용한 전과정평가(LCA)를 통해 청정수소 인증 가능성을 살피고, 탄소 배출권...",
+      "source": "digitalbizon.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.digitalbizon.com/news/articleView.html?idxno=2344258",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "digitalbizon.com",
+        "e-platform.net",
+        "e2news.com",
+        "jejudomin.co.kr",
+        "energydaily.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 5,
       "region": "국내"
     },
     {
@@ -500,6 +551,30 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 2,
+      "region": "국내"
+    },
+    {
+      "id": "bb4eb868c317b061",
+      "publishedAt": "2026-11-13",
+      "title": "[COP31] \"한국 온실가스 감축은 장부상 숫자\"…파리협정 위반 우려",
+      "category": "제도",
+      "summary": "이들은 한국 정부의 국제감축 목표와 해외 탄소 배출권 구매 계획을 전면 재검토해야 한다고 주장했다.... 전체 예상 실적 가운데 784만톤은 2021년 이전 교토의정서 체계에서 발행된 탄소 배출권 이다. 플랜1.5는 이...",
+      "source": "4th.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.4th.kr/news/articleView.html?idxno=2121860",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "4th.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
       "region": "국내"
     },
     {
@@ -3935,7 +4010,6 @@
         "newsinside.kr",
         "womentimes.co.kr",
         "megaeconomy.co.kr",
-        "뉴스인사이드",
         "fetv.co.kr",
         "todayeconomic.com",
         "sentv.co.kr",
@@ -3955,6 +4029,7 @@
         "wsobi.com",
         "ddaily.co.kr",
         "smarttoday.co.kr",
+        "뉴스인사이드",
         "뉴시스",
         "중앙신문",
         "스페셜경제",
