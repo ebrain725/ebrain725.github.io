@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-13T13:14:11+09:00",
+  "generatedAt": "2026-11-13T15:13:55+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 2065,
+  "itemCount": 2070,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-13",
   "sourceCommitsScanned": 0,
@@ -201,7 +201,32 @@
         "배출권거래제"
       ],
       "duplicateSources": [
+        "klnews.co.kr",
         "sedaily.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 2,
+      "region": "해외"
+    },
+    {
+      "id": "b40fa11a2bebfb5a",
+      "publishedAt": "2026-11-13",
+      "title": "[미국 특징주] 엑슨모빌 참여 '카본메저스' 탄소 회계 방식 시범 적용",
+      "category": "제도",
+      "summary": "한편 유럽연합(EU) 등은 배출권 거래제(ETS) 같은 제도를 통해 온실가스 배출량의 모니터링·보고·검증 기준을 이미 잘 갖추고 있다. 카본메저스는 자사의 프레임워크가 이런 제도를 보완하도록 설계됐다고 밝혀왔다.",
+      "source": "newspim.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newspim.com/news/view/20261113000955",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "newspim.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -347,6 +372,101 @@
       ],
       "duplicateSources": [
         "edaily.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "a05575f604517db2",
+      "publishedAt": "2026-11-13",
+      "title": "\"원전 해체 충당금에 연료비 폭탄까지…한국전력, 3분기 영업이익 70% '급...",
+      "category": "제도",
+      "summary": "한국전력이 월성 1호기 해체비용 재산정에 따른 충당부채 증가와 온실가스 배출권 거래제(ETS) 규제 강화 여파로 시장 기대치를 크게 밑도는 부진한 성적표를 받아들였다. 하나증권은 13일 한국전력에 대해 투자의견...",
+      "source": "newsquest.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newsquest.co.kr/news/articleView.html?idxno=304971",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "온실가스 배출권"
+      ],
+      "duplicateSources": [
+        "newsquest.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "d6bdcc80139892ea",
+      "publishedAt": "2026-11-13",
+      "title": "\"구조적 비용 폭탄에 요금 인상은 제자리…한국전력, 3분기 '어닝쇼크'...",
+      "category": "제도",
+      "summary": "신재생에너지 공급의무화(RPS) 및 배출권 비용 증가 추세와 낮아진 판매량 기저를 반영해 올해와 내년 연간 영업이익 추정치도 기존 대비 각각 34.3%, 28.9% 낮춰 잡았다. 허준서 DS투자증권 연구원은 \"구조적으로...",
+      "source": "newsquest.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newsquest.co.kr/news/articleView.html?idxno=304978",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "newsquest.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "f03e2ca4a75f470b",
+      "publishedAt": "2026-11-13",
+      "title": "\"韓 국제감축, NDC 위장 위험\"…안탈리아서 해외 전문가 비판 [COP31 현장...",
+      "category": "상쇄·외부사업",
+      "summary": "황덕현 기후환경전문기자 = 한국 정부가 해외에서 온실가스 감축실적을 구매해 국가 온실가스 감축목표(NDC)를 달성하려는 정책에 대해 국제 탄소시장 전문가들이 문제를 제기했다. 국내 감축을 강화하지 않은 채...",
+      "source": "news1.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.news1.kr/society/general-society/6353371",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "news1.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "e0d261d732743de8",
+      "publishedAt": "2026-11-13",
+      "title": "\"'4년 연속 ESG A등급' 무색…삼표시멘트, 환율·전력비 벽에 상반기 영...",
+      "category": "제도",
+      "summary": "환경(E) 부문에서 약 2000억원 규모의 고효율 환경설비 투자를 단행해 순환자원 연료대체율을 43%까지 끌어올렸으며, 이를 통해 원가 절감과 함께 연간 약 90억원 규모의 탄소 배출권 매각이익을 거두고 있다. 지배구조...",
+      "source": "newsquest.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newsquest.co.kr/news/articleView.html?idxno=304981",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "newsquest.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
