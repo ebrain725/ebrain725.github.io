@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-14T05:01:42+09:00",
+  "generatedAt": "2026-11-14T08:14:05+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 2086,
+  "itemCount": 2087,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-14",
   "sourceCommitsScanned": 0,
@@ -34,6 +34,29 @@
         "Google News RSS"
       ],
       "region": "해외"
+    },
+    {
+      "id": "dceacfd0962f1763",
+      "publishedAt": "2026-11-14",
+      "title": "[단독] 2030년까지 온실가스 3750만t 감축? 목표치 1%에 그쳐",
+      "category": "상쇄·외부사업",
+      "summary": "13일 국제 배출권 거래협회(IETA)는 “한국이 2027년 첫 번째 국제이전감축실적(ITMO)을 확보할 예정”이라고 밝혔다. 국제 감축은 다른 나라에서 온실가스 를 줄이고 그 실적을 넘겨받아 자국 감축 목표 달성에 활용하는...",
+      "source": "chosun.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.chosun.com/national/transport-environment/2026/11/14/5LEDWT4SDBC6BCSCDVDF2KN6W4/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "chosun.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
     },
     {
       "id": "56138c4e294402eb",
