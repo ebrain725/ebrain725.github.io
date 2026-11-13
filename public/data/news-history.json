@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-13T18:14:14+09:00",
+  "generatedAt": "2026-11-13T21:31:16+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 2080,
+  "itemCount": 2083,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-13",
   "sourceCommitsScanned": 0,
@@ -126,6 +126,7 @@
         "탄소배출권"
       ],
       "duplicateSources": [
+        "e-platform.net",
         "e2news.com",
         "jejudomin.co.kr",
         "energydaily.co.kr"
@@ -133,7 +134,31 @@
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 3,
+      "duplicateCount": 4,
+      "region": "국내"
+    },
+    {
+      "id": "c87ebc417a3a6ee5",
+      "publishedAt": "2026-11-13",
+      "title": "전기철도, AI·에너지 융합으로 철도안전·탄소중립 해법 모색",
+      "category": "제도",
+      "summary": "1부 주제 발표에서 전용주 코레일 부장은 탄소 배출권 부담에 대응해 고양기지에 약 20MW 태양광 설치를 추진하고 있으며, 에코드라이빙으로 약 10%의 에너지 절감 효과를 확인했다고 밝혔다. 한전이 회생전력 등에서...",
+      "source": "electimes.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.electimes.com/news/articleView.html?idxno=374741",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "electimes.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
       "region": "국내"
     },
     {
@@ -306,6 +331,53 @@
       ],
       "duplicateCount": 1,
       "region": "국내"
+    },
+    {
+      "id": "6825842ead807964",
+      "publishedAt": "2026-11-13",
+      "title": "“韓, 국내 탄소 감축 대신 해외 실적 의존” [김은재 기자의 COP31 리포트...",
+      "category": "제도",
+      "summary": "국제 탄소시장 전문가 “파리협정 취지 어긋나” 우리나라의 온실가스 국제감축 목표와 정책 수단이 기후변화 대응을 위한 세계적 약속인 ‘파리협정’에 부합하지 않는다는 국제 전문가들의 비판이 나왔다....",
+      "source": "segye.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.segye.com/newsView/20261113512838?OutUrl=naver",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "segye.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "16e00ee6f536f415",
+      "publishedAt": "2026-11-13",
+      "title": "[특파원 보고] ‘베트남에도 저탄소 바람’…현지 탄소거래소 출범",
+      "category": "시장·가격",
+      "summary": "최근 베트남 정부가 온실가스 배출권 을 금융자산으로 거래할 수 있는 법적 기반을 갖추고 탄소 거래소... 온실가스 배출권 이 거래된다. 운영 초기인 현재 온실가스 배출권 일평균 거래량은 약 1200ｔCO2e(이산화탄소...",
+      "source": "nongmin.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.nongmin.com/article/20261113500640",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "온실가스 배출권"
+      ],
+      "duplicateSources": [
+        "nongmin.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
     },
     {
       "id": "83c3e96d8b7b0a18",
