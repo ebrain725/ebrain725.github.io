@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-13T12:33:40+09:00",
+  "generatedAt": "2026-11-13T13:14:11+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 2064,
+  "itemCount": 2065,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-13",
   "sourceCommitsScanned": 0,
@@ -85,6 +85,29 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "861a5aaff3b02511",
+      "publishedAt": "2026-11-13",
+      "title": "탄소 시장에서 국민과 기업의 권리 명확화",
+      "category": "제도",
+      "summary": "탄소 시장에서 국민과 기업의 권리 명확화 Laodong.vn",
+      "source": "Laodong.vn",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOVnZKTDJIdDlGM240cWlBVG1lYjA3Zzk3Z1VrN21sS1k5NGp6cklvUU9ON3VfZVROOEhFbTlENWRiMjFVU0pHeXJQeTNMSTNJemZib3FfZ2loQjFhZEhGVFV3clUzZHBvRkg0ZDlRUlhQRjlJUHVjUVdhN2dlNFB0TF9GMXZvdlItQkVNWXo4VmNBX2FIbTR1MFN2QmtfZm1tVEQ3clF6NA?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "Laodong.vn"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
       "region": "국내"
     },
     {
