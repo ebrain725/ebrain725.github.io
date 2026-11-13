@@ -24,7 +24,31 @@
       ],
       "matchedFields": [
         "title"
-      ]
+      ],
+      "eventMatches": [
+        {
+          "id": "cbam",
+          "label": "탄소국경조정·CBAM",
+          "scope": "related",
+          "matchedTerms": [
+            "탄소국경조정",
+            "탄소국경조정제도",
+            "CBAM"
+          ],
+          "matchedFields": [
+            "title"
+          ]
+        }
+      ],
+      "eventIds": [
+        "cbam"
+      ],
+      "eventTypes": [
+        "탄소국경조정·CBAM"
+      ],
+      "eventPrimary": "탄소국경조정·CBAM",
+      "keywordScope": "related",
+      "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
       "id": "motie_press-ATCL3f49a5a8c-172401",
@@ -46,7 +70,29 @@
       ],
       "matchedFields": [
         "title"
-      ]
+      ],
+      "eventMatches": [
+        {
+          "id": "nuclear_generation",
+          "label": "원자력발전·원전",
+          "scope": "related",
+          "matchedTerms": [
+            "원전"
+          ],
+          "matchedFields": [
+            "title"
+          ]
+        }
+      ],
+      "eventIds": [
+        "nuclear_generation"
+      ],
+      "eventTypes": [
+        "원자력발전·원전"
+      ],
+      "eventPrimary": "원자력발전·원전",
+      "keywordScope": "related",
+      "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
       "id": "motie_press-ATCL3f49a5a8c-172370",
@@ -68,7 +114,14 @@
       ],
       "matchedFields": [
         "title"
-      ]
+      ],
+      "previousTaxonomyClassification": {},
+      "taxonomyRetention": {
+        "status": "retained_unmatched",
+        "reason": "NO_CURRENT_TAXONOMY_MATCH",
+        "taxonomyVersion": "2026-09-11-v1-user-38-events",
+        "recordKey": "motie_press|ATCL3f49a5a8c|172370"
+      }
     },
     {
       "id": "motie_press-ATCL3f49a5a8c-172363",
@@ -90,7 +143,29 @@
       ],
       "matchedFields": [
         "title"
-      ]
+      ],
+      "eventMatches": [
+        {
+          "id": "nuclear_generation",
+          "label": "원자력발전·원전",
+          "scope": "related",
+          "matchedTerms": [
+            "원전"
+          ],
+          "matchedFields": [
+            "title"
+          ]
+        }
+      ],
+      "eventIds": [
+        "nuclear_generation"
+      ],
+      "eventTypes": [
+        "원자력발전·원전"
+      ],
+      "eventPrimary": "원자력발전·원전",
+      "keywordScope": "related",
+      "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
       "id": "motie_notice-ATCL0c554f816-65097",
@@ -112,7 +187,29 @@
       ],
       "matchedFields": [
         "title"
-      ]
+      ],
+      "eventMatches": [
+        {
+          "id": "emissions_inventory",
+          "label": "온실가스·배출량·명세서",
+          "scope": "related",
+          "matchedTerms": [
+            "온실가스"
+          ],
+          "matchedFields": [
+            "title"
+          ]
+        }
+      ],
+      "eventIds": [
+        "emissions_inventory"
+      ],
+      "eventTypes": [
+        "온실가스·배출량·명세서"
+      ],
+      "eventPrimary": "온실가스·배출량·명세서",
+      "keywordScope": "related",
+      "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
       "id": "motie_press-ATCL3f49a5a8c-172334",
@@ -134,7 +231,29 @@
       ],
       "matchedFields": [
         "title"
-      ]
+      ],
+      "eventMatches": [
+        {
+          "id": "nuclear_generation",
+          "label": "원자력발전·원전",
+          "scope": "related",
+          "matchedTerms": [
+            "원전"
+          ],
+          "matchedFields": [
+            "title"
+          ]
+        }
+      ],
+      "eventIds": [
+        "nuclear_generation"
+      ],
+      "eventTypes": [
+        "원자력발전·원전"
+      ],
+      "eventPrimary": "원자력발전·원전",
+      "keywordScope": "related",
+      "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
       "id": "motie_press-ATCL3f49a5a8c-172324",
@@ -158,7 +277,31 @@
       ],
       "matchedFields": [
         "title"
-      ]
+      ],
+      "eventMatches": [
+        {
+          "id": "cbam",
+          "label": "탄소국경조정·CBAM",
+          "scope": "related",
+          "matchedTerms": [
+            "탄소국경조정",
+            "탄소국경조정제도",
+            "CBAM"
+          ],
+          "matchedFields": [
+            "title"
+          ]
+        }
+      ],
+      "eventIds": [
+        "cbam"
+      ],
+      "eventTypes": [
+        "탄소국경조정·CBAM"
+      ],
+      "eventPrimary": "탄소국경조정·CBAM",
+      "keywordScope": "related",
+      "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
       "id": "motie_notice-ATCL0c554f816-65096",
@@ -180,7 +323,29 @@
       ],
       "matchedFields": [
         "title"
-      ]
+      ],
+      "eventMatches": [
+        {
+          "id": "emissions_inventory",
+          "label": "온실가스·배출량·명세서",
+          "scope": "related",
+          "matchedTerms": [
+            "온실가스"
+          ],
+          "matchedFields": [
+            "title"
+          ]
+        }
+      ],
+      "eventIds": [
+        "emissions_inventory"
+      ],
+      "eventTypes": [
+        "온실가스·배출량·명세서"
+      ],
+      "eventPrimary": "온실가스·배출량·명세서",
+      "keywordScope": "related",
+      "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
       "id": "motie_press-ATCL3f49a5a8c-172314",
@@ -202,7 +367,29 @@
       ],
       "matchedFields": [
         "title"
-      ]
+      ],
+      "eventMatches": [
+        {
+          "id": "nuclear_generation",
+          "label": "원자력발전·원전",
+          "scope": "related",
+          "matchedTerms": [
+            "원전"
+          ],
+          "matchedFields": [
+            "title"
+          ]
+        }
+      ],
+      "eventIds": [
+        "nuclear_generation"
+      ],
+      "eventTypes": [
+        "원자력발전·원전"
+      ],
+      "eventPrimary": "원자력발전·원전",
+      "keywordScope": "related",
+      "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
       "id": "motie_press-ATCLe0854704d-172286",
@@ -224,7 +411,29 @@
       ],
       "matchedFields": [
         "title"
-      ]
+      ],
+      "eventMatches": [
+        {
+          "id": "carbon_neutral_plan",
+          "label": "탄소중립 선언·기본계획",
+          "scope": "related",
+          "matchedTerms": [
+            "탄소중립"
+          ],
+          "matchedFields": [
+            "title"
+          ]
+        }
+      ],
+      "eventIds": [
+        "carbon_neutral_plan"
+      ],
+      "eventTypes": [
+        "탄소중립 선언·기본계획"
+      ],
+      "eventPrimary": "탄소중립 선언·기본계획",
+      "keywordScope": "related",
+      "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
       "id": "motie_press-ATCL3f49a5a8c-172267",
@@ -246,7 +455,29 @@
       ],
       "matchedFields": [
         "title"
-      ]
+      ],
+      "eventMatches": [
+        {
+          "id": "nuclear_generation",
+          "label": "원자력발전·원전",
+          "scope": "related",
+          "matchedTerms": [
+            "원전"
+          ],
+          "matchedFields": [
+            "title"
+          ]
+        }
+      ],
+      "eventIds": [
+        "nuclear_generation"
+      ],
+      "eventTypes": [
+        "원자력발전·원전"
+      ],
+      "eventPrimary": "원자력발전·원전",
+      "keywordScope": "related",
+      "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
       "id": "motie_notice-ATCL0c554f816-65089",
@@ -313,7 +544,42 @@
       ],
       "matchedFields": [
         "title"
-      ]
+      ],
+      "eventMatches": [
+        {
+          "id": "international_mitigation",
+          "label": "국제감축·외부사업·감축실적",
+          "scope": "related",
+          "matchedTerms": [
+            "국제감축"
+          ],
+          "matchedFields": [
+            "title"
+          ]
+        },
+        {
+          "id": "emissions_inventory",
+          "label": "온실가스·배출량·명세서",
+          "scope": "related",
+          "matchedTerms": [
+            "온실가스"
+          ],
+          "matchedFields": [
+            "title"
+          ]
+        }
+      ],
+      "eventIds": [
+        "international_mitigation",
+        "emissions_inventory"
+      ],
+      "eventTypes": [
+        "국제감축·외부사업·감축실적",
+        "온실가스·배출량·명세서"
+      ],
+      "eventPrimary": "국제감축·외부사업·감축실적",
+      "keywordScope": "related",
+      "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
       "id": "motie_notice-ATCL2826a2625-71355",
@@ -336,7 +602,42 @@
       ],
       "matchedFields": [
         "title"
-      ]
+      ],
+      "eventMatches": [
+        {
+          "id": "international_mitigation",
+          "label": "국제감축·외부사업·감축실적",
+          "scope": "related",
+          "matchedTerms": [
+            "국제감축"
+          ],
+          "matchedFields": [
+            "title"
+          ]
+        },
+        {
+          "id": "emissions_inventory",
+          "label": "온실가스·배출량·명세서",
+          "scope": "related",
+          "matchedTerms": [
+            "온실가스"
+          ],
+          "matchedFields": [
+            "title"
+          ]
+        }
+      ],
+      "eventIds": [
+        "international_mitigation",
+        "emissions_inventory"
+      ],
+      "eventTypes": [
+        "국제감축·외부사업·감축실적",
+        "온실가스·배출량·명세서"
+      ],
+      "eventPrimary": "국제감축·외부사업·감축실적",
+      "keywordScope": "related",
+      "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
       "id": "motie_press-ATCL3f49a5a8c-172257",
@@ -358,7 +659,29 @@
       ],
       "matchedFields": [
         "title"
-      ]
+      ],
+      "eventMatches": [
+        {
+          "id": "nuclear_generation",
+          "label": "원자력발전·원전",
+          "scope": "related",
+          "matchedTerms": [
+            "원전"
+          ],
+          "matchedFields": [
+            "title"
+          ]
+        }
+      ],
+      "eventIds": [
+        "nuclear_generation"
+      ],
+      "eventTypes": [
+        "원자력발전·원전"
+      ],
+      "eventPrimary": "원자력발전·원전",
+      "keywordScope": "related",
+      "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
       "id": "motie_press-ATCL3f49a5a8c-172246",
@@ -380,7 +703,29 @@
       ],
       "matchedFields": [
         "title"
-      ]
+      ],
+      "eventMatches": [
+        {
+          "id": "nuclear_generation",
+          "label": "원자력발전·원전",
+          "scope": "related",
+          "matchedTerms": [
+            "원전"
+          ],
+          "matchedFields": [
+            "title"
+          ]
+        }
+      ],
+      "eventIds": [
+        "nuclear_generation"
+      ],
+      "eventTypes": [
+        "원자력발전·원전"
+      ],
+      "eventPrimary": "원자력발전·원전",
+      "keywordScope": "related",
+      "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
       "id": "motie_press-ATCL3f49a5a8c-172227",
@@ -402,7 +747,14 @@
       ],
       "matchedFields": [
         "title"
-      ]
+      ],
+      "previousTaxonomyClassification": {},
+      "taxonomyRetention": {
+        "status": "retained_unmatched",
+        "reason": "NO_CURRENT_TAXONOMY_MATCH",
+        "taxonomyVersion": "2026-09-11-v1-user-38-events",
+        "recordKey": "motie_press|ATCL3f49a5a8c|172227"
+      }
     },
     {
       "id": "motie_press-ATCLe0854704d-172202",
@@ -424,7 +776,29 @@
       ],
       "matchedFields": [
         "title"
-      ]
+      ],
+      "eventMatches": [
+        {
+          "id": "nuclear_generation",
+          "label": "원자력발전·원전",
+          "scope": "related",
+          "matchedTerms": [
+            "원전"
+          ],
+          "matchedFields": [
+            "title"
+          ]
+        }
+      ],
+      "eventIds": [
+        "nuclear_generation"
+      ],
+      "eventTypes": [
+        "원자력발전·원전"
+      ],
+      "eventPrimary": "원자력발전·원전",
+      "keywordScope": "related",
+      "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
       "id": "motie_press-ATCLe0854704d-172176",
@@ -131206,8 +131580,8 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     }
   ],
-  "generatedAt": "2026-11-14T06:15:07+09:00",
-  "collectionMode": "incremental",
+  "generatedAt": "2026-11-14T06:38:09+09:00",
+  "collectionMode": "incremental-delta-search",
   "queryStartDate": "2026-09-15",
   "queryEndDate": "2026-11-14",
   "policyKeywords": {
@@ -131327,27 +131701,63 @@
   },
   "coverage": {
     "motie_notice": {
-      "label": "산업부 공지사항",
       "records": 955,
       "earliest": "2015-01-06",
       "latest": "2026-10-28",
-      "byBoardCategory": {
-        "고시": 234,
-        "공고": 423,
-        "공지사항": 2,
-        "사업공고": 206,
-        "입법예고": 25,
-        "행정예고": 65
+      "scopeCounts": {
+        "direct": 65,
+        "related": 890
+      },
+      "eventCounts": {
+        "재생에너지·RPS": 484,
+        "온실가스·배출량·명세서": 222,
+        "탄소중립 선언·기본계획": 92,
+        "원자력발전·원전": 86,
+        "배출권·배출권거래제·ETS": 48,
+        "국제감축·외부사업·감축실적": 43,
+        "수소발전·청정수소": 24,
+        "전력수급기본계획·전원구성": 22,
+        "중국 증설·반덤핑·관세": 6,
+        "증설·상업가동": 5,
+        "RE100": 3,
+        "할당계획·할당량": 1
       }
     },
     "motie_press": {
-      "label": "산업부 보도자료",
       "records": 1895,
       "earliest": "2016-01-19",
       "latest": "2026-11-12",
-      "byBoardCategory": {
-        "보도·참고자료": 1373,
-        "보도설명자료": 522
+      "scopeCounts": {
+        "direct": 28,
+        "related": 1865
+      },
+      "eventCounts": {
+        "원자력발전·원전": 679,
+        "재생에너지·RPS": 344,
+        "중국 증설·반덤핑·관세": 229,
+        "탄소중립 선언·기본계획": 191,
+        "온실가스·배출량·명세서": 113,
+        "폭염·한파·전력수요": 93,
+        "전력시장·급전(포괄)": 52,
+        "석탄발전": 50,
+        "수소발전·청정수소": 46,
+        "탄소국경조정·CBAM": 45,
+        "전력수급기본계획·전원구성": 36,
+        "RE100": 32,
+        "증설·상업가동": 27,
+        "배출권·배출권거래제·ETS": 25,
+        "국제감축·외부사업·감축실적": 19,
+        "LNG발전": 10,
+        "NDC·국가 감축목표": 10,
+        "화재·폭발·침수·가동중단": 10,
+        "업종 생산·가동률 통계": 9,
+        "발전제약": 7,
+        "원전 불시정지·정비연장": 4,
+        "감산·가동률 조정": 3,
+        "정기보수·셧다운": 3,
+        "할당계획·할당량": 3,
+        "SMP": 2,
+        "시장안정화·MSR": 1
       }
     }
   },
@@ -131361,64 +131771,15 @@
       "requestedStartDate": "2026-09-15",
       "requestedEndDate": "2026-11-14",
       "searchMode": "official-expanded-keyword-query",
-      "pagesFetched": 149,
-      "parsedRows": 13,
-      "itemCount": 11,
-      "earliest": "2026-09-21",
+      "pagesFetched": 70,
+      "parsedRows": 7,
+      "itemCount": 7,
+      "earliest": "2026-09-30",
       "latest": "2026-11-12",
       "complete": true,
       "queries": [
         {
-          "keyword": "배출권",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "배출권거래제",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "K-ETS",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "ETS",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
           "keyword": "할당계획",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "할당량",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "배출허용총량",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "할당대상업체",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -131439,77 +131800,7 @@
           "parsedRows": 0
         },
         {
-          "keyword": "유상할당",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "유상경매",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "배출권 경매",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "낙찰가",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "응찰률",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "응찰배수",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "이월",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "차입",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "상쇄배출권",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "전환한도",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "시장안정화",
+          "keyword": "배출허용총량",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -131523,35 +131814,14 @@
           "parsedRows": 0
         },
         {
-          "keyword": "MSR",
+          "keyword": "배출량 명세서",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "국제감축",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "외부사업",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "감축실적",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "ITMO",
+          "keyword": "인증배출량",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -131565,63 +131835,14 @@
           "parsedRows": 0
         },
         {
-          "keyword": "제출기한",
+          "keyword": "배출권 거래량",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "의무이행",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "이행연도",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "거래량",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "거래대금",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "대량 매도",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "보유물량 출회",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "시장참여자",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "시장조성",
+          "keyword": "배출권 거래대금",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -131649,28 +131870,49 @@
           "parsedRows": 0
         },
         {
-          "keyword": "NDC",
+          "keyword": "배출권 소송",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "국가 온실가스 감축목표",
+          "keyword": "할당량",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "국가 감축목표",
+          "keyword": "낙찰가",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "전력시장",
+          "keyword": "응찰률",
+          "field": "title",
+          "reportedTotal": 0,
+          "pagesFetched": 1,
+          "parsedRows": 0
+        },
+        {
+          "keyword": "배출권 이월",
+          "field": "title",
+          "reportedTotal": 0,
+          "pagesFetched": 1,
+          "parsedRows": 0
+        },
+        {
+          "keyword": "배출권 차입",
+          "field": "title",
+          "reportedTotal": 0,
+          "pagesFetched": 1,
+          "parsedRows": 0
+        },
+        {
+          "keyword": "전환한도",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -131678,69 +131920,6 @@
         },
         {
           "keyword": "급전",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "경제급전",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "계통운영",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "석탄발전",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "석탄화력",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "LNG발전",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "가스발전",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "SMP",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "계통한계가격",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "원자력발전",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -131761,21 +131940,7 @@
           "parsedRows": 0
         },
         {
-          "keyword": "신재생에너지",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
           "keyword": "RPS",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "수소발전",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -131789,49 +131954,7 @@
           "parsedRows": 0
         },
         {
-          "keyword": "RE100",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "전력수급기본계획",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "전원구성",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "발전믹스",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "발전제약",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
           "keyword": "출력제어",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "송전제약",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -131866,7 +131989,7 @@
           "parsedRows": 0
         },
         {
-          "keyword": "불시정지",
+          "keyword": "원전 불시정지",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -131880,18 +132003,25 @@
           "parsedRows": 0
         },
         {
-          "keyword": "계획예방정비",
+          "keyword": "가동중단",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "화재",
+          "keyword": "발전소 화재",
           "field": "title",
-          "reportedTotal": 2,
+          "reportedTotal": 0,
           "pagesFetched": 1,
-          "parsedRows": 2
+          "parsedRows": 0
+        },
+        {
+          "keyword": "공장 화재",
+          "field": "title",
+          "reportedTotal": 0,
+          "pagesFetched": 1,
+          "parsedRows": 0
         },
         {
           "keyword": "폭발",
@@ -131908,21 +132038,7 @@
           "parsedRows": 0
         },
         {
-          "keyword": "가동중단",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
           "keyword": "정기보수",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "대정비",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -131950,13 +132066,6 @@
           "parsedRows": 0
         },
         {
-          "keyword": "생산조정",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
           "keyword": "증설",
           "field": "title",
           "reportedTotal": 0,
@@ -131965,13 +132074,6 @@
         },
         {
           "keyword": "상업가동",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "신규가동",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -131992,6 +132094,13 @@
           "parsedRows": 0
         },
         {
+          "keyword": "덤핑방지관세",
+          "field": "title",
+          "reportedTotal": 0,
+          "pagesFetched": 1,
+          "parsedRows": 0
+        },
+        {
           "keyword": "중국 관세",
           "field": "title",
           "reportedTotal": 0,
@@ -132006,7 +132115,7 @@
           "parsedRows": 0
         },
         {
-          "keyword": "생산동향",
+          "keyword": "광공업생산",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -132020,34 +132129,6 @@
           "parsedRows": 0
         },
         {
-          "keyword": "업종별 생산",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "온실가스",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "온실가스 배출량",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "배출량 명세서",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
           "keyword": "명세서",
           "field": "title",
           "reportedTotal": 0,
@@ -132055,133 +132136,42 @@
           "parsedRows": 0
         },
         {
-          "keyword": "탄소국경조정",
-          "field": "title",
-          "reportedTotal": 2,
-          "pagesFetched": 1,
-          "parsedRows": 2
-        },
-        {
-          "keyword": "CBAM",
-          "field": "title",
-          "reportedTotal": 2,
-          "pagesFetched": 1,
-          "parsedRows": 2
-        },
-        {
-          "keyword": "탄소중립",
+          "keyword": "제출기한",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "탄소중립 기본계획",
+          "keyword": "대량 매도",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "넷제로",
+          "keyword": "보유물량 출회",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "확정 지연",
+          "keyword": "시장참여자",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "도입 지연",
+          "keyword": "헌법불합치",
           "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "시행 지연",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "소송",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "헌법소원",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "행정소송",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "배출권",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "배출권거래제",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "K-ETS",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "ETS",
-          "field": "content",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
           "keyword": "할당계획",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "할당량",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "배출허용총량",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "할당대상업체",
           "field": "content",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -132202,77 +132192,7 @@
           "parsedRows": 0
         },
         {
-          "keyword": "유상할당",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "유상경매",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "배출권 경매",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "낙찰가",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "응찰률",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "응찰배수",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "이월",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "차입",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "상쇄배출권",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "전환한도",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "시장안정화",
+          "keyword": "배출허용총량",
           "field": "content",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -132286,35 +132206,14 @@
           "parsedRows": 0
         },
         {
-          "keyword": "MSR",
+          "keyword": "배출량 명세서",
           "field": "content",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "국제감축",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "외부사업",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "감축실적",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "ITMO",
+          "keyword": "인증배출량",
           "field": "content",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -132328,63 +132227,14 @@
           "parsedRows": 0
         },
         {
-          "keyword": "제출기한",
+          "keyword": "배출권 거래량",
           "field": "content",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "의무이행",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "이행연도",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "거래량",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "거래대금",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "대량 매도",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "보유물량 출회",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "시장참여자",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "시장조성",
+          "keyword": "배출권 거래대금",
           "field": "content",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -132410,8 +132260,20 @@
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
+        },
+        {
+          "keyword": "배출권 소송",
+          "field": "content",
+          "reportedTotal": 0,
+          "pagesFetched": 1,
+          "parsedRows": 0
         }
-      ]
+      ],
+      "taxonomyVersion": "2026-09-11-v1-user-38-events",
+      "taxonomyMatchedCount": 7,
+      "taxonomyEventCounts": {
+        "원자력발전·원전": 7
+      }
     },
     {
       "sourceBoardKey": "press_explanation",
@@ -132422,64 +132284,15 @@
       "requestedStartDate": "2026-09-15",
       "requestedEndDate": "2026-11-14",
       "searchMode": "official-expanded-keyword-query",
-      "pagesFetched": 149,
-      "parsedRows": 2,
-      "itemCount": 2,
+      "pagesFetched": 70,
+      "parsedRows": 1,
+      "itemCount": 1,
       "earliest": "2026-09-15",
-      "latest": "2026-10-13",
+      "latest": "2026-09-15",
       "complete": true,
       "queries": [
         {
-          "keyword": "배출권",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "배출권거래제",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "K-ETS",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "ETS",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
           "keyword": "할당계획",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "할당량",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "배출허용총량",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "할당대상업체",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -132500,77 +132313,7 @@
           "parsedRows": 0
         },
         {
-          "keyword": "유상할당",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "유상경매",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "배출권 경매",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "낙찰가",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "응찰률",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "응찰배수",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "이월",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "차입",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "상쇄배출권",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "전환한도",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "시장안정화",
+          "keyword": "배출허용총량",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -132584,35 +132327,14 @@
           "parsedRows": 0
         },
         {
-          "keyword": "MSR",
+          "keyword": "배출량 명세서",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "국제감축",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "외부사업",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "감축실적",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "ITMO",
+          "keyword": "인증배출량",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -132626,63 +132348,14 @@
           "parsedRows": 0
         },
         {
-          "keyword": "제출기한",
+          "keyword": "배출권 거래량",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "의무이행",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "이행연도",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "거래량",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "거래대금",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "대량 매도",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "보유물량 출회",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "시장참여자",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "시장조성",
+          "keyword": "배출권 거래대금",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -132710,28 +132383,49 @@
           "parsedRows": 0
         },
         {
-          "keyword": "NDC",
+          "keyword": "배출권 소송",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "국가 온실가스 감축목표",
+          "keyword": "할당량",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "국가 감축목표",
+          "keyword": "낙찰가",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "전력시장",
+          "keyword": "응찰률",
+          "field": "title",
+          "reportedTotal": 0,
+          "pagesFetched": 1,
+          "parsedRows": 0
+        },
+        {
+          "keyword": "배출권 이월",
+          "field": "title",
+          "reportedTotal": 0,
+          "pagesFetched": 1,
+          "parsedRows": 0
+        },
+        {
+          "keyword": "배출권 차입",
+          "field": "title",
+          "reportedTotal": 0,
+          "pagesFetched": 1,
+          "parsedRows": 0
+        },
+        {
+          "keyword": "전환한도",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -132739,69 +132433,6 @@
         },
         {
           "keyword": "급전",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "경제급전",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "계통운영",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "석탄발전",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "석탄화력",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "LNG발전",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "가스발전",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "SMP",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "계통한계가격",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "원자력발전",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -132822,21 +132453,7 @@
           "parsedRows": 0
         },
         {
-          "keyword": "신재생에너지",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
           "keyword": "RPS",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "수소발전",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -132850,49 +132467,7 @@
           "parsedRows": 0
         },
         {
-          "keyword": "RE100",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "전력수급기본계획",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "전원구성",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "발전믹스",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "발전제약",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
           "keyword": "출력제어",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "송전제약",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -132927,7 +132502,7 @@
           "parsedRows": 0
         },
         {
-          "keyword": "불시정지",
+          "keyword": "원전 불시정지",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -132941,14 +132516,21 @@
           "parsedRows": 0
         },
         {
-          "keyword": "계획예방정비",
+          "keyword": "가동중단",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "화재",
+          "keyword": "발전소 화재",
+          "field": "title",
+          "reportedTotal": 0,
+          "pagesFetched": 1,
+          "parsedRows": 0
+        },
+        {
+          "keyword": "공장 화재",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -132969,21 +132551,7 @@
           "parsedRows": 0
         },
         {
-          "keyword": "가동중단",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
           "keyword": "정기보수",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "대정비",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -133011,13 +132579,6 @@
           "parsedRows": 0
         },
         {
-          "keyword": "생산조정",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
           "keyword": "증설",
           "field": "title",
           "reportedTotal": 0,
@@ -133026,13 +132587,6 @@
         },
         {
           "keyword": "상업가동",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "신규가동",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -133053,6 +132607,13 @@
           "parsedRows": 0
         },
         {
+          "keyword": "덤핑방지관세",
+          "field": "title",
+          "reportedTotal": 0,
+          "pagesFetched": 1,
+          "parsedRows": 0
+        },
+        {
           "keyword": "중국 관세",
           "field": "title",
           "reportedTotal": 0,
@@ -133067,7 +132628,7 @@
           "parsedRows": 0
         },
         {
-          "keyword": "생산동향",
+          "keyword": "광공업생산",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -133081,34 +132642,6 @@
           "parsedRows": 0
         },
         {
-          "keyword": "업종별 생산",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "온실가스",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "온실가스 배출량",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "배출량 명세서",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
           "keyword": "명세서",
           "field": "title",
           "reportedTotal": 0,
@@ -133116,133 +132649,42 @@
           "parsedRows": 0
         },
         {
-          "keyword": "탄소국경조정",
+          "keyword": "제출기한",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "CBAM",
+          "keyword": "대량 매도",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "탄소중립",
-          "field": "title",
-          "reportedTotal": 1,
-          "pagesFetched": 1,
-          "parsedRows": 1
-        },
-        {
-          "keyword": "탄소중립 기본계획",
+          "keyword": "보유물량 출회",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "넷제로",
+          "keyword": "시장참여자",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "확정 지연",
+          "keyword": "헌법불합치",
           "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "도입 지연",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "시행 지연",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "소송",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "헌법소원",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "행정소송",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "배출권",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "배출권거래제",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "K-ETS",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "ETS",
-          "field": "content",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
           "keyword": "할당계획",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "할당량",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "배출허용총량",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "할당대상업체",
           "field": "content",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -133263,77 +132705,7 @@
           "parsedRows": 0
         },
         {
-          "keyword": "유상할당",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "유상경매",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "배출권 경매",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "낙찰가",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "응찰률",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "응찰배수",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "이월",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "차입",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "상쇄배출권",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "전환한도",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "시장안정화",
+          "keyword": "배출허용총량",
           "field": "content",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -133347,35 +132719,14 @@
           "parsedRows": 0
         },
         {
-          "keyword": "MSR",
+          "keyword": "배출량 명세서",
           "field": "content",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "국제감축",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "외부사업",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "감축실적",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "ITMO",
+          "keyword": "인증배출량",
           "field": "content",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -133389,63 +132740,14 @@
           "parsedRows": 0
         },
         {
-          "keyword": "제출기한",
+          "keyword": "배출권 거래량",
           "field": "content",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "의무이행",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "이행연도",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "거래량",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "거래대금",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "대량 매도",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "보유물량 출회",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "시장참여자",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "시장조성",
+          "keyword": "배출권 거래대금",
           "field": "content",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -133471,8 +132773,20 @@
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
+        },
+        {
+          "keyword": "배출권 소송",
+          "field": "content",
+          "reportedTotal": 0,
+          "pagesFetched": 1,
+          "parsedRows": 0
         }
-      ]
+      ],
+      "taxonomyVersion": "2026-09-11-v1-user-38-events",
+      "taxonomyMatchedCount": 1,
+      "taxonomyEventCounts": {
+        "원자력발전·원전": 1
+      }
     },
     {
       "sourceBoardKey": "notice",
@@ -133483,7 +132797,7 @@
       "requestedStartDate": "2026-09-15",
       "requestedEndDate": "2026-11-14",
       "searchMode": "official-expanded-keyword-query",
-      "pagesFetched": 149,
+      "pagesFetched": 70,
       "parsedRows": 0,
       "itemCount": 0,
       "earliest": null,
@@ -133491,56 +132805,7 @@
       "complete": true,
       "queries": [
         {
-          "keyword": "배출권",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "배출권거래제",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "K-ETS",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "ETS",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
           "keyword": "할당계획",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "할당량",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "배출허용총량",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "할당대상업체",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -133561,77 +132826,7 @@
           "parsedRows": 0
         },
         {
-          "keyword": "유상할당",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "유상경매",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "배출권 경매",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "낙찰가",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "응찰률",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "응찰배수",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "이월",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "차입",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "상쇄배출권",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "전환한도",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "시장안정화",
+          "keyword": "배출허용총량",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -133645,35 +132840,14 @@
           "parsedRows": 0
         },
         {
-          "keyword": "MSR",
+          "keyword": "배출량 명세서",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "국제감축",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "외부사업",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "감축실적",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "ITMO",
+          "keyword": "인증배출량",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -133687,63 +132861,14 @@
           "parsedRows": 0
         },
         {
-          "keyword": "제출기한",
+          "keyword": "배출권 거래량",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "의무이행",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "이행연도",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "거래량",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "거래대금",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "대량 매도",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "보유물량 출회",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "시장참여자",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "시장조성",
+          "keyword": "배출권 거래대금",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -133771,28 +132896,49 @@
           "parsedRows": 0
         },
         {
-          "keyword": "NDC",
+          "keyword": "배출권 소송",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "국가 온실가스 감축목표",
+          "keyword": "할당량",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "국가 감축목표",
+          "keyword": "낙찰가",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "전력시장",
+          "keyword": "응찰률",
+          "field": "title",
+          "reportedTotal": 0,
+          "pagesFetched": 1,
+          "parsedRows": 0
+        },
+        {
+          "keyword": "배출권 이월",
+          "field": "title",
+          "reportedTotal": 0,
+          "pagesFetched": 1,
+          "parsedRows": 0
+        },
+        {
+          "keyword": "배출권 차입",
+          "field": "title",
+          "reportedTotal": 0,
+          "pagesFetched": 1,
+          "parsedRows": 0
+        },
+        {
+          "keyword": "전환한도",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -133800,69 +132946,6 @@
         },
         {
           "keyword": "급전",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "경제급전",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "계통운영",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "석탄발전",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "석탄화력",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "LNG발전",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "가스발전",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "SMP",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "계통한계가격",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "원자력발전",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -133883,21 +132966,7 @@
           "parsedRows": 0
         },
         {
-          "keyword": "신재생에너지",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
           "keyword": "RPS",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "수소발전",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -133911,49 +132980,7 @@
           "parsedRows": 0
         },
         {
-          "keyword": "RE100",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "전력수급기본계획",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "전원구성",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "발전믹스",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "발전제약",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
           "keyword": "출력제어",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "송전제약",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -133988,7 +133015,7 @@
           "parsedRows": 0
         },
         {
-          "keyword": "불시정지",
+          "keyword": "원전 불시정지",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -134002,14 +133029,21 @@
           "parsedRows": 0
         },
         {
-          "keyword": "계획예방정비",
+          "keyword": "가동중단",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "화재",
+          "keyword": "발전소 화재",
+          "field": "title",
+          "reportedTotal": 0,
+          "pagesFetched": 1,
+          "parsedRows": 0
+        },
+        {
+          "keyword": "공장 화재",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -134030,21 +133064,7 @@
           "parsedRows": 0
         },
         {
-          "keyword": "가동중단",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
           "keyword": "정기보수",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "대정비",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -134072,13 +133092,6 @@
           "parsedRows": 0
         },
         {
-          "keyword": "생산조정",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
           "keyword": "증설",
           "field": "title",
           "reportedTotal": 0,
@@ -134087,13 +133100,6 @@
         },
         {
           "keyword": "상업가동",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "신규가동",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -134114,6 +133120,13 @@
           "parsedRows": 0
         },
         {
+          "keyword": "덤핑방지관세",
+          "field": "title",
+          "reportedTotal": 0,
+          "pagesFetched": 1,
+          "parsedRows": 0
+        },
+        {
           "keyword": "중국 관세",
           "field": "title",
           "reportedTotal": 0,
@@ -134128,7 +133141,7 @@
           "parsedRows": 0
         },
         {
-          "keyword": "생산동향",
+          "keyword": "광공업생산",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -134142,34 +133155,6 @@
           "parsedRows": 0
         },
         {
-          "keyword": "업종별 생산",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "온실가스",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "온실가스 배출량",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "배출량 명세서",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
           "keyword": "명세서",
           "field": "title",
           "reportedTotal": 0,
@@ -134177,133 +133162,42 @@
           "parsedRows": 0
         },
         {
-          "keyword": "탄소국경조정",
+          "keyword": "제출기한",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "CBAM",
+          "keyword": "대량 매도",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "탄소중립",
+          "keyword": "보유물량 출회",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "탄소중립 기본계획",
+          "keyword": "시장참여자",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "넷제로",
+          "keyword": "헌법불합치",
           "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "확정 지연",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "도입 지연",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "시행 지연",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "소송",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "헌법소원",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "행정소송",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "배출권",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "배출권거래제",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "K-ETS",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "ETS",
-          "field": "content",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
           "keyword": "할당계획",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "할당량",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "배출허용총량",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "할당대상업체",
           "field": "content",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -134324,77 +133218,7 @@
           "parsedRows": 0
         },
         {
-          "keyword": "유상할당",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "유상경매",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "배출권 경매",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "낙찰가",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "응찰률",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "응찰배수",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "이월",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "차입",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "상쇄배출권",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "전환한도",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "시장안정화",
+          "keyword": "배출허용총량",
           "field": "content",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -134408,35 +133232,14 @@
           "parsedRows": 0
         },
         {
-          "keyword": "MSR",
+          "keyword": "배출량 명세서",
           "field": "content",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "국제감축",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "외부사업",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "감축실적",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "ITMO",
+          "keyword": "인증배출량",
           "field": "content",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -134450,63 +133253,14 @@
           "parsedRows": 0
         },
         {
-          "keyword": "제출기한",
+          "keyword": "배출권 거래량",
           "field": "content",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "의무이행",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "이행연도",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "거래량",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "거래대금",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "대량 매도",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "보유물량 출회",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "시장참여자",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "시장조성",
+          "keyword": "배출권 거래대금",
           "field": "content",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -134532,8 +133286,18 @@
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
+        },
+        {
+          "keyword": "배출권 소송",
+          "field": "content",
+          "reportedTotal": 0,
+          "pagesFetched": 1,
+          "parsedRows": 0
         }
-      ]
+      ],
+      "taxonomyVersion": "2026-09-11-v1-user-38-events",
+      "taxonomyMatchedCount": 0,
+      "taxonomyEventCounts": {}
     },
     {
       "sourceBoardKey": "business_notice",
@@ -134544,64 +133308,15 @@
       "requestedStartDate": "2026-09-15",
       "requestedEndDate": "2026-11-14",
       "searchMode": "official-expanded-keyword-query",
-      "pagesFetched": 149,
-      "parsedRows": 2,
-      "itemCount": 1,
-      "earliest": "2026-10-02",
-      "latest": "2026-10-02",
+      "pagesFetched": 70,
+      "parsedRows": 0,
+      "itemCount": 0,
+      "earliest": null,
+      "latest": null,
       "complete": true,
       "queries": [
         {
-          "keyword": "배출권",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "배출권거래제",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "K-ETS",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "ETS",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
           "keyword": "할당계획",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "할당량",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "배출허용총량",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "할당대상업체",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -134622,77 +133337,7 @@
           "parsedRows": 0
         },
         {
-          "keyword": "유상할당",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "유상경매",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "배출권 경매",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "낙찰가",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "응찰률",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "응찰배수",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "이월",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "차입",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "상쇄배출권",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "전환한도",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "시장안정화",
+          "keyword": "배출허용총량",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -134706,35 +133351,14 @@
           "parsedRows": 0
         },
         {
-          "keyword": "MSR",
+          "keyword": "배출량 명세서",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "국제감축",
-          "field": "title",
-          "reportedTotal": 1,
-          "pagesFetched": 1,
-          "parsedRows": 1
-        },
-        {
-          "keyword": "외부사업",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "감축실적",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "ITMO",
+          "keyword": "인증배출량",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -134748,63 +133372,14 @@
           "parsedRows": 0
         },
         {
-          "keyword": "제출기한",
+          "keyword": "배출권 거래량",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "의무이행",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "이행연도",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "거래량",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "거래대금",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "대량 매도",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "보유물량 출회",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "시장참여자",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "시장조성",
+          "keyword": "배출권 거래대금",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -134832,28 +133407,49 @@
           "parsedRows": 0
         },
         {
-          "keyword": "NDC",
+          "keyword": "배출권 소송",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "국가 온실가스 감축목표",
+          "keyword": "할당량",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "국가 감축목표",
+          "keyword": "낙찰가",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "전력시장",
+          "keyword": "응찰률",
+          "field": "title",
+          "reportedTotal": 0,
+          "pagesFetched": 1,
+          "parsedRows": 0
+        },
+        {
+          "keyword": "배출권 이월",
+          "field": "title",
+          "reportedTotal": 0,
+          "pagesFetched": 1,
+          "parsedRows": 0
+        },
+        {
+          "keyword": "배출권 차입",
+          "field": "title",
+          "reportedTotal": 0,
+          "pagesFetched": 1,
+          "parsedRows": 0
+        },
+        {
+          "keyword": "전환한도",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -134861,69 +133457,6 @@
         },
         {
           "keyword": "급전",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "경제급전",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "계통운영",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "석탄발전",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "석탄화력",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "LNG발전",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "가스발전",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "SMP",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "계통한계가격",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "원자력발전",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -134944,21 +133477,7 @@
           "parsedRows": 0
         },
         {
-          "keyword": "신재생에너지",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
           "keyword": "RPS",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "수소발전",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -134972,49 +133491,7 @@
           "parsedRows": 0
         },
         {
-          "keyword": "RE100",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "전력수급기본계획",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "전원구성",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "발전믹스",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "발전제약",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
           "keyword": "출력제어",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "송전제약",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -135049,7 +133526,7 @@
           "parsedRows": 0
         },
         {
-          "keyword": "불시정지",
+          "keyword": "원전 불시정지",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -135063,14 +133540,21 @@
           "parsedRows": 0
         },
         {
-          "keyword": "계획예방정비",
+          "keyword": "가동중단",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "화재",
+          "keyword": "발전소 화재",
+          "field": "title",
+          "reportedTotal": 0,
+          "pagesFetched": 1,
+          "parsedRows": 0
+        },
+        {
+          "keyword": "공장 화재",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -135091,21 +133575,7 @@
           "parsedRows": 0
         },
         {
-          "keyword": "가동중단",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
           "keyword": "정기보수",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "대정비",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -135133,13 +133603,6 @@
           "parsedRows": 0
         },
         {
-          "keyword": "생산조정",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
           "keyword": "증설",
           "field": "title",
           "reportedTotal": 0,
@@ -135148,13 +133611,6 @@
         },
         {
           "keyword": "상업가동",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "신규가동",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -135175,6 +133631,13 @@
           "parsedRows": 0
         },
         {
+          "keyword": "덤핑방지관세",
+          "field": "title",
+          "reportedTotal": 0,
+          "pagesFetched": 1,
+          "parsedRows": 0
+        },
+        {
           "keyword": "중국 관세",
           "field": "title",
           "reportedTotal": 0,
@@ -135189,7 +133652,7 @@
           "parsedRows": 0
         },
         {
-          "keyword": "생산동향",
+          "keyword": "광공업생산",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -135203,34 +133666,6 @@
           "parsedRows": 0
         },
         {
-          "keyword": "업종별 생산",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "온실가스",
-          "field": "title",
-          "reportedTotal": 1,
-          "pagesFetched": 1,
-          "parsedRows": 1
-        },
-        {
-          "keyword": "온실가스 배출량",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "배출량 명세서",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
           "keyword": "명세서",
           "field": "title",
           "reportedTotal": 0,
@@ -135238,133 +133673,42 @@
           "parsedRows": 0
         },
         {
-          "keyword": "탄소국경조정",
+          "keyword": "제출기한",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "CBAM",
+          "keyword": "대량 매도",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "탄소중립",
+          "keyword": "보유물량 출회",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "탄소중립 기본계획",
+          "keyword": "시장참여자",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "넷제로",
+          "keyword": "헌법불합치",
           "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "확정 지연",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "도입 지연",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "시행 지연",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "소송",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "헌법소원",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "행정소송",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "배출권",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "배출권거래제",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "K-ETS",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "ETS",
-          "field": "content",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
           "keyword": "할당계획",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "할당량",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "배출허용총량",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "할당대상업체",
           "field": "content",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -135385,77 +133729,7 @@
           "parsedRows": 0
         },
         {
-          "keyword": "유상할당",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "유상경매",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "배출권 경매",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "낙찰가",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "응찰률",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "응찰배수",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "이월",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "차입",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "상쇄배출권",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "전환한도",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "시장안정화",
+          "keyword": "배출허용총량",
           "field": "content",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -135469,35 +133743,14 @@
           "parsedRows": 0
         },
         {
-          "keyword": "MSR",
+          "keyword": "배출량 명세서",
           "field": "content",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "국제감축",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "외부사업",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "감축실적",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "ITMO",
+          "keyword": "인증배출량",
           "field": "content",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -135511,63 +133764,14 @@
           "parsedRows": 0
         },
         {
-          "keyword": "제출기한",
+          "keyword": "배출권 거래량",
           "field": "content",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "의무이행",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "이행연도",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "거래량",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "거래대금",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "대량 매도",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "보유물량 출회",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "시장참여자",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "시장조성",
+          "keyword": "배출권 거래대금",
           "field": "content",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -135593,8 +133797,18 @@
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
+        },
+        {
+          "keyword": "배출권 소송",
+          "field": "content",
+          "reportedTotal": 0,
+          "pagesFetched": 1,
+          "parsedRows": 0
         }
-      ]
+      ],
+      "taxonomyVersion": "2026-09-11-v1-user-38-events",
+      "taxonomyMatchedCount": 0,
+      "taxonomyEventCounts": {}
     },
     {
       "sourceBoardKey": "legislation_notice",
@@ -135605,7 +133819,7 @@
       "requestedStartDate": "2026-09-15",
       "requestedEndDate": "2026-11-14",
       "searchMode": "official-expanded-keyword-query",
-      "pagesFetched": 149,
+      "pagesFetched": 70,
       "parsedRows": 0,
       "itemCount": 0,
       "earliest": null,
@@ -135613,56 +133827,7 @@
       "complete": true,
       "queries": [
         {
-          "keyword": "배출권",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "배출권거래제",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "K-ETS",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "ETS",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
           "keyword": "할당계획",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "할당량",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "배출허용총량",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "할당대상업체",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -135683,77 +133848,7 @@
           "parsedRows": 0
         },
         {
-          "keyword": "유상할당",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "유상경매",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "배출권 경매",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "낙찰가",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "응찰률",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "응찰배수",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "이월",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "차입",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "상쇄배출권",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "전환한도",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "시장안정화",
+          "keyword": "배출허용총량",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -135767,35 +133862,14 @@
           "parsedRows": 0
         },
         {
-          "keyword": "MSR",
+          "keyword": "배출량 명세서",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "국제감축",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "외부사업",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "감축실적",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "ITMO",
+          "keyword": "인증배출량",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -135809,63 +133883,14 @@
           "parsedRows": 0
         },
         {
-          "keyword": "제출기한",
+          "keyword": "배출권 거래량",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "의무이행",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "이행연도",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "거래량",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "거래대금",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "대량 매도",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "보유물량 출회",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "시장참여자",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "시장조성",
+          "keyword": "배출권 거래대금",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -135893,28 +133918,49 @@
           "parsedRows": 0
         },
         {
-          "keyword": "NDC",
+          "keyword": "배출권 소송",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "국가 온실가스 감축목표",
+          "keyword": "할당량",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "국가 감축목표",
+          "keyword": "낙찰가",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "전력시장",
+          "keyword": "응찰률",
+          "field": "title",
+          "reportedTotal": 0,
+          "pagesFetched": 1,
+          "parsedRows": 0
+        },
+        {
+          "keyword": "배출권 이월",
+          "field": "title",
+          "reportedTotal": 0,
+          "pagesFetched": 1,
+          "parsedRows": 0
+        },
+        {
+          "keyword": "배출권 차입",
+          "field": "title",
+          "reportedTotal": 0,
+          "pagesFetched": 1,
+          "parsedRows": 0
+        },
+        {
+          "keyword": "전환한도",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -135922,69 +133968,6 @@
         },
         {
           "keyword": "급전",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "경제급전",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "계통운영",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "석탄발전",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "석탄화력",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "LNG발전",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "가스발전",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "SMP",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "계통한계가격",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "원자력발전",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -136005,21 +133988,7 @@
           "parsedRows": 0
         },
         {
-          "keyword": "신재생에너지",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
           "keyword": "RPS",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "수소발전",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -136033,49 +134002,7 @@
           "parsedRows": 0
         },
         {
-          "keyword": "RE100",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "전력수급기본계획",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "전원구성",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "발전믹스",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "발전제약",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
           "keyword": "출력제어",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "송전제약",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -136110,7 +134037,7 @@
           "parsedRows": 0
         },
         {
-          "keyword": "불시정지",
+          "keyword": "원전 불시정지",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -136124,14 +134051,21 @@
           "parsedRows": 0
         },
         {
-          "keyword": "계획예방정비",
+          "keyword": "가동중단",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "화재",
+          "keyword": "발전소 화재",
+          "field": "title",
+          "reportedTotal": 0,
+          "pagesFetched": 1,
+          "parsedRows": 0
+        },
+        {
+          "keyword": "공장 화재",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -136152,21 +134086,7 @@
           "parsedRows": 0
         },
         {
-          "keyword": "가동중단",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
           "keyword": "정기보수",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "대정비",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -136194,13 +134114,6 @@
           "parsedRows": 0
         },
         {
-          "keyword": "생산조정",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
           "keyword": "증설",
           "field": "title",
           "reportedTotal": 0,
@@ -136209,13 +134122,6 @@
         },
         {
           "keyword": "상업가동",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "신규가동",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -136236,6 +134142,13 @@
           "parsedRows": 0
         },
         {
+          "keyword": "덤핑방지관세",
+          "field": "title",
+          "reportedTotal": 0,
+          "pagesFetched": 1,
+          "parsedRows": 0
+        },
+        {
           "keyword": "중국 관세",
           "field": "title",
           "reportedTotal": 0,
@@ -136250,7 +134163,7 @@
           "parsedRows": 0
         },
         {
-          "keyword": "생산동향",
+          "keyword": "광공업생산",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -136264,34 +134177,6 @@
           "parsedRows": 0
         },
         {
-          "keyword": "업종별 생산",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "온실가스",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "온실가스 배출량",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "배출량 명세서",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
           "keyword": "명세서",
           "field": "title",
           "reportedTotal": 0,
@@ -136299,133 +134184,42 @@
           "parsedRows": 0
         },
         {
-          "keyword": "탄소국경조정",
+          "keyword": "제출기한",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "CBAM",
+          "keyword": "대량 매도",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "탄소중립",
+          "keyword": "보유물량 출회",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "탄소중립 기본계획",
+          "keyword": "시장참여자",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "넷제로",
+          "keyword": "헌법불합치",
           "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "확정 지연",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "도입 지연",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "시행 지연",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "소송",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "헌법소원",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "행정소송",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "배출권",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "배출권거래제",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "K-ETS",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "ETS",
-          "field": "content",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
           "keyword": "할당계획",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "할당량",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "배출허용총량",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "할당대상업체",
           "field": "content",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -136446,77 +134240,7 @@
           "parsedRows": 0
         },
         {
-          "keyword": "유상할당",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "유상경매",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "배출권 경매",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "낙찰가",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "응찰률",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "응찰배수",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "이월",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "차입",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "상쇄배출권",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "전환한도",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "시장안정화",
+          "keyword": "배출허용총량",
           "field": "content",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -136530,35 +134254,14 @@
           "parsedRows": 0
         },
         {
-          "keyword": "MSR",
+          "keyword": "배출량 명세서",
           "field": "content",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "국제감축",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "외부사업",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "감축실적",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "ITMO",
+          "keyword": "인증배출량",
           "field": "content",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -136572,63 +134275,14 @@
           "parsedRows": 0
         },
         {
-          "keyword": "제출기한",
+          "keyword": "배출권 거래량",
           "field": "content",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "의무이행",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "이행연도",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "거래량",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "거래대금",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "대량 매도",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "보유물량 출회",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "시장참여자",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "시장조성",
+          "keyword": "배출권 거래대금",
           "field": "content",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -136654,8 +134308,18 @@
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
+        },
+        {
+          "keyword": "배출권 소송",
+          "field": "content",
+          "reportedTotal": 0,
+          "pagesFetched": 1,
+          "parsedRows": 0
         }
-      ]
+      ],
+      "taxonomyVersion": "2026-09-11-v1-user-38-events",
+      "taxonomyMatchedCount": 0,
+      "taxonomyEventCounts": {}
     },
     {
       "sourceBoardKey": "administrative_notice",
@@ -136666,7 +134330,7 @@
       "requestedStartDate": "2026-09-15",
       "requestedEndDate": "2026-11-14",
       "searchMode": "official-expanded-keyword-query",
-      "pagesFetched": 149,
+      "pagesFetched": 70,
       "parsedRows": 0,
       "itemCount": 0,
       "earliest": null,
@@ -136674,56 +134338,7 @@
       "complete": true,
       "queries": [
         {
-          "keyword": "배출권",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "배출권거래제",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "K-ETS",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "ETS",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
           "keyword": "할당계획",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "할당량",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "배출허용총량",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "할당대상업체",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -136744,77 +134359,7 @@
           "parsedRows": 0
         },
         {
-          "keyword": "유상할당",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "유상경매",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "배출권 경매",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "낙찰가",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "응찰률",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "응찰배수",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "이월",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "차입",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "상쇄배출권",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "전환한도",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "시장안정화",
+          "keyword": "배출허용총량",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -136828,35 +134373,14 @@
           "parsedRows": 0
         },
         {
-          "keyword": "MSR",
+          "keyword": "배출량 명세서",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "국제감축",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "외부사업",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "감축실적",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "ITMO",
+          "keyword": "인증배출량",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -136870,63 +134394,14 @@
           "parsedRows": 0
         },
         {
-          "keyword": "제출기한",
+          "keyword": "배출권 거래량",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "의무이행",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "이행연도",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "거래량",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "거래대금",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "대량 매도",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "보유물량 출회",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "시장참여자",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "시장조성",
+          "keyword": "배출권 거래대금",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -136954,28 +134429,49 @@
           "parsedRows": 0
         },
         {
-          "keyword": "NDC",
+          "keyword": "배출권 소송",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "국가 온실가스 감축목표",
+          "keyword": "할당량",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "국가 감축목표",
+          "keyword": "낙찰가",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "전력시장",
+          "keyword": "응찰률",
+          "field": "title",
+          "reportedTotal": 0,
+          "pagesFetched": 1,
+          "parsedRows": 0
+        },
+        {
+          "keyword": "배출권 이월",
+          "field": "title",
+          "reportedTotal": 0,
+          "pagesFetched": 1,
+          "parsedRows": 0
+        },
+        {
+          "keyword": "배출권 차입",
+          "field": "title",
+          "reportedTotal": 0,
+          "pagesFetched": 1,
+          "parsedRows": 0
+        },
+        {
+          "keyword": "전환한도",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -136983,69 +134479,6 @@
         },
         {
           "keyword": "급전",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "경제급전",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "계통운영",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "석탄발전",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "석탄화력",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "LNG발전",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "가스발전",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "SMP",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "계통한계가격",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "원자력발전",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -137066,21 +134499,7 @@
           "parsedRows": 0
         },
         {
-          "keyword": "신재생에너지",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
           "keyword": "RPS",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "수소발전",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -137094,49 +134513,7 @@
           "parsedRows": 0
         },
         {
-          "keyword": "RE100",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "전력수급기본계획",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "전원구성",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "발전믹스",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "발전제약",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
           "keyword": "출력제어",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "송전제약",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -137171,7 +134548,7 @@
           "parsedRows": 0
         },
         {
-          "keyword": "불시정지",
+          "keyword": "원전 불시정지",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -137185,14 +134562,21 @@
           "parsedRows": 0
         },
         {
-          "keyword": "계획예방정비",
+          "keyword": "가동중단",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "화재",
+          "keyword": "발전소 화재",
+          "field": "title",
+          "reportedTotal": 0,
+          "pagesFetched": 1,
+          "parsedRows": 0
+        },
+        {
+          "keyword": "공장 화재",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -137213,21 +134597,7 @@
           "parsedRows": 0
         },
         {
-          "keyword": "가동중단",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
           "keyword": "정기보수",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "대정비",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -137255,13 +134625,6 @@
           "parsedRows": 0
         },
         {
-          "keyword": "생산조정",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
           "keyword": "증설",
           "field": "title",
           "reportedTotal": 0,
@@ -137270,13 +134633,6 @@
         },
         {
           "keyword": "상업가동",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "신규가동",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -137297,6 +134653,13 @@
           "parsedRows": 0
         },
         {
+          "keyword": "덤핑방지관세",
+          "field": "title",
+          "reportedTotal": 0,
+          "pagesFetched": 1,
+          "parsedRows": 0
+        },
+        {
           "keyword": "중국 관세",
           "field": "title",
           "reportedTotal": 0,
@@ -137311,7 +134674,7 @@
           "parsedRows": 0
         },
         {
-          "keyword": "생산동향",
+          "keyword": "광공업생산",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -137325,34 +134688,6 @@
           "parsedRows": 0
         },
         {
-          "keyword": "업종별 생산",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "온실가스",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "온실가스 배출량",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "배출량 명세서",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
           "keyword": "명세서",
           "field": "title",
           "reportedTotal": 0,
@@ -137360,133 +134695,42 @@
           "parsedRows": 0
         },
         {
-          "keyword": "탄소국경조정",
+          "keyword": "제출기한",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "CBAM",
+          "keyword": "대량 매도",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "탄소중립",
+          "keyword": "보유물량 출회",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "탄소중립 기본계획",
+          "keyword": "시장참여자",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "넷제로",
+          "keyword": "헌법불합치",
           "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "확정 지연",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "도입 지연",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "시행 지연",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "소송",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "헌법소원",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "행정소송",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "배출권",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "배출권거래제",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "K-ETS",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "ETS",
-          "field": "content",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
           "keyword": "할당계획",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "할당량",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "배출허용총량",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "할당대상업체",
           "field": "content",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -137507,77 +134751,7 @@
           "parsedRows": 0
         },
         {
-          "keyword": "유상할당",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "유상경매",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "배출권 경매",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "낙찰가",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "응찰률",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "응찰배수",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "이월",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "차입",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "상쇄배출권",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "전환한도",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "시장안정화",
+          "keyword": "배출허용총량",
           "field": "content",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -137591,35 +134765,14 @@
           "parsedRows": 0
         },
         {
-          "keyword": "MSR",
+          "keyword": "배출량 명세서",
           "field": "content",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "국제감축",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "외부사업",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "감축실적",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "ITMO",
+          "keyword": "인증배출량",
           "field": "content",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -137633,63 +134786,14 @@
           "parsedRows": 0
         },
         {
-          "keyword": "제출기한",
+          "keyword": "배출권 거래량",
           "field": "content",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "의무이행",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "이행연도",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "거래량",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "거래대금",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "대량 매도",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "보유물량 출회",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "시장참여자",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "시장조성",
+          "keyword": "배출권 거래대금",
           "field": "content",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -137715,8 +134819,18 @@
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
+        },
+        {
+          "keyword": "배출권 소송",
+          "field": "content",
+          "reportedTotal": 0,
+          "pagesFetched": 1,
+          "parsedRows": 0
         }
-      ]
+      ],
+      "taxonomyVersion": "2026-09-11-v1-user-38-events",
+      "taxonomyMatchedCount": 0,
+      "taxonomyEventCounts": {}
     },
     {
       "sourceBoardKey": "public_notice",
@@ -137727,64 +134841,15 @@
       "requestedStartDate": "2026-09-15",
       "requestedEndDate": "2026-11-14",
       "searchMode": "official-expanded-keyword-query",
-      "pagesFetched": 149,
-      "parsedRows": 2,
-      "itemCount": 2,
-      "earliest": "2026-10-23",
-      "latest": "2026-10-28",
+      "pagesFetched": 70,
+      "parsedRows": 0,
+      "itemCount": 0,
+      "earliest": null,
+      "latest": null,
       "complete": true,
       "queries": [
         {
-          "keyword": "배출권",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "배출권거래제",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "K-ETS",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "ETS",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
           "keyword": "할당계획",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "할당량",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "배출허용총량",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "할당대상업체",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -137805,77 +134870,7 @@
           "parsedRows": 0
         },
         {
-          "keyword": "유상할당",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "유상경매",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "배출권 경매",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "낙찰가",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "응찰률",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "응찰배수",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "이월",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "차입",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "상쇄배출권",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "전환한도",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "시장안정화",
+          "keyword": "배출허용총량",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -137889,35 +134884,14 @@
           "parsedRows": 0
         },
         {
-          "keyword": "MSR",
+          "keyword": "배출량 명세서",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "국제감축",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "외부사업",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "감축실적",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "ITMO",
+          "keyword": "인증배출량",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -137931,63 +134905,14 @@
           "parsedRows": 0
         },
         {
-          "keyword": "제출기한",
+          "keyword": "배출권 거래량",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "의무이행",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "이행연도",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "거래량",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "거래대금",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "대량 매도",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "보유물량 출회",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "시장참여자",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "시장조성",
+          "keyword": "배출권 거래대금",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -138015,28 +134940,49 @@
           "parsedRows": 0
         },
         {
-          "keyword": "NDC",
+          "keyword": "배출권 소송",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "국가 온실가스 감축목표",
+          "keyword": "할당량",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "국가 감축목표",
+          "keyword": "낙찰가",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "전력시장",
+          "keyword": "응찰률",
+          "field": "title",
+          "reportedTotal": 0,
+          "pagesFetched": 1,
+          "parsedRows": 0
+        },
+        {
+          "keyword": "배출권 이월",
+          "field": "title",
+          "reportedTotal": 0,
+          "pagesFetched": 1,
+          "parsedRows": 0
+        },
+        {
+          "keyword": "배출권 차입",
+          "field": "title",
+          "reportedTotal": 0,
+          "pagesFetched": 1,
+          "parsedRows": 0
+        },
+        {
+          "keyword": "전환한도",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -138044,69 +134990,6 @@
         },
         {
           "keyword": "급전",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "경제급전",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "계통운영",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "석탄발전",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "석탄화력",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "LNG발전",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "가스발전",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "SMP",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "계통한계가격",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "원자력발전",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -138127,21 +135010,7 @@
           "parsedRows": 0
         },
         {
-          "keyword": "신재생에너지",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
           "keyword": "RPS",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "수소발전",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -138155,49 +135024,7 @@
           "parsedRows": 0
         },
         {
-          "keyword": "RE100",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "전력수급기본계획",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "전원구성",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "발전믹스",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "발전제약",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
           "keyword": "출력제어",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "송전제약",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -138232,7 +135059,7 @@
           "parsedRows": 0
         },
         {
-          "keyword": "불시정지",
+          "keyword": "원전 불시정지",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -138246,14 +135073,21 @@
           "parsedRows": 0
         },
         {
-          "keyword": "계획예방정비",
+          "keyword": "가동중단",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "화재",
+          "keyword": "발전소 화재",
+          "field": "title",
+          "reportedTotal": 0,
+          "pagesFetched": 1,
+          "parsedRows": 0
+        },
+        {
+          "keyword": "공장 화재",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -138274,21 +135108,7 @@
           "parsedRows": 0
         },
         {
-          "keyword": "가동중단",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
           "keyword": "정기보수",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "대정비",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -138316,13 +135136,6 @@
           "parsedRows": 0
         },
         {
-          "keyword": "생산조정",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
           "keyword": "증설",
           "field": "title",
           "reportedTotal": 0,
@@ -138331,13 +135144,6 @@
         },
         {
           "keyword": "상업가동",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "신규가동",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -138358,6 +135164,13 @@
           "parsedRows": 0
         },
         {
+          "keyword": "덤핑방지관세",
+          "field": "title",
+          "reportedTotal": 0,
+          "pagesFetched": 1,
+          "parsedRows": 0
+        },
+        {
           "keyword": "중국 관세",
           "field": "title",
           "reportedTotal": 0,
@@ -138372,7 +135185,7 @@
           "parsedRows": 0
         },
         {
-          "keyword": "생산동향",
+          "keyword": "광공업생산",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -138386,34 +135199,6 @@
           "parsedRows": 0
         },
         {
-          "keyword": "업종별 생산",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "온실가스",
-          "field": "title",
-          "reportedTotal": 2,
-          "pagesFetched": 1,
-          "parsedRows": 2
-        },
-        {
-          "keyword": "온실가스 배출량",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "배출량 명세서",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
           "keyword": "명세서",
           "field": "title",
           "reportedTotal": 0,
@@ -138421,133 +135206,42 @@
           "parsedRows": 0
         },
         {
-          "keyword": "탄소국경조정",
+          "keyword": "제출기한",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "CBAM",
+          "keyword": "대량 매도",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "탄소중립",
+          "keyword": "보유물량 출회",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "탄소중립 기본계획",
+          "keyword": "시장참여자",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "넷제로",
+          "keyword": "헌법불합치",
           "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "확정 지연",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "도입 지연",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "시행 지연",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "소송",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "헌법소원",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "행정소송",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "배출권",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "배출권거래제",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "K-ETS",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "ETS",
-          "field": "content",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
           "keyword": "할당계획",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "할당량",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "배출허용총량",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "할당대상업체",
           "field": "content",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -138568,77 +135262,7 @@
           "parsedRows": 0
         },
         {
-          "keyword": "유상할당",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "유상경매",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "배출권 경매",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "낙찰가",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "응찰률",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "응찰배수",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "이월",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "차입",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "상쇄배출권",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "전환한도",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "시장안정화",
+          "keyword": "배출허용총량",
           "field": "content",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -138652,35 +135276,14 @@
           "parsedRows": 0
         },
         {
-          "keyword": "MSR",
+          "keyword": "배출량 명세서",
           "field": "content",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "국제감축",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "외부사업",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "감축실적",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "ITMO",
+          "keyword": "인증배출량",
           "field": "content",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -138694,63 +135297,14 @@
           "parsedRows": 0
         },
         {
-          "keyword": "제출기한",
+          "keyword": "배출권 거래량",
           "field": "content",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "의무이행",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "이행연도",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "거래량",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "거래대금",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "대량 매도",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "보유물량 출회",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "시장참여자",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "시장조성",
+          "keyword": "배출권 거래대금",
           "field": "content",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -138776,8 +135330,18 @@
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
+        },
+        {
+          "keyword": "배출권 소송",
+          "field": "content",
+          "reportedTotal": 0,
+          "pagesFetched": 1,
+          "parsedRows": 0
         }
-      ]
+      ],
+      "taxonomyVersion": "2026-09-11-v1-user-38-events",
+      "taxonomyMatchedCount": 0,
+      "taxonomyEventCounts": {}
     },
     {
       "sourceBoardKey": "announcement",
@@ -138788,64 +135352,15 @@
       "requestedStartDate": "2026-09-15",
       "requestedEndDate": "2026-11-14",
       "searchMode": "official-expanded-keyword-query",
-      "pagesFetched": 149,
-      "parsedRows": 2,
-      "itemCount": 1,
-      "earliest": "2026-10-02",
-      "latest": "2026-10-02",
+      "pagesFetched": 70,
+      "parsedRows": 0,
+      "itemCount": 0,
+      "earliest": null,
+      "latest": null,
       "complete": true,
       "queries": [
         {
-          "keyword": "배출권",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "배출권거래제",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "K-ETS",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "ETS",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
           "keyword": "할당계획",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "할당량",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "배출허용총량",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "할당대상업체",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -138866,77 +135381,7 @@
           "parsedRows": 0
         },
         {
-          "keyword": "유상할당",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "유상경매",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "배출권 경매",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "낙찰가",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "응찰률",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "응찰배수",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "이월",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "차입",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "상쇄배출권",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "전환한도",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "시장안정화",
+          "keyword": "배출허용총량",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -138950,35 +135395,14 @@
           "parsedRows": 0
         },
         {
-          "keyword": "MSR",
+          "keyword": "배출량 명세서",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "국제감축",
-          "field": "title",
-          "reportedTotal": 1,
-          "pagesFetched": 1,
-          "parsedRows": 1
-        },
-        {
-          "keyword": "외부사업",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "감축실적",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "ITMO",
+          "keyword": "인증배출량",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -138992,63 +135416,14 @@
           "parsedRows": 0
         },
         {
-          "keyword": "제출기한",
+          "keyword": "배출권 거래량",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "의무이행",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "이행연도",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "거래량",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "거래대금",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "대량 매도",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "보유물량 출회",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "시장참여자",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "시장조성",
+          "keyword": "배출권 거래대금",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -139076,28 +135451,49 @@
           "parsedRows": 0
         },
         {
-          "keyword": "NDC",
+          "keyword": "배출권 소송",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "국가 온실가스 감축목표",
+          "keyword": "할당량",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "국가 감축목표",
+          "keyword": "낙찰가",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "전력시장",
+          "keyword": "응찰률",
+          "field": "title",
+          "reportedTotal": 0,
+          "pagesFetched": 1,
+          "parsedRows": 0
+        },
+        {
+          "keyword": "배출권 이월",
+          "field": "title",
+          "reportedTotal": 0,
+          "pagesFetched": 1,
+          "parsedRows": 0
+        },
+        {
+          "keyword": "배출권 차입",
+          "field": "title",
+          "reportedTotal": 0,
+          "pagesFetched": 1,
+          "parsedRows": 0
+        },
+        {
+          "keyword": "전환한도",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -139105,69 +135501,6 @@
         },
         {
           "keyword": "급전",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "경제급전",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "계통운영",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "석탄발전",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "석탄화력",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "LNG발전",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "가스발전",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "SMP",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "계통한계가격",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "원자력발전",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -139188,21 +135521,7 @@
           "parsedRows": 0
         },
         {
-          "keyword": "신재생에너지",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
           "keyword": "RPS",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "수소발전",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -139216,49 +135535,7 @@
           "parsedRows": 0
         },
         {
-          "keyword": "RE100",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "전력수급기본계획",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "전원구성",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "발전믹스",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "발전제약",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
           "keyword": "출력제어",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "송전제약",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -139293,7 +135570,7 @@
           "parsedRows": 0
         },
         {
-          "keyword": "불시정지",
+          "keyword": "원전 불시정지",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -139307,14 +135584,21 @@
           "parsedRows": 0
         },
         {
-          "keyword": "계획예방정비",
+          "keyword": "가동중단",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "화재",
+          "keyword": "발전소 화재",
+          "field": "title",
+          "reportedTotal": 0,
+          "pagesFetched": 1,
+          "parsedRows": 0
+        },
+        {
+          "keyword": "공장 화재",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -139335,21 +135619,7 @@
           "parsedRows": 0
         },
         {
-          "keyword": "가동중단",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
           "keyword": "정기보수",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "대정비",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -139377,13 +135647,6 @@
           "parsedRows": 0
         },
         {
-          "keyword": "생산조정",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
           "keyword": "증설",
           "field": "title",
           "reportedTotal": 0,
@@ -139392,13 +135655,6 @@
         },
         {
           "keyword": "상업가동",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "신규가동",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -139419,6 +135675,13 @@
           "parsedRows": 0
         },
         {
+          "keyword": "덤핑방지관세",
+          "field": "title",
+          "reportedTotal": 0,
+          "pagesFetched": 1,
+          "parsedRows": 0
+        },
+        {
           "keyword": "중국 관세",
           "field": "title",
           "reportedTotal": 0,
@@ -139433,7 +135696,7 @@
           "parsedRows": 0
         },
         {
-          "keyword": "생산동향",
+          "keyword": "광공업생산",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -139447,34 +135710,6 @@
           "parsedRows": 0
         },
         {
-          "keyword": "업종별 생산",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "온실가스",
-          "field": "title",
-          "reportedTotal": 1,
-          "pagesFetched": 1,
-          "parsedRows": 1
-        },
-        {
-          "keyword": "온실가스 배출량",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "배출량 명세서",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
           "keyword": "명세서",
           "field": "title",
           "reportedTotal": 0,
@@ -139482,133 +135717,42 @@
           "parsedRows": 0
         },
         {
-          "keyword": "탄소국경조정",
+          "keyword": "제출기한",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "CBAM",
+          "keyword": "대량 매도",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "탄소중립",
+          "keyword": "보유물량 출회",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "탄소중립 기본계획",
+          "keyword": "시장참여자",
           "field": "title",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "넷제로",
+          "keyword": "헌법불합치",
           "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "확정 지연",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "도입 지연",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "시행 지연",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "소송",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "헌법소원",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "행정소송",
-          "field": "title",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "배출권",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "배출권거래제",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "K-ETS",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "ETS",
-          "field": "content",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
           "keyword": "할당계획",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "할당량",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "배출허용총량",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "할당대상업체",
           "field": "content",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -139629,77 +135773,7 @@
           "parsedRows": 0
         },
         {
-          "keyword": "유상할당",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "유상경매",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "배출권 경매",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "낙찰가",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "응찰률",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "응찰배수",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "이월",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "차입",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "상쇄배출권",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "전환한도",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "시장안정화",
+          "keyword": "배출허용총량",
           "field": "content",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -139713,35 +135787,14 @@
           "parsedRows": 0
         },
         {
-          "keyword": "MSR",
+          "keyword": "배출량 명세서",
           "field": "content",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "국제감축",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "외부사업",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "감축실적",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "ITMO",
+          "keyword": "인증배출량",
           "field": "content",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -139755,63 +135808,14 @@
           "parsedRows": 0
         },
         {
-          "keyword": "제출기한",
+          "keyword": "배출권 거래량",
           "field": "content",
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
         },
         {
-          "keyword": "의무이행",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "이행연도",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "거래량",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "거래대금",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "대량 매도",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "보유물량 출회",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "시장참여자",
-          "field": "content",
-          "reportedTotal": 0,
-          "pagesFetched": 1,
-          "parsedRows": 0
-        },
-        {
-          "keyword": "시장조성",
+          "keyword": "배출권 거래대금",
           "field": "content",
           "reportedTotal": 0,
           "pagesFetched": 1,
@@ -139837,8 +135841,98 @@
           "reportedTotal": 0,
           "pagesFetched": 1,
           "parsedRows": 0
+        },
+        {
+          "keyword": "배출권 소송",
+          "field": "content",
+          "reportedTotal": 0,
+          "pagesFetched": 1,
+          "parsedRows": 0
         }
-      ]
+      ],
+      "taxonomyVersion": "2026-09-11-v1-user-38-events",
+      "taxonomyMatchedCount": 0,
+      "taxonomyEventCounts": {}
     }
-  ]
+  ],
+  "policyEventTaxonomy": {
+    "version": "2026-09-11-v1-user-38-events",
+    "configFile": "config/policy_event_taxonomy.json",
+    "eventCount": 38,
+    "collectionMode": "incremental-delta-search",
+    "queryStartDate": "2026-09-15",
+    "queryEndDate": "2026-11-14",
+    "titleQueries": [
+      "할당계획",
+      "할당량",
+      "추가할당",
+      "할당취소",
+      "배출허용총량",
+      "낙찰가",
+      "응찰률",
+      "배출권 이월",
+      "배출권 차입",
+      "전환한도",
+      "K-MSR",
+      "급전",
+      "원전",
+      "재생에너지",
+      "RPS",
+      "청정수소",
+      "출력제어",
+      "폭염",
+      "한파",
+      "전력수요",
+      "최대전력",
+      "원전 불시정지",
+      "정비연장",
+      "가동중단",
+      "발전소 화재",
+      "공장 화재",
+      "폭발",
+      "침수",
+      "정기보수",
+      "셧다운",
+      "감산",
+      "가동률 조정",
+      "증설",
+      "상업가동",
+      "중국 증설",
+      "반덤핑",
+      "덤핑방지관세",
+      "중국 관세",
+      "산업생산",
+      "광공업생산",
+      "가동률",
+      "명세서",
+      "제출기한",
+      "배출권 거래량",
+      "배출권 거래대금",
+      "대량 매도",
+      "보유물량 출회",
+      "시장참여자",
+      "시장조성자",
+      "EU ETS",
+      "EUA",
+      "배출권 소송",
+      "헌법불합치"
+    ],
+    "contentQueries": [
+      "할당계획",
+      "추가할당",
+      "할당취소",
+      "배출허용총량",
+      "K-MSR",
+      "배출량 명세서",
+      "인증배출량",
+      "배출권 제출",
+      "배출권 거래량",
+      "배출권 거래대금",
+      "시장조성자",
+      "EU ETS",
+      "EUA",
+      "배출권 소송"
+    ],
+    "rule": "기존 30개 이력＋추가 검색. 제목은 38개 이벤트 문맥판정, 본문은 배출권 직접어만 검색"
+  }
 }

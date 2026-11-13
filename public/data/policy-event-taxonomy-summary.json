@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0",
   "taxonomyVersion": "2026-09-11-v1-user-38-events",
-  "generatedAt": "2026-11-13T07:01:35+09:00",
+  "generatedAt": "2026-11-14T06:38:11+09:00",
   "requestedStartDate": "2015-01-01",
   "collectionMode": "incremental",
   "eventCount": 38,
@@ -202,14 +202,14 @@
     "motie_notice": 955,
     "motie_press": 1895,
     "notice": 443,
-    "press": 956
+    "press": 957
   },
   "previousSectionCounts": {
     "krx_notice": 316,
     "motie_notice": 955,
     "motie_press": 1895,
     "notice": 440,
-    "press": 950
+    "press": 951
   },
   "addedCounts": {
     "krx_notice": 0,
@@ -342,9 +342,9 @@
       }
     },
     "press": {
-      "records": 956,
+      "records": 957,
       "earliest": "2015-01-08",
-      "latest": "2026-11-12",
+      "latest": "2026-11-13",
       "scopeCounts": {
         "direct": 444,
         "related": 509
@@ -448,13 +448,13 @@
     }
   },
   "validation": {
-    "officialItemCount": 4565,
+    "officialItemCount": 4566,
     "sectionCounts": {
       "krx_notice": 316,
       "motie_notice": 955,
       "motie_press": 1895,
       "notice": 443,
-      "press": 956
+      "press": 957
     },
     "scopeCounts": {
       "krx_notice": {
@@ -523,7 +523,7 @@
     "invalidDomains": 0,
     "unclassified": 0,
     "taxonomyMatchedItemCount": 4554,
-    "retainedUnmatchedItemCount": 11,
+    "retainedUnmatchedItemCount": 12,
     "retainedUnmatchedKeys": [
       "motie_press|ATCL3f49a5a8c|172227",
       "motie_press|ATCL3f49a5a8c|172370",
@@ -535,10 +535,11 @@
       "notice|url|https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=200&maxIndexPages=10&searchKey=&searchValue=&menuId=10524&orgCd=&boardMasterId=39&boardId=1903290",
       "press|url|https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=1000&maxIndexPages=10&searchKey=&searchValue=&menuId=10598&orgCd=&boardMasterId=939&boardId=1882780",
       "press|url|https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=1000&maxIndexPages=10&searchKey=&searchValue=&menuId=10598&orgCd=&boardMasterId=939&boardId=1890080",
-      "press|url|https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=1000&maxIndexPages=10&searchKey=&searchValue=&menuId=10598&orgCd=&boardMasterId=939&boardId=1892970"
+      "press|url|https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=1000&maxIndexPages=10&searchKey=&searchValue=&menuId=10598&orgCd=&boardMasterId=939&boardId=1892970",
+      "press|url|https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=1000&maxIndexPages=10&searchKey=&searchValue=&menuId=10598&orgCd=&boardMasterId=939&boardId=1906890"
     ],
-    "dashboardOfficialCount": 4565
+    "dashboardOfficialCount": 4566
   },
-  "lastRunDateKst": "2026-11-13",
-  "lastRunSlot": "2026-11-13-AM"
+  "lastRunDateKst": "2026-11-14",
+  "lastRunSlot": "2026-11-14-AM"
 }
