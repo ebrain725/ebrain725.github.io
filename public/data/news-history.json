@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-14T18:13:56+09:00",
+  "generatedAt": "2026-11-14T20:43:22+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 2090,
+  "itemCount": 2091,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-14",
   "sourceCommitsScanned": 0,
@@ -37,6 +37,30 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 2,
+      "region": "국내"
+    },
+    {
+      "id": "9dfb9c9b64f46e33",
+      "publishedAt": "2026-11-14",
+      "title": "출렁이는 재생에너지, 수소로 잡는다…제주에너지공사 국책과제 시동",
+      "category": "제도",
+      "summary": "따른 탄소 배출권 확보 방안도 함께 모색하기로 했다. 부호준 청정에너지연구센터장은 \"이번 착수회의는 수전해·플랜트 설계·시험인증·전력 시장 분야 11개 기관이 실증의 밑그림을 함께 그린 자리\"라고 말했다. 이어...",
+      "source": "gukjenews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.gukjenews.com/news/articleView.html?idxno=3752102",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "gukjenews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
       "region": "국내"
     },
     {
