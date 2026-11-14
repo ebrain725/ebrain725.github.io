@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-14T10:15:06+09:00",
+  "generatedAt": "2026-11-14T12:28:49+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 2088,
+  "itemCount": 2089,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-14",
   "sourceCommitsScanned": 0,
@@ -29,12 +29,14 @@
         "배출권거래제"
       ],
       "duplicateSources": [
+        "한국NGO신문",
         "ngonews.kr"
       ],
       "searchProviders": [
+        "Google News RSS",
         "NAVER API HUB"
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "region": "국내"
     },
     {
@@ -59,6 +61,30 @@
         "Google News RSS"
       ],
       "region": "해외"
+    },
+    {
+      "id": "aede778e8fffd132",
+      "publishedAt": "2026-11-14",
+      "title": "국제탄소감축 실적 '부실 논란'…한국 기후정책 전면 손질 요구",
+      "category": "제도",
+      "summary": "튀르키예 안탈리아에서 열린 제31차 유엔기후변화협약 당사국총회(COP31)에서 한국 정부의 국제 온실가스 ... 오래전에 발행된 탄소 배출권 을 활용하는 방안 역시 추가 감축 효과를 인정할 수 있는지 따져봐야 한다고...",
+      "source": "ngonews.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.ngonews.kr/news/articleView.html?idxno=243144",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "ngonews.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
     },
     {
       "id": "dceacfd0962f1763",
@@ -1101,8 +1127,8 @@
         "배출권"
       ],
       "duplicateSources": [
-        "기후에너지데이터뱅크",
         "에너지경제신문",
+        "기후에너지데이터뱅크",
         "ekn.kr"
       ],
       "searchProviders": [
