@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-15T01:01:59+09:00",
+  "generatedAt": "2026-11-15T03:25:09+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 2092,
+  "itemCount": 2093,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-15",
   "sourceCommitsScanned": 0,
@@ -7699,6 +7699,29 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "acbd9975f277d2de",
+      "publishedAt": "2026-11-04",
+      "title": "[오늘의 국회 에너지 입법 : 자발적 탄소시장 활성화 지원 근거 마련돼야]",
+      "category": "제도",
+      "summary": "[오늘의 국회 에너지 입법 : 자발적 탄소시장 활성화 지원 근거 마련돼야] 에너지플랫폼뉴스",
+      "source": "에너지플랫폼뉴스",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBuRGR0akw5RzA2V3h5cWxtV0dpRFZfSzVkRi1qSTB0akpkSThfN1ZUVEFFb0ljc2F4SXNpZ2k1VXQtczRrenFGaFd1NThWRTFuT09sOHRhd2dERUZITDE3c1FaQ3hkeWpNM2tQYtIBcEFVX3lxTE1NRmFIbHVYVDB4Q3poR2Uyejl1R25uSkxXcEtWaHNpTTlUaUwzUXNkU2xCSGo2NWFSZlM2ZHA1anJ4Sl9DRmR2cUFVUENJdWJWOUNhMUlzeFh5ZGtqazVYeTloTXBCNHoxQS10amxBR3c?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "에너지플랫폼뉴스"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
       "region": "국내"
     },
     {
@@ -18734,11 +18757,11 @@
         "유상할당"
       ],
       "duplicateSources": [
+        "이투데이",
         "etoday.co.kr",
         "이데일리",
         "newslock.co.kr",
         "newsinside.kr",
-        "이투데이",
         "edaily.co.kr",
         "뉴스핌",
         "fetv.co.kr",
@@ -18767,8 +18790,8 @@
         "전자신문"
       ],
       "searchProviders": [
-        "NAVER API HUB",
-        "Google News RSS"
+        "Google News RSS",
+        "NAVER API HUB"
       ],
       "duplicateCount": 31,
       "region": "국내"
