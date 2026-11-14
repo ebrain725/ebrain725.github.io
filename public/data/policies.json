@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-11-14T08:13:58+09:00",
+  "lastSync": "2026-11-14T10:14:58+09:00",
   "keywords": [
     "배출권",
     "배출권거래제",
@@ -30,7 +30,7 @@
   "warning": "한국거래소 배출권 공지사항: 한국거래소 공지 목록을 해석하지 못했습니다. 1페이지: HTTP Error 403: Forbidden",
   "aiInsight": {
     "summary": "최근 공식자료의 직접적인 수급 변수는 유상경매입니다. 최근 경매가 높은 낙찰가로 소화돼 공급보다 이행수요가 강하다는 신호입니다.",
-    "generatedAt": "2026-11-14T08:13:58+09:00",
+    "generatedAt": "2026-11-14T10:14:58+09:00",
     "basisLatestDate": "2026-11-12",
     "basisCount": 10,
     "source": "fallback",
@@ -827,6 +827,31 @@
     }
   ],
   "items": [
+    {
+      "id": "74e216f6a2cb29e6",
+      "publishedAt": "2026-11-14",
+      "title": "한국형 자발적 '탄소시장' 논란 …시민사회 \"졸속 추진 중단하고 원점 ...",
+      "category": "상쇄·외부사업",
+      "summary": "기존 탄소 상쇄 사업에서도 실제 감축량을 부풀리거나 환경적 효과를 제대로 확인하지 못하는 문제가... 정부 \"NDC· 배출권 거래제와 연계하지 않는다\" 정부는 제도 추진의 필요성을 설명하면서도 크레딧 활용 범위에는 선을...",
+      "source": "ngonews.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.ngonews.kr/news/articleView.html?idxno=243038",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장",
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "ngonews.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
     {
       "id": "619737760d471f07",
       "publishedAt": "2026-11-14",
@@ -1917,8 +1942,8 @@
         "배출권"
       ],
       "duplicateSources": [
-        "에너지경제신문",
         "기후에너지데이터뱅크",
+        "에너지경제신문",
         "ekn.kr"
       ],
       "searchProviders": [
@@ -84953,7 +84978,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "34bb2d30171c09a1",
+      "id": "bf2c7b48532214c8",
       "publishedAt": "2025-04-04",
       "title": "2025년 4월 배출권 유상할당 입찰 공고",
       "category": "유상경매",
@@ -84961,7 +84986,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10524&orgCd=&boardMasterId=39&boardId=1735370",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10524&orgCd=&boardMasterId=39&boardId=1735370",
       "matchedKeywords": [
         "유상할당",
         "유상 할당",
@@ -89274,7 +89299,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "e597e32e06bc0f82",
+      "id": "05fc79bd8614e601",
       "publishedAt": "2025-02-06",
       "title": "2025년 2월 배출권 유상할당 입찰 공고",
       "category": "유상경매",
@@ -89282,7 +89307,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10524&orgCd=&boardMasterId=39&boardId=1723130",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%9C%A0%EC%83%81%ED%95%A0%EB%8B%B9&menuId=10524&orgCd=&boardMasterId=39&boardId=1723130",
       "matchedKeywords": [
         "유상할당",
         "유상 할당",
@@ -284203,10 +284228,10 @@
   },
   "newsRetention": {
     "policy": "append-only",
-    "lastMergedAt": "2026-11-14T08:14:05+09:00",
-    "itemCount": 2087,
-    "archiveBefore": 2086,
-    "currentBefore": 1924,
+    "lastMergedAt": "2026-11-14T10:15:06+09:00",
+    "itemCount": 2088,
+    "archiveBefore": 2087,
+    "currentBefore": 1925,
     "gitRecoveryEnabled": false
   }
 }

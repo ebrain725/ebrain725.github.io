@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-14T08:14:05+09:00",
+  "generatedAt": "2026-11-14T10:15:06+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 2087,
+  "itemCount": 2088,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-14",
   "sourceCommitsScanned": 0,
@@ -12,6 +12,31 @@
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "74e216f6a2cb29e6",
+      "publishedAt": "2026-11-14",
+      "title": "한국형 자발적 '탄소시장' 논란 …시민사회 \"졸속 추진 중단하고 원점 ...",
+      "category": "상쇄·외부사업",
+      "summary": "기존 탄소 상쇄 사업에서도 실제 감축량을 부풀리거나 환경적 효과를 제대로 확인하지 못하는 문제가... 정부 \"NDC· 배출권 거래제와 연계하지 않는다\" 정부는 제도 추진의 필요성을 설명하면서도 크레딧 활용 범위에는 선을...",
+      "source": "ngonews.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.ngonews.kr/news/articleView.html?idxno=243038",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장",
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "ngonews.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
     {
       "id": "619737760d471f07",
       "publishedAt": "2026-11-14",
@@ -1076,8 +1101,8 @@
         "배출권"
       ],
       "duplicateSources": [
-        "에너지경제신문",
         "기후에너지데이터뱅크",
+        "에너지경제신문",
         "ekn.kr"
       ],
       "searchProviders": [
