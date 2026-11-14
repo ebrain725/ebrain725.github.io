@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-14T15:13:24+09:00",
+  "generatedAt": "2026-11-14T18:13:56+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 2089,
+  "itemCount": 2090,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-14",
   "sourceCommitsScanned": 0,
@@ -38,6 +38,29 @@
       ],
       "duplicateCount": 2,
       "region": "국내"
+    },
+    {
+      "id": "4dd9abbcc8af4e59",
+      "publishedAt": "2026-11-14",
+      "title": "베트남의 탄소 시장을 국제 사회에 소개합니다.",
+      "category": "제도",
+      "summary": "베트남의 탄소 시장을 국제 사회에 소개합니다. Vietnam.vn",
+      "source": "Vietnam.vn",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQaUpXMVY2dU42Rzh1NFFFU2tLSDNXb3Z4VVZRd1hQSFE5Zk1FbU9ZTjdpaHF2czhyeVhKakFsa1BNOER4SE80WWRGM3VMbndGVEU1YnlpTUZtaTAzOVZtcDItbmVBVmZ3MXNLMnc2b2h0NEluMXFscDBSNXBMS1BmNg?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "Vietnam.vn"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "해외"
     },
     {
       "id": "619737760d471f07",
