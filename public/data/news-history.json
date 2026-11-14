@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-15T03:25:09+09:00",
+  "generatedAt": "2026-11-15T08:15:08+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 2093,
+  "itemCount": 2094,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-15",
   "sourceCommitsScanned": 0,
@@ -37,6 +37,30 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 2,
+      "region": "국내"
+    },
+    {
+      "id": "cb8ec3ec53c05ba0",
+      "publishedAt": "2026-11-15",
+      "title": "한국표준협회, 국내 첫 EU CBAM 검증기관 인정",
+      "category": "제도",
+      "summary": "배출권 거래제 검증심사원을 대상으로 CBAM 역량 강화 교육과정도 운영했다. 산업통상부는 EU 조세총국과의 면담을 통해 국내 검증기관에 대한 신속한 심사를 요청하고, 국내 기관의 건의사항을 EU 측에 전달하는 등 통상...",
+      "source": "ferrotimes.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.ferrotimes.com/news/articleView.html?idxno=51480",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "ferrotimes.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
       "region": "국내"
     },
     {
@@ -688,7 +712,8 @@
       "url": "https://www.etnews.com/20261113000074",
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
-        "배출권"
+        "배출권",
+        "유상할당"
       ],
       "duplicateSources": [
         "전자신문",
