@@ -1,17 +1,44 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-14T20:43:22+09:00",
+  "generatedAt": "2026-11-15T01:01:59+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 2091,
+  "itemCount": 2092,
   "earliestPublishedAt": "2026-08-06",
-  "latestPublishedAt": "2026-11-14",
+  "latestPublishedAt": "2026-11-15",
   "sourceCommitsScanned": 0,
   "sourceSnapshotsScanned": 0,
   "historicalRowsScanned": 0,
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "3fefb28ac0c40156",
+      "publishedAt": "2026-11-15",
+      "title": "한국형 탄소시장, 외형 성장보다 ‘직접 감축 뒷받침’ 돼야",
+      "category": "제도",
+      "summary": "현재 국내는 배출권 거래제가 800여 개 기업을 대상으로 운영되고 있으며 국가 온실가스 배출량의 70% 이상을... 김 센터장은 배출권 거래제 적용 기업이라도 공급망과 제품 사용 단계에서 발생하는 간접배출인 스코프3(Scope 3)...",
+      "source": "m-economynews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.m-economynews.com/news/article.html?no=72933",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장",
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "M이코노미뉴스",
+        "m-economynews.com"
+      ],
+      "searchProviders": [
+        "Google News RSS",
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 2,
+      "region": "국내"
+    },
     {
       "id": "74e216f6a2cb29e6",
       "publishedAt": "2026-11-14",
@@ -4122,7 +4149,6 @@
       ],
       "duplicateSources": [
         "ezyeconomy.com",
-        "디지털데일리",
         "jasm.co.kr",
         "srtimes.kr",
         "ziksir.com",
@@ -4150,6 +4176,7 @@
         "wsobi.com",
         "ddaily.co.kr",
         "smarttoday.co.kr",
+        "디지털데일리",
         "뉴스인사이드",
         "뉴시스",
         "중앙신문",
