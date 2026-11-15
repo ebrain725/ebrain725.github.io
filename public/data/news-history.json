@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-15T08:15:08+09:00",
+  "generatedAt": "2026-11-15T10:14:11+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 2094,
+  "itemCount": 2095,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-15",
   "sourceCommitsScanned": 0,
@@ -56,6 +56,30 @@
       ],
       "duplicateSources": [
         "ferrotimes.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "c085d7f05ee51020",
+      "publishedAt": "2026-11-15",
+      "title": "무료급식소 계단부터 특수학급까지…이랜드·포스코·현대건설, 복지공...",
+      "category": "제도",
+      "summary": "온실가스 감축 실적을 평가받아 확보한 탄소 배출권 수익은 청소년 에너지 교육사업에 다시 기부할 계획이다. 무료급식소와 특수학급이 이동 안전과 시설 접근성을 개선하는 사례라면, 현대건설은 건물 운영에 필요한...",
+      "source": "segye.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.segye.com/newsView/20261115502334?OutUrl=naver",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "segye.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
