@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-16T04:04:17+09:00",
+  "generatedAt": "2026-11-16T08:15:10+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 2116,
+  "itemCount": 2119,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-16",
   "sourceCommitsScanned": 0,
@@ -12,6 +12,52 @@
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "cc2062e61f4bfb37",
+      "publishedAt": "2026-11-16",
+      "title": "강금실 특사, COP31서 한국의 '녹색 대전환' 의지 표명",
+      "category": "제도",
+      "summary": "강 특사는 회의 기간 루이스 이나시우 룰라 다시우바 브라질 대통령, 사이먼 스틸 유엔기후변화협약 사무총장, 우르줄라 폰데어라이언 유럽연합(EU) 집행위원장, 류전민 중국 기후특사 등과 만나 탄소시장 ·에너지...",
+      "source": "yna.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.yna.co.kr/view/AKR20261116012200504?input=1195m",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "yna.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "해외"
+    },
+    {
+      "id": "4cb237ef43b04cd7",
+      "publishedAt": "2026-11-16",
+      "title": "[주목 이 사람] 박지혜 더불어민주당 의원",
+      "category": "시장·가격",
+      "summary": "질소산화물 배출권 거래가격이 5년 사이 절반 이하로 떨어지고 거래량도 감소했는데도 거래 활성화를 성과로 평가한 점도 문제 삼았다. 제도의 운영 실적보다 실제 오염물질 감축 여부가 정책 평가의 기준이 돼야 한다는...",
+      "source": "hansbiz.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.hansbiz.co.kr/news/articleView.html?idxno=883078",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "hansbiz.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
     {
       "id": "a6eca8d32633ee33",
       "publishedAt": "2026-11-16",
@@ -464,6 +510,30 @@
       "duplicateCount": 1,
       "duplicateSources": [
         "재경일보"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "7d9464a388613591",
+      "publishedAt": "2026-11-15",
+      "title": "日 대학생 2만 명, 기후행동으로 탄소배출권 수익 챙긴다",
+      "category": "제도",
+      "summary": "日 대학생 2만 명, 기후행동으로 탄소배출권 수익 챙긴다 넷제로뉴스",
+      "source": "넷제로뉴스",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE11MEVnaWFKS3hNWi1XOGUwTmRXaHNpUkJFQ1lyTzdfNGlsQXVrY0x0YnlLX1ZBY3JGQklVR2w1UzEyUkRtbTBFdUthb1lydzkyakpYc1RVNm5YczhqYXBocFRkZjlIV3hlZ2fSAW5BVV95cUxNRThKMGFnNmpxNWlNUTI5aUhvOHpvNkxxSTRFRjRjU3Nfa09BaTc5X3N1S2prd0hKOXBkRURwZ0h2WEtMZFVSTzhGVVBwVXU4SkhWMkVOdkk0R1U2OERlN0E0dmp6R0lOcHM1aElsdw?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "넷제로뉴스"
       ],
       "searchProviders": [
         "Google News RSS"
