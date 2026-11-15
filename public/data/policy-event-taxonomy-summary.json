@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0",
   "taxonomyVersion": "2026-09-11-v1-user-38-events",
-  "generatedAt": "2026-11-15T04:49:26+09:00",
+  "generatedAt": "2026-11-16T05:27:05+09:00",
   "requestedStartDate": "2015-01-01",
   "collectionMode": "incremental",
   "eventCount": 38,
@@ -202,14 +202,14 @@
     "motie_notice": 955,
     "motie_press": 1895,
     "notice": 443,
-    "press": 957
+    "press": 959
   },
   "previousSectionCounts": {
     "krx_notice": 316,
     "motie_notice": 955,
     "motie_press": 1895,
     "notice": 440,
-    "press": 951
+    "press": 953
   },
   "addedCounts": {
     "krx_notice": 0,
@@ -237,7 +237,7 @@
     },
     "press": {
       "direct": 444,
-      "related": 509
+      "related": 510
     }
   },
   "eventCounts": {
@@ -252,7 +252,7 @@
     "추가할당·할당취소": 222,
     "할당계획·할당량": 198,
     "국제감축·외부사업·감축실적": 196,
-    "폭염·한파·전력수요": 113,
+    "폭염·한파·전력수요": 114,
     "이행·정산·제출기한": 105,
     "낙찰가·응찰배수": 96,
     "수소발전·청정수소": 84,
@@ -342,12 +342,12 @@
       }
     },
     "press": {
-      "records": 957,
+      "records": 959,
       "earliest": "2015-01-08",
-      "latest": "2026-11-13",
+      "latest": "2026-11-15",
       "scopeCounts": {
         "direct": 444,
-        "related": 509
+        "related": 510
       },
       "eventCounts": {
         "배출권·배출권거래제·ETS": 301,
@@ -364,7 +364,7 @@
         "탄소국경조정·CBAM": 29,
         "증설·상업가동": 24,
         "화재·폭발·침수·가동중단": 24,
-        "폭염·한파·전력수요": 19,
+        "폭염·한파·전력수요": 20,
         "상쇄배출권·전환한도": 17,
         "거래량·거래대금": 16,
         "추가할당·할당취소": 15,
@@ -448,13 +448,13 @@
     }
   },
   "validation": {
-    "officialItemCount": 4566,
+    "officialItemCount": 4568,
     "sectionCounts": {
       "krx_notice": 316,
       "motie_notice": 955,
       "motie_press": 1895,
       "notice": 443,
-      "press": 957
+      "press": 959
     },
     "scopeCounts": {
       "krx_notice": {
@@ -475,7 +475,7 @@
       },
       "press": {
         "direct": 444,
-        "related": 509
+        "related": 510
       }
     },
     "eventCounts": {
@@ -490,7 +490,7 @@
       "추가할당·할당취소": 222,
       "할당계획·할당량": 198,
       "국제감축·외부사업·감축실적": 196,
-      "폭염·한파·전력수요": 113,
+      "폭염·한파·전력수요": 114,
       "이행·정산·제출기한": 105,
       "낙찰가·응찰배수": 96,
       "수소발전·청정수소": 84,
@@ -522,8 +522,8 @@
     "invalidDates": 0,
     "invalidDomains": 0,
     "unclassified": 0,
-    "taxonomyMatchedItemCount": 4554,
-    "retainedUnmatchedItemCount": 12,
+    "taxonomyMatchedItemCount": 4555,
+    "retainedUnmatchedItemCount": 13,
     "retainedUnmatchedKeys": [
       "motie_press|ATCL3f49a5a8c|172227",
       "motie_press|ATCL3f49a5a8c|172370",
@@ -536,10 +536,11 @@
       "press|url|https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=1000&maxIndexPages=10&searchKey=&searchValue=&menuId=10598&orgCd=&boardMasterId=939&boardId=1882780",
       "press|url|https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=1000&maxIndexPages=10&searchKey=&searchValue=&menuId=10598&orgCd=&boardMasterId=939&boardId=1890080",
       "press|url|https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=1000&maxIndexPages=10&searchKey=&searchValue=&menuId=10598&orgCd=&boardMasterId=939&boardId=1892970",
-      "press|url|https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=1000&maxIndexPages=10&searchKey=&searchValue=&menuId=10598&orgCd=&boardMasterId=939&boardId=1906890"
+      "press|url|https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=1000&maxIndexPages=10&searchKey=&searchValue=&menuId=10598&orgCd=&boardMasterId=939&boardId=1906890",
+      "press|url|https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=1000&maxIndexPages=10&searchKey=&searchValue=&menuId=10598&orgCd=&boardMasterId=939&boardId=1907300"
     ],
-    "dashboardOfficialCount": 4566
+    "dashboardOfficialCount": 4568
   },
-  "lastRunDateKst": "2026-11-15",
-  "lastRunSlot": "2026-11-15-AM"
+  "lastRunDateKst": "2026-11-16",
+  "lastRunSlot": "2026-11-16-AM"
 }
