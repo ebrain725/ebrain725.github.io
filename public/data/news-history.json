@@ -1,17 +1,40 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-15T21:09:15+09:00",
+  "generatedAt": "2026-11-16T01:33:56+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 2114,
+  "itemCount": 2116,
   "earliestPublishedAt": "2026-08-06",
-  "latestPublishedAt": "2026-11-15",
+  "latestPublishedAt": "2026-11-16",
   "sourceCommitsScanned": 0,
   "sourceSnapshotsScanned": 0,
   "historicalRowsScanned": 0,
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "a6eca8d32633ee33",
+      "publishedAt": "2026-11-16",
+      "title": "GCC와 EXIST, 안탈리아 COP31에서 탄소시장 양해각서 체결",
+      "category": "제도",
+      "summary": "GCC와 EXIST, 안탈리아 COP31에서 탄소시장 양해각서 체결 - 뉴스 및 통계 IndexBox",
+      "source": "IndexBox",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQTmM5LXYxeHBfbWZoLW9rcmVZRVg1WENqU0lQWHpKSTJWX2Z0VWJab1oxTTJKX2hqN3hNRm1XU292Z2ZoemIyVzdySUtpazB6c2N0LXZTVWJfYjNCWmxTbERRcHMtb0tpOGJSUnB1bGZCSDBjNjhLQlFLZl9WS3BaOFdVREhnVlR2d1c3OWEtMzBNblZnYU1ETG9YR2U?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "IndexBox"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "국내"
+    },
     {
       "id": "3fefb28ac0c40156",
       "publishedAt": "2026-11-15",
@@ -126,12 +149,14 @@
       "matchedKeywords": [
         "탄소시장"
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "duplicateSources": [
-        "nocutnews.co.kr"
+        "nocutnews.co.kr",
+        "서남투데이"
       ],
       "searchProviders": [
-        "NAVER API HUB"
+        "NAVER API HUB",
+        "Google News RSS"
       ],
       "region": "국내"
     },
@@ -459,7 +484,7 @@
       "matchedKeywords": [
         "탄소시장"
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "duplicateSources": [
         "khan.co.kr"
       ],
@@ -554,11 +579,12 @@
       "matchedKeywords": [
         "탄소시장"
       ],
-      "duplicateCount": 5,
+      "duplicateCount": 6,
       "duplicateSources": [
         "코리아포스트 한글판",
         "헤럴드경제",
         "biz.heraldcorp.com",
+        "연합뉴스",
         "매일경제 마켓",
         "yna.co.kr"
       ],
@@ -980,6 +1006,30 @@
       "duplicateCount": 1,
       "duplicateSources": [
         "독립신문"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "55cb49f54491d009",
+      "publishedAt": "2026-11-13",
+      "title": "노르웨이, 인도네시아 탄소배출권 구매에 4억 8천만 달러 준비",
+      "category": "제도",
+      "summary": "노르웨이, 인도네시아 탄소배출권 구매에 4억 8천만 달러 준비 IDNFinancials",
+      "source": "IDNFinancials",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMigwNBVV95cUxNZGhJbjNER3AtV0NBeTQ5bVlxT2d6X3FreHlVM0RJSU9PVE9ZYWpOUV9LWlV6TWhMRDVnb0xSanVsMGRmWU1kQ1JDb3RDT05mMURSLXh2Qmw4aThfUl83RG5lVXpsMDN1NTZuWktPY2VwbmFoUEVyb19VNDktYnNCZWJGQmxLOVB0eEVBOTRWclhGUGV2bHJ2Y1RQclFUX3FURWM3RlFXak93RlJSRUlDNWJ0eUstTGxRNXZqOXRhSHlMeThkSW9fUTVFMVlSNGFrUWVCeWlZQ2luQWVfLXZYNndIR29CLTBFeDF0U240MWZ5WWg0dkhURWwtUmhILWp3MExwWTRFT2dlZnRxLWtDODBhUzhqM2NFcFNHaW05azVyaVlLNDlpbUNRYzBSczdudXl3R1Jjdjd6U1dGMXdTbHd3N2VyQWFVaGI4OXRUN1RWQ0NWencwSFFrNTZTVXFFZlYxMFNRVEVkeHlpd1VOS0ZxOXNWc1NSVFJaWnZLa3AybWc?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "IDNFinancials"
       ],
       "searchProviders": [
         "Google News RSS"
