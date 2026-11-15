@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-15T15:13:41+09:00",
+  "generatedAt": "2026-11-15T18:13:35+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 2108,
+  "itemCount": 2110,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-15",
   "sourceCommitsScanned": 0,
@@ -77,8 +77,9 @@
       "matchedKeywords": [
         "탄소시장"
       ],
-      "duplicateCount": 2,
+      "duplicateCount": 3,
       "duplicateSources": [
+        "이데일리",
         "마켓인",
         "edaily.co.kr"
       ],
@@ -171,6 +172,55 @@
       "region": "국내"
     },
     {
+      "id": "d6b9ddc758fea76e",
+      "publishedAt": "2026-11-15",
+      "title": "한국 등 9개국 고신뢰 탄소시장 협력 의향서 서명…탄소 크레딧 발행 기...",
+      "category": "제도",
+      "summary": "한국을 비롯해 도미니카 공화국·모로코·싱가포르 등 9개 국가가 글로벌 고신뢰 탄소시장 (GVCM) 공동 협력 의향서 서명해 앞으로 여러 국가가 함께 사용 가능한 공통 탄소 크레딧 발행 기준과 인프라가 마련된다....",
+      "source": "viva100.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.viva100.com/article/20261115500605",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 2,
+      "duplicateSources": [
+        "브릿지경제",
+        "viva100.com"
+      ],
+      "searchProviders": [
+        "Google News RSS",
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "00e2bfc76c7653e5",
+      "publishedAt": "2026-11-15",
+      "title": "재생에너지 변동 대응 하이브리드 수전해 기술개발 본격",
+      "category": "제도",
+      "summary": "따른 탄소 배출권 확보 방안도 함께 모색하기로 했다. 부호준 청정에너지연구센터장은 \"이번 착수회의는 수전해·플랜트 설계·시험인증·전력 시장 분야 11개 기관이 실증의 밑그림을 함께 그린 자리\"라며 \"상업 운전 중인...",
+      "source": "jemin.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.jemin.com/news/articleView.html?idxno=847358",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "jemin.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "c085d7f05ee51020",
       "publishedAt": "2026-11-15",
       "title": "무료급식소 계단부터 특수학급까지…이랜드·포스코·현대건설, 복지공...",
@@ -208,9 +258,10 @@
       "matchedKeywords": [
         "탄소시장"
       ],
-      "duplicateCount": 2,
+      "duplicateCount": 3,
       "duplicateSources": [
         "mk.co.kr",
+        "weeklytrade.co.kr",
         "yna.co.kr"
       ],
       "searchProviders": [
@@ -347,7 +398,7 @@
     {
       "id": "fafe3ed640bb0029",
       "publishedAt": "2026-11-15",
-      "title": "[SEOUL NOW] “탄소 줄이고 수익 창출…지하철 친환경 경영 확대”",
+      "title": "[SEOUL NOW] \"탄소 줄이고 수익 창출… 지하철 친환경 경영 확대\"",
       "category": "제도",
       "summary": "온실가스 배출권 관리도 경영성과로 이어지고 있다. 공사는 2021년부터 2025년까지 제3차 배출권 거래제 계획기간에 할당량 대비 112.1%의 감축 실적을 거뒀다. 남는 배출권 을 매각해 수익을 확보하고, 다른 기관과의 조직...",
       "source": "dt.co.kr",
@@ -407,8 +458,9 @@
       "matchedKeywords": [
         "탄소시장"
       ],
-      "duplicateCount": 2,
+      "duplicateCount": 3,
       "duplicateSources": [
+        "코리아포스트 한글판",
         "매일경제 마켓",
         "yna.co.kr"
       ],
@@ -2105,8 +2157,8 @@
         "탄소배출권"
       ],
       "duplicateSources": [
-        "매일경제 마켓",
         "매일경제",
+        "매일경제 마켓",
         "mk.co.kr"
       ],
       "searchProviders": [
