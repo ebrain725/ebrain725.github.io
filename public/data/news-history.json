@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-15T10:14:11+09:00",
+  "generatedAt": "2026-11-15T11:58:32+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
   "itemCount": 2095,
@@ -3804,7 +3804,7 @@
         "탄소시장"
       ],
       "section": "news",
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "duplicateSources": [
         "Montsame"
       ],
@@ -18836,13 +18836,14 @@
         "dealsite.co.kr",
         "etnews.com",
         "헤럴드경제",
-        "전자신문"
+        "전자신문",
+        "SBS Biz"
       ],
       "searchProviders": [
         "Google News RSS",
         "NAVER API HUB"
       ],
-      "duplicateCount": 31,
+      "duplicateCount": 32,
       "region": "국내"
     },
     {
