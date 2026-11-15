@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-15T18:13:35+09:00",
+  "generatedAt": "2026-11-15T21:09:15+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 2110,
+  "itemCount": 2114,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-15",
   "sourceCommitsScanned": 0,
@@ -149,9 +149,10 @@
       "matchedKeywords": [
         "탄소시장"
       ],
-      "duplicateCount": 13,
+      "duplicateCount": 14,
       "duplicateSources": [
         "아시아투데이",
+        "SBS Biz",
         "biz.sbs.co.kr",
         "전자신문",
         "etnews.com",
@@ -197,6 +198,29 @@
       "region": "국내"
     },
     {
+      "id": "80b41a2a7cfad2ef",
+      "publishedAt": "2026-11-15",
+      "title": "줄인 탄소 , 사고팔 ‘공동 시장 ’ 만든다… 한국·싱가포르 등 9개국",
+      "category": "제도",
+      "summary": "COP31 계기 9개국 공동의향서 서명 파리협정 6.2조 기반 첫 소다자 체계 2027년 상반기 참여국 협의체 구성 구속력은 없어… 세부 규칙은 이제부터 한국 등 9개국이 탄소크레딧을 함께 발행하는 국제 탄소시장 설계에...",
+      "source": "segye.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.segye.com/newsView/20261115510227?OutUrl=naver",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "segye.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "00e2bfc76c7653e5",
       "publishedAt": "2026-11-15",
       "title": "재생에너지 변동 대응 하이브리드 수전해 기술개발 본격",
@@ -221,6 +245,31 @@
       "region": "국내"
     },
     {
+      "id": "a689f175c3332840",
+      "publishedAt": "2026-11-15",
+      "title": "슈나이더 기후정책 연구조정관 “국제 탄소시장 도 ‘재원’ 최대쟁점”...",
+      "category": "제도",
+      "summary": "“유엔예산만으론 충당 못 할 수도 EU는 이용 수수료 내자는 입장” “국제 탄소시장 협상의 핵심 쟁점은 ‘누가 비용을 부담할 것인가’입니다.” 제31차 유엔기후변화협약 당사국총회(COP31)가 한창 진행 중이던 지난...",
+      "source": "segye.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.segye.com/newsView/20261115508963?OutUrl=naver",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 2,
+      "duplicateSources": [
+        "세계일보",
+        "segye.com"
+      ],
+      "searchProviders": [
+        "Google News RSS",
+        "NAVER API HUB"
+      ],
+      "region": "해외"
+    },
+    {
       "id": "c085d7f05ee51020",
       "publishedAt": "2026-11-15",
       "title": "무료급식소 계단부터 특수학급까지…이랜드·포스코·현대건설, 복지공...",
@@ -237,6 +286,30 @@
       ],
       "duplicateSources": [
         "segye.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "318c5e8c86fc2bc5",
+      "publishedAt": "2026-11-15",
+      "title": "동해안 1호 호미반도 국가해양생태공원의 길",
+      "category": "제도",
+      "summary": "향후 탄소 배출권 거래 시장 과 연계하거나, ESG 경영을 실천하려는 대기업의 사회공헌 및 공동연구 투자를 유치하는 기반이 될 것이다. 공원 내 풍부한 해조류 및 해양생물 유전자원은 해양바이오 산업의 핵심 원료로 연구...",
+      "source": "hidomin.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.hidomin.com/news/articleView.html?idxno=729467",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "hidomin.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -445,6 +518,29 @@
       "region": "해외"
     },
     {
+      "id": "4b3750d5f70a0ffe",
+      "publishedAt": "2026-11-15",
+      "title": "(사)제주금융포럼, 제주형 탄소시장 미래 전망",
+      "category": "제도",
+      "summary": "(사)제주금융포럼, 제주형 탄소시장 미래 전망 한라일보",
+      "source": "한라일보",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5SVFRUTEQ5dm85MWZiYThjZkVQcGV0R2pTVllNcHJZa05uQUk2SG8wY1hzaXpoVmpUd3dya1poYm10S1FsTTgwa0s1dEpxOGxtX0ZoYThKOC1MSlhNc2FVZ21HM2NySDdNYUE?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "한라일보"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "95513417f8c9f927",
       "publishedAt": "2026-11-15",
       "title": "'글로벌 고신뢰 탄소시장 ' 협력 본격화…9개국 의향서 서명",
@@ -458,9 +554,11 @@
       "matchedKeywords": [
         "탄소시장"
       ],
-      "duplicateCount": 3,
+      "duplicateCount": 5,
       "duplicateSources": [
         "코리아포스트 한글판",
+        "헤럴드경제",
+        "biz.heraldcorp.com",
         "매일경제 마켓",
         "yna.co.kr"
       ],
