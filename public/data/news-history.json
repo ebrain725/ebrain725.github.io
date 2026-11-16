@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-16T18:14:57+09:00",
+  "generatedAt": "2026-11-16T22:02:56+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 2154,
+  "itemCount": 2164,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-16",
   "sourceCommitsScanned": 0,
@@ -28,8 +28,8 @@
       ],
       "duplicateCount": 8,
       "duplicateSources": [
-        "데일리안",
         "dailian.co.kr",
+        "데일리안",
         "투데이에너지",
         "todayenergy.kr",
         "discoverynews.kr",
@@ -38,9 +38,119 @@
         "전기신문"
       ],
       "searchProviders": [
+        "NAVER API HUB",
+        "Google News RSS"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "79ad43fd65ae5dc7",
+      "publishedAt": "2026-11-16",
+      "title": "한국, 탄소시장 공조 합류…배출량 검증·시장 설계 경험 나눈다",
+      "category": "제도",
+      "summary": "한국, 탄소시장 공조 합류…배출량 검증·시장 설계 경험 나눈다 뉴스핌",
+      "source": "뉴스핌",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBMclEwRTAyY3VSb1M2c1JqcTY5NklCb1J6WkdicmlrLTJ6ZnNuR2JMc2c3WVk0SlNrT0hpd1ZQRVpULUV6Qm1zdWxHMmhDbG1QSzlRQU1YMlRYZmZJ?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "뉴스핌"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "ab5450aef21160e5",
+      "publishedAt": "2026-11-16",
+      "title": "한국, 국제 '탄소시장연합' 가입…국제 탄소시장 협력 본격 참여",
+      "category": "상쇄·외부사업",
+      "summary": "탄소시장연합은 온실가스 배출권거래제 나 탄소세와 같은 의무 탄소시장 관련 경험을 공유하고, 산정·보고·검증(MRV), 탄소회계(carbon accounting), 고품질 상쇄제도(offset) 활용 등을 주제로 회원국 간 상호 이해와 협력을...",
+      "source": "busan.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.busan.com/view/busan/view.php?code=2026111621312663522",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장",
+        "배출권",
+        "배출권거래제",
+        "온실가스 배출권"
+      ],
+      "duplicateSources": [
+        "마켓인",
+        "edaily.co.kr",
+        "Chosunbiz",
+        "biz.chosun.com",
+        "busan.com",
+        "연합뉴스",
+        "yna.co.kr",
+        "경향신문",
+        "khan.co.kr",
+        "메트로신문",
+        "metroseoul.co.kr",
+        "obsnews.co.kr",
+        "헤럴드경제",
+        "에너지경제신문",
+        "ekn.kr",
+        "코리아방송",
+        "mediapen.com",
+        "etoday.co.kr",
+        "dailian.co.kr",
+        "파이낸셜뉴스",
+        "fnnews.com",
+        "글로벌이코노믹",
+        "g-enews.com",
+        "nocutnews.co.kr",
+        "동아일보",
+        "donga.com",
+        "뉴시스",
+        "newsis.com",
+        "view.asiae.co.kr",
+        "뉴스1",
+        "news1.kr",
+        "국제신문",
+        "kookje.co.kr",
+        "전자신문",
+        "etnews.com",
+        "넷제로뉴스",
+        "dt.co.kr"
+      ],
+      "searchProviders": [
         "Google News RSS",
         "NAVER API HUB"
       ],
+      "duplicateCount": 37,
+      "region": "국내"
+    },
+    {
+      "id": "7a2272c9ab2015e7",
+      "publishedAt": "2026-11-16",
+      "title": "한국, EU·중국 주도 국제 탄소시장 연합 가입 … 배출권거래 규칙 논의...",
+      "category": "제도",
+      "summary": "뉴데일리 임준환 = 한국이 유럽연합(EU)과 중국 등이 참여하는 '의무 탄소시장 개방연합(OCCCM)'에 정식 회원으로 가입한다. 기후에너지환경부는 16일 김성환 장관이 튀르키예 안탈리아에서 열리는 제31차 유엔기후변화협약...",
+      "source": "biz.newdaily.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://biz.newdaily.co.kr/site/data/html/2026/11/16/2026111650311.html",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소시장"
+      ],
+      "duplicateSources": [
+        "biz.newdaily.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
       "region": "국내"
     },
     {
@@ -140,6 +250,29 @@
       ],
       "duplicateCount": 2,
       "region": "해외"
+    },
+    {
+      "id": "2efacd68cf76b599",
+      "publishedAt": "2026-11-16",
+      "title": "제주금융포럼, '2026년 하반기 세미나' 18일 개최",
+      "category": "제도",
+      "summary": "이번 세미나는 제주도가 추진하는 탄소중립을 녹색금융과 탄소시장 에 연계해 지역경제의 새로운 성장동력으로 키우는 길을 찾기 위해 마련됐다. 세미나에서는 제주형 탄소시장 을 설계하는 금융 전문가와 제주에서...",
+      "source": "samdailbo.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.samdailbo.com/news/articleView.html?idxno=272799",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "samdailbo.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
     },
     {
       "id": "bc8669cc1062781c",
@@ -259,6 +392,30 @@
       "region": "국내"
     },
     {
+      "id": "1e912c513d6ea951",
+      "publishedAt": "2026-11-16",
+      "title": "공장 떠날라…EU, 철강·화학 탄소비용 부담 완화 추진",
+      "category": "시장·가격",
+      "summary": "높은 에너지 가격과 인건비에 시달리는 기업들이 생산시설 이전을 검토하자 무상 배출권 축소 속도를... 탄소 배출권 의 축소 속도를 늦추는 절충안을 마련했다. 회원국들은 18일 이를 논의한다. 무상 배출권 이 줄면...",
+      "source": "edaily.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.edaily.co.kr/News/Read?newsId=03568646645646376&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "edaily.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "cc2062e61f4bfb37",
       "publishedAt": "2026-11-16",
       "title": "강금실 특사, COP31서 한국의 '녹색 대전환' 의지 표명",
@@ -323,13 +480,14 @@
         "상쇄배출권"
       ],
       "duplicateSources": [
+        "srtimes.kr",
         "financialpost.co.kr",
         "the-biz.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 2,
+      "duplicateCount": 3,
       "region": "국내"
     },
     {
@@ -353,6 +511,34 @@
       "searchProviders": [
         "NAVER API HUB"
       ],
+      "region": "국내"
+    },
+    {
+      "id": "c1a858ac2231bfad",
+      "publishedAt": "2026-11-16",
+      "title": "韓, 국제 탄소시장 협력체 가입… 배출권 거래제 운영 경험 공유",
+      "category": "제도",
+      "summary": "아주경제=김소희 기자 hee@ajunews.com 한국이 배출권 거래제 등 의무 탄소시장에 관한 국제협력 강화를 위해... 회원국들은 온실가스 배출권 거래제와 탄소세 등 의무 탄소시장 운영 경험을 공유하고 산정·보고·검증(MRV)...",
+      "source": "ajunews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.ajunews.com/view/20261116101107560",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소시장",
+        "온실가스 배출권"
+      ],
+      "duplicateSources": [
+        "아주경제",
+        "ajunews.com"
+      ],
+      "searchProviders": [
+        "Google News RSS",
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 2,
       "region": "국내"
     },
     {
@@ -571,6 +757,30 @@
       "region": "국내"
     },
     {
+      "id": "8fc76ed1d1ecc376",
+      "publishedAt": "2026-11-16",
+      "title": "[시대만필] UN기후변화협약당사국총회(COP31)에서 바라본 글로벌 변혁의...",
+      "category": "제도",
+      "summary": "그 동안 기후총회가 2030년, 2050년을 향한 온실가스 감축 '목표 설정'과 '선언적 공약'을 다투는 외교적... 탄소국경조정제도(CBAM)의 전면적 확장, 국제 탄소 배출권 시장의 본격 가동, 청정에너지 공급망 블록화 등 각종...",
+      "source": "joongboo.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.joongboo.com/news/articleView.html?idxno=363742575",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "joongboo.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "8a2597cfc8220883",
       "publishedAt": "2026-11-16",
       "title": "[기고] IQ·EQ를 넘어 ‘생태지능’의 시대로",
@@ -669,6 +879,31 @@
       "region": "해외"
     },
     {
+      "id": "33bdb022c2251a07",
+      "publishedAt": "2026-11-16",
+      "title": "UNCTAD 주도 글로벌 탄소시장 네트워크 출범",
+      "category": "제도",
+      "summary": "EPA=연합뉴스 유엔무역개발위원회(UNCTAD)가 주도하는 글로벌 탄소시장 네트워크(Global Carbon Market Network)가 출범했다. UNCTAD는 12일 제31차 유엔 기후변화협약 당사국총회(COP31)이 열리는 터키 안탈리아에서 글로벌...",
+      "source": "esgeconomy.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.esgeconomy.com/news/articleView.html?idxno=17419",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateSources": [
+        "ESG경제",
+        "esgeconomy.com"
+      ],
+      "searchProviders": [
+        "Google News RSS",
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 2,
+      "region": "국내"
+    },
+    {
       "id": "a6eca8d32633ee33",
       "publishedAt": "2026-11-16",
       "title": "GCC와 EXIST, 안탈리아 COP31에서 탄소시장 양해각서 체결",
@@ -689,6 +924,32 @@
       "searchProviders": [
         "Google News RSS"
       ],
+      "region": "국내"
+    },
+    {
+      "id": "a1da8095e4523dcc",
+      "publishedAt": "2026-11-16",
+      "title": "EU·중국 참여 탄소시장연합에 韓 동참…국내 탄소시장에 미칠 영향은",
+      "category": "상쇄·외부사업",
+      "summary": "고품질 상쇄 제도(Offset) 활용 등을 주제로 상호 이해와 협력을 추진한다. 올해 5월 운영규정(ToR)을 채택한 이후 9월에는 작업계획을 마련한 바 있다. 이번 한국의 탄소시장연합 가입이 국내 배출권 시장에 미치는 직접적인...",
+      "source": "electimes.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.electimes.com/news/articleView.html?idxno=374825",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장",
+        "배출권"
+      ],
+      "duplicateSources": [
+        "전기신문",
+        "electimes.com"
+      ],
+      "searchProviders": [
+        "Google News RSS",
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 2,
       "region": "국내"
     },
     {
@@ -980,8 +1241,8 @@
       "duplicateCount": 14,
       "duplicateSources": [
         "아시아투데이",
-        "SBS Biz",
         "전자신문",
+        "SBS Biz",
         "biz.sbs.co.kr",
         "etnews.com",
         "ajunews.com",
@@ -1456,9 +1717,9 @@
       ],
       "duplicateCount": 6,
       "duplicateSources": [
+        "연합뉴스",
         "코리아포스트 한글판",
         "헤럴드경제",
-        "연합뉴스",
         "biz.heraldcorp.com",
         "매일경제 마켓",
         "yna.co.kr"
@@ -2655,7 +2916,8 @@
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
         "탄소시장",
-        "배출권"
+        "배출권",
+        "배출권거래제"
       ],
       "duplicateSources": [
         "에너지경제신문",
@@ -2957,7 +3219,8 @@
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
         "배출권",
-        "탄소배출권"
+        "탄소배출권",
+        "배출권거래제"
       ],
       "duplicateSources": [
         "seoulfn.com"
@@ -5301,6 +5564,31 @@
       "region": "국내"
     },
     {
+      "id": "16b97db023abdb9d",
+      "publishedAt": "2026-11-09",
+      "title": "금융권 'KB드림홈' 새단장·'우리WON모바일' 블랙프라이데이 이벤트 진행...",
+      "category": "제도",
+      "summary": "세미나에는 탄소배출권 거래제도 할당대상기업을 비롯해 배출권거래제 관련 유관기관 임직원 약 100여명이 참석했다. NH투자증권과 에코아이, 탄소크레딧 평가 기업 Sylvera, 법무법인 태평양 등의 인사가 발표자로...",
+      "source": "wsobi.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.wsobi.com/news/articleView.html?idxno=321338",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "wsobi.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "edfb0b9d22ce1014",
       "publishedAt": "2026-11-09",
       "title": "국제 기후테크 시장 ‘빈익빈 부익부’ 현상 심화",
@@ -5646,9 +5934,9 @@
         "newsis.com",
         "ezyeconomy.com",
         "financialpost.co.kr",
-        "wsobi.com",
         "ddaily.co.kr",
         "smarttoday.co.kr",
+        "wsobi.com",
         "newsian.co.kr",
         "jasm.co.kr",
         "디지털데일리",
@@ -20279,11 +20567,11 @@
         "유상할당"
       ],
       "duplicateSources": [
-        "이투데이",
         "etoday.co.kr",
-        "이데일리",
         "newslock.co.kr",
         "newsinside.kr",
+        "이투데이",
+        "이데일리",
         "edaily.co.kr",
         "뉴스핌",
         "fetv.co.kr",
@@ -20313,8 +20601,8 @@
         "SBS Biz"
       ],
       "searchProviders": [
-        "Google News RSS",
-        "NAVER API HUB"
+        "NAVER API HUB",
+        "Google News RSS"
       ],
       "duplicateCount": 32,
       "region": "국내"
