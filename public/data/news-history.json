@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-16T13:15:29+09:00",
+  "generatedAt": "2026-11-16T15:13:53+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 2137,
+  "itemCount": 2142,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-16",
   "sourceCommitsScanned": 0,
@@ -171,15 +171,64 @@
       "matchedKeywords": [
         "탄소시장"
       ],
-      "duplicateCount": 2,
+      "duplicateCount": 3,
       "duplicateSources": [
         "yna.co.kr",
-        "fnnews.com"
+        "fnnews.com",
+        "newstree.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
       ],
       "region": "해외"
+    },
+    {
+      "id": "287af6447c2f1953",
+      "publishedAt": "2026-11-16",
+      "title": "가스공사, 수소버스 온실가스 감축실적 인증 추진",
+      "category": "상쇄·외부사업",
+      "summary": "인증실적은 배출권 거래제 할당대상업체 등에 판매할 수 있다. 이를 구매한 할당대상업체는 상쇄 배출권 (KCU)으로 전환해 배출권 제출 의무 이행 등에 활용할 수 있다. 가스공사 관계자는 \"앞으로도 안정적인 수소 생산·공급...",
+      "source": "the-biz.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.the-biz.co.kr/news/articleView.html?idxno=731449",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "상쇄배출권"
+      ],
+      "duplicateSources": [
+        "the-biz.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "3878655d0d72e896",
+      "publishedAt": "2026-11-16",
+      "title": "가스公, 버스연합회·후시파트너스와 온실가스 감축 실적 확보 맞손",
+      "category": "제도",
+      "summary": "이를 통해 운송사업자들은 배출권 거래 등 추가 수익 모델을 확보하게 돼 친환경 수소버스 전환이 한층 가속화될 것으로 기대된다. 현재 수소차 온실가스 감축량을 산정하기 위해서는 수소 생산부터 운송·공급까지 전...",
+      "source": "sentv.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.sentv.co.kr/article/view/sentv202611160137",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "sentv.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
     },
     {
       "id": "620fb52400f8b9e2",
@@ -217,7 +266,8 @@
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
         "배출권",
-        "탄소배출권"
+        "탄소배출권",
+        "배출권거래제"
       ],
       "duplicateSources": [
         "magazine.hankyung.com"
@@ -297,6 +347,31 @@
       ],
       "searchProviders": [
         "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "b975efe3076ea276",
+      "publishedAt": "2026-11-16",
+      "title": "[온실가스 배출권] 11월 16일 KAU26, 3만원과 점점 멀어져…150원 하락",
+      "category": "시장·가격",
+      "summary": "[온실가스 배출권] 11월 16일 KAU26, 3만원과 점점 멀어져…150원 하락 데일리e뉴스",
+      "source": "데일리e뉴스",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE90QldhUnhqaDBtZWk0U1F1OUJPc2JjemFfUWIwLTRpZEJ1X3NmOTRWTUpDZ2NqT3ZrUk9BOV9Ea3dlMUhORzFlc1ExWU9OVURHU0lXR0lBTXhlLUhyZnkyXzVOYlN3enhodWVMTGVLNA?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "온실가스 배출권",
+        "KAU26"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "데일리e뉴스"
+      ],
+      "searchProviders": [
+        "Google News RSS"
       ],
       "region": "국내"
     },
@@ -1608,7 +1683,8 @@
       "url": "https://www.ekn.kr/web/view.php?key=20261113028319541",
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
-        "배출권"
+        "배출권",
+        "배출권거래제"
       ],
       "duplicateSources": [
         "ekn.kr"
@@ -1874,7 +1950,8 @@
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
         "배출권",
-        "탄소배출권"
+        "탄소배출권",
+        "탄소시장"
       ],
       "duplicateSources": [
         "m-economynews.com"
@@ -3052,7 +3129,8 @@
       "matchedKeywords": [
         "배출권",
         "배출권거래제",
-        "유상할당"
+        "유상할당",
+        "탄소배출권"
       ],
       "duplicateSources": [
         "energydaily.co.kr"
@@ -3971,7 +4049,10 @@
       "url": "https://www.rcast.co.kr/news/articleView.html?idxno=32023",
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
-        "K-ETS"
+        "K-ETS",
+        "배출권",
+        "배출권거래제",
+        "탄소시장"
       ],
       "duplicateSources": [
         "rcast.co.kr"
@@ -4406,7 +4487,10 @@
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
         "K-ETS",
-        "탄소시장"
+        "탄소시장",
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
       ],
       "duplicateSources": [
         "dailypop.kr"
@@ -4700,7 +4784,8 @@
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
         "배출권",
-        "온실가스 배출권"
+        "온실가스 배출권",
+        "배출권거래제"
       ],
       "duplicateSources": [
         "energydaily.co.kr"
@@ -5062,7 +5147,10 @@
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
         "K-ETS",
-        "탄소시장"
+        "탄소시장",
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
       ],
       "duplicateSources": [
         "wikileaks-kr.org"
@@ -5234,9 +5322,28 @@
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
         "K-ETS",
-        "탄소시장"
+        "탄소시장",
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
       ],
       "duplicateSources": [
+        "ezyeconomy.com",
+        "wsobi.com",
+        "smarttoday.co.kr",
+        "newsian.co.kr",
+        "sentv.co.kr",
+        "consumernews.co.kr",
+        "nongmin.com",
+        "ftoday.co.kr",
+        "bizwnews.com",
+        "enewstoday.co.kr",
+        "delighti.co.kr",
+        "lawissue.co.kr",
+        "choicenews.co.kr",
+        "press9.kr",
+        "view.asiae.co.kr",
+        "ddaily.co.kr",
         "enetnews.co.kr",
         "metroseoul.co.kr",
         "asiaa.co.kr",
@@ -5250,23 +5357,8 @@
         "megaeconomy.co.kr",
         "fetv.co.kr",
         "todayeconomic.com",
-        "sentv.co.kr",
-        "consumernews.co.kr",
-        "nongmin.com",
-        "ftoday.co.kr",
-        "bizwnews.com",
-        "enewstoday.co.kr",
-        "delighti.co.kr",
-        "lawissue.co.kr",
-        "choicenews.co.kr",
-        "press9.kr",
-        "view.asiae.co.kr",
         "newsis.com",
-        "ezyeconomy.com",
         "financialpost.co.kr",
-        "wsobi.com",
-        "ddaily.co.kr",
-        "smarttoday.co.kr",
         "jasm.co.kr",
         "디지털데일리",
         "뉴스인사이드",
@@ -5285,7 +5377,6 @@
         "이지경제",
         "PRESS9",
         "thevaluenews.co.kr",
-        "newsian.co.kr",
         "businessplus.kr",
         "popcornnews.net",
         "시장경제신문",
@@ -5297,6 +5388,32 @@
         "Google News RSS"
       ],
       "duplicateCount": 54,
+      "region": "국내"
+    },
+    {
+      "id": "d6be975f72f8f932",
+      "publishedAt": "2026-11-09",
+      "title": "[금융권 이모저모]한국투자증권, 기업 오너와 선정릉 인문학 산책 外",
+      "category": "제도",
+      "summary": "이번 세미나는 '한국 배출권거래제 (K-ETS) 정책 변화와 국제탄소시장 연계'를 주제로 진행됐다. 배출권거래제 할당대상기업과 관련 유관기관 임직원 등 약 100명이 참석했다. 발표에는 NH투자증권과 에코아이를 비롯해...",
+      "source": "businessplus.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.businessplus.kr/news/articleView.html?idxno=119528",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "K-ETS",
+        "탄소시장"
+      ],
+      "duplicateSources": [
+        "businessplus.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
       "region": "국내"
     },
     {
@@ -5372,6 +5489,30 @@
       ],
       "duplicateCount": 1,
       "region": "해외"
+    },
+    {
+      "id": "0dd957ac167c0a3c",
+      "publishedAt": "2026-11-09",
+      "title": "[A 증권가 소식] 한국투자증권, 기업 실무진 위한 '퇴직연금 아카데미'...",
+      "category": "제도",
+      "summary": "금융권 관계자는 \"NH투자증권의 카본마켓 세미나는 탄소배출권 시장에서 금융사가 담당하는 중추적 역할을 재확인하는 자리\"라고 평가했다. △삼성증권, 금·은·구리 선물 ETN 6종 신규 상장=삼성증권은 9일 금·은·구리...",
+      "source": "asiaa.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.asiaa.co.kr/news/articleView.html?idxno=270157",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "asiaa.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
     },
     {
       "id": "c8ca84b2b85e9712",
@@ -18238,7 +18379,8 @@
         "탄소시장",
         "배출권",
         "배출권거래제",
-        "K-ETS"
+        "K-ETS",
+        "유상할당"
       ],
       "duplicateSources": [
         "핀포인트뉴스",
