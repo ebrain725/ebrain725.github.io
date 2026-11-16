@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-16T10:14:46+09:00",
+  "generatedAt": "2026-11-16T11:59:04+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 2129,
+  "itemCount": 2134,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-16",
   "sourceCommitsScanned": 0,
@@ -252,6 +252,32 @@
       "region": "국내"
     },
     {
+      "id": "8818cf1a1c51e41d",
+      "publishedAt": "2026-11-16",
+      "title": "[ESGX 이슈 5] EU, 산업계 탄소 배출권 부담 완화 추진…무상할당 확대 속...",
+      "category": "제도",
+      "summary": "이투데이=김소영 기자 | 유럽연합(EU)이 산업경쟁력 확보를 위해 탄소 배출권 무상할당 부담을 완화하는... EU, 산업계 무상 배출권 축소 속도 완화 추진 유럽연합(EU)이 철강·화학 등 에너지 다소비 산업의 탄소 배출권 ...",
+      "source": "etoday.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.etoday.co.kr/news/view/2648517",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "이투데이",
+        "etoday.co.kr"
+      ],
+      "searchProviders": [
+        "Google News RSS",
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 2,
+      "region": "해외"
+    },
+    {
       "id": "a6eca8d32633ee33",
       "publishedAt": "2026-11-16",
       "title": "GCC와 EXIST, 안탈리아 COP31에서 탄소시장 양해각서 체결",
@@ -271,6 +297,105 @@
       ],
       "searchProviders": [
         "Google News RSS"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "eae93c5557771bd3",
+      "publishedAt": "2026-11-16",
+      "title": "EU, 산업계에 무상 배출권 1억2100만개 확대 합의…화학·유리업종 부담...",
+      "category": "제도",
+      "summary": "13일(현지시기각) ESG투데이에 빠르면, EU 이사회와 유럽의회는 EU 배출권거래제 (EU ETS)의 열·연료 벤치마크(Heat and Fuel Benchmarks)를 조정해 에너지 집약적 산업에 무상배출권을 확대 배정하는 내용의 법률 개정안에...",
+      "source": "impacton.net",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.impacton.net/news/articleView.html?idxno=30682",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "임팩트온",
+        "impacton.net"
+      ],
+      "searchProviders": [
+        "Google News RSS",
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 2,
+      "region": "해외"
+    },
+    {
+      "id": "569c5ab4c4fdc044",
+      "publishedAt": "2026-11-16",
+      "title": "EU, 산업계 무상 배출권 축소 속도 완화 검토…투자 의무도 완화",
+      "category": "제도",
+      "summary": "유럽연합(EU)이 철강·화학·시멘트 등 산업에 무상으로 나눠주는 탄소 배출권 을 더 천천히 줄이는 방안을... 로이터통신이 11월 15일 확인한 의장국 타협문은 EU 배출권 거래제(ETS) 개정안을 둘러싼 회원국 협의용 문서다. EU...",
+      "source": "dailyt.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.dailyt.co.kr/newsView/dlt202611160003",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "dailyt.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
+      "id": "255e5651c82d26e0",
+      "publishedAt": "2026-11-16",
+      "title": "EU CBAM, 인도산 열연강판 2030년 톤당 500유로 부담…배출량 검증이 관...",
+      "category": "시장·가격",
+      "summary": "또한 한국 배출권거래제( K-ETS )를 통해 국내에서 이미 납부한 탄소가격도 CBAM 최종 비용 공제 대상에 포함된다. 보고서는 CBAM 제도 시행 초기에는 검증된 배출량 데이터를 제때 확보해 EU 수입업자의 기본값 적용을...",
+      "source": "impacton.net",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.impacton.net/news/articleView.html?idxno=30685",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "K-ETS"
+      ],
+      "duplicateSources": [
+        "impacton.net"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "6fec11628b5dbbc7",
+      "publishedAt": "2026-11-16",
+      "title": "19일 수능일 은행·증권사 영업시간 1시간씩 순연",
+      "category": "제도",
+      "summary": "일반상품시장 중 금 시장의 경우, 1시간 늦은 오전 10시에 거래를 시작해 오후 3시 30분에 거래를 종료한다. 석유시장과 배출권 시장은 거래시간이 변동이 없다. [파이낸셜신문=]",
+      "source": "efnews.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.efnews.co.kr/news/articleView.html?idxno=134001",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "efnews.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
       ],
       "region": "국내"
     },
@@ -894,8 +1019,8 @@
       "duplicateSources": [
         "코리아포스트 한글판",
         "헤럴드경제",
-        "biz.heraldcorp.com",
         "연합뉴스",
+        "biz.heraldcorp.com",
         "매일경제 마켓",
         "yna.co.kr"
       ],
