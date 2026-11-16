@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-16T11:59:04+09:00",
+  "generatedAt": "2026-11-16T13:15:29+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 2134,
+  "itemCount": 2137,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-16",
   "sourceCommitsScanned": 0,
@@ -36,6 +36,55 @@
       "region": "국내"
     },
     {
+      "id": "1d1166f76e66923c",
+      "publishedAt": "2026-11-16",
+      "title": "한·중·일, '동아시아 기후대화 2026' 25~27일 개최",
+      "category": "제도",
+      "summary": "포럼 기간에는 배출권 거래제(ETS)를 비롯한 역내 탄소시장 협력, 저탄소 기술 활용, 지역 단위의 탄소중립 이행 방안 등 핵심 의제들이 폭넓게 논의된다. 주최 측은 이를 통해 청년들의 기후 대응 역량을 높이는...",
+      "source": "todayenergy.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.todayenergy.kr/news/articleView.html?idxno=305595",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소시장"
+      ],
+      "duplicateSources": [
+        "todayenergy.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "545f27f09381692a",
+      "publishedAt": "2026-11-16",
+      "title": "탄소 배출권 거래 시장은 이미 개방되어 있는데, 왜 기업들은 여전히 ​​거래를 주저하는 걸까요?",
+      "category": "제도",
+      "summary": "탄소 배출권 거래 시장은 이미 개방되어 있는데, 왜 기업들은 여전히 ​​거래를 주저하는 걸까요? Vietnam.vn",
+      "source": "Vietnam.vn",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPY3VTQUc3TlZtUERfdWQ4bjcxUk1oYnZYS3VXYjNoWTFTMEVSQXVROHcwWnk1T29XVXczeUxBRkRJLU9fN1V6LUljTjY4SGVuMmUzWVo2ZTFCalFOY1NpdmJqQ3gtSXp1em1BWnJMakpmbHctWnhwQW5POFluRFU2amRNSmJXRGFydHc?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "Vietnam.vn"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "해외"
+    },
+    {
       "id": "e68d38f21c29f2be",
       "publishedAt": "2026-11-16",
       "title": "탄소 규제에 숨통 트이나…EU, 철강·화학 배출권 축소 완화 추진",
@@ -47,7 +96,8 @@
       "url": "https://www.edaily.co.kr/News/Read?newsId=01354646645646376&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
-        "배출권"
+        "배출권",
+        "배출권거래제"
       ],
       "duplicateSources": [
         "이데일리",
@@ -125,6 +175,29 @@
       "duplicateSources": [
         "yna.co.kr",
         "fnnews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "해외"
+    },
+    {
+      "id": "620fb52400f8b9e2",
+      "publishedAt": "2026-11-16",
+      "title": "韓, COP31서 ‘2035년 전력 35%’ 지지…K-GX 앞세워 전기화·탈 탄소 전환",
+      "category": "제도",
+      "summary": "강 특사는 브라질과 유럽연합(EU), 중국 등 주요국 인사와 만나 한국의 기후변화 대응 정책을 소개하고 탄소시장 과 에너지 전환 등 주요 기후 의제를 논의했다. 중국 측과는 한·중 기후변화 대응 협력과 함께...",
+      "source": "kukinews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.kukinews.com/article/view/kuk202611160101",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "kukinews.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -5164,8 +5237,10 @@
         "탄소시장"
       ],
       "duplicateSources": [
-        "ezyeconomy.com",
-        "jasm.co.kr",
+        "enetnews.co.kr",
+        "metroseoul.co.kr",
+        "asiaa.co.kr",
+        "pinpointnews.co.kr",
         "srtimes.kr",
         "ziksir.com",
         "socialvalue.kr",
@@ -5187,11 +5262,12 @@
         "press9.kr",
         "view.asiae.co.kr",
         "newsis.com",
+        "ezyeconomy.com",
         "financialpost.co.kr",
-        "metroseoul.co.kr",
         "wsobi.com",
         "ddaily.co.kr",
         "smarttoday.co.kr",
+        "jasm.co.kr",
         "디지털데일리",
         "뉴스인사이드",
         "뉴시스",
@@ -5211,12 +5287,9 @@
         "thevaluenews.co.kr",
         "newsian.co.kr",
         "businessplus.kr",
-        "asiaa.co.kr",
         "popcornnews.net",
         "시장경제신문",
         "joongangenews.com",
-        "pinpointnews.co.kr",
-        "enetnews.co.kr",
         "thefairnews.co.kr"
       ],
       "searchProviders": [
