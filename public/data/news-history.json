@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-17T04:50:00+09:00",
+  "generatedAt": "2026-11-17T08:42:40+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 2173,
+  "itemCount": 2179,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-17",
   "sourceCommitsScanned": 0,
@@ -12,6 +12,56 @@
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "5f62e492ec1928db",
+      "publishedAt": "2026-11-17",
+      "title": "한국, EU·중국 참여 ‘국제 탄소시장 연합’ 가입",
+      "category": "제도",
+      "summary": "고위급회의 투표권 갖고 기준 논의 ﻿배출권거래제 운영 경험 등 공유 개도국 탄소중립 지원 협력 확대 한국이 유럽연합(EU)과 중국 등이 참여하는 국제 탄소시장 협력체 ‘ 탄소시장 연합’(OCCCM)에 14번째 회원국으로...",
+      "source": "seoul.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.seoul.co.kr/news/economy/2026/11/17/20261117032004?wlog_tag3=naver",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장",
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "seoul.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "f4e0c7ee59649e11",
+      "publishedAt": "2026-11-17",
+      "title": "韓, 국제협력체 ‘ 탄소시장 연합’ 가입 [심층기획-기후재난, 책임의 역...",
+      "category": "제도",
+      "summary": "배출권거래제 12년 운영 경험 공유 13國 연합 “핵심 구심점 발전” 선언 한국이 국제 의무 탄소시장 협력체인 ‘의무 탄소시장 개방연합(OCCCM· 탄소시장 연합)’에 공식 가입했다. 기업 등의 온실가스 배출에 비용을...",
+      "source": "segye.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.segye.com/newsView/20261116515592?OutUrl=naver",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장",
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "segye.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
     {
       "id": "10c61895f2712914",
       "publishedAt": "2026-11-17",
@@ -62,6 +112,30 @@
       "region": "국내"
     },
     {
+      "id": "c22068265abb386e",
+      "publishedAt": "2026-11-17",
+      "title": "[단독] 환경 규제까지 '불공정 보조금'으로 엮은 미국의 통상 잣대…K제...",
+      "category": "제도",
+      "summary": "충족한 온실가스 다배출·무역집약 업종 기업에는 100%를 무상할당했다. 상무부가 문제 삼은 대상은 배출권 거래제 자체가 아니라 일반 기업 대비 추가로 부여된 10% 무상할당분이었다. 상무부는 2021년 기준 한국 내...",
+      "source": "the-today.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.the-today.com/news/articleView.html?idxno=93695",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "the-today.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "c6baf197cfd22085",
       "publishedAt": "2026-11-17",
       "title": "[COP31] 한국, 국제 탄소시장 연합 14번째 회원국 가입",
@@ -76,12 +150,16 @@
         "탄소시장"
       ],
       "duplicateSources": [
+        "동아일보",
+        "donga.com",
+        "포쓰저널",
         "4th.kr"
       ],
       "searchProviders": [
+        "Google News RSS",
         "NAVER API HUB"
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 4,
       "region": "국내"
     },
     {
@@ -108,6 +186,52 @@
       "region": "국내"
     },
     {
+      "id": "939d2c9ccfdac5c3",
+      "publishedAt": "2026-11-17",
+      "title": "GGGI-기후부, 녹색성장 맞손…에너지전환 등으로 협력 확대",
+      "category": "제도",
+      "summary": "개정 양해각서에 따라 양 기관은 기존의 녹색성장·기후 적응 사업 개발, 온실가스 감축, 역량강화 분야에 더해 에너지전환, 수소경제, 순환 경제, 지속 가능한 수자원 관리, 국제 탄소시장 등으로 협력 범위를...",
+      "source": "yna.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.yna.co.kr/view/PYH20261117014300013?input=1196m",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "yna.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "c02ec44c810dd69d",
+      "publishedAt": "2026-11-17",
+      "title": "\"탄소 줄이고 10년간 9천만 원 번다\"",
+      "category": "제도",
+      "summary": "이를 10년간 지속할 경우 총 3000톤의 온실가스 를 줄일 수 있으며, 최근 배출권 거래 시세(톤당 약 3만 원)를 적용하면 농가당 약 9000만 원의 추가 수익이 기대된다. 특히 올해 신규 등록 농가의 절반이 넘는 32곳이 제주 지역...",
+      "source": "amnews.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.amnews.co.kr/news/articleView.html?idxno=75654",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "amnews.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "27053a47fe6a19bf",
       "publishedAt": "2026-11-17",
       "title": "\"불 떼지 않는 벽돌로 150만 톤 탄소 줄인다\"… 이노씨에스알, 네팔서 8...",
@@ -124,6 +248,29 @@
       ],
       "duplicateSources": [
         "woodkorea.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "6ba992970ded3d25",
+      "publishedAt": "2026-11-17",
+      "title": "\" 온실가스 줄이고 부가수익 창출\"…농진원, 제주감귤박람회서 배출권 거...",
+      "category": "상쇄·외부사업",
+      "summary": "외부사업은 온실가스 감축 기술을 적용해 인증받은 감축 실적을 배출권 시장에 거래할 수 있는 제도다. 농진원이 올해 신규 등록을 지원한 56농가 중 32농가가 제주에서 감귤 등을 재배하고 있으며, 농가별 연평균...",
+      "source": "foodnews.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.foodnews.co.kr/news/articleView.html?idxno=121016",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "foodnews.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -253,13 +400,14 @@
         "sedaily.com",
         "ajunews.com",
         "hankookilbo.com",
-        "노컷뉴스"
+        "노컷뉴스",
+        "케이에스피뉴스"
       ],
       "searchProviders": [
         "Google News RSS",
         "NAVER API HUB"
       ],
-      "duplicateCount": 53,
+      "duplicateCount": 54,
       "region": "국내"
     },
     {
@@ -1470,8 +1618,8 @@
       "duplicateCount": 14,
       "duplicateSources": [
         "아시아투데이",
-        "SBS Biz",
         "전자신문",
+        "SBS Biz",
         "biz.sbs.co.kr",
         "etnews.com",
         "ajunews.com",
