@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-16T08:15:10+09:00",
+  "generatedAt": "2026-11-16T10:14:46+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 2119,
+  "itemCount": 2129,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-16",
   "sourceCommitsScanned": 0,
@@ -12,6 +12,78 @@
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "4503d773c5becd76",
+      "publishedAt": "2026-11-16",
+      "title": "한국 주도 9개국이 참여 글로벌 고신뢰 탄소시장(GVCM) 협력 기반 마련",
+      "category": "제도",
+      "summary": "한국 주도 9개국이 참여 글로벌 고신뢰 탄소시장(GVCM) 협력 기반 마련 뉴스데일리",
+      "source": "뉴스데일리",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5tNHdvUllGYlAteHJ3ZVE4UjhZV2lqOVowNjZXQXBuUDRqemtyNmFJbzNoMHdlRERrZ1RkaTdiY0o1QlFyUWFJZDRQVGpfbnNkV1NzSjFldEpZZWplM3dRTDJnVVMweEtibTRB?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "뉴스데일리"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "e68d38f21c29f2be",
+      "publishedAt": "2026-11-16",
+      "title": "탄소 규제에 숨통 트이나…EU, 철강·화학 배출권 축소 완화 추진",
+      "category": "제도",
+      "summary": "탄소 중립 목표와 산업 경쟁력 유지 사이에서 균형을 찾으려는 시도로 풀이된다. EU는 2040년까지 온실가스 순배출량을 1990년 대비 90% 감축한다는 법적 구속력 있는 목표를 세웠다. 현행 ETS를 그대로 유지할 경우 시장 에...",
+      "source": "edaily.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.edaily.co.kr/News/Read?newsId=01354646645646376&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "이데일리",
+        "edaily.co.kr"
+      ],
+      "searchProviders": [
+        "Google News RSS",
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 2,
+      "region": "해외"
+    },
+    {
+      "id": "9b7f05b33a68031c",
+      "publishedAt": "2026-11-16",
+      "title": "삼표시멘트, ESG 4년 연속 ‘A’…시멘트 업계 최초",
+      "category": "제도",
+      "summary": "저탄소 제품군 확대는 탄소 배출권 비용과 직결된다. 삼척시와는 '생활폐기물 직매립 제로 실현'을 위한 자원순환 상생협력 협약을 체결했다. 시멘트 소성로를 폐기물 처리 설비로 쓰는 구조다. 지역 폐기물 문제와...",
+      "source": "sentv.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.sentv.co.kr/article/view/sentv202611160006",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "sentv.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
     {
       "id": "cc2062e61f4bfb37",
       "publishedAt": "2026-11-16",
@@ -36,6 +108,103 @@
       "region": "해외"
     },
     {
+      "id": "acf1a219de39b0f2",
+      "publishedAt": "2026-11-16",
+      "title": "강금실 특사 \"탈 탄소 화 뒤 전기국가로 전환\"..유엔 기후정상회의 연설",
+      "category": "제도",
+      "summary": "강 특사는 회의 기간 루이스 이나시우 룰라 다시우바 브라질 대통령, 사이먼 스틸 유엔기후변화협약 사무총장, 우르줄라 폰데어라이언 유럽연합(EU) 집행위원장, 류전민 중국 기후특사 등과 만나 탄소시장 ·에너지...",
+      "source": "fnnews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.fnnews.com/news/202611160855322657",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 2,
+      "duplicateSources": [
+        "yna.co.kr",
+        "fnnews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "해외"
+    },
+    {
+      "id": "8e3782593946c754",
+      "publishedAt": "2026-11-16",
+      "title": "美 법원, 공급망 배출·기후위험 공시에 제동 [ESG 뉴스 5]",
+      "category": "제도",
+      "summary": "12일 ESG다이브에 따르면 미국 연방 제9항소법원은 지난 9일 기업의 온실가스 직접배출(스코프 1)과 전력... EU, 산업계 무상 배출권 축소 속도 늦춘다 유럽연합(EU)이 산업계에 무상으로 제공하는 탄소 배출권 의 축소...",
+      "source": "magazine.hankyung.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://magazine.hankyung.com/business/article/202611168482b",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "magazine.hankyung.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
+      "id": "3383f94e64a74b3e",
+      "publishedAt": "2026-11-16",
+      "title": "[해외브리핑] EU, 산업계 무상배출권 축소 속도조절…탄소시장 규제 완화",
+      "category": "제도",
+      "summary": "[해외브리핑] EU, 산업계 무상배출권 축소 속도조절…탄소시장 규제 완화 ESG경제",
+      "source": "ESG경제",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE42TEQ2OWRERVNhQzZUMzY4ZEdwaURNaTJjTUZhX2tkVkpxX0trbmZWU1owSC1UOXBwOWhfaVdjb0s4SVlsdFNGMGpQSUdWUWRzZ3lucm5fVkt3UDFZR3RaY0tSY0xad19WOE5WNA?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "탄소시장"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "ESG경제"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "해외"
+    },
+    {
+      "id": "c7550acb59f593c3",
+      "publishedAt": "2026-11-16",
+      "title": "[해외브리핑] COP31 기후재원, 연간 목표보다 8400억달러 부족 전망",
+      "category": "제도",
+      "summary": "https://www.reuters.com/sustainability/cop/un-climate-chief-urges-speed-cop31-confronts-fossil-fuel-divide-2026-11-14/ EU, 산업계 무상 배출권 축소 속도 조절…탄소시장 규제 완화 추진 유럽연합(EU)이 산업계의 탄소 배출권 비용...",
+      "source": "esgeconomy.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.esgeconomy.com/news/articleView.html?idxno=17400",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권",
+        "탄소시장"
+      ],
+      "duplicateSources": [
+        "esgeconomy.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
       "id": "4cb237ef43b04cd7",
       "publishedAt": "2026-11-16",
       "title": "[주목 이 사람] 박지혜 더불어민주당 의원",
@@ -56,6 +225,30 @@
       "searchProviders": [
         "NAVER API HUB"
       ],
+      "region": "국내"
+    },
+    {
+      "id": "8a2597cfc8220883",
+      "publishedAt": "2026-11-16",
+      "title": "[기고] IQ·EQ를 넘어 ‘생태지능’의 시대로",
+      "category": "제도",
+      "summary": "농업인들이 물 관리 방식을 바꿔 줄인 온실가스 를 과학적으로 측정하고 검증해 탄소 배출권 으로 발행하고, 그 판매 수익을 지역 농업인들과 나누는 방식이다. 농업인의 작은 실천이 기후변화 대응에 기여하고, 그 성과가...",
+      "source": "edu.chosun.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://edu.chosun.com/site/data/html_dir/2026/11/16/2026111680015.html",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "edu.chosun.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
       "region": "국내"
     },
     {
@@ -224,8 +417,8 @@
       "duplicateSources": [
         "아시아투데이",
         "SBS Biz",
-        "biz.sbs.co.kr",
         "전자신문",
+        "biz.sbs.co.kr",
         "etnews.com",
         "ajunews.com",
         "newspim.com",
@@ -266,6 +459,30 @@
         "Google News RSS",
         "NAVER API HUB"
       ],
+      "region": "국내"
+    },
+    {
+      "id": "4e082182e9c29d0a",
+      "publishedAt": "2026-11-15",
+      "title": "탄소 배출 주범 中이 '청정 제조업 강국' 되고 있다는데",
+      "category": "제도",
+      "summary": "배출권 거래제 적용 대상을 철강·시멘트·알루미늄으로 확대한 것도 청정 알루미늄 산업 성장을 뒷받침했다. 중국에서는 재생에너지 전력을 사용하는 알루미늄 제련소 17곳이 운영 중이며 2곳이 추가 건설되고 있다....",
+      "source": "einfomax.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4444810",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "einfomax.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
       "region": "국내"
     },
     {
@@ -429,11 +646,11 @@
       ],
       "duplicateCount": 12,
       "duplicateSources": [
+        "nocutnews.co.kr",
         "fnnews.com",
         "efnews.co.kr",
         "shinailbo.co.kr",
         "viva100.com",
-        "nocutnews.co.kr",
         "newsis.com",
         "edaily.co.kr",
         "dailian.co.kr",
@@ -561,6 +778,30 @@
       "searchProviders": [
         "NAVER API HUB"
       ],
+      "region": "국내"
+    },
+    {
+      "id": "c838482237ef5ba6",
+      "publishedAt": "2026-11-15",
+      "title": "[대우건설의 해법, 콘크리트는 어떻게 숲과 공존하는가②] '녹색 기술력...",
+      "category": "제도",
+      "summary": "건설업계가 직면하고 있는 문제는 건설 현장에서 발생하는 막대한 온실가스 를 획기적으로 감축하기 위한... 이는 단순한 친환경 자재 사용이라는 상징적 의미를 넘어서, 실질적인 탄소크레딧(탄소 배출권 ) 발급과 거래...",
+      "source": "econovill.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.econovill.com/news/articleView.html?idxno=755874",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "econovill.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
       "region": "국내"
     },
     {
