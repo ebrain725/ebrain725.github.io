@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-18T01:22:46+09:00",
+  "generatedAt": "2026-11-18T03:46:41+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 2228,
+  "itemCount": 2229,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-18",
   "sourceCommitsScanned": 0,
@@ -54,6 +54,29 @@
       "duplicateCount": 1,
       "duplicateSources": [
         "topstarnews.net"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "d67f88eee4f59879",
+      "publishedAt": "2026-11-18",
+      "title": "수능날 은행 문 왜 안 열지?…19일 전국적으로 달라지는 것들",
+      "category": "제도",
+      "summary": "석유시장과 배출권 시장은 거래시간이 바뀌지 않는다.서울 외환시장은 올해부터 수능일에도 별도의 개장시간 변경 없이 운영된다. 지난 7월 외환시장이 24시간 무중단 거래 체제로 전환되면서 개장시간을 1시간 늦추던...",
+      "source": "wikitree.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.wikitree.co.kr/articles/1174912",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "wikitree.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"

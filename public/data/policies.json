@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-11-18T01:22:40+09:00",
+  "lastSync": "2026-11-18T03:46:32+09:00",
   "keywords": [
     "배출권",
     "배출권거래제",
@@ -30,7 +30,7 @@
   "warning": "한국거래소 배출권 공지사항: 한국거래소 공지 목록을 해석하지 못했습니다. 1페이지: HTTP Error 403: Forbidden",
   "aiInsight": {
     "summary": "최근 공식자료의 직접적인 수급 변수는 유상경매입니다. 최근 경매가 높은 낙찰가로 소화돼 공급보다 이행수요가 강하다는 신호입니다.",
-    "generatedAt": "2026-11-18T01:22:40+09:00",
+    "generatedAt": "2026-11-18T03:46:32+09:00",
     "basisLatestDate": "2026-11-16",
     "basisCount": 10,
     "source": "fallback",
@@ -900,6 +900,29 @@
       "duplicateCount": 1,
       "duplicateSources": [
         "topstarnews.net"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "d67f88eee4f59879",
+      "publishedAt": "2026-11-18",
+      "title": "수능날 은행 문 왜 안 열지?…19일 전국적으로 달라지는 것들",
+      "category": "제도",
+      "summary": "석유시장과 배출권 시장은 거래시간이 바뀌지 않는다.서울 외환시장은 올해부터 수능일에도 별도의 개장시간 변경 없이 운영된다. 지난 7월 외환시장이 24시간 무중단 거래 체제로 전환되면서 개장시간을 1시간 늦추던...",
+      "source": "wikitree.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.wikitree.co.kr/articles/1174912",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "wikitree.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -288075,10 +288098,10 @@
   },
   "newsRetention": {
     "policy": "append-only",
-    "lastMergedAt": "2026-11-18T01:22:46+09:00",
-    "itemCount": 2228,
-    "archiveBefore": 2219,
-    "currentBefore": 2057,
+    "lastMergedAt": "2026-11-18T03:46:41+09:00",
+    "itemCount": 2229,
+    "archiveBefore": 2228,
+    "currentBefore": 2058,
     "gitRecoveryEnabled": false
   }
 }
