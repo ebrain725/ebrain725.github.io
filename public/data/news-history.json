@@ -1,17 +1,114 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-17T18:17:23+09:00",
+  "generatedAt": "2026-11-18T01:22:46+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 2219,
+  "itemCount": 2228,
   "earliestPublishedAt": "2026-08-06",
-  "latestPublishedAt": "2026-11-17",
+  "latestPublishedAt": "2026-11-18",
   "sourceCommitsScanned": 0,
   "sourceSnapshotsScanned": 0,
   "historicalRowsScanned": 0,
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "50359fa5701557e3",
+      "publishedAt": "2026-11-18",
+      "title": "해운 탈탄소 전환 가속, 울산항 대응 전략 모색",
+      "category": "제도",
+      "summary": "탄소 배출권 거래제 및 해상연료규정 등 다층적인 탄소 규제에 직면해 있다. 미국·EU·중국 등 주요국 역시... 이에 KMI는 이번 연구를 통해 △미국·EU·영국·중국·일본 등 주요국의 탄소중립 정책 및 국가 온실가스 감...",
+      "source": "ksilbo.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.ksilbo.co.kr/news/articleView.html?idxno=1072827",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "ksilbo.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
+      "id": "8da1839ff4c3bf0d",
+      "publishedAt": "2026-11-18",
+      "title": "에코아이, 365억원 규모 배출권 판매 계약 체결",
+      "category": "제도",
+      "summary": "에코아이(448280)가 스위스 LOUIS DREYFUS COMPANY SUISSE SA(LDC)와 배출권 단일 판매 계약을 체결했다. 한국거래소 공시에 따르면 계약금액 총액은 3,653,120,332원으로, 2025년 사업연도 감사보고서 기준 연결 매출액 30,916...",
+      "source": "topstarnews.net",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.topstarnews.net/news/articleView.html?idxno=16279331",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "topstarnews.net"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "26adbd6fce49c1ff",
+      "publishedAt": "2026-11-18",
+      "title": "버넘 英 총리, EU와 관계 재설정 '대안' 제시 일정 돌연 연기… 브렉시...",
+      "category": "제도",
+      "summary": "FT는 \"식품 검역 절차를 간소화하는 위생·식물위생(SPS) 협정, 영국과 EU의 탄소 배출권 거래제(ETS) 연계, 청년 이동성 제도 도입, 국방·안보 및 이민 협력 확대 등이 주요 의제가 될 것\"이라고 전했다. 버넘 총리는 이번에...",
+      "source": "newspim.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newspim.com/news/view/20261118000002",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "newspim.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
+      "id": "81b7c292d62c0add",
+      "publishedAt": "2026-11-18",
+      "title": "“한은이 금리 정하듯, 에너지 정책도 이념서 분리해야”",
+      "category": "제도",
+      "summary": "2012년 GGGI의 설립과 국제기구화, 녹색기후기금(GCF) 한국 유치, 2015년 우리나라의 전국 단위 배출권 거래제(ETS) 도입 등 그의 손이 닿지 않은 곳이 없다. 관가(官家)에서는 국내 녹색성장 분야를 견인한 주역이라는 점에서...",
+      "source": "chosun.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.chosun.com/international/international_general/2026/11/18/H6CRY6NX65CANPIF4WG4AOM76Q/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "chosun.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
     {
       "id": "5d6d4a6192c11f14",
       "publishedAt": "2026-11-17",
@@ -79,7 +176,34 @@
         "온실가스 배출권"
       ],
       "duplicateSources": [
-        "ikld.kr"
+        "ikld.kr",
+        "국토일보"
+      ],
+      "searchProviders": [
+        "NAVER API HUB",
+        "Google News RSS"
+      ],
+      "duplicateCount": 2,
+      "region": "국내"
+    },
+    {
+      "id": "8773ab5154c41933",
+      "publishedAt": "2026-11-17",
+      "title": "한국, 탄소시장 연합 가입…배출량 검증·시장운영 경험 공유",
+      "category": "제도",
+      "summary": "16일 COP31 계기 동참 발표…의무 탄소시장 협력 확대 한국이 의무 탄소시장 운영 경험을 나누는 국제 협력체인 탄소시장 연합에 합류했다. 배출권거래제의 시장 설계와 온실가스 배출량 산정·보고·검증(MRV) 체계를...",
+      "source": "vegannews.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.vegannews.co.kr/news/article.html?no=406658",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장",
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "vegannews.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -181,6 +305,29 @@
       ],
       "searchProviders": [
         "Google News RSS"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "3d0dea2d05501d44",
+      "publishedAt": "2026-11-17",
+      "title": "한·호주, 산업 탈 탄소 화 협력 확대…전력망·청정에너지 공동 추진",
+      "category": "제도",
+      "summary": "2024년 12월 20일 체결된 녹색경제동반자협정은 청정에너지 분야 무역·투자 확대를 비롯해 공급망 다각화, 표준·인증, 탄소시장 협력 등을 포괄한다. 양국은 이번 협력 내용을 유엔기후변화협약 사무국에도 공동제안서...",
+      "source": "ajunews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.ajunews.com/view/20261117154415503",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "ajunews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
       ],
       "region": "국내"
     },
@@ -329,6 +476,29 @@
       "region": "국내"
     },
     {
+      "id": "3e274ebc365ad0a7",
+      "publishedAt": "2026-11-17",
+      "title": "에코아이, LDC와 36억 원 배출권 판매 계약",
+      "category": "제도",
+      "summary": "에코아이(448280)가 스위스 LOUIS DREYFUS COMPANY SUISSE SA(LDC)와 36억5312만332원 규모의 배출권 판매 계약을 체결했다. 에코아이가 17일 금융감독원 전자공시시스템에 제출한 단일판매·공급계약체결 공시에 따르면...",
+      "source": "vegannews.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.vegannews.co.kr/news/article.html?no=406614",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "vegannews.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "0ee7caa00c4466f6",
       "publishedAt": "2026-11-17",
       "title": "에코아이, 365억원 규모 배출권 판매 계약 체결",
@@ -440,6 +610,31 @@
       ],
       "duplicateSources": [
         "weekly.hankooki.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "64728456477b1753",
+      "publishedAt": "2026-11-17",
+      "title": "김성환, 국제무대서 지구적 기후대화 제안…다자주의 촉구 [COP31 현장]",
+      "category": "제도",
+      "summary": "김 장관은 한국이 지난해 2035년까지 온실가스 배출량을 2018년 대비 53~61% 줄이는 국가 온실가스 감축목표... 이번 총회를 계기로 가입한 의무탄소시장 개방연합(OCCCM)에서는 한국이 지난 12년간 배출권 거래제를...",
+      "source": "news1.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.news1.kr/economy/env-policy/6357302",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소시장"
+      ],
+      "duplicateSources": [
+        "news1.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -760,10 +955,11 @@
       ],
       "duplicateSources": [
         "냉동공조저널",
+        "대한일보",
         "투데이에너지",
         "대한민국 정책브리핑",
-        "todayenergy.kr",
         "korea.kr",
+        "todayenergy.kr",
         "지디넷코리아",
         "쿠키뉴스",
         "kukinews.com",
@@ -780,7 +976,7 @@
         "Google News RSS",
         "NAVER API HUB"
       ],
-      "duplicateCount": 16,
+      "duplicateCount": 17,
       "region": "국내"
     },
     {
@@ -2597,6 +2793,29 @@
       ],
       "searchProviders": [
         "NAVER API HUB",
+        "Google News RSS"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "7d29c5bf991382d6",
+      "publishedAt": "2026-11-15",
+      "title": "한국 주도 9개국 '글로벌 탄소시장' 구축 본격화…2027년 발행기구 설립",
+      "category": "제도",
+      "summary": "한국 주도 9개국 '글로벌 탄소시장' 구축 본격화…2027년 발행기구 설립 전자신문",
+      "source": "전자신문",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9LNVZmdVVwZ2VUaHE4alJkVnVnZjdaRkliOXliVmZCUnRlTFJNNFNlUURZV2N0OHJJNEpYWUNfaWxlNzRoWXJBVmx5eTJVQQ?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "전자신문"
+      ],
+      "searchProviders": [
         "Google News RSS"
       ],
       "region": "국내"
@@ -4669,7 +4888,8 @@
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
         "배출권",
-        "배출권거래제"
+        "배출권거래제",
+        "탄소배출권"
       ],
       "duplicateSources": [
         "서울파이낸스",
@@ -5003,12 +5223,12 @@
       ],
       "duplicateSources": [
         "mtnews.net",
-        "vegannews.co.kr",
         "mt.co.kr",
         "edaily.co.kr",
         "ajunews.com",
         "view.asiae.co.kr",
         "newsis.com",
+        "vegannews.co.kr",
         "hellot.net",
         "weeklytrade.co.kr",
         "m-i.kr",
