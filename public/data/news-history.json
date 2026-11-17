@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-17T08:42:40+09:00",
+  "generatedAt": "2026-11-17T10:15:04+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 2179,
+  "itemCount": 2184,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-17",
   "sourceCommitsScanned": 0,
@@ -12,6 +12,31 @@
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "da930616715e132c",
+      "publishedAt": "2026-11-17",
+      "title": "환경공단, COP31서 아·태 지역 탄소시장 협력 방안 모색",
+      "category": "제도",
+      "summary": "지역의 탄소시장 협력 방안을 논의하는 전문가 토론 행사를 개최했다. 이번 행사는 COP31 '재정·무역의 날'에 맞춰 개최됐으며, 세 기관은 파리협정 목표 달성 상황을 살피는 제2차 전 지구적 이행점검(GST2)이 시작됨에...",
+      "source": "ikld.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.ikld.kr/news/articleView.html?idxno=344305",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 2,
+      "duplicateSources": [
+        "국토일보",
+        "ikld.kr"
+      ],
+      "searchProviders": [
+        "Google News RSS",
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
     {
       "id": "5f62e492ec1928db",
       "publishedAt": "2026-11-17",
@@ -35,6 +60,31 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "af863dbb93e301ce",
+      "publishedAt": "2026-11-17",
+      "title": "기후부·GGGI, 녹색성장 협력 확대…에너지전환·국제 탄소시장 까지 넓힌...",
+      "category": "제도",
+      "summary": "쿠키뉴스=박상미 기자 | 기후에너지환경부(이하 기후부)와 글로벌녹색성장기구(GGGI)가 녹색성장 협력 범위를 에너지전환과 국제 탄소시장 까지 확대하기로 했다. 기존 온실가스 감축과 기후적응 중심의 협력에서 한발 더...",
+      "source": "kukinews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.kukinews.com/article/view/kuk202611170001",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 3,
+      "duplicateSources": [
+        "kukinews.com",
+        "todayenergy.kr",
+        "yna.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
       "region": "국내"
     },
     {
@@ -88,6 +138,29 @@
       "region": "해외"
     },
     {
+      "id": "3dd65851cd77afda",
+      "publishedAt": "2026-11-17",
+      "title": "‘LNG 냉열’ DC 확장… 온실가스 감축 앞장",
+      "category": "상쇄·외부사업",
+      "summary": "거쳐 상쇄 등록부 최종 등록을 마쳤다. 이는 국내 최초로 승인된 LNG 냉열 활용 감축사업으로, 향후 15년간 약 2만8000t의 온실가스를 감축하고 약 8억 원의 배출권 수익을 확보할 수 있을 것으로 예상된다. LNG 냉열의...",
+      "source": "munhwa.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.munhwa.com/article/11631798?ref=naver",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "munhwa.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "35213ab7697f1194",
       "publishedAt": "2026-11-17",
       "title": "[지속가능한 춘천 사회연대]제품 생산부터 일상 속 문화행사까지 ESG 가...",
@@ -109,6 +182,41 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "ecea619c7a9b5bfe",
+      "publishedAt": "2026-11-17",
+      "title": "[정책브리핑] 한국, 국제 ' 탄소시장 연합' 가입…14번째 회원국",
+      "category": "제도",
+      "summary": "EPA=연합뉴스 한국, 국제 ' 탄소시장 연합' 가입…14번째 회원국 한국이 유럽연합(EU)과 중국 등이 참여하는 국제 탄소시장 협력체인 ' 탄소시장 연합'(OCCCM)에 14번째 신규 회원국으로 공식 가입했다. 이에 따라 한국은...",
+      "source": "esgeconomy.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.esgeconomy.com/news/articleView.html?idxno=17421",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateSources": [
+        "투데이에너지",
+        "todayenergy.kr",
+        "쿠키뉴스",
+        "kukinews.com",
+        "동아일보",
+        "donga.com",
+        "포쓰저널",
+        "4th.kr",
+        "hansbiz.co.kr",
+        "뉴스;트리",
+        "newstree.kr",
+        "esgeconomy.com"
+      ],
+      "searchProviders": [
+        "Google News RSS",
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 12,
       "region": "국내"
     },
     {
@@ -350,13 +458,13 @@
         "온실가스 배출권"
       ],
       "duplicateSources": [
-        "이데일리",
         "edaily.co.kr",
         "이투데이",
         "www.dt.co.kr",
         "dt.co.kr",
         "Chosunbiz",
         "biz.chosun.com",
+        "이데일리",
         "마켓인",
         "busan.com",
         "연합뉴스",
@@ -404,8 +512,8 @@
         "케이에스피뉴스"
       ],
       "searchProviders": [
-        "Google News RSS",
-        "NAVER API HUB"
+        "NAVER API HUB",
+        "Google News RSS"
       ],
       "duplicateCount": 54,
       "region": "국내"
@@ -1267,7 +1375,10 @@
       "url": "https://www.esgeconomy.com/news/articleView.html?idxno=17419",
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
-        "탄소시장"
+        "탄소시장",
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
       ],
       "duplicateSources": [
         "ESG경제",
@@ -1450,6 +1561,29 @@
       "searchProviders": [
         "NAVER API HUB"
       ],
+      "region": "국내"
+    },
+    {
+      "id": "db79f6aa809b60fb",
+      "publishedAt": "2026-11-16",
+      "title": "1000조 K-GX 시동 걸었지만…탄소중립산업법 2년 넘게 국회 문턱",
+      "category": "시장·가격",
+      "summary": "특히 기업의 감축비용과 배출권 가격간 차액을 보전하는 탄소차액계약을 최대 15년간 체결할 수 있도록 해... 한 번의 설비투자 결정이 향후 온실가스 배출경로와 전환비용에도 영향을 미치는 만큼 법적 기반을 서둘러...",
+      "source": "fnnews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.fnnews.com/news/202611160917358919",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "fnnews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 2,
       "region": "국내"
     },
     {
