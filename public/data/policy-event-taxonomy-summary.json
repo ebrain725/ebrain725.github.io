@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0",
   "taxonomyVersion": "2026-09-11-v1-user-38-events",
-  "generatedAt": "2026-11-16T05:27:05+09:00",
+  "generatedAt": "2026-11-17T09:12:19+09:00",
   "requestedStartDate": "2015-01-01",
   "collectionMode": "incremental",
   "eventCount": 38,
@@ -200,23 +200,23 @@
   "sectionCounts": {
     "krx_notice": 316,
     "motie_notice": 955,
-    "motie_press": 1895,
+    "motie_press": 1896,
     "notice": 443,
-    "press": 959
+    "press": 965
   },
   "previousSectionCounts": {
     "krx_notice": 316,
     "motie_notice": 955,
-    "motie_press": 1895,
+    "motie_press": 1896,
     "notice": 440,
-    "press": 953
+    "press": 957
   },
   "addedCounts": {
     "krx_notice": 0,
     "motie_notice": 0,
     "motie_press": 0,
     "notice": 3,
-    "press": 6
+    "press": 8
   },
   "scopeCounts": {
     "krx_notice": {
@@ -229,22 +229,22 @@
     },
     "motie_press": {
       "direct": 28,
-      "related": 1865
+      "related": 1866
     },
     "notice": {
       "direct": 224,
       "related": 213
     },
     "press": {
-      "direct": 444,
-      "related": 510
+      "direct": 448,
+      "related": 512
     }
   },
   "eventCounts": {
     "재생에너지·RPS": 920,
-    "배출권·배출권거래제·ETS": 900,
-    "원자력발전·원전": 821,
-    "온실가스·배출량·명세서": 726,
+    "배출권·배출권거래제·ETS": 904,
+    "원자력발전·원전": 823,
+    "온실가스·배출량·명세서": 727,
     "탄소중립 선언·기본계획": 584,
     "유상할당 비율": 360,
     "시장안정화·MSR": 271,
@@ -342,23 +342,23 @@
       }
     },
     "press": {
-      "records": 959,
+      "records": 965,
       "earliest": "2015-01-08",
-      "latest": "2026-11-15",
+      "latest": "2026-11-17",
       "scopeCounts": {
-        "direct": 444,
-        "related": 510
+        "direct": 448,
+        "related": 512
       },
       "eventCounts": {
-        "배출권·배출권거래제·ETS": 301,
-        "온실가스·배출량·명세서": 242,
+        "배출권·배출권거래제·ETS": 305,
+        "온실가스·배출량·명세서": 243,
         "탄소중립 선언·기본계획": 237,
         "할당계획·할당량": 118,
         "국제감축·외부사업·감축실적": 98,
         "이행·정산·제출기한": 92,
         "재생에너지·RPS": 55,
         "시장안정화·MSR": 48,
-        "원자력발전·원전": 44,
+        "원자력발전·원전": 45,
         "유상할당 비율": 42,
         "시장참여자 확대·시장조성": 36,
         "탄소국경조정·CBAM": 29,
@@ -410,15 +410,15 @@
       }
     },
     "motie_press": {
-      "records": 1895,
+      "records": 1896,
       "earliest": "2016-01-19",
-      "latest": "2026-11-12",
+      "latest": "2026-11-16",
       "scopeCounts": {
         "direct": 28,
-        "related": 1865
+        "related": 1866
       },
       "eventCounts": {
-        "원자력발전·원전": 679,
+        "원자력발전·원전": 680,
         "재생에너지·RPS": 344,
         "중국 증설·반덤핑·관세": 229,
         "탄소중립 선언·기본계획": 191,
@@ -448,13 +448,13 @@
     }
   },
   "validation": {
-    "officialItemCount": 4568,
+    "officialItemCount": 4575,
     "sectionCounts": {
       "krx_notice": 316,
       "motie_notice": 955,
-      "motie_press": 1895,
+      "motie_press": 1896,
       "notice": 443,
-      "press": 959
+      "press": 965
     },
     "scopeCounts": {
       "krx_notice": {
@@ -467,22 +467,22 @@
       },
       "motie_press": {
         "direct": 28,
-        "related": 1865
+        "related": 1866
       },
       "notice": {
         "direct": 224,
         "related": 213
       },
       "press": {
-        "direct": 444,
-        "related": 510
+        "direct": 448,
+        "related": 512
       }
     },
     "eventCounts": {
       "재생에너지·RPS": 920,
-      "배출권·배출권거래제·ETS": 900,
-      "원자력발전·원전": 821,
-      "온실가스·배출량·명세서": 726,
+      "배출권·배출권거래제·ETS": 904,
+      "원자력발전·원전": 823,
+      "온실가스·배출량·명세서": 727,
       "탄소중립 선언·기본계획": 584,
       "유상할당 비율": 360,
       "시장안정화·MSR": 271,
@@ -522,7 +522,7 @@
     "invalidDates": 0,
     "invalidDomains": 0,
     "unclassified": 0,
-    "taxonomyMatchedItemCount": 4555,
+    "taxonomyMatchedItemCount": 4562,
     "retainedUnmatchedItemCount": 13,
     "retainedUnmatchedKeys": [
       "motie_press|ATCL3f49a5a8c|172227",
@@ -539,8 +539,8 @@
       "press|url|https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=1000&maxIndexPages=10&searchKey=&searchValue=&menuId=10598&orgCd=&boardMasterId=939&boardId=1906890",
       "press|url|https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=1000&maxIndexPages=10&searchKey=&searchValue=&menuId=10598&orgCd=&boardMasterId=939&boardId=1907300"
     ],
-    "dashboardOfficialCount": 4568
+    "dashboardOfficialCount": 4575
   },
-  "lastRunDateKst": "2026-11-16",
-  "lastRunSlot": "2026-11-16-AM"
+  "lastRunDateKst": "2026-11-17",
+  "lastRunSlot": "2026-11-17-AM"
 }
