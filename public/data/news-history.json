@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-17T10:15:04+09:00",
+  "generatedAt": "2026-11-17T13:14:56+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 2184,
+  "itemCount": 2200,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-17",
   "sourceCommitsScanned": 0,
@@ -12,6 +12,29 @@
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "5d6d4a6192c11f14",
+      "publishedAt": "2026-11-17",
+      "title": "환경공단, 국제에너지기구와 탄소시장 토론회 개최",
+      "category": "제도",
+      "summary": "환경공단, 국제에너지기구와 탄소시장 토론회 개최 환경일보",
+      "source": "환경일보",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9UbVY3NDRlb2tpNERuR29XM1NMWDBxbUxjVEdTbUFhV1F1QzE4R1hxRjFEOWlqck1JWE5rMDNZcUxJLUZXRGs4aUM3djdad0ljcEhtQnUwbTNDbXhXdW5kQUlrdy1ZX0Ji?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "환경일보"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "국내"
+    },
     {
       "id": "da930616715e132c",
       "publishedAt": "2026-11-17",
@@ -26,14 +49,40 @@
       "matchedKeywords": [
         "탄소시장"
       ],
-      "duplicateCount": 2,
+      "duplicateCount": 3,
       "duplicateSources": [
         "국토일보",
-        "ikld.kr"
+        "ikld.kr",
+        "queen.co.kr"
       ],
       "searchProviders": [
         "Google News RSS",
         "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "111a6a2a8c5b56f4",
+      "publishedAt": "2026-11-17",
+      "title": "한국, 국제 탄소시장 협의체 합류…배출권거래제 경험 수출한다",
+      "category": "제도",
+      "summary": "한국, 국제 탄소시장 협의체 합류…배출권거래제 경험 수출한다 kjtimes",
+      "source": "kjtimes",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5hM29YT21waWRFN29PRzNwZ0Z4QVBzNFozNG5sbEh6ODFMeXN2bnJGSHhYMXRudUFQUlcxYkhrZG9rc253UlhLRVp1Q0xkT2MyZURIcFZkZFZVc1lmc2xz?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소시장"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "kjtimes"
+      ],
+      "searchProviders": [
+        "Google News RSS"
       ],
       "region": "국내"
     },
@@ -63,6 +112,177 @@
       "region": "국내"
     },
     {
+      "id": "3943f1dc613552b9",
+      "publishedAt": "2026-11-17",
+      "title": "폴라리스바이오, 말레이시아 첫 국제감축사업 LoA 확보…바이오메탄 사...",
+      "category": "제도",
+      "summary": "인지서에는 말레이시아 정부가 이 사업을 파리협정 제6.2조에 따른 양자 탄소협력 후보 사업으로 인지하고, 말레이시아 기후변화 목표와 국가 탄소시장 정책에 부합한다고 평가한 내용이 담겼다. 말레이시아 정부가...",
+      "source": "sentv.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.sentv.co.kr/article/view/sentv202611170099",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "sentv.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "bb8e3600f95ce5a8",
+      "publishedAt": "2026-11-17",
+      "title": "친환경 선박의 숨은 무기 AI…연료비·탄소배출 동시에 줄인다",
+      "category": "제도",
+      "summary": "유럽연합 배출권거래제 (EU ETS)와 퓨얼EU 마리타임(FuelEU Maritime) 등 해운 환경 규제에 필요한 보고와 검증도 지원한다. AI 활용이 확대될수록 분석 결과의 신뢰성을 확보하는 것도 중요한 과제로 떠오르고 있다. DNV는 'AI...",
+      "source": "zdnet.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://zdnet.co.kr/view/?no=20261117093217",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "zdnet.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
+      "id": "dfc7c85cdc636b4b",
+      "publishedAt": "2026-11-17",
+      "title": "전력정책을 바꾸지 않으면 산업의 미래도 없다",
+      "category": "제도",
+      "summary": "올해 시작된 배출권거래제 4차 계획기간에는 발전 부문 유상할당 비율이 15%에서 2030년 50%까지 오른다. 요금 인상을 억누른 착시의 비용은 결국 미래 세대의 부담과 산업 경쟁력 약화로 돌아온다. 해법은 세 가지다. 첫째...",
+      "source": "esgeconomy.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.esgeconomy.com/news/articleView.html?idxno=17430",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "유상할당"
+      ],
+      "duplicateSources": [
+        "esgeconomy.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "f9533b730fc24edc",
+      "publishedAt": "2026-11-17",
+      "title": "농진원, 제주감귤박람회서 농업 탄소감축 사업 홍보",
+      "category": "상쇄·외부사업",
+      "summary": "외부사업 설명회·맞춤형 상담 운영…제주 농가 참여 확대 감축실적 배출권 거래 가능…농가 추가 소득... 농업부문 배출권 거래제 외부사업 설명회와 홍보 부스를 운영한다고 밝혔다. 설명회는 21일과 22일 오후 2시...",
+      "source": "livesnews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.livesnews.com/news/article.html?no=66031",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "livesnews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "3eb14d9d65cec676",
+      "publishedAt": "2026-11-17",
+      "title": "김성환 기후장관 “12차 전기본 별칭은 ‘2040 탈석탄 계획’…재생에너...",
+      "category": "제도",
+      "summary": "탄소시장 연합 가입 “배출권거래제 노하우 공유” 한국은 COP31에서 탄소시장 연합에 공식 가입했다. 김 장관은 이날 의무 탄소시장 개방연합(OCCCM) 고위급 회의에 참석해 우리나라의 신규 회원국 가입을 공식 발표했다....",
+      "source": "joongang.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.joongang.co.kr/article/25479363",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소시장"
+      ],
+      "duplicateSources": [
+        "joongang.co.kr",
+        "dailian.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 2,
+      "region": "국내"
+    },
+    {
+      "id": "d05448acddbb56e7",
+      "publishedAt": "2026-11-17",
+      "title": "김성환 \"美, 누적 탄소배출 1위 책임 다해야\"…韓 기후협력 확대",
+      "category": "제도",
+      "summary": "김 장관은 이번 COP31을 계기로 가입한 탄소시장연합에서도 배출권 거래제 운영 경험을 공유하겠다고 밝혔다. 그는 \"대한민국은 EU를 제외하고는 탄소 배출권 거래제의 노하우가 가장 많은 축에 속하게 됐다\"며 \"3차와 4차...",
+      "source": "newsis.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newsis.com/view/NISX20261117_0003870627",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권",
+        "탄소시장"
+      ],
+      "duplicateSources": [
+        "newsis.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
+      "id": "66e0abc386d788d6",
+      "publishedAt": "2026-11-17",
+      "title": "긴장감 없는 COP31 유엔기후변화협약 당사국총회",
+      "category": "제도",
+      "summary": "글로벌녹색성장기구(GGGI)가 주최하는 '아시아 탄소시장 대화'에 참여해서 탄소시장 협력 방안을 찾을 예정이라는데, 탄소시장 으로 구제될 미래세대라면 걱정이 없겠다. 인류세(Anthropocene)를 맞아 세계 정상은 현 지층의...",
+      "source": "catholicnews.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.catholicnews.co.kr/news/articleView.html?idxno=35562",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "catholicnews.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "af863dbb93e301ce",
       "publishedAt": "2026-11-17",
       "title": "기후부·GGGI, 녹색성장 협력 확대…에너지전환·국제 탄소시장 까지 넓힌...",
@@ -76,13 +296,41 @@
       "matchedKeywords": [
         "탄소시장"
       ],
-      "duplicateCount": 3,
+      "duplicateCount": 5,
       "duplicateSources": [
+        "에너지신문",
+        "energy-news.co.kr",
         "kukinews.com",
         "todayenergy.kr",
         "yna.co.kr"
       ],
       "searchProviders": [
+        "Google News RSS",
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "8cac720db75b5ad5",
+      "publishedAt": "2026-11-17",
+      "title": "기후부·GGGI 5년 만에 맞손…글로벌 탄소시장 정조준",
+      "category": "제도",
+      "summary": "기후에너지환경부와 글로벌녹색성장기구(GGGI)가 손잡고 개발도상국 대상 에너지전환과 국제 탄소시장 공략에 본격 나선다. 정부조직 개편으로 에너지 정책 기능까지 통합한 기후부가 서울에 본부를 둔 국제기구와...",
+      "source": "hankyung.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.hankyung.com/article/202611171435i",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 2,
+      "duplicateSources": [
+        "한국경제",
+        "hankyung.com"
+      ],
+      "searchProviders": [
+        "Google News RSS",
         "NAVER API HUB"
       ],
       "region": "국내"
@@ -136,6 +384,29 @@
       ],
       "duplicateCount": 2,
       "region": "해외"
+    },
+    {
+      "id": "c53de6f37e6401b8",
+      "publishedAt": "2026-11-17",
+      "title": "【데일리 ESG 정책 브리핑】해외 핵심광물 직접투자 재개·카카오모빌리...",
+      "category": "제도",
+      "summary": "기후부·GGGI, 국제 탄소시장 ·순환경제·에너지전환 협력 확대…COP31서 MOU 개정 기후에너지환경부가 글로벌녹색성장기구(GGGI)와 협력 범위를 국제 탄소시장 과 에너지전환 등으로 확대한다. 기후부는 11월 16일 튀르키예...",
+      "source": "impacton.net",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.impacton.net/news/articleView.html?idxno=30702",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "impacton.net"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
     },
     {
       "id": "3dd65851cd77afda",
@@ -201,6 +472,7 @@
       "duplicateSources": [
         "투데이에너지",
         "todayenergy.kr",
+        "지디넷코리아",
         "쿠키뉴스",
         "kukinews.com",
         "동아일보",
@@ -216,7 +488,32 @@
         "Google News RSS",
         "NAVER API HUB"
       ],
-      "duplicateCount": 12,
+      "duplicateCount": 13,
+      "region": "국내"
+    },
+    {
+      "id": "a683bf4e01a170ee",
+      "publishedAt": "2026-11-17",
+      "title": "[온실가스 배출권] 11월 17일 KAU26, 3거래일 연속 하락하며 2만9650원",
+      "category": "시장·가격",
+      "summary": "[온실가스 배출권] 11월 17일 KAU26, 3거래일 연속 하락하며 2만9650원 데일리e뉴스",
+      "source": "데일리e뉴스",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5LbVFKZUt4RUYwUU1JalctT2FDcEJ3QXVWTHo2VGdqQ2E0cnJ3WUFqRlZmSUtYdUhEbEp1bUY1b0pabnpwb2hFRWZDM2tHMjdTME5BQnYzUndYTmhFRU9CQ25YakV4WDhlZ2tEU3lTYw?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "온실가스 배출권",
+        "KAU26"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "데일리e뉴스"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
       "region": "국내"
     },
     {
@@ -314,6 +611,56 @@
       "searchProviders": [
         "NAVER API HUB"
       ],
+      "region": "국내"
+    },
+    {
+      "id": "4c7a8a271a9bad49",
+      "publishedAt": "2026-11-17",
+      "title": "COP31 반환점 돌았지만 핵심 쟁점 여전…장관급 협상 본격화",
+      "category": "시장·가격",
+      "summary": "제31차 유엔기후변화협약 당사국총회(COP31)가 반환점을 돌아 2주차 장관급 협상에 돌입했지만 온실가스 ... 탄소시장연합은 배출권 거래제와 탄소세 등 의무적 탄소가격제의 정책과 운영 경험을 공유하기 위해 구성된...",
+      "source": "newsis.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newsis.com/view/NISX20261117_0003870628",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소시장"
+      ],
+      "duplicateSources": [
+        "newsis.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "27f2ae04a8a83c36",
+      "publishedAt": "2026-11-17",
+      "title": "1000조 K-GX 내건 한국…COP31서 쏟아진 실행 과제 [현장+]",
+      "category": "제도",
+      "summary": "쿠키뉴스=박상미 기자 | 온실가스 감축목표를 실제 투자와 산업 현장의 변화로 옮기는 ‘이행’이 제31차... 탄소시장연합은 배출권 거래제와 탄소세 등 의무탄소시장 운영 경험을 공유하고 국가 간 협력을 확대하기 위한...",
+      "source": "kukinews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.kukinews.com/article/view/kuk202611170003",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소시장"
+      ],
+      "duplicateSources": [
+        "kukinews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
       "region": "국내"
     },
     {
@@ -459,11 +806,11 @@
       ],
       "duplicateSources": [
         "edaily.co.kr",
-        "이투데이",
         "www.dt.co.kr",
         "dt.co.kr",
-        "Chosunbiz",
         "biz.chosun.com",
+        "Chosunbiz",
+        "이투데이",
         "이데일리",
         "마켓인",
         "busan.com",
@@ -586,6 +933,32 @@
       "searchProviders": [
         "NAVER API HUB"
       ],
+      "region": "국내"
+    },
+    {
+      "id": "2d0cd10c6a55e3ce",
+      "publishedAt": "2026-11-16",
+      "title": "한국 '탄소시장연합회' 신규 가입…탄소협력",
+      "category": "상쇄·외부사업",
+      "summary": "유럽연합과 중국 등이 참여하는 탄소시장연합은 온실가스 배출권 거래제 등 의무 탄소시장 관련 경험을 공유하고 탄소회계와 고품질 상쇄 제도 등 상호 이해와 협력을 촉진하는 국제협력체입니다.",
+      "source": "obsnews.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.obsnews.co.kr/news/articleView.html?idxno=1543990",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장",
+        "배출권",
+        "배출권거래제",
+        "온실가스 배출권"
+      ],
+      "duplicateSources": [
+        "obsnews.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
       "region": "국내"
     },
     {
@@ -854,6 +1227,29 @@
       "region": "국내"
     },
     {
+      "id": "31b1601b74cff7f1",
+      "publishedAt": "2026-11-16",
+      "title": "기후부-GGGI MOU 개정…에너지 전환·탄소시장 협력 확대",
+      "category": "제도",
+      "summary": "기후부-GGGI MOU 개정…에너지 전환·탄소시장 협력 확대 노컷뉴스",
+      "source": "노컷뉴스",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1kMGRpQXZ1blEzWVhBdDN1Xy11QW9ULW1rTnFSQ1Z0bHJwdmQxakM5bnhldmtrSERLLWxNWERsTFRTVVhtcnF0aS1wQzZEckhOUkE?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "노컷뉴스"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "1e912c513d6ea951",
       "publishedAt": "2026-11-16",
       "title": "공장 떠날라…EU, 철강·화학 탄소비용 부담 완화 추진",
@@ -1015,7 +1411,9 @@
       "url": "https://www.donga.com/news/Society/article/all/20261116/135032242/1",
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
-        "탄소시장"
+        "탄소시장",
+        "배출권",
+        "탄소배출권"
       ],
       "duplicateSources": [
         "donga.com"
@@ -4136,16 +4534,16 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "mt.co.kr",
         "mtnews.net",
         "vegannews.co.kr",
         "etnews.com",
-        "edaily.co.kr",
         "todayenergy.kr",
         "hellot.net",
         "weeklytrade.co.kr",
-        "ajunews.com",
         "m-i.kr",
+        "mt.co.kr",
+        "edaily.co.kr",
+        "ajunews.com",
         "view.asiae.co.kr",
         "newsis.com",
         "enewstoday.co.kr"
