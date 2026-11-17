@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-17T17:22:45+09:00",
+  "generatedAt": "2026-11-17T18:17:23+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 2215,
+  "itemCount": 2219,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-17",
   "sourceCommitsScanned": 0,
@@ -59,6 +59,32 @@
         "Google News RSS",
         "NAVER API HUB"
       ],
+      "region": "국내"
+    },
+    {
+      "id": "a90c0af2562aa50b",
+      "publishedAt": "2026-11-17",
+      "title": "한국, 탄소시장연합에 신규 회원국으로 가입",
+      "category": "상쇄·외부사업",
+      "summary": "또 탄소시장연합은 온실가스 배출권 거래제나 탄소세와 같은 의무 탄소시장에 관한 경험을 공유하고, 산정·보고·검증(MRV), 탄소회계(carbon accounting), 고품질 상쇄제도(offset) 활용 등을 주제로 회원국 간 상호 이해와...",
+      "source": "ikld.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.ikld.kr/news/articleView.html?idxno=344360",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장",
+        "배출권",
+        "배출권거래제",
+        "온실가스 배출권"
+      ],
+      "duplicateSources": [
+        "ikld.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
       "region": "국내"
     },
     {
@@ -133,6 +159,29 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "ce6e1ca29f73d40f",
+      "publishedAt": "2026-11-17",
+      "title": "한국 주도 국제 탄소시장 구축에 9개국 협력",
+      "category": "제도",
+      "summary": "한국 주도 국제 탄소시장 구축에 9개국 협력 환경일보",
+      "source": "환경일보",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5aZXNxZlBZXzBZWFViR2s2WHNDZGZrUS1kY3AtOVVsVjA2cElTeVMtWENQSndYam1PUVgyeVY1NVVNYkZTcnVZQ1JvVnVLblZocUotX1BDZzIzU2NJVWI5MEY5ZjFWUzlq?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "환경일보"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
       "region": "국내"
     },
     {
@@ -375,6 +424,30 @@
       "region": "국내"
     },
     {
+      "id": "204e600bc5dae14d",
+      "publishedAt": "2026-11-17",
+      "title": "남동·동서발전, 매출 증가에도 영업익 70% 넘게 '뒷걸음질'",
+      "category": "제도",
+      "summary": "온실가스 배출권 관련 충당부채와 순차입금도 늘면서 비용 관리와 재무구조에 대한 점검이... 한국동서발전의 2026~2030년 온실가스 배출권 무상할당 현황 표다. 2030년 무상할당량은 약 623만톤으로 2026년보다...",
+      "source": "weekly.hankooki.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://weekly.hankooki.com/news/articleView.html?idxno=7194414",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "온실가스 배출권"
+      ],
+      "duplicateSources": [
+        "weekly.hankooki.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "3eb14d9d65cec676",
       "publishedAt": "2026-11-17",
       "title": "김성환 기후장관 “12차 전기본 별칭은 ‘2040 탈석탄 계획’…재생에너...",
@@ -443,6 +516,29 @@
       "duplicateCount": 1,
       "duplicateSources": [
         "catholicnews.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "9a54112065f1b748",
+      "publishedAt": "2026-11-17",
+      "title": "기후부·GGGI, 에너지 전환 등에 협력 한층 강화키로",
+      "category": "제도",
+      "summary": "이번 협약을 통해 에너지 전환, 녹색 투자, 국제 탄소 시장 (파리협정 제6.2조 포함), '녹색성장을 위한 수소(H2G)' 이니셔티브를 통한 수소 경제, 지속 가능한 수자원 관리 및 순환 경제로 협력 범위를 대폭 확대했다....",
+      "source": "magazine.hankyung.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://magazine.hankyung.com/business/article/202611172820b",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "magazine.hankyung.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -663,6 +759,7 @@
         "온실가스 배출권"
       ],
       "duplicateSources": [
+        "냉동공조저널",
         "투데이에너지",
         "대한민국 정책브리핑",
         "todayenergy.kr",
@@ -683,7 +780,7 @@
         "Google News RSS",
         "NAVER API HUB"
       ],
-      "duplicateCount": 15,
+      "duplicateCount": 16,
       "region": "국내"
     },
     {
@@ -925,12 +1022,14 @@
         "K-ETS"
       ],
       "duplicateSources": [
-        "ekoreanews.co.kr"
+        "ekoreanews.co.kr",
+        "이코리아"
       ],
       "searchProviders": [
-        "NAVER API HUB"
+        "NAVER API HUB",
+        "Google News RSS"
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "region": "해외"
     },
     {
@@ -4723,8 +4822,8 @@
         "탄소배출권"
       ],
       "duplicateSources": [
-        "매일경제 마켓",
         "매일경제",
+        "매일경제 마켓",
         "mk.co.kr"
       ],
       "searchProviders": [
