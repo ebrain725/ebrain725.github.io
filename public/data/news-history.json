@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-17T13:14:56+09:00",
+  "generatedAt": "2026-11-17T15:14:17+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 2200,
+  "itemCount": 2207,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-17",
   "sourceCommitsScanned": 0,
@@ -87,6 +87,29 @@
       "region": "국내"
     },
     {
+      "id": "da9626c225d826c2",
+      "publishedAt": "2026-11-17",
+      "title": "한국, 국제 탄소시장 협력 키운다…9개국 공동시장 구축 추진",
+      "category": "제도",
+      "summary": "한국, 국제 탄소시장 협력 키운다…9개국 공동시장 구축 추진 아시아투데이",
+      "source": "아시아투데이",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9BN2pRWFNFV3BQLWoyQXYyQU9vZDlxVVpLMUVJS0h6bTcyWWdzUEx6ZjRscWJxcG91U0g5dVIzU3NQSHRJN1h0a0RvQjQyS2p3cjRnNGNLT29GLTd0SFUwZUtOV21UczRiaGtZQS1R?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "아시아투데이"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "5f62e492ec1928db",
       "publishedAt": "2026-11-17",
       "title": "한국, EU·중국 참여 ‘국제 탄소시장 연합’ 가입",
@@ -100,7 +123,8 @@
       "matchedKeywords": [
         "탄소시장",
         "배출권",
-        "배출권거래제"
+        "배출권거래제",
+        "상쇄배출권"
       ],
       "duplicateSources": [
         "seoul.co.kr"
@@ -125,12 +149,36 @@
       "matchedKeywords": [
         "탄소시장"
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "duplicateSources": [
+        "hankyung.com",
         "sentv.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "94bf3a193f3adc18",
+      "publishedAt": "2026-11-17",
+      "title": "코리아넷뉴스",
+      "category": "제도",
+      "summary": "코리아넷뉴스 - 한국, 탄소시장연합 회원국 가입···국제탄소시장 협력 본격화 문화체육관광부 한국문화원",
+      "source": "문화체육관광부 한국문화원",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOQlBzOUVqRlZVVlNCME4zQXlZMHBGREEwNzJaNEJlVW1rSm5tZGUteldrc3A3NTBkZG1kaXRrbURxZVJNdkR3Y1laYTlJNWhEMGh4ZDRtMWU2cWhFUmtFTkUzbkM2TzBwdnk3MGt3QmJzeHQxanB0ZjZQSXFvRGEwQUppSUhMZUFZenlVa2VfemN2MzcweGhBaXdVcUM1MXZMamJucHFCOFhLT1c5dUpNbG5IaGhIV2x3b2Fsd09RR083TnNkd1gzVGNzMXgxM3g2dEU5VEFPOENPRWNrNkxlZTNuSE01VTZJNWx6UFNDcG4xSWxjQ2c?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "문화체육관광부 한국문화원"
+      ],
+      "searchProviders": [
+        "Google News RSS"
       ],
       "region": "국내"
     },
@@ -176,6 +224,77 @@
       ],
       "duplicateSources": [
         "esgeconomy.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "0ee7caa00c4466f6",
+      "publishedAt": "2026-11-17",
+      "title": "에코아이, 365억원 규모 배출권 판매 계약 체결",
+      "category": "제도",
+      "summary": "에코아이(448280)가 스위스 소재 LOUIS DREYFUS COMPANY SUISSE SA(LDC)와 배출권 판매 계약을 체결했다.... 에코아이는 배출권 을 자체 생산 및 외주생산 방식으로 공급할 예정이며, 계약 체결일은 2026년 11월 16일로...",
+      "source": "topstarnews.net",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.topstarnews.net/news/articleView.html?idxno=16278887",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "topstarnews.net"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "94b33569c685ae66",
+      "publishedAt": "2026-11-17",
+      "title": "서울시의회 유만희 부위원장, 서울에너지공사 조직과 인력 운영체계 근...",
+      "category": "제도",
+      "summary": "사업범위는 집단에너지사업, 신·재생에너지 확대 보급, 에너지 진단 등 건물 에너지 효율화 사업, 온실가스 배출권 , 지능형전력망 사업 및 수소산업 관련 사업, 에너지 분야 연구·교육·홍보, 산·학·연 협력 등 국내외...",
+      "source": "cnbizm.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.cnbizm.com/news/articleView.html?idxno=321764",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "온실가스 배출권"
+      ],
+      "duplicateSources": [
+        "cnbizm.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "bd3850c7448c6a11",
+      "publishedAt": "2026-11-17",
+      "title": "상장사 5곳 중 1곳 탄소크레딧 썼다…MSCI, 7800곳 분석",
+      "category": "제도",
+      "summary": "반면 배출권 거래제나 탄소세 등 규제 준수를 위한 크레딧 사용은 유틸리티·인프라(34%), 에너지(14%), 산업재·소재(13%) 등 고배출 업종에 집중됐다. 윌리엄 짐머른(William Zimmern) MSCI 카본마켓 총괄은 \"탄소크레딧...",
+      "source": "impacton.net",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.impacton.net/news/articleView.html?idxno=30711",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "impacton.net"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -467,7 +586,10 @@
       "url": "https://www.esgeconomy.com/news/articleView.html?idxno=17421",
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
-        "탄소시장"
+        "탄소시장",
+        "배출권",
+        "배출권거래제",
+        "온실가스 배출권"
       ],
       "duplicateSources": [
         "투데이에너지",
@@ -477,9 +599,9 @@
         "kukinews.com",
         "동아일보",
         "donga.com",
+        "hansbiz.co.kr",
         "포쓰저널",
         "4th.kr",
-        "hansbiz.co.kr",
         "뉴스;트리",
         "newstree.kr",
         "esgeconomy.com"
@@ -539,6 +661,32 @@
       ],
       "duplicateCount": 1,
       "region": "국내"
+    },
+    {
+      "id": "6dde4eceeb855944",
+      "publishedAt": "2026-11-17",
+      "title": "[ESGX 이슈 5] COP31 첫 협상문 공개…화석연료 전환·탄소시장 규칙 놓...",
+      "category": "제도",
+      "summary": "EU, 산업계 무상 배출권 축소 속도 완화 추진…철강·화학 부담 조정 EU 순회의장국인 아일랜드가 철강·화학 등 산업계에 제공하는 탄소 배출권 무상할당 기준을 조정하는 절충안을 제시했다. EU는 배출권 거래제(ETS)를...",
+      "source": "etoday.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.etoday.co.kr/news/view/2649141",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장",
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "etoday.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
     },
     {
       "id": "c6baf197cfd22085",
@@ -679,6 +827,32 @@
       ],
       "duplicateSources": [
         "amnews.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "a00a74c490e0f375",
+      "publishedAt": "2026-11-17",
+      "title": "\"사 오는 감축실적 절반이 불량\"...탄소시장 넓히는 정부, 검증은 뒷전",
+      "category": "상쇄·외부사업",
+      "summary": "회원국은 배출량 산정·보고·검증(MRV) 방식과 상쇄배출권 활용 규칙 등을 함께 논의한다. 구속력은 없지만 업무계획에 '고신뢰성 상쇄배출권 공통 원칙' 수립이 담겼다. 한국은 2015년 배출권거래제를 도입했다. 정부가...",
+      "source": "newspenguin.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newspenguin.com/news/articleView.html?idxno=22453",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장",
+        "배출권",
+        "배출권거래제",
+        "상쇄배출권"
+      ],
+      "duplicateSources": [
+        "newspenguin.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -4536,8 +4710,6 @@
       "duplicateSources": [
         "mtnews.net",
         "vegannews.co.kr",
-        "etnews.com",
-        "todayenergy.kr",
         "hellot.net",
         "weeklytrade.co.kr",
         "m-i.kr",
@@ -4546,6 +4718,8 @@
         "ajunews.com",
         "view.asiae.co.kr",
         "newsis.com",
+        "etnews.com",
+        "todayenergy.kr",
         "enewstoday.co.kr"
       ],
       "searchProviders": [
