@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-18T08:14:14+09:00",
+  "generatedAt": "2026-11-18T10:13:34+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 2237,
+  "itemCount": 2251,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-18",
   "sourceCommitsScanned": 0,
@@ -36,6 +36,79 @@
       ],
       "duplicateCount": 1,
       "region": "해외"
+    },
+    {
+      "id": "fbbfa50ab127be1a",
+      "publishedAt": "2026-11-18",
+      "title": "한국·호주, COP31서 양해각서 체결...수소 인증·전력망 등 6개 분야 협...",
+      "category": "제도",
+      "summary": "함께 추진하는 중요한 계기가 될 것\"이라며 \"호주와 함께 파리협정의 실질적 이행을 위한 국제협력을 선도해 나가겠다\"고 강조했다. 탄소시장 연합 고위급회의에 참석한 김성환 기후부 장관 사진=기후에너지환경부",
+      "source": "m-economynews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.m-economynews.com/news/article.html?no=73201",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "m-economynews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "12ce6ef104b73ddb",
+      "publishedAt": "2026-11-18",
+      "title": "한국 동참한 AI 기후 서약…美 빅테크는 외면 [ESG 뉴스 5]",
+      "category": "상쇄·외부사업",
+      "summary": "한국은 2015년 도입한 배출권거래제 운영 경험을 바탕으로 탄소시장 설계, 온실가스 산정·보고·검증(MRV), 탄소회계, 상쇄배출권 활용 등에서 협력할 계획이다. 국내 배출권거래제는 국가 온실가스 배출량의 70% 이상을...",
+      "source": "magazine.hankyung.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://magazine.hankyung.com/business/article/202611183804b",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소시장",
+        "상쇄배출권"
+      ],
+      "duplicateSources": [
+        "magazine.hankyung.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "e784d2d64a16db3b",
+      "publishedAt": "2026-11-18",
+      "title": "탄소 배출권 주요국 혼조…COP31선 '화석연료 퇴출' 이견",
+      "category": "상쇄·외부사업",
+      "summary": "국내 온실가스 감축 인증실적(KOC)은 톤당 2만9300원으로 전일과 같았다. 유럽연합 배출권 (EUA) 선물은 톤당 87.4유로로 전일 대비 0.1% 올랐다. 영국 배출권 (UKA) 선물은 톤당 64.1파운드로 0.6% 하락했다. 최근...",
+      "source": "financialpost.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.financialpost.co.kr/news/articleView.html?idxno=301588",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "financialpost.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
     },
     {
       "id": "8da1839ff4c3bf0d",
@@ -109,6 +182,30 @@
       "region": "해외"
     },
     {
+      "id": "9071d72b4bfa2a8f",
+      "publishedAt": "2026-11-18",
+      "title": "농진원, 온실가스 감축 사업 참여 확대",
+      "category": "상쇄·외부사업",
+      "summary": "농진원은 박람회 기간 제주 지역 농업인을 대상으로 농업부문 배출권거래제 외부사업(이하 '외부사업') 설명회를 개최하고 홍보 부스를 운영할 계획이다. 사업 설명회는 11월 21일(토)과 22일(일) 각각 오후 2시...",
+      "source": "bokuennews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.bokuennews.com/news/article.html?no=287340",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "bokuennews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "faa7d903f822bcfe",
       "publishedAt": "2026-11-18",
       "title": "노원구, 서울시 기후변화 혁신기술 실증사업 3건 선정…자치구 최다",
@@ -134,6 +231,32 @@
       "region": "국내"
     },
     {
+      "id": "e911362f6b878bdc",
+      "publishedAt": "2026-11-18",
+      "title": "노원구, 서울시 기후대응 실증사업 3개 선정…자치구 최다",
+      "category": "제도",
+      "summary": "이로써 전력 절감, 예산 절약, 폐기물 감소 효과가 기대되며, 온실가스 절감 데이터는 향후 탄소 배출권 거래 등 수익모델로 활용될 수 있다. 이 같은 실증사업 추진의 배경에는 구가 사업 초기부터 적극적으로 참여해온...",
+      "source": "gukjenews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.gukjenews.com/news/articleView.html?idxno=3755369",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "biz.heraldcorp.com",
+        "munhwa.com",
+        "gukjenews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 3,
+      "region": "국내"
+    },
+    {
       "id": "106363160579a0c0",
       "publishedAt": "2026-11-18",
       "title": "기후부·GGGI, 개도국 에너지전환 지원 확대…순환경제도 협력",
@@ -154,6 +277,54 @@
       "searchProviders": [
         "NAVER API HUB"
       ],
+      "region": "국내"
+    },
+    {
+      "id": "69972e84eeee9985",
+      "publishedAt": "2026-11-18",
+      "title": "韓 COP33 개최 역량 충분…인력·예산 보강 관건 [COP31 현장]",
+      "category": "상쇄·외부사업",
+      "summary": "그러면서 기후사업의 초기 자금 조달 비용을 녹색금융으로 낮추고, 사업을 통해 확보한 온실가스 감축실적을 탄소시장 에서 판매하는 방식으로 사업성을 높일 수 있다고 설명했다. ※ 이 기사는 세명대...",
+      "source": "news1.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.news1.kr/economy/env-policy/6357367",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "news1.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "dda8e959545a6f0e",
+      "publishedAt": "2026-11-18",
+      "title": "【데일리 ESG 정책 브리핑】지역기업 4.5조원 금융지원·한호주 탈 탄소 ...",
+      "category": "제도",
+      "summary": "한국, 국제 탄소시장 연합 공식 가입…배출권거래제 운영 경험 공유 한국이 의무 탄소시장 개방연합(OCCCM· 탄소시장 연합)에 공식 가입했다. 기후에너지환경부는 김성환 장관이 11월 16일 COP31 계기 고위급 회의에 참석해...",
+      "source": "impacton.net",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.impacton.net/news/articleView.html?idxno=30727",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소시장"
+      ],
+      "duplicateSources": [
+        "impacton.net"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
       "region": "국내"
     },
     {
@@ -202,6 +373,54 @@
         "NAVER API HUB"
       ],
       "region": "해외"
+    },
+    {
+      "id": "8ed7ae74ac868945",
+      "publishedAt": "2026-11-18",
+      "title": "[칼럼] 한국의 12년 배출권거래제 경험, 이제 국제 탄소시장 협력으로 도약할 때",
+      "category": "제도",
+      "summary": "[칼럼] 한국의 12년 배출권거래제 경험, 이제 국제 탄소시장 협력으로 도약할 때 케이에스피뉴스",
+      "source": "케이에스피뉴스",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMiREFVX3lxTE5jcWhkdk1RUDV5Tkx1aDByZFNidmE2RkI3YUtYQUw2dGxnOTJaV3ZjSkY4dzZZRzNGeFNjcVc0RE5iXzJv?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소시장"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "케이에스피뉴스"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "17c3faaf14451cbe",
+      "publishedAt": "2026-11-18",
+      "title": "[정책브리핑] 韓·호주, 산업 탈 탄소 협력 강화…청정에너지 공급망 구...",
+      "category": "제도",
+      "summary": "김성환 기후에너지환경부 장관이 16일(현지시간) 제31차 유엔기후변화협약 당사국총회(COP31)가 열린 튀르키예 안탈리아 엑스포 센터에서 탄소시장 연합 고위급회의에 참석해 발언하고 있다. 2026.11.16 사진...",
+      "source": "esgeconomy.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.esgeconomy.com/news/articleView.html?idxno=17440",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "esgeconomy.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
     },
     {
       "id": "6e9e88c182a84ad0",
@@ -271,6 +490,122 @@
       "duplicateCount": 1,
       "duplicateSources": [
         "news2day.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "a685ccd6897e33aa",
+      "publishedAt": "2026-11-18",
+      "title": "[COP31] 노르웨이, 개도국서 탄소감축실적 2천만t 확보…국제 탄소시장 ...",
+      "category": "상쇄·외부사업",
+      "summary": "이번 계약은 파리협정 제6조를 활용한 국제 탄소시장 이 실제 투자와 구매계약 중심으로 확대되고 있다는 점을 보여준다. 다만 계약 물량은 앞으로 발생할 감축실적의 구매 약정이다. 이미 온실가스 2178만t을...",
+      "source": "4th.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.4th.kr/news/articleView.html?idxno=2122095",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "4th.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "02915c16e800ada3",
+      "publishedAt": "2026-11-18",
+      "title": "[COP31] 김상협 GGGI 사무총장 “녹색전환 해법은 사업성”",
+      "category": "상쇄·외부사업",
+      "summary": "재생에너지 발전사업에서 생산한 전기를 판매하는 동시에 온실가스 감축실적을 배출권 으로 거래하는 구조다. 실제 GGGI는 탄소거래지원시설(CTF)을 통해 노르웨이와 잠비아, 모로코, 인도네시아 간 온실가스 감축실적...",
+      "source": "dailian.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.dailian.co.kr/news/view/1716385/?sc=Naver",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "kukinews.com",
+        "dailian.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 2,
+      "region": "국내"
+    },
+    {
+      "id": "9148b79a9cd4dace",
+      "publishedAt": "2026-11-18",
+      "title": "11월 17일 주식시장 주요공시",
+      "category": "제도",
+      "summary": "8%) 규모 공급계약( 배출권 판매 계약) 체결(계약기간:2026-11-16~2026-11-30) ▶키다리스튜디오, 30억원 규모 자사주 취득 신탁계약 체결 결정(기간:2026-11-17~2027-05-17, 키움증권(KIWOOM SECURITIES Corp.)...",
+      "source": "catchnews.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.catchnews.kr/news/articleView.html?idxno=130645",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "catchnews.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "e79093242ae5d5d4",
+      "publishedAt": "2026-11-18",
+      "title": "'파리협정 6조' 탄소 거래 본격화…GGGI, 2천만t 감축계약 중개",
+      "category": "상쇄·외부사업",
+      "summary": "파리협정 제6조는 각국 온실가스 감축 목표 달성을 위해 감축실적의 국경 간 거래를 허용하는 국제 탄소시장 을, 제6.2조는 국가 간 직접 협력을 통한 이전 방식을 규정하고 있다. 사업은 수상태양광 발전을...",
+      "source": "yna.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.yna.co.kr/view/AKR20261118016300371?input=1195m",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "yna.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "a0c894826b0d7213",
+      "publishedAt": "2026-11-18",
+      "title": "\"기후·자연 위험, AI 활용해 측정하고 경영·투자전략에 반영해야\"",
+      "category": "제도",
+      "summary": "뉴톤의 연구에 따르면 탄소시장 관련 질문을 대상으로 실시한 범용 AI의 답변 정확도는 17.7%였으나 탄소시장 특화 AI 솔루션을 적용했을 때 정확도는 약 4.6배 높아졌다. 류 대표는 \"현장의 데이터를 확실하게 확인할 수...",
+      "source": "newstree.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newstree.kr/newsView/ntr202611170023",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "newstree.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -5132,7 +5467,9 @@
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
         "배출권",
-        "배출권거래제"
+        "배출권거래제",
+        "탄소배출권",
+        "유상할당"
       ],
       "duplicateSources": [
         "서울파이낸스",
