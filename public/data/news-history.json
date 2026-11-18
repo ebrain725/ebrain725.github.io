@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-19T00:56:19+09:00",
+  "generatedAt": "2026-11-19T03:23:51+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 2276,
+  "itemCount": 2277,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-18",
   "sourceCommitsScanned": 0,
@@ -2097,6 +2097,7 @@
         "korea.kr",
         "todayenergy.kr",
         "지디넷코리아",
+        "쿠키뉴스",
         "kukinews.com",
         "동아일보",
         "donga.com",
@@ -2106,7 +2107,6 @@
         "뉴스;트리",
         "newstree.kr",
         "대한민국 정책브리핑",
-        "쿠키뉴스",
         "esgeconomy.com"
       ],
       "searchProviders": [
@@ -4514,6 +4514,30 @@
       ],
       "duplicateCount": 1,
       "region": "국내"
+    },
+    {
+      "id": "b5e0a970784114ea",
+      "publishedAt": "2026-11-14",
+      "title": "중국, 탄소배출권 미제출 기업 최대 10배 과태료…공장 가동도 중단",
+      "category": "제도",
+      "summary": "중국, 탄소배출권 미제출 기업 최대 10배 과태료…공장 가동도 중단 법치뉴스",
+      "source": "법치뉴스",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFAzaVVxWjVfTGw3ODVCOUIxT0RrSFpWVlVUa3JyVkFlNUlyeENCRy03R1JHb2hSRll1T3U4dkZrSmhjdmRVazR2cXE0NXVfeWhFUGdzcmFTV2lSaExBdjJYb0J1Y3PSAWhBVV95cUxOZkxYRVJwemFxSlZEVjNUZU1jUFZqUUM1WS01V0xYMzRRZFNKUi1pU1NNd3puQmpiUEtKam9vaEIwZnp3Wm9qc1ZuekpRb1BVQjE3V2RrYUhqazVxandZM1JKSjgweGNMeg?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "법치뉴스"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "해외"
     },
     {
       "id": "4dd9abbcc8af4e59",
