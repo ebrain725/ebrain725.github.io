@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-18T16:54:53+09:00",
+  "generatedAt": "2026-11-18T18:14:01+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 2263,
+  "itemCount": 2272,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-18",
   "sourceCommitsScanned": 0,
@@ -12,6 +12,30 @@
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "c005df00ee8d2067",
+      "publishedAt": "2026-11-18",
+      "title": "현대제철, 온실가스 배출 관련 부채 13배 급증… 배출권 할당 축소 영향...",
+      "category": "제도",
+      "summary": "최근 3년간 온실가스 배출량이 감소세를 이어온 가운데 정부의 배출권 거래제 강화에 따른 배출권 확보 부담이 재무제표에 반영된 것으로 풀이된다. 18일 현대제철의 3분기 분기보고서에 따르면 연결·별도 기준 유동...",
+      "source": "straightnews.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.straightnews.co.kr/news/articleView.html?idxno=315690",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "straightnews.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
     {
       "id": "50359fa5701557e3",
       "publishedAt": "2026-11-18",
@@ -206,6 +230,31 @@
       "region": "국내"
     },
     {
+      "id": "159107d68612a2f7",
+      "publishedAt": "2026-11-18",
+      "title": "와이앤아처, 농식품 스타트업 투자 유치 지원 'Agri-Tech Final Demoday' 성...",
+      "category": "제도",
+      "summary": "세이브더팜즈는 바이오차 연속식 생산공정과 탄소 배출권 플랫폼을, 나인티프로덕션은 친환경 패키지를 적용한 스킨케어 브랜드 'ESOMI'를 소개했다. 스피노자는 AI 기반 생육제어 기술을 적용한 스마트 삽목·육묘...",
+      "source": "sisunnews.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.sisunnews.co.kr/news/articleView.html?idxno=250001",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "sisunnews.co.kr",
+        "gokorea.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 2,
+      "region": "국내"
+    },
+    {
       "id": "8da1839ff4c3bf0d",
       "publishedAt": "2026-11-18",
       "title": "에코아이, 365억원 규모 배출권 판매 계약 체결",
@@ -222,6 +271,52 @@
       "duplicateCount": 1,
       "duplicateSources": [
         "topstarnews.net"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "73c6701323618e3a",
+      "publishedAt": "2026-11-18",
+      "title": "수능일 아침 주식 거래는 10시부터…넥스트레이드 프리마켓 쉰다",
+      "category": "제도",
+      "summary": "오전 10시부터 오후 3시 30분까지, 한국거래소 스타트업 시장(KSM)은 오전 10시부터 오후 4시 30분까지 운영된다. 석유시장은 기존처럼 오전 10시부터 오후 5시까지, 배출권 시장도 오전 10시부터 정오까지 거래할 수 있다.",
+      "source": "biz.chosun.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://biz.chosun.com/stock/stock_general/2026/11/18/DK24XSPYXRBK3BM2ADDJKECP7U/?utm_source=naver&utm_medium=original&utm_campaign=biz",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "biz.chosun.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "e3b9513e45972a60",
+      "publishedAt": "2026-11-18",
+      "title": "수능일 19일 국내 증시 1시간 늦게 개장… 오전 10시 거래 시작",
+      "category": "제도",
+      "summary": "개장 시간만 1시간 늦춰 오전 9시 45분부터 오후 3시 45분까지 운영된다. 한국거래소 금시장도 오전 10시에 개장하지만 마감 시간은 기존과 같은 오후 3시 30분이다. 석유시장과 배출권 시장의 거래시간은 변경되지 않는다.",
+      "source": "ccdailynews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.ccdailynews.com/news/articleView.html?idxno=2452186",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "ccdailynews.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -311,7 +406,8 @@
       "url": "https://www.aflnews.co.kr/news/articleView.html?idxno=331943",
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
-        "배출권"
+        "배출권",
+        "배출권거래제"
       ],
       "duplicateSources": [
         "aflnews.co.kr"
@@ -339,6 +435,30 @@
       ],
       "duplicateSources": [
         "bokuennews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "f4286db683c607bb",
+      "publishedAt": "2026-11-18",
+      "title": "농식품 스타트업 13개사, 투자유치·판로 확대 위한 성장 경쟁",
+      "category": "제도",
+      "summary": "2부에서는 세이브더팜즈의 바이오차· 탄소 배출권 플랫폼, 스피노자의 AI 스마트 육묘 시스템, 와에이아이의 농업로봇, 샤르베티에의 한국형 샤퀴테리 등 7개사가 시장 확대 전략을 제시했다. 발표 이후에는 참여기업의...",
+      "source": "youngnong.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.youngnong.co.kr/news/articleView.html?idxno=71990",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "youngnong.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -387,6 +507,7 @@
         "탄소배출권"
       ],
       "duplicateSources": [
+        "skbroadband.com",
         "biz.heraldcorp.com",
         "munhwa.com",
         "gukjenews.com",
@@ -396,7 +517,7 @@
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 5,
+      "duplicateCount": 6,
       "region": "국내"
     },
     {
@@ -413,11 +534,13 @@
       "matchedKeywords": [
         "탄소시장"
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "duplicateSources": [
+        "에너지프로슈머",
         "vegannews.co.kr"
       ],
       "searchProviders": [
+        "Google News RSS",
         "NAVER API HUB"
       ],
       "region": "국내"
@@ -460,6 +583,31 @@
         "배출권",
         "배출권거래제",
         "탄소시장"
+      ],
+      "duplicateSources": [
+        "impacton.net"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "446c5e92a08be7ed",
+      "publishedAt": "2026-11-18",
+      "title": "【규제트래커】 아사히카세이, 귀금속 재활용에 DPP 실증…던롭 타이어...",
+      "category": "시장·가격",
+      "summary": "공제 대상 제도 목록에 한국 배출권 거래제(K-ETS)도 올라, 국내 수출기업이 한국에서 부담한 탄소비용을... EU, CBAM 해외 탄소가격 공제 규칙 확정…한국 배출권 거래제도 목록에 EU 집행위원회가 지난 5일 채택한 CBAM 해외...",
+      "source": "impacton.net",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.impacton.net/news/articleView.html?idxno=30739",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "K-ETS"
       ],
       "duplicateSources": [
         "impacton.net"
@@ -786,6 +934,31 @@
       "region": "국내"
     },
     {
+      "id": "6a11558ef4f077f7",
+      "publishedAt": "2026-11-18",
+      "title": "LNG 추진선도 탄소 규제 '직격탄'…K-조선, 대응책 마련 분주",
+      "category": "제도",
+      "summary": "EU는 올해 1월부터 해운 부문의 메탄과 아산화질소 배출을 탄소 배출권 거래제(EU ETS)에 포함했다. 기존에는... LNG 추진선의 건조 능력뿐 아니라 실제 운항 과정에서 발생하는 온실가스 를 줄일 수 있는 기술이 향후 수주...",
+      "source": "ajunews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.ajunews.com/view/20261118163410996",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "ajunews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
       "id": "997db00c1c1fdb82",
       "publishedAt": "2026-11-18",
       "title": "GGGI 지원으로 노르웨이와 개도국 3곳 간 '2천만톤 탄소배출권 거래' 성...",
@@ -831,6 +1004,30 @@
         "NAVER API HUB"
       ],
       "region": "국내"
+    },
+    {
+      "id": "02d77cf5f260d036",
+      "publishedAt": "2026-11-18",
+      "title": "2026년 덴마크 조선해양산업 정보",
+      "category": "제도",
+      "summary": "한편, 2024년부터 적용 중인 EU 배출권 거래제(EU ETS)와 2025년 1월 본격 발효된 FuelEU Maritime 등 EU의 온실가스 감축 규제(Fit for 55)는 선사들의 운항 원가 부담을 직접적으로 가중시키고 있다. 이에 따라 기존...",
+      "source": "dream.kotra.or.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://dream.kotra.or.kr/kotranews/cms/news/actionKotraBoardDetail.do?SITE_NO=3&MENU_ID=200&CONTENTS_NO=1&bbsGbn=403&bbsSn=403&pNttSn=245192",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "dream.kotra.or.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
     },
     {
       "id": "9148b79a9cd4dace",
@@ -5213,6 +5410,30 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
+      "id": "48caa359cdb3fb49",
+      "publishedAt": "2026-11-12",
+      "title": "한국선급 '친환경기술 컨퍼런스' 개최···SMR·녹색항로 해법 공개",
+      "category": "제도",
+      "summary": "유럽 배출권거래제 와 화주·금융권의 배출량 요구가 현실화하는 가운데 해운·조선업계의 탈탄소 전환과 미래 연료 대응 전략을 모색하는 기술 교류의 장이 열렸다. 한국선급(KR)은 지난 5일 시그니엘 부산...",
+      "source": "enewstoday.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.enewstoday.co.kr/news/articleView.html?idxno=2491891",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "enewstoday.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
       "region": "해외"
     },
     {
