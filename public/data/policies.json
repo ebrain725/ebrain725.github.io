@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-11-18T15:13:37+09:00",
+  "lastSync": "2026-11-18T16:54:47+09:00",
   "keywords": [
     "배출권",
     "배출권거래제",
@@ -30,7 +30,7 @@
   "warning": "한국거래소 배출권 공지사항: 한국거래소 공지 목록을 해석하지 못했습니다. 1페이지: HTTP Error 403: Forbidden",
   "aiInsight": {
     "summary": "최근 공식자료의 직접적인 수급 변수는 유상경매입니다. 최근 경매가 높은 낙찰가로 소화돼 공급보다 이행수요가 강하다는 신호입니다.",
-    "generatedAt": "2026-11-18T15:13:37+09:00",
+    "generatedAt": "2026-11-18T16:54:47+09:00",
     "basisLatestDate": "2026-11-16",
     "basisCount": 10,
     "source": "fallback",
@@ -930,6 +930,30 @@
       "region": "국내"
     },
     {
+      "id": "fc9b955749f7949d",
+      "publishedAt": "2026-11-18",
+      "title": "한국, 탄소시장연합 회원국 가입…국제탄소시장 협력 본격화",
+      "category": "제도",
+      "summary": "한국, 탄소시장연합 회원국 가입…국제탄소시장 협력 본격화 에너지프로슈머",
+      "source": "에너지프로슈머",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFBsVlJNUFB0b1p3clRqWVlteEtnUXNUYVpLUjE5VEduNlFTcDFNX0swSk5hWFFzaGUtYVFpT1cxWjNPc0F6M3VjTkVrcTQ?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "section": "news",
+      "duplicateCount": 2,
+      "duplicateSources": [
+        "에너지프로슈머",
+        "페로타임즈"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "12ce6ef104b73ddb",
       "publishedAt": "2026-11-18",
       "title": "한국 동참한 AI 기후 서약…美 빅테크는 외면 [ESG 뉴스 5]",
@@ -1464,6 +1488,29 @@
       "region": "국내"
     },
     {
+      "id": "2bfbe1b987fc8511",
+      "publishedAt": "2026-11-18",
+      "title": "[금호석유화학 리스크] 투자주식 손상에도 합작사 추가 출자… 원료 수...",
+      "category": "제도",
+      "summary": "올해 추가 출자금 110억원을 포함하면 2023년 이후 유상 증자 참여금액은 총 360억원이다. 금호피앤비화학이... 배출부채는 무상으로 할당 받은 배출권을 초과한 온실가스 배출량에 대해 회사가 향후 부담할 것으로...",
+      "source": "newsclaim.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newsclaim.co.kr/news/articleView.html?idxno=3083255",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "newsclaim.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "13430a5b958023b7",
       "publishedAt": "2026-11-18",
       "title": "[Who Is ?] 유재영 GS파워 대표이사",
@@ -1606,6 +1653,29 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "16869383497efd76",
+      "publishedAt": "2026-11-18",
+      "title": "COP31 폐막 D-2…화석연료 퇴출·기후재원 협상 막판 진통",
+      "category": "제도",
+      "summary": "한편 COP31에 참석한 한국 정부대표단은 인공지능(AI)의 환경 영향을 줄이기 위한 국제 서약에 동참하고 탄소시장 연합 가입을 발표했다. 한국이 참여한 '안탈리아 AI 서약'은 AI 데이터센터의 저탄소 전력 활용과 에너지...",
+      "source": "ekn.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.ekn.kr/web/view.php?key=20261118029401504",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "ekn.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
       "region": "국내"
     },
     {
@@ -2615,7 +2685,6 @@
         "korea.kr",
         "todayenergy.kr",
         "지디넷코리아",
-        "쿠키뉴스",
         "kukinews.com",
         "동아일보",
         "donga.com",
@@ -2624,6 +2693,7 @@
         "4th.kr",
         "뉴스;트리",
         "newstree.kr",
+        "쿠키뉴스",
         "esgeconomy.com"
       ],
       "searchProviders": [
@@ -288848,10 +288918,10 @@
   },
   "newsRetention": {
     "policy": "append-only",
-    "lastMergedAt": "2026-11-18T15:13:44+09:00",
-    "itemCount": 2260,
-    "archiveBefore": 2253,
-    "currentBefore": 2087,
+    "lastMergedAt": "2026-11-18T16:54:53+09:00",
+    "itemCount": 2263,
+    "archiveBefore": 2260,
+    "currentBefore": 2091,
     "gitRecoveryEnabled": false
   }
 }
