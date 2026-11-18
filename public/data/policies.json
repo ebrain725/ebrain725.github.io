@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-11-18T10:13:26+09:00",
+  "lastSync": "2026-11-18T13:14:53+09:00",
   "keywords": [
     "배출권",
     "배출권거래제",
@@ -30,7 +30,7 @@
   "warning": "한국거래소 배출권 공지사항: 한국거래소 공지 목록을 해석하지 못했습니다. 1페이지: HTTP Error 403: Forbidden",
   "aiInsight": {
     "summary": "최근 공식자료의 직접적인 수급 변수는 유상경매입니다. 최근 경매가 높은 낙찰가로 소화돼 공급보다 이행수요가 강하다는 신호입니다.",
-    "generatedAt": "2026-11-18T10:13:26+09:00",
+    "generatedAt": "2026-11-18T13:14:53+09:00",
     "basisLatestDate": "2026-11-16",
     "basisCount": 10,
     "source": "fallback",
@@ -1343,6 +1343,33 @@
       "region": "국내"
     },
     {
+      "id": "c2873a0125246bed",
+      "publishedAt": "2026-11-18",
+      "title": "[EE칼럼] 재원을 마련하여 지원해야 배출권거래제도가 산다",
+      "category": "제도",
+      "summary": "주목할 것은 발전부문의 유상할당 비율이 3기동안에는 10%였는데 비해 '30년까지 단계적으로 상향하여 50%를 적용한다는 것이다. '25년에는 10%, '26에는 15%, '27년에는 20%에서 '29년 40% 그리고 '30년에는 50%로 되는 것이다....",
+      "source": "ekn.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.ekn.kr/web/view.php?key=20261118020253767",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "유상할당"
+      ],
+      "duplicateSources": [
+        "에너지경제신문",
+        "ekn.kr"
+      ],
+      "searchProviders": [
+        "Google News RSS",
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 2,
+      "region": "국내"
+    },
+    {
       "id": "a685ccd6897e33aa",
       "publishedAt": "2026-11-18",
       "title": "[COP31] 노르웨이, 개도국서 탄소감축실적 2천만t 확보…국제 탄소시장 ...",
@@ -1387,6 +1414,30 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 2,
+      "region": "국내"
+    },
+    {
+      "id": "997db00c1c1fdb82",
+      "publishedAt": "2026-11-18",
+      "title": "GGGI 지원으로 노르웨이와 개도국 3곳 간 '2천만톤 탄소배출권 거래' 성...",
+      "category": "제도",
+      "summary": "아래 탄소 거래기금(CTF) 산하 노르웨이 제6조 기후행동기금(NACA)을 통해 마련됐다. CTF는 준비기금과 스웨덴(ACCTIF), 노르웨이(NACA), 싱가포르(SACF)가 조성한 탄소 기금으로 운영된다. GGGI는 지난 16일 노르웨이...",
+      "source": "delighti.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.delighti.co.kr/news/articleView.html?idxno=125142",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "delighti.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
       "region": "국내"
     },
     {
@@ -7081,13 +7132,13 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "weeklytrade.co.kr",
+        "mt.co.kr",
         "edaily.co.kr",
         "ajunews.com",
-        "newsis.com",
-        "mtnews.net",
-        "mt.co.kr",
         "view.asiae.co.kr",
+        "newsis.com",
+        "weeklytrade.co.kr",
+        "mtnews.net",
         "vegannews.co.kr",
         "hellot.net",
         "m-i.kr",
@@ -288629,10 +288680,10 @@
   },
   "newsRetention": {
     "policy": "append-only",
-    "lastMergedAt": "2026-11-18T10:13:34+09:00",
-    "itemCount": 2251,
-    "archiveBefore": 2237,
-    "currentBefore": 2078,
+    "lastMergedAt": "2026-11-18T13:15:00+09:00",
+    "itemCount": 2253,
+    "archiveBefore": 2251,
+    "currentBefore": 2080,
     "gitRecoveryEnabled": false
   }
 }
