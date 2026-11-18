@@ -1,17 +1,420 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-19T03:23:51+09:00",
+  "generatedAt": "2026-11-19T08:15:33+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 2277,
+  "itemCount": 2294,
   "earliestPublishedAt": "2026-08-06",
-  "latestPublishedAt": "2026-11-18",
+  "latestPublishedAt": "2026-11-19",
   "sourceCommitsScanned": 0,
   "sourceSnapshotsScanned": 0,
   "historicalRowsScanned": 0,
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "ef0b012bc9680d63",
+      "publishedAt": "2026-11-19",
+      "title": "페로타임즈 손바닥뉴스 11월19일(목)",
+      "category": "제도",
+      "summary": "국제 탄소시장 연합 공식 가입…배출권거래제 협력 확대 골드홈, 광주·부산 주택전시관 12월 5일 동시 개관…지역 영업망 확대 세계수소산업연합회, 신규 회원 3곳 가입 승인…글로벌 협력망 34개로 확대 대우건설...",
+      "source": "ferrotimes.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.ferrotimes.com/news/articleView.html?idxno=51573",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소시장"
+      ],
+      "duplicateSources": [
+        "ferrotimes.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "6e6c08b5d04e4617",
+      "publishedAt": "2026-11-19",
+      "title": "증시, 수능시험으로 오전 10시 개장...10시~4시 30분까지 한시간씩 늦춰",
+      "category": "제도",
+      "summary": "오전 10시부터 오후 3시 30분까지 열리고, KSM(KRX Startup Market)은 오전 10시부터 오후 4시 30분까지 열린다. 석유시장(오전 10시∼오후 5시)· 배출권 시장(오전 10시∼정오)은 거래시간이 변경되지 않는다. 이성구 전문위원",
+      "source": "beyondpost.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.beyondpost.co.kr/view.php?ud=2026111906484082722aaae0046f_30",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 7,
+      "duplicateSources": [
+        "beyondpost.co.kr",
+        "khan.co.kr",
+        "dt.co.kr",
+        "yna.co.kr",
+        "bntnews.co.kr",
+        "wowtv.co.kr",
+        "pinpointnews.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "cf969e9c1e96214e",
+      "publishedAt": "2026-11-19",
+      "title": "오늘 주식거래 10시부터 가능…수능일 프리마켓 '휴장'",
+      "category": "제도",
+      "summary": "석유시장과 배출권 시장은 거래시간을 변경하지 않는다. 수능일 증시 개장 시간을 늦추는 것은 수험생의 원활한 시험장 이동을 지원하고 출근 시간대 교통 혼잡을 줄이기 위한 조치다. 투자자들은 이날 시장별...",
+      "source": "newspim.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newspim.com/news/view/20261118001244",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "newspim.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "3477f4c3c042843c",
+      "publishedAt": "2026-11-19",
+      "title": "오늘 수능…은행 영업점·증시 오전 10시에 연다",
+      "category": "제도",
+      "summary": "석유시장과 배출권 시장의 거래시간은 기존과 동일하다. 서울 외환시장은 수능 당일에도 별도의 시간 변경없이 정상 운영된다. 지난 7월 6일부터 달러·원 외환거래가 24시간 무중단 방식으로 전환된 데에 따른...",
+      "source": "newsis.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newsis.com/view/NISX20261118_0003873857",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "newsis.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "c97bbb5693e00a48",
+      "publishedAt": "2026-11-19",
+      "title": "오늘 9시엔 주식 못 산다…수능에 증시 10시 개장",
+      "category": "제도",
+      "summary": "KRX 스타트업 마켓(KSM)이 오전 10시부터 오후 4시30분까지 운영된다. 석유 시장과 배출권 시장은 거래시간을 변경하지 않는다. 석유 시장은 오전 10시부터 오후 5시까지, 배출권 시장은 오전 10시부터 정오까지 운영한다.",
+      "source": "hankyung.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.hankyung.com/article/202611196138H",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "hankyung.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "0f72bda55aa5208d",
+      "publishedAt": "2026-11-19",
+      "title": "수능일 증시 오전 10시 개장… 오후 4시 30분 마감",
+      "category": "제도",
+      "summary": "오전 10시부터 오후 3시 30분까지, 한국거래소 스타트업시장(KSM)은 오전 10시부터 오후 4시 30분까지 열린다. 석유시장과 배출권 시장은 평소대로 각각 오전 10시부터 오후 5시까지, 오전 10시부터 정오까지 운영된다.",
+      "source": "it.chosun.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://it.chosun.com/news/articleView.html?idxno=3000000001361",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "it.chosun.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "d5cacd0ce38e9335",
+      "publishedAt": "2026-11-19",
+      "title": "수능일 국내 증시 오전 10시 개장…은행 영업도 1시간 늦춰",
+      "category": "제도",
+      "summary": "반면 석유시장(오전 10시~오후 5시)과 배출권 시장(오전 10시~정오)은 기존 거래시간을 유지한다. 은행 영업시간도 변경된다. 평소 오전 9시부터 오후 4시까지인 은행 영업시간은 이날 오전 10시부터 오후 5시까지로...",
+      "source": "issuenbiz.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.issuenbiz.com/news/articleView.html?idxno=81751",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "issuenbiz.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "dbc5f711c1fc8cbf",
+      "publishedAt": "2026-11-19",
+      "title": "수능일 국내 증시 1시간 늦게 개장…오전 10시부터 오후 4시30분 거래",
+      "category": "제도",
+      "summary": "금시장이 오전 10시부터 오후 3시 30분까지, 한국거래소 스타트업시장(KSM)은 오전 10시부터 오후 4시 30분까지 운영된다. 석유시장(오전 10시~오후 5시)과 배출권 시장(오전 10시~정오)은 기존 거래시간을 유지한다.",
+      "source": "etoday.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.etoday.co.kr/news/view/2650049",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "etoday.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "23863409c22027c6",
+      "publishedAt": "2026-11-19",
+      "title": "국내 재난에 무책임했던 정부가 국제 협상에서 책임을 다할까[COP31, 정치...",
+      "category": "제도",
+      "summary": "리츠와누딘 캠페이너는 정부가 추진하는 탄소 시장 정책이 주민들의 필요에 반한다고 비판했다. 와르다니 활동가는 “기후위기에 진짜 대응하기 위해서는 현장에서 무슨 일이 벌어지는지 주민과 원주민들을 만나서...",
+      "source": "khan.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.khan.co.kr/article/202611190600011",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "khan.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "5ec2b13c2da312b1",
+      "publishedAt": "2026-11-19",
+      "title": "韓, 국제 탄소시장연합 공식 가입… 배출권 거래제 협력 확대",
+      "category": "제도",
+      "summary": "국내 배출권 거래제 운영 경험을 바탕으로 탄소시장 설계와 온실가스 배출량 관리 등 국제협력에 본격... OCCCM은 배출권 거래제와 탄소세 등 의무탄소시장에 관한 국가 간 협력을 위해 출범한 자발적 협의체다. 지난해...",
+      "source": "ferrotimes.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.ferrotimes.com/news/articleView.html?idxno=51564",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소시장"
+      ],
+      "duplicateSources": [
+        "ferrotimes.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "654bce05285fe7e5",
+      "publishedAt": "2026-11-19",
+      "title": "[한국증시] 코스피·코스닥 수능일 주식 거래시간 변경된다…일정은?",
+      "category": "제도",
+      "summary": "KRX 금시장 역시 오전 10시에 개장하지만 마감 시간은 기존과 같은 오후 3시 30분이다. 석유시장과 배출권 시장은 종전 거래시간을 유지한다. 이번 조정은 수능일인 19일 하루 적용된다. ▮ CBC뉴스ㅣCBCNEWS",
+      "source": "cbci.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.cbci.co.kr/news/articleView.html?idxno=623462",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "cbci.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "e65506a4257dd48b",
+      "publishedAt": "2026-11-19",
+      "title": "[전문가 기고] 그린메탄올, 갈 길 잃은 그린수소의 대안이 될 수 있나 재...",
+      "category": "시장·가격",
+      "summary": "이는 화학 부문 전체 배출량의 약 10%에 해당하는 규모로, 메탄올 탈탄소화는 글로벌 온실가스 감축의 핵심... 규모의 경제 달성, 수전해 스택 효율 개선, 전 세계적인 탄소 배출권 가격 상승이 결합함에 따라, 2030년을...",
+      "source": "gasnews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.gasnews.com/news/articleView.html?idxno=127759",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "gasnews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "ba01abf7dd095f3e",
+      "publishedAt": "2026-11-19",
+      "title": "[속보] 수능일 주식 시장 오전 10시 개장... 프리마켓 휴장",
+      "category": "제도",
+      "summary": "석유시장과 배출권 시장은 거래시간이 바뀌지 않는다. 석유시장은 오전 10시부터 오후 5시까지, 배출권 시장은 오전 10시부터 정오까지 평소와 같이 거래된다. 서울 외환시장도 별도의 시간 변경 없이 정상 운영된다....",
+      "source": "ggilbo.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.ggilbo.com/news/articleView.html?idxno=1193490",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 2,
+      "duplicateSources": [
+        "biz.heraldcorp.com",
+        "ggilbo.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "1592d992133418b3",
+      "publishedAt": "2026-11-19",
+      "title": "EU, 한국 배출권 비용 CBAM 공제 인정…무상할당·실제 구매비용이 관건",
+      "category": "제도",
+      "summary": "EU, 한국 배출권 비용 CBAM 공제 인정…무상할당·실제 구매비용이 관건 임팩트온",
+      "source": "임팩트온",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBTNzJFbExrLXlQbTIwc2NwZTVxV0NnQjRiOUhNb2h3YTVLaHZhSVFqSFRmdTBXVTZfYmhzQ19XWTRoakxyQ2tuaHFBUFBPU3FzeHJpdU53eDY3RnZrQkdMMFl6S0ZUMUw1Q3c?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "임팩트온"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "해외"
+    },
+    {
+      "id": "ed5780762685a7ee",
+      "publishedAt": "2026-11-19",
+      "title": "19일 수능날 한국거래소 오전 10시 개장... 넥스트레이드 프리마켓 중단",
+      "category": "제도",
+      "summary": "금현물시장은 오전 10시부터 오후 3시 30분까지 거래할 수 있으며, 석유시장과 배출권 시장은 평소와 같은 시간에 운영된다. 외환시장은 올해 운영 시간을 변경하지 않는다. 지난 7월 6일부터 달러-원 거래가 24시간...",
+      "source": "insight.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.insight.co.kr/news/582649",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "insight.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "1f97b201890529ef",
+      "publishedAt": "2026-11-19",
+      "title": "\"개장은 10시, 프리마켓 휴무\"…수능 날 바뀐 증시 시간표",
+      "category": "제도",
+      "summary": "석유시장과 배출권 시장의 거래시간은 변동 없다. 외환시장은 예년과 달리 개장 시간을 늦추는 등의 운영 시간 변경 조치를 하지 않는다. 지난 7월 6일부터 달러-원 거래가 24시간 무중단 체제로 전환하면서 개장과...",
+      "source": "news1.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.news1.kr/finance/general-stock/6358587",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "news1.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "9440ac6959f0c81c",
+      "publishedAt": "2026-11-19",
+      "title": "\"2026 수능 주식 개장시간·선물·야간시장 총정리\"",
+      "category": "제도",
+      "summary": "석유시장(오전 10시~오후 5시)과 배출권 시장(오전 10시~정오)은 거래시간이 바뀌지 않는다. 투자자들이 꼭 기억할 점은 두 가지다. 아침 8시대에 걸어 둔 프리마켓 주문은 오늘 통하지 않고, 정규장은 10시에...",
+      "source": "gukjenews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.gukjenews.com/news/articleView.html?idxno=3756532",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "gukjenews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
     {
       "id": "c005df00ee8d2067",
       "publishedAt": "2026-11-18",
