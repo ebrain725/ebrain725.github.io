@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-18T13:15:00+09:00",
+  "generatedAt": "2026-11-18T15:13:44+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 2253,
+  "itemCount": 2260,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-18",
   "sourceCommitsScanned": 0,
@@ -36,6 +36,29 @@
       ],
       "duplicateCount": 1,
       "region": "해외"
+    },
+    {
+      "id": "c7d1e4e1b869c05d",
+      "publishedAt": "2026-11-18",
+      "title": "한국거래소, 탄소크레딧 거래 '부가세 면제' 검토",
+      "category": "제도",
+      "summary": "기존 배출권 시장에 적용되는 면세와 별도로, 신규 크레딧의 세제 처리 방안을 살펴보려는 취지다.한 거래소 관계자는 \"시장 활성화를 위해서는 부가세 면제도 필요해 보인다\"라며 \"기존 배출권 과 동일하게 면제하는 방안을...",
+      "source": "mtn.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://news.mtn.co.kr/article/2026111813484975948",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "mtn.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
     },
     {
       "id": "fbbfa50ab127be1a",
@@ -87,6 +110,31 @@
       "region": "국내"
     },
     {
+      "id": "3a23e100e35239ef",
+      "publishedAt": "2026-11-18",
+      "title": "파리협정 6조 탄소시장 잰걸음...103개국 중 3분의 2가 준비상태 개선",
+      "category": "제도",
+      "summary": "EPA=연합 전 세계적으로 파리협정 6조 탄소시장 에 참여하려는 나라의 준비상태가 개선되고 있는 것으로 나타났다. MSCI는 최근 지난 10월 103개국을 대상으로 실시한 6조 사업 준비상태 점검 결과를 발표했다. MSCI가...",
+      "source": "esgeconomy.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.esgeconomy.com/news/articleView.html?idxno=17445",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 2,
+      "duplicateSources": [
+        "esgeconomy.com",
+        "ESG경제"
+      ],
+      "searchProviders": [
+        "NAVER API HUB",
+        "Google News RSS"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "e784d2d64a16db3b",
       "publishedAt": "2026-11-18",
       "title": "탄소 배출권 주요국 혼조…COP31선 '화석연료 퇴출' 이견",
@@ -111,6 +159,29 @@
       "region": "국내"
     },
     {
+      "id": "cbf0999ddb5aee91",
+      "publishedAt": "2026-11-18",
+      "title": "코이카, ‘ESG경영혁신대상’서 수상… 캄보디아 교통사업 성과 인정",
+      "category": "제도",
+      "summary": "특히 기후변화 대응을 위한 국제개발협력이 현지 일자리 창출과 우리 기업의 글로벌 탄소시장 진출 기회 확대로 이어졌다는 점에서 주목된다. 캄보디아에서 오토바이는 널리 이용되는 교통수단이다. 그러나 내연기관인...",
+      "source": "busan.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.busan.com/view/busan/view.php?code=2026111814154913897",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "busan.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "8da1839ff4c3bf0d",
       "publishedAt": "2026-11-18",
       "title": "에코아이, 365억원 규모 배출권 판매 계약 체결",
@@ -127,6 +198,29 @@
       "duplicateCount": 1,
       "duplicateSources": [
         "topstarnews.net"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "db328cac2ff8758d",
+      "publishedAt": "2026-11-18",
+      "title": "수능날 프리마켓 없습니다…정규장도 10시 개장",
+      "category": "제도",
+      "summary": "야간시장은 오후 7시에 개장해 다음 날 오전 6시에 종료된다. 금현물시장은 오전 10시부터 오후 3시 30분까지, KSM은 오전 10시부터 오후 4시 30분까지 운영된다. 석유시장과 배출권 시장의 거래시간은 변경되지 않는다.",
+      "source": "mk.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.mk.co.kr/article/12212315",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "mk.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -180,6 +274,29 @@
       ],
       "duplicateCount": 1,
       "region": "해외"
+    },
+    {
+      "id": "47f560c8947677df",
+      "publishedAt": "2026-11-18",
+      "title": "농진원, 제주 감귤농가 온실가스 배출거래제 설명회 개최",
+      "category": "시장·가격",
+      "summary": "배출권 시장 에서 거래할 수 있도록 하는 제도다. 농업인은 에너지 비용 절감과 동시에 온실가스 감축 실적... (이산화 탄소 환산량)에 달한다. 10년간 감축 활동을 지속할 경우 최근 배출권 거래가격인 톤당 약 3만 원을...",
+      "source": "aflnews.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.aflnews.co.kr/news/articleView.html?idxno=331943",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "aflnews.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
     },
     {
       "id": "9071d72b4bfa2a8f",
@@ -248,12 +365,14 @@
       "duplicateSources": [
         "biz.heraldcorp.com",
         "munhwa.com",
-        "gukjenews.com"
+        "gukjenews.com",
+        "newstnt.com",
+        "seouland.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 3,
+      "duplicateCount": 5,
       "region": "국내"
     },
     {
@@ -352,6 +471,30 @@
       "region": "국내"
     },
     {
+      "id": "28c0d2d5a2a51241",
+      "publishedAt": "2026-11-18",
+      "title": "“배출권거래제 경험, 국제사회와 공유”",
+      "category": "제도",
+      "summary": "“배출권거래제 경험, 국제사회와 공유” 환경일보",
+      "source": "환경일보",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1vYnZ6bTg5WURZWHRuNUZ3blRLVVpsYklwdDZlZENIbVNueEl2b3g1TmtKSmVsbnB0SGxqdDNaQnk1ZGVPLTFfODQ3MVNUdXNCYkNjdU1iZWxKMGo4SnM5b1pvODBtTDht?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "환경일보"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "f5743f53491e1c72",
       "publishedAt": "2026-11-18",
       "title": "[코스피·코스닥,코오롱글로벌 계양전기 동부건설 대한해운 남광토건 싸...",
@@ -419,6 +562,31 @@
       ],
       "searchProviders": [
         "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "84465dc5ffd3db1c",
+      "publishedAt": "2026-11-18",
+      "title": "[온실가스 배출권] 11월 18일 KAU26, 올랐지만 겨우 50원오른 2만9700원",
+      "category": "시장·가격",
+      "summary": "[온실가스 배출권] 11월 18일 KAU26, 올랐지만 겨우 50원오른 2만9700원 데일리e뉴스",
+      "source": "데일리e뉴스",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9ORThkbHVPSFJTNFB5UWduYU1aLS01cnNsd194OG9BckZqR0FkZEJRUmFSRldCN1podXFESF9QTHRXbENQQUpIUkgzNHlvYURxQVUwX1Q1ZkZMQTJwNEQ5bkZ6SDh4M2k0dHVGTlVEQQ?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "온실가스 배출권",
+        "KAU26"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "데일리e뉴스"
+      ],
+      "searchProviders": [
+        "Google News RSS"
       ],
       "region": "국내"
     },
