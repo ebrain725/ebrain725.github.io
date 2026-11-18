@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-11-18T18:13:56+09:00",
+  "lastSync": "2026-11-19T00:56:12+09:00",
   "keywords": [
     "배출권",
     "배출권거래제",
@@ -30,7 +30,7 @@
   "warning": "한국거래소 배출권 공지사항: 한국거래소 공지 목록을 해석하지 못했습니다. 1페이지: HTTP Error 403: Forbidden",
   "aiInsight": {
     "summary": "최근 공식자료의 직접적인 수급 변수는 유상경매입니다. 최근 경매가 높은 낙찰가로 소화돼 공급보다 이행수요가 강하다는 신호입니다.",
-    "generatedAt": "2026-11-18T18:13:56+09:00",
+    "generatedAt": "2026-11-19T00:56:12+09:00",
     "basisLatestDate": "2026-11-16",
     "basisCount": 10,
     "source": "fallback",
@@ -978,6 +978,31 @@
       "region": "국내"
     },
     {
+      "id": "04ff5291319230dd",
+      "publishedAt": "2026-11-18",
+      "title": "한국, '탄소시장연합' 회원국 공식 가입…\"탈탄소 녹색문명 선도\"",
+      "category": "제도",
+      "summary": "한국, '탄소시장연합' 회원국 공식 가입…\"탈탄소 녹색문명 선도\" 대한민국 정책브리핑",
+      "source": "대한민국 정책브리핑",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBwRl9RWHRLSW9waEEyS0k4dWZZWTVTTlI1V09QNUdMdmJTcFUzT01OeWxocmZZVVlfNHZRS1Q0Wmg2cFFvcW5fMlFkY1FPSDEzOGd1UV9FRE1hcGw0aS1IM3VOMmxzQkpfWWRXTQ?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "section": "news",
+      "duplicateCount": 3,
+      "duplicateSources": [
+        "에너지프로슈머",
+        "페로타임즈",
+        "대한민국 정책브리핑"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "12ce6ef104b73ddb",
       "publishedAt": "2026-11-18",
       "title": "한국 동참한 AI 기후 서약…美 빅테크는 외면 [ESG 뉴스 5]",
@@ -1137,9 +1162,33 @@
       "matchedKeywords": [
         "배출권"
       ],
+      "duplicateCount": 2,
+      "duplicateSources": [
+        "edaily.co.kr",
+        "biz.chosun.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "efd056bf7dfc9465",
+      "publishedAt": "2026-11-18",
+      "title": "수능일 국내 증시 정규장 오전 10시 개장…마감도 한 시간 늦춰",
+      "category": "제도",
+      "summary": "일반상품시장에서는 석유시장과 배출권 시장이 기존 거래시간을 지킨다. 금시장의 경우 개장은 오전 10시로 한 시간 미루지만, 마감은 오후 3시 30분이다. 파생상품 가운데 돈육선물 역시 기존 시간대로 거래한다....",
+      "source": "mdtoday.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.mdtoday.co.kr/news/articleView.html?idxno=626121",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
       "duplicateCount": 1,
       "duplicateSources": [
-        "biz.chosun.com"
+        "mdtoday.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -1358,12 +1407,13 @@
         "munhwa.com",
         "gukjenews.com",
         "newstnt.com",
-        "seouland.com"
+        "seouland.com",
+        "enewstoday.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 6,
+      "duplicateCount": 7,
       "region": "국내"
     },
     {
@@ -1852,6 +1902,30 @@
       "region": "국내"
     },
     {
+      "id": "73d941e00b72d5e5",
+      "publishedAt": "2026-11-18",
+      "title": "AI 질문 한 번에 탄소배출 최대 1.14g 추정…생물다양성 크레딧 사업 등...",
+      "category": "상쇄·외부사업",
+      "summary": "그는 이런 상황에서 테부를 탄소 배출권 처럼 상쇄 자산으로 주장하는 것은 문제가 될 수 있다고 밝혔다. 테라소스는 구매자가 크레딧을 통해 AI의 환경영향을 제거하거나 상쇄 했다고 주장하기보다, AI 사용 규모에...",
+      "source": "impacton.net",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.impacton.net/news/articleView.html?idxno=30734",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "impacton.net"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "02d77cf5f260d036",
       "publishedAt": "2026-11-18",
       "title": "2026년 덴마크 조선해양산업 정보",
@@ -1896,6 +1970,33 @@
       "searchProviders": [
         "NAVER API HUB"
       ],
+      "region": "국내"
+    },
+    {
+      "id": "92ab9614f45f8004",
+      "publishedAt": "2026-11-18",
+      "title": "(금요아침)2035NDC / 2050탄소중립 배출권거래제가 답일까?",
+      "category": "제도",
+      "summary": "이러한 상황에서 정부는 2026년부터 시작된 배출권거래제 제4차 계획기간의 배출허용총량을 축소하고 유상할당 을 확대했다. 발전 부문의 유상할당 비율은 2026년 15%에서 2030년 50%까지 단계적으로 높아지며, 발전외 모든...",
+      "source": "electimes.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.electimes.com/news/articleView.html?idxno=374874",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "유상할당"
+      ],
+      "duplicateSources": [
+        "전기신문",
+        "electimes.com"
+      ],
+      "searchProviders": [
+        "Google News RSS",
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 2,
       "region": "국내"
     },
     {
@@ -2878,7 +2979,6 @@
         "냉동공조저널",
         "대한일보",
         "투데이에너지",
-        "대한민국 정책브리핑",
         "korea.kr",
         "todayenergy.kr",
         "지디넷코리아",
@@ -2890,6 +2990,7 @@
         "4th.kr",
         "뉴스;트리",
         "newstree.kr",
+        "대한민국 정책브리핑",
         "쿠키뉴스",
         "esgeconomy.com"
       ],
@@ -289139,10 +289240,10 @@
   },
   "newsRetention": {
     "policy": "append-only",
-    "lastMergedAt": "2026-11-18T18:14:01+09:00",
-    "itemCount": 2272,
-    "archiveBefore": 2263,
-    "currentBefore": 2100,
+    "lastMergedAt": "2026-11-19T00:56:19+09:00",
+    "itemCount": 2276,
+    "archiveBefore": 2272,
+    "currentBefore": 2103,
     "gitRecoveryEnabled": false
   }
 }
