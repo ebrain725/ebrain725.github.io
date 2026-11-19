@@ -1,17 +1,42 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-20T03:34:33+09:00",
+  "generatedAt": "2026-11-20T08:14:34+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 2332,
+  "itemCount": 2334,
   "earliestPublishedAt": "2026-08-06",
-  "latestPublishedAt": "2026-11-19",
+  "latestPublishedAt": "2026-11-20",
   "sourceCommitsScanned": 0,
   "sourceSnapshotsScanned": 0,
   "historicalRowsScanned": 0,
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "709abd0658b37f52",
+      "publishedAt": "2026-11-20",
+      "title": "HMM, 2조 투입해 선대 확장 속도…공급과잉 파고 넘어 수익성 지킬까",
+      "category": "제도",
+      "summary": "[그림=ChatGPT] [뉴스투데이=이예주 기자] 글로벌 컨테이너 해운 시장 이 내년 공급과잉에 따른 운임 하락과... 국제해사기구(IMO)의 선박 에너지효율 규제와 유럽연합(EU)의 해운 탄소 배출권거래제 적용 등 환경규제가...",
+      "source": "news2day.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.news2day.co.kr/article/20261119500316",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "news2day.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
     {
       "id": "edacd2437710e849",
       "publishedAt": "2026-11-19",
@@ -1616,6 +1641,29 @@
       ],
       "searchProviders": [
         "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "ce66dc86fb0ecd9a",
+      "publishedAt": "2026-11-18",
+      "title": "에코아이 3분기 영업이익 134% 급증…\"배출권 전환 지연\"",
+      "category": "제도",
+      "summary": "에코아이 3분기 영업이익 134% 급증…\"배출권 전환 지연\" 리드경제",
+      "source": "리드경제",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFAzb0ZwRzU5MmF3eGJGWUJTSEpJVThoS0dYekttT1JHOEx4ZHVxVjdPc0JSRTBHWlJQUnV2emNlb3NEUGJ3b3hBUi0wMll2WWtYRkRaXy1rMW16RnhOdFdnWmlZSU0zS3loakMtb1dXMXU?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "리드경제"
+      ],
+      "searchProviders": [
+        "Google News RSS"
       ],
       "region": "국내"
     },
@@ -3425,9 +3473,9 @@
         "지디넷코리아",
         "쿠키뉴스",
         "kukinews.com",
-        "hansbiz.co.kr",
         "동아일보",
         "donga.com",
+        "hansbiz.co.kr",
         "포쓰저널",
         "4th.kr",
         "뉴스;트리",
