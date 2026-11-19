@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-19T10:14:28+09:00",
+  "generatedAt": "2026-11-19T13:14:01+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 2304,
+  "itemCount": 2311,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-19",
   "sourceCommitsScanned": 0,
@@ -12,6 +12,30 @@
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "edacd2437710e849",
+      "publishedAt": "2026-11-19",
+      "title": "한국블록체인산업진흥협회, 20일 국회서 K-블록체인 생태계 구축 세미나...",
+      "category": "제도",
+      "summary": "협회는 결제·정산, 공급망, 무역 문서, 디지털 신원(DID), 콘텐츠 권리, 탄소 배출권 , 실물자산 토큰화(RWA), 공적 증명 등 디지털 신뢰가 핵심 경쟁력이 되는 분야에서 해외 인프라 의존이 고착화될 경우 비용·정책·장애...",
+      "source": "tokenpost.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.tokenpost.kr/news/blockchain/440425",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "tokenpost.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
     {
       "id": "ef0b012bc9680d63",
       "publishedAt": "2026-11-19",
@@ -397,6 +421,30 @@
       "region": "국내"
     },
     {
+      "id": "135699f8c4e29cb5",
+      "publishedAt": "2026-11-19",
+      "title": "송옥주 의원, '2026 대한민국의정대상' 수상",
+      "category": "제도",
+      "summary": "또 △산사태 고위험지역 관리 강화 △소나무재선충병 대응 수종 전환 △애니멀폴리스 제도 도입 △바이오차 보급을 통한 탄소 배출권 거래 촉진 △부산항 보안체계 개선 △수리조선 인프라 구축 △피지컬 AI 항만...",
+      "source": "foodnews.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.foodnews.co.kr/news/articleView.html?idxno=121066",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "foodnews.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "43268ee2a3576a76",
       "publishedAt": "2026-11-19",
       "title": "선박 청정연료 온실가스 감축량, 데이터로 입증한다",
@@ -418,6 +466,32 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "8806f54d0bc64fa3",
+      "publishedAt": "2026-11-19",
+      "title": "삼성·SK하이닉스 탄소 배출권 희비…생산 확대에 배출권 소진·추가 조달",
+      "category": "제도",
+      "summary": "1~3분기 누적 사용량을 고려하면 4분기에도 250만tCO2-eq 안팎의 온실가스 가 추가로 배출될 전망이다. 한국거래소 배출권 시장에서 거래되는 할당 배출권 의 시세(톤당 1만원 내외)를 감안하면 부족분을 메우기...",
+      "source": "bloter.net",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.bloter.net/news/articleView.html?idxno=679101",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "블로터",
+        "bloter.net"
+      ],
+      "searchProviders": [
+        "Google News RSS",
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 2,
       "region": "국내"
     },
     {
@@ -444,6 +518,29 @@
       ],
       "duplicateCount": 1,
       "region": "국내"
+    },
+    {
+      "id": "59550d290b6ffd45",
+      "publishedAt": "2026-11-19",
+      "title": "기후장관 \"기후대응 구속력 더 강해질 것…한국만의 선도모델 갖춰야\"[...",
+      "category": "제도",
+      "summary": "김 장관은 9일 개막한 COP31 2주차부터 참석해 이날까지 탄소시장 연합 가입, 한-호주 탈탄소화 양해각서(MOU) 체결, 지구적 기후시민 포럼, 녹색산업화 라운드테이블 참석을 비롯해 고위급 국가발언, 13차례 양자면담 등의...",
+      "source": "etoday.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.etoday.co.kr/news/view/2650307",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "etoday.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "해외"
     },
     {
       "id": "23863409c22027c6",
@@ -492,6 +589,53 @@
       ],
       "duplicateCount": 1,
       "region": "국내"
+    },
+    {
+      "id": "f768511b0501cfb9",
+      "publishedAt": "2026-11-19",
+      "title": "【위클리 ESG 행사】 11월 4주차",
+      "category": "제도",
+      "summary": "UN COP31 주요 결과 점검과 효과적 온실가스 감축 및 녹색전환을 위한 정책·기업전략 심포지엄 법무법인... 이번 행사에서는 COP31 협상 결과와 정부의 중장기 기후정책 방향, 배출권 거래제 제4기 추진 방향, 글로벌...",
+      "source": "impacton.net",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.impacton.net/news/articleView.html?idxno=30738",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "impacton.net"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "b2641f72ab30f933",
+      "publishedAt": "2026-11-19",
+      "title": "’기후시민증' 받으러 하루 200명…세계 시민들, COP31 한국관에 줄섰다",
+      "category": "제도",
+      "summary": "총회 기간 정부는 2035년까지 전 세계 전기화율을 35%로 높이자는 '35 by 35' 국제 공약에 지지 의사를 밝혔으며, 16일에는 탄소시장 연합에 공식 가입했다. 17일에는 호주와 탈탄소 협력 양해각서(MOU)를 체결하고 전기화...",
+      "source": "newsis.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newsis.com/view/NISX20261119_0003874163",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "newsis.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "해외"
     },
     {
       "id": "654bce05285fe7e5",
@@ -563,6 +707,29 @@
         "NAVER API HUB"
       ],
       "region": "국내"
+    },
+    {
+      "id": "860abf640d3e6467",
+      "publishedAt": "2026-11-19",
+      "title": "[COP31] 녹색산업 패권 넓히는 中…비용에 갇힌 EU, 기회 맞은 韓",
+      "category": "제도",
+      "summary": "2030년 온실가스 순배출량을 1990년 대비 최소 55%, 2040년에는 90% 감축하겠다는 것이다. 하지만 EU의 낙관론과 달리 산업계는 비용 부담을 호소하고 있다. 외신에 따르면 지난 5일 EU 화학·철강 기업 등 100곳 이상이 배출권 ...",
+      "source": "dailian.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.dailian.co.kr/news/view/1717052/?sc=Naver",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "dailian.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
     },
     {
       "id": "1592d992133418b3",
@@ -1430,7 +1597,7 @@
         "탄소시장"
       ],
       "section": "news",
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "duplicateSources": [
         "케이에스피뉴스"
       ],
@@ -2772,7 +2939,6 @@
         "korea.kr",
         "todayenergy.kr",
         "지디넷코리아",
-        "쿠키뉴스",
         "kukinews.com",
         "동아일보",
         "donga.com",
@@ -2781,6 +2947,7 @@
         "4th.kr",
         "뉴스;트리",
         "newstree.kr",
+        "쿠키뉴스",
         "대한민국 정책브리핑",
         "esgeconomy.com"
       ],
@@ -2804,7 +2971,8 @@
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
         "탄소시장",
-        "배출권"
+        "배출권",
+        "배출권거래제"
       ],
       "duplicateSources": [
         "이로운넷",
@@ -5124,8 +5292,9 @@
       "matchedKeywords": [
         "탄소시장"
       ],
-      "duplicateCount": 6,
+      "duplicateCount": 7,
       "duplicateSources": [
+        "연합뉴스 한민족센터",
         "연합뉴스",
         "코리아포스트 한글판",
         "헤럴드경제",
