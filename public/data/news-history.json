@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-19T08:15:33+09:00",
+  "generatedAt": "2026-11-19T10:14:28+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 2294,
+  "itemCount": 2304,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-19",
   "sourceCommitsScanned": 0,
@@ -35,6 +35,31 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "030087a3361cb60b",
+      "publishedAt": "2026-11-19",
+      "title": "탄소 줄이려다 기업이 문 닫았다…파리협정 탄소시장 규제의 역설",
+      "category": "제도",
+      "summary": "국제 탄소시장 규제가 오히려 민간의 기후투자를 가로막고 있다는 비판이 제기됐다. 파리협정 제6조에 따른 탄소크레딧 거래 과정에서 정부 승인과 국가 간 배출량 조정 절차가 복잡해지면서, 탄소감축 사업의 자금...",
+      "source": "impacton.net",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.impacton.net/news/articleView.html?idxno=30742",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 2,
+      "duplicateSources": [
+        "임팩트온",
+        "impacton.net"
+      ],
+      "searchProviders": [
+        "Google News RSS",
+        "NAVER API HUB"
+      ],
       "region": "국내"
     },
     {
@@ -159,6 +184,98 @@
       "region": "국내"
     },
     {
+      "id": "4dd921c889f64545",
+      "publishedAt": "2026-11-19",
+      "title": "수능일 증시 1시간 늦게 열린다…KRX 오전 10시 개장",
+      "category": "제도",
+      "summary": "국채선물 등 금리상품도 동일하다. 돈육선물, 석유시장과 배출권 시장의 거래시간은 변동이 없다. 한편 은행권도 이날 영업시간을 평소보다 한 시간 늦춘 오전 10시~오후 5시로 운영한다.",
+      "source": "smarttoday.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.smarttoday.co.kr/ko-kr/articles/113865",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "smarttoday.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "ba46ed68582142a8",
+      "publishedAt": "2026-11-19",
+      "title": "수능일 은행·증시 늦게 문 연다… 오늘은 '이 시간'에 개장",
+      "category": "제도",
+      "summary": "석유시장과 배출권 시장의 거래시간은 기존과 같다.서울 외환시장은 수능일에도 별도의 거래시간 조정 없이 정상 운영된다.2027학년도 대학수학능력시험…시험 과목부터 성적 평가 방식까지2027학년도...",
+      "source": "wikitree.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.wikitree.co.kr/articles/1175804",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "wikitree.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "186ad59273d2364b",
+      "publishedAt": "2026-11-19",
+      "title": "수능일 맞아 증시 개장 1시간 늦춰...정규장 오후 4시30분 종료",
+      "category": "제도",
+      "summary": "다만 석유시장과 배출권 시장은 기존 거래시간을 유지한다. 석유시장은 오전 10시부터 오후 5시까지, 배출권 시장은 오전 10시부터 정오까지 열린다. 증시 운영시간 변경은 주식 현물시장뿐 아니라 파생상품과...",
+      "source": "thepublic.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.thepublic.kr/news/articleView.html?idxno=327452",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "thepublic.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "fc5a51c270800f4e",
+      "publishedAt": "2026-11-19",
+      "title": "수능일 국내 증시 오전 10시 개장…정규장 오후 4시30분 종료",
+      "category": "제도",
+      "summary": "전용시장인 KSM은 오전 10시부터 오후 4시 30분까지 운영된다. 반면 석유시장과 배출권 시장은 기존 거래시간을 유지한다. 석유시장은 오전 10시부터 오후 5시까지, 배출권 시장은 오전 10시부터 정오까지 거래할 수 있다.",
+      "source": "betanews.net",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.betanews.net/article/view/beta202611190011",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "betanews.net"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "d5cacd0ce38e9335",
       "publishedAt": "2026-11-19",
       "title": "수능일 국내 증시 오전 10시 개장…은행 영업도 1시간 늦춰",
@@ -175,6 +292,57 @@
       "duplicateCount": 1,
       "duplicateSources": [
         "issuenbiz.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "c4feac1959fd4199",
+      "publishedAt": "2026-11-19",
+      "title": "수능일 국내 증시 오전 10시 개장…거래시간 1시간씩 순연",
+      "category": "제도",
+      "summary": "일반상품시장 중 금시장은 오전 10시부터 오후 3시 30분까지, KSM(KRX Startup Market)은 오전 10시부터 오후 4시 30분까지 열린다. 석유시장(오전 10시~오후 5시)과 배출권 시장(오전 10시~정오)의 거래시간은 변경되지 않는다.",
+      "source": "sentv.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.sentv.co.kr/article/view/sentv202611190013",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 29,
+      "duplicateSources": [
+        "beyondpost.co.kr",
+        "khan.co.kr",
+        "dt.co.kr",
+        "yna.co.kr",
+        "bntnews.co.kr",
+        "wowtv.co.kr",
+        "pinpointnews.co.kr",
+        "hansbiz.co.kr",
+        "mydaily.co.kr",
+        "viva100.com",
+        "youthdaily.co.kr",
+        "tjb.co.kr",
+        "sentv.co.kr",
+        "ddaily.co.kr",
+        "kado.net",
+        "etoday.co.kr",
+        "mediafine.co.kr",
+        "g-enews.com",
+        "biz.heraldcorp.com",
+        "ggilbo.com",
+        "popcornnews.net",
+        "einfomax.co.kr",
+        "it.chosun.com",
+        "finomy.com",
+        "cstimes.com",
+        "industrynews.co.kr",
+        "issuenbiz.com",
+        "newspim.com",
+        "hankyung.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -202,6 +370,79 @@
       "searchProviders": [
         "NAVER API HUB"
       ],
+      "region": "국내"
+    },
+    {
+      "id": "9ea832c588a25500",
+      "publishedAt": "2026-11-19",
+      "title": "수능날인 오늘, 은행 영업점·증시 1시간 늦게 연다",
+      "category": "제도",
+      "summary": "석유 시장과 배출권 시장의 거래시간은 기존과 동일하다. 서울 외환시장은 수능 당일에도 별도의 시간 변경 없이 정상 운영된다. 지난 7월 6일부터 달러·원 외환거래가 24시간 무중단 방식으로 전환된 데에 따른...",
+      "source": "newscj.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newscj.com/news/articleView.html?idxno=3450052",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 2,
+      "duplicateSources": [
+        "newsis.com",
+        "newscj.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "43268ee2a3576a76",
+      "publishedAt": "2026-11-19",
+      "title": "선박 청정연료 온실가스 감축량, 데이터로 입증한다",
+      "category": "제도",
+      "summary": "3사는 유럽연합(EU) 배출권거래제 (EU ETS)와 해운연료 규정(FuelEU Maritime) 등 환경·무역 규제에 대응하기 위해 협약을 맺었다. 협약에는 디지털제품여권(DPP), 기업 지속가능성 실사 지침(CSDDD), 기업 지속가능성 보고 지침...",
+      "source": "energy-news.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=229892",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "energy-news.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "204b7698390a0db6",
+      "publishedAt": "2026-11-19",
+      "title": "농업 탄소 감축 지원농가 57% 제주에… 감귤농가 배출권 수익화 시험대",
+      "category": "제도",
+      "summary": "농업 현장에서 온실가스를 줄인 실적을 탄소 배출권으로 판매할 수 있도록 돕는 정부 지원사업의 신규등록... 배출권 시장 에서 판매해 수익을 얻을 수 있도록 지원하는 제도다. 배출권거래제에서 온실가스 배출량을...",
+      "source": "fnnews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.fnnews.com/news/202611190834386281",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "fnnews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
       "region": "국내"
     },
     {
@@ -658,6 +899,32 @@
       "region": "국내"
     },
     {
+      "id": "8f5f81486b017799",
+      "publishedAt": "2026-11-18",
+      "title": "와이앤아처, 농식품 스타트업 투자·판로 연계 ‘Agri-Tech Final Demoday’...",
+      "category": "제도",
+      "summary": "이어 2부에서는 ▲㈜세이브더팜즈(바이오차 연속식 공정 및 탄소 배출권 플랫폼) ▲나인티프로덕션(주)(친환경 패키지 ESG 스킨케어 ‘ESOMI’) ▲스피노자(AI 최적 생육제어 스마트 삽목·육묘 시스템) ▲㈜와에이아이...",
+      "source": "gosiweek.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.gosiweek.com/article/1065600489326150",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "gosiweek.com",
+        "sisunnews.co.kr",
+        "gokorea.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 3,
+      "region": "국내"
+    },
+    {
       "id": "159107d68612a2f7",
       "publishedAt": "2026-11-18",
       "title": "와이앤아처, 농식품 스타트업 투자 유치 지원 'Agri-Tech Final Demoday' 성...",
@@ -1038,12 +1305,17 @@
         "탄소시장"
       ],
       "duplicateSources": [
+        "에너지프로슈머",
+        "페로타임즈",
+        "대한민국 정책브리핑",
+        "임팩트온",
         "impacton.net"
       ],
       "searchProviders": [
+        "Google News RSS",
         "NAVER API HUB"
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 5,
       "region": "국내"
     },
     {
@@ -5736,7 +6008,8 @@
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
         "배출권",
-        "배출권거래제"
+        "배출권거래제",
+        "탄소배출권"
       ],
       "duplicateSources": [
         "더퍼블릭",
@@ -6106,8 +6379,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "에너지경제신문",
         "기후에너지데이터뱅크",
+        "에너지경제신문",
         "ekn.kr"
       ],
       "searchProviders": [
