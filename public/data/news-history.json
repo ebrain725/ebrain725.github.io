@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-19T18:14:08+09:00",
+  "generatedAt": "2026-11-19T22:42:36+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 2326,
+  "itemCount": 2331,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-19",
   "sourceCommitsScanned": 0,
@@ -470,6 +470,31 @@
       "region": "국내"
     },
     {
+      "id": "89c8345054738df9",
+      "publishedAt": "2026-11-19",
+      "title": "송옥주 의원, '2026년 대한민국의정대상' 수상",
+      "category": "제도",
+      "summary": "통한 탄소배출권 거래 촉진 △부산항 보안체계 개선 △선박·함정 MRO 활성화를 위한 수리조선 인프라 구축 △피지컬 AI 항만 실증체계 효율화 △리스테리아균 감염 방지위한 수입 수산물 안전관리 등을 촉구하고 대안을...",
+      "source": "enewstoday.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.enewstoday.co.kr/news/articleView.html?idxno=2494868",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "enewstoday.co.kr",
+        "foodnews.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 2,
+      "region": "국내"
+    },
+    {
       "id": "135699f8c4e29cb5",
       "publishedAt": "2026-11-19",
       "title": "송옥주 의원, '2026 대한민국의정대상' 수상",
@@ -533,6 +558,7 @@
         "탄소배출권"
       ],
       "duplicateSources": [
+        "Daum",
         "블로터",
         "bloter.net"
       ],
@@ -540,7 +566,7 @@
         "Google News RSS",
         "NAVER API HUB"
       ],
-      "duplicateCount": 2,
+      "duplicateCount": 3,
       "region": "국내"
     },
     {
@@ -584,6 +610,30 @@
       ],
       "duplicateSources": [
         "economist.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "501219e5689014d9",
+      "publishedAt": "2026-11-19",
+      "title": "농진원, 제주 감귤농가에 ' 배출권 거래' 홍보 나선다",
+      "category": "상쇄·외부사업",
+      "summary": "참가해 '농업부문 배출권 거래제 외부사업' 설명에 나선다. 농진원은 박람회 기간 제주 지역 농업인을 대상으로 농업부문 배출권 거래제 외부사업 설명회를 개최하고 홍보 부스를 운영할 계획이다. 사업 설명회는 오는...",
+      "source": "ikpnews.net",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.ikpnews.net/news/articleView.html?idxno=72070",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "ikpnews.net"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -650,6 +700,29 @@
       "sourceType": "news",
       "section": "news",
       "url": "https://www.etoday.co.kr/news/view/2650307",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "etoday.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "해외"
+    },
+    {
+      "id": "34a44eae87ce35fa",
+      "publishedAt": "2026-11-19",
+      "title": "기후장관 \"K-POP 이어 K-GX도 세계가 주목하는 韓 브랜드 될 것\"[COP31]",
+      "category": "제도",
+      "summary": "김 장관은 \"(COP31에서) 세계 각국과 국제기구 대표들을 만나 협력 방안을 논의했다\"며 \" 탄소시장 연합 가입과 한-호주 탈탄소 협력 양해각서(MOU)라는 결실도 맺었다\"고 했다. 이어 \"특히 '35 by(바이) 35 전기화 서약'에도...",
+      "source": "etoday.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.etoday.co.kr/news/view/2650642",
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
         "탄소시장"
@@ -899,6 +972,30 @@
         "NAVER API HUB"
       ],
       "region": "국내"
+    },
+    {
+      "id": "e768ec0d3e0caf03",
+      "publishedAt": "2026-11-19",
+      "title": "[기고] 도전적 R&D 산업화로 기후위기 극복을",
+      "category": "제도",
+      "summary": "탄소 배출량은 무역과 투자의 기준이 되었고, 2035 국가 온실가스 감축목표(NDC)와 2050 탄소중립까지 남은... 유럽연합은 배출권 거래제 수익으로 조성한 혁신기금을 통해 대형 실증을 뒷받침한다. 반면 세계 시장에 이름을...",
+      "source": "dt.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.dt.co.kr/article/12096251?ref=naver",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "dt.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
     },
     {
       "id": "fc3c8df62b4b65da",
@@ -3767,6 +3864,30 @@
       ],
       "searchProviders": [
         "Google News RSS",
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "1b5815ca4b0dcec9",
+      "publishedAt": "2026-11-16",
+      "title": "한국가스공사, '수소버스 온실가스 외부감축사업' 추진",
+      "category": "제도",
+      "summary": "한국가스공사가 수소버스 운행으로 발생하는 친환경 효과를 공식적인 온실가스 감축 실적으로 인정받기 위해 운송업계 및 탄소배출권 전문기업과 머리를 맞댄다. 한국가스공사는 지난 13일 전국버스운송사업조합연합회...",
+      "source": "srtimes.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.srtimes.kr/news/articleView.html?idxno=217764",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "srtimes.kr"
+      ],
+      "searchProviders": [
         "NAVER API HUB"
       ],
       "region": "국내"
