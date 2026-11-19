@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-19T15:15:59+09:00",
+  "generatedAt": "2026-11-19T16:51:04+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 2315,
+  "itemCount": 2322,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-19",
   "sourceCommitsScanned": 0,
@@ -138,6 +138,30 @@
       "searchProviders": [
         "NAVER API HUB"
       ],
+      "region": "국내"
+    },
+    {
+      "id": "35cda31c4974e0b6",
+      "publishedAt": "2026-11-19",
+      "title": "제주 감귤 조수입 3년째 1조3000억대… 품종·판로 경쟁력 시험대",
+      "category": "상쇄·외부사업",
+      "summary": "박람회 기간에는 농업부문 배출권 거래제 외부사업 설명회가 열린다. 농가가 에너지 절감 기술을 활용해 줄인 온실가스 배출량을 인증받고, 해당 실적을 배출권 시장에서 판매할 수 있도록 사업 참여 요건과 등록 절차를...",
+      "source": "fnnews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.fnnews.com/news/202611191529429809",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "fnnews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
       "region": "국내"
     },
     {
@@ -520,6 +544,30 @@
       "region": "국내"
     },
     {
+      "id": "ddbb821664f1756c",
+      "publishedAt": "2026-11-19",
+      "title": "데이터시티위마켓, RWAHUB 글로벌 사업설명회 개최…350명 참석",
+      "category": "제도",
+      "summary": "RWAHUB는 부동산과 광물자원, 친환경 에너지, 탄소 배출권, 문화예술, 지식재산권 등 다양한 실물자산의... 장진우 데이터시티위마켓 대표이사회장은 “향후 글로벌 자본 시장 진출을 위한 경영 기반을 강화하고 RWAHUB를...",
+      "source": "economist.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://economist.co.kr/article/view/ecn202611190031",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "economist.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "204b7698390a0db6",
       "publishedAt": "2026-11-19",
       "title": "농업 탄소 감축 지원농가 57% 제주에… 감귤농가 배출권 수익화 시험대",
@@ -636,6 +684,29 @@
         "NAVER API HUB"
       ],
       "region": "국내"
+    },
+    {
+      "id": "a715c58def97f012",
+      "publishedAt": "2026-11-19",
+      "title": "韓은 K-GX, 中은 탄소시장 …COP31서 드러난 탄소중립 온도차 [현장+]",
+      "category": "제도",
+      "summary": "中, 아시아 탄소시장 가능성 제시…加는 감축기술 사업화 중국은 탄소감축을 새로운 시장과 역내 협력으로 연결하는 데 관심을 보였다. COP31 중국관에서 만난 한 관계자는 “아시아의 연결이 더욱 긴밀해지고 있다”며...",
+      "source": "kukinews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.kukinews.com/article/view/kuk202611180236",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "kukinews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "해외"
     },
     {
       "id": "5ec2b13c2da312b1",
@@ -757,6 +828,31 @@
       "region": "국내"
     },
     {
+      "id": "2ad340aa683d5d1c",
+      "publishedAt": "2026-11-19",
+      "title": "[온실가스 배출권] 11월 19일 KAU26, 150원 하락한 2만9550원",
+      "category": "시장·가격",
+      "summary": "[온실가스 배출권] 11월 19일 KAU26, 150원 하락한 2만9550원 데일리e뉴스",
+      "source": "데일리e뉴스",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1nRXNWVG10OHJTX0k0UnRvMjVjVnd0ckFtLTMxMGRtUHVySjVkcGZFeURPNl9lR2o0UXI4ejdMamhhWUVWTGhoMWpNQy01MmY1VFNtSHdWcENEemRCWnpRSmxuaXVDdGRMcGN6aDBkNA?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "온실가스 배출권",
+        "KAU26"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "데일리e뉴스"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "ba01abf7dd095f3e",
       "publishedAt": "2026-11-19",
       "title": "[속보] 수능일 주식 시장 오전 10시 개장... 프리마켓 휴장",
@@ -803,6 +899,30 @@
       ],
       "duplicateCount": 1,
       "region": "해외"
+    },
+    {
+      "id": "5cca3e7519bae3aa",
+      "publishedAt": "2026-11-19",
+      "title": "[EE칼럼] 재원을 마련하여 지원해야 배출권거래제도가 산다",
+      "category": "제도",
+      "summary": "[EE칼럼] 재원을 마련하여 지원해야 배출권거래제도가 산다 기후에너지데이터뱅크",
+      "source": "기후에너지데이터뱅크",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5mN010UThkdmtCSnBXME9tLTdDQWlPS1dwZl9IdE9vZWx2MmREakFydFhQellvenFaTGQxWWhLWHJ0X1E3bVdXRnhrMEJxenVZdzgyRWdGWjVWQnYwR0E?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "기후에너지데이터뱅크"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "국내"
     },
     {
       "id": "860abf640d3e6467",
@@ -872,6 +992,55 @@
         "NAVER API HUB"
       ],
       "region": "국내"
+    },
+    {
+      "id": "06cc38659b8b0db0",
+      "publishedAt": "2026-11-19",
+      "title": "15조 벌고도 근심…정유업계, 첫 손실보전 정산 ‘촉각’",
+      "category": "제도",
+      "summary": "이어 “2011년 온실가스 규제, 2015년 배출권 거래제가 도입되면서 에너지를 많이 쓸수록 규제 이행 부담이 커진 것도 효율 개선에 매달린 이유”라고 덧붙였다. 한편 업계의 손실보전 요구가 여론의 공감을 얻을지는...",
+      "source": "dnews.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.dnews.co.kr/uhtml/view.jsp?idxno=202611191144119780774",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "dnews.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "c01ffafddd6a1b77",
+      "publishedAt": "2026-11-19",
+      "title": "11월 2주차 해외 ESG 핫클립",
+      "category": "상쇄·외부사업",
+      "summary": "국제항공 탄소 상쇄 ·감축제도(CORSIA) 적격 여부와 전 과정 온실가스 배출 감축 기준을 입찰에 반영하며... EU·영국 탄소시장 통합 임박… 영국 배출권 값 상승·CBAM 면제 전망 EU와 영국이 양측 배출권 거래제(ETS)를...",
+      "source": "impacton.net",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.impacton.net/news/articleView.html?idxno=30752",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소시장"
+      ],
+      "duplicateSources": [
+        "impacton.net"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 2,
+      "region": "해외"
     },
     {
       "id": "1f97b201890529ef",
@@ -2634,7 +2803,9 @@
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
         "배출권",
-        "온실가스 배출권"
+        "온실가스 배출권",
+        "배출권거래제",
+        "유상할당"
       ],
       "duplicateSources": [
         "weekly.hankooki.com"
@@ -2881,7 +3052,9 @@
       "url": "https://www.donga.com/news/Society/article/all/20261117/135035537/2",
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
-        "탄소시장"
+        "탄소시장",
+        "배출권",
+        "탄소배출권"
       ],
       "duplicateSources": [
         "동아일보",
@@ -3035,15 +3208,15 @@
         "korea.kr",
         "todayenergy.kr",
         "지디넷코리아",
-        "쿠키뉴스",
         "kukinews.com",
+        "hansbiz.co.kr",
         "동아일보",
         "donga.com",
-        "hansbiz.co.kr",
         "포쓰저널",
         "4th.kr",
         "뉴스;트리",
         "newstree.kr",
+        "쿠키뉴스",
         "대한민국 정책브리핑",
         "esgeconomy.com"
       ],
