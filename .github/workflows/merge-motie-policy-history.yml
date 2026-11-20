@@ -8,7 +8,6 @@ on:
   push:
     branches: [main]
     paths:
-      - ".github/workflows/merge-motie-policy-history.yml"
       - "scripts/sync_motie_policy_expanded.py"
       - "scripts/run_motie_policy_sync.py"
       - "scripts/sync_motie_official_history.py"
@@ -183,13 +182,23 @@ jobs:
         shell: bash
         run: python scripts/policy_integrity.py --before "$RUNNER_TEMP/policy-before.json"
 
+      - name: Bind policy classification and Excel to the dashboard snapshot
+        shell: bash
+        run: python scripts/publish_policy_snapshot.py
+
       - name: Commit expanded industrial ministry history
         shell: bash
         run: |
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add public/data/motie-policy-history.json public/data/policies.json
+          git add -- \
+            public/data/motie-policy-history.json \
+            public/data/policies.json \
+            public/data/policy-event-taxonomy-summary.json \
+            public/data/ets-policy-radar-events.xlsx \
+            public/data/ets-policy-radar-events-fixed.xlsx \
+            public/data/policy-radar-excel.json
 
           if git diff --cached --quiet; then
             echo "산업부 확대 이력에 변경이 없습니다."
@@ -208,6 +217,10 @@ jobs:
               sleep $((attempt * 3))
             done
           fi
+
+      - name: Verify policy snapshot before deployment
+        shell: bash
+        run: python scripts/publish_policy_snapshot.py --verify-only
 
       - name: Configure Pages
         uses: actions/configure-pages@v5

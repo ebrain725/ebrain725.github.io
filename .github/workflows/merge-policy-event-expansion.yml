@@ -16,7 +16,6 @@ on:
     paths:
       - "config/policy_event_taxonomy.json"
       - "scripts/sync_policy_event_expansion.py"
-      - ".github/workflows/merge-policy-event-expansion.yml"
 
 permissions:
   actions: read
@@ -123,8 +122,12 @@ jobs:
           python - <<'PY'
           import json
           import re
+          import sys
           import urllib.parse
           from pathlib import Path
+
+          sys.path.insert(0, "scripts")
+          from policy_integrity import official_key
 
           policy_path = Path("public/data/policies.json")
           expansion_path = Path("public/data/policy-event-expansion.json")
@@ -149,6 +152,10 @@ jobs:
 
           def key(item):
               section = clean(item.get("section") or item.get("sourceType")).lower()
+              if clean(item.get("url")) or clean(item.get("id")):
+                  identity = official_key(item)
+                  if identity and identity.startswith(("climate|", "industry|", "krx|")):
+                      return identity
               source_id = clean(item.get("sourceId"))
               if source_id:
                   return f"{section}|id|{source_id}"
@@ -200,16 +207,9 @@ jobs:
           print(f"정책 레이더 병합 완료: 화면 데이터 {len(policy['items']):,}건")
           PY
 
-      - name: 확대 이벤트를 포함한 숨김 엑셀 재생성
+      - name: 정책 목록·분류·엑셀 동시 갱신
         shell: bash
-        run: |
-          set -euo pipefail
-          python scripts/export_policy_radar_excel.py \
-            --policy-path public/data/policies.json \
-            --bill-path public/data/bills.json \
-            --seminar-path public/data/assembly_seminars.json \
-            --output public/data/ets-policy-radar-events.xlsx \
-            --manifest public/data/policy-radar-excel.json
+        run: python scripts/publish_policy_snapshot.py
 
       - name: 데이터·화면·엑셀 통합 검증
         shell: bash
@@ -293,6 +293,7 @@ jobs:
             [[ -z "$path" ]] && continue
             case "$path" in
               public/data/policy-event-expansion.json|public/data/policy-event-expansion-summary.json|public/data/policies.json|public/data/ets-policy-radar-events.xlsx|public/data/policy-radar-excel.json) ;;
+              public/data/ets-policy-radar-events-fixed.xlsx|public/data/policy-event-taxonomy-summary.json) ;;
               *) echo "::error::허용되지 않은 변경: $path"; unexpected=1 ;;
             esac
           done <<< "$changed"
@@ -311,6 +312,8 @@ jobs:
             public/data/policy-event-expansion-summary.json \
             public/data/policies.json \
             public/data/ets-policy-radar-events.xlsx \
+            public/data/ets-policy-radar-events-fixed.xlsx \
+            public/data/policy-event-taxonomy-summary.json \
             public/data/policy-radar-excel.json
           git commit -m "data: expand official policy event taxonomy"
 
@@ -340,6 +343,7 @@ jobs:
             git status --short
             exit 1
           }
+          python scripts/publish_policy_snapshot.py --verify-only
 
       - name: 배포 원본 해시 계산
         id: source_hash

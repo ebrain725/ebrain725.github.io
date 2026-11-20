@@ -15,6 +15,7 @@ from pathlib import Path
 from typing import Any, Iterable
 from zoneinfo import ZoneInfo
 
+from policy_integrity import official_key
 from policy_event_taxonomy import (
     classify_item,
     climate_candidate_terms,
@@ -69,6 +70,10 @@ def load_document(path: Path) -> dict[str, Any]:
 
 def record_key(item: dict[str, Any]) -> str:
     section = str(item.get("section", "")).strip().lower()
+    if section in ALL_OFFICIAL_SECTIONS:
+        identity = official_key(item)
+        if identity and identity.startswith(("climate|", "industry|", "krx|")):
+            return identity
     board = str(item.get("sourceBoard", "")).strip()
     source_id = str(item.get("sourceId", "")).strip()
     if source_id:
@@ -95,6 +100,9 @@ def merge_record(
     for key, value in other.items():
         if key not in merged or merged.get(key) in (None, "", [], {}):
             merged[key] = value
+    for key in ("id", "url"):
+        if previous.get(key):
+            merged[key] = previous[key]
     merged["matchedKeywords"] = dedupe([
         *(previous.get("matchedKeywords") or []),
         *(candidate.get("matchedKeywords") or []),
@@ -135,6 +143,30 @@ def coverage(items: list[dict[str, Any]], sections: set[str]) -> dict[str, Any]:
             "eventCounts": event_counts(selected),
         }
     return result
+
+
+def unique_section_counts(items: Iterable[dict[str, Any]]) -> Counter:
+    identities: dict[str, set[str]] = {section: set() for section in sorted(ALL_OFFICIAL_SECTIONS)}
+    for item in items:
+        section = item.get("section") if isinstance(item, dict) else None
+        if section in identities:
+            identities[section].add(record_key(item))
+    return Counter({section: len(keys) for section, keys in identities.items()})
+
+
+def merge_classified_records(
+    items: Iterable[dict[str, Any]], taxonomy: dict[str, Any]
+) -> dict[str, dict[str, Any]]:
+    merged: dict[str, dict[str, Any]] = {}
+    for item in items:
+        key = record_key(item)
+        if key in merged:
+            item = merge_record(
+                merged[key], item, taxonomy,
+                dedicated_ets_board=item.get("section") == "krx_notice",
+            )
+        merged[key] = item
+    return merged
 
 
 def enrich_existing(
@@ -201,11 +233,7 @@ def run_climate(
 ) -> tuple[dict[str, Any], dict[str, int]]:
     import sync_climate_policy_expanded as climate
     history = load_document(OFFICIAL_HISTORY_PATH)
-    previous_counts = Counter(
-        str(item.get("section", "")).strip().lower()
-        for item in history["items"]
-        if isinstance(item, dict)
-    )
+    previous_counts = unique_section_counts(history["items"])
     today = datetime.now(KST).date()
     query_start = (
         start_date
@@ -230,14 +258,8 @@ def run_climate(
         collected.extend(classified)
         audits.append(audit)
 
-    merged: dict[str, dict[str, Any]] = {}
-    for item in enrich_existing(history["items"], taxonomy, sections=OFFICIAL_SECTIONS):
-        section = str(item.get("section", "")).strip().lower()
-        merged[record_key(item)] = item
-
-    for item in collected:
-        key = record_key(item)
-        merged[key] = merge_record(merged[key], item, taxonomy) if key in merged else item
+    prior = enrich_existing(history["items"], taxonomy, sections=OFFICIAL_SECTIONS)
+    merged = merge_classified_records([*prior, *collected], taxonomy)
 
     final_items = sorted(
         merged.values(),
@@ -298,11 +320,7 @@ def run_industry(
 ) -> tuple[dict[str, Any], dict[str, int]]:
     import sync_motie_policy_expanded as motie
     history = load_document(MOTIE_HISTORY_PATH)
-    previous_counts = Counter(
-        str(item.get("section", "")).strip().lower()
-        for item in history["items"]
-        if isinstance(item, dict)
-    )
+    previous_counts = unique_section_counts(history["items"])
     today = datetime.now(KST).date()
     query_start = (
         start_date
@@ -335,13 +353,8 @@ def run_industry(
         collected.extend(classified)
         audits.append(audit)
 
-    merged: dict[str, dict[str, Any]] = {}
-    for item in enrich_existing(history["items"], taxonomy, sections=MOTIE_SECTIONS):
-        merged[record_key(item)] = item
-
-    for item in collected:
-        key = record_key(item)
-        merged[key] = merge_record(merged[key], item, taxonomy) if key in merged else item
+    prior = enrich_existing(history["items"], taxonomy, sections=MOTIE_SECTIONS)
+    merged = merge_classified_records([*prior, *collected], taxonomy)
 
     final_items = sorted(
         merged.values(),
@@ -654,11 +667,7 @@ def main() -> int:
     taxonomy = load_taxonomy(TAXONOMY_PATH)
     previous_official = load_document(OFFICIAL_HISTORY_PATH)
     previous_motie = load_document(MOTIE_HISTORY_PATH)
-    previous_counts = Counter(
-        str(item.get("section", "")).strip().lower()
-        for item in [*previous_official["items"], *previous_motie["items"]]
-        if isinstance(item, dict)
-    )
+    previous_counts = unique_section_counts([*previous_official["items"], *previous_motie["items"]])
     previous_keys = {
         record_key(item) for item in [*previous_official["items"], *previous_motie["items"]]
         if isinstance(item, dict)

@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import base64
+import hashlib
 import json
 import math
 import os
@@ -19,7 +20,7 @@ from xml.sax.saxutils import escape
 import export_policy_radar_excel as legacy
 
 ROOT = Path(__file__).resolve().parents[1]
-TEMPLATE_B64 = ROOT / "scripts/policy_excel_template.b64"
+TEMPLATE_B64 = ROOT / "scripts/policy_excel_template_lines"
 OUTPUT = ROOT / "public/data/ets-policy-radar-events.xlsx"
 FIXED_OUTPUT = ROOT / "public/data/ets-policy-radar-events-fixed.xlsx"
 MANIFEST = ROOT / "public/data/policy-radar-excel.json"
@@ -143,7 +144,22 @@ def worksheet_xml(headers: list[str], rows: list[list[Any]], widths: list[float]
     )
 
 
-def build_specs(policy: dict[str, Any], bills: dict[str, Any], seminars: dict[str, Any]) -> tuple[list[tuple[str, list[str], list[list[Any]], list[float]]], dict[str, int]]:
+def policy_source(policy: dict[str, Any], raw: bytes) -> dict[str, Any]:
+    official = [item for item in policy["items"] if item.get("section") in legacy.TABS and item["section"] != "news"]
+    return {
+        "file": "data/policies.json",
+        "sha256": hashlib.sha256(raw).hexdigest(),
+        "lastSync": policy.get("lastSync"),
+        "taxonomyVersion": (policy.get("policyEventTaxonomy") or {}).get("version"),
+        "officialItemCount": len(official),
+        "latestOfficialPublishedAt": max((str(item.get("publishedAt", ""))[:10] for item in official), default=None),
+    }
+
+
+def build_specs(
+    policy: dict[str, Any], bills: dict[str, Any], seminars: dict[str, Any],
+    source: dict[str, Any], generated: str, filename: str,
+) -> tuple[list[tuple[str, list[str], list[list[Any]], list[float]]], dict[str, int]]:
     grouped = {tab: [] for tab in legacy.TAB_ORDER}
     for item in policy.get("items", []):
         if isinstance(item, dict):
@@ -158,20 +174,20 @@ def build_specs(policy: dict[str, Any], bills: dict[str, Any], seminars: dict[st
     seminar_items = [item for item in seminars.get("items", []) if isinstance(item, dict)]
     seminar_items.sort(key=lambda item: (safe_text(item.get("startDate")), safe_text(item.get("startTime")), safe_text(item.get("title"))), reverse=True)
 
-    ph = ["게시일", "분류", "세부 게시판", "직접·연관", "제목", "요약", "일치 주제·키워드", "출처", "중복 건수", "원문 URL", "ID"]
+    ph = ["게시일", "분류", "세부 게시판", "직접·연관", "제목", "요약", "일치 주제·키워드", "출처", "중복 건수", "원문 URL", "ID", "정책 이벤트 유형"]
     sh = ["행사 시작일", "행사 종료일", "시간", "상태", "행사 유형", "제목", "주최기관", "장소", "근거·요약", "자료 게시일", "출처", "중복 건수", "원문 URL", "ID"]
     bh = ["의안번호", "제안일", "최근 처리일", "현재 단계", "제목", "발의자", "발의자 구분", "소관위원회", "주요 분류", "관련도", "관련도 점수", "관련 사유", "제안이유·주요내용", "처리결과", "원문 URL", "의안 ID"]
     mh = ["행사 시작일", "행사 종료일", "시간", "상태", "행사 유형", "제목", "주최", "장소", "게시·최초수집일", "검색 키워드", "관련도", "관련 사유", "요약", "출처", "원문 URL", "ID"]
-    uh = ["탭", "기준일", "시작일", "종료일", "시간", "상태", "분류", "제목", "요약·근거", "기관·주최·발의자", "소관·장소", "키워드", "출처", "원문 URL", "ID"]
+    uh = ["탭", "기준일", "시작일", "종료일", "시간", "상태", "분류", "제목", "요약·근거", "기관·주최·발의자", "소관·장소", "키워드", "출처", "원문 URL", "ID", "정책 이벤트 유형"]
 
     sheets = []
     counts: dict[str, int] = {}
     all_rows: list[list[Any]] = []
     for tab in legacy.TAB_ORDER:
-        rows = [legacy.policy_row(item) for item in grouped[tab]]
+        rows = [legacy.policy_row(item) + [item.get("eventTypes")] for item in grouped[tab]]
         counts[tab] = len(rows)
-        sheets.append((tab, ph, rows, [12, 24, 20, 12, 44, 80, 42, 24, 12, 52, 28]))
-        all_rows.extend(legacy.unified(tab, item, "policy") for item in grouped[tab])
+        sheets.append((tab, ph, rows, [12, 24, 20, 12, 44, 80, 42, 24, 12, 52, 28, 44]))
+        all_rows.extend(legacy.unified(tab, item, "policy") + [item.get("eventTypes")] for item in grouped[tab])
     counts["기관일정"] = len(schedules)
     sheets.append(("기관일정", sh, [legacy.schedule_row(item) for item in schedules], [12, 12, 10, 12, 14, 44, 28, 28, 80, 12, 24, 12, 52, 28]))
     all_rows.extend(legacy.unified("기관일정", item, "schedule") for item in schedules)
@@ -184,18 +200,26 @@ def build_specs(policy: dict[str, Any], bills: dict[str, Any], seminars: dict[st
 
     all_rows.sort(key=lambda row: (safe_text(row[2] or row[1]), safe_text(row[4]), safe_text(row[7])), reverse=True)
     counts["전체 이벤트"] = len(all_rows)
-    generated = datetime.now(KST).isoformat(timespec="seconds")
-    info = [["파일명", OUTPUT.name], ["생성시각(KST)", generated], ["설명", "정책 레이더의 모든 탭을 시트별로 정리한 엑셀 파일"], ["전체 이벤트 건수", len(all_rows)], ["호환성", "artifact_tool 템플릿 기반 OOXML"]]
+    info = [["파일명", filename], ["생성시각(KST)", generated], ["설명", "정책 레이더의 모든 탭을 시트별로 정리한 엑셀 파일"], ["전체 이벤트 건수", len(all_rows)], ["호환성", "artifact_tool 템플릿 기반 OOXML"]]
+    info.extend([
+        ["정책 목록 수집시각(KST)", source["lastSync"]],
+        ["최신 공식자료 게시일", source["latestOfficialPublishedAt"]],
+        ["공식자료 건수", source["officialItemCount"]],
+        ["정책 이벤트 분류 버전", source["taxonomyVersion"]],
+        ["정책 목록 SHA-256", source["sha256"]],
+    ])
     info.extend([[f"{key} 건수", value] for key, value in counts.items() if key != "전체 이벤트"])
     return [
         ("안내", ["항목", "내용"], info, [28, 90]),
-        ("전체 이벤트", uh, all_rows, [22, 12, 12, 12, 10, 12, 24, 46, 80, 30, 30, 42, 24, 52, 28]),
+        ("전체 이벤트", uh, all_rows, [22, 12, 12, 12, 10, 12, 24, 46, 80, 30, 30, 42, 24, 52, 28, 44]),
         *sheets,
     ], counts
 
 
 def template_bytes(path: Path) -> bytes:
-    return base64.b64decode("".join(path.read_text(encoding="ascii").split()))
+    parts = sorted(path.glob("part*.b64")) if path.is_dir() else [path]
+    encoded = "".join(part.read_text(encoding="ascii") for part in parts)
+    return base64.b64decode("".join(encoded.split()), validate=True)
 
 
 def write_workbook(specs: list[tuple[str, list[str], list[list[Any]], list[float]]], output: Path, template_path: Path) -> None:
@@ -247,17 +271,20 @@ def validate(path: Path, expected_rows: int) -> None:
 
 
 def generate(policy_path: Path, bills_path: Path, seminars_path: Path, output: Path, fixed_output: Path, manifest_path: Path, template_path: Path) -> dict[str, Any]:
-    policy = legacy.load(policy_path)
+    policy_raw = policy_path.read_bytes()
+    policy = json.loads(policy_raw)
     bills = legacy.load(bills_path)
     seminars = legacy.load(seminars_path)
-    specs, counts = build_specs(policy, bills, seminars)
+    source = policy_source(policy, policy_raw)
+    generated = datetime.now(KST).isoformat(timespec="seconds")
+    specs, counts = build_specs(policy, bills, seminars, source, generated, output.name)
     write_workbook(specs, output, template_path)
     validate(output, counts["전체 이벤트"])
     fixed_output.write_bytes(output.read_bytes())
     validate(fixed_output, counts["전체 이벤트"])
     result = {
         "schemaVersion": "2.0",
-        "generatedAt": datetime.now(KST).isoformat(timespec="seconds"),
+        "generatedAt": generated,
         "file": f"data/{output.name}",
         "fixedFile": f"data/{fixed_output.name}",
         "fileName": output.name,
@@ -266,6 +293,8 @@ def generate(policy_path: Path, bills_path: Path, seminars_path: Path, output: P
         "totalEventCount": counts["전체 이벤트"],
         "counts": counts,
         "generator": "artifact_tool-template-v2",
+        "policySource": source,
+        "fileSha256": hashlib.sha256(output.read_bytes()).hexdigest(),
         "sourceLastSync": {
             "정책자료": safe_text(policy.get("lastSync")),
             "발의법률안": safe_text(bills.get("lastSync")),

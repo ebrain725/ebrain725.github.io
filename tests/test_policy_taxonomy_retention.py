@@ -89,6 +89,21 @@ class TaxonomyRetentionTests(unittest.TestCase):
         self.assertTrue(sync.is_classified(result))
         self.assertNotIn('taxonomyRetention', result)
 
+    def test_same_climate_board_id_merges_search_and_full_board_links(self):
+        original = self.item('notice', 'old')
+        original.update(id='saved', url='https://mcee.go.kr/board/read.do?searchValue=ETS&boardId=1906260')
+        candidate = dict(
+            original, id='new', sourceId='new',
+            url='https://www.mcee.go.kr/board/read.do?maxPageItems=200&boardId=1906260',
+            summary='배출권 시장안정화 및 배출권 유상경매 물량 공고를 담은 더 긴 공식 본문',
+        )
+        self.assertEqual(sync.record_key(original), sync.record_key(candidate))
+        self.assertEqual(sync.unique_section_counts([original, candidate])['notice'], 1)
+        [merged] = sync.merge_classified_records([original, candidate], self.taxonomy).values()
+        self.assertEqual(merged['id'], original['id'])
+        self.assertEqual(merged['url'], original['url'])
+        self.assertEqual(merged['summary'], candidate['summary'])
+
     def test_full_refresh_does_not_erase_documents_missing_from_new_listing(self):
         original = [self.item(section, section) for section in sorted(sync.OFFICIAL_SECTIONS)]
         fake_collector = types.SimpleNamespace(load_climate_sources=lambda: [])

@@ -161,19 +161,6 @@ jobs:
           set -euo pipefail
           python scripts/apply_policy_radar_topic_taxonomy.py
 
-      - name: 숨김 엑셀 파일도 최신 데이터로 갱신
-        shell: bash
-        run: |
-          set -euo pipefail
-          if [[ -f scripts/export_policy_radar_excel.py ]]; then
-            python scripts/export_policy_radar_excel.py \
-              --policy-path public/data/policies.json \
-              --bill-path public/data/bills.json \
-              --seminar-path public/data/assembly_seminars.json \
-              --output public/data/ets-policy-radar-events.xlsx \
-              --manifest public/data/policy-radar-excel.json
-          fi
-
       - name: 전체 결과 검증
         shell: bash
         run: |
@@ -240,6 +227,10 @@ jobs:
           print("구분별 건수:", counts)
           PY
 
+      - name: 정책 목록·분류·엑셀 동시 갱신
+        shell: bash
+        run: python scripts/publish_policy_snapshot.py
+
       - name: 허용된 파일만 변경됐는지 확인
         shell: bash
         run: |
@@ -253,6 +244,7 @@ jobs:
               public/data/policies.json|public/data/policy-official-history.json|public/data/policy-official-history-summary.json) ;;
               public/data/motie-policy-history.json|public/data/policy-radar-topic-summary.json) ;;
               public/data/ets-policy-radar-events.xlsx|public/data/policy-radar-excel.json) ;;
+              public/data/ets-policy-radar-events-fixed.xlsx|public/data/policy-event-taxonomy-summary.json) ;;
               *) echo "::error::허용되지 않은 변경 파일: $path"; unexpected=1 ;;
             esac
           done <<< "$changed"
@@ -271,10 +263,11 @@ jobs:
             public/data/policy-official-history.json \
             public/data/policy-official-history-summary.json \
             public/data/motie-policy-history.json \
-            public/data/policy-radar-topic-summary.json
-          if [[ -f public/data/ets-policy-radar-events.xlsx ]]; then
-            git add -- public/data/ets-policy-radar-events.xlsx public/data/policy-radar-excel.json
-          fi
+            public/data/policy-radar-topic-summary.json \
+            public/data/policy-event-taxonomy-summary.json \
+            public/data/ets-policy-radar-events.xlsx \
+            public/data/ets-policy-radar-events-fixed.xlsx \
+            public/data/policy-radar-excel.json
 
           if git diff --cached --quiet; then
             echo "저장할 변경사항이 없습니다."
@@ -310,6 +303,7 @@ jobs:
             git status --short
             exit 1
           }
+          python scripts/publish_policy_snapshot.py --verify-only
 
       - name: 핵심 공개파일 해시 계산
         id: hashes

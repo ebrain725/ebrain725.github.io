@@ -1,11 +1,6 @@
 name: Sync Policy Radar
 
 on:
-  # One push run is useful whenever this workflow itself is repaired.
-  push:
-    branches: [main]
-    paths:
-      - ".github/workflows/sync-policies.yml"
   # cron-job.org continues to call this entry point.
   workflow_dispatch:
     inputs:
@@ -218,19 +213,9 @@ jobs:
             rm -f -- "${output}.tmp"
           fi
 
-      - name: Rebuild policy radar Excel
+      - name: Bind policy classification and Excel to the dashboard snapshot
         shell: bash
-        run: |
-          set -euo pipefail
-          cat scripts/policy_excel_template_lines/part*.b64 > /tmp/policy_excel_template.b64
-          python scripts/export_policy_radar_excel_compatible.py \
-            --policy-path public/data/policies.json \
-            --bill-path public/data/bills.json \
-            --seminar-path public/data/assembly_seminars.json \
-            --template-b64 /tmp/policy_excel_template.b64 \
-            --output public/data/ets-policy-radar-events.xlsx \
-            --fixed-output public/data/ets-policy-radar-events-fixed.xlsx \
-            --manifest public/data/policy-radar-excel.json
+        run: python scripts/publish_policy_snapshot.py
 
       - name: Validate retained policy radar data
         shell: bash
@@ -380,6 +365,7 @@ jobs:
               public/data/assembly_seminars.json|\
               public/data/ets-policy-radar-events.xlsx|\
               public/data/ets-policy-radar-events-fixed.xlsx|\
+              public/data/policy-event-taxonomy-summary.json|\
               public/data/policy-radar-excel.json) ;;
               *) echo "::error::허용되지 않은 변경 파일: $path"; unexpected=1 ;;
             esac
@@ -406,6 +392,7 @@ jobs:
             public/data/assembly_seminars.json \
             public/data/ets-policy-radar-events.xlsx \
             public/data/ets-policy-radar-events-fixed.xlsx \
+            public/data/policy-event-taxonomy-summary.json \
             public/data/policy-radar-excel.json
           git commit -m "chore(data): sync retained policy radar"
 
@@ -441,6 +428,7 @@ jobs:
           git fetch origin main
           git reset --hard origin/main
           test -z "$(git status --porcelain)"
+          python scripts/publish_policy_snapshot.py --verify-only
 
       - name: Calculate public verification hashes
         id: hashes
@@ -450,6 +438,8 @@ jobs:
           echo "policies=$(sha256sum public/data/policies.json | awk '{print $1}')" >> "$GITHUB_OUTPUT"
           echo "history=$(sha256sum public/data/news-history.json | awk '{print $1}')" >> "$GITHUB_OUTPUT"
           echo "manifest=$(sha256sum public/data/policy-radar-excel.json | awk '{print $1}')" >> "$GITHUB_OUTPUT"
+          echo "taxonomy=$(sha256sum public/data/policy-event-taxonomy-summary.json | awk '{print $1}')" >> "$GITHUB_OUTPUT"
+          echo "workbook=$(sha256sum public/data/ets-policy-radar-events.xlsx | awk '{print $1}')" >> "$GITHUB_OUTPUT"
 
       - name: Configure Pages
         uses: actions/configure-pages@v6
@@ -479,6 +469,8 @@ jobs:
           POLICIES_SHA: ${{ steps.hashes.outputs.policies }}
           HISTORY_SHA: ${{ steps.hashes.outputs.history }}
           MANIFEST_SHA: ${{ steps.hashes.outputs.manifest }}
+          TAXONOMY_SHA: ${{ steps.hashes.outputs.taxonomy }}
+          WORKBOOK_SHA: ${{ steps.hashes.outputs.workbook }}
         run: |
           set -euo pipefail
           root="${PAGE_URL%/}"
@@ -502,6 +494,9 @@ jobs:
           verify "policies.json" "$POLICIES_SHA"
           verify "news-history.json" "$HISTORY_SHA"
           verify "policy-radar-excel.json" "$MANIFEST_SHA"
+          verify "policy-event-taxonomy-summary.json" "$TAXONOMY_SHA"
+          verify "ets-policy-radar-events.xlsx" "$WORKBOOK_SHA"
+          verify "ets-policy-radar-events-fixed.xlsx" "$WORKBOOK_SHA"
           curl -fsSL --max-time 60 \
             "${root}/data/policies.json?count=${GITHUB_RUN_ID}" -o /tmp/public-policies.json
           python - <<'PY'

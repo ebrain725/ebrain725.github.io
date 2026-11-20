@@ -9,7 +9,6 @@ on:
     branches: [main]
     paths:
       - ".github/triggers/official-policy-history-merge.txt"
-      - ".github/workflows/merge-official-policy-history.yml"
       - "scripts/sync_climate_policy_expanded.py"
       - "config/motie_policy_keywords.json"
       - "config/policy_retained_posts.json"
@@ -206,6 +205,10 @@ jobs:
         shell: bash
         run: python scripts/policy_integrity.py --before "$RUNNER_TEMP/policy-before.json"
 
+      - name: 정책 목록·분류·엑셀 동시 갱신
+        shell: bash
+        run: python scripts/publish_policy_snapshot.py
+
       - name: 확대 이력 파일 저장
         shell: bash
         run: |
@@ -215,7 +218,11 @@ jobs:
           git add \
             public/data/policies.json \
             public/data/policy-official-history.json \
-            public/data/policy-official-history-summary.json
+            public/data/policy-official-history-summary.json \
+            public/data/policy-event-taxonomy-summary.json \
+            public/data/ets-policy-radar-events.xlsx \
+            public/data/ets-policy-radar-events-fixed.xlsx \
+            public/data/policy-radar-excel.json
 
           if git diff --cached --quiet; then
             echo "기후부 확대 공식자료 이력에 변경이 없습니다."
@@ -235,6 +242,10 @@ jobs:
               sleep $((attempt * 3))
             done
           fi
+
+      - name: 배포 원본의 정책 스냅숏 대조
+        shell: bash
+        run: python scripts/publish_policy_snapshot.py --verify-only
 
       - name: Pages 설정
         uses: actions/configure-pages@v5
