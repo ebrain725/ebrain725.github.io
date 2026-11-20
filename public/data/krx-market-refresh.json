@@ -28,6 +28,14 @@
     "market_volume": 138410,
     "full_quote_comparison": "unavailable"
   },
-  "last_quote_attempt": null,
-  "collected_at": "2026-11-20T14:24:48+09:00"
+  "last_quote_attempt": {
+    "status": "no_matching_rows",
+    "requested_trade_date": "2026-11-20",
+    "observed_trade_date": null,
+    "source_type": "authorized_open_api",
+    "detail": "HTTP_200_EMPTY_PRICE_LIST; site=HTTP_403",
+    "attempted_at": "2026-11-20T20:26:12+09:00",
+    "workflow_run_id": "44727404258"
+  },
+  "collected_at": "2026-11-20T20:26:12+09:00"
 }
