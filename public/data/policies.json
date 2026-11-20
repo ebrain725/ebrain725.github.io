@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-11-20T18:14:24+09:00",
+  "lastSync": "2026-11-20T22:24:19+09:00",
   "keywords": [
     "배출권",
     "배출권거래제",
@@ -30,7 +30,7 @@
   "warning": "한국거래소 배출권 공지사항: 한국거래소 공지 목록을 해석하지 못했습니다. 1페이지: HTTP Error 403: Forbidden",
   "aiInsight": {
     "summary": "최근 공식자료의 직접적인 수급 변수는 유상경매입니다. 최근 경매가 높은 낙찰가로 소화돼 공급보다 이행수요가 강하다는 신호입니다.",
-    "generatedAt": "2026-11-20T18:14:24+09:00",
+    "generatedAt": "2026-11-20T22:24:19+09:00",
     "basisLatestDate": "2026-11-16",
     "basisCount": 10,
     "source": "fallback",
@@ -1002,12 +1002,13 @@
         "m-i.kr",
         "metroseoul.co.kr",
         "etnews.com",
+        "breaknews.com",
         "ngetnews.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 5,
+      "duplicateCount": 6,
       "region": "국내"
     },
     {
@@ -1133,6 +1134,31 @@
       "region": "국내"
     },
     {
+      "id": "3419f59363160107",
+      "publishedAt": "2026-11-20",
+      "title": "영국·EU, 관계 재설정 협상 합의…식품 교역 장벽 낮춘다",
+      "category": "제도",
+      "summary": "협상이 마무리됐다\"며 \"양측은 청년 이동성 제도와 위생 및 식물위생(SPS) 협정, 탄소 배출권 거래제 시행을 위해 노력할 것\"이라고 밝혔다. 영국과 EU 관계자들에 따르면 이번 합의는 식품 교역 장벽 완화, 탄소 배출권 ...",
+      "source": "news1.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.news1.kr/world/europe/6361430",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "news1.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
       "id": "5abaa4c56f9993f5",
       "publishedAt": "2026-11-20",
       "title": "에너지 비용 높은 한국, 정유 효율은 세계 최상위권…비결은?",
@@ -1223,6 +1249,30 @@
       ],
       "duplicateSources": [
         "megaeconomy.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "7d60fbdd96f67aaa",
+      "publishedAt": "2026-11-20",
+      "title": "브렉시트로 갈라선 EU·영국, 정상회담서 관계 재설정 시동",
+      "category": "제도",
+      "summary": "식품 무역장벽 완화· 탄소 배출권 연계·청년 이동 개선 등 합의 버넘 \"양측 모두에 좋은 날\"…'EU 유학생 동일 등록금 적용'엔 이견 현윤경 특파원 = 유럽연합(EU)과 영국이 브렉시트(영국의 EU 탈퇴) 결정 10년이 지난 시점에...",
+      "source": "yna.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.yna.co.kr/view/AKR20261120177900098?input=1195m",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "yna.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -1377,7 +1427,7 @@
     {
       "id": "d0c4026427b78a18",
       "publishedAt": "2026-11-20",
-      "title": "英, EU에 경제장벽 낮추기 \"청년 10만명 英취업 허용\"",
+      "title": "英, EU에 경제장벽 낮추기 … \"청년 10만명 英취업 허용\"",
       "category": "제도",
       "summary": "양측은 식품 교역과 탄소 배출권 거래 시장 , 청년 교류 등 3개 분야에서 협력을 확대하기로 했다. 가장 눈에 띄는 것은 청년 교류 확대다. 영국은 EU 회원국의 31세 이하 청년에게 매년 최대 10만개의 취업 비자를...",
       "source": "mk.co.kr",
@@ -1399,6 +1449,30 @@
       "region": "국내"
     },
     {
+      "id": "a544a195845a0051",
+      "publishedAt": "2026-11-20",
+      "title": "英 생산성연구소 \"영국 경제, EU에 다시 가입할 경우 3.7% 더 성장\"",
+      "category": "시장·가격",
+      "summary": "양측 이들 협정을 통해 식음료 수출에 대한 국경 검역 절차를 없애고, 영국과 EU의 탄소 배출권 가격제도를 다시 연계하며, 18~30세 청년을 대상으로 한 '청년 경험(youth experience)' 프로그램을 도입할 것으로 관측되고...",
+      "source": "newspim.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newspim.com/news/view/20261120001166",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "newspim.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
       "id": "22c754769e4e7d2f",
       "publishedAt": "2026-11-20",
       "title": "【박소현의 탄소시장 브리핑】 배출권 거래제, 녹색대전환의 과제",
@@ -1415,12 +1489,14 @@
         "탄소시장"
       ],
       "duplicateSources": [
+        "임팩트온",
         "impacton.net"
       ],
       "searchProviders": [
+        "Google News RSS",
         "NAVER API HUB"
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "region": "해외"
     },
     {
@@ -291565,10 +291641,10 @@
   },
   "newsRetention": {
     "policy": "append-only",
-    "lastMergedAt": "2026-11-20T18:14:31+09:00",
-    "itemCount": 2366,
-    "archiveBefore": 2353,
-    "currentBefore": 2181,
+    "lastMergedAt": "2026-11-20T22:24:26+09:00",
+    "itemCount": 2369,
+    "archiveBefore": 2366,
+    "currentBefore": 2183,
     "gitRecoveryEnabled": false
   },
   "policyEventTaxonomy": {
