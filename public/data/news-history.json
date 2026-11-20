@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-20T10:14:26+09:00",
+  "generatedAt": "2026-11-20T13:10:15+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 2339,
+  "itemCount": 2346,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-20",
   "sourceCommitsScanned": 0,
@@ -12,6 +12,56 @@
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "44248f6a7f57b273",
+      "publishedAt": "2026-11-20",
+      "title": "전남광주통합특별시, '탄소국경조정제도 선제 대응'... 24일 국가 지원사...",
+      "category": "제도",
+      "summary": "기업탄소액션은 법정 온실가스 배출권 거래제 비대상 기업이 자발적으로 온실가스를 감축하고 배출권 모의거래에 참여해 감축 실적을 쌓는 제도로 전남광주통합특별시가 지난 2024년부터 전국 최초로 도입해 선도적으로...",
+      "source": "newsworker.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newsworker.co.kr/news/articleView.html?idxno=515238",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "온실가스 배출권"
+      ],
+      "duplicateSources": [
+        "newsworker.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "89585661d8562d12",
+      "publishedAt": "2026-11-20",
+      "title": "전남광주시, 중소·중견기업 탄소중립 전환 지원…24일 국가 지원사업 ...",
+      "category": "제도",
+      "summary": "기업탄소액션은 온실가스 배출권 거래제 비대상 기업이 자발적으로 온실가스를 감축하고 배출권 모의거래에 참여하는 사업으로, 시가 2024년부터 전국 최초로 도입해 운영하고 있다. 이번 설명회는 전남광주지역 중소...",
+      "source": "etnews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.etnews.com/20261120000148",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "온실가스 배출권"
+      ],
+      "duplicateSources": [
+        "etnews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
     {
       "id": "22218ccb679e124a",
       "publishedAt": "2026-11-20",
@@ -61,6 +111,78 @@
       "region": "국내"
     },
     {
+      "id": "29a7948fde17a407",
+      "publishedAt": "2026-11-20",
+      "title": "군산시, 공공사업 기획단계부터 ‘ 온실가스 사전검토’…내년 시범도입",
+      "category": "제도",
+      "summary": "전북 군산시가 내년부터 신규 공공사업 기획단계에서 배출 영향을 미리 살피는 ' 온실가스 사전검토제'를... 이를위해 시 소유 환경기초시설 29곳은 배출권 거래제에 대응해 시설별 배출량을 점검하고 노후 설비 개선과...",
+      "source": "newsis.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newsis.com/view/NISX20261120_0003876432",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "newsis.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "c17cbab28e96ec0d",
+      "publishedAt": "2026-11-20",
+      "title": "군산시, 2027년 온실가스 사전검토제 시범 운영…감축체계 강화",
+      "category": "제도",
+      "summary": "29개소의 배출권 거래제 대응을 위해 시설별 배출량을 지속적으로 점검하고, 노후설비 개선, 운영 효율화, 폐기물 반입 성상 관리 등 맞춤형 감축대책을 추진한다. 군산시는 공공부문뿐 아니라 민간부문의 온실가스 ...",
+      "source": "gukjenews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.gukjenews.com/news/articleView.html?idxno=3758011",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "gukjenews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "7279051707f6c526",
+      "publishedAt": "2026-11-20",
+      "title": "“브렉시트 힘들어”… 영국, EU 벽 낮추기 잰걸음",
+      "category": "제도",
+      "summary": "우선 육류와 치즈, 와인 등 식품 교역을 가로막던 검역 절차를 대폭 줄이고 브렉시트로 분리됐던 탄소 배출권 거래시장도 다시 연결해 영국 기업의 EU 탄소국경세 부담을 낮출 계획이다. 청년들이 상대 지역에서 최장...",
+      "source": "munhwa.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.munhwa.com/article/11632893?ref=naver",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "munhwa.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
       "id": "65cf0f9074fc8d34",
       "publishedAt": "2026-11-20",
       "title": "[핫이슈] EIU \"현대차, 美서 하이브리드 선회\"…2027년 메모리 매출 1조...",
@@ -101,6 +223,53 @@
       ],
       "duplicateSources": [
         "goodmorningcc.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "69933cb0d0fdd87a",
+      "publishedAt": "2026-11-20",
+      "title": "[H&L어드밴스드 리스크] 비축유 긴급임차·NCC 감축… 제품공급·환경규...",
+      "category": "제도",
+      "summary": "당시 회사가 추정한 무상할당 배출권 수량은 236만1000톤으로 예상 배출량보다 45만9000톤 적었다. 올해 6월... 무상할당 배출권 추정치는 408만1000톤으로 예상 배출량보다 46만9000톤 적다. 합병 이전보다 그 차이가 1만톤...",
+      "source": "newsclaim.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newsclaim.co.kr/news/articleView.html?idxno=3083498",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "newsclaim.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "8d1b955b61b96dd4",
+      "publishedAt": "2026-11-20",
+      "title": "NH농협은행, 기후금융·포용금융 중심 ESG 경영 강화",
+      "category": "제도",
+      "summary": "농협은행은 지난 7월 전국 20개 농가로부터 농업인 탄소 배출권 5254톤을 구매했다. 2024년 1419톤, 2025년 8245톤에 이어 탄소 배출권 매입을 지속하며 농가의 추가 소득 창출과 농업 부문 온실가스 감축을 지원하고 있다....",
+      "source": "job-post.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.job-post.co.kr/news/articleView.html?idxno=239788",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "job-post.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -4368,7 +4537,8 @@
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
         "배출권",
-        "배출권거래제"
+        "배출권거래제",
+        "탄소배출권"
       ],
       "duplicateSources": [
         "이데일리",
@@ -5971,8 +6141,8 @@
       ],
       "duplicateCount": 7,
       "duplicateSources": [
-        "연합뉴스 한민족센터",
         "연합뉴스",
+        "연합뉴스 한민족센터",
         "코리아포스트 한글판",
         "헤럴드경제",
         "biz.heraldcorp.com",
