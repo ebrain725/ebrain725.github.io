@@ -3646,7 +3646,7 @@
         "status": "retained_unmatched",
         "reason": "NO_CURRENT_TAXONOMY_MATCH",
         "taxonomyVersion": "2026-09-11-v1-user-38-events",
-        "recordKey": "press|url|https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=1000&maxIndexPages=10&searchKey=&searchValue=&menuId=10598&orgCd=&boardMasterId=939&boardId=1908320"
+        "recordKey": "climate|1908320"
       }
     },
     {
@@ -7169,7 +7169,7 @@
         "status": "retained_unmatched",
         "reason": "NO_CURRENT_TAXONOMY_MATCH",
         "taxonomyVersion": "2026-09-11-v1-user-38-events",
-        "recordKey": "press|url|https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=1000&maxIndexPages=10&searchKey=&searchValue=&menuId=10598&orgCd=&boardMasterId=939&boardId=1907300"
+        "recordKey": "climate|1907300"
       }
     },
     {
@@ -7689,7 +7689,7 @@
         "status": "retained_unmatched",
         "reason": "NO_CURRENT_TAXONOMY_MATCH",
         "taxonomyVersion": "2026-09-11-v1-user-38-events",
-        "recordKey": "press|url|https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=1000&maxIndexPages=10&searchKey=&searchValue=&menuId=10598&orgCd=&boardMasterId=939&boardId=1906890"
+        "recordKey": "climate|1906890"
       }
     },
     {
@@ -16411,7 +16411,7 @@
         "status": "retained_unmatched",
         "reason": "NO_CURRENT_TAXONOMY_MATCH",
         "taxonomyVersion": "2026-09-11-v1-user-38-events",
-        "recordKey": "motie_press|ATCL3f49a5a8c|172370"
+        "recordKey": "industry|ATCL3f49a5a8c|172370"
       }
     },
     {
@@ -18721,7 +18721,7 @@
         "status": "retained_unmatched",
         "reason": "NO_CURRENT_TAXONOMY_MATCH",
         "taxonomyVersion": "2026-09-11-v1-user-38-events",
-        "recordKey": "notice|url|https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=200&maxIndexPages=10&searchKey=&searchValue=&menuId=10524&orgCd=&boardMasterId=39&boardId=1903290"
+        "recordKey": "climate|1903290"
       }
     },
     {
@@ -26289,7 +26289,7 @@
         "status": "retained_unmatched",
         "reason": "NO_CURRENT_TAXONOMY_MATCH",
         "taxonomyVersion": "2026-09-11-v1-user-38-events",
-        "recordKey": "notice|url|https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=200&maxIndexPages=10&searchKey=&searchValue=&menuId=10524&orgCd=&boardMasterId=39&boardId=1900920"
+        "recordKey": "climate|1900920"
       }
     },
     {
@@ -38457,7 +38457,7 @@
         "status": "retained_unmatched",
         "reason": "NO_CURRENT_TAXONOMY_MATCH",
         "taxonomyVersion": "2026-09-11-v1-user-38-events",
-        "recordKey": "notice|url|https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=200&maxIndexPages=10&searchKey=&searchValue=&menuId=10524&orgCd=&boardMasterId=39&boardId=1895550"
+        "recordKey": "climate|1895550"
       }
     },
     {
@@ -39016,10 +39016,22 @@
             "content",
             "evidence"
           ]
+        },
+        {
+          "id": "ets_system",
+          "label": "배출권·배출권거래제·ETS",
+          "scope": "direct",
+          "matchedTerms": [
+            "배출권"
+          ],
+          "matchedFields": [
+            "evidence"
+          ]
         }
       ],
       "eventIds": [
-        "compliance_settlement_deadline"
+        "compliance_settlement_deadline",
+        "ets_system"
       ],
       "eventTypes": [
         "이행·정산·제출기한",
@@ -42627,7 +42639,7 @@
         "status": "retained_unmatched",
         "reason": "NO_CURRENT_TAXONOMY_MATCH",
         "taxonomyVersion": "2026-09-11-v1-user-38-events",
-        "recordKey": "notice|url|https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=200&maxIndexPages=10&searchKey=&searchValue=&menuId=10524&orgCd=&boardMasterId=39&boardId=1894230"
+        "recordKey": "climate|1894230"
       }
     },
     {
@@ -43936,7 +43948,7 @@
         "status": "retained_unmatched",
         "reason": "NO_CURRENT_TAXONOMY_MATCH",
         "taxonomyVersion": "2026-09-11-v1-user-38-events",
-        "recordKey": "press|url|https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=1000&maxIndexPages=10&searchKey=&searchValue=&menuId=10598&orgCd=&boardMasterId=939&boardId=1892970"
+        "recordKey": "climate|1892970"
       }
     },
     {
@@ -44591,7 +44603,7 @@
         "status": "retained_unmatched",
         "reason": "NO_CURRENT_TAXONOMY_MATCH",
         "taxonomyVersion": "2026-09-11-v1-user-38-events",
-        "recordKey": "motie_press|ATCL3f49a5a8c|172227"
+        "recordKey": "industry|ATCL3f49a5a8c|172227"
       }
     },
     {
@@ -50938,7 +50950,7 @@
         "status": "retained_unmatched",
         "reason": "NO_CURRENT_TAXONOMY_MATCH",
         "taxonomyVersion": "2026-09-11-v1-user-38-events",
-        "recordKey": "press|url|https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=1000&maxIndexPages=10&searchKey=&searchValue=&menuId=10598&orgCd=&boardMasterId=939&boardId=1890080"
+        "recordKey": "climate|1890080"
       }
     },
     {
@@ -51620,7 +51632,7 @@
         "status": "retained_unmatched",
         "reason": "NO_CURRENT_TAXONOMY_MATCH",
         "taxonomyVersion": "2026-09-11-v1-user-38-events",
-        "recordKey": "notice|url|https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=200&maxIndexPages=10&searchKey=&searchValue=&menuId=10524&orgCd=&boardMasterId=39&boardId=1889500"
+        "recordKey": "climate|1889500"
       }
     },
     {
@@ -64704,7 +64716,7 @@
         "status": "retained_unmatched",
         "reason": "NO_CURRENT_TAXONOMY_MATCH",
         "taxonomyVersion": "2026-09-11-v1-user-38-events",
-        "recordKey": "press|url|https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=1000&maxIndexPages=10&searchKey=&searchValue=&menuId=10598&orgCd=&boardMasterId=939&boardId=1882780"
+        "recordKey": "climate|1882780"
       }
     },
     {
@@ -64815,7 +64827,7 @@
         "status": "retained_unmatched",
         "reason": "NO_CURRENT_TAXONOMY_MATCH",
         "taxonomyVersion": "2026-09-11-v1-user-38-events",
-        "recordKey": "notice|url|https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=200&maxIndexPages=10&searchKey=&searchValue=&menuId=10524&orgCd=&boardMasterId=39&boardId=1882860"
+        "recordKey": "climate|1882860"
       }
     },
     {
@@ -291064,5 +291076,58 @@
     "archiveBefore": 2346,
     "currentBefore": 2162,
     "gitRecoveryEnabled": false
+  },
+  "policyEventTaxonomy": {
+    "version": "2026-09-11-v1-user-38-events",
+    "configFile": "config/policy_event_taxonomy.json",
+    "summaryFile": "data/policy-event-taxonomy-summary.json",
+    "eventCount": 38,
+    "officialItemCount": 4566,
+    "taxonomyMatchedItemCount": 4552,
+    "retainedUnmatchedItemCount": 14,
+    "scopeCounts": {
+      "direct": 1070,
+      "related": 3482
+    },
+    "eventCounts": {
+      "재생에너지·RPS": 920,
+      "배출권·배출권거래제·ETS": 894,
+      "원자력발전·원전": 824,
+      "온실가스·배출량·명세서": 726,
+      "탄소중립 선언·기본계획": 584,
+      "유상할당 비율": 358,
+      "시장안정화·MSR": 269,
+      "중국 증설·반덤핑·관세": 238,
+      "추가할당·할당취소": 220,
+      "할당계획·할당량": 197,
+      "국제감축·외부사업·감축실적": 196,
+      "폭염·한파·전력수요": 114,
+      "이행·정산·제출기한": 104,
+      "낙찰가·응찰배수": 96,
+      "수소발전·청정수소": 84,
+      "탄소국경조정·CBAM": 75,
+      "전력수급기본계획·전원구성": 63,
+      "석탄발전": 62,
+      "증설·상업가동": 59,
+      "전력시장·급전(포괄)": 55,
+      "시장참여자 확대·시장조성": 48,
+      "RE100": 43,
+      "상쇄배출권·전환한도": 38,
+      "화재·폭발·침수·가동중단": 34,
+      "유상경매 물량·일정": 32,
+      "NDC·국가 감축목표": 27,
+      "거래량·거래대금": 19,
+      "이월·차입 한도": 17,
+      "EU ETS·EUA": 12,
+      "LNG발전": 12,
+      "업종 생산·가동률 통계": 11,
+      "발전제약": 9,
+      "원전 불시정지·정비연장": 4,
+      "정기보수·셧다운": 4,
+      "감산·가동률 조정": 3,
+      "제도 확정 지연·소송": 3,
+      "SMP": 2,
+      "대량 매도·보유물량 출회": 1
+    }
   }
 }
