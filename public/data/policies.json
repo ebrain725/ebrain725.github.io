@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-11-20T13:23:52+09:00",
+  "lastSync": "2026-11-20T15:14:43+09:00",
   "keywords": [
     "배출권",
     "배출권거래제",
@@ -30,7 +30,7 @@
   "warning": "한국거래소 배출권 공지사항: 한국거래소 공지 목록을 해석하지 못했습니다. 1페이지: HTTP Error 403: Forbidden",
   "aiInsight": {
     "summary": "최근 공식자료의 직접적인 수급 변수는 유상경매입니다. 최근 경매가 높은 낙찰가로 소화돼 공급보다 이행수요가 강하다는 신호입니다.",
-    "generatedAt": "2026-11-20T13:23:52+09:00",
+    "generatedAt": "2026-11-20T15:14:43+09:00",
     "basisLatestDate": "2026-11-16",
     "basisCount": 10,
     "source": "fallback",
@@ -859,6 +859,104 @@
   ],
   "items": [
     {
+      "id": "43b4722b9b78009e",
+      "publishedAt": "2026-11-20",
+      "title": "한중일 환경 석학 모인다…25~27일 '동아시아 기후대화'",
+      "category": "제도",
+      "summary": "개회식 오후에는 6개 전문 세션과 특별 워크숍을 통해 산업별 탄소중립 전략과 기후금융, 탄소시장 협력, 인공지능(AI) 기반 환경정보 관리기술 등을 논의한다. 또 무탄소 단지와 저탄소 기술 프로젝트, 기후변화 대응...",
+      "source": "newsis.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newsis.com/view/NISX20261120_0003876843",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "newsis.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "b1dd25855c02dc8b",
+      "publishedAt": "2026-11-20",
+      "title": "한·중·일 기후·청년 포럼 25일 신한대서 개막… '청년 주도 동아시아...",
+      "category": "제도",
+      "summary": "전문 세션에서는 산업 탈탄소화 경로, 역내 탄소시장 협력, AI 기반 탄소중립 환경정보 관리기술, 무탄소(제로카본) 단지 및 저탄소 기술 로드쇼, 기후변화 대응 저탄소 건설기술, 13개 기초지자체 탄소중립지원센터...",
+      "source": "newsmap.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newsmap.co.kr/news/articleView.html?idxno=5595",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "newsmap.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "d45d743008c613cf",
+      "publishedAt": "2026-11-20",
+      "title": "탄소배출 관리가 기업 생존 좌우…전남광주, 중소기업 지원 나선다",
+      "category": "제도",
+      "summary": "통합특별시는 배출권 거래제 의무 대상이 아닌 기업을 대상으로 '기업탄소액션' 참여 신청을 받는다. 2024년 전국 최초로 시작한 이 사업은 기업이 스스로 온실가스 감축 활동을 추진하고 배출권 모의거래에도 참여하는...",
+      "source": "namdonews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.namdonews.com/news/articleView.html?idxno=929939",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "namdonews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "e22c5e8b9b4cb1c5",
+      "publishedAt": "2026-11-20",
+      "title": "전남광주특별시, 중소·중견기업 탄소중립 전환 지원",
+      "category": "제도",
+      "summary": "기업탄소액션은 온실가스 배출권 거래제 적용 대상이 아닌 기업이 자발적으로 온실가스를 줄이고 배출권 모의거래에 참여하는 사업이다. 시가 지난 2024년 전국 최초로 도입해 운영하고 있다. 설명회에는 전남광주지역 중소...",
+      "source": "nocutnews.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.nocutnews.co.kr/news/6610149?utm_source=naver&utm_medium=article&utm_campaign=20261120140613",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "온실가스 배출권"
+      ],
+      "duplicateSources": [
+        "nocutnews.co.kr",
+        "m-i.kr",
+        "metroseoul.co.kr",
+        "etnews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 4,
+      "region": "국내"
+    },
+    {
       "id": "44248f6a7f57b273",
       "publishedAt": "2026-11-20",
       "title": "전남광주통합특별시, '탄소국경조정제도 선제 대응'... 24일 국가 지원사...",
@@ -901,6 +999,78 @@
       ],
       "duplicateSources": [
         "etnews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "6f6af7af7533dec1",
+      "publishedAt": "2026-11-20",
+      "title": "전남광주, 24일 기업 탄소중립 국가지원사업 설명회",
+      "category": "제도",
+      "summary": "시가 2024년 전국 최초로 도입한 '기업 탄소액션'은 온실가스 배출권 거래제 대상이 아닌 기업이 자발적으로 온실가스를 감축하고 배출권 모의 거래에 참여하는 사업이다.",
+      "source": "newsis.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newsis.com/view/NISX20261120_0003876753",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "온실가스 배출권"
+      ],
+      "duplicateSources": [
+        "newsis.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "fcf5134d2b6e1c5a",
+      "publishedAt": "2026-11-20",
+      "title": "재경위, 재경부 예산 '증액'·기획처 '감액'…미래대응기금은 여야 '평행...",
+      "category": "제도",
+      "summary": "재경위는 이번 예산안에 대해 \"재경부는 전략경제 제도기반 조성 사업에 대해 시범사업 후 필요한 예산 소요가 중기재정계획에 적절히 반영되도록 노력해야 한다\"며 \"기획처는 자발적 탄소시장 활성화 지원 사업 추진...",
+      "source": "mtn.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://news.mtn.co.kr/article/2026112013562071474",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "mtn.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "c807b3710f356aff",
+      "publishedAt": "2026-11-20",
+      "title": "이후, 송전선 대신 수소 운송…이동식 전력망 '파워셔틀' 사업화 추진",
+      "category": "제도",
+      "summary": "이후는 지난 17일 이동식 수소 에너지 통합 플랫폼 '파워셔틀(POWER SHUTTLE)'을 활용해 분산형 전력망 시장 에... 수익, 탄소 배출권 등을 합산한 연간 편익은 약 5억2400만원으로 추정했다. 이를 바탕으로 초기 투자비 회수...",
+      "source": "thepowernews.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.thepowernews.co.kr/view.php?ud=2026112012402872853dfcd109a8_7",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "thepowernews.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -6423,7 +6593,8 @@
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
         "배출권",
-        "배출권거래제"
+        "배출권거래제",
+        "탄소배출권"
       ],
       "duplicateSources": [
         "임팩트온",
@@ -291071,10 +291242,10 @@
   },
   "newsRetention": {
     "policy": "append-only",
-    "lastMergedAt": "2026-11-20T13:23:59+09:00",
-    "itemCount": 2346,
+    "lastMergedAt": "2026-11-20T15:14:49+09:00",
+    "itemCount": 2353,
     "archiveBefore": 2346,
-    "currentBefore": 2162,
+    "currentBefore": 2168,
     "gitRecoveryEnabled": false
   },
   "policyEventTaxonomy": {
