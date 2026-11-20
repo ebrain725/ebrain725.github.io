@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-21T03:01:39+09:00",
+  "generatedAt": "2026-11-21T08:13:48+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 2375,
+  "itemCount": 2376,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-21",
   "sourceCommitsScanned": 0,
@@ -28,13 +28,41 @@
         "탄소배출권"
       ],
       "duplicateSources": [
+        "kbs.co.kr",
         "yna.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "region": "해외"
+    },
+    {
+      "id": "78e859b1661990c6",
+      "publishedAt": "2026-11-21",
+      "title": "英·EU, 브렉시트 10년만에 관계 재설정…식품 교역 완화·청년 취업 허...",
+      "category": "제도",
+      "summary": "양측은 정상회의 공동 성명을 통해 식물위생, 탄소 배출권 거래제(ETS) 연계, 청년 교류 프로그램에... 탄소 배출권 거래 시장도 다시 연결해 철강과 같은 상품이 상대방의 탄소국경조정제도(CBAM) 부과 대상에서 면제된다....",
+      "source": "newsis.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newsis.com/view/NISX20261121_0003877501",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "newspim.com",
+        "newsis.com",
+        "biz.chosun.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 3,
+      "region": "국내"
     },
     {
       "id": "ddbd17ee0b437805",
@@ -6861,8 +6889,8 @@
       ],
       "duplicateCount": 7,
       "duplicateSources": [
-        "연합뉴스 한민족센터",
         "연합뉴스",
+        "연합뉴스 한민족센터",
         "코리아포스트 한글판",
         "헤럴드경제",
         "biz.heraldcorp.com",

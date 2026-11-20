@@ -1,37 +1,37 @@
 {
   "schemaVersion": "2.0",
-  "generatedAt": "2026-11-21T07:26:48+09:00",
+  "generatedAt": "2026-11-21T08:20:02+09:00",
   "file": "data/ets-policy-radar-events.xlsx",
   "fixedFile": "data/ets-policy-radar-events-fixed.xlsx",
   "fileName": "ets-policy-radar-events.xlsx",
-  "fileBytes": 5246802,
+  "fileBytes": 5247114,
   "sheetCount": 11,
-  "totalEventCount": 6990,
+  "totalEventCount": 6991,
   "counts": {
     "기후부 보도자료": 959,
     "기후부 공지사항": 440,
     "산업부 보도자료": 1896,
     "산업부 공지사항": 955,
     "한국거래소 공지사항": 316,
-    "뉴스": 2375,
+    "뉴스": 2376,
     "기관일정": 25,
     "발의법률안": 20,
     "국회의원 세미나 일정": 4,
-    "전체 이벤트": 6990
+    "전체 이벤트": 6991
   },
   "generator": "artifact_tool-template-v2",
   "policySource": {
     "file": "data/policies.json",
-    "sha256": "964068bd410dcf5d59bc75b1c51eec1b26165e35ea056665e759dfdd77826895",
-    "lastSync": "2026-11-21T03:01:31+09:00",
+    "sha256": "2ca1222bdcd8f36292a0263a9d44941ed67b2abf9e561d31a95dd125bd2feb21",
+    "lastSync": "2026-11-21T08:13:42+09:00",
     "taxonomyVersion": "2026-09-11-v1-user-38-events",
     "officialItemCount": 4566,
     "latestOfficialPublishedAt": "2026-11-19"
   },
-  "fileSha256": "50855ce9f7add79a50dc8e0cebb3be27aafdcab5263657961e602d04dd05fcb5",
+  "fileSha256": "d20418397b1160f727aa73ef5ba21a5012bea9b70c7ef9f7796fcf2e498d9747",
   "sourceLastSync": {
-    "정책자료": "2026-11-21T03:01:31+09:00",
-    "발의법률안": "2026-11-21T03:09:40+09:00",
-    "국회 세미나": "2026-11-21T03:09:48+09:00"
+    "정책자료": "2026-11-21T08:13:42+09:00",
+    "발의법률안": "2026-11-21T08:19:17+09:00",
+    "국회 세미나": "2026-11-21T08:19:23+09:00"
   }
 }
