@@ -109,6 +109,8 @@ def site_open_text(
                 return response.read().decode("utf-8")
         except (urllib.error.URLError, TimeoutError, OSError) as exc:
             last_error = exc
+            if isinstance(exc, urllib.error.HTTPError) and exc.code in {401, 403}:
+                break
             if attempt + 1 < attempts:
                 time.sleep(2 ** attempt)
     raise RuntimeError(f"KRX 정보플랫폼 연결 실패: {last_error}")
@@ -461,7 +463,7 @@ def sync_site_auctions() -> int:
     return 0
 
 
-def sync_open_api(symbol: str) -> int:
+def sync_open_api(symbol: str, *, fetch=fetch_rows, on_collected=None) -> int:
     auth_key = os.getenv("KRX_AUTH_KEY", "").strip()
     if not auth_key:
         raise RuntimeError("GitHub Secret KRX_AUTH_KEY가 없습니다.")
@@ -472,7 +474,7 @@ def sync_open_api(symbol: str) -> int:
     selected_rows: list[dict[str, Any]] = []
     for offset in range(15):
         candidate = target - timedelta(days=offset)
-        found = kau_rows(fetch_rows(candidate, auth_key), symbol)
+        found = kau_rows(fetch(candidate, auth_key), symbol)
         if found:
             selected_day, selected_rows = candidate, found
             break
@@ -482,6 +484,8 @@ def sync_open_api(symbol: str) -> int:
     existing = read_existing()
     updates = [csv_row(selected_day, row, existing) for row in selected_rows]
     write_updates(existing, updates)
+    if on_collected is not None:
+        on_collected(target, selected_day)
     labels = ", ".join(row["symbol"] for row in updates)
     print(f"KRX Open API {selected_day.isoformat()} 시세 {len(updates)}건 반영: {labels}")
     return 0

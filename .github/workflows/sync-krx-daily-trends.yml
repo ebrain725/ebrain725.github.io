@@ -192,6 +192,7 @@ jobs:
           # 손상된 기존 누적본을 빈 데이터로 오인해 덮어쓰지 않도록
           # 네트워크 수집 전에 먼저 검증합니다.
           python -B -m unittest discover -s tests -p 'test_krx_daily_transport.py' -v
+          python -B -m unittest discover -s tests -p 'test_krx_market_receipt.py' -v
           python -B scripts/sync_krx_daily_trends.py --mode validate
           python -B scripts/sync_krx_daily_trends.py
 
@@ -201,6 +202,7 @@ jobs:
         run: |
           set -euo pipefail
           python -B scripts/sync_krx_daily_trends.py --mode validate
+          python -B scripts/krx_market_receipt.py build
 
       - name: Confirm only KRX daily trend data changed
         if: steps.window.outputs.should_run == 'true'
@@ -219,7 +221,7 @@ jobs:
           while IFS= read -r path; do
             [[ -z "$path" ]] && continue
             case "$path" in
-              public/data/krx-daily/index.json|public/data/krx-daily/latest.json|public/data/krx-daily/quality.json) ;;
+              public/data/krx-market-refresh.json|public/data/krx-daily/index.json|public/data/krx-daily/latest.json|public/data/krx-daily/quality.json) ;;
               public/data/krx-daily/by-month/20[0-9][0-9]-0[1-9].json) ;;
               public/data/krx-daily/by-month/20[0-9][0-9]-1[0-2].json) ;;
               public/data/krx-daily/sources/20[0-9][0-9].json) ;;
@@ -258,7 +260,7 @@ jobs:
           # 수집기 검증은 각 PDF의 크기·SHA-256을 활성 report와 대조한다.
           python -B scripts/sync_krx_daily_trends.py --mode validate
 
-          if [[ -n "$(git status --porcelain -- public/data/krx-daily)" ]]; then
+          if [[ -n "$(git status --porcelain -- public/data/krx-daily public/data/krx-market-refresh.json)" ]]; then
             echo "changed=true" >> "$GITHUB_OUTPUT"
           else
             echo "changed=false" >> "$GITHUB_OUTPUT"
@@ -274,13 +276,13 @@ jobs:
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -- public/data/krx-daily
+          git add -- public/data/krx-daily public/data/krx-market-refresh.json
           git diff --cached --check
           staged="$(git diff --cached --name-only)"
           while IFS= read -r path; do
             [[ -z "$path" ]] && continue
             case "$path" in
-              public/data/krx-daily/index.json|public/data/krx-daily/latest.json|public/data/krx-daily/quality.json) ;;
+              public/data/krx-market-refresh.json|public/data/krx-daily/index.json|public/data/krx-daily/latest.json|public/data/krx-daily/quality.json) ;;
               public/data/krx-daily/by-month/20[0-9][0-9]-0[1-9].json) ;;
               public/data/krx-daily/by-month/20[0-9][0-9]-1[0-2].json) ;;
               public/data/krx-daily/sources/20[0-9][0-9].json) ;;
@@ -353,7 +355,7 @@ jobs:
           fi
 
           python -B scripts/sync_krx_daily_trends.py --mode validate
-          for data_file in public/data/krx-daily/index.json public/data/krx-daily/latest.json; do
+          for data_file in public/data/krx-daily/index.json public/data/krx-daily/latest.json public/data/krx-market-refresh.json; do
             committed_hash="$(git show "HEAD:${data_file}" | sha256sum | awk '{print $1}')"
             worktree_hash="$(sha256sum "$data_file" | awk '{print $1}')"
             if [[ "$committed_hash" != "$worktree_hash" ]]; then
@@ -362,24 +364,6 @@ jobs:
             fi
           done
 
-          echo "index_sha256=$(sha256sum public/data/krx-daily/index.json | awk '{print $1}')" >> "$GITHUB_OUTPUT"
-          echo "latest_sha256=$(sha256sum public/data/krx-daily/latest.json | awk '{print $1}')" >> "$GITHUB_OUTPUT"
-          latest_pdf_path="$(python -B - <<'PY'
-          import json
-          from pathlib import Path
-
-          payload = json.loads(
-              Path("public/data/krx-daily/latest.json").read_text(encoding="utf-8")
-          )
-          print(str((payload.get("item") or {}).get("pdfUrl") or ""))
-          PY
-          )"
-          if [[ -z "$latest_pdf_path" || ! -f "public/$latest_pdf_path" ]]; then
-            echo "::error::최신 활성 보고서 PDF가 배포 원본에 없습니다."
-            exit 1
-          fi
-          echo "latest_pdf_path=$latest_pdf_path" >> "$GITHUB_OUTPUT"
-          echo "latest_pdf_sha256=$(sha256sum "public/$latest_pdf_path" | awk '{print $1}')" >> "$GITHUB_OUTPUT"
           echo "배포 원본 커밋: $(git rev-parse HEAD)"
 
       - name: Configure GitHub Pages
@@ -408,47 +392,11 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v5
 
-      - name: Verify public KRX daily trend indexes and latest PDF
+      - name: Verify public KRX indexes, quotes, receipt and latest PDF
         if: steps.source_revision.outcome == 'success'
-        shell: bash
         env:
           PAGE_URL: ${{ steps.deployment.outputs.page_url }}
-          EXPECTED_INDEX_SHA256: ${{ steps.source_revision.outputs.index_sha256 }}
-          EXPECTED_LATEST_SHA256: ${{ steps.source_revision.outputs.latest_sha256 }}
-          LATEST_PDF_PATH: ${{ steps.source_revision.outputs.latest_pdf_path }}
-          EXPECTED_LATEST_PDF_SHA256: ${{ steps.source_revision.outputs.latest_pdf_sha256 }}
-        run: |
-          set -euo pipefail
-
-          page_root="${PAGE_URL%/}"
-          verify_public_file() {
-            local relative_path="$1"
-            local expected_sha256="$2"
-            local downloaded
-            downloaded="$(mktemp)"
-            for attempt in 1 2 3 4 5 6 7 8; do
-              if curl --fail --silent --show-error --location \
-                --max-time 20 \
-                --header "Cache-Control: no-cache" \
-                "${page_root}/${relative_path}?verify=${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}-${attempt}" \
-                --output "$downloaded"; then
-                actual_sha256="$(sha256sum "$downloaded" | awk '{print $1}')"
-                if [[ "$actual_sha256" == "$expected_sha256" ]]; then
-                  echo "공개 ${relative_path} 반영 확인: $actual_sha256"
-                  rm -f "$downloaded"
-                  return 0
-                fi
-              fi
-              sleep 8
-            done
-            rm -f "$downloaded"
-            echo "::error::Pages 공개 ${relative_path}이 배포 원본과 일치하지 않습니다."
-            return 1
-          }
-
-          verify_public_file "data/krx-daily/index.json" "$EXPECTED_INDEX_SHA256"
-          verify_public_file "data/krx-daily/latest.json" "$EXPECTED_LATEST_SHA256"
-          verify_public_file "$LATEST_PDF_PATH" "$EXPECTED_LATEST_PDF_SHA256"
+        run: python -B scripts/krx_market_receipt.py verify "$PAGE_URL" --include-daily-index
 
       - name: Require complete active PDF archive
         if: steps.source_revision.outcome == 'success'

@@ -10,6 +10,7 @@ import urllib.parse
 import urllib.request
 from datetime import date, datetime
 import sync_krx as krx
+from krx_market_receipt import write_quote_attempt
 
 
 class APIResponseError(RuntimeError):
@@ -103,6 +104,7 @@ def sync_today() -> int:
             existing = krx.read_existing()
             updates = [krx.site_csv_row(market_day, row, existing) for row in raw]
             krx.write_updates(existing, updates)
+            write_quote_attempt('collected', today, source='official_site', observed=market_day)
             print('KRX_SOURCE=OFFICIAL_SITE; REQUEST_DATE=' + today.isoformat())
             print('KRX_VERIFIED_SAME_DAY_ROWS ' + json.dumps(updates, ensure_ascii=False))
             return 0
@@ -112,8 +114,16 @@ def sync_today() -> int:
     print('KRX_SITE_RESULT=' + site_error)
     auth_key = os.getenv('KRX_AUTH_KEY', '').strip()
     if not auth_key:
-        raise RuntimeError('KRX_API_CREDENTIAL_MISSING')
-    raw, info = api_rows_exact(today, auth_key)
+        write_quote_attempt('krx_api_credential_missing', today, detail=site_error)
+        print('::warning::KRX_API_CREDENTIAL_MISSING')
+        return 0
+    try:
+        raw, info = api_rows_exact(today, auth_key)
+    except APIResponseError as exc:
+        write_quote_attempt('upstream_error', today, source='authorized_open_api',
+                            detail=exc.diagnostic['result'])
+        print('::warning::' + str(exc))
+        return 0
     rows = valid_dated_rows(raw, today, symbol)
     if not rows:
         # A single past-day control identifies working credentials/schema, without saving
@@ -122,11 +132,17 @@ def sync_today() -> int:
                            if r.get('symbol', '').startswith('KAU') and r['date'] < today.isoformat()})
         if previous:
             control_day = date.fromisoformat(previous[-1])
-            control_raw, control = api_rows_exact(control_day, auth_key)
-            control_rows = valid_dated_rows(control_raw, control_day, symbol)
-            print('KRX_PREVIOUS_DAY_CONTROL ' + json.dumps({'date': control_day.isoformat(),
-                'http_status': control['http_status'], 'response_rows': control['response_rows'],
-                'valid_kau_rows': len(control_rows), 'prices_not_modified': True}, ensure_ascii=False))
+            try:
+                control_raw, control = api_rows_exact(control_day, auth_key)
+            except APIResponseError as exc:
+                print('::warning::KRX_PREVIOUS_DAY_CONTROL_' + exc.diagnostic['result'])
+            else:
+                control_rows = valid_dated_rows(control_raw, control_day, symbol)
+                print('KRX_PREVIOUS_DAY_CONTROL ' + json.dumps({'date': control_day.isoformat(),
+                    'http_status': control['http_status'], 'response_rows': control['response_rows'],
+                    'valid_kau_rows': len(control_rows), 'prices_not_modified': True}, ensure_ascii=False))
+        write_quote_attempt('no_matching_rows', today, source='authorized_open_api',
+                            detail=info['result'] + '; site=' + site_error)
         print('::warning::KRX_TODAY_NOT_COLLECTED: ' + today.isoformat()
               + '; API=' + info['result'] + '; website=' + site_error
               + '. This is not a claim that the KRX website has no price.')
@@ -134,11 +150,29 @@ def sync_today() -> int:
     existing = krx.read_existing()
     updates = [krx.csv_row(today, row, existing) for row in rows]
     krx.write_updates(existing, updates)
+    write_quote_attempt('collected', today, source='authorized_open_api', observed=today)
     print('KRX_SOURCE=AUTHORIZED_OPEN_API; REQUEST_DATE=' + today.strftime('%Y%m%d'))
     print('KRX_VERIFIED_SAME_DAY_ROWS ' + json.dumps(updates, ensure_ascii=False))
     return 0
 
 
+def sync_open_api() -> int:
+    symbol = os.getenv('KAU_SYMBOL', '').strip()
+
+    def fetch_dated(day, auth_key):
+        raw, _info = api_rows_exact(day, auth_key)
+        return valid_dated_rows(raw, day, symbol)
+
+    def record_applied(requested, observed):
+        write_quote_attempt('collected', requested, source='authorized_open_api', observed=observed)
+
+    return krx.sync_open_api(symbol, fetch=fetch_dated, on_collected=record_applied)
+
+
 if __name__ == '__main__':
     mode = os.getenv('KRX_SYNC_MODE', 'openapi').strip().lower()
-    raise SystemExit(sync_today() if mode in {'site-today', 'site', 'today'} else krx.main())
+    if mode in {'site-today', 'site', 'today'}:
+        raise SystemExit(sync_today())
+    if mode == 'openapi':
+        raise SystemExit(sync_open_api())
+    raise SystemExit(krx.main())

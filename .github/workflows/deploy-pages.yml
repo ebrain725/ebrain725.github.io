@@ -161,3 +161,4 @@ jobs:
           verify_public_file "data/krx-annual-procurement-method.json" "$KRX_ANNUAL_PROCUREMENT_METHOD_SHA256"
           verify_public_file "data/krx-annual/source-files/index.html" "$KRX_ANNUAL_SOURCE_INDEX_SHA256"
           verify_public_file "data/krx-annual/source-files/manifest.json" "$KRX_ANNUAL_SOURCE_MANIFEST_SHA256"
+          python -B scripts/krx_market_receipt.py verify "$PAGE_URL"

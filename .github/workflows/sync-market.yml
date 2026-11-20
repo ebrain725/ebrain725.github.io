@@ -127,9 +127,10 @@ jobs:
               collected=datetime.fromisoformat(receipt['collected_at']).astimezone(ZoneInfo('Asia/Seoul'))
               rows=list(csv.DictReader(prices.open(encoding='utf-8-sig')))
               today=[r for r in rows if r['date']==now.date().isoformat() and r['symbol'].startswith('KAU') and float(r['close'])>0]
-              done=(receipt.get('status')=='same_day_collected' and receipt.get('trade_date')==now.date().isoformat()
-                    and collected.date()==now.date() and collected.time()>=time(12,5) and bool(today)
-                    and receipt.get('prices_sha256')==hashlib.sha256(prices.read_bytes()).hexdigest())
+              full=receipt.get('full_quotes') or {}
+              done=(full.get('trade_date')==now.date().isoformat() and bool(today)
+                    and collected.date()==now.date() and collected.time()>=time(12,5)
+                    and full.get('sha256')==hashlib.sha256(prices.read_bytes()).hexdigest())
           except (OSError,ValueError,KeyError,TypeError):
               done=False
           if done:
@@ -164,31 +165,13 @@ jobs:
         if: env.SHOULD_RUN == 'true'
         run: |
           python -m py_compile scripts/sync_krx.py scripts/sync_krx_resilient.py
-          python scripts/sync_krx_resilient.py
+          KRX_QUOTE_ATTEMPT_PATH="$RUNNER_TEMP/krx-quote-attempt.json" python scripts/sync_krx_resilient.py
 
-      - name: 당일 시세 반영 결과 기록
-        if: env.SHOULD_RUN == 'true' && env.KRX_SYNC_MODE == 'site-today'
+      - name: KRX 시세·대표종목 PDF 출처 기록
+        if: env.SHOULD_RUN == 'true' && env.KRX_SYNC_MODE != 'auction'
         run: |
-          python - <<'PY'
-          import csv, hashlib, json, os
-          from datetime import datetime
-          from pathlib import Path
-          from zoneinfo import ZoneInfo
-          now=datetime.now(ZoneInfo('Asia/Seoul'))
-          p=Path('public/data/prices.csv')
-          rows=list(csv.DictReader(p.open(encoding='utf-8-sig')))
-          latest=max(r['date'] for r in rows)
-          today=[r for r in rows if r['date']==now.date().isoformat() and r['symbol'].startswith('KAU') and float(r['close'])>0]
-          receipt={'version':'krx-market-refresh-1','collected_at':now.isoformat(timespec='seconds'),'trade_date':latest,
-                   'status':'same_day_collected' if today else 'source_not_current','source':'KRX 공식 시세 — 웹 조회 또는 승인된 Open API',
-                   'source_urls':['https://ets.krx.co.kr/contents/ETS/03/03010000/ETS03010000.jsp','https://data-dbg.krx.co.kr/svc/apis/gen/ets_bydd_trd'],
-                   'workflow_run_id':os.environ['GITHUB_RUN_ID'],'prices_sha256':hashlib.sha256(p.read_bytes()).hexdigest(),
-                   'same_day_rows':today,'live_deployment_verified':False}
-          Path('public/data/krx-market-refresh.json').write_text(json.dumps(receipt,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-          print(json.dumps(receipt,ensure_ascii=False))
-          if not today:
-              print('::warning::당일 시세는 미확보입니다. 기존 시세의 날짜를 오늘로 변경하지 않습니다.')
-          PY
+          python -B -m unittest discover -s tests -p 'test_krx_market_receipt.py' -v
+          python -B scripts/krx_market_receipt.py build --attempt "$RUNNER_TEMP/krx-quote-attempt.json"
 
       - name: 경매 결과 강제 검증
         if: env.SHOULD_RUN == 'true' && env.KRX_SYNC_MODE == 'auction' && env.EXPECTED_AUCTION_DATE != ''
@@ -254,30 +237,8 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
 
-      - name: 공개 사이트의 실제 시세 파일 대조
-        if: env.SHOULD_RUN == 'true' && env.KRX_SYNC_MODE == 'site-today'
+      - name: 공개 KRX 시세와 출처 파일 검증
+        if: env.SHOULD_RUN == 'true' && env.KRX_SYNC_MODE != 'auction'
         env:
           PUBLIC_PAGE_URL: ${{ steps.deployment.outputs.page_url }}
-        run: |
-          python - <<'PY'
-          import csv, io, json, os, time, urllib.request
-          from pathlib import Path
-          rows=list(csv.DictReader(Path('public/data/prices.csv').open(encoding='utf-8-sig')))
-          day=max(r['date'] for r in rows)
-          expected={(r['date'],r['symbol']):r for r in rows if r['date']==day}
-          base=os.environ['PUBLIC_PAGE_URL'].rstrip('/')+'/'
-          ok=False
-          for attempt in range(6):
-              try:
-                  url=base+'data/prices.csv?verify='+os.environ['GITHUB_RUN_ID']+'-'+str(attempt)
-                  req=urllib.request.Request(url,headers={'Cache-Control':'no-cache','User-Agent':'ETS-Market-Deployment-Check/1.0'})
-                  text=urllib.request.urlopen(req,timeout=25).read().decode('utf-8-sig')
-                  live={(r['date'],r['symbol']):r for r in csv.DictReader(io.StringIO(text))}
-                  if all(live.get(key)==row for key,row in expected.items()):
-                      print(json.dumps({'status':'live_prices_match','verified_date':day,'rows':list(expected.values()),'site':base},ensure_ascii=False))
-                      ok=True;break
-              except (OSError,ValueError,KeyError) as e:
-                  print('배포 검증 재시도:',type(e).__name__)
-              time.sleep(10)
-          if not ok:raise SystemExit('배포된 시세 파일과 검증한 최신 원장 값이 일치하지 않습니다.')
-          PY
+        run: python -B scripts/krx_market_receipt.py verify "$PUBLIC_PAGE_URL"

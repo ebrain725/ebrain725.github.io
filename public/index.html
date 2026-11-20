@@ -139,13 +139,12 @@
     <p>시장 판단을 지원하는 참고용 대시보드입니다. 원문과 공식 통계를 함께 확인하세요.</p>
   </footer>
   <noscript>이 대시보드는 JavaScript를 사용합니다. 브라우저 설정에서 JavaScript를 켜주세요.</noscript>
-  <script src="assets/app.js?v=20260902-price-period-label-v1" defer></script>
+  <script src="assets/app.js?v=20261120-krx-price-source" defer></script>
   <script src="assets/policy-motie-extension.js?v=20260910-no-excel-v2" defer></script>
   <script id="price-freshness-labels-v1">
   // Display provenance only. Never change a price, trade date, volume or forecast.
   (()=>{'use strict';
     const dateNode=document.getElementById('asofDate');if(!dateNode)return;
-    let receipt=null;
     const set=(node,text)=>{if(node&&node.textContent!==text)node.textContent=text;};
     function refresh(){
       const day=dateNode.textContent.trim().replaceAll('.','-');
@@ -156,16 +155,16 @@
       set(document.querySelector('#market .kpi-card:nth-child(2) .kpi-label'),old?'기준일 거래량':'오늘 거래량');
       set(document.querySelector('#market .kpi-card:nth-child(4) .kpi-label'),old?'기준일 가격 범위':'오늘 가격 범위');
       set(document.querySelector('.pulse-panel .panel-head h2'),old?'기준일 시장 점검':'오늘의 시장 점검');
-      const pending=old&&receipt?.status==='source_not_current'&&String(receipt.collected_at||'').startsWith(today);
+      const fromPdf=dateNode.dataset.priceSource==='official_daily_pdf';
+      const pending=old&&dateNode.dataset.quoteAttemptDate===today;
       const note=document.querySelector('.asof>small');
-      set(note,pending?`오늘 시세 미반영 · ${md} 종가 표시 중`:old?'해당 기준일 종가 · 실시간 시세 아님':'오늘 수집된 시세 · 실시간 아님');
+      set(note,fromPdf?'KRX 일일동향 PDF · 대표종목 종가·거래량':pending?`오늘 시세 미반영 · ${md} 종가 표시 중`:old?'해당 기준일 종가 · 실시간 시세 아님':'오늘 수집된 시세 · 실시간 아님');
       const dot=document.querySelector('.asof .live-dot');
       if(dot)dot.style.background=old?'#b77b23':'';
       if(note){note.style.color=pending?'#94611b':'';note.setAttribute('role','status');}
       document.documentElement.dataset.priceFreshness=pending?'same-day-not-received':old?'stored-day':'same-day';
     }
-    new MutationObserver(refresh).observe(dateNode,{childList:true,subtree:true,characterData:true});
-    fetch('data/krx-market-refresh.json',{cache:'no-store'}).then(r=>r.ok?r.json():null).then(r=>{receipt=r;refresh();}).catch(()=>refresh());
+    new MutationObserver(refresh).observe(dateNode,{childList:true,attributes:true,attributeFilter:['data-price-source','data-quote-attempt-date']});
     document.addEventListener('visibilitychange',()=>{if(!document.hidden)refresh();});
     refresh();
   })();

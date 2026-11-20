@@ -79,6 +79,20 @@ function parsePrices(csv) {
   }).filter((row) => /^\d{4}-\d{2}-\d{2}$/.test(row.date) && row.close > 0).sort((a, b) => a.date.localeCompare(b.date));
 }
 
+function withRepresentativeClose(prices, receipt) {
+  const report = receipt?.representative_report;
+  if (receipt?.version !== "krx-market-refresh-2" || report?.source_type !== "official_daily_pdf" ||
+      !/^\d{4}-\d{2}-\d{2}$/.test(report.trade_date) || !/^KAU\d{2}$/.test(report.symbol) ||
+      !Number.isInteger(report.close) || !Number.isInteger(report.change) ||
+      !Number.isInteger(report.volume) || report.close <= Math.max(0, report.change) || report.volume < 0 ||
+      prices.some((row) => row.symbol === report.symbol && row.date >= report.trade_date)) return prices;
+  return [...prices, {
+    date: report.trade_date, symbol: report.symbol, close: report.close, change: report.change,
+    changeRate: report.change / (report.close - report.change) * 100,
+    volume: report.volume, source: report.source_type,
+  }].sort((a, b) => a.date.localeCompare(b.date));
+}
+
 async function loadText(path) {
   const response = await fetch(`${path}?v=${Date.now()}`, { cache: "no-store" });
   if (!response.ok) throw new Error(`${path}: ${response.status}`);
@@ -1032,17 +1046,23 @@ function renderMarket() {
   const periodChange = metricRows.length > 1 ? (metricLatest.close / metricRows[0].close - 1) * 100 : latest.changeRate;
   const direction = latest.changeRate >= 0 ? "up" : "down";
   const marketPulse = marketPulseMetrics(metricSelected, metricLatest);
-  byId("asofDate").textContent = latest.date.replaceAll("-", "."); byId("symbol").textContent = latest.symbol;
+  const fromPdf = latest.source === "official_daily_pdf";
+  const asofDate = byId("asofDate");
+  asofDate.dataset.priceSource = latest.source || "stored_quotes";
+  asofDate.dataset.quoteAttemptDate = state.quoteAttemptDate || "";
+  asofDate.textContent = latest.date.replaceAll("-", ".");
+  byId("symbol").textContent = latest.symbol;
   byId("currentPrice").textContent = money(latest.close);
   byId("dailyChange").className = `change ${direction}`;
   byId("dailyChange").textContent = `${latest.changeRate >= 0 ? "▲" : "▼"} ${money(Math.abs(latest.change))}원  ${Math.abs(latest.changeRate).toFixed(2)}%`;
   byId("rangeLow").textContent = `52주 저 ${money(yearLow)}`; byId("rangeHigh").textContent = `52주 고 ${money(yearHigh)}`;
   byId("rangeMarker").style.left = `${Math.max(2, Math.min(98, (latest.close - yearLow) / Math.max(yearHigh - yearLow, 1) * 100))}%`;
-  byId("volume").textContent = money(latest.volume); byId("tradeValue").textContent = `거래대금 ${amount(latest.tradeValue)}`;
+  byId("volume").textContent = money(latest.volume); byId("tradeValue").textContent = fromPdf ? "거래대금 미제공" : `거래대금 ${amount(latest.tradeValue)}`;
   byId("periodChange").textContent = `${periodChange >= 0 ? "+" : ""}${periodChange.toFixed(2)}%`;
   byId("periodChange").className = `kpi-number ${periodChange >= 0 ? "positive" : "negative"}`;
-  byId("periodLabel").textContent = `${periodName(state.period)} 기준${hasRollover ? " · 종목전환 보정" : ""}`; byId("recordCount").textContent = `가격 조회 ${rows.length}거래일 · KRX PDF 수집과 별도`;
-  byId("dayRange").textContent = `${money(latest.low)}–${money(latest.high)}`; byId("openPrice").textContent = `시가 ${money(latest.open)}원`;
+  byId("periodLabel").textContent = `${periodName(state.period)} 기준${hasRollover ? " · 종목전환 보정" : ""}`; byId("recordCount").textContent = `가격 조회 ${rows.length}거래일${fromPdf ? " · 최근일 KRX PDF" : ""}`;
+  byId("dayRange").textContent = fromPdf ? "미제공" : `${money(latest.low)}–${money(latest.high)}`;
+  byId("openPrice").textContent = fromPdf ? "시가 미제공" : `시가 ${money(latest.open)}원`;
   byId("pulsePosition").textContent = `${marketPulse.priceBand} ${Math.round(marketPulse.pricePosition)}%`;
   byId("positionTrack").style.width = `${marketPulse.pricePosition}%`;
   byId("pulsePositionDetail").textContent = `20일 평균 대비 ${marketPulse.priceAverageDiff >= 0 ? "+" : ""}${marketPulse.priceAverageDiff.toFixed(1)}%${hasRollover ? " · 전환 보정" : ""}`;
@@ -1360,8 +1380,15 @@ function renderBriefings() {
 }
 
 async function init() {
-  const [priceResult, auctionResult, policyResult, briefingResult, billResult, seminarResult] = await Promise.allSettled([loadText("data/prices.csv"), loadJson("data/auctions.json"), loadJson("data/policies.json"), loadJson("data/briefing.json"), loadJson("data/bills.json"), loadJson("data/assembly_seminars.json")]);
-  state.prices = priceResult.status === "fulfilled" ? parsePrices(priceResult.value) : fallbackPrice;
+  const [priceResult, auctionResult, policyResult, briefingResult, billResult, seminarResult, receiptResult] = await Promise.allSettled([
+    loadText("data/prices.csv"), loadJson("data/auctions.json"), loadJson("data/policies.json"),
+    loadJson("data/briefing.json"), loadJson("data/bills.json"), loadJson("data/assembly_seminars.json"),
+    loadJson("data/krx-market-refresh.json"),
+  ]);
+  const prices = priceResult.status === "fulfilled" ? parsePrices(priceResult.value) : [];
+  const receipt = receiptResult.status === "fulfilled" ? receiptResult.value : null;
+  state.quoteAttemptDate = receipt?.last_quote_attempt?.requested_trade_date || "";
+  state.prices = withRepresentativeClose(prices, receipt);
   if (!state.prices.length) state.prices = fallbackPrice;
   const symbols = new Set(state.prices.map((row) => row.symbol));
   if (symbols.has("KAU25") && symbols.has("KAU26")) state.symbol = CONTINUOUS_SYMBOL;
