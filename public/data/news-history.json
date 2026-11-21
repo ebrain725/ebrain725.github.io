@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-21T21:58:23+09:00",
+  "generatedAt": "2026-11-22T01:58:44+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 2385,
+  "itemCount": 2387,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-21",
   "sourceCommitsScanned": 0,
@@ -12,6 +12,57 @@
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "937a30280c5e2944",
+      "publishedAt": "2026-11-21",
+      "title": "한국, '의무 탄소시장 연합' 가입…농업 실질소득 연계 노력 필요",
+      "category": "제도",
+      "summary": "탄소시장 이라는 게 있다. 기본적으로는 온실가스 배출권을 거래하는 시장을 뜻한다. 더 넓게는 온실가스 관련사업 전반을 포괄하는 용어로도 쓰인다. 짐작하다시피 탄소시장 은 온실가스 배출 주체(국가,기업)에 비용을...",
+      "source": "youngnong.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.youngnong.co.kr/news/articleView.html?idxno=72062",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장",
+        "배출권",
+        "온실가스 배출권"
+      ],
+      "duplicateSources": [
+        "한국영농신문",
+        "youngnong.co.kr"
+      ],
+      "searchProviders": [
+        "Google News RSS",
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 2,
+      "region": "국내"
+    },
+    {
+      "id": "9239644c41a42fe8",
+      "publishedAt": "2026-11-21",
+      "title": "포스코·현대제철, 英 EU산 철강 탄소 국경 선면제 추진…한국산은 공제",
+      "category": "제도",
+      "summary": "EU·영국 20일 탄소시장 연계 협상 타결…2028년 시행 목표 영국, 내년 EU산 먼저 면제 추진…한국산은 CBAM 적용 한국 배출권 납부액 공제 가능…수출기업 검증 부담은 지속 ▲ 벨기에 브뤼셀에 있는 유럽연합(EU)...",
+      "source": "sateconomy.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://sateconomy.co.kr/news/view/1065619671056152",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소시장"
+      ],
+      "duplicateSources": [
+        "sateconomy.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
     {
       "id": "ccea3e71d7852bd7",
       "publishedAt": "2026-11-21",
@@ -5257,7 +5308,8 @@
         "탄소시장",
         "배출권",
         "배출권거래제",
-        "온실가스 배출권"
+        "온실가스 배출권",
+        "상쇄배출권"
       ],
       "duplicateSources": [
         "edaily.co.kr",
@@ -22830,7 +22882,8 @@
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
         "배출권",
-        "탄소배출권"
+        "탄소배출권",
+        "유상할당"
       ],
       "duplicateSources": [
         "lkp.news"
