@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-21T13:27:18+09:00",
+  "generatedAt": "2026-11-21T15:15:39+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 2382,
+  "itemCount": 2384,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-21",
   "sourceCommitsScanned": 0,
@@ -34,6 +34,31 @@
         "NAVER API HUB"
       ],
       "region": "해외"
+    },
+    {
+      "id": "df589f4c48cb213f",
+      "publishedAt": "2026-11-21",
+      "title": "월드 뉴스 브리프 (기준일시: 2026년 11월 21일 토요일 10:00)",
+      "category": "제도",
+      "summary": "탄소 배출권 거래시장 연계 등에 합의하면서 브렉시트 이후 경제협력을 강화하기로 했다. 20일 벨기에... 탄소 배출권 거래제도를 연계하는 방안에 합의했다. 이번 합의에 따라 소시지와 종자 등 동식물 관련 제품은...",
+      "source": "ifs.or.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.ifs.or.kr/bbs/board.php?bo_table=globalnewsfocus&wr_id=536",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "ifs.or.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
     },
     {
       "id": "271a33c131dcf446",
@@ -152,6 +177,7 @@
         "탄소배출권"
       ],
       "duplicateSources": [
+        "the-today.com",
         "newspim.com",
         "newsis.com",
         "biz.chosun.com"
@@ -159,8 +185,33 @@
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 3,
+      "duplicateCount": 4,
       "region": "국내"
+    },
+    {
+      "id": "27d300385d929220",
+      "publishedAt": "2026-11-21",
+      "title": "EU·영국, 식품 검역 협상 타결…2028년 3월 적용 목표",
+      "category": "제도",
+      "summary": "양측은 탄소 배출권 거래제 연계와 청년 이동 제도에 관한 별도 합의도 발표했다. 영국 정부가 전체 합의 묶음의 경제효과를 2040년 연간 최대 170억파운드로 제시한 것과 식품 협정 단독 전망치인 51억파운드는 구분해야...",
+      "source": "dailyt.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.dailyt.co.kr/newsView/dlt202611210013",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "dailyt.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
     },
     {
       "id": "ddbd17ee0b437805",
@@ -1577,9 +1628,9 @@
         "bntnews.co.kr",
         "wowtv.co.kr",
         "pinpointnews.co.kr",
-        "hansbiz.co.kr",
         "mydaily.co.kr",
         "viva100.com",
+        "hansbiz.co.kr",
         "tjb.co.kr",
         "youthdaily.co.kr",
         "sentv.co.kr",
