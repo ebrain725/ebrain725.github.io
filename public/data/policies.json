@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-11-21T08:13:42+09:00",
+  "lastSync": "2026-11-21T10:15:42+09:00",
   "keywords": [
     "배출권",
     "배출권거래제",
@@ -27,10 +27,10 @@
     "Google News RSS",
     "NAVER API HUB"
   ],
-  "warning": "한국거래소 배출권 공지사항: 한국거래소 공지 목록을 해석하지 못했습니다. 1페이지: HTTP Error 403: Forbidden",
+  "warning": "한국거래소 배출권 공지사항: 한국거래소 공지 목록을 해석하지 못했습니다. 1페이지: HTTP Error 500: Internal Server Error",
   "aiInsight": {
     "summary": "최근 공식자료의 직접적인 수급 변수는 유상경매입니다. 최근 경매가 높은 낙찰가로 소화돼 공급보다 이행수요가 강하다는 신호입니다.",
-    "generatedAt": "2026-11-21T08:13:42+09:00",
+    "generatedAt": "2026-11-21T10:15:42+09:00",
     "basisLatestDate": "2026-11-16",
     "basisCount": 10,
     "source": "fallback",
@@ -859,6 +859,29 @@
   ],
   "items": [
     {
+      "id": "ccea3e71d7852bd7",
+      "publishedAt": "2026-11-21",
+      "title": "차이나쇼크 2.0, 유럽의 몰락...대한민국 메가프로젝트는?",
+      "category": "제도",
+      "summary": "탈 탄소시장 은 유럽에게 기회일 수 있다. 그린에너지원인 재생에너지, 핵에너지, 수소에너지, 바이오에너지와 탄소포집, 에너지활용과 저장기술 등을 낮은 비용으로 확보하여 러시아의 가스관과 작별해야 한다....",
+      "source": "jejusori.net",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.jejusori.net/news/articleView.html?idxno=508533",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "jejusori.net"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "해외"
+    },
+    {
       "id": "271a33c131dcf446",
       "publishedAt": "2026-11-21",
       "title": "브렉시트로 헤어진 EU·영국, 정상회담서 '관계 재설정' 시동(종합)",
@@ -881,6 +904,57 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 2,
+      "region": "해외"
+    },
+    {
+      "id": "41a097147c71610f",
+      "publishedAt": "2026-11-21",
+      "title": "브렉시트로 갈라선 EU·영국, 정상회담서 관계 재설정 시동",
+      "category": "제도",
+      "summary": "식품 무역장벽 완화· 탄소 배출권 연계·청년 이동 개선 등 합의 버넘 \"양측 모두에 좋은 날\"…'EU 유학생 동일 등록금 적용'엔 이견 유럽연합(EU)과 영국이 브렉시트(영국의 EU 탈퇴) 결정 10년이 지난 시점에 정상회담을...",
+      "source": "tfmedia.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.tfmedia.co.kr/news/article.html?no=209088",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "kbs.co.kr",
+        "yna.co.kr",
+        "tfmedia.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 3,
+      "region": "국내"
+    },
+    {
+      "id": "fd6d893f8f73057d",
+      "publishedAt": "2026-11-21",
+      "title": "英·EU, 탄소배출권거래제 연계 합의",
+      "category": "제도",
+      "summary": "英·EU, 탄소배출권거래제 연계 합의 해양통신",
+      "source": "해양통신",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFB0clYwUmRseXZuQ3daNVBZYUVDRlBKUjZWZ2pNRE1Ec1lXdDNvNzRVd3RIQnAtckxadnhEZU14Z2Q5UDlSNGlvV0tra3k3aFdFdTY3Vk5KWTN2b2M4M1hpTg?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "해양통신"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
       "region": "해외"
     },
     {
@@ -2153,9 +2227,11 @@
       "matchedKeywords": [
         "배출권"
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 3,
       "duplicateSources": [
-        "it.chosun.com"
+        "it.chosun.com",
+        "youthdaily.co.kr",
+        "betanews.net"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -2303,8 +2379,8 @@
         "hansbiz.co.kr",
         "mydaily.co.kr",
         "viva100.com",
-        "youthdaily.co.kr",
         "tjb.co.kr",
+        "youthdaily.co.kr",
         "sentv.co.kr",
         "ddaily.co.kr",
         "kado.net",
@@ -2345,6 +2421,29 @@
       "duplicateCount": 1,
       "duplicateSources": [
         "etoday.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "6f193cf072f5ff20",
+      "publishedAt": "2026-11-19",
+      "title": "수능당일 주식시장 10시 문 연다…마감은 오후 4시 30분",
+      "category": "제도",
+      "summary": "KSM(KRX Startup Market)은 오전 10시~오후 4시 30분으로 운영된다. 반면 석유시장(오전 10시~오후 5시)과 배출권 시장(오전 10시~정오)은 통상 시간표 그대로 가동된다. #코스피, #코스닥, #수능 서재필 글로벌이코노믹 기자",
+      "source": "g-enews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.g-enews.com/view.php?ud=202611190852334111923c501012_1",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "g-enews.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -291819,10 +291918,10 @@
   },
   "newsRetention": {
     "policy": "append-only",
-    "lastMergedAt": "2026-11-21T08:13:48+09:00",
-    "itemCount": 2376,
-    "archiveBefore": 2375,
-    "currentBefore": 2186,
+    "lastMergedAt": "2026-11-21T10:15:49+09:00",
+    "itemCount": 2380,
+    "archiveBefore": 2376,
+    "currentBefore": 2189,
     "gitRecoveryEnabled": false
   },
   "policyEventTaxonomy": {

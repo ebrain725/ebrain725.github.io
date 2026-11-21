@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-21T08:13:48+09:00",
+  "generatedAt": "2026-11-21T10:15:49+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 2376,
+  "itemCount": 2380,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-21",
   "sourceCommitsScanned": 0,
@@ -12,6 +12,29 @@
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "ccea3e71d7852bd7",
+      "publishedAt": "2026-11-21",
+      "title": "차이나쇼크 2.0, 유럽의 몰락...대한민국 메가프로젝트는?",
+      "category": "제도",
+      "summary": "탈 탄소시장 은 유럽에게 기회일 수 있다. 그린에너지원인 재생에너지, 핵에너지, 수소에너지, 바이오에너지와 탄소포집, 에너지활용과 저장기술 등을 낮은 비용으로 확보하여 러시아의 가스관과 작별해야 한다....",
+      "source": "jejusori.net",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.jejusori.net/news/articleView.html?idxno=508533",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "jejusori.net"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "해외"
+    },
     {
       "id": "271a33c131dcf446",
       "publishedAt": "2026-11-21",
@@ -35,6 +58,57 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 2,
+      "region": "해외"
+    },
+    {
+      "id": "41a097147c71610f",
+      "publishedAt": "2026-11-21",
+      "title": "브렉시트로 갈라선 EU·영국, 정상회담서 관계 재설정 시동",
+      "category": "제도",
+      "summary": "식품 무역장벽 완화· 탄소 배출권 연계·청년 이동 개선 등 합의 버넘 \"양측 모두에 좋은 날\"…'EU 유학생 동일 등록금 적용'엔 이견 유럽연합(EU)과 영국이 브렉시트(영국의 EU 탈퇴) 결정 10년이 지난 시점에 정상회담을...",
+      "source": "tfmedia.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.tfmedia.co.kr/news/article.html?no=209088",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "kbs.co.kr",
+        "yna.co.kr",
+        "tfmedia.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 3,
+      "region": "국내"
+    },
+    {
+      "id": "fd6d893f8f73057d",
+      "publishedAt": "2026-11-21",
+      "title": "英·EU, 탄소배출권거래제 연계 합의",
+      "category": "제도",
+      "summary": "英·EU, 탄소배출권거래제 연계 합의 해양통신",
+      "source": "해양통신",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFB0clYwUmRseXZuQ3daNVBZYUVDRlBKUjZWZ2pNRE1Ec1lXdDNvNzRVd3RIQnAtckxadnhEZU14Z2Q5UDlSNGlvV0tra3k3aFdFdTY3Vk5KWTN2b2M4M1hpTg?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "해양통신"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
       "region": "해외"
     },
     {
@@ -1307,9 +1381,11 @@
       "matchedKeywords": [
         "배출권"
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 3,
       "duplicateSources": [
-        "it.chosun.com"
+        "it.chosun.com",
+        "youthdaily.co.kr",
+        "betanews.net"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -1457,8 +1533,8 @@
         "hansbiz.co.kr",
         "mydaily.co.kr",
         "viva100.com",
-        "youthdaily.co.kr",
         "tjb.co.kr",
+        "youthdaily.co.kr",
         "sentv.co.kr",
         "ddaily.co.kr",
         "kado.net",
@@ -1499,6 +1575,29 @@
       "duplicateCount": 1,
       "duplicateSources": [
         "etoday.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "6f193cf072f5ff20",
+      "publishedAt": "2026-11-19",
+      "title": "수능당일 주식시장 10시 문 연다…마감은 오후 4시 30분",
+      "category": "제도",
+      "summary": "KSM(KRX Startup Market)은 오전 10시~오후 4시 30분으로 운영된다. 반면 석유시장(오전 10시~오후 5시)과 배출권 시장(오전 10시~정오)은 통상 시간표 그대로 가동된다. #코스피, #코스닥, #수능 서재필 글로벌이코노믹 기자",
+      "source": "g-enews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.g-enews.com/view.php?ud=202611190852334111923c501012_1",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "g-enews.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
