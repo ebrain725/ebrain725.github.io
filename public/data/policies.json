@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-11-21T10:15:42+09:00",
+  "lastSync": "2026-11-21T13:11:26+09:00",
   "keywords": [
     "배출권",
     "배출권거래제",
@@ -27,10 +27,10 @@
     "Google News RSS",
     "NAVER API HUB"
   ],
-  "warning": "한국거래소 배출권 공지사항: 한국거래소 공지 목록을 해석하지 못했습니다. 1페이지: HTTP Error 500: Internal Server Error",
+  "warning": "한국거래소 배출권 공지사항: 한국거래소 공지 목록을 해석하지 못했습니다. 1페이지: HTTP Error 403: Forbidden",
   "aiInsight": {
     "summary": "최근 공식자료의 직접적인 수급 변수는 유상경매입니다. 최근 경매가 높은 낙찰가로 소화돼 공급보다 이행수요가 강하다는 신호입니다.",
-    "generatedAt": "2026-11-21T10:15:42+09:00",
+    "generatedAt": "2026-11-21T13:11:26+09:00",
     "basisLatestDate": "2026-11-16",
     "basisCount": 10,
     "source": "fallback",
@@ -930,6 +930,30 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 3,
+      "region": "국내"
+    },
+    {
+      "id": "94dd285a2ba3640d",
+      "publishedAt": "2026-11-21",
+      "title": "군산시, 온실가스 감축 '사후관리'에서 '사전예방'으로",
+      "category": "제도",
+      "summary": "시 소유 환경기초시설 29개소를 대상으로 배출권 거래제 대응을 위한 시설별 배출량을 지속적으로 점검하고, 시설 여건에 맞는 감축 대책을 마련한다. 노후 설비 개선과 운영 효율화, 폐기물 반입 성상 관리 등을 통해...",
+      "source": "jeollailbo.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.jeollailbo.com/news/articleView.html?idxno=817394",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "jeollailbo.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
       "region": "국내"
     },
     {
@@ -2093,6 +2117,29 @@
       ],
       "searchProviders": [
         "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "d6a675200b948f53",
+      "publishedAt": "2026-11-19",
+      "title": "제주금융포럼 \"제주형 탄소시장 구축, 도정에 정책 건의하겠다\"",
+      "category": "제도",
+      "summary": "제주금융포럼 \"제주형 탄소시장 구축, 도정에 정책 건의하겠다\" 저스트 이코노믹스",
+      "source": "저스트 이코노믹스",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE92M3VERC1HOFF6M3lOaVFJOE5QZlBjTDZJTTJEOGVnNC13Q242UDZNSGhHaThvZWQ4UlZsYzFibFJLNTd0STcxcGh2amdnWkVmQ2p2LXY1Y0pYcGt2Q1dN?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "저스트 이코노믹스"
+      ],
+      "searchProviders": [
+        "Google News RSS"
       ],
       "region": "국내"
     },
@@ -10768,7 +10815,7 @@
       "region": "해외"
     },
     {
-      "id": "c67b544ee0092c46",
+      "id": "d722d915d16e0a53",
       "publishedAt": "2026-11-11",
       "title": "「배출권선물 도입을 위한 배출권거래법령 마련 및 자본시장법 정합성 확보 연구」 입찰 공고",
       "category": "제도",
@@ -10776,7 +10823,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C&menuId=10524&orgCd=&boardMasterId=39&boardId=1906260",
+      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C&menuId=10524&orgCd=&boardMasterId=39&boardId=1906260",
       "matchedKeywords": [
         "배출권"
       ],
@@ -81018,7 +81065,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "59c187c1846bd4fd",
+      "id": "1754468216cbfcf5",
       "publishedAt": "2025-11-26",
       "title": "배출권 거래 시장 참여자별 배출권 보유 한도 공고",
       "category": "제도",
@@ -81026,7 +81073,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C&menuId=10524&orgCd=&boardMasterId=39&boardId=1823160",
+      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C&menuId=10524&orgCd=&boardMasterId=39&boardId=1823160",
       "matchedKeywords": [
         "시장참여자",
         "시장 참여자",
@@ -84142,7 +84189,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "0873155641698fe5",
+      "id": "08410269414fbf10",
       "publishedAt": "2025-09-26",
       "title": "제4차 계획기간 국가 배출권 할당계획(안) 설명회 개최 공고",
       "category": "제도",
@@ -84150,7 +84197,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C&menuId=10524&orgCd=&boardMasterId=39&boardId=1768870",
+      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C&menuId=10524&orgCd=&boardMasterId=39&boardId=1768870",
       "matchedKeywords": [
         "할당계획",
         "할당대상업체",
@@ -85232,7 +85279,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "5cf0d1575746981f",
+      "id": "5f579d1e8fa62b44",
       "publishedAt": "2025-09-10",
       "title": "배출권거래법 위반에 따른 과태료 부과 고지서 공시송달",
       "category": "제도",
@@ -85240,7 +85287,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C&menuId=10524&orgCd=&boardMasterId=39&boardId=1764950",
+      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C&menuId=10524&orgCd=&boardMasterId=39&boardId=1764950",
       "matchedKeywords": [
         "배출권",
         "온실가스 배출권"
@@ -85740,7 +85787,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "70ce79175ffcc841",
+      "id": "23bf824129393836",
       "publishedAt": "2025-08-29",
       "title": "제4차 계획기간 국가 배출권 할당계획(안) 및 제3차 계획기간 국가 배출권 할당계획 변경(안) 공청회 개최 공고(내용 추가)",
       "category": "제도",
@@ -85748,7 +85795,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C&menuId=10524&orgCd=&boardMasterId=39&boardId=1761570",
+      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C&menuId=10524&orgCd=&boardMasterId=39&boardId=1761570",
       "matchedKeywords": [
         "할당계획",
         "배출허용총량",
@@ -87977,7 +88024,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "51372abb448e18aa",
+      "id": "b67a6c195ed54d0a",
       "publishedAt": "2025-07-23",
       "title": "온실가스 배출권의 할당 및 거래에 관한 법률 위반에 따른 과태료 부과 사전통지 공시송달",
       "category": "제도",
@@ -87985,7 +88032,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C&menuId=10524&orgCd=&boardMasterId=39&boardId=1755160",
+      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C&menuId=10524&orgCd=&boardMasterId=39&boardId=1755160",
       "matchedKeywords": [
         "온실가스",
         "배출권",
@@ -291918,10 +291965,10 @@
   },
   "newsRetention": {
     "policy": "append-only",
-    "lastMergedAt": "2026-11-21T10:15:49+09:00",
-    "itemCount": 2380,
-    "archiveBefore": 2376,
-    "currentBefore": 2189,
+    "lastMergedAt": "2026-11-21T13:11:34+09:00",
+    "itemCount": 2382,
+    "archiveBefore": 2380,
+    "currentBefore": 2192,
     "gitRecoveryEnabled": false
   },
   "policyEventTaxonomy": {

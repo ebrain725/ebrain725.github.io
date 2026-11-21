@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-21T10:15:49+09:00",
+  "generatedAt": "2026-11-21T13:11:34+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 2380,
+  "itemCount": 2382,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-21",
   "sourceCommitsScanned": 0,
@@ -84,6 +84,30 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 3,
+      "region": "국내"
+    },
+    {
+      "id": "94dd285a2ba3640d",
+      "publishedAt": "2026-11-21",
+      "title": "군산시, 온실가스 감축 '사후관리'에서 '사전예방'으로",
+      "category": "제도",
+      "summary": "시 소유 환경기초시설 29개소를 대상으로 배출권 거래제 대응을 위한 시설별 배출량을 지속적으로 점검하고, 시설 여건에 맞는 감축 대책을 마련한다. 노후 설비 개선과 운영 효율화, 폐기물 반입 성상 관리 등을 통해...",
+      "source": "jeollailbo.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.jeollailbo.com/news/articleView.html?idxno=817394",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "jeollailbo.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
       "region": "국내"
     },
     {
@@ -1247,6 +1271,29 @@
       ],
       "searchProviders": [
         "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "d6a675200b948f53",
+      "publishedAt": "2026-11-19",
+      "title": "제주금융포럼 \"제주형 탄소시장 구축, 도정에 정책 건의하겠다\"",
+      "category": "제도",
+      "summary": "제주금융포럼 \"제주형 탄소시장 구축, 도정에 정책 건의하겠다\" 저스트 이코노믹스",
+      "source": "저스트 이코노믹스",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE92M3VERC1HOFF6M3lOaVFJOE5QZlBjTDZJTTJEOGVnNC13Q242UDZNSGhHaThvZWQ4UlZsYzFibFJLNTd0STcxcGh2amdnWkVmQ2p2LXY1Y0pYcGt2Q1dN?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "저스트 이코노믹스"
+      ],
+      "searchProviders": [
+        "Google News RSS"
       ],
       "region": "국내"
     },
