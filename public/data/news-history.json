@@ -1,17 +1,67 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-22T01:58:44+09:00",
+  "generatedAt": "2026-11-22T08:14:29+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 2387,
+  "itemCount": 2389,
   "earliestPublishedAt": "2026-08-06",
-  "latestPublishedAt": "2026-11-21",
+  "latestPublishedAt": "2026-11-22",
   "sourceCommitsScanned": 0,
   "sourceSnapshotsScanned": 0,
   "historicalRowsScanned": 0,
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "1801d7b4841ee85e",
+      "publishedAt": "2026-11-22",
+      "title": "탄소 규제 대응 나선 전남광주…중소·중견기업 지원 설명회 연다",
+      "category": "제도",
+      "summary": "기업탄소액션은 온실가스 배출권 거래제 비대상 기업이 자발적으로 온실가스를 감축하고 배출권 모의거래에 참여하는 사업이다. 전남광주시는 2024년 전국 최초로 도입해 운영하고 있다. 설명회에는 전남광주지역 중소...",
+      "source": "jnilbo.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.jnilbo.com/news/articleView.html?idxno=90000085210",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "온실가스 배출권"
+      ],
+      "duplicateSources": [
+        "jnilbo.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "88ed0f2e0cbe3a3c",
+      "publishedAt": "2026-11-22",
+      "title": "선박 건조 넘어 유지보수로…HD현대, 글로벌 정비사 인수 박차",
+      "category": "제도",
+      "summary": "환경규제 강화도 유지보수 시장 의 성장 요인으로 꼽힌다. 국제해사기구(IMO)의 선박 에너지효율 규제와 유럽연합(EU)의 해운 탄소 배출권거래제 적용 등으로 선사들의 환경규제 대응 부담이 커지고 있기 때문이다. 신규...",
+      "source": "news2day.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.news2day.co.kr/article/20261120500208",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "news2day.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
     {
       "id": "937a30280c5e2944",
       "publishedAt": "2026-11-21",
@@ -8943,8 +8993,8 @@
         "탄소배출권"
       ],
       "duplicateSources": [
-        "매일경제",
         "매일경제 마켓",
+        "매일경제",
         "mk.co.kr"
       ],
       "searchProviders": [
