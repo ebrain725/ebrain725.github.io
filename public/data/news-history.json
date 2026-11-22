@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-22T15:13:56+09:00",
+  "generatedAt": "2026-11-22T18:15:53+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 2400,
+  "itemCount": 2404,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-22",
   "sourceCommitsScanned": 0,
@@ -36,6 +36,30 @@
       ],
       "duplicateCount": 1,
       "region": "국내"
+    },
+    {
+      "id": "a1e764511f4b69f9",
+      "publishedAt": "2026-11-22",
+      "title": "제각각 탄소 규제에 멍드는 해운업계 “IMO 단일 규범 서둘러야”",
+      "category": "제도",
+      "summary": "문제는 아프리카 국가들의 탄소부과금이 유럽연합(EU) 배출권 거래제(ETS) 등 기존 규제와 중복 적용될 가능성이다. EU는 2024년부터 총톤수 5000톤 이상 선박에 ETS를 단계적으로 적용해 올해 배출량부터 배출권 100% 제출을...",
+      "source": "viva100.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.viva100.com/article/20261122500509",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "viva100.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
     },
     {
       "id": "e493eefb29a13963",
@@ -84,6 +108,30 @@
       ],
       "duplicateCount": 1,
       "region": "해외"
+    },
+    {
+      "id": "497577a899dbac59",
+      "publishedAt": "2026-11-22",
+      "title": "닭장서 CES 혁신상까지···세계가 주목한 '엠씨이' 박종욱 대표 \"밀웜...",
+      "category": "제도",
+      "summary": "이와 함께 쓰레기 소각을 줄이고 비료 사용으로 줄어드는 흙 속 온실가스 변화를 측정해 탄소 배출권 사업으로 확대하는 방안도 추진 중이다. 자체 개발한 관측 장비 '그로워(Grower)'를 현장에 설치해 국제 탄소 표준...",
+      "source": "hellodd.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.hellodd.com/news/articleView.html?idxno=113899",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "hellodd.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
     },
     {
       "id": "b0d84996216ea014",
@@ -204,6 +252,29 @@
       "region": "국내"
     },
     {
+      "id": "f2df3c0ac7d9804e",
+      "publishedAt": "2026-11-22",
+      "title": "NH농협금융, 이자 경감부터 판로·복지까지 '농업인 포용금융' 확대",
+      "category": "상쇄·외부사업",
+      "summary": "저탄소 생태계 조성을 위해서는 NH농협은행이 온실가스 를 감축한 농가의 배출권 (KOC)을 누적 14,918톤 매입하고 감축 인증 비용을 지원하고 있다. 향후 저탄소 인증 농산물의 기업 구매를 장려하고 참여 기업 금융 우대와...",
+      "source": "newslock.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.newslock.co.kr/news/articleView.html?idxno=140640",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "newslock.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "c048e72023d0b7c1",
       "publishedAt": "2026-11-22",
       "title": "NH농협금융, 농업인 이자 부담 292억원 경감…포용금융 확대",
@@ -279,6 +350,29 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 8,
+      "region": "국내"
+    },
+    {
+      "id": "bb28682d5b390992",
+      "publishedAt": "2026-11-21",
+      "title": "한국, 국제 '탄소시장연합' 가입…14번째 회원국",
+      "category": "제도",
+      "summary": "한국, 국제 '탄소시장연합' 가입…14번째 회원국 국민기자뉴스",
+      "source": "국민기자뉴스",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE03Nl93UjNtTkJxdDB1WGJVdG5OOWEyS21udDlhWENWTHMta1F6OVgxcnRhYXVDSzhpVnhrdjJJRDZPSjNDaTFjRUJRX3djXzM1ZEt5VlZ2LXBoX04yajhxWkpPUWjSAWdBVV95cUxNaGdINUhWdkwwNzduMVBLbzJGOElJaVVoOEtLSUxKY0J3cHJ0d1FvVmFSNlU5UmE0blpOSFlmc19LZWZpaEZMTUo3STZyM1NKQWZaY0Npa3FETTZjRHpVc0pvQ2F2UVNF?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "국민기자뉴스"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
       "region": "국내"
     },
     {
