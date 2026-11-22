@@ -1,17 +1,41 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-22T21:48:08+09:00",
+  "generatedAt": "2026-11-23T02:21:42+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 2407,
+  "itemCount": 2411,
   "earliestPublishedAt": "2026-08-06",
-  "latestPublishedAt": "2026-11-22",
+  "latestPublishedAt": "2026-11-23",
   "sourceCommitsScanned": 0,
   "sourceSnapshotsScanned": 0,
   "historicalRowsScanned": 0,
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "ff37acbfe1f2bfa7",
+      "publishedAt": "2026-11-23",
+      "title": "LX인터 사장부터 신입사원까지 꼭 다녀온다는 이 나라",
+      "category": "제도",
+      "summary": "광물과 석유화학제품, 전자 부품 등을 거래하며 현지 시장 을 파악한 뒤 2007년 현지 석탄 광산(법인명 MPP)... LX인터내셔널은 이 발전소에서 발생한 탄소 배출권을 국내로 들여와 판매할 수 있는 여건을 확보하며...",
+      "source": "fntimes.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.fntimes.com/html/view.php?ud=202611202338141171dd55077bc2_18",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "fntimes.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
     {
       "id": "1801d7b4841ee85e",
       "publishedAt": "2026-11-22",
@@ -275,6 +299,40 @@
       "region": "국내"
     },
     {
+      "id": "fb848db49be1da52",
+      "publishedAt": "2026-11-22",
+      "title": "NH농협금융, 농업인 이자부담 292억원 경감…스마트팜·판로 지원도",
+      "category": "상쇄·외부사업",
+      "summary": "저탄소 농업기술을 도입한 농가가 창출한 배출권 (KOC)을 구매하고, 온실가스 감축 실적을 인증받는 데 필요한 비용도 지원하고 있다. 농협은행이 지금까지 매입한 KOC는 누적 1만4918톤 규모다. 농가의 온실가스 감축 활동이...",
+      "source": "businessplus.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.businessplus.kr/news/articleView.html?idxno=120265",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "apnews.kr",
+        "edaily.co.kr",
+        "ddaily.co.kr",
+        "etoday.co.kr",
+        "s-journal.co.kr",
+        "pointdaily.co.kr",
+        "4th.kr",
+        "straightnews.co.kr",
+        "getnews.co.kr",
+        "seoultimes.news",
+        "koreareport.co.kr",
+        "businessplus.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 12,
+      "region": "국내"
+    },
+    {
       "id": "c048e72023d0b7c1",
       "publishedAt": "2026-11-22",
       "title": "NH농협금융, 농업인 이자 부담 292억원 경감…포용금융 확대",
@@ -355,6 +413,56 @@
       "region": "국내"
     },
     {
+      "id": "ebe3dadaa0e3e681",
+      "publishedAt": "2026-11-22",
+      "title": "COP31, 역대 최장 연장에도 합의문 채택 불발…‘화석연료’ 문구 못 담...",
+      "category": "제도",
+      "summary": "2000년 네덜란드 헤이그 총회(COP6)에서는 교토의정서의 세부 이행규칙에 합의하지 못해 회의를 중단했다가, 약 8개월 뒤인 2001년 7월 독일 본에서 회의를 재개해 배출권 거래와 탄소흡수원 인정 등에 관한 ‘본 합의’를...",
+      "source": "hani.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.hani.co.kr/arti/international/international_general/1288555.html",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "hani.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "9001e72d5bad54a1",
+      "publishedAt": "2026-11-22",
+      "title": "COP31 합의 무산, 증시 영향은…정유·철강·신재생 엇갈린 셈법",
+      "category": "시장·가격",
+      "summary": "2026~2030년 배출권 거래제 제4차 계획기간에는 발전 부문의 유상할당 비율을 2030년 50%까지 단계적으로 높이기로 했다. 국내 배출권 시장에서 20일 KAU26은 톤당 2만9550원에 마감했다. COP31 이후 탄소 배출권 가격이 어떻게...",
+      "source": "topstarnews.net",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.topstarnews.net/news/articleView.html?idxno=16283107",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권",
+        "유상할당",
+        "KAU26"
+      ],
+      "duplicateSources": [
+        "topstarnews.net"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "bb28682d5b390992",
       "publishedAt": "2026-11-21",
       "title": "한국, 국제 '탄소시장연합' 가입…14번째 회원국",
@@ -391,7 +499,9 @@
       "matchedKeywords": [
         "탄소시장",
         "배출권",
-        "온실가스 배출권"
+        "온실가스 배출권",
+        "배출권거래제",
+        "상쇄배출권"
       ],
       "duplicateSources": [
         "한국영농신문",
@@ -3703,6 +3813,8 @@
         "에너지프로슈머",
         "페로타임즈",
         "대한민국 정책브리핑",
+        "SDG뉴스",
+        "보건환경신문",
         "임팩트온",
         "impacton.net"
       ],
@@ -3710,7 +3822,7 @@
         "Google News RSS",
         "NAVER API HUB"
       ],
-      "duplicateCount": 5,
+      "duplicateCount": 7,
       "region": "국내"
     },
     {
@@ -5219,6 +5331,7 @@
         "korea.kr",
         "todayenergy.kr",
         "지디넷코리아",
+        "쿠키뉴스",
         "kukinews.com",
         "hansbiz.co.kr",
         "동아일보",
@@ -5228,7 +5341,6 @@
         "뉴스;트리",
         "newstree.kr",
         "파인드비",
-        "쿠키뉴스",
         "대한민국 정책브리핑",
         "esgeconomy.com"
       ],
@@ -5504,7 +5616,8 @@
       "matchedKeywords": [
         "배출권",
         "배출권거래제",
-        "탄소시장"
+        "탄소시장",
+        "탄소배출권"
       ],
       "duplicateSources": [
         "newsis.com"
@@ -5758,13 +5871,13 @@
         "상쇄배출권"
       ],
       "duplicateSources": [
+        "이데일리",
         "edaily.co.kr",
+        "www.dt.co.kr",
         "dt.co.kr",
         "biz.chosun.com",
         "Chosunbiz",
-        "www.dt.co.kr",
         "이투데이",
-        "이데일리",
         "마켓인",
         "busan.com",
         "연합뉴스",
@@ -5812,8 +5925,8 @@
         "케이에스피뉴스"
       ],
       "searchProviders": [
-        "NAVER API HUB",
-        "Google News RSS"
+        "Google News RSS",
+        "NAVER API HUB"
       ],
       "duplicateCount": 54,
       "region": "국내"
@@ -8863,8 +8976,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "에너지경제신문",
         "기후에너지데이터뱅크",
+        "에너지경제신문",
         "ekn.kr"
       ],
       "searchProviders": [
@@ -11883,12 +11996,12 @@
         "choicenews.co.kr",
         "press9.kr",
         "view.asiae.co.kr",
+        "뉴시스",
         "newsis.com",
         "ezyeconomy.com",
         "financialpost.co.kr",
         "ddaily.co.kr",
         "smarttoday.co.kr",
-        "뉴시스",
         "wsobi.com",
         "newsian.co.kr",
         "jasm.co.kr",
