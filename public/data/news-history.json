@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-22T10:14:17+09:00",
+  "generatedAt": "2026-11-22T12:22:35+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 2393,
+  "itemCount": 2398,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-22",
   "sourceCommitsScanned": 0,
@@ -86,6 +86,77 @@
       "region": "해외"
     },
     {
+      "id": "b0d84996216ea014",
+      "publishedAt": "2026-11-22",
+      "title": "기후에너지 인사이트 2027 [새책]",
+      "category": "시장·가격",
+      "summary": "\" 국내외 기후·에너지 정책과 기술, 시장 의 변화를 다룬 책이 나왔다. 새책 '기후에너지 인사이트 2027'은... 이 책은 전력수요가 얼마나 늘고 탄소 배출권 가격이 어디까지 오를지를 전망하기보다, 그러한 변화가 실제로...",
+      "source": "it.chosun.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://it.chosun.com/news/articleView.html?idxno=3000000001568",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "it.chosun.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "29fc6529b1705884",
+      "publishedAt": "2026-11-22",
+      "title": "군산시, 온실가스 감축 '사후관리⤍사전예방'… 탄소중립 정책 전환",
+      "category": "제도",
+      "summary": "아울러 시 소유 환경기초시설 29개소의 배출권 거래제 대응을 위해 시설별 배출량을 지속 점검하고 노후설비 개선, 운영 효율화, 폐기물 반입 성상 관리 등 맞춤형 감축 대책을 추진한다. 또한 공공부문의 온실가스 ...",
+      "source": "jeonmin.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.jeonmin.co.kr/news/articleView.html?idxno=450901",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "jeonmin.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "044b6ab5d6a3f962",
+      "publishedAt": "2026-11-22",
+      "title": "교토의정서 데자뷔… 기후협상, 후퇴냐 진화냐 [페트로-일렉트로]",
+      "category": "제도",
+      "summary": "국제 배출권 거래 제한 같은 것들인데요. 물론 이런 제재 조치들까지 법적으로 의무화하는 데는 실패했습니다. 교토의정서는 인간이 배출한 온실가스 가 기후변화의 원인이라는 데 각국이 동의하는 데 그치지 않고...",
+      "source": "sedaily.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.sedaily.com/article/20117303?ref=naver",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "sedaily.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "f691e773f4c2bdf1",
       "publishedAt": "2026-11-22",
       "title": "[CEO 직썰] 이찬우 NH농협금융지주 회장 \"농촌에 활력을 불어넣는 든든...",
@@ -101,6 +172,30 @@
       ],
       "duplicateSources": [
         "ziksir.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "c048e72023d0b7c1",
+      "publishedAt": "2026-11-22",
+      "title": "NH농협금융, 농업인 이자 부담 292억원 경감…포용금융 확대",
+      "category": "상쇄·외부사업",
+      "summary": "농협은행은 저탄소 농업기술을 도입한 농가의 탄소 배출권 (KOC)을 누적 1만 4918톤 매입했으며, 탄소감축 인증비용도 지원하고 있다. 앞으로 저탄소 인증 농산물의 기업 구매 확대를 유도하고 농가의 안정적인 판로 확보를...",
+      "source": "news1.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.news1.kr/finance/bank/6361850",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "news1.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -147,12 +242,18 @@
         "탄소배출권"
       ],
       "duplicateSources": [
-        "straightnews.co.kr"
+        "edaily.co.kr",
+        "ddaily.co.kr",
+        "etoday.co.kr",
+        "4th.kr",
+        "straightnews.co.kr",
+        "getnews.co.kr",
+        "seoultimes.news"
       ],
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 7,
       "region": "국내"
     },
     {
@@ -1793,6 +1894,33 @@
       "duplicateCount": 1,
       "duplicateSources": [
         "betanews.net"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "5ffe29246c450839",
+      "publishedAt": "2026-11-19",
+      "title": "수능일 국내 증시 오전 10시 개장…정규시장 '오전 10시~오후 4시 30분'",
+      "category": "제도",
+      "summary": "KSM(KRX 스타트업 마켓)이 오전 10시부터 오후 4시 30분까지 열린다. 다만 석유시장과 배출권 시장은 기존 거래시간을 유지한다. 석유시장은 오전 10시부터 오후 5시까지, 배출권 시장은 오전 10시부터 정오까지 운영한다.",
+      "source": "industrynews.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.industrynews.co.kr/news/articleView.html?idxno=89828",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 5,
+      "duplicateSources": [
+        "hankyung.com",
+        "betanews.net",
+        "industrynews.co.kr",
+        "it.chosun.com",
+        "youthdaily.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
