@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-22T08:14:29+09:00",
+  "generatedAt": "2026-11-22T10:14:17+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 2389,
+  "itemCount": 2393,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-22",
   "sourceCommitsScanned": 0,
@@ -38,6 +38,29 @@
       "region": "국내"
     },
     {
+      "id": "e493eefb29a13963",
+      "publishedAt": "2026-11-22",
+      "title": "이찬우 \"농협금융의 존재 이유는 농업인에\"…농촌 포용금융 강조",
+      "category": "제도",
+      "summary": "농협은행은 저탄소 농업기술을 도입한 농가가 창출한 배출권 을 누적 1만4918톤 매입하고 온실가스 감축 인증비용을 지원했다. NH농협캐피탈은 농기계 리스와 사료구매자금 대출을 제공한다. 농기계 리스는 농업소득이...",
+      "source": "mt.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.mt.co.kr/finance/2026/11/22/2026112209082714322",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "mt.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "88ed0f2e0cbe3a3c",
       "publishedAt": "2026-11-22",
       "title": "선박 건조 넘어 유지보수로…HD현대, 글로벌 정비사 인수 박차",
@@ -61,6 +84,76 @@
       ],
       "duplicateCount": 1,
       "region": "해외"
+    },
+    {
+      "id": "f691e773f4c2bdf1",
+      "publishedAt": "2026-11-22",
+      "title": "[CEO 직썰] 이찬우 NH농협금융지주 회장 \"농촌에 활력을 불어넣는 든든...",
+      "category": "상쇄·외부사업",
+      "summary": "NH농협은행은 저탄소 농업기술을 도입해 온실가스 감축에 참여한 농가를 대상으로 배출권 (KOC) 구매와 감축 인증비용 지원을 진행하고 있다. 농가가 창출한 배출권 은 누적 14918톤을 매입했다. 농업인의 경제적 부담을...",
+      "source": "ziksir.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.ziksir.com/news/articleView.html?idxno=154227",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "ziksir.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "f11f9e11f49f65b0",
+      "publishedAt": "2026-11-22",
+      "title": "NH농협금융, 농업인 이자 292억 경감⋯판로·생활 지원 확대",
+      "category": "상쇄·외부사업",
+      "summary": "농협은행은 농가가 온실가스 감축으로 확보한 배출권 (KOC)을 누적 1만4918톤 매입하고 감축 인증비용을 지원했다. 앞으로 저탄소 인증 농산물을 구매하는 기업에 금융 우대를 제공하고 농가의 인증비용을 지원해 판로...",
+      "source": "etoday.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.etoday.co.kr/news/view/2651265",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "etoday.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "dde5d94f89ffabeb",
+      "publishedAt": "2026-11-22",
+      "title": "NH농협금융 '상생', 농가 이자부담 292억 덜어",
+      "category": "상쇄·외부사업",
+      "summary": "NH농협은행은 저탄소 농업기술을 도입해 온실가스 를 감축한 농가가 추가 소득을 얻을 수 있도록 농가의 탄소 배출권 (KOC) 1만4918톤을 누적 매입하고 감축 인증비용을 지원했다. 저탄소 인증 농산물의 기업 구매를 확대하고...",
+      "source": "straightnews.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.straightnews.co.kr/news/articleView.html?idxno=315898",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "straightnews.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
     },
     {
       "id": "937a30280c5e2944",
@@ -4911,7 +5004,8 @@
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
         "배출권",
-        "배출권거래제"
+        "배출권거래제",
+        "K-ETS"
       ],
       "duplicateSources": [
         "the-today.com"
@@ -5181,7 +5275,8 @@
       "url": "http://www.amnews.co.kr/news/articleView.html?idxno=75654",
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
-        "배출권"
+        "배출권",
+        "배출권거래제"
       ],
       "duplicateSources": [
         "amnews.co.kr"
@@ -5254,7 +5349,8 @@
       "url": "http://www.foodnews.co.kr/news/articleView.html?idxno=121016",
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
-        "배출권"
+        "배출권",
+        "배출권거래제"
       ],
       "duplicateSources": [
         "foodnews.co.kr"
