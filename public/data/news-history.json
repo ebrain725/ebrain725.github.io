@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-22T18:15:53+09:00",
+  "generatedAt": "2026-11-22T21:48:08+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 2404,
+  "itemCount": 2407,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-22",
   "sourceCommitsScanned": 0,
@@ -340,16 +340,18 @@
         "edaily.co.kr",
         "ddaily.co.kr",
         "etoday.co.kr",
+        "s-journal.co.kr",
         "pointdaily.co.kr",
         "4th.kr",
         "straightnews.co.kr",
         "getnews.co.kr",
-        "seoultimes.news"
+        "seoultimes.news",
+        "koreareport.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 8,
+      "duplicateCount": 10,
       "region": "국내"
     },
     {
@@ -3157,11 +3159,13 @@
         "탄소시장"
       ],
       "section": "news",
-      "duplicateCount": 3,
+      "duplicateCount": 5,
       "duplicateSources": [
         "에너지프로슈머",
         "페로타임즈",
-        "대한민국 정책브리핑"
+        "대한민국 정책브리핑",
+        "SDG뉴스",
+        "보건환경신문"
       ],
       "searchProviders": [
         "Google News RSS"
@@ -5121,6 +5125,30 @@
       "region": "국내"
     },
     {
+      "id": "9904a2e649ee6849",
+      "publishedAt": "2026-11-17",
+      "title": "[환경용어] 가격 널뛰기 잡고 온실가스 감축 투자 유도… '탄소배출권 선물시장'",
+      "category": "시장·가격",
+      "summary": "[환경용어] 가격 널뛰기 잡고 온실가스 감축 투자 유도… '탄소배출권 선물시장' 파인드비",
+      "source": "파인드비",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE51WlljTlZYb0I5QVpKX2NJaWRBNWhHNEZMVUdsbFk5SFkzeVA3czFoZGFJaVRfSnh1aS1wT3o2N3lrVDVDNVBPQnNobnVsQzBqeTRtTmtRQUY0ZlJOWnNyZE9WT2dFQXfSAWpBVV95cUxPTnBTSnVpMXl2LWdqbHE2b1EzemlHa2d2dm9odFJDS2xLNzNNWjhFZUN5S0U3RGVyRndlOXF4V2lHWnJYbHgtMlBKeXM0YWlnMUZRaUl3enE3T0llTVEyUFRuQUZvVzNYN1h3?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "파인드비"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "aab3c8617381fc81",
       "publishedAt": "2026-11-17",
       "title": "[포토] 김성환 장관, 탄소시장연합 고위급회의 참석",
@@ -5191,7 +5219,6 @@
         "korea.kr",
         "todayenergy.kr",
         "지디넷코리아",
-        "쿠키뉴스",
         "kukinews.com",
         "hansbiz.co.kr",
         "동아일보",
@@ -5200,6 +5227,8 @@
         "4th.kr",
         "뉴스;트리",
         "newstree.kr",
+        "파인드비",
+        "쿠키뉴스",
         "대한민국 정책브리핑",
         "esgeconomy.com"
       ],
@@ -5207,7 +5236,7 @@
         "Google News RSS",
         "NAVER API HUB"
       ],
-      "duplicateCount": 17,
+      "duplicateCount": 18,
       "region": "국내"
     },
     {
@@ -5730,10 +5759,10 @@
       ],
       "duplicateSources": [
         "edaily.co.kr",
-        "www.dt.co.kr",
         "dt.co.kr",
         "biz.chosun.com",
         "Chosunbiz",
+        "www.dt.co.kr",
         "이투데이",
         "이데일리",
         "마켓인",
@@ -5803,7 +5832,8 @@
       "matchedKeywords": [
         "배출권",
         "탄소시장",
-        "배출권거래제"
+        "배출권거래제",
+        "상쇄배출권"
       ],
       "duplicateSources": [
         "biz.newdaily.co.kr"
@@ -6141,7 +6171,8 @@
       "matchedKeywords": [
         "탄소시장",
         "배출권",
-        "배출권거래제"
+        "배출권거래제",
+        "상쇄배출권"
       ],
       "duplicateSources": [
         "mediapen.com"
@@ -8832,8 +8863,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "기후에너지데이터뱅크",
         "에너지경제신문",
+        "기후에너지데이터뱅크",
         "ekn.kr"
       ],
       "searchProviders": [
@@ -11852,12 +11883,12 @@
         "choicenews.co.kr",
         "press9.kr",
         "view.asiae.co.kr",
-        "뉴시스",
         "newsis.com",
         "ezyeconomy.com",
         "financialpost.co.kr",
         "ddaily.co.kr",
         "smarttoday.co.kr",
+        "뉴시스",
         "wsobi.com",
         "newsian.co.kr",
         "jasm.co.kr",
@@ -12793,6 +12824,30 @@
       "region": "해외"
     },
     {
+      "id": "d5c7f6c5942f481f",
+      "publishedAt": "2026-11-06",
+      "title": "자발적 탄소시장 신뢰성 공방...정부 “NDC·배출권거래 연계 없다”",
+      "category": "제도",
+      "summary": "자발적 탄소시장 신뢰성 공방...정부 “NDC·배출권거래 연계 없다” 수소신문",
+      "source": "수소신문",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1OeVVlVmdlN3lzblVQd3N4LXM3TVdneGtXa19kay1yUEQ0dWU3OExzMVZFSEtha24zSFcxcXh0ZGFlQzVmWmQxRXFmbjNRMW9WYWVCSGJodi1LOUdnRzhTZjV3dWRhcHhDaVloenA2MEnSAXRBVV95cUxQZGx1U0t2ZFZFMXl4U0hyZDdvWlVLZUN1TzZlZUJITzJJaUpDRWRVanBIZTAySFNhOHlsanNTLThUMnM5RVNMVkxaT0p1c3c3cjZLNEhjaFRYTUlfbko5NzVxenAyYkVpbnF5c2g1UFNHV1JZYw?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "탄소시장"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "수소신문"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "3de972737399bd2d",
       "publishedAt": "2026-11-06",
       "title": "이 대통령, 동티모르 대통령과 정상회담...양국 협력 강화",
@@ -12934,6 +12989,30 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "c4ecf0d808fb162f",
+      "publishedAt": "2026-11-06",
+      "title": "산림 지키며 탄소배출권 팔고…가봉, 獨 SEFE와 거래 계약",
+      "category": "제도",
+      "summary": "산림 지키며 탄소배출권 팔고…가봉, 獨 SEFE와 거래 계약 수소신문",
+      "source": "수소신문",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5Hdjh5ZzZpMlU0ckNVQ1NqY3FiTVc5MzZqNlgzclp2X2hadlZkX3ctTXhSWENNVVlBa2JBeHVOeFE5ZzVwUUlVZFFiMUtoUFRlYllXX0dPQnZHWnhOSTBkWGFjRE53WjdUY3JuWFNZZWvSAXRBVV95cUxNUFpuUWFDSm1NUzl0XzNyV2F2andTdERxVGlSUHJzUG9kVmdzVzdNeEVpcVZwTVE1dWdtOTd6bDBQczI2Y2hFYUJZdzVXOXlmRHE3bzNvbVhWcDlPUkVXeXJ0Q1h1SEpmMTJiTkRIWEZBM25RaQ?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "수소신문"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
       "region": "국내"
     },
     {
