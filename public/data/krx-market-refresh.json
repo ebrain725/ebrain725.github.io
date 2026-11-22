@@ -8,7 +8,7 @@
     "trade_date": "2026-11-20",
     "source_type": "authorized_open_api",
     "source_url": "https://data-dbg.krx.co.kr/svc/apis/gen/ets_bydd_trd",
-    "workflow_run_id": "44865138269",
+    "workflow_run_id": "44980630569",
     "sha256": "b0b53dd165d9159a98d9ef37e4b46c3afb24c33cba807d77bde47b8803bc8993",
     "symbol_count": 5
   },
@@ -30,12 +30,12 @@
   },
   "last_quote_attempt": {
     "status": "collected",
-    "requested_trade_date": "2026-11-20",
+    "requested_trade_date": "2026-11-21",
     "observed_trade_date": "2026-11-20",
     "source_type": "authorized_open_api",
     "detail": null,
-    "attempted_at": "2026-11-21T13:36:44+09:00",
-    "workflow_run_id": "44865138269"
+    "attempted_at": "2026-11-22T12:32:41+09:00",
+    "workflow_run_id": "44980630569"
   },
-  "collected_at": "2026-11-21T13:36:45+09:00"
+  "collected_at": "2026-11-22T12:32:41+09:00"
 }
