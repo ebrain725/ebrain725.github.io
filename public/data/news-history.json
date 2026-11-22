@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-23T02:21:42+09:00",
+  "generatedAt": "2026-11-23T08:16:02+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 2411,
+  "itemCount": 2417,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-23",
   "sourceCommitsScanned": 0,
@@ -12,6 +12,55 @@
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "ab21a50f3f2ff7db",
+      "publishedAt": "2026-11-23",
+      "title": "“2050년 탄소중립” 파라다이스시티, 환경경영 국제표준 인증",
+      "category": "제도",
+      "summary": "파라다이스시티도 온실가스 배출권 거래제 할당대상 업체로서 지난해 온실가스 저감 목표를 달성했다. 오는 2030년까지 고효율·재생에너지 설비를 확대 적용할 계획이다. 2050년에는 ‘탄소중립(Net-Zero)’ 달성을...",
+      "source": "biz.heraldcorp.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://biz.heraldcorp.com/article/10945399?ref=naver",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "온실가스 배출권"
+      ],
+      "duplicateSources": [
+        "biz.heraldcorp.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "877d29e4f4d91387",
+      "publishedAt": "2026-11-23",
+      "title": "[SV 리포트] 탈탄소 준비하는 포스코, 전기로·수소환원 '아직'…환경규...",
+      "category": "시장·가격",
+      "summary": "배출권거래제 제4차 계획기간(2026~2030)의 배출허용총량은 직전 기간보다 약 5억톤 줄었다. 무상 배출이 허용되는 사전할당량도 연평균 4억7260만톤으로 3차 기간보다 18.6% 감소했다. 배출권 가격도 뛰었다. 올해...",
+      "source": "socialvalue.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.socialvalue.kr/news/view/1065573789063953",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "socialvalue.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
     {
       "id": "ff37acbfe1f2bfa7",
       "publishedAt": "2026-11-23",
@@ -29,6 +78,53 @@
       ],
       "duplicateSources": [
         "fntimes.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "9ffe80a54b78c233",
+      "publishedAt": "2026-11-23",
+      "title": "EU와 관계 재설정 나선 영국, 재가입도 검토?...공방 재점화",
+      "category": "제도",
+      "summary": "양측은 이번 회담에서 식품과 농산물 무역장벽의 완화, 탄소 배출권 거래 연계, 청년 이동 개선 등 관계 강화 방안에 합의했습니다. [앤디 버넘 / 영국 총리 : 오늘은 영국과 유럽 모두에 좋은 날입니다. 우리가 함께...",
+      "source": "ytn.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.ytn.co.kr/_ln/0104_202611230430565369",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "ytn.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "e425b2f8a3ee7a7c",
+      "publishedAt": "2026-11-23",
+      "title": "'이행의 COP' 내걸었던 31차 기후총회…당사국 간 이견에 끝내 합의 불발",
+      "category": "제도",
+      "summary": "◆韓, 탄소시장 연합·AI 서약 등에 참여…COP33 유치 '검토' 한국은 이번 COP31을 계기로 국제 탄소시장 과 인공지능(AI)의 기후 대응 협력에 참여하는 등 국제사회와의 협력 범위를 넓혔다. 기후에너지환경부는 COP31을 계기로...",
+      "source": "electimes.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.electimes.com/news/articleView.html?idxno=375111",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateSources": [
+        "electimes.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -105,7 +201,7 @@
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "region": "국내"
     },
     {
@@ -463,6 +559,30 @@
       "region": "국내"
     },
     {
+      "id": "41fad1b3330267a8",
+      "publishedAt": "2026-11-22",
+      "title": "\"준비시간 부족\" vs \"투자정보 필요\"… ESG 의무화 진통",
+      "category": "제도",
+      "summary": "배출권 거래제와 온실가스 목표관리제에 따른 배출량이 5월 말에 확정 공시된다는 점을 반영한 결과다. 기업이 탄소 배출량을 얼마나 줄였는지, 정부가 정한 온실가스 감축 목표를 얼마나 이행했는지를 보고서에...",
+      "source": "mt.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.mt.co.kr/stock/2026/11/22/2026111914355024603",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "mt.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "bb28682d5b390992",
       "publishedAt": "2026-11-21",
       "title": "한국, 국제 '탄소시장연합' 가입…14번째 회원국",
@@ -527,7 +647,8 @@
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
         "배출권",
-        "탄소시장"
+        "탄소시장",
+        "배출권거래제"
       ],
       "duplicateSources": [
         "sateconomy.co.kr"
@@ -930,6 +1051,29 @@
       ],
       "duplicateCount": 1,
       "region": "해외"
+    },
+    {
+      "id": "7c9caeda5d0b835a",
+      "publishedAt": "2026-11-20",
+      "title": "제주금융포럼 \"제주형 탄소시장 구축, 도정에 정책 건의하겠다\"",
+      "category": "제도",
+      "summary": "제주금융포럼 \"제주형 탄소시장 구축, 도정에 정책 건의하겠다\" https://www.climatepol.com/",
+      "source": "https://www.climatepol.com/",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBDdThkNko4bnAzUFp2ZVQxeHlxSlE0cjZzWURhVGZMRkQ3ai1WelRDbU5LOU1oS2VEZlNyN2Q3MTBiRGxUUWpCVVA5d2ZueGg4bDU1MzNHdDZRRlpyX2lfbDJZUGFhRU80SXpsNg?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "https://www.climatepol.com/"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "국내"
     },
     {
       "id": "e22c5e8b9b4cb1c5",
@@ -5322,7 +5466,8 @@
         "탄소시장",
         "배출권",
         "배출권거래제",
-        "온실가스 배출권"
+        "온실가스 배출권",
+        "상쇄배출권"
       ],
       "duplicateSources": [
         "냉동공조저널",
@@ -5689,7 +5834,8 @@
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
         "배출권",
-        "배출권거래제"
+        "배출권거래제",
+        "탄소배출권"
       ],
       "duplicateSources": [
         "amnews.co.kr"
@@ -11973,7 +12119,6 @@
       ],
       "duplicateSources": [
         "enetnews.co.kr",
-        "metroseoul.co.kr",
         "asiaa.co.kr",
         "pinpointnews.co.kr",
         "srtimes.kr",
@@ -12002,6 +12147,7 @@
         "financialpost.co.kr",
         "ddaily.co.kr",
         "smarttoday.co.kr",
+        "metroseoul.co.kr",
         "wsobi.com",
         "newsian.co.kr",
         "jasm.co.kr",
