@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-11-22T13:14:09+09:00",
+  "lastSync": "2026-11-22T15:13:50+09:00",
   "keywords": [
     "배출권",
     "배출권거래제",
@@ -30,7 +30,7 @@
   "warning": "한국거래소 배출권 공지사항: 한국거래소 공지 목록을 해석하지 못했습니다. 1페이지: HTTP Error 403: Forbidden",
   "aiInsight": {
     "summary": "최근 공식자료의 직접적인 수급 변수는 유상경매입니다. 최근 경매가 높은 낙찰가로 소화돼 공급보다 이행수요가 강하다는 신호입니다.",
-    "generatedAt": "2026-11-22T13:14:09+09:00",
+    "generatedAt": "2026-11-22T15:13:50+09:00",
     "basisLatestDate": "2026-11-16",
     "basisCount": 10,
     "source": "fallback",
@@ -1003,6 +1003,30 @@
       "region": "국내"
     },
     {
+      "id": "f7ee0ed64ed86aac",
+      "publishedAt": "2026-11-22",
+      "title": "[은행 뉴스브리핑] 하나금융 취약계층 어르신 1000명 생활지원",
+      "category": "상쇄·외부사업",
+      "summary": "연세의료원과 손잡고 농촌 마을회관을 찾아가는 건강검진·진료 서비스로 1723명을 진료했다. 농협은행은 농가가 창출한 탄소 배출권 (KOC) 1만4918톤을 매입하는 등 저탄소 농업 확산도 지원하고 있다. /유승열 기자",
+      "source": "asiatime.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.asiatime.co.kr/article/20261122500056",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "asiatime.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "f691e773f4c2bdf1",
       "publishedAt": "2026-11-22",
       "title": "[CEO 직썰] 이찬우 NH농협금융지주 회장 \"농촌에 활력을 불어넣는 든든...",
@@ -1091,6 +1115,7 @@
         "edaily.co.kr",
         "ddaily.co.kr",
         "etoday.co.kr",
+        "pointdaily.co.kr",
         "4th.kr",
         "straightnews.co.kr",
         "getnews.co.kr",
@@ -1099,7 +1124,7 @@
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 7,
+      "duplicateCount": 8,
       "region": "국내"
     },
     {
@@ -1521,6 +1546,30 @@
       ],
       "duplicateCount": 1,
       "region": "국내"
+    },
+    {
+      "id": "911b30c9acbecbed",
+      "publishedAt": "2026-11-20",
+      "title": "청년 10만명씩 영국·EU 교류 합의…등록금 6개월 협상",
+      "category": "제도",
+      "summary": "검역· 배출권 거래제 협상 타결을 환영했지만, EU 학생의 영국 대학 등록금 문제는 합의하지 못했다. 양측 정상은 20일 브뤼셀 정상회의 공동성명에서 YES, 위생·식물위생(SPS) 협정, EU·영국 배출권 거래제(ETS) 연계...",
+      "source": "tokenpost.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.tokenpost.kr/news/international/441616",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "tokenpost.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
     },
     {
       "id": "e22c5e8b9b4cb1c5",
@@ -7986,8 +8035,8 @@
       ],
       "duplicateCount": 3,
       "duplicateSources": [
-        "이데일리",
         "마켓인",
+        "이데일리",
         "edaily.co.kr"
       ],
       "searchProviders": [
@@ -292366,10 +292415,10 @@
   },
   "newsRetention": {
     "policy": "append-only",
-    "lastMergedAt": "2026-11-22T13:14:16+09:00",
-    "itemCount": 2398,
+    "lastMergedAt": "2026-11-22T15:13:56+09:00",
+    "itemCount": 2400,
     "archiveBefore": 2398,
-    "currentBefore": 2207,
+    "currentBefore": 2210,
     "gitRecoveryEnabled": false
   },
   "policyEventTaxonomy": {
