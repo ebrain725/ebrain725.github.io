@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-23T15:16:31+09:00",
+  "generatedAt": "2026-11-23T17:06:34+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 2455,
+  "itemCount": 2464,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-23",
   "sourceCommitsScanned": 0,
@@ -12,6 +12,30 @@
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "d148916db05752ba",
+      "publishedAt": "2026-11-23",
+      "title": "화석연료에 막힌 COP31…17년 만에 합의 없이 폐막",
+      "category": "제도",
+      "summary": "아시아 에너지 안보 구상 '라이즈 아시아'와 글로벌 고신뢰 탄소시장 (GVCM) 등 한국 주도 협력도 넓혔다. 김 장관은 \"대표결정문 채택에 이르지 못한 것은 매우 안타깝다\"고 말했다. 차기 총회(COP32)는 내년 에티오피아...",
+      "source": "newsworks.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newsworks.co.kr/news/articleView.html?idxno=904075",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 2,
+      "duplicateSources": [
+        "newsworks.co.kr",
+        "newstomato.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
     {
       "id": "ec3408cc7944da3d",
       "publishedAt": "2026-11-23",
@@ -34,6 +58,29 @@
         "NAVER API HUB"
       ],
       "region": "해외"
+    },
+    {
+      "id": "1ed6f23d92613dc1",
+      "publishedAt": "2026-11-23",
+      "title": "합의문 없이 끝난 COP31, 정말 실패일까 [기에사]",
+      "category": "제도",
+      "summary": "화석연료 이견에 '안탈리아 협약' 불발 정의로운 전환· 탄소시장 결정문은 채택 전기화 35% 서약에 한국도 동참 한국 전력 비중은 22%… 갈 길 멀어 튀르키예 안탈리아에서 열린 제31차 유엔기후변화협약 당사국총회...",
+      "source": "segye.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.segye.com/newsView/20261123513455?OutUrl=naver",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "segye.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
     },
     {
       "id": "1851b8edd3a8f66c",
@@ -88,12 +135,13 @@
         "mydaily.co.kr",
         "sports.donga.com",
         "sateconomy.co.kr",
-        "topdaily.kr"
+        "topdaily.kr",
+        "ekn.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 14,
+      "duplicateCount": 15,
       "region": "국내"
     },
     {
@@ -303,6 +351,54 @@
       ],
       "duplicateSources": [
         "engjournal.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "2d5ac80c9339edab",
+      "publishedAt": "2026-11-23",
+      "title": "산유국vs주요국 극한대립·구조적 한계 민낯⋯기후부 “탈석탄 기조 변...",
+      "category": "제도",
+      "summary": "국제 탄소시장 에서는 보고·검토 체계를 개선해 투명성과 신뢰성을 높이는 방향의 결정문이 채택됐다. 우리 정부는 이번 총회 합의 무산에도 불구하고 국내외 기후에너지 정책을 일관되게 밀고 나가겠다는 확고한...",
+      "source": "etoday.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.etoday.co.kr/news/view/2651679",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "etoday.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "70cae4704928c2ad",
+      "publishedAt": "2026-11-23",
+      "title": "산림조합중앙회, '2026년 산림경영지도 우수사례' 선정",
+      "category": "상쇄·외부사업",
+      "summary": "최우수상은 산불 피해지 복구조림과 배출권 거래제 외부사업을 연계해 지원한 장영우 안동시산림조합... 활용한 산림정보 관리, 탄소 배출권 사업 연계, 임산물 가공 및 유통 지원 등 다양한 영역을 다루고 있다. /나무신문",
+      "source": "imwood.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.imwood.co.kr/news/articleView.html?idxno=42454",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "imwood.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -531,6 +627,30 @@
       "region": "국내"
     },
     {
+      "id": "595bb836ee396e5e",
+      "publishedAt": "2026-11-23",
+      "title": "[월드 이슈] “떠날 땐 언제고”…영국, EU 재가입할까?",
+      "category": "제도",
+      "summary": "양측은 식품 교역에 필요한 검역 증명서와 국경 검사를 줄이고, 탄소 배출권 시장 도 연계하기로 했습니다. 또 영국과 EU 청년 각각 연간 최대 10만 명이 상대 지역에서 최장 3년 동안 일하거나 공부할 수 있도록 했습니다....",
+      "source": "kbs.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8720056&ref=A",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "kbs.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
       "id": "807c2b5ea0f2456c",
       "publishedAt": "2026-11-23",
       "title": "[온실가스 배출권] 11월 23일 KAU26, 50원 내리며 한 주 시작",
@@ -553,6 +673,53 @@
       "searchProviders": [
         "Google News RSS"
       ],
+      "region": "국내"
+    },
+    {
+      "id": "610e14c357eae291",
+      "publishedAt": "2026-11-23",
+      "title": "[더벨]KCGI대체운용, 바이오가스로 환경 인프라 첫발",
+      "category": "제도",
+      "summary": "탄소 배출권 시장 이 커지고 있다는 점도 사업 여건으로 꼽힌다. SDX재단이 MRV(측정·보고·검증) 체계를 맡은 것도 감축 실적을 인증받아 배출권 수익으로 연결하기 위해서다. 지난해 11월 증권사의 배출권 위탁거래가...",
+      "source": "thebell.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202611191508365360104150",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "thebell.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "7e7fe57e7ba052a5",
+      "publishedAt": "2026-11-23",
+      "title": "[더밸류 브리핑] 오늘의 NH농협금융지주 소식...포용금융 확대·해군 금...",
+      "category": "제도",
+      "summary": "NH농협은행은 저탄소 농업기술을 도입해 온실가스 를 감축한 농가를 격려하고, 농가의 탄소감축이 부가 소득으로 이어지는 선순환 구조를 확산하기 위하여 농가가 창출한 배출권 구매(누적 14918톤 매입)와 감축...",
+      "source": "thevaluenews.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.thevaluenews.co.kr/news/view.php?idx=203526",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "thevaluenews.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
       "region": "국내"
     },
     {
@@ -673,12 +840,13 @@
       "duplicateSources": [
         "popcornnews.net",
         "ftoday.co.kr",
-        "seoultimes.news"
+        "seoultimes.news",
+        "thefirstmedia.net"
       ],
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 3,
+      "duplicateCount": 4,
       "region": "국내"
     },
     {
@@ -1020,6 +1188,30 @@
       ],
       "duplicateCount": 1,
       "region": "국내"
+    },
+    {
+      "id": "0d23c2fe2c6bffd2",
+      "publishedAt": "2026-11-23",
+      "title": "\"국제해운 탈탄소 전환 본격화하는데… 한국은 역주행 하고 있다\"",
+      "category": "제도",
+      "summary": "국제해사기구가 온실가스 전략을 개정한 이듬해인 2024년, 정책금융기관의 무탄소연료 선박 지원은 잠시... 이는 IMO 규제뿐 아니라 EU 배출권 거래제(ETS) 및 FuelEU Maritime 등 유럽의 강력한 환경 규제 대응력을 높여 유럽...",
+      "source": "energydaily.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.energydaily.co.kr/news/articleView.html?idxno=205365",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "energydaily.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
     },
     {
       "id": "1801d7b4841ee85e",
@@ -1914,6 +2106,30 @@
       "searchProviders": [
         "NAVER API HUB"
       ],
+      "region": "국내"
+    },
+    {
+      "id": "3ad53075fb91b6d9",
+      "publishedAt": "2026-11-20",
+      "title": "표준협회, 고객사의 탄소 규제 대응 지원 위한 무료 세미나 개최",
+      "category": "제도",
+      "summary": "행사에는 배출권거래제 ·목표관리제 대상 기업 등 온실가스 검증 고객사 담당자들이 참석하여 주요 제도와 검증 분야의 대응 방향을 논의했다. 세미나에서는 ▲지속가능성 공시 현황과 대응 방향 ▲기후리스크 평가와...",
+      "source": "dailian.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.dailian.co.kr/news/view/1717900/?sc=Naver",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "dailian.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
       "region": "국내"
     },
     {
@@ -3572,12 +3788,14 @@
         "탄소배출권"
       ],
       "duplicateSources": [
+        "파이낸셜뉴스",
         "fnnews.com"
       ],
       "searchProviders": [
+        "Google News RSS",
         "NAVER API HUB"
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "region": "국내"
     },
     {
@@ -7011,7 +7229,8 @@
         "ajunews.com",
         "hankookilbo.com",
         "노컷뉴스",
-        "케이에스피뉴스"
+        "케이에스피뉴스",
+        "서울Pn"
       ],
       "searchProviders": [
         "Google News RSS",
