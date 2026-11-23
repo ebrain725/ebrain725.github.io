@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-11-24T06:41:03+09:00",
+  "lastSync": "2026-11-24T08:17:33+09:00",
   "keywords": [
     "배출권",
     "배출권거래제",
@@ -30,7 +30,7 @@
   "warning": "한국거래소 배출권 공지사항: 한국거래소 공지 목록을 해석하지 못했습니다. 1페이지: HTTP Error 403: Forbidden",
   "aiInsight": {
     "summary": "최근 공식자료의 직접적인 수급 변수는 유상경매입니다. 최근 경매가 높은 낙찰가로 소화돼 공급보다 이행수요가 강하다는 신호입니다.",
-    "generatedAt": "2026-11-24T06:41:03+09:00",
+    "generatedAt": "2026-11-24T08:17:33+09:00",
     "basisLatestDate": "2026-11-23",
     "basisCount": 10,
     "source": "fallback",
@@ -907,6 +907,30 @@
       ],
       "duplicateCount": 1,
       "region": "해외"
+    },
+    {
+      "id": "f7be22942de1fd90",
+      "publishedAt": "2026-11-24",
+      "title": "[중국 비즈니스 트렌드&동향] AI에 현금 쏟은 텐센트와 알리바바, 검색...",
+      "category": "제도",
+      "summary": "부문별로 보면 차량 판매 매출은 216억 3,000만 위안(약 4조 3,606억원)으로 전년동기대비 19.8% 늘었고, 서비스 및 기타 매출은 탄소 배출권 거래 수입 증가로 13.7% 늘어난 26억 5,000만 위안(약 5,342억원)이다. 전체...",
+      "source": "platum.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://platum.kr/archives/299192",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "platum.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
     },
     {
       "id": "b7a305e389ce6bdf",
@@ -2113,8 +2137,8 @@
         "tokenpost.kr",
         "e-platform.net",
         "dailian.co.kr",
-        "energydaily.co.kr",
         "dongascience.com",
+        "energydaily.co.kr",
         "fnnews.com"
       ],
       "searchProviders": [
@@ -3038,7 +3062,8 @@
       "matchedKeywords": [
         "배출권",
         "배출권거래제",
-        "탄소배출권"
+        "탄소배출권",
+        "탄소시장"
       ],
       "duplicateSources": [
         "ifs.or.kr"
@@ -8639,14 +8664,14 @@
         "상쇄배출권"
       ],
       "duplicateSources": [
-        "이데일리",
+        "마켓인",
         "edaily.co.kr",
         "이투데이",
         "www.dt.co.kr",
         "dt.co.kr",
         "biz.chosun.com",
+        "이데일리",
         "Chosunbiz",
-        "마켓인",
         "busan.com",
         "연합뉴스",
         "yna.co.kr",
@@ -294548,10 +294573,10 @@
   },
   "newsRetention": {
     "policy": "append-only",
-    "lastMergedAt": "2026-11-24T06:41:09+09:00",
-    "itemCount": 2484,
-    "archiveBefore": 2480,
-    "currentBefore": 2286,
+    "lastMergedAt": "2026-11-24T08:17:41+09:00",
+    "itemCount": 2485,
+    "archiveBefore": 2484,
+    "currentBefore": 2288,
     "gitRecoveryEnabled": false
   },
   "policyEventTaxonomy": {
