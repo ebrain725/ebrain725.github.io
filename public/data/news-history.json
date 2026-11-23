@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-23T12:55:33+09:00",
+  "generatedAt": "2026-11-23T13:14:23+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 2438,
+  "itemCount": 2441,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-23",
   "sourceCommitsScanned": 0,
@@ -39,12 +39,13 @@
         "enewstoday.co.kr",
         "biz.heraldcorp.com",
         "mydaily.co.kr",
-        "sports.donga.com"
+        "sports.donga.com",
+        "sateconomy.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 12,
+      "duplicateCount": 13,
       "region": "국내"
     },
     {
@@ -216,6 +217,30 @@
       "region": "국내"
     },
     {
+      "id": "01373387236e5ee3",
+      "publishedAt": "2026-11-23",
+      "title": "나갈 땐 언제고...영국이 다시 EU 기웃거리는 이유 [자막뉴스]",
+      "category": "제도",
+      "summary": "양측은 이번 회담에서 식품과 농산물 무역장벽의 완화, 탄소 배출권 거래 연계, 청년 이동 개선 등 관계 강화 방안에 합의했습니다. 버넘 총리는 한 발 더 나가 향후 1년간 양측의 장기적 관계에 대해 숙고하고 싶다고...",
+      "source": "ytn.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.ytn.co.kr/_ln/0134_202611231150030658",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "ytn.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "1870701bf3ada7e4",
       "publishedAt": "2026-11-23",
       "title": "기후총회 '화석연료 퇴출' 결국 불발 … 현실 외면한 탈탄소 압박 한계",
@@ -289,6 +314,30 @@
       ],
       "duplicateCount": 1,
       "region": "국내"
+    },
+    {
+      "id": "bb0dcda5c304d956",
+      "publishedAt": "2026-11-23",
+      "title": "[투데이온] \"식기세척기·오븐까지 탄소장벽 확대 요구\"…삼성·LG 폴란...",
+      "category": "시장·가격",
+      "summary": "다만 역내 공장 역시 유럽 배출권 거래제(ETS) 규제를 받는 철강 등 원재료를 조달하는 만큼 원재료 가격 변동과 규제 변화의 영향을 함께 받는다. 한국 정부도 대응에 나섰다. 한국 정부는 2026년 10월 21일 열린...",
+      "source": "the-today.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.the-today.com/news/articleView.html?idxno=93960",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "the-today.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
     },
     {
       "id": "877d29e4f4d91387",
@@ -597,6 +646,30 @@
       ],
       "duplicateSources": [
         "electimes.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "2c1ba2ce5a622bf2",
+      "publishedAt": "2026-11-23",
+      "title": "\"투자자는 정보 달라는데 기업은 난색\"…ESG 공시 의무화 진통",
+      "category": "제도",
+      "summary": "배출권 거래제와 온실가스 목표관리제에 따른 배출량이 5월 말에 확정 공시된다는 점을 반영한 결과다. 기업이 탄소 배출량을 얼마나 줄였는지, 정부가 정한 온실가스 감축 목표를 얼마나 이행했는지를 보고서에...",
+      "source": "mt.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.mt.co.kr/stock/2026/11/23/2026112219585411228",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "mt.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
