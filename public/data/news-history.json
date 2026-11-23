@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-23T13:14:23+09:00",
+  "generatedAt": "2026-11-23T15:16:31+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 2441,
+  "itemCount": 2455,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-23",
   "sourceCommitsScanned": 0,
@@ -12,6 +12,53 @@
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "ec3408cc7944da3d",
+      "publishedAt": "2026-11-23",
+      "title": "현대차·기아, 호주 탄소 규제 엇갈린 성적표…핵심은 전기차 판매량",
+      "category": "제도",
+      "summary": "23일 업계에 따르면 호주 정부가 올해 2월 공개한 신차효율기준(NVES) 업체별 이행 실적에서 기아는 배출권 72만9698개를 쌓았다. 반면 현대차는 배출권 이 8만4563개 부족했다. 벌금으로 환산하면 422만 호주달러(약 37억)...",
+      "source": "ebn.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1732682",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "ebn.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "해외"
+    },
+    {
+      "id": "1851b8edd3a8f66c",
+      "publishedAt": "2026-11-23",
+      "title": "한국전력 2만5000원 약세…3분기 이익 감소와 연료비 부담 부각",
+      "category": "시장·가격",
+      "summary": "연료비와 구입전력비 상승, 원상복구 충당부채와 온실가스 배출권 비용이 부담 요인으로 제시됐다. 최근 발표는 기업의 중장기 변수를 보여주지만 이날 시세 변동의 단일 원인으로 보기는 어렵다. 업종과 지수...",
+      "source": "job-post.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.job-post.co.kr/news/articleView.html?idxno=240227",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "온실가스 배출권"
+      ],
+      "duplicateSources": [
+        "job-post.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
     {
       "id": "90ad9ff2e92dc41e",
       "publishedAt": "2026-11-23",
@@ -40,12 +87,36 @@
         "biz.heraldcorp.com",
         "mydaily.co.kr",
         "sports.donga.com",
-        "sateconomy.co.kr"
+        "sateconomy.co.kr",
+        "topdaily.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 13,
+      "duplicateCount": 14,
+      "region": "국내"
+    },
+    {
+      "id": "ad395009ed73686f",
+      "publishedAt": "2026-11-23",
+      "title": "탄소세 미뤄도 배는 바꿔야…K해운, 친환경 투자 '딜레마'",
+      "category": "제도",
+      "summary": "해당 배출권 은 내년에 제출하는 구조다. 2025년부터 시행된 친환경 해운연료 규제인 '퓨얼EU 마리타임'도 부담이다. 선박에서 사용하는 에너지의 온실가스 집약도를 2020년 기준 대비 2025년 2%, 2030년 6%, 2035년 14.5...",
+      "source": "dailian.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.dailian.co.kr/news/view/1718481/?sc=Naver",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "dailian.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
       "region": "국내"
     },
     {
@@ -96,6 +167,29 @@
       "region": "국내"
     },
     {
+      "id": "e3666450abf1cbf2",
+      "publishedAt": "2026-11-23",
+      "title": "유엔기후총회 17년만에 빈손 폐막… 우리나라 산업계 영향은?",
+      "category": "제도",
+      "summary": "특히 우리나라는 지난 16일 국제 의무 탄소시장 협력체인 탄소시장 연합에 공식 가입하는 등 기존 글로벌 정책과 궤를 같이하고 있다. 김성환 기후에너지환경부 장관도 이날 “기후위기의 심각성이 커지는 상황에서...",
+      "source": "segyebiz.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.segyebiz.com/newsView/20261123510046?OutUrl=naver",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "segyebiz.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "3eeb98f41f20fc9c",
       "publishedAt": "2026-11-23",
       "title": "유엔기후총회 17년 만에 합의 실패…한국 주도 국제협력 기반 확대는 성...",
@@ -120,6 +214,31 @@
       "region": "국내"
     },
     {
+      "id": "93dbfbc30201fa00",
+      "publishedAt": "2026-11-23",
+      "title": "영국 EU 재가입 검토에… 테리사 메이 전 총리 \"경악 금치 못해\"",
+      "category": "제도",
+      "summary": "이날 1시간 가까이 진행된 회의에선 양측은 △식품∙농산물 무역장벽 완화 △청년 이동성 개선 △ 탄소 배출권 거래제 개편 등에 합의했다. 이 자리에서 버넘 총리는 “오늘은 영국과 유럽 모두에 좋은 날”이라며...",
+      "source": "hankookilbo.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.hankookilbo.com/news/article/A2026112308250003230?did=NA",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "hankookilbo.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
       "id": "3a4acb1874049db8",
       "publishedAt": "2026-11-23",
       "title": "에너지기업 협력 강화…전북TP·광주TP 기술교류회",
@@ -136,6 +255,30 @@
       ],
       "duplicateSources": [
         "etoday.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "779da2efab0b6216",
+      "publishedAt": "2026-11-23",
+      "title": "수술대 오른 전기값…지역 차등·최저가 입찰로 바꾼다 [김리안의 에네...",
+      "category": "시장·가격",
+      "summary": "온실가스 배출권 (탄소비용) 부담까지 안고 있는 가스발전기는 탄소를 배출하지 않는 재생에너지·원전과의 가격 격차가 더 벌어져 설 자리를 잃게 된다. ○전력감독원 신설도 시급 안정적인 기저 발전원인 원전은 한전...",
+      "source": "hankyung.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.hankyung.com/article/202611157309i",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "온실가스 배출권"
+      ],
+      "duplicateSources": [
+        "hankyung.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -185,6 +328,30 @@
       ],
       "duplicateSources": [
         "newsis.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "fd99791b8e6aac8e",
+      "publishedAt": "2026-11-23",
+      "title": "렉스이노베이션, 전남광주 수소 인재육성 과제 2건 선정",
+      "category": "제도",
+      "summary": "한편 렉스이노베이션은 한국전력의 SCADA 기반 EMS 기술을 이전받아 설립된 연구소기업으로,전남 나주에 본사를 두고 태양광·소수력 발전소 EPC, VPP 플랫폼 개발, 탄소 배출권 연계 모델 등 통합 에너지 밸류체인을...",
+      "source": "todayenergy.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.todayenergy.kr/news/articleView.html?idxno=305926",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "todayenergy.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -340,6 +507,55 @@
       "region": "해외"
     },
     {
+      "id": "8a3aa341664a802e",
+      "publishedAt": "2026-11-23",
+      "title": "[최봉혁ESG경영칼럼]장애인표준사업장,이제ESG보고서를준비할 때다",
+      "category": "제도",
+      "summary": "다만 장애인 고용성과를 탄소 배출권 으로 대체할 수는 없다. 환경과 사회적 가치는 각각의 전문기준에 따라 평가해야 한다. ◆ 매출 10억 원 기업도 ESG를 준비해야 하는가 모든 기업이 대기업 수준의...",
+      "source": "welfarenews.net",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.welfarenews.net/news/articleView.html?idxno=213025",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "welfarenews.net"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "807c2b5ea0f2456c",
+      "publishedAt": "2026-11-23",
+      "title": "[온실가스 배출권] 11월 23일 KAU26, 50원 내리며 한 주 시작",
+      "category": "시장·가격",
+      "summary": "[온실가스 배출권] 11월 23일 KAU26, 50원 내리며 한 주 시작 데일리e뉴스",
+      "source": "데일리e뉴스",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBDczJJOTRJc05UcUVLd3NzbTJuM01LQXA1dDR0eXdXY0R1b0R2QVdMNDFCUkFxTHhxT291M0ZzSkVOUE9mbzg4Wkp6VFVYYW03bUJuNkRPQVBCNWdhTWxGb1NDc1poRlZHbkF3R1l6QQ?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "온실가스 배출권",
+        "KAU26"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "데일리e뉴스"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "877d29e4f4d91387",
       "publishedAt": "2026-11-23",
       "title": "[SV 리포트] 탈탄소 준비하는 포스코, 전기로·수소환원 '아직'…환경규...",
@@ -393,6 +609,29 @@
       ],
       "duplicateCount": 8,
       "region": "해외"
+    },
+    {
+      "id": "94c5cb59ed14fad9",
+      "publishedAt": "2026-11-23",
+      "title": "[COP31] 화석연료 갈등으로 최종합의 결렬…기후재원도 미해결",
+      "category": "제도",
+      "summary": "이에 따라 파리협정 제6조 4항에 따른 국제 탄소시장 수익의 5%가 기후적응기금에 배분될 예정이다. 국제 탄소시장 이행 규칙과 정의로운 전환 작업계획 등에서도 개별 결정이 채택됐다. 또한 90개국 이상이 세계...",
+      "source": "esgeconomy.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.esgeconomy.com/news/articleView.html?idxno=17502",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "esgeconomy.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
     },
     {
       "id": "4d8287e5ac5f9a6d",
@@ -490,6 +729,30 @@
       "region": "국내"
     },
     {
+      "id": "28c7112fc94d80ae",
+      "publishedAt": "2026-11-23",
+      "title": "HMM, 美 넥스트파워와 탄소감축 실적 거래…저탄소 연료비 일부 회수",
+      "category": "제도",
+      "summary": "이번 거래는 법정 탄소 배출권 거래와 구분된다. HMM은 글로벌해사포럼(GMF)의 추가성 원칙에 따라 유럽연합(EU) 환경규제 등 법정 의무 이행에 필요한 감축분을 제외하고, 자발적으로 추가 감축한 물량만 거래 대상으로...",
+      "source": "sateconomy.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://sateconomy.co.kr/news/view/1065575212955613",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "sateconomy.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "9ffe80a54b78c233",
       "publishedAt": "2026-11-23",
       "title": "EU와 관계 재설정 나선 영국, 재가입도 검토?...공방 재점화",
@@ -530,6 +793,37 @@
       "duplicateCount": 1,
       "duplicateSources": [
         "digitaltoday.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "065fa85cc9f8d12c",
+      "publishedAt": "2026-11-23",
+      "title": "COP31, 대표결정문 채택 불발…'화석연료 전환' 이견에 17년 만의 빈손",
+      "category": "제도",
+      "summary": "■한국, 전기화 서약 동참· 탄소시장 이니셔티브 주도 한국은 한국형 녹색대전환(K-GX)과 '전기국가(electro-state)' 전환 정책을 소개했다. 호주와는 탈탄소화 협력 양해각서(MOU)를 체결하고 유엔기후변화협약(UNFCCC)에...",
+      "source": "fnnews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.fnnews.com/news/202611231335158524",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 9,
+      "duplicateSources": [
+        "dailian.co.kr",
+        "impacton.net",
+        "tokenpost.kr",
+        "view.asiae.co.kr",
+        "etoday.co.kr",
+        "energy-news.co.kr",
+        "ajunews.com",
+        "e-platform.net",
+        "fnnews.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -631,6 +925,30 @@
       "region": "국내"
     },
     {
+      "id": "22de983fe69c39ab",
+      "publishedAt": "2026-11-23",
+      "title": "30년 넘은 유엔 기후총회 '화석연료 퇴출'에 합의 못해 파행, 국제 기후...",
+      "category": "제도",
+      "summary": "COP6는 탄소 흡수원과 배출권 거래제 운용 방식 등을 둘러싼 견해차로 포괄적 합의에 도달하지 못했다. COP15는 선진국들의 과거 온실가스 배출 책임 문제 등을 둘러싼 이견으로 당해 총회에서 협상을 마무리하지 못했다....",
+      "source": "businesspost.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.businesspost.co.kr/BP?command=article_view&num=452640",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "businesspost.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "e425b2f8a3ee7a7c",
       "publishedAt": "2026-11-23",
       "title": "'이행의 COP' 내걸었던 31차 기후총회…당사국 간 이견에 끝내 합의 불발",
@@ -642,10 +960,36 @@
       "url": "https://www.electimes.com/news/articleView.html?idxno=375111",
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
-        "탄소시장"
+        "탄소시장",
+        "배출권",
+        "배출권거래제"
       ],
       "duplicateSources": [
         "electimes.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "436dd07f6a440789",
+      "publishedAt": "2026-11-23",
+      "title": "'12차 전기본' 핵심 쟁점은…'수요예측·탄소감축·요금부담'",
+      "category": "제도",
+      "summary": "투자, 배출권 거래제와 전기요금의 연계까지 주요 과제가 논의됐다. 이날 임동순 동의대학교 교수, 최형식... 석탄과 액화천연가스(LNG) 발전소는 온실가스를 배출할 때 필요한 배출권 을 정부로부터 일부 무료로 받지만...",
+      "source": "newstree.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newstree.kr/newsView/ntr202611230018",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "newstree.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -3910,7 +4254,8 @@
       "url": "https://news.mtn.co.kr/article/2026111813484975948",
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
-        "배출권"
+        "배출권",
+        "상쇄배출권"
       ],
       "duplicateSources": [
         "mtn.co.kr"
@@ -6074,10 +6419,10 @@
         "지디넷코리아",
         "쿠키뉴스",
         "kukinews.com",
-        "포쓰저널",
-        "hansbiz.co.kr",
         "동아일보",
         "donga.com",
+        "포쓰저널",
+        "hansbiz.co.kr",
         "4th.kr",
         "뉴스;트리",
         "newstree.kr",
@@ -7744,7 +8089,10 @@
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
         "배출권",
-        "탄소배출권"
+        "탄소배출권",
+        "배출권거래제",
+        "유상할당",
+        "K-ETS"
       ],
       "duplicateSources": [
         "daily.hankooki.com"
