@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-23T17:06:34+09:00",
+  "generatedAt": "2026-11-23T18:14:34+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 2464,
+  "itemCount": 2468,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-23",
   "sourceCommitsScanned": 0,
@@ -34,6 +34,30 @@
       "searchProviders": [
         "NAVER API HUB"
       ],
+      "region": "국내"
+    },
+    {
+      "id": "514f568558fada0d",
+      "publishedAt": "2026-11-23",
+      "title": "화석연료 퇴출 놓고 충돌 … 17년만에 기후합의 무산",
+      "category": "제도",
+      "summary": "2018년 순배출량보다 온실가스 를 53~61% 줄인다는 계획이다. 올해부터 시작된 제4차 배출권 거래제 할당 계획도 그대로 시행된다. 국제 기후 협상은 추가 합의에 실패했지만 EU의 탄소 배출 규제와 한국의 감축 정책은...",
+      "source": "mk.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.mk.co.kr/article/12216412",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "mk.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
       "region": "국내"
     },
     {
@@ -723,6 +747,31 @@
       "region": "국내"
     },
     {
+      "id": "39b5544fa0f69397",
+      "publishedAt": "2026-11-23",
+      "title": "[글로벌pick] 유엔, AI무기 규제 합의 불발···군사강국 이견에 2년 더...",
+      "category": "제도",
+      "summary": "탄소 배출권 거래제도도 연계해 철강 등 주요 산업의 탄소국경세 부담을 줄일 계획입니다. 대학등록금 문제 등에서는 이견이 남았습니다. 영국이 EU에 다시 가입하는 것은 아니지만 경제적 피해를 줄이기 위한 실용적인...",
+      "source": "globale.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.globale.co.kr/news/articleView.html?idxno=41801",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "globale.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "877d29e4f4d91387",
       "publishedAt": "2026-11-23",
       "title": "[SV 리포트] 탈탄소 준비하는 포스코, 전기로·수소환원 '아직'…환경규...",
@@ -824,6 +873,30 @@
       "region": "국내"
     },
     {
+      "id": "d390c1cf9d5b2921",
+      "publishedAt": "2026-11-23",
+      "title": "[COP31 결산] 예고된 실패, 기후외교 새판 짜야...한국에 기회와 과제",
+      "category": "시장·가격",
+      "summary": "기후위기의 심각성과 온실가스 감축의 필요성에는 공감했지만, 비용과 책임을 어떻게 나눌 것인지를 둘러싼... 탄소국경조정제도(CBAM)와 배출권 거래제 등 강력한 기후정책을 추진해 왔지만, 에너지 가격과 제조업 경쟁력...",
+      "source": "esgeconomy.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.esgeconomy.com/news/articleView.html?idxno=17508",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "esgeconomy.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "5f7fbb7cfa456101",
       "publishedAt": "2026-11-23",
       "title": "NH농협금융, 농업인 이자 부담 완화…판로·복지 지원 확대",
@@ -864,12 +937,13 @@
         "배출권"
       ],
       "duplicateSources": [
+        "thedailypost.kr",
         "joongangenews.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "region": "국내"
     },
     {
@@ -981,16 +1055,17 @@
       "matchedKeywords": [
         "탄소시장"
       ],
-      "duplicateCount": 9,
+      "duplicateCount": 10,
       "duplicateSources": [
-        "dailian.co.kr",
-        "impacton.net",
-        "tokenpost.kr",
         "view.asiae.co.kr",
         "etoday.co.kr",
         "energy-news.co.kr",
+        "impacton.net",
         "ajunews.com",
+        "tokenpost.kr",
         "e-platform.net",
+        "dailian.co.kr",
+        "energydaily.co.kr",
         "fnnews.com"
       ],
       "searchProviders": [
@@ -1015,6 +1090,29 @@
       "duplicateCount": 1,
       "duplicateSources": [
         "tokenpost.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "c1af70f29825df19",
+      "publishedAt": "2026-11-23",
+      "title": "COP31 합의 결렬에도 10개 분야서 성과... 탄소시장 ·기후적응 무엇이 달...",
+      "category": "제도",
+      "summary": "17년 만에 유엔 기후총회에서 포괄적 합의문 채택이 무산됐지만, 국제 탄소시장 과 기후변화 적응, 정의로운 전환 등 10개 분야에서는 제도 개선과 후속 조치가 결정됐다. 23일 산업통상부와 기후에너지환경부가 발표한...",
+      "source": "impacton.net",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.impacton.net/news/articleView.html?idxno=30788",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "impacton.net"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -6628,29 +6726,29 @@
         "상쇄배출권"
       ],
       "duplicateSources": [
+        "korea.kr",
+        "todayenergy.kr",
+        "kukinews.com",
+        "hansbiz.co.kr",
+        "동아일보",
+        "donga.com",
+        "포쓰저널",
+        "4th.kr",
+        "newstree.kr",
         "냉동공조저널",
         "대한일보",
         "Chosunbiz",
         "투데이에너지",
-        "korea.kr",
-        "todayenergy.kr",
         "지디넷코리아",
         "쿠키뉴스",
-        "kukinews.com",
-        "동아일보",
-        "donga.com",
-        "포쓰저널",
-        "hansbiz.co.kr",
-        "4th.kr",
         "뉴스;트리",
-        "newstree.kr",
         "파인드비",
         "대한민국 정책브리핑",
         "esgeconomy.com"
       ],
       "searchProviders": [
-        "Google News RSS",
-        "NAVER API HUB"
+        "NAVER API HUB",
+        "Google News RSS"
       ],
       "duplicateCount": 19,
       "region": "국내"
@@ -7178,11 +7276,11 @@
         "상쇄배출권"
       ],
       "duplicateSources": [
-        "이데일리",
         "edaily.co.kr",
-        "www.dt.co.kr",
         "dt.co.kr",
         "biz.chosun.com",
+        "이데일리",
+        "www.dt.co.kr",
         "Chosunbiz",
         "이투데이",
         "마켓인",
@@ -7233,8 +7331,8 @@
         "서울Pn"
       ],
       "searchProviders": [
-        "Google News RSS",
-        "NAVER API HUB"
+        "NAVER API HUB",
+        "Google News RSS"
       ],
       "duplicateCount": 54,
       "region": "국내"
@@ -13308,12 +13406,12 @@
         "choicenews.co.kr",
         "press9.kr",
         "view.asiae.co.kr",
-        "뉴시스",
         "newsis.com",
         "ezyeconomy.com",
         "financialpost.co.kr",
         "ddaily.co.kr",
         "smarttoday.co.kr",
+        "뉴시스",
         "wsobi.com",
         "newsian.co.kr",
         "jasm.co.kr",
