@@ -1,9 +1,9 @@
 {
   "version": "krx-market-refresh-2",
-  "trade_date": "2026-11-20",
-  "status": "source_not_current",
-  "coverage": "full_quotes",
-  "source_type": "authorized_open_api",
+  "trade_date": "2026-11-23",
+  "status": "same_day_collected",
+  "coverage": "representative_close_volume",
+  "source_type": "official_daily_pdf",
   "full_quotes": {
     "trade_date": "2026-11-20",
     "source_type": "authorized_open_api",
@@ -13,20 +13,20 @@
     "symbol_count": 5
   },
   "representative_report": {
-    "trade_date": "2026-11-20",
-    "published_date": "2026-11-20",
+    "trade_date": "2026-11-23",
+    "published_date": "2026-11-23",
     "source_type": "official_daily_pdf",
-    "source_url": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=710",
-    "revision_id": "krx:710:1:28901ac86f77",
-    "pdf_url": "data/krx-daily/pdfs/2026-11/2026-11-20.pdf",
-    "pdf_sha256": "28901ac86f77c005936372ddc5e28a1f5f9f15faf9d5c80e67fcaf183d9c6492",
-    "index_sha256": "e7794a91322db11f52e8252f7679a874084e572613b5f8fe180adcd57403fddc",
+    "source_url": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=711",
+    "revision_id": "krx:711:1:ad7390c8ebb0",
+    "pdf_url": "data/krx-daily/pdfs/2026-11/2026-11-23.pdf",
+    "pdf_sha256": "ad7390c8ebb0edbcd12d0e61d179e4238d1b93f9c421b7f0339568fd56ca38b0",
+    "index_sha256": "cc2df0962732a1b0639014dd8fb5cb038800e3bb18988c6cc07996f77914bae2",
     "symbol": "KAU26",
-    "close": 29550,
-    "change": 0,
-    "volume": 118410,
-    "market_volume": 138410,
-    "full_quote_comparison": "match"
+    "close": 29500,
+    "change": -50,
+    "volume": 129697,
+    "market_volume": 129697,
+    "full_quote_comparison": "unavailable"
   },
   "last_quote_attempt": {
     "status": "collected",
@@ -37,5 +37,5 @@
     "attempted_at": "2026-11-23T13:04:20+09:00",
     "workflow_run_id": "45108991336"
   },
-  "collected_at": "2026-11-23T13:04:21+09:00"
+  "collected_at": "2026-11-23T13:38:34+09:00"
 }
