@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-23T10:14:19+09:00",
+  "generatedAt": "2026-11-23T12:55:33+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 2426,
+  "itemCount": 2438,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-23",
   "sourceCommitsScanned": 0,
@@ -29,6 +29,7 @@
         "온실가스 배출권"
       ],
       "duplicateSources": [
+        "slist.kr",
         "newsdream.kr",
         "m-i.kr",
         "g-enews.com",
@@ -36,12 +37,109 @@
         "lawissue.co.kr",
         "ajunews.com",
         "enewstoday.co.kr",
-        "biz.heraldcorp.com"
+        "biz.heraldcorp.com",
+        "mydaily.co.kr",
+        "sports.donga.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 8,
+      "duplicateCount": 12,
+      "region": "국내"
+    },
+    {
+      "id": "3ed58864ec2b3b7f",
+      "publishedAt": "2026-11-23",
+      "title": "제31차 유엔기후변화협약 당사국총회 결과 공유 세미나 26일 개최",
+      "category": "제도",
+      "summary": "제1세션은 'COP31 주요 의제별 논의 결과'를 주제로 진행되며, 제2세션에서는 '파리협정 제6조와 NDC'를 주제로 국제 탄소시장 과 국가온실가스감축목표 이행 문제를 다룬다. 파리협정 제6조는 국가 간 온실가스 감축...",
+      "source": "ekn.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.ekn.kr/web/view.php?key=20261123020572551",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "ekn.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "4364fbac94fa691c",
+      "publishedAt": "2026-11-23",
+      "title": "이찬우號 농협금융, 녹색금융 3803억 감소…금융배출 감축목표 재설정 ...",
+      "category": "상쇄·외부사업",
+      "summary": "농협은행은 농업인의 온실가스 감축 인증비용을 지원하고 외부사업 탄소 배출권 (KOC)을 직접 매입해왔다. 올해 9월 3일 발표 기준으로 총 45개 농가에서 누적 1만4918톤 규모의 배출권 을 구매했다. 농가의 감축 노력이...",
+      "source": "fntimes.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.fntimes.com/html/view.php?ud=2026111915512455125e6e69892f_18",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "fntimes.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "3eeb98f41f20fc9c",
+      "publishedAt": "2026-11-23",
+      "title": "유엔기후총회 17년 만에 합의 실패…한국 주도 국제협력 기반 확대는 성...",
+      "category": "제도",
+      "summary": "또 국제에너지기구(IEA)와 함께 추진 중인 아시아 에너지 안보 구상(RISE ASIA) 관련 부대행사와 글로벌 고신뢰 탄소시장 (GVCM) 공동협력의향서 서명식 등을 개최해 국제협력을 위한 한국의 주도적 노력도 강조했다. 이와...",
+      "source": "biz.heraldcorp.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://biz.heraldcorp.com/article/10945909?ref=naver",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 2,
+      "duplicateSources": [
+        "biz.heraldcorp.com",
+        "todayenergy.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "3a4acb1874049db8",
+      "publishedAt": "2026-11-23",
+      "title": "에너지기업 협력 강화…전북TP·광주TP 기술교류회",
+      "category": "제도",
+      "summary": "참가 기업들은 수소·배터리·전력변환·태양광·탄소 배출권 등 신재생에너지 분야의 기술과 사업 현황을 공유하고 공동 기술 개발과 판로 확대 방안을 논의했다. 앞서 참가자들은 한국에너지기술연구원 광주...",
+      "source": "etoday.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.etoday.co.kr/news/view/2651617",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "etoday.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
       "region": "국내"
     },
     {
@@ -61,6 +159,55 @@
       ],
       "duplicateSources": [
         "engjournal.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "0906556a58b805a6",
+      "publishedAt": "2026-11-23",
+      "title": "버넘 EU 재가입 검토에…메이 전 英총리 \"브렉시트 끝났다\" 반발",
+      "category": "제도",
+      "summary": "앞서 버넘 총리와 EU 지도자들은 브뤼셀 정상회의 종료 후 공동 성명을 통해 식물위생, 탄소 배출권 거래제(ETS) 연계, 청년 교류 프로그램에 합의했다고 밝혔다. 해미시 팔코너 영국 유럽관계 담당 장관은 \"이 논쟁(영국 EU...",
+      "source": "newsis.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newsis.com/view/NISX20261123_0003878868",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "newsis.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "1e7337441434b31d",
+      "publishedAt": "2026-11-23",
+      "title": "농협 지원, 농업·농촌 전반으로 확대",
+      "category": "상쇄·외부사업",
+      "summary": "농협은행은 농가가 줄인 탄소 배출권 (KOC)을 누적 1만4918톤 사들였고 감축 인증비용도 지원한다. 생활 분야에서는 NH투자증권이 이동장터에 10억원, 여성농업인 이동식 화장실에 2억5000만원, 마을회관·경로당 냉장고...",
+      "source": "pressman.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.pressman.kr/news/articleView.html?idxno=104615",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "pressman.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -168,6 +315,60 @@
       "region": "국내"
     },
     {
+      "id": "fe2f578002182fe4",
+      "publishedAt": "2026-11-23",
+      "title": "[ESGX 이슈 5] COP31 최종 합의 무산…화석연료 전환·기후재원 놓고 충...",
+      "category": "상쇄·외부사업",
+      "summary": "항공 배출권 거래제(ETS) 확대 방안에 반대했다. EU는 2029년부터 일부 역외 국제선까지 ETS 적용 범위를... 사우디아라비아는 국제선 항공편에 국제항공 탄소 상쇄 ·감축제도(CORSIA)를 적용하는 기존 체계를 유지해야 한다고...",
+      "source": "etoday.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.etoday.co.kr/news/view/2651588",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "view.asiae.co.kr",
+        "etoday.co.kr",
+        "energy-news.co.kr",
+        "impacton.net",
+        "ajunews.com",
+        "tokenpost.kr",
+        "e-platform.net",
+        "dailian.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 8,
+      "region": "해외"
+    },
+    {
+      "id": "4d8287e5ac5f9a6d",
+      "publishedAt": "2026-11-23",
+      "title": "[COP31 결산] 화석연료 전환도 감축 후속안도 불발…글로벌 감축 공조 후...",
+      "category": "제도",
+      "summary": "한국 주도의 글로벌 고신뢰 탄소시장 (GVCM) 구상에는 한국을 포함해 9개국이 참여 의사를 밝혔다. 전력망·에너지저장장치(ESS) 기업에는 이 같은 협력이 공동 실증과 실제 발주로 이어질지가 관건이다. 김성환 기후부...",
+      "source": "etnews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.etnews.com/20261123000228",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "etnews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "5f7fbb7cfa456101",
       "publishedAt": "2026-11-23",
       "title": "NH농협금융, 농업인 이자 부담 완화…판로·복지 지원 확대",
@@ -182,13 +383,14 @@
         "배출권"
       ],
       "duplicateSources": [
+        "popcornnews.net",
         "ftoday.co.kr",
         "seoultimes.news"
       ],
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 2,
+      "duplicateCount": 3,
       "region": "국내"
     },
     {
@@ -263,6 +465,29 @@
       "region": "국내"
     },
     {
+      "id": "061f1ddb7e7d91a8",
+      "publishedAt": "2026-11-23",
+      "title": "COP31, 주요국 이견에 합의 불발…한국, 탈 탄소 ·기후기술 협력 추진",
+      "category": "제도",
+      "summary": "국제에너지기구(IEA)와 추진 중인 아시아 에너지 안보 구상(RISE ASIA) 관련 부대행사를 열고 글로벌 고신뢰 탄소시장 구축을 위한 공동협력의향서 서명식도 진행했다. 해당 협력에는 한국을 비롯한 9개국이 참여 의사를...",
+      "source": "digitaltoday.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=717352",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "digitaltoday.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "9cbc54b11e005790",
       "publishedAt": "2026-11-23",
       "title": "COP31 합의문 불발…‘안탈리아 팩트’서 화석연료 빠져",
@@ -309,6 +534,52 @@
       ],
       "duplicateCount": 1,
       "region": "해외"
+    },
+    {
+      "id": "93dc3a4965975779",
+      "publishedAt": "2026-11-23",
+      "title": "COP31 대표결정문 채택 불발…적응·기후재원 등 주요 의제 합의",
+      "category": "제도",
+      "summary": "다만 적응과 정의로운 전환, 기후재원 등 주요 의제에서는 합의문을 도출했으며, 한국도 에너지 전환과 탄소시장 , 산불 대응 등을 중심으로 국제협력을 확대했다. 23일 기후에너지환경부에 따르면 COP31은 당초 예정된...",
+      "source": "view.asiae.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://view.asiae.co.kr/article/2026112310125085454",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "view.asiae.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "671061b6adcd909d",
+      "publishedAt": "2026-11-23",
+      "title": "31차 기후총회, 17년 만에 포괄적 합의 실패…적응·재원 일부 진전",
+      "category": "상쇄·외부사업",
+      "summary": "국제 탄소시장 에서는 온실가스 감축실적을 국가 간 거래할 때 필요한 보고·검토 체계와 감축량 산정 방법의 운영을 개선하기로 했다. 기후정책이 무역과 경제에 미치는 영향을 다루는 협상은 선진국과 개발도상국의...",
+      "source": "news1.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.news1.kr/economy/trend/6362526",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "news1.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
     },
     {
       "id": "e425b2f8a3ee7a7c",
@@ -523,6 +794,29 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "c606e9114ed574bf",
+      "publishedAt": "2026-11-22",
+      "title": "韓은 K-GX, 中은 탄소시장…COP31서 드러난 탄소중립 온도차 [현장+]",
+      "category": "제도",
+      "summary": "韓은 K-GX, 中은 탄소시장…COP31서 드러난 탄소중립 온도차 [현장+] 쿠키뉴스",
+      "source": "쿠키뉴스",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBFRE00ZkY1LVNQVDF6anZOUkExVXV6TU1WU09wUFdxcG1oeWRyVHBUQjlLb0huT003X3NrM3VmREZIMzVoVW95YVk3cHlKUFFpWkNXTEQzcUVERUVhSUdfY0dlcw?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "쿠키뉴스"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
       "region": "국내"
     },
     {
@@ -1956,7 +2250,8 @@
       "url": "https://www.newsclaim.co.kr/news/articleView.html?idxno=3083498",
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
-        "배출권"
+        "배출권",
+        "배출권거래제"
       ],
       "duplicateSources": [
         "newsclaim.co.kr"
@@ -4498,7 +4793,8 @@
       "url": "https://www.dailian.co.kr/news/view/1716385/?sc=Naver",
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
-        "배출권"
+        "배출권",
+        "탄소배출권"
       ],
       "duplicateSources": [
         "kukinews.com",
@@ -5698,16 +5994,17 @@
       "duplicateSources": [
         "냉동공조저널",
         "대한일보",
+        "Chosunbiz",
         "투데이에너지",
         "korea.kr",
         "todayenergy.kr",
         "지디넷코리아",
         "쿠키뉴스",
         "kukinews.com",
+        "포쓰저널",
         "hansbiz.co.kr",
         "동아일보",
         "donga.com",
-        "포쓰저널",
         "4th.kr",
         "뉴스;트리",
         "newstree.kr",
@@ -5719,7 +6016,7 @@
         "Google News RSS",
         "NAVER API HUB"
       ],
-      "duplicateCount": 18,
+      "duplicateCount": 19,
       "region": "국내"
     },
     {
@@ -5817,12 +6114,14 @@
         "탄소배출권"
       ],
       "duplicateSources": [
+        "이투데이",
         "etoday.co.kr"
       ],
       "searchProviders": [
+        "Google News RSS",
         "NAVER API HUB"
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "region": "해외"
     },
     {

@@ -202,7 +202,7 @@
     "motie_notice": 955,
     "motie_press": 1896,
     "notice": 440,
-    "press": 959
+    "press": 960
   },
   "previousSectionCounts": {
     "krx_notice": 316,
@@ -216,7 +216,7 @@
     "motie_notice": 0,
     "motie_press": 0,
     "notice": 0,
-    "press": 0
+    "press": 1
   },
   "scopeCounts": {
     "krx_notice": {
@@ -236,13 +236,13 @@
       "related": 213
     },
     "press": {
-      "direct": 440,
+      "direct": 441,
       "related": 513
     }
   },
   "eventCounts": {
     "재생에너지·RPS": 920,
-    "배출권·배출권거래제·ETS": 894,
+    "배출권·배출권거래제·ETS": 895,
     "원자력발전·원전": 824,
     "온실가스·배출량·명세서": 726,
     "탄소중립 선언·기본계획": 584,
@@ -402,15 +402,15 @@
       }
     },
     "press": {
-      "records": 959,
+      "records": 960,
       "earliest": "2015-01-08",
-      "latest": "2026-11-19",
+      "latest": "2026-11-23",
       "scopeCounts": {
-        "direct": 440,
+        "direct": 441,
         "related": 513
       },
       "eventCounts": {
-        "배출권·배출권거래제·ETS": 298,
+        "배출권·배출권거래제·ETS": 299,
         "온실가스·배출량·명세서": 242,
         "탄소중립 선언·기본계획": 237,
         "할당계획·할당량": 117,
@@ -448,14 +448,14 @@
     }
   },
   "validation": {
-    "officialItemCount": 4566,
-    "dashboardOfficialCount": 4566,
+    "officialItemCount": 4567,
+    "dashboardOfficialCount": 4567,
     "sectionCounts": {
       "krx_notice": 316,
       "motie_notice": 955,
       "motie_press": 1896,
       "notice": 440,
-      "press": 959
+      "press": 960
     },
     "scopeCounts": {
       "krx_notice": {
@@ -475,13 +475,13 @@
         "related": 213
       },
       "press": {
-        "direct": 440,
+        "direct": 441,
         "related": 513
       }
     },
     "eventCounts": {
       "재생에너지·RPS": 920,
-      "배출권·배출권거래제·ETS": 894,
+      "배출권·배출권거래제·ETS": 895,
       "원자력발전·원전": 824,
       "온실가스·배출량·명세서": 726,
       "탄소중립 선언·기본계획": 584,
@@ -520,7 +520,7 @@
       "대량 매도·보유물량 출회": 1
     },
     "duplicateKeys": 0,
-    "taxonomyMatchedItemCount": 4552,
+    "taxonomyMatchedItemCount": 4553,
     "retainedUnmatchedItemCount": 14,
     "retainedUnmatchedKeys": [
       "climate|1882780",
@@ -542,13 +542,13 @@
   },
   "lastRunDateKst": "2026-11-22",
   "lastRunSlot": "2026-11-22-AM",
-  "publicationVerifiedAt": "2026-11-23T10:21:04+09:00",
+  "publicationVerifiedAt": "2026-11-23T13:02:44+09:00",
   "policySource": {
     "file": "data/policies.json",
-    "sha256": "02d0728435a966fffbd1c2e7090234dca09e702f4fa9c9f3070b03afae973d64",
-    "lastSync": "2026-11-23T10:14:10+09:00",
+    "sha256": "7d123ad5ec2af8839b60889bd033103c1b20e6510e003bf81f28e13531f8c52b",
+    "lastSync": "2026-11-23T12:55:25+09:00",
     "taxonomyVersion": "2026-09-11-v1-user-38-events",
-    "officialItemCount": 4566,
-    "latestOfficialPublishedAt": "2026-11-19"
+    "officialItemCount": 4567,
+    "latestOfficialPublishedAt": "2026-11-23"
   }
 }
