@@ -1,17 +1,66 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-24T18:14:38+09:00",
+  "generatedAt": "2026-11-25T05:21:32+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 2512,
+  "itemCount": 2516,
   "earliestPublishedAt": "2026-08-06",
-  "latestPublishedAt": "2026-11-24",
+  "latestPublishedAt": "2026-11-25",
   "sourceCommitsScanned": 0,
   "sourceSnapshotsScanned": 0,
   "historicalRowsScanned": 0,
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "36e6a073d513ea9b",
+      "publishedAt": "2026-11-25",
+      "title": "한국임업진흥원, 산림 탄소 ·임산물 판로지원 성과로 농식품 ESG경영대상...",
+      "category": "제도",
+      "summary": "주요 ESG경영 성과로는 ▲산림 탄소 배출권 거래·활용 및 미이용 산림바이오매스 이용 확대를 통한 산림 기반 탄소중립 실천 ▲국가통합브랜드 '숲푸드' 운영을 통한 임산물 소비 확대 및 임업인 판로지원 ▲기관장...",
+      "source": "woodkorea.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.woodkorea.co.kr/news/articleView.html?idxno=92787",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "woodkorea.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "9e0a765a84585160",
+      "publishedAt": "2026-11-24",
+      "title": "한화투자증권 \"COP31 이후 국제 탄소시장 어디로…에코아이·그린케미칼...",
+      "category": "시장·가격",
+      "summary": "국내 증시에서는 탄소 배출권 가격과 국제 탄소시장 제도 변화에 따라 탄소포집·활용·저장(CCUS), 온실가스 감축 설비, 탄소 배출권 사업 관련 기업들이 영향을 받을 전망이다. 유럽 배출권 가격 하락 자체는 탄소 감축...",
+      "source": "pinpointnews.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=507649",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장",
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "pinpointnews.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
     {
       "id": "7869aebb910c3dad",
       "publishedAt": "2026-11-24",
@@ -113,6 +162,32 @@
       "region": "해외"
     },
     {
+      "id": "d4059cbfdd643005",
+      "publishedAt": "2026-11-24",
+      "title": "탄소시장연합",
+      "category": "상쇄·외부사업",
+      "summary": "온실가스 배출권 거래제와 탄소세 등 의무 탄소시장에 관한 국제 협력을 촉진하는 자발적 협의체다.... 회원국들은 온실가스 배출량의 산정·보고·검증, 탄소회계, 상쇄 제도 등의 운영 경험을 공유하고 국가 간 탄소시장...",
+      "source": "danbinews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.danbinews.com/news/articleView.html?idxno=34150",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장",
+        "배출권",
+        "배출권거래제",
+        "온실가스 배출권"
+      ],
+      "duplicateSources": [
+        "danbinews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "e97137b5fea64666",
       "publishedAt": "2026-11-24",
       "title": "제주도, '기후경제수도' 전략 수립 시동…정책자문단 출범",
@@ -126,13 +201,18 @@
       "matchedKeywords": [
         "탄소시장"
       ],
-      "duplicateCount": 5,
+      "duplicateCount": 11,
       "duplicateSources": [
+        "jejumbc.com",
+        "kbs.co.kr",
         "headlinejeju.co.kr",
         "yna.co.kr",
         "jemin.com",
         "jejudomin.co.kr",
-        "jejumaeil.net"
+        "jejumaeil.net",
+        "newsjeju.net",
+        "samdailbo.com",
+        "gukjenews.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -175,6 +255,30 @@
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
         "배출권"
+      ],
+      "duplicateSources": [
+        "esgeconomy.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "53a7149be1c25681",
+      "publishedAt": "2026-11-24",
+      "title": "우크라 전쟁 이후 에너지 효율 개선 효과 확인한 EU…전기화 확대",
+      "category": "제도",
+      "summary": "배출권 거래제(ETS) 관련 금융수단과 사회기후기금 등을 활용해 히트펌프와 전기차 등 전기 기반 기술의... 환경표준연합(ECOS)은 두 제도가 1990년부터 2020년까지 EU가 달성한 온실가스 감축량의 약 4분의 1에...",
+      "source": "esgeconomy.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.esgeconomy.com/news/articleView.html?idxno=17519",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
       ],
       "duplicateSources": [
         "esgeconomy.com"
@@ -303,12 +407,13 @@
         "khan.co.kr",
         "sbs.co.kr",
         "yna.co.kr",
-        "tvchosun.com"
+        "tvchosun.com",
+        "dt.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 5,
+      "duplicateCount": 6,
       "region": "해외"
     },
     {
@@ -2523,10 +2628,10 @@
         "apnews.kr",
         "ddaily.co.kr",
         "etoday.co.kr",
-        "s-journal.co.kr",
         "pointdaily.co.kr",
         "4th.kr",
         "edaily.co.kr",
+        "s-journal.co.kr",
         "straightnews.co.kr",
         "getnews.co.kr",
         "seoultimes.news",
@@ -7778,24 +7883,24 @@
       "duplicateSources": [
         "냉동공조저널",
         "Chosunbiz",
+        "투데이에너지",
         "korea.kr",
         "todayenergy.kr",
         "지디넷코리아",
         "kukinews.com",
-        "ESG경제",
+        "hansbiz.co.kr",
         "동아일보",
         "donga.com",
-        "hansbiz.co.kr",
         "포쓰저널",
         "4th.kr",
         "뉴스;트리",
         "newstree.kr",
+        "파인드비",
+        "ESG경제",
         "비건뉴스",
         "vegannews.co.kr",
         "대한일보",
         "쿠키뉴스",
-        "투데이에너지",
-        "파인드비",
         "대한민국 정책브리핑",
         "esgeconomy.com"
       ],
