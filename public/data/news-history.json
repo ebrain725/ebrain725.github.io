@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-24T13:16:55+09:00",
+  "generatedAt": "2026-11-24T15:16:23+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 2492,
+  "itemCount": 2503,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-24",
   "sourceCommitsScanned": 0,
@@ -12,6 +12,79 @@
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "7869aebb910c3dad",
+      "publishedAt": "2026-11-24",
+      "title": "한국임업진흥원, 농식품 ESG경영대상 농촌진흥청장상 수상",
+      "category": "제도",
+      "summary": "주요 성과로는 산림 탄소 배출권 거래·활용과 미이용 산림바이오매스 이용 확대, 국가통합브랜드 '숲푸드'를 통한 임산물 소비 촉진 및 임업인 판로 지원, 기관장 주도의 현장 소통 프로그램 '숲으로, 다가감' 운영 등이...",
+      "source": "imwood.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.imwood.co.kr/news/articleView.html?idxno=42464",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "imwood.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "f92d8877d3523c6c",
+      "publishedAt": "2026-11-24",
+      "title": "한·중·일 기후 석학·청년, 의정부서 넷제로 논의",
+      "category": "제도",
+      "summary": "오후에는 6개 전문 세션이 동시에 열려 주요 산업별 넷제로 로드맵과 기후금융을 다루는 '산업 탈탄소화 경로'를 비롯해 배출권 거래제 , 역내 탄소시장 협력, 인공지능(AI) 기반 탄소중립 환경정보 관리 기술 등이...",
+      "source": "yna.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.yna.co.kr/view/AKR20261124128500060?input=1195m",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소시장"
+      ],
+      "duplicateSources": [
+        "yna.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "f9d41f4543daf570",
+      "publishedAt": "2026-11-24",
+      "title": "트럼프 반대에 표류하는 '해운 탄소세'…연내 돌파구 찾을까",
+      "category": "제도",
+      "summary": "유럽연합(EU)은 2024년부터 해운업을 배출권 거래제(ETS)에 포함해 역내 항해 배출량의 100%, 역외를 오가는 항해 배출량의 50%를 규제 대상으로 삼고 있다. 2025년부터는 선박 연료의 온실가스 집약도를 2020년 대비 2030년 6...",
+      "source": "edaily.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.edaily.co.kr/News/Read?newsId=03283286645649000&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "edaily.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
     {
       "id": "6d54fd4b0a6b4512",
       "publishedAt": "2026-11-24",
@@ -60,6 +133,31 @@
       ],
       "duplicateCount": 2,
       "region": "해외"
+    },
+    {
+      "id": "da125fed8f73be97",
+      "publishedAt": "2026-11-24",
+      "title": "열 부문의 탈탄소화, 난방시장의 탄소 정의 구현으로부터...",
+      "category": "제도",
+      "summary": "이런 가운데 2026년에 시작된 제4차 배출권 거래제 계획기간에는 발전 부문의 배출권 유상할당 비율이 단계적으로 높아진다. 열병합발전을 기반으로 하는 집단에너지 사업자가 배출 규제의 형평성에 주목하는 배경이다....",
+      "source": "e-platform.net",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.e-platform.net/news/articleView.html?idxno=107248",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "유상할당"
+      ],
+      "duplicateSources": [
+        "e-platform.net"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
     },
     {
       "id": "9c89ce8d44461f7e",
@@ -186,6 +284,31 @@
       "region": "국내"
     },
     {
+      "id": "64e814b47a2ffd93",
+      "publishedAt": "2026-11-24",
+      "title": "[온실가스 배출권] 11월 24일 KAU26, 약세 지속…200원 내린 2만9300원",
+      "category": "시장·가격",
+      "summary": "[온실가스 배출권] 11월 24일 KAU26, 약세 지속…200원 내린 2만9300원 데일리e뉴스",
+      "source": "데일리e뉴스",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE0xNktEUUhyaXZ4U25vZTNjTFc3TGE5QmZqUjUwdWZfenRfelpnOFkySE9ZeTVEUDk2bjdabjdEaS1xTWZFXzNUcWpyY1pnRERaVmxHSi1fbXNtd1B4YkI0QVpoTWlZX1BCaVdXYi1xYw?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "온실가스 배출권",
+        "KAU26"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "데일리e뉴스"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "adf1554e5836b694",
       "publishedAt": "2026-11-24",
       "title": "[뉴스후] 항공배출권 '빈자리'가 부르는 시험대 CORSIA의 신호와 한국 산업·금융·수출에 미칠 파장",
@@ -206,6 +329,148 @@
       "searchProviders": [
         "Google News RSS"
       ],
+      "region": "국내"
+    },
+    {
+      "id": "b93d6316a3b57c70",
+      "publishedAt": "2026-11-24",
+      "title": "[ESGX 이슈 5] 美 노동부, 퇴직연금 운용 규정서 ESG 관련 문구 뺀다",
+      "category": "제도",
+      "summary": "23일 ESG투데이에 따르면 EU와 영국은 양측의 배출권거래제 (ETS)를 연계하기 위한 협상을 마무리했다. 양측은 비준 절차를 거쳐 2028년 1월 1일부터 연계된 제도를 적용하는 것을 목표로 하고 있다. 영국은 EU 탈퇴 이후인...",
+      "source": "etoday.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.etoday.co.kr/news/view/2652129",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "etoday.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
+      "id": "143ceca0b0f6283f",
+      "publishedAt": "2026-11-24",
+      "title": "[ESG 랭크] 전국 탄소감축 성적표…부산 1위·서울 '꼴찌'",
+      "category": "제도",
+      "summary": "건물별 온실가스 배출권 모의거래도 진행 중이다. 지난해 외부감축사업 실적이 다소 부족했다는 점도 언급했다. 공공시설 자체의 에너지 소비를 줄이는 것 외에 외부감축사업에서도 지자체별 사업 여건에 따라...",
+      "source": "hansbiz.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.hansbiz.co.kr/news/articleView.html?idxno=886597",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "온실가스 배출권"
+      ],
+      "duplicateSources": [
+        "hansbiz.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "d0001f6ac045378e",
+      "publishedAt": "2026-11-24",
+      "title": "[COP33 유치전] 인도 포기·중국 후퇴…2028년 기후외교 주도권 놓고 아...",
+      "category": "제도",
+      "summary": "한국이 COP33 개최에 나선다면 산업국가의 녹색전환, 기후금융, 국제 탄소시장 , 청정에너지 기술협력 등에서 차별화된 의제를 제시할 필요가 있다. 특히 2028년은 파리협정 이행을 점검하는 제2차 전 지구적 이행점검...",
+      "source": "ilemonde.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.ilemonde.com/news/articleView.html?idxno=31024",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "ilemonde.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "6a0a6b6fd86f2ea0",
+      "publishedAt": "2026-11-24",
+      "title": "[COP31 특별 칼럼] COP31의 예고된 실패, 기후외교의 돌파구는 어디에 있...",
+      "category": "시장·가격",
+      "summary": "EU는 탄소국경조정제도와 배출권 거래제, 재생에너지 확대를 통해 세계 기후정책을 이끌어 왔다. 그러나 러시아·우크라이나 전쟁 이후 에너지 가격과 산업비용 문제가 부각됐고, 제조업 경쟁력과 일자리 문제를 둘러싼...",
+      "source": "ilemonde.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.ilemonde.com/news/articleView.html?idxno=31057",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "ilemonde.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
+      "id": "701c768785a41b97",
+      "publishedAt": "2026-11-24",
+      "title": "EU·산유국 이견에 화석연료 합의 불발…COP31 결렬",
+      "category": "제도",
+      "summary": "국제 탄소시장 운영 개선과 최빈개도국의 기후변화 적응계획 지원에도 합의했다. 한국은 김성환 기후에너지환경부 장관을 수석대표로 협상에 참여해 아시아 에너지 안보와 국제 탄소시장 협력 확대 등을 추진했다. 한편...",
+      "source": "dailypop.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.dailypop.kr/news/articleView.html?idxno=104910",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "dailypop.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "64bfd92862e3da7b",
+      "publishedAt": "2026-11-24",
+      "title": "AI가 일하는 시대에 던지는 인간의 가치와 부의 분배에 대한 질문",
+      "category": "제도",
+      "summary": "미국 알래스카의 석유 배당, 전남 신안군의 주민참여형 태양광 발전사업, 온실가스 배출권 제도 등을 공동 자산에 경제적 가치를 부여한 사례로 제시한다. 저자가 말하는 정산은 기본소득과도 구별된다. 기본소득이...",
+      "source": "dtnews24.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.dtnews24.com/news/articleView.html?idxno=817554",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "온실가스 배출권"
+      ],
+      "duplicateSources": [
+        "dtnews24.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
       "region": "국내"
     },
     {
@@ -2034,12 +2299,12 @@
       ],
       "duplicateSources": [
         "apnews.kr",
-        "edaily.co.kr",
         "ddaily.co.kr",
         "etoday.co.kr",
         "s-journal.co.kr",
         "pointdaily.co.kr",
         "4th.kr",
+        "edaily.co.kr",
         "straightnews.co.kr",
         "getnews.co.kr",
         "seoultimes.news",
@@ -7294,9 +7559,9 @@
         "todayenergy.kr",
         "지디넷코리아",
         "kukinews.com",
-        "hansbiz.co.kr",
         "동아일보",
         "donga.com",
+        "hansbiz.co.kr",
         "포쓰저널",
         "4th.kr",
         "뉴스;트리",
