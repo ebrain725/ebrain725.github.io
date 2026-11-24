@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-24T15:16:23+09:00",
+  "generatedAt": "2026-11-24T18:14:38+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 2503,
+  "itemCount": 2512,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-24",
   "sourceCommitsScanned": 0,
@@ -28,12 +28,39 @@
         "탄소배출권"
       ],
       "duplicateSources": [
-        "imwood.co.kr"
+        "imwood.co.kr",
+        "seoul.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 2,
+      "region": "국내"
+    },
+    {
+      "id": "bf2d6549eb650876",
+      "publishedAt": "2026-11-24",
+      "title": "한·중·일 기후 석학·청년, 의정부서 저탄소 해법 논의한다",
+      "category": "제도",
+      "summary": "오후에는 6개 전문 세션이 동시에 열려 주요 산업별 넷제로 로드맵과 기후금융을 다루는 '산업 탈탄소화 경로'를 비롯해 배출권 거래제 , 역내 탄소시장 협력, 인공지능(AI) 기반 탄소중립 환경정보 관리 기술 등이...",
+      "source": "jasm.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.jasm.co.kr/news/view/326358/?sc=Naver",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소시장"
+      ],
+      "duplicateSources": [
+        "jasm.co.kr",
+        "yna.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 2,
       "region": "국내"
     },
     {
@@ -86,6 +113,79 @@
       "region": "해외"
     },
     {
+      "id": "e97137b5fea64666",
+      "publishedAt": "2026-11-24",
+      "title": "제주도, '기후경제수도' 전략 수립 시동…정책자문단 출범",
+      "category": "제도",
+      "summary": "자문단은 기후경제부지사를 단장으로 에너지, 탄소시장 , 기후 혁신 기술(기후테크), 금융, 녹색전환, 기후시민사회 등 6개 분야 전문가 22명으로 구성됐다. 24일 열린 '제주형 기후경제 정책자문단 출범회의' 에너지 기업과...",
+      "source": "headlinejeju.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.headlinejeju.co.kr/news/articleView.html?idxno=602645",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 5,
+      "duplicateSources": [
+        "headlinejeju.co.kr",
+        "yna.co.kr",
+        "jemin.com",
+        "jejudomin.co.kr",
+        "jejumaeil.net"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "ea7071a3a0b15d4a",
+      "publishedAt": "2026-11-24",
+      "title": "제주 '기후경제수도' 시동…전문가 22명 자문단 출범",
+      "category": "제도",
+      "summary": "자문단은 에너지와 탄소시장 , 기후혁신기술(기후테크), 금융, 녹색전환, 기후시민사회 등 6개 분야 전문가 22명으로 구성됐다. 에너지 기업과 금융·투자기관, 대학, 연구기관, 시민사회 등의 전문가들이 참여하며...",
+      "source": "newsjeju.net",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newsjeju.net/news/articleView.html?idxno=428870",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "newsjeju.net"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "0a1bbcc6bdd85255",
+      "publishedAt": "2026-11-24",
+      "title": "전력망 속 초강력 온실가스 SF₆ 잡는다…글로벌 감축서약, 한국에도 기...",
+      "category": "제도",
+      "summary": "이번 협약은 이를 온실가스 감축사업과 배출권 연계로 확대하기 위한 것이다. 효성중공업과 LS일렉트릭 등 국내 전력기기 업체에도 변화가 예상된다. 글로벌 전력망 투자가 확대되는 가운데 SF₆ 없는 친환경...",
+      "source": "esgeconomy.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.esgeconomy.com/news/articleView.html?idxno=17506",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "esgeconomy.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "6d54fd4b0a6b4512",
       "publishedAt": "2026-11-24",
       "title": "올해 산림경영지도 우수사례 대상은 ‘강원 횡성군산림조합’",
@@ -101,7 +201,32 @@
         "배출권거래제"
       ],
       "duplicateSources": [
+        "farmnmarket.com",
         "nongmin.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 2,
+      "region": "국내"
+    },
+    {
+      "id": "f4bbcc8b80985108",
+      "publishedAt": "2026-11-24",
+      "title": "영진로프금속, 폐플라스틱 자원화 신사업 추진",
+      "category": "제도",
+      "summary": "탄소 배출권 사업화를 목표로 개발한 전기 기반 자원화 장비이다. 이 장비의 핵심 기술을 살펴보면 밀폐... 탄소 배출권 사업화를 검토할 계획이다. 현재 소형 환유기에서 열분해유 회수가 가능하며 500kg급 배치형 시스템의...",
+      "source": "snmnews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.snmnews.com/news/articleView.html?idxno=577865",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "snmnews.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -175,6 +300,7 @@
         "탄소배출권"
       ],
       "duplicateSources": [
+        "khan.co.kr",
         "sbs.co.kr",
         "yna.co.kr",
         "tvchosun.com"
@@ -182,7 +308,7 @@
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 4,
+      "duplicateCount": 5,
       "region": "해외"
     },
     {
@@ -306,6 +432,30 @@
       "searchProviders": [
         "Google News RSS"
       ],
+      "region": "국내"
+    },
+    {
+      "id": "0ccb498f8f3e8135",
+      "publishedAt": "2026-11-24",
+      "title": "[대한유화 리스크] 울산 NCC 재편 지연에 원료 수급 부담… 전사 위험관...",
+      "category": "시장·가격",
+      "summary": "대한유화는 올해부터 2030년까지 시행되는 제4차 국가 배출권 할당계획의 적용 대상이다. 회사는 탄소 배출권 가격 변동과 온실가스 규제 강화를 경영상 위험으로 분류하고 있다. 국내 배출권 거래가격과 국제...",
+      "source": "newsclaim.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newsclaim.co.kr/news/articleView.html?idxno=3083979",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "newsclaim.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
       "region": "국내"
     },
     {
@@ -450,6 +600,54 @@
       "region": "국내"
     },
     {
+      "id": "231c01b126b092c5",
+      "publishedAt": "2026-11-24",
+      "title": "EU 재가입 가늠하는 버넘 영국 총리…갈길은 첩첩산중",
+      "category": "제도",
+      "summary": "버넘 정부는 식품 무역장벽 완화, 탄소 배출권 거래제(ETS) 연계, 청년 이동성 확대 등 이번 합의로 2040년까지 영국 경제 규모가 0.5%(170억파운드) 커질 것으로 기대한다. 버넘 총리는 지난 9월 EU 재가입과 단일시장 복귀를...",
+      "source": "imaeil.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.imaeil.com/page/view/2026112409255193066",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "imaeil.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "0e380e5c48ce7550",
+      "publishedAt": "2026-11-24",
+      "title": "COP 31 합의 불발 요인 된 탄소 포집 논란...적응 재원 쟁점은?",
+      "category": "제도",
+      "summary": "이에 따라 파리협정 6.4조에 따른 국제 탄소시장 수익의 5%가 기후적응기금에 배분될 예정이다. 또한 90개국 이상이 세계 최종에너지 소비에서 전력 비중을 2035년까지 35%로 높이는 별도의 전기화 서약에 동참했다....",
+      "source": "esgeconomy.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.esgeconomy.com/news/articleView.html?idxno=17521",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "esgeconomy.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "64bfd92862e3da7b",
       "publishedAt": "2026-11-24",
       "title": "AI가 일하는 시대에 던지는 인간의 가치와 부의 분배에 대한 질문",
@@ -495,6 +693,30 @@
         "Google News RSS"
       ],
       "region": "해외"
+    },
+    {
+      "id": "dcacef5f6b40cac7",
+      "publishedAt": "2026-11-24",
+      "title": "50년 전 \"땅장사 안 한다\"며 민둥산 산 기업...지금은?",
+      "category": "제도",
+      "summary": "이듬해 유엔기후변화협약(UNFCCC)의 최종 인가를 받으면서, 조림을 통해 국제적으로 인정받는 탄소배출권 을 확보한 국내 첫 사례가 됐다. 산림 탄소사업은 자사 숲 밖으로도 넓어졌다. SK는 인등산 등 국내 조림지와...",
+      "source": "newspenguin.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newspenguin.com/news/articleView.html?idxno=22484",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "newspenguin.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
     },
     {
       "id": "b7a305e389ce6bdf",
@@ -2711,7 +2933,7 @@
         "탄소배출권"
       ],
       "section": "news",
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "duplicateSources": [
         "해양통신"
       ],
@@ -7479,7 +7701,7 @@
         "탄소배출권"
       ],
       "section": "news",
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "duplicateSources": [
         "파인드비"
       ],
@@ -7554,11 +7776,13 @@
         "상쇄배출권"
       ],
       "duplicateSources": [
+        "냉동공조저널",
         "Chosunbiz",
         "korea.kr",
         "todayenergy.kr",
         "지디넷코리아",
         "kukinews.com",
+        "ESG경제",
         "동아일보",
         "donga.com",
         "hansbiz.co.kr",
@@ -7568,7 +7792,6 @@
         "newstree.kr",
         "비건뉴스",
         "vegannews.co.kr",
-        "냉동공조저널",
         "대한일보",
         "쿠키뉴스",
         "투데이에너지",
@@ -7580,7 +7803,7 @@
         "Google News RSS",
         "NAVER API HUB"
       ],
-      "duplicateCount": 21,
+      "duplicateCount": 22,
       "region": "국내"
     },
     {
@@ -8108,9 +8331,9 @@
       "duplicateSources": [
         "마켓인",
         "edaily.co.kr",
-        "www.dt.co.kr",
         "dt.co.kr",
         "biz.chosun.com",
+        "www.dt.co.kr",
         "이투데이",
         "이데일리",
         "Chosunbiz",
@@ -11240,8 +11463,8 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "기후에너지데이터뱅크",
         "에너지경제신문",
+        "기후에너지데이터뱅크",
         "ekn.kr"
       ],
       "searchProviders": [
@@ -14260,12 +14483,12 @@
         "choicenews.co.kr",
         "press9.kr",
         "view.asiae.co.kr",
-        "뉴시스",
         "newsis.com",
         "ezyeconomy.com",
         "financialpost.co.kr",
         "ddaily.co.kr",
         "smarttoday.co.kr",
+        "뉴시스",
         "wsobi.com",
         "newsian.co.kr",
         "jasm.co.kr",
