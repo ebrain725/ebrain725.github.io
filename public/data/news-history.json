@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-24T10:51:58+09:00",
+  "generatedAt": "2026-11-24T13:16:55+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 2490,
+  "itemCount": 2492,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-24",
   "sourceCommitsScanned": 0,
@@ -183,6 +183,29 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "adf1554e5836b694",
+      "publishedAt": "2026-11-24",
+      "title": "[뉴스후] 항공배출권 '빈자리'가 부르는 시험대 CORSIA의 신호와 한국 산업·금융·수출에 미칠 파장",
+      "category": "제도",
+      "summary": "[뉴스후] 항공배출권 '빈자리'가 부르는 시험대 CORSIA의 신호와 한국 산업·금융·수출에 미칠 파장 데일리연합",
+      "source": "데일리연합",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE41NWVTQXlYVWJTdVJuYzVPRFgyVzJpX2ZXWFJIV1prUlhSN1c1ZnBMcW5ybDRtcU5MZ3N0ZWtWMm1XWjJUQUN5YUxnV3M2Mk5Ic1hhZFNCeFUzeFk?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "데일리연합"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
       "region": "국내"
     },
     {
@@ -2581,6 +2604,29 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 3,
+      "region": "국내"
+    },
+    {
+      "id": "d16fc6eb3bfb1865",
+      "publishedAt": "2026-11-20",
+      "title": "한국, 탄소시장연합 가입… 미국 빠진 EU·중국 주도 규범에 산업계 부담 우려",
+      "category": "제도",
+      "summary": "한국, 탄소시장연합 가입… 미국 빠진 EU·중국 주도 규범에 산업계 부담 우려 독립신문",
+      "source": "독립신문",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5DMXl5X0ZudGNGd2lJX1FRSlNOUThDTU1kOXdGV1lVbzZkM2hWZER3SUxNVzc2NEFTM2JCU0E3cEc1SFBYQmRicXFlYVBaM3BJR1BpeHBkUnY4VF92R09wXzNETWdRVmMtRlpR?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "독립신문"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
       "region": "국내"
     },
     {
@@ -7797,10 +7843,10 @@
       "duplicateSources": [
         "마켓인",
         "edaily.co.kr",
-        "이투데이",
         "www.dt.co.kr",
         "dt.co.kr",
         "biz.chosun.com",
+        "이투데이",
         "이데일리",
         "Chosunbiz",
         "busan.com",
