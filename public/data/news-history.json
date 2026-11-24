@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-25T07:47:46+09:00",
+  "generatedAt": "2026-11-25T08:18:24+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
   "itemCount": 2518,
@@ -5820,13 +5820,14 @@
         "탄소시장"
       ],
       "section": "news",
-      "duplicateCount": 5,
+      "duplicateCount": 6,
       "duplicateSources": [
         "에너지프로슈머",
         "페로타임즈",
         "대한민국 정책브리핑",
         "SDG뉴스",
-        "보건환경신문"
+        "보건환경신문",
+        "워터저널"
       ],
       "searchProviders": [
         "Google News RSS"
@@ -7928,6 +7929,7 @@
         "상쇄배출권"
       ],
       "duplicateSources": [
+        "냉동공조저널",
         "Chosunbiz",
         "korea.kr",
         "todayenergy.kr",
@@ -7940,9 +7942,8 @@
         "4th.kr",
         "뉴스;트리",
         "newstree.kr",
-        "냉동공조저널",
-        "투데이에너지",
         "파인드비",
+        "투데이에너지",
         "ESG경제",
         "비건뉴스",
         "vegannews.co.kr",
@@ -8483,9 +8484,9 @@
       "duplicateSources": [
         "마켓인",
         "edaily.co.kr",
-        "www.dt.co.kr",
         "dt.co.kr",
         "biz.chosun.com",
+        "www.dt.co.kr",
         "이투데이",
         "이데일리",
         "Chosunbiz",
