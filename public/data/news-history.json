@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-25T05:21:32+09:00",
+  "generatedAt": "2026-11-25T07:47:46+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 2516,
+  "itemCount": 2518,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-25",
   "sourceCommitsScanned": 0,
@@ -35,6 +35,53 @@
       ],
       "duplicateCount": 1,
       "region": "국내"
+    },
+    {
+      "id": "3ca60cb51f7db914",
+      "publishedAt": "2026-11-25",
+      "title": "[우리품의 아프리카인](62) \"낯선 한국서 수술…따뜻한 배려에 감동\"",
+      "category": "제도",
+      "summary": "자원경제학과 기후변화, 재생에너지, 수자원 개발, 환경영향평가, 탄소시장 등 다양한 과목을 수강했다. 이 가운데 환경영향평가 수업은 가나에서 광업 관련 환경...",
+      "source": "yna.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.yna.co.kr/view/AKR20261120149400898?input=1195m",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateSources": [
+        "yna.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "a4c36bf0fab6f2b8",
+      "publishedAt": "2026-11-25",
+      "title": "LG전자 폴란드 TV 감산의 여파…협력사 2곳 문 닫고 759명 감원",
+      "category": "제도",
+      "summary": "야당인 법과정의당(PiS) 소속 마시에이 마웨츠키 의원은 이번 사태와 관련해 의회 질의를 제출할 계획이라고 밝히며, 유럽연합(EU)의 기후세와 배출권 거래제 , 그린딜 정책으로 인한 생산 비용 상승이 기업들의 이탈을...",
+      "source": "g-enews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.g-enews.com/view.php?ud=2026112505131974822bd56fbc3c_1",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "g-enews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
     },
     {
       "id": "9e0a765a84585160",
@@ -7881,9 +7928,7 @@
         "상쇄배출권"
       ],
       "duplicateSources": [
-        "냉동공조저널",
         "Chosunbiz",
-        "투데이에너지",
         "korea.kr",
         "todayenergy.kr",
         "지디넷코리아",
@@ -7895,6 +7940,8 @@
         "4th.kr",
         "뉴스;트리",
         "newstree.kr",
+        "냉동공조저널",
+        "투데이에너지",
         "파인드비",
         "ESG경제",
         "비건뉴스",
@@ -8436,9 +8483,9 @@
       "duplicateSources": [
         "마켓인",
         "edaily.co.kr",
+        "www.dt.co.kr",
         "dt.co.kr",
         "biz.chosun.com",
-        "www.dt.co.kr",
         "이투데이",
         "이데일리",
         "Chosunbiz",
