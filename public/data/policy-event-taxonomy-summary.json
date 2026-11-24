@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0",
   "taxonomyVersion": "2026-09-11-v1-user-38-events",
-  "generatedAt": "2026-11-22T06:13:49+09:00",
+  "generatedAt": "2026-11-24T11:19:09+09:00",
   "requestedStartDate": "2015-01-01",
   "collectionMode": "incremental",
   "eventCount": 38,
@@ -208,15 +208,15 @@
     "krx_notice": 316,
     "motie_notice": 955,
     "motie_press": 1896,
-    "notice": 440,
-    "press": 959
+    "notice": 441,
+    "press": 962
   },
   "addedCounts": {
     "krx_notice": 0,
     "motie_notice": 0,
     "motie_press": 0,
-    "notice": 1,
-    "press": 3
+    "notice": 0,
+    "press": 0
   },
   "scopeCounts": {
     "krx_notice": {
@@ -540,12 +540,12 @@
     ],
     "unclassified": 0
   },
-  "lastRunDateKst": "2026-11-22",
-  "lastRunSlot": "2026-11-22-AM",
-  "publicationVerifiedAt": "2026-11-24T10:58:23+09:00",
+  "lastRunDateKst": "2026-11-24",
+  "lastRunSlot": "2026-11-24-AM",
+  "publicationVerifiedAt": "2026-11-24T11:20:11+09:00",
   "policySource": {
     "file": "data/policies.json",
-    "sha256": "c7f18832c5413f55f04ed0821a5157cfda152d4517020cbcc54ea10673fa2f9a",
+    "sha256": "4ac2de6113b21bf5dffcb8a451a797975708ba8a00148a3e415050ce0ceac56c",
     "lastSync": "2026-11-24T10:51:52+09:00",
     "taxonomyVersion": "2026-09-11-v1-user-38-events",
     "officialItemCount": 4570,
