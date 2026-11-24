@@ -1,7 +1,7 @@
 {
   "version": "krx-market-refresh-2",
   "trade_date": "2026-11-24",
-  "status": "same_day_collected",
+  "status": "source_not_current",
   "coverage": "representative_close_volume",
   "source_type": "official_daily_pdf",
   "full_quotes": {
@@ -30,12 +30,12 @@
   },
   "last_quote_attempt": {
     "status": "no_matching_rows",
-    "requested_trade_date": "2026-11-24",
+    "requested_trade_date": "2026-11-25",
     "observed_trade_date": null,
     "source_type": "authorized_open_api",
     "detail": "HTTP_200_EMPTY_PRICE_LIST; site=HTTP_403",
-    "attempted_at": "2026-11-24T22:33:48+09:00",
-    "workflow_run_id": "45404548763"
+    "attempted_at": "2026-11-25T00:02:55+09:00",
+    "workflow_run_id": "45420707979"
   },
-  "collected_at": "2026-11-24T22:33:48+09:00"
+  "collected_at": "2026-11-25T00:02:56+09:00"
 }
