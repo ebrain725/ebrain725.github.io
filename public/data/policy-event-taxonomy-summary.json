@@ -201,8 +201,8 @@
     "krx_notice": 316,
     "motie_notice": 955,
     "motie_press": 1896,
-    "notice": 440,
-    "press": 960
+    "notice": 441,
+    "press": 962
   },
   "previousSectionCounts": {
     "krx_notice": 316,
@@ -215,8 +215,8 @@
     "krx_notice": 0,
     "motie_notice": 0,
     "motie_press": 0,
-    "notice": 0,
-    "press": 1
+    "notice": 1,
+    "press": 3
   },
   "scopeCounts": {
     "krx_notice": {
@@ -233,18 +233,18 @@
     },
     "notice": {
       "direct": 221,
-      "related": 213
+      "related": 214
     },
     "press": {
       "direct": 441,
-      "related": 513
+      "related": 515
     }
   },
   "eventCounts": {
-    "재생에너지·RPS": 920,
+    "재생에너지·RPS": 921,
     "배출권·배출권거래제·ETS": 895,
-    "원자력발전·원전": 824,
-    "온실가스·배출량·명세서": 726,
+    "원자력발전·원전": 825,
+    "온실가스·배출량·명세서": 727,
     "탄소중립 선언·기본계획": 584,
     "유상할당 비율": 358,
     "시장안정화·MSR": 269,
@@ -367,16 +367,16 @@
       }
     },
     "notice": {
-      "records": 440,
+      "records": 441,
       "earliest": "2015-01-07",
-      "latest": "2026-11-11",
+      "latest": "2026-11-23",
       "scopeCounts": {
         "direct": 221,
-        "related": 213
+        "related": 214
       },
       "eventCounts": {
         "배출권·배출권거래제·ETS": 209,
-        "온실가스·배출량·명세서": 126,
+        "온실가스·배출량·명세서": 127,
         "유상할당 비율": 120,
         "시장안정화·MSR": 115,
         "추가할당·할당취소": 110,
@@ -402,12 +402,12 @@
       }
     },
     "press": {
-      "records": 960,
+      "records": 962,
       "earliest": "2015-01-08",
       "latest": "2026-11-23",
       "scopeCounts": {
         "direct": 441,
-        "related": 513
+        "related": 515
       },
       "eventCounts": {
         "배출권·배출권거래제·ETS": 299,
@@ -416,9 +416,9 @@
         "할당계획·할당량": 117,
         "국제감축·외부사업·감축실적": 98,
         "이행·정산·제출기한": 91,
-        "재생에너지·RPS": 55,
+        "재생에너지·RPS": 56,
         "시장안정화·MSR": 48,
-        "원자력발전·원전": 46,
+        "원자력발전·원전": 47,
         "유상할당 비율": 42,
         "시장참여자 확대·시장조성": 35,
         "탄소국경조정·CBAM": 28,
@@ -448,14 +448,14 @@
     }
   },
   "validation": {
-    "officialItemCount": 4567,
-    "dashboardOfficialCount": 4567,
+    "officialItemCount": 4570,
+    "dashboardOfficialCount": 4570,
     "sectionCounts": {
       "krx_notice": 316,
       "motie_notice": 955,
       "motie_press": 1896,
-      "notice": 440,
-      "press": 960
+      "notice": 441,
+      "press": 962
     },
     "scopeCounts": {
       "krx_notice": {
@@ -472,18 +472,18 @@
       },
       "notice": {
         "direct": 221,
-        "related": 213
+        "related": 214
       },
       "press": {
         "direct": 441,
-        "related": 513
+        "related": 515
       }
     },
     "eventCounts": {
-      "재생에너지·RPS": 920,
+      "재생에너지·RPS": 921,
       "배출권·배출권거래제·ETS": 895,
-      "원자력발전·원전": 824,
-      "온실가스·배출량·명세서": 726,
+      "원자력발전·원전": 825,
+      "온실가스·배출량·명세서": 727,
       "탄소중립 선언·기본계획": 584,
       "유상할당 비율": 358,
       "시장안정화·MSR": 269,
@@ -520,7 +520,7 @@
       "대량 매도·보유물량 출회": 1
     },
     "duplicateKeys": 0,
-    "taxonomyMatchedItemCount": 4553,
+    "taxonomyMatchedItemCount": 4556,
     "retainedUnmatchedItemCount": 14,
     "retainedUnmatchedKeys": [
       "climate|1882780",
@@ -542,13 +542,13 @@
   },
   "lastRunDateKst": "2026-11-22",
   "lastRunSlot": "2026-11-22-AM",
-  "publicationVerifiedAt": "2026-11-24T08:24:28+09:00",
+  "publicationVerifiedAt": "2026-11-24T10:06:02+09:00",
   "policySource": {
     "file": "data/policies.json",
-    "sha256": "3a858da49933d532cfbe5ed138f73356ffa8929c01345d0a333c7c44a12dc47c",
+    "sha256": "7a9c510c587e58512aff927ed0e773f8fb91d03b7aee8265e13e875c0f2799b6",
     "lastSync": "2026-11-24T08:17:33+09:00",
     "taxonomyVersion": "2026-09-11-v1-user-38-events",
-    "officialItemCount": 4567,
+    "officialItemCount": 4570,
     "latestOfficialPublishedAt": "2026-11-23"
   }
 }
