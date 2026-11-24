@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-24T08:17:41+09:00",
+  "generatedAt": "2026-11-24T10:51:58+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 2485,
+  "itemCount": 2490,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-24",
   "sourceCommitsScanned": 0,
@@ -12,6 +12,30 @@
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "6d54fd4b0a6b4512",
+      "publishedAt": "2026-11-24",
+      "title": "올해 산림경영지도 우수사례 대상은 ‘강원 횡성군산림조합’",
+      "category": "제도",
+      "summary": "최우수상은 산불 피해지 복구 조림과 배출권 거래제 외부 사업을 연계해 지원한 장영우 안동시산림조합 지도원과 산딸기를 활용한 가공식품 개발과 연중 유통을 지원한 박민혜 포항시산림조합 지도원이 수상했다. 강대재...",
+      "source": "nongmin.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.nongmin.com/article/20261123500607",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "nongmin.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
     {
       "id": "8ed7ff79f010586b",
       "publishedAt": "2026-11-24",
@@ -36,6 +60,55 @@
       ],
       "duplicateCount": 2,
       "region": "해외"
+    },
+    {
+      "id": "9c89ce8d44461f7e",
+      "publishedAt": "2026-11-24",
+      "title": "브렉시트 10년 만에 EU 복귀론…英 총리 \"국민투표 없이 재가입 불가\"",
+      "category": "제도",
+      "summary": "완화와 탄소 배출권 연계, 청년 이동 개선 등에 합의했다. 영국 정부는 이번 합의로 2040년까지 국내총생산(GDP)이 0.5%, 약 170억 파운드 늘어날 것으로 기대하고 있다. 버넘 총리는 앞서 지난 9월 EU 재가입과 단일 시장 복귀...",
+      "source": "tvchosun.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://news.tvchosun.com/site/data/html_dir/2026/11/24/2026112490096.html",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "sbs.co.kr",
+        "yna.co.kr",
+        "tvchosun.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 4,
+      "region": "해외"
+    },
+    {
+      "id": "089d343a90760eed",
+      "publishedAt": "2026-11-24",
+      "title": "내년 철강 수요 4,512만톤…조선·비주거 건설용 회복",
+      "category": "제도",
+      "summary": "다만 봉형강 설비 재편과 전력비 상승, 배출권 비용 등 생산비 부담은 생산 확대를 제한할 전망이다. 내수 증가율이 크지 않은 상황에서 비용 부담까지 이어지는 만큼 생산 회복도 완만한 수준에 그칠 가능성이 크다....",
+      "source": "snmnews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.snmnews.com/news/articleView.html?idxno=577843",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "snmnews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
     },
     {
       "id": "5d77f7c73fafa34a",
@@ -63,6 +136,32 @@
       "region": "해외"
     },
     {
+      "id": "b3055d7d7329b7c0",
+      "publishedAt": "2026-11-24",
+      "title": "[해외브리핑] EU·영국, 배출권 거래제 연계 합의…'28년부터 시장통합",
+      "category": "제도",
+      "summary": "사진=챗GPT 생성 EU·영국, 배출권 거래제 연계 합의…2028년부터 시장 통합 추진 유럽연합(EU)과... 이어 \"EU의 전 세계 온실가스 배출량 비중은 6%다\"며 \"EU로서는 나머지 94%를 배출하는 국가들을 협상에...",
+      "source": "esgeconomy.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.esgeconomy.com/news/articleView.html?idxno=17514",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "ESG경제",
+        "esgeconomy.com"
+      ],
+      "searchProviders": [
+        "Google News RSS",
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 2,
+      "region": "해외"
+    },
+    {
       "id": "f7be22942de1fd90",
       "publishedAt": "2026-11-24",
       "title": "[중국 비즈니스 트렌드&동향] AI에 현금 쏟은 텐센트와 알리바바, 검색...",
@@ -85,6 +184,29 @@
       ],
       "duplicateCount": 1,
       "region": "국내"
+    },
+    {
+      "id": "a745630c3008709b",
+      "publishedAt": "2026-11-24",
+      "title": "8개 EU 국가가 탄소 시장 도입을 지연시키려는 압력에 맞서 탄소 시장을 보호하기 위해 힘을 모으고 있습니다.",
+      "category": "제도",
+      "summary": "8개 EU 국가가 탄소 시장 도입을 지연시키려는 압력에 맞서 탄소 시장을 보호하기 위해 힘을 모으고 있습니다. Vietnam.vn",
+      "source": "Vietnam.vn",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNQmozSXlCVlhDSDZuMzJXcl9LSDZHclJhczBkd2o5Nkp3eVNVbVhDQzc1TGh1aDdXbENjUGF2WVQyb0NISHI3YzdWTUUwcnA1WTFlQk5KRml6bjRlZHA0M3FTM3NiUW13RmxtOEl6ZU1kS2RwcUh3Rk5ibGI1OFR3SHV2c19NMFVIZG54VEN4RlJQYnBpc01Ieg?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "Vietnam.vn"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "해외"
     },
     {
       "id": "b7a305e389ce6bdf",
@@ -7121,8 +7243,8 @@
         "상쇄배출권"
       ],
       "duplicateSources": [
-        "비건뉴스",
-        "vegannews.co.kr",
+        "Chosunbiz",
+        "korea.kr",
         "todayenergy.kr",
         "지디넷코리아",
         "kukinews.com",
@@ -7133,8 +7255,8 @@
         "4th.kr",
         "뉴스;트리",
         "newstree.kr",
-        "Chosunbiz",
-        "korea.kr",
+        "비건뉴스",
+        "vegannews.co.kr",
         "냉동공조저널",
         "대한일보",
         "쿠키뉴스",
