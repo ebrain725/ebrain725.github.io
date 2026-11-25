@@ -2,7 +2,7 @@
   "schemaVersion": "1.0",
   "requestedStartDate": "2015-01-01",
   "startedAt": "2026-09-09T19:46:11+09:00",
-  "generatedAt": "2026-11-25T08:10:04+09:00",
+  "generatedAt": "2026-11-26T07:39:58+09:00",
   "scope": {
     "ministry": "기후부 보도자료·공지사항: 핵심 키워드는 제목·본문, 확대 키워드는 제목으로 판정; 이전 이력 보존",
     "krx": "한국거래소 배출권시장 공지사항 일반 게시물 전체",
@@ -126,7 +126,7 @@
     {
       "source": "기후부 보도자료",
       "section": "press",
-      "requestedStartDate": "2026-09-26",
+      "requestedStartDate": "2026-09-27",
       "transport": "unfiltered-rss-local-split-keyword-filter",
       "keywordRule": {
         "titleAndContent": [
@@ -246,14 +246,14 @@
       "pageSize": 1000,
       "pagesFetched": 1,
       "rawRows": 1000,
-      "inRangeMatchedRows": 30,
-      "itemCount": 30,
+      "inRangeMatchedRows": 31,
+      "itemCount": 31,
       "directCount": 8,
-      "relatedCount": 22,
+      "relatedCount": 23,
       "earliest": "2026-09-29",
-      "latest": "2026-11-23",
-      "oldestSeen": "2025-12-28",
-      "newestSeen": "2026-11-24",
+      "latest": "2026-11-25",
+      "oldestSeen": "2025-12-29",
+      "newestSeen": "2026-11-26",
       "crossedRequestedStart": true,
       "stopReason": "date-boundary",
       "complete": true,
@@ -352,7 +352,7 @@
         "생산동향": 0,
         "가동률": 0,
         "업종별 생산": 0,
-        "온실가스": 1,
+        "온실가스": 2,
         "온실가스 배출량": 0,
         "배출량 명세서": 0,
         "명세서": 0,
@@ -372,7 +372,7 @@
     {
       "source": "기후부 공지·공고",
       "section": "notice",
-      "requestedStartDate": "2026-09-26",
+      "requestedStartDate": "2026-09-27",
       "transport": "unfiltered-rss-local-split-keyword-filter",
       "keywordRule": {
         "titleAndContent": [
@@ -492,14 +492,14 @@
       "pageSize": 200,
       "pagesFetched": 1,
       "rawRows": 200,
-      "inRangeMatchedRows": 14,
-      "itemCount": 14,
+      "inRangeMatchedRows": 15,
+      "itemCount": 15,
       "directCount": 8,
-      "relatedCount": 6,
+      "relatedCount": 7,
       "earliest": "2026-09-28",
       "latest": "2026-11-23",
-      "oldestSeen": "2026-07-15",
-      "newestSeen": "2026-11-24",
+      "oldestSeen": "2026-07-16",
+      "newestSeen": "2026-11-26",
       "crossedRequestedStart": true,
       "stopReason": "date-boundary",
       "complete": true,
@@ -558,7 +558,7 @@
         "SMP": 0,
         "계통한계가격": 0,
         "원자력발전": 0,
-        "원전": 0,
+        "원전": 1,
         "재생에너지": 4,
         "신재생에너지": 0,
         "RPS": 0,
@@ -635,11 +635,11 @@
   ],
   "warnings": [],
   "coverage": {
-    "itemCount": 1719,
+    "itemCount": 1721,
     "counts": {
       "krx_notice": 316,
-      "notice": 441,
-      "press": 962
+      "notice": 442,
+      "press": 963
     },
     "earliest": {
       "krx_notice": "2015-01-07",
@@ -649,15 +649,15 @@
     "latest": {
       "krx_notice": "2026-10-14",
       "notice": "2026-11-23",
-      "press": "2026-11-23"
+      "press": "2026-11-25"
     },
     "directCounts": {
       "press": 447,
       "notice": 227
     },
     "relatedCounts": {
-      "press": 515,
-      "notice": 214
+      "press": 516,
+      "notice": 215
     },
     "labels": {
       "press": "기후부 보도자료",
@@ -666,6 +666,24 @@
     }
   },
   "items": [
+    {
+      "id": "2ef82a96afe6839b",
+      "publishedAt": "2026-11-25",
+      "title": "자동차 온실가스 전과정평가, 민관이 함께 준비한다",
+      "category": "제도",
+      "summary": "▷ 국제 동향과 국내 자동차 산업계 대응역량 제고방안 논의 기후에너지환경부(장관 김성환)와 국립환경과학원(원장 김영우)은 11월 26일 자동차회관(서울시 서초구 소재)에서 자동차 온실가스 전과정평가에 대한 국제 동향과 국내 대응현황 등을 공유하는 ‘자동차 온실가스 전과정평가(LCA) 토론회(포럼)’를 개최한다. ‘자동차 온실가스 전과정평가’란 자동차 제작 시 필요한 원료 채취부터 소재·부품 생산, 완성차 제조, 운행, 폐기에 이르기까지 전과정에서 발생하는 온실가스 배출량을 정량적으로 평가하는 것이다. 유럽연합(EU)이 지난해 12월 발표한 ‘자동차 패키지(Automotive Package)’에서 저탄소 철강이나 재생합성연료(e-fuel) 등 전과정 측면의 온실가스 감축 노력을 자동차 온실가스 배출허용기준 규제의 유연성 수단으로 제안하면서, 전과정 온실가스 관리의 중요성이 부각되고 있다. 이러한 국제 동향에 맞춰 기후에너지환경부는 2024년 1월 ‘대기환경보전법’ 개정을 통해 전과정평가의 행정적, 기술적 지원 근거를 마련하고, 2025년부터는 국내 중소부품사를 대상으로 온실가스 배출량 산정·검증 및 감축 진단(컨설팅) 지원사업을 추진해 왔다. 올해는 ‘대기환경보전법’에 근거하여 ‘자동차 온실가스 전과정평가 방법에 관한 고시’ 제정을 추진하면서 민관 소통을 지속하고 있다. 이번 토론회에서는 자동차 온실가스 전과정평가 관련 국제 동향과 중소부품사 지원사업의 추진현황, 자동차 제작사 및 부품사의 대응 현황 등을 논의하고, 정부·산업계·전문가가 함께 국내 자동차 산업계의 전과정평가 대응역량을 높이기 위한 의견을 나눈다. 건국대학교의 박수한 교수는 ‘자동차 온실가스 전과정평가 국제 동향 및 국내 대응현황’을 주제로 최근 자동차 규제조화포럼(WP.29)에서의 자동차 온실가스 전과정평가 방법 개발현황과 국내 중소부품사 지원사업 추진현황 등을 발표한다. 이어서 완성차 제조사인 현대자동차와 부품사인 에이치엘(HL)클레무브에서 ‘온실가스 전과정평가 대응 준비 현황’을 공유한다. 주제발표 이후에는 국내 자동차 산업계의 전과정평가 대응역량을 위한 정부, 완성차 제조사, 부품사 및 학계의 역할 등에 대해 의견을 나누는 토론도 진행할 예정이다. 김진식 기후에너지환경부 대기환경국장은 “자동차의 운행단계를 넘어 부품·소재 등 공급망 전반의 온실가스 배출량을 관리하고 줄이는 역량이 새로운 산업경쟁력으로 자리잡고 있다”라며, “국내 자동차 산업계의 온실가스 배출량 관리 역량을 높이기 위해 토론회에서 제기된 현장의 목소리를 반영하고 제도적, 기술적 지원을 최대한 펼치겠다”라고 밝혔다. 붙임 1. 자동차 온실가스 전과정평가 토론회(포럼) 개최계획. 2. 자동차 온실가스 전과정평가 개념. 끝.",
+      "source": "기후부 보도자료",
+      "sourceType": "official",
+      "section": "press",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=1000&maxIndexPages=10&searchKey=&searchValue=&menuId=10598&orgCd=&boardMasterId=939&boardId=1910010",
+      "matchedKeywords": [
+        "온실가스"
+      ],
+      "matchedFields": [
+        "title"
+      ],
+      "keywordScope": "related"
+    },
     {
       "id": "9e02a4eb86201877",
       "publishedAt": "2026-11-23",
@@ -1755,6 +1773,24 @@
       ],
       "eventPrimary": "시장참여자 확대·시장조성",
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
+    },
+    {
+      "id": "59cc06476e211793",
+      "publishedAt": "2026-10-28",
+      "title": "[공고]신규원전(대형) 전원개발사업 예정구역 지정 전략환경영향평가서(초안) 및 기후변화영향평가서(초안) 공람 및 주민설명회 개최 공고",
+      "category": "제도",
+      "summary": "기후에너지환경부 공고 제2026-975호 신규원전(대형) 전원개발사업 예정구역 지정 전략환경영향평가서(초안) 및 기후변화영향평가서(초안) 공람 및 주민설명회 개최 공고 신규원전(대형) 전원개발사업 예정구역 지정과 관련하여 「환경영향평가법」 제13조, 「기후위기 대응을 위한 탄소중립·녹색성장 기본법」 제23조 및 「기후변화영향평가 방법 등에 관한 규정」(기후에너지환경부고시 제2025-8호) 제16조에 따라 전략환경영향평가서(초안) 및 기후변화영향평가서(초안)에 대한 주민 의견을 수렴하고자 공람 및 주민설명회에 관한 사항을 다음과 같이 공고합니다. 2026년 10월 28일 기후에너지환경부장관 1. 계획의 개요 가. 계 획 명 : 신규원전(대형) 전원개발사업 예정구역 지정 나. 위 치 : 경상북도 영덕군 영덕읍 석리?노물리?매정리, 축산면 경정리 일원 다. 규 모 : 발전용량 2.8GW(1.4GW급 × 2기), 면적 3,247,130㎡ 라. 사 업 자 : 한국수력원자력(주) 마. 계획수립기관·승인기관 : 기후에너지환경부 2. 공람 기간 및 장소 가. 공람기간 : 2026. 10. 28.～2026. 11. 25.(토요일 및 공휴일 제외한 20일간) 나. 공람장소 : 영덕군청(종합민원처리과), 영덕읍사무소, 축산면사무소 ※ 전략환경영향평가서(초안) 및 기후변화영향평가서(초안)은 환경영향평가 정보지원시스템(https://www.eiass.go.kr)에서, 요약문은 기후에너지환경부 홈페이지(https://www.mcee.go.kr) 및 영덕군청 홈페이지(https://www.yd.go.kr)에서 확인하시기 바랍니다. 3. 주민설명회 일시 및 장소 가. 일시 : 2026. 11. 5.(목) 15:00 나. 장소 : 영덕군 군민회관 4. 의견 제출 방법 가. 제출기간 : 2026. 10. 28.～2026. 12. 2.(공람만료 후 7일 이내) 나. 제출장소 : 공람장소 또는 환경영향평가 정보지원시스템 다. 제출의견 : 전략환경영향평가서(초안) 및 기후변화영향평가서(초안)에 대한 의견과 공청회 개최 필요성에 관한 의견 라. 제출방법 : 공람장소에 비치된 주민의견 제출서를 작성하여 현장에서 제출하거나 환경영향평가 정보지원시스템(https://www.eiass.go.kr)을 통해 의견 등록 ※ 기타 자세한 내용은 기후에너지환경부 원전산업정책과(☎044-201-7818)로 문의하시기 바랍니다. 붙임 1. 전략환경영향평가서(초안) 요약문 1부. 2. 기후변화영향평가서(초안) 요약문 1부. 끝.",
+      "source": "기후부 공지·공고",
+      "sourceType": "official",
+      "section": "notice",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=200&maxIndexPages=10&searchKey=&searchValue=&menuId=10524&orgCd=&boardMasterId=39&boardId=1902320",
+      "matchedKeywords": [
+        "원전"
+      ],
+      "matchedFields": [
+        "title"
+      ],
+      "keywordScope": "related"
     },
     {
       "id": "29f6c3af83eb29c9",
@@ -100946,8 +100982,8 @@
     }
   ],
   "collectionMode": "incremental",
-  "queryStartDate": "2026-09-26",
-  "queryEndDate": "2026-11-25",
+  "queryStartDate": "2026-09-27",
+  "queryEndDate": "2026-11-26",
   "climateKeywordExpansion": {
     "version": "2026-09-11-v1-38-topics",
     "sharedWith": "산업부 보도자료·공지사항",
@@ -101068,8 +101104,8 @@
       ]
     },
     "collectionMode": "incremental",
-    "queryStartDate": "2026-09-26",
-    "queryEndDate": "2026-11-25"
+    "queryStartDate": "2026-09-27",
+    "queryEndDate": "2026-11-26"
   },
   "policyEventTaxonomy": {
     "version": "2026-09-11-v1-user-38-events",
@@ -101083,7 +101119,7 @@
   },
   "retentionAudit": {
     "previousUnique": 1719,
-    "currentUnique": 1719,
+    "currentUnique": 1721,
     "missing": 0
   }
 }
