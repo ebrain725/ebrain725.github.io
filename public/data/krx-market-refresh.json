@@ -1,9 +1,9 @@
 {
   "version": "krx-market-refresh-2",
-  "trade_date": "2026-11-24",
-  "status": "source_not_current",
-  "coverage": "full_quotes",
-  "source_type": "authorized_open_api",
+  "trade_date": "2026-11-25",
+  "status": "same_day_collected",
+  "coverage": "representative_close_volume",
+  "source_type": "official_daily_pdf",
   "full_quotes": {
     "trade_date": "2026-11-24",
     "source_type": "authorized_open_api",
@@ -13,20 +13,20 @@
     "symbol_count": 5
   },
   "representative_report": {
-    "trade_date": "2026-11-24",
-    "published_date": "2026-11-24",
+    "trade_date": "2026-11-25",
+    "published_date": "2026-11-25",
     "source_type": "official_daily_pdf",
-    "source_url": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=712",
-    "revision_id": "krx:712:1:b9161cdf8187",
-    "pdf_url": "data/krx-daily/pdfs/2026-11/2026-11-24.pdf",
-    "pdf_sha256": "b9161cdf81873646f1458cc783d675c594709652bc0745bc61913be995ef8a13",
-    "index_sha256": "f76817cf318fe3957f3278194562eba81cb0fa8df39e961b1fde1c89272deac6",
+    "source_url": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=713",
+    "revision_id": "krx:713:1:b482ba037624",
+    "pdf_url": "data/krx-daily/pdfs/2026-11/2026-11-25.pdf",
+    "pdf_sha256": "b482ba037624a6a30de9f12e940f1d827f6a27493d3edcfc98ea71f75807f0f6",
+    "index_sha256": "44536a4362720a9b11fee867702c673bfb79c9c13b6fcf3c573567685977832e",
     "symbol": "KAU26",
-    "close": 29300,
-    "change": -200,
-    "volume": 179451,
-    "market_volume": 179451,
-    "full_quote_comparison": "match"
+    "close": 29450,
+    "change": 150,
+    "volume": 141962,
+    "market_volume": 141962,
+    "full_quote_comparison": "unavailable"
   },
   "last_quote_attempt": {
     "status": "collected",
@@ -37,5 +37,5 @@
     "attempted_at": "2026-11-25T14:39:28+09:00",
     "workflow_run_id": "45555003558"
   },
-  "collected_at": "2026-11-25T14:39:29+09:00"
+  "collected_at": "2026-11-25T14:59:46+09:00"
 }
