@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-25T13:14:59+09:00",
+  "generatedAt": "2026-11-25T15:18:22+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 2535,
+  "itemCount": 2549,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-25",
   "sourceCommitsScanned": 0,
@@ -13,27 +13,30 @@
   "recoveredFromGitHistory": 0,
   "items": [
     {
-      "id": "a968ca379635ad98",
+      "id": "1b58f56253458c1a",
       "publishedAt": "2026-11-25",
-      "title": "후시파트너스, 가스 공사·버스연합회와 수소버스 온실가스 감축 방법론...",
+      "title": "후시파트너스, 가스공사·버스연합회와 수소버스 온실가스 감축 방법론...",
       "category": "상쇄·외부사업",
-      "summary": "온실가스 감축 외부사업은 배출권 할당대상업체가 아닌 사업자의 감축 활동을 정부가 인증해 탄소 배출권 (KOC, Korean Offset Credit)으로 전환해 주는 제도다. 전환된 배출권 은 할당대상기업이 의무 이행에 활용할 수 있다....",
-      "source": "seoul.co.kr",
+      "summary": "온실가스 감축 외부사업은 할당대상업체가 아닌 사업자의 감축활동을 정부가 인증해 탄소 배출권 (KOC)으로... 탄소 배출권 (KOC)으로 연결한다는 구상이다. 탄소 배출권 (KOC, Korean Offset Credit)은 외부사업으로 인증받은...",
+      "source": "view.asiae.co.kr",
       "sourceType": "news",
       "section": "news",
-      "url": "https://www.seoul.co.kr/news/economy/2026/11/25/20261125500136?wlog_tag3=naver",
+      "url": "https://view.asiae.co.kr/article/2026112515090458287",
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
         "배출권",
         "탄소배출권"
       ],
       "duplicateSources": [
-        "seoul.co.kr"
+        "view.asiae.co.kr",
+        "etnews.com",
+        "seoul.co.kr",
+        "dailian.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 4,
       "region": "국내"
     },
     {
@@ -109,6 +112,101 @@
       "region": "해외"
     },
     {
+      "id": "b02da85b88183ae6",
+      "publishedAt": "2026-11-25",
+      "title": "지속가능한 산림 보호 및 개발과 연계된 탄소 배출권 개발.",
+      "category": "제도",
+      "summary": "지속가능한 산림 보호 및 개발과 연계된 탄소 배출권 개발. Vietnam.vn",
+      "source": "Vietnam.vn",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxORFcyWkJ5SElBdHZWM3laUEJKWE9oZkdsaDU2R004MWZBOEdoaDJZRVpydDFTVTZLOWNKdUN2MVF4UnVjVzQzUE96dHc4alhCY1U0U2UwSTU5T2hPLTJmVEdMMTJyUXpmYWdGQUpkbC0tcUk1VWxLQ1ViNmFVYmdSR0puS1o0Vlo0Y1o1ZDQ4MkRxWFVURHZleDE2aw?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "Vietnam.vn"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "해외"
+    },
+    {
+      "id": "f21a5e0e036a8fce",
+      "publishedAt": "2026-11-25",
+      "title": "조성환 인천시의원, “기후위기에 맞서는 재정 안전망 구축”…5년간 6...",
+      "category": "제도",
+      "summary": "예방· 탄소 중립 이행·녹색산업 금융지원 등 지속 가능한 도시 발전 기반 마련 인천시의회가 2027년부터 5년간... 출자법인의 배당금과 온실가스 배출권 거래 수입은 기업의 경영 실적과 시장 상황에 따라 변동될 수 있으며...",
+      "source": "sports.donga.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://sports.donga.com/region/article/all/20261125/135087850/1",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "온실가스 배출권"
+      ],
+      "duplicateSources": [
+        "sports.donga.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "a9e06b39812fed12",
+      "publishedAt": "2026-11-25",
+      "title": "제주도, ‘기후경제수도’ 정책자문단 출범",
+      "category": "제도",
+      "summary": "에너지와 탄소시장 , 금융 등 6개 분야 전문가 22명으로 구성된 자문단은 앞으로 분기별 정기회의와 현안에 대한 수시자문, 분야별 집중 검토 등을 통해 제주의 재생에너지와 자연자원을 지역 기업의 성장과 일자리 창출...",
+      "source": "kbs.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8722158&ref=A",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "kbs.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "58dfea6522a8a208",
+      "publishedAt": "2026-11-25",
+      "title": "저탄소 강판 키우는 포스코·현대제철···세제 지원 길 열리나",
+      "category": "제도",
+      "summary": "철강사들이 저탄소 강판을 늘리는 과정에서 전기요금과 탄소 배출권 비용도 부담이다. 이날 열린 세미나에서 공문기 포스코경영연구원 철강연구센터장은 \"철강을 만드는 게 점점 비싸지는 시대가 될 것\"이라며 \"앞으로는...",
+      "source": "sisajournal-e.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.sisajournal-e.com/news/articleView.html?idxno=425301",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "sisajournal-e.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "f026997595617032",
       "publishedAt": "2026-11-25",
       "title": "임업진흥원, '농식품 ESG경영대상' 수상",
@@ -126,6 +224,31 @@
       "duplicateSources": [
         "woodkorea.co.kr",
         "amnews.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 2,
+      "region": "국내"
+    },
+    {
+      "id": "052e12d90ea3590f",
+      "publishedAt": "2026-11-25",
+      "title": "인천시, 기후대응기금 설치한다··· 2027년부터 5년간 610억원 조성",
+      "category": "제도",
+      "summary": "기금 재원은 시의 일반회계와 특별회계, 다른 기금에서의 전입금, 환경개선부담금과 배출부과금 징수교부금, 시가 출자한 기후·에너지 관련 법인의 배당금, 온실가스 배출권 거래 수입금 등으로 구성된다. 기금은...",
+      "source": "incheontoday.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.incheontoday.com/news/articleView.html?idxno=326902",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "온실가스 배출권"
+      ],
+      "duplicateSources": [
+        "kmaeil.com",
+        "incheontoday.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -180,6 +303,79 @@
       ],
       "duplicateCount": 1,
       "region": "국내"
+    },
+    {
+      "id": "4ebdf6d1b7eda1dd",
+      "publishedAt": "2026-11-25",
+      "title": "서울시, 수도요금 감면과 탄소배출권 문제 해결 촉구",
+      "category": "제도",
+      "summary": "서울시, 수도요금 감면과 탄소배출권 문제 해결 촉구 미디어시시비비",
+      "source": "미디어시시비비",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5uendLZUVOaGU0SktLR3NMXzVuZjV2dERFeUxQc01OTzM5bG9BdWZRajlZNTRscHJmVVB0YkxIQktkTjBIU3FhUlA3a2F3VFQ4SlR1aEJCaGU5Z3NoQ291S2pYVUR4NlNRSlphSzlRTS1jdw?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "미디어시시비비"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "1bb9f6b83e2a4e89",
+      "publishedAt": "2026-11-25",
+      "title": "산림청, 산림분야 국제협력 성과 거둬…온두라스와 REDD+ 합의",
+      "category": "제도",
+      "summary": "산림청은 제주 세미 맹그로브 적응성· 탄소시장 연구 및 실증 경험과 베트남 홍강 삼각주 맹그로브 복원 국제협력사업 성과를 소개했다. 해당 사업은 330ha 복원, 산림환경서비스지불제(PES) 해안 최초 적용, 주민 생계...",
+      "source": "news1.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.news1.kr/local/daejeon-chungnam/6365551",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 4,
+      "duplicateSources": [
+        "sedaily.com",
+        "news1.kr",
+        "biz.heraldcorp.com",
+        "newsis.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "해외"
+    },
+    {
+      "id": "d74d7d267b9dca34",
+      "publishedAt": "2026-11-25",
+      "title": "산림청, COP31서 글로벌 산림협력 강화…산불 대응 국제공조 주도",
+      "category": "제도",
+      "summary": "산림청은 제주 지역의 맹그로브 적응성· 탄소시장 연구와 베트남 홍강 삼각주 일대 330ha 규모 맹그로브 복원사업 성과를 공유했다. 특히 산림환경서비스지불제(PEES)를 해안 지역에 적용하고 주민 생계와 연계한 복원...",
+      "source": "newsprime.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.newsprime.co.kr/news/article.html?no=756458",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "newsprime.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "해외"
     },
     {
       "id": "fa89fffe29026c26",
@@ -282,6 +478,30 @@
       "region": "국내"
     },
     {
+      "id": "2c025c4097a829c3",
+      "publishedAt": "2026-11-25",
+      "title": "대폭 줄어든 제주시·서귀포시 탄소중립 예산 ... 추진 사업도 단순?",
+      "category": "제도",
+      "summary": "도 본청의 경우 기후테크 산업 육성이나 탄소중립 기본게획 수립, 탄소 배출권 연구 및 검증체게 구축, 도민 탄소감축 마일리지 등 모두 21개 사업을 추진한다. 반면 양 행정시는 지속가능발전협의회 운영이나 일부 행사...",
+      "source": "mediajeju.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.mediajeju.com/news/articleView.html?idxno=367530",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "mediajeju.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "2d29d462b9d4645f",
       "publishedAt": "2026-11-25",
       "title": "대상, ‘행동하는 존중’ 실천하며 지속가능한 사회공헌 확대",
@@ -303,6 +523,33 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "956b96318d617caf",
+      "publishedAt": "2026-11-25",
+      "title": "남서울대, 국제 농업협력기구 'GIC IHEE 농업위원회' 유치…스마트농업...",
+      "category": "제도",
+      "summary": "국제환경에너지본부(IHEE)는 지난해 11월 한국에 설립된 조직으로, 탄소감축 기술 실증과 배출권 거래 표준화... 국제협력 사업단 대표와 한국 배출권 거래협회 농수축산위원장, 유엔미래포럼 AI농축산 위원장 등을 맡고 있다.",
+      "source": "ccdn.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.ccdn.co.kr/news/articleView.html?idxno=1113484",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateCount": 5,
+      "duplicateSources": [
+        "ccdn.co.kr",
+        "yna.co.kr",
+        "unn.net",
+        "daily.hankooki.com",
+        "newscj.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
       "region": "국내"
     },
     {
@@ -376,6 +623,31 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "f2fbc3b36189dd42",
+      "publishedAt": "2026-11-25",
+      "title": "[온실가스 배출권] 11월 25일 KAU26, 5거래일 만에 모처럼 상승하며 2만9450원",
+      "category": "시장·가격",
+      "summary": "[온실가스 배출권] 11월 25일 KAU26, 5거래일 만에 모처럼 상승하며 2만9450원 데일리e뉴스",
+      "source": "데일리e뉴스",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBlVGlNeEdRY2tfWTUxUnRnUWpDOE9TQzZSUkszMDNEQXRIMjMtVXRreHhkd3N0OEhIRVNjSzJlNFI3X09OTGpTWDB2QXc5TDI4YndIamVKR1ctWmJfMUZ4QnlSaVV2M0dnNmg4cncxZw?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "온실가스 배출권",
+        "KAU26"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "데일리e뉴스"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
       "region": "국내"
     },
     {
@@ -498,6 +770,80 @@
       ],
       "duplicateCount": 1,
       "region": "해외"
+    },
+    {
+      "id": "b826df127df476d2",
+      "publishedAt": "2026-11-25",
+      "title": "EU 집행위원회, 2027년 업무계획 발표",
+      "category": "제도",
+      "summary": "아울러 기존에 제안된 배출권 거래제(ETS) 검토 패키지, 네트워크 요금 및 과세 관련 법안, 유럽 전력망 패키지 등의 입법을 우선 추진해 에너지 공급 안정성과 인프라 확충을 지원할 방침이다. 원자재 분야에서는...",
+      "source": "dream.kotra.or.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://dream.kotra.or.kr/kotranews/cms/news/actionKotraBoardDetail.do?SITE_NO=3&MENU_ID=80&CONTENTS_NO=2&bbsGbn=242&bbsSn=242&pNttSn=245339",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "dream.kotra.or.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
+      "id": "217d4ab2037e19ca",
+      "publishedAt": "2026-11-25",
+      "title": "EU CBAM 검증 예약 시작…협력사 증빙 없으면 탄소비용 늘 수도",
+      "category": "시장·가격",
+      "summary": "국내 배출권거래제( K-ETS )에 따라 지불한 탄소비용도 검증 과정에서 함께 확인받을 수 있다. EU 집행위가 지난 16일 발표한 역외 탄소가격 공제 시행규정에 따르면 내년까지 공인 CBAM 검증기관은 별도의 추가 인정 절차...",
+      "source": "impacton.net",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.impacton.net/news/articleView.html?idxno=30829",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "K-ETS"
+      ],
+      "duplicateSources": [
+        "impacton.net"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "7b0e7b4d5a62ba2c",
+      "publishedAt": "2026-11-25",
+      "title": "2026 산림경영지도 우수사례 대상에 조윤호 횡성군산림조합 지도원",
+      "category": "상쇄·외부사업",
+      "summary": "장 지도원은 산불 피해지 복구조림과 탄소 배출권 거래제 외부사업을 연계해 지원한 점이, 박 지도원은 산딸기를 활용한 가공식품 개발과 연중 유통을 지원한 점이 높은 점수를 받았다. 강대재 산림조합중앙회 대표이사는...",
+      "source": "aflnews.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.aflnews.co.kr/news/articleView.html?idxno=332434",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "aflnews.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
     },
     {
       "id": "9e0a765a84585160",
@@ -8346,12 +8692,13 @@
         "상쇄배출권"
       ],
       "duplicateSources": [
-        "냉동공조저널",
         "Chosunbiz",
         "korea.kr",
         "todayenergy.kr",
-        "지디넷코리아",
         "kukinews.com",
+        "ESG경제",
+        "냉동공조저널",
+        "지디넷코리아",
         "hansbiz.co.kr",
         "동아일보",
         "donga.com",
@@ -8361,7 +8708,6 @@
         "newstree.kr",
         "파인드비",
         "투데이에너지",
-        "ESG경제",
         "비건뉴스",
         "vegannews.co.kr",
         "대한일보",
@@ -8901,9 +9247,9 @@
       "duplicateSources": [
         "마켓인",
         "edaily.co.kr",
+        "www.dt.co.kr",
         "dt.co.kr",
         "biz.chosun.com",
-        "www.dt.co.kr",
         "이투데이",
         "이데일리",
         "Chosunbiz",
