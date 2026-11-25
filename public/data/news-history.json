@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-26T04:35:10+09:00",
+  "generatedAt": "2026-11-26T08:28:46+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 2565,
+  "itemCount": 2571,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-26",
   "sourceCommitsScanned": 0,
@@ -12,6 +12,30 @@
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "fcf22d610f3833b7",
+      "publishedAt": "2026-11-26",
+      "title": "탄소 뿜는 기업들, 법정에서 봅시다.",
+      "category": "제도",
+      "summary": "1990년 미국 로스앤젤레스 등이 미국 도로교통안전국을 상대로 연비 기준을 정하며 온실가스 영향을 따지지... 정부 허가를 받고 배출권 거래제를 지키며 합법적으로 배출했다는 사실이 책임을 면해 주지 않는다는...",
+      "source": "slownews.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://slownews.kr/170195",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "slownews.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
     {
       "id": "cc1f247cc54cec88",
       "publishedAt": "2026-11-26",
@@ -36,6 +60,78 @@
       "region": "해외"
     },
     {
+      "id": "292fdc1e5df8401d",
+      "publishedAt": "2026-11-26",
+      "title": "비상장사 지속가능성보고서 29%↑…신뢰 확보가 기업 경쟁력 좌우[공기...",
+      "category": "제도",
+      "summary": "자리로, 배출권 거래제·목표 관리제 대상 기업 등 온실가스 검증 고객사 담당자들이 참석했다. 세미나에서는 지속가능성 공시 현황과 대응 방향, 기후리스크 평가 및 접근 방향, 배출권 거래제 주요 이슈, EU CBAM 검증...",
+      "source": "etoday.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.etoday.co.kr/news/view/2652701",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "etoday.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "04d06c5bb68ad447",
+      "publishedAt": "2026-11-26",
+      "title": "볏집-과일 껍질-씨앗이 ‘비료 숯’으로… 농업 생산성 34% 증가",
+      "category": "제도",
+      "summary": "황 대표는 “바이오차 생산을 통해 확보한 탄소 배출권 수익 일부를 농가와 나누려고 한다”고 말했다. SE컨설턴트 사업을 주관하는 조민영 행복나래 소셜밸류 혁신본부장은 “SE컨설턴트는 현장의 지식과 경험을 다음 세대...",
+      "source": "donga.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.donga.com/news/Society/article/all/20261126/135091263/2",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "donga.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "031a060a0ca50013",
+      "publishedAt": "2026-11-26",
+      "title": "동물 털 대신 공기 불어넣었더니…갭·헌터 글로벌 브랜드 줄섰다 [장서...",
+      "category": "제도",
+      "summary": "공기를 뺀 채로 운송하면 컨테이너 적재량이 크게 줄어 탄소 배출권 비용을 낮추는 데도 도움을 준다”며... 일본보다 미국 시장 에 먼저 진출했지만, 2024년 종합상사 이토추상사와 업무협약(MOU)을 맺은 뒤 실적이 빠르게...",
+      "source": "hankyung.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.hankyung.com/article/202611259985i",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "hankyung.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
       "id": "488bd64667a3373d",
       "publishedAt": "2026-11-26",
       "title": "[권세중의 외교오디세이]COP31 합의 불발, 그 이후: 합의의 외교에서 연...",
@@ -53,6 +149,55 @@
       ],
       "duplicateSources": [
         "kwnews.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "487cde8c11af8bda",
+      "publishedAt": "2026-11-26",
+      "title": "[Who Is ?] 김성환 한국투자증권 대표이사 사장",
+      "category": "제도",
+      "summary": "\" (2024/09/04, 굿네이버스글로벌임팩트와 온실가스 감축사업 개발 업무협약을 맺고) \"전기 없이 캄캄한... \" (2024/07/18, 한국투자증권이 국내 금융사 최초로 자발적 탄소 배출권 을 확보하자) \"리서치는 자본시장의 가장...",
+      "source": "businesspost.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.businesspost.co.kr/BP?command=article_view&num=452720",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "businesspost.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "9ee2fe63abba5b9a",
+      "publishedAt": "2026-11-26",
+      "title": "[ESG 리더 증권사①] SK증권, ESG로 ‘금융의 판’ 넓힌다…탄소시장 넘...",
+      "category": "제도",
+      "summary": "ESG 채권 주관부터 탄소 배출권 시장조성, 국제 기후금융 사업 기반 확보에 이르기까지 지속가능금융... ■ 채권에서 탄소 배출권 ·전력 인프라까지…기후금융 사업의 확장 SK증권의 ESG 경영에서 눈여겨볼 대목은...",
+      "source": "news2day.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.news2day.co.kr/article/20261122500050",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장",
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "news2day.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -9089,14 +9234,13 @@
         "상쇄배출권"
       ],
       "duplicateSources": [
+        "냉동공조저널",
         "Chosunbiz",
+        "투데이에너지",
         "korea.kr",
         "todayenergy.kr",
-        "kukinews.com",
-        "ESG경제",
-        "냉동공조저널",
-        "투데이에너지",
         "지디넷코리아",
+        "kukinews.com",
         "hansbiz.co.kr",
         "동아일보",
         "donga.com",
@@ -9105,6 +9249,7 @@
         "뉴스;트리",
         "newstree.kr",
         "파인드비",
+        "ESG경제",
         "비건뉴스",
         "vegannews.co.kr",
         "대한일보",
@@ -9644,9 +9789,9 @@
       "duplicateSources": [
         "마켓인",
         "edaily.co.kr",
-        "www.dt.co.kr",
         "dt.co.kr",
         "biz.chosun.com",
+        "www.dt.co.kr",
         "이투데이",
         "이데일리",
         "Chosunbiz",
