@@ -1,17 +1,42 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-25T18:20:41+09:00",
+  "generatedAt": "2026-11-26T02:33:58+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 2557,
+  "itemCount": 2564,
   "earliestPublishedAt": "2026-08-06",
-  "latestPublishedAt": "2026-11-25",
+  "latestPublishedAt": "2026-11-26",
   "sourceCommitsScanned": 0,
   "sourceSnapshotsScanned": 0,
   "historicalRowsScanned": 0,
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "488bd64667a3373d",
+      "publishedAt": "2026-11-26",
+      "title": "[권세중의 외교오디세이]COP31 합의 불발, 그 이후: 합의의 외교에서 연...",
+      "category": "제도",
+      "summary": "11년의 배출권 거래제 경험, 제조업과 반도체·AI 기술, 중견국이라는 위치가 강점이다. 이번 총회에서도 우리 정부는 9개국이 참여한 글로벌 고신뢰 탄소시장(GVCM) 협력의향서 서명, IEA와 함께하는 아시아 에너지 안보...",
+      "source": "kwnews.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.kwnews.co.kr/article/20261125500641",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소시장"
+      ],
+      "duplicateSources": [
+        "kwnews.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
     {
       "id": "1b58f56253458c1a",
       "publishedAt": "2026-11-25",
@@ -409,6 +434,29 @@
       "region": "국내"
     },
     {
+      "id": "7ae9969ed73c1a3d",
+      "publishedAt": "2026-11-25",
+      "title": "산림청, 온두라스와 산림 탄소 협력 합의…국제 산불 대응 공조 확대",
+      "category": "제도",
+      "summary": "산림청은 제주 세미 맹그로브의 적응성과 탄소시장 관련 연구·실증 경험을 소개했다. 베트남 홍강 삼각주 지역에서는 국제협력사업을 통해 맹그로브 330헥타르를 복원하고, 산림환경서비스지불제를 해안지역에 처음...",
+      "source": "youngnong.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.youngnong.co.kr/news/articleView.html?idxno=72218",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "youngnong.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "해외"
+    },
+    {
       "id": "1bb9f6b83e2a4e89",
       "publishedAt": "2026-11-25",
       "title": "산림청, 산림분야 국제협력 성과 거둬…온두라스와 REDD+ 합의",
@@ -660,6 +708,31 @@
       "region": "국내"
     },
     {
+      "id": "14ee182bb17ac5b7",
+      "publishedAt": "2026-11-25",
+      "title": "국제 온실가스 표준에 한국 목소리 낸다…GHG Protocol Korea 추진위 출범",
+      "category": "제도",
+      "summary": "국내 기업들은 한국 배출권거래제( K-ETS ), 국제 온실가스 회계표준, 국가별 탄소관련 규제 등에 적용되는 기준의 차이로 인해 상당한 실무적·경제적 부담을 겪고 있다.설립추진위원회는 이러한 문제를 해결하기 위해...",
+      "source": "asiatoday.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.asiatoday.co.kr/kn/view.php?key=20261125002305344",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "K-ETS"
+      ],
+      "duplicateSources": [
+        "asiatoday.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "6569cf8b0e542d52",
       "publishedAt": "2026-11-25",
       "title": "【규제트래커】 유럽 1위 사무용품 유통사, EUDR 실사 플랫폼 도입…JA솔...",
@@ -828,6 +901,54 @@
       ],
       "duplicateCount": 1,
       "region": "해외"
+    },
+    {
+      "id": "26f2ca2b16be30fa",
+      "publishedAt": "2026-11-25",
+      "title": "[기고]경제 안보로 엮어낼 한국의 동아시아 경영",
+      "category": "제도",
+      "summary": "중희토류 매장에다 탄소 배출권 확보, 그리고 혈맹인 베트남의 ‘붕앙’항으로 연결하려는 동서회랑 철도사업 등에서 투자 잠재력이 확인된다. 총길이 4350㎞의 메콩강은 1800㎞에 걸쳐 태국과 접해 라오스를 지나면서...",
+      "source": "khan.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.khan.co.kr/article/202611251958015",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "khan.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
+      "id": "5113cceaf790ec6a",
+      "publishedAt": "2026-11-25",
+      "title": "[금융新세계] 예금토큰부터 스테이블코인까지…금융권 '디지털화폐' 시...",
+      "category": "제도",
+      "summary": "탄소 배출권과 채권 등 다양한 자산을 디지털 화폐로 거래하는 과정에서 서로 다른 블록체인 네트워크를 연결하는 기술을 실험했다. LG CNS에 따르면 은행 7곳이 참여한 실증과 은행 3곳, 증권사 8곳이 참여한 모의 시장 ...",
+      "source": "weekly.hankooki.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://weekly.hankooki.com/news/articleView.html?idxno=7195736",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "weekly.hankooki.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
     },
     {
       "id": "f95c9900e1fcc2a0",
@@ -1000,6 +1121,30 @@
       "region": "국내"
     },
     {
+      "id": "d1d34d95cb045e83",
+      "publishedAt": "2026-11-25",
+      "title": "ESG 공시 표류와 RE100 위기…한국 경제 골든타임은 지금[기고]",
+      "category": "제도",
+      "summary": "특히 인공지능(AI) 데이터센터 확대에 따른 전력 수요 증가와 배출권 거래제 부담까지 겹치고 있다. 기업만으로는 RE100을 달성하기 어렵다. 단순히 공시 일정을 조정하는 것으로 끝나서는 안 된다. 정부는 에너지...",
+      "source": "magazine.hankyung.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://magazine.hankyung.com/business/article/202611172333b",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "magazine.hankyung.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "af30c96f7c0a02bf",
       "publishedAt": "2026-11-25",
       "title": "EMS협회, AI·에너지효율 산업 성장 전략·미래 논의",
@@ -1021,6 +1166,29 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "e1d256be70c73a94",
+      "publishedAt": "2026-11-25",
+      "title": "COP31 결렬에도 전기화 35% 목표는 자발 서약으로 살아남았다…한국도 ...",
+      "category": "제도",
+      "summary": "정의로운 전환 작업프로그램 연장과 탄소시장 규칙 정비, 자발적 ‘글로벌 전기화 서약’이 대표적이다. 한편 도널드 트럼프 미국 대통령은 총회 결과를 두고 SNS에 글을 올렸고, 유엔은 의사결정 방식을 손볼 개혁...",
+      "source": "wikitree.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.wikitree.co.kr/articles/1177800",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "wikitree.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
       "region": "국내"
     },
     {
