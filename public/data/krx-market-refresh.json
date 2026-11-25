@@ -29,13 +29,13 @@
     "full_quote_comparison": "unavailable"
   },
   "last_quote_attempt": {
-    "status": "collected",
-    "requested_trade_date": "2026-11-24",
-    "observed_trade_date": "2026-11-24",
+    "status": "no_matching_rows",
+    "requested_trade_date": "2026-11-25",
+    "observed_trade_date": null,
     "source_type": "authorized_open_api",
-    "detail": null,
-    "attempted_at": "2026-11-25T14:39:28+09:00",
-    "workflow_run_id": "45555003558"
+    "detail": "HTTP_200_EMPTY_PRICE_LIST; site=HTTP_403",
+    "attempted_at": "2026-11-25T21:42:34+09:00",
+    "workflow_run_id": "45616241631"
   },
-  "collected_at": "2026-11-25T14:59:46+09:00"
+  "collected_at": "2026-11-25T21:42:35+09:00"
 }
