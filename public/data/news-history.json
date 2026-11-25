@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-25T10:17:02+09:00",
+  "generatedAt": "2026-11-25T13:14:59+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 2523,
+  "itemCount": 2535,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-25",
   "sourceCommitsScanned": 0,
@@ -12,6 +12,30 @@
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "a968ca379635ad98",
+      "publishedAt": "2026-11-25",
+      "title": "후시파트너스, 가스 공사·버스연합회와 수소버스 온실가스 감축 방법론...",
+      "category": "상쇄·외부사업",
+      "summary": "온실가스 감축 외부사업은 배출권 할당대상업체가 아닌 사업자의 감축 활동을 정부가 인증해 탄소 배출권 (KOC, Korean Offset Credit)으로 전환해 주는 제도다. 전환된 배출권 은 할당대상기업이 의무 이행에 활용할 수 있다....",
+      "source": "seoul.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.seoul.co.kr/news/economy/2026/11/25/20261125500136?wlog_tag3=naver",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "seoul.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
     {
       "id": "36e6a073d513ea9b",
       "publishedAt": "2026-11-25",
@@ -35,6 +59,54 @@
       ],
       "duplicateCount": 1,
       "region": "국내"
+    },
+    {
+      "id": "83ef3f9db48c4efc",
+      "publishedAt": "2026-11-25",
+      "title": "한국, 온두라스와 REDD+ 사업 펼친다",
+      "category": "제도",
+      "summary": "산림청은 제주 세미 맹그로브 적응성· 탄소시장 연구 및 실증 경험과 베트남 홍강 삼각주 지역 맹그로브 복원 국제협력사업 성과를 소개해 한국의 맹그로브 연구·복원 역량을 알리고 글로벌 산림협력 기반을...",
+      "source": "sedaily.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.sedaily.com/article/20118691?ref=naver",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "sedaily.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "해외"
+    },
+    {
+      "id": "5d9594280b6b446a",
+      "publishedAt": "2026-11-25",
+      "title": "폴란드 등 4개국, EU 새 탄소 규제 연기 요구…\"난방비·주유비 오를라...",
+      "category": "시장·가격",
+      "summary": "폴란드·헝가리·슬로바키아·체코 등 4개국이 유럽연합(EU)의 건물·도로교통 부문 탄소 배출권거래제 (ETS2) 도입을 늦추라고 요구했다. 에너지 가격이 치솟은 상황에서 예정대로 2028년에 시행하면 가계와 기업의 부담이...",
+      "source": "newsis.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newsis.com/view/NISX20261125_0003882572",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "newsis.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
     },
     {
       "id": "f026997595617032",
@@ -62,6 +134,78 @@
       "region": "국내"
     },
     {
+      "id": "02bcb22fe18c433c",
+      "publishedAt": "2026-11-25",
+      "title": "여기선 버리고 저기선 사고…드라이아이스 대란이 드러낸 'CO2 셈법' [취...",
+      "category": "제도",
+      "summary": "감축 실적을 인정받으면 배출권 으로 팔 수 있어 제품 판매와 별도로 수입이 생긴다. 평택 포집 공장도 감축... EU 배출권 거래제는 이산화탄소가 제품 안에 영구적으로 화학 결합된 경우에만 배출량에서 빼 주는데, 2024년...",
+      "source": "sbs.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008861779&plink=ORI&cooper=NAVER",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "sbs.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
+      "id": "5ccdde4bc740b7ce",
+      "publishedAt": "2026-11-25",
+      "title": "서울시의회 \"시민 안전 예산부터 챙겨야\"…수돗물 관리·범죄 예방 집중...",
+      "category": "제도",
+      "summary": "목 의원은 지난해 약 2만5000톤의 탄소 배출권 초과 배출에 따른 재정 부담도 지적했다. 이에 아리수본부는 총 38MW 규모의 태양광 발전시설 확보와 고효율 펌프 교체 등을 추진하겠다고 밝혔다. ◆ 수도관 세척은 줄고...",
+      "source": "ifm.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://news.ifm.kr/news/articleView.html?idxno=485445",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "ifm.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "fa89fffe29026c26",
+      "publishedAt": "2026-11-25",
+      "title": "번햄 영국총리 “당장 국민투표 제안 안 해”",
+      "category": "제도",
+      "summary": "지난주 영국·EU 정상회의에서 식품 교역과 청년 이동성, 배출권 거래제 연계에 합의한 만큼 현 의회 임기에는 노동당 공약의 기준선을 지키면서 협력을 확대하겠다는 설명이다. 최종 목표는 아직 정해지지 않았다. 번햄...",
+      "source": "naeil.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.naeil.com/news/read/610037?ref=naver",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "naeil.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
       "id": "adba49363c9d880c",
       "publishedAt": "2026-11-25",
       "title": "목소영 시의원 \"수도요금 감면 150억~200억 못 메워\"",
@@ -77,12 +221,16 @@
         "탄소배출권"
       ],
       "duplicateSources": [
-        "newspim.com"
+        "newspim.com",
+        "swtvnews.com",
+        "viva100.com",
+        "seoul.co.kr",
+        "womennews.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 5,
       "region": "국내"
     },
     {
@@ -102,6 +250,30 @@
       ],
       "duplicateSources": [
         "womennews.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "f9e3bbcb0ffdd6bd",
+      "publishedAt": "2026-11-25",
+      "title": "렉스이노베이션, 에너지특화기업 지정…VPP 사업 확대",
+      "category": "제도",
+      "summary": "렉스이노베이션은 한국전력의 원격감시제어(SCADA) 기반 EMS 기술을 이전받아 설립된 연구소기업으로 전남 나주에 본사를 두고 태양광·소수력 발전소 설계·조달·시공(EPC), VPP 플랫폼 개발, 탄소 배출권 연계 모델 등...",
+      "source": "etnews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.etnews.com/20261125000269",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "etnews.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -158,6 +330,29 @@
       "region": "해외"
     },
     {
+      "id": "85f061811045abfc",
+      "publishedAt": "2026-11-25",
+      "title": "[이슈 포커스] “ 탄소 배출량 계산만으로는 부족”…글로벌 환경규제, 공...",
+      "category": "제도",
+      "summary": "향후 기업이 실제 탄소감축 실적을 바탕으로 탄소크레딧을 확보하고 탄소시장 에 참여하는 과정에서도 1차 데이터의 중요성이 더욱 커질 것으로 전망했다. 다만 국내 제조 현장의 데이터 확보 여건은 여전히 개선이...",
+      "source": "hellot.net",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.hellot.net/news/article.html?no=116592",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "hellot.net"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "3ca60cb51f7db914",
       "publishedAt": "2026-11-25",
       "title": "[우리품의 아프리카인](62) \"낯선 한국서 수술…따뜻한 배려에 감동\"",
@@ -169,7 +364,10 @@
       "url": "https://www.yna.co.kr/view/AKR20261120149400898?input=1195m",
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
-        "탄소시장"
+        "탄소시장",
+        "배출권",
+        "배출권거래제",
+        "온실가스 배출권"
       ],
       "duplicateSources": [
         "yna.co.kr"
@@ -178,6 +376,79 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "e1b792d66579b502",
+      "publishedAt": "2026-11-25",
+      "title": "[생생뉴스] 갈등과 정쟁으로 꽉 막힌 정치판을 속 시원하게! 정치고수",
+      "category": "제도",
+      "summary": "2009년에 박성효 전 대전 시장 님께서 타슈 공영 자전거를 도입하셨다. 그때 도입의 얘기 잠깐 들려주실 수 있을까요? ▷박성효 그 당시만 해도 탄소 배출권 또 탄소 배출을 줄이지 않은 논의들이 전 세계적으로 있었어요....",
+      "source": "kbs.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8722025&ref=A",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "kbs.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "ace438ca2b9b7ad3",
+      "publishedAt": "2026-11-25",
+      "title": "[4th-Infra] \"철강 저탄소 전환 40조, 세액공제·전력비 지원 시급\"",
+      "category": "시장·가격",
+      "summary": "에너지 가격 상승에 탄소 배출권 비용까지 더해지면서 철강업계의 원가 부담은 갈수록 커지고 있다. 공 센터장은 \"철강을 만드는 게 점점 비싸지는 시대가 될 것\"이라며 \"앞으로 철강사들이 생존할 수 있기 위해서는 누가...",
+      "source": "4th.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.4th.kr/news/articleView.html?idxno=2122640",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "4th.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "8c2d6973a459434a",
+      "publishedAt": "2026-11-25",
+      "title": "NH농협금융지주, '2026년 리스크관리 우수사례 시상식' 개최",
+      "category": "제도",
+      "summary": "NH농협은행의 농업인 우대금리 이자 경감과 저탄소 배출권 구매를 비롯해 NH투자증권 청년농 스마트팜 지원 및 온라인 판로 개척, NH농협캐피탈 농기계 리스와 NH농협생명 농촌 의료봉사 등 전 계열사가 힘을 모아 농가의...",
+      "source": "s-journal.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.s-journal.co.kr/news/articleView.html?idxno=45639",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateCount": 2,
+      "duplicateSources": [
+        "financialpost.co.kr",
+        "s-journal.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
       "region": "국내"
     },
     {
@@ -197,6 +468,30 @@
       ],
       "duplicateSources": [
         "g-enews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
+      "id": "a4f23889201725ef",
+      "publishedAt": "2026-11-25",
+      "title": "EU, 산업 탈탄소에 52억유로 투입…해운·중소기업 지원 신설, SMR·폐열...",
+      "category": "유상경매",
+      "summary": "재원은 EU 배출권 거래제(EU ETS)의 배출권 경매 수익으로 조달한다. EU 혁신기금 일반 보조금 37억유로 배정... EU는 중소기업의 행정 부담을 덜기 위해 신청 서류와 사후 보고·모니터링 절차를 간소화하고, 온실가스 ...",
+      "source": "impacton.net",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.impacton.net/news/articleView.html?idxno=30825",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "impacton.net"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -698,7 +993,7 @@
         "KAU26"
       ],
       "section": "news",
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "duplicateSources": [
         "데일리e뉴스"
       ],
@@ -6429,9 +6724,9 @@
         "탄소배출권"
       ],
       "duplicateSources": [
-        "skbroadband.com",
         "biz.heraldcorp.com",
         "munhwa.com",
+        "skbroadband.com",
         "gukjenews.com",
         "newstnt.com",
         "seouland.com",
@@ -8051,6 +8346,7 @@
         "상쇄배출권"
       ],
       "duplicateSources": [
+        "냉동공조저널",
         "Chosunbiz",
         "korea.kr",
         "todayenergy.kr",
@@ -8063,7 +8359,6 @@
         "4th.kr",
         "뉴스;트리",
         "newstree.kr",
-        "냉동공조저널",
         "파인드비",
         "투데이에너지",
         "ESG경제",
@@ -8606,9 +8901,9 @@
       "duplicateSources": [
         "마켓인",
         "edaily.co.kr",
-        "www.dt.co.kr",
         "dt.co.kr",
         "biz.chosun.com",
+        "www.dt.co.kr",
         "이투데이",
         "이데일리",
         "Chosunbiz",
