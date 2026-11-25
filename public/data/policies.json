@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-11-25T15:18:15+09:00",
+  "lastSync": "2026-11-25T18:04:59+09:00",
   "keywords": [
     "배출권",
     "배출권거래제",
@@ -27,10 +27,10 @@
     "Google News RSS",
     "NAVER API HUB"
   ],
-  "warning": "기후부 공지·공고: 키워드별 공식검색과 기본 RSS 복구에 모두 실패했습니다: 배출권: www.mcee.go.kr: The read operation timed out / mcee.go.kr: The read operation timed out | 배출권거래제: www.mcee.go.kr: The read operation timed out / mcee.go.kr: The read operation timed out | 유상할당: www.mcee.go.kr: The read operation timed out / mcee.go.kr: The read operation timed out | 유상경매: www.mcee.go.kr: The read operation timed out / mcee.go.kr: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1011)> | 탄소시장: www.mcee.go.kr: Remote end closed connection without response / mcee.go.kr: Remote end closed connection without response | 시장안정화: www.mcee.go.kr: Remote end closed connection without response / mcee.go.kr: <urlopen error timed out> | 상쇄배출권: www.mcee.go.kr: The read operation timed out / mcee.go.kr: The read operation timed out | 한국거래소 배출권 공지사항: 한국거래소 공지 목록을 해석하지 못했습니다. 1페이지: HTTP Error 403: Forbidden",
+  "warning": "한국거래소 배출권 공지사항: 한국거래소 공지 목록을 해석하지 못했습니다. 1페이지: HTTP Error 403: Forbidden",
   "aiInsight": {
     "summary": "최근 공식자료의 직접적인 수급 변수는 유상경매입니다. 최근 경매가 높은 낙찰가로 소화돼 공급보다 이행수요가 강하다는 신호입니다.",
-    "generatedAt": "2026-11-25T15:18:15+09:00",
+    "generatedAt": "2026-11-25T18:04:59+09:00",
     "basisLatestDate": "2026-11-23",
     "basisCount": 10,
     "source": "fallback",
@@ -878,15 +878,18 @@
         "탄소배출권"
       ],
       "duplicateSources": [
+        "hankyung.com",
         "view.asiae.co.kr",
         "etnews.com",
         "seoul.co.kr",
-        "dailian.co.kr"
+        "dailian.co.kr",
+        "mt.co.kr",
+        "venturesquare.net"
       ],
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 4,
+      "duplicateCount": 7,
       "region": "국내"
     },
     {
@@ -1010,6 +1013,36 @@
       "region": "국내"
     },
     {
+      "id": "87a67a2c2f299bc6",
+      "publishedAt": "2026-11-25",
+      "title": "조성환 의원 '시 기후대응기금 설치 및 운용 조례안' 상임위 통과",
+      "category": "제도",
+      "summary": "조례안은 시 일반회계와 특별회계, 다른 기금의 전입금, 환경개선부담금과 배출부과금 징수교부금, 시가 출자한 기후·에너지 관련 법인의 배당금, 온실가스 배출권 거래 수입금 등을 기금 재원으로 정했습니다. 기금은...",
+      "source": "newsclaim.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newsclaim.co.kr/news/articleView.html?idxno=3084227",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "온실가스 배출권"
+      ],
+      "duplicateSources": [
+        "newsclaim.co.kr",
+        "kmaeil.com",
+        "newstown.co.kr",
+        "gukjenews.com",
+        "incheontoday.com",
+        "kihoilbo.co.kr",
+        "view.asiae.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 7,
+      "region": "국내"
+    },
+    {
       "id": "a9e06b39812fed12",
       "publishedAt": "2026-11-25",
       "title": "제주도, ‘기후경제수도’ 정책자문단 출범",
@@ -1107,6 +1140,29 @@
       "region": "국내"
     },
     {
+      "id": "a687784d9bd643bc",
+      "publishedAt": "2026-11-25",
+      "title": "예산 68% 급감 경기환경에너지진흥원…“기능 재정립·자체사업 확대”...",
+      "category": "제도",
+      "summary": "이에 도는 내년도 진흥원 출연금 목적사업비에 △불소계냉매 저감 기반 자원순환 및 탄소중립 사업(6억 5000만 원) △경기도 광역 수리 거점 설치 및 운영 사업(6억 원) △경기도 자발적 탄소시장 활성화 시범사업(2억...",
+      "source": "kgnews.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.kgnews.co.kr/news/article.html?no=921203",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "kgnews.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "02bcb22fe18c433c",
       "publishedAt": "2026-11-25",
       "title": "여기선 버리고 저기선 사고…드라이아이스 대란이 드러낸 'CO2 셈법' [취...",
@@ -1179,6 +1235,30 @@
       "region": "국내"
     },
     {
+      "id": "c1bdbc5754c79383",
+      "publishedAt": "2026-11-25",
+      "title": "삼중고에 벼랑 끝 내몰린 K철강…“생산세액공제 도입·전기료 부담 낮...",
+      "category": "시장·가격",
+      "summary": "우선적으로 저탄소 철강재를 국내 생산세액공제 대상에 포함하고 산업용 전기요금과 탄소 배출권 비용... 공 센터장은 “탄소 배출을 줄이는 철강제품을 만들어야 하는 상황에서 탄소 배출권 가격이나 산업용 전기요금은...",
+      "source": "edaily.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.edaily.co.kr/News/Read?newsId=03630966645649328&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "edaily.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
       "id": "1bb9f6b83e2a4e89",
       "publishedAt": "2026-11-25",
       "title": "산림청, 산림분야 국제협력 성과 거둬…온두라스와 REDD+ 합의",
@@ -1192,12 +1272,14 @@
       "matchedKeywords": [
         "탄소시장"
       ],
-      "duplicateCount": 4,
+      "duplicateCount": 6,
       "duplicateSources": [
         "sedaily.com",
         "news1.kr",
         "biz.heraldcorp.com",
-        "newsis.com"
+        "newsis.com",
+        "imwood.co.kr",
+        "newsprime.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -1389,18 +1471,67 @@
       "matchedKeywords": [
         "배출권"
       ],
-      "duplicateCount": 5,
+      "duplicateCount": 7,
       "duplicateSources": [
+        "chungnamilbo.co.kr",
         "ccdn.co.kr",
         "yna.co.kr",
         "unn.net",
         "daily.hankooki.com",
-        "newscj.com"
+        "newscj.com",
+        "dtnews24.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
       ],
       "region": "국내"
+    },
+    {
+      "id": "b65c477abc4a6fe2",
+      "publishedAt": "2026-11-25",
+      "title": "국제혁신센터 농업위원회 출범…“농업의 미래는 하나의 연결된 생태계...",
+      "category": "제도",
+      "summary": "농장 관리와 탄소 계산을 한 번에 하는 시스템으로, 농가가 줄인 탄소 는 배출권 으로 바꿀 수 있단 설명이다. 해외 사업도 본격화한다. 최 위원장은 “이미 확정된 연해주 국제협력 농업개발사업을 시작으로...",
+      "source": "biz.heraldcorp.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://biz.heraldcorp.com/article/10949216?ref=naver",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "biz.heraldcorp.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "6569cf8b0e542d52",
+      "publishedAt": "2026-11-25",
+      "title": "【규제트래커】 유럽 1위 사무용품 유통사, EUDR 실사 플랫폼 도입…JA솔...",
+      "category": "제도",
+      "summary": "유럽연합(EU)과 영국이 배출권 거래제 연계 협상을 마무리하면서 탄소국경조정제도(CBAM)의 상호... EU·영국 배출권 거래제 연계 타결…CBAM 상호 면제 추진 EU와 영국 정상은 지난 20일 브뤼셀 정상회의에서...",
+      "source": "impacton.net",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.impacton.net/news/articleView.html?idxno=30827",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "impacton.net"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
     },
     {
       "id": "aeb33d8feea711b8",
@@ -1523,6 +1654,54 @@
       ],
       "duplicateCount": 1,
       "region": "국내"
+    },
+    {
+      "id": "41dc09a935b1c061",
+      "publishedAt": "2026-11-25",
+      "title": "[베트남 특징주] 베트남 증시 대개편…HNX 상장 주식 전량 HOSE로 이전 통...",
+      "category": "제도",
+      "summary": "이와 함께 하노이 거래소는 탄소 배출권 시장 이나 혁신 스타트업 전용 자본거래소 등 새로운 금융 인프라를 연구·개발하는 역할을 맡게 된다. 베트남 국기 [사진=블룸버그통신] 이번 조치는 총리 결정문(제1726/QĐ-TTg호)...",
+      "source": "newspim.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newspim.com/news/view/20261125001143",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "newspim.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
+      "id": "f95c9900e1fcc2a0",
+      "publishedAt": "2026-11-25",
+      "title": "[ESGX 이슈 5] EU, 풍력·전력망용 복합소재 수입규제 조사…한국산 에폭...",
+      "category": "유상경매",
+      "summary": "폴란드 등 중부유럽 4개국은 가계와 기업의 에너지 비용 부담을 이유로 제2 배출권 거래제의 배출권 경매 연기를 요구했다. 美 법원, 의결권 자문사 ISS에 기관투자자 의결권 관련 자료 제출 명령 미국 법원이 글로벌...",
+      "source": "etoday.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.etoday.co.kr/news/view/2652714",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "etoday.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
     },
     {
       "id": "ace438ca2b9b7ad3",
@@ -1663,6 +1842,30 @@
       ],
       "duplicateSources": [
         "impacton.net"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "af30c96f7c0a02bf",
+      "publishedAt": "2026-11-25",
+      "title": "EMS협회, AI·에너지효율 산업 성장 전략·미래 논의",
+      "category": "제도",
+      "summary": "또한 △산업진단보조사업(13.5억 원 규모) △에너지효율시장 조성사업(예산 148억 원) △ 배출권 거래제 감축설비 지원(138억 원 지원) △산업계 에너지관리시스템 보급 사업(55억 원 지원) △에너지이용합리화 자금지원...",
+      "source": "todayenergy.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.todayenergy.kr/news/articleView.html?idxno=306078",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "todayenergy.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -3942,7 +4145,7 @@
       "region": "국내"
     },
     {
-      "id": "84b70dea509f3187",
+      "id": "722177f5b4b6f440",
       "publishedAt": "2026-11-23",
       "title": "(참고) 제31차 유엔기후변화협약 당사국총회 폐막",
       "category": "제도",
@@ -3950,7 +4153,7 @@
       "source": "기후부 보도자료",
       "sourceType": "official",
       "section": "press",
-      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%ED%83%84%EC%86%8C%EC%8B%9C%EC%9E%A5&menuId=10598&orgCd=&boardMasterId=939&boardId=1909180",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%ED%83%84%EC%86%8C%EC%8B%9C%EC%9E%A5&menuId=10598&orgCd=&boardMasterId=939&boardId=1909180",
       "matchedKeywords": [
         "탄소시장"
       ],
@@ -5760,7 +5963,8 @@
       "matchedKeywords": [
         "배출권",
         "배출권거래제",
-        "탄소시장"
+        "탄소시장",
+        "유상할당"
       ],
       "duplicateSources": [
         "임팩트온",
@@ -9804,13 +10008,12 @@
         "상쇄배출권"
       ],
       "duplicateSources": [
+        "냉동공조저널",
         "Chosunbiz",
         "korea.kr",
         "todayenergy.kr",
-        "kukinews.com",
-        "ESG경제",
-        "냉동공조저널",
         "지디넷코리아",
+        "kukinews.com",
         "hansbiz.co.kr",
         "동아일보",
         "donga.com",
@@ -9819,6 +10022,7 @@
         "뉴스;트리",
         "newstree.kr",
         "파인드비",
+        "ESG경제",
         "투데이에너지",
         "비건뉴스",
         "vegannews.co.kr",
@@ -10359,9 +10563,9 @@
       "duplicateSources": [
         "마켓인",
         "edaily.co.kr",
-        "www.dt.co.kr",
         "dt.co.kr",
         "biz.chosun.com",
+        "www.dt.co.kr",
         "이투데이",
         "이데일리",
         "Chosunbiz",
@@ -10799,7 +11003,7 @@
       "region": "국내"
     },
     {
-      "id": "4c56811eedd4ab2c",
+      "id": "8a283f6e32bd6da3",
       "publishedAt": "2026-11-16",
       "title": "대한민국, 탄소시장연합 회원국 공식 가입… 국제 탄소시장 협력 본격 참여",
       "category": "상쇄·외부사업",
@@ -10807,7 +11011,7 @@
       "source": "기후부 보도자료",
       "sourceType": "official",
       "section": "press",
-      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%ED%83%84%EC%86%8C%EC%8B%9C%EC%9E%A5&menuId=10598&orgCd=&boardMasterId=939&boardId=1907610",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%ED%83%84%EC%86%8C%EC%8B%9C%EC%9E%A5&menuId=10598&orgCd=&boardMasterId=939&boardId=1907610",
       "matchedKeywords": [
         "배출권",
         "배출권거래제",
@@ -10899,7 +11103,7 @@
       "region": "국내"
     },
     {
-      "id": "4b765447f76c7a2f",
+      "id": "e8e9c1e80e47be84",
       "publishedAt": "2026-11-16",
       "title": "기후부-글로벌녹색성장기구, 녹색성장 협력 넓혀 에너지전환 함께 지원",
       "category": "제도",
@@ -10907,7 +11111,7 @@
       "source": "기후부 보도자료",
       "sourceType": "official",
       "section": "press",
-      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%ED%83%84%EC%86%8C%EC%8B%9C%EC%9E%A5&menuId=10598&orgCd=&boardMasterId=939&boardId=1907620",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%ED%83%84%EC%86%8C%EC%8B%9C%EC%9E%A5&menuId=10598&orgCd=&boardMasterId=939&boardId=1907620",
       "matchedKeywords": [
         "탄소시장"
       ],
@@ -17374,7 +17578,7 @@
       "region": "국내"
     },
     {
-      "id": "2f5395ff0fcf1ea1",
+      "id": "e9bac13b94398bae",
       "publishedAt": "2026-11-08",
       "title": "파리협정 발효 10주년, 기후목표 이행 가속화 위한 제31차 유엔기후변화협약 총회 개막",
       "category": "제도",
@@ -17382,7 +17586,7 @@
       "source": "기후부 보도자료",
       "sourceType": "official",
       "section": "press",
-      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%ED%83%84%EC%86%8C%EC%8B%9C%EC%9E%A5&menuId=10598&orgCd=&boardMasterId=939&boardId=1905650",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%ED%83%84%EC%86%8C%EC%8B%9C%EC%9E%A5&menuId=10598&orgCd=&boardMasterId=939&boardId=1905650",
       "matchedKeywords": [
         "탄소시장"
       ],
@@ -26430,7 +26634,7 @@
       "region": "국내"
     },
     {
-      "id": "778330253cc64af0",
+      "id": "15254e0569859a48",
       "publishedAt": "2026-10-28",
       "title": "기후대응위, 민관 협력으로 철강산업 저탄소 전환 해법 모색",
       "category": "시장·가격",
@@ -26438,7 +26642,7 @@
       "source": "기후부 보도자료",
       "sourceType": "official",
       "section": "press",
-      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%ED%83%84%EC%86%8C%EC%8B%9C%EC%9E%A5&menuId=10598&orgCd=&boardMasterId=939&boardId=1902690",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%ED%83%84%EC%86%8C%EC%8B%9C%EC%9E%A5&menuId=10598&orgCd=&boardMasterId=939&boardId=1902690",
       "matchedKeywords": [
         "시장조성",
         "탄소시장"
@@ -30878,7 +31082,7 @@
       "region": "국내"
     },
     {
-      "id": "b571c23ed8f82f23",
+      "id": "e77915d0538be717",
       "publishedAt": "2026-10-21",
       "title": "한국형 녹색 대전환(K-GX), 새로운 사업기회 연다… 대한민국 친환경대전 개최",
       "category": "제도",
@@ -30886,7 +31090,7 @@
       "source": "기후부 보도자료",
       "sourceType": "official",
       "section": "press",
-      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%ED%83%84%EC%86%8C%EC%8B%9C%EC%9E%A5&menuId=10598&orgCd=&boardMasterId=939&boardId=1901210",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%ED%83%84%EC%86%8C%EC%8B%9C%EC%9E%A5&menuId=10598&orgCd=&boardMasterId=939&boardId=1901210",
       "matchedKeywords": [
         "탄소시장"
       ],
@@ -72470,7 +72674,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "c05fd567a571cab8",
+      "id": "aa0a38b8fab532c5",
       "publishedAt": "2026-06-19",
       "title": "유엔기후변화협약 당사국총회 준비회의 개최",
       "category": "제도",
@@ -72478,7 +72682,7 @@
       "source": "기후부 보도자료",
       "sourceType": "official",
       "section": "press",
-      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%ED%83%84%EC%86%8C%EC%8B%9C%EC%9E%A5&menuId=10598&orgCd=&boardMasterId=939&boardId=1871870",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%ED%83%84%EC%86%8C%EC%8B%9C%EC%9E%A5&menuId=10598&orgCd=&boardMasterId=939&boardId=1871870",
       "matchedKeywords": [
         "탄소시장"
       ],
@@ -75972,7 +76176,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "a90e71f340b6c81e",
+      "id": "de941774a073c1a9",
       "publishedAt": "2026-04-22",
       "title": "한-베트남, 탈탄소 녹색 미래를 위한 기후·환경 협력 강화",
       "category": "시장·가격",
@@ -75980,7 +76184,7 @@
       "source": "기후부 보도자료",
       "sourceType": "official",
       "section": "press",
-      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%ED%83%84%EC%86%8C%EC%8B%9C%EC%9E%A5&menuId=10598&orgCd=&boardMasterId=939&boardId=1859470",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%ED%83%84%EC%86%8C%EC%8B%9C%EC%9E%A5&menuId=10598&orgCd=&boardMasterId=939&boardId=1859470",
       "matchedKeywords": [
         "탄소시장"
       ],
@@ -76096,7 +76300,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "05f78aec639c6650",
+      "id": "a1ad90eec77ff0e1",
       "publishedAt": "2026-04-21",
       "title": "온실가스 배출권 시장 안정성 강화하고 세부제도 합리적으로 개선한다",
       "category": "유상경매",
@@ -76104,7 +76308,7 @@
       "source": "기후부 보도자료",
       "sourceType": "official",
       "section": "press",
-      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10598&orgCd=&boardMasterId=939&boardId=1858740",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10598&orgCd=&boardMasterId=939&boardId=1858740",
       "matchedKeywords": [
         "시장안정화",
         "시장 안정화",
@@ -76374,7 +76578,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "142c0101abb4170f",
+      "id": "b46faf3f2ca455e7",
       "publishedAt": "2026-04-19",
       "title": "녹색대전환의 해법과 모두의 성장, 글로벌 그린허브 코리아에서 찾는다",
       "category": "제도",
@@ -76382,7 +76586,7 @@
       "source": "기후부 보도자료",
       "sourceType": "official",
       "section": "press",
-      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%ED%83%84%EC%86%8C%EC%8B%9C%EC%9E%A5&menuId=10598&orgCd=&boardMasterId=939&boardId=1858320",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%ED%83%84%EC%86%8C%EC%8B%9C%EC%9E%A5&menuId=10598&orgCd=&boardMasterId=939&boardId=1858320",
       "matchedKeywords": [
         "탄소시장"
       ],
@@ -78199,7 +78403,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "1bfa1693fd73185a",
+      "id": "7b6409ea0bed53e0",
       "publishedAt": "2026-03-22",
       "title": "제4차 계획기간 배출권거래제 이행을 위한 제1차 민관협의회 개최",
       "category": "시장안정",
@@ -78207,7 +78411,7 @@
       "source": "기후부 보도자료",
       "sourceType": "official",
       "section": "press",
-      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10598&orgCd=&boardMasterId=939&boardId=1851240",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10598&orgCd=&boardMasterId=939&boardId=1851240",
       "matchedKeywords": [
         "유상할당",
         "유상 할당",
@@ -80943,7 +81147,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "3b213977dc5db18e",
+      "id": "525d033ab75787a0",
       "publishedAt": "2026-01-29",
       "title": "탄소중립을 성장동력으로… 기후부, 녹색전환·산업혁신 가속",
       "category": "제도",
@@ -80951,7 +81155,7 @@
       "source": "기후부 보도자료",
       "sourceType": "official",
       "section": "press",
-      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10598&orgCd=&boardMasterId=939&boardId=1838670",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EC%8B%9C%EC%9E%A5%EC%95%88%EC%A0%95%ED%99%94&menuId=10598&orgCd=&boardMasterId=939&boardId=1838670",
       "matchedKeywords": [
         "시장안정화",
         "시장 안정화",
@@ -296266,10 +296470,10 @@
   },
   "newsRetention": {
     "policy": "append-only",
-    "lastMergedAt": "2026-11-25T15:18:22+09:00",
-    "itemCount": 2549,
-    "archiveBefore": 2535,
-    "currentBefore": 2351,
+    "lastMergedAt": "2026-11-25T18:05:06+09:00",
+    "itemCount": 2557,
+    "archiveBefore": 2549,
+    "currentBefore": 2360,
     "gitRecoveryEnabled": false
   },
   "policyEventTaxonomy": {
