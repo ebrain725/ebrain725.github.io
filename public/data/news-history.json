@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-26T02:33:58+09:00",
+  "generatedAt": "2026-11-26T04:35:10+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 2564,
+  "itemCount": 2565,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-26",
   "sourceCommitsScanned": 0,
@@ -12,6 +12,29 @@
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "cc1f247cc54cec88",
+      "publishedAt": "2026-11-26",
+      "title": "산림청, COP31서 온두라스와 REDD+ 합의…국제 산불 대응 협력",
+      "category": "제도",
+      "summary": "산림청은 제주 세미 맹그로브의 적응성· 탄소시장 연구 및 실증 경험과 베트남 홍강 삼각주 지역 맹그로브 복원 국제협력사업 성과를 소개했다. 주요 사업 성과로는 맹그로브 330ha 복원, 산림환경서비스지불제(PEES)의...",
+      "source": "woodkorea.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.woodkorea.co.kr/news/articleView.html?idxno=92815",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "탄소시장"
+      ],
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "woodkorea.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "region": "해외"
+    },
     {
       "id": "488bd64667a3373d",
       "publishedAt": "2026-11-26",
@@ -59,12 +82,14 @@
         "seoul.co.kr",
         "dailian.co.kr",
         "mt.co.kr",
-        "venturesquare.net"
+        "venturesquare.net",
+        "동행일보"
       ],
       "searchProviders": [
-        "NAVER API HUB"
+        "NAVER API HUB",
+        "Google News RSS"
       ],
-      "duplicateCount": 7,
+      "duplicateCount": 8,
       "region": "국내"
     },
     {
@@ -9064,13 +9089,14 @@
         "상쇄배출권"
       ],
       "duplicateSources": [
-        "냉동공조저널",
         "Chosunbiz",
-        "투데이에너지",
         "korea.kr",
         "todayenergy.kr",
-        "지디넷코리아",
         "kukinews.com",
+        "ESG경제",
+        "냉동공조저널",
+        "투데이에너지",
+        "지디넷코리아",
         "hansbiz.co.kr",
         "동아일보",
         "donga.com",
@@ -9079,7 +9105,6 @@
         "뉴스;트리",
         "newstree.kr",
         "파인드비",
-        "ESG경제",
         "비건뉴스",
         "vegannews.co.kr",
         "대한일보",
@@ -9619,9 +9644,9 @@
       "duplicateSources": [
         "마켓인",
         "edaily.co.kr",
+        "www.dt.co.kr",
         "dt.co.kr",
         "biz.chosun.com",
-        "www.dt.co.kr",
         "이투데이",
         "이데일리",
         "Chosunbiz",
