@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0",
   "taxonomyVersion": "2026-09-11-v1-user-38-events",
-  "generatedAt": "2026-11-26T08:57:05+09:00",
+  "generatedAt": "2026-11-27T08:48:00+09:00",
   "requestedStartDate": "2015-01-01",
   "collectionMode": "incremental",
   "eventCount": 38,
@@ -207,15 +207,15 @@
   "previousSectionCounts": {
     "krx_notice": 316,
     "motie_notice": 955,
-    "motie_press": 1896,
-    "notice": 442,
+    "motie_press": 1897,
+    "notice": 443,
     "press": 963
   },
   "addedCounts": {
     "krx_notice": 0,
     "motie_notice": 0,
-    "motie_press": 1,
-    "notice": 1,
+    "motie_press": 0,
+    "notice": 0,
     "press": 0
   },
   "scopeCounts": {
@@ -540,12 +540,12 @@
     ],
     "unclassified": 0
   },
-  "lastRunDateKst": "2026-11-26",
-  "lastRunSlot": "2026-11-26-AM",
-  "publicationVerifiedAt": "2026-11-27T08:27:11+09:00",
+  "lastRunDateKst": "2026-11-27",
+  "lastRunSlot": "2026-11-27-AM",
+  "publicationVerifiedAt": "2026-11-27T08:49:06+09:00",
   "policySource": {
     "file": "data/policies.json",
-    "sha256": "ac085abc9a126f6c85401d91f028d1b89be56cb57f6f853899cb9edd3afc487d",
+    "sha256": "34c74e7cacee53f090070ae4e69c6bc43776b3c735789960105f838ba20b8c1c",
     "lastSync": "2026-11-27T08:17:53+09:00",
     "taxonomyVersion": "2026-09-11-v1-user-38-events",
     "officialItemCount": 4574,
