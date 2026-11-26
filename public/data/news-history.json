@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-26T08:28:46+09:00",
+  "generatedAt": "2026-11-26T10:15:48+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 2571,
+  "itemCount": 2573,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-26",
   "sourceCommitsScanned": 0,
@@ -29,6 +29,30 @@
       ],
       "duplicateSources": [
         "slownews.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "9ac64d854c813b10",
+      "publishedAt": "2026-11-26",
+      "title": "식량안보 시대, 미래 단백질 육성 시급…\"연구 넘어 시장 으로\"",
+      "category": "제도",
+      "summary": "잠재 시장 이 약 600조원에 이르는 만큼 선제 투자로 '제2의 반도체'로 키우자는 것이다. 국내 기업들이 대량생산과 비용 절감에 애를 먹고 있다며 보조금과 탄소 배출권 등을 활용한 정부 지원, 농가·정부·기업의 상생...",
+      "source": "m-economynews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.m-economynews.com/news/article.html?no=73579",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "m-economynews.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -130,6 +154,30 @@
       ],
       "duplicateCount": 1,
       "region": "해외"
+    },
+    {
+      "id": "43794439da75c331",
+      "publishedAt": "2026-11-26",
+      "title": "농협중앙회·산림조합중앙회, 모바일 조합원증 서비스 출시...'2026년 산...",
+      "category": "상쇄·외부사업",
+      "summary": "최우수상은 산불 피해지 복구조림과 배출권 거래제 외부사업을 연계해 지원한 △장영우 안동시산림조합 지도원과, 산딸기를 활용한 가공식품 개발 및 연중 유통을 지원한 △박민혜 포항시산림조합 지도원이 수상했다....",
+      "source": "wsobi.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.wsobi.com/news/articleView.html?idxno=322603",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "wsobi.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
     },
     {
       "id": "488bd64667a3373d",
@@ -379,12 +427,13 @@
         "gukjenews.com",
         "incheontoday.com",
         "kihoilbo.co.kr",
-        "view.asiae.co.kr"
+        "view.asiae.co.kr",
+        "joongdo.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 7,
+      "duplicateCount": 8,
       "region": "국내"
     },
     {
@@ -9234,13 +9283,14 @@
         "상쇄배출권"
       ],
       "duplicateSources": [
-        "냉동공조저널",
         "Chosunbiz",
-        "투데이에너지",
         "korea.kr",
         "todayenergy.kr",
-        "지디넷코리아",
         "kukinews.com",
+        "ESG경제",
+        "냉동공조저널",
+        "투데이에너지",
+        "지디넷코리아",
         "hansbiz.co.kr",
         "동아일보",
         "donga.com",
@@ -9249,7 +9299,6 @@
         "뉴스;트리",
         "newstree.kr",
         "파인드비",
-        "ESG경제",
         "비건뉴스",
         "vegannews.co.kr",
         "대한일보",
@@ -9789,9 +9838,9 @@
       "duplicateSources": [
         "마켓인",
         "edaily.co.kr",
+        "www.dt.co.kr",
         "dt.co.kr",
         "biz.chosun.com",
-        "www.dt.co.kr",
         "이투데이",
         "이데일리",
         "Chosunbiz",
