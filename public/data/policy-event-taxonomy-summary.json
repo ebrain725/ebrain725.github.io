@@ -201,7 +201,7 @@
     "krx_notice": 316,
     "motie_notice": 955,
     "motie_press": 1896,
-    "notice": 442,
+    "notice": 443,
     "press": 963
   },
   "previousSectionCounts": {
@@ -215,7 +215,7 @@
     "krx_notice": 0,
     "motie_notice": 0,
     "motie_press": 0,
-    "notice": 0,
+    "notice": 1,
     "press": 0
   },
   "scopeCounts": {
@@ -232,7 +232,7 @@
       "related": 1866
     },
     "notice": {
-      "direct": 221,
+      "direct": 222,
       "related": 215
     },
     "press": {
@@ -242,15 +242,15 @@
   },
   "eventCounts": {
     "재생에너지·RPS": 921,
-    "배출권·배출권거래제·ETS": 895,
+    "배출권·배출권거래제·ETS": 896,
     "원자력발전·원전": 826,
     "온실가스·배출량·명세서": 728,
     "탄소중립 선언·기본계획": 584,
     "유상할당 비율": 358,
-    "시장안정화·MSR": 269,
+    "시장안정화·MSR": 270,
     "중국 증설·반덤핑·관세": 238,
     "추가할당·할당취소": 220,
-    "할당계획·할당량": 197,
+    "할당계획·할당량": 198,
     "국제감축·외부사업·감축실적": 196,
     "폭염·한파·전력수요": 114,
     "이행·정산·제출기한": 104,
@@ -261,7 +261,7 @@
     "석탄발전": 62,
     "증설·상업가동": 59,
     "전력시장·급전(포괄)": 55,
-    "시장참여자 확대·시장조성": 48,
+    "시장참여자 확대·시장조성": 49,
     "RE100": 43,
     "상쇄배출권·전환한도": 38,
     "화재·폭발·침수·가동중단": 34,
@@ -367,27 +367,27 @@
       }
     },
     "notice": {
-      "records": 442,
+      "records": 443,
       "earliest": "2015-01-07",
-      "latest": "2026-11-23",
+      "latest": "2026-11-26",
       "scopeCounts": {
-        "direct": 221,
+        "direct": 222,
         "related": 215
       },
       "eventCounts": {
-        "배출권·배출권거래제·ETS": 209,
+        "배출권·배출권거래제·ETS": 210,
         "온실가스·배출량·명세서": 127,
         "유상할당 비율": 120,
-        "시장안정화·MSR": 115,
+        "시장안정화·MSR": 116,
         "추가할당·할당취소": 110,
         "탄소중립 선언·기본계획": 64,
-        "할당계획·할당량": 49,
+        "할당계획·할당량": 50,
         "재생에너지·RPS": 37,
         "국제감축·외부사업·감축실적": 23,
         "유상경매 물량·일정": 17,
         "원자력발전·원전": 13,
+        "시장참여자 확대·시장조성": 7,
         "수소발전·청정수소": 6,
-        "시장참여자 확대·시장조성": 6,
         "이행·정산·제출기한": 6,
         "NDC·국가 감축목표": 4,
         "낙찰가·응찰배수": 3,
@@ -448,13 +448,13 @@
     }
   },
   "validation": {
-    "officialItemCount": 4572,
-    "dashboardOfficialCount": 4572,
+    "officialItemCount": 4573,
+    "dashboardOfficialCount": 4573,
     "sectionCounts": {
       "krx_notice": 316,
       "motie_notice": 955,
       "motie_press": 1896,
-      "notice": 442,
+      "notice": 443,
       "press": 963
     },
     "scopeCounts": {
@@ -471,7 +471,7 @@
         "related": 1866
       },
       "notice": {
-        "direct": 221,
+        "direct": 222,
         "related": 215
       },
       "press": {
@@ -481,15 +481,15 @@
     },
     "eventCounts": {
       "재생에너지·RPS": 921,
-      "배출권·배출권거래제·ETS": 895,
+      "배출권·배출권거래제·ETS": 896,
       "원자력발전·원전": 826,
       "온실가스·배출량·명세서": 728,
       "탄소중립 선언·기본계획": 584,
       "유상할당 비율": 358,
-      "시장안정화·MSR": 269,
+      "시장안정화·MSR": 270,
       "중국 증설·반덤핑·관세": 238,
       "추가할당·할당취소": 220,
-      "할당계획·할당량": 197,
+      "할당계획·할당량": 198,
       "국제감축·외부사업·감축실적": 196,
       "폭염·한파·전력수요": 114,
       "이행·정산·제출기한": 104,
@@ -500,7 +500,7 @@
       "석탄발전": 62,
       "증설·상업가동": 59,
       "전력시장·급전(포괄)": 55,
-      "시장참여자 확대·시장조성": 48,
+      "시장참여자 확대·시장조성": 49,
       "RE100": 43,
       "상쇄배출권·전환한도": 38,
       "화재·폭발·침수·가동중단": 34,
@@ -520,7 +520,7 @@
       "대량 매도·보유물량 출회": 1
     },
     "duplicateKeys": 0,
-    "taxonomyMatchedItemCount": 4558,
+    "taxonomyMatchedItemCount": 4559,
     "retainedUnmatchedItemCount": 14,
     "retainedUnmatchedKeys": [
       "climate|1882780",
@@ -542,13 +542,13 @@
   },
   "lastRunDateKst": "2026-11-26",
   "lastRunSlot": "2026-11-26-AM",
-  "publicationVerifiedAt": "2026-11-26T18:24:58+09:00",
+  "publicationVerifiedAt": "2026-11-27T02:23:42+09:00",
   "policySource": {
     "file": "data/policies.json",
-    "sha256": "0fcce48d7174cd0b9fbf438f29838bd9d0bb0b4b4a25be069338bb371bd230cc",
-    "lastSync": "2026-11-26T18:16:36+09:00",
+    "sha256": "75c368a030e82dc0d67615e88f72f604b9403f17cf50b2f410b37f7628a85f6d",
+    "lastSync": "2026-11-27T02:15:40+09:00",
     "taxonomyVersion": "2026-09-11-v1-user-38-events",
-    "officialItemCount": 4572,
-    "latestOfficialPublishedAt": "2026-11-25"
+    "officialItemCount": 4573,
+    "latestOfficialPublishedAt": "2026-11-26"
   }
 }
