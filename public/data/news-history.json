@@ -1,17 +1,90 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-27T02:15:47+09:00",
+  "generatedAt": "2026-11-27T04:17:29+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 2613,
+  "itemCount": 2616,
   "earliestPublishedAt": "2026-08-06",
-  "latestPublishedAt": "2026-11-26",
+  "latestPublishedAt": "2026-11-27",
   "sourceCommitsScanned": 0,
   "sourceSnapshotsScanned": 0,
   "historicalRowsScanned": 0,
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "ce058dd681e7708e",
+      "publishedAt": "2026-11-27",
+      "title": "한국동서발전, 미래 농업인 요람에 '햇빛 발전소' 선물",
+      "category": "상쇄·외부사업",
+      "summary": "한편 동서발전은 지난 9월 EWP에너지1004로 설치한 태양광 설비 10곳의 온실가스 감축 성과를 인정받아 배출권 거래제 외부사업 승인을 받았다. 에너지 복지 차원의 나눔이 온실가스 감축 실적으로도 이어진 것이다.",
+      "source": "tournews21.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.tournews21.com/news/articleView.html?idxno=149395",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "tournews21.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "555def8a36ba65f0",
+      "publishedAt": "2026-11-27",
+      "title": "영국·EU 무역합의에 ‘패라지 조항’…10년 내 파기시 비용 물어야",
+      "category": "제도",
+      "summary": "영국은 식품 위생 및 검역 협정과 탄소 배출권 프로그램 연계 협정에 대해 일종의 '참가비'도 내야 합니다.... (관세동맹·단일 시장 ·이동의 자유로의 복귀)을 넘는 데 이 법안이 사용되지는 않는다. 정부의 레드라인은 이...",
+      "source": "kbs.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8724038&ref=A",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "kbs.co.kr",
+        "yna.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 2,
+      "region": "해외"
+    },
+    {
+      "id": "0c0b52aa5eb7e284",
+      "publishedAt": "2026-11-27",
+      "title": "[중형 증권사의 꿈]③ 정통 SK맨 유성훈의 SK증권...ECM&DCM 용틀임",
+      "category": "제도",
+      "summary": "[편집자 주] ' 탄소 배출권 레포트'를 매일 새벽 금융권에 뿌려 온 SK증권. 이 증권사는 회사채 인수와 발행 주관 등 채권자본 시장 (DCM)의 전통이 강했던 곳으로도 회자돼 왔다. SK증권은 '사회적 기여'로 이름난 회사다....",
+      "source": "financialpost.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.financialpost.co.kr/news/articleView.html?idxno=301029",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "financialpost.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
     {
       "id": "cb1ac7e1aa020bda",
       "publishedAt": "2026-11-26",
