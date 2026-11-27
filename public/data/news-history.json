@@ -1,17 +1,42 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-28T01:57:37+09:00",
+  "generatedAt": "2026-11-28T04:13:32+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 2642,
+  "itemCount": 2644,
   "earliestPublishedAt": "2026-08-06",
-  "latestPublishedAt": "2026-11-27",
+  "latestPublishedAt": "2026-11-28",
   "sourceCommitsScanned": 0,
   "sourceSnapshotsScanned": 0,
   "historicalRowsScanned": 0,
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "896e1e99f26369e7",
+      "publishedAt": "2026-11-28",
+      "title": "EU 정상들, 차기 예산·우크라 지원 놓고 12시간 넘는 마라톤 협상 벌였...",
+      "category": "제도",
+      "summary": "이번에 코스타 상임의장은 대형 기업 대상 디지털서비스세와 탄소국경조정제도(CBAM) 수입, 재활용되지 않은 전자폐기물 부담금, 담배세, 탄소 배출권 거래제(ETS) 수입 등을 편입하자고 제안했다. 우크라이나 지원...",
+      "source": "newspim.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newspim.com/news/view/20261128000009",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "newspim.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
     {
       "id": "46701dc5bd4e37d4",
       "publishedAt": "2026-11-27",
@@ -84,6 +109,30 @@
       ],
       "duplicateCount": 1,
       "region": "해외"
+    },
+    {
+      "id": "c9687344a0d5c63d",
+      "publishedAt": "2026-11-27",
+      "title": "탄소 배출권 값 출렁임 막는다…정부, 비싸면 풀고 싸면 줄인다",
+      "category": "제도",
+      "summary": "탄소 배출권 값 출렁임 막는다…정부, 비싸면 풀고 싸면 줄인다 파인드비",
+      "source": "파인드비",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5YRmpSX2pUMEpVTFZ3eUF3WE9TcXpFeDRydHV3OFFrQ0JjV3ZBeW9wZ2RMMUpCR0dQcUpFSEEzOFFfc2tsNVZJZ29HOFdGZ2xqcGxPZkUtVkp6VV85MWxjb2Rqb1pWeDjSAWpBVV95cUxOdm1jV1lSb3VmaktZeWh4bjk1VjNpVXhxNzl2aHdhS1ZoMEZ4em1UMG5WTi1YTUg2V1drT05RNzRpQlY0TC1nZjVEcUU3X0s3MEoyT3ZkR3lOMjhVbGw1bHh2Wkk5QVdLbk53?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "파인드비"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "국내"
     },
     {
       "id": "4fa90915e23bd972",
@@ -362,8 +411,8 @@
         "dt.co.kr",
         "dailian.co.kr",
         "biotimes.co.kr",
-        "세계일보",
         "segye.com",
+        "세계일보",
         "sisunnews.co.kr"
       ],
       "searchProviders": [
@@ -1672,8 +1721,8 @@
         "ajunews.com",
         "view.asiae.co.kr",
         "inthenews.co.kr",
-        "뉴스락",
         "newslock.co.kr",
+        "뉴스락",
         "newsian.co.kr",
         "newsmap.co.kr",
         "economist.co.kr",
@@ -11094,13 +11143,12 @@
         "상쇄배출권"
       ],
       "duplicateSources": [
+        "냉동공조저널",
         "Chosunbiz",
         "korea.kr",
         "todayenergy.kr",
-        "kukinews.com",
-        "ESG경제",
-        "냉동공조저널",
         "지디넷코리아",
+        "kukinews.com",
         "hansbiz.co.kr",
         "동아일보",
         "donga.com",
@@ -11109,6 +11157,7 @@
         "뉴스;트리",
         "newstree.kr",
         "파인드비",
+        "ESG경제",
         "투데이에너지",
         "비건뉴스",
         "vegannews.co.kr",
@@ -11651,9 +11700,9 @@
       "duplicateSources": [
         "마켓인",
         "edaily.co.kr",
-        "www.dt.co.kr",
         "dt.co.kr",
         "biz.chosun.com",
+        "www.dt.co.kr",
         "이투데이",
         "이데일리",
         "Chosunbiz",
