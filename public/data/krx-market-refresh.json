@@ -1,9 +1,9 @@
 {
   "version": "krx-market-refresh-2",
-  "trade_date": "2026-11-26",
-  "status": "source_not_current",
-  "coverage": "full_quotes",
-  "source_type": "authorized_open_api",
+  "trade_date": "2026-11-27",
+  "status": "same_day_collected",
+  "coverage": "representative_close_volume",
+  "source_type": "official_daily_pdf",
   "full_quotes": {
     "trade_date": "2026-11-26",
     "source_type": "authorized_open_api",
@@ -13,20 +13,20 @@
     "symbol_count": 5
   },
   "representative_report": {
-    "trade_date": "2026-11-26",
-    "published_date": "2026-11-26",
+    "trade_date": "2026-11-27",
+    "published_date": "2026-11-27",
     "source_type": "official_daily_pdf",
-    "source_url": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=714",
-    "revision_id": "krx:714:1:23e3ed501cf1",
-    "pdf_url": "data/krx-daily/pdfs/2026-11/2026-11-26.pdf",
-    "pdf_sha256": "23e3ed501cf11e78e27c25c11b25d9b7b2e64023ea48c670961c7a90c443ff50",
-    "index_sha256": "5e1bd2ff5c79d8542094671a2605ba620a21d9bdf92c70e65d12be115253c813",
+    "source_url": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=715",
+    "revision_id": "krx:715:1:165cadd3046e",
+    "pdf_url": "data/krx-daily/pdfs/2026-11/2026-11-27.pdf",
+    "pdf_sha256": "165cadd3046e861b2fcebdfb1e7b1685e6cbb06b7777861012f847fea4e05501",
+    "index_sha256": "30145d406351ba9b01d873353f9fa9eaeff4158c1646076828484b448545a45c",
     "symbol": "KAU26",
     "close": 29400,
-    "change": -50,
-    "volume": 55083,
-    "market_volume": 55083,
-    "full_quote_comparison": "match"
+    "change": 0,
+    "volume": 87069,
+    "market_volume": 87069,
+    "full_quote_comparison": "unavailable"
   },
   "last_quote_attempt": {
     "status": "collected",
@@ -37,5 +37,5 @@
     "attempted_at": "2026-11-27T14:19:09+09:00",
     "workflow_run_id": "45944995200"
   },
-  "collected_at": "2026-11-27T14:19:10+09:00"
+  "collected_at": "2026-11-27T14:45:57+09:00"
 }

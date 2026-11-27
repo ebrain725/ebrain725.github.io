@@ -1,30 +1,30 @@
 {
   "schemaVersion": "1.0",
-  "lastSync": "2026-11-26T14:53:27+09:00",
+  "lastSync": "2026-11-27T14:45:57+09:00",
   "item": {
-    "tradeDate": "2026-11-26",
-    "publishedDate": "2026-11-26",
-    "boardRn": 645,
-    "bbsSeq": "714",
+    "tradeDate": "2026-11-27",
+    "publishedDate": "2026-11-27",
+    "boardRn": 646,
+    "bbsSeq": "715",
     "attachFileSeq": "1",
-    "title": "배출권 거래시장 일일동향(장내) 26.11.26",
-    "sourceKey": "krx:714:1",
-    "sourceRevisionId": "krx:714:1:23e3ed501cf1",
-    "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=714",
-    "filename": "배출권 거래시장 일일동향_261126.pdf",
-    "sha256": "23e3ed501cf11e78e27c25c11b25d9b7b2e64023ea48c670961c7a90c443ff50",
-    "fileSize": 119958,
+    "title": "배출권 거래시장 일일동향(장내) 26.11.27",
+    "sourceKey": "krx:715:1",
+    "sourceRevisionId": "krx:715:1:165cadd3046e",
+    "sourcePageUrl": "https://ets.krx.co.kr/contents/ETS/97/97010000/ETS97010000S2.jsp?bbstype=5&bbs_seq=715",
+    "filename": "배출권 거래시장 일일동향_261127.pdf",
+    "sha256": "165cadd3046e861b2fcebdfb1e7b1685e6cbb06b7777861012f847fea4e05501",
+    "fileSize": 120029,
     "pages": 1,
     "parserVersion": "1.3.0",
     "participantScope": "all_instruments",
     "taxonomyVersion": "financial_institutions_and_others",
     "market": {
-      "totalVolume": 55083,
+      "totalVolume": 87069,
       "representativeInstrument": {
         "symbol": "KAU26",
         "close": 29400,
-        "change": -50,
-        "volume": 55083
+        "change": 0,
+        "volume": 87069
       }
     },
     "participantFlows": [
@@ -32,30 +32,30 @@
         "categoryKey": "liable_entities",
         "label": "할당대상업체",
         "netByMethod": {
-          "competitive": 1284,
+          "competitive": 25469,
           "negotiated": 0,
           "auction": 0,
-          "total": 1284
+          "total": 25469
         }
       },
       {
         "categoryKey": "market_makers",
         "label": "시장조성자",
         "netByMethod": {
-          "competitive": -9750,
+          "competitive": -25469,
           "negotiated": 0,
           "auction": 0,
-          "total": -9750
+          "total": -25469
         }
       },
       {
         "categoryKey": "financial_institutions",
         "label": "금융기관",
         "netByMethod": {
-          "competitive": 8466,
+          "competitive": 0,
           "negotiated": 0,
           "auction": 0,
-          "total": 8466
+          "total": 0
         }
       },
       {
@@ -83,6 +83,6 @@
       "netTotal": 0,
       "balanced": true
     },
-    "pdfUrl": "data/krx-daily/pdfs/2026-11/2026-11-26.pdf"
+    "pdfUrl": "data/krx-daily/pdfs/2026-11/2026-11-27.pdf"
   }
 }
