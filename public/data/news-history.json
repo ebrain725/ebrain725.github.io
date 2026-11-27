@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-27T18:18:00+09:00",
+  "generatedAt": "2026-11-28T01:57:37+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 2638,
+  "itemCount": 2642,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-27",
   "sourceCommitsScanned": 0,
@@ -12,6 +12,30 @@
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "46701dc5bd4e37d4",
+      "publishedAt": "2026-11-27",
+      "title": "한국임업진흥원, 농식품 ESG경영대상 농촌진흥청장상 수상",
+      "category": "제도",
+      "summary": "주요 활동은 산림 탄소 배출권 의 거래·활용과 미이용 산림바이오매스 이용 확대다. 산림의 탄소흡수 기능을 경제적 가치로 연결하고, 산림에서 발생하는 미이용 자원의 활용도를 높여 탄소중립 기반을 강화하는 데 초점을...",
+      "source": "youngnong.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.youngnong.co.kr/news/articleView.html?idxno=72159",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "youngnong.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
     {
       "id": "ce058dd681e7708e",
       "publishedAt": "2026-11-27",
@@ -154,6 +178,8 @@
         "상쇄배출권"
       ],
       "duplicateSources": [
+        "제주매일",
+        "jejumaeil.net",
         "제주도민일보",
         "jejudomin.co.kr"
       ],
@@ -161,7 +187,7 @@
         "Google News RSS",
         "NAVER API HUB"
       ],
-      "duplicateCount": 2,
+      "duplicateCount": 4,
       "region": "국내"
     },
     {
@@ -330,17 +356,19 @@
       "matchedKeywords": [
         "탄소시장"
       ],
-      "duplicateCount": 6,
+      "duplicateCount": 7,
       "duplicateSources": [
         "enetnews.co.kr",
         "dt.co.kr",
         "dailian.co.kr",
         "biotimes.co.kr",
+        "세계일보",
         "segye.com",
         "sisunnews.co.kr"
       ],
       "searchProviders": [
-        "NAVER API HUB"
+        "NAVER API HUB",
+        "Google News RSS"
       ],
       "region": "국내"
     },
@@ -468,6 +496,78 @@
         "Google News RSS"
       ],
       "duplicateCount": 2,
+      "region": "국내"
+    },
+    {
+      "id": "bc5633864c108baf",
+      "publishedAt": "2026-11-27",
+      "title": "[ESG특집] UK·EU 배출권 연계가 던진 과제",
+      "category": "제도",
+      "summary": "[ESG특집] UK·EU 배출권 연계가 던진 과제 데일리연합",
+      "source": "데일리연합",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1xMTZrMkxkazVsVzNJZWNzTVF5OUppV2NlSnU2VVI5dkpFWE9YTjdNY21TZWlSckZQbzRkU3BVVVlCYm9ramsxQWNJQVVDZDFQZDJSOEhiTWQxaFE?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "데일리연합"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "해외"
+    },
+    {
+      "id": "80b725130d8a45a1",
+      "publishedAt": "2026-11-27",
+      "title": "NH투자증권, 네팔 벽돌공장 탄소금융 설계...미래 배출권 을 설비 재원으...",
+      "category": "제도",
+      "summary": "NH투자증권이 향후 확보할 탄소 배출권 을 네팔 벽돌공장의 친환경 설비 도입 재원으로 활용하는 금융 구조를... NH투자증권과 이노씨에스알(InnoCSR)은 확보한 배출권 을 국내 기업에 공급할 계획이다. 거점당 약 20만달러...",
+      "source": "dailypop.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.dailypop.kr/news/articleView.html?idxno=105102",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "데일리팝",
+        "dailypop.kr"
+      ],
+      "searchProviders": [
+        "Google News RSS",
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 2,
+      "region": "국내"
+    },
+    {
+      "id": "452f198d02e2f155",
+      "publishedAt": "2026-11-27",
+      "title": "COP31: 북한이 '기후 문제'에 목소리를 내는 이유...한국과의 협력 가능...",
+      "category": "제도",
+      "summary": "CDM은 온실가스 를 줄인 만큼 '감축 영수증'인 배출권 을 받아 팔 수 있게 한 제도로, 북한이 발전소를 짓고 체코 기업 '토픽 에네르고'가 배출권 을 넘겨받아 파는 구조였다. 결과는 절반의 성공이었다. 유엔기후변화협약...",
+      "source": "bbc.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.bbc.com/korean/articles/c9j3kl2vkjv4o?xtor=AL-73-%5Bpartner%5D-%5Bnaver%5D-%5Bheadline%5D-%5Bkorean%5D-%5Bbizdev%5D-%5Bisapi%5D",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "bbc.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
       "region": "국내"
     },
     {
@@ -1572,8 +1672,8 @@
         "ajunews.com",
         "view.asiae.co.kr",
         "inthenews.co.kr",
-        "newslock.co.kr",
         "뉴스락",
+        "newslock.co.kr",
         "newsian.co.kr",
         "newsmap.co.kr",
         "economist.co.kr",
@@ -10994,12 +11094,13 @@
         "상쇄배출권"
       ],
       "duplicateSources": [
-        "냉동공조저널",
         "Chosunbiz",
         "korea.kr",
         "todayenergy.kr",
-        "지디넷코리아",
         "kukinews.com",
+        "ESG경제",
+        "냉동공조저널",
+        "지디넷코리아",
         "hansbiz.co.kr",
         "동아일보",
         "donga.com",
@@ -11008,7 +11109,6 @@
         "뉴스;트리",
         "newstree.kr",
         "파인드비",
-        "ESG경제",
         "투데이에너지",
         "비건뉴스",
         "vegannews.co.kr",
@@ -11551,9 +11651,9 @@
       "duplicateSources": [
         "마켓인",
         "edaily.co.kr",
+        "www.dt.co.kr",
         "dt.co.kr",
         "biz.chosun.com",
-        "www.dt.co.kr",
         "이투데이",
         "이데일리",
         "Chosunbiz",
@@ -15211,8 +15311,8 @@
         "탄소배출권"
       ],
       "duplicateSources": [
-        "매일경제 마켓",
         "매일경제",
+        "매일경제 마켓",
         "mk.co.kr"
       ],
       "searchProviders": [
