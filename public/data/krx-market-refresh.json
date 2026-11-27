@@ -2,14 +2,14 @@
   "version": "krx-market-refresh-2",
   "trade_date": "2026-11-26",
   "status": "source_not_current",
-  "coverage": "representative_close_volume",
-  "source_type": "official_daily_pdf",
+  "coverage": "full_quotes",
+  "source_type": "authorized_open_api",
   "full_quotes": {
-    "trade_date": "2026-11-25",
+    "trade_date": "2026-11-26",
     "source_type": "authorized_open_api",
     "source_url": "https://data-dbg.krx.co.kr/svc/apis/gen/ets_bydd_trd",
-    "workflow_run_id": "45761384192",
-    "sha256": "feaff3ce9082b53441016887b7ee2e69699932f40f0907013432076880904f38",
+    "workflow_run_id": "45944995200",
+    "sha256": "96a03f05606010ba90867f97f44f0fc4f562e2ccd599a9b6c0f307b179601b8f",
     "symbol_count": 5
   },
   "representative_report": {
@@ -26,16 +26,16 @@
     "change": -50,
     "volume": 55083,
     "market_volume": 55083,
-    "full_quote_comparison": "unavailable"
+    "full_quote_comparison": "match"
   },
   "last_quote_attempt": {
-    "status": "no_matching_rows",
-    "requested_trade_date": "2026-11-27",
-    "observed_trade_date": null,
+    "status": "collected",
+    "requested_trade_date": "2026-11-26",
+    "observed_trade_date": "2026-11-26",
     "source_type": "authorized_open_api",
-    "detail": "HTTP_200_EMPTY_PRICE_LIST; site=HTTP_403",
-    "attempted_at": "2026-11-27T12:06:09+09:00",
-    "workflow_run_id": "45932090901"
+    "detail": null,
+    "attempted_at": "2026-11-27T14:19:09+09:00",
+    "workflow_run_id": "45944995200"
   },
-  "collected_at": "2026-11-27T12:06:10+09:00"
+  "collected_at": "2026-11-27T14:19:10+09:00"
 }
