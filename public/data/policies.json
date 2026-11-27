@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-11-27T10:16:33+09:00",
+  "lastSync": "2026-11-27T13:16:23+09:00",
   "keywords": [
     "배출권",
     "배출권거래제",
@@ -30,7 +30,7 @@
   "warning": "한국거래소 배출권 공지사항: 한국거래소 공지 목록을 해석하지 못했습니다. 1페이지: HTTP Error 403: Forbidden",
   "aiInsight": {
     "summary": "최근 공식자료의 직접적인 수급 변수는 유상경매입니다. 최근 경매가 높은 낙찰가로 소화돼 공급보다 이행수요가 강하다는 신호입니다.",
-    "generatedAt": "2026-11-27T10:16:33+09:00",
+    "generatedAt": "2026-11-27T13:16:23+09:00",
     "basisLatestDate": "2026-11-26",
     "basisCount": 10,
     "source": "fallback",
@@ -912,27 +912,81 @@
       "region": "해외"
     },
     {
-      "id": "e415b44f0e19209c",
+      "id": "e519eeb999301991",
       "publishedAt": "2026-11-27",
-      "title": "동서발전, 당진 스마트팜 사관학교에 태양광설비 기부",
-      "category": "상쇄·외부사업",
-      "summary": "한편 한국동서발전은 올해 9월 'EWP에너지1004'를 통해 설치한 태양광 발전설비 10곳에 대한 온실가스 감축 성과를 인정받아 배출권 거래제 외부사업 승인을 획득했다.",
-      "source": "yna.co.kr",
+      "title": "사전할당량 줄고 가격은 뛰고… 철강업계, 늘어난 탄소배출권 비용 부담...",
+      "category": "시장·가격",
+      "summary": "이날 한국거래소에 따르면 전 거래일 기준 ’2026년 할당배출권( KAU26 )' 종가는 t당 2만9400원으로 올해 첫 거래일(1월 2일) 종가 9300원과 비교해 가격이 세 배 넘는 수준으로 올랐다. 이날 기준 가격으로 현대제철이...",
+      "source": "biz.chosun.com",
       "sourceType": "news",
       "section": "news",
-      "url": "https://www.yna.co.kr/view/AKR20261127039700057?input=1195m",
+      "url": "https://biz.chosun.com/industry/company/2026/11/27/ETGESKZQ6JDMRK57KR3YCMZL7U/?utm_source=naver&utm_medium=original&utm_campaign=biz",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권",
+        "KAU26"
+      ],
+      "duplicateSources": [
+        "Chosunbiz",
+        "biz.chosun.com"
+      ],
+      "searchProviders": [
+        "Google News RSS",
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 2,
+      "region": "국내"
+    },
+    {
+      "id": "1527a49dc35abaff",
+      "publishedAt": "2026-11-27",
+      "title": "동서발전, 당진 스마트팜 사관학교에 태양광 설비 기부",
+      "category": "상쇄·외부사업",
+      "summary": "한편, 동서발전은 지난 9월 'EWP에너지1004'를 통해 설치한 태양광 발전설비 10개소에 대한 온실가스 감축 성과를 인정받아 배출권 거래제 외부사업 승인을 획득했다. 사회공헌 활동이 에너지 복지 지원을 넘어 온실가스 ...",
+      "source": "epj.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.epj.co.kr/news/articleView.html?idxno=39881",
       "searchProvider": "NAVER API HUB",
       "matchedKeywords": [
         "배출권",
         "배출권거래제"
       ],
       "duplicateSources": [
-        "yna.co.kr"
+        "ikld.kr",
+        "yna.co.kr",
+        "epj.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 3,
+      "region": "국내"
+    },
+    {
+      "id": "b043eafee9a788bc",
+      "publishedAt": "2026-11-27",
+      "title": "김원기 의정부시장, 한·중·일 저탄소 청년포럼 참석…지방정부 역할 ...",
+      "category": "제도",
+      "summary": "11월 25일부터 27일까지 3일간 열리는 포럼에서는 다배출 산업의 탈탄소화 경로, 배출권 거래제(ETS) 연계... 개회식을 마친 뒤 세션에서는 동아시아 배출권 거래제의 발전 현황, 기후변화에 대응하는 저탄소 건설기술...",
+      "source": "gukjenews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.gukjenews.com/news/articleView.html?idxno=3765051",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "newspim.com",
+        "gukjenews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 2,
       "region": "국내"
     },
     {
@@ -952,6 +1006,78 @@
       ],
       "duplicateSources": [
         "financialpost.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "0ae58e49cc3f5753",
+      "publishedAt": "2026-11-27",
+      "title": "[위클리오늘] 의정부시, 겨울철 기습 강설 대비 강화",
+      "category": "제도",
+      "summary": "경로와 배출권 거래제(ETS) 연계 방안 등을 논의하는 국제 행사다. (사)한국지속가능캠퍼스협회(KSCA)... 개회식 이후에는 동아시아 배출권 거래제 발전 현황과 기후변화 대응을 위한 저탄소 건설기술 등을 주제로 세션별...",
+      "source": "weeklytoday.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.weeklytoday.com/news/articleView.html?idxno=803779",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "weeklytoday.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "87232f0b8639a49c",
+      "publishedAt": "2026-11-27",
+      "title": "[단독] 지역난방공사, 탄소배출 늘었는데 배출권 100만t 팔아 돈벌이?",
+      "category": "제도",
+      "summary": "탄소감축을 유도하기 위해 도입된 배출권거래제 가 공사의 수익 추구 수단으로 활용되는 사이 정작 지난해 온실가스 배출량은 전년 대비 20% 이상 늘었다. 27일 한스경제의 취재 결과 지역난방공사의 2021~2025년...",
+      "source": "hansbiz.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.hansbiz.co.kr/news/articleView.html?idxno=887928",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "hansbiz.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "350d030115324424",
+      "publishedAt": "2026-11-27",
+      "title": "\"설비투자 3배 뛴 삼천리, 본업 대신 '비주력 쇼핑'…2027년 현금흐름 적...",
+      "category": "제도",
+      "summary": "삼천리가 올해 3분기 전년 동기대비 큰 폭의 영업이익 성장을 기록했으나, 배출권 매각과 요금 인상 등... 전력 판매 부진에도 이익이 늘어난 배경에는 탄소 배출권 잔여물량 판매에 따른 약 50억원 규모의 매출원가...",
+      "source": "newsquest.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newsquest.co.kr/news/articleView.html?idxno=306002",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "newsquest.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -1840,6 +1966,30 @@
       ],
       "duplicateSources": [
         "thevaluenews.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "c4bbe1815e78d764",
+      "publishedAt": "2026-11-26",
+      "title": "[김경식의 이세계 ESG]전력시장 개혁을 막는 세 가지 도그마",
+      "category": "시장·가격",
+      "summary": "하지만 유럽의 전기가 전반적으로 비싼 데에는 러시아·우크라이나 전쟁으로 인한 천연가스 공급 타격, 탄소 배출권 가격, 전력망 투자 비용, 계통안정화 비용 등이 복합적으로 작용해왔다. 그래서 지금 요금에서 개방의...",
+      "source": "khan.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.khan.co.kr/article/202611262022005",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "khan.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -10987,12 +11137,14 @@
         "상쇄배출권"
       ],
       "duplicateSources": [
+        "서울신문",
         "seoul.co.kr"
       ],
       "searchProviders": [
+        "Google News RSS",
         "NAVER API HUB"
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "region": "국내"
     },
     {
@@ -298305,10 +298457,10 @@
   },
   "newsRetention": {
     "policy": "append-only",
-    "lastMergedAt": "2026-11-27T10:16:40+09:00",
-    "itemCount": 2619,
-    "archiveBefore": 2617,
-    "currentBefore": 2419,
+    "lastMergedAt": "2026-11-27T13:16:30+09:00",
+    "itemCount": 2625,
+    "archiveBefore": 2619,
+    "currentBefore": 2425,
     "gitRecoveryEnabled": false
   },
   "policyEventTaxonomy": {
