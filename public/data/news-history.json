@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-27T13:16:30+09:00",
+  "generatedAt": "2026-11-27T15:15:05+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 2625,
+  "itemCount": 2630,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-27",
   "sourceCommitsScanned": 0,
@@ -34,6 +34,56 @@
         "NAVER API HUB"
       ],
       "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "4fa90915e23bd972",
+      "publishedAt": "2026-11-27",
+      "title": "제주시 해안동 산림 복원…배출권 거래 활용 목표",
+      "category": "제도",
+      "summary": "제주시 해안동 산림 복원…배출권 거래 활용 목표 한라일보",
+      "source": "한라일보",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9UTUxDOGh2cVdBT0Q4ZVk3cUFET21nd2MwYkpZREZZdDBBQ1F4OFZSOXF5ZlZwdnd5bUhQcHlveGhkbEY4LURrc3V3LVRUbTR5T0JLMm41OWZmMkVPaER4a25rWkwtamRuVEE?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "한라일보"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "국내"
+    },
+    {
+      "id": "c33a402abccb7ffe",
+      "publishedAt": "2026-11-27",
+      "title": "제주 산림 복원· 탄소 배출권 확보 '일석이조'",
+      "category": "상쇄·외부사업",
+      "summary": "인증 실적은 한국거래소 배출권 시장 에서 거래할 수 있다. 이 실적을 확보한 도내 배출권 할당 대상 업체는 상쇄배출권(KCU)으로 전환해 배출권 제출 의무를 이행하는 데 활용할 수 있다. 도는 내년부터 도시숲 등 다른...",
+      "source": "jejudomin.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.jejudomin.co.kr/news/articleView.html?idxno=402831",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권",
+        "상쇄배출권"
+      ],
+      "duplicateSources": [
+        "제주도민일보",
+        "jejudomin.co.kr"
+      ],
+      "searchProviders": [
+        "Google News RSS",
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 2,
       "region": "국내"
     },
     {
@@ -179,12 +229,40 @@
         "배출권거래제"
       ],
       "duplicateSources": [
+        "newspim.com",
+        "gukjenews.com",
+        "m-i.kr",
         "weeklytoday.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
       ],
+      "duplicateCount": 4,
+      "region": "국내"
+    },
+    {
+      "id": "91bc5e92faa40594",
+      "publishedAt": "2026-11-27",
+      "title": "[온실가스 배출권] 11월 27일 KAU26, 2만9400원 유지",
+      "category": "시장·가격",
+      "summary": "[온실가스 배출권] 11월 27일 KAU26, 2만9400원 유지 데일리e뉴스",
+      "source": "데일리e뉴스",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE8tNHA4VnZEWFZzRlNUbFF4bTNPb0ZFNGU2U3lPX3VqcE5QWkZRRVVuazFVRFhhVlpIRUdmRUZpUVNVZ0RpaFVRQ2swbWVDVk1CVTBTb1p5Xy0wX28xNlRMRWRzSGZaOU1fa3FCWkh6cw?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "온실가스 배출권",
+        "KAU26"
+      ],
+      "section": "news",
       "duplicateCount": 1,
+      "duplicateSources": [
+        "데일리e뉴스"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
       "region": "국내"
     },
     {
@@ -203,7 +281,59 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "hansbiz.co.kr"
+        "hansbiz.co.kr",
+        "한스경제"
+      ],
+      "searchProviders": [
+        "NAVER API HUB",
+        "Google News RSS"
+      ],
+      "duplicateCount": 2,
+      "region": "국내"
+    },
+    {
+      "id": "b8833595616e2b4c",
+      "publishedAt": "2026-11-27",
+      "title": "10년 이내 영국·EU 약속 깨면 비용 물어야...무역합의에 '패라지 조항'",
+      "category": "제도",
+      "summary": "영국은 식품 위생 및 검역 협정과 탄소 배출권 프로그램 연계 협정에 대해 일종의 '참가비'도 내야 합니다.... (관세동맹·단일 시장 ·이동의 자유로의 복귀)을 넘는 데 이 법안이 사용되지는 않는다. 정부의 레드라인은 이...",
+      "source": "biz.sbs.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://biz.sbs.co.kr/article_hub/20000349382?division=NAVER",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "kbs.co.kr",
+        "yna.co.kr",
+        "biz.sbs.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 3,
+      "region": "해외"
+    },
+    {
+      "id": "61e5387a7222ed96",
+      "publishedAt": "2026-11-27",
+      "title": "\"전남광주 반도체·AI 전력망 확충, 주민 협조에 달렸다\"",
+      "category": "시장·가격",
+      "summary": "그는 \" 배출권 거래제 4기 시행 등으로 탄소 비용 부담이 급등하는 가운데, 월별 전력 사용량과 공정별 온실가스 (이산화탄소·메탄 등) 배출량을 측정·관리하지 못하면 공급망 진입 자체가 막힌다\"며 \"ESG 진단은 높은 점수를...",
+      "source": "newsis.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.newsis.com/view/NISX20261127_0003885995",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "newsis.com"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -1273,13 +1403,14 @@
         "뉴스로드",
         "newsroad.co.kr",
         "SR타임스",
-        "newsis.com"
+        "newsis.com",
+        "시장경제신문"
       ],
       "searchProviders": [
         "NAVER API HUB",
         "Google News RSS"
       ],
-      "duplicateCount": 42,
+      "duplicateCount": 43,
       "region": "국내"
     },
     {
