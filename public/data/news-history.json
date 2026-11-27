@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-28T04:13:32+09:00",
+  "generatedAt": "2026-11-28T08:21:08+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 2644,
+  "itemCount": 2647,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-28",
   "sourceCommitsScanned": 0,
@@ -12,6 +12,56 @@
   "historicalMaxSnapshotCount": 0,
   "recoveredFromGitHistory": 0,
   "items": [
+    {
+      "id": "8dd46393c3f6205c",
+      "publishedAt": "2026-11-28",
+      "title": "배출권 예비분 어떻게 쓰나…기후부, 12월 3일 공개설명회",
+      "category": "유상경매",
+      "summary": "정부가 온실가스 배출권 의 경매 물량을 어떤 기준으로 조절할지가 관심사다. 배출권 할당 대상 기업과 시장 참여자뿐 아니라 일반 국민도 설명회 참석 대상이다. ◆ 배출허용총량 안에 따로 둔 물량 배출권 거래제에서...",
+      "source": "vegannews.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.vegannews.co.kr/news/article.html?no=412508",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "온실가스 배출권"
+      ],
+      "duplicateSources": [
+        "vegannews.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "85c2d28e5dbec92f",
+      "publishedAt": "2026-11-28",
+      "title": "‘꿈의 제철’이라던 수소환원제철, 현실의 벽에 막히다…유럽발 탈탄...",
+      "category": "제도",
+      "summary": "EU는 2005년부터 탄소 배출권 거래제를 운영하면서도 역내 철강사에는 경쟁력 유지를 위해 배출권 을 상당 부분 무상으로 줘 왔다. 하지만 올해 탄소국경조정제도(CBAM)를 본격 시행해 수입 철강재에도 탄소 비용을 물리기...",
+      "source": "chosun.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.chosun.com/economy/industry-company/2026/11/28/4FLUZE6VFJEO5FIXNQCZRYR34A/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "chosun.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
     {
       "id": "896e1e99f26369e7",
       "publishedAt": "2026-11-28",
@@ -36,6 +86,32 @@
       ],
       "duplicateCount": 1,
       "region": "국내"
+    },
+    {
+      "id": "b027dc68005af009",
+      "publishedAt": "2026-11-28",
+      "title": "'화석연료 전환' 지우고, CCUS 넣었다가…판 깨진 COP31[기후로운 경제생...",
+      "category": "제도",
+      "summary": "유럽 입장에서는 자국 기업들은 이미 탄소 배출권 비용을 치르는데 다른 나라들이 화석 연료 감축에서... 탄소시장연합은 배출권 거래제나 탄소세를 운영하는 또는 이런 제도를 준비하고 있는 나라들의 협의체고요. EU와...",
+      "source": "nocutnews.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.nocutnews.co.kr/news/6613677?utm_source=naver&utm_medium=article&utm_campaign=20261128050046",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제",
+        "탄소배출권",
+        "탄소시장"
+      ],
+      "duplicateSources": [
+        "nocutnews.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
     },
     {
       "id": "46701dc5bd4e37d4",
@@ -224,17 +300,18 @@
       "matchedKeywords": [
         "배출권",
         "탄소배출권",
-        "상쇄배출권"
+        "상쇄배출권",
+        "배출권거래제"
       ],
       "duplicateSources": [
-        "제주매일",
         "jejumaeil.net",
+        "제주매일",
         "제주도민일보",
         "jejudomin.co.kr"
       ],
       "searchProviders": [
-        "Google News RSS",
-        "NAVER API HUB"
+        "NAVER API HUB",
+        "Google News RSS"
       ],
       "duplicateCount": 4,
       "region": "국내"
@@ -11143,19 +11220,19 @@
         "상쇄배출권"
       ],
       "duplicateSources": [
-        "냉동공조저널",
-        "Chosunbiz",
         "korea.kr",
         "todayenergy.kr",
-        "지디넷코리아",
         "kukinews.com",
         "hansbiz.co.kr",
         "동아일보",
         "donga.com",
         "포쓰저널",
         "4th.kr",
-        "뉴스;트리",
         "newstree.kr",
+        "냉동공조저널",
+        "Chosunbiz",
+        "지디넷코리아",
+        "뉴스;트리",
         "파인드비",
         "ESG경제",
         "투데이에너지",
@@ -11167,8 +11244,8 @@
         "esgeconomy.com"
       ],
       "searchProviders": [
-        "Google News RSS",
-        "NAVER API HUB"
+        "NAVER API HUB",
+        "Google News RSS"
       ],
       "duplicateCount": 22,
       "region": "국내"
@@ -11698,10 +11775,10 @@
         "상쇄배출권"
       ],
       "duplicateSources": [
-        "마켓인",
         "edaily.co.kr",
         "dt.co.kr",
         "biz.chosun.com",
+        "마켓인",
         "www.dt.co.kr",
         "이투데이",
         "이데일리",
@@ -11754,8 +11831,8 @@
         "아주경제"
       ],
       "searchProviders": [
-        "Google News RSS",
-        "NAVER API HUB"
+        "NAVER API HUB",
+        "Google News RSS"
       ],
       "duplicateCount": 54,
       "region": "국내"
