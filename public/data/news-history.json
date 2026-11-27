@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-27T08:17:59+09:00",
+  "generatedAt": "2026-11-27T10:16:40+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 2617,
+  "itemCount": 2619,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-27",
   "sourceCommitsScanned": 0,
@@ -60,6 +60,30 @@
       ],
       "duplicateCount": 2,
       "region": "해외"
+    },
+    {
+      "id": "e415b44f0e19209c",
+      "publishedAt": "2026-11-27",
+      "title": "동서발전, 당진 스마트팜 사관학교에 태양광설비 기부",
+      "category": "상쇄·외부사업",
+      "summary": "한편 한국동서발전은 올해 9월 'EWP에너지1004'를 통해 설치한 태양광 발전설비 10곳에 대한 온실가스 감축 성과를 인정받아 배출권 거래제 외부사업 승인을 획득했다.",
+      "source": "yna.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.yna.co.kr/view/AKR20261127039700057?input=1195m",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "yna.co.kr"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
     },
     {
       "id": "0c0b52aa5eb7e284",
@@ -8699,6 +8723,30 @@
       "region": "국내"
     },
     {
+      "id": "2094ab6644cbaeb5",
+      "publishedAt": "2026-11-18",
+      "title": "삼성·SK하이닉스 탄소배출권 희비…생산 확대에 배출권 소진·추가 조달",
+      "category": "제도",
+      "summary": "삼성·SK하이닉스 탄소배출권 희비…생산 확대에 배출권 소진·추가 조달 Daum",
+      "source": "Daum",
+      "sourceType": "news",
+      "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFBjTENjOG45RllKWldGbGoxQkEtQi1LLXdpb1JUQ1RMcktjdG1GcDhDN0h3RkJ5UTRYclBIam1VUHJwSE1NRWc?oc=5",
+      "searchProvider": "Google News RSS",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "section": "news",
+      "duplicateCount": 1,
+      "duplicateSources": [
+        "Daum"
+      ],
+      "searchProviders": [
+        "Google News RSS"
+      ],
+      "region": "국내"
+    },
+    {
       "id": "26adbd6fce49c1ff",
       "publishedAt": "2026-11-18",
       "title": "버넘 英 총리, EU와 관계 재설정 '대안' 제시 일정 돌연 연기… 브렉시...",
@@ -10462,6 +10510,7 @@
         "korea.kr",
         "todayenergy.kr",
         "kukinews.com",
+        "ESG경제",
         "hansbiz.co.kr",
         "동아일보",
         "donga.com",
@@ -10472,7 +10521,6 @@
         "냉동공조저널",
         "지디넷코리아",
         "파인드비",
-        "ESG경제",
         "투데이에너지",
         "비건뉴스",
         "vegannews.co.kr",
