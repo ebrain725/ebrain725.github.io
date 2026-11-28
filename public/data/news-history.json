@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-11-28T18:14:21+09:00",
+  "generatedAt": "2026-11-29T00:48:22+09:00",
   "retentionPolicy": "append-only",
   "source": "policies.json + persistent archive + Git history recovery",
-  "itemCount": 2651,
+  "itemCount": 2652,
   "earliestPublishedAt": "2026-08-06",
   "latestPublishedAt": "2026-11-28",
   "sourceCommitsScanned": 0,
@@ -176,6 +176,30 @@
       ],
       "duplicateSources": [
         "newspim.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "3a9f88cc8b73bc7b",
+      "publishedAt": "2026-11-28",
+      "title": "AI로 산림경영계획 수립 간소화…횡성군산림조합, 우수사례 대상",
+      "category": "상쇄·외부사업",
+      "summary": "장영우 안동시산림조합 지도원은 산불 피해지 복구조림과 배출권 거래제 외부사업을 연계한 지원 사례로 수상했다. 박민혜 포항시산림조합 지도원은 산딸기를 활용한 가공식품 개발과 연중 유통체계 구축을 지원한...",
+      "source": "youngnong.co.kr",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.youngnong.co.kr/news/articleView.html?idxno=72127",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "배출권거래제"
+      ],
+      "duplicateSources": [
+        "youngnong.co.kr"
       ],
       "searchProviders": [
         "NAVER API HUB"
@@ -18031,12 +18055,12 @@
         "ezyeconomy.com",
         "financialpost.co.kr",
         "ddaily.co.kr",
+        "디지털데일리",
         "smarttoday.co.kr",
         "뉴시스",
         "wsobi.com",
         "newsian.co.kr",
         "jasm.co.kr",
-        "디지털데일리",
         "뉴스인사이드",
         "중앙신문",
         "스페셜경제",
