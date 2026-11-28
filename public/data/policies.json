@@ -1,5 +1,5 @@
 {
-  "lastSync": "2026-11-28T08:21:02+09:00",
+  "lastSync": "2026-11-28T10:16:33+09:00",
   "keywords": [
     "배출권",
     "배출권거래제",
@@ -27,10 +27,10 @@
     "Google News RSS",
     "NAVER API HUB"
   ],
-  "warning": "한국거래소 배출권 공지사항: 한국거래소 공지 목록을 해석하지 못했습니다. 1페이지: HTTP Error 403: Forbidden | 배출권시장 뉴스: news.google.com: HTTP Error 503: Service Unavailable",
+  "warning": "한국거래소 배출권 공지사항: 한국거래소 공지 목록을 해석하지 못했습니다. 1페이지: HTTP Error 403: Forbidden",
   "aiInsight": {
     "summary": "최근 공식자료의 직접적인 수급 변수는 유상경매입니다. 최근 경매가 높은 낙찰가로 소화돼 공급보다 이행수요가 강하다는 신호입니다.",
-    "generatedAt": "2026-11-28T08:21:02+09:00",
+    "generatedAt": "2026-11-28T10:16:33+09:00",
     "basisLatestDate": "2026-11-26",
     "basisCount": 10,
     "source": "fallback",
@@ -95,7 +95,7 @@
       "sources": [
         "vegannews.co.kr"
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "contentFingerprint": "9255a58031518a61ed9e836de93e9f46a4db8283",
       "contentSignature": "기후에너지환경부가12월3일서울중구한국프레스센터에서한국형시장안정화예비분kmsr운영방안을공개한다정부가온실가스배출권의경매물량을어떤기준으로조절할지가관심사다배출권할당대상기업과시장참여자뿐아니라일반국민도설명회참석대상이다배출허용총량안에따로둔물량배출권거래제에서할당대상기업은실제배출량에해당하는배출권을제출한다부족한배출권은시장에서사거나경매등을통해확보하고남는물량은거래할수있다시장안정화예비분은배출권수급을조절하기위해정부가별도로확보해두는물량이다정부는제4차할당계획기간인20262030년에는이예비분을배출허용총량안에두도록했다시장상황에따라예비분을경매로공급하거나시장에나갈물량을줄이는방식이다경매공급량을바꾸는것이배출허용총량자체를늘리는조치는아니다"
     },
@@ -894,6 +894,77 @@
   ],
   "items": [
     {
+      "id": "4e48d05928971d18",
+      "publishedAt": "2026-11-28",
+      "title": "현금 마른 폴스타, 모기업 '수혈' 연명···존속 기반 흔들리나",
+      "category": "제도",
+      "summary": "고가 모델인 폴스타3 판매 비중이 축소된 데다 북미 잔존가치 보증 조정과 탄소 배출권 판매 감소 등이... 시장 경쟁 심화와 미국 규제 등이 실적에 부담을 줬지만 판매관리비 감축 등 비용 구조 효율화가 성과를 내고...",
+      "source": "seoulfn.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.seoulfn.com/news/articleView.html?idxno=643971",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "seoulfn.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
+      "id": "f51674afa56adee8",
+      "publishedAt": "2026-11-28",
+      "title": "인도네시아, 한국 투자 유치 확대…철강서 데이터센터로 확장",
+      "category": "제도",
+      "summary": "와휴디 소장은 탄소 포집 기술과 탄소 배출권 거래 분야에서 양국 간 협력 잠재력이 크다고 봤다. 인도네시아가 추진하는 최대 100기가와트 규모의 재생에너지 개발 계획이 한국 산업계의 청정에너지 전환 수요와 맞물려...",
+      "source": "g-enews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.g-enews.com/view.php?ud=2026112723165155768c1ed9d56c_1",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권",
+        "탄소배출권"
+      ],
+      "duplicateSources": [
+        "g-enews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
+    },
+    {
+      "id": "3181479766c1bd36",
+      "publishedAt": "2026-11-28",
+      "title": "영국 철강업계, EU 탄소 국경부과금 1년 면제 시차 조항 철회 촉구",
+      "category": "제도",
+      "summary": "영국 철강업계가 유럽연합(EU)과의 배출권 거래 시스템 연동 합의 가운데 탄소 국경조정메커니즘(CBAM) 면제... 영국 시장 진입 장벽을 먼저 제거하는 데 동의한 것은 매우 드문 일\"이라고 비판했다. 최대 수출 시장 EU...",
+      "source": "g-enews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "https://www.g-enews.com/view.php?ud=2026112809520198462bd56fbc3c_1",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "g-enews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "해외"
+    },
+    {
       "id": "8dd46393c3f6205c",
       "publishedAt": "2026-11-28",
       "title": "배출권 예비분 어떻게 쓰나…기후부, 12월 3일 공개설명회",
@@ -910,12 +981,14 @@
         "온실가스 배출권"
       ],
       "duplicateSources": [
-        "vegannews.co.kr"
+        "vegannews.co.kr",
+        "비건뉴스"
       ],
       "searchProviders": [
-        "NAVER API HUB"
+        "NAVER API HUB",
+        "Google News RSS"
       ],
-      "duplicateCount": 1,
+      "duplicateCount": 2,
       "region": "국내"
     },
     {
@@ -942,6 +1015,29 @@
       ],
       "duplicateCount": 1,
       "region": "해외"
+    },
+    {
+      "id": "60c7fdc2752f0204",
+      "publishedAt": "2026-11-28",
+      "title": "NH투자증권, 네팔 저탄소 벽돌사업에 배출권 연계 금융 지원",
+      "category": "제도",
+      "summary": "온실가스 를 연간 최대 150만톤 감축할 것으로 전망했다. 현지 영세 제조사들은 거점 한 곳당 약 20만 달러가 드는 유압식 성형설비 비용 때문에 저탄소 전환에 제약을 받아왔다. 양사는 먼저 설비를 지원한 뒤 배출권 을...",
+      "source": "bizwnews.com",
+      "sourceType": "news",
+      "section": "news",
+      "url": "http://www.bizwnews.com/news/articleView.html?idxno=153379",
+      "searchProvider": "NAVER API HUB",
+      "matchedKeywords": [
+        "배출권"
+      ],
+      "duplicateSources": [
+        "bizwnews.com"
+      ],
+      "searchProviders": [
+        "NAVER API HUB"
+      ],
+      "duplicateCount": 1,
+      "region": "국내"
     },
     {
       "id": "896e1e99f26369e7",
@@ -1185,14 +1281,14 @@
         "배출권거래제"
       ],
       "duplicateSources": [
-        "jejumaeil.net",
         "제주매일",
+        "jejumaeil.net",
         "제주도민일보",
         "jejudomin.co.kr"
       ],
       "searchProviders": [
-        "NAVER API HUB",
-        "Google News RSS"
+        "Google News RSS",
+        "NAVER API HUB"
       ],
       "duplicateCount": 4,
       "region": "국내"
@@ -1407,14 +1503,15 @@
       "matchedKeywords": [
         "탄소시장"
       ],
-      "duplicateCount": 7,
+      "duplicateCount": 8,
       "duplicateSources": [
         "enetnews.co.kr",
         "dt.co.kr",
         "dailian.co.kr",
+        "바이오타임즈",
         "biotimes.co.kr",
-        "segye.com",
         "세계일보",
+        "segye.com",
         "sisunnews.co.kr"
       ],
       "searchProviders": [
@@ -2870,8 +2967,8 @@
         "ajunews.com",
         "view.asiae.co.kr",
         "inthenews.co.kr",
-        "newslock.co.kr",
         "뉴스락",
+        "newslock.co.kr",
         "newsian.co.kr",
         "newsmap.co.kr",
         "economist.co.kr",
@@ -12593,9 +12690,11 @@
         "상쇄배출권"
       ],
       "duplicateSources": [
+        "Chosunbiz",
         "korea.kr",
         "todayenergy.kr",
         "kukinews.com",
+        "ESG경제",
         "hansbiz.co.kr",
         "동아일보",
         "donga.com",
@@ -12603,11 +12702,9 @@
         "4th.kr",
         "newstree.kr",
         "냉동공조저널",
-        "Chosunbiz",
         "지디넷코리아",
         "뉴스;트리",
         "파인드비",
-        "ESG경제",
         "투데이에너지",
         "비건뉴스",
         "vegannews.co.kr",
@@ -12617,8 +12714,8 @@
         "esgeconomy.com"
       ],
       "searchProviders": [
-        "NAVER API HUB",
-        "Google News RSS"
+        "Google News RSS",
+        "NAVER API HUB"
       ],
       "duplicateCount": 22,
       "region": "국내"
@@ -13148,11 +13245,11 @@
         "상쇄배출권"
       ],
       "duplicateSources": [
+        "마켓인",
         "edaily.co.kr",
+        "www.dt.co.kr",
         "dt.co.kr",
         "biz.chosun.com",
-        "마켓인",
-        "www.dt.co.kr",
         "이투데이",
         "이데일리",
         "Chosunbiz",
@@ -13204,8 +13301,8 @@
         "아주경제"
       ],
       "searchProviders": [
-        "NAVER API HUB",
-        "Google News RSS"
+        "Google News RSS",
+        "NAVER API HUB"
       ],
       "duplicateCount": 54,
       "region": "국내"
@@ -17858,7 +17955,7 @@
       "region": "해외"
     },
     {
-      "id": "c67b544ee0092c46",
+      "id": "d722d915d16e0a53",
       "publishedAt": "2026-11-11",
       "title": "「배출권선물 도입을 위한 배출권거래법령 마련 및 자본시장법 정합성 확보 연구」 입찰 공고",
       "category": "제도",
@@ -17866,7 +17963,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C&menuId=10524&orgCd=&boardMasterId=39&boardId=1906260",
+      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C&menuId=10524&orgCd=&boardMasterId=39&boardId=1906260",
       "matchedKeywords": [
         "배출권"
       ],
@@ -88196,7 +88293,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "59c187c1846bd4fd",
+      "id": "1754468216cbfcf5",
       "publishedAt": "2025-11-26",
       "title": "배출권 거래 시장 참여자별 배출권 보유 한도 공고",
       "category": "제도",
@@ -88204,7 +88301,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C&menuId=10524&orgCd=&boardMasterId=39&boardId=1823160",
+      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C&menuId=10524&orgCd=&boardMasterId=39&boardId=1823160",
       "matchedKeywords": [
         "시장참여자",
         "시장 참여자",
@@ -91320,7 +91417,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "0873155641698fe5",
+      "id": "08410269414fbf10",
       "publishedAt": "2025-09-26",
       "title": "제4차 계획기간 국가 배출권 할당계획(안) 설명회 개최 공고",
       "category": "제도",
@@ -91328,7 +91425,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C&menuId=10524&orgCd=&boardMasterId=39&boardId=1768870",
+      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C&menuId=10524&orgCd=&boardMasterId=39&boardId=1768870",
       "matchedKeywords": [
         "할당계획",
         "할당대상업체",
@@ -92410,7 +92507,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "5cf0d1575746981f",
+      "id": "5f579d1e8fa62b44",
       "publishedAt": "2025-09-10",
       "title": "배출권거래법 위반에 따른 과태료 부과 고지서 공시송달",
       "category": "제도",
@@ -92418,7 +92515,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C&menuId=10524&orgCd=&boardMasterId=39&boardId=1764950",
+      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C&menuId=10524&orgCd=&boardMasterId=39&boardId=1764950",
       "matchedKeywords": [
         "배출권",
         "온실가스 배출권"
@@ -92918,7 +93015,7 @@
       "taxonomyVersion": "2026-09-11-v1-user-38-events"
     },
     {
-      "id": "70ce79175ffcc841",
+      "id": "23bf824129393836",
       "publishedAt": "2025-08-29",
       "title": "제4차 계획기간 국가 배출권 할당계획(안) 및 제3차 계획기간 국가 배출권 할당계획 변경(안) 공청회 개최 공고(내용 추가)",
       "category": "제도",
@@ -92926,7 +93023,7 @@
       "source": "기후부 공지·공고",
       "sourceType": "official",
       "section": "notice",
-      "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C&menuId=10524&orgCd=&boardMasterId=39&boardId=1761570",
+      "url": "https://mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=30&maxIndexPages=10&searchKey=titleOrContent&searchValue=%EB%B0%B0%EC%B6%9C%EA%B6%8C&menuId=10524&orgCd=&boardMasterId=39&boardId=1761570",
       "matchedKeywords": [
         "할당계획",
         "배출허용총량",
@@ -299091,15 +299188,15 @@
     "previousNonNewsCount": 4575,
     "generatedNonNewsCount": 4575,
     "finalNonNewsCount": 4575,
-    "previousScheduleCount": 25,
+    "previousScheduleCount": 26,
     "finalScheduleCount": 26
   },
   "newsRetention": {
     "policy": "append-only",
-    "lastMergedAt": "2026-11-28T08:21:08+09:00",
-    "itemCount": 2647,
-    "archiveBefore": 2644,
-    "currentBefore": 2449,
+    "lastMergedAt": "2026-11-28T10:16:41+09:00",
+    "itemCount": 2651,
+    "archiveBefore": 2647,
+    "currentBefore": 2450,
     "gitRecoveryEnabled": false
   },
   "policyEventTaxonomy": {
